@@ -2,6 +2,7 @@ name: Step 2 # Commit a file
 
 # Checks if the learner completed tasks for step 2.
 # - Triggers when the user makes a push to the branch 'my-first-branch' and modifies the file 'PROFILE.md'.
+# - Validates both the file contents and the commit message the learner was asked to use.
 # - If all checks pass, the workflow is disabled so it doesn't run again. As such, workflow status badge will change to green.
 
 on:
@@ -33,8 +34,10 @@ jobs:
       ISSUE_URL: ${{ needs.find_exercise.outputs.issue-url }}
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          path: repository
 
       - name: Get response templates
         uses: actions/checkout@v4
@@ -54,7 +57,29 @@ jobs:
 
       # START: Check practical exercise
 
-      # Nothing to verify. Creating the PROFILE.md file is enough.
+      - name: Verify PROFILE.md contains the expected welcome message
+        run: |
+          cd repository
+          if [ ! -f PROFILE.md ]; then
+            echo "PROFILE.md is missing" >&2
+            exit 1
+          fi
+
+          if [ ! -s PROFILE.md ]; then
+            echo "PROFILE.md is empty" >&2
+            exit 1
+          fi
+
+          if ! grep -q "Welcome to my GitHub profile!" PROFILE.md; then
+            echo "PROFILE.md should include the welcome message from the instructions" >&2
+            exit 1
+          fi
+
+          latest_message=$(git log -1 --pretty=%B | head -n1)
+          if [ "$latest_message" != "Add PROFILE.md" ]; then
+            echo "Latest commit message should be 'Add PROFILE.md' to match the instructions" >&2
+            exit 1
+          fi
 
       # END: Check practical exercise
 
@@ -109,7 +134,7 @@ jobs:
 
       - name: Disable current workflow and enable next one
         run: |
-          gh workflow disable "Step 2"
-          gh workflow enable "Step 3"
+          gh workflow disable "2-commit-a-file.yml"
+          gh workflow enable "3-open-a-pull-request.yml"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
