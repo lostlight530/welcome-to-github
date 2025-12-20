@@ -1,7 +1,7 @@
 name: Step 1 # Create a branch
 
 # Checks if the learner completed tasks for step 1.
-# - Triggers when the user creates a new branch 'my-first-branch'.
+# - Triggers when the user pushes to the branch 'my-first-branch'.
 # - Checks that the branch name is 'my-first-branch'.
 # - If all checks pass, the workflow is disabled so it doesn't run again. As such, workflow status badge will change to green.
 
@@ -99,7 +99,7 @@ jobs:
 
       - name: Disable current workflow and enable next one
         run: |
-          gh workflow disable "Step 1"
-          gh workflow enable "Step 2"
+          gh workflow disable "1-create-a-branch.yml"
+          gh workflow enable "2-commit-a-file.yml"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
