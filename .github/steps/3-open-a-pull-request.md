@@ -17,7 +17,7 @@ To create a pull request automatically, click **Compare & pull request** button,
 1. In the header menu of your repository, click the **Pull requests** tab.
 2. Click the **New pull request** button.
 3. Select the following branches using the dropdown menus.
-   
+
    - **base:** `main`
    - **compare:** `my-first-branch`
 
