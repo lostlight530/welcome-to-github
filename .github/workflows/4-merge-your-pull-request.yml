@@ -60,19 +60,17 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       !github.event.repository.is_template
-    env:
-      ISSUE_URL: ${{ needs.find_exercise.outputs.issue-url }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Create comment - add review content
-        run: |
-          gh issue comment "$ISSUE_URL" \
-            --body-file ${{ env.REVIEW_FILE }}
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Post review content
+        uses: ./.github/actions/post-next-step
+        with:
+          issue-url: ${{ needs.find_exercise.outputs.issue-url }}
+          step-file: ${{ env.REVIEW_FILE }}
+          show-watching-for-progress: "false"
+          workflow-to-disable: ${{ github.workflow }}
 
   finish_exercise:
     name: Finish Exercise
@@ -80,18 +78,4 @@ jobs:
     uses: skills/exercise-toolkit/.github/workflows/finish-exercise.yml@v0.1.0
     with:
       issue-url: ${{ needs.find_exercise.outputs.issue-url }}
-
-
-  disable_workflow:
-    name: Disable this workflow
-    needs: [find_exercise, post_review_content]
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Disable current workflow
-        run: gh workflow disable "${{github.workflow}}"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

@@ -104,37 +104,14 @@ jobs:
     name: Post next step content
     needs: [find_exercise, check_step_work]
     runs-on: ubuntu-latest
-    env:
-      ISSUE_URL: ${{ needs.find_exercise.outputs.issue-url }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Get response templates
-        uses: actions/checkout@v4
+      - name: Post next step content
+        uses: ./.github/actions/post-next-step
         with:
-          repository: skills/exercise-toolkit
-          path: exercise-toolkit
-          ref: v0.1.0
-
-      - name: Create comment - add step content
-        run: |
-          gh issue comment "$ISSUE_URL" \
-            --body-file ${{ env.STEP_3_FILE }}
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create comment - watching for progress
-        run: |
-          gh issue comment "$ISSUE_URL" \
-            --body-file exercise-toolkit/markdown-templates/step-feedback/watching-for-progress.md
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Disable current workflow and enable next one
-        run: |
-          gh workflow disable "2-commit-a-file.yml"
-          gh workflow enable "3-open-a-pull-request.yml"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issue-url: ${{ needs.find_exercise.outputs.issue-url }}
+          step-file: ${{ env.STEP_3_FILE }}
+          workflow-to-disable: "2-commit-a-file.yml"
+          workflow-to-enable: "3-open-a-pull-request.yml"

@@ -29,36 +29,13 @@ jobs:
     name: Post next step content
     runs-on: ubuntu-latest
     needs: [start_exercise]
-    env:
-      ISSUE_URL: ${{ needs.start_exercise.outputs.issue-url }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Get response templates
-        uses: actions/checkout@v4
+      - name: Post next step content
+        uses: ./.github/actions/post-next-step
         with:
-          repository: skills/exercise-toolkit
-          path: exercise-toolkit
-          ref: v0.1.0
-
-      - name: Create comment - add step content
-        run: |
-          gh issue comment "$ISSUE_URL" \
-            --body-file ${{ env.STEP_1_FILE }}
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create comment - watching for progress
-        run: |
-          gh issue comment "$ISSUE_URL" \
-            --body-file exercise-toolkit/markdown-templates/step-feedback/watching-for-progress.md
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Disable current workflow and enable next one
-        run: |
-          gh workflow enable "Step 1"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issue-url: ${{ needs.start_exercise.outputs.issue-url }}
+          step-file: ${{ env.STEP_1_FILE }}
+          workflow-to-enable: "Step 1"

@@ -1,0 +1,70 @@
+name: Post next step content
+description: Posts the next step content to the issue and handles workflow state.
+inputs:
+  github-token:
+    description: GitHub Token
+    default: ${{ github.token }}
+    required: false
+  issue-url:
+    description: The URL of the issue to comment on
+    required: true
+  step-file:
+    description: The path to the markdown file containing the step content
+    required: true
+  show-watching-for-progress:
+    description: Whether to show the "watching for progress" message
+    default: "true"
+    required: false
+  workflow-to-disable:
+    description: The name or filename of the workflow to disable
+    required: false
+  workflow-to-enable:
+    description: The name or filename of the workflow to enable
+    required: false
+
+runs:
+  using: composite
+  steps:
+    - name: Get response templates
+      if: inputs.show-watching-for-progress == 'true'
+      uses: actions/checkout@v4
+      with:
+        repository: skills/exercise-toolkit
+        path: exercise-toolkit
+        ref: v0.1.0
+
+    - name: Create comment - add step content
+      shell: bash
+      run: |
+        gh issue comment "$ISSUE_URL" --body-file "$STEP_FILE"
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+        ISSUE_URL: ${{ inputs.issue-url }}
+        STEP_FILE: ${{ inputs.step-file }}
+
+    - name: Create comment - watching for progress
+      if: inputs.show-watching-for-progress == 'true'
+      shell: bash
+      run: |
+        gh issue comment "$ISSUE_URL" --body-file exercise-toolkit/markdown-templates/step-feedback/watching-for-progress.md
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+        ISSUE_URL: ${{ inputs.issue-url }}
+
+    - name: Disable workflow
+      if: inputs.workflow-to-disable != ''
+      shell: bash
+      run: |
+        gh workflow disable "$WORKFLOW_NAME"
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+        WORKFLOW_NAME: ${{ inputs.workflow-to-disable }}
+
+    - name: Enable workflow
+      if: inputs.workflow-to-enable != ''
+      shell: bash
+      run: |
+        gh workflow enable "$WORKFLOW_NAME"
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+        WORKFLOW_NAME: ${{ inputs.workflow-to-enable }}
