@@ -4,23 +4,17 @@ on:
   push:
     branches:
       - main
-<<<<<<< HEAD
   workflow_dispatch:
-=======
->>>>>>> origin/main
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-<<<<<<< HEAD
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
-=======
->>>>>>> origin/main
 jobs:
   deploy:
     environment:
@@ -30,26 +24,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-<<<<<<< HEAD
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        with:
+          enablement: true
 
-=======
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
->>>>>>> origin/main
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
-<<<<<<< HEAD
 
-=======
-
->>>>>>> origin/main
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
