@@ -84,7 +84,11 @@
     <section id="home" class="relative pt-48 pb-32 px-4 overflow-hidden">
         <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-google-blue/10 rounded-full blur-[120px] -z-10"></div>
         <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-google-red/10 rounded-full blur-[120px] -z-10"></div>
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> origin/main
         <div class="max-w-4xl mx-auto text-center opacity-0 animate-up">
             <h2 id="hero-role" class="text-google-blue font-semibold tracking-widest uppercase mb-4 text-sm tracking-[0.2em]">Edge AI Practitioner</h2>
             <h1 id="hero-tagline" class="text-6xl md:text-8xl font-bold mb-8 tracking-tight leading-tight">Quiet. Pragmatic.<br><span class="gradient-text font-extrabold">Engineering Excellence.</span></h1>
@@ -168,6 +172,7 @@
 
     <script type="module">
         import translations from './src/scripts/translations.js';
+<<<<<<< HEAD
 
         let currentLang = 'zh';
         const btn = document.getElementById('langSwitch');
@@ -175,6 +180,15 @@
         function updateContent() {
             const t = translations[currentLang];
 
+=======
+
+        let currentLang = 'zh';
+        const btn = document.getElementById('langSwitch');
+
+        function updateContent() {
+            const t = translations[currentLang];
+
+>>>>>>> origin/main
             // Nav
             document.getElementById('nav-home').innerText = t.nav.home;
             document.getElementById('nav-achievements').innerText = t.nav.achievements;
@@ -190,7 +204,11 @@
             document.getElementById('achieve-title').innerText = t.achievements.title;
             document.getElementById('achieve-badges').innerText = t.achievements.googleBadges;
             document.getElementById('achieve-awards').innerText = t.achievements.awards;
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> origin/main
             const awardList = document.getElementById('award-list');
             awardList.innerHTML = t.achievements.awardList.map(a => `
                 <li class="flex items-start">

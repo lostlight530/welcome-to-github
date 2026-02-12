@@ -8,7 +8,11 @@ Welcome to the digital portal of lostlight, an Edge AI practitioner focusing on 
 
 Experience the high-end, highly-engineered annual review website:
 
+<<<<<<< HEAD
 👉 **[lostlight.github.io/welcome-to-github](https://lostlight530.github.io/welcome-to-github/)**
+=======
+👉 **[lostlight.github.io/lostlight-portal](https://lostlight530.github.io/lostlight-portal/)**
+>>>>>>> origin/main
 
 ## 🏗️ Engineering Standards
 
