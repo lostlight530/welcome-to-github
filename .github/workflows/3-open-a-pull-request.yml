@@ -177,7 +177,7 @@ jobs:
 
       - name: Disable current workflow and enable next one
         run: |
-          gh workflow disable "3-open-a-pull-request.yml"
-          gh workflow enable "4-merge-your-pull-request.yml"
+          gh workflow disable "${{ github.workflow }}"
+          gh workflow enable "Step 4"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

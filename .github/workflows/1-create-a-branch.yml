@@ -99,7 +99,7 @@ jobs:
 
       - name: Disable current workflow and enable next one
         run: |
-          gh workflow disable "1-create-a-branch.yml"
-          gh workflow enable "2-commit-a-file.yml"
+          gh workflow disable "${{ github.workflow }}"
+          gh workflow enable "Step 2"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
