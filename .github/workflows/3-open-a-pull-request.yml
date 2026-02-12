@@ -60,6 +60,9 @@ jobs:
 
       - name: Check user work
         id: check-user-work
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_BODY: ${{ github.event.pull_request.body }}
         run: |
           # Checks to perform
           checks='{
@@ -76,13 +79,13 @@ jobs:
           }'
 
           # Check pull request title
-          if [ "${{ github.event.pull_request.title }}" != "Add my first file" ]; then
+          if [ "$PR_TITLE" != "Add my first file" ]; then
             checks=$(echo $checks | jq '.pr_title.passed = false')
             checks=$(echo $checks | jq '.pr_title.message = "Incorrect title"')
           fi
 
           # Check if a pull request description exists
-          if [ "${{ github.event.pull_request.body }}" == "" ]; then
+          if [ "$PR_BODY" == "" ]; then
             checks=$(echo $checks | jq '.pr_description.passed = false')
             checks=$(echo $checks | jq '.pr_description.message = "Empty pull request description"')
           fi
@@ -119,10 +122,11 @@ jobs:
       - name: Create comment - step results
         run: |
           gh issue comment "$ISSUE_URL" \
-            --body "${{ steps.build-message-step-results.outputs.updated-text }}" \
+            --body "$UPDATED_TEXT" \
             --edit-last
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          UPDATED_TEXT: ${{ steps.build-message-step-results.outputs.updated-text }}
 
       - name: Fail job if not all checks passed
         if: steps.check-user-work.outputs.passed == 'false'
@@ -139,9 +143,10 @@ jobs:
       - name: Update comment - step finished
         run: |
           gh issue comment "$ISSUE_URL" \
-            --body "${{ steps.build-message-step-finish.outputs.updated-text }}"
+            --body "$UPDATED_TEXT"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          UPDATED_TEXT: ${{ steps.build-message-step-finish.outputs.updated-text }}
 
   post_step_4_content:
     name: Post step 4 content
@@ -164,7 +169,7 @@ jobs:
       - name: Create comment - add step content
         run: |
           gh issue comment "$ISSUE_URL" \
-            --body-file ${{ env.STEP_4_FILE }}
+            --body-file "$STEP_4_FILE"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
