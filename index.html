@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lostlight | 2025-2026 Year in Review</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'google-blue': '#4285F4',
+                        'google-red': '#EA4335',
+                        'google-yellow': '#FBBC05',
+                        'google-green': '#34A853',
+                        'dark-bg': '#0B0F1A',
+                        'card-bg': '#161E2E',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0B0F1A;
+            color: #E5E7EB;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 30, 46, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #4285F4, #34A853, #FBBC05, #EA4335);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            border-color: #4285F4;
+            box-shadow: 0 10px 30px -10px rgba(66, 133, 244, 0.3);
+        }
+        @keyframes fade-in-up {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-up {
+            animation: fade-in-up 0.8s ease-out forwards;
+        }
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold tracking-tighter gradient-text">lostlight</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" id="nav-home" class="hover:text-google-blue px-3 py-2 transition-colors">Home</a>
+                        <a href="#achievements" id="nav-achievements" class="hover:text-google-green px-3 py-2 transition-colors">Achievements</a>
+                        <a href="#projects" id="nav-projects" class="hover:text-google-yellow px-3 py-2 transition-colors">Projects</a>
+                        <a href="#philosophy" id="nav-philosophy" class="hover:text-google-red px-3 py-2 transition-colors">Philosophy</a>
+                        <button id="langSwitch" class="ml-4 px-3 py-1 rounded-full border border-google-blue text-sm hover:bg-google-blue hover:text-white transition-all">EN / 中</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-48 pb-32 px-4 overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-google-blue/10 rounded-full blur-[120px] -z-10"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-google-red/10 rounded-full blur-[120px] -z-10"></div>
+
+        <div class="max-w-4xl mx-auto text-center opacity-0 animate-up">
+            <h2 id="hero-role" class="text-google-blue font-semibold tracking-widest uppercase mb-4 text-sm tracking-[0.2em]">Edge AI Practitioner</h2>
+            <h1 id="hero-tagline" class="text-6xl md:text-8xl font-bold mb-8 tracking-tight leading-tight">Quiet. Pragmatic.<br><span class="gradient-text font-extrabold">Engineering Excellence.</span></h1>
+            <p id="hero-desc" class="text-gray-400 text-lg md:text-2xl max-w-2xl mx-auto leading-relaxed opacity-0 animate-up delay-1">
+                Focusing on Python + AI, deeply involved in Google ecosystem and domestic AI architectures. Dedicated to readability, testability, and maintainability.
+            </p>
+        </div>
+    </section>
+
+    <!-- Achievement Section -->
+    <section id="achievements" class="py-24 bg-[#0F172A]/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 id="achieve-title" class="text-3xl md:text-4xl font-bold mb-16 text-center">2025 Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Google Badges Card -->
+                <div class="glass p-8 rounded-3xl border-google-blue/20">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-google-blue/20 rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-google-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 id="achieve-badges" class="text-2xl font-bold text-white">13 Google Developer Badges</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-google-blue/10 border border-google-blue/30 rounded-full text-xs text-google-blue font-medium">Gemini Enterprise Agent Ready</span>
+                        <span class="px-3 py-1 bg-google-green/10 border border-google-green/30 rounded-full text-xs text-google-green font-medium">Vertex AI Agent Builder</span>
+                        <span class="px-3 py-1 bg-google-yellow/10 border border-google-yellow/30 rounded-full text-xs text-google-yellow font-medium">Google Cloud Innovator</span>
+                        <span class="px-3 py-1 bg-google-red/10 border border-google-red/30 rounded-full text-xs text-google-red font-medium">Firebase Studio</span>
+                    </div>
+                    <p class="text-gray-500 text-xs italic">Intensive growth from Nov 2025 to Feb 2026</p>
+                </div>
+                <!-- Awards Card -->
+                <div class="glass p-8 rounded-3xl border-google-yellow/20">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-google-yellow/20 rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-google-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z"></path></svg>
+                        </div>
+                        <h3 id="achieve-awards" class="text-2xl font-bold text-white">Major Awards</h3>
+                    </div>
+                    <ul id="award-list" class="space-y-3 text-gray-300">
+                        <!-- Filled by JS -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 id="projects-title" class="text-3xl md:text-4xl font-bold mb-16 text-center">Core Project Matrix</h2>
+            <div id="project-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="py-24 bg-dark-bg relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 bg-gradient-to-b from-transparent to-google-red/50"></div>
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 id="philosophy-title" class="text-3xl font-bold mb-8">Engineering Philosophy</h2>
+            <div class="glass p-10 rounded-3xl relative">
+                <div class="absolute -top-4 -left-4 text-6xl text-google-red/20 font-serif">“</div>
+                <p id="philosophy-content" class="text-xl text-gray-300 leading-relaxed italic">
+                    Avoiding hype, prioritizing depth. Advocating for DDD, automated testing, and configuration isolation.
+                </p>
+                <div class="absolute -bottom-10 -right-4 text-6xl text-google-red/20 font-serif">”</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center border-t border-gray-800/50 mt-10">
+        <div id="footer-greeting" class="mb-4 text-google-red font-semibold tracking-widest text-sm uppercase">Happy Chinese New Year 2026</div>
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="https://github.com/lostlight530" class="text-gray-500 hover:text-white transition-colors">GitHub</a>
+            <a href="docs/archaeology/MEMORIAL.md" class="text-gray-500 hover:text-white transition-colors">Memorial</a>
+        </div>
+        <p class="text-gray-600 text-sm">© 2026 lostlight | Designed for the Edge, Built for the Future</p>
+    </footer>
+
+    <script type="module">
+        import translations from './src/scripts/translations.js';
+
+        let currentLang = 'zh';
+        const btn = document.getElementById('langSwitch');
+
+        function updateContent() {
+            const t = translations[currentLang];
+
+            // Nav
+            document.getElementById('nav-home').innerText = t.nav.home;
+            document.getElementById('nav-achievements').innerText = t.nav.achievements;
+            document.getElementById('nav-projects').innerText = t.nav.projects;
+            document.getElementById('nav-philosophy').innerText = t.nav.philosophy;
+
+            // Hero
+            document.getElementById('hero-role').innerText = t.hero.role;
+            document.getElementById('hero-tagline').innerHTML = t.hero.tagline;
+            document.getElementById('hero-desc').innerText = t.hero.description;
+
+            // Achievements
+            document.getElementById('achieve-title').innerText = t.achievements.title;
+            document.getElementById('achieve-badges').innerText = t.achievements.googleBadges;
+            document.getElementById('achieve-awards').innerText = t.achievements.awards;
+
+            const awardList = document.getElementById('award-list');
+            awardList.innerHTML = t.achievements.awardList.map(a => `
+                <li class="flex items-start">
+                    <span class="mt-1.5 w-2 h-2 bg-google-yellow rounded-full mr-3 shrink-0"></span>
+                    <span class="text-sm md:text-base">${a}</span>
+                </li>
+            `).join('');
+
+            // Projects
+            document.getElementById('projects-title').innerText = t.projects.title;
+            const projectGrid = document.getElementById('project-grid');
+            projectGrid.innerHTML = t.projects.items.map(p => `
+                <div class="glass p-6 rounded-2xl border-white/5 project-card flex flex-col h-full">
+                    <h4 class="text-xl font-bold mb-3 text-white">${p.name}</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">${p.desc}</p>
+                    <div class="flex items-center text-[10px] font-mono tracking-wider text-google-blue uppercase opacity-80">
+                        <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        ${p.tech}
+                    </div>
+                </div>
+            `).join('');
+
+            // Philosophy
+            document.getElementById('philosophy-title').innerText = t.philosophy.title;
+            document.getElementById('philosophy-content').innerText = t.philosophy.content;
+
+            // Footer
+            document.getElementById('footer-greeting').innerText = t.footer.greeting;
+        }
+
+        btn.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'zh' : 'en';
+            updateContent();
+        });
+
+        // Initialize
+        updateContent();
+    </script>
+</body>
+</html>
