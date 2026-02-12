@@ -2,8 +2,7 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+The following versions of this project are currently being supported with security updates:
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -14,8 +13,15 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+If you find a security vulnerability, please **do not** open a public issue. This helps protect the community until a fix is released.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Instead, please report the vulnerability through **GitHub Private Vulnerability Reporting** by following these steps:
+1. Navigate to the [Security tab](../../security/advisories/new) of this repository.
+2. Click on "Report a vulnerability" to open a private advisory.
+
+### Our Commitment
+* **Acknowledgement**: We will acknowledge receipt of your report within 48 hours.
+* **Status Updates**: We will provide regular updates on the status of the investigation and any planned fixes.
+* **Public Disclosure**: Once a fix is verified and released, we will coordinate with you to publicly disclose the vulnerability.
+
+Thank you for helping keep this project secure!
