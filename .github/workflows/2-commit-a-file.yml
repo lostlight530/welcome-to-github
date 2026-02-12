@@ -60,13 +60,8 @@ jobs:
       - name: Verify PROFILE.md contains the expected welcome message
         run: |
           cd repository
-          if [ ! -f PROFILE.md ]; then
-            echo "PROFILE.md is missing" >&2
-            exit 1
-          fi
-
           if [ ! -s PROFILE.md ]; then
-            echo "PROFILE.md is empty" >&2
+            echo "PROFILE.md is missing or empty" >&2
             exit 1
           fi
 
