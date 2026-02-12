@@ -69,37 +69,16 @@ jobs:
     name: Post next step content
     needs: [find_exercise, check_step_work]
     runs-on: ubuntu-latest
-    env:
-      ISSUE_URL: ${{ needs.find_exercise.outputs.issue-url }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Get response templates
-        uses: actions/checkout@v4
+      - name: Post next step content
+        uses: ./.github/actions/next-step
         with:
-          repository: skills/exercise-toolkit
-          path: exercise-toolkit
-          ref: v0.1.0
-
-      - name: Create comment - add step content
-        run: |
-          gh issue comment "$ISSUE_URL" \
-            --body-file ${{ env.STEP_2_FILE }}
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create comment - watching for progress
-        run: |
-          gh issue comment "$ISSUE_URL" \
-            --body-file exercise-toolkit/markdown-templates/step-feedback/watching-for-progress.md
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Disable current workflow and enable next one
-        run: |
-          gh workflow disable "1-create-a-branch.yml"
-          gh workflow enable "2-commit-a-file.yml"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issue_url: ${{ needs.find_exercise.outputs.issue-url }}
+          step_file_path: ${{ env.STEP_2_FILE }}
+          current_workflow_file: "1-create-a-branch.yml"
+          next_workflow_file_or_name: "2-commit-a-file.yml"
+          gh_token: ${{ secrets.GITHUB_TOKEN }}

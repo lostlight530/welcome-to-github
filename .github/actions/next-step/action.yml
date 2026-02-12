@@ -1,0 +1,73 @@
+name: "Next Step"
+description: "Posts the next step content to the issue and manages workflows"
+inputs:
+  issue_url:
+    description: "The URL of the issue to comment on"
+    required: true
+  step_file_path:
+    description: "The path to the file containing the next step content"
+    required: true
+  show_watching_for_progress:
+    description: "Whether to show the 'watching for progress' comment"
+    required: false
+    default: "true"
+  current_workflow_file:
+    description: "The filename or name of the current workflow to disable"
+    required: false
+    default: ""
+  next_workflow_file_or_name:
+    description: "The filename or name of the next workflow to enable"
+    required: false
+    default: ""
+  gh_token:
+    description: "GitHub Token"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Get response templates
+      if: inputs.show_watching_for_progress == 'true'
+      uses: actions/checkout@v4
+      with:
+        repository: skills/exercise-toolkit
+        path: exercise-toolkit
+        ref: v0.1.0
+
+    - name: Create comment - add step content
+      run: |
+        gh issue comment "$ISSUE_URL" \
+          --body-file "$STEP_FILE_PATH"
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.gh_token }}
+        ISSUE_URL: ${{ inputs.issue_url }}
+        STEP_FILE_PATH: ${{ inputs.step_file_path }}
+
+    - name: Create comment - watching for progress
+      if: inputs.show_watching_for_progress == 'true'
+      run: |
+        gh issue comment "$ISSUE_URL" \
+          --body-file exercise-toolkit/markdown-templates/step-feedback/watching-for-progress.md
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.gh_token }}
+        ISSUE_URL: ${{ inputs.issue_url }}
+
+    - name: Disable current workflow
+      if: inputs.current_workflow_file != ''
+      run: |
+        gh workflow disable "$CURRENT_WORKFLOW"
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.gh_token }}
+        CURRENT_WORKFLOW: ${{ inputs.current_workflow_file }}
+
+    - name: Enable next workflow
+      if: inputs.next_workflow_file_or_name != ''
+      run: |
+        gh workflow enable "$NEXT_WORKFLOW"
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.gh_token }}
+        NEXT_WORKFLOW: ${{ inputs.next_workflow_file_or_name }}
