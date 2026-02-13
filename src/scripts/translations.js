@@ -10,7 +10,7 @@ const translations = {
         hero: {
             role: "端侧 AI 实践者",
             tagline: "低调 务实 <br><span class='gradient-text'>极致工程化 </span>",
-            description: "专注 Python + AI，深耕 Google 生态与国产 AI 架构。追求代码的可读性、可测性与可维护性"
+            description: "专注 Python + AI，深耕 Google 生态与国产 AI 架构，追求代码的可读性、可测性与可维护性"
         },
         achievements: {
             title: "2025 荣耀时刻",
@@ -38,14 +38,14 @@ const translations = {
                 },
                 {
                     name: "ClassVision 分布式系统",
-                    desc: "FastAPI + YOLOv8 驱动的课堂诊断平台。支持 Docker 容器化部署，具备完善的日志与监控逻辑。",
+                    desc: "FastAPI + YOLOv8 驱动的课堂诊断平台，支持 Docker 容器化部署，具备完善的日志与监控逻辑",
                     tech: "Docker / FastAPI / YOLOv8"
                 }
             ]
         },
         philosophy: {
             title: "工程化哲学",
-            content: "不追逐短期炒作（Hype），坚持技术深度。推崇 DDD 领域驱动设计、自动化测试与配置隔离。每一个 Commit 都是对“小而稳”承诺的践行。"
+            content: "不追逐短期炒作（Hype），坚持技术深度。推崇 DDD 领域驱动设计、自动化测试与配置隔离，每一个 Commit 都是对“小而稳”承诺的践行。"
         },
         footer: {
             greeting: "新春快乐 | Happy Chinese New Year 2026"
