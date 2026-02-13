@@ -9,8 +9,8 @@ const translations = {
         },
         hero: {
             role: "端侧 AI 实践者",
-            tagline: "低调。务实。<br><span class='gradient-text'>极致工程化。</span>",
-            description: "专注 Python + AI，深耕 Google 生态与国产 AI 架构。追求代码的可读性、可测性与可维护性。"
+            tagline: "低调 务实 <br><span class='gradient-text'>极致工程化 </span>",
+            description: "专注 Python + AI，深耕 Google 生态与国产 AI 架构。追求代码的可读性、可测性与可维护性"
         },
         achievements: {
             title: "2025 荣耀时刻",
