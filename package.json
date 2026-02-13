@@ -1,0 +1,16 @@
+{
+  "name": "lostlight-portal",
+  "version": "1.0.0",
+  "description": "Lostlight Personal Portal - Engineering Excellence Edition",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/styles/main.css -o ./public/assets/main.css --minify",
+    "watch": "npx tailwindcss -i ./src/styles/main.css -o ./public/assets/main.css --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35"
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOSTLIGHT | Project 0</title>
+    <link rel="stylesheet" href="./public/assets/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        [v-cloak] { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="scanline"></div>
+
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 w-full z-50 bg-tech-black/80 backdrop-blur-md border-b border-machine-grey/20">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between h-14 items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-2 h-2 bg-laser-blue animate-pulse"></div>
+                <span id="brand" class="font-mono font-bold tracking-widest text-white text-sm">LOSTLIGHT</span>
+                <span class="text-[9px] px-1.5 py-0.5 border border-machine-grey/50 text-machine-grey font-mono" id="sys-status">LOADING...</span>
+            </div>
+            <nav class="hidden md:flex items-center">
+                <a href="#home" class="nav-link active"></a>
+                <a href="#capability" class="nav-link"></a>
+                <a href="#matrix" class="nav-link"></a>
+                <a href="#philosophy" class="nav-link"></a>
+                <button id="langSwitch" class="ml-6 px-3 py-0.5 border border-laser-blue/50 text-laser-blue font-mono text-[10px] hover:bg-laser-blue hover:text-tech-black transition-all uppercase">CN/EN</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="relative">
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex flex-col justify-center px-6 pt-14">
+            <div class="max-w-7xl mx-auto w-full">
+                <div class="max-w-3xl">
+                    <h2 id="hero-title" class="font-mono text-laser-blue text-xs tracking-[0.4em] uppercase mb-4"></h2>
+                    <h1 id="hero-subtitle" class="text-5xl md:text-7xl font-bold text-white leading-tight mb-8"></h1>
+                    <p id="hero-desc" class="text-gray-500 text-sm md:text-base leading-relaxed max-w-xl mb-12 border-l-2 border-machine-grey/30 pl-6"></p>
+
+                    <!-- Stats Grid -->
+                    <div id="stats-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Decor -->
+            <div class="absolute right-0 bottom-20 opacity-10 hidden lg:block pointer-events-none">
+                <pre class="font-mono text-[10px] leading-tight text-laser-blue">
+      0101010101010101
+    01                01
+   01   LOSTLIGHT_0    01
+  01     ENGINEERING    01
+   01   2025-2026      01
+    01                01
+      0101010101010101
+                </pre>
+            </div>
+        </section>
+
+        <!-- Capabilities (Dual Engine) -->
+        <section id="capability" class="py-32 px-6 border-y border-machine-grey/10">
+            <div class="max-w-7xl mx-auto">
+                <h3 id="engine-title" class="font-mono text-[10px] tracking-widest text-gray-500 uppercase mb-12"></h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div id="google-engine" class="tech-border p-8 bg-tech-surface/30"></div>
+                    <div id="domestic-engine" class="tech-border p-8 bg-tech-surface/30"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Matrix -->
+        <section id="matrix" class="py-32 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex items-center justify-between mb-16">
+                    <h3 id="projects-title" class="font-mono text-[10px] tracking-widest text-gray-500 uppercase"></h3>
+                    <div class="h-px flex-grow mx-8 bg-machine-grey/20"></div>
+                </div>
+                <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy -->
+        <section id="philosophy" class="py-32 px-6 bg-tech-surface/20">
+            <div class="max-w-3xl mx-auto text-center">
+                <h3 id="philosophy-title" class="font-mono text-[10px] tracking-widest text-gray-500 uppercase mb-8"></h3>
+                <div class="relative inline-block">
+                    <p id="philosophy-content" class="text-lg md:text-xl text-white italic font-light leading-relaxed"></p>
+                    <div class="absolute -top-6 -left-6 w-4 h-4 border-t border-l border-signal-orange"></div>
+                    <div class="absolute -bottom-6 -right-6 w-4 h-4 border-b border-r border-signal-orange"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 border-t border-machine-grey/10 text-center">
+        <p id="footer-text" class="font-mono text-[10px] text-gray-600 uppercase tracking-widest"></p>
+        <div class="mt-4 flex justify-center space-x-4">
+            <a href="https://github.com/lostlight530" class="text-machine-grey hover:text-laser-blue transition-colors">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+        </div>
+    </footer>
+
+    <script type="module" src="./src/scripts/main.js"></script>
+</body>
+</html>
