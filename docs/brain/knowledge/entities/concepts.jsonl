@@ -1,0 +1,1 @@
+{"id": "tool_use", "type": "concept", "name": "Tool Use", "desc": "The ability of an AI agent to invoke external functions or APIs.", "tags": ["agent", "capability"], "updated_at": "2026-02-15T08:52:29.537227"}
