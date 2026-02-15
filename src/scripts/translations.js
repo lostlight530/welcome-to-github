@@ -8,9 +8,9 @@ const translations = {
             philosophy: "工程哲学"
         },
         hero: {
-            role: "端侧 AI 实践者",
-            tagline: "低调。务实。<br><span class='gradient-text'>极致工程化。</span>",
-            description: "专注 Python + AI，深耕 Google 生态与国产 AI 架构。追求代码的可读性、可测性与可维护性。"
+            role: "端侧 AI 开发者 | Early Career",
+            tagline: "低调 务实 <br><span class='gradient-text'>极致工程化</span>",
+            description: "专注端侧 AI 生态集成与极致工程化，深耕 Google Vertex AI、MediaPipe 与华为昇腾生态，在“混乱-重整-收敛”中打磨可落地、可产品化的精密工具"
         },
         achievements: {
             title: "2025 荣耀时刻",
@@ -20,35 +20,51 @@ const translations = {
                 "华为 ICT 大赛中国总决赛二等奖",
                 "昇思 MindSpore 创新训练营二等奖",
                 "蓝桥杯智能体开发省赛三等奖",
-                "金砖国家技能大赛鸿蒙赛道晋级"
+                "金砖国家技能大赛鸿蒙赛道晋级",
+                "生产环境资产：20+ Repositories"
             ]
         },
         projects: {
             title: "核心项目矩阵",
             items: [
                 {
-                    name: "MediaPipe Tasks AI 助手",
-                    desc: "基于 Android + MediaPipe 的端侧健身/手指操纠错助手。采用状态机逻辑，实现低延迟、高精度的姿态识别。",
-                    tech: "Android / MediaPipe / Kotlin"
+                    name: "MediaPipe Engine AI",
+                    desc: "针对端侧算力的实时健身纠错引擎，采用 FSM 状态机解耦复杂动作序列，通过 MediaPipe 提取拓扑关键点，实现亚秒级异常判定与反馈",
+                    tech: "Android / Kotlin / FSM"
                 },
                 {
-                    name: "消防面板视觉检测",
-                    desc: "针对 128 键复杂面板的高精度算法。结合仿射变换与 RANSAC，解决极端畸变与光影问题。",
-                    tech: "OpenCV / Python / RANSAC"
+                    name: "Fire Panel Perception",
+                    desc: "工业级高精度视觉解算算法，针对极端透视畸变，通过 RANSAC 鲁棒投影与网格重建，实现全自动物理坐标映射与 128 点状态诊断",
+                    tech: "OpenCV / RANSAC / Python"
                 },
                 {
-                    name: "ClassVision 分布式系统",
-                    desc: "FastAPI + YOLOv8 驱动的课堂诊断平台。支持 Docker 容器化部署，具备完善的日志与监控逻辑。",
-                    tech: "Docker / FastAPI / YOLOv8"
+                    name: "ClassVision Distributed",
+                    desc: "容器化大规模行为感知平台，利用消息队列解耦端云算力，支持千级并发处理，提供毫秒级动态反馈与多维情感评估指标",
+                    tech: "YOLOv5 / Redis / Docker"
+                },
+                {
+                    name: "Tiezhitong Agent v0",
+                    desc: "基于语义驱动的枢纽控制助手，通过指令集解耦与工具动态挂载，实现多源异构数据的收敛查询。符合 MCP 协议早期的语义闭环模型",
+                    tech: "MCP / Semantic Kernel / Python"
+                },
+                {
+                    name: "CifarLab SOTA Trainer",
+                    desc: "模块化深度学习训练框架，集成余弦退火、16位混合精度及 AMP 技术，支持 YAML 语义化定义架构，支撑从 ResNet 到 SOTA 的快速验证",
+                    tech: "PyTorch / Mixed Precision"
+                },
+                {
+                    name: "Persona LLM Interface",
+                    desc: "端侧大语言模型轻量化方案，采用 Int4 量化提升推理吞吐量，集成上下文流式管理，在受限算力环境下寻求生成质量与速度的最优解",
+                    tech: "Qwen / Gradio / Int4"
                 }
             ]
         },
         philosophy: {
-            title: "工程化哲学",
-            content: "不追逐短期炒作（Hype），坚持技术深度。推崇 DDD 领域驱动设计、自动化测试与配置隔离。每一个 Commit 都是对“小而稳”承诺的践行。"
+            title: "工程哲学",
+            content: "“小而稳”高于“大而乱”，每一项 Skill 都是一次经验的闭环封装。在“静”中寻求技术的收敛，在“笃”中完成工具的进化，拒绝追逐短期热度，坚持构建可复用的精密架构"
         },
         footer: {
-            greeting: "新春快乐 | Happy Chinese New Year 2026"
+            greeting: "© 2026 LOSTLIGHT | 记录每一次工程自觉"
         }
     },
     en: {
@@ -60,9 +76,9 @@ const translations = {
             philosophy: "Philosophy"
         },
         hero: {
-            role: "Edge AI Practitioner",
-            tagline: "Quiet. Pragmatic.<br><span class='gradient-text'>Engineering Excellence.</span>",
-            description: "Focusing on Python + AI, deeply involved in Google ecosystem and domestic AI architectures. Dedicated to readability, testability, and maintainability."
+            role: "Edge AI Developer | Early Career",
+            tagline: "Quietly tinkering with <br><span class='gradient-text'>Python + AI.</span>",
+            description: "Focusing on Edge AI integration and engineering excellence. Deeply experienced in Google Vertex AI, MediaPipe, and Huawei/Ascend architectures. Refining chaotic ideas into product-ready, resilient instruments."
         },
         achievements: {
             title: "2025 Highlights",
@@ -72,35 +88,51 @@ const translations = {
                 "2nd Prize, Huawei ICT Competition China Finals",
                 "2nd Prize, MindSpore Innovation Bootcamp",
                 "3rd Prize, Lanqiao Cup AI Agent Development",
-                "Finalist, BRICS Skills HarmonyOS Track"
+                "Finalist, BRICS Skills HarmonyOS Track",
+                "Production Assets: 20+ Repositories" // New
             ]
         },
         projects: {
             title: "Project Matrix",
             items: [
                 {
-                    name: "MediaPipe Tasks AI",
-                    desc: "Edge-based fitness/hand exercise assistant using Android & MediaPipe. Features state-machine logic for low-latency posture correction.",
-                    tech: "Android / MediaPipe / Kotlin"
+                    name: "MediaPipe Engine AI",
+                    desc: "Edge-based fitness validation system using FSM for action tracking. Sub-second keypoint detection optimized for senior care interaction.",
+                    tech: "Android / Kotlin / FSM"
                 },
                 {
-                    name: "Fire Panel Vision Detection",
-                    desc: "High-precision algorithm for 128-key panels. Combines Affine Transform & RANSAC to handle extreme distortion and glare.",
-                    tech: "OpenCV / Python / RANSAC"
+                    name: "Fire Panel Vision",
+                    desc: "Industrial-grade algorithm for 128-key panel detection. Utilizes RANSAC for grid reconstruction under extreme perspective distortion.",
+                    tech: "OpenCV / RANSAC / Python"
                 },
                 {
-                    name: "ClassVision Distributed System",
-                    desc: "FastAPI + YOLOv8 driven diagnostic platform. Supports Docker orchestration with robust logging and monitoring.",
-                    tech: "Docker / FastAPI / YOLOv8"
+                    name: "ClassVision System",
+                    desc: "Distributed education diagnostic platform using message queues for compute decoupling and large-scale behavior sensing.",
+                    tech: "YOLOv5 / Docker / Redis"
+                },
+                {
+                    name: "Tiezhitong Agent",
+                    desc: "Semantic-driven railway agent featuring instruction decoupling and dynamic tool mounting. Prototype implementation of MCP protocol.",
+                    tech: "MCP / Semantic Kernel / Python"
+                },
+                {
+                    name: "CifarLab Trainer",
+                    desc: "Modular DL experimental platform with pre-integrated FP16 and Cosine Annealing practices. YAML-driven rapid architecture switching.",
+                    tech: "PyTorch / Mixed Precision / YAML"
+                },
+                {
+                    name: "Persona Chat Studio",
+                    desc: "Lightweight LLM interface with Int4 quantization for increased edge throughput, balancing memory usage and response quality.",
+                    tech: "Qwen / Gradio / Int4 Quant"
                 }
             ]
         },
         philosophy: {
             title: "Engineering Philosophy",
-            content: "Avoiding hype, prioritizing depth. Advocating for DDD, automated testing, and configuration isolation. Every commit is a practice of 'Small and Stable'."
+            content: "'Small and Stable' over 'Fast and Messy'. Every Skill is a closed experience encapsulation. Crafting precision in silence, refusing Hype, building for the future."
         },
         footer: {
-            greeting: "Happy Chinese New Year 2026"
+            greeting: "© 2026 LOSTLIGHT | Engineering Excellence"
         }
     }
 };
