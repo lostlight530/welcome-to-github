@@ -1,4 +1,4 @@
 {"id": "python", "type": "tech", "name": "Python", "desc": "Primary language for AI/ML and scripting.", "tags": ["lang", "backend"], "updated_at": "2026-02-14"}
 {"id": "vertex-ai", "type": "tech", "name": "Google Vertex AI", "desc": "Unified AI platform on Google Cloud.", "tags": ["cloud", "ml-ops"], "updated_at": "2026-02-14"}
 {"id": "mediapipe", "type": "tech", "name": "MediaPipe", "desc": "Cross-platform framework for building multimodal ML pipelines.", "tags": ["edge-ai", "vision"], "updated_at": "2026-02-14"}
-{"id": "mcp", "type": "protocol", "name": "Model Context Protocol", "desc": "Standard for connecting AI models to external data and tools.", "tags": ["standard", "agent"], "updated_at": "2026-02-14"}
+{"id": "mcp", "type": "concept", "name": "MCP (Model Context Protocol)", "desc": "模型上下文协议。一种用于连接 AI 模型与外部数据源/工具的标准通信协议，打破应用孤岛的底层基建。", "tags": ["protocol", "standard", "infrastructure"], "updated_at": "2026-02-15"}
