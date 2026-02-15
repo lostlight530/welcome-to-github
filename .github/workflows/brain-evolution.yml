@@ -1,0 +1,27 @@
+name: Brain Evolution Protocol
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  daily-evolution:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Execute Cortex OODA Loop
+        run: |
+          python docs/brain/nexus.py clean
+          python docs/brain/nexus.py evolve
