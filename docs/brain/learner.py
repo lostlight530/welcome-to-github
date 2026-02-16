@@ -1,107 +1,112 @@
-import json
 import os
-import glob
-from dataclasses import dataclass, field
-from typing import Dict, List, Optional
+import ast
+import json
+import random
+import urllib.request
+from datetime import datetime
 
-@dataclass
-class Entity:
-    id: str
-    type: str
-    name: str
-    desc: str
-    tags: List[str] = field(default_factory=list)
-    updated_at: str = ""
-
-@dataclass
-class Relation:
-    src: str
-    rel: str
-    dst: str
-    context: str = ""
-    created_at: str = ""
-
-class KnowledgeGraph:
+class StaticThinker:
     def __init__(self, root_dir: str):
         self.root_dir = root_dir
-        self.entities: Dict[str, Entity] = {}
-        self.relations: List[Relation] = []
+        self.config_path = os.path.join(root_dir, "docs/brain/brain_config.json")
+        self.memories_dir = os.path.join(root_dir, "docs/brain/memories")
+        self.config = self._load_config()
 
-    def load_graph(self):
-        """
-        Parses all .jsonl files in knowledge/entities and knowledge/relations.
-        Builds the in-memory graph structure.
-        """
-        print(f"[Brain] Loading knowledge from {self.root_dir}...")
+    def _load_config(self):
+        with open(self.config_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
 
-        # 1. Load Entities
-        entity_path = os.path.join(self.root_dir, "knowledge", "entities", "**", "*.jsonl")
-        for filepath in glob.glob(entity_path, recursive=True):
-            print(f"  - Parsing entities: {filepath}")
-            with open(filepath, 'r') as f:
-                for line in f:
-                    if not line.strip(): continue
+    def micro_ast_audit(self):
+        """微观自省：解析自身源码结构"""
+        print("[Thinker] 🔬 执行 AST 静态自省...")
+        audit_results = []
+        brain_path = os.path.join(self.root_dir, "docs/brain")
+
+        for filename in sorted(os.listdir(brain_path)):
+            if filename.endswith(".py"):
+                path = os.path.join(brain_path, filename)
+                with open(path, "r", encoding="utf-8") as f:
                     try:
-                        data = json.loads(line)
-                        # Basic validation
-                        if 'id' in data:
-                            self.entities[data['id']] = Entity(**data)
-                    except json.JSONDecodeError as e:
-                        print(f"    ! Error parsing line: {e}")
+                        tree = ast.parse(f.read())
+                        classes = [node.name for node in ast.walk(tree) if isinstance(node, ast.ClassDef)]
+                        methods = [node.name for node in ast.walk(tree) if isinstance(node, ast.FunctionDef)]
+                        audit_results.append(f"- **{filename}**: Classes={len(classes)} ({', '.join(classes)}), Functions={len(methods)}")
+                    except Exception as e:
+                        audit_results.append(f"- **{filename}**: AST Parse Error ({e})")
 
-        # 2. Load Relations
-        rel_path = os.path.join(self.root_dir, "knowledge", "relations", "*.jsonl")
-        for filepath in glob.glob(rel_path):
-            print(f"  - Parsing relations: {filepath}")
-            with open(filepath, 'r') as f:
-                for line in f:
-                    if not line.strip(): continue
-                    try:
-                        data = json.loads(line)
-                        if 'src' in data and 'dst' in data:
-                            self.relations.append(Relation(**data))
-                    except json.JSONDecodeError as e:
-                        print(f"    ! Error parsing line: {e}")
+        return "\n".join(audit_results)
 
-        print(f"[Brain] Loaded {len(self.entities)} entities and {len(self.relations)} relations.")
+    def macro_architecture_study(self):
+        """宏观学习：从白名单随机抽取大厂架构进行沉思"""
+        sources = self.config["whitelist"]
+        topics = list(sources.items())
+        random.shuffle(topics) # Shuffle to support retry logic
 
-    def query_entity(self, entity_id: str) -> Optional[Dict]:
-        """
-        Retrieves an entity and its direct connections (both outgoing and incoming).
-        Returns a structured dictionary or None if not found.
-        """
-        if entity_id not in self.entities:
-            print(f"[Brain] Entity '{entity_id}' not found.")
-            return None
+        # Retry loop: Try up to 3 different sources
+        for attempt in range(3):
+            if not topics:
+                break
 
-        entity = self.entities[entity_id]
+            topic, url = topics.pop()
+            print(f"[Thinker] 🔭 今日课题 (Attempt {attempt+1}): {topic}")
 
-        # Find related edges
-        outgoing = [r for r in self.relations if r.src == entity_id]
-        incoming = [r for r in self.relations if r.dst == entity_id]
+            try:
+                req = urllib.request.Request(url, headers={'User-Agent': 'NEXUS-CORTEX-Scholar'})
+                with urllib.request.urlopen(req) as response:
+                    content = response.read().decode('utf-8')[:self.config["settings"]["max_read_length"]]
 
-        result = {
-            "node": entity.__dict__,
-            "connections": {
-                "outgoing": [
-                    {"rel": r.rel, "target": r.dst, "context": r.context}
-                    for r in outgoing
-                ],
-                "incoming": [
-                    {"rel": r.rel, "source": r.src, "context": r.context}
-                    for r in incoming
-                ]
-            }
-        }
-        return result
+                # Success!
+                insight = self._mock_llm_logic(topic, content)
+                return topic, url, insight
+            except Exception as e:
+                print(f"[Thinker] ⚠️ 抓取失败 ({topic}): {e}")
+                continue # Try next topic
 
-# Example Usage
+        print("[Thinker] ❌ 所有尝试均失败。")
+        return None, None, None
+
+    def _mock_llm_logic(self, topic, content):
+        """模拟架构师思维提取逻辑"""
+        # Simple keyword extraction to make it dynamic
+        keywords = []
+        if "interface" in content.lower(): keywords.append("Interface Design")
+        if "async" in content.lower(): keywords.append("Asynchronous Patterns")
+        if "immutable" in content.lower(): keywords.append("Immutability")
+        if "layer" in content.lower(): keywords.append("Layered Architecture")
+
+        keyword_str = ", ".join(keywords) if keywords else "General Architecture"
+
+        return f"### 🏛️ {topic} 架构洞察\n- **核心模式**: {keyword_str}\n- **设计哲学**: 极致解耦与确定性状态机。\n- **端侧启示**: 保持无状态设计，利用不可变数据结构。"
+
+    def commit_insight(self):
+        """将今日沉思固化为物理记忆"""
+        today = datetime.now().strftime("%Y-%m-%d")
+        ast_report = self.micro_ast_audit()
+        topic, url, insight = self.macro_architecture_study()
+
+        if topic:
+            filename = f"learning-record-{today}.md"
+            filepath = os.path.join(self.memories_dir, filename)
+
+            content = [
+                f"# 🧠 NEXUS CORTEX: 每日架构沉思",
+                f"> 日期: {today} | 课题: {topic} | [数据源]({url})",
+                "",
+                "## 🔍 内部 AST 自省 (Internal Audit)",
+                ast_report,
+                "",
+                "## 🏗️ 外部架构感悟 (External Insight)",
+                insight,
+                "",
+                "---",
+                "*Self-Evolution recorded by Static Thinker.*"
+            ]
+
+            with open(filepath, "w", encoding="utf-8") as f:
+                f.write("\n".join(content))
+            print(f"[Thinker] 沉思录已保存: {filepath}")
+
 if __name__ == "__main__":
-    brain = KnowledgeGraph("docs/brain")
-    brain.load_graph()
-
-    # Query 'mcp'
-    result = brain.query_entity("mcp")
-    if result:
-        print("\n--- Query Result: MCP ---")
-        print(json.dumps(result, indent=2, ensure_ascii=False))
+    # Assume running from repo root
+    thinker = StaticThinker(root_dir=".")
+    thinker.commit_insight()
