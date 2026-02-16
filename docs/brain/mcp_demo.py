@@ -4,6 +4,8 @@ import json
 import re
 from dataclasses import asdict
 from typing import List, Optional
+from datetime import datetime
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 from mcp.server.fastmcp import FastMCP
 
 # Ensure we can import existing brain modules
@@ -59,6 +61,23 @@ def get_entropy_report() -> str:
     return get_entropy_stats()
 
 @mcp.tool()
+def get_current_time(timezone_name: str = "UTC") -> str:
+    """
+    Returns the current time in the specified timezone (default: UTC).
+    Format: ISO 8601 (YYYY-MM-DDTHH:MM:SS.mmmmmm+HH:MM).
+    返回指定时区的当前时间（默认为 UTC）。格式：ISO 8601。
+    """
+    try:
+        tz = ZoneInfo(timezone_name)
+    except ZoneInfoNotFoundError:
+        return f"Error: Timezone '{timezone_name}' not found. Please provide a valid IANA timezone name (e.g., 'UTC', 'Asia/Shanghai', 'America/New_York')."
+    except Exception as e:
+        return f"Error: Invalid timezone '{timezone_name}'. {str(e)}"
+
+    now = datetime.now(tz)
+    return now.isoformat()
+
+@mcp.tool()
 def add_entity(category: str, id: str, type: str, name: str, desc: str, tags: Optional[List[str]] = None) -> str:
     """
     Safely adds a new entity to the knowledge graph.
@@ -76,7 +95,6 @@ def add_entity(category: str, id: str, type: str, name: str, desc: str, tags: Op
         raise ValueError(f"Integrity Violation: Entity '{id}' already exists. Modification is forbidden.")
 
     # 3. Execution (执行)
-    from datetime import datetime
     data = {
         "id": id,
         "type": type,
@@ -119,7 +137,6 @@ def connect_entities(src: str, rel: str, dst: str, context: str = "") -> str:
         "created_at": None # Factory handles this? factory.add_relation calls Relation(**data).
         # Relation has created_at default "".
     }
-    from datetime import datetime
     data["created_at"] = datetime.now().isoformat()
 
     try:
