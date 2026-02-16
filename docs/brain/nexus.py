@@ -13,7 +13,6 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from cortex import Cortex
 from factory import KnowledgeFactory
 from evolution import Evolver
-from learner import DeterministicScholar
 
 def clean_cache(root_dir: str):
     """
@@ -82,10 +81,6 @@ def main():
     # 7. Clean
     clean_parser = subparsers.add_parser("clean", help="Clear cache and temporary files (清除缓存和临时文件)")
 
-    # 8. Learn
-    learn_parser = subparsers.add_parser("learn", help="Trigger specific learning task (触发特定学习任务)")
-    learn_parser.add_argument("topic", help="Topic key (e.g. 'Anthropic-MCP')")
-
     args = parser.parse_args()
 
     # Initialize Core Components
@@ -131,10 +126,6 @@ def main():
 
     elif args.command == "clean":
         clean_cache(root)
-
-    elif args.command == "learn":
-        scholar = DeterministicScholar(root)
-        scholar.run_daily_contemplation(manual_topic=args.topic)
 
     elif args.command == "connect":
         try:

@@ -1,5 +1,1 @@
 {"id": "tool_use", "type": "concept", "name": "Tool Use", "desc": "The ability of an AI agent to invoke external functions or APIs.", "tags": ["agent", "capability"], "updated_at": "2026-02-15T08:52:29.537227"}
-{"id": "ai_agent", "type": "concept", "name": "AI Agent (智能体)", "desc": "具备自主观察、推理、调用工具并影响环境的闭环实体。不是简单的 Prompt 包装，而是拥有状态机 (FSM/OODA) 的数字生命。", "tags": ["agent", "fsm", "ooda"], "updated_at": "2026-02-15T12:39:58.367916"}
-{"id": "agent_skill", "type": "concept", "name": "Agent Skill (原子技能)", "desc": "Agent 能够调用的原子化、确定性函数或 API（如查天气、读文件、操作终端）。是智能体改变现实世界的“手与脚”。", "tags": ["capability", "tool"], "updated_at": "2026-02-15T12:40:05.149126"}
-{"id": "context_state", "type": "concept", "name": "Context State (上下文环境)", "desc": "Agent 在运行时能够感知的外部环境状态与历史记忆总和。是决定 Agent 决策质量的“工作台”。", "tags": ["environment", "memory"], "updated_at": "2026-02-15T12:40:08.440033"}
-{"id": "mcp-transformation", "type": "concept", "name": "MCP Transformation", "desc": "The evolution from CLI scripts to a Model Context Protocol Server.", "tags": ["architecture", "learning-record", "mcp"], "updated_at": "2026-02-15T13:44:39.017833"}
