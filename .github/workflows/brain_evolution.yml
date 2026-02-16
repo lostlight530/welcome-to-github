@@ -2,7 +2,7 @@ name: Brain Evolution
 
 on:
   schedule:
-    # Daily at 00:00 UTC (08:00 Beijing Time)
+    # Daily at 00:00 UTC (08:00 Beijing Time) - The Scholar's Morning Routine
     - cron: '0 0 * * *'
   workflow_dispatch:
 
@@ -27,6 +27,11 @@ jobs:
         run: |
           pip install requests
 
+      - name: Verify Environment (Debug)
+        run: |
+          python --version
+          pip freeze | grep requests
+
       - name: Run Harvester & Evolution (The OODA Loop)
         id: harvester
         run: |
@@ -38,9 +43,7 @@ jobs:
           echo "REPORT_PATH=docs/brain/intelligence/REPORT_$(date +'%Y-%m-%d').md" >> $GITHUB_ENV
 
       - name: Execute Scholar Morning Routine (Static Contemplation)
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python docs/brain/learner.py
+        run: python docs/brain/learner.py --root docs/brain
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
