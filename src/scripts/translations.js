@@ -43,7 +43,7 @@ const translations = {
                     tech: "YOLOv5 / Redis / Docker"
                 },
                 {
-                    name: "Tiezhitong Agent v0",
+                    name: "Tiezhitong Agent",
                     desc: "基于语义驱动的枢纽控制助手，通过指令集解耦与工具动态挂载，实现多源异构数据的收敛查询。符合 MCP 协议早期的语义闭环模型",
                     tech: "MCP / Semantic Kernel / Python"
                 },
