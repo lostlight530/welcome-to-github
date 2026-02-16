@@ -1,8 +1,10 @@
 import sys
 import os
 import shutil
+import json
+import glob
 from datetime import datetime
-from typing import List, Optional
+from typing import List, Dict, Any
 
 # Ensure imports work
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -16,6 +18,7 @@ class Evolver:
         self.factory = KnowledgeFactory(root_dir)
 
         self.memories_dir = os.path.join(root_dir, "memories")
+        self.inputs_dir = os.path.join(root_dir, "inputs")
         self.archive_dir = os.path.join(self.memories_dir, "archive")
         self.active_mission_path = os.path.join(self.memories_dir, "MISSION_ACTIVE.md")
 
@@ -25,94 +28,156 @@ class Evolver:
         """
         The main OODA loop.
         OODA 循环：观察、调整、决策、行动。
+        Observe (Observe External + Internal) -> Orient -> Decide -> Act
         """
         print("[Evolution] Starting Cognitive Cycle... (开始认知循环)")
 
-        # 1. Observe (观察)
+        # 1. Observe (观察：内外部双向感知)
         self.cortex.load_graph()
-        report = self.cortex.analyze_entropy()
+        internal_report = self.cortex.analyze_entropy()
+        external_risks = self._sniff_external_risks()
 
-        print(f"[Entropy] Density (密度): {report.density:.4f} | Orphans (孤岛): {len(report.orphan_nodes)} | Stale (陈旧): {len(report.stale_nodes)}")
+        print(f"[Entropy] Density (密度): {internal_report.density:.4f} | Orphans (孤岛): {len(internal_report.orphan_nodes)}")
+        print(f"[Intelligence] Detected {len(external_risks)} high-risk external signals. (探测到外部风险信号)")
 
         # 2. Orient (调整)
         if os.path.exists(self.active_mission_path):
-            print("[Evolution] Active mission found. Checking status... (发现活跃任务，检查状态)")
             self.archive_mission()
 
-        # 3. Decide & Act (决策与行动)
-        focus_areas = self._identify_focus_areas(report)
+        # 3. Decide & Act (决策与行动：优先级排序)
+        # 优先级：外部 BREAKING CHANGE (P0) > 内部孤岛节点 (P1) > 内部陈旧节点 (P2)
+        targets = self._identify_priority_targets(external_risks, internal_report)
 
-        if not focus_areas:
+        if not targets:
             print("[Evolution] System stable. No high-priority targets. (系统稳定，无高优先级目标)")
             self._create_maintenance_mission()
         else:
-            self._create_foraging_mission(focus_areas)
+            self._create_mission_report(targets)
 
-    def archive_mission(self):
-        """Moves active mission to archive with timestamp. (归档活跃任务)"""
-        if not os.path.exists(self.active_mission_path):
-            return
+    def _sniff_external_risks(self) -> List[Dict]:
+        """Scans the latest candidates.jsonl for BREAKING CHANGE signals."""
+        input_files = glob.glob(os.path.join(self.inputs_dir, "candidates_*.jsonl"))
+        if not input_files:
+            return []
 
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"MISSION_{timestamp}.md"
-        dest = os.path.join(self.archive_dir, filename)
+        # 获取最新的情报文件 (Get the most recent harvester output)
+        latest_file = max(input_files, key=os.path.getmtime)
+        risks = []
 
-        shutil.move(self.active_mission_path, dest)
-        print(f"[Evolution] Archived previous mission to {filename} (任务已归档)")
+        try:
+            with open(latest_file, 'r', encoding='utf-8') as f:
+                for line in f:
+                    data = json.loads(line)
+                    # 关键逻辑：嗅探破坏性变更 (Sniffing for BREAKING CHANGE)
+                    desc_upper = data.get("desc", "").upper()
+                    if "BREAKING CHANGE" in desc_upper:
+                        risks.append({
+                            "id": data.get("id"),
+                            "reason": "🚨 BREAKING CHANGE (破坏性更新)",
+                            "name": data.get("name"),
+                            "desc": data.get("desc"),
+                            "url": data.get("url"),
+                            "priority": "P0"
+                        })
+        except Exception as e:
+            print(f"[Error] Failed to sniff risks: {e}")
 
-    def _identify_focus_areas(self, report) -> List[str]:
-        """Selects top 3 priority nodes. (选择前 3 个优先级节点)"""
-        focus_areas = []
-        # Priority 1: Orphans
-        focus_areas.extend(report.orphan_nodes[:3])
-        # Priority 2: Stale
-        if len(focus_areas) < 3:
-            remaining = 3 - len(focus_areas)
-            focus_areas.extend(report.stale_nodes[:remaining])
+        return risks
 
-        return focus_areas
+    def _identify_priority_targets(self, external_risks: List[Dict], internal_report) -> List[Dict]:
+        """Merges external and internal triggers into a prioritized target list."""
+        final_targets = []
 
-    def _create_foraging_mission(self, focus_areas: List[str]):
-        """Writes a structured mission file. (生成任务简报)"""
-        print(f"[Evolution] Generating mission for targets: {focus_areas} (生成任务)")
+        # P0: External Risks (外部风险信号) - Max 3
+        final_targets.extend(external_risks[:3])
+
+        # P1: Internal Orphans (内部孤岛节点)
+        if len(final_targets) < 3:
+            needed = 3 - len(final_targets)
+            for eid in internal_report.orphan_nodes[:needed]:
+                entity = self.cortex.entities.get(eid)
+                final_targets.append({
+                    "id": eid,
+                    "reason": "🔍 Knowledge Gap (知识孤岛)",
+                    "name": entity.name if entity else eid,
+                    "desc": entity.desc if entity else "Missing context.",
+                    "priority": "P1"
+                })
+
+        # P2: Internal Stale Nodes (内部陈旧节点) - If space remains
+        if len(final_targets) < 3:
+             needed = 3 - len(final_targets)
+             for eid in internal_report.stale_nodes[:needed]:
+                 entity = self.cortex.entities.get(eid)
+                 # Avoid duplicates if node is both orphan and stale
+                 if any(t['id'] == eid for t in final_targets):
+                     continue
+                 final_targets.append({
+                    "id": eid,
+                    "reason": "🍂 Stale Knowledge (陈旧知识)",
+                    "name": entity.name if entity else eid,
+                    "desc": entity.desc if entity else "Needs review.",
+                    "priority": "P2"
+                 })
+
+        return final_targets
+
+    def _create_mission_report(self, targets: List[Dict]):
+        """Generates a bilingual, structured mission document."""
+        print(f"[Evolution] Generating mission for {len(targets)} priority targets.")
 
         content = [
             "# 🧠 NEXUS CORTEX: Active Mission (活跃任务)",
             f"> Generated (生成时间): {datetime.now().isoformat()}",
             "",
             "## 🎯 Objective (目标)",
-            "Close knowledge gaps identified by entropy analysis. (填补熵值分析发现的知识缺口。)",
+            "Execute defensive upgrades or bridge knowledge gaps. (执行防御性升级或填补知识缺口。)",
             "",
-            "## 🔍 Targets (目标节点)",
+            "## 📋 Targets (目标清单)"
         ]
 
-        for area in focus_areas:
-            entity = self.cortex.entities.get(area)
-            name = entity.name if entity else area
-            desc = entity.desc if entity else "No description available."
-            type_ = entity.type if entity else "unknown"
+        for i, t in enumerate(targets, 1):
+            priority_icon = "🔴" if t['priority'] == "P0" else "🟡" if t['priority'] == "P1" else "🟢"
+            content.append(f"### {i}. {priority_icon} {t['name']} (`{t['priority']}`)")
+            content.append(f"- **Trigger (触发原因)**: {t['reason']}")
+            content.append(f"- **Context (背景)**: {t['desc']}")
 
-            content.append(f"### 1. {name} (`{area}`)")
-            content.append(f"- **Type**: {type_}")
-            content.append(f"- **Context**: {desc}")
-            content.append("- **Task**: Search for recent developments, integration patterns, or code examples. (搜索最新进展、集成模式或代码示例。)")
-            content.append(f"- **Suggested Query**: `latest developments {name} {datetime.now().year}`")
+            if t.get('url'):
+                content.append(f"- **Reference (参考资料)**: [View on GitHub]({t['url']})")
+
+            action_item = "Audit API compatibility and update local schema." if t['priority'] == "P0" else \
+                          "Find connections to existing tech stack nodes." if t['priority'] == "P1" else \
+                          "Review entity for updates."
+
+            content.append(f"- **Action Item (行动项)**: {action_item}")
             content.append("")
 
-        content.append("## 📝 Ingestion Protocol (摄入协议)")
-        content.append("Run the following to ingest findings: (运行以下命令摄入发现：)")
-        content.append("```bash")
-        content.append(f"python docs/brain/nexus.py add entity --type concept --id <slug> --name \"<Name>\"")
-        content.append(f"python docs/brain/nexus.py connect <source_id> <relation> <target_id>")
-        content.append("```")
+        content.extend([
+            "## 📝 Ingestion Protocol (摄入协议)",
+            "Use standard MCP tools to commit new insights: (使用 MCP 工具提交洞察：)",
+            "```bash",
+            "python docs/brain/nexus.py add entity --id <id> --name \"<name>\"",
+            "python docs/brain/nexus.py connect <src> <rel> <dst>",
+            "```"
+        ])
 
-        with open(self.active_mission_path, "w") as f:
+        with open(self.active_mission_path, "w", encoding="utf-8") as f:
             f.write("\n".join(content))
+        print(f"[Evolution] Mission Brief finalized at {self.active_mission_path}")
 
-        print(f"[Evolution] Mission Brief written to {self.active_mission_path}")
+    def archive_mission(self):
+        """Archives previous mission files."""
+        if not os.path.exists(self.active_mission_path):
+            return
+
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"MISSION_{timestamp}.md"
+        dest = os.path.join(self.archive_dir, filename)
+        shutil.move(self.active_mission_path, dest)
+        print(f"[Evolution] Archived previous mission to {filename} (任务已归档)")
 
     def _create_maintenance_mission(self):
-        """Creates a generic exploration mission when no errors exist. (创建维护任务)"""
+        """Standard maintenance when no high-priority targets exist."""
         content = [
             "# 🧠 NEXUS CORTEX: Exploration Mission (探索任务)",
             f"> Generated (生成时间): {datetime.now().isoformat()}",
@@ -123,8 +188,11 @@ class Evolver:
             "## 🌌 Suggested Actions (建议行动)",
             "- Explore adjacent fields to existing `tech_stack` nodes. (探索现有技术栈节点的相邻领域。)",
             "- Review `inputs/` folder for unprocessed raw data. (审查 `inputs/` 文件夹中未处理的原始数据。)",
-            "- visualize the graph using `nexus visualize`. (使用 `nexus visualize` 可视化图谱。)"
+            "- Visualize the graph using `nexus visualize`. (使用 `nexus visualize` 可视化图谱。)"
         ]
-        with open(self.active_mission_path, "w") as f:
+        with open(self.active_mission_path, "w", encoding="utf-8") as f:
             f.write("\n".join(content))
         print(f"[Evolution] Maintenance Brief written to {self.active_mission_path}")
+
+if __name__ == "__main__":
+    Evolver("docs/brain").run_cycle()
