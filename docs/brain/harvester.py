@@ -13,7 +13,7 @@ OFFICIAL_REPOS = [
     "modelcontextprotocol/python-sdk",
     # Google / Edge AI
     "google-ai-edge/mediapipe",
-    "google-gemini/generative-ai-python",
+    "googleapis/python-genai",
     "google/jax",
     # Huawei / Ascend
     "mindspore-ai/mindspore",
@@ -173,9 +173,9 @@ class Harvester:
             if not update:
                 continue
 
-            report_content.append(f"### 🎯 {repo}")
+            report_content.append(f"### 🎯 监控目标 (Target): {repo}")
             if update["type"] == "release":
-                report_content.append(f"- **🚀 New Release**: [{update['tag']}]({update['url']})")
+                report_content.append(f"- **🚀 新版本发布 (New Release)**: [{update['tag']}]({update['url']})")
                 report_content.append(f"- **Date**: {update['date']}")
 
                 # Gist Analysis
@@ -194,7 +194,7 @@ class Harvester:
                     "discovered_at": datetime.now().isoformat()
                 })
             elif update["type"] == "commits":
-                report_content.append(f"- **🔨 Recent Commits** (Last 3):")
+                report_content.append(f"- **🔨 最近提交 (Recent Commits)**:")
                 # Gist Analysis
                 if update["gist"]:
                     for g in update["gist"]: report_content.append(f"- {g}")
@@ -242,9 +242,9 @@ class Harvester:
             url = repo['html_url']
 
             report_content.append(f"### 🏆 {name}")
-            report_content.append(f"- **Trust Score**: `{score}` (⭐ {stars} | 🍴 {forks})")
+            report_content.append(f"- **🛡️ 信任评分 (Trust Score)**: `{score}` (⭐ {stars} | 🍴 {forks})")
             report_content.append(f"- **Updated**: {updated}")
-            report_content.append(f"- **Insight**: {desc}")
+            report_content.append(f"- **💡 项目洞察 (Insight)**: {desc}")
             report_content.append(f"- [View Source]({url})")
             report_content.append("")
 
