@@ -27,14 +27,20 @@ jobs:
         run: |
           pip install requests
 
-      - name: Run Harvester (Intelligence Gathering)
+      - name: Run Harvester & Evolution (The OODA Loop)
         id: harvester
         run: |
           python docs/brain/harvester.py --root docs/brain
+          python docs/brain/evolution.py
 
           # Generate a summary for the PR body
           echo "REPORT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
           echo "REPORT_PATH=docs/brain/intelligence/REPORT_$(date +'%Y-%m-%d').md" >> $GITHUB_ENV
+
+      - name: Execute Scholar Morning Routine (Static Contemplation)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python docs/brain/learner.py
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
