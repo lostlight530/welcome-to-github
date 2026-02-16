@@ -2,7 +2,7 @@ name: Brain Evolution
 
 on:
   schedule:
-    # Daily at 00:00 UTC (08:00 Beijing Time)
+    # Daily at 00:00 UTC (08:00 Beijing Time) - The Scholar's Morning Routine
     - cron: '0 0 * * *'
   workflow_dispatch:
 
@@ -26,6 +26,11 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install requests
+
+      - name: Verify Environment (Debug)
+        run: |
+          python --version
+          pip freeze | grep requests
 
       - name: Run Harvester & Evolution (The OODA Loop)
         id: harvester
