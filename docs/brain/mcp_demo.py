@@ -70,9 +70,10 @@ def get_current_time(timezone_name: str = "UTC") -> str:
     try:
         tz = ZoneInfo(timezone_name)
     except ZoneInfoNotFoundError:
-        return f"Error: Timezone '{timezone_name}' not found. Please provide a valid IANA timezone name (e.g., 'UTC', 'Asia/Shanghai', 'America/New_York')."
+        # Raise standard error for protocol handling
+        raise ValueError(f"Timezone '{timezone_name}' not found. Please provide a valid IANA timezone name (e.g., 'UTC', 'Asia/Shanghai').")
     except Exception as e:
-        return f"Error: Invalid timezone '{timezone_name}'. {str(e)}"
+        raise ValueError(f"Invalid timezone '{timezone_name}': {str(e)}")
 
     now = datetime.now(tz)
     return now.isoformat()
@@ -104,11 +105,9 @@ def add_entity(category: str, id: str, type: str, name: str, desc: str, tags: Op
         "updated_at": datetime.now().isoformat()
     }
 
-    try:
-        factory.add_entity(category, data)
-        return f"Successfully added entity '{id}' to category '{category}'."
-    except Exception as e:
-        return f"Error adding entity: {str(e)}"
+    # Let exceptions bubble up to FastMCP
+    factory.add_entity(category, data)
+    return f"Successfully added entity '{id}' to category '{category}'."
 
 @mcp.tool()
 def connect_entities(src: str, rel: str, dst: str, context: str = "") -> str:
@@ -139,11 +138,9 @@ def connect_entities(src: str, rel: str, dst: str, context: str = "") -> str:
     }
     data["created_at"] = datetime.now().isoformat()
 
-    try:
-        factory.add_relation(data)
-        return f"Successfully connected '{src}' --[{rel}]--> '{dst}'."
-    except Exception as e:
-        return f"Error connecting entities: {str(e)}"
+    # Let exceptions bubble up to FastMCP
+    factory.add_relation(data)
+    return f"Successfully connected '{src}' --[{rel}]--> '{dst}'."
 
 if __name__ == "__main__":
     print(f"[Nexus] Starting MCP Demo Server (Full Matrix) on stdio...", file=sys.stderr)
