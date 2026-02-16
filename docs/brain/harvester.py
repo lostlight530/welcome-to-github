@@ -3,6 +3,7 @@ import json
 import argparse
 import requests
 import sys
+import math
 import urllib.parse
 from datetime import datetime, timezone
 
@@ -73,11 +74,11 @@ class Harvester:
 
     def _calculate_trust_score(self, repo_data):
         """
-        Trust Score = (Stars * 0.3) + (Forks * 0.2) + (1 / DaysSinceUpdate * 0.5)
-        Follows user specification exactly.
+        Trust Score = (Log(Stars) * 30) + (Log(Forks) * 10) + (Recency * 0.3)
+        Uses logarithmic scaling to prevent giant repos from dominating.
         """
-        stars = repo_data.get("stargazers_count", 0)
-        forks = repo_data.get("forks_count", 0)
+        stars = repo_data.get("stargazers_count", 0) or 0
+        forks = repo_data.get("forks_count", 0) or 0
         updated_at_str = repo_data.get("updated_at")
 
         if not updated_at_str:
@@ -85,11 +86,12 @@ class Harvester:
         else:
             updated_at = datetime.fromisoformat(updated_at_str.replace("Z", "+00:00"))
             days_since_update = (datetime.now(timezone.utc) - updated_at).days
-            if days_since_update < 1: days_since_update = 1
+            if days_since_update < 0: days_since_update = 0
 
-        # Exact formula as requested: 1/Days * 0.5
-        # Note: This makes freshness contribution very small compared to Stars, but adheres to spec.
-        score = (stars * 0.3) + (forks * 0.2) + ((1.0 / days_since_update) * 0.5)
+        # Logarithmic Scaling (Base 10) for Stars/Forks to compress the range
+        # Linear Decay for Time (freshness is king)
+        # Formula: (Log10(Stars+1) * 30) + (Log10(Forks+1) * 10) + (Max(0, 365-Days) * 0.3)
+        score = (math.log10(stars + 1) * 30) + (math.log10(forks + 1) * 10) + (max(0, 365 - days_since_update) * 0.3)
         return score
 
     def _get_repo_details(self, repo_full_name: str):

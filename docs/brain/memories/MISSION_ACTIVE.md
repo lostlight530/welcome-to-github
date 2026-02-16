@@ -1,10 +1,32 @@
-# 🧠 NEXUS CORTEX: Exploration Mission (探索任务)
-> Generated (生成时间): 2026-02-15T11:30:15.643455
+# 🧠 NEXUS CORTEX: Active Mission (活跃任务) - [DEFENSIVE PROTOCOL ACTIVATED]
+> **Generated (生成时间)**: 2026-02-16
+> **Source Intelligence (情报源)**: `docs/brain/intelligence/REPORT_2026-02-16.md`
+> **Trigger (触发器)**: **High-Risk Signal: BREAKING CHANGE** detected in `Phase A` Radar.
 
 ## 🎯 Objective (目标)
-System is stable. Expand knowledge horizon randomly. (系统稳定，随机扩展知识边界。)
+**Assess and Mitigate Impact of Breaking Changes in Core Vision/Edge Stack.**
+(评估并缓解视觉/端侧核心技术栈破坏性更新的影响。)
 
-## 🌌 Suggested Actions (建议行动)
-- Explore adjacent fields to existing `tech_stack` nodes. (探索现有技术栈节点的相邻领域。)
-- Review `inputs/` folder for unprocessed raw data. (审查 `inputs/` 文件夹中未处理的原始数据。)
-- visualize the graph using `nexus visualize`. (使用 `nexus visualize` 可视化图谱。)
+## 🚨 Critical Alerts (关键警报)
+
+### 1. `google-ai-edge/mediapipe` (v0.10.32)
+- **Status**: ⚠️ **BREAKING CHANGE DETECTED**
+- **Impact**: Potential API obsolescence in `GlShaderCalculator` migration and `RenderToWebGpuCanvas`.
+- **Action Required**:
+  - Audit local MediaPipe implementations for `GlShaderCalculator` usage.
+  - Verify if current `armv7` (32-bit) support affects edge deployment targets.
+
+### 2. `microsoft/onnxruntime` (v1.24.1)
+- **Status**: ⚠️ **BREAKING CHANGE DETECTED**
+- **Impact**: **Python 3.10 wheels are no longer published.** Minimum macOS version raised to 14.0.
+- **Action Required**:
+  - Check local development environment Python version (`python --version`).
+  - If using Python 3.10, schedule immediate upgrade to 3.11+.
+  - Verify CI/CD runners meet the new OS requirements.
+
+## 🛠️ Execution Plan (执行计划)
+1. **Audit**: Run dependency checks on `lostlight-portal` and associated local repos.
+2. **Upgrade**: Prepare a migration branch if Python 3.10 is in use.
+3. **Verify**: Run `harvester` again after upgrades to confirm ecosystem alignment.
+
+> *Mission remains active until all Breaking Changes are resolved or marked as 'Accepted Risk'.*
