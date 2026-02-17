@@ -17,30 +17,32 @@ from scholar import StaticScholar
 
 def clean_cache(root_dir: str):
     """
-    Cleans __pycache__ and temporary files.
-    清除 __pycache__ 和临时文件。
+    Cleans __pycache__, temporary files, and other artifacts recursively.
+    递归清除 __pycache__、临时文件和其他构建产物。
     """
     print(f"[Nexus] Cleaning cache in {root_dir}...")
 
-    # 1. Remove __pycache__ directories
-    # 1. 删除 __pycache__ 目录
-    for pycache in glob.glob(os.path.join(root_dir, "**", "__pycache__"), recursive=True):
-        try:
-            shutil.rmtree(pycache)
-            print(f"  - Removed: {pycache}")
-        except Exception as e:
-            print(f"  ! Failed to remove {pycache}: {e}")
-
-    # 2. Remove .cache or temp files if any (future proofing)
-    # 2. 删除 .cache 或临时文件（如果有，为未来做准备）
-    temp_patterns = ["*.pyc", "*.tmp", ".DS_Store"]
-    for pattern in temp_patterns:
-        for temp_file in glob.glob(os.path.join(root_dir, "**", pattern), recursive=True):
+    # 1. Remove Directories (__pycache__, etc.)
+    # 1. 删除目录
+    dirs_to_remove = ["__pycache__", ".pytest_cache", ".mypy_cache", "build", "dist"]
+    for pattern in dirs_to_remove:
+        for p in glob.glob(os.path.join(root_dir, "**", pattern), recursive=True):
             try:
-                os.remove(temp_file)
-                print(f"  - Removed: {temp_file}")
+                shutil.rmtree(p)
+                print(f"  - Removed Dir: {p}")
             except Exception as e:
-                print(f"  ! Failed to remove {temp_file}: {e}")
+                print(f"  ! Failed to remove dir {p}: {e}")
+
+    # 2. Remove Files (.pyc, .DS_Store, etc.)
+    # 2. 删除文件
+    files_to_remove = ["*.pyc", "*.pyo", "*.pyd", ".DS_Store", "*.tmp", "*.log"]
+    for pattern in files_to_remove:
+        for p in glob.glob(os.path.join(root_dir, "**", pattern), recursive=True):
+            try:
+                os.remove(p)
+                print(f"  - Removed File: {p}")
+            except Exception as e:
+                print(f"  ! Failed to remove file {p}: {e}")
 
     print("[Nexus] Cache clean complete. (缓存清理完成)")
 
