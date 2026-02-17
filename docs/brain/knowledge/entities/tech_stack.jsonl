@@ -1,2 +1,4 @@
 {"id": "android", "type": "platform", "name": "Android", "desc": "Mobile operating system based on a modified version of the Linux kernel.", "tags": ["mobile", "os", "google"], "updated_at": "2026-02-15T08:52:29.535280"}
 {"id": "gemma-2b", "type": "tech", "name": "Gemma 2B", "desc": "Google's lightweight open model for on-device text generation.", "tags": ["google", "llm", "edge"], "updated_at": "2026-02-17T02:42:19.820678"}
+{"id": "webgpu", "type": "standard", "name": "WebGPU", "desc": "Modern web API for GPU acceleration.", "tags": ["web", "graphics", "compute"], "updated_at": "2026-02-17T03:07:33.448524"}
+{"id": "litert", "type": "tech", "name": "LiteRT", "desc": "High-performance runtime for on-device AI (formerly TFLite).", "tags": ["google", "inference", "edge"], "updated_at": "2026-02-17T03:07:33.961856"}

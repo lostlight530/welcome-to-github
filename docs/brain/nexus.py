@@ -13,6 +13,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from cortex import Cortex
 from factory import KnowledgeFactory
 from evolution import Evolver
+from scholar import StaticScholar
 
 def clean_cache(root_dir: str):
     """
@@ -80,6 +81,11 @@ def main():
 
     # 7. Clean
     clean_parser = subparsers.add_parser("clean", help="Clear cache and temporary files (清除缓存和临时文件)")
+
+    # 8. Scholar (Deep Dive)
+    scholar_parser = subparsers.add_parser("scholar", help="Deep dive into a topic using Static Scholar (使用静态学者进行深度研究)")
+    scholar_parser.add_argument("entity_id", help="Entity ID to study (要研究的实体 ID)")
+    scholar_parser.add_argument("url", help="Documentation URL to analyze (要分析的文档 URL)")
 
     args = parser.parse_args()
 
@@ -155,6 +161,10 @@ def main():
         except ValueError as e:
             print(f"[!] Error: {e}")
             sys.exit(1)
+
+    elif args.command == "scholar":
+        scholar = StaticScholar(root)
+        scholar.study_topic(args.entity_id, args.url)
 
     else:
         parser.print_help()

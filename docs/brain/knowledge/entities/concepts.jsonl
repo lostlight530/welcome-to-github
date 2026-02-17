@@ -1,2 +1,8 @@
 {"id": "tool_use", "type": "concept", "name": "Tool Use", "desc": "The ability of an AI agent to invoke external functions or APIs.", "tags": ["agent", "capability"], "updated_at": "2026-02-15T08:52:29.537227"}
 {"id": "on-device-llm", "type": "concept", "name": "On-Device LLM", "desc": "Large Language Models optimized for edge devices (phones, IoT).", "tags": ["ai", "edge", "inference"], "updated_at": "2026-02-17T02:42:19.459338"}
+{"id": "arch_pattern_gemma-2b_1", "type": "pattern", "name": "Multi-Query Attention", "desc": "Uses MQA for efficient inference.", "tags": ["architecture", "deep-dive"], "updated_at": "2026-02-17T05:05:15.980151"}
+{"id": "arch_pattern_gemma-2b_2", "type": "pattern", "name": "XLA Optimization", "desc": "Optimized for TPU/GPU execution via XLA.", "tags": ["architecture", "deep-dive"], "updated_at": "2026-02-17T05:05:15.983462"}
+{"id": "arch_pattern_gemma-2b_3", "type": "pattern", "name": "Quantization Support", "desc": "Supports int8/int4 execution on mobile.", "tags": ["architecture", "deep-dive"], "updated_at": "2026-02-17T05:05:15.984052"}
+{"id": "arch_pattern_on-device-llm_1", "type": "pattern", "name": "Memory Management", "desc": "Requires careful memory management (RAM < 8GB).", "tags": ["architecture", "deep-dive"], "updated_at": "2026-02-17T05:05:16.574252"}
+{"id": "arch_pattern_on-device-llm_2", "type": "pattern", "name": "Delegate Acceleration", "desc": "Relies on delegate acceleration (NPU/DSP).", "tags": ["architecture", "deep-dive"], "updated_at": "2026-02-17T05:05:16.575351"}
+{"id": "arch_pattern_on-device-llm_3", "type": "pattern", "name": "Privacy-First", "desc": "Architecture ensures no data leaves device.", "tags": ["architecture", "deep-dive"], "updated_at": "2026-02-17T05:05:16.575680"}
