@@ -1,0 +1,2 @@
+{"id": "tool_use", "type": "concept", "name": "Tool Use", "desc": "The ability of an AI agent to invoke external functions or APIs.", "tags": ["agent", "capability"], "updated_at": "2026-02-15T08:52:29.537227"}
+{"id": "on-device-llm", "type": "concept", "name": "On-Device LLM", "desc": "Large Language Models optimized for edge devices (phones, IoT).", "tags": ["ai", "edge", "inference"], "updated_at": "2026-02-17T02:42:19.459338"}

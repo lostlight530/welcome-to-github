@@ -1,0 +1,6 @@
+{"src": "python", "rel": "powers", "dst": "vertex-ai", "context": "GCP SDK", "created_at": "2026-02-14"}
+{"src": "mediapipe", "rel": "runs_on", "dst": "android", "context": "Official docs", "created_at": "2026-02-14"}
+{"src": "mcp", "rel": "enables", "dst": "tool_use", "context": "2026 Tech Trend", "created_at": "2026-02-14"}
+{"src": "mediapipe", "rel": "supports", "dst": "on-device-llm", "context": "MediaPipe LLM Inference API", "created_at": "2026-02-17T02:42:20.275176"}
+{"src": "on-device-llm", "rel": "enables", "dst": "gemma-2b", "context": "Example Implementation", "created_at": "2026-02-17T02:42:20.698610"}
+{"src": "android", "rel": "runs", "dst": "gemma-2b", "context": "AICore / MLCore Integration", "created_at": "2026-02-17T02:42:21.075285"}
