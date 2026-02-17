@@ -1,0 +1,34 @@
+{
+  "settings": {
+    "max_read_length": 15000,
+    "target_branch": "main",
+    "philosophy": "Small and Stable"
+  },
+  "whitelist": {
+    "Google-XLA-Compiler": "https://raw.githubusercontent.com/openxla/xla/main/README.md",
+    "PyTorch-Autograd-Design": "https://raw.githubusercontent.com/pytorch/pytorch/main/docs/source/notes/autograd.rst",
+    "HuggingFace-Transformers-Philosophy": "https://raw.githubusercontent.com/huggingface/transformers/main/docs/source/en/philosophy.md",
+    "Microsoft-DeepSpeed": "https://raw.githubusercontent.com/microsoft/DeepSpeed/master/README.md",
+    "OpenAI-Triton": "https://raw.githubusercontent.com/openai/triton/main/README.md",
+    "Rust-Ownership-Model": "https://raw.githubusercontent.com/rust-lang/rfcs/master/text/0162-internals-and-allocators.md",
+    "Golang-Concurrency-Design": "https://raw.githubusercontent.com/golang/proposal/master/design/12166-subtests.md",
+    "LLVM-Architecture": "https://raw.githubusercontent.com/llvm/llvm-project/main/llvm/docs/LangRef.rst",
+    "V8-JavaScript-Engine": "https://raw.githubusercontent.com/v8/v8/main/README.md",
+    "Kubernetes-Architecture-Design": "https://raw.githubusercontent.com/kubernetes/community/master/contributors/design-proposals/architecture/architecture.md",
+    "Envoy-Proxy-Threading-Model": "https://raw.githubusercontent.com/envoyproxy/envoy/main/docs/root/intro/arch_overview/intro/threading_model.rst",
+    "HashiCorp-Raft-Consensus": "https://raw.githubusercontent.com/hashicorp/raft/main/README.md",
+    "Docker-Containerd-Architecture": "https://raw.githubusercontent.com/containerd/containerd/main/docs/architecture.md",
+    "PostgreSQL-MVCC-Internals": "https://raw.githubusercontent.com/postgres/postgres/master/README",
+    "Redis-Event-Loop": "https://raw.githubusercontent.com/redis/redis/unstable/README.md",
+    "PingCAP-TiDB-HTAP": "https://raw.githubusercontent.com/pingcap/tidb/master/docs/design/2018-07-19-row-format.md",
+    "Facebook-RocksDB-LSM-Tree": "https://raw.githubusercontent.com/facebook/rocksdb/main/README.md",
+    "Anthropic-MCP-Specification": "https://raw.githubusercontent.com/modelcontextprotocol/specification/main/schema/2024-11-05/schema.json",
+    "Google-gRPC-Core-Design": "https://raw.githubusercontent.com/grpc/grpc/master/doc/core/grpc-error-mapping.md",
+    "Meta-GraphQL-Specification": "https://raw.githubusercontent.com/graphql/graphql-spec/main/spec/Section%201%20--%20Overview.md",
+    "Apache-Kafka-Log-Design": "https://raw.githubusercontent.com/apache/kafka/trunk/README.md",
+    "React-Fiber-Architecture": "https://raw.githubusercontent.com/acdlite/react-fiber-architecture/master/README.md",
+    "Flutter-Engine-Architecture": "https://raw.githubusercontent.com/flutter/engine/main/README.md",
+    "WebAssembly-Core-Specification": "https://raw.githubusercontent.com/WebAssembly/spec/main/document/core/intro.rst",
+    "Microsoft-VSCode-Architecture": "https://raw.githubusercontent.com/microsoft/vscode/main/README.md"
+  }
+}
