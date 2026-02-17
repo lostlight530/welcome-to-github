@@ -35,7 +35,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.ACCTIONBAT }}
+          token: ${{ secrets.PAT_TOKEN }}
           commit-message: "feat(brain): intelligence harvest for ${{ env.REPORT_DATE }}"
           title: "🧠 Brain Evolution: ${{ env.REPORT_DATE }}"
           body: |
