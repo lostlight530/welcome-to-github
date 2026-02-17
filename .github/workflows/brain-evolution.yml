@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
 
     steps:
       - name: Checkout Code
@@ -24,6 +25,29 @@ jobs:
           cache: ''
 
       - name: Execute Cortex OODA Loop
+        id: evolve
         run: |
           python docs/brain/nexus.py clean
           python docs/brain/nexus.py evolve
+          # Get date for PR title
+          echo "REPORT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.ACCTIONBAT }}
+          commit-message: "feat(brain): intelligence harvest for ${{ env.REPORT_DATE }}"
+          title: "🧠 Brain Evolution: ${{ env.REPORT_DATE }}"
+          body: |
+            ## 🧬 Cognitive Evolution Report
+
+            **Date**: ${{ env.REPORT_DATE }}
+            **Agent**: Cortex Automation (OODA Loop)
+
+            The daily evolution cycle has completed.
+            Please review the updated `MISSION_ACTIVE.md` and any new knowledge artifacts.
+
+            > "Evolution is not a choice, it's a protocol."
+          branch: "brain-evolution/harvest-${{ env.REPORT_DATE }}"
+          base: "main"
+          delete-branch: true
