@@ -1,0 +1,53 @@
+name: Brain Evolution Protocol
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  daily-evolution:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          # Explicitly disable cache to avoid looking for requirements.txt
+          cache: ''
+
+      - name: Execute Cortex OODA Loop
+        id: evolve
+        run: |
+          python docs/brain/nexus.py clean
+          python docs/brain/nexus.py evolve
+          # Get date for PR title
+          echo "REPORT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+          commit-message: "feat(brain): intelligence harvest for ${{ env.REPORT_DATE }}"
+          title: "🧠 Brain Evolution: ${{ env.REPORT_DATE }}"
+          body: |
+            ## 🧬 Cognitive Evolution Report
+
+            **Date**: ${{ env.REPORT_DATE }}
+            **Agent**: Cortex Automation (OODA Loop)
+
+            The daily evolution cycle has completed.
+            Please review the updated `MISSION_ACTIVE.md` and any new knowledge artifacts.
+
+            > "Evolution is not a choice, it's a protocol."
+          branch: "brain-evolution/harvest-${{ env.REPORT_DATE }}"
+          base: "main"
+          delete-branch: true
