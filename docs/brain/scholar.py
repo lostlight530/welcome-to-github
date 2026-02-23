@@ -1,8 +1,9 @@
 import sys
 import os
 import json
+import re
 from datetime import datetime
-from typing import Optional
+from typing import Optional, List, Tuple
 
 # Ensure we can import factory
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -12,7 +13,7 @@ class StaticScholar:
     """
     The Static Scholar (静态学者).
     Responsible for fetching external documentation and 'deepening' the knowledge of existing entities.
-    负责获取外部文档并“加深”现有实体的知识。
+    Implements Graceful Degradation: Regex -> Heuristics -> Keyword extraction.
     """
     def __init__(self, root_dir: str):
         self.root_dir = root_dir
@@ -21,34 +22,25 @@ class StaticScholar:
     def study_topic(self, entity_id: str, url: str):
         """
         Simulates fetching a URL and extracting deep architectural insights.
-        模拟获取 URL 并提取深层架构见解。
+        Uses a robust extraction strategy (Simulated).
         """
         print(f"[Scholar] 正在研读 (Studying): {entity_id} from {url}...")
 
-        if entity_id == "gemma-2b":
-            insights = [
-                ("Multi-Query Attention", "Uses MQA for efficient inference."),
-                ("XLA Optimization", "Optimized for TPU/GPU execution via XLA."),
-                ("Quantization Support", "Supports int8/int4 execution on mobile.")
-            ]
-        elif entity_id == "on-device-llm":
-            insights = [
-                ("Memory Management", "Requires careful memory management (RAM < 8GB)."),
-                ("Delegate Acceleration", "Relies on delegate acceleration (NPU/DSP)."),
-                ("Privacy-First", "Architecture ensures no data leaves device.")
-            ]
-        else:
-            insights = [("General Pattern", f"Architectural pattern from {url}.")]
+        # 1. Fetch Content (Simulated)
+        # In real life: content = requests.get(url).text
+        # Here we simulate different "content shapes" to test degradation logic.
+        content_shape = self._simulate_content_retrieval(entity_id)
+
+        # 2. Extract Insights (Graceful Degradation)
+        insights = self._extract_insights_robust(content_shape)
 
         print(f"[Scholar] 提取到 {len(insights)} 条核心见解 (Insights extracted).")
 
-        # Ingest as "Deep Knowledge" Relations
+        # 3. Ingest
         for i, (name, desc) in enumerate(insights, 1):
             pattern_id = f"arch_pattern_{entity_id}_{i}"
-
-            # Step 1: Create the Pattern Entity First (Must exist!)
-            # 第一步：先创建模式实体（必须存在！）
             try:
+                # Idempotent Add (Factory checks exist check)
                 self.factory.add_entity("concepts", {
                     "id": pattern_id,
                     "type": "pattern",
@@ -57,12 +49,7 @@ class StaticScholar:
                     "tags": ["architecture", "deep-dive"],
                     "updated_at": datetime.now().isoformat()
                 })
-            except Exception as e:
-                print(f"  ! Warning: Could not create pattern entity: {e}")
 
-            # Step 2: Connect it
-            # 第二步：连接它
-            try:
                 self.factory.add_relation({
                     "src": entity_id,
                     "rel": "implements_philosophy",
@@ -72,9 +59,55 @@ class StaticScholar:
                 })
                 print(f"  - Injected: {name}")
             except Exception as e:
-                print(f"  ! Error creating relation: {e}")
+                print(f"  ! Error injecting {name}: {e}")
 
         print(f"[Scholar] {entity_id} 深度研读完成。灵魂已注入。")
+
+    def _simulate_content_retrieval(self, entity_id: str) -> str:
+        # Mock content based on ID
+        if "gemma" in entity_id:
+            return "## Architecture\n- Multi-Query Attention: Efficient inference.\n- XLA: TPU optimization."
+        elif "mediapipe" in entity_id:
+            return "Release Note: Added NPU support. Performance optimized."
+        else:
+            return "General documentation text with keywords like Scalability and Modular Design."
+
+    def _extract_insights_robust(self, content: str) -> List[Tuple[str, str]]:
+        """
+        Tier 1: Regex Anchors (Structure)
+        Tier 2: Bullet Points (Semi-Structure)
+        Tier 3: Heuristic Keywords (Unstructured)
+        """
+        insights = []
+
+        # Tier 1: Explicit Architecture Section
+        match = re.search(r"## Architecture\n(.*?)(?=\n##|\Z)", content, re.DOTALL)
+        if match:
+            print("  [Parser] Tier 1: Regex Architecture Block found.")
+            block = match.group(1)
+            for line in block.split('\n'):
+                if line.strip().startswith('-'):
+                    parts = line.strip('- ').split(':')
+                    if len(parts) >= 2:
+                        insights.append((parts[0].strip(), parts[1].strip()))
+            if insights: return insights
+
+        # Tier 2: Bullet Points scanning
+        bullets = re.findall(r"[-*] (.*?): (.*)", content)
+        if bullets:
+            print("  [Parser] Tier 2: Bullet Points found.")
+            for b in bullets:
+                insights.append((b[0].strip(), b[1].strip()))
+            if insights: return insights
+
+        # Tier 3: Keyword Heuristics
+        print("  [Parser] Tier 3: Keyword Extraction.")
+        keywords = ["Scalability", "Performance", "Modular", "Security"]
+        for k in keywords:
+            if k in content:
+                insights.append((f"{k} Focus", f"The documentation emphasizes {k}."))
+
+        return insights
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:

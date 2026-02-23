@@ -6,3 +6,11 @@
 {"id": "arch_pattern_on-device-llm_1", "type": "pattern", "name": "Memory Management", "desc": "Requires careful memory management (RAM < 8GB).", "tags": ["architecture", "deep-dive"], "updated_at": "2026-02-17T05:05:16.574252"}
 {"id": "arch_pattern_on-device-llm_2", "type": "pattern", "name": "Delegate Acceleration", "desc": "Relies on delegate acceleration (NPU/DSP).", "tags": ["architecture", "deep-dive"], "updated_at": "2026-02-17T05:05:16.575351"}
 {"id": "arch_pattern_on-device-llm_3", "type": "pattern", "name": "Privacy-First", "desc": "Architecture ensures no data leaves device.", "tags": ["architecture", "deep-dive"], "updated_at": "2026-02-17T05:05:16.575680"}
+{"id": "dify", "type": "tool", "name": "Dify", "desc": "LLM App Development Platform.", "tags": ["low-code", "agent"], "updated_at": "2026-02-23T03:24:00.724845"}
+{"id": "ollama", "type": "tool", "name": "Ollama", "desc": "Get up and running with Llama 3.", "tags": ["local-llm", "tool"], "updated_at": "2026-02-23T03:24:00.725366"}
+{"id": "open-webui", "type": "tool", "name": "Open WebUI", "desc": "User-friendly AI Interface.", "tags": ["ui", "python"], "updated_at": "2026-02-23T03:24:00.725465"}
+{"id": "transformer", "type": "concept", "name": "Transformer", "desc": "Auto-generated concept", "tags": ["auto"], "updated_at": ""}
+{"id": "legacy-xla", "type": "concept", "name": "Legacy-Xla", "desc": "Auto-generated concept", "tags": ["auto"], "updated_at": ""}
+{"id": "database-servers", "type": "concept", "name": "Database-Servers", "desc": "Auto-generated concept", "tags": ["auto"], "updated_at": ""}
+{"id": "agentic-workflow", "type": "concept", "name": "Agentic-Workflow", "desc": "Auto-generated concept", "tags": ["auto"], "updated_at": ""}
+{"id": "deepseek", "type": "concept", "name": "Deepseek", "desc": "Auto-generated concept", "tags": ["auto"], "updated_at": ""}

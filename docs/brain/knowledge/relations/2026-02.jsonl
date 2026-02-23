@@ -16,3 +16,10 @@
 {"src": "webgpu", "rel": "accelerates", "dst": "mediapipe", "context": "Web Integration", "created_at": "2026-02-17T05:05:39.771219"}
 {"src": "litert", "rel": "powers", "dst": "android", "context": "System Service", "created_at": "2026-02-17T05:05:40.081415"}
 {"src": "gemma-2b", "rel": "runs_on", "dst": "litert", "context": "Quantized Execution", "created_at": "2026-02-17T05:05:40.386379"}
+{"src": "mediapipe", "rel": "supports", "dst": "npu", "context": "v0.10.33 Release Note", "created_at": "2026-02-23T03:24:00.725554"}
+{"src": "mindspore", "rel": "optimizes", "dst": "transformer", "context": "Recent Commits", "created_at": "2026-02-23T03:24:00.726546"}
+{"src": "jax", "rel": "deprecates", "dst": "legacy-xla", "context": "v0.9.1 Breaking Change", "created_at": "2026-02-23T03:24:00.726826"}
+{"src": "mcp", "rel": "expands_to", "dst": "database-servers", "context": "Release 2026.2.25", "created_at": "2026-02-23T03:24:00.727111"}
+{"src": "dify", "rel": "enables", "dst": "agentic-workflow", "context": "Ecosystem Consensus", "created_at": "2026-02-23T03:24:00.727288"}
+{"src": "ollama", "rel": "supports", "dst": "deepseek", "context": "v0.17.0 Release", "created_at": "2026-02-23T03:24:00.727457"}
+{"src": "open-webui", "rel": "interacts_with", "dst": "ollama", "context": "Integration Docs", "created_at": "2026-02-23T03:24:00.727559"}
