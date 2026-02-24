@@ -1,0 +1,19 @@
+{
+  "repos": {
+    "vllm-project/vllm": {
+      "etag": "W/\"e067fce5fbb214c7154ba568bb0f061c19293c08a04f69d3d2fca4021c555222\"",
+      "last_checked": "2026-02-24T03:15:40.484636+00:00",
+      "latest_tag": "v0.15.1"
+    },
+    "huggingface/transformers": {
+      "etag": "W/\"055e0498fb6486c23cefcd852ffdce79ffb1721d26690da65255c1266e4db3d2\"",
+      "last_checked": "2026-02-24T03:15:40.825405+00:00",
+      "latest_tag": "v5.2.0"
+    },
+    "microsoft/markitdown": {
+      "etag": "W/\"bc13290f30ff949932dde95d9d081e2264c125c5a67b11c56190aa47ad586ff9\"",
+      "last_checked": "2026-02-24T03:15:40.959722+00:00",
+      "latest_tag": "v0.1.5"
+    }
+  }
+}

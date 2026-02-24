@@ -27,9 +27,14 @@ jobs:
       - name: Execute Cortex OODA Loop
         id: evolve
         run: |
+          # 1. External Sensing (Harvester Radar)
+          python docs/brain/harvester.py
+
+          # 2. Internal Evolution (OODA Loop)
           python docs/brain/nexus.py clean
           python docs/brain/nexus.py evolve
-          # Get date for PR title
+
+          # 3. Get date for PR title
           echo "REPORT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 
       - name: Create Pull Request
@@ -45,7 +50,14 @@ jobs:
             **Agent**: Cortex Automation (OODA Loop)
 
             The daily evolution cycle has completed.
-            Please review the updated `MISSION_ACTIVE.md` and any new knowledge artifacts.
+
+            ### 📡 Harvester (Radar)
+            - Scanned key ecosystem repositories (vLLM, Transformers, etc.).
+            - Generated Intelligence Briefs in `docs/brain/inputs/`.
+
+            ### 🧠 Cortex (Mind)
+            - Analyzed entropy and knowledge gaps.
+            - Updated `MISSION_ACTIVE.md`.
 
             > "Evolution is not a choice, it's a protocol."
           branch: "brain-evolution/harvest-${{ env.REPORT_DATE }}"
