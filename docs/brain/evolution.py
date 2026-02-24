@@ -1,7 +1,8 @@
 import sys
 import os
 import shutil
-from datetime import datetime
+import glob
+from datetime import datetime, timedelta
 from typing import List, Optional
 
 # Ensure imports work
@@ -18,6 +19,7 @@ class Evolver:
         self.memories_dir = os.path.join(root_dir, "memories")
         self.archive_dir = os.path.join(self.memories_dir, "archive")
         self.active_mission_path = os.path.join(self.memories_dir, "MISSION_ACTIVE.md")
+        self.inputs_dir = os.path.join(root_dir, "inputs")
 
         os.makedirs(self.archive_dir, exist_ok=True)
 
@@ -40,13 +42,16 @@ class Evolver:
             self.archive_mission()
 
         # 3. Decide & Act (决策与行动)
+        # Check for new inputs (Intelligence Sniffer)
+        new_inputs = self._check_new_inputs()
+
         focus_areas = self._identify_focus_areas(report)
 
-        if not focus_areas:
+        if not focus_areas and not new_inputs:
             print("[Evolution] System stable. No high-priority targets. (系统稳定，无高优先级目标)")
             self._create_maintenance_mission()
         else:
-            self._create_foraging_mission(focus_areas)
+            self._create_foraging_mission(focus_areas, new_inputs)
 
     def archive_mission(self):
         """Moves active mission to archive with timestamp. (归档活跃任务)"""
@@ -60,6 +65,27 @@ class Evolver:
         shutil.move(self.active_mission_path, dest)
         print(f"[Evolution] Archived previous mission to {filename} (任务已归档)")
 
+    def _check_new_inputs(self) -> List[str]:
+        """Scans inputs/ for files modified in the last 24h. (扫描最近 24 小时的输入)"""
+        recent_files = []
+        now = datetime.now()
+        threshold = now - timedelta(hours=24)
+
+        # Glob recursively
+        pattern = os.path.join(self.inputs_dir, "**", "*.md")
+        for filepath in glob.glob(pattern, recursive=True):
+            mtime = datetime.fromtimestamp(os.path.getmtime(filepath))
+            if mtime > threshold:
+                # Check if it's an "official update" (e.g., from Harvester)
+                # We can filter by content or path if needed.
+                rel_path = os.path.relpath(filepath, self.root_dir)
+                recent_files.append(rel_path)
+
+        if recent_files:
+            print(f"[Evolution] Detected {len(recent_files)} new intelligence briefs. (检测到新情报)")
+
+        return recent_files
+
     def _identify_focus_areas(self, report) -> List[str]:
         """Selects top 3 priority nodes. (选择前 3 个优先级节点)"""
         focus_areas = []
@@ -72,32 +98,56 @@ class Evolver:
 
         return focus_areas
 
-    def _create_foraging_mission(self, focus_areas: List[str]):
+    def _create_foraging_mission(self, focus_areas: List[str], new_inputs: List[str]):
         """Writes a structured mission file. (生成任务简报)"""
-        print(f"[Evolution] Generating mission for targets: {focus_areas} (生成任务)")
+        print(f"[Evolution] Generating mission for {len(focus_areas)} targets and {len(new_inputs)} inputs. (生成任务)")
 
         content = [
             "# 🧠 NEXUS CORTEX: Active Mission (活跃任务)",
             f"> Generated (生成时间): {datetime.now().isoformat()}",
             "",
             "## 🎯 Objective (目标)",
-            "Close knowledge gaps identified by entropy analysis. (填补熵值分析发现的知识缺口。)",
-            "",
-            "## 🔍 Targets (目标节点)",
+            "Ingest new intelligence and close knowledge gaps. (摄入新情报并填补知识缺口。)",
+            ""
         ]
 
-        for area in focus_areas:
-            entity = self.cortex.entities.get(area)
-            name = entity.name if entity else area
-            desc = entity.desc if entity else "No description available."
-            type_ = entity.type if entity else "unknown"
+        # Section 1: New Intelligence (High Priority)
+        if new_inputs:
+            content.append("## 📥 Pending Intelligence (待处理情报)")
+            content.append("> Priority: Critical (Please review immediately)")
+            for inp in new_inputs:
+                content.append(f"### 📄 `{inp}`")
 
-            content.append(f"### 1. {name} (`{area}`)")
-            content.append(f"- **Type**: {type_}")
-            content.append(f"- **Context**: {desc}")
-            content.append("- **Task**: Search for recent developments, integration patterns, or code examples. (搜索最新进展、集成模式或代码示例。)")
-            content.append(f"- **Suggested Query**: `latest developments {name} {datetime.now().year}`")
-            content.append("")
+                # Sniff content for "BREAKING CHANGE"
+                try:
+                    with open(os.path.join(self.root_dir, inp), 'r') as f:
+                        text = f.read()
+                        if "BREAKING CHANGE" in text:
+                            content.append("- **⚠️ ALERT**: Contains BREAKING CHANGE.")
+                        if "🚨" in text:
+                            content.append("- **🚨 ALERT**: Critical Security/Stability Update.")
+                except:
+                    pass
+
+                content.append("- **Action**: Read file and extract entities.")
+                content.append(f"- **Command**: `nexus.py add entity ...`")
+                content.append("")
+
+        # Section 2: Entropy Targets
+        if focus_areas:
+            content.append("## 🔍 Entropy Targets (熵值目标)")
+            for area in focus_areas:
+                entity = self.cortex.entities.get(area)
+                name = entity.name if entity else area
+                desc = entity.desc if entity else "No description available."
+                type_ = entity.type if entity else "unknown"
+
+                content.append(f"### 1. {name} (`{area}`)")
+                content.append(f"- **Type**: {type_}")
+                content.append(f"- **Context**: {desc}")
+                content.append("- **Task**: Search for recent developments, integration patterns, or code examples. (搜索最新进展、集成模式或代码示例。)")
+                content.append(f"- **Suggested Query**: `latest developments {name} {datetime.now().year}`")
+                content.append("")
 
         content.append("## 📝 Ingestion Protocol (摄入协议)")
         content.append("Run the following to ingest findings: (运行以下命令摄入发现：)")
