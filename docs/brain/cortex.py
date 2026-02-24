@@ -1,6 +1,7 @@
 import json
 import os
 import glob
+import sqlite3
 from dataclasses import dataclass, field, asdict
 from typing import Dict, List, Optional, Set, Tuple
 from datetime import datetime, timedelta
@@ -38,13 +39,14 @@ class Cortex:
         self.entities: Dict[str, Entity] = {}
         self.relations: List[Relation] = []
         self.snapshot_path = os.path.join(root_dir, "knowledge", "snapshot.json")
+        self.db = None # SQLite connection
 
     def load_graph(self):
         """
         Loads graph from snapshot first (O(1)), then merges delta .jsonl files.
+        Builds SQLite FTS5 index in memory.
         """
         # 1. Load Snapshot if exists
-        loaded_snapshot_time = None
         if os.path.exists(self.snapshot_path):
             print(f"[Cortex] Loading snapshot: {self.snapshot_path}")
             try:
@@ -54,18 +56,16 @@ class Cortex:
                         self.entities[e_data['id']] = Entity(**e_data)
                     for r_data in data.get('relations', []):
                         self.relations.append(Relation(**r_data))
-                    loaded_snapshot_time = data.get('timestamp')
                     print(f"  - Snapshot loaded ({len(self.entities)} entities, {len(self.relations)} relations).")
             except Exception as e:
                 print(f"  ! Error loading snapshot: {e}")
 
         # 2. Load Delta (New .jsonl files)
-        # In a real LSM tree, we'd only load files newer than snapshot time.
-        # For simplicity/robustness, we re-scan everything but update/dedupe in memory.
-        # Ideally, we should check file mtime.
-
         self._load_jsonl_entities()
         self._load_jsonl_relations()
+
+        # 3. Build Search Index
+        self._build_search_index()
 
     def _load_jsonl_entities(self):
         entity_path = os.path.join(self.root_dir, "knowledge", "entities", "**", "*.jsonl")
@@ -76,24 +76,12 @@ class Cortex:
                     try:
                         data = json.loads(line)
                         if 'id' in data:
-                            # Overwrite or Add (Last Write Wins)
                             self.entities[data['id']] = Entity(**data)
                     except json.JSONDecodeError:
                         pass
 
     def _load_jsonl_relations(self):
         rel_path = os.path.join(self.root_dir, "knowledge", "relations", "**", "*.jsonl")
-        # To avoid duplicates if we loaded from snapshot, we might need logic.
-        # But since relations are Append-Only logs, simple appending works if snapshot + delta = total history.
-        # The issue is if snapshot *contains* data from .jsonl, loading .jsonl again duplicates relations.
-        # FIX: Compact should DELETE or ARCHIVE old .jsonl files, or we track parsed files.
-        # STRATEGY: Snapshot is a "Cache". We clear memory before loading delta if we want perfect sync,
-        # OR we assume snapshot is the "Base" and we only load files *newer* than snapshot.
-        # For this version: We will simple clear relations from memory before loading JSONL
-        # IF we want to rely on JSONL as source of truth.
-        # BUT the goal of snapshot is speed.
-        # Let's use a simple Set for relation deduplication based on (src, rel, dst).
-
         existing_rels = {(r.src, r.rel, r.dst) for r in self.relations}
 
         for filepath in glob.glob(rel_path, recursive=True):
@@ -110,10 +98,73 @@ class Cortex:
                     except json.JSONDecodeError:
                         pass
 
+    def _build_search_index(self):
+        """Builds in-memory SQLite FTS5 index for entities."""
+        self.db = sqlite3.connect(':memory:')
+        c = self.db.cursor()
+
+        # Create FTS5 virtual table
+        try:
+            c.execute('''
+                CREATE VIRTUAL TABLE entities_idx USING fts5(id, name, desc, tags)
+            ''')
+        except sqlite3.OperationalError:
+            # Fallback for environments without FTS5 (though uncommon in Python 3.10+)
+            print("[Cortex] FTS5 not available. Fallback to standard table (slow search).")
+            c.execute('''
+                CREATE TABLE entities_idx (id TEXT, name TEXT, desc TEXT, tags TEXT)
+            ''')
+
+        # Batch insert
+        data = []
+        for e in self.entities.values():
+            tags_str = ",".join(e.tags)
+            data.append((e.id, e.name, e.desc, tags_str))
+
+        c.executemany('INSERT INTO entities_idx(id, name, desc, tags) VALUES (?, ?, ?, ?)', data)
+        self.db.commit()
+        print(f"[Cortex] Search index built in memory ({len(data)} records).")
+
+    def search_concepts(self, query: str) -> List[Entity]:
+        """Performs full-text search using SQLite FTS5."""
+        if not self.db:
+            return []
+
+        c = self.db.cursor()
+        try:
+            # FTS5 match query
+            # We sanitize simple queries, but let's assume basic input for now.
+            # "query" -> matches any column
+            # Note: FTS5 query syntax is strict. 'vllm' works. 'vllm*' works.
+            # But simple words might fail if they are stopwords or syntax.
+            # Let's wrap in quotes if it contains spaces to treat as phrase?
+            # Or just pass raw query.
+
+            # Simple sanitization
+            safe_query = query.replace('"', '""')
+
+            # Use MATCH
+            c.execute('SELECT id FROM entities_idx WHERE entities_idx MATCH ? ORDER BY rank', (safe_query,))
+            ids = [row[0] for row in c.fetchall()]
+
+            results = []
+            for eid in ids:
+                if eid in self.entities:
+                    results.append(self.entities[eid])
+            return results
+        except sqlite3.OperationalError as e:
+            # Try LIKE fallback if MATCH fails (e.g. FTS not enabled or syntax error)
+            # print(f"[!] Search Error (FTS): {e}. Fallback to LIKE.")
+            term = f"%{query}%"
+            c.execute('SELECT id FROM entities_idx WHERE id LIKE ? OR name LIKE ? OR desc LIKE ? OR tags LIKE ?', (term, term, term, term))
+            ids = [row[0] for row in c.fetchall()]
+            results = []
+            for eid in ids:
+                 if eid in self.entities:
+                    results.append(self.entities[eid])
+            return results
+
     def save_snapshot(self):
-        """
-        Compacts current memory state into a single JSON snapshot.
-        """
         print(f"[Cortex] Creating snapshot at {self.snapshot_path}...")
         data = {
             "timestamp": datetime.now().isoformat(),
@@ -124,52 +175,49 @@ class Cortex:
             json.dump(data, f, indent=2, ensure_ascii=False)
         print(f"[Cortex] Snapshot saved. Size: {len(self.entities)} entities, {len(self.relations)} relations.")
 
-    def query_entity(self, entity_id: str) -> Optional[Dict]:
-        if entity_id not in self.entities:
-            return None
-        entity = self.entities[entity_id]
-        outgoing = [r for r in self.relations if r.src == entity_id]
-        incoming = [r for r in self.relations if r.dst == entity_id]
-        return {
-            "node": asdict(entity),
-            "connections": {
-                "outgoing": [{"rel": r.rel, "target": r.dst, "context": r.context} for r in outgoing],
-                "incoming": [{"rel": r.rel, "source": r.src, "context": r.context} for r in incoming]
-            }
-        }
-
-    def search_concepts(self, query: str) -> List[Entity]:
-        query = query.lower()
-        results = []
-        for entity in self.entities.values():
-            match = (
-                query in entity.name.lower() or
-                query in entity.desc.lower() or
-                any(query in t.lower() for t in entity.tags) or
-                query == entity.id
-            )
-            if match:
-                results.append(entity)
-        return results
-
-    def find_connection(self, start_id: str, end_id: str) -> Optional[List[str]]:
-        if start_id not in self.entities or end_id not in self.entities:
-            return None
-        queue = deque([(start_id, [start_id])])
-        visited = {start_id}
-        adj: Dict[str, List[str]] = {eid: [] for eid in self.entities}
+    def analyze_entropy(self, stale_days: int = 30) -> EntropyReport:
+        indegree = {eid: 0 for eid in self.entities}
+        outdegree = {eid: 0 for eid in self.entities}
         for rel in self.relations:
-            if rel.src in adj: adj[rel.src].append(rel.dst)
-            if rel.dst in adj: adj[rel.dst].append(rel.src)
-        while queue:
-            (vertex, path) = queue.popleft()
-            if vertex == end_id:
-                return path
-            for neighbor in adj.get(vertex, []):
-                if neighbor not in visited:
-                    visited.add(neighbor)
-                    queue.append((neighbor, path + [neighbor]))
-        return None
+            if rel.src in outdegree: outdegree[rel.src] += 1
+            if rel.dst in indegree: indegree[rel.dst] += 1
+
+        orphans = [eid for eid in self.entities if indegree[eid] == 0 and outdegree[eid] == 0]
+        stale_threshold = datetime.now() - timedelta(days=stale_days)
+        stale_nodes = []
+
+        for eid, entity in self.entities.items():
+            if not entity.updated_at:
+                stale_nodes.append(eid)
+                continue
+            try:
+                update_date = datetime.fromisoformat(entity.updated_at.replace('Z', '+00:00'))
+                if update_date.tzinfo is None: update_date = update_date.replace(tzinfo=None)
+                if update_date < stale_threshold: stale_nodes.append(eid)
+            except ValueError:
+                stale_nodes.append(eid)
+
+        n = len(self.entities)
+        max_edges = n * (n - 1) if n > 1 else 1
+        density = len(self.relations) / max_edges if n > 1 else 0.0
+
+        return EntropyReport(
+            total_nodes=n,
+            total_edges=len(self.relations),
+            orphan_nodes=orphans,
+            stale_nodes=stale_nodes,
+            broken_links=self.validate_graph(),
+            density=density
+        )
+
+    def validate_graph(self) -> List[str]:
+        errors = []
+        for i, rel in enumerate(self.relations):
+            if rel.src not in self.entities:
+                errors.append(f"Broken Link: Relation #{i} source '{rel.src}' does not exist.")
+            if rel.dst not in self.entities:
+                errors.append(f"Broken Link: Relation #{i} destination '{rel.dst}' does not exist.")
+        return errors
 
     def export_mermaid(self) -> str:
         lines = ["graph TD"]
@@ -186,43 +234,3 @@ class Cortex:
                 label = rel.rel.replace('"', '')
                 lines.append(f"  {rel.src} -- \"{label}\" --> {rel.dst}")
         return "\n".join(lines)
-
-    def validate_graph(self) -> List[str]:
-        errors = []
-        for i, rel in enumerate(self.relations):
-            if rel.src not in self.entities:
-                errors.append(f"Broken Link: Relation #{i} source '{rel.src}' does not exist.")
-            if rel.dst not in self.entities:
-                errors.append(f"Broken Link: Relation #{i} destination '{rel.dst}' does not exist.")
-        return errors
-
-    def analyze_entropy(self, stale_days: int = 30) -> EntropyReport:
-        indegree = {eid: 0 for eid in self.entities}
-        outdegree = {eid: 0 for eid in self.entities}
-        for rel in self.relations:
-            if rel.src in outdegree: outdegree[rel.src] += 1
-            if rel.dst in indegree: indegree[rel.dst] += 1
-        orphans = [eid for eid in self.entities if indegree[eid] == 0 and outdegree[eid] == 0]
-        stale_threshold = datetime.now() - timedelta(days=stale_days)
-        stale_nodes = []
-        for eid, entity in self.entities.items():
-            if not entity.updated_at:
-                stale_nodes.append(eid)
-                continue
-            try:
-                update_date = datetime.fromisoformat(entity.updated_at.replace('Z', '+00:00'))
-                if update_date.tzinfo is None: update_date = update_date.replace(tzinfo=None)
-                if update_date < stale_threshold: stale_nodes.append(eid)
-            except ValueError:
-                stale_nodes.append(eid)
-        n = len(self.entities)
-        max_edges = n * (n - 1) if n > 1 else 1
-        density = len(self.relations) / max_edges if n > 1 else 0.0
-        return EntropyReport(
-            total_nodes=n,
-            total_edges=len(self.relations),
-            orphan_nodes=orphans,
-            stale_nodes=stale_nodes,
-            broken_links=self.validate_graph(),
-            density=density
-        )
