@@ -23,3 +23,9 @@
 {"src": "dify", "rel": "enables", "dst": "agentic-workflow", "context": "Ecosystem Consensus", "created_at": "2026-02-23T03:24:00.727288"}
 {"src": "ollama", "rel": "supports", "dst": "deepseek", "context": "v0.17.0 Release", "created_at": "2026-02-23T03:24:00.727457"}
 {"src": "open-webui", "rel": "interacts_with", "dst": "ollama", "context": "Integration Docs", "created_at": "2026-02-23T03:24:00.727559"}
+{"src": "cve-2026-22778", "rel": "impacts", "dst": "vllm", "context": "", "created_at": "2026-02-24T02:06:28.698900"}
+{"src": "vllm", "rel": "implements", "dst": "multi-modal-vllm", "context": "", "created_at": "2026-02-24T02:06:29.074610"}
+{"src": "transformer", "rel": "evolves_to", "dst": "moe-architecture", "context": "", "created_at": "2026-02-24T02:06:29.462332"}
+{"src": "nexus-cortex", "rel": "implements", "dst": "mcp-protocol", "context": "", "created_at": "2026-02-24T02:06:30.211413"}
+{"src": "moe-architecture", "rel": "optimizes", "dst": "edge-ai", "context": "", "created_at": "2026-02-24T02:07:24.160279"}
+{"src": "lostlight-portal", "rel": "hosts", "dst": "nexus-cortex", "context": "", "created_at": "2026-02-24T02:07:24.487808"}
