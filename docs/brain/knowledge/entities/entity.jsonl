@@ -1,0 +1,9 @@
+{"id": "cve-2026-22778", "type": "concept", "name": "CVE-2026-22778 (vLLM RCE)", "desc": "Critical RCE vulnerability in vLLM affecting multi-modal models.", "tags": [], "updated_at": "2026-02-24T02:06:26.778235"}
+{"id": "multi-modal-vllm", "type": "tech", "name": "Multi-Modal Inference (VLM)", "desc": "vLLM support for Vision-Language Models on heterogeneous hardware.", "tags": [], "updated_at": "2026-02-24T02:06:27.129345"}
+{"id": "moe-architecture", "type": "concept", "name": "Mixture-of-Experts (MoE)", "desc": "Sparse neural architecture for efficient inference.", "tags": [], "updated_at": "2026-02-24T02:06:27.524645"}
+{"id": "nexus-cortex", "type": "concept", "name": "NEXUS CORTEX", "desc": "The decentralized cognitive core of Lostlight Portal.", "tags": [], "updated_at": "2026-02-24T02:06:27.913858"}
+{"id": "mcp-protocol", "type": "tech", "name": "Model Context Protocol (MCP)", "desc": "Standardized protocol for AI model context exchange.", "tags": [], "updated_at": "2026-02-24T02:06:28.314823"}
+{"id": "edge-ai", "type": "domain", "name": "Edge AI", "desc": "Deployment of AI models on local, resource-constrained devices.", "tags": [], "updated_at": "2026-02-24T02:07:23.817965"}
+{"id": "rtx-blackwell", "type": "hardware", "name": "RTX Blackwell (SM120)", "desc": "Next-generation NVIDIA GPU architecture optimized for MoE.", "tags": [], "updated_at": "2026-02-25T06:08:15.371048"}
+{"id": "step-3-5-flash", "type": "model", "name": "Step-3.5-Flash", "desc": "Efficient multimodal model supported in vLLM v0.15.1.", "tags": [], "updated_at": "2026-02-25T06:08:15.763034"}
+{"id": "torch-compile", "type": "tech", "name": "torch.compile", "desc": "PyTorch 2.0 compiler for model optimization.", "tags": [], "updated_at": "2026-02-25T06:08:16.293003"}
