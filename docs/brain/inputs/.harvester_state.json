@@ -1,8 +1,8 @@
 {
   "repos": {
     "vllm-project/vllm": {
-      "etag": "W/\"e6d6cb63cca177f696851d3528f9434a2de20c193d1a6d67a9cdc1da10e796df\"",
-      "last_checked": "2026-02-24T04:28:02.439584+00:00",
+      "etag": "W/\"5ca23c8d4bc23946613b893cf35e3c2f1c368b3b006049700af6f0cabf9df6d3\"",
+      "last_checked": "2026-02-25T02:07:02.475206+00:00",
       "latest_tag": "v0.15.1"
     },
     "huggingface/transformers": {
