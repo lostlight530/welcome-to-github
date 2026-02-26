@@ -1,0 +1,469 @@
+{
+  "timestamp": "2026-02-23T03:24:01.075869",
+  "entities": [
+    {
+      "id": "android",
+      "type": "platform",
+      "name": "Android",
+      "desc": "Mobile operating system based on a modified version of the Linux kernel.",
+      "tags": [
+        "mobile",
+        "os",
+        "google"
+      ],
+      "updated_at": "2026-02-15T08:52:29.535280"
+    },
+    {
+      "id": "gemma-2b",
+      "type": "tech",
+      "name": "Gemma 2B",
+      "desc": "Google's lightweight open model for on-device text generation.",
+      "tags": [
+        "google",
+        "llm",
+        "edge"
+      ],
+      "updated_at": "2026-02-17T02:42:19.820678"
+    },
+    {
+      "id": "webgpu",
+      "type": "standard",
+      "name": "WebGPU",
+      "desc": "Modern web API for GPU acceleration.",
+      "tags": [
+        "web",
+        "graphics",
+        "compute"
+      ],
+      "updated_at": "2026-02-17T03:07:33.448524"
+    },
+    {
+      "id": "litert",
+      "type": "tech",
+      "name": "LiteRT",
+      "desc": "High-performance runtime for on-device AI (formerly TFLite).",
+      "tags": [
+        "google",
+        "inference",
+        "edge"
+      ],
+      "updated_at": "2026-02-17T03:07:33.961856"
+    },
+    {
+      "id": "npu",
+      "type": "tech",
+      "name": "NPU",
+      "desc": "Neural Processing Unit.",
+      "tags": [
+        "hardware",
+        "acceleration"
+      ],
+      "updated_at": "2026-02-23T03:24:00.723585"
+    },
+    {
+      "id": "jax",
+      "type": "tech",
+      "name": "JAX",
+      "desc": "High-performance numerical computing.",
+      "tags": [
+        "google",
+        "research"
+      ],
+      "updated_at": "2026-02-23T03:24:00.724555"
+    },
+    {
+      "id": "mindspore",
+      "type": "tech",
+      "name": "MindSpore",
+      "desc": "Huawei's AI framework.",
+      "tags": [
+        "huawei",
+        "edge-ai"
+      ],
+      "updated_at": "2026-02-23T03:24:00.724737"
+    },
+    {
+      "id": "vllm",
+      "type": "tech",
+      "name": "vLLM",
+      "desc": "High-throughput inference engine.",
+      "tags": [
+        "inference",
+        "server"
+      ],
+      "updated_at": "2026-02-23T03:24:00.725149"
+    },
+    {
+      "id": "tool_use",
+      "type": "concept",
+      "name": "Tool Use",
+      "desc": "The ability of an AI agent to invoke external functions or APIs.",
+      "tags": [
+        "agent",
+        "capability"
+      ],
+      "updated_at": "2026-02-15T08:52:29.537227"
+    },
+    {
+      "id": "on-device-llm",
+      "type": "concept",
+      "name": "On-Device LLM",
+      "desc": "Large Language Models optimized for edge devices (phones, IoT).",
+      "tags": [
+        "ai",
+        "edge",
+        "inference"
+      ],
+      "updated_at": "2026-02-17T02:42:19.459338"
+    },
+    {
+      "id": "arch_pattern_gemma-2b_1",
+      "type": "pattern",
+      "name": "Multi-Query Attention",
+      "desc": "Uses MQA for efficient inference.",
+      "tags": [
+        "architecture",
+        "deep-dive"
+      ],
+      "updated_at": "2026-02-17T05:05:15.980151"
+    },
+    {
+      "id": "arch_pattern_gemma-2b_2",
+      "type": "pattern",
+      "name": "XLA Optimization",
+      "desc": "Optimized for TPU/GPU execution via XLA.",
+      "tags": [
+        "architecture",
+        "deep-dive"
+      ],
+      "updated_at": "2026-02-17T05:05:15.983462"
+    },
+    {
+      "id": "arch_pattern_gemma-2b_3",
+      "type": "pattern",
+      "name": "Quantization Support",
+      "desc": "Supports int8/int4 execution on mobile.",
+      "tags": [
+        "architecture",
+        "deep-dive"
+      ],
+      "updated_at": "2026-02-17T05:05:15.984052"
+    },
+    {
+      "id": "arch_pattern_on-device-llm_1",
+      "type": "pattern",
+      "name": "Memory Management",
+      "desc": "Requires careful memory management (RAM < 8GB).",
+      "tags": [
+        "architecture",
+        "deep-dive"
+      ],
+      "updated_at": "2026-02-17T05:05:16.574252"
+    },
+    {
+      "id": "arch_pattern_on-device-llm_2",
+      "type": "pattern",
+      "name": "Delegate Acceleration",
+      "desc": "Relies on delegate acceleration (NPU/DSP).",
+      "tags": [
+        "architecture",
+        "deep-dive"
+      ],
+      "updated_at": "2026-02-17T05:05:16.575351"
+    },
+    {
+      "id": "arch_pattern_on-device-llm_3",
+      "type": "pattern",
+      "name": "Privacy-First",
+      "desc": "Architecture ensures no data leaves device.",
+      "tags": [
+        "architecture",
+        "deep-dive"
+      ],
+      "updated_at": "2026-02-17T05:05:16.575680"
+    },
+    {
+      "id": "dify",
+      "type": "tool",
+      "name": "Dify",
+      "desc": "LLM App Development Platform.",
+      "tags": [
+        "low-code",
+        "agent"
+      ],
+      "updated_at": "2026-02-23T03:24:00.724845"
+    },
+    {
+      "id": "ollama",
+      "type": "tool",
+      "name": "Ollama",
+      "desc": "Get up and running with Llama 3.",
+      "tags": [
+        "local-llm",
+        "tool"
+      ],
+      "updated_at": "2026-02-23T03:24:00.725366"
+    },
+    {
+      "id": "open-webui",
+      "type": "tool",
+      "name": "Open WebUI",
+      "desc": "User-friendly AI Interface.",
+      "tags": [
+        "ui",
+        "python"
+      ],
+      "updated_at": "2026-02-23T03:24:00.725465"
+    },
+    {
+      "id": "transformer",
+      "type": "concept",
+      "name": "Transformer",
+      "desc": "Auto-generated concept",
+      "tags": [
+        "auto"
+      ],
+      "updated_at": ""
+    },
+    {
+      "id": "legacy-xla",
+      "type": "concept",
+      "name": "Legacy-Xla",
+      "desc": "Auto-generated concept",
+      "tags": [
+        "auto"
+      ],
+      "updated_at": ""
+    },
+    {
+      "id": "database-servers",
+      "type": "concept",
+      "name": "Database-Servers",
+      "desc": "Auto-generated concept",
+      "tags": [
+        "auto"
+      ],
+      "updated_at": ""
+    },
+    {
+      "id": "agentic-workflow",
+      "type": "concept",
+      "name": "Agentic-Workflow",
+      "desc": "Auto-generated concept",
+      "tags": [
+        "auto"
+      ],
+      "updated_at": ""
+    },
+    {
+      "id": "deepseek",
+      "type": "concept",
+      "name": "Deepseek",
+      "desc": "Auto-generated concept",
+      "tags": [
+        "auto"
+      ],
+      "updated_at": ""
+    },
+    {
+      "id": "python",
+      "type": "tech",
+      "name": "Python",
+      "desc": "Primary language for AI/ML and scripting.",
+      "tags": [
+        "lang",
+        "backend"
+      ],
+      "updated_at": "2026-02-14"
+    },
+    {
+      "id": "vertex-ai",
+      "type": "tech",
+      "name": "Google Vertex AI",
+      "desc": "Unified AI platform on Google Cloud.",
+      "tags": [
+        "cloud",
+        "ml-ops"
+      ],
+      "updated_at": "2026-02-14"
+    },
+    {
+      "id": "mediapipe",
+      "type": "tech",
+      "name": "MediaPipe",
+      "desc": "Cross-platform framework for building multimodal ML pipelines.",
+      "tags": [
+        "edge-ai",
+        "vision"
+      ],
+      "updated_at": "2026-02-14"
+    },
+    {
+      "id": "mcp",
+      "type": "protocol",
+      "name": "Model Context Protocol",
+      "desc": "Standard for connecting AI models to external data and tools.",
+      "tags": [
+        "standard",
+        "agent"
+      ],
+      "updated_at": "2026-02-14"
+    }
+  ],
+  "relations": [
+    {
+      "src": "python",
+      "rel": "powers",
+      "dst": "vertex-ai",
+      "context": "GCP SDK",
+      "created_at": "2026-02-14"
+    },
+    {
+      "src": "mediapipe",
+      "rel": "runs_on",
+      "dst": "android",
+      "context": "Official docs",
+      "created_at": "2026-02-14"
+    },
+    {
+      "src": "mcp",
+      "rel": "enables",
+      "dst": "tool_use",
+      "context": "2026 Tech Trend",
+      "created_at": "2026-02-14"
+    },
+    {
+      "src": "mediapipe",
+      "rel": "supports",
+      "dst": "on-device-llm",
+      "context": "MediaPipe LLM Inference API",
+      "created_at": "2026-02-17T02:42:20.275176"
+    },
+    {
+      "src": "on-device-llm",
+      "rel": "enables",
+      "dst": "gemma-2b",
+      "context": "Example Implementation",
+      "created_at": "2026-02-17T02:42:20.698610"
+    },
+    {
+      "src": "android",
+      "rel": "runs",
+      "dst": "gemma-2b",
+      "context": "AICore / MLCore Integration",
+      "created_at": "2026-02-17T02:42:21.075285"
+    },
+    {
+      "src": "webgpu",
+      "rel": "accelerates",
+      "dst": "mediapipe",
+      "context": "Web Integration",
+      "created_at": "2026-02-17T03:07:34.425960"
+    },
+    {
+      "src": "litert",
+      "rel": "powers",
+      "dst": "android",
+      "context": "System Service",
+      "created_at": "2026-02-17T03:07:34.744831"
+    },
+    {
+      "src": "gemma-2b",
+      "rel": "runs_on",
+      "dst": "litert",
+      "context": "Quantized Execution",
+      "created_at": "2026-02-17T03:07:35.124223"
+    },
+    {
+      "src": "gemma-2b",
+      "rel": "implements_philosophy",
+      "dst": "arch_pattern_gemma-2b_1",
+      "context": "Source: https://ai.google.dev/gemma",
+      "created_at": "2026-02-17T05:05:15.981715"
+    },
+    {
+      "src": "gemma-2b",
+      "rel": "implements_philosophy",
+      "dst": "arch_pattern_gemma-2b_2",
+      "context": "Source: https://ai.google.dev/gemma",
+      "created_at": "2026-02-17T05:05:15.983733"
+    },
+    {
+      "src": "gemma-2b",
+      "rel": "implements_philosophy",
+      "dst": "arch_pattern_gemma-2b_3",
+      "context": "Source: https://ai.google.dev/gemma",
+      "created_at": "2026-02-17T05:05:15.984278"
+    },
+    {
+      "src": "on-device-llm",
+      "rel": "implements_philosophy",
+      "dst": "arch_pattern_on-device-llm_1",
+      "context": "Source: https://ai.google.dev/edge/llm",
+      "created_at": "2026-02-17T05:05:16.574938"
+    },
+    {
+      "src": "on-device-llm",
+      "rel": "implements_philosophy",
+      "dst": "arch_pattern_on-device-llm_2",
+      "context": "Source: https://ai.google.dev/edge/llm",
+      "created_at": "2026-02-17T05:05:16.575549"
+    },
+    {
+      "src": "on-device-llm",
+      "rel": "implements_philosophy",
+      "dst": "arch_pattern_on-device-llm_3",
+      "context": "Source: https://ai.google.dev/edge/llm",
+      "created_at": "2026-02-17T05:05:16.575777"
+    },
+    {
+      "src": "mediapipe",
+      "rel": "supports",
+      "dst": "npu",
+      "context": "v0.10.33 Release Note",
+      "created_at": "2026-02-23T03:24:00.725554"
+    },
+    {
+      "src": "mindspore",
+      "rel": "optimizes",
+      "dst": "transformer",
+      "context": "Recent Commits",
+      "created_at": "2026-02-23T03:24:00.726546"
+    },
+    {
+      "src": "jax",
+      "rel": "deprecates",
+      "dst": "legacy-xla",
+      "context": "v0.9.1 Breaking Change",
+      "created_at": "2026-02-23T03:24:00.726826"
+    },
+    {
+      "src": "mcp",
+      "rel": "expands_to",
+      "dst": "database-servers",
+      "context": "Release 2026.2.25",
+      "created_at": "2026-02-23T03:24:00.727111"
+    },
+    {
+      "src": "dify",
+      "rel": "enables",
+      "dst": "agentic-workflow",
+      "context": "Ecosystem Consensus",
+      "created_at": "2026-02-23T03:24:00.727288"
+    },
+    {
+      "src": "ollama",
+      "rel": "supports",
+      "dst": "deepseek",
+      "context": "v0.17.0 Release",
+      "created_at": "2026-02-23T03:24:00.727457"
+    },
+    {
+      "src": "open-webui",
+      "rel": "interacts_with",
+      "dst": "ollama",
+      "context": "Integration Docs",
+      "created_at": "2026-02-23T03:24:00.727559"
+    }
+  ]
+}
