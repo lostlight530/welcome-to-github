@@ -17,3 +17,8 @@
 {"id": "qwen3-5-moe-4bit", "type": "model", "name": "Qwen3.5 MoE (4-bit Mobile)", "desc": "Efficient 4-bit MoE model for mobile devices.", "tags": [], "updated_at": "2026-02-26T13:10:36.598562"}
 {"id": "markitdown", "type": "tool", "name": "Microsoft MarkItDown (PDF-to-MD)", "desc": "Tool for converting PDF to Markdown.", "tags": [], "updated_at": "2026-02-26T13:10:37.374609"}
 {"id": "pdf-markdown", "type": "concept", "name": "PDF to Markdown Conversion", "desc": "Process of converting unstructured PDF documents to structured Markdown.", "tags": [], "updated_at": "2026-02-26T13:10:57.758551"}
+{"id": "vllm-0-16-0", "type": "tech", "name": "vLLM v0.16.0 (Next-Gen VLM & Speculative)", "desc": "Major refactor for Blackwell and Speculative Decoding.", "tags": [], "updated_at": "2026-02-28T01:51:25.714156"}
+{"id": "ai-rag-pipeline", "type": "concept", "name": "AI RAG Pipeline", "desc": "Retrieval Augmented Generation workflow.", "tags": [], "updated_at": "2026-02-28T01:51:27.891407"}
+{"id": "linear-attention", "type": "tech", "name": "Linear/Sparse Attention (2026 Standard)", "desc": "O(N) attention mechanism replacing standard O(N^2).", "tags": [], "updated_at": "2026-02-28T01:51:28.929055"}
+{"id": "mlir-compiler", "type": "concept", "name": "MLIR (Multi-Level Intermediate Representation)", "desc": "Next generation compiler infrastructure replacing XLA.", "tags": [], "updated_at": "2026-02-28T01:51:29.959364"}
+{"id": "native-vector-storage", "type": "tech", "name": "Native Vector OS Storage", "desc": "Vector storage embedded natively in OS/filesystem.", "tags": [], "updated_at": "2026-02-28T01:51:31.025723"}

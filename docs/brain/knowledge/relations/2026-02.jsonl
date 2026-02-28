@@ -40,3 +40,11 @@
 {"src": "voxtral-realtime", "rel": "optimizes", "dst": "edge-ai", "context": "", "created_at": "2026-02-26T13:10:36.215773"}
 {"src": "qwen3-5-moe-4bit", "rel": "optimizes", "dst": "edge-ai", "context": "", "created_at": "2026-02-26T13:10:36.987744"}
 {"src": "markitdown", "rel": "parses", "dst": "pdf-markdown", "context": "", "created_at": "2026-02-26T13:10:58.123892"}
+{"src": "cve-2025-69223", "rel": "impacts", "dst": "vllm", "context": "", "created_at": "2026-02-28T01:51:25.005844"}
+{"src": "cve-2026-0994", "rel": "impacts", "dst": "vllm", "context": "", "created_at": "2026-02-28T01:51:25.368178"}
+{"src": "vllm", "rel": "evolves_to", "dst": "vllm-0-16-0", "context": "", "created_at": "2026-02-28T01:51:26.059743"}
+{"src": "glm-5", "rel": "implements", "dst": "deepseek-dsa", "context": "", "created_at": "2026-02-28T01:51:27.543306"}
+{"src": "markitdown", "rel": "optimizes", "dst": "ai-rag-pipeline", "context": "", "created_at": "2026-02-28T01:51:28.235604"}
+{"src": "transformer", "rel": "evolves_to", "dst": "linear-attention", "context": "", "created_at": "2026-02-28T01:51:29.272136"}
+{"src": "legacy-xla", "rel": "deprecated_in_favor_of", "dst": "mlir-compiler", "context": "", "created_at": "2026-02-28T01:51:30.300122"}
+{"src": "database-servers", "rel": "evolves_to", "dst": "native-vector-storage", "context": "", "created_at": "2026-02-28T01:51:31.413037"}
