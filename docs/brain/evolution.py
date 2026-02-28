@@ -2,8 +2,9 @@ import sys
 import os
 import shutil
 import glob
+import random
 from datetime import datetime, timedelta
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 # Ensure imports work
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -47,11 +48,17 @@ class Evolver:
 
         focus_areas = self._identify_focus_areas(report)
 
-        if not focus_areas and not new_inputs:
+        # Determine Cross-Pollination Candidates
+        pollination_pair = self._find_cross_pollination_candidates()
+
+        if not focus_areas and not new_inputs and not pollination_pair:
             print("[Evolution] System stable. No high-priority targets. (系统稳定，无高优先级目标)")
             self._create_maintenance_mission()
         else:
-            self._create_foraging_mission(focus_areas, new_inputs)
+            self._create_foraging_mission(focus_areas, new_inputs, pollination_pair)
+
+        # 4. Generate Auto-Synthesis Report
+        self._generate_synthesis_report()
 
     def archive_mission(self):
         """Moves active mission to archive with timestamp. (归档活跃任务)"""
@@ -76,8 +83,6 @@ class Evolver:
         for filepath in glob.glob(pattern, recursive=True):
             mtime = datetime.fromtimestamp(os.path.getmtime(filepath))
             if mtime > threshold:
-                # Check if it's an "official update" (e.g., from Harvester)
-                # We can filter by content or path if needed.
                 rel_path = os.path.relpath(filepath, self.root_dir)
                 recent_files.append(rel_path)
 
@@ -89,36 +94,50 @@ class Evolver:
     def _identify_focus_areas(self, report) -> List[str]:
         """Selects top 3 priority nodes. (选择前 3 个优先级节点)"""
         focus_areas = []
-        # Priority 1: Orphans
         focus_areas.extend(report.orphan_nodes[:3])
-        # Priority 2: Stale
         if len(focus_areas) < 3:
             remaining = 3 - len(focus_areas)
             focus_areas.extend(report.stale_nodes[:remaining])
-
         return focus_areas
 
-    def _create_foraging_mission(self, focus_areas: List[str], new_inputs: List[str]):
+    def _find_cross_pollination_candidates(self) -> Optional[Tuple[str, str]]:
+        """Finds two random, disconnected entities to force a cognitive bridge."""
+        if len(self.cortex.entities) < 2:
+            return None
+
+        # Get all entity IDs
+        all_ids = list(self.cortex.entities.keys())
+
+        # Try to find a pair without a direct path (or just randomly for simplicity and serendipity)
+        # To keep it "Small and Stable" and performant, we pick two random nodes and see if they lack a direct connection.
+        for _ in range(10): # Max 10 attempts to find an unconnected pair
+            a, b = random.sample(all_ids, 2)
+            # Check if direct relation exists
+            has_edge = any(r for r in self.cortex.relations if (r.src == a and r.dst == b) or (r.src == b and r.dst == a))
+            if not has_edge:
+                return (a, b)
+
+        return None
+
+    def _create_foraging_mission(self, focus_areas: List[str], new_inputs: List[str], pollination: Optional[Tuple[str, str]]):
         """Writes a structured mission file. (生成任务简报)"""
-        print(f"[Evolution] Generating mission for {len(focus_areas)} targets and {len(new_inputs)} inputs. (生成任务)")
+        print(f"[Evolution] Generating mission... (生成任务)")
 
         content = [
             "# 🧠 NEXUS CORTEX: Active Mission (活跃任务)",
             f"> Generated (生成时间): {datetime.now().isoformat()}",
             "",
             "## 🎯 Objective (目标)",
-            "Ingest new intelligence and close knowledge gaps. (摄入新情报并填补知识缺口。)",
+            "Ingest new intelligence, close knowledge gaps, and force cross-pollination. (摄入情报、填补缺口并强制跨界融合。)",
             ""
         ]
 
-        # Section 1: New Intelligence (High Priority)
+        # Section 1: New Intelligence
         if new_inputs:
             content.append("## 📥 Pending Intelligence (待处理情报)")
             content.append("> Priority: Critical (Please review immediately)")
             for inp in new_inputs:
                 content.append(f"### 📄 `{inp}`")
-
-                # Sniff content for "BREAKING CHANGE"
                 try:
                     with open(os.path.join(self.root_dir, inp), 'r') as f:
                         text = f.read()
@@ -126,14 +145,26 @@ class Evolver:
                             content.append("- **⚠️ ALERT**: Contains BREAKING CHANGE.")
                         if "🚨" in text:
                             content.append("- **🚨 ALERT**: Critical Security/Stability Update.")
-                except:
-                    pass
-
+                except: pass
                 content.append("- **Action**: Read file and extract entities.")
                 content.append(f"- **Command**: `nexus.py add entity ...`")
                 content.append("")
 
-        # Section 2: Entropy Targets
+        # Section 2: Cross-Pollination (The Epiphany Engine)
+        if pollination:
+            a, b = pollination
+            name_a = self.cortex.entities[a].name
+            name_b = self.cortex.entities[b].name
+            content.append("## 🌌 Cross-Pollination (跨界连接)")
+            content.append("> System Density is low. Force a cognitive connection if possible.")
+            content.append(f"### ? `{name_a}` <--> `{name_b}`")
+            content.append(f"- **Entity 1**: {name_a} ({self.cortex.entities[a].type}) - {self.cortex.entities[a].desc}")
+            content.append(f"- **Entity 2**: {name_b} ({self.cortex.entities[b].type}) - {self.cortex.entities[b].desc}")
+            content.append("- **Prompt**: Is there a hidden architectural synergy, conflict, or historical link between these two?")
+            content.append(f"- **Action**: If a link exists, connect them: `nexus.py connect {a} <relation> {b}`")
+            content.append("")
+
+        # Section 3: Entropy Targets
         if focus_areas:
             content.append("## 🔍 Entropy Targets (熵值目标)")
             for area in focus_areas:
@@ -141,16 +172,14 @@ class Evolver:
                 name = entity.name if entity else area
                 desc = entity.desc if entity else "No description available."
                 type_ = entity.type if entity else "unknown"
-
                 content.append(f"### 1. {name} (`{area}`)")
                 content.append(f"- **Type**: {type_}")
                 content.append(f"- **Context**: {desc}")
-                content.append("- **Task**: Search for recent developments, integration patterns, or code examples. (搜索最新进展、集成模式或代码示例。)")
+                content.append("- **Task**: Search for recent developments, integration patterns, or code examples.")
                 content.append(f"- **Suggested Query**: `latest developments {name} {datetime.now().year}`")
                 content.append("")
 
         content.append("## 📝 Ingestion Protocol (摄入协议)")
-        content.append("Run the following to ingest findings: (运行以下命令摄入发现：)")
         content.append("```bash")
         content.append(f"python docs/brain/nexus.py add entity --type concept --id <slug> --name \"<Name>\"")
         content.append(f"python docs/brain/nexus.py connect <source_id> <relation> <target_id>")
@@ -171,10 +200,57 @@ class Evolver:
             "System is stable. Expand knowledge horizon randomly. (系统稳定，随机扩展知识边界。)",
             "",
             "## 🌌 Suggested Actions (建议行动)",
-            "- Explore adjacent fields to existing `tech_stack` nodes. (探索现有技术栈节点的相邻领域。)",
-            "- Review `inputs/` folder for unprocessed raw data. (审查 `inputs/` 文件夹中未处理的原始数据。)",
-            "- visualize the graph using `nexus visualize`. (使用 `nexus visualize` 可视化图谱。)"
+            "- Explore adjacent fields to existing `tech_stack` nodes.",
+            "- visualize the graph using `nexus visualize`."
         ]
         with open(self.active_mission_path, "w") as f:
             f.write("\n".join(content))
         print(f"[Evolution] Maintenance Brief written to {self.active_mission_path}")
+
+    def _generate_synthesis_report(self):
+        """Generates an automated daily Scholar Synthesis Report based on recent changes."""
+        # A simple synthesis logic: summarize new nodes added in the last 24h.
+        now = datetime.now()
+        threshold = now - timedelta(hours=24)
+
+        new_entities = []
+        for eid, entity in self.cortex.entities.items():
+            try:
+                if entity.updated_at:
+                    dt = datetime.fromisoformat(entity.updated_at.replace('Z', '+00:00'))
+                    if dt.tzinfo is None: dt = dt.replace(tzinfo=None)
+                    if dt > threshold:
+                        new_entities.append(entity)
+            except Exception:
+                pass
+
+        if not new_entities:
+            print("[Scholar] No significant new concepts to synthesize today.")
+            return
+
+        date_str = now.strftime("%Y%m%d")
+        report_filename = f"{date_str}-scholar-synthesis.md"
+        report_path = os.path.join(self.memories_dir, report_filename)
+
+        content = [
+            f"# 🧠 Scholar Auto-Synthesis Report",
+            f"**Date**: {now.strftime('%Y-%m-%d')}",
+            f"**Agent**: NEXUS CORTEX (Auto-Scholar)",
+            "",
+            "## 🌌 Daily Intelligence Summary",
+            f"The system ingested **{len(new_entities)}** new entities in the last 24 hours.",
+            "",
+            "### 📌 Newly Acquired Concepts:"
+        ]
+
+        for e in new_entities:
+            content.append(f"- **{e.name}** (`{e.type}`): {e.desc}")
+
+        content.append("")
+        content.append("## 🤖 Architect's Note")
+        content.append("This report is automatically generated by the OODA loop to track cognitive growth.")
+
+        with open(report_path, "w") as f:
+            f.write("\n".join(content))
+
+        print(f"[Scholar] Auto-Synthesis Report written to {report_path}")
