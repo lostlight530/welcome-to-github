@@ -1,0 +1,24 @@
+{"id": "cve-2026-22778", "type": "concept", "name": "CVE-2026-22778 (vLLM RCE)", "desc": "Critical RCE vulnerability in vLLM affecting multi-modal models.", "tags": [], "updated_at": "2026-02-24T02:06:26.778235"}
+{"id": "multi-modal-vllm", "type": "tech", "name": "Multi-Modal Inference (VLM)", "desc": "vLLM support for Vision-Language Models on heterogeneous hardware.", "tags": [], "updated_at": "2026-02-24T02:06:27.129345"}
+{"id": "moe-architecture", "type": "concept", "name": "Mixture-of-Experts (MoE)", "desc": "Sparse neural architecture for efficient inference.", "tags": [], "updated_at": "2026-02-24T02:06:27.524645"}
+{"id": "nexus-cortex", "type": "concept", "name": "NEXUS CORTEX", "desc": "The decentralized cognitive core of Lostlight Portal.", "tags": [], "updated_at": "2026-02-24T02:06:27.913858"}
+{"id": "mcp-protocol", "type": "tech", "name": "Model Context Protocol (MCP)", "desc": "Standardized protocol for AI model context exchange.", "tags": [], "updated_at": "2026-02-24T02:06:28.314823"}
+{"id": "edge-ai", "type": "domain", "name": "Edge AI", "desc": "Deployment of AI models on local, resource-constrained devices.", "tags": [], "updated_at": "2026-02-24T02:07:23.817965"}
+{"id": "rtx-blackwell", "type": "hardware", "name": "RTX Blackwell (SM120)", "desc": "Next-generation NVIDIA GPU architecture optimized for MoE.", "tags": [], "updated_at": "2026-02-25T06:08:15.371048"}
+{"id": "step-3-5-flash", "type": "model", "name": "Step-3.5-Flash", "desc": "Efficient multimodal model supported in vLLM v0.15.1.", "tags": [], "updated_at": "2026-02-25T06:08:15.763034"}
+{"id": "torch-compile", "type": "tech", "name": "torch.compile", "desc": "PyTorch 2.0 compiler for model optimization.", "tags": [], "updated_at": "2026-02-25T06:08:16.293003"}
+{"id": "cve-2025-69223", "type": "concept", "name": "CVE-2025-69223 (aiohttp Vulnerability)", "desc": "vLLM aiohttp dependency vulnerability.", "tags": [], "updated_at": "2026-02-26T13:10:31.973031"}
+{"id": "cve-2026-0994", "type": "concept", "name": "CVE-2026-0994 (Protobuf Vulnerability)", "desc": "vLLM Protobuf dependency vulnerability.", "tags": [], "updated_at": "2026-02-26T13:10:32.374720"}
+{"id": "sm120-blackwell", "type": "hardware", "name": "RTX Blackwell (SM120)", "desc": "NVIDIA Blackwell GPU Architecture.", "tags": [], "updated_at": "2026-02-26T13:10:33.485481"}
+{"id": "openai-triton", "type": "tech", "name": "OpenAI Triton", "desc": "Block-based GPU programming language.", "tags": [], "updated_at": "2026-02-26T13:10:34.150812"}
+{"id": "glm-5", "type": "model", "name": "GLM-5 (744B/40B Active)", "desc": "Sparse MoE model with 40B active params.", "tags": [], "updated_at": "2026-02-26T13:10:34.845370"}
+{"id": "deepseek-dsa", "type": "concept", "name": "DeepSeek Sparse Attention (DSA)", "desc": "Efficient attention mechanism.", "tags": [], "updated_at": "2026-02-26T13:10:35.206676"}
+{"id": "voxtral-realtime", "type": "model", "name": "VoxtralRealtime (Streaming ASR)", "desc": "Low-latency streaming ASR model.", "tags": [], "updated_at": "2026-02-26T13:10:35.879616"}
+{"id": "qwen3-5-moe-4bit", "type": "model", "name": "Qwen3.5 MoE (4-bit Mobile)", "desc": "Efficient 4-bit MoE model for mobile devices.", "tags": [], "updated_at": "2026-02-26T13:10:36.598562"}
+{"id": "markitdown", "type": "tool", "name": "Microsoft MarkItDown (PDF-to-MD)", "desc": "Tool for converting PDF to Markdown.", "tags": [], "updated_at": "2026-02-26T13:10:37.374609"}
+{"id": "pdf-markdown", "type": "concept", "name": "PDF to Markdown Conversion", "desc": "Process of converting unstructured PDF documents to structured Markdown.", "tags": [], "updated_at": "2026-02-26T13:10:57.758551"}
+{"id": "vllm-0-16-0", "type": "tech", "name": "vLLM v0.16.0 (Next-Gen VLM & Speculative)", "desc": "Major refactor for Blackwell and Speculative Decoding.", "tags": [], "updated_at": "2026-02-28T01:51:25.714156"}
+{"id": "ai-rag-pipeline", "type": "concept", "name": "AI RAG Pipeline", "desc": "Retrieval Augmented Generation workflow.", "tags": [], "updated_at": "2026-02-28T01:51:27.891407"}
+{"id": "linear-attention", "type": "tech", "name": "Linear/Sparse Attention (2026 Standard)", "desc": "O(N) attention mechanism replacing standard O(N^2).", "tags": [], "updated_at": "2026-02-28T01:51:28.929055"}
+{"id": "mlir-compiler", "type": "concept", "name": "MLIR (Multi-Level Intermediate Representation)", "desc": "Next generation compiler infrastructure replacing XLA.", "tags": [], "updated_at": "2026-02-28T01:51:29.959364"}
+{"id": "native-vector-storage", "type": "tech", "name": "Native Vector OS Storage", "desc": "Vector storage embedded natively in OS/filesystem.", "tags": [], "updated_at": "2026-02-28T01:51:31.025723"}
