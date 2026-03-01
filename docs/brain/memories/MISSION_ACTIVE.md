@@ -1,16 +1,54 @@
 # 🧠 NEXUS CORTEX: Active Mission (活跃任务)
-> Generated (生成时间): 2026-02-28T02:34:55.324752
+> Generated (生成时间): 2026-03-01T01:45:06.970029
 
 ## 🎯 Objective (目标)
 Ingest new intelligence, close knowledge gaps, and force cross-pollination. (摄入情报、填补缺口并强制跨界融合。)
 
+## 📥 Pending Intelligence (待处理情报)
+> Priority: Critical (Please review immediately)
+### 📄 `inputs/archive/2026/02/vllm-project_vllm_v0.15.1.md`
+- **Action**: Read file and extract entities.
+- **Command**: `nexus.py add entity ...`
+
+### 📄 `inputs/archive/2026/02/microsoft_markitdown_v0.1.5.md`
+- **Action**: Read file and extract entities.
+- **Command**: `nexus.py add entity ...`
+
+### 📄 `inputs/archive/2026/02/huggingface_transformers_v5.2.0.md`
+- **Action**: Read file and extract entities.
+- **Command**: `nexus.py add entity ...`
+
+### 📄 `inputs/2026/03/vllm-project_vllm_v0.16.0.md`
+- **Action**: Read file and extract entities.
+- **Command**: `nexus.py add entity ...`
+
+### 📄 `inputs/2026/03/microsoft_markitdown_v0.1.5.md`
+- **Action**: Read file and extract entities.
+- **Command**: `nexus.py add entity ...`
+
+### 📄 `inputs/2026/03/huggingface_transformers_v5.2.0.md`
+- **Action**: Read file and extract entities.
+- **Command**: `nexus.py add entity ...`
+
+### 📄 `inputs/2026/02/vllm-project_vllm_v0.15.1.md`
+- **Action**: Read file and extract entities.
+- **Command**: `nexus.py add entity ...`
+
+### 📄 `inputs/2026/02/microsoft_markitdown_v0.1.5.md`
+- **Action**: Read file and extract entities.
+- **Command**: `nexus.py add entity ...`
+
+### 📄 `inputs/2026/02/huggingface_transformers_v5.2.0.md`
+- **Action**: Read file and extract entities.
+- **Command**: `nexus.py add entity ...`
+
 ## 🌌 Cross-Pollination (跨界连接)
 > System Density is low. Force a cognitive connection if possible.
-### ? `XLA Optimization` <--> `Model Context Protocol (MCP)`
-- **Entity 1**: XLA Optimization (pattern) - Optimized for TPU/GPU execution via XLA.
-- **Entity 2**: Model Context Protocol (MCP) (tech) - Standardized protocol for AI model context exchange.
+### ? `RTX Blackwell (SM120)` <--> `Multi-Query Attention`
+- **Entity 1**: RTX Blackwell (SM120) (hardware) - Next-generation NVIDIA GPU architecture optimized for MoE.
+- **Entity 2**: Multi-Query Attention (pattern) - Uses MQA for efficient inference.
 - **Prompt**: Is there a hidden architectural synergy, conflict, or historical link between these two?
-- **Action**: If a link exists, connect them: `nexus.py connect arch_pattern_gemma-2b_2 <relation> mcp-protocol`
+- **Action**: If a link exists, connect them: `nexus.py connect rtx-blackwell <relation> arch_pattern_gemma-2b_1`
 
 ## 🔍 Entropy Targets (熵值目标)
 ### 1. Transformer (`transformer`)
