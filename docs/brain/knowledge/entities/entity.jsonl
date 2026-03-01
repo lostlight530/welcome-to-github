@@ -22,3 +22,6 @@
 {"id": "linear-attention", "type": "tech", "name": "Linear/Sparse Attention (2026 Standard)", "desc": "O(N) attention mechanism replacing standard O(N^2).", "tags": [], "updated_at": "2026-02-28T01:51:28.929055"}
 {"id": "mlir-compiler", "type": "concept", "name": "MLIR (Multi-Level Intermediate Representation)", "desc": "Next generation compiler infrastructure replacing XLA.", "tags": [], "updated_at": "2026-02-28T01:51:29.959364"}
 {"id": "native-vector-storage", "type": "tech", "name": "Native Vector OS Storage", "desc": "Vector storage embedded natively in OS/filesystem.", "tags": [], "updated_at": "2026-02-28T01:51:31.025723"}
+{"id": "quadratic-complexity", "type": "concept", "name": "Quadratic Complexity O(N^2)", "desc": "The fundamental compute bottleneck of standard Transformers.", "tags": [], "updated_at": "2026-03-01T03:53:34.540387"}
+{"id": "vllm-realtime-api", "type": "tech", "name": "vLLM Realtime API", "desc": "Streaming/Realtime API support in vLLM.", "tags": [], "updated_at": "2026-03-01T03:53:34.961223"}
+{"id": "infinite-context", "type": "concept", "name": "Infinite Context", "desc": "Ability to process context windows of unlimited length.", "tags": [], "updated_at": "2026-03-01T03:53:36.042667"}
