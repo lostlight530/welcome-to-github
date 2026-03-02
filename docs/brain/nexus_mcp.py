@@ -84,7 +84,7 @@ class MCPServer:
                                 "properties": {
                                     "id": {"type": "string"},
                                     "name": {"type": "string"},
-                                    "type": {"type": "string", "enum": ["tech", "concept", "person", "project"]},
+                                    "type": {"type": "string", "enum": ["tech", "concept", "person", "project", "model", "hardware", "tool", "pattern", "standard"]},
                                     "desc": {"type": "string"},
                                     "tags": {"type": "string", "description": "Comma-separated tags"}
                                 },
@@ -130,9 +130,25 @@ class MCPServer:
                     tags_str = args.get("tags", "")
                     tags = [t.strip() for t in tags_str.split(",")] if tags_str else []
 
-                    self.factory.add_entity("inputs", {
+                    entity_type = args.get("type", "concept")
+
+                    # Dynamically route to correct jsonl file based on type pluralization
+                    category_mapping = {
+                        "tech": "tech",
+                        "concept": "concepts",
+                        "person": "people",
+                        "project": "projects",
+                        "model": "models",
+                        "hardware": "hardware",
+                        "tool": "tools",
+                        "pattern": "patterns",
+                        "standard": "standards"
+                    }
+                    category = category_mapping.get(entity_type, entity_type + "s")
+
+                    self.factory.add_entity(category, {
                         "id": args.get("id"),
-                        "type": args.get("type"),
+                        "type": entity_type,
                         "name": args.get("name"),
                         "desc": args.get("desc"),
                         "tags": tags,
@@ -142,7 +158,7 @@ class MCPServer:
                         "jsonrpc": "2.0",
                         "id": msg_id,
                         "result": {
-                            "content": [{"type": "text", "text": f"Entity '{args.get('id')}' added successfully."}]
+                            "content": [{"type": "text", "text": f"Entity '{args.get('id')}' added successfully to category '{category}'."}]
                         }
                     }
                 else:
