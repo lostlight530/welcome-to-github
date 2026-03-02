@@ -1,0 +1,4 @@
+{"id": "python", "type": "tech", "name": "Python", "desc": "Primary language for AI/ML and scripting.", "tags": ["lang", "backend"], "updated_at": "2026-02-14"}
+{"id": "vertex-ai", "type": "tech", "name": "Google Vertex AI", "desc": "Unified AI platform on Google Cloud.", "tags": ["cloud", "ml-ops"], "updated_at": "2026-02-14"}
+{"id": "mediapipe", "type": "tech", "name": "MediaPipe", "desc": "Cross-platform framework for building multimodal ML pipelines.", "tags": ["edge-ai", "vision"], "updated_at": "2026-02-14"}
+{"id": "mcp", "type": "protocol", "name": "Model Context Protocol", "desc": "Standard for connecting AI models to external data and tools.", "tags": ["standard", "agent"], "updated_at": "2026-02-14"}
