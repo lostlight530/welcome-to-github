@@ -1,73 +1,35 @@
-AGENTS.md
-目标
+# NEXUS CORTEX: Operational Directives (操作指令)
 
-本仓库采用“自动侦察 → 证据提炼 → PR 审核 → 记忆入库”的工程化闭环。
-任何 Agent（含 Jules）必须优先保证：可审计、可回滚、低噪音、人在环。
+## Architecture & Workflow (工程化闭环)
+The system operates on an "Autonomous Radar → OODA Loop → Human Decision → Append-Only Memory" lifecycle.
+本仓库采用“雷达索敌 → OODA 循环 → 人类裁决 → 追加记忆”的工程化闭环。
 
-角色分工
+All Agents (including Jules) must prioritize: **Auditability, Restraint, Zero-Dependency, and Human-in-the-loop**.
+任何 Agent 必须优先保证：可审计、克制、零依赖、人在环。
 
-Agent：负责检索、提炼、生成候选结论与变更（只提交 PR）
+## Core Philosophy (核心法则)
+1. **Zero-Dependency Brutalism (零依赖极简)**: Prefer Python stdlib (`urllib`, `sqlite3`). Reject bloated frameworks.
+2. **Append-Only Memory (不可篡改)**: History is immutable (ADR-0001). Mistakes are fixed via `deprecates` or `conflicts_with` tension edges, not deletions.
+3. **Machine Draft, Human Decision (算力主权)**: Agents propose updates (via PR or `MISSION_ACTIVE.md`), but humans execute the final `nexus.py connect` commands.
 
-人类：负责最终合并、记忆取舍、方向决策（Human-in-the-loop）
+## Whitelisted Directories (允许写入的目录)
+- `docs/brain/inputs/`: Raw intelligence briefs from Harvester (Radar).
+- `docs/brain/knowledge/`: Append-only JSONL files for the Knowledge Graph.
+- `docs/brain/memories/`:
+  - `MISSION_ACTIVE.md`: The single source of current cognitive focus.
+  - `*-scholar-synthesis.md`: Auto-generated daily learning reports.
+  - `archive/LAST_STABLE_STATE.md`: The unified historical log.
+- `docs/archaeology/`: Permanent records of human-AI collaboration (e.g., `MEMORIAL.md`).
 
-强约束（必须遵守）
+*(Note: The legacy `docs/daily-briefs/` is deprecated. Intelligence flows through `inputs/` into `memories/`.)*
 
-禁止直推 main：所有输出必须通过 PR。
+## Intelligence & Senses (情报与感知)
+- **Facts**: Must be sourced from official documentation, release notes, or repositories (via `harvester.py`).
+- **Signal-to-Noise**: Harvester strictly checks ETags/states to avoid fetching duplicate or stagnant data (Zero Inbox Policy).
+- **Epiphany Engine**: The system actively combats entropy by pairing disconnected entities and prompting the Architect to find hidden synergies (Cross-Pollination).
 
-Append-only：历史记录不覆盖；错误用“追加更正”修正。
+## Interface (交互接口)
+- **CLI**: `docs/brain/nexus.py` is the Central Nervous System.
+- **MCP**: `docs/brain/nexus_mcp.py` exposes the graph to external LLMs/IDEs via standard Model Context Protocol.
 
-事实/推断分层：
-
-Facts：必须有可核验来源链接支持
-
-Hypothesis：必须标注“推断”，并引用对应 Facts
-
-只做技术文档/官方源头侦察：避免泛新闻与无来源结论。
-
-输出可变长：允许“今日无强信号”；禁止为了凑模板制造噪音。
-
-允许写入的目录（白名单）
-
-docs/daily-briefs/（每日简报）
-
-docs/archaeology/（数字考古与更正记录）
-
-docs/index.md 或 docs/README.md（索引）
-
-除上述目录外，默认不改动代码与依赖；如需改动，必须在 PR 中说明理由与风险，并请求人类确认。
-
-每日简报文件规范
-
-新建：docs/daily-briefs/YYYY-MM-DD.md
-
-追加索引：docs/daily-briefs/README.md（只追加一行链接）
-
-YYYY-MM-DD.md 推荐结构（可缺省）：
-
-今日主题（1–3 条）
-
-Facts（1–7 条：一句话结论 + 为什么重要 + 来源链接）
-
-Hypothesis（可选：推断 + 依据的 Facts 链接）
-
-Risks / Breaking（可选：必须有证据；否则降级为 Attention）
-
-Action（可选：若无强信号则写“无行动项”）
-
-Memory Candidates（<=5 条：候选，不做最终记忆决策）
-
-变更审计要求（PR 描述必须包含）
-
-变更范围（写入了哪些文件）
-
-今日最高信号（1–2 条）
-
-主要来源列表（官方文档/发布说明/仓库链接）
-
-关于 Jules 的约定提示
-
-Jules 会读取本 AGENTS.md 以生成更贴合的计划与输出。
-
-Jules Web Search 仅用于技术文档/代码片段检索，不做泛新闻。
-
-Scheduled Tasks 可用于每日/每周自动运行；如 UI/文档描述冲突，以 Jules Changelog 为准。
+> "Small and Stable. Quiet and Pragmatic."
