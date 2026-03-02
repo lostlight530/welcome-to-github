@@ -25,3 +25,5 @@
 {"id": "quadratic-complexity", "type": "concept", "name": "Quadratic Complexity O(N^2)", "desc": "The fundamental compute bottleneck of standard Transformers.", "tags": [], "updated_at": "2026-03-01T03:53:34.540387"}
 {"id": "vllm-realtime-api", "type": "tech", "name": "vLLM Realtime API", "desc": "Streaming/Realtime API support in vLLM.", "tags": [], "updated_at": "2026-03-01T03:53:34.961223"}
 {"id": "infinite-context", "type": "concept", "name": "Infinite Context", "desc": "Ability to process context windows of unlimited length.", "tags": [], "updated_at": "2026-03-01T03:53:36.042667"}
+{"id": "realtime-api-websocket", "type": "tech", "name": "WebSocket Realtime API", "desc": "WebSocket interface for streaming and realtime interactions.", "tags": [], "updated_at": "2026-03-02T04:55:30.182163"}
+{"id": "quadratic-bottleneck", "type": "concept", "name": "Quadratic Complexity O(N^2)", "desc": "The fundamental compute bottleneck.", "tags": [], "updated_at": "2026-03-02T04:55:30.991791"}

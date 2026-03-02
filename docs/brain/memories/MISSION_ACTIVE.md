@@ -1,16 +1,16 @@
 # 🧠 NEXUS CORTEX: Active Mission (活跃任务)
-> Generated (生成时间): 2026-03-01T03:58:19.212705
+> Generated (生成时间): 2026-03-02T04:57:50.084400
 
 ## 🎯 Objective (目标)
 Ingest new intelligence, close knowledge gaps, and force cross-pollination. (摄入情报、填补缺口并强制跨界融合。)
 
 ## 🌌 Cross-Pollination (跨界连接)
 > System Density is low. Force a cognitive connection if possible.
-### ? `Microsoft MarkItDown (PDF-to-MD)` <--> `Database-Servers`
-- **Entity 1**: Microsoft MarkItDown (PDF-to-MD) (tool) - Tool for converting PDF to Markdown.
-- **Entity 2**: Database-Servers (concept) - Auto-generated concept
+### ? `CVE-2026-0994 (Protobuf Vulnerability)` <--> `Open WebUI`
+- **Entity 1**: CVE-2026-0994 (Protobuf Vulnerability) (concept) - vLLM Protobuf dependency vulnerability.
+- **Entity 2**: Open WebUI (tool) - User-friendly AI Interface.
 - **Prompt**: Is there a hidden architectural synergy, conflict, or historical link between these two?
-- **Action**: If a link exists, connect them: `nexus.py connect markitdown <relation> database-servers`
+- **Action**: If a link exists, connect them: `nexus.py connect cve-2026-0994 <relation> open-webui`
 
 ## 🔍 Entropy Targets (熵值目标)
 ### 1. Transformer (`transformer`)
