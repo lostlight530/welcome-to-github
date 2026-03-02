@@ -182,20 +182,43 @@ class Cortex:
             if rel.src in outdegree: outdegree[rel.src] += 1
             if rel.dst in indegree: indegree[rel.dst] += 1
 
-        orphans = [eid for eid in self.entities if indegree[eid] == 0 and outdegree[eid] == 0]
-        stale_threshold = datetime.now() - timedelta(days=stale_days)
+        now = datetime.now()
+
+        # Calculate degrees
+        degrees = {eid: indegree[eid] + outdegree[eid] for eid in self.entities}
+
+        orphans = []
         stale_nodes = []
 
+        # We consider a node stale if:
+        # 1. It has < 3 edges (low connectivity)
+        # 2. AND it hasn't been updated in the last 3 days (Freshness Grace Period)
+
+        fresh_days = 3
+
         for eid, entity in self.entities.items():
-            if not entity.updated_at:
-                stale_nodes.append(eid)
+            # Standard orphan check
+            if degrees[eid] == 0:
+                orphans.append(eid)
                 continue
-            try:
-                update_date = datetime.fromisoformat(entity.updated_at.replace('Z', '+00:00'))
-                if update_date.tzinfo is None: update_date = update_date.replace(tzinfo=None)
-                if update_date < stale_threshold: stale_nodes.append(eid)
-            except ValueError:
-                stale_nodes.append(eid)
+
+            # Stale check
+            if degrees[eid] < 3:
+                is_fresh = False
+                if entity.updated_at:
+                    try:
+                        update_date = datetime.fromisoformat(entity.updated_at.replace('Z', '+00:00'))
+                        if update_date.tzinfo is None: update_date = update_date.replace(tzinfo=None)
+                        if (now - update_date).days <= fresh_days:
+                            is_fresh = True
+                    except ValueError:
+                        pass
+
+                if not is_fresh:
+                    stale_nodes.append(eid)
+
+        # Sort stale nodes by degree (lowest first) so we fix the weakest links
+        stale_nodes.sort(key=lambda x: degrees[x])
 
         n = len(self.entities)
         max_edges = n * (n - 1) if n > 1 else 1

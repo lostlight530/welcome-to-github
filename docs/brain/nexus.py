@@ -4,6 +4,7 @@ import sys
 import os
 import shutil
 import glob
+import pathlib
 from datetime import datetime
 
 # Add current directory to path so imports work
@@ -39,6 +40,36 @@ def clean_cache(root_dir: str):
                 print(f"  ! Failed to remove file {p}: {e}")
     print("[Nexus] Cache clean complete. (缓存清理完成)")
 
+def archive_inputs(root_dir: str):
+    """
+    Moves processed files from inputs/YYYY/MM to inputs/archive/YYYY/MM.
+    """
+    root_input = pathlib.Path(root_dir) / "inputs"
+    archive_root = root_input / "archive"
+
+    moved_count = 0
+
+    if not root_input.exists():
+        print("✅ No inputs directory found.")
+        return
+
+    for year_dir in root_input.iterdir():
+        if year_dir.is_dir() and year_dir.name.isdigit(): # e.g., 2026
+            for month_dir in year_dir.iterdir():
+                if month_dir.is_dir(): # e.g., 02
+                    target_dir = archive_root / year_dir.name / month_dir.name
+                    target_dir.mkdir(parents=True, exist_ok=True)
+
+                    for md_file in month_dir.glob("*.md"):
+                        shutil.move(str(md_file), str(target_dir / md_file.name))
+                        print(f"📦 Archived: {md_file.name}")
+                        moved_count += 1
+
+    if moved_count == 0:
+        print("✅ No files to archive. Workspace clean.")
+    else:
+        print(f"🧹 Cleaned up {moved_count} files.")
+
 def main():
     parser = argparse.ArgumentParser(description="NEXUS CORTEX: Cognitive Synthesis Protocol CLI")
     parser.add_argument("--root", default="docs/brain", help="Path to brain root directory")
@@ -69,6 +100,7 @@ def main():
     touch_parser.add_argument("id", help="Entity ID to touch")
 
     clean_parser = subparsers.add_parser("clean", help="Clear cache")
+    archive_parser = subparsers.add_parser("archive", help="Move processed inputs to archive folder")
 
     scholar_parser = subparsers.add_parser("scholar", help="Deep dive into a topic")
     scholar_parser.add_argument("entity_id", help="Entity ID to study")
@@ -83,6 +115,10 @@ def main():
     if not os.path.exists(root):
         print(f"[!] Error: Brain root '{root}' does not exist.")
         sys.exit(1)
+
+    if args.command == "archive":
+        archive_inputs(root)
+        sys.exit(0)
 
     cortex = Cortex(root)
     factory = KnowledgeFactory(root)

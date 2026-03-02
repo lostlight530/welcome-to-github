@@ -5,6 +5,7 @@ import glob
 import random
 from datetime import datetime, timedelta
 from typing import List, Optional, Tuple
+import pathlib
 
 # Ensure imports work
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -73,18 +74,28 @@ class Evolver:
         print(f"[Evolution] Archived previous mission to {filename} (任务已归档)")
 
     def _check_new_inputs(self) -> List[str]:
-        """Scans inputs/ for files modified in the last 24h. (扫描最近 24 小时的输入)"""
+        """Scans inputs directory for processing, strictly IGNORING the 'archive' folder."""
         recent_files = []
         now = datetime.now()
         threshold = now - timedelta(hours=24)
 
-        # Glob recursively
-        pattern = os.path.join(self.inputs_dir, "**", "*.md")
-        for filepath in glob.glob(pattern, recursive=True):
-            mtime = datetime.fromtimestamp(os.path.getmtime(filepath))
-            if mtime > threshold:
-                rel_path = os.path.relpath(filepath, self.root_dir)
-                recent_files.append(rel_path)
+        base_path = pathlib.Path(self.inputs_dir)
+        if not base_path.exists():
+            return recent_files
+
+        # 强制只扫描年份目录 (e.g., 2026)，跳过 archive 和其他隐藏文件
+        for item in base_path.iterdir():
+            if item.is_dir() and item.name.isdigit(): # 只看像 '2026' 这样的年份目录
+                for file_path in item.rglob("*.md"):
+                    mtime = datetime.fromtimestamp(os.path.getmtime(file_path))
+                    if mtime > threshold:
+                        rel_path = os.path.relpath(str(file_path), self.root_dir)
+                        recent_files.append(rel_path)
+            elif item.is_file() and item.suffix == ".md":
+                mtime = datetime.fromtimestamp(os.path.getmtime(item))
+                if mtime > threshold:
+                    rel_path = os.path.relpath(str(item), self.root_dir)
+                    recent_files.append(rel_path)
 
         if recent_files:
             print(f"[Evolution] Detected {len(recent_files)} new intelligence briefs. (检测到新情报)")
