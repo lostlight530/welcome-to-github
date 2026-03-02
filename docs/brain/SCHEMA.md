@@ -31,7 +31,7 @@ Each line defines a directed edge:
 ```json
 {
   "src": "source-entity-id", // 源实体 ID
-  "rel": "predicate (e.g. supports, uses, authored, conflicts_with, deprecates)", // 谓词（例如：支持、使用、创作、冲突、废弃）
+  "rel": "predicate (e.g. supports, uses, authored, conflicts_with, deprecates, unaffected_by)", // 谓词
   "dst": "destination-entity-id", // 目标实体 ID
   "weight": 1.0,  // Optional: confidence or strength (权重：置信度或强度)
   "context": "Source of truth (e.g. URL or doc)", // 上下文（来源 URL 或文档）
@@ -42,6 +42,7 @@ Each line defines a directed edge:
 **New Relation Types (Cognitive Immune System):**
 - `conflicts_with`: Indicates a semantic or technical conflict (e.g., library incompatibility).
 - `deprecates`: Indicates that the source entity supersedes or obsoletes the destination entity.
+- `unaffected_by`: Explicitly states that the source entity is immune or unrelated to a vulnerability/issue in the destination entity.
 
 ### 3. Inputs (`inputs/YYYY/MM/*.md`)
 Raw text or search results. These are immutable.

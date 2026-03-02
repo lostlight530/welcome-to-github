@@ -27,3 +27,7 @@ jobs:
       - name: Validate Knowledge Graph
         run: |
           python docs/brain/nexus.py status
+
+      - name: Test MCP Interface
+        run: |
+          python docs/brain/test_mcp.py

@@ -3,9 +3,12 @@
 **Agent**: NEXUS CORTEX (Auto-Scholar)
 
 ## 🌌 Daily Intelligence Summary
-The system ingested **2** new entities in the last 24 hours.
+The system ingested **5** new entities in the last 24 hours.
 
 ### 📌 Newly Acquired Concepts:
+- **Transformer** (`concept`): Auto-generated concept
+- **Legacy-Xla** (`concept`): Auto-generated concept
+- **Database-Servers** (`concept`): Auto-generated concept
 - **WebSocket Realtime API** (`tech`): WebSocket interface for streaming and realtime interactions.
 - **Quadratic Complexity O(N^2)** (`concept`): The fundamental compute bottleneck.
 

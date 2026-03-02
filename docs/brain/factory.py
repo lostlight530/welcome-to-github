@@ -50,6 +50,30 @@ class KnowledgeFactory:
         # Update local cache so subsequent relations can verify against it
         self.cortex.entities[entity.id] = entity
 
+    def touch_entity(self, entity_id: str):
+        """
+        Updates the 'updated_at' timestamp of an existing entity to silence stale alarms.
+        更新实体的 updated_at 时间戳以消除陈旧警报。
+        """
+        if entity_id not in self.cortex.entities:
+            raise ValueError(f"Entity '{entity_id}' not found.")
+
+        # Get existing entity
+        entity = self.cortex.entities[entity_id]
+
+        # Update timestamp
+        entity.updated_at = datetime.now().isoformat()
+
+        # Determine its original file (fallback to 'concepts.jsonl' if unknown)
+        # In a real system we'd track the origin file. For Append-Only, we can append to a generic or specific file.
+        # Let's append to 'concepts.jsonl' or 'entities.jsonl' depending on convention.
+        # Since we use 'concepts' mostly, let's just append to '{type}.jsonl'
+        filename = f"{entity.type}.jsonl"
+        filepath = os.path.join(self.root_dir, "knowledge", "entities", filename)
+
+        self._append_line(filepath, asdict(entity))
+        print(f"[Factory] Entity '{entity.id}' touched (timestamp updated). (时间戳已更新)")
+
     def add_relation(self, data: Dict[str, Any]):
         """
         Adds a new relation to the knowledge graph.

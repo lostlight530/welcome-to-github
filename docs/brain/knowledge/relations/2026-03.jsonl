@@ -5,3 +5,4 @@
 {"src": "vllm-0-16-0", "rel": "implements", "dst": "realtime-api-websocket", "context": "", "created_at": "2026-03-02T04:55:30.567389"}
 {"src": "linear-attention", "rel": "solves", "dst": "quadratic-bottleneck", "context": "", "created_at": "2026-03-02T04:55:31.442865"}
 {"src": "markitdown", "rel": "feeds_data_to", "dst": "database-servers", "context": "", "created_at": "2026-03-02T04:55:31.829567"}
+{"src": "open-webui", "rel": "unaffected_by", "dst": "cve-2026-0994", "context": "Frontend REST architecture, does not parse backend protobuf", "created_at": "2026-03-02T05:36:34.701338"}
