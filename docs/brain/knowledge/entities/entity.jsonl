@@ -27,3 +27,9 @@
 {"id": "infinite-context", "type": "concept", "name": "Infinite Context", "desc": "Ability to process context windows of unlimited length.", "tags": [], "updated_at": "2026-03-01T03:53:36.042667"}
 {"id": "realtime-api-websocket", "type": "tech", "name": "WebSocket Realtime API", "desc": "WebSocket interface for streaming and realtime interactions.", "tags": [], "updated_at": "2026-03-02T04:55:30.182163"}
 {"id": "quadratic-bottleneck", "type": "concept", "name": "Quadratic Complexity O(N^2)", "desc": "The fundamental compute bottleneck.", "tags": [], "updated_at": "2026-03-02T04:55:30.991791"}
+{"id": "vllm-realtime-socket", "type": "tech", "name": "vLLM Realtime API (WebSocket)", "desc": "Realtime streaming via WebSocket.", "tags": [], "updated_at": "2026-03-03T07:16:35.508732"}
+{"id": "unified-spec-decoding", "type": "tech", "name": "Unified Parallel Speculative Decoding", "desc": "Advanced decoding strategy for vLLM.", "tags": [], "updated_at": "2026-03-03T07:16:35.865065"}
+{"id": "privacy-on-device", "type": "pattern", "name": "Privacy-First Architecture", "desc": "Data processing remains on device to ensure privacy.", "tags": [], "updated_at": "2026-03-03T07:16:37.134152"}
+{"id": "mindspore-lite", "type": "tech", "name": "MindSpore Lite", "desc": "Huawei Edge AI framework.", "tags": [], "updated_at": "2026-03-03T07:16:37.477359"}
+{"id": "npu-edge", "type": "hardware", "name": "NPU (Neural Processing Unit)", "desc": "Dedicated edge AI accelerator.", "tags": [], "updated_at": "2026-03-03T07:16:38.513399"}
+{"id": "jax-framework", "type": "tech", "name": "JAX (High-Perf Numerical)", "desc": "Google numerical computing framework.", "tags": [], "updated_at": "2026-03-03T07:16:38.869550"}
