@@ -5,7 +5,7 @@ import sys
 import argparse
 import urllib.request
 import urllib.error
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 # Stateful Harvester (The Radar)
 # 状态感知收割机（雷达）
@@ -36,12 +36,10 @@ class Harvester:
     def scan_github_releases(self, repo: str):
         """
         Scans GitHub releases for a repo using stateful ETag logic.
-        使用状态感知 ETag 逻辑扫描 GitHub 发布。
         """
         url = f"https://api.github.com/repos/{repo}/releases/latest"
         print(f"[Harvester] Scanning {repo}...")
 
-        # 1. Get previous state
         repo_state = self.state["repos"].get(repo, {})
         headers = {
             "User-Agent": "Nexus-Cortex/1.0",
@@ -50,22 +48,35 @@ class Harvester:
         if "etag" in repo_state:
             headers["If-None-Match"] = repo_state["etag"]
 
-        # 2. Request
         try:
             req = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(req) as response:
-                # 200 OK - New Content
                 data = json.loads(response.read().decode())
                 new_etag = response.getheader("ETag")
 
-                # Process
-                self._process_release(repo, data)
+                # Velocity Calculation
+                history = repo_state.get("history", [])
+                now_iso = datetime.now(timezone.utc).isoformat()
+                history.append(now_iso)
 
-                # Update State
+                # Keep last 5 updates
+                history = history[-5:]
+
+                is_hot = False
+                if len(history) >= 2:
+                    t1 = datetime.fromisoformat(history[-1])
+                    t2 = datetime.fromisoformat(history[-2])
+                    if (t1 - t2).days < 7:
+                        is_hot = True
+                        print("  - 🔥 HIGH VELOCITY ALERT (频繁更新触发)")
+
+                self._process_release(repo, data, is_hot)
+
                 self.state["repos"][repo] = {
                     "etag": new_etag,
-                    "last_checked": datetime.now(timezone.utc).isoformat(),
-                    "latest_tag": data.get("tag_name")
+                    "last_checked": now_iso,
+                    "latest_tag": data.get("tag_name"),
+                    "history": history
                 }
                 self._save_state()
 
@@ -81,11 +92,8 @@ class Harvester:
         except Exception as e:
              print(f"  - Network Error: {e}")
 
-    def _process_release(self, repo: str, data: dict):
-        """
-        Generates an intelligence brief for the new release.
-        为新发布生成情报简报。
-        """
+    def _process_release(self, repo: str, data: dict, is_hot: bool):
+        """Generates an intelligence brief."""
         tag = data.get("tag_name", "unknown")
         name = data.get("name", tag)
         body = data.get("body", "")
@@ -93,11 +101,10 @@ class Harvester:
 
         print(f"  - 🚀 New Release: {tag}")
 
-        # Determine if BREAKING CHANGE
         is_breaking = "BREAKING CHANGE" in body or "Major" in name
         alert_emoji = "🚨" if is_breaking else "ℹ️"
+        hot_label = "🔥 HIGH VELOCITY ALERT\n> Project is iterating aggressively.\n" if is_hot else ""
 
-        # Generate Markdown Brief
         ym = datetime.now().strftime("%Y/%m")
         filename = f"{repo.replace('/', '_')}_{tag}.md"
         filepath = os.path.join(self.inputs_dir, ym, filename)
@@ -107,6 +114,7 @@ class Harvester:
 > Source: GitHub Releases
 > Date: {published_at}
 
+{hot_label}
 ## 📝 Summary
 {name}
 
@@ -129,7 +137,6 @@ def main():
 
     harvester = Harvester(args.root)
 
-    # Whitelist of high-signal repos (Phase A Radar)
     targets = [
         "vllm-project/vllm",
         "google/gemma_pytorch",

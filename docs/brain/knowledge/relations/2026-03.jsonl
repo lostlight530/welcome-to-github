@@ -9,3 +9,6 @@
 {"src": "vllm-0-16-0", "rel": "implements", "dst": "vllm-realtime-socket", "context": "", "created_at": "2026-03-03T07:16:36.295649"}
 {"src": "vllm-0-16-0", "rel": "optimizes", "dst": "unified-spec-decoding", "context": "", "created_at": "2026-03-03T07:16:36.722033"}
 {"src": "mindspore-lite", "rel": "enforces", "dst": "privacy-on-device", "context": "", "created_at": "2026-03-03T07:16:37.814946"}
+{"src": "vllm-0-16-0", "rel": "runs_on", "dst": "npu-edge", "context": "", "created_at": "2026-03-04T03:00:41.906432"}
+{"src": "mindspore-lite", "rel": "optimizes", "dst": "npu-edge", "context": "", "created_at": "2026-03-04T03:00:42.240802"}
+{"src": "jax-framework", "rel": "deployed_via", "dst": "webgpu", "context": "", "created_at": "2026-03-04T03:00:42.944135"}

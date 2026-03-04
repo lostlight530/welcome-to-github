@@ -52,11 +52,14 @@ class Evolver:
         # Determine Cross-Pollination Candidates
         pollination_pair = self._find_cross_pollination_candidates()
 
-        if not focus_areas and not new_inputs and not pollination_pair:
+        # Determine Transitive Inference (Subconscious Guesses)
+        intuitions = self._incubate_ideas()
+
+        if not focus_areas and not new_inputs and not pollination_pair and not intuitions:
             print("[Evolution] System stable. No high-priority targets. (系统稳定，无高优先级目标)")
             self._create_maintenance_mission()
         else:
-            self._create_foraging_mission(focus_areas, new_inputs, pollination_pair)
+            self._create_foraging_mission(focus_areas, new_inputs, pollination_pair, intuitions)
 
         # 4. Generate Auto-Synthesis Report
         self._generate_synthesis_report()
@@ -116,21 +119,50 @@ class Evolver:
         if len(self.cortex.entities) < 2:
             return None
 
-        # Get all entity IDs
         all_ids = list(self.cortex.entities.keys())
 
-        # Try to find a pair without a direct path (or just randomly for simplicity and serendipity)
-        # To keep it "Small and Stable" and performant, we pick two random nodes and see if they lack a direct connection.
-        for _ in range(10): # Max 10 attempts to find an unconnected pair
+        for _ in range(10):
             a, b = random.sample(all_ids, 2)
-            # Check if direct relation exists
             has_edge = any(r for r in self.cortex.relations if (r.src == a and r.dst == b) or (r.src == b and r.dst == a))
             if not has_edge:
                 return (a, b)
 
         return None
 
-    def _create_foraging_mission(self, focus_areas: List[str], new_inputs: List[str], pollination: Optional[Tuple[str, str]]):
+    def _incubate_ideas(self) -> List[Tuple[str, str, str]]:
+        """
+        Transitive Inference: If A->B and B->C, guess A->C.
+        """
+        print("[Evolution] Dreaming of new connections... (潜意识孵化中)")
+        guesses = []
+
+        # Build adjacency list for forward and backward traversal
+        adj_out = {eid: [] for eid in self.cortex.entities}
+
+        for r in self.cortex.relations:
+            adj_out[r.src].append((r.dst, r.rel))
+
+        # Search for A -> B -> C paths
+        found_pairs = set()
+
+        for a in self.cortex.entities:
+            for b, rel_ab in adj_out.get(a, []):
+                for c, rel_bc in adj_out.get(b, []):
+                    if a == c: continue # Skip cycles
+
+                    # Check if A -> C already exists directly
+                    has_direct = any(r for r in self.cortex.relations if r.src == a and r.dst == c)
+
+                    if not has_direct and (a, c) not in found_pairs:
+                        # Avoid purely hierarchical noise
+                        if rel_ab != 'is_a' and rel_bc != 'is_a':
+                            guesses.append((a, b, c))
+                            found_pairs.add((a, c))
+                            if len(guesses) >= 3:
+                                return guesses
+        return guesses
+
+    def _create_foraging_mission(self, focus_areas: List[str], new_inputs: List[str], pollination: Optional[Tuple[str, str]], intuitions: List[Tuple[str, str, str]]):
         """Writes a structured mission file. (生成任务简报)"""
         print(f"[Evolution] Generating mission... (生成任务)")
 
@@ -139,7 +171,7 @@ class Evolver:
             f"> Generated (生成时间): {datetime.now().isoformat()}",
             "",
             "## 🎯 Objective (目标)",
-            "Ingest new intelligence, close knowledge gaps, and force cross-pollination. (摄入情报、填补缺口并强制跨界融合。)",
+            "Ingest intelligence, close gaps, and evaluate subconscious intuitions.",
             ""
         ]
 
@@ -152,6 +184,8 @@ class Evolver:
                 try:
                     with open(os.path.join(self.root_dir, inp), 'r') as f:
                         text = f.read()
+                        if "🔥 HIGH VELOCITY ALERT" in text:
+                            content.append("- **🔥 ALERT**: High velocity update rate detected.")
                         if "BREAKING CHANGE" in text:
                             content.append("- **⚠️ ALERT**: Contains BREAKING CHANGE.")
                         if "🚨" in text:
@@ -161,39 +195,49 @@ class Evolver:
                 content.append(f"- **Command**: `nexus.py add entity ...`")
                 content.append("")
 
-        # Section 2: Cross-Pollination (The Epiphany Engine)
+        # Section 2: Transitive Intuitions (The Dream State)
+        if intuitions:
+            content.append("## 🔮 Subconscious Intuitions (潜意识推演)")
+            content.append("> System deduced these via transitive logic (A -> B -> C). Are they valid?")
+            for a, b, c in intuitions:
+                name_a = self.cortex.entities[a].name
+                name_b = self.cortex.entities[b].name
+                name_c = self.cortex.entities[c].name
+                content.append(f"### ❓ Hypothesis: `{name_a}` -> `{name_c}` ?")
+                content.append(f"- **Path**: {name_a} -> {name_b} -> {name_c}")
+                content.append(f"- **Action**: If valid, connect them: `nexus.py connect {a} <relation> {c}`")
+                content.append("")
+
+        # Section 3: Cross-Pollination
         if pollination:
             a, b = pollination
             name_a = self.cortex.entities[a].name
             name_b = self.cortex.entities[b].name
             content.append("## 🌌 Cross-Pollination (跨界连接)")
-            content.append("> System Density is low. Force a cognitive connection if possible.")
             content.append(f"### ? `{name_a}` <--> `{name_b}`")
-            content.append(f"- **Entity 1**: {name_a} ({self.cortex.entities[a].type}) - {self.cortex.entities[a].desc}")
-            content.append(f"- **Entity 2**: {name_b} ({self.cortex.entities[b].type}) - {self.cortex.entities[b].desc}")
-            content.append("- **Prompt**: Is there a hidden architectural synergy, conflict, or historical link between these two?")
-            content.append(f"- **Action**: If a link exists, connect them: `nexus.py connect {a} <relation> {b}`")
+            content.append(f"- **Entity 1**: {name_a} ({self.cortex.entities[a].type})")
+            content.append(f"- **Entity 2**: {name_b} ({self.cortex.entities[b].type})")
+            content.append("- **Prompt**: Is there a hidden synergy or conflict?")
+            content.append(f"- **Action**: If a link exists: `nexus.py connect {a} <relation> {b}`")
             content.append("")
 
-        # Section 3: Entropy Targets
+        # Section 4: Entropy Targets
         if focus_areas:
-            content.append("## 🔍 Entropy Targets (熵值目标)")
+            content.append("## 🔍 Entropy Targets (熵值目标 - 需强化)")
+            content.append("> These nodes have low weight/connections. Touch them to reinforce, or expand them.")
             for area in focus_areas:
                 entity = self.cortex.entities.get(area)
                 name = entity.name if entity else area
-                desc = entity.desc if entity else "No description available."
-                type_ = entity.type if entity else "unknown"
+                weight = entity.weight if entity else 0.0
                 content.append(f"### 1. {name} (`{area}`)")
-                content.append(f"- **Type**: {type_}")
-                content.append(f"- **Context**: {desc}")
-                content.append("- **Task**: Search for recent developments, integration patterns, or code examples.")
-                content.append(f"- **Suggested Query**: `latest developments {name} {datetime.now().year}`")
+                content.append(f"- **Weight**: {weight:.2f}")
+                content.append("- **Action**: `nexus.py activate {area}` or search for updates.")
                 content.append("")
 
-        content.append("## 📝 Ingestion Protocol (摄入协议)")
+        content.append("## 📝 Commands")
         content.append("```bash")
-        content.append(f"python docs/brain/nexus.py add entity --type concept --id <slug> --name \"<Name>\"")
-        content.append(f"python docs/brain/nexus.py connect <source_id> <relation> <target_id>")
+        content.append("python docs/brain/nexus.py activate <id>")
+        content.append("python docs/brain/nexus.py connect <src> <rel> <dst>")
         content.append("```")
 
         with open(self.active_mission_path, "w") as f:

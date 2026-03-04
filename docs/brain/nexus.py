@@ -95,8 +95,11 @@ def main():
     add_parser.add_argument("--desc", required=True, help="Description")
     add_parser.add_argument("--tags", help="Comma-separated tags")
 
-    touch_parser = subparsers.add_parser("touch", help="Update the timestamp of an entity to silence stale alarms")
+    touch_parser = subparsers.add_parser("touch", help="Legacy touch. Routes to activate.")
     touch_parser.add_argument("id", help="Entity ID to touch")
+
+    activate_parser = subparsers.add_parser("activate", help="Activate a memory to strengthen its neural weight")
+    activate_parser.add_argument("id", help="Entity ID to activate")
 
     clean_parser = subparsers.add_parser("clean", help="Clear cache")
     archive_parser = subparsers.add_parser("archive", help="Move processed inputs to archive folder")
@@ -127,7 +130,9 @@ def main():
     elif args.command == "search":
         cortex.load_graph()
         results = cortex.search_concepts(args.query)
-        for r in results: print(f"  - [{r.id}] {r.name}")
+        for r in results:
+            print(f"  - [{r.id}] {r.name} (Weight: {r.weight:.2f})")
+            factory.activate_memory(r.id) # Autonomic activation on search
     elif args.command == "visualize":
         cortex.load_graph()
         print(cortex.export_mermaid())
@@ -144,9 +149,9 @@ def main():
             tags = [t.strip() for t in args.tags.split(",")] if args.tags else []
             factory.add_entity(args.category, {"id": args.id, "type": args.type, "name": args.name, "desc": args.desc, "tags": tags, "updated_at": datetime.now().isoformat()})
         except ValueError as e: print(f"[!] Error: {e}")
-    elif args.command == "touch":
+    elif args.command == "touch" or args.command == "activate":
         try:
-            factory.touch_entity(args.id)
+            factory.activate_memory(args.id)
         except ValueError as e: print(f"[!] Error: {e}")
     elif args.command == "compact":
         cortex.load_graph()

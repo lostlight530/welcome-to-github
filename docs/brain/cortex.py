@@ -15,6 +15,8 @@ class Entity:
     desc: str
     tags: List[str] = field(default_factory=list)
     updated_at: str = ""
+    weight: float = 1.0
+    last_activated: str = ""
 
 @dataclass
 class Relation:
@@ -45,6 +47,7 @@ class Cortex:
         """
         Loads graph from snapshot first (O(1)), then merges delta .jsonl files.
         Builds SQLite FTS5 index in memory.
+        Calculates dynamic decay based on last_activated.
         """
         # 1. Load Snapshot if exists
         if os.path.exists(self.snapshot_path):
@@ -53,6 +56,9 @@ class Cortex:
                 with open(self.snapshot_path, 'r') as f:
                     data = json.load(f)
                     for e_data in data.get('entities', []):
+                        # Handle old snapshots missing new fields
+                        if 'weight' not in e_data: e_data['weight'] = 1.0
+                        if 'last_activated' not in e_data: e_data['last_activated'] = e_data.get('updated_at', '')
                         self.entities[e_data['id']] = Entity(**e_data)
                     for r_data in data.get('relations', []):
                         self.relations.append(Relation(**r_data))
@@ -64,7 +70,10 @@ class Cortex:
         self._load_jsonl_entities()
         self._load_jsonl_relations()
 
-        # 3. Build Search Index
+        # 3. Apply Biological Decay (In-Memory)
+        self._apply_memory_decay()
+
+        # 4. Build Search Index
         self._build_search_index()
 
     def _load_jsonl_entities(self):
@@ -76,6 +85,8 @@ class Cortex:
                     try:
                         data = json.loads(line)
                         if 'id' in data:
+                            if 'weight' not in data: data['weight'] = 1.0
+                            if 'last_activated' not in data: data['last_activated'] = data.get('updated_at', '')
                             self.entities[data['id']] = Entity(**data)
                     except json.JSONDecodeError:
                         pass
@@ -98,53 +109,65 @@ class Cortex:
                     except json.JSONDecodeError:
                         pass
 
+    def _apply_memory_decay(self):
+        """Simulates biological forgetting by applying a decay factor based on time since last activation."""
+        now = datetime.now()
+        for eid, entity in self.entities.items():
+            if not entity.last_activated:
+                continue
+            try:
+                last_act = datetime.fromisoformat(entity.last_activated.replace('Z', '+00:00'))
+                if last_act.tzinfo is None: last_act = last_act.replace(tzinfo=None)
+                days_passed = (now - last_act).days
+                if days_passed > 0:
+                    # Decay: weight * (0.9 ^ days), floor at 0.1
+                    decayed_weight = entity.weight * (0.9 ** days_passed)
+                    entity.weight = max(0.1, decayed_weight)
+            except ValueError:
+                pass
+
     def _build_search_index(self):
         """Builds in-memory SQLite FTS5 index for entities."""
         self.db = sqlite3.connect(':memory:')
         c = self.db.cursor()
 
-        # Create FTS5 virtual table
+        # Create FTS5 virtual table. Include weight for sorting.
         try:
             c.execute('''
-                CREATE VIRTUAL TABLE entities_idx USING fts5(id, name, desc, tags)
+                CREATE VIRTUAL TABLE entities_idx USING fts5(id, name, desc, tags, weight UNINDEXED)
             ''')
         except sqlite3.OperationalError:
-            # Fallback for environments without FTS5 (though uncommon in Python 3.10+)
             print("[Cortex] FTS5 not available. Fallback to standard table (slow search).")
             c.execute('''
-                CREATE TABLE entities_idx (id TEXT, name TEXT, desc TEXT, tags TEXT)
+                CREATE TABLE entities_idx (id TEXT, name TEXT, desc TEXT, tags TEXT, weight REAL)
             ''')
 
         # Batch insert
         data = []
         for e in self.entities.values():
             tags_str = ",".join(e.tags)
-            data.append((e.id, e.name, e.desc, tags_str))
+            data.append((e.id, e.name, e.desc, tags_str, e.weight))
 
-        c.executemany('INSERT INTO entities_idx(id, name, desc, tags) VALUES (?, ?, ?, ?)', data)
+        c.executemany('INSERT INTO entities_idx(id, name, desc, tags, weight) VALUES (?, ?, ?, ?, ?)', data)
         self.db.commit()
-        print(f"[Cortex] Search index built in memory ({len(data)} records).")
 
     def search_concepts(self, query: str) -> List[Entity]:
-        """Performs full-text search using SQLite FTS5."""
+        """Performs full-text search using SQLite FTS5, ranking by FTS rank AND neural weight."""
         if not self.db:
             return []
 
         c = self.db.cursor()
         try:
-            # FTS5 match query
-            # We sanitize simple queries, but let's assume basic input for now.
-            # "query" -> matches any column
-            # Note: FTS5 query syntax is strict. 'vllm' works. 'vllm*' works.
-            # But simple words might fail if they are stopwords or syntax.
-            # Let's wrap in quotes if it contains spaces to treat as phrase?
-            # Or just pass raw query.
-
-            # Simple sanitization
             safe_query = query.replace('"', '""')
 
-            # Use MATCH
-            c.execute('SELECT id FROM entities_idx WHERE entities_idx MATCH ? ORDER BY rank', (safe_query,))
+            # Use MATCH and order by a combination of relevance and neural weight
+            # FTS5 rank is usually negative (more negative = better). We want high weight to boost it.
+            c.execute('''
+                SELECT id
+                FROM entities_idx
+                WHERE entities_idx MATCH ?
+                ORDER BY rank - (weight * 10)
+            ''', (safe_query,))
             ids = [row[0] for row in c.fetchall()]
 
             results = []
@@ -153,10 +176,8 @@ class Cortex:
                     results.append(self.entities[eid])
             return results
         except sqlite3.OperationalError as e:
-            # Try LIKE fallback if MATCH fails (e.g. FTS not enabled or syntax error)
-            # print(f"[!] Search Error (FTS): {e}. Fallback to LIKE.")
             term = f"%{query}%"
-            c.execute('SELECT id FROM entities_idx WHERE id LIKE ? OR name LIKE ? OR desc LIKE ? OR tags LIKE ?', (term, term, term, term))
+            c.execute('SELECT id FROM entities_idx WHERE id LIKE ? OR name LIKE ? OR desc LIKE ? OR tags LIKE ? ORDER BY weight DESC', (term, term, term, term))
             ids = [row[0] for row in c.fetchall()]
             results = []
             for eid in ids:
@@ -190,20 +211,15 @@ class Cortex:
         orphans = []
         stale_nodes = []
 
-        # We consider a node stale if:
-        # 1. It has < 3 edges (low connectivity)
-        # 2. AND it hasn't been updated in the last 3 days (Freshness Grace Period)
-
         fresh_days = 3
 
         for eid, entity in self.entities.items():
-            # Standard orphan check
             if degrees[eid] == 0:
                 orphans.append(eid)
                 continue
 
-            # Stale check
-            if degrees[eid] < 3:
+            # Stale check: low degree OR very low neural weight
+            if degrees[eid] < 3 or entity.weight < 0.3:
                 is_fresh = False
                 if entity.updated_at:
                     try:
@@ -214,11 +230,13 @@ class Cortex:
                     except ValueError:
                         pass
 
-                if not is_fresh:
+                # If it's heavy (high weight) but low degree, we might still want to explore it?
+                # Actually, if it's heavily weighted, we know about it. Stale is for forgotten things.
+                if not is_fresh and entity.weight < 0.5:
                     stale_nodes.append(eid)
 
-        # Sort stale nodes by degree (lowest first) so we fix the weakest links
-        stale_nodes.sort(key=lambda x: degrees[x])
+        # Sort stale nodes by weight (lowest first) so we fix the most forgotten links
+        stale_nodes.sort(key=lambda x: self.entities[x].weight)
 
         n = len(self.entities)
         max_edges = n * (n - 1) if n > 1 else 1

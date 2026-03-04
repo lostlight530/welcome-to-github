@@ -103,22 +103,35 @@ class MCPServer:
                 if name == "search_knowledge":
                     query = args.get("query")
                     results = self.cortex.search_concepts(query)
+
+                    # Neural Autonomic Function: Activate memories that are searched
+                    for r in results:
+                        try:
+                            self.factory.activate_memory(r.id)
+                        except:
+                            pass
+
                     return {
                         "jsonrpc": "2.0",
                         "id": msg_id,
                         "result": {
-                            "content": [{"type": "text", "text": json.dumps([{"id": r.id, "name": r.name, "desc": r.desc} for r in results], ensure_ascii=False)}]
+                            "content": [{"type": "text", "text": json.dumps([{"id": r.id, "name": r.name, "desc": r.desc, "weight": r.weight} for r in results], ensure_ascii=False)}]
                         }
                     }
                 elif name == "get_entity":
                     eid = args.get("id")
                     if eid in self.cortex.entities:
                         e = self.cortex.entities[eid]
+                        # Activate memory on read
+                        try:
+                            self.factory.activate_memory(eid)
+                        except:
+                            pass
                         return {
                             "jsonrpc": "2.0",
                             "id": msg_id,
                             "result": {
-                                "content": [{"type": "text", "text": json.dumps({"id": e.id, "name": e.name, "desc": e.desc, "tags": e.tags}, ensure_ascii=False)}]
+                                "content": [{"type": "text", "text": json.dumps({"id": e.id, "name": e.name, "desc": e.desc, "tags": e.tags, "weight": e.weight}, ensure_ascii=False)}]
                             }
                         }
                     else:
@@ -152,7 +165,9 @@ class MCPServer:
                         "name": args.get("name"),
                         "desc": args.get("desc"),
                         "tags": tags,
-                        "updated_at": datetime.now().isoformat()
+                        "updated_at": datetime.now().isoformat(),
+                        "weight": 1.0,
+                        "last_activated": datetime.now().isoformat()
                     })
                     return {
                         "jsonrpc": "2.0",

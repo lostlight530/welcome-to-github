@@ -1,0 +1,2 @@
+{"id": "npu-edge", "type": "hardware", "name": "NPU (Neural Processing Unit)", "desc": "Dedicated edge AI accelerator.", "tags": [], "updated_at": "2026-03-04T03:00:41.910026", "weight": 1.5, "last_activated": "2026-03-04T03:00:41.910026"}
+{"id": "npu-edge", "type": "hardware", "name": "NPU (Neural Processing Unit)", "desc": "Dedicated edge AI accelerator.", "tags": [], "updated_at": "2026-03-04T03:00:42.241110", "weight": 1.5, "last_activated": "2026-03-04T03:00:42.241110"}

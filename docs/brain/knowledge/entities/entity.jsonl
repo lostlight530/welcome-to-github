@@ -33,3 +33,4 @@
 {"id": "mindspore-lite", "type": "tech", "name": "MindSpore Lite", "desc": "Huawei Edge AI framework.", "tags": [], "updated_at": "2026-03-03T07:16:37.477359"}
 {"id": "npu-edge", "type": "hardware", "name": "NPU (Neural Processing Unit)", "desc": "Dedicated edge AI accelerator.", "tags": [], "updated_at": "2026-03-03T07:16:38.513399"}
 {"id": "jax-framework", "type": "tech", "name": "JAX (High-Perf Numerical)", "desc": "Google numerical computing framework.", "tags": [], "updated_at": "2026-03-03T07:16:38.869550"}
+{"id": "jax-metal", "type": "tech", "name": "JAX Metal (Apple Silicon/Edge)", "desc": "JAX backend for Apple Silicon GPU acceleration.", "tags": [], "updated_at": "2026-03-04T03:02:18.785790", "weight": 1.0, "last_activated": "2026-03-04T03:02:18.785802"}
