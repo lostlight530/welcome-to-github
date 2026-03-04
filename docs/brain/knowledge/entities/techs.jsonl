@@ -1,0 +1,3 @@
+{"id": "vllm-0-16-0", "type": "tech", "name": "vLLM v0.16.0 (Next-Gen VLM & Speculative)", "desc": "Major refactor for Blackwell and Speculative Decoding.", "tags": [], "updated_at": "2026-03-04T03:00:41.908638", "weight": 1.1561, "last_activated": "2026-03-04T03:00:41.908638"}
+{"id": "mindspore-lite", "type": "tech", "name": "MindSpore Lite", "desc": "Huawei Edge AI framework.", "tags": [], "updated_at": "2026-03-04T03:00:42.240987", "weight": 1.5, "last_activated": "2026-03-04T03:00:42.240987"}
+{"id": "jax-framework", "type": "tech", "name": "JAX (High-Perf Numerical)", "desc": "Google numerical computing framework.", "tags": [], "updated_at": "2026-03-04T03:00:42.944366", "weight": 1.5, "last_activated": "2026-03-04T03:00:42.944366"}
