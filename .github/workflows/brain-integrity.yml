@@ -24,10 +24,12 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Validate Knowledge Graph
+      - name: Validate Neural Graph
         run: |
+          # Verify the SQLite database is healthy and reachable
           python docs/brain/nexus.py status
 
       - name: Test MCP Interface
         run: |
+          # Assert JSON-RPC 2.0 Compliance
           python docs/brain/test_mcp.py
