@@ -12,3 +12,8 @@
 {"src": "vllm-0-16-0", "rel": "runs_on", "dst": "npu-edge", "context": "", "created_at": "2026-03-04T03:00:41.906432"}
 {"src": "mindspore-lite", "rel": "optimizes", "dst": "npu-edge", "context": "", "created_at": "2026-03-04T03:00:42.240802"}
 {"src": "jax-framework", "rel": "deployed_via", "dst": "webgpu", "context": "", "created_at": "2026-03-04T03:00:42.944135"}
+{"src": "android", "rel": "hosts", "dst": "litert", "context": "", "created_at": "2026-03-05T14:38:32.895266"}
+{"src": "litert", "rel": "optimizes", "dst": "arch_pattern_gemma-2b_1", "context": "", "created_at": "2026-03-05T14:38:33.240751"}
+{"src": "huggingface-transformers-v5-3-0", "rel": "releases", "dst": "vibevoice-asr", "context": "", "created_at": "2026-03-05T14:38:34.327764"}
+{"src": "mindspore-lite", "rel": "supports", "dst": "cuda-backend", "context": "", "created_at": "2026-03-05T14:38:34.668506"}
+{"src": "jax-metal-plugin", "rel": "accelerates", "dst": "jax-framework", "context": "", "created_at": "2026-03-05T14:38:35.670582"}
