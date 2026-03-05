@@ -1,19 +1,28 @@
 {
   "repos": {
     "vllm-project/vllm": {
-      "etag": "W/\"e6d6cb63cca177f696851d3528f9434a2de20c193d1a6d67a9cdc1da10e796df\"",
-      "last_checked": "2026-02-24T04:28:02.439584+00:00",
-      "latest_tag": "v0.15.1"
+      "etag": "W/\"6394c8e395bde29d052d53b0c7932071ad26be6c8d57b3e8ee09e020b02f820a\"",
+      "last_checked": "2026-03-05T02:03:37.415857+00:00",
+      "latest_tag": "v0.16.0",
+      "history": [
+        "2026-03-05T02:03:37.415857+00:00"
+      ]
     },
     "huggingface/transformers": {
-      "etag": "W/\"055e0498fb6486c23cefcd852ffdce79ffb1721d26690da65255c1266e4db3d2\"",
-      "last_checked": "2026-02-24T03:15:40.825405+00:00",
-      "latest_tag": "v5.2.0"
+      "etag": "W/\"7e4558262f8b9a0bc33e9f353979e6dda0d24235600f3ceb9b0107349366583d\"",
+      "last_checked": "2026-03-05T02:03:37.663933+00:00",
+      "latest_tag": "v5.3.0",
+      "history": [
+        "2026-03-05T02:03:37.663933+00:00"
+      ]
     },
     "microsoft/markitdown": {
-      "etag": "W/\"bc13290f30ff949932dde95d9d081e2264c125c5a67b11c56190aa47ad586ff9\"",
-      "last_checked": "2026-02-24T03:15:40.959722+00:00",
-      "latest_tag": "v0.1.5"
+      "etag": "W/\"4783f6097f9e232ace19b774713e1756fcae37944cd136d4699923211adeb725\"",
+      "last_checked": "2026-03-05T02:03:37.786060+00:00",
+      "latest_tag": "v0.1.5",
+      "history": [
+        "2026-03-05T02:03:37.786060+00:00"
+      ]
     }
   }
 }
