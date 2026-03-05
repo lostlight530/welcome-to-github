@@ -1,152 +1,118 @@
-#!/usr/bin/env python3
+import urllib.request
 import json
 import os
-import sys
-import argparse
-import urllib.request
-import urllib.error
-from datetime import datetime, timezone, timedelta
+import datetime
+import logging
 
-# Stateful Harvester (The Radar)
-# 状态感知收割机（雷达）
+# Config: Define your surveillance targets here
+TARGETS = {
+    "vllm-project/vllm": "tags",
+    "huggingface/transformers": "tags",
+    "microsoft/markitdown": "tags"
+}
+STATE_FILE = "docs/brain/inputs/.harvester_state.json"
+OUTPUT_DIR = "docs/brain/inputs"
 
-class Harvester:
-    def __init__(self, root_dir: str):
-        self.root_dir = root_dir
-        self.inputs_dir = os.path.join(root_dir, "inputs")
-        self.state_file = os.path.join(self.inputs_dir, ".harvester_state.json")
-        self.state = self._load_state()
+logging.basicConfig(level=logging.INFO, format='[Harvester] %(message)s')
 
-    def _load_state(self):
-        """Loads cursor state (ETags, Timestamps). (加载游标状态)"""
-        if os.path.exists(self.state_file):
-            try:
-                with open(self.state_file, 'r') as f:
-                    return json.load(f)
-            except json.JSONDecodeError:
-                pass
-        return {"repos": {}}
+def load_state():
+    if os.path.exists(STATE_FILE):
+        with open(STATE_FILE, 'r') as f:
+            return json.load(f)
+    return {"repos": {}}
 
-    def _save_state(self):
-        """Saves cursor state. (保存游标状态)"""
-        os.makedirs(self.inputs_dir, exist_ok=True)
-        with open(self.state_file, 'w') as f:
-            json.dump(self.state, f, indent=2)
+def save_state(state):
+    os.makedirs(os.path.dirname(STATE_FILE), exist_ok=True)
+    with open(STATE_FILE, 'w') as f:
+        json.dump(state, f, indent=2)
 
-    def scan_github_releases(self, repo: str):
-        """
-        Scans GitHub releases for a repo using stateful ETag logic.
-        """
-        url = f"https://api.github.com/repos/{repo}/releases/latest"
-        print(f"[Harvester] Scanning {repo}...")
+def fetch_github_release(repo):
+    url = f"https://api.github.com/repos/{repo}/releases/latest"
+    req = urllib.request.Request(url)
+    # Generic User-Agent for privacy and stability
+    req.add_header('User-Agent', 'Nexus-Cortex-Bot')
 
-        repo_state = self.state["repos"].get(repo, {})
-        headers = {
-            "User-Agent": "Nexus-Cortex/1.0",
-            "Accept": "application/vnd.github.v3+json"
-        }
-        if "etag" in repo_state:
-            headers["If-None-Match"] = repo_state["etag"]
-
-        try:
-            req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req) as response:
+    try:
+        with urllib.request.urlopen(req, timeout=10) as response:
+            if response.status == 200:
                 data = json.loads(response.read().decode())
-                new_etag = response.getheader("ETag")
+                return data
+    except Exception as e:
+        logging.error(f"Failed to fetch {repo}: {e}")
+        return None
+    return None
 
-                # Velocity Calculation
-                history = repo_state.get("history", [])
-                now_iso = datetime.now(timezone.utc).isoformat()
-                history.append(now_iso)
+def main():
+    state = load_state()
+    today_dir = os.path.join(OUTPUT_DIR, datetime.datetime.now().strftime('%Y/%m'))
+    os.makedirs(today_dir, exist_ok=True)
 
-                # Keep last 5 updates
-                history = history[-5:]
+    updates_found = False
 
-                is_hot = False
-                if len(history) >= 2:
-                    t1 = datetime.fromisoformat(history[-1])
-                    t2 = datetime.fromisoformat(history[-2])
-                    if (t1 - t2).days < 7:
-                        is_hot = True
-                        print("  - 🔥 HIGH VELOCITY ALERT (频繁更新触发)")
+    for repo, type_ in TARGETS.items():
+        logging.info(f"Scanning {repo}...")
+        data = fetch_github_release(repo)
 
-                self._process_release(repo, data, is_hot)
+        if not data: continue
 
-                self.state["repos"][repo] = {
-                    "etag": new_etag,
-                    "last_checked": now_iso,
-                    "latest_tag": data.get("tag_name"),
-                    "history": history
-                }
-                self._save_state()
+        tag = data.get('tag_name', 'unknown')
+        body = data.get('body', '')
+        published_at = data.get('published_at', '')
 
-        except urllib.error.HTTPError as e:
-            if e.code == 304:
-                print(f"  - No changes (304 Not Modified). (无变更)")
-            elif e.code == 403:
-                print(f"  - Rate Limit Exceeded or Forbidden. (速率限制或禁止访问)")
-            elif e.code == 404:
-                print(f"  - Repo not found. (仓库未找到)")
-            else:
-                print(f"  - Error: {e}")
-        except Exception as e:
-             print(f"  - Network Error: {e}")
+        repo_state = state["repos"].get(repo, {})
+        last_tag = repo_state.get("latest_tag")
 
-    def _process_release(self, repo: str, data: dict, is_hot: bool):
-        """Generates an intelligence brief."""
-        tag = data.get("tag_name", "unknown")
-        name = data.get("name", tag)
-        body = data.get("body", "")
-        published_at = data.get("published_at", datetime.now().isoformat())
+        if tag != last_tag:
+            logging.info(f"🔥 New Release found: {repo} {tag}")
 
-        print(f"  - 🚀 New Release: {tag}")
+            # Velocity Tracking logic
+            history = repo_state.get("history", [])
+            history.append(datetime.datetime.now().isoformat())
+            history = history[-5:] # Keep last 5 entries
 
-        is_breaking = "BREAKING CHANGE" in body or "Major" in name
-        alert_emoji = "🚨" if is_breaking else "ℹ️"
-        hot_label = "🔥 HIGH VELOCITY ALERT\n> Project is iterating aggressively.\n" if is_hot else ""
+            safe_name = repo.replace("/", "_")
+            filename = f"{safe_name}_{tag}.md"
+            filepath = os.path.join(today_dir, filename)
 
-        ym = datetime.now().strftime("%Y/%m")
-        filename = f"{repo.replace('/', '_')}_{tag}.md"
-        filepath = os.path.join(self.inputs_dir, ym, filename)
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+            # Check Velocity
+            velocity_alert = ""
+            if len(history) >= 2:
+                last_time = datetime.datetime.fromisoformat(history[-2])
+                if (datetime.datetime.now() - last_time).days < 7:
+                    velocity_alert = "\n> 🔥 **HIGH VELOCITY ALERT**: Project is updating rapidly.\n"
 
-        content = f"""# {alert_emoji} Intel: {repo} {tag}
+            content = f"""# ℹ️ Intel: {repo} {tag}
 > Source: GitHub Releases
 > Date: {published_at}
 
-{hot_label}
+{velocity_alert}
 ## 📝 Summary
-{name}
+{tag}
 
 ## 🔍 Changelog (Extract)
 {body[:2000]}... (truncated)
 
 ## 🤖 Cognitive Analysis Required
-- [ ] Is this a major version update? ({is_breaking})
+- [ ] Is this a major version update? (False)
 - [ ] Does it conflict with existing 'tech_stack' nodes?
-- [ ] Action: Run `nexus.py add` or `nexus.py connect` to integrate.
+- [ ] Action: Run `nexus.py add entity ...` or `nexus.py connect ...` to integrate.
 """
-        with open(filepath, 'w') as f:
-            f.write(content)
-        print(f"  - Brief written to {filepath}")
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(content)
 
-def main():
-    parser = argparse.ArgumentParser(description="NEXUS HARVESTER: Stateful Intelligence Radar")
-    parser.add_argument("--root", default="docs/brain", help="Path to brain root")
-    args = parser.parse_args()
+            # Update State
+            repo_state["latest_tag"] = tag
+            repo_state["last_checked"] = datetime.datetime.now().isoformat()
+            repo_state["history"] = history
+            state["repos"][repo] = repo_state
+            updates_found = True
+        else:
+            logging.info(f"  - No change ({tag})")
 
-    harvester = Harvester(args.root)
-
-    targets = [
-        "vllm-project/vllm",
-        "google/gemma_pytorch",
-        "huggingface/transformers",
-        "microsoft/markitdown"
-    ]
-
-    print("📡 Harvester Radar Activated (雷达已激活)")
-    for target in targets:
-        harvester.scan_github_releases(target)
+    if updates_found:
+        save_state(state)
+    else:
+        logging.info("Status: Silent. No bandwidth wasted.")
 
 if __name__ == "__main__":
     main()
