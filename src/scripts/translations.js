@@ -14,7 +14,7 @@ const translations = {
         },
         achievements: {
             title: "2025 荣耀时刻",
-            googleBadges: "13 枚 Google 开发者勋章",
+            googleBadges: "15 枚 Google 开发者勋章",
             awards: "4 项国家级/省级竞赛奖项",
             awardList: [
                 "华为 ICT 大赛中国总决赛二等奖",
