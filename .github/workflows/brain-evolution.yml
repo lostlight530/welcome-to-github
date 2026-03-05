@@ -1,0 +1,68 @@
+name: Brain Evolution Protocol
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  daily-evolution:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: ''
+
+      - name: Execute Cortex OODA Loop
+        id: evolve
+        run: |
+          # 1. Sensory Phase: Stateful Radar
+          python docs/brain/harvester.py
+
+          # 2. Cognitive Phase: Transitive Inference & Decay
+          python docs/brain/nexus.py evolve
+
+          # 3. Housekeeping: Archive processed inputs & clean cache
+          python docs/brain/nexus.py archive
+          python docs/brain/nexus.py clean
+
+          # 4. PR Metadata
+          echo "REPORT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+          commit-message: "feat(brain): biological neural evolution for ${{ env.REPORT_DATE }}"
+          title: "🧠 Cortex Evolution: ${{ env.REPORT_DATE }}"
+          body: |
+            ## 🧬 Cognitive Evolution Report
+
+            **Date**: ${{ env.REPORT_DATE }}
+            **Agent**: Cortex Automation (OODA Loop)
+
+            The daily biological evolution cycle has completed.
+
+            ### 📡 Senses (Harvester)
+            - Scanned key ecosystem repositories.
+            - Updated Velocity Heatmaps in `.harvester_state.json`.
+
+            ### 🧠 Cortex (Mind)
+            - **Memory Decay**: Applied exponential decay to unused synaptic weights.
+            - **Intuition**: Incubated transitive hypotheses (A -> B -> C).
+            - **Synthesis**: Auto-generated the daily `scholar-synthesis` report.
+
+            > "Evolution is not a choice, it's a protocol."
+          branch: "brain-evolution/harvest-${{ env.REPORT_DATE }}"
+          base: "main"
+          delete-branch: true
