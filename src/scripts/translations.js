@@ -1,140 +1,296 @@
 const translations = {
-    zh: {
-        title: "lostlight | 2025-2026 年度回顾",
-        nav: {
-            home: "首页",
-            achievements: "年度成就",
-            projects: "核心项目",
-            philosophy: "工程哲学"
-        },
-        hero: {
-            role: "端侧 AI 开发者 | Early Career",
-            tagline: "低调 务实 <br><span class='gradient-text'>极致工程化</span>",
-            description: "专注端侧 AI 生态集成与极致工程化，深耕 Google Vertex AI、MediaPipe 与华为昇腾生态，在“混乱-重整-收敛”中打磨可落地、可产品化的精密工具"
-        },
-        achievements: {
-            title: "2025 荣耀时刻",
-            googleBadges: "15 枚 Google 开发者勋章",
-            awards: "4 项国家级/省级竞赛奖项",
-            awardList: [
-                "华为 ICT 大赛中国总决赛二等奖",
-                "昇思 MindSpore 创新训练营二等奖",
-                "蓝桥杯智能体开发省赛三等奖",
-                "金砖国家技能大赛鸿蒙赛道晋级",
-                "生产环境资产：20+ Repositories"
-            ]
-        },
-        projects: {
-            title: "核心项目矩阵",
-            items: [
-                {
-                    name: "MediaPipe Engine AI",
-                    desc: "针对端侧算力的实时健身纠错引擎，采用 FSM 状态机解耦复杂动作序列，通过 MediaPipe 提取拓扑关键点，实现亚秒级异常判定与反馈",
-                    tech: "Android / Kotlin / FSM"
-                },
-                {
-                    name: "Fire Panel Perception",
-                    desc: "工业级高精度视觉解算算法，针对极端透视畸变，通过 RANSAC 鲁棒投影与网格重建，实现全自动物理坐标映射与 128 点状态诊断",
-                    tech: "OpenCV / RANSAC / Python"
-                },
-                {
-                    name: "ClassVision Distributed",
-                    desc: "容器化大规模行为感知平台，利用消息队列解耦端云算力，支持千级并发处理，提供毫秒级动态反馈与多维情感评估指标",
-                    tech: "YOLOv5 / Redis / Docker"
-                },
-                {
-                    name: "Tiezhitong Agent",
-                    desc: "基于语义驱动的枢纽控制助手，通过指令集解耦与工具动态挂载，实现多源异构数据的收敛查询。符合 MCP 协议早期的语义闭环模型",
-                    tech: "MCP / Semantic Kernel / Python"
-                },
-                {
-                    name: "CifarLab SOTA Trainer",
-                    desc: "模块化深度学习训练框架，集成余弦退火、16位混合精度及 AMP 技术，支持 YAML 语义化定义架构，支撑从 ResNet 到 SOTA 的快速验证",
-                    tech: "PyTorch / Mixed Precision"
-                },
-                {
-                    name: "Persona LLM Interface",
-                    desc: "端侧大语言模型轻量化方案，采用 Int4 量化提升推理吞吐量，集成上下文流式管理，在受限算力环境下寻求生成质量与速度的最优解",
-                    tech: "Qwen / Gradio / Int4"
-                }
-            ]
-        },
-        philosophy: {
-            title: "工程哲学",
-            content: "“小而稳”高于“大而乱”，每一项 Skill 都是一次经验的闭环封装。在“静”中寻求技术的收敛，在“笃”中完成工具的进化，拒绝追逐短期热度，坚持构建可复用的精密架构"
-        },
-        footer: {
-            greeting: "© 2026 LOSTLIGHT | 记录每一次工程自觉"
-        }
+  zh: {
+    meta: {
+      title: "lostlight | 2025-2026 年度回顾",
+      description:
+        "端侧 AI × Agent 架构 × 开源生态，聚焦能力复用、系统协议设计与可观测工程实践",
+      keywords: [
+        "lostlight",
+        "Edge AI",
+        "Agent",
+        "MCP",
+        "Skills",
+        "Nexent",
+        "Astron-agent",
+        "MediaPipe",
+        "OpenCV",
+        "PyTorch"
+      ]
     },
-    en: {
-        title: "lostlight | 2025-2026 Year in Review",
-        nav: {
-            home: "Home",
-            achievements: "Achievements",
-            projects: "Projects",
-            philosophy: "Philosophy"
+    title: "lostlight | 2025-2026 年度回顾",
+    nav: {
+      home: "首页",
+      achievements: "年度成就",
+      ecosystem: "生态贡献",
+      projects: "核心项目",
+      philosophy: "工程哲学"
+    },
+    hero: {
+      role: "端侧 AI × Agent 系统工程者 | Early Career",
+      tagline: "低调 务实 <br><span class='gradient-text'>协议优先，系统为先</span>",
+      description:
+        "专注端侧 AI、Agent 架构与能力复用层设计，长期打磨可落地、可复用、可观测的工程系统，在 Google 与国内 AI 生态之间持续连接实践与抽象",
+      primaryCta: "查看生态贡献",
+      secondaryCta: "浏览核心项目"
+    },
+    stats: {
+      items: [
+        { value: "15", label: "Google 开发者徽章" },
+        { value: "4", label: "国家级 / 省级竞赛成果" },
+        { value: "4", label: "公开架构讨论贡献" },
+        { value: "20+", label: "长期维护中的工程资产" }
+      ]
+    },
+    achievements: {
+      title: "2025-2026 关键成就",
+      googleBadges: "15 枚 Google 开发者徽章",
+      awards: "4 项国家级 / 省级竞赛成果",
+      awardList: [
+        "华为 ICT 大赛中国总决赛二等奖",
+        "昇思 MindSpore 创新训练营二等奖",
+        "蓝桥杯智能体开发省赛三等奖",
+        "金砖国家技能大赛鸿蒙赛道晋级",
+        "持续沉淀 20+ 工程资产与公开作品"
+      ],
+      summary:
+        "这一年不只是在做项目，而是在把学习、工具链与生态参与沉淀成长期可复用的系统能力"
+    },
+    ecosystem: {
+      title: "生态贡献与架构输出",
+      intro:
+        "相比单点项目，我更在意能力抽象、系统分层与生态可复用性，以下内容更能代表我的真实技术方向",
+      items: [
+        {
+          name: "Nexent #2179",
+          title: "Skills 作为能力复用层",
+          desc: "澄清 Sub-agent 与 Skills 的正交关系，把 Skills 定义为经验与能力的沉淀层，而不是新的 Agent",
+          tech: "Agent Abstraction / Reusable Skills",
+          link: "https://github.com/ModelEngine-Group/nexent/discussions/2179"
         },
-        hero: {
-            role: "Edge AI Developer | Early Career",
-            tagline: "Quietly tinkering with <br><span class='gradient-text'>Python + AI.</span>",
-            description: "Focusing on Edge AI integration and engineering excellence. Deeply experienced in Google Vertex AI, MediaPipe, and Huawei/Ascend architectures. Refining chaotic ideas into product-ready, resilient instruments."
+        {
+          name: "Nexent #2056",
+          title: "Plugin 机制与语义工作流可视化",
+          desc: "提出 Plugin = MCP 工具 + Prompt 模板 + 默认小型 workflow，并建议为进阶用户提供工作流查看与轻量编辑能力",
+          tech: "MCP / Plugin / Workflow Visualization",
+          link: "https://github.com/ModelEngine-Group/nexent/discussions/2056"
         },
-        achievements: {
-            title: "2025 Highlights",
-            googleBadges: "13 Google Developer Badges",
-            awards: "4 National/Provincial Awards",
-            awardList: [
-                "2nd Prize, Huawei ICT Competition China Finals",
-                "2nd Prize, MindSpore Innovation Bootcamp",
-                "3rd Prize, Lanqiao Cup AI Agent Development",
-                "Finalist, BRICS Skills HarmonyOS Track",
-                "Production Assets: 20+ Repositories" // New
-            ]
+        {
+          name: "Nexent #1982",
+          title: "MCP 一键导入体验优化",
+          desc: "提出预部署 MCP 的一键导入与自动同步设想，建议获得维护者公开正面回应并进入后续计划讨论",
+          tech: "MCP Distribution / DX",
+          link: "https://github.com/ModelEngine-Group/nexent/discussions/1982"
         },
-        projects: {
-            title: "Project Matrix",
-            items: [
-                {
-                    name: "MediaPipe Engine AI",
-                    desc: "Edge-based fitness validation system using FSM for action tracking. Sub-second keypoint detection optimized for senior care interaction.",
-                    tech: "Android / Kotlin / FSM"
-                },
-                {
-                    name: "Fire Panel Vision",
-                    desc: "Industrial-grade algorithm for 128-key panel detection. Utilizes RANSAC for grid reconstruction under extreme perspective distortion.",
-                    tech: "OpenCV / RANSAC / Python"
-                },
-                {
-                    name: "ClassVision System",
-                    desc: "Distributed education diagnostic platform using message queues for compute decoupling and large-scale behavior sensing.",
-                    tech: "YOLOv5 / Docker / Redis"
-                },
-                {
-                    name: "Tiezhitong Agent",
-                    desc: "Semantic-driven railway agent featuring instruction decoupling and dynamic tool mounting. Prototype implementation of MCP protocol.",
-                    tech: "MCP / Semantic Kernel / Python"
-                },
-                {
-                    name: "CifarLab Trainer",
-                    desc: "Modular DL experimental platform with pre-integrated FP16 and Cosine Annealing practices. YAML-driven rapid architecture switching.",
-                    tech: "PyTorch / Mixed Precision / YAML"
-                },
-                {
-                    name: "Persona Chat Studio",
-                    desc: "Lightweight LLM interface with Int4 quantization for increased edge throughput, balancing memory usage and response quality.",
-                    tech: "Qwen / Gradio / Int4 Quant"
-                }
-            ]
-        },
-        philosophy: {
-            title: "Engineering Philosophy",
-            content: "'Small and Stable' over 'Fast and Messy'. Every Skill is a closed experience encapsulation. Crafting precision in silence, refusing Hype, building for the future."
-        },
-        footer: {
-            greeting: "© 2026 LOSTLIGHT | Engineering Excellence"
+        {
+          name: "Astron-agent #824",
+          title: "多模型 AgentFlow 简历分析系统",
+          desc: "设计多模态输入、多模型协作、状态驱动的 AgentFlow 系统，支持 PDF OCR、多轮补全、评估与岗位推荐闭环",
+          tech: "AgentFlow / OCR / Multi-model",
+          link: "https://github.com/iflytek/astron-agent/discussions/824"
         }
+      ]
+    },
+    projects: {
+      title: "核心项目矩阵",
+      intro:
+        "项目选择偏向强约束场景与真实系统能力，关注端侧、工业、训练平台与交互式智能系统",
+      items: [
+        {
+          name: "MediaPipe Engine AI",
+          desc: "面向端侧算力场景的动作纠错引擎，以状态机解耦复杂动作序列，通过关键点拓扑与规则融合实现实时反馈",
+          tech: "Android / Kotlin / MediaPipe / FSM"
+        },
+        {
+          name: "Fire Panel Perception",
+          desc: "工业级高精度视觉解算方案，针对透视畸变与复杂光照，结合轮廓、仿射对齐与 RANSAC 重建实现 128 点状态诊断",
+          tech: "OpenCV / RANSAC / Python"
+        },
+        {
+          name: "ClassVision Distributed",
+          desc: "分布式课堂感知与诊断系统，支持考勤、行为分析与设备检测，强调服务解耦、容器部署与可扩展诊断能力",
+          tech: "FastAPI / YOLOv8 / WebSocket / Docker"
+        },
+        {
+          name: "Tiezhitong Agent",
+          desc: "语义驱动的铁路查询助手，通过指令解耦与工具挂载实现多源数据收敛查询，体现早期 Agent 工具链整合思路",
+          tech: "Python / Semantic Routing / Tool Orchestration"
+        },
+        {
+          name: "CifarLab Trainer",
+          desc: "模块化深度学习训练平台，集成混合精度、余弦退火与配置化实验管理，支持从经典模型到快速验证流程的统一训练接口",
+          tech: "PyTorch / AMP / YAML"
+        },
+        {
+          name: "Persona Chat Studio",
+          desc: "轻量化大模型交互界面，基于 Int4 量化与流式上下文管理，在受限算力下平衡推理速度、显存占用与回复质量",
+          tech: "Qwen / Gradio / Int4"
+        }
+      ]
+    },
+    philosophy: {
+      title: "工程哲学",
+      points: [
+        "小而稳，高于大而乱",
+        "协议优先，胜过一次性堆功能",
+        "每一个 Skill，都是一次经验闭环与能力封装",
+        "在静中追求收敛，在笃中完成演进",
+        "拒绝短期热度，坚持构建可复用的精密架构"
+      ],
+      content:
+        "我更相信可测试、可复用、可维护的长期系统价值，而不是短期炫目的功能堆叠"
+    },
+    footer: {
+      greeting: "© 2026 LOSTLIGHT | 记录每一次工程自觉",
+      note: "Quietly building reusable systems"
     }
+  },
+
+  en: {
+    meta: {
+      title: "lostlight | 2025-2026 Year in Review",
+      description:
+        "Edge AI × Agent Architecture × Open-source Influence, focused on reusable capability layers, protocol-oriented system design, and observable engineering",
+      keywords: [
+        "lostlight",
+        "Edge AI",
+        "Agent Architecture",
+        "MCP",
+        "Skills",
+        "Nexent",
+        "Astron-agent",
+        "MediaPipe",
+        "OpenCV",
+        "PyTorch"
+      ]
+    },
+    title: "lostlight | 2025-2026 Year in Review",
+    nav: {
+      home: "Home",
+      achievements: "Highlights",
+      ecosystem: "Ecosystem",
+      projects: "Projects",
+      philosophy: "Philosophy"
+    },
+    hero: {
+      role: "Edge AI × Agent Systems Engineer | Early Career",
+      tagline:
+        "Quietly building <br><span class='gradient-text'>protocol-first systems</span>",
+      description:
+        "Focused on Edge AI, agent architecture, and reusable capability layers. Bridging hands-on engineering with ecosystem-level abstractions across Google and domestic AI platforms.",
+      primaryCta: "View Ecosystem Work",
+      secondaryCta: "Explore Projects"
+    },
+    stats: {
+      items: [
+        { value: "15", label: "Google Developer Badges" },
+        { value: "4", label: "National / Provincial Awards" },
+        { value: "4", label: "Public Architecture Contributions" },
+        { value: "20+", label: "Long-term Engineering Assets" }
+      ]
+    },
+    achievements: {
+      title: "2025-2026 Highlights",
+      googleBadges: "15 Google Developer Badges",
+      awards: "4 National / Provincial Achievements",
+      awardList: [
+        "2nd Prize, Huawei ICT Competition China Finals",
+        "2nd Prize, MindSpore Innovation Bootcamp",
+        "3rd Prize, Lanqiao Cup AI Agent Development",
+        "Finalist, BRICS Skills HarmonyOS Track",
+        "20+ evolving engineering assets and public works"
+      ],
+      summary:
+        "This year was not only about building projects, but about turning learning, tooling, and ecosystem participation into reusable system capability."
+    },
+    ecosystem: {
+      title: "Ecosystem Contributions",
+      intro:
+        "More than standalone projects, this section reflects my core direction — system abstraction, capability packaging, and architecture-level contribution.",
+      items: [
+        {
+          name: "Nexent #2179",
+          title: "Skills as a reusable capability layer",
+          desc: "Clarified the orthogonal relationship between sub-agents and Skills, positioning Skills as an abstraction for reusable, stable execution patterns rather than another agent.",
+          tech: "Agent Abstraction / Reusable Skills",
+          link: "https://github.com/ModelEngine-Group/nexent/discussions/2179"
+        },
+        {
+          name: "Nexent #2056",
+          title: "Plugin mechanism and semantic workflow visibility",
+          desc: "Proposed Plugin = MCP tools + prompt templates + a default workflow, plus optional workflow visualization and lightweight editing for advanced users.",
+          tech: "MCP / Plugin / Workflow Visualization",
+          link: "https://github.com/ModelEngine-Group/nexent/discussions/2056"
+        },
+        {
+          name: "Nexent #1982",
+          title: "One-click MCP import proposal",
+          desc: "Suggested a one-click import flow for pre-deployed MCP services. The idea received a positive maintainer response and was connected to follow-up feature planning.",
+          tech: "MCP Distribution / DX",
+          link: "https://github.com/ModelEngine-Group/nexent/discussions/1982"
+        },
+        {
+          name: "Astron-agent #824",
+          title: "Multi-model AgentFlow resume system",
+          desc: "Designed a state-driven AgentFlow system combining OCR, multi-model collaboration, multi-round completion, evaluation, and job recommendation.",
+          tech: "AgentFlow / OCR / Multi-model",
+          link: "https://github.com/iflytek/astron-agent/discussions/824"
+        }
+      ]
+    },
+    projects: {
+      title: "Project Matrix",
+      intro:
+        "My projects tend to focus on constrained real-world scenarios — edge deployment, industrial vision, modular training systems, and interactive AI interfaces.",
+      items: [
+        {
+          name: "MediaPipe Engine AI",
+          desc: "An edge-oriented motion correction engine that uses FSM-based sequence decoupling and keypoint topology for real-time exercise feedback.",
+          tech: "Android / Kotlin / MediaPipe / FSM"
+        },
+        {
+          name: "Fire Panel Perception",
+          desc: "An industrial-grade visual computing pipeline for 128-key panel diagnosis under severe perspective distortion and complex lighting conditions.",
+          tech: "OpenCV / RANSAC / Python"
+        },
+        {
+          name: "ClassVision Distributed",
+          desc: "A distributed classroom sensing and diagnostics system covering attendance, behavior analysis, and device detection with containerized deployment.",
+          tech: "FastAPI / YOLOv8 / WebSocket / Docker"
+        },
+        {
+          name: "Tiezhitong Agent",
+          desc: "A semantic-driven railway assistant that integrates tools and instructions for converged multi-source querying, reflecting an early agent toolchain design mindset.",
+          tech: "Python / Semantic Routing / Tool Orchestration"
+        },
+        {
+          name: "CifarLab Trainer",
+          desc: "A modular training platform with AMP, cosine annealing, and configuration-driven experimentation for fast and reproducible deep learning workflows.",
+          tech: "PyTorch / AMP / YAML"
+        },
+        {
+          name: "Persona Chat Studio",
+          desc: "A lightweight LLM interface using Int4 quantization and streaming context control to balance latency, memory footprint, and response quality.",
+          tech: "Qwen / Gradio / Int4"
+        }
+      ]
+    },
+    philosophy: {
+      title: "Engineering Philosophy",
+      points: [
+        "Small and stable over large and messy",
+        "Protocols before feature stacking",
+        "Every Skill should be a closed loop of reusable experience",
+        "Seek convergence in silence, evolve through rigor",
+        "Refuse hype, build precise systems for the long term"
+      ],
+      content:
+        "I care more about testability, reusability, and maintainability than short-lived novelty. Engineering should leave behind durable structure."
+    },
+    footer: {
+      greeting: "© 2026 LOSTLIGHT | Engineering with intention",
+      note: "Quiet. Pragmatic. Reusable."
+    }
+  }
 };
 
 export default translations;
