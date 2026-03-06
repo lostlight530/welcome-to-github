@@ -1,0 +1,19 @@
+{"src": "vllm-0-16-0", "rel": "implements", "dst": "vllm-realtime-api", "context": "", "created_at": "2026-03-01T03:53:35.301057"}
+{"src": "transformer", "rel": "evolves_to", "dst": "linear-attention", "context": "", "created_at": "2026-03-01T03:53:36.389424"}
+{"src": "transformer", "rel": "enables", "dst": "infinite-context", "context": "", "created_at": "2026-03-01T03:53:36.829632"}
+{"src": "linear-attention", "rel": "solves", "dst": "quadratic-complexity", "context": "", "created_at": "2026-03-01T03:53:37.173655"}
+{"src": "vllm-0-16-0", "rel": "implements", "dst": "realtime-api-websocket", "context": "", "created_at": "2026-03-02T04:55:30.567389"}
+{"src": "linear-attention", "rel": "solves", "dst": "quadratic-bottleneck", "context": "", "created_at": "2026-03-02T04:55:31.442865"}
+{"src": "markitdown", "rel": "feeds_data_to", "dst": "database-servers", "context": "", "created_at": "2026-03-02T04:55:31.829567"}
+{"src": "open-webui", "rel": "unaffected_by", "dst": "cve-2026-0994", "context": "Frontend REST architecture, does not parse backend protobuf", "created_at": "2026-03-02T05:36:34.701338"}
+{"src": "vllm-0-16-0", "rel": "implements", "dst": "vllm-realtime-socket", "context": "", "created_at": "2026-03-03T07:16:36.295649"}
+{"src": "vllm-0-16-0", "rel": "optimizes", "dst": "unified-spec-decoding", "context": "", "created_at": "2026-03-03T07:16:36.722033"}
+{"src": "mindspore-lite", "rel": "enforces", "dst": "privacy-on-device", "context": "", "created_at": "2026-03-03T07:16:37.814946"}
+{"src": "vllm-0-16-0", "rel": "runs_on", "dst": "npu-edge", "context": "", "created_at": "2026-03-04T03:00:41.906432"}
+{"src": "mindspore-lite", "rel": "optimizes", "dst": "npu-edge", "context": "", "created_at": "2026-03-04T03:00:42.240802"}
+{"src": "jax-framework", "rel": "deployed_via", "dst": "webgpu", "context": "", "created_at": "2026-03-04T03:00:42.944135"}
+{"src": "android", "rel": "hosts", "dst": "litert", "context": "", "created_at": "2026-03-05T14:38:32.895266"}
+{"src": "litert", "rel": "optimizes", "dst": "arch_pattern_gemma-2b_1", "context": "", "created_at": "2026-03-05T14:38:33.240751"}
+{"src": "huggingface-transformers-v5-3-0", "rel": "releases", "dst": "vibevoice-asr", "context": "", "created_at": "2026-03-05T14:38:34.327764"}
+{"src": "mindspore-lite", "rel": "supports", "dst": "cuda-backend", "context": "", "created_at": "2026-03-05T14:38:34.668506"}
+{"src": "jax-metal-plugin", "rel": "accelerates", "dst": "jax-framework", "context": "", "created_at": "2026-03-05T14:38:35.670582"}
