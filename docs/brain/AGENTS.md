@@ -1,35 +1,42 @@
-# NEXUS CORTEX: Operational Directives (操作指令)
+NEXUS CORTEX Core Architecture & Operational Protocols
+System Philosophy & Identity
+Core Philosophy: Adheres to "Quiet, Pragmatic, Engineering Excellence," asserting that "Small and Stable" is superior to "Large and Messy"
 
-## Architecture & Workflow (工程化闭环)
-The system operates on an "Autonomous Radar → OODA Loop → Human Decision → Append-Only Memory" lifecycle.
-本仓库采用“雷达索敌 → OODA 循环 → 人类裁决 → 追加记忆”的工程化闭环。
+Agent Identity: AI functions as "Jules" (Chief Tech Scout), treating the system as "The Full Matrix" MCP server
 
-All Agents (including Jules) must prioritize: **Auditability, Restraint, Zero-Dependency, and Human-in-the-loop**.
-任何 Agent 必须优先保证：可审计、克制、零依赖、人在环。
+Bilingual Mandate: All documentation, scripts, and outputs must strictly follow English/Chinese formats for absolute accessibility
 
-## Core Philosophy (核心法则)
-1. **Zero-Dependency Brutalism (零依赖极简)**: Prefer Python stdlib (`urllib`, `sqlite3`). Reject bloated frameworks.
-2. **Append-Only Memory (不可篡改)**: History is immutable (ADR-0001). Mistakes are fixed via `deprecates` or `conflicts_with` tension edges, not deletions.
-3. **Machine Draft, Human Decision (算力主权)**: Agents propose updates (via PR or `MISSION_ACTIVE.md`), but humans execute the final `nexus.py connect` commands.
+Long-term Vision: Envisioned as the "Frontal Lobe" or "External Memory" for future hybrid AGI, separating local zero-dependency logic from external LLM reasoning
 
-## Whitelisted Directories (允许写入的目录)
-- `docs/brain/inputs/`: Raw intelligence briefs from Harvester (Radar).
-- `docs/brain/knowledge/`: Append-only JSONL files for the Knowledge Graph.
-- `docs/brain/memories/`:
-  - `MISSION_ACTIVE.md`: The single source of current cognitive focus.
-  - `*-scholar-synthesis.md`: Auto-generated daily learning reports.
-  - `archive/LAST_STABLE_STATE.md`: The unified historical log.
-- `docs/archaeology/`: Permanent records of human-AI collaboration (e.g., `MEMORIAL.md`).
+Knowledge Base & Memory Management (CORTEX.DB)
+Biological Decay Model: Implements a "Memory Half-Life" using SQLite, simulating Synaptic Potentiation/Depression via weight and last_activated fields
 
-*(Note: The legacy `docs/daily-briefs/` is deprecated. Intelligence flows through `inputs/` into `memories/`.)*
+Neural Database Features: Leverages FTS5 full-text search, transitive inference, and memory lifecycle management, superseding legacy Append-Only JSONL
 
-## Intelligence & Senses (情报与感知)
-- **Facts**: Must be sourced from official documentation, release notes, or repositories (via `harvester.py`).
-- **Signal-to-Noise**: Harvester strictly checks ETags/states to avoid fetching duplicate or stagnant data (Zero Inbox Policy).
-- **Epiphany Engine**: The system actively combats entropy by pairing disconnected entities and prompting the Architect to find hidden synergies (Cross-Pollination).
+Cognitive Anxiety Prevention: Implements a "Freshness Grace Period" exempting entities updated within 3 days from stale/high-entropy flags
 
-## Interface (交互接口)
-- **CLI**: `docs/brain/nexus.py` is the Central Nervous System.
-- **MCP**: `docs/brain/nexus_mcp.py` exposes the graph to external LLMs/IDEs via standard Model Context Protocol.
+Operational Commands:
 
-> "Small and Stable. Quiet and Pragmatic."
+nexus.py connect <source> <relation> <target>: Manually injects knowledge graph and rewards intuition
+
+nexus.py touch <entity>: Manually triggers memory activation, increasing weight and updating timestamps
+
+nexus.py visualize: Renders knowledge topology via Mermaid.js
+
+Automated Evolution (OODA Loop)
+Execution Flow: harvester.py (Sensory) -> nexus.py evolve (Inference & Decay) -> nexus.py archive (Housekeeping) -> nexus.py clean (Cleanup)
+
+Stateful Radar: harvester.py monitors whitelists including Anthropic (MCP), Google (Edge AI), and Huawei (MindSpore), alerting on high-velocity updates
+
+Epiphany Engine: evolution.py identifies disconnected entities to generate "Subconscious Intuitions" via transitive inference, prompting human analysis in MISSION_ACTIVE.md
+
+Cleanup Rules: nexus.py clean must strictly exclude .harvester_state.json to preserve radar state; numerical prefixes are forbidden in memories/
+
+Engineering Standards & MCP Specifications
+Zero-Dependency Brutalism: Forbids outbound API calls; relies entirely on Python stdlib (e.g., sqlite3, urllib) for robust features
+
+MCP Server: docs/brain/nexus_mcp.py acts as the production server, directing logs to stderr and exposing tools like search_knowledge and add_memory
+
+Deployment Logic: The lostlight-portal frontend relies on native ES Modules and Tailwind CDN, managed via src/scripts/translations.js
+
+Risk Mitigation: Evolution follows a "Machine Draft, Human Decision" model; direct pushes to the main branch are forbidden in favor of Pull Requests
