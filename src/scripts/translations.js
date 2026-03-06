@@ -21,7 +21,10 @@ const translations = {
                 "昇思 MindSpore 创新训练营二等奖",
                 "蓝桥杯智能体开发省赛三等奖",
                 "金砖国家技能大赛鸿蒙赛道晋级",
-                "生产环境资产：20+ Repositories"
+                "生产环境资产：20+ Repositories",
+                "开源生态贡献 (ModelEngine / iFLYTEK)",
+                "Google Developer: g.dev/lostlight-love-CXX",
+                "GitHub 专属页面: lostlight530.github.io/welcome-to-github"
             ]
         },
         projects: {
@@ -89,7 +92,10 @@ const translations = {
                 "2nd Prize, MindSpore Innovation Bootcamp",
                 "3rd Prize, Lanqiao Cup AI Agent Development",
                 "Finalist, BRICS Skills HarmonyOS Track",
-                "Production Assets: 20+ Repositories" // New
+                "Production Assets: 20+ Repositories",
+                "Open Source Contributions (ModelEngine / iFLYTEK)",
+                "Google Developer: g.dev/lostlight-love-CXX",
+                "GitHub Portal: lostlight530.github.io/welcome-to-github"
             ]
         },
         projects: {

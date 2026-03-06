@@ -71,7 +71,9 @@ def main():
         results = cortex.search(args.query)
         print(f"🔍 Found {len(results)} results:")
         for r in results:
-            print(f"  - [{r['id']}] {r['name']} (Weight: {r.get('weight', 1.0):.2f})")
+            source_tag = r.get('source', '')
+            source_str = f" [{source_tag}]" if source_tag else ""
+            print(f"  - [{r['id']}]{source_str} {r['name']} (Weight: {r.get('weight', 1.0):.2f})")
             print(f"    {r['desc'][:60]}...")
 
     elif args.command == "evolve":
