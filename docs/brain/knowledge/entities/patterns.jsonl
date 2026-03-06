@@ -1,0 +1,1 @@
+{"id": "arch_pattern_gemma-2b_1", "type": "pattern", "name": "Multi-Query Attention", "desc": "Uses MQA for efficient inference.", "tags": ["architecture", "deep-dive"], "updated_at": "2026-03-05T14:38:33.241075", "weight": 0.6853020188851842, "last_activated": "2026-03-05T14:38:33.241075"}
