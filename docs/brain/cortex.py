@@ -113,33 +113,82 @@ class Cortex:
         ''', (relation.source, relation.relation, relation.target, relation.annotation, now, relation.weight))
         self.conn.commit()
 
-    def search(self, query: str, limit: int = 5) -> List[Dict]:
+    def search(self, query: str, limit: int = 10) -> List[Dict]:
         """
-        Context-Aware Search: Results ranked by FTS rank * (1 / Memory Weight).
-        Heavier memories float to the top.
+        [v2.1 Upgrade] Synaptic Associative Search (突触联想搜索)
+        结合了 FTS5 全文检索 + 1-Hop 图谱联想。
         """
         cursor = self.conn.cursor()
-        sql = '''
-            SELECT e.* FROM entities_fts f
+
+        # === 1. Pre-process Query (Sanitization & Prefix) ===
+        # 移除特殊字符，防止 FTS5 语法错误
+        safe_query = "".join(c for c in query if c.isalnum() or c.isspace())
+        if not safe_query.strip(): return []
+
+        # 构造前缀查询: "vllm up" -> "vllm* up*" (支持部分匹配)
+        fts_query = " ".join([f"{token}*" for token in safe_query.split()])
+
+        # === 2. Direct Search (FTS5) ===
+        # 找到字面匹配的节点
+        sql_direct = '''
+            SELECT e.id, e.name, e.desc, e.weight, 0 as distance
+            FROM entities_fts f
             JOIN entities e ON f.id = e.id
             WHERE entities_fts MATCH ?
-            ORDER BY f.rank * (1.0 / e.weight)
+            ORDER BY f.rank * (1.0 / e.weight) -- 权重越高，Rank数值越小(越靠前)
             LIMIT ?
         '''
         try:
-            cursor.execute(sql, (query, limit))
-            results = [dict(row) for row in cursor.fetchall()]
+            cursor.execute(sql_direct, (fts_query, limit))
+            direct_results = [dict(row) for row in cursor.fetchall()]
         except sqlite3.OperationalError:
-             # Fallback
-             term = f"%{query}%"
-             cursor.execute('SELECT * FROM entities WHERE id LIKE ? OR name LIKE ? OR desc LIKE ? ORDER BY weight DESC LIMIT ?', (term, term, term, limit))
-             results = [dict(row) for row in cursor.fetchall()]
+            # Fallback for unexpected FTS syntax errors
+            term = f"%{safe_query}%"
+            cursor.execute('''
+                SELECT id, name, desc, weight, 0 as distance
+                FROM entities
+                WHERE id LIKE ? OR name LIKE ? OR desc LIKE ?
+                ORDER BY weight DESC LIMIT ?
+            ''', (term, term, term, limit))
+            direct_results = [dict(row) for row in cursor.fetchall()]
 
-        # Activate the memories that were retrieved
-        for res in results:
-            self.activate_memory(res['id'])
+        if not direct_results:
+            return []
 
-        return results
+        # === 3. Associative Search (Graph Expansion) ===
+        # 找到与直搜结果强关联的邻居 (Brainstorming)
+        direct_ids = [r['id'] for r in direct_results]
+        placeholders = ','.join(['?'] * len(direct_ids))
+
+        sql_assoc = f'''
+            SELECT e.id, e.name, e.desc, e.weight, 1 as distance
+            FROM relations r
+            JOIN entities e ON (r.target = e.id OR r.source = e.id)
+            WHERE (r.source IN ({placeholders}) OR r.target IN ({placeholders}))
+            AND e.id NOT IN ({placeholders}) -- 排除自己
+            AND e.weight > 1.2 -- 只联想"重要"的概念 (Weight > 1.2)
+            ORDER BY e.weight DESC
+            LIMIT 3 -- 限制联想数量，避免噪声
+        '''
+
+        # 参数需要传两次 direct_ids (一次给 source IN, 一次给 target IN) + 排除用
+        params = direct_ids + direct_ids + direct_ids
+        cursor.execute(sql_assoc, params)
+        assoc_results = [dict(row) for row in cursor.fetchall()]
+
+        # === 4. Merge & Activate ===
+        final_results = direct_results + assoc_results
+
+        # 激活被检索到的记忆 (Reinforce)
+        for res in final_results:
+            # 联想出的结果加权少一点 (0.1)，直搜的加权多一点 (0.5)
+            boost = 0.5 if res['distance'] == 0 else 0.1
+            self.activate_memory(res['id'], boost=boost)
+
+            # 标记来源给 UI/CLI
+            res['source'] = '🔍 Match' if res['distance'] == 0 else '🔗 Link'
+
+        return final_results
 
     def get_entity(self, entity_id: str) -> Optional[Dict]:
         cursor = self.conn.cursor()
