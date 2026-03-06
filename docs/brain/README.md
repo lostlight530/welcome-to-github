@@ -12,19 +12,17 @@ The system mimics a biological brain with three core layers:
 系统模仿生物大脑，分为三个核心层：
 
 1.  **Memory (Storage / 记忆层)**:
-    -   **Fragmented JSONL**: Knowledge is stored in atomic `.jsonl` files to prevent merge conflicts.
-        (知识存储在原子的 `.jsonl` 文件中，以防止合并冲突。)
-    -   **Entities**: Located in `knowledge/entities/{category}.jsonl`.
-    -   **Relations**: Located in `knowledge/relations/{YYYY-MM}.jsonl`.
+    -   **SQLite Database (`cortex.db`)**: Centralized storage utilizing biological "Memory Half-Life" (Synaptic Potentiation/Depression). Supersedes legacy ADR-0001 Append-Only JSONL.
+        (采用生物学“记忆半衰期”和突触可塑性的中心化数据库，替代了过时的追加式 JSONL 存储。)
     -   **Memories**:
         -   `memories/MISSION_ACTIVE.md`: The current cognitive focus. (当前的认知焦点)
         -   `memories/archive/`: History of past missions. (历史任务归档)
 
 2.  **Cortex (Engine / 皮层引擎)**:
-    -   `cortex.py`: The read-only engine that loads the graph, validates integrity, and performs entropy analysis.
-        (只读引擎，负责加载图谱、验证完整性并执行熵值分析。)
-    -   acts as the "Hippocampus" for retrieval and associative search.
-        (充当“海马体”，负责检索和联想搜索。)
+    -   `cortex.py`: The core engine driving FTS5 full-text search and **Synaptic Associative Search (Graph-Augmented Retrieval)**.
+        (核心引擎，驱动 FTS5 全文搜索与图谱增强的**突触联想搜索**。)
+    -   acts as the "Hippocampus" for retrieval, inferencing, and dynamic weight modulation.
+        (充当“海马体”，负责检索、推理和动态权重调节。)
 
 3.  **Nexus (Interface / 神经中枢)**:
     -   `nexus.py`: The unified Command Line Interface (CLI) for all brain operations.
@@ -49,7 +47,7 @@ All operations are performed via `nexus.py`.
 # Check Brain Health & Entropy (检查大脑健康与熵值)
 python docs/brain/nexus.py status
 
-# Search Concepts (Fuzzy Match / 模糊搜索)
+# Search Concepts via Synaptic Associative Search (图增强检索 / 联想匹配)
 python docs/brain/nexus.py search "android"
 
 # Visualize Topology (Mermaid.js / 生成拓扑图)
