@@ -1,4 +1,6 @@
-# NEXUS CORTEX: Operational Directives (操作指令)
+NEXUS CORTEX Core Architecture & Operational Protocols
+System Philosophy & Identity
+Core Philosophy: Adheres to "Quiet, Pragmatic, Engineering Excellence," asserting that "Small and Stable" is superior to "Large and Messy"
 
 ## Ⅰ. Architecture & Workflow (工程化闭环)
 
