@@ -1,8 +1,26 @@
 # 🧠 NEXUS CORTEX: Active Mission
-> Generated: 2026-03-05T17:16:44.546231
+> Generated: 2026-03-06T02:03:33.666822
 
 ## 🎯 Objective
 Ingest intelligence, close gaps, and evaluate subconscious intuitions.
+
+## 📥 Pending Intelligence
+> Priority: Critical
+### 📄 `inputs/2026/03/huggingface_transformers_v5.3.0.md`
+- **Action**: Read and extract entities.
+- **Command**: `nexus.py add entity ...`
+### 📄 `inputs/2026/03/vllm-project_vllm_v0.16.0.md`
+- **Action**: Read and extract entities.
+- **Command**: `nexus.py add entity ...`
+### 📄 `inputs/2026/02/vllm-project_vllm_v0.15.1.md`
+- **Action**: Read and extract entities.
+- **Command**: `nexus.py add entity ...`
+### 📄 `inputs/2026/02/microsoft_markitdown_v0.1.5.md`
+- **Action**: Read and extract entities.
+- **Command**: `nexus.py add entity ...`
+### 📄 `inputs/2026/02/huggingface_transformers_v5.2.0.md`
+- **Action**: Read and extract entities.
+- **Command**: `nexus.py add entity ...`
 
 ## 🔮 Subconscious Intuitions
 > System deduced these via transitive logic (A -> B -> C).

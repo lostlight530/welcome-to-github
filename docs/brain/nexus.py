@@ -120,7 +120,7 @@ def main():
         print(f"🧠 CORTEX STATUS: Entities: {e_count} | Relations: {r_count}")
 
     elif args.command == "clean":
-        cache_files = [".harvester_state.json", ".pytest_cache", "__pycache__", "docs/brain/__pycache__"]
+        cache_files = ["docs/brain/inputs/.harvester_state.json", ".pytest_cache", "__pycache__", "docs/brain/__pycache__"]
         import shutil
         count = 0
         for f in cache_files:
