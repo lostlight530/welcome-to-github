@@ -47,6 +47,9 @@ def main():
     # Status
     subparsers.add_parser("status", help="Show db status")
 
+    # Command: clean (Clear cache)
+    subparsers.add_parser("clean", help="Clear brain cache")
+
     args = parser.parse_args()
 
     # In GitHub Actions, ensure the directory exists
@@ -115,6 +118,19 @@ def main():
         e_count = cursor.execute("SELECT COUNT(*) FROM entities").fetchone()[0]
         r_count = cursor.execute("SELECT COUNT(*) FROM relations").fetchone()[0]
         print(f"🧠 CORTEX STATUS: Entities: {e_count} | Relations: {r_count}")
+
+    elif args.command == "clean":
+        cache_files = ["docs/brain/inputs/.harvester_state.json", ".pytest_cache", "__pycache__", "docs/brain/__pycache__"]
+        import shutil
+        count = 0
+        for f in cache_files:
+            if os.path.exists(f):
+                if os.path.isdir(f):
+                    shutil.rmtree(f)
+                else:
+                    os.remove(f)
+                count += 1
+        print(f"🧹 Brain cache cleared ({count} targets removed).")
 
     else:
         parser.print_help()
