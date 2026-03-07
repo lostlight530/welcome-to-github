@@ -9,7 +9,7 @@ from datetime import datetime
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(ROOT_DIR)
 
-from cortex import Cortex, Entity
+from cortex import Cortex
 
 # Basic MCP Server implementation for Stdio (Zero-Dependency)
 # Configure logging to stderr to not interfere with JSON-RPC on stdout
@@ -37,8 +37,8 @@ class MCPServer:
                         "tools": {}
                     },
                     "serverInfo": {
-                        "name": "nexus-cortex",
-                        "version": "2.3.0"
+                        "name": "nexus-cortex-mcp",
+                        "version": "latest"
                     }
                 }
             }
@@ -51,7 +51,7 @@ class MCPServer:
                     "tools": [
                         {
                             "name": "search_knowledge",
-                            "description": "Search the knowledge graph for concepts using full-text search.",
+                            "description": "Search the stateful knowledge graph using Synaptic Associative Search.",
                             "inputSchema": {
                                 "type": "object",
                                 "properties": {
@@ -119,15 +119,12 @@ class MCPServer:
                         return {"jsonrpc": "2.0", "id": msg_id, "error": {"code": -32602, "message": f"Entity '{eid}' not found"}}
 
                 elif name == "add_memory":
-                    e = Entity(
+                    self.cortex.add_entity(
                         id=args.get("id"),
-                        type=args.get("type", "concept"),
+                        type_slug=args.get("type", "concept"),
                         name=args.get("name"),
-                        desc=args.get("desc"),
-                        created_at=datetime.now().isoformat(),
-                        updated_at=datetime.now().isoformat()
+                        desc=args.get("desc")
                     )
-                    self.cortex.add_entity(e)
                     return {
                         "jsonrpc": "2.0",
                         "id": msg_id,
