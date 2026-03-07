@@ -20,9 +20,7 @@ class Cortex:
                 name TEXT,
                 desc TEXT,
                 weight REAL DEFAULT 1.0,
-                last_activated REAL,
-                created_at REAL,
-                updated_at REAL
+                last_activated REAL
             )
         ''')
         # FTS5 Index for full-text search
@@ -36,8 +34,6 @@ class Cortex:
                 relation TEXT,
                 target TEXT,
                 weight REAL DEFAULT 1.0,
-                annotation TEXT,
-                created_at REAL,
                 UNIQUE(source, relation, target)
             )
         ''')
