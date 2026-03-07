@@ -24,7 +24,7 @@ All Agents (including Jules) must prioritize: **Auditability, Restraint, Zero-De
 
 - 📁 `docs/brain/inputs/`: Raw intelligence briefs from Harvester (Radar).
 - 📁 `docs/brain/memories/`:
-  - 📄 `MISSION_ACTIVE.md`: The single source of current cognitive focus.
+  - 📄 `MISSION_ACTIVE.md`: The single source of current cognitive focus, featuring the Architect's Daily Brief.
   - 📄 `*-scholar-synthesis.md`: Auto-generated daily learning reports.
   - 📁 `archive/`: History of past missions.
 - 📁 `docs/archaeology/`: Permanent records of human-AI collaboration (e.g., `MEMORIAL.md`).
@@ -35,18 +35,18 @@ All Agents (including Jules) must prioritize: **Auditability, Restraint, Zero-De
 
 ## Ⅳ. Intelligence & Senses (情报与感知)
 
-- 📡 **Facts (事实基准)**: Must be sourced from official documentation, release notes, or repositories (via `harvester.py`).
+- 📡 **Facts (事实基准)**: Must be sourced from official documentation, release notes, or repositories (via `harvester.py`), utilizing multi-dimensional **Architect Filters** (Edge-Ready, Breaking-Change, Agent-Protocol).
 - 🛡️ **Signal-to-Noise (信噪比控制)**: Harvester strictly checks ETags/states to avoid fetching duplicate or stagnant data (Zero Inbox Policy).
-- 💡 **Epiphany Engine (顿悟引擎)**: The system actively combats entropy by pairing disconnected entities and prompting the Architect to find hidden synergies (Cross-Pollination).
-- 🧠 **Synaptic Associative Search (图增强检索)**: The `cortex.py` engine merges FTS5 literal text matching with 1-Hop graph associative retrieval (for nodes with `weight > 1.2`). This provides the system with "Brainstorming" and "Deduction" capabilities.
+- 💡 **Epiphany Engine (顿悟引擎)**: The system actively combats entropy by pairing disconnected entities and prompting the Architect to find hidden synergies via transitive inference (`A -> B -> C`).
+- 🧠 **Synaptic Associative Search (图增强检索)**: The `cortex.py` engine merges FTS5 literal text matching with 1-Hop graph associative retrieval. This provides the system with stateful memory and deduction capabilities.
 
 ---
 
 ## Ⅴ. System Best Practices (系统最佳实践)
 
-1. 🗑️ **Garbage Collection (垃圾回收)**: "Orphan Nodes Must Die." Entities with 0 relations after 3 evolution cycles and a weight `< 0.5` must be physically pruned to prevent database bloat.
-2. 💎 **Crystallization (知识结晶)**: Fragmented raw intel (`inputs/`) must be routinely manually or semi-automatically crystallized into permanent `Entity` nodes via `nexus.py add entity`. Do not leave them as temporary events.
-3. 🦅 **Stay Hungry (保持饥饿)**: Expand sensory inputs (e.g., RSS parsers for Hacker News) using strictly Zero-Dependency Python standard libraries (`xml.etree.ElementTree`).
+1. 🗑️ **Garbage Collection (垃圾回收)**: "Orphan Nodes Must Die." Entities with 0 relations after 3 evolution cycles and a weight `< 0.5` must be physically pruned to prevent database bloat. Protect `.harvester_state.json` at all times.
+2. 💎 **Crystallization (知识结晶)**: Fragmented raw intel (`inputs/`) must be routinely manually or semi-automatically crystallized into permanent `Entity` nodes via `nexus.py add entity`.
+3. 🦅 **Stay Hungry (保持饥饿)**: Expand sensory inputs using strictly Zero-Dependency Python standard libraries. Focus heavily on stateful, multi-actor Agent systems and Edge AI integration paradigms (e.g., MCP).
 4. ⚡ **Trust Intuition (相信直觉)**: Actively execute `nexus.py connect` when the system proposes "Subconscious Intuitions" in `MISSION_ACTIVE.md` to reinforce reasoning confidence.
 
 ---
@@ -54,6 +54,6 @@ All Agents (including Jules) must prioritize: **Auditability, Restraint, Zero-De
 ## Ⅵ. Interface (交互接口)
 
 - 💻 **CLI**: `docs/brain/nexus.py` is the Central Nervous System.
-- 🔌 **MCP**: `docs/brain/nexus_mcp.py` exposes the graph to external LLMs/IDEs via standard Model Context Protocol.
+- 🔌 **MCP**: `docs/brain/nexus_mcp.py` exposes the stateful graph to external LLMs/IDEs via the Model Context Protocol.
 
 > **"Small and Stable. Quiet and Pragmatic."**
