@@ -16,17 +16,10 @@ class Evolver:
 
     def run_daily_cycle(self):
         logging.info("Starting Daily Evolution Cycle...")
-<<<<<<< HEAD
 
         # 1. Sleep Phase: Decay
         self.cortex.decay_memories()
 
-=======
-
-        # 1. Sleep Phase: Decay
-        self.cortex.decay_memories()
-
->>>>>>> origin/main
         # 2. Dream Phase: Incubate Intuitions
         intuitions = self._incubate_ideas()
 
@@ -40,19 +33,6 @@ class Evolver:
 
         logging.info("Cycle Complete.")
 
-<<<<<<< HEAD
-=======
-        # 3. Orient Phase: Scan Inputs
-        new_inputs = self._scan_inputs()
-
-        # 4. Wake Phase: Generate Mission/Brief
-        stats = self.cortex.get_stats()
-        orphans = self.cortex.get_orphans()
-        self._generate_mission(stats, orphans, new_inputs, intuitions)
-
-        logging.info("Cycle Complete.")
-
->>>>>>> origin/main
     def _incubate_ideas(self):
         """
         Subconscious Intuition (Transitive Inference).
@@ -115,7 +95,6 @@ class Evolver:
         now = datetime.datetime.now()
         archive_dir = self.inputs_path / "archive" / f"{now.year}" / f"{now.month:02d}"
         archive_dir.mkdir(parents=True, exist_ok=True)
-<<<<<<< HEAD
 
         count = 0
         for f in self.inputs_path.iterdir():
@@ -124,23 +103,12 @@ class Evolver:
                 count += 1
         logging.info(f"Archived {count} inputs.")
 
-=======
-
-        count = 0
-        for f in self.inputs_path.iterdir():
-            if f.is_file() and not f.name.startswith('.') and f.name.endswith('.md'):
-                shutil.move(str(f), str(archive_dir / f.name))
-                count += 1
-        logging.info(f"Archived {count} inputs.")
-
->>>>>>> origin/main
     def _generate_architect_brief(self, new_inputs, intuitions):
         """
         Generate Architect's Daily Brief
         """
         now = datetime.datetime.now()
         date_str = now.strftime("%Y-%m-%d")
-<<<<<<< HEAD
 
         # Intelligence Sorting
         categories = {
@@ -150,17 +118,6 @@ class Evolver:
             "ℹ️ 其他动态 (General)": []
         }
 
-=======
-
-        # Intelligence Sorting
-        categories = {
-            "🧠 架构情报 (Architecture)": [],
-            "⚔️ 竞品雷达 (Competitors)": [],
-            "📦 边缘战备 (Edge AI)": [],
-            "ℹ️ 其他动态 (General)": []
-        }
-
->>>>>>> origin/main
         for f in new_inputs:
             fname = os.path.basename(f).lower()
             if any(k in fname for k in ['nexent', 'astron', 'mcp', 'agent']):
@@ -187,31 +144,19 @@ class Evolver:
                 has_intel = True
                 content.append(f"## {section}")
                 for f in files:
-<<<<<<< HEAD
 
-=======
-
->>>>>>> origin/main
                     analysis = ""
                     with open(f, 'r') as md_file:
                         for line in md_file:
                             if line.startswith("> **Analysis**:"):
                                 analysis = line.strip()
                                 break
-<<<<<<< HEAD
 
-=======
-
->>>>>>> origin/main
                     content.append(f"- **{os.path.basename(f)}**")
                     if analysis:
                         content.append(f"  - {analysis}")
                 content.append("")
-<<<<<<< HEAD
 
-=======
-
->>>>>>> origin/main
         if not has_intel:
             content.append("## 🌌 虚空监视 (Void Watch)\n> No significant ecosystem movements.\n")
 
@@ -222,25 +167,15 @@ class Evolver:
         suggestion = "Optimization"
         if categories["🧠 架构情报 (Architecture)"]: suggestion = "Review Architecture PRs"
         elif categories["📦 边缘战备 (Edge AI)"]: suggestion = "Test Edge Operators"
-<<<<<<< HEAD
 
         content.append(f"## 📅 深度工作建议 (Deep Work)\n> **Focus**: {suggestion}\n- [ ] Block 2 hours.")
 
-=======
-
-        content.append(f"## 📅 深度工作建议 (Deep Work)\n> **Focus**: {suggestion}\n- [ ] Block 2 hours.")
-
->>>>>>> origin/main
         return "\n".join(content)
 
     def _generate_mission(self, stats, orphans, new_inputs, intuitions):
         self.memories_path.mkdir(parents=True, exist_ok=True)
         filename = self.memories_path / "MISSION_ACTIVE.md"
-<<<<<<< HEAD
 
-=======
-
->>>>>>> origin/main
         # Archive old mission
         if filename.exists():
             archive_name = f"MISSION_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
@@ -251,11 +186,7 @@ class Evolver:
 
         # Generate Brief
         content = self._generate_architect_brief(new_inputs, intuitions)
-<<<<<<< HEAD
 
-=======
-
->>>>>>> origin/main
         # Append Orphan Targets (Classic feature)
         if orphans:
             content += "\n\n## 🔍 待处理熵值 (Entropy Targets)\n"
@@ -264,11 +195,7 @@ class Evolver:
 
         with open(filename, "w", encoding="utf-8") as f:
             f.write(content)
-<<<<<<< HEAD
 
-=======
-
->>>>>>> origin/main
         logging.info(f"Brief generated: {filename}")
 
 if __name__ == "__main__":
