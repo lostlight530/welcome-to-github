@@ -18,6 +18,7 @@ class Harvester:
             "ModelEngine-Group/nexent": ["tags"],
             "iflytek/astron-agent": ["tags"],
             "mindspore-ai/mindspore": ["tags"],
+<<<<<<< HEAD
 
             # Competitors
             "langgenius/dify": ["tags"],
@@ -69,44 +70,124 @@ class Harvester:
             print(f"[Harvester] Pinging {repo}...")
             url = f"https://api.github.com/repos/{repo}/releases/latest"
 
+=======
+
+            # Competitors
+            "langgenius/dify": ["tags"],
+            "anthropics/anthropic-tools": ["tags"],
+
+            # Core Tech Stack
+            "vllm-project/vllm": ["tags"],
+            "huggingface/transformers": ["tags"],
+            "google-ai-edge/mediapipe": ["tags"],
+            "microsoft/markitdown": ["tags"]
+        }
+
+    def _load_state(self):
+        if self.state_file.exists():
+            with open(self.state_file, 'r') as f:
+                return json.load(f)
+        return {}
+
+    def _save_state(self):
+        with open(self.state_file, 'w') as f:
+            json.dump(self.state, f, indent=2)
+
+    def _analyze_content(self, text):
+        """
+        [UPGRADE] The Architect's Filter
+        自动分析文本，提取高价值标签。
+        """
+        tags = []
+
+        # Filter 1: Edge AI Readiness
+        if re.search(r'(?i)(onnx|gguf|litert|android|ios|arm|npu|quantiz)', text):
+            tags.append("🏷️ Edge-Ready")
+
+        # Filter 2: Breaking Changes
+        if re.search(r'(?i)(breaking|deprecated|removed|migration)', text):
+            tags.append("⚠️ Breaking-Change")
+
+        # Filter 3: Agentic Ecosystem
+        if re.search(r'(?i)(mcp|plugin|workflow|skill|orchestrat|multi-actor|stateful)', text):
+            tags.append("🔗 Agent-Protocol")
+
+        return tags
+
+    def fetch_github_data(self):
+        print("[Harvester] Scanning frequencies...")
+        new_files = []
+
+        for repo, endpoints in self.targets.items():
+            print(f"[Harvester] Pinging {repo}...")
+            url = f"https://api.github.com/repos/{repo}/releases/latest"
+
+>>>>>>> origin/main
             try:
                 req = urllib.request.Request(url, headers={"User-Agent": "Nexus-Cortex/Bot"})
                 with urllib.request.urlopen(req) as response:
                     data = json.loads(response.read().decode())
                     tag = data.get('tag_name', 'unknown')
                     body = data.get('body', '')
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> origin/main
                     # Check ETag/State
                     last_tag = self.state.get(repo, {}).get('last_tag')
                     if tag != last_tag:
                         print(f"   🔥 Signal detected: {tag}")
+<<<<<<< HEAD
 
                         # Analyze Content
                         analysis_tags = self._analyze_content(body)
                         header_tags = " ".join(analysis_tags)
 
+=======
+
+                        # Analyze Content
+                        analysis_tags = self._analyze_content(body)
+                        header_tags = " ".join(analysis_tags)
+
+>>>>>>> origin/main
                         # Create Report
                         timestamp = datetime.datetime.now().strftime("%Y-%m-%d")
                         filename = f"{repo.replace('/', '_')}_{tag}.md"
                         filepath = self.inputs_path / filename
                         self.inputs_path.mkdir(parents=True, exist_ok=True)
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> origin/main
                         content = f"# ℹ️ Intel: {repo} {tag}\n"
                         content += f"> Source: GitHub Releases\n"
                         content += f"> Date: {datetime.datetime.now().isoformat()}\n"
                         if header_tags:
                             content += f"> **Analysis**: {header_tags}\n"
                         content += f"\n## 📝 Summary\n{tag}\n\n## 🔍 Changelog (Extract)\n{body[:2000]}...\n"
+<<<<<<< HEAD
 
                         with open(filepath, 'w', encoding='utf-8') as f:
                             f.write(content)
 
+=======
+
+                        with open(filepath, 'w', encoding='utf-8') as f:
+                            f.write(content)
+
+>>>>>>> origin/main
                         # Update State
                         self.state[repo] = {'last_tag': tag, 'updated_at': timestamp}
                         new_files.append(str(filepath))
             except Exception as e:
                 print(f"   ⚠️ Signal lost: {e}")
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> origin/main
         self._save_state()
         return new_files
 
