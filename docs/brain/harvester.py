@@ -2,117 +2,195 @@ import urllib.request
 import json
 import os
 import datetime
-import logging
+import re
+from pathlib import Path
 
-# Config: Define your surveillance targets here
-TARGETS = {
-    "vllm-project/vllm": "tags",
-    "huggingface/transformers": "tags",
-    "microsoft/markitdown": "tags"
-}
-STATE_FILE = "docs/brain/inputs/.harvester_state.json"
-OUTPUT_DIR = "docs/brain/inputs"
+class Harvester:
+    def __init__(self, brain_path):
+        self.brain_path = Path(brain_path)
+        self.inputs_path = self.brain_path / "inputs"
+        self.state_file = self.inputs_path / ".harvester_state.json"
+        self.state = self._load_state()
 
-logging.basicConfig(level=logging.INFO, format='[Harvester] %(message)s')
+        # [UPGRADE] Architect's Watchlist (Expanded)
+        self.targets = {
+            # Architecture & Agent Protocol
+            "ModelEngine-Group/nexent": ["tags"],
+            "iflytek/astron-agent": ["tags"],
+            "mindspore-ai/mindspore": ["tags"],
+<<<<<<< HEAD
 
-def load_state():
-    if os.path.exists(STATE_FILE):
-        with open(STATE_FILE, 'r') as f:
-            return json.load(f)
-    return {"repos": {}}
+            # Competitors
+            "langgenius/dify": ["tags"],
+            "anthropics/anthropic-tools": ["tags"],
 
-def save_state(state):
-    os.makedirs(os.path.dirname(STATE_FILE), exist_ok=True)
-    with open(STATE_FILE, 'w') as f:
-        json.dump(state, f, indent=2)
+            # Core Tech Stack
+            "vllm-project/vllm": ["tags"],
+            "huggingface/transformers": ["tags"],
+            "google-ai-edge/mediapipe": ["tags"],
+            "microsoft/markitdown": ["tags"]
+        }
 
-def fetch_github_release(repo):
-    url = f"https://api.github.com/repos/{repo}/releases/latest"
-    req = urllib.request.Request(url)
-    # Generic User-Agent for privacy and stability
-    req.add_header('User-Agent', 'Nexus-Cortex-Bot')
+    def _load_state(self):
+        if self.state_file.exists():
+            with open(self.state_file, 'r') as f:
+                return json.load(f)
+        return {}
 
-    try:
-        with urllib.request.urlopen(req, timeout=10) as response:
-            if response.status == 200:
-                data = json.loads(response.read().decode())
-                return data
-    except Exception as e:
-        logging.error(f"Failed to fetch {repo}: {e}")
-        return None
-    return None
+    def _save_state(self):
+        with open(self.state_file, 'w') as f:
+            json.dump(self.state, f, indent=2)
 
-def main():
-    state = load_state()
-    today_dir = os.path.join(OUTPUT_DIR, datetime.datetime.now().strftime('%Y/%m'))
-    os.makedirs(today_dir, exist_ok=True)
+    def _analyze_content(self, text):
+        """
+        [UPGRADE] The Architect's Filter
+        自动分析文本，提取高价值标签。
+        """
+        tags = []
 
-    updates_found = False
+        # Filter 1: Edge AI Readiness
+        if re.search(r'(?i)(onnx|gguf|litert|android|ios|arm|npu|quantiz)', text):
+            tags.append("🏷️ Edge-Ready")
 
-    for repo, type_ in TARGETS.items():
-        logging.info(f"Scanning {repo}...")
-        data = fetch_github_release(repo)
+        # Filter 2: Breaking Changes
+        if re.search(r'(?i)(breaking|deprecated|removed|migration)', text):
+            tags.append("⚠️ Breaking-Change")
 
-        if not data: continue
+        # Filter 3: Agentic Ecosystem
+        if re.search(r'(?i)(mcp|plugin|workflow|skill|orchestrat|multi-actor|stateful)', text):
+            tags.append("🔗 Agent-Protocol")
 
-        tag = data.get('tag_name', 'unknown')
-        body = data.get('body', '')
-        published_at = data.get('published_at', '')
+        return tags
 
-        repo_state = state["repos"].get(repo, {})
-        last_tag = repo_state.get("latest_tag")
+    def fetch_github_data(self):
+        print("[Harvester] Scanning frequencies...")
+        new_files = []
 
-        if tag != last_tag:
-            logging.info(f"🔥 New Release found: {repo} {tag}")
+        for repo, endpoints in self.targets.items():
+            print(f"[Harvester] Pinging {repo}...")
+            url = f"https://api.github.com/repos/{repo}/releases/latest"
 
-            # Velocity Tracking logic
-            history = repo_state.get("history", [])
-            history.append(datetime.datetime.now().isoformat())
-            history = history[-5:] # Keep last 5 entries
+=======
 
-            safe_name = repo.replace("/", "_")
-            filename = f"{safe_name}_{tag}.md"
-            filepath = os.path.join(today_dir, filename)
+            # Competitors
+            "langgenius/dify": ["tags"],
+            "anthropics/anthropic-tools": ["tags"],
 
-            # Check Velocity
-            velocity_alert = ""
-            if len(history) >= 2:
-                last_time = datetime.datetime.fromisoformat(history[-2])
-                if (datetime.datetime.now() - last_time).days < 7:
-                    velocity_alert = "\n> 🔥 **HIGH VELOCITY ALERT**: Project is updating rapidly.\n"
+            # Core Tech Stack
+            "vllm-project/vllm": ["tags"],
+            "huggingface/transformers": ["tags"],
+            "google-ai-edge/mediapipe": ["tags"],
+            "microsoft/markitdown": ["tags"]
+        }
 
-            content = f"""# ℹ️ Intel: {repo} {tag}
-> Source: GitHub Releases
-> Date: {published_at}
+    def _load_state(self):
+        if self.state_file.exists():
+            with open(self.state_file, 'r') as f:
+                return json.load(f)
+        return {}
 
-{velocity_alert}
-## 📝 Summary
-{tag}
+    def _save_state(self):
+        with open(self.state_file, 'w') as f:
+            json.dump(self.state, f, indent=2)
 
-## 🔍 Changelog (Extract)
-{body[:2000]}... (truncated)
+    def _analyze_content(self, text):
+        """
+        [UPGRADE] The Architect's Filter
+        自动分析文本，提取高价值标签。
+        """
+        tags = []
 
-## 🤖 Cognitive Analysis Required
-- [ ] Is this a major version update? (False)
-- [ ] Does it conflict with existing 'tech_stack' nodes?
-- [ ] Action: Run `nexus.py add entity ...` or `nexus.py connect ...` to integrate.
-"""
-            with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(content)
+        # Filter 1: Edge AI Readiness
+        if re.search(r'(?i)(onnx|gguf|litert|android|ios|arm|npu|quantiz)', text):
+            tags.append("🏷️ Edge-Ready")
 
-            # Update State
-            repo_state["latest_tag"] = tag
-            repo_state["last_checked"] = datetime.datetime.now().isoformat()
-            repo_state["history"] = history
-            state["repos"][repo] = repo_state
-            updates_found = True
-        else:
-            logging.info(f"  - No change ({tag})")
+        # Filter 2: Breaking Changes
+        if re.search(r'(?i)(breaking|deprecated|removed|migration)', text):
+            tags.append("⚠️ Breaking-Change")
 
-    if updates_found:
-        save_state(state)
-    else:
-        logging.info("Status: Silent. No bandwidth wasted.")
+        # Filter 3: Agentic Ecosystem
+        if re.search(r'(?i)(mcp|plugin|workflow|skill|orchestrat|multi-actor|stateful)', text):
+            tags.append("🔗 Agent-Protocol")
+
+        return tags
+
+    def fetch_github_data(self):
+        print("[Harvester] Scanning frequencies...")
+        new_files = []
+
+        for repo, endpoints in self.targets.items():
+            print(f"[Harvester] Pinging {repo}...")
+            url = f"https://api.github.com/repos/{repo}/releases/latest"
+
+>>>>>>> origin/main
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "Nexus-Cortex/Bot"})
+                with urllib.request.urlopen(req) as response:
+                    data = json.loads(response.read().decode())
+                    tag = data.get('tag_name', 'unknown')
+                    body = data.get('body', '')
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> origin/main
+                    # Check ETag/State
+                    last_tag = self.state.get(repo, {}).get('last_tag')
+                    if tag != last_tag:
+                        print(f"   🔥 Signal detected: {tag}")
+<<<<<<< HEAD
+
+                        # Analyze Content
+                        analysis_tags = self._analyze_content(body)
+                        header_tags = " ".join(analysis_tags)
+
+=======
+
+                        # Analyze Content
+                        analysis_tags = self._analyze_content(body)
+                        header_tags = " ".join(analysis_tags)
+
+>>>>>>> origin/main
+                        # Create Report
+                        timestamp = datetime.datetime.now().strftime("%Y-%m-%d")
+                        filename = f"{repo.replace('/', '_')}_{tag}.md"
+                        filepath = self.inputs_path / filename
+                        self.inputs_path.mkdir(parents=True, exist_ok=True)
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> origin/main
+                        content = f"# ℹ️ Intel: {repo} {tag}\n"
+                        content += f"> Source: GitHub Releases\n"
+                        content += f"> Date: {datetime.datetime.now().isoformat()}\n"
+                        if header_tags:
+                            content += f"> **Analysis**: {header_tags}\n"
+                        content += f"\n## 📝 Summary\n{tag}\n\n## 🔍 Changelog (Extract)\n{body[:2000]}...\n"
+<<<<<<< HEAD
+
+                        with open(filepath, 'w', encoding='utf-8') as f:
+                            f.write(content)
+
+=======
+
+                        with open(filepath, 'w', encoding='utf-8') as f:
+                            f.write(content)
+
+>>>>>>> origin/main
+                        # Update State
+                        self.state[repo] = {'last_tag': tag, 'updated_at': timestamp}
+                        new_files.append(str(filepath))
+            except Exception as e:
+                print(f"   ⚠️ Signal lost: {e}")
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> origin/main
+        self._save_state()
+        return new_files
 
 if __name__ == "__main__":
-    main()
+    h = Harvester(Path(__file__).parent)
+    h.fetch_github_data()
