@@ -30,8 +30,13 @@
 
 ## 📅 深度工作建议 (Deep Work)
 > **Focus**: Review Architecture PRs
+- [ ] **CRITICAL**: vLLM 锁版本。在 `requirements.txt` 中将 `vllm` 暂时锁定在 `v0.16.x`。
+- [ ] **HIGH**: Dify 配置文件审计。检查本地或服务器上的 Dify `docker-compose.yaml`。
+- [ ] **OPPORTUNITY**: 测试 Astron 的 MCP 节点。尝试用 `nexus_mcp.py` 去连接它验证双刀流架构。
 - [ ] Block 2 hours.
 
 ## 🔍 待处理熵值 (Entropy Targets)
+- **vLLM (PyTorch 2.10 Dependency Check)** (vllm): Weight 0.95
+- **Dify (Celery Worker Queues)** (dify): Weight 0.90
 - **JAX Metal (Apple Silicon/Edge)** (jax-metal): Weight 0.81
 - **EuroBERT (Bidirectional Llama)** (eurobert): Weight 0.81
