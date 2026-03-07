@@ -20,7 +20,9 @@ class Cortex:
                 name TEXT,
                 desc TEXT,
                 weight REAL DEFAULT 1.0,
-                last_activated REAL
+                last_activated REAL,
+                created_at REAL,
+                updated_at REAL
             )
         ''')
         # FTS5 Index for full-text search
@@ -34,6 +36,8 @@ class Cortex:
                 relation TEXT,
                 target TEXT,
                 weight REAL DEFAULT 1.0,
+                annotation TEXT,
+                created_at REAL,
                 UNIQUE(source, relation, target)
             )
         ''')
@@ -95,14 +99,9 @@ class Cortex:
         cursor = self.conn.cursor()
         now = time.time()
         try:
-<<<<<<< HEAD
             cursor.execute('''INSERT INTO entities (id, type, name, desc, weight, last_activated, created_at, updated_at)
                               VALUES (?, ?, ?, ?, 1.0, ?, ?, ?)''',
                           (id, type_slug, name, desc, now, now, now))
-=======
-            cursor.execute('INSERT INTO entities VALUES (?, ?, ?, ?, 1.0, ?)',
-                          (id, type_slug, name, desc, now))
->>>>>>> main
             cursor.execute('INSERT INTO entities_fts VALUES (?, ?, ?)', (id, name, desc))
             self.conn.commit()
         except sqlite3.IntegrityError:
@@ -110,17 +109,11 @@ class Cortex:
 
     def connect_entities(self, source, relation, target, desc=""):
         cursor = self.conn.cursor()
-<<<<<<< HEAD
         now = time.time()
         try:
             cursor.execute('''INSERT INTO relations (source, relation, target, weight, annotation, created_at)
                               VALUES (?, ?, ?, 1.0, ?, ?)''',
                           (source, relation, target, desc, now))
-=======
-        try:
-            cursor.execute('INSERT INTO relations VALUES (?, ?, ?, 1.0)',
-                          (source, relation, target))
->>>>>>> main
             self.conn.commit()
             # Strengthen both nodes
             self.activate_memory(source, 0.1)
