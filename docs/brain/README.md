@@ -3,8 +3,8 @@
 > **"The digital brain of the lostlight-portal ecosystem."**
 > *(Lostlight-portal 生态系统的数字大脑。)*
 
-This directory houses a **Decentralized, Append-Only Knowledge Graph** designed to evolve autonomously through recursive learning and targeted foraging.
-> 本目录包含一个**去中心化、仅追加写入的知识图谱**，旨在通过递归学习和定向搜索实现自主进化。
+This directory houses a **Stateful, Append-Only Knowledge Graph** designed to evolve autonomously through recursive learning, multi-dimensional foraging, and Architect supervision.
+> 本目录包含一个**状态化、仅追加写入的知识图谱**，旨在通过递归学习、多维感知和架构师监督实现自主进化。
 
 ---
 
@@ -17,7 +17,7 @@ The system mimics a biological brain with four core layers:
    - **SQLite Database (`cortex.db`)**: Centralized storage utilizing biological "Memory Half-Life" (Synaptic Potentiation/Depression). Supersedes legacy ADR-0001 Append-Only JSONL.
      *(采用生物学“记忆半衰期”和突触可塑性的中心化数据库，替代了过时的追加式 JSONL 存储。)*
    - **Memories**:
-     - `memories/MISSION_ACTIVE.md`: The current cognitive focus. *(当前的认知焦点)*
+     - `memories/MISSION_ACTIVE.md`: The Architect's Daily Brief and cognitive focus. *(架构师每日简报与当前认知焦点)*
      - `memories/archive/`: History of past missions. *(历史任务归档)*
 
 2. ⚙️ **Cortex (Engine / 皮层引擎)**
@@ -29,12 +29,12 @@ The system mimics a biological brain with four core layers:
      *(所有大脑操作的统一命令行接口与 MCP 服务端。充当“中央神经系统”。)*
 
 4. 🧬 **Evolution (Orchestration / 进化编排)**
-   - `evolution.py`: The executive function that runs the **OODA Loop**:
-     *(执行 **OODA 循环** 的执行功能：)*
-     1. **Observe (观察)**: Analyze graph entropy (missing links, stale nodes).
-     2. **Orient (调整)**: Check active mission status.
-     3. **Decide (决策)**: Generate new `MISSION_ACTIVE.md` or archive old ones.
-     4. **Act (行动)**: Agents read the mission and execute via Nexus.
+   - `evolution.py` & `harvester.py`: The executive function that runs the **OODA Loop** with multi-dimensional Architect Filters:
+     *(带有架构师滤镜执行 **OODA 循环** 的执行功能：)*
+     1. **Observe (观察)**: Harvester fetches Edge-Ready and Agent-Protocol signals.
+     2. **Orient (调整)**: Analyze graph entropy and incubate transitive intuitions.
+     3. **Decide (决策)**: Generate new `MISSION_ACTIVE.md` Architect's Brief.
+     4. **Act (行动)**: Architect acts on deep work suggestions.
 
 ---
 
@@ -51,8 +51,8 @@ python docs/brain/nexus.py status
 # Search Concepts via Synaptic Associative Search (图增强检索 / 联想匹配)
 python docs/brain/nexus.py search "android"
 
-# Visualize Topology via Mermaid.js (生成可视化拓扑图)
-python docs/brain/nexus.py visualize
+# Check Subconscious Intuitions (查看潜意识推演)
+python docs/brain/nexus.py intuition
 ```
 
 ### 2. Evolve (Write / 进化)
@@ -73,7 +73,7 @@ python docs/brain/nexus.py connect "rag" "improves" "llm" --desc "arXiv:2301.000
 
 ### 4. Clean (Maintenance / 清理)
 ```bash
-# Clear Temporary Cache Targets (清除临时缓存)
+# Clear Temporary Cache Targets (清除临时缓存，保护状态文件)
 python docs/brain/nexus.py clean
 ```
 
