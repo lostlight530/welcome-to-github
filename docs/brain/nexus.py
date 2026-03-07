@@ -1,138 +1,169 @@
-import argparse
+import sys
 import os
-from cortex import Cortex, Entity, Relation
-from evolution import Evolver
+import argparse
+import shutil
+from pathlib import Path
+
+# 导入核心组件
+try:
+    from cortex import Cortex
+    from harvester import Harvester
+    from evolution import Evolver
+    from nexus_mcp import mcp
+except ImportError:
+    # 允许在没有某些组件的情况下运行基础维护命令
+    pass
 
 def main():
-    parser = argparse.ArgumentParser(description="NEXUS CORTEX CLI")
-    subparsers = parser.add_subparsers(dest="command")
+    parser = argparse.ArgumentParser(description="NEXUS CORTEX: The Biological Intelligence Engine")
+    subparsers = parser.add_subparsers(dest='command', help='Available commands')
 
-    # Command: add
-    add_parser = subparsers.add_parser("add", help="Add knowledge")
-    add_sub = add_parser.add_subparsers(dest="object")
+    # Command: Evolve (The Heartbeat)
+    subparsers.add_parser('evolve', help='Run the biological OODA loop (Harvester -> Cortex -> Evolution)')
 
-    ent_parser = add_sub.add_parser("entity")
-    ent_parser.add_argument("--id", required=True)
-    ent_parser.add_argument("--type", required=True)
-    ent_parser.add_argument("--name", required=True)
-    ent_parser.add_argument("--desc", default="")
+    # Command: Harvester (Sensory Only)
+    subparsers.add_parser('harvest', help='Run strictly the sensory harvester')
 
-    # Command: connect
-    conn_parser = subparsers.add_parser("connect", help="Connect entities")
-    conn_parser.add_argument("source")
-    conn_parser.add_argument("relation")
-    conn_parser.add_argument("target")
-    conn_parser.add_argument("--desc", default="")
+    # Command: Clean (Maintenance)
+    subparsers.add_parser('clean', help='Remove temporary artifacts (caches, logs)')
 
-    # Command: search
-    search_parser = subparsers.add_parser("search", help="Search knowledge")
-    search_parser.add_argument("query")
+    # Command: Visualize
+    subparsers.add_parser('visualize', help='Generate Mermaid.js graph of the Cortex')
 
-    # Command: evolve (Runs OODA)
-    subparsers.add_parser("evolve", help="Run OODA Loop")
+    # Command: Search
+    search_parser = subparsers.add_parser('search', help='Synaptic associative search')
+    search_parser.add_argument('query', type=str, help='Search query')
 
-    # Command: archive (Clean inputs)
-    subparsers.add_parser("archive", help="Archive processed inputs")
+    # Command: Connect (Manual Synapse)
+    connect_parser = subparsers.add_parser('connect', help='Manually connect two entities')
+    connect_parser.add_argument('source', type=str)
+    connect_parser.add_argument('relation', type=str)
+    connect_parser.add_argument('target', type=str)
+    connect_parser.add_argument('--desc', type=str, default="", help='Description of the connection')
 
-    # Command: decay (Manual Forgetting)
-    subparsers.add_parser("decay", help="Force memory decay cycle")
+    # Command: Add Entity
+    add_parser = subparsers.add_parser('add', help='Add a new entity manually')
+    add_parser.add_argument('type', choices=['entity'], help='Object type')
+    add_parser.add_argument('--id', required=True)
+    add_parser.add_argument('--name', required=True)
+    add_parser.add_argument('--type_slug', default='concept')
+    add_parser.add_argument('--desc', default='')
 
-    # Command: intuition (Show guesses)
-    subparsers.add_parser("intuition", help="Show subconscious intuitions")
+    # Command: Activate
+    activate_parser = subparsers.add_parser('activate', help='Boost memory weight manually')
+    activate_parser.add_argument('id', type=str)
 
-    # Command: activate
-    activate_parser = subparsers.add_parser("activate", help="Activate memory")
-    activate_parser.add_argument("id")
+    # Command: Archive
+    subparsers.add_parser('archive', help='Move processed inputs to archive')
 
-    # Status
-    subparsers.add_parser("status", help="Show db status")
+    # Command: Status
+    subparsers.add_parser('status', help='Show db status')
 
-    # Command: clean (Clear cache)
-    subparsers.add_parser("clean", help="Clear brain cache")
+    # Command: Intuition
+    subparsers.add_parser('intuition', help='Show subconscious intuitions')
+
+    # Command: Decay
+    subparsers.add_parser('decay', help='Force memory decay cycle')
 
     args = parser.parse_args()
 
-    # In GitHub Actions, ensure the directory exists
-    os.makedirs("docs/brain", exist_ok=True)
-    cortex = Cortex("docs/brain/cortex.db")
+    # --- Execution Logic ---
 
-    if args.command == "add":
-        if args.object == "entity":
-            e = Entity(id=args.id, type=args.type, name=args.name, desc=args.desc)
-            cortex.add_entity(e)
-            print(f"✅ Entity added: {args.name}")
+    base_path = Path(__file__).parent
 
-    elif args.command == "connect":
-        r = Relation(source=args.source, relation=args.relation, target=args.target, annotation=args.desc)
-        cortex.add_relation(r)
-        print(f"🔗 Connected: {args.source} --[{args.relation}]--> {args.target}")
+    if args.command == 'clean':
+        print("🧹 Cleaning Cortex environment...")
+        targets = [
+            base_path / "__pycache__",
+            base_path / ".pytest_cache",
+            base_path / "inputs" / "__pycache__"
+        ]
 
-    elif args.command == "search":
-        results = cortex.search(args.query)
-        print(f"🔍 Found {len(results)} results:")
+        # [CRITICAL FIX] Protect the Harvester State
+        protected_files = {".harvester_state.json"}
+
+        for t in targets:
+            if t.exists() and t.is_dir():
+                shutil.rmtree(t)
+                print(f"   - Removed {t.name}")
+            elif t.exists() and t.is_file():
+                os.remove(t)
+                print(f"   - Removed {t.name}")
+
+        # 清理 inputs 目录下的临时文件，但避开受保护文件
+        inputs_dir = base_path / "inputs"
+        if inputs_dir.exists():
+            for f in inputs_dir.iterdir():
+                if f.name.endswith(".tmp") or f.name == ".DS_Store" or f.name == ".pytest_cache" or f.name == "__pycache__":
+                    if f.is_dir():
+                        shutil.rmtree(f)
+                    else:
+                        os.remove(f)
+                    print(f"   - Removed garbage: {f.name}")
+                elif f.name in protected_files:
+                    print(f"   - 🛡️ Protected persistent state: {f.name}")
+
+        print("✨ Environment pristine.")
+
+    elif args.command == 'evolve':
+        print("🧬 Starting Evolution Cycle...")
+        # 1. Harvest
+        h = Harvester(base_path)
+        new_data = h.fetch_github_data()
+
+        # 2. Evolve (Decay + Intuition + Mission)
+        e = Evolver(base_path)
+        e.run_daily_cycle()
+
+    elif args.command == 'harvest':
+        h = Harvester(base_path)
+        h.fetch_github_data()
+
+    elif args.command == 'search':
+        c = Cortex(base_path / "cortex.db")
+        results = c.search(args.query)
+        print(f"🔍 Synaptic Search Results for '{args.query}':")
         for r in results:
-            source_tag = r.get('source', '')
-            source_str = f" [{source_tag}]" if source_tag else ""
-            print(f"  - [{r['id']}]{source_str} {r['name']} (Weight: {r.get('weight', 1.0):.2f})")
-            print(f"    {r['desc'][:60]}...")
+            icon = "🔗" if r.get('distance', 0) > 0 else "🎯"
+            print(f" {icon} [{r['weight']:.2f}] {r['name']} ({r['id']}) - {r['desc'][:60]}...")
 
-    elif args.command == "evolve":
-        evolver = Evolver(cortex)
-        evolver.run_daily_cycle()
-        print("🧬 Evolution cycle complete.")
+    elif args.command == 'connect':
+        c = Cortex(base_path / "cortex.db")
+        c.connect_entities(args.source, args.relation, args.target, args.desc)
+        print(f"⚡ Synapse established: {args.source} --[{args.relation}]--> {args.target}")
 
-    elif args.command == "decay":
-        cortex.decay_memories()
-        print("📉 Memories decayed.")
+    elif args.command == 'activate':
+        c = Cortex(base_path / "cortex.db")
+        c.activate_memory(args.id)
+        print(f"🔥 Memory activated: {args.id}")
 
-    elif args.command == "activate":
-        cortex.activate_memory(args.id)
-        print(f"⚡ Memory {args.id} activated.")
+    elif args.command == 'archive':
+        e = Evolver(base_path)
+        e.archive_inputs()
 
-    elif args.command == "intuition":
-        evolver = Evolver(cortex)
-        ints = evolver._incubate_ideas()
+    elif args.command == 'add':
+        c = Cortex(base_path / "cortex.db")
+        if getattr(args, 'type', None) == 'entity':
+            c.add_entity(args.id, args.type_slug, args.name, args.desc)
+            print(f"🌱 Entity created: {args.name}")
+
+    elif args.command == 'status':
+        c = Cortex(base_path / "cortex.db")
+        stats = c.get_stats()
+        print(f"🧠 CORTEX STATUS: Entities: {stats['entities']} | Relations: {stats['relations']} | Density: {stats['density']:.4f}")
+
+    elif args.command == 'intuition':
+        e = Evolver(base_path)
+        ints = e._incubate_ideas()
         if not ints:
             print("💤 No intuitions currently.")
         else:
             print("\n".join(ints))
 
-    elif args.command == "archive":
-        import shutil
-        base = "docs/brain/inputs"
-        archive_base = "docs/brain/inputs/archive"
-        count = 0
-        if os.path.exists(base):
-            for root, _, files in os.walk(base):
-                if "archive" in root: continue
-                for f in files:
-                    if f.endswith(".md") and not f.startswith("."):
-                        src = os.path.join(root, f)
-                        rel = os.path.relpath(src, base)
-                        dst = os.path.join(archive_base, rel)
-                        os.makedirs(os.path.dirname(dst), exist_ok=True)
-                        shutil.move(src, dst)
-                        count += 1
-        print(f"📦 Archived {count} files.")
-
-    elif args.command == "status":
-        cursor = cortex.conn.cursor()
-        e_count = cursor.execute("SELECT COUNT(*) FROM entities").fetchone()[0]
-        r_count = cursor.execute("SELECT COUNT(*) FROM relations").fetchone()[0]
-        print(f"🧠 CORTEX STATUS: Entities: {e_count} | Relations: {r_count}")
-
-    elif args.command == "clean":
-        cache_files = ["docs/brain/inputs/.harvester_state.json", ".pytest_cache", "__pycache__", "docs/brain/__pycache__"]
-        import shutil
-        count = 0
-        for f in cache_files:
-            if os.path.exists(f):
-                if os.path.isdir(f):
-                    shutil.rmtree(f)
-                else:
-                    os.remove(f)
-                count += 1
-        print(f"🧹 Brain cache cleared ({count} targets removed).")
+    elif args.command == 'decay':
+        c = Cortex(base_path / "cortex.db")
+        c.decay_memories()
+        print("📉 Memories decayed.")
 
     else:
         parser.print_help()
