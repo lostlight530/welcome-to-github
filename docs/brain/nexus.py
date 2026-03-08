@@ -19,18 +19,18 @@ def main():
     parser = argparse.ArgumentParser(description="NEXUS CORTEX: The Sovereign Intelligence")
     subparsers = parser.add_subparsers(dest='command', help='Available commands')
 
-    # Commands
-    subparsers.add_parser('evolve', help='Run Daily Cycle')
-    subparsers.add_parser('harvest', help='Run Harvester')
+    # --- Core Lifecycle ---
+    subparsers.add_parser('evolve', help='Run Daily Cycle (Harvest -> Dream -> Plan)')
+    subparsers.add_parser('harvest', help='Run Sensory Harvester')
     subparsers.add_parser('rebuild', help='Rebuild DB from Text (The Restoration)')
+    subparsers.add_parser('clean', help='Cleanup environment')
+    subparsers.add_parser('status', help='Report System Health & Entropy') # <--- RESTORED
 
-    learn_parser = subparsers.add_parser('learn', help='Ingest Knowledge')
+    # --- Learning ---
+    learn_parser = subparsers.add_parser('learn', help='Ingest Knowledge from File')
     learn_parser.add_argument('file', help='Path to file')
 
-    subparsers.add_parser('clean', help='Cleanup')
-    subparsers.add_parser('status', help='Show db status')
-
-    # Synapse Ops
+    # --- Synaptic Ops ---
     search_parser = subparsers.add_parser('search', help='Search Memory')
     search_parser.add_argument('query', type=str)
 
@@ -47,13 +47,16 @@ def main():
     add_parser.add_argument('--type_slug', default='concept')
     add_parser.add_argument('--desc', default='')
 
-    activate_parser = subparsers.add_parser('activate', help='Boost Weight')
+    activate_parser = subparsers.add_parser('activate', help='Boost Memory Weight')
     activate_parser.add_argument('id', type=str)
+
+    # --- Visualization ---
+    subparsers.add_parser('visualize', help='Generate Mermaid Graph')
 
     args = parser.parse_args()
     base_path = Path(__file__).parent
 
-    # --- Logic ---
+    # --- Execution Logic ---
 
     if args.command == 'clean':
         print("🧹 Cleaning Cortex...")
@@ -61,39 +64,61 @@ def main():
         for t in targets:
             if t.exists(): shutil.rmtree(t)
 
-        # Protected Cleanup
         inputs_dir = base_path / "inputs"
         protected = {".harvester_state.json", ".gitkeep"}
         if inputs_dir.exists():
             for f in inputs_dir.iterdir():
                 if f.is_file() and f.name not in protected and (f.name.endswith(".tmp") or f.name == ".DS_Store"):
                     os.remove(f)
-        print("✨ Cleaned.")
+        print("✨ Cleaned. (Radar state preserved)")
+
+    elif args.command == 'status':
+        # <--- RESTORED LOGIC
+        c = Cortex(base_path / "cortex.db")
+        stats = c.get_stats()
+        print(f"🧠 NEXUS CORTEX STATUS: ONLINE")
+        print(f"-----------------------------")
+        print(f"📊 Entities  : {stats['entities']}")
+        print(f"🔗 Relations : {stats['relations']}")
+        print(f"⚡ Entropy   : {stats['density']:.4f}")
+        print(f"-----------------------------")
 
     elif args.command == 'rebuild':
         print("🧠 Initiating Cortex Reconstruction Protocol...")
-        # Force a fresh DB connection implicitly creates it
         c = Cortex(base_path / "cortex.db")
         knowledge_dir = base_path / "knowledge"
 
         count = 0
-        for root, _, files in os.walk(knowledge_dir):
-            for file in files:
-                if file.endswith(".jsonl"):
-                    filepath = Path(root) / file
-                    print(f"   - Ingesting: {file}...")
-                    try:
-                        with open(filepath, 'r', encoding='utf-8') as f:
-                            for line in f:
-                                if not line.strip(): continue
-                                data = json.loads(line)
-                                if 'src' in data: # Relation
-                                    c.connect_entities(data['src'], data.get('relation', data.get('rel', 'connected')), data['dst'], data.get('desc',''))
-                                else: # Entity
-                                    c.add_entity(data.get('id'), data.get('type', 'concept'), data.get('name'), data.get('desc',''))
-                                count += 1
-                    except Exception as e:
-                        print(f"     ⚠️ Error in {file}: {e}")
+        if knowledge_dir.exists():
+            for root, _, files in os.walk(knowledge_dir):
+                for file in files:
+                    if file.endswith(".jsonl"):
+                        filepath = Path(root) / file
+                        print(f"   - Ingesting: {file}...")
+                        try:
+                            with open(filepath, 'r', encoding='utf-8') as f:
+                                for line in f:
+                                    if not line.strip(): continue
+                                    data = json.loads(line)
+                                    if 'src' in data:
+                                        c.connect_entities(
+                                            data['src'],
+                                            data.get('relation', 'connected'),
+                                            data['dst'],
+                                            data.get('desc',''),
+                                            save_to_disk=False
+                                        )
+                                    else:
+                                        c.add_entity(
+                                            data.get('id'),
+                                            data.get('type', 'concept'),
+                                            data.get('name'),
+                                            data.get('desc',''),
+                                            save_to_disk=False
+                                        )
+                                    count += 1
+                        except Exception as e:
+                            print(f"     ⚠️ Error in {file}: {e}")
         print(f"✨ Reconstruction Complete. {count} memories restored.")
 
     elif args.command == 'evolve':
@@ -109,6 +134,16 @@ def main():
     elif args.command == 'learn':
         s = Scholar(base_path)
         print(f"🎓 Record: {s.learn(args.file)}")
+
+    elif args.command == 'visualize':
+        c = Cortex(base_path / "cortex.db")
+        print("graph TD")
+        cursor = c.conn.cursor()
+        cursor.execute("SELECT source, relation, target FROM relations WHERE weight > 1.0 LIMIT 50")
+        for row in cursor.fetchall():
+            s = row[0].replace("-", "_").replace(".", "_")
+            t = row[2].replace("-", "_").replace(".", "_")
+            print(f"    {s} -->|{row[1]}| {t}")
 
     elif args.command == 'search':
         c = Cortex(base_path / "cortex.db")
@@ -130,53 +165,6 @@ def main():
         c = Cortex(base_path / "cortex.db")
         c.activate_memory(args.id)
         print("🔥 Activated.")
-
-    elif args.command == 'status':
-        c = Cortex(base_path / "cortex.db")
-        stats = c.get_stats()
-        print(f"📊 Cortex Status:")
-        print(f"   - Entities: {stats['entities']}")
-        print(f"   - Relations: {stats['relations']}")
-        print(f"   - Network Density (avg weight): {stats['density']:.4f}")
-
-    elif args.command == 'rebuild':
-        import json
-        print("🧠 Initiating Cortex Reconstruction Protocol...")
-        c = Cortex(base_path / "cortex.db")
-        knowledge_dir = base_path / "knowledge"
-
-        count = 0
-        # 遍历 knowledge 目录下的所有 jsonl 文件
-        for root, dirs, files in os.walk(knowledge_dir):
-            for file in files:
-                if file.endswith(".jsonl"):
-                    filepath = Path(root) / file
-                    print(f"   - Ingesting: {file}...")
-                    with open(filepath, 'r', encoding='utf-8') as f:
-                        for line in f:
-                            try:
-                                data = json.loads(line)
-                                # 区分实体和关系（根据文件路径或数据结构）
-                                if 'src' in data and 'dst' in data:
-                                    # 这是一个关系
-                                    c.connect_entities(
-                                        data['src'],
-                                        data.get('rel', data.get('relation', 'connected_to')),
-                                        data['dst']
-                                    )
-                                else:
-                                    # 这是一个实体
-                                    c.add_entity(
-                                        id=data.get('id'),
-                                        type_slug=data.get('type', 'concept'),
-                                        name=data.get('name'),
-                                        desc=data.get('desc', '')
-                                    )
-                                count += 1
-                            except Exception as e:
-                                print(f"     ⚠️ Error parsing line: {e}")
-
-        print(f"✨ Reconstruction Complete. {count} memories restored.")
 
     else:
         parser.print_help()

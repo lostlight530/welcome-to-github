@@ -79,3 +79,9 @@
 {"src": "markitdown", "relation": "optimizes", "dst": "ai-rag-pipeline", "desc": ""}
 {"src": "legacy-xla", "relation": "deprecated_in_favor_of", "dst": "mlir-compiler", "desc": ""}
 {"src": "database-servers", "relation": "evolves_to", "dst": "native-vector-storage", "desc": ""}
+{"src": "vllm-project_vllm_v0.17.0", "relation": "requires", "dst": "dependency_pytorch_2.10", "desc": "Breaking change: Forced upgrade"}
+{"src": "vllm-project_vllm_v0.17.0", "relation": "conflicts_with", "dst": "env_cuda_lt_12.1", "desc": "Crashes on old drivers"}
+{"src": "langgenius_dify_1.13.0", "relation": "changes_architecture", "dst": "arch_pattern_celery_worker", "desc": ""}
+{"src": "langgenius_dify_1.13.0", "relation": "requires", "dst": "config_queue_workflow", "desc": "Manual docker-compose update needed"}
+{"src": "iflytek_astron-agent_v1.0.2", "relation": "supports", "dst": "protocol_mcp", "desc": ""}
+{"src": "iflytek_astron-agent_v1.0.2", "relation": "relates_to", "dst": "concept_sovereignty", "desc": ""}

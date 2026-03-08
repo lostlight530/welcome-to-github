@@ -22,13 +22,11 @@ jobs:
 
     - name: Install Dependencies (Minimalist)
       run: |
-        # Zero-dependency philosophy: Only using standard library where possible.
-        # If external tools are needed later, add here.
         echo "No heavy dependencies required."
 
     - name: 🧠 Reconstruct Cortex (Rehydrate Memory)
       run: |
-        # Restore the binary brain from text source-of-truth
+        # Restore the binary brain from text source-of-truth (Silent Load)
         python docs/brain/nexus.py rebuild
 
     - name: 🧬 Run Evolution Cycle (Harvest -> Dream -> Plan)
