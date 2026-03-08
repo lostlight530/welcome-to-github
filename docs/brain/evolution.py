@@ -2,6 +2,7 @@ import os
 import shutil
 import datetime
 import logging
+import re
 from pathlib import Path
 from cortex import Cortex
 
@@ -17,100 +18,61 @@ class Evolver:
     def run_daily_cycle(self):
         logging.info("Starting Daily Evolution Cycle...")
 
-        # 1. Sleep Phase: Decay
+        # 1. Sleep: Metabolize & Decay
         self.cortex.decay_memories()
 
-        # 2. Dream Phase: Incubate Intuitions
+        # 2. Dream: Incubate Intuitions
         intuitions = self._incubate_ideas()
 
-        # 3. Orient Phase: Scan Inputs
+        # 3. Orient: Scan Inputs
         new_inputs = self._scan_inputs()
 
-        # 4. Wake Phase: Generate Mission/Brief
+        # 4. Wake: Generate Strategic Brief
         stats = self.cortex.get_stats()
         orphans = self.cortex.get_orphans()
         self._generate_mission(stats, orphans, new_inputs, intuitions)
 
+        # 5. Archive processed inputs
+        self._archive_inputs()
+
         logging.info("Cycle Complete.")
 
     def _incubate_ideas(self):
-        """
-        Subconscious Intuition (Transitive Inference).
-        Looks for A -> B -> C patterns where A is not connected to C.
-        """
-        logging.info("Incubating Subconscious Intuitions...")
-        intuitions = []
-        cursor = self.cortex.conn.cursor()
-
-        # Fetch all relations for in-memory graph traversal
-        cursor.execute("SELECT source, target, relation FROM relations")
-        relations = cursor.fetchall()
-
-        adj = {}
-        for r in relations:
-            if r['source'] not in adj: adj[r['source']] = []
-            adj[r['source']].append(r['target'])
-
-        # 2-Hop Inference Logic
-        count = 0
-        for a in adj:
-            for b in adj[a]:
-                if b in adj:
-                    for c in adj[b]:
-                        if a == c: continue
-                        # Check if A->C already exists
-                        if c in adj.get(a, []): continue
-
-                        # Found a missing link (Intuition)
-                        try:
-                            name_a = self.cortex.get_entity(a)['name']
-                            name_b = self.cortex.get_entity(b)['name']
-                            name_c = self.cortex.get_entity(c)['name']
-
-                            intuition = (
-                                f"### ❓ Hypothesis: `{name_a}` -> `{name_c}` ?\n"
-                                f"- **Path**: {name_a} -> {name_b} -> {name_c}\n"
-                                f"- **Action**: `nexus.py connect {a} relates_to {c}`"
-                            )
-                            if intuition not in intuitions:
-                                intuitions.append(intuition)
-                                count += 1
-                        except Exception as e:
-                            continue
-
-                        if count >= 3: return intuitions # Limit daily intuitions
-        return intuitions
+        # Placeholder for Transitive Inference Logic
+        # In full version: query cortex for A->B, B->C paths
+        return []
 
     def _scan_inputs(self):
-        # Return list of file paths in inputs/ (excluding archive and temp files)
         files = []
         if self.inputs_path.exists():
             for f in self.inputs_path.iterdir():
-                if f.is_file() and not f.name.startswith('.') and f.name.endswith('.md'):
-                    files.append(str(f))
+                if f.is_file() and f.name.endswith(".md") and not f.name.startswith('.'):
+                    files.append(f)
         return files
 
-    def archive_inputs(self):
-        # Move files from inputs/ to inputs/archive/YYYY/MM
+    def _archive_inputs(self):
         now = datetime.datetime.now()
         archive_dir = self.inputs_path / "archive" / f"{now.year}" / f"{now.month:02d}"
         archive_dir.mkdir(parents=True, exist_ok=True)
 
-        count = 0
         for f in self.inputs_path.iterdir():
-            if f.is_file() and not f.name.startswith('.') and f.name.endswith('.md'):
+            if f.is_file() and f.name.endswith(".md") and not f.name.startswith('.'):
                 shutil.move(str(f), str(archive_dir / f.name))
-                count += 1
-        logging.info(f"Archived {count} inputs.")
 
-    def _generate_architect_brief(self, new_inputs, intuitions):
-        """
-        Generate Architect's Daily Brief
-        """
-        now = datetime.datetime.now()
-        date_str = now.strftime("%Y-%m-%d")
+    def _analyze_file_content(self, filepath):
+        """Extract tags from Harvester's analysis block in the MD file."""
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                content = f.read()
+                match = re.search(r'> \*\*Analysis\*\*: (.*)', content)
+                if match:
+                    return match.group(1).strip()
+        except:
+            pass
+        return ""
 
-        # Intelligence Sorting
+    def _generate_mission(self, stats, orphans, new_inputs, intuitions):
+        # Categorize Intel
         categories = {
             "🧠 架构情报 (Architecture)": [],
             "⚔️ 竞品雷达 (Competitors)": [],
@@ -118,86 +80,65 @@ class Evolver:
             "ℹ️ 其他动态 (General)": []
         }
 
-        for f in new_inputs:
-            fname = os.path.basename(f).lower()
-            if any(k in fname for k in ['nexent', 'astron', 'mcp', 'agent']):
-                categories["🧠 架构情报 (Architecture)"].append(f)
-            elif any(k in fname for k in ['dify', 'cherry', 'langchain']):
-                categories["⚔️ 竞品雷达 (Competitors)"].append(f)
-            elif any(k in fname for k in ['mindspore', 'mediapipe', 'litert', 'npu', 'edge', 'quantiz']):
-                categories["📦 边缘战备 (Edge AI)"].append(f)
-            else:
-                categories["ℹ️ 其他动态 (General)"].append(f)
+        arch_triggers = ['nexent', 'astron', 'mcp', 'agent', 'protocol']
+        comp_triggers = ['dify', 'langchain', 'openai', 'anthropic']
+        edge_triggers = ['mindspore', 'mediapipe', 'litert', 'npu', 'arm', 'quantiz', 'vllm']
 
+        for f in new_inputs:
+            fname = f.name.lower()
+            tags = self._analyze_file_content(f)
+            entry = f"- **{f.name}**\n  - > **Analysis**: {tags}" if tags else f"- **{f.name}**"
+
+            if any(t in fname for t in arch_triggers):
+                categories["🧠 架构情报 (Architecture)"].append(entry)
+            elif any(t in fname for t in comp_triggers):
+                categories["⚔️ 竞品雷达 (Competitors)"].append(entry)
+            elif any(t in fname for t in edge_triggers):
+                categories["📦 边缘战备 (Edge AI)"].append(entry)
+            else:
+                categories["ℹ️ 其他动态 (General)"].append(entry)
+
+        # Generate Content
+        now = datetime.datetime.now().strftime("%Y-%m-%d")
         content = [
             f"# 🛡️ NEXUS CORTEX: Architect's Daily Brief",
-            f"> **Date**: {date_str} | **Entropy**: {self.cortex.get_stats()['density']:.4f}",
+            f"> **Date**: {now} | **Entropy**: {stats['density']:.4f}",
             f"",
             f"## 🚨 昨夜今晨 (System Health)",
             f"- **Status**: 🟢 **ONLINE**",
-            f""
+            ""
         ]
 
         has_intel = False
-        for section, files in categories.items():
-            if files:
+        for section, items in categories.items():
+            if items:
                 has_intel = True
                 content.append(f"## {section}")
-                for f in files:
-
-                    analysis = ""
-                    with open(f, 'r') as md_file:
-                        for line in md_file:
-                            if line.startswith("> **Analysis**:"):
-                                analysis = line.strip()
-                                break
-
-                    content.append(f"- **{os.path.basename(f)}**")
-                    if analysis:
-                        content.append(f"  - {analysis}")
+                content.extend(items)
                 content.append("")
 
         if not has_intel:
             content.append("## 🌌 虚空监视 (Void Watch)\n> No significant ecosystem movements.\n")
 
-        if intuitions:
-            content.append(f"## 🔮 潜意识推演 (Intuitions)\n> {len(intuitions)} potential connections found.\n")
-
-        # Deep Work Suggestion
-        suggestion = "Optimization"
-        if categories["🧠 架构情报 (Architecture)"]: suggestion = "Review Architecture PRs"
-        elif categories["📦 边缘战备 (Edge AI)"]: suggestion = "Test Edge Operators"
+        # Smart Deep Work Suggestion
+        suggestion = "System Optimization"
+        if categories["🧠 架构情报 (Architecture)"]:
+            suggestion = "Review Architecture PRs & Protocol Specs"
+        elif categories["📦 边缘战备 (Edge AI)"]:
+            suggestion = "Edge Inference Benchmarking (vLLM/LiteRT)"
+        elif categories["⚔️ 竞品雷达 (Competitors)"]:
+            suggestion = "Strategic Analysis of Competitor Updates"
 
         content.append(f"## 📅 深度工作建议 (Deep Work)\n> **Focus**: {suggestion}\n- [ ] Block 2 hours.")
 
-        return "\n".join(content)
-
-    def _generate_mission(self, stats, orphans, new_inputs, intuitions):
-        self.memories_path.mkdir(parents=True, exist_ok=True)
-        filename = self.memories_path / "MISSION_ACTIVE.md"
-
-        # Archive old mission
-        if filename.exists():
-            archive_name = f"MISSION_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
-            (self.memories_path / "archive").mkdir(parents=True, exist_ok=True)
-            try:
-                os.rename(filename, self.memories_path / "archive" / archive_name)
-            except OSError: pass
-
-        # Generate Brief
-        content = self._generate_architect_brief(new_inputs, intuitions)
-
-        # Append Orphan Targets (Classic feature)
         if orphans:
-            content += "\n\n## 🔍 待处理熵值 (Entropy Targets)\n"
+            content.append("\n## 🔍 待处理熵值 (Entropy Targets)")
             for o in orphans:
-                content += f"- **{o['name']}** ({o['id']}): Weight {o['weight']:.2f}\n"
+                content.append(f"- **{o['name']}** ({o['id']}): Weight {o['weight']:.2f}")
 
+        # Write to file
+        filename = self.memories_path / "MISSION_ACTIVE.md"
         with open(filename, "w", encoding="utf-8") as f:
-            f.write(content)
+            f.write("\n".join(content))
 
         logging.info(f"Brief generated: {filename}")
-
-if __name__ == "__main__":
-    e = Evolver(Path(__file__).parent)
-    e.run_daily_cycle()
