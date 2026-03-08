@@ -53,3 +53,7 @@ yarn-error.log*
 server.log
 verification/
 __pycache__/
+
+# Cortex Binary & State
+docs/brain/*.db
+docs/brain/inputs/.harvester_state.json
