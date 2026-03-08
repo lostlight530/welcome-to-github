@@ -28,6 +28,7 @@ def main():
     learn_parser.add_argument('file', help='Path to file')
 
     subparsers.add_parser('clean', help='Cleanup')
+    subparsers.add_parser('status', help='Show db status')
 
     # Synapse Ops
     search_parser = subparsers.add_parser('search', help='Search Memory')
@@ -129,6 +130,14 @@ def main():
         c = Cortex(base_path / "cortex.db")
         c.activate_memory(args.id)
         print("🔥 Activated.")
+
+    elif args.command == 'status':
+        c = Cortex(base_path / "cortex.db")
+        stats = c.get_stats()
+        print(f"📊 Cortex Status:")
+        print(f"   - Entities: {stats['entities']}")
+        print(f"   - Relations: {stats['relations']}")
+        print(f"   - Network Density (avg weight): {stats['density']:.4f}")
 
     else:
         parser.print_help()
