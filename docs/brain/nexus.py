@@ -29,6 +29,12 @@ def main():
     # Command: Clean (Maintenance)
     subparsers.add_parser('clean', help='Remove temporary artifacts (caches, logs)')
 
+    # Command: Archive
+    subparsers.add_parser('archive', help='Move processed inputs to archive')
+
+    # Command: Status
+    subparsers.add_parser('status', help='Show db status')
+
     # --- Synaptic Commands ---
     search_parser = subparsers.add_parser('search', help='Synaptic associative search')
     search_parser.add_argument('query', type=str, help='Search query')
@@ -124,6 +130,19 @@ def main():
         c = Cortex(base_path / "cortex.db")
         c.add_entity(args.id, args.type_slug, args.name, args.desc)
         print(f"🌱 Created: {args.name}")
+
+    elif args.command == 'archive':
+        e = Evolver(base_path)
+        e._archive_inputs()
+        print("📁 Inputs archived.")
+
+    elif args.command == 'status':
+        c = Cortex(base_path / "cortex.db")
+        stats = c.get_stats()
+        print(f"📊 Cortex Status:")
+        print(f"   - Entities: {stats['entities']}")
+        print(f"   - Relations: {stats['relations']}")
+        print(f"   - Network Density (avg weight): {stats['density']:.4f}")
 
     else:
         parser.print_help()
