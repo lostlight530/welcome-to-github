@@ -8,11 +8,18 @@ class Cortex:
     def __init__(self, db_path):
         self.conn = sqlite3.connect(db_path)
         self.conn.row_factory = sqlite3.Row
+
+        # [v2.3 Core Axioms]
+        # These define the Architect's identity. They are immune to entropy.
+        self.CORE_WHITELIST = {
+            "agent", "mcp", "edge-ai", "nexus", "sovereignty",
+            "mindspore", "litert", "mediapipe", "zerodependency",
+            "jax-metal", "eurobert", "android"
+        }
         self._init_db()
 
     def _init_db(self):
         cursor = self.conn.cursor()
-        # Entity Table
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS entities (
                 id TEXT PRIMARY KEY,
@@ -23,11 +30,9 @@ class Cortex:
                 last_activated REAL
             )
         ''')
-        # FTS5 Index for full-text search
         cursor.execute('''
             CREATE VIRTUAL TABLE IF NOT EXISTS entities_fts USING fts5(id, name, desc)
         ''')
-        # Relations Table (The Synapses)
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS relations (
                 source TEXT,
@@ -40,18 +45,15 @@ class Cortex:
         self.conn.commit()
 
     def search(self, query: str, limit: int = 10) -> List[Dict]:
-        """
-        Synaptic Associative Search
-        结合了 FTS5 全文检索 + 1-Hop 图谱联想。
-        """
+        """Synaptic Search: Combines Full-Text + 1-Hop Graph Association"""
         cursor = self.conn.cursor()
 
-        # 1. Sanitize & Prefix
+        # Sanitize
         safe_query = "".join(c for c in query if c.isalnum() or c.isspace())
         if not safe_query.strip(): return []
         fts_query = " ".join([f"{token}*" for token in safe_query.split()])
 
-        # 2. Direct Match (FTS5)
+        # 1. Direct Match (FTS5)
         sql_direct = '''
             SELECT e.id, e.name, e.desc, e.weight, 0 as distance
             FROM entities_fts f
@@ -65,7 +67,7 @@ class Cortex:
 
         if not direct_results: return []
 
-        # 3. Associative Expansion (Graph)
+        # 2. Associative Expansion (Graph)
         direct_ids = [r['id'] for r in direct_results]
         placeholders = ','.join(['?'] * len(direct_ids))
 
@@ -75,7 +77,7 @@ class Cortex:
             JOIN entities e ON (r.target = e.id OR r.source = e.id)
             WHERE (r.source IN ({placeholders}) OR r.target IN ({placeholders}))
             AND e.id NOT IN ({placeholders})
-            AND e.weight > 1.1 -- Only strong associations
+            AND e.weight > 1.1
             ORDER BY e.weight DESC
             LIMIT 3
         '''
@@ -83,20 +85,16 @@ class Cortex:
         cursor.execute(sql_assoc, params)
         assoc_results = [dict(row) for row in cursor.fetchall()]
 
-        # 4. Merge & Activate
-        final_results = direct_results + assoc_results
-        for res in final_results:
-            boost = 0.2 if res['distance'] == 0 else 0.05
-            self.activate_memory(res['id'], boost=boost)
-
-        return final_results
+        return direct_results + assoc_results
 
     def add_entity(self, id, type_slug, name, desc):
         cursor = self.conn.cursor()
         now = time.time()
+        # Boost initial weight for whitelist items
+        w = 2.0 if id in self.CORE_WHITELIST else 1.0
         try:
-            cursor.execute('INSERT INTO entities VALUES (?, ?, ?, ?, 1.0, ?)',
-                          (id, type_slug, name, desc, now))
+            cursor.execute('INSERT INTO entities VALUES (?, ?, ?, ?, ?, ?)',
+                          (id, type_slug, name, desc, w, now))
             cursor.execute('INSERT INTO entities_fts VALUES (?, ?, ?)', (id, name, desc))
             self.conn.commit()
         except sqlite3.IntegrityError:
@@ -104,15 +102,20 @@ class Cortex:
 
     def connect_entities(self, source, relation, target, desc=""):
         cursor = self.conn.cursor()
+        now = time.time()
         try:
-            cursor.execute('INSERT INTO relations VALUES (?, ?, ?, 1.0)',
-                          (source, relation, target))
+            cursor.execute('INSERT INTO relations (source, relation, target, annotation, created_at, weight) VALUES (?, ?, ?, ?, ?, 1.0)',
+                          (source, relation, target, desc, now))
             self.conn.commit()
-            # Strengthen both nodes
             self.activate_memory(source, 0.1)
             self.activate_memory(target, 0.1)
         except sqlite3.IntegrityError:
-            pass
+            # Update annotation and touch if it already exists
+            cursor.execute('UPDATE relations SET annotation = ?, weight = weight + 0.1 WHERE source=? AND relation=? AND target=?',
+                          (desc, source, relation, target))
+            self.conn.commit()
+            self.activate_memory(source, 0.1)
+            self.activate_memory(target, 0.1)
 
     def activate_memory(self, id, boost=0.1):
         cursor = self.conn.cursor()
@@ -122,13 +125,26 @@ class Cortex:
         self.conn.commit()
 
     def decay_memories(self, decay_rate=0.95):
+        """Biological Decay with Sovereignty Protection"""
         cursor = self.conn.cursor()
+
+        # 1. Universal Decay
         cursor.execute('UPDATE entities SET weight = weight * ? WHERE weight > 0.1', (decay_rate,))
+
+        # 2. Whitelist Restoration (Sovereignty Check)
+        if self.CORE_WHITELIST:
+            placeholders = ','.join(['?'] * len(self.CORE_WHITELIST))
+            # If a core concept drops below 1.2, restore it.
+            sql_restore = f'''
+                UPDATE entities SET weight = 1.2
+                WHERE id IN ({placeholders}) AND weight < 1.2
+            '''
+            cursor.execute(sql_restore, list(self.CORE_WHITELIST))
+
         self.conn.commit()
 
     def get_orphans(self, limit=5):
         cursor = self.conn.cursor()
-        # Find entities with NO relations (in or out)
         sql = '''
             SELECT e.id, e.name, e.weight FROM entities e
             LEFT JOIN relations r1 ON e.id = r1.source
@@ -141,18 +157,12 @@ class Cortex:
         cursor.execute(sql, (limit,))
         return [dict(row) for row in cursor.fetchall()]
 
-    def get_entity(self, entity_id: str) -> Dict:
-        cursor = self.conn.cursor()
-        cursor.execute("SELECT * FROM entities WHERE id = ?", (entity_id,))
-        row = cursor.fetchone()
-        if row:
-            self.activate_memory(entity_id)
-            return dict(row)
-        return None
-
     def get_stats(self):
         cursor = self.conn.cursor()
-        e_count = cursor.execute('SELECT count(*) FROM entities').fetchone()[0]
-        r_count = cursor.execute('SELECT count(*) FROM relations').fetchone()[0]
-        avg_weight = cursor.execute('SELECT avg(weight) FROM entities').fetchone()[0] or 0
+        try:
+            e_count = cursor.execute('SELECT count(*) FROM entities').fetchone()[0]
+            r_count = cursor.execute('SELECT count(*) FROM relations').fetchone()[0]
+            avg_weight = cursor.execute('SELECT avg(weight) FROM entities').fetchone()[0] or 0
+        except:
+            return {'entities': 0, 'relations': 0, 'density': 0}
         return {'entities': e_count, 'relations': r_count, 'density': avg_weight}
