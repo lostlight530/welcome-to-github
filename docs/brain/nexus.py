@@ -35,6 +35,9 @@ def main():
     # Command: Status
     subparsers.add_parser('status', help='Show db status')
 
+    # Command: Rebuild (Restoration)
+    subparsers.add_parser('rebuild', help='Rebuild Cortex DB from Text Knowledge (JSONL)')
+
     # --- Synaptic Commands ---
     search_parser = subparsers.add_parser('search', help='Synaptic associative search')
     search_parser.add_argument('query', type=str, help='Search query')
@@ -143,6 +146,45 @@ def main():
         print(f"   - Entities: {stats['entities']}")
         print(f"   - Relations: {stats['relations']}")
         print(f"   - Network Density (avg weight): {stats['density']:.4f}")
+
+    elif args.command == 'rebuild':
+        import json
+        print("🧠 Initiating Cortex Reconstruction Protocol...")
+        c = Cortex(base_path / "cortex.db")
+        knowledge_dir = base_path / "knowledge"
+
+        count = 0
+        # 遍历 knowledge 目录下的所有 jsonl 文件
+        for root, dirs, files in os.walk(knowledge_dir):
+            for file in files:
+                if file.endswith(".jsonl"):
+                    filepath = Path(root) / file
+                    print(f"   - Ingesting: {file}...")
+                    with open(filepath, 'r', encoding='utf-8') as f:
+                        for line in f:
+                            try:
+                                data = json.loads(line)
+                                # 区分实体和关系（根据文件路径或数据结构）
+                                if 'src' in data and 'dst' in data:
+                                    # 这是一个关系
+                                    c.connect_entities(
+                                        data['src'],
+                                        data.get('rel', data.get('relation', 'connected_to')),
+                                        data['dst']
+                                    )
+                                else:
+                                    # 这是一个实体
+                                    c.add_entity(
+                                        id=data.get('id'),
+                                        type_slug=data.get('type', 'concept'),
+                                        name=data.get('name'),
+                                        desc=data.get('desc', '')
+                                    )
+                                count += 1
+                            except Exception as e:
+                                print(f"     ⚠️ Error parsing line: {e}")
+
+        print(f"✨ Reconstruction Complete. {count} memories restored.")
 
     else:
         parser.print_help()
