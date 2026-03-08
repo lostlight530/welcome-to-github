@@ -1,118 +1,70 @@
-import sys
-import os
-import json
 import re
-from datetime import datetime
-from typing import Optional, List, Tuple
+import datetime
+from pathlib import Path
 
-# Ensure we can import factory
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-from factory import KnowledgeFactory
+class Scholar:
+    def __init__(self, brain_path):
+        self.brain_path = Path(brain_path)
+        self.memories_path = self.brain_path / "memories"
 
-class StaticScholar:
-    """
-    The Static Scholar (静态学者).
-    Responsible for fetching external documentation and 'deepening' the knowledge of existing entities.
-    Implements Graceful Degradation: Regex -> Heuristics -> Keyword extraction.
-    """
-    def __init__(self, root_dir: str):
-        self.root_dir = root_dir
-        self.factory = KnowledgeFactory(root_dir)
+    def learn(self, input_file):
+        """Ingest a file, extract patterns, generate record."""
+        input_path = Path(input_file)
+        if not input_path.exists():
+            return None
 
-    def study_topic(self, entity_id: str, url: str):
-        """
-        Simulates fetching a URL and extracting deep architectural insights.
-        Uses a robust extraction strategy (Simulated).
-        """
-        print(f"[Scholar] 正在研读 (Studying): {entity_id} from {url}...")
+        with open(input_path, 'r', encoding='utf-8') as f:
+            content = f.read()
 
-        # 1. Fetch Content (Simulated)
-        # In real life: content = requests.get(url).text
-        # Here we simulate different "content shapes" to test degradation logic.
-        content_shape = self._simulate_content_retrieval(entity_id)
+        extracted = self.extract_architecture(content)
 
-        # 2. Extract Insights (Graceful Degradation)
-        insights = self._extract_insights_robust(content_shape)
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d")
+        record_filename = f"learning-record-{timestamp}.md"
+        record_path = self.memories_path / record_filename
 
-        print(f"[Scholar] 提取到 {len(insights)} 条核心见解 (Insights extracted).")
+        mode = 'a' if record_path.exists() else 'w'
+        with open(record_path, mode, encoding='utf-8') as f:
+            if mode == 'w':
+                f.write(f"# 🧠 NEXUS CORTEX: Learning Record\n")
 
-        # 3. Ingest
-        for i, (name, desc) in enumerate(insights, 1):
-            pattern_id = f"arch_pattern_{entity_id}_{i}"
-            try:
-                # Idempotent Add (Factory checks exist check)
-                self.factory.add_entity("concepts", {
-                    "id": pattern_id,
-                    "type": "pattern",
-                    "name": name,
-                    "desc": desc,
-                    "tags": ["architecture", "deep-dive"],
-                    "updated_at": datetime.now().isoformat()
-                })
+            f.write(f"\n> **Date**: {datetime.datetime.now().isoformat()} | **Source**: {input_path.name}\n")
+            f.write(f"## 🏛️ Extracted Knowledge\n")
+            f.write(f"{extracted}\n")
+            f.write(f"---\n")
 
-                self.factory.add_relation({
-                    "src": entity_id,
-                    "rel": "implements_philosophy",
-                    "dst": pattern_id,
-                    "context": f"Source: {url}",
-                    "created_at": datetime.now().isoformat()
-                })
-                print(f"  - Injected: {name}")
-            except Exception as e:
-                print(f"  ! Error injecting {name}: {e}")
+        return str(record_path)
 
-        print(f"[Scholar] {entity_id} 深度研读完成。灵魂已注入。")
+    def extract_architecture(self, text):
+        """Hybrid Extraction: Regex + Semantic Fallback"""
 
-    def _simulate_content_retrieval(self, entity_id: str) -> str:
-        # Mock content based on ID
-        if "gemma" in entity_id:
-            return "## Architecture\n- Multi-Query Attention: Efficient inference.\n- XLA: TPU optimization."
-        elif "mediapipe" in entity_id:
-            return "Release Note: Added NPU support. Performance optimized."
-        else:
-            return "General documentation text with keywords like Scalability and Modular Design."
+        # 1. Strict Code Patterns
+        code_patterns = [
+            r'(?i)class\s+(\w+).*?:',
+            r'(?i)"(\w+)"\s*:\s*{',
+        ]
+        extracted_points = []
+        for p in code_patterns:
+            matches = re.findall(p, text)
+            if matches:
+                extracted_points.extend([f"- [Code] Found entity: `{m}`" for m in matches[:5]])
 
-    def _extract_insights_robust(self, content: str) -> List[Tuple[str, str]]:
-        """
-        Tier 1: Regex Anchors (Structure)
-        Tier 2: Bullet Points (Semi-Structure)
-        Tier 3: Heuristic Keywords (Unstructured)
-        """
-        insights = []
+        # 2. Semantic Fallback (Prose)
+        if not extracted_points:
+            # Headers
+            semantic_headers = r'(?i)^#+\s*(Overview|Introduction|Architecture|Design|Concepts)'
+            header_match = re.search(semantic_headers, text, re.MULTILINE)
+            if header_match:
+                start = header_match.end()
+                fallback_text = text[start:start+1000].strip()
+                summary = re.sub(r'[#*`]', '', fallback_text).split('\n\n')[0]
+                extracted_points.append(f"- [Core Concept] {summary}...")
 
-        # Tier 1: Explicit Architecture Section
-        match = re.search(r"## Architecture\n(.*?)(?=\n##|\Z)", content, re.DOTALL)
-        if match:
-            print("  [Parser] Tier 1: Regex Architecture Block found.")
-            block = match.group(1)
-            for line in block.split('\n'):
-                if line.strip().startswith('-'):
-                    parts = line.strip('- ').split(':')
-                    if len(parts) >= 2:
-                        insights.append((parts[0].strip(), parts[1].strip()))
-            if insights: return insights
+            # Definitions "X is a Y"
+            definitions = re.findall(r'(?i)\b(\w{3,20})\s+is\s+a\s+(deterministic|distributed|protocol|system|model)', text)
+            for term, type_ in definitions[:3]:
+                extracted_points.append(f"- [Def] **{term}** defined as *{type_}*")
 
-        # Tier 2: Bullet Points scanning
-        bullets = re.findall(r"[-*] (.*?): (.*)", content)
-        if bullets:
-            print("  [Parser] Tier 2: Bullet Points found.")
-            for b in bullets:
-                insights.append((b[0].strip(), b[1].strip()))
-            if insights: return insights
+        if not extracted_points:
+            return "> *No structured architecture detected.*"
 
-        # Tier 3: Keyword Heuristics
-        print("  [Parser] Tier 3: Keyword Extraction.")
-        keywords = ["Scalability", "Performance", "Modular", "Security"]
-        for k in keywords:
-            if k in content:
-                insights.append((f"{k} Focus", f"The documentation emphasizes {k}."))
-
-        return insights
-
-if __name__ == "__main__":
-    if len(sys.argv) < 3:
-        print("Usage: python scholar.py <entity_id> <url>")
-        sys.exit(1)
-
-    scholar = StaticScholar("docs/brain")
-    scholar.study_topic(sys.argv[1], sys.argv[2])
+        return "\n".join(extracted_points)
