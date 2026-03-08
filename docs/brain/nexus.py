@@ -24,6 +24,7 @@ def main():
     subparsers.add_parser('harvest', help='Run Sensory Harvester')
     subparsers.add_parser('rebuild', help='Rebuild DB from Text (The Restoration)')
     subparsers.add_parser('clean', help='Cleanup environment')
+    subparsers.add_parser('status', help='Report System Health & Entropy') # <--- RESTORED
 
     # --- Learning ---
     learn_parser = subparsers.add_parser('learn', help='Ingest Knowledge from File')
@@ -71,6 +72,17 @@ def main():
                     os.remove(f)
         print("✨ Cleaned. (Radar state preserved)")
 
+    elif args.command == 'status':
+        # <--- RESTORED LOGIC
+        c = Cortex(base_path / "cortex.db")
+        stats = c.get_stats()
+        print(f"🧠 NEXUS CORTEX STATUS: ONLINE")
+        print(f"-----------------------------")
+        print(f"📊 Entities  : {stats['entities']}")
+        print(f"🔗 Relations : {stats['relations']}")
+        print(f"⚡ Entropy   : {stats['density']:.4f}")
+        print(f"-----------------------------")
+
     elif args.command == 'rebuild':
         print("🧠 Initiating Cortex Reconstruction Protocol...")
         c = Cortex(base_path / "cortex.db")
@@ -88,17 +100,15 @@ def main():
                                 for line in f:
                                     if not line.strip(): continue
                                     data = json.loads(line)
-                                    if 'src' in data: # Relation
-                                        # [SILENT LOAD] save_to_disk=False
+                                    if 'src' in data:
                                         c.connect_entities(
                                             data['src'],
-                                            data.get('relation', data.get('rel', 'connected')),
+                                            data.get('relation', 'connected'),
                                             data['dst'],
                                             data.get('desc',''),
                                             save_to_disk=False
                                         )
-                                    else: # Entity
-                                        # [SILENT LOAD] save_to_disk=False
+                                    else:
                                         c.add_entity(
                                             data.get('id'),
                                             data.get('type', 'concept'),
@@ -126,10 +136,8 @@ def main():
         print(f"🎓 Record: {s.learn(args.file)}")
 
     elif args.command == 'visualize':
-        # Simple Mermaid Generator
         c = Cortex(base_path / "cortex.db")
         print("graph TD")
-        # Get top weighted relations
         cursor = c.conn.cursor()
         cursor.execute("SELECT source, relation, target FROM relations WHERE weight > 1.0 LIMIT 50")
         for row in cursor.fetchall():
