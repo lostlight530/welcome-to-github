@@ -1,0 +1,7 @@
+{"id": "arch_pattern_gemma-2b_1", "type": "pattern", "name": "Multi-Query Attention", "desc": "Uses MQA for efficient inference."}
+{"id": "arch_pattern_gemma-2b_2", "type": "pattern", "name": "XLA Optimization", "desc": "Optimized for TPU/GPU execution via XLA."}
+{"id": "arch_pattern_gemma-2b_3", "type": "pattern", "name": "Quantization Support", "desc": "Supports int8/int4 execution on mobile."}
+{"id": "arch_pattern_on-device-llm_1", "type": "pattern", "name": "Memory Management", "desc": "Requires careful memory management (RAM < 8GB)."}
+{"id": "arch_pattern_on-device-llm_2", "type": "pattern", "name": "Delegate Acceleration", "desc": "Relies on delegate acceleration (NPU/DSP)."}
+{"id": "arch_pattern_on-device-llm_3", "type": "pattern", "name": "Privacy-First", "desc": "Architecture ensures no data leaves device."}
+{"id": "privacy-on-device", "type": "pattern", "name": "Privacy-First Architecture", "desc": "Data processing remains on device to ensure privacy."}

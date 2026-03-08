@@ -1,0 +1,6 @@
+{"id": "vibevoice-asr", "type": "model", "name": "VibeVoice ASR (Microsoft)", "desc": "Voice recognition model."}
+{"id": "step-3-5-flash", "type": "model", "name": "Step-3.5-Flash", "desc": "Efficient multimodal model supported in vLLM v0.15.1."}
+{"id": "glm-5", "type": "model", "name": "GLM-5 (744B/40B Active)", "desc": "Sparse MoE model with 40B active params."}
+{"id": "voxtral-realtime", "type": "model", "name": "VoxtralRealtime (Streaming ASR)", "desc": "Low-latency streaming ASR model."}
+{"id": "qwen3-5-moe-4bit", "type": "model", "name": "Qwen3.5 MoE (4-bit Mobile)", "desc": "Efficient 4-bit MoE model for mobile devices."}
+{"id": "eurobert", "type": "model", "name": "EuroBERT (Bidirectional Llama)", "desc": "Bidirectional transformer."}

@@ -1,0 +1,25 @@
+{"id": "gemma-2b", "type": "tech", "name": "Gemma 2B", "desc": "Google's lightweight open model for on-device text generation."}
+{"id": "litert", "type": "tech", "name": "LiteRT", "desc": "High-performance runtime for on-device AI (formerly TFLite)."}
+{"id": "npu", "type": "tech", "name": "NPU", "desc": "Neural Processing Unit."}
+{"id": "jax", "type": "tech", "name": "JAX", "desc": "High-performance numerical computing."}
+{"id": "mindspore", "type": "tech", "name": "MindSpore", "desc": "Huawei's AI framework."}
+{"id": "vllm", "type": "tech", "name": "vLLM", "desc": "High-throughput inference engine."}
+{"id": "vllm-0-16-0", "type": "tech", "name": "vLLM v0.16.0 (Next-Gen VLM & Speculative)", "desc": "Major refactor for Blackwell and Speculative Decoding."}
+{"id": "mindspore-lite", "type": "tech", "name": "MindSpore Lite", "desc": "Huawei Edge AI framework."}
+{"id": "jax-framework", "type": "tech", "name": "JAX (High-Perf Numerical)", "desc": "Google numerical computing framework."}
+{"id": "huggingface-transformers-v5-3-0", "type": "tech", "name": "Transformers v5.3.0", "desc": "Major release featuring VibeVoice and EuroBERT."}
+{"id": "jax-metal-plugin", "type": "tech", "name": "JAX Metal Plugin (pip install jax-metal)", "desc": "Apple Silicon acceleration for JAX."}
+{"id": "multi-modal-vllm", "type": "tech", "name": "Multi-Modal Inference (VLM)", "desc": "vLLM support for Vision-Language Models on heterogeneous hardware."}
+{"id": "mcp-protocol", "type": "tech", "name": "Model Context Protocol (MCP)", "desc": "Standardized protocol for AI model context exchange."}
+{"id": "torch-compile", "type": "tech", "name": "torch.compile", "desc": "PyTorch 2.0 compiler for model optimization."}
+{"id": "openai-triton", "type": "tech", "name": "OpenAI Triton", "desc": "Block-based GPU programming language."}
+{"id": "linear-attention", "type": "tech", "name": "Linear/Sparse Attention (2026 Standard)", "desc": "O(N) attention mechanism replacing standard O(N^2)."}
+{"id": "native-vector-storage", "type": "tech", "name": "Native Vector OS Storage", "desc": "Vector storage embedded natively in OS/filesystem."}
+{"id": "vllm-realtime-api", "type": "tech", "name": "vLLM Realtime API", "desc": "Streaming/Realtime API support in vLLM."}
+{"id": "realtime-api-websocket", "type": "tech", "name": "WebSocket Realtime API", "desc": "WebSocket interface for streaming and realtime interactions."}
+{"id": "vllm-realtime-socket", "type": "tech", "name": "vLLM Realtime API (WebSocket)", "desc": "Realtime streaming via WebSocket."}
+{"id": "unified-spec-decoding", "type": "tech", "name": "Unified Parallel Speculative Decoding", "desc": "Advanced decoding strategy for vLLM."}
+{"id": "jax-metal", "type": "tech", "name": "JAX Metal (Apple Silicon/Edge)", "desc": "JAX backend for Apple Silicon GPU acceleration."}
+{"id": "python", "type": "tech", "name": "Python", "desc": "Primary language for AI/ML and scripting."}
+{"id": "vertex-ai", "type": "tech", "name": "Google Vertex AI", "desc": "Unified AI platform on Google Cloud."}
+{"id": "mediapipe", "type": "tech", "name": "MediaPipe", "desc": "Cross-platform framework for building multimodal ML pipelines."}

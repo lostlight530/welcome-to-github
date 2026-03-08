@@ -1,16 +1,25 @@
+# [FILE: docs/brain/cortex.py]
 import sqlite3
 import json
 import time
+import datetime
 from pathlib import Path
 from typing import List, Dict
 
 class Cortex:
     def __init__(self, db_path):
+        self.brain_path = Path(db_path).parent
+        self.db_path = db_path
+        self.knowledge_path = self.brain_path / "knowledge"
+
+        # Ensure knowledge structure exists
+        (self.knowledge_path / "entities").mkdir(parents=True, exist_ok=True)
+        (self.knowledge_path / "relations").mkdir(parents=True, exist_ok=True)
+
         self.conn = sqlite3.connect(db_path)
         self.conn.row_factory = sqlite3.Row
 
-        # [v2.3 Core Axioms]
-        # These define the Architect's identity. They are immune to entropy.
+        # [Memory Whitelist] Immune to entropy
         self.CORE_WHITELIST = {
             "agent", "mcp", "edge-ai", "nexus", "sovereignty",
             "mindspore", "litert", "mediapipe", "zerodependency",
@@ -44,34 +53,40 @@ class Cortex:
         ''')
         self.conn.commit()
 
-    def search(self, query: str, limit: int = 10) -> List[Dict]:
-        """Synaptic Search: Combines Full-Text + 1-Hop Graph Association"""
-        cursor = self.conn.cursor()
+    def _log_to_jsonl(self, category, filename, data):
+        """Append knowledge to the immutable text ledger."""
+        filepath = self.knowledge_path / category / f"{filename}.jsonl"
+        try:
+            with open(filepath, 'a', encoding='utf-8') as f:
+                f.write(json.dumps(data, ensure_ascii=False) + "\n")
+        except Exception as e:
+            print(f"⚠️ Failed to write text memory: {e}")
 
-        # Sanitize
+    def search(self, query: str, limit: int = 10) -> List[Dict]:
+        cursor = self.conn.cursor()
         safe_query = "".join(c for c in query if c.isalnum() or c.isspace())
         if not safe_query.strip(): return []
         fts_query = " ".join([f"{token}*" for token in safe_query.split()])
 
-        # 1. Direct Match (FTS5)
-        sql_direct = '''
+        # Direct Match
+        cursor.execute('''
             SELECT e.id, e.name, e.desc, e.weight, 0 as distance
             FROM entities_fts f
             JOIN entities e ON f.id = e.id
             WHERE entities_fts MATCH ?
             ORDER BY f.rank * (1.0 / e.weight)
             LIMIT ?
-        '''
-        cursor.execute(sql_direct, (fts_query, limit))
+        ''', (fts_query, limit))
         direct_results = [dict(row) for row in cursor.fetchall()]
 
         if not direct_results: return []
 
-        # 2. Associative Expansion (Graph)
+        # Associative Match
         direct_ids = [r['id'] for r in direct_results]
         placeholders = ','.join(['?'] * len(direct_ids))
+        params = direct_ids + direct_ids + direct_ids
 
-        sql_assoc = f'''
+        cursor.execute(f'''
             SELECT e.id, e.name, e.desc, e.weight, 1 as distance
             FROM relations r
             JOIN entities e ON (r.target = e.id OR r.source = e.id)
@@ -80,23 +95,26 @@ class Cortex:
             AND e.weight > 1.1
             ORDER BY e.weight DESC
             LIMIT 3
-        '''
-        params = direct_ids + direct_ids + direct_ids
-        cursor.execute(sql_assoc, params)
-        assoc_results = [dict(row) for row in cursor.fetchall()]
+        ''', params)
 
-        return direct_results + assoc_results
+        return direct_results + [dict(row) for row in cursor.fetchall()]
 
     def add_entity(self, id, type_slug, name, desc):
         cursor = self.conn.cursor()
         now = time.time()
-        # Boost initial weight for whitelist items
         w = 2.0 if id in self.CORE_WHITELIST else 1.0
+
         try:
             cursor.execute('INSERT INTO entities VALUES (?, ?, ?, ?, ?, ?)',
                           (id, type_slug, name, desc, w, now))
             cursor.execute('INSERT INTO entities_fts VALUES (?, ?, ?)', (id, name, desc))
             self.conn.commit()
+
+            # [Dual-Write] Sync to Text
+            self._log_to_jsonl("entities", type_slug, {
+                "id": id, "type": type_slug, "name": name, "desc": desc
+            })
+
         except sqlite3.IntegrityError:
             self.activate_memory(id)
 
@@ -108,38 +126,38 @@ class Cortex:
             self.conn.commit()
             self.activate_memory(source, 0.1)
             self.activate_memory(target, 0.1)
+
+            # [Dual-Write] Sync to Text (Monthly Journal)
+            month_str = datetime.datetime.now().strftime("%Y-%m")
+            self._log_to_jsonl("relations", month_str, {
+                "src": source, "relation": relation, "dst": target, "desc": desc
+            })
+
         except sqlite3.IntegrityError:
             pass
 
     def activate_memory(self, id, boost=0.1):
         cursor = self.conn.cursor()
-        now = time.time()
         cursor.execute('UPDATE entities SET weight = weight + ?, last_activated = ? WHERE id = ?',
-                      (boost, now, id))
+                      (boost, time.time(), id))
         self.conn.commit()
 
     def decay_memories(self, decay_rate=0.95):
-        """Biological Decay with Sovereignty Protection"""
         cursor = self.conn.cursor()
-
-        # 1. Universal Decay
         cursor.execute('UPDATE entities SET weight = weight * ? WHERE weight > 0.1', (decay_rate,))
 
-        # 2. Whitelist Restoration (Sovereignty Check)
         if self.CORE_WHITELIST:
             placeholders = ','.join(['?'] * len(self.CORE_WHITELIST))
-            # If a core concept drops below 1.2, restore it.
             sql_restore = f'''
                 UPDATE entities SET weight = 1.2
                 WHERE id IN ({placeholders}) AND weight < 1.2
             '''
             cursor.execute(sql_restore, list(self.CORE_WHITELIST))
-
         self.conn.commit()
 
     def get_orphans(self, limit=5):
         cursor = self.conn.cursor()
-        sql = '''
+        cursor.execute('''
             SELECT e.id, e.name, e.weight FROM entities e
             LEFT JOIN relations r1 ON e.id = r1.source
             LEFT JOIN relations r2 ON e.id = r2.target
@@ -147,16 +165,15 @@ class Cortex:
             AND e.weight > 0.5
             ORDER BY e.weight DESC
             LIMIT ?
-        '''
-        cursor.execute(sql, (limit,))
+        ''', (limit,))
         return [dict(row) for row in cursor.fetchall()]
 
     def get_stats(self):
         cursor = self.conn.cursor()
         try:
-            e_count = cursor.execute('SELECT count(*) FROM entities').fetchone()[0]
-            r_count = cursor.execute('SELECT count(*) FROM relations').fetchone()[0]
-            avg_weight = cursor.execute('SELECT avg(weight) FROM entities').fetchone()[0] or 0
+            e = cursor.execute('SELECT count(*) FROM entities').fetchone()[0]
+            r = cursor.execute('SELECT count(*) FROM relations').fetchone()[0]
+            d = cursor.execute('SELECT avg(weight) FROM entities').fetchone()[0] or 0
+            return {'entities': e, 'relations': r, 'density': d}
         except:
             return {'entities': 0, 'relations': 0, 'density': 0}
-        return {'entities': e_count, 'relations': r_count, 'density': avg_weight}

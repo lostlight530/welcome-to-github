@@ -1,68 +1,42 @@
-name: Brain Evolution Protocol
+name: 🧠 NEXUS CORTEX Evolution
 
 on:
   schedule:
-    # Run daily at midnight UTC
-    - cron: '0 0 * * *'
+    - cron: '0 22 * * *' # Daily at 22:00 UTC (6:00 AM CST)
   workflow_dispatch:
 
 jobs:
-  daily-evolution:
+  evolve:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
+    - name: Checkout Cortex
+      uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-          cache: ''
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
 
-      - name: Execute Cortex OODA Loop
-        id: evolve
-        run: |
-          # 1. Sensory Phase: Stateful Radar
-          python docs/brain/harvester.py
+    - name: Install Dependencies (Minimalist)
+      run: |
+        # Zero-dependency philosophy: Only using standard library where possible.
+        # If external tools are needed later, add here.
+        echo "No heavy dependencies required."
 
-          # 2. Cognitive Phase: Transitive Inference & Decay
-          python docs/brain/nexus.py evolve
+    - name: 🧠 Reconstruct Cortex (Rehydrate Memory)
+      run: |
+        # Restore the binary brain from text source-of-truth
+        python docs/brain/nexus.py rebuild
 
-          # 3. Housekeeping: Archive processed inputs & clean cache
-          python docs/brain/nexus.py archive
-          python docs/brain/nexus.py clean
+    - name: 🧬 Run Evolution Cycle (Harvest -> Dream -> Plan)
+      run: |
+        python docs/brain/nexus.py evolve
 
-          # 4. PR Metadata
-          echo "REPORT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.PAT_TOKEN }}
-          commit-message: "feat(brain): biological neural evolution for ${{ env.REPORT_DATE }}"
-          title: "🧠 Cortex Evolution: ${{ env.REPORT_DATE }}"
-          body: |
-            ## 🧬 Cognitive Evolution Report
-
-            **Date**: ${{ env.REPORT_DATE }}
-            **Agent**: Cortex Automation (OODA Loop)
-
-            The daily biological evolution cycle has completed.
-
-            ### 📡 Senses (Harvester)
-            - Scanned key ecosystem repositories.
-            - Updated Velocity Heatmaps in `.harvester_state.json`.
-
-            ### 🧠 Cortex (Mind)
-            - **Memory Decay**: Applied exponential decay to unused synaptic weights.
-            - **Intuition**: Incubated transitive hypotheses (A -> B -> C).
-            - **Synthesis**: Auto-generated the daily `scholar-synthesis` report.
-
-            > "Evolution is not a choice, it's a protocol."
-          branch: "brain-evolution/harvest-${{ env.REPORT_DATE }}"
-          base: "main"
-          delete-branch: true
+    - name: Commit Evolution Artifacts
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "🧬 evolution: memory update & mission generation [skip ci]"
+        file_pattern: "docs/brain/memories/*.md docs/brain/inputs/*.json docs/brain/inputs/archive/**/*.md docs/brain/knowledge/**/*.jsonl"

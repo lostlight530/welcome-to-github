@@ -1,0 +1,4 @@
+{"id": "npu-edge", "type": "hardware", "name": "NPU (Neural Processing Unit)", "desc": "Dedicated edge AI accelerator."}
+{"id": "cuda-backend", "type": "hardware", "name": "CUDA Backend", "desc": "NVIDIA GPU acceleration layer."}
+{"id": "rtx-blackwell", "type": "hardware", "name": "RTX Blackwell (SM120)", "desc": "Next-generation NVIDIA GPU architecture optimized for MoE."}
+{"id": "sm120-blackwell", "type": "hardware", "name": "RTX Blackwell (SM120)", "desc": "NVIDIA Blackwell GPU Architecture."}
