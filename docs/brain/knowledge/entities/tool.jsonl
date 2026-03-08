@@ -1,0 +1,4 @@
+{"id": "dify", "type": "tool", "name": "Dify", "desc": "LLM App Development Platform."}
+{"id": "ollama", "type": "tool", "name": "Ollama", "desc": "Get up and running with Llama 3."}
+{"id": "open-webui", "type": "tool", "name": "Open WebUI", "desc": "User-friendly AI Interface."}
+{"id": "markitdown", "type": "tool", "name": "Microsoft MarkItDown (PDF-to-MD)", "desc": "Tool for converting PDF to Markdown."}
