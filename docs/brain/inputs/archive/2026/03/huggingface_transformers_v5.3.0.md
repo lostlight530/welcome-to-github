@@ -1,7 +1,7 @@
 # ℹ️ Intel: huggingface/transformers v5.3.0
 > Source: GitHub Releases
-> Date: 2026-03-04T17:42:16Z
-
+> Date: 2026-03-07T13:10:27.550922
+> **Analysis**: 🏷️ Edge-Ready ⚠️ Breaking-Change
 
 ## 📝 Summary
 v5.3.0
@@ -31,9 +31,4 @@ VibeVoice ASR is an automatic speech recognition model from Microsoft that combi
 
 <img width="799" height="497" alt="image" src="https://github.com/user-attachments/assets/1e486803-1b68-496b-aa67-4c3f2055fbeb" />
 
-TimesFM 2.5 is a pretrained time-series foundation model that uses a decoder-only attention architecture with input patching for forecast... (truncated)
-
-## 🤖 Cognitive Analysis Required
-- [ ] Is this a major version update? (False)
-- [ ] Does it conflict with existing 'tech_stack' nodes?
-- [ ] Action: Run `nexus.py add entity ...` or `nexus.py connect ...` to integrate.
+TimesFM 2.5 is a pretrained time-series foundation model that uses a decoder-only attention architecture with input patching for forecast...
