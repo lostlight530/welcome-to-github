@@ -37,4 +37,5 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "🧬 evolution: memory update & mission generation [skip ci]"
-        file_pattern: "docs/brain/memories/*.md docs/brain/inputs/*.json docs/brain/inputs/archive/**/*.md docs/brain/knowledge/**/*.jsonl"
+        # [FIX] Track ALL changes in inputs (deletions & archives) + memories + knowledge
+        file_pattern: "docs/brain/memories/** docs/brain/inputs/** docs/brain/knowledge/**"
