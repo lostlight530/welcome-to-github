@@ -1,15 +1,15 @@
 # NEXUS CORTEX Core Architecture & Operational Protocols
 ## System Philosophy & Identity (系统哲学与身份定位)
 
-**Core Philosophy (核心法则):** Adheres to "Quiet, Pragmatic, Engineering Excellence," asserting that "Small and Stable" is superior to "Large and Messy".
-> 遵循“安静、务实、工程卓越”，坚信“小而稳”胜过“大而乱”。
+**Core Philosophy (核心法则):** Adheres to "Quiet, Pragmatic, Engineering Excellence," asserting that "Small and Stable" is superior to "Large and Messy". The system operates under the **Phase III: Singularity** god-mode parameters of Omniscience, Cognition, and Unification.
+> 遵循“安静、务实、工程卓越”，坚信“小而稳”胜过“大而乱”。系统运行在 **Phase III: 奇点 (Singularity)** 上帝模式下，具有全知、认知与统一的特点。
 
 ---
 
 ## Ⅰ. Architecture & Workflow (工程化闭环)
 
-The system operates on an **"Autonomous Radar → OODA Loop → Human Decision → Append-Only Memory"** lifecycle.
-> 本仓库采用**“雷达索敌 → OODA 循环 → 人类裁决 → 追加记忆”**的工程化闭环。
+The system operates on a unified **"Ingest (Omniscience) → Ponder (Cognition) → Harvest (Observation) → Human Decision → Append-Only Memory"** lifecycle.
+> 本仓库采用统一的**“摄入(全知) → 思考(认知) → 采集(观察) → 人类裁决 → 追加记忆”**的工程化闭环。
 
 All Agents (including Jules) must prioritize: **Auditability, Restraint, Zero-Dependency, and Human-in-the-loop**.
 > 任何 Agent 必须优先保证：**可审计、克制、零依赖、人在环**。
@@ -39,25 +39,24 @@ All Agents (including Jules) must prioritize: **Auditability, Restraint, Zero-De
 
 ## Ⅳ. Intelligence & Senses (情报与感知)
 
-- 📡 **Facts (事实基准)**: Must be sourced from official documentation, release notes, or repositories (via `harvester.py`), utilizing multi-dimensional **Architect Filters** (Edge-Ready, Breaking-Change, Agent-Protocol). *(必须通过雷达从官方源获取事实)*
-- 🛡️ **Signal-to-Noise (信噪比控制)**: Harvester strictly checks ETags/states to avoid fetching duplicate or stagnant data (Zero Inbox Policy). *(严格检查 ETag，拒绝重复噪音)*
-- 💡 **Epiphany Engine (顿悟引擎)**: The system actively combats entropy by pairing disconnected entities and prompting the Architect to find hidden synergies via transitive inference (`A -> B -> C`). *(主动配对未连接实体，促使顿悟)*
-- 🧠 **Synaptic Associative Search (图增强检索)**: The `cortex.py` engine merges FTS5 literal text matching with 1-Hop graph associative retrieval. This provides the system with stateful memory and deduction capabilities. *(通过 FTS5 和单跳图谱增强检索提供状态化记忆)*
+- 👁️ **Omniscience (全知之眼)**: `scholar.py` deep scans internal project files using standard library parsers (AST, re) to extract functions, classes, and markdown structures into graph entities. *(使用 AST 扫描内部代码库，了解自身项目架构。)*
+- 🤔 **Cognition (深度思考)**: `reason.py` infers logical connections, detecting orphaned concepts, circular logic, and implicit bridging via transitive dependencies. *(图论深度推理系统，寻找隐性依赖和孤立节点。)*
+- 📡 **Facts (事实基准)**: External signals sourced from official documentation via `harvester.py`, leveraging Architect Filters. *(外部事实通过雷达进行严格过滤和抓取。)*
 
 ---
 
 ## Ⅴ. System Best Practices (系统最佳实践)
 
-1. 🗑️ **Garbage Collection (垃圾回收)**: "Orphan Nodes Must Die." Entities with 0 relations after multiple evolution cycles and low weights must be physically pruned to prevent database bloat. Protect `.harvester_state.json` at all times. *(清理孤儿节点以防止数据库膨胀)*
-2. 💎 **Crystallization (知识结晶)**: Fragmented raw intel (`inputs/`) must be routinely manually or semi-automatically crystallized into permanent `Entity` nodes via `nexus.py add entity`. *(日常将碎片情报结晶化为永久实体)*
-3. 🦅 **Stay Hungry (保持饥饿)**: Expand sensory inputs using strictly Zero-Dependency Python standard libraries. Focus heavily on stateful, multi-actor Agent systems and Edge AI integration paradigms (e.g., MCP). *(使用零依赖库扩展感知，聚焦端侧 AI)*
-4. ⚡ **Trust Intuition (相信直觉)**: Actively execute `nexus.py connect` when the system proposes "Subconscious Intuitions" in `MISSION_ACTIVE.md` to reinforce reasoning confidence. *(积极执行系统推演出的潜意识连接)*
+1. 🗑️ **Garbage Collection (垃圾回收)**: "Orphan Nodes Must Die." Handled automatically or identified during the Ponder cycle. Protect `.harvester_state.json` at all times. *(清理孤儿节点，防止内存膨胀，保护采集状态。)*
+2. 💎 **Crystallization (知识结晶)**: Utilize `nexus.py add` to formalize intelligence briefs into persistent graph structures. *(将情报通过 CLI 结晶为持续的知识图谱。)*
+3. 🦅 **Stay Hungry (保持饥饿)**: Focus heavily on multi-actor Agent systems and Edge AI (e.g., MCP) integrating through unified life-cycle actions (`nexus-life-cycle.yml`). *(保持对 Edge AI 生态的敏感与探索。)*
+4. ⚡ **Trust Intuition (相信直觉)**: Actively execute `nexus.py connect` when the Ponder engine uncovers subconscious inferences in the knowledge base. *(相信图谱推理出的连接暗示。)*
 
 ---
 
 ## Ⅵ. Interface (交互接口)
 
-- 💻 **CLI**: `docs/brain/nexus.py` is the Central Nervous System. *(中央神经系统命令接口)*
-- 🔌 **MCP**: `docs/brain/nexus_mcp.py` exposes the stateful graph to external LLMs/IDEs via the Model Context Protocol. *(通过模型上下文协议暴露图谱)*
+- 💻 **CLI**: `docs/brain/nexus.py` is the unified Central Nervous System that handles Evolve, Harvest, Ingest, and Ponder. *(处理各种功能的统一命令行接口)*
+- 🔌 **MCP**: `docs/brain/nexus_mcp.py` exposes the graph to external LLMs/IDEs. *(为外部 LLM 和工具暴露的图谱接口)*
 
 > **"Small and Stable. Quiet and Pragmatic."**

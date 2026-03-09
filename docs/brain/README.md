@@ -3,38 +3,37 @@
 > **"The digital brain of the lostlight-portal ecosystem."**
 > *(Lostlight-portal 生态系统的数字大脑。)*
 
-This directory houses a **Stateful, Append-Only Knowledge Graph** designed to evolve autonomously through recursive learning, multi-dimensional foraging, and Architect supervision.
-> 本目录包含一个**状态化、仅追加写入的知识图谱**，旨在通过递归学习、多维感知和架构师监督实现自主进化。
+This directory houses a **Stateful, Append-Only Knowledge Graph** designed to evolve autonomously through recursive learning, multi-dimensional foraging, and Architect supervision. Now upgraded to **Phase III: Singularity**, it features Omniscience (Deep AST Codebase Ingestion) and Cognition (Graph Inference & Deep Pondering).
+> 本目录包含一个**状态化、仅追加写入的知识图谱**，旨在通过递归学习、多维感知和架构师监督实现自主进化。现已升级至 **Phase III: Singularity (奇点)**，具备全知（深度代码库 AST 扫描与结构解析）与认知（图谱推理与深度思考）能力。
 
 ---
 
 ## Ⅰ. Architecture (系统架构)
 
-The system mimics a biological brain with four core layers:
-> 系统模仿生物大脑，分为四个核心层：
+The system mimics a biological brain with core integrated layers:
+> 系统模仿生物大脑，分为以下核心层：
 
 1. 🗄️ **Memory (Storage / 记忆层)**
    - **SQLite Database (`cortex.db`)**: Centralized storage utilizing biological "Memory Half-Life" (Synaptic Potentiation/Depression). Supersedes legacy Append-Only JSONL.
      *(采用生物学“记忆半衰期”和突触可塑性的中心化数据库，替代了过时的追加式 JSONL 存储。)*
    - **Memories**:
      - `memories/MISSION_ACTIVE.md`: The Architect's Daily Brief and cognitive focus. *(架构师每日简报与当前认知焦点)*
-     - `memories/archive/`: History of past missions. *(历史任务归档)*
 
 2. ⚙️ **Cortex (Engine / 皮层引擎)**
    - `cortex.py`: The core engine driving FTS5 full-text search and **Synaptic Associative Search (Graph-Augmented Retrieval)**. Acts as the "Hippocampus" for retrieval, inferencing, and dynamic weight modulation.
-     *(核心引擎，驱动 FTS5 全文搜索与图谱增强的**突触联想搜索**。充当“海马体”，负责检索、推理和动态权重调节。)*
+     *(核心引擎，驱动 FTS5 全文搜索与图谱增强的**突触联想搜索**。充当“海马体”。)*
 
-3. 🔌 **Nexus (Interface / 神经中枢)**
-   - `nexus.py` & `nexus_mcp.py`: The unified Command Line Interface (CLI) and Model Context Protocol Server for all brain operations. Acts as the "Central Nervous System".
-     *(所有大脑操作的统一命令行接口与 MCP 服务端。充当“中央神经系统”。)*
+3. 👁️ **Scholar (Omniscience / 全知之眼)**
+   - `scholar.py`: Deeply parses the repository using AST (for Python) and structure parsers (for Markdown), writing local project understanding directly into the graph.
+     *(深度扫描仓库，使用 AST 解析 Python 代码，提取 Markdown 结构，将对自身项目的理解直接写入知识图谱。)*
 
-4. 🧬 **Evolution (Orchestration / 进化编排)**
-   - `evolution.py` & `harvester.py`: The executive function that runs the **OODA Loop** with multi-dimensional Architect Filters:
-     *(带有架构师滤镜执行 **OODA 循环** 的执行功能：)*
-     1. **Observe (观察)**: Harvester fetches Edge-Ready and Agent-Protocol signals.
-     2. **Orient (调整)**: Analyze graph entropy and incubate transitive intuitions.
-     3. **Decide (决策)**: Generate new `MISSION_ACTIVE.md` Architect's Brief.
-     4. **Act (行动)**: Architect acts on deep work suggestions.
+4. 🧠 **Reason (Cognition / 额叶皮层)**
+   - `reason.py`: The deep thinking engine that analyzes the graph for isolated nodes (orphans), infinite loops, and hidden transitive bridges (`A -> B -> C`).
+     *(深度思考引擎，分析图谱中的孤立节点、无限循环以及隐性桥接关联。)*
+
+5. 🔌 **Nexus (Central Command / 中央神经系统)**
+   - `nexus.py` & `nexus_mcp.py`: The unified Command Line Interface (CLI) and Model Context Protocol Server integrating memory operations, harvesting, ingestion, and pondering.
+     *(统一命令行接口与 MCP 服务端，整合记忆操作、采集、解析与思考命令。)*
 
 ---
 
@@ -43,38 +42,34 @@ The system mimics a biological brain with four core layers:
 All operations are performed via `nexus.py`.
 > 所有操作均通过 `nexus.py` 执行。
 
-### 1. Observe (Read / 观察)
+### 1. Evolve & Ponder (进化与思考)
+```bash
+# Ingest internal codebase mapping via AST (全知：摄入内部代码结构)
+python docs/brain/nexus.py ingest
+
+# Deep ponder the graph for anomalies & hidden bridges (认知：深度思考与推理)
+python docs/brain/nexus.py ponder
+
+# Run Daily Evolution Cycle (运行每日外部采集与进化循环)
+python docs/brain/nexus.py evolve
+```
+
+### 2. Observe (Read / 观察)
 ```bash
 # Check Brain Health & Entropy (检查大脑健康与熵值)
 python docs/brain/nexus.py status
 
 # Search Concepts via Synaptic Associative Search (图增强检索 / 联想匹配)
 python docs/brain/nexus.py search "android"
-
-# Check Subconscious Intuitions (查看潜意识推演)
-python docs/brain/nexus.py intuition
 ```
 
-### 2. Evolve (Write / 进化)
-```bash
-# Run Daily Evolution Cycle (运行每日进化循环)
-python docs/brain/nexus.py evolve
-# -> Updates docs/brain/memories/MISSION_ACTIVE.md
-```
-
-### 3. Ingest (Action / 摄入)
-```bash
-# Add New Concept (添加新概念)
-python docs/brain/nexus.py add entity --id "rag" --type "concept" --name "RAG" --desc "Retrieval Augmented Generation"
-
-# Connect Concepts (建立图谱连接)
-python docs/brain/nexus.py connect "rag" "improves" "llm" --desc "arXiv"
-```
-
-### 4. Clean (Maintenance / 清理)
+### 3. Clean & Restore (清理与恢复)
 ```bash
 # Clear Temporary Cache Targets (清除临时缓存，保护状态文件)
 python docs/brain/nexus.py clean
+
+# Rebuild database from JSONL ledger (从文本账本重建内存库)
+python docs/brain/nexus.py rebuild
 ```
 
 ---
@@ -86,14 +81,12 @@ See [SCHEMA.md](./SCHEMA.md) for the "Gene Code" of this system.
 
 - 🚫 **Rule #1**: Never delete. Only append or deprecate. *(永不删除，只追加或标记废弃。)*
 - 🔗 **Rule #2**: All relations must point to existing entities. *(所有关系必须指向已存在的实体。)*
-- 📜 **Rule #3**: Evolution must be documented in Missions and ADRs. *(架构进化必须记录在任务日志和 ADR 中。)*
 
 ---
 
 ## Ⅳ. Automation (CI/CD 自动化)
 
-The brain is wired directly into GitHub Actions:
-> 大脑已直接接入 GitHub Actions 生态：
+The brain is wired directly into GitHub Actions with a **Unified Lifecycle**:
+> 大脑通过**统一生命周期**接入 GitHub Actions 自动化：
 
-- 🛡️ **`brain-integrity.yml`**: Validates every commit using `nexus status` and MCP health checks. *(每次提交验证大脑完整性与 MCP 存活状态。)*
-- ⏰ **`brain-evolution.yml`**: Runs daily to trigger `harvester`, `nexus clean`, and `nexus evolve`. *(每日定时触发雷达采集、清理与进化循环。)*
+- 🧬 **`nexus-life-cycle.yml`**: A nightly heartbeat that rebuilds memory, ingests internal state (Omniscience), ponders deep logic (Cognition), and evolves strategy. *(每晚运行的心跳：重建记忆、摄入内部状态、深度推理并完成进化。)*

@@ -186,3 +186,19 @@
 {"src": "philosophy_zero_dependency", "relation": "optimizes", "dst": "concept_llm_context_window", "desc": "AI can hold entire API in context without external docs"}
 {"src": "philosophy_zero_dependency", "relation": "prevents", "dst": "risk_supply_chain_attack", "desc": "Immune to left-pad incidents"}
 {"src": "philosophy_zero_dependency", "relation": "guides", "dst": "project_nexus_cortex", "desc": ""}
+{"src": "file_docs_brain_README_md", "relation": "documents", "dst": "concept_1_evolve__ponder_进化与思考", "desc": ""}
+{"src": "file_docs_brain_README_md", "relation": "documents", "dst": "concept_ingest_internal_codebase_mapping_via_ast_全知摄入内部代码结构", "desc": ""}
+{"src": "file_docs_brain_README_md", "relation": "documents", "dst": "concept_deep_ponder_the_graph_for_anomalies__hidden_bridges_", "desc": ""}
+{"src": "file_docs_brain_README_md", "relation": "documents", "dst": "concept_run_daily_evolution_cycle_运行每日外部采集与进化循环", "desc": ""}
+{"src": "file_docs_brain_README_md", "relation": "documents", "dst": "concept_2_observe_read__观察", "desc": ""}
+{"src": "file_docs_brain_README_md", "relation": "documents", "dst": "concept_3_clean__restore_清理与恢复", "desc": ""}
+{"src": "file_docs_brain_README_md", "relation": "documents", "dst": "concept_rebuild_database_from_jsonl_ledger_从文本账本重建内存库", "desc": ""}
+{"src": "file_docs_brain_AGENTS_md", "relation": "documents", "dst": "concept_nexus_cortex_core_architecture__operational_protocol", "desc": ""}
+{"src": "file_docs_brain_AGENTS_md", "relation": "documents", "dst": "concept_system_philosophy__identity_系统哲学与身份定位", "desc": ""}
+{"src": "file_docs_brain_SCHEMA_md", "relation": "documents", "dst": "concept_3_cognitive_immune__structure_system_认知免疫与结构关系类型", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "class_ReasoningEngine", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func___init__", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func_ponder", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__find_orphans", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__detect_cycles", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__find_bridges", "desc": ""}
