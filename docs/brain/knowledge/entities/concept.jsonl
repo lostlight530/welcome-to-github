@@ -67,3 +67,18 @@
 {"id": "concept_nexus_cortex_core_architecture__operational_protocol", "type": "concept", "name": "NEXUS CORTEX Core Architecture & Operational Protocols", "desc": "Section in AGENTS.md"}
 {"id": "concept_system_philosophy__identity_系统哲学与身份定位", "type": "concept", "name": "System Philosophy & Identity (系统哲学与身份定位)", "desc": "Section in AGENTS.md"}
 {"id": "concept_3_cognitive_immune__structure_system_认知免疫与结构关系类型", "type": "concept", "name": "3. Cognitive Immune & Structure System (认知免疫与结构关系类型)", "desc": "Section in SCHEMA.md"}
+{"id": "mcp-server", "type": "concept", "name": "MCP Server", "desc": "Provides context, tools, and prompts to clients securely."}
+{"id": "mcp-client", "type": "concept", "name": "MCP Client", "desc": "Maintains 1:1 connections with servers via Host apps like Claude Desktop."}
+{"id": "mcp-resources", "type": "concept", "name": "MCP Resources", "desc": "Data context exposed by servers (e.g., files, APIs, databases) using URIs."}
+{"id": "mcp-tools", "type": "concept", "name": "MCP Tools", "desc": "Executable functions exposed by servers, modeled on JSON Schema."}
+{"id": "react-agent", "type": "concept", "name": "ReAct Agent", "desc": "Agent reasoning framework combining Reasoning and Acting loops."}
+{"id": "memory-arch", "type": "concept", "name": "Agent Memory Architecture", "desc": "Stateful graph, RAG, and Ephemeral/Persistent memories."}
+{"id": "function-calling", "type": "concept", "name": "Function Calling", "desc": "LLM capability to output JSON matching a requested schema to execute tools."}
+{"id": "structured-output", "type": "concept", "name": "Structured Output", "desc": "Enforcing strict schema adherence for LLM responses."}
+{"id": "dynamic-skills", "type": "concept", "name": "Dynamic Skill Matrix", "desc": "Loading and unloading tools/skills at runtime based on task context."}
+{"id": "prompt-engineering", "type": "concept", "name": "Prompt Engineering", "desc": "Designing inputs to guide LLMs toward desired behaviors or outputs."}
+{"id": "context-engineering", "type": "concept", "name": "Context Engineering", "desc": "Dynamically constructing and managing the context window with relevant data."}
+{"id": "context-window", "type": "concept", "name": "Context Window", "desc": "The maximum token capacity an LLM can process in a single prompt."}
+{"id": "chain-of-thought", "type": "concept", "name": "Chain of Thought (CoT)", "desc": "Prompting LLMs to output intermediate reasoning steps before answering."}
+{"id": "few-shot-learning", "type": "concept", "name": "Few-Shot Prompting", "desc": "Providing a few examples within the prompt to guide LLM formatting and reasoning."}
+{"id": "rag", "type": "concept", "name": "Retrieval-Augmented Generation", "desc": "Fetching external knowledge bases to augment the LLM's context window before generation."}

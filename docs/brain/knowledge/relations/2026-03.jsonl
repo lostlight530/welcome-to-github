@@ -205,3 +205,21 @@
 {"src": "playwright-mcp", "relation": "implements", "dst": "mcp", "desc": "Browser automation via MCP"}
 {"src": "mcp-for-beginners", "relation": "teaches", "dst": "mcp", "desc": "Microsoft beginner MCP course"}
 {"src": "playwright-mcp", "relation": "enables", "dst": "agent", "desc": "Enables LLM browser interaction"}
+{"src": "mcp-server", "relation": "exposes", "dst": "mcp-resources", "desc": "Servers provide data."}
+{"src": "mcp-server", "relation": "exposes", "dst": "mcp-tools", "desc": "Servers provide executable functions."}
+{"src": "mcp-client", "relation": "connects_to", "dst": "mcp-server", "desc": "Clients request data and tool execution."}
+{"src": "mcp-tools", "relation": "relies_on", "dst": "function-calling", "desc": "MCP tools require LLMs to support function calling."}
+{"src": "function-calling", "relation": "requires", "dst": "structured-output", "desc": "Reliable tool execution needs structured schema adherence."}
+{"src": "react-agent", "relation": "utilizes", "dst": "mcp-tools", "desc": "Agents use tools in their Act phase."}
+{"src": "react-agent", "relation": "requires", "dst": "memory-arch", "desc": "Agents need state memory across ReAct loops."}
+{"src": "react-agent", "relation": "leverages", "dst": "dynamic-skills", "desc": "Agents dynamically load tools as needed."}
+{"src": "nexus", "relation": "implements", "dst": "memory-arch", "desc": "Cortex DB is a stateful append-only memory architecture."}
+{"src": "nexus", "relation": "acts_as", "dst": "mcp-server", "desc": "Nexus exposes its knowledge via MCP."}
+{"src": "prompt-engineering", "relation": "includes", "dst": "chain-of-thought", "desc": "CoT is a prompt engineering technique."}
+{"src": "prompt-engineering", "relation": "includes", "dst": "few-shot-learning", "desc": "Few-shot is a prompt engineering technique."}
+{"src": "context-engineering", "relation": "optimizes", "dst": "context-window", "desc": "Ensuring token limits are used efficiently with high-signal data."}
+{"src": "rag", "relation": "implements", "dst": "context-engineering", "desc": "RAG injects retrieved data to optimize context."}
+{"src": "mcp-server", "relation": "enables", "dst": "context-engineering", "desc": "MCP servers supply dynamic external context dynamically."}
+{"src": "rag", "relation": "supplements", "dst": "context-window", "desc": "Adding dynamic facts that aren't in the model weights."}
+{"src": "react-agent", "relation": "combines", "dst": "chain-of-thought", "desc": "Agents use CoT to plan actions (Thought -> Action -> Observation)."}
+{"src": "mcp-resources", "relation": "feeds", "dst": "rag", "desc": "Resources exposed by MCP can be used for RAG systems."}
