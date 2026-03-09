@@ -5,3 +5,4 @@
 {"id": "arch_pattern_on-device-llm_2", "type": "pattern", "name": "Delegate Acceleration", "desc": "Relies on delegate acceleration (NPU/DSP)."}
 {"id": "arch_pattern_on-device-llm_3", "type": "pattern", "name": "Privacy-First", "desc": "Architecture ensures no data leaves device."}
 {"id": "privacy-on-device", "type": "pattern", "name": "Privacy-First Architecture", "desc": "Data processing remains on device to ensure privacy."}
+{"id": "pattern_edge_first", "type": "pattern", "name": "Edge-First Architecture", "desc": "Critical UX paths run on-device; Cloud is treated as an enhancement, not a dependency."}

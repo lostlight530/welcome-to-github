@@ -175,3 +175,14 @@
 {"src": "file_docs_brain_mcp_demo_py", "relation": "defines", "dst": "func_get_current_time", "desc": ""}
 {"src": "file_docs_brain_mcp_demo_py", "relation": "defines", "dst": "func_add_entity", "desc": ""}
 {"src": "file_docs_brain_mcp_demo_py", "relation": "defines", "dst": "func_connect_entities", "desc": ""}
+{"src": "protocol_mcp", "relation": "defines_architecture", "dst": "mcp_host", "desc": ""}
+{"src": "mcp_host", "relation": "orchestrates", "dst": "mcp_client", "desc": ""}
+{"src": "mcp_client", "relation": "connects_via_transport", "dst": "mcp_server", "desc": "Uses Stdio (Local) or SSE (Remote)"}
+{"src": "pattern_edge_first", "relation": "guarantees", "dst": "concept_privacy", "desc": "Data stays in situ (on device)"}
+{"src": "pattern_edge_first", "relation": "eliminates", "dst": "concept_latency", "desc": "No network round-trip for inference"}
+{"src": "pattern_edge_first", "relation": "enables", "dst": "capability_offline", "desc": "Functions in air-gapped environments"}
+{"src": "pattern_edge_first", "relation": "implemented_by", "dst": "google-ai-edge_mediapipe_v0.10.32", "desc": ""}
+{"src": "pattern_edge_first", "relation": "implemented_by", "dst": "vllm-project_vllm_v0.17.0", "desc": ""}
+{"src": "philosophy_zero_dependency", "relation": "optimizes", "dst": "concept_llm_context_window", "desc": "AI can hold entire API in context without external docs"}
+{"src": "philosophy_zero_dependency", "relation": "prevents", "dst": "risk_supply_chain_attack", "desc": "Immune to left-pad incidents"}
+{"src": "philosophy_zero_dependency", "relation": "guides", "dst": "project_nexus_cortex", "desc": ""}
