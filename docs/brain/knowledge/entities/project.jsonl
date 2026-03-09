@@ -1,1 +1,3 @@
 {"id": "lostlight-portal", "type": "project", "name": "Lostlight Portal", "desc": "The root project and personal website."}
+{"id": "playwright-mcp", "type": "project", "name": "Playwright MCP", "desc": "Microsoft MCP server providing browser automation."}
+{"id": "mcp-for-beginners", "type": "project", "name": "MCP Curriculum", "desc": "Cross-language examples in .NET, Java, TS, JS, Rust, Python by Microsoft."}

@@ -202,3 +202,6 @@
 {"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__find_orphans", "desc": ""}
 {"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__detect_cycles", "desc": ""}
 {"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__find_bridges", "desc": ""}
+{"src": "playwright-mcp", "relation": "implements", "dst": "mcp", "desc": "Browser automation via MCP"}
+{"src": "mcp-for-beginners", "relation": "teaches", "dst": "mcp", "desc": "Microsoft beginner MCP course"}
+{"src": "playwright-mcp", "relation": "enables", "dst": "agent", "desc": "Enables LLM browser interaction"}
