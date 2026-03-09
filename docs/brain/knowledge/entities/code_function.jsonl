@@ -36,3 +36,7 @@
 {"id": "func_get_entropy_stats", "type": "code_function", "name": "get_entropy_stats", "desc": "Returns the current entropy report of the knowledge graph.\n返回知识图谱的当前熵值报告。"}
 {"id": "func_get_entropy_report", "type": "code_function", "name": "get_entropy_report", "desc": "Triggers an immediate analysis of the knowledge graph.\n触发对知识图谱的即时分析。"}
 {"id": "func_get_current_time", "type": "code_function", "name": "get_current_time", "desc": "Returns the current time in the specified timezone (default: UTC).\nFormat: ISO 8601 (YYYY-MM-DDTHH:M"}
+{"id": "func_ponder", "type": "code_function", "name": "ponder", "desc": "The Cognitive Loop: Analyzes the Knowledge Graph for patterns, \nrisks, and hidden connections."}
+{"id": "func__find_orphans", "type": "code_function", "name": "_find_orphans", "desc": "Python Function"}
+{"id": "func__detect_cycles", "type": "code_function", "name": "_detect_cycles", "desc": "Python Function"}
+{"id": "func__find_bridges", "type": "code_function", "name": "_find_bridges", "desc": "Python Function"}

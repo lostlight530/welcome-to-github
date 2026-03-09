@@ -4,3 +4,4 @@
 {"id": "class_Evolver", "type": "code_class", "name": "Evolver", "desc": "Python Class"}
 {"id": "class_Scholar", "type": "code_class", "name": "Scholar", "desc": "Python Class"}
 {"id": "class_KnowledgeFactory", "type": "code_class", "name": "KnowledgeFactory", "desc": "Python Class"}
+{"id": "class_ReasoningEngine", "type": "code_class", "name": "ReasoningEngine", "desc": "Python Class"}

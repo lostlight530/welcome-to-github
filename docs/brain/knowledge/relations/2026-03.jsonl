@@ -186,3 +186,12 @@
 {"src": "philosophy_zero_dependency", "relation": "optimizes", "dst": "concept_llm_context_window", "desc": "AI can hold entire API in context without external docs"}
 {"src": "philosophy_zero_dependency", "relation": "prevents", "dst": "risk_supply_chain_attack", "desc": "Immune to left-pad incidents"}
 {"src": "philosophy_zero_dependency", "relation": "guides", "dst": "project_nexus_cortex", "desc": ""}
+{"src": "file_docs_brain_AGENTS_md", "relation": "documents", "dst": "concept_nexus_cortex_core_architecture__operational_protocol", "desc": ""}
+{"src": "file_docs_brain_AGENTS_md", "relation": "documents", "dst": "concept_system_philosophy__identity_系统哲学与身份定位", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "class_ReasoningEngine", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func___init__", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func_ponder", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__find_orphans", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__detect_cycles", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__find_bridges", "desc": ""}
+{"src": "file__pytest_cache_README_md", "relation": "documents", "dst": "concept_pytest_cache_directory", "desc": ""}
