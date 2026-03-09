@@ -14,7 +14,7 @@ The system mimics a biological brain with four core layers:
 > 系统模仿生物大脑，分为四个核心层：
 
 1. 🗄️ **Memory (Storage / 记忆层)**
-   - **SQLite Database (`cortex.db`)**: Centralized storage utilizing biological "Memory Half-Life" (Synaptic Potentiation/Depression). Supersedes legacy ADR-0001 Append-Only JSONL.
+   - **SQLite Database (`cortex.db`)**: Centralized storage utilizing biological "Memory Half-Life" (Synaptic Potentiation/Depression). Supersedes legacy Append-Only JSONL.
      *(采用生物学“记忆半衰期”和突触可塑性的中心化数据库，替代了过时的追加式 JSONL 存储。)*
    - **Memories**:
      - `memories/MISSION_ACTIVE.md`: The Architect's Daily Brief and cognitive focus. *(架构师每日简报与当前认知焦点)*
@@ -68,7 +68,7 @@ python docs/brain/nexus.py evolve
 python docs/brain/nexus.py add entity --id "rag" --type "concept" --name "RAG" --desc "Retrieval Augmented Generation"
 
 # Connect Concepts (建立图谱连接)
-python docs/brain/nexus.py connect "rag" "improves" "llm" --desc "arXiv:2301.00000"
+python docs/brain/nexus.py connect "rag" "improves" "llm" --desc "arXiv"
 ```
 
 ### 4. Clean (Maintenance / 清理)
