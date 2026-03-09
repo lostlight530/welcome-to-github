@@ -1,12 +1,10 @@
 # 🛡️ NEXUS CORTEX: Architect's Daily Brief
-> **Date**: 2026-03-08 | **Entropy**: 1.2065
+> **Date**: 2026-03-09 | **Entropy**: 1.0320
 
 ## 🚨 昨夜今晨 (System Health)
 - **Status**: 🟢 **ONLINE**
 
 ## 🧠 架构情报 (Architecture)
-- **ModelEngine-Group_nexent_v1.8.0.2.md**
-  - > **Analysis**: 🔗 Agent-Protocol
 - **ModelEngine-Group_nexent_v1.8.0.1-hotfix.md**
 - **iflytek_astron-agent_v1.0.2.md**
   - > **Analysis**: ⚠️ Breaking-Change
@@ -34,3 +32,6 @@
 ## 🔍 待处理熵值 (Entropy Targets)
 - **JAX Metal (Apple Silicon/Edge)** (jax-metal): Weight 1.99
 - **EuroBERT (Bidirectional Llama)** (eurobert): Weight 1.99
+- **requirements.txt** (file_requirements_txt): Weight 0.95
+- **index.html** (file_index_html): Weight 0.95
+- **postcss.config.js** (file_postcss_config_js): Weight 0.95
