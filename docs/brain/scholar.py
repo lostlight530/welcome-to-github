@@ -5,6 +5,7 @@ import datetime
 import json
 from pathlib import Path
 
+# Try to connect to the Mind
 try:
     from cortex import Cortex
 except ImportError:
@@ -17,32 +18,37 @@ class Scholar:
         self.db_path = self.brain_path / "cortex.db"
         self.config_path = self.brain_path / "brain_config.json"
 
-        # 连接大脑
+        # Connect to Cortex (The Mind)
         self.cortex = Cortex(self.db_path) if self.db_path.parent.exists() else None
 
-        # 加载配置 (保留这一步，为了未来的个性化适配)
+        # Load Config (For future personalization)
         self.config = self._load_config()
 
-        # 忽略列表
-        self.ignore_dirs = {'.git', '__pycache__', 'node_modules', 'cortex.db', 'memories', 'inputs', 'archaeology', 'venv', '.idea', '.vscode'}
-        self.ignore_files = {'.DS_Store', 'cortex.db', 'cortex.db-journal', '.gitignore', 'package-lock.json', 'yarn.lock'}
+        # Ignored patterns (Noise Filter)
+        self.ignore_dirs = {
+            '.git', '__pycache__', 'node_modules', 'cortex.db', 'memories',
+            'inputs', 'archaeology', 'venv', '.idea', '.vscode', 'site-packages'
+        }
+        self.ignore_files = {
+            '.DS_Store', 'cortex.db', 'cortex.db-journal', '.gitignore',
+            'package-lock.json', 'yarn.lock', 'requirements.txt'
+        }
 
     def _load_config(self):
         if self.config_path.exists():
             try:
-                with open(self.config_path, 'r') as f:
-                    return json.load(f)
-            except:
-                pass
+                with open(self.config_path, 'r') as f: return json.load(f)
+            except: pass
         return {}
 
     def ingest_repository(self, root_path):
-        """[Omniscience Protocol] 全量代码库摄入"""
+        """[Omniscience Protocol] Deep scan of the codebase."""
         print(f"🧠 Scholar starting deep scan of: {root_path}")
         root = Path(root_path)
         count = 0
 
         for dirpath, dirnames, filenames in os.walk(root):
+            # Prune ignored directories
             dirnames[:] = [d for d in dirnames if d not in self.ignore_dirs]
 
             for file in filenames:
@@ -61,7 +67,7 @@ class Scholar:
         rel_path = filepath.relative_to(root)
         file_id = f"file_{str(rel_path).replace('/', '_').replace('.', '_')}"
 
-        # 1. 注册文件节点
+        # 1. Register File Node
         if self.cortex:
             self.cortex.add_entity(
                 id=file_id,
@@ -71,14 +77,14 @@ class Scholar:
                 save_to_disk=True
             )
 
-        # 2. 深度分析
+        # 2. Deep Content Analysis
         if filepath.suffix == '.py':
             self._analyze_python_ast(filepath, file_id)
         elif filepath.suffix == '.md':
             self._analyze_markdown_structure(filepath, file_id)
 
     def _analyze_python_ast(self, filepath, file_id):
-        """AST 代码透视"""
+        """Use Python's native AST to understand code structure."""
         if not self.cortex: return
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
@@ -86,15 +92,18 @@ class Scholar:
             tree = ast.parse(content)
 
             for node in ast.walk(tree):
+                # Classes
                 if isinstance(node, ast.ClassDef):
                     class_id = f"class_{node.name}"
                     desc = ast.get_docstring(node) or "Python Class"
                     self.cortex.add_entity(class_id, "code_class", node.name, desc[:100], save_to_disk=True)
                     self.cortex.connect_entities(file_id, "defines", class_id, save_to_disk=True)
+                    # Inheritance
                     for base in node.bases:
                         if isinstance(base, ast.Name):
                             self.cortex.connect_entities(class_id, "inherits_from", f"class_{base.id}", save_to_disk=True)
 
+                # Functions
                 elif isinstance(node, ast.FunctionDef):
                     func_id = f"func_{node.name}"
                     desc = ast.get_docstring(node) or "Python Function"
@@ -104,7 +113,7 @@ class Scholar:
             pass
 
     def _analyze_markdown_structure(self, filepath, file_id):
-        """Markdown 知识提取"""
+        """Extract headers as knowledge nodes."""
         if not self.cortex: return
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
@@ -121,10 +130,9 @@ class Scholar:
             pass
 
     def learn(self, input_file):
-        """单文件学习接口"""
+        """Legacy single file learning (kept for compatibility)"""
         input_path = Path(input_file)
         if not input_path.exists(): return None
-        # 这里的逻辑可以连接到未来的外部模型，或者只是简单的记录
         project_root = self.brain_path.parent.parent
         try:
             self._digest_file(project_root, input_path)

@@ -2,10 +2,10 @@
 
 ## Ⅰ. Architecture Decision Record (ADR / 架构决策记录)
 
-- **Title**: Biological Neural Engine & SQLite Cortex (生物神经网络与 SQLite 皮层引擎)
+- **Title**: Biological Neural Engine, SQLite Cortex & Singularity Pondering (生物神经网络、SQLite 皮层与奇点推理)
 - **Status**: Active (活跃)
-- **Decision (决策)**: Replaced fragmented `JSONL` with a centralized SQLite database (`cortex.db`) featuring FTS5 full-text search and Synaptic Plasticity (dynamic weight adjustments).
-  > **中文**: 将碎片化 `JSONL` 替换为支持 `FTS5` 全文搜索与突触可塑性（动态权重调整）的 SQLite 中心化数据库。
+- **Decision (决策)**: Phase III: Singularity extends the central SQLite cortex with self-codebase ingestion (Omniscience/AST) and deeper graph inferences (Cognition/Ponder). The legacy fragmented `JSONL` system is the immutable text ledger, while `cortex.db` manages the dynamic and inferable cognitive state.
+  > **中文**: Phase III 奇点升级为中心化 SQLite 皮层扩展了自我代码库摄入（全知/AST 解析）和深度图论推理（认知/思考）能力。传统的碎片化 `JSONL` 作为不可变文本账本，而 `cortex.db` 负责管理动态与可推理的认知状态。
 
 ---
 
@@ -18,7 +18,7 @@ Stored in the `entities` table within `cortex.db`. Each entity follows this sche
 ```json
 {
   "id": "unique-slug-id",            // Primary Key: 唯一标识符
-  "type": "tech|concept|project",    // Type: 类型分类（技术、概念、项目等）
+  "type": "tech|concept|project|code_file|code_class|code_function", // Type: 类型分类（包括代码解析出的类、函数等）
   "name": "Human Readable Name",     // Name: 可读名称
   "desc": "Short description.",      // Description: 简短描述
   "weight": 1.0,                     // Synaptic Weight: 神经权重 (>1.0 强化, <1.0 衰减)
@@ -35,7 +35,7 @@ Stored in the `relations` table within `cortex.db`. Each row defines a directed 
 ```json
 {
   "source": "source-entity-id",      // Source Node: 源实体 ID
-  "relation": "predicate-string",    // Predicate: 谓词 (e.g., uses, authored, deprecates)
+  "relation": "predicate-string",    // Predicate: 谓词 (e.g., uses, authored, deprecates, defines, inherits_from)
   "target": "destination-entity-id", // Target Node: 目标实体 ID
   "weight": 1.0,                     // Edge Strength: 权重（置信度或连接强度）
   "annotation": "Source of truth",   // Context: 注释或上下文来源（如 URL/Doc）
@@ -43,13 +43,15 @@ Stored in the `relations` table within `cortex.db`. Each row defines a directed 
 }
 ```
 
-### 3. Cognitive Immune System (认知免疫关系类型)
-Special relation types designed to maintain knowledge integrity:
-> 用于维护知识图谱完整性的特殊关系类型：
+### 3. Cognitive Immune & Structure System (认知免疫与结构关系类型)
+Special relation types designed to maintain knowledge integrity and model logic:
+> 用于维护知识图谱完整性和建模代码逻辑的特殊关系类型：
 
 - 💥 `conflicts_with`: Indicates a semantic or technical conflict (e.g., library incompatibility). *(存在语义或技术冲突。)*
 - ⚰️ `deprecates`: Indicates that the source entity supersedes or obsoletes the destination entity. *(源实体取代或废弃了目标实体。)*
 - 🛡️ `unaffected_by`: Explicitly states that the source entity is immune or unrelated to a vulnerability/issue in the destination entity. *(源实体免疫或不受目标实体漏洞影响。)*
+- 🧱 `defines`: Maps a file entity to a structure entity like a class, function, or markdown section. *(指示某个文件定义了类、函数等结构)*
+- 🧬 `inherits_from`: Used for class hierarchy tracking to empower transitive inference. *(用于类的继承层级追踪以支持传递推断)*
 
 ### 4. Inputs (原始输入层)
 - 📁 `inputs/*.md` and `inputs/archive/*/*.md`

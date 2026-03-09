@@ -60,3 +60,7 @@
 {"id": "file_src_scripts_translations_js", "type": "code_file", "name": "translations.js", "desc": "Source file at: src/scripts/translations.js"}
 {"id": "file_src_scripts_main_js", "type": "code_file", "name": "main.js", "desc": "Source file at: src/scripts/main.js"}
 {"id": "file_src_styles_main_css", "type": "code_file", "name": "main.css", "desc": "Source file at: src/styles/main.css"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py"}
+{"id": "file_docs_brain_knowledge_entities_philosophy_jsonl", "type": "code_file", "name": "philosophy.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/philosophy.jsonl"}
+{"id": "file_docs_brain_knowledge_entities_component_jsonl", "type": "code_file", "name": "component.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/component.jsonl"}
+{"id": "file__github_workflows_nexus-life-cycle_yml", "type": "code_file", "name": "nexus-life-cycle.yml", "desc": "Source file at: .github/workflows/nexus-life-cycle.yml"}
