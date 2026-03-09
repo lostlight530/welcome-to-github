@@ -1,0 +1,3 @@
+{"id": "mcp_host", "type": "component", "name": "MCP Host", "desc": "The AI application (e.g., Claude, IDE) that initiates connections."}
+{"id": "mcp_client", "type": "component", "name": "MCP Client", "desc": "The connector within the Host that speaks 1:1 with a Server."}
+{"id": "mcp_server", "type": "component", "name": "MCP Server", "desc": "Lightweight gateway exposing specific Resources, Prompts, or Tools."}

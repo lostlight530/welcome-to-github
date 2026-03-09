@@ -2,12 +2,10 @@
 
 ## Ⅰ. Architecture Decision Record (ADR / 架构决策记录)
 
-- **ID**: `ADR-0002`
 - **Title**: Biological Neural Engine & SQLite Cortex (生物神经网络与 SQLite 皮层引擎)
 - **Status**: Active (活跃)
 - **Decision (决策)**: Replaced fragmented `JSONL` with a centralized SQLite database (`cortex.db`) featuring FTS5 full-text search and Synaptic Plasticity (dynamic weight adjustments).
   > **中文**: 将碎片化 `JSONL` 替换为支持 `FTS5` 全文搜索与突触可塑性（动态权重调整）的 SQLite 中心化数据库。
-- **Deprecates (废弃)**: `ADR-0001`
 
 ---
 
@@ -49,11 +47,11 @@ Stored in the `relations` table within `cortex.db`. Each row defines a directed 
 Special relation types designed to maintain knowledge integrity:
 > 用于维护知识图谱完整性的特殊关系类型：
 
-- 💥 `conflicts_with`: Indicates a semantic or technical conflict (e.g., library incompatibility). (存在语义或技术冲突。)
-- ⚰️ `deprecates`: Indicates that the source entity supersedes or obsoletes the destination entity. (源实体取代或废弃了目标实体。)
-- 🛡️ `unaffected_by`: Explicitly states that the source entity is immune or unrelated to a vulnerability/issue in the destination entity. (源实体免疫或不受目标实体漏洞影响。)
+- 💥 `conflicts_with`: Indicates a semantic or technical conflict (e.g., library incompatibility). *(存在语义或技术冲突。)*
+- ⚰️ `deprecates`: Indicates that the source entity supersedes or obsoletes the destination entity. *(源实体取代或废弃了目标实体。)*
+- 🛡️ `unaffected_by`: Explicitly states that the source entity is immune or unrelated to a vulnerability/issue in the destination entity. *(源实体免疫或不受目标实体漏洞影响。)*
 
 ### 4. Inputs (原始输入层)
-- 📁 `inputs/*.md` and `inputs/archive/YYYY/MM/*.md`
+- 📁 `inputs/*.md` and `inputs/archive/*/*.md`
   Raw text or search results from the Harvester with Architect Filters applied. These files are **immutable** events.
   > 来自带有架构师滤镜雷达的原始文本或搜索结果。这些文件是**不可变**的事件快照。
