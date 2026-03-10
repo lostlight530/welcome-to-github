@@ -223,3 +223,7 @@
 {"src": "rag", "relation": "supplements", "dst": "context-window", "desc": "Adding dynamic facts that aren't in the model weights."}
 {"src": "react-agent", "relation": "combines", "dst": "chain-of-thought", "desc": "Agents use CoT to plan actions (Thought -> Action -> Observation)."}
 {"src": "mcp-resources", "relation": "feeds", "dst": "rag", "desc": "Resources exposed by MCP can be used for RAG systems."}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__self_reflect", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__generate_curiosity", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__query", "desc": ""}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func__generate_cognitive_report", "desc": ""}
