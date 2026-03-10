@@ -1,5 +1,5 @@
 # 🛡️ NEXUS CORTEX: Architect's Daily Brief
-> **Date**: 2026-03-10 | **Entropy**: 1.0776
+> **Date**: 2026-03-10 | **Entropy**: 1.0784
 
 ## 🚨 昨夜今晨 (System Health)
 - **Status**: 🟢 **ONLINE**
@@ -12,8 +12,8 @@
 - [ ] Block 2 hours.
 
 ## 🔍 待处理熵值 (Entropy Targets)
-- **JAX Metal (Apple Silicon/Edge)** (jax-metal): Weight 1.99
-- **EuroBERT (Bidirectional Llama)** (eurobert): Weight 1.99
-- **index.html** (file_index_html): Weight 1.04
-- **postcss.config.js** (file_postcss_config_js): Weight 1.04
 - **tailwind.config.js** (file_tailwind_config_js): Weight 1.04
+- **package.json** (file_package_json): Weight 1.04
+- **.editorconfig** (file__editorconfig): Weight 1.04
+- **LICENSE** (file_LICENSE): Weight 1.04
+- **__init__.py** (file_docs_brain___init___py): Weight 1.04

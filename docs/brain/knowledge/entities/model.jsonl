@@ -4,3 +4,4 @@
 {"id": "voxtral-realtime", "type": "model", "name": "VoxtralRealtime (Streaming ASR)", "desc": "Low-latency streaming ASR model."}
 {"id": "qwen3-5-moe-4bit", "type": "model", "name": "Qwen3.5 MoE (4-bit Mobile)", "desc": "Efficient 4-bit MoE model for mobile devices."}
 {"id": "eurobert", "type": "model", "name": "EuroBERT (Bidirectional Llama)", "desc": "Bidirectional transformer."}
+{"id": "eurobert", "type": "model", "name": "EuroBERT", "desc": "开源的顶级多语言编码器模型 (Encoder)。训练于 5 万亿 Token，专为 RAG、代码和数学推理优化。"}
