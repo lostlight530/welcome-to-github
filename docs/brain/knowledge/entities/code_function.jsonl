@@ -40,3 +40,6 @@
 {"id": "func__find_orphans", "type": "code_function", "name": "_find_orphans", "desc": "Python Function"}
 {"id": "func__detect_cycles", "type": "code_function", "name": "_detect_cycles", "desc": "Python Function"}
 {"id": "func__find_bridges", "type": "code_function", "name": "_find_bridges", "desc": "Python Function"}
+{"id": "func__self_reflect", "type": "code_function", "name": "_self_reflect", "desc": "Generate a diary-like self summary based on graph metrics."}
+{"id": "func__generate_curiosity", "type": "code_function", "name": "_generate_curiosity", "desc": "Find nodes with exactly 1 edge (Superficial Knowledge)"}
+{"id": "func__query", "type": "code_function", "name": "_query", "desc": "Python Function"}
