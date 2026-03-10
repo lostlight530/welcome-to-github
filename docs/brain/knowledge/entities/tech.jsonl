@@ -23,3 +23,4 @@
 {"id": "python", "type": "tech", "name": "Python", "desc": "Primary language for AI/ML and scripting."}
 {"id": "vertex-ai", "type": "tech", "name": "Google Vertex AI", "desc": "Unified AI platform on Google Cloud."}
 {"id": "mediapipe", "type": "tech", "name": "MediaPipe", "desc": "Cross-platform framework for building multimodal ML pipelines."}
+{"id": "jax-metal", "type": "tech", "name": "JAX Metal", "desc": "Apple 官方的 JAX 插件。利用 OpenXLA 将机器学习工作负载直接编译至 Apple Silicon GPU (原生 Metal 架构)。"}

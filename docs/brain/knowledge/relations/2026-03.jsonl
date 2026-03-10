@@ -227,3 +227,12 @@
 {"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__generate_curiosity", "desc": ""}
 {"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__query", "desc": ""}
 {"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func__generate_cognitive_report", "desc": ""}
+{"src": "file_index_html", "relation": "serves_as", "dst": "concept_frontend", "desc": "NEXUS 系统的可视化神经接口"}
+{"src": "file_postcss_config_js", "relation": "configures", "dst": "tech_tailwind", "desc": "负责前端样式的编译规则"}
+{"src": "tech_tailwind", "relation": "styles", "dst": "concept_frontend", "desc": ""}
+{"src": "jax-metal", "relation": "runs_on", "dst": "apple-silicon", "desc": "榨干 M 系列芯片的底层算力"}
+{"src": "jax-metal", "relation": "empowers", "dst": "concept_edge_ai", "desc": "实现真正的本地离线推理与训练"}
+{"src": "jax-metal", "relation": "alternative_to", "dst": "tech_cuda", "desc": "摆脱对 Nvidia 生态的绝对依赖"}
+{"src": "eurobert", "relation": "architecture", "dst": "concept_encoder", "desc": "双向理解，而非单向生成"}
+{"src": "eurobert", "relation": "optimized_for", "dst": "concept_rag", "desc": "知识图谱的绝佳向量化工具"}
+{"src": "eurobert", "relation": "differs_from", "dst": "concept_llm", "desc": "不同于 Llama 这种生成式 Decoder"}
