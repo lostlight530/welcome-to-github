@@ -5,6 +5,10 @@ import logging
 import re
 from pathlib import Path
 from cortex import Cortex
+try:
+    from reason import ReasoningEngine
+except ImportError:
+    pass
 
 logging.basicConfig(level=logging.INFO, format='[Evolution] %(message)s')
 
@@ -21,7 +25,7 @@ class Evolver:
         # 1. Sleep: Metabolize & Decay
         self.cortex.decay_memories()
 
-        # 2. Dream: Incubate Intuitions
+        # 2. Dream: Incubate Intuitions & Epistemic Curiosity
         intuitions = self._incubate_ideas()
 
         # 3. Orient: Scan Inputs
@@ -38,9 +42,34 @@ class Evolver:
         logging.info("Cycle Complete.")
 
     def _incubate_ideas(self):
-        # Placeholder for Transitive Inference Logic
-        # In full version: query cortex for A->B, B->C paths
-        return []
+        try:
+            r = ReasoningEngine(self.brain_path)
+            insights = r.ponder()
+            if insights and "❌ **Critical**" not in insights[0]:
+                self._generate_cognitive_report(insights)
+            return insights
+        except Exception as e:
+            logging.error(f"Failed to ponder: {e}")
+            return []
+
+    def _generate_cognitive_report(self, insights):
+        now_utc = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+        date_prefix = datetime.datetime.now().strftime("%Y%m%d")
+        filename = self.memories_path / f"{date_prefix}-cognitive-report.md"
+
+        content = [
+            f"# 🧠 NEXUS CORTEX: Cognitive Report",
+            f"> **Date**: {now_utc} (UTC)",
+            f""
+        ]
+
+        for insight in insights:
+            # Insight is already formatted in reason.py with emojis
+            content.append(f"- {insight}")
+
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write("\n".join(content))
+        logging.info(f"Cognitive Report generated: {filename}")
 
     def _scan_inputs(self):
         files = []

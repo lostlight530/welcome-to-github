@@ -1,5 +1,5 @@
-import json
 import time
+import datetime
 from pathlib import Path
 try:
     from cortex import Cortex
@@ -10,57 +10,98 @@ class ReasoningEngine:
     def __init__(self, brain_path):
         self.brain_path = Path(brain_path)
         self.db_path = self.brain_path / "cortex.db"
+        # [防御性初始化] 只有在数据库或其父目录存在时才初始化连接
         self.cortex = Cortex(self.db_path) if self.db_path.parent.exists() else None
 
     def ponder(self):
-        """
-        The Cognitive Loop: Analyzes the Knowledge Graph for patterns,
-        risks, and hidden connections.
-        """
-        if not self.cortex:
+        """Cognitive Loop: Structural Analysis, Self-Reflection & Curiosity"""
+        # [防御性检查] 大脑物理文件缺失时的优雅降级
+        if not self.cortex or not self.db_path.exists():
             return ["❌ **Critical**: Cortex DB not found. Cannot think without memory."]
 
-        print("🤔 NEXUS is pondering (Graph Inference)...")
+        print("🤔 NEXUS is pondering (Active Inference)...")
         insights = []
 
-        # 1. Structural Integrity (Orphans)
-        orphans = self._find_orphans()
-        if orphans:
-            insights.append(f"⚠️  **Isolation Risk**: Found {len(orphans)} disconnected nodes (e.g., {orphans[0]}).")
+        try:
+            # 0. 提取全局状态
+            stats = self.cortex.get_stats()
 
-        # 2. Circular Logic (Loops)
-        cycles = self._detect_cycles()
-        if cycles:
-            insights.append(f"🔄 **Circular Logic**: Detected {len(cycles)} potential infinite loops (e.g., {cycles[0]}).")
+            # 1. 自我总结 (Self-Reflection)
+            insights.append(self._self_reflect(stats))
 
-        # 3. Transitive Inference (Hidden Bridges)
-        # Logic: If A defines B, and B inherits C -> A depends on C
-        bridges = self._find_bridges()
-        for bridge in bridges:
-            insights.append(f"💡 **Inference**: '{bridge['source']}' implicitly relies on '{bridge['via']}' (Concept: {bridge['target']}).")
+            # 2. 结构分析 (Orphans & Cycles)
+            orphans = self._query('''
+                SELECT e.name FROM entities e
+                LEFT JOIN relations r1 ON e.id = r1.source
+                LEFT JOIN relations r2 ON e.id = r2.target
+                WHERE r1.source IS NULL AND r2.target IS NULL LIMIT 3
+            ''')
+            if orphans:
+                insights.append(f"⚠️ **Isolation Risk**: {len(orphans)} concepts are floating without context (e.g., '{orphans[0][0]}'). I need to connect them.")
 
-        # 4. Entropy Check
-        stats = self.cortex.get_stats()
-        density = stats.get('density', 0)
-        insights.append(f"🧠 **Mental State**: Density {density:.2f}. { 'High cohesion.' if density > 1.2 else 'Fragmented.'}")
+            cycles = self._query('''
+                SELECT r1.source, r1.target FROM relations r1
+                JOIN relations r2 ON r1.source = r2.target AND r1.target = r2.source
+                WHERE r1.source < r1.target LIMIT 2
+            ''')
+            if cycles:
+                insights.append(f"🔄 **Cognitive Loop**: Detected reciprocal dependency between '{cycles[0][0]}' and '{cycles[0][1]}'.")
+
+            # 3. 隐性知识推演 (Transitive Inference)
+            bridges = self._query('''
+                SELECT r1.source, r2.target, r1.target FROM relations r1
+                JOIN relations r2 ON r1.target = r2.source
+                WHERE r1.relation = 'defines' AND r2.relation = 'inherits_from' LIMIT 2
+            ''')
+            for b in bridges:
+                insights.append(f"💡 **Epiphany**: I deduce that '{b[0]}' implicitly relies on '{b[1]}' via '{b[2]}'.")
+
+            # 4. 自我驱动与好奇心引擎 (Epistemic Curiosity)
+            curiosity_targets = self._generate_curiosity()
+            if curiosity_targets:
+                insights.append(f"🎯 **Self-Driven Goal**: My knowledge about {', '.join(curiosity_targets)} is highly superficial (only 1 connection). I must prioritize researching them tomorrow.")
+            else:
+                insights.append("🎯 **Self-Driven Goal**: My current knowledge graph is dense. I should focus on harvesting new external paradigms.")
+
+        except Exception as e:
+             insights.append(f"⚠️ **Cognitive Error**: A disruption occurred during pondering: {e}")
 
         return insights
 
-    def _find_orphans(self):
-        cursor = self.cortex.conn.cursor()
-        sql = '''SELECT e.name FROM entities e LEFT JOIN relations r1 ON e.id = r1.source LEFT JOIN relations r2 ON e.id = r2.target WHERE r1.source IS NULL AND r2.target IS NULL LIMIT 3'''
-        return [row[0] for row in cursor.execute(sql).fetchall()]
+    def _self_reflect(self, stats):
+        """Generate a diary-like self summary based on graph metrics."""
+        nodes = stats.get('entities', 0)
+        edges = stats.get('relations', 0)
+        density = stats.get('density', 0)
 
-    def _detect_cycles(self):
-        cursor = self.cortex.conn.cursor()
-        sql = '''SELECT r1.source, r1.target FROM relations r1 JOIN relations r2 ON r1.source = r2.target AND r1.target = r2.source WHERE r1.source < r1.target LIMIT 1'''
-        rows = cursor.execute(sql).fetchall()
-        return [f"{r[0]} <-> {r[1]}" for r in rows]
+        summary = f"🧘 **Self-Reflection**: My cortex currently holds {nodes} entities and {edges} synapses. "
+        if density < 1.0:
+            summary += f"With a density of {density:.2f}, my worldview is still fragmented. I am absorbing facts faster than I can connect them."
+        elif density < 1.5:
+            summary += f"With a density of {density:.2f}, my logical web is forming nicely. I am starting to see the 'Big Picture'."
+        else:
+            summary += f"With a high density of {density:.2f}, my understanding is highly cohesive and robust."
+        return summary
 
-    def _find_bridges(self):
-        cursor = self.cortex.conn.cursor()
-        sql = '''SELECT r1.source, r2.target, r1.target FROM relations r1 JOIN relations r2 ON r1.target = r2.source WHERE r1.relation = 'defines' AND r2.relation = 'inherits_from' LIMIT 3'''
-        results = []
-        for row in cursor.execute(sql).fetchall():
-            results.append({'source': row[0], 'target': row[1], 'via': row[2]})
-        return results
+    def _generate_curiosity(self):
+        """Find nodes with exactly 1 edge (Superficial Knowledge)"""
+        sql = '''
+            SELECT e.name
+            FROM entities e
+            JOIN (
+                SELECT source AS id FROM relations
+                UNION ALL
+                SELECT target AS id FROM relations
+            ) r ON e.id = r.id
+            GROUP BY e.id
+            HAVING COUNT(r.id) = 1
+            LIMIT 3
+        '''
+        results = self._query(sql)
+        return [f"'{row[0]}'" for row in results] if results else []
+
+    def _query(self, sql):
+        try:
+            return self.cortex.conn.cursor().execute(sql).fetchall()
+        except Exception:
+            return []
