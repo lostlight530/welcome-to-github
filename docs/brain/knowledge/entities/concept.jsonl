@@ -82,3 +82,8 @@
 {"id": "chain-of-thought", "type": "concept", "name": "Chain of Thought (CoT)", "desc": "Prompting LLMs to output intermediate reasoning steps before answering."}
 {"id": "few-shot-learning", "type": "concept", "name": "Few-Shot Prompting", "desc": "Providing a few examples within the prompt to guide LLM formatting and reasoning."}
 {"id": "rag", "type": "concept", "name": "Retrieval-Augmented Generation", "desc": "Fetching external knowledge bases to augment the LLM's context window before generation."}
+{"id": "concept_nexus_system", "type": "concept", "name": "NEXUS System", "desc": "系统自身的全局概念，即主权智能体架构。"}
+{"id": "concept_project_config", "type": "concept", "name": "Project Configuration", "desc": "工程项目的元数据与构建基础设施"}
+{"id": "concept_paged_attention", "type": "concept", "name": "PagedAttention", "desc": "vLLM的核心技术，受操作系统虚拟内存启发，用于高效管理KV Cache。"}
+{"id": "concept_dual_write", "type": "concept", "name": "Dual-Write Mechanism", "desc": "双写机制：同时写入 SQLite 缓存与 JSONL 文本持久化的安全策略。"}
+{"id": "heavyweight_frameworks", "type": "concept", "name": "Heavyweight Frameworks", "desc": "传统庞大臃肿、黑盒化的AI工程框架体系。"}
