@@ -247,3 +247,25 @@
 {"src": "file_docs_brain___init___py", "relation": "initializes", "dst": "concept_project_config", "desc": ""}
 {"src": "file_requirements_txt", "relation": "configures", "dst": "concept_project_config", "desc": ""}
 {"src": "vllm_0_17_1", "relation": "optimizes", "dst": "concept_edge_ai", "desc": ""}
+{"src": "vllm_0_17_1", "relation": "implements", "dst": "concept_paged_attention", "desc": ""}
+{"src": "concept_paged_attention", "relation": "optimizes", "dst": "concept_kv_cache_management", "desc": ""}
+{"src": "vllm_0_17_1", "relation": "competes_with", "dst": "tensorrt_llm", "desc": ""}
+{"src": "vllm_0_17_1", "relation": "competes_with", "dst": "llama_cpp", "desc": "vLLM偏向高吞吐服务端，llama.cpp偏向极致边缘端"}
+{"src": "vllm_0_17_1", "relation": "compatible_with", "dst": "huawei_ascend_npu", "desc": "拓展信创算力生态，摆脱单点依赖"}
+{"src": "harvester", "relation": "feeds", "dst": "inputs", "desc": "收割机抓取外部情报存入 inputs 目录"}
+{"src": "inputs", "relation": "consumed_by", "dst": "evolver", "desc": "进化器消化并提取输入素材"}
+{"src": "evolver", "relation": "updates", "dst": "cortex", "desc": "进化器将结构化知识重塑并写入大脑"}
+{"src": "cortex", "relation": "triggers", "dst": "ponder", "desc": "大脑完成重组后触发自我沉思"}
+{"src": "concept_nexus_system", "relation": "abides_by", "dst": "concept_zero_dependency", "desc": ""}
+{"src": "concept_nexus_system", "relation": "abides_by", "dst": "concept_lobotomy_protocol", "desc": ""}
+{"src": "cortex", "relation": "implements", "dst": "concept_dual_write", "desc": ""}
+{"src": "concept_edge_ai", "relation": "relies_on", "dst": "mediapipe", "desc": "Google的跨平台边缘流媒体机器学习框架"}
+{"src": "concept_edge_ai", "relation": "relies_on", "dst": "mindspore", "desc": "华为全场景AI计算框架"}
+{"src": "huawei_ascend_npu", "relation": "accelerates", "dst": "mindspore", "desc": ""}
+{"src": "concept_nexus_system", "relation": "programmed_in", "dst": "python", "desc": "系统唯一且绝对的母语"}
+{"src": "concept_nexus_system", "relation": "conflicts_with", "dst": "heavyweight_frameworks", "desc": "NEXUS 的建立正是为了反叛并抛弃这些臃肿的黑盒，追求极简与数据主权。"}
+{"src": "file_docs_brain_nexus_py", "relation": "implements", "dst": "concept_nexus_system", "desc": "系统的主控路由与CLI入口源码"}
+{"src": "file_docs_brain_harvester_py", "relation": "implements", "dst": "harvester", "desc": "收割机模块的具体源码实现"}
+{"src": "file_docs_brain_cortex_py", "relation": "implements", "dst": "cortex", "desc": "记忆核心引擎的具体源码实现"}
+{"src": "file_docs_brain_evolution_py", "relation": "implements", "dst": "evolver", "desc": "进化器的具体源码实现"}
+{"src": "file_docs_brain_reason_py", "relation": "implements", "dst": "ponder", "desc": "负责主动推断、认知推理和自我沉思的源码实现"}

@@ -25,3 +25,5 @@
 {"id": "mediapipe", "type": "tech", "name": "MediaPipe", "desc": "Cross-platform framework for building multimodal ML pipelines."}
 {"id": "jax-metal", "type": "tech", "name": "JAX Metal", "desc": "Apple 官方的 JAX 插件。利用 OpenXLA 将机器学习工作负载直接编译至 Apple Silicon GPU (原生 Metal 架构)。"}
 {"id": "vllm_0_17_1", "type": "tech", "name": "vLLM 0.17.1", "desc": "高吞吐量大模型推理引擎更新版"}
+{"id": "tensorrt_llm", "type": "tech", "name": "TensorRT-LLM", "desc": "Nvidia的竞品级大模型推理框架。"}
+{"id": "llama_cpp", "type": "tech", "name": "llama.cpp", "desc": "基于C++的轻量级边缘端大模型推理引擎。"}
