@@ -236,3 +236,14 @@
 {"src": "eurobert", "relation": "architecture", "dst": "concept_encoder", "desc": "双向理解，而非单向生成"}
 {"src": "eurobert", "relation": "optimized_for", "dst": "concept_rag", "desc": "知识图谱的绝佳向量化工具"}
 {"src": "eurobert", "relation": "differs_from", "dst": "concept_llm", "desc": "不同于 Llama 这种生成式 Decoder"}
+{"src": "cortex", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": "系统的记忆核心"}
+{"src": "evolver", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": "系统的生物钟引擎"}
+{"src": "harvester", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": "系统的情报收割机"}
+{"src": "concept_nexus_system", "relation": "pursues", "dst": "concept_edge_ai", "desc": ""}
+{"src": "file_package_json", "relation": "configures", "dst": "concept_project_config", "desc": ""}
+{"src": "file_tailwind_config_js", "relation": "configures", "dst": "concept_project_config", "desc": ""}
+{"src": "file__editorconfig", "relation": "configures", "dst": "concept_project_config", "desc": ""}
+{"src": "file_license", "relation": "defines_rights_for", "dst": "concept_project_config", "desc": ""}
+{"src": "file_docs_brain___init___py", "relation": "initializes", "dst": "concept_project_config", "desc": ""}
+{"src": "file_requirements_txt", "relation": "configures", "dst": "concept_project_config", "desc": ""}
+{"src": "vllm_0_17_1", "relation": "optimizes", "dst": "concept_edge_ai", "desc": ""}

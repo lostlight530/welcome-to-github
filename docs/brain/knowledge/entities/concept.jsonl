@@ -82,3 +82,5 @@
 {"id": "chain-of-thought", "type": "concept", "name": "Chain of Thought (CoT)", "desc": "Prompting LLMs to output intermediate reasoning steps before answering."}
 {"id": "few-shot-learning", "type": "concept", "name": "Few-Shot Prompting", "desc": "Providing a few examples within the prompt to guide LLM formatting and reasoning."}
 {"id": "rag", "type": "concept", "name": "Retrieval-Augmented Generation", "desc": "Fetching external knowledge bases to augment the LLM's context window before generation."}
+{"id": "concept_nexus_system", "type": "concept", "name": "NEXUS System", "desc": "系统自身的全局概念，即主权智能体架构。"}
+{"id": "concept_project_config", "type": "concept", "name": "Project Configuration", "desc": "工程项目的元数据与构建基础设施"}
