@@ -274,3 +274,8 @@
 {"src": "file_docs_brain_knowledge_snapshot_json", "relation": "snapshots", "dst": "cortex", "desc": ""}
 {"src": "file_docs_brain_knowledge_relations_2026-03_jsonl", "relation": "stores_synapses_for", "dst": "cortex", "desc": ""}
 {"src": "file_docs_brain_reason_py", "relation": "implements", "dst": "concept_nexus_system", "desc": "负责沉思与推断"}
+{"src": "Cortex", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": ""}
+{"src": "Evolver", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": ""}
+{"src": "Harvester", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": ""}
+{"src": "file_LICENSE", "relation": "defines_rights_for", "dst": "concept_project_config", "desc": ""}
+{"src": "file_README_md", "relation": "documents", "dst": "concept_project_config", "desc": ""}
