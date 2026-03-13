@@ -279,3 +279,7 @@
 {"src": "Harvester", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": ""}
 {"src": "file_LICENSE", "relation": "defines_rights_for", "dst": "concept_project_config", "desc": ""}
 {"src": "file_README_md", "relation": "documents", "dst": "concept_project_config", "desc": ""}
+{"src": "file_docs_brain_knowledge_relations_2026-02_jsonl", "relation": "stores_synapses_for", "dst": "cortex", "desc": ""}
+{"src": "class_Cortex", "relation": "implements", "dst": "concept_nexus_system", "desc": "记忆核心引擎的物理源码载体"}
+{"src": "class_Evolver", "relation": "implements", "dst": "concept_nexus_system", "desc": "生物钟进化器的物理源码载体"}
+{"src": "class_Harvester", "relation": "implements", "dst": "concept_nexus_system", "desc": "情报收割机的物理源码载体"}
