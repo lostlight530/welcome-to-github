@@ -12,8 +12,8 @@
 - [ ] Block 2 hours.
 
 ## 🔍 待处理熵值 (Entropy Targets)
-- **LICENSE** (file_LICENSE): Weight 1.04
 - **2026-02.jsonl** (file_docs_brain_knowledge_relations_2026-02_jsonl): Weight 1.04
 - **project.jsonl** (file_docs_brain_knowledge_entities_project_jsonl): Weight 1.04
 - **tech_stack.jsonl** (file_docs_brain_knowledge_entities_tech_stack_jsonl): Weight 1.04
 - **concepts.jsonl** (file_docs_brain_knowledge_entities_concepts_jsonl): Weight 1.04
+- **hardware.jsonl** (file_docs_brain_knowledge_entities_hardware_jsonl): Weight 1.04
