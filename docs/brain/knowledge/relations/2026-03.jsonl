@@ -269,3 +269,8 @@
 {"src": "file_docs_brain_cortex_py", "relation": "implements", "dst": "cortex", "desc": "记忆核心引擎的具体源码实现"}
 {"src": "file_docs_brain_evolution_py", "relation": "implements", "dst": "evolver", "desc": "进化器的具体源码实现"}
 {"src": "file_docs_brain_reason_py", "relation": "implements", "dst": "ponder", "desc": "负责主动推断、认知推理和自我沉思的源码实现"}
+{"src": "file_docs_brain_brain_config_json", "relation": "configures", "dst": "cortex", "desc": "大脑运转的元配置文件"}
+{"src": "file_docs_brain_intelligence__gitkeep", "relation": "configures", "dst": "concept_project_config", "desc": ""}
+{"src": "file_docs_brain_knowledge_snapshot_json", "relation": "snapshots", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_relations_2026-03_jsonl", "relation": "stores_synapses_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "implements", "dst": "concept_nexus_system", "desc": "负责沉思与推断"}
