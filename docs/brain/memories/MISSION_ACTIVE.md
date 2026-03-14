@@ -1,5 +1,5 @@
 # 🛡️ NEXUS CORTEX: Architect's Daily Brief
-> **Date**: 2026-03-13 | **Entropy**: 1.0731
+> **Date**: 2026-03-14 | **Entropy**: 1.0722
 
 ## 🚨 昨夜今晨 (System Health)
 - **Status**: 🟢 **ONLINE**
@@ -12,8 +12,8 @@
 - [ ] Block 2 hours.
 
 ## 🔍 待处理熵值 (Entropy Targets)
-- **project.jsonl** (file_docs_brain_knowledge_entities_project_jsonl): Weight 1.04
-- **tech_stack.jsonl** (file_docs_brain_knowledge_entities_tech_stack_jsonl): Weight 1.04
-- **concepts.jsonl** (file_docs_brain_knowledge_entities_concepts_jsonl): Weight 1.04
-- **hardware.jsonl** (file_docs_brain_knowledge_entities_hardware_jsonl): Weight 1.04
-- **code_function.jsonl** (file_docs_brain_knowledge_entities_code_function_jsonl): Weight 1.04
+- **pattern.jsonl** (file_docs_brain_knowledge_entities_pattern_jsonl): Weight 1.04
+- **protocol.jsonl** (file_docs_brain_knowledge_entities_protocol_jsonl): Weight 1.04
+- **techs.jsonl** (file_docs_brain_knowledge_entities_techs_jsonl): Weight 1.04
+- **model.jsonl** (file_docs_brain_knowledge_entities_model_jsonl): Weight 1.04
+- **tool.jsonl** (file_docs_brain_knowledge_entities_tool_jsonl): Weight 1.04
