@@ -37,6 +37,9 @@ jobs:
     - name: 🧬 Run Evolution Cycle (Strategy)
       run: python docs/brain/nexus.py evolve
 
+    - name: 🔄 Sync with upstream before commit
+      run: git pull --rebase origin main
+
     - name: 💾 Commit New Memories
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
