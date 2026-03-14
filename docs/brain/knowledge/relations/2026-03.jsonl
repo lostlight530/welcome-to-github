@@ -294,3 +294,38 @@
 {"src": "file_docs_brain_knowledge_entities_concepts_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
 {"src": "file_docs_brain_knowledge_entities_hardware_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
 {"src": "file_docs_brain_knowledge_entities_code_function_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "class_Scholar", "relation": "implements", "dst": "concept_omniscience_protocol", "desc": "The physical engine that executes AST codebase ingestion."}
+{"src": "concept_omniscience_protocol", "relation": "feeds", "dst": "cortex", "desc": ""}
+{"src": "concept_1_entities_实体层", "relation": "is_organ_of", "dst": "cortex", "desc": "The foundational graph data objects within the Cortex."}
+{"src": "concept_1_entities_实体层", "relation": "defined_by", "dst": "file_docs_brain_SCHEMA_md", "desc": ""}
+{"src": "concept_1_evolve__ponder_进化与思考", "relation": "orchestrates", "dst": "evolver", "desc": "The conceptual representation of the system's daily biological loop."}
+{"src": "concept_1_evolve__ponder_进化与思考", "relation": "orchestrates", "dst": "ponder", "desc": "The conceptual representation of the system's daily reasoning loop."}
+{"src": "file_docs_brain_knowledge_entities_patterns_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_architectures_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_companies_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "concept_1_observe_read__观察", "relation": "is_organ_of", "dst": "concept_omniscience_protocol", "desc": ""}
+{"src": "concept_2_evolve_write__进化", "relation": "orchestrates", "dst": "evolver", "desc": ""}
+{"src": "concept_2_observe_read__观察", "relation": "is_organ_of", "dst": "harvester", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_hardwares_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_philosophies_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_teches_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_people_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "concept_2_relations_关系层", "relation": "is_organ_of", "dst": "cortex", "desc": ""}
+{"src": "concept_3_clean__restore_清理与恢复", "relation": "orchestrates", "dst": "concept_lobotomy_protocol", "desc": ""}
+{"src": "concept_3_cognitive_immune__structure_system_认知免疫与结构关系类型", "relation": "is_organ_of", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_platform_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_standards_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_ecosystems_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_concept_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "concept_3_cognitive_immune_system_认知免疫关系类型", "relation": "is_organ_of", "dst": "cortex", "desc": ""}
+{"src": "concept_3_ingest_action__摄入", "relation": "orchestrates", "dst": "concept_omniscience_protocol", "desc": ""}
+{"src": "concept_4_clean_maintenance__清理", "relation": "orchestrates", "dst": "concept_lobotomy_protocol", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_code_class_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_tech_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_philosophy_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "concept_4_inputs_原始输入层", "relation": "is_organ_of", "dst": "inputs", "desc": ""}
+{"src": "concept_add_new_concept_添加新概念", "relation": "is_organ_of", "dst": "concept_knowledge_crystallization", "desc": ""}
+{"src": "concept_check_brain_health__entropy_检查大脑健康与熵值", "relation": "is_organ_of", "dst": "ponder", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_domain_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_ecosystem_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_person_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}

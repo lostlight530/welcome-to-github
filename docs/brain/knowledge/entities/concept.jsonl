@@ -88,3 +88,4 @@
 {"id": "concept_dual_write", "type": "concept", "name": "Dual-Write Mechanism", "desc": "双写机制：同时写入 SQLite 缓存与 JSONL 文本持久化的安全策略。"}
 {"id": "heavyweight_frameworks", "type": "concept", "name": "Heavyweight Frameworks", "desc": "传统庞大臃肿、黑盒化的AI工程框架体系。"}
 {"id": "concept_knowledge_crystallization", "type": "concept", "name": "Knowledge Crystallization", "desc": "The process of converting raw information into permanent, structured graph entities."}
+{"id": "concept_omniscience_protocol", "type": "concept", "name": "Omniscience Protocol", "desc": "The overarching architectural ability to ingest, map, and reflect on its own physical codebase."}

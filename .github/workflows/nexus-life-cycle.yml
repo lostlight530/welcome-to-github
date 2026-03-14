@@ -38,7 +38,7 @@ jobs:
       run: python docs/brain/nexus.py evolve
 
     - name: 🔄 Sync with upstream before commit
-      run: git pull --rebase origin main
+      run: git pull --rebase --autostash origin main
 
     - name: 💾 Commit New Memories
       uses: stefanzweifel/git-auto-commit-action@v5
