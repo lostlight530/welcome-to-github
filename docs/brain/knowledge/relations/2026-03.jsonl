@@ -12,7 +12,6 @@
 {"src": "vllm-0-16-0", "rel": "runs_on", "dst": "npu-edge", "context": "", "created_at": "2026-03-04T03:00:41.906432"}
 {"src": "mindspore-lite", "rel": "optimizes", "dst": "npu-edge", "context": "", "created_at": "2026-03-04T03:00:42.240802"}
 {"src": "jax-framework", "rel": "deployed_via", "dst": "webgpu", "context": "", "created_at": "2026-03-04T03:00:42.944135"}
-{"src": "android", "rel": "hosts", "dst": "litert", "context": "", "created_at": "2026-03-05T14:38:32.895266"}
 {"src": "litert", "rel": "optimizes", "dst": "arch_pattern_gemma-2b_1", "context": "", "created_at": "2026-03-05T14:38:33.240751"}
 {"src": "huggingface-transformers-v5-3-0", "rel": "releases", "dst": "vibevoice-asr", "context": "", "created_at": "2026-03-05T14:38:34.327764"}
 {"src": "mindspore-lite", "rel": "supports", "dst": "cuda-backend", "context": "", "created_at": "2026-03-05T14:38:34.668506"}
@@ -31,7 +30,6 @@
 {"src": "vllm-0-16-0", "relation": "runs_on", "dst": "npu-edge", "desc": ""}
 {"src": "mindspore-lite", "relation": "optimizes", "dst": "npu-edge", "desc": ""}
 {"src": "jax-framework", "relation": "deployed_via", "dst": "webgpu", "desc": ""}
-{"src": "android", "relation": "hosts", "dst": "litert", "desc": ""}
 {"src": "litert", "relation": "optimizes", "dst": "arch_pattern_gemma-2b_1", "desc": ""}
 {"src": "huggingface-transformers-v5-3-0", "relation": "releases", "dst": "vibevoice-asr", "desc": ""}
 {"src": "mindspore-lite", "relation": "supports", "dst": "cuda-backend", "desc": ""}
@@ -43,7 +41,6 @@
 {"src": "on-device-llm", "relation": "enables", "dst": "gemma-2b", "desc": ""}
 {"src": "android", "relation": "runs", "dst": "gemma-2b", "desc": ""}
 {"src": "webgpu", "relation": "accelerates", "dst": "mediapipe", "desc": ""}
-{"src": "litert", "relation": "powers", "dst": "android", "desc": ""}
 {"src": "gemma-2b", "relation": "runs_on", "dst": "litert", "desc": ""}
 {"src": "gemma-2b", "relation": "implements_philosophy", "dst": "arch_pattern_gemma-2b_1", "desc": ""}
 {"src": "gemma-2b", "relation": "implements_philosophy", "dst": "arch_pattern_gemma-2b_2", "desc": ""}
@@ -372,23 +369,4 @@
 {"src": "concept_engineering_standards", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": ""}
 {"src": "concept_knowledge_base_schema_definition_知识库架构定义", "relation": "defined_by", "dst": "file_docs_brain_SCHEMA_md", "desc": ""}
 {"src": "concept_ingest_internal_codebase_mapping_via_ast_全知摄入内部代码结构", "relation": "orchestrates", "dst": "concept_omniscience_protocol", "desc": ""}
-{"src": "concept_lostlight__20252026_year_in_review", "relation": "showcases", "dst": "concept_digital_museum", "desc": ""}
-{"src": "concept_live_portal", "relation": "is_organ_of", "dst": "concept_digital_museum", "desc": ""}
-{"src": "concept_nexus_cortex_cognitive_synthesis_protocol_认知合成协议", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": ""}
-{"src": "file__github_workflows_deploy_yml", "relation": "orchestrates", "dst": "concept_live_portal", "desc": "Automatically deploys the static site to GitHub Pages."}
-{"src": "file__github_workflows_nexus-life-cycle_yml", "relation": "orchestrates", "dst": "evolver", "desc": "Triggers the daily biological evolution loop on the cloud."}
-{"src": "file_src_scripts_translations_js", "relation": "configures", "dst": "concept_live_portal", "desc": "Centrally manages all bilingual dynamic content for the frontend."}
-{"src": "file_src_scripts_main_js", "relation": "configures", "dst": "concept_live_portal", "desc": "Provides client-side interactivity for the digital museum."}
-{"src": "file_src_styles_main_css", "relation": "styles", "dst": "concept_live_portal", "desc": "Provides local styling overrides combined with Tailwind."}
-{"src": "concept_reporting_a_vulnerability", "relation": "is_organ_of", "dst": "concept_project_config", "desc": ""}
-{"src": "concept_rebuild_database_from_jsonl_ledger_从文本账本重建内存库", "relation": "orchestrates", "dst": "cortex", "desc": "The reconstruction protocol triggered on system wake up."}
-{"src": "concept_nexus_cortex_core_architecture__operational_protocol", "relation": "documents", "dst": "concept_nexus_system", "desc": ""}
-{"src": "file__github_workflows_brain-integrity_yml", "relation": "orchestrates", "dst": "cortex", "desc": "A CI/CD workflow validating the structural integrity of the brain."}
-{"src": "file__github_workflows_brain_evolution_yml", "relation": "orchestrates", "dst": "evolver", "desc": ""}
-{"src": "file__github_workflows_brain-evolution_yml", "relation": "orchestrates", "dst": "evolver", "desc": ""}
-{"src": "concept_search_concepts_via_synaptic_associative_search_图增强检", "relation": "is_capability_of", "dst": "cortex", "desc": ""}
-{"src": "concept_run_daily_evolution_cycle_运行每日进化循环", "relation": "orchestrates", "dst": "evolver", "desc": ""}
-{"src": "concept_run_daily_evolution_cycle_运行每日外部采集与进化循环", "relation": "orchestrates", "dst": "evolver", "desc": ""}
-{"src": "concept_security_policy", "relation": "is_organ_of", "dst": "concept_project_config", "desc": ""}
-{"src": "concept_supported_versions", "relation": "is_organ_of", "dst": "concept_project_config", "desc": ""}
-{"src": "concept_system_philosophy__identity_系统哲学与身份定位", "relation": "documents", "dst": "concept_nexus_system", "desc": ""}
+{"src": "litert", "relation": "optimizes_for", "dst": "android", "desc": "Google的端侧模型推理引擎专为安卓等移动端优化"}
