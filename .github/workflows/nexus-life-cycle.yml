@@ -19,6 +19,8 @@ jobs:
     steps:
     - name: Checkout Reality
       uses: actions/checkout@v4
+      with:
+        ref: main
 
     - name: Set up Python 3.10
       uses: actions/setup-python@v5
@@ -45,10 +47,20 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git pull --rebase --autostash origin main
+        git pull --rebase --autostash origin main || true
+
+    - name: 🛡️ Resolve Stash Conflicts
+      run: |
+        if git ls-files -u | grep -q .; then
+          echo "Merge conflicts detected from autostash pop. Resolving in favor of local changes (theirs)..."
+          git checkout --theirs .
+          git add .
+          git stash drop || true
+        fi
 
     - name: 💾 Commit Cognitive Changes
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "🧬 lifecycle: ingested, pondered & evolved [skip ci]"
+        branch: main
         file_pattern: "docs/brain/memories/** docs/brain/inputs/** docs/brain/knowledge/**"
