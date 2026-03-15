@@ -3,6 +3,7 @@ import shutil
 import datetime
 import logging
 import re
+import subprocess
 from pathlib import Path
 from cortex import Cortex
 try:
@@ -25,21 +26,42 @@ class Evolver:
         # 1. Sleep: Metabolize & Decay
         self.cortex.decay_memories()
 
-        # 2. Dream: Incubate Intuitions & Epistemic Curiosity
+        # 2. Sandbox Verification: Run automated tests before deep cognition
+        self._run_sandbox_tests()
+
+        # 3. Dream: Incubate Intuitions & Epistemic Curiosity
         intuitions = self._incubate_ideas()
 
-        # 3. Orient: Scan Inputs
+        # 4. Orient: Scan Inputs
         new_inputs = self._scan_inputs()
 
-        # 4. Wake: Generate Strategic Brief
+        # 5. Wake: Generate Strategic Brief
         stats = self.cortex.get_stats()
         orphans = self.cortex.get_orphans()
         self._generate_mission(stats, orphans, new_inputs, intuitions)
 
-        # 5. Archive processed inputs
+        # 6. Archive processed inputs
         self._archive_inputs()
 
         logging.info("Cycle Complete.")
+
+    def _run_sandbox_tests(self):
+        """AST Loop Preparation: Verifies local MCP and systems logic via subprocess."""
+        logging.info("Executing Sandbox Verification Protocol...")
+        test_script = self.brain_path / "test_mcp.py"
+        if test_script.exists():
+            try:
+                # We strictly only assert (Code 0), keeping safety intact
+                result = subprocess.run(
+                    ["python", str(test_script)],
+                    capture_output=True,
+                    text=True,
+                    check=True
+                )
+                logging.info(f"Sandbox Verification Passed: {result.stdout.strip().splitlines()[-1]}")
+            except subprocess.CalledProcessError as e:
+                logging.error(f"Sandbox Verification Failed! Exit Code {e.returncode}")
+                logging.error(e.stderr)
 
     def _incubate_ideas(self):
         try:

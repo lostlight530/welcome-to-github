@@ -10,6 +10,7 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(ROOT_DIR)
 
 from cortex import Cortex
+from harvester import Harvester
 
 # Basic MCP Server implementation for Stdio (Zero-Dependency)
 # Configure logging to stderr to not interfere with JSON-RPC on stdout
@@ -84,6 +85,17 @@ class MCPServer:
                                 },
                                 "required": ["id", "name", "type", "desc"]
                             }
+                        },
+                        {
+                            "name": "trigger_harvester",
+                            "description": "Force the system to run the Intent-Driven Whitelist Harvester probe for official sources.",
+                            "inputSchema": {
+                                "type": "object",
+                                "properties": {
+                                    "intent": {"type": "string", "description": "The specific data fetching intent. Defaults to 'fetch_release'."}
+                                },
+                                "required": []
+                            }
                         }
                     ]
                 }
@@ -96,12 +108,27 @@ class MCPServer:
             try:
                 if name == "search_knowledge":
                     query = args.get("query")
+                    # Liquid Graph Context: Augment search with immediate topological neighborhood
                     results = self.cortex.search(query)
+
+                    liquid_context = {"search_results": results, "topological_context": []}
+                    if results:
+                        top_entity_id = results[0].get("id")
+                        # Fetch 1-hop dependencies
+                        try:
+                            edges = self.cortex.conn.execute(
+                                "SELECT relation, target FROM relations WHERE source = ? LIMIT 10",
+                                (top_entity_id,)
+                            ).fetchall()
+                            liquid_context["topological_context"] = [{"relation": r[0], "target": r[1]} for r in edges]
+                        except Exception as e:
+                            logger.error(f"Topological extraction error: {e}")
+
                     return {
                         "jsonrpc": "2.0",
                         "id": msg_id,
                         "result": {
-                            "content": [{"type": "text", "text": json.dumps(results, ensure_ascii=False)}]
+                            "content": [{"type": "text", "text": json.dumps(liquid_context, ensure_ascii=False)}]
                         }
                     }
                 elif name == "get_entity":
@@ -130,6 +157,19 @@ class MCPServer:
                         "id": msg_id,
                         "result": {
                             "content": [{"type": "text", "text": f"Entity '{args.get('id')}' added successfully to cortex DB."}]
+                        }
+                    }
+                elif name == "trigger_harvester":
+                    harvester = Harvester(self.root_dir)
+                    new_files = harvester.fetch_github_data()
+                    msg = "Intent-driven harvest complete. No new high-signal data."
+                    if new_files:
+                        msg = f"Harvest complete. Fetched {len(new_files)} new context chunks into docs/brain/inputs/."
+                    return {
+                        "jsonrpc": "2.0",
+                        "id": msg_id,
+                        "result": {
+                            "content": [{"type": "text", "text": msg}]
                         }
                     }
                 else:

@@ -26,5 +26,9 @@
   "microsoft/markitdown": {
     "last_tag": "v0.1.5",
     "updated_at": "2026-03-07"
+  },
+  "googleapis/python-genai": {
+    "last_tag": "v1.67.0",
+    "updated_at": "2026-03-15"
   }
 }
