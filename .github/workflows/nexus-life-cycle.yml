@@ -37,6 +37,10 @@ jobs:
     - name: 🧬 Run Evolution Cycle (Strategy)
       run: python docs/brain/nexus.py evolve
 
+    - name: 🗑️ Clean Untracked Reports
+      run: |
+        rm -f docs/brain/memories/*-cognitive-report.md
+
     - name: 🔄 Sync world-line (Autostash)
       run: |
         git config --global user.name "github-actions[bot]"
