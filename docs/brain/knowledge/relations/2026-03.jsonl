@@ -294,7 +294,6 @@
 {"src": "class_Scholar", "relation": "implements", "dst": "concept_omniscience_protocol", "desc": "The physical engine that executes AST codebase ingestion."}
 {"src": "concept_omniscience_protocol", "relation": "feeds", "dst": "cortex", "desc": ""}
 {"src": "concept_1_entities_实体层", "relation": "is_organ_of", "dst": "cortex", "desc": "The foundational graph data objects within the Cortex."}
-{"src": "concept_1_entities_实体层", "relation": "defined_by", "dst": "file_docs_brain_SCHEMA_md", "desc": ""}
 {"src": "concept_1_evolve__ponder_进化与思考", "relation": "orchestrates", "dst": "evolver", "desc": "The conceptual representation of the system's daily biological loop."}
 {"src": "concept_1_evolve__ponder_进化与思考", "relation": "orchestrates", "dst": "ponder", "desc": "The conceptual representation of the system's daily reasoning loop."}
 {"src": "file_docs_brain_knowledge_entities_patterns_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
@@ -359,7 +358,6 @@
 {"src": "concept_connect_concepts_建立图谱连接", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": ""}
 {"src": "concept_clear_temporary_cache_targets_清除临时缓存保护状态文件", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": ""}
 {"src": "concept_dual_write", "relation": "implements", "dst": "concept_lobotomy_protocol", "desc": "The underlying method enforcing Text Sovereignty over the binary cache."}
-{"src": "concept_dual_write", "relation": "is_organ_of", "dst": "cortex", "desc": "A fundamental capability built into the memory core engine."}
 {"src": "file__github_ISSUE_TEMPLATE_bug_report_md", "relation": "configures", "dst": "concept_project_config", "desc": "Standardizes community issue reporting."}
 {"src": "file__github_ISSUE_TEMPLATE_feature_request_md", "relation": "configures", "dst": "concept_project_config", "desc": "Standardizes feature requests."}
 {"src": "file__github_PULL_REQUEST_TEMPLATE_md", "relation": "configures", "dst": "concept_project_config", "desc": "Standardizes PR submissions."}
@@ -367,6 +365,12 @@
 {"src": "concept_deep_ponder_the_graph_for_anomalies__hidden_bridges_", "relation": "orchestrates", "dst": "ponder", "desc": "The conceptual action executed during Active Inference."}
 {"src": "file__github_ISSUE_TEMPLATE_custom_md", "relation": "configures", "dst": "concept_project_config", "desc": ""}
 {"src": "concept_engineering_standards", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": ""}
-{"src": "concept_knowledge_base_schema_definition_知识库架构定义", "relation": "defined_by", "dst": "file_docs_brain_SCHEMA_md", "desc": ""}
 {"src": "concept_ingest_internal_codebase_mapping_via_ast_全知摄入内部代码结构", "relation": "orchestrates", "dst": "concept_omniscience_protocol", "desc": ""}
-{"src": "litert", "relation": "optimizes_for", "dst": "android", "desc": "Google的端侧模型推理引擎专为安卓等移动端优化"}
+{"src": "file__github_workflows_brain-integrity_yml", "relation": "is_part_of", "dst": "concept_project_config", "desc": ""}
+{"src": "file__github_workflows_deploy_yml", "relation": "is_part_of", "dst": "concept_project_config", "desc": ""}
+{"src": "file__github_workflows_brain_evolution_yml", "relation": "is_part_of", "dst": "concept_project_config", "desc": ""}
+{"src": "file__github_workflows_brain-evolution_yml", "relation": "is_part_of", "dst": "concept_project_config", "desc": ""}
+{"src": "file_src_scripts_translations_js", "relation": "is_part_of", "dst": "concept_project_config", "desc": ""}
+{"src": "file_src_scripts_main_js", "relation": "is_part_of", "dst": "concept_project_config", "desc": ""}
+{"src": "file_src_styles_main_css", "relation": "is_part_of", "dst": "concept_project_config", "desc": ""}
+{"src": "file__github_workflows_nexus-life-cycle_yml", "relation": "is_part_of", "dst": "concept_project_config", "desc": ""}
