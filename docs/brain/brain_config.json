@@ -4,6 +4,11 @@
     "target_branch": "main",
     "philosophy": "Small and Stable"
   },
+  "ignore_paths": [
+    "docs/brain/knowledge",
+    "docs/brain/inputs",
+    "docs/brain/memories"
+  ],
   "whitelist": {
     "Google-XLA-Compiler": "https://raw.githubusercontent.com/openxla/xla/main/README.md",
     "PyTorch-Autograd-Design": "https://raw.githubusercontent.com/pytorch/pytorch/main/docs/source/notes/autograd.rst",
