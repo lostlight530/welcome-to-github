@@ -12,8 +12,8 @@
 - [ ] Block 2 hours.
 
 ## 🔍 待处理熵值 (Entropy Targets)
-- **pattern.jsonl** (file_docs_brain_knowledge_entities_pattern_jsonl): Weight 1.04
-- **protocol.jsonl** (file_docs_brain_knowledge_entities_protocol_jsonl): Weight 1.04
-- **techs.jsonl** (file_docs_brain_knowledge_entities_techs_jsonl): Weight 1.04
-- **model.jsonl** (file_docs_brain_knowledge_entities_model_jsonl): Weight 1.04
-- **tool.jsonl** (file_docs_brain_knowledge_entities_tool_jsonl): Weight 1.04
+- **deploy.yml** (file__github_workflows_deploy_yml): Weight 1.04
+- **translations.js** (file_src_scripts_translations_js): Weight 1.04
+- **main.js** (file_src_scripts_main_js): Weight 1.04
+- **main.css** (file_src_styles_main_css): Weight 1.04
+- **nexus-life-cycle.yml** (file__github_workflows_nexus-life-cycle_yml): Weight 1.04
