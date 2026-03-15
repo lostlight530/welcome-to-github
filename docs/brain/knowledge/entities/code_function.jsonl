@@ -44,3 +44,5 @@
 {"id": "func__generate_curiosity", "type": "code_function", "name": "_generate_curiosity", "desc": "Find nodes with exactly 1 edge (Superficial Knowledge)"}
 {"id": "func__query", "type": "code_function", "name": "_query", "desc": "Python Function"}
 {"id": "func__generate_cognitive_report", "type": "code_function", "name": "_generate_cognitive_report", "desc": "Python Function"}
+{"id": "func__run_sandbox_tests", "type": "code_function", "name": "_run_sandbox_tests", "desc": "AST Loop Preparation: Verifies local MCP and systems logic via subprocess."}
+{"id": "func__fetch_repo_data", "type": "code_function", "name": "_fetch_repo_data", "desc": "Thread worker to fetch data for a single repository."}

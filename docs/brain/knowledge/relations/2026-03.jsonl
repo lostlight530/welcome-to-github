@@ -374,3 +374,5 @@
 {"src": "file_src_scripts_main_js", "relation": "is_part_of", "dst": "concept_project_config", "desc": ""}
 {"src": "file_src_styles_main_css", "relation": "is_part_of", "dst": "concept_project_config", "desc": ""}
 {"src": "file__github_workflows_nexus-life-cycle_yml", "relation": "is_part_of", "dst": "concept_project_config", "desc": ""}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func__run_sandbox_tests", "desc": ""}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__fetch_repo_data", "desc": ""}
