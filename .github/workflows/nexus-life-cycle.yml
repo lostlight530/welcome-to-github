@@ -37,10 +37,13 @@ jobs:
     - name: 🧬 Run Evolution Cycle (Strategy)
       run: python docs/brain/nexus.py evolve
 
-    - name: 🔄 Sync with upstream before commit
-      run: git pull --rebase --autostash origin main
+    - name: 🔄 Sync world-line (Autostash)
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git pull --rebase --autostash origin main
 
-    - name: 💾 Commit New Memories
+    - name: 💾 Commit Cognitive Changes
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "🧬 lifecycle: ingested, pondered & evolved [skip ci]"
