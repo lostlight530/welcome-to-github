@@ -329,3 +329,46 @@
 {"src": "file_docs_brain_knowledge_entities_domain_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
 {"src": "file_docs_brain_knowledge_entities_ecosystem_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
 {"src": "file_docs_brain_knowledge_entities_person_jsonl", "relation": "stores_entities_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_code_class_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_code_file_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_code_function_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_component_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_concept_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_concepts_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_domain_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_entity_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_hardware_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_hardwares_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_model_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_models_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_pattern_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_patterns_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_philosophy_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_platform_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_platforms_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_project_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_projects_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_protocol_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_standard_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_standards_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_tech_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_tech_stack_ai_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_tech_stack_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_techs_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_entities_tool_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_relations_2026-02_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "file_docs_brain_knowledge_relations_2026-03_jsonl", "relation": "stores_memories_for", "dst": "cortex", "desc": ""}
+{"src": "concept_check_subconscious_intuitions_查看潜意识推演", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": ""}
+{"src": "concept_connect_concepts_建立图谱连接", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": ""}
+{"src": "concept_clear_temporary_cache_targets_清除临时缓存保护状态文件", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": ""}
+{"src": "concept_dual_write", "relation": "implements", "dst": "concept_lobotomy_protocol", "desc": "The underlying method enforcing Text Sovereignty over the binary cache."}
+{"src": "concept_dual_write", "relation": "is_organ_of", "dst": "cortex", "desc": "A fundamental capability built into the memory core engine."}
+{"src": "file__github_ISSUE_TEMPLATE_bug_report_md", "relation": "configures", "dst": "concept_project_config", "desc": "Standardizes community issue reporting."}
+{"src": "file__github_ISSUE_TEMPLATE_feature_request_md", "relation": "configures", "dst": "concept_project_config", "desc": "Standardizes feature requests."}
+{"src": "file__github_PULL_REQUEST_TEMPLATE_md", "relation": "configures", "dst": "concept_project_config", "desc": "Standardizes PR submissions."}
+{"src": "concept_digital_museum", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": "The frontend representation and annual review portal showcasing project evolution."}
+{"src": "concept_deep_ponder_the_graph_for_anomalies__hidden_bridges_", "relation": "orchestrates", "dst": "ponder", "desc": "The conceptual action executed during Active Inference."}
+{"src": "file__github_ISSUE_TEMPLATE_custom_md", "relation": "configures", "dst": "concept_project_config", "desc": ""}
+{"src": "concept_engineering_standards", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": ""}
+{"src": "concept_knowledge_base_schema_definition_知识库架构定义", "relation": "defined_by", "dst": "file_docs_brain_SCHEMA_md", "desc": ""}
+{"src": "concept_ingest_internal_codebase_mapping_via_ast_全知摄入内部代码结构", "relation": "orchestrates", "dst": "concept_omniscience_protocol", "desc": ""}
