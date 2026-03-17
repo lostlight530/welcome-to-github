@@ -62,6 +62,7 @@ class Evolver:
             except subprocess.CalledProcessError as e:
                 logging.error(f"Sandbox Verification Failed! Exit Code {e.returncode}")
                 logging.error(e.stderr)
+                raise RuntimeError("Sandbox Verification aborted the Evolution Cycle due to protocol failures.") from e
 
     def _incubate_ideas(self):
         try:

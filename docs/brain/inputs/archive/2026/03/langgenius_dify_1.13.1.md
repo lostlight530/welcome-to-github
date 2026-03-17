@@ -26,7 +26,7 @@
 
 ### Workflow and chat experience improvements
 
-- **Breaking change:** HITL email content now uses markdown rendering before delivery. 
+- **Breaking change:** HITL email content now uses markdown rendering before delivery.
   Existing email templates that relied on raw/plain behavior may render differently after upgrade.
 - Draft variables are now user-scoped instead of app-scoped. Historical draft variables will not be available after upgrading.
 - Added edge context menu support in workflow canvas, including direct edge deletion.
