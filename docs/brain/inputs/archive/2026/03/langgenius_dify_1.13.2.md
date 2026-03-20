@@ -27,9 +27,9 @@ This patch release fixes several critical regressions and stability issues intro
 ## Upgrade Guide
 
 > [!IMPORTANT]
-> If you use custom `CELERY_QUEUES`, make sure `workflow_based_app_execution` is included.  
+> If you use custom `CELERY_QUEUES`, make sure `workflow_based_app_execution` is included.
 > If `ENABLE_API_TOKEN_LAST_USED_UPDATE_TASK=true`, also include `api_token`.
-> 
+>
 > For background and details, see **⚠️ Important Upgrade Note** and **🔧 Operational Note** above.
 
 ### Docker Compose Deployments
@@ -67,13 +67,13 @@ This patch release fixes several critical regressions and stability issues intro
    ```
 
 > [!NOTE]
-> 
+>
 > If you encounter errors like below
-> 
+>
 > ```bash
 > 2025/11/26 11:37:57 /app/internal/db/pg/pg.go:30
 > [error] failed to initialize database, got error failed to connect to `host=db_postgres user=postgres database=dify_plugin`: hostname resolving error (lookup db_postgres on 127.0.0.11:53: server misbehaving)
-> 
+>
 > 2025/11/26 11:37:57 /app/internal/db/pg/pg.go:34
 > [error] failed to initialize database, got error failed to connect to `host=db_postgres user=postgres database=postgres`: hostname > resolving error (lookup db_postgres on 127.0.0.11:53: server misbehaving)
 > 2025/11/26 11:37:57 init.go:99: [PANIC]failed to init dify plugin db: failed to connect to `host=db_postgres user=postgres database=postgres`: hostname resolving error (lookup db_postgres on 127.0.0.11:53: server misbehaving)
