@@ -46,3 +46,4 @@
 {"id": "func__generate_cognitive_report", "type": "code_function", "name": "_generate_cognitive_report", "desc": "Python Function"}
 {"id": "func__run_sandbox_tests", "type": "code_function", "name": "_run_sandbox_tests", "desc": "AST Loop Preparation: Verifies local MCP and systems logic via subprocess."}
 {"id": "func__fetch_repo_data", "type": "code_function", "name": "_fetch_repo_data", "desc": "Thread worker to fetch data for a single repository."}
+{"id": "func__generate_structural_intuitions", "type": "code_function", "name": "_generate_structural_intuitions", "desc": "Find nodes that share exact targets (Structural Overlap / Epistemic Depth)"}

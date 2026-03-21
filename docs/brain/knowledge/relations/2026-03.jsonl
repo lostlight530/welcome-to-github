@@ -393,3 +393,4 @@
 {"src": "concept_ⅰ_architecture__workflow_工程化闭环", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": ""}
 {"src": "concept_search_concepts_via_synaptic_associative_search_图增强检", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": ""}
 {"src": "concept_ⅰ_architecture_decision_record_adr__架构决策记录", "relation": "is_organ_of", "dst": "concept_nexus_system", "desc": ""}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__generate_structural_intuitions", "desc": ""}
