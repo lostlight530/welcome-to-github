@@ -37,6 +37,8 @@ def test_mcp_server():
         "id": "test-3"
     }
     search_res = server.handle_request(search_req)
+    if "error" in search_res:
+        raise AssertionError(f"Search failed: {search_res['error']}")
     content = search_res["result"]["content"][0]["text"]
 
     # We will just assert it returns a valid JSON string (it might be empty)
@@ -44,6 +46,21 @@ def test_mcp_server():
         json.loads(content)
     except Exception as e:
         raise AssertionError(f"Search failed to return JSON string: {e}")
+
+    # 4. Test trigger_harvester
+    print("[Test] Testing 'tools/call -> trigger_harvester'...")
+    harvester_req = {
+        "jsonrpc": "2.0",
+        "method": "tools/call",
+        "params": {
+            "name": "trigger_harvester",
+            "arguments": {"intent": "fetch_release"}
+        },
+        "id": "test-4"
+    }
+    harvester_res = server.handle_request(harvester_req)
+    if "error" in harvester_res:
+        raise AssertionError(f"Harvester failed: {harvester_res['error']}")
 
     print("[Test] All MCP server endpoints verified. System secure.")
 

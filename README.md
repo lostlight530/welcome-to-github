@@ -23,6 +23,7 @@ This repository is built with the following engineering principles:
 
 - [Memorial: The Starting Point](./docs/archaeology/MEMORIAL.md)
 - [Digital Archaeology: AI Agent Traces](./docs/archaeology/AGENTS_EXPLORATION.md)
+- [Phase III: Singularity](./docs/archaeology/PHASE_III_SINGULARITY.md)
 
 ---
 © 2026 lostlight | Built for the Edge, Built for the Future.
