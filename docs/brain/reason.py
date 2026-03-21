@@ -56,7 +56,13 @@ class ReasoningEngine:
             for b in bridges:
                 insights.append(f"💡 **Epiphany**: I deduce that '{b[0]}' implicitly relies on '{b[1]}' via '{b[2]}'.")
 
-            # 4. 自我驱动与好奇心引擎 (Epistemic Curiosity)
+            # 4. 拓扑启发与语义交叠 (Epistemic Depth & Structural Overlap)
+            # This generates subconscious structural suggestions instead of just isolated node complaints
+            structural_overlaps = self._generate_structural_intuitions()
+            for ov in structural_overlaps:
+                insights.append(f"🌌 **Subconscious Intuition**: Both '{ov[0]}' and '{ov[1]}' share the exact same structural connections to '{ov[2]}'. Are they related?")
+
+            # 5. 自我驱动与好奇心引擎 (Epistemic Curiosity)
             curiosity_targets = self._generate_curiosity()
             if curiosity_targets:
                 insights.append(f"🎯 **Self-Driven Goal**: My knowledge about {', '.join(curiosity_targets)} is highly superficial (only 1 connection). I must prioritize researching them tomorrow.")
@@ -82,6 +88,20 @@ class ReasoningEngine:
         else:
             summary += f"With a high density of {density:.2f}, my understanding is highly cohesive and robust."
         return summary
+
+    def _generate_structural_intuitions(self):
+        """Find nodes that share exact targets (Structural Overlap / Epistemic Depth)"""
+        sql = '''
+            SELECT e1.name, e2.name, et.name
+            FROM relations r1
+            JOIN relations r2 ON r1.target = r2.target AND r1.source != r2.source
+            JOIN entities e1 ON r1.source = e1.id
+            JOIN entities e2 ON r2.source = e2.id
+            JOIN entities et ON r1.target = et.id
+            WHERE e1.name < e2.name
+            LIMIT 2
+        '''
+        return self._query(sql)
 
     def _generate_curiosity(self):
         """Find nodes with exactly 1 edge (Superficial Knowledge)"""
