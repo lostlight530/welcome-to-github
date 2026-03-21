@@ -183,6 +183,11 @@ class Evolver:
 
         content.append(f"## 📅 深度工作建议 (Deep Work)\n> **Focus**: {suggestion}\n- [ ] Block 2 hours.")
 
+        if intuitions:
+            content.append("\n## 🤔 认知反思 (Cognitive Report)")
+            for i in intuitions:
+                content.append(f"- {i}")
+
         if orphans:
             content.append("\n## 🔍 待处理熵值 (Entropy Targets)")
             for o in orphans:
