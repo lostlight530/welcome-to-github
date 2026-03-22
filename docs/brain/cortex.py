@@ -30,14 +30,19 @@ class Cortex:
 
     def _init_db(self):
         cursor = self.conn.cursor()
+        # Phase IV.1: Temporal Knowledge Graph Schema
+        # Dropped PRIMARY KEY on id, introduced composite (id, valid_at) and invalid_at for 4D tracking.
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS entities (
-                id TEXT PRIMARY KEY,
+                id TEXT,
                 type TEXT,
                 name TEXT,
                 desc TEXT,
                 weight REAL DEFAULT 1.0,
-                last_activated REAL
+                last_activated REAL,
+                valid_at TEXT,
+                invalid_at TEXT,
+                PRIMARY KEY (id, valid_at)
             )
         ''')
         cursor.execute('''
@@ -49,7 +54,9 @@ class Cortex:
                 relation TEXT,
                 target TEXT,
                 weight REAL DEFAULT 1.0,
-                UNIQUE(source, relation, target)
+                valid_at TEXT,
+                invalid_at TEXT,
+                UNIQUE(source, relation, target, valid_at)
             )
         ''')
         self.conn.commit()
@@ -74,12 +81,12 @@ class Cortex:
         if not safe_query.strip(): return []
         fts_query = " ".join([f"{token}*" for token in safe_query.split()])
 
-        # 1. Direct Match (FTS5)
+        # 1. Direct Match (FTS5) - Only return actively valid memories
         sql_direct = '''
             SELECT e.id, e.name, e.desc, e.weight, 0 as distance
             FROM entities_fts f
             JOIN entities e ON f.id = e.id
-            WHERE entities_fts MATCH ?
+            WHERE entities_fts MATCH ? AND e.invalid_at IS NULL
             ORDER BY f.rank * (1.0 / e.weight)
             LIMIT ?
         '''
@@ -88,7 +95,7 @@ class Cortex:
 
         if not direct_results: return []
 
-        # 2. Associative Expansion (Graph)
+        # 2. Associative Expansion (Graph) - Only explore valid topological bounds
         direct_ids = [r['id'] for r in direct_results]
         placeholders = ','.join(['?'] * len(direct_ids))
 
@@ -99,6 +106,8 @@ class Cortex:
             WHERE (r.source IN ({placeholders}) OR r.target IN ({placeholders}))
             AND e.id NOT IN ({placeholders})
             AND e.weight > 1.1
+            AND e.invalid_at IS NULL
+            AND r.invalid_at IS NULL
             ORDER BY e.weight DESC
             LIMIT 3
         '''
@@ -111,18 +120,27 @@ class Cortex:
     def add_entity(self, id, type_slug, name, desc, save_to_disk=True):
         cursor = self.conn.cursor()
         now = time.time()
+        now_iso = datetime.datetime.utcnow().isoformat()
         w = 2.0 if id in self.CORE_WHITELIST else 1.0
 
+        # Phase IV.1: Temporal Override
+        # If entity exists, mark the old one invalid (soft delete via invalid_at)
+        cursor.execute('UPDATE entities SET invalid_at = ? WHERE id = ? AND invalid_at IS NULL', (now_iso, id))
+
         try:
-            cursor.execute('INSERT INTO entities VALUES (?, ?, ?, ?, ?, ?)',
-                          (id, type_slug, name, desc, w, now))
+            cursor.execute('INSERT INTO entities VALUES (?, ?, ?, ?, ?, ?, ?, NULL)',
+                          (id, type_slug, name, desc, w, now, now_iso))
+
+            # FTS5 doesn't need temporal tracking natively since it joins back, but we clear and re-insert
+            cursor.execute('DELETE FROM entities_fts WHERE id = ?', (id,))
             cursor.execute('INSERT INTO entities_fts VALUES (?, ?, ?)', (id, name, desc))
+
             self.conn.commit()
 
-            # [Dual-Write Control] Only sync to text if requested (True by default)
+            # [Dual-Write Control] Temporal JSONL
             if save_to_disk:
                 self._log_to_jsonl("entities", type_slug, {
-                    "id": id, "type": type_slug, "name": name, "desc": desc
+                    "id": id, "type": type_slug, "name": name, "desc": desc, "valid_at": now_iso
                 })
 
         except sqlite3.IntegrityError:
@@ -130,18 +148,26 @@ class Cortex:
 
     def connect_entities(self, source, relation, target, desc="", save_to_disk=True):
         cursor = self.conn.cursor()
+        now_iso = datetime.datetime.utcnow().isoformat()
+
+        # Temporal Invalidation: Overwrite edge if it exists logically but temporal forces soft delete
+        cursor.execute('''
+            UPDATE relations SET invalid_at = ?
+            WHERE source = ? AND relation = ? AND target = ? AND invalid_at IS NULL
+        ''', (now_iso, source, relation, target))
+
         try:
-            cursor.execute('INSERT INTO relations VALUES (?, ?, ?, 1.0)',
-                          (source, relation, target))
+            cursor.execute('INSERT INTO relations VALUES (?, ?, ?, 1.0, ?, NULL)',
+                          (source, relation, target, now_iso))
             self.conn.commit()
             self.activate_memory(source, 0.1)
             self.activate_memory(target, 0.1)
 
-            # [Dual-Write Control]
+            # [Dual-Write Control] Temporal JSONL
             if save_to_disk:
                 month_str = datetime.datetime.now().strftime("%Y-%m")
                 self._log_to_jsonl("relations", month_str, {
-                    "src": source, "relation": relation, "dst": target, "desc": desc
+                    "src": source, "relation": relation, "dst": target, "desc": desc, "valid_at": now_iso
                 })
 
         except sqlite3.IntegrityError:
@@ -150,7 +176,7 @@ class Cortex:
     def activate_memory(self, id, boost=0.1):
         cursor = self.conn.cursor()
         now = time.time()
-        cursor.execute('UPDATE entities SET weight = weight + ?, last_activated = ? WHERE id = ?',
+        cursor.execute('UPDATE entities SET weight = weight + ?, last_activated = ? WHERE id = ? AND invalid_at IS NULL',
                       (boost, now, id))
         self.conn.commit()
 

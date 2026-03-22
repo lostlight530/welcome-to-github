@@ -10,6 +10,7 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(ROOT_DIR)
 
 from cortex import Cortex
+from harvester import Harvester
 
 # Basic MCP Server implementation for Stdio (Zero-Dependency)
 # Configure logging to stderr to not interfere with JSON-RPC on stdout
@@ -84,6 +85,36 @@ class MCPServer:
                                 },
                                 "required": ["id", "name", "type", "desc"]
                             }
+                        },
+                        {
+                            "name": "trigger_harvester",
+                            "description": "Force the system to run the Intent-Driven Whitelist Harvester probe for official sources.",
+                            "inputSchema": {
+                                "type": "object",
+                                "properties": {
+                                    "intent": {"type": "string", "description": "The specific data fetching intent. Defaults to 'fetch_release'."}
+                                },
+                                "required": []
+                            }
+                        },
+                        {
+                            "name": "blueprint_pipeline",
+                            "description": "Phase IV Stateless Blueprint Routing: Execute a deterministic chain of tools sequentially without state.",
+                            "inputSchema": {
+                                "type": "object",
+                                "properties": {
+                                    "pipeline": {
+                                        "type": "array",
+                                        "items": {"type": "string"},
+                                        "description": "A list of tool names to execute sequentially (e.g., ['trigger_harvester', 'search_knowledge'])"
+                                    },
+                                    "pipeline_args": {
+                                        "type": "object",
+                                        "description": "Arguments to pass through the pipeline"
+                                    }
+                                },
+                                "required": ["pipeline"]
+                            }
                         }
                     ]
                 }
@@ -94,14 +125,56 @@ class MCPServer:
             args = params.get("arguments", {})
 
             try:
-                if name == "search_knowledge":
-                    query = args.get("query")
-                    results = self.cortex.search(query)
+                if name == "blueprint_pipeline":
+                    pipeline = args.get("pipeline", [])
+                    p_args = args.get("pipeline_args", {})
+                    results = []
+
+                    # Deterministic Gate: validate agentic requests before execution
+                    for tool in pipeline:
+                        if tool not in ["trigger_harvester", "search_knowledge"]:
+                            raise ValueError(f"Agentic Pipeline Failure: Tool '{tool}' is not a valid deterministic node.")
+
+                        # Simulate routing execution
+                        if tool == "trigger_harvester":
+                            h = Harvester(self.root_dir)
+                            res = h.fetch_github_data()
+                            results.append({"tool": tool, "status": "Success", "fetched": len(res)})
+                        elif tool == "search_knowledge":
+                            q = p_args.get("query", "architecture")
+                            results.append({"tool": tool, "status": "Success", "results": len(self.cortex.search(q))})
+
                     return {
                         "jsonrpc": "2.0",
                         "id": msg_id,
                         "result": {
-                            "content": [{"type": "text", "text": json.dumps(results, ensure_ascii=False)}]
+                            "content": [{"type": "text", "text": json.dumps({"blueprint_status": "Complete", "stages": results}, ensure_ascii=False)}]
+                        }
+                    }
+
+                elif name == "search_knowledge":
+                    query = args.get("query")
+                    # Liquid Graph Context: Augment search with immediate topological neighborhood
+                    results = self.cortex.search(query)
+
+                    liquid_context = {"search_results": results, "topological_context": []}
+                    if results:
+                        top_entity_id = results[0].get("id")
+                        # Fetch 1-hop dependencies
+                        try:
+                            edges = self.cortex.conn.execute(
+                                "SELECT relation, target FROM relations WHERE source = ? LIMIT 10",
+                                (top_entity_id,)
+                            ).fetchall()
+                            liquid_context["topological_context"] = [{"relation": r[0], "target": r[1]} for r in edges]
+                        except Exception as e:
+                            logger.error(f"Topological extraction error: {e}")
+
+                    return {
+                        "jsonrpc": "2.0",
+                        "id": msg_id,
+                        "result": {
+                            "content": [{"type": "text", "text": json.dumps(liquid_context, ensure_ascii=False)}]
                         }
                     }
                 elif name == "get_entity":
@@ -130,6 +203,19 @@ class MCPServer:
                         "id": msg_id,
                         "result": {
                             "content": [{"type": "text", "text": f"Entity '{args.get('id')}' added successfully to cortex DB."}]
+                        }
+                    }
+                elif name == "trigger_harvester":
+                    harvester = Harvester(self.root_dir)
+                    new_files = harvester.fetch_github_data()
+                    msg = "Intent-driven harvest complete. No new high-signal data."
+                    if new_files:
+                        msg = f"Harvest complete. Fetched {len(new_files)} new context chunks into docs/brain/inputs/."
+                    return {
+                        "jsonrpc": "2.0",
+                        "id": msg_id,
+                        "result": {
+                            "content": [{"type": "text", "text": msg}]
                         }
                     }
                 else:

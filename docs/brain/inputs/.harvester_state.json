@@ -1,30 +1,42 @@
 {
   "ModelEngine-Group/nexent": {
     "last_tag": "v1.8.1",
-    "updated_at": "2026-03-14"
+    "updated_at": "2026-03-14",
+    "etag": "W/\"d84fbcb8626a52f759361f51bec255bef4e0b47194b9a97ac090ab415cea3ce1\""
   },
   "iflytek/astron-agent": {
-    "last_tag": "v1.0.2",
-    "updated_at": "2026-03-07"
+    "last_tag": "v1.0.3",
+    "updated_at": "2026-03-20",
+    "etag": "W/\"5a34f54fd2dad79c781b0d177270e66469ab229a77ac55bfd71ce002eabe19d9\""
   },
   "langgenius/dify": {
-    "last_tag": "1.13.0",
-    "updated_at": "2026-03-07"
+    "last_tag": "1.13.2",
+    "updated_at": "2026-03-18",
+    "etag": "W/\"179d6f8291ba87df7431f4a757e2e350aeaef5ad567ee0189b6a0a95c7ffa7fb\""
   },
   "vllm-project/vllm": {
-    "last_tag": "v0.17.1",
-    "updated_at": "2026-03-11"
+    "last_tag": "v0.18.0",
+    "updated_at": "2026-03-20",
+    "etag": "W/\"9690a5eb3db0d963e6453677de416334e6f245bd49fd6d0e89bfc98077ef7abf\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.3.0",
-    "updated_at": "2026-03-07"
+    "updated_at": "2026-03-07",
+    "etag": "W/\"8e14f7e306f5b513a8fe743372f9422e457335c51995774030f714cbccdf9ed2\""
   },
   "google-ai-edge/mediapipe": {
     "last_tag": "v0.10.32",
-    "updated_at": "2026-03-07"
+    "updated_at": "2026-03-07",
+    "etag": "W/\"84d7da4a6bbc55b329890bfb25db1763d9ee1a278d7d2791df8304d5c3b338c9\""
   },
   "microsoft/markitdown": {
     "last_tag": "v0.1.5",
-    "updated_at": "2026-03-07"
+    "updated_at": "2026-03-07",
+    "etag": "W/\"c76214b7d36db07ec0db80e3c044f0705195571db6002933b3cce41ea17e61eb\""
+  },
+  "googleapis/python-genai": {
+    "last_tag": "v1.68.0",
+    "updated_at": "2026-03-18",
+    "etag": "W/\"dc91e76bf0c8ea8dc1470a6834d468d26d4346b5522a64768ec95cdc3ecf419a\""
   }
 }
