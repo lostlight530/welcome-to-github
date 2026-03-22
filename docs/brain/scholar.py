@@ -77,11 +77,43 @@ class Scholar:
                 save_to_disk=True
             )
 
-        # 2. Deep Content Analysis
+        # 2. Deep Content Analysis (Polyglot Regex + AST)
         if filepath.suffix == '.py':
             self._analyze_python_ast(filepath, file_id)
+        elif filepath.suffix in ['.js', '.jsx', '.ts', '.tsx']:
+            self._analyze_javascript_regex_ast(filepath, file_id)
         elif filepath.suffix == '.md':
             self._analyze_markdown_structure(filepath, file_id)
+
+    def _analyze_javascript_regex_ast(self, filepath, file_id):
+        """Polyglot Deterministic Extraction: Simulating Tree-sitter using zero-dependency Regex for JS/TS."""
+        if not self.cortex: return
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                content = f.read()
+
+            # Extract Classes (e.g., class MyComponent extends React.Component)
+            class_pattern = re.compile(r'class\s+([A-Za-z0-9_]+)(?:\s+extends\s+([A-Za-z0-9_.]+))?\s*\{')
+            for match in class_pattern.finditer(content):
+                class_name = match.group(1)
+                base_class = match.group(2)
+                class_id = f"class_{class_name}"
+                self.cortex.add_entity(class_id, "code_class", class_name, f"JS/TS Class in {filepath.name}", save_to_disk=True)
+                self.cortex.connect_entities(file_id, "defines", class_id, save_to_disk=True)
+                if base_class:
+                    self.cortex.connect_entities(class_id, "inherits_from", f"class_{base_class.replace('.', '_')}", save_to_disk=True)
+
+            # Extract Functions (function myFunc() or const myFunc = () =>)
+            func_pattern = re.compile(r'(?:function\s+([A-Za-z0-9_]+)\s*\()|(?:(?:const|let|var)\s+([A-Za-z0-9_]+)\s*=\s*(?:async\s+)?(?:\([^)]*\)|[A-Za-z0-9_]+)\s*=>)')
+            for match in func_pattern.finditer(content):
+                func_name = match.group(1) or match.group(2)
+                if func_name:
+                    func_id = f"func_{func_name}"
+                    self.cortex.add_entity(func_id, "code_function", func_name, f"JS/TS Function in {filepath.name}", save_to_disk=True)
+                    self.cortex.connect_entities(file_id, "defines", func_id, save_to_disk=True)
+
+        except Exception as e:
+            print(f"      [Polyglot Error] {filepath.name}: {e}")
 
     def _analyze_python_ast(self, filepath, file_id):
         """Use Python's native AST to understand code structure."""

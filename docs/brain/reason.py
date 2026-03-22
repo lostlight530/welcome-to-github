@@ -99,6 +99,8 @@ class ReasoningEngine:
             JOIN entities e2 ON r2.source = e2.id
             JOIN entities et ON r1.target = et.id
             WHERE e1.name < e2.name
+              AND r1.invalid_at IS NULL AND r2.invalid_at IS NULL
+              AND e1.invalid_at IS NULL AND e2.invalid_at IS NULL AND et.invalid_at IS NULL
             LIMIT 2
         '''
         return self._query(sql)

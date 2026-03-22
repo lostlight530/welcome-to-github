@@ -96,6 +96,25 @@ class MCPServer:
                                 },
                                 "required": []
                             }
+                        },
+                        {
+                            "name": "blueprint_pipeline",
+                            "description": "Phase IV Stateless Blueprint Routing: Execute a deterministic chain of tools sequentially without state.",
+                            "inputSchema": {
+                                "type": "object",
+                                "properties": {
+                                    "pipeline": {
+                                        "type": "array",
+                                        "items": {"type": "string"},
+                                        "description": "A list of tool names to execute sequentially (e.g., ['trigger_harvester', 'search_knowledge'])"
+                                    },
+                                    "pipeline_args": {
+                                        "type": "object",
+                                        "description": "Arguments to pass through the pipeline"
+                                    }
+                                },
+                                "required": ["pipeline"]
+                            }
                         }
                     ]
                 }
@@ -106,7 +125,34 @@ class MCPServer:
             args = params.get("arguments", {})
 
             try:
-                if name == "search_knowledge":
+                if name == "blueprint_pipeline":
+                    pipeline = args.get("pipeline", [])
+                    p_args = args.get("pipeline_args", {})
+                    results = []
+
+                    # Deterministic Gate: validate agentic requests before execution
+                    for tool in pipeline:
+                        if tool not in ["trigger_harvester", "search_knowledge"]:
+                            raise ValueError(f"Agentic Pipeline Failure: Tool '{tool}' is not a valid deterministic node.")
+
+                        # Simulate routing execution
+                        if tool == "trigger_harvester":
+                            h = Harvester(self.root_dir)
+                            res = h.fetch_github_data()
+                            results.append({"tool": tool, "status": "Success", "fetched": len(res)})
+                        elif tool == "search_knowledge":
+                            q = p_args.get("query", "architecture")
+                            results.append({"tool": tool, "status": "Success", "results": len(self.cortex.search(q))})
+
+                    return {
+                        "jsonrpc": "2.0",
+                        "id": msg_id,
+                        "result": {
+                            "content": [{"type": "text", "text": json.dumps({"blueprint_status": "Complete", "stages": results}, ensure_ascii=False)}]
+                        }
+                    }
+
+                elif name == "search_knowledge":
                     query = args.get("query")
                     # Liquid Graph Context: Augment search with immediate topological neighborhood
                     results = self.cortex.search(query)
