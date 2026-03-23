@@ -17,7 +17,7 @@
   "vllm-project/vllm": {
     "last_tag": "v0.18.0",
     "updated_at": "2026-03-20",
-    "etag": "W/\"1f6a82a560876cfde4c88451dd637be0fecae2d398d4b7e396dc0a7291616b24\""
+    "etag": "W/\"8ba4505d35474ea2c31dfe78ac489ebb4ce6ff29e0eeb024f852192e5be676d3\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.3.0",
@@ -25,9 +25,9 @@
     "etag": "W/\"8e14f7e306f5b513a8fe743372f9422e457335c51995774030f714cbccdf9ed2\""
   },
   "google-ai-edge/mediapipe": {
-    "last_tag": "v0.10.32",
-    "updated_at": "2026-03-07",
-    "etag": "W/\"84d7da4a6bbc55b329890bfb25db1763d9ee1a278d7d2791df8304d5c3b338c9\""
+    "last_tag": "v0.10.33",
+    "updated_at": "2026-03-23",
+    "etag": "W/\"93feed56f41af68e60df1ffb643f3daea2743fd37af2dc18f4055bdf3e4628d4\""
   },
   "microsoft/markitdown": {
     "last_tag": "v0.1.5",
