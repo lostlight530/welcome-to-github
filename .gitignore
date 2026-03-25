@@ -57,3 +57,4 @@ __pycache__/
 # Append this to .gitignore
 docs/brain/*.db
 docs/brain/inputs/.harvester_state.json
+docs/brain/inputs/.raw_cache/

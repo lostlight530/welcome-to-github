@@ -1,42 +1,42 @@
 {
   "ModelEngine-Group/nexent": {
     "last_tag": "v1.8.1",
-    "updated_at": "2026-03-14",
+    "updated_at": "2026-03-25",
     "etag": "W/\"d84fbcb8626a52f759361f51bec255bef4e0b47194b9a97ac090ab415cea3ce1\""
-  },
-  "iflytek/astron-agent": {
-    "last_tag": "v1.0.3",
-    "updated_at": "2026-03-20",
-    "etag": "W/\"5a34f54fd2dad79c781b0d177270e66469ab229a77ac55bfd71ce002eabe19d9\""
   },
   "langgenius/dify": {
     "last_tag": "1.13.2",
-    "updated_at": "2026-03-18",
+    "updated_at": "2026-03-25",
     "etag": "W/\"179d6f8291ba87df7431f4a757e2e350aeaef5ad567ee0189b6a0a95c7ffa7fb\""
+  },
+  "iflytek/astron-agent": {
+    "last_tag": "v1.0.3",
+    "updated_at": "2026-03-25",
+    "etag": "W/\"5a34f54fd2dad79c781b0d177270e66469ab229a77ac55bfd71ce002eabe19d9\""
   },
   "vllm-project/vllm": {
     "last_tag": "v0.18.0",
-    "updated_at": "2026-03-20",
-    "etag": "W/\"4e70a3aa3ed1f870a9a66cc8162c7ca07f5decf2e75cb48c61bbd63715f818b5\""
+    "updated_at": "2026-03-25",
+    "etag": "W/\"c839060aae2804c519c512ea49c92b0d1f804ce168d7372cd2f6442f4de5229d\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.3.0",
-    "updated_at": "2026-03-07",
+    "updated_at": "2026-03-25",
     "etag": "W/\"8e14f7e306f5b513a8fe743372f9422e457335c51995774030f714cbccdf9ed2\""
   },
   "google-ai-edge/mediapipe": {
     "last_tag": "v0.10.33",
-    "updated_at": "2026-03-23",
+    "updated_at": "2026-03-25",
     "etag": "W/\"8f322f9d6e7369911c0e31d60c13bf2d30fb081306740a40d6b9de677c96611c\""
-  },
-  "microsoft/markitdown": {
-    "last_tag": "v0.1.5",
-    "updated_at": "2026-03-07",
-    "etag": "W/\"c76214b7d36db07ec0db80e3c044f0705195571db6002933b3cce41ea17e61eb\""
   },
   "googleapis/python-genai": {
     "last_tag": "v1.68.0",
-    "updated_at": "2026-03-18",
+    "updated_at": "2026-03-25",
     "etag": "W/\"dc91e76bf0c8ea8dc1470a6834d468d26d4346b5522a64768ec95cdc3ecf419a\""
+  },
+  "microsoft/markitdown": {
+    "last_tag": "v0.1.5",
+    "updated_at": "2026-03-25",
+    "etag": "W/\"c76214b7d36db07ec0db80e3c044f0705195571db6002933b3cce41ea17e61eb\""
   }
 }
