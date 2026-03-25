@@ -1,12 +1,20 @@
-# ℹ️ Intel: microsoft/markitdown v0.1.5
-> Source: GitHub Releases
-> Date: 2026-03-07T13:10:27.831407
-> **Analysis**: 🏷️ Edge-Ready
+# ℹ️ Intel Report: microsoft/markitdown
+## 🎯 监控目标 (Target)
+> microsoft/markitdown
 
-## 📝 Summary
-v0.1.5
+## 🚀 新版本发布 (New Release)
+> Version: v0.1.5
+> Date: 2026-03-25T09:56:13.436829
 
-## 🔍 Changelog (Extract)
+## 💡 项目洞察 (Insight)
+> **Architect's Analysis**: 🏷️ Edge-Ready
+
+## 🛡️ 信任评分 (Trust Score)
+> Score: 90/100
+
+## 🔨 最近提交 (Recent Commits)
+*Summary from release notes:*
+
 ## What's Changed
 * Update PDF table extraction to support aligned Markdown by @lesyk in https://github.com/microsoft/markitdown/pull/1499
 * Fix: PDF parsing doesn't support partially numbered lists by @lesyk in https://github.com/microsoft/markitdown/pull/1525
@@ -19,4 +27,4 @@ v0.1.5
 * @lesyk made their first contribution in https://github.com/microsoft/markitdown/pull/1499
 * @basnijholt made their first contribution in https://github.com/microsoft/markitdown/pull/1551
 
-**Full Changelog**: https://github.com/microsoft/markitdown/compare/v0.1.4...v0.1.5...
+**Full Changelog**: https://github.com/microsoft/markitdown/compare/v0.1.4...v0.1.5

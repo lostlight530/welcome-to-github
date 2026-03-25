@@ -1,12 +1,20 @@
-# ℹ️ Intel: huggingface/transformers v5.3.0
-> Source: GitHub Releases
-> Date: 2026-03-07T13:10:27.550922
-> **Analysis**: 🏷️ Edge-Ready ⚠️ Breaking-Change
+# ℹ️ Intel Report: huggingface/transformers
+## 🎯 监控目标 (Target)
+> huggingface/transformers
 
-## 📝 Summary
-v5.3.0
+## 🚀 新版本发布 (New Release)
+> Version: v5.3.0
+> Date: 2026-03-25T09:56:13.358610
 
-## 🔍 Changelog (Extract)
+## 💡 项目洞察 (Insight)
+> **Architect's Analysis**: 🏷️ Edge-Ready ⚠️ Breaking-Change
+
+## 🛡️ 信任评分 (Trust Score)
+> Score: 100/100
+
+## 🔨 最近提交 (Recent Commits)
+*Summary from release notes:*
+
 ## New Model additions
 
 ### EuroBERT
@@ -31,4 +39,13 @@ VibeVoice ASR is an automatic speech recognition model from Microsoft that combi
 
 <img width="799" height="497" alt="image" src="https://github.com/user-attachments/assets/1e486803-1b68-496b-aa67-4c3f2055fbeb" />
 
-TimesFM 2.5 is a pretrained time-series foundation model that uses a decoder-only attention architecture with input patching for forecast...
+TimesFM 2.5 is a pretrained time-series foundation model that uses a decoder-only attention architecture with input patching for forecasting. The model is designed to provide accurate zero-shot forecasts across different domains, forecasting horizons and temporal granularities without requiring dataset-specific training. It builds on the original TimesFM architecture with enhancements including rotary attention, QK normalization, per-dimension attention scaling, and continuous quantile prediction.
+
+**Links:** [Documentation](https://huggingface.co/docs/transformers/main/en/model_doc/timesfm2_5) | [Paper](https://huggingface.co/papers/2310.10688)
+* Timesfm 2.5 (#41763) by @kashif in [#41763](https://github.com/huggingface/transformers/pull/41763)
+
+### PP-DocLayoutV2
+
+<img width="1440" height="436" alt="image" src="https://github.com/user-attachments/assets/31d6609b-ef42-4f15-8c34-eeb2c0d679a9" />
+
+PP-DocLayoutV2 is a dedicated lightweight model for layout analysis, focusing specifically on element detection, classification, and reading order prediction. The model is composed of two sequentially connected network

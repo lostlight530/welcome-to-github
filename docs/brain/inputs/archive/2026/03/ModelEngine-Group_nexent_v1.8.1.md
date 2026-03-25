@@ -1,12 +1,20 @@
-# ℹ️ Intel: ModelEngine-Group/nexent v1.8.1
-> Source: GitHub Releases
-> Date: 2026-03-14T22:25:27.270843
-> **Analysis**: 🔗 Agent-Protocol
+# ℹ️ Intel Report: ModelEngine-Group/nexent
+## 🎯 监控目标 (Target)
+> ModelEngine-Group/nexent
 
-## 📝 Summary
-v1.8.1
+## 🚀 新版本发布 (New Release)
+> Version: v1.8.1
+> Date: 2026-03-25T09:56:13.331627
 
-## 🔍 Changelog (Extract)
+## 💡 项目洞察 (Insight)
+> **Architect's Analysis**: 🔗 Agent-Protocol
+
+## 🛡️ 信任评分 (Trust Score)
+> Score: 90/100
+
+## 🔨 最近提交 (Recent Commits)
+*Summary from release notes:*
+
 # 🚀 Nexent：开源智能体平台 / Nexent: Open Source Intelligent Agent Platform
 
 我们很高兴地宣布 **Nexent v1.8.1 LTS（长期支持版）** 正式发布！🎉
