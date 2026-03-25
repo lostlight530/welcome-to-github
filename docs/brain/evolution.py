@@ -76,23 +76,36 @@ class Evolver:
             return []
 
     def _generate_cognitive_report(self, insights):
+        import string
         now_utc = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
         date_prefix = datetime.datetime.now().strftime("%Y%m%d")
         filename = self.memories_path / f"{date_prefix}-cognitive-report.md"
 
-        content = [
-            f"# 🧠 NEXUS CORTEX: Cognitive Report",
-            f"> **Date**: {now_utc} (UTC)",
-            f""
-        ]
+        # Zero-Dependency Template Engine (string.Template)
+        report_template = string.Template("""# 🧠 NEXUS CORTEX: Cognitive Report
+> **Date**: $now_utc (UTC)
+> **Mode**: Phase IV Absolute Determinism
 
-        for insight in insights:
-            # Insight is already formatted in reason.py with emojis
-            content.append(f"- {insight}")
+## 🔬 System Entropy & Inference
+$insights_list
+
+## ⚡ Directives
+- **Action**: Assess orphans and cycles automatically resolved or escalated.
+- **Rule**: No LLM intervention allowed. Pure graph math.
+""")
+
+        # Format the insights array as a bulleted string
+        formatted_insights = "\n".join([f"- {i}" for i in insights])
+
+        # Fill the template
+        rendered_content = report_template.substitute(
+            now_utc=now_utc,
+            insights_list=formatted_insights
+        )
 
         with open(filename, "w", encoding="utf-8") as f:
-            f.write("\n".join(content))
-        logging.info(f"Cognitive Report generated: {filename}")
+            f.write(rendered_content)
+        logging.info(f"Cognitive Report generated via Template Engine: {filename}")
 
     def _scan_inputs(self):
         files = []

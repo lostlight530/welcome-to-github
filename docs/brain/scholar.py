@@ -27,7 +27,7 @@ class Scholar:
         # Ignored patterns (Noise Filter)
         self.ignore_dirs = {
             '.git', '__pycache__', 'node_modules', 'cortex.db', 'memories',
-            'inputs', 'knowledge', 'archaeology', 'venv', '.idea', '.vscode', 'site-packages'
+            'inputs', '.raw_cache', 'knowledge', 'archaeology', 'venv', '.idea', '.vscode', 'site-packages'
         }
         self.ignore_files = {
             '.DS_Store', 'cortex.db', 'cortex.db-journal', '.gitignore',
@@ -84,6 +84,46 @@ class Scholar:
             self._analyze_javascript_regex_ast(filepath, file_id)
         elif filepath.suffix == '.md':
             self._analyze_markdown_structure(filepath, file_id)
+        elif filepath.suffix in ['.json', '.yaml', '.yml']:
+            self._analyze_config_structure(filepath, file_id)
+
+    def _analyze_config_structure(self, filepath, file_id):
+        """Phase IV: Universal Digestion. Extracts deterministic properties from JSON/YAML configurations."""
+        if not self.cortex: return
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                content = f.read()
+
+            data = None
+            if filepath.suffix == '.json':
+                data = json.loads(content)
+            else:
+                # Zero-dependency naïve YAML parser (key: value structure extraction only)
+                data = {}
+                for line in content.splitlines():
+                    match = re.match(r'^([\w-]+):\s*(.+)$', line)
+                    if match:
+                        data[match.group(1)] = match.group(2)
+
+            def _extract_props(obj, parent_key=""):
+                if isinstance(obj, dict):
+                    for k, v in obj.items():
+                        new_key = f"{parent_key}.{k}" if parent_key else k
+                        _extract_props(v, new_key)
+                elif isinstance(obj, list):
+                    for idx, v in enumerate(obj):
+                        new_key = f"{parent_key}[{idx}]"
+                        _extract_props(v, new_key)
+                elif isinstance(obj, (str, int, float, bool)):
+                    prop_id = f"{file_id}_prop_{parent_key.replace('.', '_').replace('[', '_').replace(']', '')}"
+                    desc = str(obj)[:100]
+                    self.cortex.add_entity(prop_id, "config_property", parent_key, desc, save_to_disk=True)
+                    self.cortex.connect_entities(file_id, "defines", prop_id, save_to_disk=True)
+
+            if isinstance(data, dict):
+                _extract_props(data)
+        except Exception as e:
+            print(f"      [Config Error] {filepath.name}: {e}")
 
     def _analyze_javascript_regex_ast(self, filepath, file_id):
         """Polyglot Deterministic Extraction: Simulating Tree-sitter using zero-dependency Regex for JS/TS."""

@@ -124,8 +124,17 @@ class Cortex:
         w = 2.0 if id in self.CORE_WHITELIST else 1.0
 
         # Phase IV.1: Temporal Override
-        # If entity exists, mark the old one invalid (soft delete via invalid_at)
-        cursor.execute('UPDATE entities SET invalid_at = ? WHERE id = ? AND invalid_at IS NULL', (now_iso, id))
+        # If entity exists and is identical, do nothing. If different, mark invalid and insert new.
+        cursor.execute('SELECT type, name, desc FROM entities WHERE id = ? AND invalid_at IS NULL', (id,))
+        existing = cursor.fetchone()
+        if existing:
+            if existing['type'] == type_slug and existing['name'] == name and existing['desc'] == desc:
+                # Same record, just update last_activated
+                cursor.execute('UPDATE entities SET last_activated = ? WHERE id = ? AND invalid_at IS NULL', (now, id))
+                self.conn.commit()
+                return True
+            else:
+                cursor.execute('UPDATE entities SET invalid_at = ? WHERE id = ? AND invalid_at IS NULL', (now_iso, id))
 
         try:
             cursor.execute('INSERT INTO entities VALUES (?, ?, ?, ?, ?, ?, ?, NULL)',
@@ -149,6 +158,14 @@ class Cortex:
     def connect_entities(self, source, relation, target, desc="", save_to_disk=True):
         cursor = self.conn.cursor()
         now_iso = datetime.datetime.utcnow().isoformat()
+
+        # Check if identical relation exists actively
+        cursor.execute('''
+            SELECT 1 FROM relations
+            WHERE source = ? AND relation = ? AND target = ? AND invalid_at IS NULL
+        ''', (source, relation, target))
+        if cursor.fetchone():
+            return True # Already exists and active, do nothing to prevent unnecessary invalidation
 
         # Temporal Invalidation: Overwrite edge if it exists logically but temporal forces soft delete
         cursor.execute('''

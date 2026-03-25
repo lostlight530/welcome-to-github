@@ -4,6 +4,8 @@ import os
 import datetime
 import re
 import threading
+import hashlib
+import difflib
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -71,7 +73,8 @@ class Harvester:
             req = urllib.request.Request(url, headers=headers)
             try:
                 with urllib.request.urlopen(req, timeout=10) as response:
-                    data = json.loads(response.read().decode())
+                    raw_content = response.read().decode()
+                    data = json.loads(raw_content)
                     tag = data.get('tag_name', 'unknown')
                     body = data.get('body', '') or "No description provided."
                     new_etag = response.getheader('ETag')
@@ -82,8 +85,72 @@ class Harvester:
                 else:
                     raise e
 
-            if tag != last_tag:
-                print(f"   🔥 [Signal] High-Velocity Update: {repo} @ {tag}")
+            # Phase IV.2: Double-Clutch Anti-Shake (SHA-256 + Diff)
+            content_hash = hashlib.sha256(raw_content.encode('utf-8')).hexdigest()
+
+            with self.state_lock:
+                last_hash = repo_state.get('last_hash')
+
+            if last_hash == content_hash:
+                print(f"      => [Anti-Shake] Hash match for {repo}. Content is identical, aborting digest.")
+                with self.state_lock:
+                    self.state[repo] = self.state.get(repo, {})
+                    self.state[repo]['etag'] = new_etag
+                return None
+
+            # Fallback Diff if Hash Changed (checking for trivial whitespace/timestamp changes)
+            cache_dir = self.inputs_path / ".raw_cache"
+            cache_dir.mkdir(parents=True, exist_ok=True)
+            cache_file = cache_dir / f"{repo.replace('/', '_')}.json"
+
+            is_trivial_update = False
+            if cache_file.exists() and last_hash:
+                with open(cache_file, 'r', encoding='utf-8') as f:
+                    old_content = f.read()
+
+                # Zero-dependency diff
+                diff = list(difflib.unified_diff(
+                    old_content.splitlines(),
+                    raw_content.splitlines(),
+                    n=0
+                ))
+
+                # Check if diff only contains lines with dates, timestamps, or stats
+                meaningful_changes = 0
+                for line in diff:
+                    if line.startswith('+') or line.startswith('-'):
+                        if not line.startswith('+++') and not line.startswith('---'):
+                            text = line[1:].lower()
+                            # If the change is NOT just a date, timestamp, or a number update, it's meaningful
+                            if not re.search(r'\b(date|time|updated_at|timestamp)\b|\d{4}-\d{2}-\d{2}', text) and len(text.strip()) > 3:
+                                meaningful_changes += 1
+
+                if meaningful_changes == 0 and len(diff) > 0:
+                    is_trivial_update = True
+                    print(f"      => [Anti-Shake] Diff for {repo} is trivial (timestamps/metadata only). Aborting digest.")
+
+            if is_trivial_update:
+                with self.state_lock:
+                    self.state[repo] = self.state.get(repo, {})
+                    self.state[repo]['etag'] = new_etag
+                    self.state[repo]['last_hash'] = content_hash
+                with open(cache_file, 'w', encoding='utf-8') as f:
+                    f.write(raw_content)
+                return None
+
+            # Proceed with the update
+            with open(cache_file, 'w', encoding='utf-8') as f:
+                f.write(raw_content)
+
+            with self.state_lock:
+                if repo not in self.state:
+                    self.state[repo] = {}
+                self.state[repo]['etag'] = new_etag
+                self.state[repo]['last_tag'] = tag
+                self.state[repo]['last_hash'] = content_hash
+
+            if tag != last_tag or last_hash != content_hash:
+                print(f"   🔥 [Signal] Valid Structural Update: {repo} @ {tag}")
                 analysis_tags = self._analyze_content(body)
                 header_tags = " ".join(analysis_tags)
 
