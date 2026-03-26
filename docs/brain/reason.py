@@ -75,18 +75,27 @@ class ReasoningEngine:
         return insights
 
     def _self_reflect(self, stats):
-        """Generate a diary-like self summary based on graph metrics."""
+        """Generate a diary-like self summary using deterministic string.Template."""
+        from string import Template
+
         nodes = stats.get('entities', 0)
         edges = stats.get('relations', 0)
         density = stats.get('density', 0)
 
-        summary = f"🧘 **Self-Reflection**: My cortex currently holds {nodes} entities and {edges} synapses. "
+        # Pure Template Definition
+        base_tmpl = Template("🧘 **Self-Reflection**: My cortex currently holds $nodes entities and $edges synapses. $insight")
+
         if density < 1.0:
-            summary += f"With a density of {density:.2f}, my worldview is still fragmented. I am absorbing facts faster than I can connect them."
+            insight = Template("With a density of $density, my worldview is still fragmented. I am absorbing facts faster than I can connect them.")
         elif density < 1.5:
-            summary += f"With a density of {density:.2f}, my logical web is forming nicely. I am starting to see the 'Big Picture'."
+            insight = Template("With a density of $density, my logical web is forming nicely. I am starting to see the 'Big Picture'.")
         else:
-            summary += f"With a high density of {density:.2f}, my understanding is highly cohesive and robust."
+            insight = Template("With a high density of $density, my understanding is highly cohesive and robust.")
+
+        # Deterministic substitution
+        rendered_insight = insight.safe_substitute(density=f"{density:.2f}")
+        summary = base_tmpl.safe_substitute(nodes=nodes, edges=edges, insight=rendered_insight)
+
         return summary
 
     def _generate_structural_intuitions(self):
