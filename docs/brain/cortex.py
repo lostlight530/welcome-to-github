@@ -45,6 +45,12 @@ class Cortex:
                 PRIMARY KEY (id, valid_at)
             )
         ''')
+        # Deterministic Temporal Index for Entities
+        cursor.execute('''
+            CREATE INDEX IF NOT EXISTS idx_entities_temporal
+            ON entities (id, invalid_at)
+        ''')
+
         cursor.execute('''
             CREATE VIRTUAL TABLE IF NOT EXISTS entities_fts USING fts5(id, name, desc)
         ''')
@@ -58,6 +64,11 @@ class Cortex:
                 invalid_at TEXT,
                 UNIQUE(source, relation, target, valid_at)
             )
+        ''')
+        # Deterministic Temporal Index for Relations
+        cursor.execute('''
+            CREATE INDEX IF NOT EXISTS idx_relations_temporal
+            ON relations (source, target, invalid_at)
         ''')
         self.conn.commit()
 

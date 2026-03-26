@@ -97,13 +97,51 @@ class Scholar:
             data = None
             if filepath.suffix == '.json':
                 data = json.loads(content)
-            else:
-                # Zero-dependency naïve YAML parser (key: value structure extraction only)
+            elif filepath.suffix in ['.yaml', '.yml']:
+                # Zero-dependency Stack-based YAML parser for multi-level dicts/lists
                 data = {}
+                stack = [(-1, data, None)] # (indent, current_obj, current_key)
+
                 for line in content.splitlines():
-                    match = re.match(r'^([\w-]+):\s*(.+)$', line)
-                    if match:
-                        data[match.group(1)] = match.group(2)
+                    if not line.strip() or line.strip().startswith('#'):
+                        continue
+
+                    indent = len(line) - len(line.lstrip())
+                    clean_line = line.strip()
+
+                    # Pop stack until we find parent
+                    while stack and stack[-1][0] >= indent:
+                        stack.pop()
+
+                    parent_obj = stack[-1][1] if stack else data
+
+                    # Handle list item
+                    if clean_line.startswith('- '):
+                        val = clean_line[2:].strip()
+                        if isinstance(parent_obj, list):
+                            parent_obj.append(val)
+                        else:
+                            # Edge case: key followed by list
+                            key = stack[-1][2]
+                            if key and stack[-2][1].get(key) is None:
+                                stack[-2][1][key] = [val]
+                                stack.pop()
+                                stack.append((indent, stack[-1][1][key], None))
+                    # Handle key-value or key-dict
+                    elif ':' in clean_line:
+                        key, val = [part.strip() for part in clean_line.split(':', 1)]
+                        # Clean quotes
+                        if val and val[0] in ('"', "'") and val[-1] == val[0]:
+                            val = val[1:-1]
+
+                        if not val:
+                            new_dict = {}
+                            if isinstance(parent_obj, dict):
+                                parent_obj[key] = new_dict
+                            stack.append((indent, new_dict, key))
+                        else:
+                            if isinstance(parent_obj, dict):
+                                parent_obj[key] = val
 
             def _extract_props(obj, parent_key=""):
                 if isinstance(obj, dict):
