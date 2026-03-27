@@ -5,9 +5,9 @@
     "etag": "W/\"d84fbcb8626a52f759361f51bec255bef4e0b47194b9a97ac090ab415cea3ce1\""
   },
   "langgenius/dify": {
-    "last_tag": "1.13.2",
-    "updated_at": "2026-03-25",
-    "etag": "W/\"179d6f8291ba87df7431f4a757e2e350aeaef5ad567ee0189b6a0a95c7ffa7fb\""
+    "last_tag": "1.13.3",
+    "updated_at": "2026-03-27",
+    "etag": "W/\"8f86a3990eb51223b86ce1f3960b1693b7bbbc911605004d06ee666a6b4a075f\""
   },
   "iflytek/astron-agent": {
     "last_tag": "v1.0.3",
@@ -17,12 +17,12 @@
   "vllm-project/vllm": {
     "last_tag": "v0.18.0",
     "updated_at": "2026-03-27",
-    "etag": "W/\"b840db15add09d4029d5dee5d53ea7203f020d2fdee2f169725bbacbf230f16d\""
+    "etag": "W/\"b8d0afe5da7587f10a3246b9d864af110f5280b27950ac13bfe6ac4fabb792ef\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.4.0",
     "updated_at": "2026-03-27",
-    "etag": "W/\"4bbd2ff5c11aaaba8fc19bae71bdf14bef9e7f819fa892c24470ca9d1b880259\""
+    "etag": "W/\"d1c97831f793e5e491a3229deaf871a4e163a1fc928e1ef242a2e99625d01fd4\""
   },
   "google-ai-edge/mediapipe": {
     "last_tag": "v0.10.33",
