@@ -16,8 +16,8 @@
   },
   "vllm-project/vllm": {
     "last_tag": "v0.18.0",
-    "updated_at": "2026-03-27",
-    "etag": "W/\"b8d0afe5da7587f10a3246b9d864af110f5280b27950ac13bfe6ac4fabb792ef\""
+    "updated_at": "2026-03-28",
+    "etag": "W/\"a9a3c0746598d759c520ce9a4e523a297058645263669a5cf2e5a25a82177576\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.4.0",
@@ -30,9 +30,9 @@
     "etag": "W/\"8f322f9d6e7369911c0e31d60c13bf2d30fb081306740a40d6b9de677c96611c\""
   },
   "googleapis/python-genai": {
-    "last_tag": "v1.68.0",
-    "updated_at": "2026-03-25",
-    "etag": "W/\"dc91e76bf0c8ea8dc1470a6834d468d26d4346b5522a64768ec95cdc3ecf419a\""
+    "last_tag": "v1.69.0",
+    "updated_at": "2026-03-28",
+    "etag": "W/\"afc31a0dceb72e387a53550d8561c41ec18bf95c4a76c3ca07bd21ccbca1944c\""
   },
   "microsoft/markitdown": {
     "last_tag": "v0.1.5",
