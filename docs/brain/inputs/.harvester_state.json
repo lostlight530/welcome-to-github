@@ -6,8 +6,8 @@
   },
   "langgenius/dify": {
     "last_tag": "1.13.3",
-    "updated_at": "2026-03-27",
-    "etag": "W/\"8f86a3990eb51223b86ce1f3960b1693b7bbbc911605004d06ee666a6b4a075f\""
+    "updated_at": "2026-03-28",
+    "etag": "W/\"04fb11bb72d5b1d8467ef7ac52fc3859b64ea2debc41a83ebffbbb915f88a4e2\""
   },
   "iflytek/astron-agent": {
     "last_tag": "v1.0.3",
@@ -17,7 +17,7 @@
   "vllm-project/vllm": {
     "last_tag": "v0.18.0",
     "updated_at": "2026-03-28",
-    "etag": "W/\"a9a3c0746598d759c520ce9a4e523a297058645263669a5cf2e5a25a82177576\""
+    "etag": "W/\"4dc586328f62b9c99e0de79b29e32cd2042205d855d6b814cda54c1cf380af08\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.4.0",
