@@ -17,12 +17,12 @@
   "vllm-project/vllm": {
     "last_tag": "v0.18.0",
     "updated_at": "2026-03-29",
-    "etag": "W/\"888af5a1d0812ce899ba981b3cb182d9117e32a58b26c40c3ec1d4e31f14e103\""
+    "etag": "W/\"958fe5a71ecbfc000bcc6d071c8e6f26344b1a2be3fa77166c162b5f1db38829\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.4.0",
     "updated_at": "2026-03-29",
-    "etag": "W/\"33ee107e0d93411d7b23bd1686859e5eb2b763290e9b4245370a7ace6b8faf03\""
+    "etag": "W/\"6687ba64f8231d7233cce5ce5f557597de0d41157a7ee2567ff09059617626c3\""
   },
   "google-ai-edge/mediapipe": {
     "last_tag": "v0.10.33",
