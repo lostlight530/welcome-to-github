@@ -1,8 +1,8 @@
 {
   "ModelEngine-Group/nexent": {
-    "last_tag": "v1.8.1",
-    "updated_at": "2026-03-25",
-    "etag": "W/\"d84fbcb8626a52f759361f51bec255bef4e0b47194b9a97ac090ab415cea3ce1\""
+    "last_tag": "v2.0.0",
+    "updated_at": "2026-03-29",
+    "etag": "W/\"8019f230007dfb49888869bd9a8a0a1bf87bc4c080902e170e298ef90b5d6a73\""
   },
   "langgenius/dify": {
     "last_tag": "1.13.3",
@@ -16,13 +16,13 @@
   },
   "vllm-project/vllm": {
     "last_tag": "v0.18.0",
-    "updated_at": "2026-03-28",
-    "etag": "W/\"4dc586328f62b9c99e0de79b29e32cd2042205d855d6b814cda54c1cf380af08\""
+    "updated_at": "2026-03-29",
+    "etag": "W/\"888af5a1d0812ce899ba981b3cb182d9117e32a58b26c40c3ec1d4e31f14e103\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.4.0",
-    "updated_at": "2026-03-27",
-    "etag": "W/\"d1c97831f793e5e491a3229deaf871a4e163a1fc928e1ef242a2e99625d01fd4\""
+    "updated_at": "2026-03-29",
+    "etag": "W/\"33ee107e0d93411d7b23bd1686859e5eb2b763290e9b4245370a7ace6b8faf03\""
   },
   "google-ai-edge/mediapipe": {
     "last_tag": "v0.10.33",
