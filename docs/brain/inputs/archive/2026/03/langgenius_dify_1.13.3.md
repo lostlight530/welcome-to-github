@@ -4,7 +4,7 @@
 
 ## 🚀 新版本发布 (New Release)
 > Version: 1.13.3
-> Date: 2026-03-28T22:28:18.838267
+> Date: 2026-03-30T13:37:51.547014
 
 ## 💡 项目洞察 (Insight)
 > **Architect's Analysis**: 🏷️ Edge-Ready ⚠️ Breaking-Change 🔗 Agent-Protocol
@@ -33,6 +33,11 @@ Our latest patch release, v1.13.3, focuses on stability and correctness across w
 ---
 
 ## Upgrade Guide
+
+> [!IMPORTANT]
+> We updated the default Python and Node.js paths for Sandbox in the previous release.
+> If you already have existing Sandbox configuration files, these values are **not** updated automatically.
+> Please manually update both the Python path and the Node.js path in your existing configuration files to match the new defaults.
 
 ### Docker Compose Deployments
 
@@ -96,7 +101,4 @@ Our latest patch release, v1.13.3, focuses on stability and correctness across w
 ---
 
 ## What's Changed
-* refactor(web): number inputs to use Base UI NumberField by @lyzno1 in https://github.com/langgenius/dify/pull/33539
-* feat(web): add base ui toast by @lyzno1 in https://github.com/langgenius/dify/pull/33569
-* chore(i18n): sync translations with en-US by @github-actions[bot] in https://github.com/langgenius/dify/pull/33585
-* chore(i18n): sync translations with en-US by @github-actions[bot
+* refactor(web): number inputs to use Base UI Nu
