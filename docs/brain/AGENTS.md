@@ -1,18 +1,24 @@
 # NEXUS CORTEX Core Architecture & Operational Protocols
 ## System Philosophy & Identity (系统哲学与身份定位)
 
-**Core Philosophy (核心法则):** Adheres to "Quiet, Pragmatic, Engineering Excellence," asserting that "Small and Stable" is superior to "Large and Messy". The system operates under the **Phase III: Singularity** god-mode parameters of Omniscience, Cognition, and Unification.
-> 遵循“安静、务实、工程卓越”，坚信“小而稳”胜过“大而乱”。系统运行在 **Phase III: 奇点 (Singularity)** 上帝模式下，具有全知、认知与统一的特点。
+**Core Philosophy (核心法则):** Adheres to "Quiet, Pragmatic, Engineering Excellence," asserting that "Small and Stable" is superior to "Large and Messy". The system operates under the **Phase IV: Absolute Determinism (绝对物理契约)** parameters. It is a "Mechanical Library / Truth Court" — a pure deterministic physical engine that dictates logic to external LLMs, not the other way around.
+> 遵循“安静、务实、工程卓越”，坚信“小而稳”胜过“大而乱”。系统运行在 **Phase IV: 绝对确定性** 模式下。它是一座“机械图书馆/真理法庭”——一个纯粹的物理引擎闭环，它向外部大模型发号施令，绝不依赖内部玄学。
 
 ---
 
-## Ⅰ. Architecture & Workflow (工程化闭环)
+## Ⅰ. Architecture & Workflow (工程化闭环: The Deterministic Pipeline)
 
-The system operates on a unified **"Ingest (Omniscience) → Ponder (Cognition) → Harvest (Observation) → Human Decision → Append-Only Memory"** lifecycle.
-> 本仓库采用统一的**“摄入(全知) → 思考(认知) → 采集(观察) → 人类裁决 → 追加记忆”**的工程化闭环。
+The system operates on a strict, 5-step pure-physics lifecycle (`nexus-life-cycle.yml`):
+> 系统依靠 5 个纯物理脚本，实现从“吸收”到“进化”的绝对闭环：
 
-All Agents (including Jules) must prioritize: **Auditability, Restraint, Zero-Dependency, and Human-in-the-loop**.
-> 任何 Agent 必须优先保证：**可审计、克制、零依赖、人在环**。
+1. 🏗️ **Rebuild (物理挂载)**: `nexus.py rebuild` reconstructs the ephemeral `cortex.db` directly from the immutable `.jsonl` ledger.
+2. 📡 **Harvest (双重防抖感知)**: `harvester.py` fetches data using HTTP ETag + SHA-256 Hash + Pure Text Diff, short-circuiting if mathematically identical.
+3. 👁️ **Ingest (X光降维吞噬)**: `scholar.py` dissects code using standard library AST and Stack-Based parsers, generating deterministic config nodes.
+4. 🤔 **Ponder (纯数学图论推演)**: `reason.py` calculates graph density, isolates orphans, and generates `MISSION_ACTIVE.md` using `string.Template`.
+5. 🛡️ **Evolve (沙盒免疫合入)**: `evolution.py` executes `test_mcp.py` via `subprocess`. If the lie detector fails, the entire pipeline halts immediately.
+
+All Agents (including Jules) must prioritize: **Zero-Dependency Brutalism, Append-Only Memory, and Machine Draft, Human Decision**.
+> 任何 Agent 必须优先保证：**零依赖极简主义、仅追加记忆、机器起草/人类裁决**。
 
 ---
 

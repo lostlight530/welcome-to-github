@@ -86,13 +86,17 @@ class Harvester:
                     raise e
 
             # Phase IV.2: Double-Clutch Anti-Shake (SHA-256 + Diff)
-            content_hash = hashlib.sha256(raw_content.encode('utf-8')).hexdigest()
+            # Deterministic noise stripping prior to hash (Zero-Dependency)
+            clean_content = re.sub(r'(?i)\b(date|time|updated_at|timestamp)\s*[:=]\s*["\']?\d{4}-\d{2}-\d{2}T?\d{0,2}:?\d{0,2}[:.]?\d{0,3}Z?["\']?', '', raw_content)
+            clean_content = re.sub(r'\d{4}-\d{2}-\d{2}', '', clean_content)
+
+            content_hash = hashlib.sha256(clean_content.encode('utf-8')).hexdigest()
 
             with self.state_lock:
                 last_hash = repo_state.get('last_hash')
 
             if last_hash == content_hash:
-                print(f"      => [Anti-Shake] Hash match for {repo}. Content is identical, aborting digest.")
+                print(f"      => [Anti-Shake] Hash match for {repo} (Noise filtered). Content is structurally identical, aborting digest.")
                 with self.state_lock:
                     self.state[repo] = self.state.get(repo, {})
                     self.state[repo]['etag'] = new_etag
