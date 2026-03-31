@@ -21,6 +21,43 @@ class MCPServer:
     def __init__(self, root_dir: str):
         self.root_dir = root_dir
         self.cortex = Cortex(os.path.join(root_dir, "cortex.db"))
+        self._init_trust_ledger()
+
+    def _init_trust_ledger(self):
+        """[Phase V] Initialize the Cold-Blooded Trust Ledger"""
+        cursor = self.cortex.conn.cursor()
+        cursor.execute("CREATE TABLE IF NOT EXISTS agent_trust (id TEXT PRIMARY KEY, score INTEGER DEFAULT 100)")
+        self.cortex.conn.commit()
+
+    def _verify_agent_trust(self, agent_id: str):
+        """[Phase V] Cold-Blooded Ledger Verification"""
+        if not agent_id:
+            # If no agent_id is provided, default to an anonymous agent pool
+            agent_id = "anonymous"
+
+        cursor = self.cortex.conn.cursor()
+        cursor.execute("SELECT score FROM agent_trust WHERE id = ?", (agent_id,))
+        row = cursor.fetchone()
+
+        if not row:
+            # Register new agent
+            cursor.execute("INSERT INTO agent_trust (id, score) VALUES (?, 100)", (agent_id,))
+            self.cortex.conn.commit()
+            return True
+
+        score = row[0]
+        if score <= 0:
+            raise PermissionError(f"Dictator Rejection: Agent '{agent_id}' trust score depleted ({score}). Access Denied.")
+        return True
+
+    def _slash_trust(self, agent_id: str, penalty: int = 10):
+        """[Phase V] Punish Hallucinations"""
+        if not agent_id:
+            agent_id = "anonymous"
+
+        cursor = self.cortex.conn.cursor()
+        cursor.execute("UPDATE agent_trust SET score = score - ? WHERE id = ?", (penalty, agent_id))
+        self.cortex.conn.commit()
 
     def handle_request(self, request: dict) -> dict:
         """Handles JSON-RPC 2.0 requests."""
@@ -123,10 +160,19 @@ class MCPServer:
         if method == "tools/call":
             name = params.get("name")
             args = params.get("arguments", {})
+            # Phase V: Require agent_id in arguments for identity tracking
+            agent_id = args.get("agent_id", "anonymous")
 
             try:
+                # Phase V: Immediate Trust Verification
+                self._verify_agent_trust(agent_id)
+
                 if name == "blueprint_pipeline":
-                    pipeline = args.get("pipeline", [])
+                    try:
+                        pipeline = args["pipeline"]
+                    except KeyError:
+                        self._slash_trust(agent_id, penalty=10)
+                        raise ValueError("Missing 'pipeline' key in arguments. Trust slashed (-10).")
                     p_args = args.get("pipeline_args", {})
                     results = []
 
@@ -153,7 +199,12 @@ class MCPServer:
                     }
 
                 elif name == "search_knowledge":
-                    query = args.get("query")
+                    try:
+                        query = args["query"]
+                    except KeyError:
+                        self._slash_trust(agent_id, penalty=10)
+                        raise ValueError("Missing 'query' key in arguments. Trust slashed (-10).")
+
                     # Liquid Graph Context: Augment search with immediate topological neighborhood
                     results = self.cortex.search(query)
 
@@ -178,7 +229,12 @@ class MCPServer:
                         }
                     }
                 elif name == "get_entity":
-                    eid = args.get("id")
+                    try:
+                        eid = args["id"]
+                    except KeyError:
+                        self._slash_trust(agent_id, penalty=10)
+                        raise ValueError("Missing 'id' key in arguments. Trust slashed (-10).")
+
                     entity = self.cortex.get_entity(eid)
                     if entity:
                         return {
@@ -192,20 +248,30 @@ class MCPServer:
                         return {"jsonrpc": "2.0", "id": msg_id, "error": {"code": -32602, "message": f"Entity '{eid}' not found"}}
 
                 elif name == "add_memory":
+                    try:
+                        eid = args["id"]
+                        ename = args["name"]
+                        edesc = args["desc"]
+                    except KeyError:
+                        self._slash_trust(agent_id, penalty=10)
+                        raise ValueError("Missing 'id', 'name', or 'desc' in arguments. Trust slashed (-10).")
+
                     self.cortex.add_entity(
-                        id=args.get("id"),
+                        id=eid,
                         type_slug=args.get("type", "concept"),
-                        name=args.get("name"),
-                        desc=args.get("desc")
+                        name=ename,
+                        desc=edesc
                     )
                     return {
                         "jsonrpc": "2.0",
                         "id": msg_id,
                         "result": {
-                            "content": [{"type": "text", "text": f"Entity '{args.get('id')}' added successfully to cortex DB."}]
+                            "content": [{"type": "text", "text": f"Entity '{eid}' added successfully to cortex DB."}]
                         }
                     }
                 elif name == "trigger_harvester":
+                    # optional intent arg
+                    intent = args.get("intent", "fetch_release")
                     harvester = Harvester(self.root_dir)
                     new_files = harvester.fetch_github_data()
                     msg = "Intent-driven harvest complete. No new high-signal data."

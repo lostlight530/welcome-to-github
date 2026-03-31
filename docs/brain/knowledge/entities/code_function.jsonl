@@ -875,37 +875,3 @@
 {"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-03-31T05:54:45.368312"}
 {"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-03-31T05:54:45.394420"}
 {"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-03-31T05:54:45.397245"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-03-31T06:06:04.822599"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-03-31T06:06:04.824034"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-03-31T06:06:04.844733"}
-{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-03-31T06:06:04.847139"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-03-31T06:06:04.857159"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-03-31T06:06:04.858502"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-03-31T06:06:13.806830"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-03-31T06:06:13.808325"}
-{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-03-31T06:06:13.809455"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-03-31T06:06:13.825828"}
-{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-03-31T06:06:13.827800"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-03-31T06:06:13.836623"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-03-31T06:06:13.837792"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-03-31T06:07:12.258321"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-03-31T06:07:12.260600"}
-{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-03-31T06:07:12.261827"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-03-31T06:07:12.280078"}
-{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-03-31T06:07:12.282063"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-03-31T06:07:12.291154"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-03-31T06:07:12.292542"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-03-31T12:58:34.097860"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-03-31T12:58:34.099505"}
-{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-03-31T12:58:34.100856"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-03-31T12:58:34.118616"}
-{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-03-31T12:58:34.120802"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-03-31T12:58:34.129614"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-03-31T12:58:34.130881"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-03-31T13:35:29.996163"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-03-31T13:35:29.998049"}
-{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-03-31T13:35:30.000567"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-03-31T13:35:30.044197"}
-{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-03-31T13:35:30.048896"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-03-31T13:35:30.076225"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-03-31T13:35:30.078719"}

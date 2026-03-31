@@ -26,6 +26,10 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.10'
+      env:
+        # Phase V Dictator: Disable external dependency submission (Zero Dependency Brutalism)
+        # Fixes: HttpError: An error occurred while processing your request. - https://docs.github.com/rest/dependency-graph/dependency-submission
+        GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
 
     - name: 🏗️ Rebuild Memory (Wake Up)
       run: python docs/brain/nexus.py rebuild
