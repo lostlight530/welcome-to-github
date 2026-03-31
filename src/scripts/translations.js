@@ -36,7 +36,7 @@ const translations = {
     stats: {
       items: [
         { value: "15", label: "Google 开发者徽章" },
-        { value: "4", label: "国家级 / 省级竞赛成果" },
+        { value: "5", label: "国家级 / 省级竞赛成果" },
         { value: "4", label: "公开架构讨论贡献" },
         { value: "20+", label: "长期维护中的工程资产" }
       ]
@@ -44,12 +44,13 @@ const translations = {
     achievements: {
       title: "2025-2026 关键成就",
       googleBadges: "15 枚 Google 开发者徽章",
-      awards: "4 项国家级 / 省级竞赛成果",
+      awards: "5 项国家级 / 省级竞赛成果",
       awardList: [
-        "华为 ICT 大赛中国总决赛二等奖",
-        "昇思 MindSpore 创新训练营二等奖",
-        "蓝桥杯智能体开发省赛三等奖",
-        "金砖国家技能大赛鸿蒙赛道晋级",
+        "第9届华为ICT昇腾AI全国总决赛二等奖+湖北特等奖",
+        "华为ICT仓颉语言全国初赛二等奖",
+        "金砖国家技能大赛鸿蒙赛道带队晋级国赛+个人优胜",
+        "华为昇思MindSpore创新训练营团队二等奖",
+        "第16届蓝桥杯智能体开发大学组省三+语言类国赛入围",
         "持续沉淀 20+ 工程资产与公开作品"
       ],
       summary:
@@ -124,6 +125,16 @@ const translations = {
           name: "Persona Chat Studio",
           desc: "轻量化大模型交互界面，基于 Int4 量化与流式上下文管理，在受限算力下平衡推理速度、显存占用与回复质量",
           tech: "Qwen / Gradio / Int4"
+        },
+        {
+          name: "spec-X",
+          desc: "架构哲学 + 自建Skills系统（repo-audit/stack-detect/test-autopilot）",
+          tech: "Skills System / Architecture / Automation"
+        },
+        {
+          name: "virtu-tutor-dkt",
+          desc: "DKT+强化学习虚拟偶像 Clean Architecture",
+          tech: "DKT / RL / Clean Architecture"
         }
       ]
     },
@@ -183,7 +194,7 @@ const translations = {
     stats: {
       items: [
         { value: "15", label: "Google Developer Badges" },
-        { value: "4", label: "National / Provincial Awards" },
+        { value: "5", label: "National / Provincial Awards" },
         { value: "4", label: "Public Architecture Contributions" },
         { value: "20+", label: "Long-term Engineering Assets" }
       ]
@@ -191,16 +202,17 @@ const translations = {
     achievements: {
       title: "2025-2026 Highlights",
       googleBadges: "15 Google Developer Badges",
-      awards: "4 National / Provincial Achievements",
+      awards: "5 National / Provincial Achievements",
       awardList: [
-        "2nd Prize, Huawei ICT Competition China Finals",
-        "2nd Prize, MindSpore Innovation Bootcamp",
-        "3rd Prize, Lanqiao Cup AI Agent Development",
-        "Finalist, BRICS Skills HarmonyOS Track",
+        "2nd Prize, 9th Huawei ICT Ascend AI National Finals + Hubei Grand Prize",
+        "2nd Prize, Huawei ICT Cangjie Language National Preliminaries",
+        "Team Leader Finalist & Individual Excellence, BRICS Skills HarmonyOS Track",
+        "2nd Prize, Huawei MindSpore Innovation Bootcamp Team",
+        "3rd Prize Provincial & National Finalist (Language), 16th Lanqiao Cup AI Agent",
         "20+ evolving engineering assets and public works"
       ],
       summary:
-        "This year was not only about building projects, but about turning learning, tooling, and ecosystem participation into reusable system capability."
+        "This year was not only about building projects, but about turning learning, tooling, and ecosystem participation into reusable system capability"
     },
     ecosystem: {
       title: "Ecosystem Contributions",
@@ -269,8 +281,18 @@ const translations = {
         },
         {
           name: "Persona Chat Studio",
-          desc: "A lightweight LLM interface using Int4 quantization and streaming context control to balance latency, memory footprint, and response quality.",
+          desc: "A lightweight LLM interface using Int4 quantization and streaming context control to balance latency, memory footprint, and response quality",
           tech: "Qwen / Gradio / Int4"
+        },
+        {
+          name: "spec-X",
+          desc: "Architecture Philosophy + Custom Skills System (repo-audit/stack-detect/test-autopilot)",
+          tech: "Skills System / Architecture / Automation"
+        },
+        {
+          name: "virtu-tutor-dkt",
+          desc: "DKT + RL Virtual Idol Clean Architecture",
+          tech: "DKT / RL / Clean Architecture"
         }
       ]
     },
