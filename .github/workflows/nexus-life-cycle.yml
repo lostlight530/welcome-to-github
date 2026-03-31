@@ -27,16 +27,19 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: 🟢 Rebuild Memory (Wake Up)
+    - name: 🏗️ Rebuild Memory (Wake Up)
       run: python docs/brain/nexus.py rebuild
 
-    - name: 🔍 Ingest Self-Codebase (Omniscience)
+    - name: 📡 Harvest External Facts (Double-Clutch Radar)
+      run: python docs/brain/nexus.py harvest
+
+    - name: 👁️ Ingest Self-Codebase (X-Ray Digestion)
       run: python docs/brain/nexus.py ingest
 
-    - name: 🤔 Deep Ponder (Cognition)
+    - name: 🤔 Deep Ponder (Mathematical Graph Inference)
       run: python docs/brain/nexus.py ponder
 
-    - name: 🧬 Run Evolution Cycle (Strategy)
+    - name: 🛡️ Run Evolution Cycle (Sandbox Verification & Report)
       run: python docs/brain/nexus.py evolve
 
     - name: 🗑️ Clean Untracked Reports

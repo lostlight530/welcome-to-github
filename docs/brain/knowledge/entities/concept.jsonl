@@ -607,3 +607,6 @@
 {"id": "concept_2_relations_关系层", "type": "concept", "name": "2. Relations (关系层)", "desc": "Section in SCHEMA.md", "valid_at": "2026-03-25T10:34:48.687449"}
 {"id": "concept_3_cognitive_immune__structure_system_认知免疫与结构关系类型", "type": "concept", "name": "3. Cognitive Immune & Structure System (认知免疫与结构关系类型)", "desc": "Section in SCHEMA.md", "valid_at": "2026-03-25T10:34:48.690905"}
 {"id": "concept_4_inputs_原始输入层", "type": "concept", "name": "4. Inputs (原始输入层)", "desc": "Section in SCHEMA.md", "valid_at": "2026-03-25T10:34:48.694863"}
+{"id": "concept_1_temporal_entities_时序实体层", "type": "concept", "name": "1. Temporal Entities (时序实体层)", "desc": "Section in SCHEMA.md", "valid_at": "2026-03-31T05:54:45.197666"}
+{"id": "concept_2_temporal_relations_时序关系层", "type": "concept", "name": "2. Temporal Relations (时序关系层)", "desc": "Section in SCHEMA.md", "valid_at": "2026-03-31T05:54:45.209309"}
+{"id": "concept_ⅰ_architecture__workflow_工程化闭环_the_deterministic_pip", "type": "concept", "name": "Ⅰ. Architecture & Workflow (工程化闭环: The Deterministic Pipeline)", "desc": "Section in AGENTS.md", "valid_at": "2026-03-31T05:54:45.302636"}
