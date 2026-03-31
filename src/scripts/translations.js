@@ -127,7 +127,7 @@ const translations = {
           tech: "Qwen / Gradio / Int4"
         },
         {
-          name: "xii项目",
+          name: "spec-X",
           desc: "架构哲学 + 自建Skills系统（repo-audit/stack-detect/test-autopilot）",
           tech: "Skills System / Architecture / Automation"
         },
@@ -285,7 +285,7 @@ const translations = {
           tech: "Qwen / Gradio / Int4"
         },
         {
-          name: "xii Project",
+          name: "spec-X",
           desc: "Architecture Philosophy + Custom Skills System (repo-audit/stack-detect/test-autopilot)",
           tech: "Skills System / Architecture / Automation"
         },
