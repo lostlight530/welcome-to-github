@@ -17,7 +17,7 @@
   "vllm-project/vllm": {
     "last_tag": "v0.18.1",
     "updated_at": "2026-03-31",
-    "etag": "W/\"cdc68b84f6727cf2705f28723c736924feb3a2b118008c9567ffb58e71c08e07\""
+    "etag": "W/\"ba65ea24e62811909679503d1ff0ddac61aa4a8300fa9a9c8af26f4b22a11239\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.4.0",
@@ -26,8 +26,8 @@
   },
   "google-ai-edge/mediapipe": {
     "last_tag": "v0.10.33",
-    "updated_at": "2026-03-25",
-    "etag": "W/\"8f322f9d6e7369911c0e31d60c13bf2d30fb081306740a40d6b9de677c96611c\""
+    "updated_at": "2026-03-31",
+    "etag": "W/\"c6ecfda48816848d21f88643cc3268880f56881877ca11f4e905d0d10de57f10\""
   },
   "googleapis/python-genai": {
     "last_tag": "v1.69.0",
