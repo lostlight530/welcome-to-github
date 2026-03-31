@@ -17,7 +17,7 @@
   "vllm-project/vllm": {
     "last_tag": "v0.18.0",
     "updated_at": "2026-03-31",
-    "etag": "W/\"31ae0c34e17819a90e806c925412db1bb4e831849e45df17adef2447fb18fdba\""
+    "etag": "W/\"0af05f0f3d4c438aaf6748a0a5eb6df2fb62d772753f646e239ec0ad17685444\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.4.0",
