@@ -62,7 +62,43 @@ def test_mcp_server():
     if "error" in harvester_res:
         raise AssertionError(f"Harvester failed: {harvester_res['error']}")
 
-    print("[Test] All MCP server endpoints verified. System secure.")
+    # 5. Test Phase V Trust Gateway (Penalty Mechanism)
+    print("[Test] Testing 'tools/call' Phase V Trust Gateway...")
+
+    import random
+    agent_id = f"test_hallucinator_{random.randint(1000, 9999)}"
+
+    trust_req = {
+        "jsonrpc": "2.0",
+        "method": "tools/call",
+        "params": {
+            "name": "add_memory",
+            "arguments": {
+                "agent_id": agent_id,
+                # Missing required 'id' and 'name' fields to trigger KeyError
+                "desc": "This is a hallucinated entry"
+            }
+        },
+        "id": "test-5"
+    }
+
+    # 5.1 First attempt - Should fail and slash trust
+    trust_res = server.handle_request(trust_req)
+    assert "error" in trust_res, "Phase V Penalty failed: Request without required fields was not rejected."
+    assert "Trust slashed (-10)" in trust_res["error"]["message"], "Phase V Penalty failed: Did not slash trust appropriately."
+
+    # 5.2 Drain Trust to 0
+    print("[Test] Draining agent trust to verify physical TCP block simulation...")
+    for _ in range(10): # 10 * 10 = 100 points
+        server.handle_request(trust_req)
+
+    # 5.3 Attempt after trust depleted - Should get PermissionError message
+    final_res = server.handle_request(trust_req)
+    assert "error" in final_res, "Phase V Block failed: Agent with depleted trust was not rejected."
+    assert "Trust slashed" not in final_res["error"]["message"], "Phase V Block failed: Agent should be blocked before reaching the logic."
+    assert "Dictator Rejection" in final_res["error"]["message"], f"Phase V Block failed: Did not receive PermissionError. Got: {final_res['error']['message']}"
+
+    print("[Test] All MCP server endpoints verified. System secure. Trust Gateway Active.")
 
 if __name__ == "__main__":
     try:

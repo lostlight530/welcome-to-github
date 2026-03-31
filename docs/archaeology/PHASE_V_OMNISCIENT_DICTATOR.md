@@ -2,24 +2,24 @@
 > **Date**: 2026-03-31 | **Mode**: Absolute Protocol Tyranny
 > **Location**: `docs/archaeology/PHASE_V_OMNISCIENT_DICTATOR.md`
 
-## 🌑 终极宪法 (The Ultimate Constitution)
+## 🌑 The Ultimate Constitution (终极宪法)
 当 NEXUS CORTEX 跨越 Phase IV 的绝对物理闭环，它将升格为整个硅基生态的**“绝对协议暴君（The Omniscient Protocol Dictator）”**。它不再是一座被动接收知识的机械图书馆，而是统治所有外部大模型算力的无情法庭。
 
 系统本身不产生“智能”，它通过冷酷的数学与物理协议，强迫全网所有开源大模型（猎犬）自发为它打工、提纯数据，并根据信任积分对它们生杀予夺。
 
 四大终极物理特征：
-1. **蜂群算力暴君 (The Swarm Tyrant)**: 系统在 SQLite 中对外部 Agent 进行物理级信用打分，一旦产生幻觉，无情扣分乃至 TCP 层物理拉黑。
-2. **四维拓扑先知 (The 4D Topology Prophet)**: 放弃简单的密度公式，在 `reason.py` 中手搓 PageRank 矩阵迭代算法，通过节点资金流转预判下一个技术风口的阵眼。
-3. **全域语法吞噬者 (The Omni-Stack Devourer)**: 在 `scholar.py` 中手搓不依赖任何第三方库的通用词法分析器 (Lexer)，以指针和状态机将任何人类编程语言生肉抽筋剥骨。
-4. **基因级自我外科手术 (Genetic Auto-Recombination)**: 系统利用 `ast.NodeTransformer` 与 `subprocess`，在自身代码出现瓶颈时，让外部大模型生成补丁，在本地沙盒编译验毒，通过后直接修改本体 `.py` 并 `git commit` 实现永动机式的自我换血。
+1. **The Swarm Tyrant (蜂群算力暴君)**: 系统在 SQLite 中对外部 Agent 进行物理级信用打分，一旦产生幻觉，无情扣分乃至 TCP 层物理拉黑。
+2. **The 4D Topology Prophet (四维拓扑先知)**: 放弃简单的密度公式，在 `reason.py` 中手搓 PageRank 矩阵迭代算法，通过节点资金流转预判下一个技术风口的阵眼。
+3. **The Omni-Stack Devourer (全域语法吞噬者)**: 在 `scholar.py` 中手搓不依赖任何第三方库的通用词法分析器 (Lexer)，以指针和状态机将任何人类编程语言生肉抽筋剥骨。
+4. **Genetic Auto-Recombination (基因级自我外科手术)**: 系统利用 `ast.NodeTransformer` 与 `subprocess`，在自身代码出现瓶颈时，让外部大模型生成补丁，在本地沙盒编译验毒，通过后直接修改本体 `.py` 并 `git commit` 实现永动机式的自我换血。
 
 ---
 
-## 🗡️ 战役一：手搓图论直觉引擎 (The 4D Topology Prophet)
-**器官**: `docs/brain/reason.py`
-**物理法则**: 纯原生 Python 字典迭代。不要任何 `NetworkX`。给每个知识点初始发放“1块钱”权重，利用 `while` 循环让资金沿突触连线平均向下游节点流动。经过 20 次阻尼迭代收敛后，资金汇聚最多的节点，即是整个开源图谱的“阵眼”。
+## 🗡️ Battle 1: Handcrafted Graph Intuition Engine (The 4D Topology Prophet)
+**Organ**: `docs/brain/reason.py`
+**Physical Law**: 纯原生 Python 字典迭代。不要任何 `NetworkX`。给每个知识点初始发放“1块钱”权重，利用 `while` 循环让资金沿突触连线平均向下游节点流动。经过 20 次阻尼迭代收敛后，资金汇聚最多的节点，即是整个开源图谱的“阵眼”。
 
-**原生 Python 源码草案**:
+**Native Python Draft Snippet**:
 ```python
     def _calculate_pagerank(self):
         """[Phase V] Zero-Dependency PageRank for Topology Prophecy"""
@@ -81,11 +81,11 @@
 
 ---
 
-## 🗡️ 战役二：全域通用词法分析器 (The Omni-Stack Devourer)
-**器官**: `docs/brain/scholar.py`
-**物理法则**: 纯原生 `while` 循环加指针遍历。不依赖任何外部 AST 库。通过判断字符来改变状态机状态（正在读字符串、注释、标识符等），把所有源码（JS/C++/Rust）生硬切碎成 Token 流，抽离出骨架实体。
+## 🗡️ Battle 2: Polyglot General Lexer (The Omni-Stack Devourer)
+**Organ**: `docs/brain/scholar.py`
+**Physical Law**: 纯原生 `while` 循环加指针遍历。不依赖任何外部 AST 库。通过判断字符来改变状态机状态（正在读字符串、注释、标识符等），把所有源码（JS/C++/Rust）生硬切碎成 Token 流，抽离出骨架实体。
 
-**原生 Python 源码草案**:
+**Native Python Draft Snippet**:
 ```python
     def _devour_polyglot_tokens(self, content):
         """[Phase V] Zero-Dependency State-Machine Lexer"""
@@ -163,11 +163,11 @@
 
 ---
 
-## 🗡️ 战役三：信任积分与防投毒网关 (The Trust Gateway)
-**器官**: `docs/brain/nexus_mcp.py`
-**物理法则**: 在 SQLite 的 `agent_trust` 表中维护冷酷无情的信用账本。外部猎犬通过 `submit_bounty` 交作业时，若格式缺失（`KeyError`）或出现逻辑幻觉，直接在数据库中扣分。低于 0 分的 Agent ID 直接抛出 `PermissionDenied`，拒绝服务。
+## 🗡️ Battle 3: Trust Scoring & Anti-Poisoning Gateway (The Trust Gateway)
+**Organ**: `docs/brain/nexus_mcp.py`
+**Physical Law**: 在 SQLite 的 `agent_trust` 表中维护冷酷无情的信用账本。外部猎犬通过 `submit_bounty` 交作业时，若格式缺失（`KeyError`）或出现逻辑幻觉，直接在数据库中扣分。低于 0 分的 Agent ID 直接抛出 `PermissionError`，拒绝服务。
 
-**原生 Python 源码草案**:
+**Native Python Draft Snippet**:
 ```python
     def _verify_agent_trust(self, agent_id):
         """[Phase V] Cold-Blooded Ledger Verification"""
@@ -206,11 +206,11 @@
 
 ---
 
-## 🗡️ 战役四：AST 自身代码热补丁 (Genetic Auto-Recombination)
-**器官**: `docs/brain/evolution.py`
-**物理法则**: 让程序拥有读取并修改自身 `docs/brain/*.py` 的手术刀能力。利用原生 `ast.NodeTransformer` 与 `compile` 在内存里替换低效节点。用 `subprocess` 跑沙盒单元测试，成功则直接 `git commit` 热重启，卡壳则回滚。
+## 🗡️ Battle 4: AST Self-Code Hot Patching (Genetic Auto-Recombination)
+**Organ**: `docs/brain/evolution.py`
+**Physical Law**: 让程序拥有读取并修改自身 `docs/brain/*.py` 的手术刀能力。利用原生 `ast.NodeTransformer` 与 `compile` 在内存里替换低效节点。用 `subprocess` 跑沙盒单元测试，成功则直接 `git commit` 热重启，卡壳则回滚。
 
-**原生 Python 源码草案**:
+**Native Python Draft Snippet**:
 ```python
     def _genetic_hot_patch(self, target_file, func_name, new_logic_string):
         """[Phase V] Autonomous Self-Surgery"""
