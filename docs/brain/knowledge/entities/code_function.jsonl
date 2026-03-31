@@ -912,3 +912,10 @@
 {"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-03-31T16:56:02.504176"}
 {"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-03-31T16:56:02.514021"}
 {"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-03-31T16:56:02.515344"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-03-31T17:31:46.022006"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-03-31T17:31:46.023964"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-03-31T17:31:46.025311"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-03-31T17:31:46.045630"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-03-31T17:31:46.047771"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-03-31T17:31:46.055355"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-03-31T17:31:46.056495"}
