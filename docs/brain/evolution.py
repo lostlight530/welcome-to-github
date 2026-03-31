@@ -163,27 +163,24 @@ $insights_list
             else:
                 categories["ℹ️ 其他动态 (General)"].append(entry)
 
-        # Generate Content
+        # Generate Content using Pure String Templates for Absolute Determinism
+        import string
         now = datetime.datetime.now().strftime("%Y-%m-%d")
-        content = [
-            f"# 🛡️ NEXUS CORTEX: Architect's Daily Brief",
-            f"> **Date**: {now} | **Entropy**: {stats['density']:.4f}",
-            f"",
-            f"## 🚨 昨夜今晨 (System Health)",
-            f"- **Status**: 🟢 **ONLINE**",
-            ""
-        ]
 
+        # Build intel blocks
+        intel_blocks = []
         has_intel = False
         for section, items in categories.items():
             if items:
                 has_intel = True
-                content.append(f"## {section}")
-                content.extend(items)
-                content.append("")
+                intel_blocks.append(f"## {section}")
+                intel_blocks.extend(items)
+                intel_blocks.append("")
 
         if not has_intel:
-            content.append("## 🌌 虚空监视 (Void Watch)\n> No significant ecosystem movements.\n")
+            intel_blocks.append("## 🌌 虚空监视 (Void Watch)\n> No significant ecosystem movements.\n")
+
+        intel_content = "\n".join(intel_blocks)
 
         # Smart Deep Work Suggestion
         suggestion = "System Optimization"
@@ -194,21 +191,50 @@ $insights_list
         elif categories["⚔️ 竞品雷达 (Competitors)"]:
             suggestion = "Strategic Analysis of Competitor Updates"
 
-        content.append(f"## 📅 深度工作建议 (Deep Work)\n> **Focus**: {suggestion}\n- [ ] Block 2 hours.")
-
+        # Build Cognitive/Entropy content
+        cognitive_content = ""
         if intuitions:
-            content.append("\n## 🤔 认知反思 (Cognitive Report)")
-            for i in intuitions:
-                content.append(f"- {i}")
+            cognitive_content += "\n## 🤔 认知反思 (Cognitive Report)\n"
+            cognitive_content += "\n".join([f"- {i}" for i in intuitions])
 
+        entropy_content = ""
         if orphans:
-            content.append("\n## 🔍 待处理熵值 (Entropy Targets)")
-            for o in orphans:
-                content.append(f"- **{o['name']}** ({o['id']}): Weight {o['weight']:.2f}")
+            entropy_content += "\n\n## 🔍 待处理熵值 (Entropy Targets)\n"
+            entropy_content += "\n".join([f"- **{o['name']}** ({o['id']}): Weight {o['weight']:.2f}" for o in orphans])
+
+        # Phase IV Deterministic Template
+        mission_template = string.Template("""# 🛡️ NEXUS CORTEX: Architect's Daily Brief (Phase IV)
+> **Date**: $date | **Entropy Density**: $density | **Entities**: $entities | **Synapses**: $relations
+> **Mode**: Absolute Determinism (Zero Internal LLM)
+
+## 🚨 物理核心状态 (System Health)
+- **Status**: 🟢 **ONLINE**
+- **4D Temporal Graph**: Active
+- **Lobotomy Protocol**: Enforced
+
+$intel_content
+
+## 📅 深度工作建议 (Deep Work)
+> **Focus**: $suggestion
+- [ ] Block 2 hours for uninterrupted deep work.
+
+$cognitive_content$entropy_content
+""")
+
+        rendered_mission = mission_template.safe_substitute(
+            date=now,
+            density=f"{stats.get('density', 0):.4f}",
+            entities=stats.get('entities', 0),
+            relations=stats.get('relations', 0),
+            intel_content=intel_content,
+            suggestion=suggestion,
+            cognitive_content=cognitive_content,
+            entropy_content=entropy_content
+        )
 
         # Write to file
         filename = self.memories_path / "MISSION_ACTIVE.md"
         with open(filename, "w", encoding="utf-8") as f:
-            f.write("\n".join(content))
+            f.write(rendered_mission)
 
         logging.info(f"Brief generated: {filename}")
