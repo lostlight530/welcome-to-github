@@ -15,14 +15,14 @@
     "etag": "W/\"27592b34a9d10153ed7933228ef52e38d36c852f818f57cb7114460e48fb8783\""
   },
   "vllm-project/vllm": {
-    "last_tag": "v0.18.1",
+    "last_tag": "v0.19.0",
     "updated_at": "2026-04-03",
-    "etag": "W/\"a89e44226a6a62f559c2b5369b9552a90eb68c3e477cd912bbd252ca54c65a2b\""
+    "etag": "W/\"5a9868c4783e35c67bd02710be3280f9bee401e07218580ed9af7917dcea6b18\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.5.0",
-    "updated_at": "2026-04-02",
-    "etag": "W/\"b640188144b193586223ffbf6207c56e865730417f6ebca97db417d163ffc50f\""
+    "updated_at": "2026-04-03",
+    "etag": "W/\"91164d903a026de3c23b8768e99e060511de12e0dbe8daa3c63fd242400e3b00\""
   },
   "google-ai-edge/mediapipe": {
     "last_tag": "v0.10.33",
