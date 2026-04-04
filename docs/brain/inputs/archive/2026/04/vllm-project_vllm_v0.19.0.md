@@ -4,7 +4,7 @@
 
 ## 🚀 新版本发布 (New Release)
 > Version: v0.19.0
-> Date: 2026-04-04T16:19:28.717555
+> Date: 2026-04-04T22:28:41.802246
 
 ## 💡 项目洞察 (Insight)
 > **Architect's Analysis**: 🏷️ Edge-Ready ⚠️ Breaking-Change 🔗 Agent-Protocol
@@ -20,7 +20,7 @@
 ## Highlights
 This release features 448 commits from 197 contributors (54 new)!
 
-* **Gemma 4 support**: Full Google Gemma 4 architecture support including MoE, multimodal, reasoning, and tool-use capabilities (#38826, #38847). Requires `transformers>=5.5.0`.
+* **Gemma 4 support**: Full Google Gemma 4 architecture support including MoE, multimodal, reasoning, and tool-use capabilities (#38826, #38847). Requires `transformers>=5.5.0`. We recommend using pre-built docker image `vllm/vllm-openai:gemma4` for out of box usage.
 * **Zero-bubble async scheduling + speculative decoding**: Async scheduling now supports speculative decoding with zero-bubble overlap, significantly improving throughput (#32951).
 * **Model Runner V2 maturation**: MRV2 gains piecewise CUDA graphs for pipeline parallelism (#35162), spec decode rejection sampler with greedy/logprobs support (#37238, #37237), multi-modal embeddings for spec decode (#36097), streaming inputs (#37028), and EPLB support (#37488).
 * **ViT Full CUDA Graphs**: Vision encoders (ViT) now support full CUDA graph capture for reduced overhead (#35963).
@@ -37,6 +37,3 @@ This release features 448 commits from 197 contributors (54 new)!
 * Features: Temporal compression for Nemotron-3-VL videos (#36808), NemotronH Puzzle + MTP (#37803), torch.compile for InternVL vision encoder (#38049), multiple embedding types in single call (#35829).
 * Performance: GLM-4.xv ViT optimization (#37779).
 
-### Engine Core
-* **Zero-bubble async scheduling + speculative decoding** (#32951).
-* 
