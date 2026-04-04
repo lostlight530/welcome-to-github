@@ -62,7 +62,12 @@ class ReasoningEngine:
             for ov in structural_overlaps:
                 insights.append(f"🌌 **Subconscious Intuition**: Both '{ov[0]}' and '{ov[1]}' share the exact same structural connections to '{ov[2]}'. Are they related?")
 
-            # 5. 自我驱动与好奇心引擎 (Epistemic Curiosity)
+            # 5. 生态咽喉推演 (PageRank Centrality Bounty)
+            bounty_target = self._generate_pagerank_bounty()
+            if bounty_target:
+                insights.append(f"👑 **Ecosystem Choke Point (PageRank)**: The node '{bounty_target}' has absolute mathematical centrality. Issue highest priority bounty for this node.")
+
+            # 6. 自我驱动与好奇心引擎 (Epistemic Curiosity)
             curiosity_targets = self._generate_curiosity()
             if curiosity_targets:
                 insights.append(f"🎯 **Self-Driven Goal**: My knowledge about {', '.join(curiosity_targets)} is highly superficial (only 1 connection). I must prioritize researching them tomorrow.")
@@ -73,6 +78,49 @@ class ReasoningEngine:
              insights.append(f"⚠️ **Cognitive Error**: A disruption occurred during pondering: {e}")
 
         return insights
+
+    def _calculate_pagerank(self, nodes: list, edges: list, iterations: int = 20, damping: float = 0.85) -> dict:
+        """Phase V: Pure mathematical centrality deduction without external libraries."""
+        graph = {node: [] for node in nodes}
+        for source, target in edges:
+            if source in graph:
+                graph[source].append(target)
+
+        N = len(nodes)
+        if N == 0: return {}
+
+        ranks = {node: 1.0 / N for node in nodes}
+        for _ in range(iterations):
+            new_ranks = {node: (1.0 - damping) / N for node in nodes}
+            for node, outbound_edges in graph.items():
+                if outbound_edges:
+                    share = (ranks[node] * damping) / len(outbound_edges)
+                    for edge in outbound_edges:
+                        if edge in new_ranks:
+                            new_ranks[edge] += share
+            ranks = new_ranks
+        return ranks
+
+    def _generate_pagerank_bounty(self):
+        """Calculate PageRank on the active graph to find the true central hub."""
+        nodes_raw = self._query("SELECT id, name FROM entities WHERE invalid_at IS NULL")
+        edges_raw = self._query("SELECT source, target FROM relations WHERE invalid_at IS NULL")
+
+        if not nodes_raw or not edges_raw:
+            return None
+
+        nodes = [row[0] for row in nodes_raw]
+        node_names = {row[0]: row[1] for row in nodes_raw}
+        edges = [(row[0], row[1]) for row in edges_raw]
+
+        ranks = self._calculate_pagerank(nodes, edges)
+
+        if not ranks:
+            return None
+
+        # Find the node with the highest PageRank
+        top_node_id = max(ranks, key=ranks.get)
+        return node_names.get(top_node_id, top_node_id)
 
     def _self_reflect(self, stats):
         """Generate a diary-like self summary using deterministic string.Template."""

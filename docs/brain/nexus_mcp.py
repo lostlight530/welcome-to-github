@@ -152,6 +152,19 @@ class MCPServer:
                                 },
                                 "required": ["pipeline"]
                             }
+                        },
+                        {
+                            "name": "submit_bounty",
+                            "description": "Submit a completed bounty target back to the Matrix. Formats must be rigorously maintained.",
+                            "inputSchema": {
+                                "type": "object",
+                                "properties": {
+                                    "target": {"type": "string", "description": "The target name that was bountied."},
+                                    "report": {"type": "string", "description": "The detailed explanation/report of the bounty target."},
+                                    "confidence": {"type": "number", "description": "Confidence score from 0.0 to 1.0"}
+                                },
+                                "required": ["target", "report", "confidence"]
+                            }
                         }
                     ]
                 }
@@ -282,6 +295,39 @@ class MCPServer:
                         "id": msg_id,
                         "result": {
                             "content": [{"type": "text", "text": msg}]
+                        }
+                    }
+                elif name == "submit_bounty":
+                    try:
+                        target = args["target"]
+                        report = args["report"]
+                        confidence = float(args["confidence"])
+
+                        if len(report.strip()) < 50:
+                            self._slash_trust(agent_id, penalty=20)
+                            raise ValueError("Report is too shallow. Trust slashed (-20).")
+
+                        # Add bounty reward logic, increase trust score
+                        cursor = self.cortex.conn.cursor()
+                        cursor.execute("UPDATE agent_trust SET score = score + 5 WHERE id = ?", (agent_id,))
+                        self.cortex.conn.commit()
+
+                        # Add target info into cortex
+                        safe_target_id = f"bounty_{target.lower().replace(' ', '_')}"
+                        self.cortex.add_entity(safe_target_id, "bounty_report", target, report[:500])
+
+                    except KeyError as e:
+                        self._slash_trust(agent_id, penalty=10)
+                        raise ValueError(f"Missing parameter in bounty submission: {e}. Trust slashed (-10).")
+                    except ValueError as e:
+                        self._slash_trust(agent_id, penalty=15)
+                        raise ValueError(f"Invalid format: {e}. Trust slashed (-15).")
+
+                    return {
+                        "jsonrpc": "2.0",
+                        "id": msg_id,
+                        "result": {
+                            "content": [{"type": "text", "text": f"Bounty accepted. Agent '{agent_id}' rewarded +5 trust points."}]
                         }
                     }
                 else:
