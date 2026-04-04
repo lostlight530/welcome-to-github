@@ -80,12 +80,17 @@ class Scholar:
         # 2. Deep Content Analysis (Polyglot Regex + AST)
         if filepath.suffix == '.py':
             self._analyze_python_ast(filepath, file_id)
-        elif filepath.suffix in ['.js', '.jsx', '.ts', '.tsx']:
-            self._analyze_javascript_regex_ast(filepath, file_id)
+        elif filepath.suffix in ['.js', '.jsx', '.ts', '.tsx', '.cpp', '.cc', '.h', '.hpp', '.c']:
+            self._analyze_polyglot_structure(filepath, file_id)
         elif filepath.suffix == '.md':
             self._analyze_markdown_structure(filepath, file_id)
         elif filepath.suffix in ['.json', '.yaml', '.yml']:
             self._analyze_config_structure(filepath, file_id)
+
+    def _strip_version(self, name: str) -> str:
+        """Phase V: Strip version numbers to ensure pure entity IDs."""
+        # e.g., _v1.0.0, -v5.5.0, _v0.19
+        return re.sub(r'[_v\-]+[0-9]+(?:\.[0-9]+)*[A-Za-z0-9]*$', '', name, flags=re.IGNORECASE)
 
     def _analyze_config_structure(self, filepath, file_id):
         """Phase IV: Universal Digestion. Extracts deterministic properties from JSON/YAML configurations."""
@@ -163,32 +168,29 @@ class Scholar:
         except Exception as e:
             print(f"      [Config Error] {filepath.name}: {e}")
 
-    def _analyze_javascript_regex_ast(self, filepath, file_id):
-        """Polyglot Deterministic Extraction: Simulating Tree-sitter using zero-dependency Regex for JS/TS."""
+    def _analyze_polyglot_structure(self, filepath, file_id):
+        """Phase V: Brutalist C++/TS/JS parser via Regex State Machine."""
         if not self.cortex: return
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
                 content = f.read()
 
-            # Extract Classes (e.g., class MyComponent extends React.Component)
-            class_pattern = re.compile(r'class\s+([A-Za-z0-9_]+)(?:\s+extends\s+([A-Za-z0-9_.]+))?\s*\{')
-            for match in class_pattern.finditer(content):
-                class_name = match.group(1)
-                base_class = match.group(2)
-                class_id = f"class_{class_name}"
-                self.cortex.add_entity(class_id, "code_class", class_name, f"JS/TS Class in {filepath.name}", save_to_disk=True)
-                self.cortex.connect_entities(file_id, "defines", class_id, save_to_disk=True)
-                if base_class:
-                    self.cortex.connect_entities(class_id, "inherits_from", f"class_{base_class.replace('.', '_')}", save_to_disk=True)
+            # 强行捕获类、结构体、接口、函数
+            pattern = re.compile(r'(?i)\b(class|struct|interface|function|def)\s+([A-Za-z0-9_]+)')
+            for match in pattern.finditer(content):
+                entity_type_raw, entity_name_raw = match.groups()
 
-            # Extract Functions (function myFunc() or const myFunc = () =>)
-            func_pattern = re.compile(r'(?:function\s+([A-Za-z0-9_]+)\s*\()|(?:(?:const|let|var)\s+([A-Za-z0-9_]+)\s*=\s*(?:async\s+)?(?:\([^)]*\)|[A-Za-z0-9_]+)\s*=>)')
-            for match in func_pattern.finditer(content):
-                func_name = match.group(1) or match.group(2)
-                if func_name:
-                    func_id = f"func_{func_name}"
-                    self.cortex.add_entity(func_id, "code_function", func_name, f"JS/TS Function in {filepath.name}", save_to_disk=True)
-                    self.cortex.connect_entities(file_id, "defines", func_id, save_to_disk=True)
+                # 去版本号
+                entity_name = self._strip_version(entity_name_raw)
+                entity_type = entity_type_raw.lower()
+
+                node_type_slug = "code_class" if entity_type in ['class', 'struct', 'interface'] else "code_function"
+                node_prefix = "class_" if entity_type in ['class', 'struct', 'interface'] else "func_"
+
+                entity_id = f"{node_prefix}{entity_name}"
+
+                self.cortex.add_entity(entity_id, node_type_slug, entity_name, f"{entity_type.capitalize()} in {filepath.name}", save_to_disk=True)
+                self.cortex.connect_entities(file_id, "defines", entity_id, save_to_disk=True)
 
         except Exception as e:
             print(f"      [Polyglot Error] {filepath.name}: {e}")
@@ -204,20 +206,23 @@ class Scholar:
             for node in ast.walk(tree):
                 # Classes
                 if isinstance(node, ast.ClassDef):
-                    class_id = f"class_{node.name}"
+                    class_name = self._strip_version(node.name)
+                    class_id = f"class_{class_name}"
                     desc = ast.get_docstring(node) or "Python Class"
-                    self.cortex.add_entity(class_id, "code_class", node.name, desc[:100], save_to_disk=True)
+                    self.cortex.add_entity(class_id, "code_class", class_name, desc[:100], save_to_disk=True)
                     self.cortex.connect_entities(file_id, "defines", class_id, save_to_disk=True)
                     # Inheritance
                     for base in node.bases:
                         if isinstance(base, ast.Name):
-                            self.cortex.connect_entities(class_id, "inherits_from", f"class_{base.id}", save_to_disk=True)
+                            base_name = self._strip_version(base.id)
+                            self.cortex.connect_entities(class_id, "inherits_from", f"class_{base_name}", save_to_disk=True)
 
                 # Functions
                 elif isinstance(node, ast.FunctionDef):
-                    func_id = f"func_{node.name}"
+                    func_name = self._strip_version(node.name)
+                    func_id = f"func_{func_name}"
                     desc = ast.get_docstring(node) or "Python Function"
-                    self.cortex.add_entity(func_id, "code_function", node.name, desc[:100], save_to_disk=True)
+                    self.cortex.add_entity(func_id, "code_function", func_name, desc[:100], save_to_disk=True)
                     self.cortex.connect_entities(file_id, "defines", func_id, save_to_disk=True)
         except Exception:
             pass
@@ -232,6 +237,7 @@ class Scholar:
                     if match:
                         title = match.group(2).strip()
                         safe_title = "".join([c for c in title if c.isalnum() or c == ' ']).strip().replace(' ', '_').lower()
+                        safe_title = self._strip_version(safe_title)
                         if safe_title:
                             concept_id = f"concept_{safe_title}"[:60]
                             self.cortex.add_entity(concept_id, "concept", title, f"Section in {filepath.name}", save_to_disk=True)
