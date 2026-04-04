@@ -989,3 +989,16 @@
 {"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-04-04T15:15:00.388661"}
 {"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-04-04T15:15:00.398406"}
 {"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-04-04T15:15:00.400926"}
+{"id": "func__strip_version", "type": "code_function", "name": "_strip_version", "desc": "Phase V: Strip version numbers to ensure pure entity IDs.", "valid_at": "2026-04-04T15:32:04.934545"}
+{"id": "func__analyze_polyglot_structure", "type": "code_function", "name": "_analyze_polyglot_structure", "desc": "Phase V: Brutalist C++/TS/JS parser via Regex State Machine.", "valid_at": "2026-04-04T15:32:04.940714"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-04-04T15:32:04.962925"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-04-04T15:32:04.964849"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-04-04T15:32:04.966748"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-04-04T15:32:04.992697"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-04-04T15:32:04.995885"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-04-04T15:32:05.009859"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-04-04T15:32:05.012040"}
+{"id": "func__calculate_pagerank", "type": "code_function", "name": "_calculate_pagerank", "desc": "Phase V: Pure mathematical centrality deduction without external libraries.", "valid_at": "2026-04-04T15:32:05.041721"}
+{"id": "func__generate_pagerank_bounty", "type": "code_function", "name": "_generate_pagerank_bounty", "desc": "Calculate PageRank on the active graph to find the true central hub.", "valid_at": "2026-04-04T15:32:05.046751"}
+{"id": "func__genetic_auto_recombination", "type": "code_function", "name": "_genetic_auto_recombination", "desc": "Phase V: AST Self-Mutation Sandbox", "valid_at": "2026-04-04T15:32:05.069206"}
+{"id": "func_visit_FunctionDef", "type": "code_function", "name": "visit_FunctionDef", "desc": "Python Function", "valid_at": "2026-04-04T15:32:05.086782"}

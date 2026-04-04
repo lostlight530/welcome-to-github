@@ -1,0 +1,8 @@
+{"src": "file_src_scripts_translations_js", "relation": "defines", "dst": "class_using", "desc": "", "valid_at": "2026-04-04T15:32:04.865360"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func__strip_version", "desc": "", "valid_at": "2026-04-04T15:32:04.936585"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func__analyze_polyglot_structure", "desc": "", "valid_at": "2026-04-04T15:32:04.942207"}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__calculate_pagerank", "desc": "", "valid_at": "2026-04-04T15:32:05.043392"}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__generate_pagerank_bounty", "desc": "", "valid_at": "2026-04-04T15:32:05.048321"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func__genetic_auto_recombination", "desc": "", "valid_at": "2026-04-04T15:32:05.071480"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "class_SelfMutator", "desc": "", "valid_at": "2026-04-04T15:32:05.083431"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func_visit_FunctionDef", "desc": "", "valid_at": "2026-04-04T15:32:05.088426"}
