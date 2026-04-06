@@ -6,8 +6,8 @@
   },
   "langgenius/dify": {
     "last_tag": "1.13.3",
-    "updated_at": "2026-04-01",
-    "etag": "W/\"a9ca2858ce627693d0907a0b18c4b98620f265a3d20cf38293449088e7a5f630\""
+    "updated_at": "2026-04-06",
+    "etag": "W/\"f2a1c3620be758559b92347ddc82039796d5d8f18c46574d4f094f06f059fe9c\""
   },
   "iflytek/astron-agent": {
     "last_tag": "v1.0.4",
@@ -17,12 +17,12 @@
   "vllm-project/vllm": {
     "last_tag": "v0.19.0",
     "updated_at": "2026-04-06",
-    "etag": "W/\"4036bb91e54768b6dfaf10296da6b7536adbc685d10aa959a96a600e261e1dd4\""
+    "etag": "W/\"a76232ac019ed51c28cd0a1c773f619be883c531fc9767a1bad4b687f2933a0e\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.5.0",
-    "updated_at": "2026-04-04",
-    "etag": "W/\"102d9055ff9692b507e5691f9772946bd64a6d95c3d68a58ddbc8b7c66fad4d2\""
+    "updated_at": "2026-04-06",
+    "etag": "W/\"f4a6e7b6e01e95132f70e7d5aa6d0573a672623ec892e5b363e0b8cf6f295423\""
   },
   "google-ai-edge/mediapipe": {
     "last_tag": "v0.10.33",
