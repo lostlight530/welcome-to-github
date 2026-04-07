@@ -2,8 +2,7 @@
 > Self-Driven Intent Probes for Harvester Radar.
 
 ## 🎯 监控目标 (Target)
-- [ ] Deep dive required for: `whitelist.WebAssembly-Core-Specification`
-- [ ] Deep dive required for: `whitelist.Microsoft-VSCode-Architecture`
+- [x] Topology optimal. No immediate active inference required.
 
 ## 🚀 新版本发布 (New Release)
 Awaiting native Harvester ingestion cycle.
