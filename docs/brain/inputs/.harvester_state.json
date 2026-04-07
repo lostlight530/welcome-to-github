@@ -6,7 +6,7 @@
   },
   "langgenius/dify": {
     "last_tag": "1.13.3",
-    "updated_at": "2026-04-06",
+    "updated_at": "2026-04-07",
     "etag": "W/\"f2a1c3620be758559b92347ddc82039796d5d8f18c46574d4f094f06f059fe9c\""
   },
   "iflytek/astron-agent": {
@@ -17,11 +17,11 @@
   "vllm-project/vllm": {
     "last_tag": "v0.19.0",
     "updated_at": "2026-04-07",
-    "etag": "W/\"038ed0d6152f0ce07ca8f7b611c38d518099985cb289c0186f1ae126b39bf67e\""
+    "etag": "W/\"225861afba9786d59d71a80fe964eb8892e603fcfc02a30b6878c37480ba7c00\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.5.0",
-    "updated_at": "2026-04-06",
+    "updated_at": "2026-04-07",
     "etag": "W/\"f4a6e7b6e01e95132f70e7d5aa6d0573a672623ec892e5b363e0b8cf6f295423\""
   },
   "google-ai-edge/mediapipe": {

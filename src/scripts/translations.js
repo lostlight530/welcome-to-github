@@ -187,7 +187,7 @@ const translations = {
       tagline:
         "Quietly building <br><span class='gradient-text'>protocol-first systems</span>",
       description:
-        "Focused on Edge AI, agent architecture, and reusable capability layers. Bridging hands-on engineering with ecosystem-level abstractions across Google and domestic AI platforms.",
+        "Focused on Edge AI, agent architecture, and reusable capability layers Bridging hands-on engineering with ecosystem-level abstractions across Google and domestic AI platforms",
       primaryCta: "View Ecosystem Work",
       secondaryCta: "Explore Projects"
     },
@@ -217,33 +217,33 @@ const translations = {
     ecosystem: {
       title: "Ecosystem Contributions",
       intro:
-        "More than standalone projects, this section reflects my core direction — system abstraction, capability packaging, and architecture-level contribution.",
+        "More than standalone projects, this section reflects my core direction — system abstraction, capability packaging, and architecture-level contribution",
       items: [
         {
           name: "Nexent #2179",
           title: "Skills as a reusable capability layer",
-          desc: "Clarified the orthogonal relationship between sub-agents and Skills, positioning Skills as an abstraction for reusable, stable execution patterns rather than another agent.",
+          desc: "Clarified the orthogonal relationship between sub-agents and Skills, positioning Skills as an abstraction for reusable, stable execution patterns rather than another agent",
           tech: "Agent Abstraction / Reusable Skills",
           link: "https://github.com/ModelEngine-Group/nexent/discussions/2179"
         },
         {
           name: "Nexent #2056",
           title: "Plugin mechanism and semantic workflow visibility",
-          desc: "Proposed Plugin = MCP tools + prompt templates + a default workflow, plus optional workflow visualization and lightweight editing for advanced users.",
+          desc: "Proposed Plugin = MCP tools + prompt templates + a default workflow, plus optional workflow visualization and lightweight editing for advanced users",
           tech: "MCP / Plugin / Workflow Visualization",
           link: "https://github.com/ModelEngine-Group/nexent/discussions/2056"
         },
         {
           name: "Nexent #1982",
           title: "One-click MCP import proposal",
-          desc: "Suggested a one-click import flow for pre-deployed MCP services. The idea received a positive maintainer response and was connected to follow-up feature planning.",
+          desc: "Suggested a one-click import flow for pre-deployed MCP services The idea received a positive maintainer response and was connected to follow-up feature planning",
           tech: "MCP Distribution / DX",
           link: "https://github.com/ModelEngine-Group/nexent/discussions/1982"
         },
         {
           name: "Astron-agent #824",
           title: "Multi-model AgentFlow resume system",
-          desc: "Designed a state-driven AgentFlow system combining OCR, multi-model collaboration, multi-round completion, evaluation, and job recommendation.",
+          desc: "Designed a state-driven AgentFlow system combining OCR, multi-model collaboration, multi-round completion, evaluation, and job recommendation",
           tech: "AgentFlow / OCR / Multi-model",
           link: "https://github.com/iflytek/astron-agent/discussions/824"
         }
@@ -252,31 +252,31 @@ const translations = {
     projects: {
       title: "Project Matrix",
       intro:
-        "My projects tend to focus on constrained real-world scenarios — edge deployment, industrial vision, modular training systems, and interactive AI interfaces.",
+        "My projects tend to focus on constrained real-world scenarios — edge deployment, industrial vision, modular training systems, and interactive AI interfaces",
       items: [
         {
           name: "MediaPipe Engine AI",
-          desc: "An edge-oriented motion correction engine that uses FSM-based sequence decoupling and keypoint topology for real-time exercise feedback.",
+          desc: "An edge-oriented motion correction engine that uses FSM-based sequence decoupling and keypoint topology for real-time exercise feedback",
           tech: "Android / Kotlin / MediaPipe / FSM"
         },
         {
           name: "Fire Panel Perception",
-          desc: "An industrial-grade visual computing pipeline for 128-key panel diagnosis under severe perspective distortion and complex lighting conditions.",
+          desc: "An industrial-grade visual computing pipeline for 128-key panel diagnosis under severe perspective distortion and complex lighting conditions",
           tech: "OpenCV / RANSAC / Python"
         },
         {
           name: "ClassVision Distributed",
-          desc: "A distributed classroom sensing and diagnostics system covering attendance, behavior analysis, and device detection with containerized deployment.",
+          desc: "A distributed classroom sensing and diagnostics system covering attendance, behavior analysis, and device detection with containerized deployment",
           tech: "FastAPI / YOLOv8 / WebSocket / Docker"
         },
         {
           name: "Tiezhitong Agent",
-          desc: "A semantic-driven railway assistant that integrates tools and instructions for converged multi-source querying, reflecting an early agent toolchain design mindset.",
+          desc: "A semantic-driven railway assistant that integrates tools and instructions for converged multi-source querying, reflecting an early agent toolchain design mindset",
           tech: "Python / Semantic Routing / Tool Orchestration"
         },
         {
           name: "CifarLab Trainer",
-          desc: "A modular training platform with AMP, cosine annealing, and configuration-driven experimentation for fast and reproducible deep learning workflows.",
+          desc: "A modular training platform with AMP, cosine annealing, and configuration-driven experimentation for fast and reproducible deep learning workflows",
           tech: "PyTorch / AMP / YAML"
         },
         {
@@ -306,11 +306,11 @@ const translations = {
         "Refuse hype, build precise systems for the long term"
       ],
       content:
-        "I care more about testability, reusability, and maintainability than short-lived novelty. Engineering should leave behind durable structure."
+        "I care more about testability, reusability, and maintainability than short-lived novelty Engineering should leave behind durable structure"
     },
     footer: {
       greeting: "© 2026 LOSTLIGHT | Engineering with intention",
-      note: "Quiet. Pragmatic. Reusable."
+      note: "Quiet Pragmatic Reusable"
     }
   }
 };
