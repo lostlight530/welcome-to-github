@@ -55,3 +55,5 @@
 {"src": "prop_whitelist_Apache-Kafka-Log-Design", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T15:54:57.563171"}
 {"src": "prop_whitelist_React-Fiber-Architecture", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T15:54:57.565104"}
 {"src": "prop_whitelist_Flutter-Engine-Architecture", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T15:54:57.566944"}
+{"src": "prop_whitelist_WebAssembly-Core-Specification", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T16:06:43.896185"}
+{"src": "prop_whitelist_Microsoft-VSCode-Architecture", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T16:06:43.909800"}

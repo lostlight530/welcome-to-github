@@ -2,11 +2,8 @@
 > Self-Driven Intent Probes for Harvester Radar.
 
 ## 🎯 监控目标 (Target)
-- [ ] Deep dive required for: `whitelist.PostgreSQL-MVCC-Internals`
-- [ ] Deep dive required for: `whitelist.Redis-Event-Loop`
-- [ ] Deep dive required for: `whitelist.PingCAP-TiDB-HTAP`
-- [ ] Deep dive required for: `whitelist.Facebook-RocksDB-LSM-Tree`
-- [ ] Deep dive required for: `whitelist.Anthropic-MCP-Specification`
+- [ ] Deep dive required for: `whitelist.WebAssembly-Core-Specification`
+- [ ] Deep dive required for: `whitelist.Microsoft-VSCode-Architecture`
 
 ## 🚀 新版本发布 (New Release)
 Awaiting native Harvester ingestion cycle.
