@@ -1,8 +1,0 @@
-# This project adheres to a "Zero-Dependency" philosophy.
-# Core logic (nexus.py, cortex.py) runs on Python Standard Library.
-# This file exists to satisfy CI/CD tooling expectations.
-# 本项目坚持“零依赖”哲学。此文件仅为满足 CI/CD 工具链预期而存在。
-
-# Adding a dummy requirement to satisfy GitHub Automatic Dependency Submission API
-# which crashes if the file is entirely empty/comments only.
-setuptools>=45
