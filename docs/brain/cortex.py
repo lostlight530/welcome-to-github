@@ -253,9 +253,57 @@ class Cortex:
     def get_stats(self):
         cursor = self.conn.cursor()
         try:
-            e_count = cursor.execute('SELECT count(*) FROM entities').fetchone()[0]
-            r_count = cursor.execute('SELECT count(*) FROM relations').fetchone()[0]
-            avg_weight = cursor.execute('SELECT avg(weight) FROM entities').fetchone()[0] or 0
+            e_count = cursor.execute('SELECT count(*) FROM entities WHERE invalid_at IS NULL').fetchone()[0]
+            r_count = cursor.execute('SELECT count(*) FROM relations WHERE invalid_at IS NULL').fetchone()[0]
+            avg_weight = cursor.execute('SELECT avg(weight) FROM entities WHERE invalid_at IS NULL').fetchone()[0] or 0
         except:
             return {'entities': 0, 'relations': 0, 'density': 0}
         return {'entities': e_count, 'relations': r_count, 'density': avg_weight}
+
+    def get_dashboard_metrics(self, hours_window=24):
+        """Phase VI: Hardcore Quantitative Metrics Dashboard Extraction"""
+        cursor = self.conn.cursor()
+        now = time.time()
+        # Approximate seconds in hours_window
+        window_sec = hours_window * 3600
+
+        try:
+            # 1. 新增实体数 & 新增关系数 (Active in last 24h via valid_at approximation or simple count)
+            # Since valid_at is an ISO string, we do a rough count of total valid vs invalid to infer compression
+            total_e = cursor.execute('SELECT count(*) FROM entities').fetchone()[0]
+            valid_e = cursor.execute('SELECT count(*) FROM entities WHERE invalid_at IS NULL').fetchone()[0]
+
+            total_r = cursor.execute('SELECT count(*) FROM relations').fetchone()[0]
+            valid_r = cursor.execute('SELECT count(*) FROM relations WHERE invalid_at IS NULL').fetchone()[0]
+
+            # Since we append-only, any entity with invalid_at NOT NULL is a compressed/overwritten memory
+            compressed_e = total_e - valid_e
+            compression_rate = (compressed_e / total_e * 100) if total_e > 0 else 0.0
+
+            # 2. 低连接节点数 (Nodes with degree <= 1)
+            sql_low_conn = '''
+                SELECT count(*) FROM (
+                    SELECT e.id
+                    FROM entities e
+                    LEFT JOIN relations r ON e.id = r.source OR e.id = r.target
+                    WHERE e.invalid_at IS NULL AND r.invalid_at IS NULL
+                    GROUP BY e.id
+                    HAVING count(r.source) <= 1
+                )
+            '''
+            low_conn_count = cursor.execute(sql_low_conn).fetchone()[0]
+
+            return {
+                'total_active_entities': valid_e,
+                'total_active_relations': valid_r,
+                'low_connection_nodes': low_conn_count,
+                'compression_rate': compression_rate
+            }
+        except Exception as e:
+            print(f"[Cortex Dashboard Error] {e}")
+            return {
+                'total_active_entities': 0,
+                'total_active_relations': 0,
+                'low_connection_nodes': 0,
+                'compression_rate': 0.0
+            }
