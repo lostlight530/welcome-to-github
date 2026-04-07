@@ -240,6 +240,16 @@ class Cortex:
         cursor.execute(sql, (limit,))
         return [dict(row) for row in cursor.fetchall()]
 
+    def suture_orphans(self):
+        """Phase V: Deterministic Orphan Suturing. Ghost nodes are connected internally."""
+        try:
+            orphans = self.get_orphans(limit=10)
+            if not orphans: return
+            for orphan in orphans:
+                self.connect_entities(orphan['id'], 'is_capability_of', 'concept_nexus_system', "Auto-sutured ghost node", save_to_disk=True)
+        except Exception as e:
+            print(f"[Cortex Error] Orphan suturing failed: {str(e)}")
+
     def get_stats(self):
         cursor = self.conn.cursor()
         try:

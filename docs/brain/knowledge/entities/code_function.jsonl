@@ -1121,17 +1121,14 @@
 {"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-04-07T11:43:17.997764"}
 {"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-04-07T11:43:18.007551"}
 {"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-04-07T11:43:18.009196"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-04-07T12:34:17.752431"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-04-07T12:34:17.754738"}
-{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-04-07T12:34:17.756324"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-04-07T12:34:17.780229"}
-{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-04-07T12:34:17.783211"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-04-07T12:34:17.795210"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-04-07T12:34:17.796507"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-04-07T13:02:22.923822"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-04-07T13:02:22.925805"}
-{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-04-07T13:02:22.927104"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-04-07T13:02:22.943535"}
-{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-04-07T13:02:22.945577"}
-{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-04-07T13:02:22.955700"}
-{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-04-07T13:02:22.957140"}
+{"id": "func__trigger_render", "type": "code_function", "name": "_trigger_render", "desc": "Python Function", "valid_at": "2026-04-07T12:14:24.270566"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-04-07T12:14:24.316713"}
+{"id": "func__render_daily_archives", "type": "code_function", "name": "_render_daily_archives", "desc": "Phase V: Deterministic rendering of the TWO daily documents (Zero-Dependency).", "valid_at": "2026-04-07T12:14:24.346469"}
+{"id": "func__read_mission_active_intents", "type": "code_function", "name": "_read_mission_active_intents", "desc": "Phase V: Self-Driven Intent Probes. Reads MISSION_ACTIVE.md to augment targets.", "valid_at": "2026-04-07T12:14:24.486047"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-04-07T12:14:24.515044"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-04-07T12:14:24.518685"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-04-07T12:14:24.521275"}
+{"id": "func_suture_orphans", "type": "code_function", "name": "suture_orphans", "desc": "Phase V: Deterministic Orphan Suturing. Ghost nodes are connected internally.", "valid_at": "2026-04-07T12:14:24.527642"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-04-07T12:14:24.553409"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-04-07T12:14:24.556295"}
+{"id": "func__analyze_javascript_regex_ast", "type": "code_function", "name": "_analyze_javascript_regex_ast", "desc": "Phase V: Deterministic Polyglot Regex State Machine for JS/TS/C++.", "valid_at": "2026-04-07T12:14:24.643627"}

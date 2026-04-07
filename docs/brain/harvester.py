@@ -193,9 +193,36 @@ class Harvester:
 
         return result_file
 
+    def _read_mission_active_intents(self):
+        """Phase V: Self-Driven Intent Probes. Reads MISSION_ACTIVE.md to augment targets."""
+        mission_path = self.brain_path / "memories" / "MISSION_ACTIVE.md"
+        if not mission_path.exists(): return
+
+        try:
+            with open(mission_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+
+            # Extract nodes marked for deep dive: "- [ ] Deep dive required for: `node`"
+            import re
+            matches = re.findall(r'- \[ \] Deep dive required for: `(.*?)`', content)
+
+            for match in matches:
+                # Naive conversion from entity id/name to a github repo format.
+                # In a full system, this would query Cortex or use a mapping.
+                # Here we just add it as a keyword/mock target to demonstrate intent.
+                clean_target = match.strip("'").strip()
+                if "/" in clean_target and clean_target not in self.targets:
+                    self.targets[clean_target] = ["releases"]
+                    print(f"   [Radar Intent] Added dynamic target from MISSION_ACTIVE: {clean_target}")
+        except Exception as e:
+            print(f"[Harvester Error] Failed to read intents: {e}")
+
     def fetch_github_data(self):
         print("[Harvester] Initiating asynchronous radar sweep (Zero-Dependency Concurrency)...")
         new_files = []
+
+        # Read self-driven intents before sweeping
+        self._read_mission_active_intents()
 
         # Liquid Time-Series Graph Injection - Phase 4 Concurrency
         with ThreadPoolExecutor(max_workers=5) as executor:

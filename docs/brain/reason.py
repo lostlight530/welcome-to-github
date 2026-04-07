@@ -81,25 +81,29 @@ class ReasoningEngine:
 
     def _calculate_pagerank(self, nodes: list, edges: list, iterations: int = 20, damping: float = 0.85) -> dict:
         """Phase V: Pure mathematical centrality deduction without external libraries."""
-        graph = {node: [] for node in nodes}
-        for source, target in edges:
-            if source in graph:
-                graph[source].append(target)
+        try:
+            graph = {node: [] for node in nodes}
+            for source, target in edges:
+                if source in graph:
+                    graph[source].append(target)
 
-        N = len(nodes)
-        if N == 0: return {}
+            n_nodes = len(nodes)
+            if n_nodes == 0: return {}
 
-        ranks = {node: 1.0 / N for node in nodes}
-        for _ in range(iterations):
-            new_ranks = {node: (1.0 - damping) / N for node in nodes}
-            for node, outbound_edges in graph.items():
-                if outbound_edges:
-                    share = (ranks[node] * damping) / len(outbound_edges)
-                    for edge in outbound_edges:
-                        if edge in new_ranks:
-                            new_ranks[edge] += share
-            ranks = new_ranks
-        return ranks
+            ranks = {node: 1.0 / n_nodes for node in nodes}
+            for _ in range(iterations):
+                new_ranks = {node: (1.0 - damping) / n_nodes for node in nodes}
+                for node, outbound in graph.items():
+                    if outbound:
+                        share = (ranks[node] * damping) / len(outbound)
+                        for edge in outbound:
+                            if edge in new_ranks:
+                                new_ranks[edge] += share
+                ranks = new_ranks
+            return ranks
+        except Exception as e:
+            print(f"[Reasoning Error] Matrix math failed: {str(e)}")
+            return {}
 
     def _generate_pagerank_bounty(self):
         """Calculate PageRank on the active graph to find the true central hub."""
@@ -121,6 +125,57 @@ class ReasoningEngine:
         # Find the node with the highest PageRank
         top_node_id = max(ranks, key=ranks.get)
         return node_names.get(top_node_id, top_node_id)
+
+    def _render_daily_archives(self, stats: dict, isolated_nodes: list):
+        """Phase V: Deterministic rendering of the TWO daily documents (Zero-Dependency)."""
+        import os
+        from datetime import datetime
+        from string import Template
+
+        try:
+            today_str = datetime.now().strftime("%Y%m%d")
+            memories_dir = os.path.join(os.path.dirname(__file__), 'memories')
+            os.makedirs(memories_dir, exist_ok=True)
+
+            # 锚点 1: Cognitive Report (认知档案)
+            cog_tmpl = Template(
+                "# 🧠 NEXUS CORTEX 认知档案 (Cognitive Report) - $date\n\n"
+                "## 💡 项目洞察 (Insight)\n"
+                "System Density: $density. Knowledge matrix requires structural reinforcement.\n\n"
+                "**Physical Stats**: Entities: $nodes | Synapses: $edges\n"
+            )
+            cog_content = cog_tmpl.safe_substitute(
+                date=today_str,
+                density=f"{stats.get('density', 0):.4f}",
+                nodes=stats.get('entities', 0),
+                edges=stats.get('relations', 0)
+            )
+            with open(os.path.join(memories_dir, f"{today_str}-cognitive-report.md"), 'w', encoding='utf-8') as f:
+                f.write(cog_content)
+
+            # 锚点 2: MISSION ACTIVE (绝对悬赏令 / 自身雷达驱动指令)
+            targets_str = "\n".join([f"- [ ] Deep dive required for: `{node}`" for node in isolated_nodes[:5]])
+            if not targets_str: targets_str = "- [x] Topology optimal. No immediate active inference required."
+
+            mission_tmpl = Template(
+                "# 📜 绝对悬赏令 (MISSION ACTIVE)\n"
+                "> Self-Driven Intent Probes for Harvester Radar.\n\n"
+                "## 🎯 监控目标 (Target)\n"
+                "$targets\n\n"
+                "## 🚀 新版本发布 (New Release)\n"
+                "Awaiting native Harvester ingestion cycle.\n\n"
+                "## 🔨 最近提交 (Recent Commits)\n"
+                "Awaiting repository sync.\n\n"
+                "## 🛡️ 信任评分 (Trust Score)\n"
+                "Deterministic Physical Source: 100% (Zero LLM involved).\n"
+            )
+            mission_content = mission_tmpl.safe_substitute(targets=targets_str)
+            with open(os.path.join(memories_dir, "MISSION_ACTIVE.md"), 'w', encoding='utf-8') as f:
+                f.write(mission_content)
+
+            print(f"[Reasoning] Engine successfully rendered Dual-Archives via Templates.")
+        except Exception as e:
+            print(f"[Reasoning Error] Template enforcement failed: {str(e)}")
 
     def _self_reflect(self, stats):
         """Generate a diary-like self summary using deterministic string.Template."""

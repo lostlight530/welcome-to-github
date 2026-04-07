@@ -8,3 +8,10 @@
 {"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func__analyze_polyglot_structure", "desc": "", "valid_at": "2026-04-07T11:28:35.768146"}
 {"src": "file__github_workflows_nexus-life-cycle_yml", "relation": "defines", "dst": "file__github_workflows_nexus-life-cycle_yml_prop_jobs_consciousness_env_FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "desc": "", "valid_at": "2026-04-07T11:28:35.808831"}
 {"src": "file__github_workflows_deploy_yml", "relation": "defines", "dst": "file__github_workflows_deploy_yml_prop_jobs_deploy_steps_env_FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "desc": "", "valid_at": "2026-04-07T11:28:35.840874"}
+{"src": "file_src_scripts_translations_js", "relation": "defines", "dst": "polyglot_const_translations", "desc": "", "valid_at": "2026-04-07T12:14:24.237221"}
+{"src": "file_src_scripts_translations_js", "relation": "defines", "dst": "polyglot_interface_using", "desc": "", "valid_at": "2026-04-07T12:14:24.248422"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func__trigger_render", "desc": "", "valid_at": "2026-04-07T12:14:24.273558"}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__render_daily_archives", "desc": "", "valid_at": "2026-04-07T12:14:24.349478"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__read_mission_active_intents", "desc": "", "valid_at": "2026-04-07T12:14:24.489630"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func_suture_orphans", "desc": "", "valid_at": "2026-04-07T12:14:24.530109"}
+{"src": "prop_name", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T12:16:57.413643"}

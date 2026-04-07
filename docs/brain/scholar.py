@@ -175,25 +175,39 @@ class Scholar:
             with open(filepath, 'r', encoding='utf-8') as f:
                 content = f.read()
 
-            # 强行捕获类、结构体、接口、函数
-            pattern = re.compile(r'(?i)\b(class|struct|interface|function|def)\s+([A-Za-z0-9_]+)')
-            for match in pattern.finditer(content):
-                entity_type_raw, entity_name_raw = match.groups()
-
-                # 去版本号
-                entity_name = self._strip_version(entity_name_raw)
-                entity_type = entity_type_raw.lower()
-
-                node_type_slug = "code_class" if entity_type in ['class', 'struct', 'interface'] else "code_function"
-                node_prefix = "class_" if entity_type in ['class', 'struct', 'interface'] else "func_"
-
-                entity_id = f"{node_prefix}{entity_name}"
-
-                self.cortex.add_entity(entity_id, node_type_slug, entity_name, f"{entity_type.capitalize()} in {filepath.name}", save_to_disk=True)
-                self.cortex.connect_entities(file_id, "defines", entity_id, save_to_disk=True)
+            entities = self._analyze_javascript_regex_ast(content, file_id)
+            for ent in entities:
+                self.cortex.add_entity(ent["id"], ent["type"], ent["name"], f"Component in {filepath.name}", save_to_disk=True)
+                self.cortex.connect_entities(ent["parent"], "defines", ent["id"], save_to_disk=True)
 
         except Exception as e:
-            print(f"      [Polyglot Error] {filepath.name}: {e}")
+            print(f"      [Polyglot File Error] {filepath.name}: {e}")
+
+    def _analyze_javascript_regex_ast(self, content: str, file_id: str) -> list[dict[str, str]]:
+        """Phase V: Deterministic Polyglot Regex State Machine for JS/TS/C++."""
+        extracted_entities: list[dict[str, str]] = []
+        try:
+            from typing import List, Dict
+            # Brutalist structural regex targeting multi-language keywords
+            pattern = re.compile(r'(?i)\b(class|interface|struct|function|const|let)\s+([A-Za-z0-9_]+)')
+            for match in pattern.finditer(content):
+                e_type, e_name = match.groups()
+
+                # Strip version
+                e_name = self._strip_version(e_name)
+
+                # Namespace generation to prevent global ID collisions
+                true_id = f"polyglot_{e_type.lower()}_{e_name}"
+                extracted_entities.append({
+                    "id": true_id,
+                    "type": "code_component",
+                    "name": e_name,
+                    "parent": file_id
+                })
+            return extracted_entities
+        except Exception as e:
+            print(f"[Scholar Error] Regex AST parsing halted: {str(e)}")
+            return []
 
     def _analyze_python_ast(self, filepath, file_id):
         """Use Python's native AST to understand code structure."""
