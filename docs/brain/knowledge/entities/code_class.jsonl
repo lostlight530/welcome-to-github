@@ -103,3 +103,5 @@
 {"id": "class_Cortex", "type": "code_class", "name": "Cortex", "desc": "Python Class", "valid_at": "2026-03-25T10:34:48.631514"}
 {"id": "class_Evolver", "type": "code_class", "name": "Evolver", "desc": "Python Class", "valid_at": "2026-03-25T10:34:48.701964"}
 {"id": "class_Harvester", "type": "code_class", "name": "Harvester", "desc": "Python Class", "valid_at": "2026-03-25T10:34:48.781078"}
+{"id": "class_using", "type": "code_class", "name": "using", "desc": "Interface in translations.js", "valid_at": "2026-04-07T11:28:35.188864"}
+{"id": "class_SelfMutator", "type": "code_class", "name": "SelfMutator", "desc": "Python Class", "valid_at": "2026-04-07T11:28:35.364285"}

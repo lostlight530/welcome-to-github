@@ -109,3 +109,6 @@
 {"id": "file__github_workflows_deploy_yml_prop_jobs_deploy_steps_with_path", "type": "config_property", "name": "jobs.deploy.steps.with.path", "desc": ".", "valid_at": "2026-03-31T05:54:45.682122"}
 {"id": "file__github_workflows_deploy_yml_prop_jobs_deploy_steps_id", "type": "config_property", "name": "jobs.deploy.steps.id", "desc": "deployment", "valid_at": "2026-03-31T05:54:45.691579"}
 {"id": "file__github_workflows_nexus-life-cycle_yml_prop_jobs_consciousness_env_GITHUB_DEPENDENCY_GRAPH_ENABLED", "type": "config_property", "name": "jobs.consciousness.env.GITHUB_DEPENDENCY_GRAPH_ENABLED", "desc": "false", "valid_at": "2026-03-31T14:17:23.229325"}
+{"id": "file__github_workflows_nexus-life-cycle_yml_prop_jobs_consciousness_env_FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "type": "config_property", "name": "jobs.consciousness.env.FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "desc": "true", "valid_at": "2026-04-07T11:28:35.805348"}
+{"id": "file__github_workflows_deploy_yml_prop_jobs_deploy_steps_env_FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "type": "config_property", "name": "jobs.deploy.steps.env.FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "desc": "true", "valid_at": "2026-04-07T11:28:35.838250"}
+{"id": "file_package_json_prop_devDependencies_vite", "type": "config_property", "name": "devDependencies.vite", "desc": "^8.0.5", "valid_at": "2026-04-07T11:41:33.267670"}

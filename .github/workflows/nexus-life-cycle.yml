@@ -30,6 +30,8 @@ jobs:
         # Phase V Dictator: Disable external dependency submission (Zero Dependency Brutalism)
         # Fixes: HttpError: An error occurred while processing your request. - https://docs.github.com/rest/dependency-graph/dependency-submission
         GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
+        # Prevent Node 20 deprecation warnings from actions
+        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
     - name: 🏗️ Rebuild Memory (Wake Up)
       run: python docs/brain/nexus.py rebuild
@@ -67,6 +69,8 @@ jobs:
 
     - name: 💾 Commit Cognitive Changes
       uses: stefanzweifel/git-auto-commit-action@v5
+      env:
+        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
       with:
         commit_message: "🧬 lifecycle: ingested, pondered & evolved [skip ci]"
         branch: main
