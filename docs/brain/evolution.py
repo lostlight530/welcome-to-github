@@ -23,6 +23,9 @@ class Evolver:
     def run_daily_cycle(self):
         logging.info("Starting Daily Evolution Cycle...")
 
+        # 0. AST Hot-Patching (Genetic Auto-Recombination)
+        self._genetic_auto_recombination()
+
         # 1. Sleep: Metabolize & Decay
         self.cortex.decay_memories()
 
@@ -44,6 +47,36 @@ class Evolver:
         self._archive_inputs()
 
         logging.info("Cycle Complete.")
+
+    def _genetic_auto_recombination(self):
+        """Phase V: AST Self-Mutation Sandbox"""
+        logging.info("Initiating Genetic Auto-Recombination (AST Mutator)...")
+        target_file = self.brain_path / "evolution.py"
+        try:
+            with open(target_file, "r", encoding="utf-8") as f:
+                source = f.read()
+
+            import ast
+            tree = ast.parse(source)
+
+            # Define a simple mutator that finds _genetic_auto_recombination and does a null operation
+            class SelfMutator(ast.NodeTransformer):
+                def visit_FunctionDef(self, node):
+                    if node.name == '_genetic_auto_recombination':
+                        # Example sandbox operation: Just append a benign print statement or docstring
+                        if not any(isinstance(stmt, ast.Pass) for stmt in node.body):
+                            node.body.append(ast.Pass())
+                    return self.generic_visit(node)
+
+            mutated_tree = SelfMutator().visit(tree)
+            ast.fix_missing_locations(mutated_tree)
+
+            # Verify compilation in sandbox before any writes
+            compile(mutated_tree, filename="<ast>", mode="exec")
+            logging.info("AST Mutation Sandbox check passed. (No write performed for safety in this loop)")
+
+        except Exception as e:
+            logging.error(f"Genetic Recombination Failed: {e}")
 
     def _run_sandbox_tests(self):
         """AST Loop Preparation: Verifies local MCP and systems logic via subprocess."""
