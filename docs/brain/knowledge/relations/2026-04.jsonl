@@ -15,3 +15,13 @@
 {"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__read_mission_active_intents", "desc": "", "valid_at": "2026-04-07T12:14:24.489630"}
 {"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func_suture_orphans", "desc": "", "valid_at": "2026-04-07T12:14:24.530109"}
 {"src": "prop_name", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T12:16:57.413643"}
+{"src": "bounty_vllm", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:04:27.984393"}
+{"src": "prop_private", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:04:27.987470"}
+{"src": "prop_version", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:04:27.990854"}
+{"src": "prop_type", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:04:27.993579"}
+{"src": "prop_scripts_dev", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:04:27.997125"}
+{"src": "prop_scripts_build", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:04:27.999925"}
+{"src": "prop_scripts_preview", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:04:28.002282"}
+{"src": "prop_devDependencies_autoprefixer", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:04:28.009390"}
+{"src": "prop_devDependencies_postcss", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:04:28.014168"}
+{"src": "prop_devDependencies_tailwindcss", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:04:28.017222"}
