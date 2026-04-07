@@ -35,3 +35,13 @@
 {"src": "prop_whitelist_Google-XLA-Compiler", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:07:04.900579"}
 {"src": "prop_whitelist_PyTorch-Autograd-Design", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:07:04.902816"}
 {"src": "prop_whitelist_HuggingFace-Transformers-Philosophy", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:07:04.905155"}
+{"src": "prop_whitelist_Microsoft-DeepSpeed", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T14:42:10.078219"}
+{"src": "prop_whitelist_OpenAI-Triton", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T14:42:10.081500"}
+{"src": "prop_whitelist_Rust-Ownership-Model", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T14:42:10.084198"}
+{"src": "prop_whitelist_Golang-Concurrency-Design", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T14:42:10.086897"}
+{"src": "prop_whitelist_LLVM-Architecture", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T14:42:10.090101"}
+{"src": "prop_whitelist_V8-JavaScript-Engine", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T14:42:10.093493"}
+{"src": "prop_whitelist_Kubernetes-Architecture-Design", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T14:42:10.096586"}
+{"src": "prop_whitelist_Envoy-Proxy-Threading-Model", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T14:42:10.099219"}
+{"src": "prop_whitelist_HashiCorp-Raft-Consensus", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T14:42:10.101824"}
+{"src": "prop_whitelist_Docker-Containerd-Architecture", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T14:42:10.104570"}
