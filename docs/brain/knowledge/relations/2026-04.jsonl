@@ -45,3 +45,13 @@
 {"src": "prop_whitelist_Envoy-Proxy-Threading-Model", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T14:42:10.099219"}
 {"src": "prop_whitelist_HashiCorp-Raft-Consensus", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T14:42:10.101824"}
 {"src": "prop_whitelist_Docker-Containerd-Architecture", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T14:42:10.104570"}
+{"src": "prop_whitelist_PostgreSQL-MVCC-Internals", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T15:54:57.550439"}
+{"src": "prop_whitelist_Redis-Event-Loop", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T15:54:57.552590"}
+{"src": "prop_whitelist_PingCAP-TiDB-HTAP", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T15:54:57.554300"}
+{"src": "prop_whitelist_Facebook-RocksDB-LSM-Tree", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T15:54:57.556038"}
+{"src": "prop_whitelist_Anthropic-MCP-Specification", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T15:54:57.557861"}
+{"src": "prop_whitelist_Google-gRPC-Core-Design", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T15:54:57.559661"}
+{"src": "prop_whitelist_Meta-GraphQL-Specification", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T15:54:57.561419"}
+{"src": "prop_whitelist_Apache-Kafka-Log-Design", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T15:54:57.563171"}
+{"src": "prop_whitelist_React-Fiber-Architecture", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T15:54:57.565104"}
+{"src": "prop_whitelist_Flutter-Engine-Architecture", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T15:54:57.566944"}
