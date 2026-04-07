@@ -2,11 +2,11 @@
 > Self-Driven Intent Probes for Harvester Radar.
 
 ## 🎯 监控目标 (Target)
-- [ ] Deep dive required for: `vLLM`
-- [ ] Deep dive required for: `private`
-- [ ] Deep dive required for: `version`
-- [ ] Deep dive required for: `type`
-- [ ] Deep dive required for: `scripts.dev`
+- [ ] Deep dive required for: `devDependencies.vite`
+- [ ] Deep dive required for: `settings.max_read_length`
+- [ ] Deep dive required for: `settings.target_branch`
+- [ ] Deep dive required for: `settings.philosophy`
+- [ ] Deep dive required for: `ignore_paths[0]`
 
 ## 🚀 新版本发布 (New Release)
 Awaiting native Harvester ingestion cycle.

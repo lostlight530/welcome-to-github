@@ -25,3 +25,13 @@
 {"src": "prop_devDependencies_autoprefixer", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:04:28.009390"}
 {"src": "prop_devDependencies_postcss", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:04:28.014168"}
 {"src": "prop_devDependencies_tailwindcss", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:04:28.017222"}
+{"src": "prop_devDependencies_vite", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:07:04.881876"}
+{"src": "prop_settings_max_read_length", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:07:04.884762"}
+{"src": "prop_settings_target_branch", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:07:04.888021"}
+{"src": "prop_settings_philosophy", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:07:04.890994"}
+{"src": "prop_ignore_paths_0", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:07:04.893300"}
+{"src": "prop_ignore_paths_1", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:07:04.895582"}
+{"src": "prop_ignore_paths_2", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:07:04.898351"}
+{"src": "prop_whitelist_Google-XLA-Compiler", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:07:04.900579"}
+{"src": "prop_whitelist_PyTorch-Autograd-Design", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:07:04.902816"}
+{"src": "prop_whitelist_HuggingFace-Transformers-Philosophy", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T13:07:04.905155"}
