@@ -4,6 +4,9 @@
 ## 🎯 监控目标 (Target)
 - [x] Topology optimal. No immediate active inference required.
 
+## 🧠 认知阵眼 (Cognitive Hubs)
+**Cognitive Hub (PageRank)**: `NEXUS System`
+
 ## 🚀 新版本发布 (New Release)
 Awaiting native Harvester ingestion cycle.
 
@@ -12,3 +15,6 @@ Awaiting repository sync.
 
 ## 🛡️ 信任评分 (Trust Score)
 Deterministic Physical Source: 100% (Zero LLM involved).
+
+## ⚙️ 演化回写率 (Evolution Writeback)
+Writeback Success Rate: 0.00% (Preparatory State Locked)
