@@ -259,3 +259,54 @@ class Cortex:
         except:
             return {'entities': 0, 'relations': 0, 'density': 0}
         return {'entities': e_count, 'relations': r_count, 'density': avg_weight}
+
+    def get_dashboard_metrics(self):
+        """Phase VI: Quantitative Dashboard Metrics extraction."""
+        cursor = self.conn.cursor()
+        try:
+            # Active Entities Count
+            active_entities = cursor.execute('SELECT COUNT(id) FROM entities WHERE invalid_at IS NULL').fetchone()[0] or 0
+
+            # Active Relations Count
+            active_relations = cursor.execute('SELECT COUNT(source) FROM relations WHERE invalid_at IS NULL').fetchone()[0] or 0
+
+            # Compression Rate calculation using strict SQLite mathematical cast
+            sql_compression = '''
+                SELECT 1.0 - (SELECT COUNT(id) FROM entities WHERE invalid_at IS NULL) / CAST((SELECT COUNT(id) FROM entities) AS REAL)
+            '''
+            compression_rate = cursor.execute(sql_compression).fetchone()[0]
+            if compression_rate is None:
+                compression_rate = 0.0
+
+            # Low-Connectivity Nodes Count (Total connections <= 1 for valid nodes)
+            sql_low_connectivity = '''
+                SELECT COUNT(*) FROM (
+                    SELECT e.id
+                    FROM entities e
+                    LEFT JOIN (
+                        SELECT source AS id FROM relations WHERE invalid_at IS NULL
+                        UNION ALL
+                        SELECT target AS id FROM relations WHERE invalid_at IS NULL
+                    ) r ON e.id = r.id
+                    WHERE e.invalid_at IS NULL
+                    GROUP BY e.id
+                    HAVING COUNT(r.id) <= 1
+                )
+            '''
+            low_connectivity = cursor.execute(sql_low_connectivity).fetchone()[0] or 0
+
+        except Exception as e:
+            print(f"[Cortex Error] Metrics extraction failed: {str(e)}")
+            return {
+                'active_entities': 0,
+                'active_relations': 0,
+                'compression_rate': 0.0,
+                'low_connectivity': 0
+            }
+
+        return {
+            'active_entities': active_entities,
+            'active_relations': active_relations,
+            'compression_rate': float(compression_rate),
+            'low_connectivity': low_connectivity
+        }

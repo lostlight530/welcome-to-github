@@ -39,31 +39,34 @@ class Evolver:
         new_inputs = self._scan_inputs()
 
         # 5. Wake: Delegate Render to Reason Engine
-        stats = self.cortex.get_stats()
+        metrics = self.cortex.get_dashboard_metrics()
         orphans = self.cortex.get_orphans()
 
         # Suture orphans automatically
         self.cortex.suture_orphans()
 
-        self._trigger_render(stats, orphans)
+        self._trigger_render(metrics, orphans)
 
         # 6. Archive processed inputs
         self._archive_inputs()
 
         logging.info("Cycle Complete.")
 
-    def _trigger_render(self, stats, orphans):
+    def _trigger_render(self, metrics, orphans):
         try:
             r = ReasoningEngine(self.brain_path)
             # Pass isolated nodes names
             isolated_nodes = [o['name'] for o in orphans]
-            r._render_daily_archives(stats, isolated_nodes)
+            r._render_daily_archives(metrics, isolated_nodes)
         except Exception as e:
             logging.error(f"Render failed: {e}")
 
     def _genetic_auto_recombination(self):
-        """Phase V: AST Self-Mutation Sandbox"""
+        """Phase VI: Preparatory State AST Mutator"""
         logging.info("Initiating Genetic Auto-Recombination (AST Mutator)...")
+        logging.info("SYSTEM STATUS: Preparatory State Locked.")
+        logging.info("Writeback Success Rate locked at 0.00% to prevent Ouroboros loop.")
+
         target_file = self.brain_path / "evolution.py"
         try:
             with open(target_file, "r", encoding="utf-8") as f:
@@ -76,7 +79,7 @@ class Evolver:
             class SelfMutator(ast.NodeTransformer):
                 def visit_FunctionDef(self, node):
                     if node.name == '_genetic_auto_recombination':
-                        # Example sandbox operation: Just append a benign print statement or docstring
+                        # Example sandbox operation: Just append a benign pass statement
                         if not any(isinstance(stmt, ast.Pass) for stmt in node.body):
                             node.body.append(ast.Pass())
                     return self.generic_visit(node)
@@ -86,7 +89,7 @@ class Evolver:
 
             # Verify compilation in sandbox before any writes
             compile(mutated_tree, filename="<ast>", mode="exec")
-            logging.info("AST Mutation Sandbox check passed. (No write performed for safety in this loop)")
+            logging.info("AST Mutation Sandbox check passed. (Physical write bypassed).")
 
         except Exception as e:
             logging.error(f"Genetic Recombination Failed: {e}")
