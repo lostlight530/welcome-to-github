@@ -4,7 +4,7 @@
 
 ## 🚀 新版本发布 (New Release)
 > Version: v5.5.0
-> Date: 2026-04-08T10:11:12.198073
+> Date: 2026-04-08T10:11:49.208036
 
 ## 💡 项目洞察 (Insight)
 > **Architect's Analysis**: 🏷️ Edge-Ready ⚠️ Breaking-Change
@@ -23,7 +23,7 @@
 
 ### Gemma4
 
-[Gemma 4](INSET_PAPER_LINK) is a multimodal model with pretrained and instruction-tuned variants, available in 1B, 13B, and 27B parameters. The architecture is mostly the same as the previous Gemma versions. The key differences are a vision processor that can output images of fixed token budget and a spatial 2D RoPE to encode vision-specific information across height and width axis.
+Gemma 4 is a multimodal model with pretrained and instruction-tuned variants, available in 1B, 13B, and 27B parameters. The architecture is mostly the same as the previous Gemma versions. The key differences are a vision processor that can output images of fixed token budget and a spatial 2D RoPE to encode vision-specific information across height and width axis.
 
 <img width="1478" height="1374" alt="image" src="https://github.com/user-attachments/assets/9d88bd1b-02ea-4829-b7d0-fac0e347d436" />
 
@@ -53,4 +53,4 @@ To encode positional information for each patch in the image, Gemma 4 uses a lea
 
 ### NomicBERT
 
-NomicBERT is a BERT-inspired encoder model that applies Rotary Position Embeddings (RoPE) to create reproducible long context text embeddi
+NomicBERT is a BERT-inspired encoder model that applies Rotary Position Embeddings (RoPE) to create reproducible long context text embeddings.
