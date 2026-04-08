@@ -25,11 +25,10 @@ class ReasoningEngine:
         try:
             # 0. 提取全局状态
             stats = self.cortex.get_stats()
+            # Dashboard Metrics
+            metrics = self.cortex.get_dashboard_metrics()
 
-            # 1. 自我总结 (Self-Reflection)
-            insights.append(self._self_reflect(stats))
-
-            # 2. 结构分析 (Orphans & Cycles)
+            # 1. 结构分析 (Orphans & Cycles)
             orphans = self._query('''
                 SELECT e.name FROM entities e
                 LEFT JOIN relations r1 ON e.id = r1.source
@@ -126,8 +125,8 @@ class ReasoningEngine:
         top_node_id = max(ranks, key=ranks.get)
         return node_names.get(top_node_id, top_node_id)
 
-    def _render_daily_archives(self, stats: dict, isolated_nodes: list):
-        """Phase V: Deterministic rendering of the TWO daily documents (Zero-Dependency)."""
+    def _render_daily_archives(self, metrics: dict, isolated_nodes: list):
+        """Phase VI: Hardcore Quantitative Dashboard Rendering (Zero-Dependency)."""
         import os
         from datetime import datetime
         from string import Template
@@ -137,69 +136,61 @@ class ReasoningEngine:
             memories_dir = os.path.join(os.path.dirname(__file__), 'memories')
             os.makedirs(memories_dir, exist_ok=True)
 
-            # 锚点 1: Cognitive Report (认知档案)
-            cog_tmpl = Template(
-                "# 🧠 NEXUS CORTEX 认知档案 (Cognitive Report) - $date\n\n"
-                "## 💡 项目洞察 (Insight)\n"
-                "System Density: $density. Knowledge matrix requires structural reinforcement.\n\n"
-                "**Physical Stats**: Entities: $nodes | Synapses: $edges\n"
+            # Anchor 1: Quantitative Dashboard (量化仪表盘)
+            dash_tmpl = Template(
+                "# 📊 NEXUS CORTEX 量化仪表盘 (Quantitative Dashboard) - $date\n\n"
+                "## 📈 核心系统指标 (Core System Metrics)\n"
+                "| Metric | Value |\n"
+                "| :--- | :--- |\n"
+                "| Active Entities | $active_entities |\n"
+                "| Active Relations | $active_relations |\n"
+                "| Compression Rate | $compression_rate |\n"
+                "| Low-Connectivity Nodes | $low_connectivity |\n"
             )
-            cog_content = cog_tmpl.safe_substitute(
+            dash_content = dash_tmpl.safe_substitute(
                 date=today_str,
-                density=f"{stats.get('density', 0):.4f}",
-                nodes=stats.get('entities', 0),
-                edges=stats.get('relations', 0)
+                active_entities=metrics.get('active_entities', 0),
+                active_relations=metrics.get('active_relations', 0),
+                compression_rate=f"{metrics.get('compression_rate', 0.0):.4f}",
+                low_connectivity=metrics.get('low_connectivity', 0)
             )
-            with open(os.path.join(memories_dir, f"{today_str}-cognitive-report.md"), 'w', encoding='utf-8') as f:
-                f.write(cog_content)
+            with open(os.path.join(memories_dir, f"{today_str}-quantitative-dashboard.md"), 'w', encoding='utf-8') as f:
+                f.write(dash_content)
 
-            # 锚点 2: MISSION ACTIVE (绝对悬赏令 / 自身雷达驱动指令)
+            # Anchor 2: MISSION ACTIVE (绝对悬赏令)
             targets_str = "\n".join([f"- [ ] Deep dive required for: `{node}`" for node in isolated_nodes[:5]])
             if not targets_str: targets_str = "- [x] Topology optimal. No immediate active inference required."
+
+            # Calculate PageRank Target Hub
+            pagerank_hub = self._generate_pagerank_bounty()
+            pagerank_str = f"**Cognitive Hub (PageRank)**: `{pagerank_hub}`" if pagerank_hub else "Cognitive Hub: Pending inference."
 
             mission_tmpl = Template(
                 "# 📜 绝对悬赏令 (MISSION ACTIVE)\n"
                 "> Self-Driven Intent Probes for Harvester Radar.\n\n"
                 "## 🎯 监控目标 (Target)\n"
                 "$targets\n\n"
+                "## 🧠 认知阵眼 (Cognitive Hubs)\n"
+                "$pagerank_hub\n\n"
                 "## 🚀 新版本发布 (New Release)\n"
                 "Awaiting native Harvester ingestion cycle.\n\n"
                 "## 🔨 最近提交 (Recent Commits)\n"
                 "Awaiting repository sync.\n\n"
                 "## 🛡️ 信任评分 (Trust Score)\n"
-                "Deterministic Physical Source: 100% (Zero LLM involved).\n"
+                "Deterministic Physical Source: 100% (Zero LLM involved).\n\n"
+                "## ⚙️ 演化回写率 (Evolution Writeback)\n"
+                "Writeback Success Rate: 0.00% (Preparatory State Locked)\n"
             )
-            mission_content = mission_tmpl.safe_substitute(targets=targets_str)
+            mission_content = mission_tmpl.safe_substitute(
+                targets=targets_str,
+                pagerank_hub=pagerank_str
+            )
             with open(os.path.join(memories_dir, "MISSION_ACTIVE.md"), 'w', encoding='utf-8') as f:
                 f.write(mission_content)
 
-            print(f"[Reasoning] Engine successfully rendered Dual-Archives via Templates.")
+            print(f"[Reasoning] Engine successfully rendered Quantitative Dashboard via Templates.")
         except Exception as e:
             print(f"[Reasoning Error] Template enforcement failed: {str(e)}")
-
-    def _self_reflect(self, stats):
-        """Generate a diary-like self summary using deterministic string.Template."""
-        from string import Template
-
-        nodes = stats.get('entities', 0)
-        edges = stats.get('relations', 0)
-        density = stats.get('density', 0)
-
-        # Pure Template Definition
-        base_tmpl = Template("🧘 **Self-Reflection**: My cortex currently holds $nodes entities and $edges synapses. $insight")
-
-        if density < 1.0:
-            insight = Template("With a density of $density, my worldview is still fragmented. I am absorbing facts faster than I can connect them.")
-        elif density < 1.5:
-            insight = Template("With a density of $density, my logical web is forming nicely. I am starting to see the 'Big Picture'.")
-        else:
-            insight = Template("With a high density of $density, my understanding is highly cohesive and robust.")
-
-        # Deterministic substitution
-        rendered_insight = insight.safe_substitute(density=f"{density:.2f}")
-        summary = base_tmpl.safe_substitute(nodes=nodes, edges=edges, insight=rendered_insight)
-
-        return summary
 
     def _generate_structural_intuitions(self):
         """Find nodes that share exact targets (Structural Overlap / Epistemic Depth)"""
