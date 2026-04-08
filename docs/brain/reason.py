@@ -13,69 +13,55 @@ class ReasoningEngine:
         # [防御性初始化] 只有在数据库或其父目录存在时才初始化连接
         self.cortex = Cortex(self.db_path) if self.db_path.parent.exists() else None
 
-    def ponder(self):
-        """Cognitive Loop: Structural Analysis, Self-Reflection & Curiosity"""
-        # [防御性检查] 大脑物理文件缺失时的优雅降级
+    def ponder(self, evolution_metrics=None):
+        """Phase VI Cognitive Loop: Hardcore Quantitative Dashboard Inference"""
         if not self.cortex or not self.db_path.exists():
-            return ["❌ **Critical**: Cortex DB not found. Cannot think without memory."]
+            return ["❌ **Critical**: Cortex DB not found. Cannot compute without memory."]
 
-        print("🤔 NEXUS is pondering (Active Inference)...")
+        print("📊 NEXUS is compiling Quantitative Dashboard metrics...")
         insights = []
 
         try:
-            # 0. 提取全局状态
-            stats = self.cortex.get_stats()
+            dashboard = self.cortex.get_dashboard_metrics()
 
-            # 1. 自我总结 (Self-Reflection)
-            insights.append(self._self_reflect(stats))
+            # 1. 重复知识压缩率 (Redundant Knowledge Compression Rate)
+            comp_rate = dashboard.get('compression_rate', 0.0)
+            insights.append(f"🗜️ **Compression Rate**: {comp_rate:.2f}% of the physical ledger is deduplicated temporal history.")
 
-            # 2. 结构分析 (Orphans & Cycles)
-            orphans = self._query('''
-                SELECT e.name FROM entities e
-                LEFT JOIN relations r1 ON e.id = r1.source
-                LEFT JOIN relations r2 ON e.id = r2.target
-                WHERE r1.source IS NULL AND r2.target IS NULL LIMIT 3
-            ''')
-            if orphans:
-                insights.append(f"⚠️ **Isolation Risk**: {len(orphans)} concepts are floating without context (e.g., '{orphans[0][0]}'). I need to connect them.")
+            # 2. 高价值待补全节点 (High-Value Bounty via PageRank)
+            bounty_target = self._generate_pagerank_bounty()
+            if bounty_target:
+                insights.append(f"👑 **Ecosystem Choke Point (PageRank)**: Target `{bounty_target}` possesses maximum mathematical centrality. Priority bounty issued.")
 
+            # 3. 结构性死锁检测 (Structural Deadlock)
             cycles = self._query('''
                 SELECT r1.source, r1.target FROM relations r1
                 JOIN relations r2 ON r1.source = r2.target AND r1.target = r2.source
-                WHERE r1.source < r1.target LIMIT 2
+                WHERE r1.source < r1.target AND r1.invalid_at IS NULL AND r2.invalid_at IS NULL
+                LIMIT 2
             ''')
             if cycles:
-                insights.append(f"🔄 **Cognitive Loop**: Detected reciprocal dependency between '{cycles[0][0]}' and '{cycles[0][1]}'.")
+                insights.append(f"🔄 **Cognitive Deadlock**: Detected strict reciprocal dependency between '{cycles[0][0]}' and '{cycles[0][1]}'. Requires manual edge pruning.")
 
-            # 3. 隐性知识推演 (Transitive Inference)
+            # 4. 语义交叠与桥接推演 (Transitive Bridge & Overlap)
             bridges = self._query('''
                 SELECT r1.source, r2.target, r1.target FROM relations r1
                 JOIN relations r2 ON r1.target = r2.source
-                WHERE r1.relation = 'defines' AND r2.relation = 'inherits_from' LIMIT 2
+                WHERE r1.relation = 'defines' AND r2.relation = 'inherits_from' AND r1.invalid_at IS NULL AND r2.invalid_at IS NULL
+                LIMIT 2
             ''')
             for b in bridges:
-                insights.append(f"💡 **Epiphany**: I deduce that '{b[0]}' implicitly relies on '{b[1]}' via '{b[2]}'.")
+                insights.append(f"💡 **Transitive Inference**: Synthesized logical bridge: `{b[0]}` -> `{b[1]}` via `{b[2]}`.")
 
-            # 4. 拓扑启发与语义交叠 (Epistemic Depth & Structural Overlap)
-            # This generates subconscious structural suggestions instead of just isolated node complaints
-            structural_overlaps = self._generate_structural_intuitions()
-            for ov in structural_overlaps:
-                insights.append(f"🌌 **Subconscious Intuition**: Both '{ov[0]}' and '{ov[1]}' share the exact same structural connections to '{ov[2]}'. Are they related?")
-
-            # 5. 生态咽喉推演 (PageRank Centrality Bounty)
-            bounty_target = self._generate_pagerank_bounty()
-            if bounty_target:
-                insights.append(f"👑 **Ecosystem Choke Point (PageRank)**: The node '{bounty_target}' has absolute mathematical centrality. Issue highest priority bounty for this node.")
-
-            # 6. 自我驱动与好奇心引擎 (Epistemic Curiosity)
-            curiosity_targets = self._generate_curiosity()
-            if curiosity_targets:
-                insights.append(f"🎯 **Self-Driven Goal**: My knowledge about {', '.join(curiosity_targets)} is highly superficial (only 1 connection). I must prioritize researching them tomorrow.")
+            # 5. 决策回写成功率 (Decision Writeback Success Rate - provided by evolution layer)
+            if evolution_metrics and 'writeback_success_rate' in evolution_metrics:
+                wr_rate = evolution_metrics['writeback_success_rate']
+                insights.append(f"🛡️ **Writeback Success Rate**: {wr_rate:.2f}% of autonomous sandbox mutations were safely committed.")
             else:
-                insights.append("🎯 **Self-Driven Goal**: My current knowledge graph is dense. I should focus on harvesting new external paradigms.")
+                insights.append("🛡️ **Writeback Success Rate**: Sandbox mutations constrained. 0.00% physical writeback in preparatory state.")
 
         except Exception as e:
-             insights.append(f"⚠️ **Cognitive Error**: A disruption occurred during pondering: {e}")
+             insights.append(f"⚠️ **Computation Error**: A matrix disruption occurred during pondering: {e}")
 
         return insights
 
@@ -127,7 +113,7 @@ class ReasoningEngine:
         return node_names.get(top_node_id, top_node_id)
 
     def _render_daily_archives(self, stats: dict, isolated_nodes: list):
-        """Phase V: Deterministic rendering of the TWO daily documents (Zero-Dependency)."""
+        """Phase VI: Hardcore Quantitative Dashboard Rendering (Zero-Dependency)."""
         import os
         from datetime import datetime
         from string import Template
@@ -137,69 +123,53 @@ class ReasoningEngine:
             memories_dir = os.path.join(os.path.dirname(__file__), 'memories')
             os.makedirs(memories_dir, exist_ok=True)
 
-            # 锚点 1: Cognitive Report (认知档案)
+            dashboard = self.cortex.get_dashboard_metrics()
+            comp_rate = dashboard.get('compression_rate', 0.0)
+            low_conn = dashboard.get('low_connection_nodes', 0)
+
+            # Phase VI Dashboard Template
             cog_tmpl = Template(
-                "# 🧠 NEXUS CORTEX 认知档案 (Cognitive Report) - $date\n\n"
-                "## 💡 项目洞察 (Insight)\n"
-                "System Density: $density. Knowledge matrix requires structural reinforcement.\n\n"
-                "**Physical Stats**: Entities: $nodes | Synapses: $edges\n"
+                "# 📊 NEXUS CORTEX 量化仪表盘 (Quantitative Dashboard) - $date\n\n"
+                "## 📈 核心系统矩阵 (Core System Metrics)\n"
+                "- **新增活跃实体数 (Active Entities)**: $nodes\n"
+                "- **新增活跃关系数 (Active Relations)**: $edges\n"
+                "- **低连接节点数 (Low-Connectivity Nodes)**: $low_conn (Requires structural bridging)\n"
+                "- **重复知识压缩率 (Compression Rate)**: $comp_rate%\n"
+                "- **拓扑计算密度 (Density)**: $density\n\n"
+                "> System running in Absolute Determinism mode. Sentimental narratives deactivated.\n"
             )
             cog_content = cog_tmpl.safe_substitute(
                 date=today_str,
                 density=f"{stats.get('density', 0):.4f}",
                 nodes=stats.get('entities', 0),
-                edges=stats.get('relations', 0)
+                edges=stats.get('relations', 0),
+                low_conn=low_conn,
+                comp_rate=f"{comp_rate:.2f}"
             )
-            with open(os.path.join(memories_dir, f"{today_str}-cognitive-report.md"), 'w', encoding='utf-8') as f:
+            with open(os.path.join(memories_dir, f"{today_str}-quantitative-dashboard.md"), 'w', encoding='utf-8') as f:
                 f.write(cog_content)
 
-            # 锚点 2: MISSION ACTIVE (绝对悬赏令 / 自身雷达驱动指令)
-            targets_str = "\n".join([f"- [ ] Deep dive required for: `{node}`" for node in isolated_nodes[:5]])
-            if not targets_str: targets_str = "- [x] Topology optimal. No immediate active inference required."
+            # MISSION ACTIVE (绝对悬赏令)
+            targets_str = "\n".join([f"- [ ] High-Value Target: `{node}`" for node in isolated_nodes[:5]])
+            if not targets_str: targets_str = "- [x] Topology optimal. No critical choke points identified."
 
             mission_tmpl = Template(
-                "# 📜 绝对悬赏令 (MISSION ACTIVE)\n"
-                "> Self-Driven Intent Probes for Harvester Radar.\n\n"
-                "## 🎯 监控目标 (Target)\n"
+                "# 📜 物理悬赏令 (MISSION ACTIVE)\n"
+                "> Mathematical Centrality Target Bounties.\n\n"
+                "## 🎯 高价值待补全节点 (High-Value Bounty Targets)\n"
                 "$targets\n\n"
-                "## 🚀 新版本发布 (New Release)\n"
-                "Awaiting native Harvester ingestion cycle.\n\n"
-                "## 🔨 最近提交 (Recent Commits)\n"
-                "Awaiting repository sync.\n\n"
-                "## 🛡️ 信任评分 (Trust Score)\n"
-                "Deterministic Physical Source: 100% (Zero LLM involved).\n"
+                "## 🚀 雷达状态 (Radar State)\n"
+                "Double-Clutch Anti-Shake enabled. Awaiting rigid updates.\n\n"
+                "## 🛡️ 决策回写状态 (Writeback State)\n"
+                "Status: Preparatory Shell. Writeback Success Rate: 0.00%. \n"
             )
             mission_content = mission_tmpl.safe_substitute(targets=targets_str)
             with open(os.path.join(memories_dir, "MISSION_ACTIVE.md"), 'w', encoding='utf-8') as f:
                 f.write(mission_content)
 
-            print(f"[Reasoning] Engine successfully rendered Dual-Archives via Templates.")
+            print(f"[Reasoning] Engine successfully rendered Quantitative Dashboards via Templates.")
         except Exception as e:
             print(f"[Reasoning Error] Template enforcement failed: {str(e)}")
-
-    def _self_reflect(self, stats):
-        """Generate a diary-like self summary using deterministic string.Template."""
-        from string import Template
-
-        nodes = stats.get('entities', 0)
-        edges = stats.get('relations', 0)
-        density = stats.get('density', 0)
-
-        # Pure Template Definition
-        base_tmpl = Template("🧘 **Self-Reflection**: My cortex currently holds $nodes entities and $edges synapses. $insight")
-
-        if density < 1.0:
-            insight = Template("With a density of $density, my worldview is still fragmented. I am absorbing facts faster than I can connect them.")
-        elif density < 1.5:
-            insight = Template("With a density of $density, my logical web is forming nicely. I am starting to see the 'Big Picture'.")
-        else:
-            insight = Template("With a high density of $density, my understanding is highly cohesive and robust.")
-
-        # Deterministic substitution
-        rendered_insight = insight.safe_substitute(density=f"{density:.2f}")
-        summary = base_tmpl.safe_substitute(nodes=nodes, edges=edges, insight=rendered_insight)
-
-        return summary
 
     def _generate_structural_intuitions(self):
         """Find nodes that share exact targets (Structural Overlap / Epistemic Depth)"""
