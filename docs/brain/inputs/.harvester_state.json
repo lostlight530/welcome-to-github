@@ -6,8 +6,8 @@
   },
   "langgenius/dify": {
     "last_tag": "1.13.3",
-    "updated_at": "2026-04-08",
-    "etag": "W/\"6fac0617ced492b8b3bc492211953911235e4263700ac7667ec7fbf2f9f3e416\""
+    "updated_at": "2026-04-09",
+    "etag": "W/\"b6d5952a7b40a17b01cd825bf76a9d32977afa723f1b013552b0699b2f8904b9\""
   },
   "iflytek/astron-agent": {
     "last_tag": "v1.0.4",
@@ -17,12 +17,12 @@
   "vllm-project/vllm": {
     "last_tag": "v0.19.0",
     "updated_at": "2026-04-09",
-    "etag": "W/\"8912e5f20b0fb8d4458a5b998c6db375d446bee252ab8d027f4f79425ee53998\""
+    "etag": "W/\"3c1f435235dce1e3b5fd2cd27a980e02be0981a4e78958b7a7d50e49ca3c51b6\""
   },
   "huggingface/transformers": {
-    "last_tag": "v5.5.1",
+    "last_tag": "v5.5.3",
     "updated_at": "2026-04-09",
-    "etag": "W/\"10bd42ef1e698abc232b6321da17af28dda7d09f97880d3ee8a904f396e4ff42\""
+    "etag": "W/\"7cce4bf1f3184ad4c4620f45b55c62f7526692bea2b5ea6f33eb4f2093548bc8\""
   },
   "google-ai-edge/mediapipe": {
     "last_tag": "v0.10.33",
@@ -30,13 +30,13 @@
     "etag": "W/\"bc50c3f9ce3b21d234504d36f51a42ea86a2af50f0976e1f176f30a7595bd90e\""
   },
   "googleapis/python-genai": {
-    "last_tag": "v1.71.0",
-    "updated_at": "2026-04-08",
-    "etag": "W/\"9dd642e10764db64943a63a6c39e7c5cd4ee2ceaeb094bdce8c5ed9a055a8f9e\""
+    "last_tag": "v1.72.0",
+    "updated_at": "2026-04-09",
+    "etag": "W/\"adaf4c6f6c9496e268e83ad13acd26735c5986c09793c3bb3e12bce4e0fbd955\""
   },
   "microsoft/markitdown": {
     "last_tag": "v0.1.5",
-    "updated_at": "2026-04-08",
-    "etag": "W/\"3cf64e81993e7e7b05272bba4925d1cbed4c12a3c99988279fe1548f974dc912\""
+    "updated_at": "2026-04-09",
+    "etag": "W/\"1bef77dc53cf77d6463de75d0089541d9802f6f743ae08239909fa49fdbf716f\""
   }
 }
