@@ -16,13 +16,13 @@
   },
   "vllm-project/vllm": {
     "last_tag": "v0.19.0",
-    "updated_at": "2026-04-14",
-    "etag": "W/\"301d55704216b4183b7994e0acf708950615400261540d244182f3fc7c8be889\""
+    "updated_at": "2026-04-15",
+    "etag": "W/\"05edd2b03ddd7068bca597897be2953fd778a4452b0fe0bf4b9786293df6ce45\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.5.4",
-    "updated_at": "2026-04-14",
-    "etag": "W/\"404475e802b480d478e8256906f6e38c595585429ea25b6c922d912dbcff6471\""
+    "updated_at": "2026-04-15",
+    "etag": "W/\"0b536053ac723cbe0156b8067fe5036f3aba38b232153be33064b912480894ab\""
   },
   "google-ai-edge/mediapipe": {
     "last_tag": "v0.10.33",
@@ -36,7 +36,7 @@
   },
   "microsoft/markitdown": {
     "last_tag": "v0.1.5",
-    "updated_at": "2026-04-13",
-    "etag": "W/\"a3a75cd3989db5c6f774388245ba9d9fff6d81970f78fa1a6ca320f57e67718a\""
+    "updated_at": "2026-04-15",
+    "etag": "W/\"5590422ffb05cb9dfbd1fd81954d7af31f74ea20755e5f23dd1055387d9b3a3b\""
   }
 }
