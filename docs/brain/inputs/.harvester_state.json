@@ -16,13 +16,13 @@
   },
   "vllm-project/vllm": {
     "last_tag": "v0.19.0",
-    "updated_at": "2026-04-15",
-    "etag": "W/\"76d293866e414a740c0d353c827b3e98fcb746af6ab2d06cfbe3a55f583e51d9\""
+    "updated_at": "2026-04-16",
+    "etag": "W/\"7d5d36c9b117ed7a3cf7f3f2b0f839d409bfa9b1e926a70a80cf71b19b6ed17b\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.5.4",
-    "updated_at": "2026-04-15",
-    "etag": "W/\"0b536053ac723cbe0156b8067fe5036f3aba38b232153be33064b912480894ab\""
+    "updated_at": "2026-04-16",
+    "etag": "W/\"827117df75f8a3e4a92a57d3152e686a7656e6ff3d09d55d3909a41caebfe6fa\""
   },
   "google-ai-edge/mediapipe": {
     "last_tag": "v0.10.33",
