@@ -10,19 +10,19 @@
     "etag": "W/\"b6d5952a7b40a17b01cd825bf76a9d32977afa723f1b013552b0699b2f8904b9\""
   },
   "iflytek/astron-agent": {
-    "last_tag": "v1.0.4",
-    "updated_at": "2026-04-02",
-    "etag": "W/\"27592b34a9d10153ed7933228ef52e38d36c852f818f57cb7114460e48fb8783\""
+    "last_tag": "v1.0.5",
+    "updated_at": "2026-04-17",
+    "etag": "W/\"5a0afe0bbaad1d947403410a571b727208053e81bd27254458c8eb86b7295e44\""
   },
   "vllm-project/vllm": {
     "last_tag": "v0.19.0",
     "updated_at": "2026-04-17",
-    "etag": "W/\"ea5bca8f762befaf43aa52d88f5b6d944fada49c2e057d6d63f2b3fb5b7f13aa\""
+    "etag": "W/\"3dd6ce8f0758e465f6dc680e7b7d4fdd6e6ac9c425384749d644f30fd11ab747\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.5.4",
-    "updated_at": "2026-04-16",
-    "etag": "W/\"827117df75f8a3e4a92a57d3152e686a7656e6ff3d09d55d3909a41caebfe6fa\""
+    "updated_at": "2026-04-17",
+    "etag": "W/\"97f3423167a2a75cbf3694c0b5cf5bd7bdfb09ee3535165dc4ebcbd97b53435d\""
   },
   "google-ai-edge/mediapipe": {
     "last_tag": "v0.10.33",
