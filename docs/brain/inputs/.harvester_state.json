@@ -1,8 +1,8 @@
 {
   "ModelEngine-Group/nexent": {
-    "last_tag": "v2.0.1",
-    "updated_at": "2026-04-10",
-    "etag": "W/\"e43c574efc0aab88f14757722a2e8a9d56cade46f0216837cc7eedb0a807ff55\""
+    "last_tag": "v2.0.2",
+    "updated_at": "2026-04-18",
+    "etag": "W/\"e51573068f0e118c94d1586135d25854c4c86171ad7521e2252431790e23ce3e\""
   },
   "langgenius/dify": {
     "last_tag": "1.13.3",
@@ -15,9 +15,9 @@
     "etag": "W/\"5a0afe0bbaad1d947403410a571b727208053e81bd27254458c8eb86b7295e44\""
   },
   "vllm-project/vllm": {
-    "last_tag": "v0.19.0",
-    "updated_at": "2026-04-17",
-    "etag": "W/\"3dd6ce8f0758e465f6dc680e7b7d4fdd6e6ac9c425384749d644f30fd11ab747\""
+    "last_tag": "v0.19.1",
+    "updated_at": "2026-04-18",
+    "etag": "W/\"e1d7773883eb5489d5480c585962e665a50822f14d71fd6fb892c3febc064639\""
   },
   "huggingface/transformers": {
     "last_tag": "v5.5.4",
@@ -36,7 +36,7 @@
   },
   "microsoft/markitdown": {
     "last_tag": "v0.1.5",
-    "updated_at": "2026-04-15",
-    "etag": "W/\"5590422ffb05cb9dfbd1fd81954d7af31f74ea20755e5f23dd1055387d9b3a3b\""
+    "updated_at": "2026-04-18",
+    "etag": "W/\"297487ce010c7e0689663976df8eaf5b58d16b99ea7b33f3af9ec026e2a61ce7\""
   }
 }
