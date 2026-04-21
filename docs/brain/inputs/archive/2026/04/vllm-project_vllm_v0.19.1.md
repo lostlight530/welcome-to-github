@@ -4,7 +4,7 @@
 
 ## 🚀 新版本发布 (New Release)
 > Version: v0.19.1
-> Date: 2026-04-20T22:42:04.705398
+> Date: 2026-04-21T22:37:15.696050
 
 ## 💡 项目洞察 (Insight)
 > **Architect's Analysis**: 🏷️ Edge-Ready
@@ -15,7 +15,7 @@
 ## 🔨 最近提交 (Recent Commits)
 *Summary from release notes:*
 
-This is a patch release on top of `v0.19.0` with Transformers v5.5.4 upgrade and bug fixes for Gemma4:
+This is a patch release on top of `v0.19.0` with Transformers v5.5.3 upgrade and bug fixes for Gemma4:
 - Update to transformers v5 (#30566)
 - [Bugfix] Fix invalid JSON in Gemma 4 streaming tool calls by stripping partial delimiters (#38992)
 - [Bugfix][Frontend] Fix Gemma4 streaming HTML duplication after tool calls (#38909)
