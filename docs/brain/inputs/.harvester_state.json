@@ -16,13 +16,13 @@
   },
   "vllm-project/vllm": {
     "last_tag": "v0.19.1",
-    "updated_at": "2026-04-22",
-    "etag": "W/\"6340596ef2c28418b33ea254e13345fd140687821c84c32c5503eaa9725a58e6\""
+    "updated_at": "2026-04-23",
+    "etag": "W/\"38024f1336210c0ef6341bd8974bbdd76c809899d20574076d59fde83fca225f\""
   },
   "huggingface/transformers": {
-    "last_tag": "v5.6.0",
-    "updated_at": "2026-04-22",
-    "etag": "W/\"a31168cc831d62528eb150cd6ab4a0f3bd312d1adb32ea683bbd6f7f768d3994\""
+    "last_tag": "v5.6.2",
+    "updated_at": "2026-04-23",
+    "etag": "W/\"98dead33df00daabf485d94c15aa21e7f63aee13aeb54e062092836e4a498672\""
   },
   "google-ai-edge/mediapipe": {
     "last_tag": "v0.10.33",
@@ -31,8 +31,8 @@
   },
   "googleapis/python-genai": {
     "last_tag": "v1.73.1",
-    "updated_at": "2026-04-14",
-    "etag": "W/\"c6321116945238ba0c83e0043b8ebe39bb43170e8afefacf681bfdae63dc4bc9\""
+    "updated_at": "2026-04-23",
+    "etag": "W/\"7e296a0c56e530df5fe671243012d8e53bae91cf46d79ffb8ca8f59628a90ce7\""
   },
   "microsoft/markitdown": {
     "last_tag": "v0.1.5",
