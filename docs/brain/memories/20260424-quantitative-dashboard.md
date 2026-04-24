@@ -5,5 +5,5 @@
 | :--- | :--- |
 | Active Entities | 410 |
 | Active Relations | 573 |
-| Compression Rate | 0.6493 |
+| Compression Rate | 0.6514 |
 | Low-Connectivity Nodes | 231 |
