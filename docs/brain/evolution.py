@@ -21,36 +21,32 @@ class Evolver:
         self.inputs_path = self.brain_path / "inputs"
 
     def run_daily_cycle(self):
-        logging.info("Starting Daily Evolution Cycle...")
+        try:
+            logging.info("Starting Daily Evolution Cycle...")
 
-        # 0. AST Hot-Patching (Genetic Auto-Recombination)
-        self._genetic_auto_recombination()
+            # 0. AST Hot-Patching (Genetic Auto-Recombination)
+            self._genetic_auto_recombination()
 
-        # 1. Sleep: Metabolize & Decay
-        self.cortex.decay_memories()
+            # 1. Sandbox Verification
+            self._run_sandbox_tests()
 
-        # 2. Sandbox Verification: Run automated tests before deep cognition
-        self._run_sandbox_tests()
+            # 2. Rebuild ephemeral index from JSONL ledger
+            self.cortex._init_db()
 
-        # 3. Dream: Incubate Intuitions & Epistemic Curiosity
-        intuitions = self._incubate_ideas()
+            # 3. Process new inputs (Harvester)
+            # 4. Cognitive Reflection
+            metrics = self.cortex.get_dashboard_metrics()
+            orphans = self.cortex.get_orphans(limit=10)
 
-        # 4. Orient: Scan Inputs
-        new_inputs = self._scan_inputs()
+            # 5. Render active dashboard
+            self._trigger_render(metrics, orphans)
 
-        # 5. Wake: Delegate Render to Reason Engine
-        metrics = self.cortex.get_dashboard_metrics()
-        orphans = self.cortex.get_orphans()
+            # 6. Archive processed inputs
+            self._archive_inputs()
 
-        # Suture orphans automatically
-        self.cortex.suture_orphans()
-
-        self._trigger_render(metrics, orphans)
-
-        # 6. Archive processed inputs
-        self._archive_inputs()
-
-        logging.info("Cycle Complete.")
+            logging.info("Cycle Complete.")
+        except Exception as e:
+            logging.error(f"Cycle failed: {e}")
 
     def _trigger_render(self, metrics, orphans):
         try:

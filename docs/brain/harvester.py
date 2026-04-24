@@ -265,21 +265,26 @@ class Harvester:
             print(f"[Harvester Error] Failed to read intents: {e}")
 
     def fetch_github_data(self):
-        print("[Harvester] Initiating asynchronous radar sweep (Zero-Dependency Concurrency)...")
-        new_files = []
+        try:
+            print("[Harvester] Initiating asynchronous radar sweep (Zero-Dependency Concurrency)...")
+            new_files = []
 
-        # Read self-driven intents before sweeping
-        self._read_mission_active_intents()
+            # Read self-driven intents before sweeping
+            self._read_mission_active_intents()
 
-        # Liquid Time-Series Graph Injection - Phase 4 Concurrency
-        with ThreadPoolExecutor(max_workers=5) as executor:
-            future_to_repo = {executor.submit(self._fetch_repo_data, repo): repo for repo in self.targets.keys()}
-            for future in as_completed(future_to_repo):
-                filepath = future.result()
-                if filepath:
-                    new_files.append(filepath)
+            # Liquid Time-Series Graph Injection - Phase 4 Concurrency
+            with ThreadPoolExecutor(max_workers=5) as executor:
+                future_to_repo = {executor.submit(self._fetch_repo_data, repo): repo for repo in self.targets.keys()}
+                for future in as_completed(future_to_repo):
+                    try:
+                        res = future.result()
+                        if res:
+                            new_files.append(res)
+                    except Exception as exc:
+                        print(f"   [Radar Error] Target generated an exception: {exc}")
 
-        with self.state_lock:
-            self._save_state()
+            return new_files
+        except Exception as e:
+            print(f"[Harvester Error] fetch_github_data failed: {e}")
+            return []
 
-        return new_files

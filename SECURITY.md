@@ -1,21 +1,17 @@
-# Security Policy
+# 安全策略 (Security Policy)
 
-## Supported Versions
+## 支持的版本 (Supported Versions)
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+This repository operates under the `spec-X` architecture and is governed by the protocols of Phase VI Absolute Determinism.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Version               | Supported          |
+| --------------------- | ------------------ |
+| Phase VI (Current)    | :white_check_mark: |
+| Phase V               | :white_check_mark: |
+| Phase IV & Below      | :x:                |
 
-## Reporting a Vulnerability
+## 报告漏洞 (Reporting a Vulnerability)
 
-Use this section to tell people how to report a vulnerability.
+If you discover a vulnerability or a violation of the Trust Gateway / Zero-Dependency protocols, please submit a detailed report.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+As an Edge AI practitioner and operator of the NEXUS CORTEX architecture, I monitor system integrity continually. The Trust Gateway actively penalizes malformed MCP requests. If a security issue is identified, it will be analyzed within the deterministic pipeline and addressed promptly.

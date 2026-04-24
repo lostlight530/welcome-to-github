@@ -227,18 +227,22 @@ class Cortex:
         self.conn.commit()
 
     def get_orphans(self, limit=5):
-        cursor = self.conn.cursor()
-        sql = '''
-            SELECT e.id, e.name, e.weight FROM entities e
-            LEFT JOIN relations r1 ON e.id = r1.source
-            LEFT JOIN relations r2 ON e.id = r2.target
-            WHERE r1.source IS NULL AND r2.target IS NULL
-            AND e.weight > 0.5
-            ORDER BY e.weight DESC
-            LIMIT ?
-        '''
-        cursor.execute(sql, (limit,))
-        return [dict(row) for row in cursor.fetchall()]
+        try:
+            cursor = self.conn.cursor()
+            sql = '''
+                SELECT e.id, e.name, e.weight FROM entities e
+                LEFT JOIN relations r1 ON e.id = r1.source
+                LEFT JOIN relations r2 ON e.id = r2.target
+                WHERE r1.source IS NULL AND r2.target IS NULL
+                AND e.weight > 0.5
+                ORDER BY e.weight DESC
+                LIMIT ?
+            '''
+            cursor.execute(sql, (limit,))
+            return [dict(row) for row in cursor.fetchall()]
+        except Exception as e:
+            print(f"[Cortex Error] Failed to get orphans: {e}")
+            return []
 
     def suture_orphans(self):
         """Phase V: Deterministic Orphan Suturing. Ghost nodes are connected internally."""
