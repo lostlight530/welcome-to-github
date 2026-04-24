@@ -26,21 +26,27 @@ factory = KnowledgeFactory(brain_root)
 ID_PATTERN = re.compile(r'^[a-z0-9-]+$')
 ALLOWED_CATEGORIES = {"concepts", "tech_stack", "people", "projects"}
 
-def validate_id(entity_id: str):
+def validate_id(entity_id: str) -> None:
     """
     Enforces strict ID format to prevent path traversal.
     强制执行严格的 ID 格式以防止路径遍历。
     """
-    if not ID_PATTERN.match(entity_id):
-        raise ValueError(f"Security Violation: ID '{entity_id}' contains invalid characters. Only lowercase alphanumeric and hyphens allowed.")
+    try:
+        if not ID_PATTERN.match(entity_id):
+            raise ValueError(f"Security Violation: ID '{entity_id}' contains invalid characters. Only lowercase alphanumeric and hyphens allowed.")
+    except Exception as e:
+        raise ValueError(f"Validation failed: {e}")
 
-def validate_category(category: str):
+def validate_category(category: str) -> None:
     """
     Enforces category whitelist to prevent arbitrary file writes.
     强制执行类别白名单以防止任意文件写入。
     """
-    if category not in ALLOWED_CATEGORIES:
-        raise ValueError(f"Security Violation: Category '{category}' is not allowed. Must be one of {ALLOWED_CATEGORIES}.")
+    try:
+        if category not in ALLOWED_CATEGORIES:
+            raise ValueError(f"Security Violation: Category '{category}' is not allowed. Must be one of {ALLOWED_CATEGORIES}.")
+    except Exception as e:
+        raise ValueError(f"Validation failed: {e}")
 
 @mcp.resource("knowledge://stats/entropy")
 def get_entropy_stats() -> str:

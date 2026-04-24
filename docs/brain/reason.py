@@ -195,36 +195,44 @@ class ReasoningEngine:
 
     def _generate_structural_intuitions(self):
         """Find nodes that share exact targets (Structural Overlap / Epistemic Depth)"""
-        sql = '''
-            SELECT e1.name, e2.name, et.name
-            FROM relations r1
-            JOIN relations r2 ON r1.target = r2.target AND r1.source != r2.source
-            JOIN entities e1 ON r1.source = e1.id
-            JOIN entities e2 ON r2.source = e2.id
-            JOIN entities et ON r1.target = et.id
-            WHERE e1.name < e2.name
-              AND r1.invalid_at IS NULL AND r2.invalid_at IS NULL
-              AND e1.invalid_at IS NULL AND e2.invalid_at IS NULL AND et.invalid_at IS NULL
-            LIMIT 2
-        '''
-        return self._query(sql)
+        try:
+            sql = '''
+                SELECT e1.name, e2.name, et.name
+                FROM relations r1
+                JOIN relations r2 ON r1.target = r2.target AND r1.source != r2.source
+                JOIN entities e1 ON r1.source = e1.id
+                JOIN entities e2 ON r2.source = e2.id
+                JOIN entities et ON r1.target = et.id
+                WHERE r1.invalid_at IS NULL AND r2.invalid_at IS NULL
+                  AND e1.invalid_at IS NULL AND e2.invalid_at IS NULL AND et.invalid_at IS NULL
+                LIMIT 2
+            '''
+            return self._query(sql)
+        except Exception as e:
+            print(f"[Reasoning Error] _generate_structural_intuitions failed: {e}")
+            return []
 
     def _generate_curiosity(self):
         """Find nodes with exactly 1 edge (Superficial Knowledge)"""
-        sql = '''
-            SELECT e.name
-            FROM entities e
-            JOIN (
-                SELECT source AS id FROM relations
-                UNION ALL
-                SELECT target AS id FROM relations
-            ) r ON e.id = r.id
-            GROUP BY e.id
-            HAVING COUNT(r.id) = 1
-            LIMIT 3
-        '''
-        results = self._query(sql)
-        return [f"'{row[0]}'" for row in results] if results else []
+        try:
+            sql = '''
+                SELECT e.name
+                FROM entities e
+                JOIN (
+                    SELECT id FROM (
+                        SELECT source AS id FROM relations WHERE invalid_at IS NULL
+                        UNION ALL
+                        SELECT target AS id FROM relations WHERE invalid_at IS NULL
+                    ) GROUP BY id HAVING COUNT(*) = 1
+                ) r ON e.id = r.id
+                WHERE e.invalid_at IS NULL
+                LIMIT 3
+            '''
+            results = self._query(sql)
+            return [f"'{row[0]}'" for row in results] if results else []
+        except Exception as e:
+            print(f"[Reasoning Error] _generate_curiosity failed: {e}")
+            return []
 
     def _query(self, sql):
         try:

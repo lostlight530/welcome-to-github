@@ -25,9 +25,12 @@ class MCPServer:
 
     def _init_trust_ledger(self):
         """[Phase V] Initialize the Cold-Blooded Trust Ledger"""
-        cursor = self.cortex.conn.cursor()
-        cursor.execute("CREATE TABLE IF NOT EXISTS agent_trust (id TEXT PRIMARY KEY, score INTEGER DEFAULT 100)")
-        self.cortex.conn.commit()
+        try:
+            cursor = self.cortex.conn.cursor()
+            cursor.execute("CREATE TABLE IF NOT EXISTS agent_trust (id TEXT PRIMARY KEY, score INTEGER DEFAULT 100)")
+            self.cortex.conn.commit()
+        except Exception as e:
+            logger.error(f"Failed to initialize trust ledger: {e}")
 
     def _verify_agent_trust(self, agent_id: str):
         """[Phase V] Cold-Blooded Ledger Verification"""
@@ -52,12 +55,15 @@ class MCPServer:
 
     def _slash_trust(self, agent_id: str, penalty: int = 10):
         """[Phase V] Punish Hallucinations"""
-        if not agent_id:
-            agent_id = "anonymous"
+        try:
+            if not agent_id:
+                agent_id = "anonymous"
 
-        cursor = self.cortex.conn.cursor()
-        cursor.execute("UPDATE agent_trust SET score = score - ? WHERE id = ?", (penalty, agent_id))
-        self.cortex.conn.commit()
+            cursor = self.cortex.conn.cursor()
+            cursor.execute("UPDATE agent_trust SET score = score - ? WHERE id = ?", (penalty, agent_id))
+            self.cortex.conn.commit()
+        except Exception as e:
+            logger.error(f"Failed to slash trust: {e}")
 
     def handle_request(self, request: dict) -> dict:
         """Handles JSON-RPC 2.0 requests."""

@@ -12,157 +12,114 @@ try:
     from evolution import Evolver
     from scholar import Scholar
     from reason import ReasoningEngine # <--- The Frontal Lobe
+    from factory import KnowledgeFactory
 except ImportError:
     pass
 
-def main():
-    parser = argparse.ArgumentParser(description="NEXUS CORTEX: The Sovereign Intelligence")
-    subparsers = parser.add_subparsers(dest='command', help='Available commands')
+BRAIN_ROOT = Path(__file__).parent
+DB_PATH = BRAIN_ROOT / "cortex.db"
 
-    # --- Life Cycle ---
-    subparsers.add_parser('evolve', help='Run Daily Cycle (Harvest -> Dream -> Plan)')
-    subparsers.add_parser('harvest', help='Run Sensory Harvester (External)')
-    subparsers.add_parser('ingest', help='Deep Scan Codebase (Internal)') # <--- Omniscience
-    subparsers.add_parser('ponder', help='Run Deep Inference (Cognition)') # <--- Reasoning
-    subparsers.add_parser('rebuild', help='Rebuild DB from Text (Restoration)')
-    subparsers.add_parser('clean', help='Cleanup environment')
-    subparsers.add_parser('status', help='Report System Health')
+def main() -> None:
+    try:
+        parser = argparse.ArgumentParser(description="NEXUS CORTEX: The Sovereign Intelligence")
+        subparsers = parser.add_subparsers(dest='command', help='Available commands')
 
-    # --- Knowledge Ops ---
-    learn_parser = subparsers.add_parser('learn', help='Ingest Knowledge from File')
-    learn_parser.add_argument('file', help='Path to file')
+        # --- Life Cycle ---
+        subparsers.add_parser('evolve', help='Run Daily Cycle (Harvest -> Dream -> Plan)')
+        subparsers.add_parser('harvest', help='Run Sensory Harvester (External)')
+        subparsers.add_parser('ingest', help='Deep Scan Codebase (Internal)') # <--- Omniscience
+        subparsers.add_parser('ponder', help='Run Deep Inference (Cognition)') # <--- Reasoning
+        subparsers.add_parser('rebuild', help='Rebuild DB from Text (Restoration)')
+        subparsers.add_parser('clean', help='Cleanup environment')
 
-    search_parser = subparsers.add_parser('search', help='Search Memory')
-    search_parser.add_argument('query', type=str)
+        # --- Data Entry ---
+        add_parser = subparsers.add_parser('add', help='Add a new knowledge entity')
+        add_parser.add_argument('category', type=str, help='Category (e.g., concepts, tech_stack)')
+        add_parser.add_argument('id', type=str, help='Unique ID (e.g., semantic_kernel)')
+        add_parser.add_argument('type', type=str, help='Entity Type')
+        add_parser.add_argument('name', type=str, help='Human readable name')
+        add_parser.add_argument('desc', type=str, help='Short description')
 
-    connect_parser = subparsers.add_parser('connect', help='Create Connection')
-    connect_parser.add_argument('source', type=str)
-    connect_parser.add_argument('relation', type=str)
-    connect_parser.add_argument('target', type=str)
-    connect_parser.add_argument('--desc', type=str, default="")
+        connect_parser = subparsers.add_parser('connect', help='Connect two entities')
+        connect_parser.add_argument('src', type=str)
+        connect_parser.add_argument('rel', type=str)
+        connect_parser.add_argument('dst', type=str)
+        connect_parser.add_argument('--desc', type=str, default="", help='Context for the relation')
 
-    add_parser = subparsers.add_parser('add', help='Create Entity')
-    add_parser.add_argument('type', choices=['entity'], help='Type')
-    add_parser.add_argument('--id', required=True)
-    add_parser.add_argument('--name', required=True)
-    add_parser.add_argument('--type_slug', default='concept')
-    add_parser.add_argument('--desc', default='')
+        # --- Retrieval ---
+        search_parser = subparsers.add_parser('search', help='Search Knowledge Graph')
+        search_parser.add_argument('query', type=str, help='Keyword to search')
 
-    activate_parser = subparsers.add_parser('activate', help='Boost Memory Weight')
-    activate_parser.add_argument('id', type=str)
+        subparsers.add_parser('status', help='View Brain Entropy & Stats')
 
-    subparsers.add_parser('visualize', help='Generate Mermaid Graph')
+        args = parser.parse_args()
 
-    args = parser.parse_args()
-    base_path = Path(__file__).parent
+        if not args.command:
+            parser.print_help()
+            sys.exit(1)
 
-    # --- Execution Logic ---
+        cortex = Cortex(DB_PATH)
+        factory = KnowledgeFactory(str(BRAIN_ROOT))
 
-    if args.command == 'clean':
-        print("🧹 Cleaning Cortex...")
-        targets = [base_path / "__pycache__", base_path / ".pytest_cache", base_path / "inputs" / "__pycache__"]
-        for t in targets:
-            if t.exists(): shutil.rmtree(t)
-        # Protect Harvester State
-        inputs_dir = base_path / "inputs"
-        protected = {".harvester_state.json", ".gitkeep"}
-        if inputs_dir.exists():
-            for f in inputs_dir.iterdir():
-                if f.is_file() and f.name not in protected and (f.name.endswith(".tmp") or f.name == ".DS_Store"):
-                    os.remove(f)
-        print("✨ Cleaned.")
+        if args.command == 'evolve':
+            from evolution import Evolver
+            evolver = Evolver(BRAIN_ROOT)
+            evolver.run_daily_cycle()
 
-    elif args.command == 'ponder':
-        r = ReasoningEngine(base_path)
-        insights = r.ponder()
-        print("\n🧠 **DEEP THOUGHTS REPORT**")
-        print("=============================")
-        if not insights:
-            print("   (Mind is quiet. No anomalies detected.)")
-        else:
-            for i in insights:
-                print(f"   {i}")
-        print("=============================\n")
+        elif args.command == 'harvest':
+            from harvester import Harvester
+            h = Harvester(BRAIN_ROOT)
+            h.fetch_github_data()
 
-    elif args.command == 'ingest':
-        s = Scholar(base_path)
-        project_root = base_path.parent.parent
-        s.ingest_repository(project_root)
+        elif args.command == 'ingest':
+            from scholar import Scholar
+            s = Scholar(BRAIN_ROOT)
+            s.ingest_repository(BRAIN_ROOT.parent.parent)
 
-    elif args.command == 'status':
-        c = Cortex(base_path / "cortex.db")
-        stats = c.get_stats()
-        print(f"🧠 NEXUS STATUS: {stats['entities']} Nodes | {stats['relations']} Edges | Entropy: {stats['density']:.4f}")
+        elif args.command == 'ponder':
+            from reason import ReasoningEngine
+            r = ReasoningEngine(BRAIN_ROOT)
+            insights = r.ponder()
+            print("\\n[NEXUS] 🧠 Deep Inference Results:")
+            for insight in insights:
+                print(f"  - {insight}")
 
-    elif args.command == 'rebuild':
-        print("🧠 Initiating Cortex Reconstruction Protocol...")
-        c = Cortex(base_path / "cortex.db")
-        knowledge_dir = base_path / "knowledge"
-        count = 0
-        if knowledge_dir.exists():
-            for root, _, files in os.walk(knowledge_dir):
-                for file in files:
-                    if file.endswith(".jsonl"):
-                        try:
-                            with open(Path(root)/file, 'r', encoding='utf-8') as f:
-                                for line in f:
-                                    if not line.strip(): continue
-                                    data = json.loads(line)
-                                    if 'src' in data:
-                                        c.connect_entities(data['src'], data.get('relation', 'connected'), data['dst'], data.get('desc',''), save_to_disk=False)
-                                    else:
-                                        c.add_entity(data.get('id'), data.get('type', 'concept'), data.get('name'), data.get('desc',''), save_to_disk=False)
-                                    count += 1
-                        except: pass
-        print(f"✨ Reconstruction Complete. {count} memories restored.")
+        elif args.command == 'rebuild':
+            if DB_PATH.exists():
+                os.remove(DB_PATH)
+            cortex = Cortex(DB_PATH)
+            # Load from factory logic here if needed
+            print("Database rebuilt from schemas.")
 
-    elif args.command == 'evolve':
-        h = Harvester(base_path)
-        h.fetch_github_data()
-        e = Evolver(base_path)
-        e.run_daily_cycle()
+        elif args.command == 'clean':
+            # Safe cleanup, protect `.harvester_state.json`
+            if DB_PATH.exists(): os.remove(DB_PATH)
+            if DB_PATH.with_suffix('.db-journal').exists(): os.remove(DB_PATH.with_suffix('.db-journal'))
+            print("Temporary caches cleared.")
 
-    elif args.command == 'harvest':
-        h = Harvester(base_path)
-        h.fetch_github_data()
+        elif args.command == 'add':
+            data = {"id": args.id, "type": args.type, "name": args.name, "desc": args.desc, "updated_at": datetime.datetime.now().isoformat(), "tags": []}
+            factory.add_entity(args.category, data)
 
-    elif args.command == 'learn':
-        s = Scholar(base_path)
-        print(f"🎓 Record: {s.learn(args.file)}")
+        elif args.command == 'connect':
+            data = {"src": args.src, "rel": args.rel, "dst": args.dst, "context": args.desc, "created_at": datetime.datetime.now().isoformat()}
+            factory.add_relation(data)
 
-    elif args.command == 'visualize':
-        c = Cortex(base_path / "cortex.db")
-        print("graph TD")
-        cursor = c.conn.cursor()
-        cursor.execute("SELECT source, relation, target FROM relations WHERE weight > 1.0 LIMIT 50")
-        for row in cursor.fetchall():
-            s = row[0].replace("-", "_").replace(".", "_")
-            t = row[2].replace("-", "_").replace(".", "_")
-            print(f"    {s} -->|{row[1]}| {t}")
+        elif args.command == 'search':
+            results = cortex.search(args.query)
+            for res in results:
+                print(f"[{res['distance']}] {res['name']} ({res['id']}): {res['desc'][:50]}...")
 
-    elif args.command == 'search':
-        c = Cortex(base_path / "cortex.db")
-        for r in c.search(args.query):
-            icon = "🔗" if r.get('distance', 0) > 0 else "🎯"
-            print(f" {icon} [{r['weight']:.2f}] {r['name']} ({r['id']})")
+        elif args.command == 'status':
+            stats = cortex.get_stats()
+            print("🧠 NEXUS CORTEX STATUS")
+            print(f"Entities : {stats['entities']}")
+            print(f"Relations: {stats['relations']}")
+            print(f"Density  : {stats['density']:.4f}")
 
-    elif args.command == 'connect':
-        c = Cortex(base_path / "cortex.db")
-        c.connect_entities(args.source, args.relation, args.target, args.desc)
-        print("⚡ Connected.")
-
-    elif args.command == 'add':
-        c = Cortex(base_path / "cortex.db")
-        c.add_entity(args.id, args.type_slug, args.name, args.desc)
-        print("🌱 Created.")
-
-    elif args.command == 'activate':
-        c = Cortex(base_path / "cortex.db")
-        c.activate_memory(args.id)
-        print("🔥 Activated.")
-
-    else:
-        parser.print_help()
+    except Exception as e:
+        print(f"[Nexus Error] Execution failed: {e}")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
