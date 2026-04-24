@@ -1,5 +1,5 @@
 # 📜 绝对悬赏令 (MISSION ACTIVE)
-> Self-Driven Intent Probes for Harvester Radar.
+> Standard Operating Procedure (SOP) Automation Checklist.
 
 ## 🎯 监控目标 (Target)
 - [x] Topology optimal. No immediate active inference required.

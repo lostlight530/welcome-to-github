@@ -157,8 +157,9 @@ class ReasoningEngine:
             with open(os.path.join(memories_dir, f"{today_str}-quantitative-dashboard.md"), 'w', encoding='utf-8') as f:
                 f.write(dash_content)
 
-            # Anchor 2: MISSION ACTIVE (绝对悬赏令)
-            targets_str = "\n".join([f"- [ ] Deep dive required for: `{node}`" for node in isolated_nodes[:5]])
+            # Anchor 2: MISSION ACTIVE (绝对悬赏令 - SOP)
+            # Replaced natural language targets with actionable CLI commands
+            targets_str = "\n".join([f"- [ ] Executable SOP: `python docs/brain/nexus.py connect \"{node}\" \"is_capability_of\" \"concept_nexus_system\"`" for node in isolated_nodes[:5]])
             if not targets_str: targets_str = "- [x] Topology optimal. No immediate active inference required."
 
             # Calculate PageRank Target Hub
@@ -167,7 +168,7 @@ class ReasoningEngine:
 
             mission_tmpl = Template(
                 "# 📜 绝对悬赏令 (MISSION ACTIVE)\n"
-                "> Self-Driven Intent Probes for Harvester Radar.\n\n"
+                "> Standard Operating Procedure (SOP) Automation Checklist.\n\n"
                 "## 🎯 监控目标 (Target)\n"
                 "$targets\n\n"
                 "## 🧠 认知阵眼 (Cognitive Hubs)\n"
