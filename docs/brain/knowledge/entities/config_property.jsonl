@@ -112,5 +112,3 @@
 {"id": "file__github_workflows_nexus-life-cycle_yml_prop_jobs_consciousness_env_FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "type": "config_property", "name": "jobs.consciousness.env.FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "desc": "true", "valid_at": "2026-04-07T11:28:35.805348"}
 {"id": "file__github_workflows_deploy_yml_prop_jobs_deploy_steps_env_FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "type": "config_property", "name": "jobs.deploy.steps.env.FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "desc": "true", "valid_at": "2026-04-07T11:28:35.838250"}
 {"id": "file_package_json_prop_devDependencies_vite", "type": "config_property", "name": "devDependencies.vite", "desc": "^8.0.5", "valid_at": "2026-04-07T11:41:33.267670"}
-{"id": "file__github_workflows_nexus-life-cycle_yml_prop_env_FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "type": "config_property", "name": "env.FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "desc": "true", "valid_at": "2026-04-24T00:25:51.819410"}
-{"id": "file__github_workflows_deploy_yml_prop_env_FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "type": "config_property", "name": "env.FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "desc": "true", "valid_at": "2026-04-24T00:25:51.866419"}

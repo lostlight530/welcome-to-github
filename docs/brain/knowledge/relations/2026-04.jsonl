@@ -58,5 +58,3 @@
 {"src": "prop_whitelist_WebAssembly-Core-Specification", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T16:06:43.896185"}
 {"src": "prop_whitelist_Microsoft-VSCode-Architecture", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node", "valid_at": "2026-04-07T16:06:43.909800"}
 {"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func_get_dashboard_metrics", "desc": "", "valid_at": "2026-04-08T04:55:08.801096"}
-{"src": "file__github_workflows_nexus-life-cycle_yml", "relation": "defines", "dst": "file__github_workflows_nexus-life-cycle_yml_prop_env_FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "desc": "", "valid_at": "2026-04-24T00:25:51.823252"}
-{"src": "file__github_workflows_deploy_yml", "relation": "defines", "dst": "file__github_workflows_deploy_yml_prop_env_FORCE_JAVASCRIPT_ACTIONS_TO_NODE24", "desc": "", "valid_at": "2026-04-24T00:25:51.869779"}
