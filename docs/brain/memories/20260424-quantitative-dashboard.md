@@ -4,6 +4,6 @@
 | Metric | Value |
 | :--- | :--- |
 | Active Entities | 410 |
-| Active Relations | 574 |
-| Compression Rate | 0.9013 |
+| Active Relations | 573 |
+| Compression Rate | 0.6493 |
 | Low-Connectivity Nodes | 231 |
