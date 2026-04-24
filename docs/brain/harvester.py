@@ -194,7 +194,7 @@ class Harvester:
         return result_file
 
     def _read_mission_active_intents(self):
-        """Phase V: Self-Driven Intent Probes. Reads MISSION_ACTIVE.md to augment targets."""
+        """Phase V/VI: Self-Driven Intent Probes via SQLite DB Graph Reversal."""
         mission_path = self.brain_path / "memories" / "MISSION_ACTIVE.md"
         if not mission_path.exists(): return
 
@@ -202,18 +202,65 @@ class Harvester:
             with open(mission_path, 'r', encoding='utf-8') as f:
                 content = f.read()
 
-            # Extract nodes marked for deep dive: "- [ ] Deep dive required for: `node`"
             import re
-            matches = re.findall(r'- \[ \] Deep dive required for: `(.*?)`', content)
+            import sqlite3
 
-            for match in matches:
-                # Naive conversion from entity id/name to a github repo format.
-                # In a full system, this would query Cortex or use a mapping.
-                # Here we just add it as a keyword/mock target to demonstrate intent.
-                clean_target = match.strip("'").strip()
-                if "/" in clean_target and clean_target not in self.targets:
-                    self.targets[clean_target] = ["releases"]
-                    print(f"   [Radar Intent] Added dynamic target from MISSION_ACTIVE: {clean_target}")
+            # Phase VI SOP Automation: Extract explicitly declared entities that require SOP execution
+            # Match: `python docs/brain/nexus.py connect "ENTITY_NAME" ...`
+            matches = re.findall(r'nexus\.py connect\s+"([^"]+)"', content)
+
+            if not matches: return
+
+            db_path = self.brain_path / "cortex.db"
+            if not db_path.exists(): return
+
+            conn = sqlite3.connect(db_path)
+            cursor = conn.cursor()
+
+            for entity_name in matches:
+                # To resolve abstract entities into actionable targets, find connected 'config_property' or 'concept' elements
+                # that might hold URL/Repo references, but specifically we check if the entity itself looks like a repo string
+
+                # Check 1: Does the entity name itself look like a repo?
+                if "/" in entity_name and "docs/brain" not in entity_name and len(entity_name.split("/")) == 2:
+                    if entity_name not in self.targets:
+                        self.targets[entity_name] = ["releases"]
+                        print(f"   [Radar Intent] Added direct target from SOP command: {entity_name}")
+                    continue
+
+                # Check 2: Cortex DB Graph Lookup for linked whitelist targets
+                # If the entity is abstract (e.g. "NEXUS System"), see if there is any target that is a URL repo we monitor
+                # In this deterministic system, we map out from the isolated node.
+                try:
+                    sql = '''
+                        SELECT e.name
+                        FROM relations r
+                        JOIN entities e ON (r.target = e.id OR r.source = e.id)
+                        WHERE (r.source = (SELECT id FROM entities WHERE name = ?)
+                           OR r.target = (SELECT id FROM entities WHERE name = ?))
+                          AND e.name LIKE 'https://github.com/%'
+                          AND e.invalid_at IS NULL
+                        LIMIT 1
+                    '''
+                    cursor.execute(sql, (entity_name, entity_name))
+                    result = cursor.fetchone()
+                    if result:
+                        url = result[0]
+                        # Extract owner/repo from https://github.com/owner/repo
+                        repo_match = re.search(r'github\.com/([a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+)', url)
+                        if repo_match:
+                            repo_str = repo_match.group(1)
+                            # Remove trailing fragments like .md or /main/...
+                            repo_parts = repo_str.split('/')
+                            if len(repo_parts) >= 2:
+                                clean_repo = f"{repo_parts[0]}/{repo_parts[1]}"
+                                if clean_repo not in self.targets:
+                                    self.targets[clean_repo] = ["releases"]
+                                    print(f"   [Radar Intent] Graph Reverse Lookup resolved {entity_name} -> {clean_repo}")
+                except Exception as e:
+                    print(f"   [Radar Intent] Graph lookup failed for {entity_name}: {e}")
+
+            conn.close()
         except Exception as e:
             print(f"[Harvester Error] Failed to read intents: {e}")
 
