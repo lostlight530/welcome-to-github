@@ -31,7 +31,11 @@ class Scholar:
         }
         self.ignore_files = {
             '.DS_Store', 'cortex.db', 'cortex.db-journal', '.gitignore',
-            'package-lock.json', 'yarn.lock', 'requirements.txt'
+            'package-lock.json', 'yarn.lock', 'requirements.txt',
+            'LICENSE', 'tailwind.config.js', 'postcss.config.js',
+            'index.html', '.editorconfig', 'main.js', 'main.css',
+            '__init__.py', '.gitkeep', 'feature_request.md',
+            'custom.md', 'bug_report.md'
         }
 
     def _load_config(self):
