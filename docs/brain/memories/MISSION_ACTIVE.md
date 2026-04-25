@@ -2,11 +2,7 @@
 > Standard Operating Procedure (SOP) Automation Checklist.
 
 ## 🎯 监控目标 (Target)
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "tailwind.config.js" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "index.html" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "LICENSE" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "postcss.config.js" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect ".editorconfig" "is_capability_of" "concept_nexus_system"`
+- [x] Topology optimal. No immediate active inference required.
 
 ## 🧠 认知阵眼 (Cognitive Hubs)
 **Cognitive Hub (PageRank)**: `test_mcp_server`
