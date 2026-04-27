@@ -139,8 +139,10 @@ class ReasoningEngine:
             os.makedirs(memories_dir, exist_ok=True)
 
             # Anchor 1: Quantitative Dashboard (量化仪表盘)
+            pulse_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
             dash_tmpl = Template(
-                "# 📊 NEXUS CORTEX 量化仪表盘 (Quantitative Dashboard) - $date\n\n"
+                "# 📊 NEXUS CORTEX 量化仪表盘 (Quantitative Dashboard) - $date\n"
+                "> ⏳ System Pulse: $pulse_time\n\n"
                 "## 📈 核心系统指标 (Core System Metrics)\n"
                 "| Metric | Value |\n"
                 "| :--- | :--- |\n"
@@ -172,6 +174,7 @@ class ReasoningEngine:
                     fill_date_str = current_fill_date.strftime("%Y%m%d")
                     fill_content = dash_tmpl.safe_substitute(
                         date=fill_date_str,
+                        pulse_time=pulse_time,
                         active_entities=metrics.get('active_entities', 0),
                         active_relations=metrics.get('active_relations', 0),
                         compression_rate=f"{metrics.get('compression_rate', 0.0):.4f}",
@@ -185,6 +188,7 @@ class ReasoningEngine:
                 # No gap, just generate today
                 dash_content = dash_tmpl.safe_substitute(
                     date=today_str,
+                    pulse_time=pulse_time,
                     active_entities=metrics.get('active_entities', 0),
                     active_relations=metrics.get('active_relations', 0),
                     compression_rate=f"{metrics.get('compression_rate', 0.0):.4f}",
@@ -225,9 +229,14 @@ class ReasoningEngine:
                 except Exception as e:
                     print(f"[Reasoning Error] Failed to read harvester state: {e}")
 
+            # Get stats for dynamic pulse injection
+            stats = self.cortex.get_stats()
+            brain_density = f"{stats.get('density', 0.0):.4f}"
+
             mission_tmpl = Template(
                 "# 📜 绝对悬赏令 (MISSION ACTIVE)\n"
-                "> Standard Operating Procedure (SOP) Automation Checklist.\n\n"
+                "> Standard Operating Procedure (SOP) Automation Checklist.\n"
+                "> ⏳ System Pulse: $pulse_time | 🧠 Brain Entropy (Density): $brain_density\n\n"
                 "## 🎯 监控目标 (Target)\n"
                 "$targets\n\n"
                 "## 🧠 认知阵眼 (Cognitive Hubs)\n"
@@ -242,6 +251,8 @@ class ReasoningEngine:
                 "Writeback Success Rate: 0.00% (Preparatory State Locked)\n"
             )
             mission_content = mission_tmpl.safe_substitute(
+                pulse_time=pulse_time,
+                brain_density=brain_density,
                 targets=targets_str,
                 pagerank_hub=pagerank_str,
                 new_releases=new_releases_str,
