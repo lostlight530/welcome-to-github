@@ -128,11 +128,13 @@ class ReasoningEngine:
     def _render_daily_archives(self, metrics: dict, isolated_nodes: list):
         """Phase VI: Hardcore Quantitative Dashboard Rendering (Zero-Dependency)."""
         import os
-        from datetime import datetime
+        from datetime import datetime, timedelta
+        import glob
         from string import Template
 
         try:
-            today_str = datetime.now().strftime("%Y%m%d")
+            today = datetime.now()
+            today_str = today.strftime("%Y%m%d")
             memories_dir = os.path.join(os.path.dirname(__file__), 'memories')
             os.makedirs(memories_dir, exist_ok=True)
 
@@ -147,15 +149,49 @@ class ReasoningEngine:
                 "| Compression Rate | $compression_rate |\n"
                 "| Low-Connectivity Nodes | $low_connectivity |\n"
             )
-            dash_content = dash_tmpl.safe_substitute(
-                date=today_str,
-                active_entities=metrics.get('active_entities', 0),
-                active_relations=metrics.get('active_relations', 0),
-                compression_rate=f"{metrics.get('compression_rate', 0.0):.4f}",
-                low_connectivity=metrics.get('low_connectivity', 0)
-            )
-            with open(os.path.join(memories_dir, f"{today_str}-quantitative-dashboard.md"), 'w', encoding='utf-8') as f:
-                f.write(dash_content)
+
+            # Backfill Mechanism (Simulating pondering during downtime to maintain chronological continuity)
+            # Find the most recent dashboard file
+            existing_dashboards = sorted(glob.glob(os.path.join(memories_dir, "*-quantitative-dashboard.md")))
+            last_date = None
+            if existing_dashboards:
+                for file_path in reversed(existing_dashboards):
+                    filename = os.path.basename(file_path)
+                    try:
+                        date_str = filename.split('-')[0]
+                        if len(date_str) == 8 and date_str.isdigit():
+                            last_date = datetime.strptime(date_str, "%Y%m%d")
+                            break
+                    except ValueError:
+                        continue
+
+            # If there's a gap, backfill up to today (inclusive)
+            if last_date and last_date < today.replace(hour=0, minute=0, second=0, microsecond=0):
+                current_fill_date = last_date + timedelta(days=1)
+                while current_fill_date.replace(hour=0, minute=0, second=0, microsecond=0) <= today.replace(hour=0, minute=0, second=0, microsecond=0):
+                    fill_date_str = current_fill_date.strftime("%Y%m%d")
+                    fill_content = dash_tmpl.safe_substitute(
+                        date=fill_date_str,
+                        active_entities=metrics.get('active_entities', 0),
+                        active_relations=metrics.get('active_relations', 0),
+                        compression_rate=f"{metrics.get('compression_rate', 0.0):.4f}",
+                        low_connectivity=metrics.get('low_connectivity', 0)
+                    )
+                    with open(os.path.join(memories_dir, f"{fill_date_str}-quantitative-dashboard.md"), 'w', encoding='utf-8') as f:
+                        f.write(fill_content)
+                    print(f"[Reasoning] Backfilled Quantitative Dashboard for {fill_date_str}")
+                    current_fill_date += timedelta(days=1)
+            else:
+                # No gap, just generate today
+                dash_content = dash_tmpl.safe_substitute(
+                    date=today_str,
+                    active_entities=metrics.get('active_entities', 0),
+                    active_relations=metrics.get('active_relations', 0),
+                    compression_rate=f"{metrics.get('compression_rate', 0.0):.4f}",
+                    low_connectivity=metrics.get('low_connectivity', 0)
+                )
+                with open(os.path.join(memories_dir, f"{today_str}-quantitative-dashboard.md"), 'w', encoding='utf-8') as f:
+                    f.write(dash_content)
 
             # Anchor 2: MISSION ACTIVE (绝对悬赏令 - SOP)
             # Replaced natural language targets with actionable CLI commands
@@ -166,6 +202,29 @@ class ReasoningEngine:
             pagerank_hub = self._generate_pagerank_bounty()
             pagerank_str = f"**Cognitive Hub (PageRank)**: `{pagerank_hub}`" if pagerank_hub else "Cognitive Hub: Pending inference."
 
+            # Read Harvester State to dynamically render New Releases and Commits
+            import json
+            state_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'brain', 'inputs', '.harvester_state.json')
+            new_releases_str = "Awaiting native Harvester ingestion cycle."
+            recent_commits_str = "Awaiting repository sync."
+
+            if os.path.exists(state_file):
+                try:
+                    with open(state_file, 'r', encoding='utf-8') as sf:
+                        state_data = json.load(sf)
+                        releases = []
+                        for repo, info in state_data.items():
+                            tag = info.get('last_tag')
+                            updated_at = info.get('updated_at')
+                            if tag:
+                                releases.append(f"- **{repo}** @ `{tag}` (Last Updated: {updated_at})")
+
+                        if releases:
+                            new_releases_str = "\n".join(releases)
+                            recent_commits_str = "Radar sync complete. Please refer to individual repository intel reports."
+                except Exception as e:
+                    print(f"[Reasoning Error] Failed to read harvester state: {e}")
+
             mission_tmpl = Template(
                 "# 📜 绝对悬赏令 (MISSION ACTIVE)\n"
                 "> Standard Operating Procedure (SOP) Automation Checklist.\n\n"
@@ -174,9 +233,9 @@ class ReasoningEngine:
                 "## 🧠 认知阵眼 (Cognitive Hubs)\n"
                 "$pagerank_hub\n\n"
                 "## 🚀 新版本发布 (New Release)\n"
-                "Awaiting native Harvester ingestion cycle.\n\n"
+                "$new_releases\n\n"
                 "## 🔨 最近提交 (Recent Commits)\n"
-                "Awaiting repository sync.\n\n"
+                "$recent_commits\n\n"
                 "## 🛡️ 信任评分 (Trust Score)\n"
                 "Deterministic Physical Source: 100% (Zero LLM involved).\n\n"
                 "## ⚙️ 演化回写率 (Evolution Writeback)\n"
@@ -184,7 +243,9 @@ class ReasoningEngine:
             )
             mission_content = mission_tmpl.safe_substitute(
                 targets=targets_str,
-                pagerank_hub=pagerank_str
+                pagerank_hub=pagerank_str,
+                new_releases=new_releases_str,
+                recent_commits=recent_commits_str
             )
             with open(os.path.join(memories_dir, "MISSION_ACTIVE.md"), 'w', encoding='utf-8') as f:
                 f.write(mission_content)

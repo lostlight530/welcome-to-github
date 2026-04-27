@@ -4,7 +4,7 @@
 
 ## 🚀 新版本发布 (New Release)
 > Version: v5.6.2
-> Date: 2026-04-27T10:24:08.531720
+> Date: 2026-04-27T10:25:31.944473
 
 ## 🛡️ 信任评分 (Trust Score)
 > Score: 80/100
@@ -14,8 +14,8 @@
 
 # Patch release v5.6.2
 
-Qwen 3.5 and 3.6 MoE (text-only) were broken when using with FP8. It should now work again with this :saluting_face: 
+Qwen 3.5 and 3.6 MoE (text-only) were broken when using with FP8. It should now work again with this :saluting_face:
 
-* Fix configuration reading and error handling for kernels (https://github.com/huggingface/transformers/pull/45610) by @hmellor 
+* Fix configuration reading and error handling for kernels (https://github.com/huggingface/transformers/pull/45610) by @hmellor
 
 **Full Changelog**: https://github.com/huggingface/transformers/compare/v5.6.1...v5.6.2
