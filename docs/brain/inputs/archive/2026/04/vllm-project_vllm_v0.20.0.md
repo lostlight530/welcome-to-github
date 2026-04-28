@@ -4,13 +4,13 @@
 
 ## 🚀 新版本发布 (New Release)
 > Version: v0.20.0
-> Date: 2026-04-28T03:40:38.492842
+> Date: 2026-04-28T03:56:42.390173
 
 ## 💡 项目洞察 (Insight)
 > **Architect's Analysis**: 🏷️ Edge-Ready ⚠️ Breaking-Change 🔗 Agent-Protocol
 
 ## 🛡️ 信任评分 (Trust Score)
-> Score: 110/100
+> Score: 100/100
 
 ## 🔨 最近提交 (Recent Commits)
 *Summary from release notes:*
