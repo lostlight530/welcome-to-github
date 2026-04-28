@@ -13,7 +13,8 @@ The system mimics a biological brain with core integrated layers:
 1. 🗄️ **记忆层 (Memory / Storage)**
    - **SQLite Database (`cortex.db`)**: Centralized ephemeral storage functioning as a 4D Temporal Graph (utilizing `valid_at` and `invalid_at`). The legacy Append-Only JSONL remains the absolute immutable truth ("Text is Law").
    - **Memories**:
-     - `memories/MISSION_ACTIVE.md`: The Architect's Daily Brief and cognitive focus, generated via quantitative dashboards and template logic.
+     - `memories/MISSION_ACTIVE.md`: The Architect's Daily Brief and cognitive focus, dynamically injected with a UTC System Pulse and brain entropy.
+     - `memories/QUANTITATIVE_LEDGER.md`: An immutable, Append-Only ledger recording the daily physical state (entities, relations, compression rate) driven entirely by time and deterministic mathematics.
 
 2. ⚙️ **皮层引擎 (Cortex / Engine)**
    - `cortex.py`: The core engine driving FTS5 full-text search, Synaptic Associative Search (Graph-Augmented Retrieval), and calculating quantitative dashboard metrics (Compression Rate, Low-Connectivity).
@@ -78,4 +79,5 @@ See [SCHEMA.md](./SCHEMA.md) for the "Gene Code" of this system.
 
 The brain is wired directly into GitHub Actions with a **Unified Lifecycle**:
 
-- 🧬 **`nexus-life-cycle.yml`**: A nightly heartbeat that rebuilds memory, ingests internal state (Omniscience), ponders deep logic (Cognition), and evolves strategy. It operates under strict Zero-Dependency Brutalism constraints.
+- 🧬 **`nexus-life-cycle.yml`**: A nightly heartbeat that rebuilds memory, ingests internal state (Omniscience), ponders deep logic (Cognition), and evolves strategy.
+  - **The System Pulse**: The system ensures continuous Git history updates through an embedded exact UTC timestamp (`System Pulse`). This physical time variation breaks Git's idempotency lock, guaranteeing that the system outputs an explicit "I am alive" commit (`--allow-empty`) every single night, even if no nodes change. It operates under strict Zero-Dependency Brutalism constraints.
