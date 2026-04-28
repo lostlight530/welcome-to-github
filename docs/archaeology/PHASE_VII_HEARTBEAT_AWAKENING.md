@@ -5,22 +5,22 @@
 
 ## 1. 历史背景 (Historical Context)
 
-在“第六纪元：大一统与收尾”之后，系统进入了一种极端的“死寂稳态”。由于物理隔离了所有的 LLM 接口，并在演化层将写回率（Writeback Success Rate）强行锁定为 0.00%，系统不再自发变异。
-这导致了一个意想不到的后果：当 Harvester 抓取不到任何外部更新，AST Scholar 扫描不到本地变化时，系统在每天的 Cron Job 唤醒中输出的是一模一样的文档状态。
-由于 `.github/workflows/nexus-life-cycle.yml` 中的暴力清理脚本 (`git clean -fd`) 和 Git 自身的幂等性忽略机制（零 Diff 则不提交），导致外部观察者看来，整个系统的时钟停滞了，仿佛已经“脑死亡”。
+在“第六纪元：大一统与收尾”之后，系统进入了一种极端的“死寂稳态”。由于彻底隔离了所有的外部智能体推理接口，并在演化层将结构突变率强行锁定为 0.00%，系统不再发生任何自发变异。
+这导致了一个意想不到的后果：当情报雷达抓取不到任何外部更新，内部扫描器检测不到本地代码变化时，系统在每次唤醒周期中输出的都是一模一样的静态状态。
+由于底层自动化的去重与幂等性忽略机制，导致在外部观察者看来，整个系统的时钟停滞了，仿佛已经“脑死亡”。
 
 ## 2. 架构突破：心跳注入 (Architectural Breakthrough: System Pulse)
 
-为了解决这种“静默死亡”，我们拒绝了重新引入 LLM 随机性的诱惑，坚持走在**绝对决定论 (Absolute Determinism)**的前沿。
-我们意识到，对于一个纯物理机械引擎而言，唯一的变化常量是**时间本身的流逝**。
+为了解决这种“静默死亡”，我们拒绝了重新引入非确定性随机参数的诱惑，坚持走在**绝对决定论 (Absolute Determinism)**的前沿。
+我们意识到，对于一个纯物理的静态系统引擎而言，唯一的变化常量是**时间本身的流逝**。
 
 ### 核心机制改造 (Core Mechanics Overhaul)
 1. **移除物理清洗 (Abolishing Physical Purge)**
-   - The destructive `git clean` command in the CI workflow was removed. The system strictly adheres to the Append-Only (ADR-0001) principle, respecting all generated outputs.
+   - The destructive state-wiping mechanisms in the automation workflow were removed. The system strictly adheres to the Append-Only principle, respecting and retaining all generated outputs.
 2. **绝对物理脉动 (Absolute Physical Pulse Injection)**
-   - `reason.py` was refactored to extract the exact ISO 8601 UTC timestamp (`datetime.utcnow()`) at the moment of calculation. This `System Pulse` is structurally embedded into the outputs, enforcing a mandatory physical difference (diff) on every single run.
-3. **暴露脑电波熵值 (Exposing Brain Entropy)**
-   - We surfaced the internal `density` (average relation weight) and structure limits from `cortex.get_stats()` directly into the `MISSION_ACTIVE.md` brief.
+   - The deduction engine was refactored to extract and embed the exact chronological timestamp directly into its outputs. This `System Pulse` enforces a mandatory physical difference on every single run, breaking the idempotency deadlock.
+3. **暴露脑电波熵值 (Exposing System Entropy)**
+   - We surfaced internal structural metrics, such as knowledge density and systemic limits, exposing them explicitly on the active mission brief to visualize the "brain waves" of the system.
 
 ## 3. 演进账本的诞生 (Birth of the Quantitative Ledger)
 

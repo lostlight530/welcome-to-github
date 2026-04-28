@@ -2,58 +2,33 @@
 
 ## Ⅰ. 架构决策记录 (Architecture Decision Record - ADR)
 
-- **Title**: Phase VI Absolute Determinism & 4D Temporal Graph
+- **Title**: Phase VII Architecture & 4D Temporal Mechanics
 - **Status**: Active
-- **Decision**: Phase VI upgrades the system into a "Mechanical Library / Truth Court". It implements Zero Internal LLM, Zero-Dependency Brutalism, and a 4D Temporal Knowledge Graph. The legacy fragmented `JSONL` system remains the absolute immutable text ledger ("Text is Law"), while `cortex.db` acts as an ephemeral, indexed cache utilizing `valid_at` and `invalid_at` for zero-deletion temporal tracking.
+- **Decision**: The system functions strictly as a "Truth Court". It relies heavily on zero-deletion temporal tracking. All actions are logged immutably, ensuring that knowledge states transition through time rather than being destructively overwritten.
 
 ---
 
-## Ⅱ. 数据结构 (Data Structures)
+## Ⅱ. 逻辑结构 (Logical Structures)
 
-### 1. 物理心跳与量化账本 (System Pulse & Quantitative Ledger)
-The system eschews daily fragmented reporting in favor of an **Append-Only Quantitative Ledger** (`QUANTITATIVE_LEDGER.md`).
-- **Mechanism**: At every run, `reason.py` injects a precise ISO 8601 UTC timestamp (`System Pulse`).
-- **Purpose**: This absolute physical parameter ensures a deterministic diff for Git, bypassing "zero-change" locks and enforcing a continuous heartbeat on the repository, thereby keeping the system "alive" without any external AI hallucinatory inputs.
+### 1. 量化账本机制 (Quantitative Ledger Mechanism)
+The system maintains a continuous, append-only chronological ledger.
+- **Function**: It continuously registers a unique physical temporal pulse during active cycles, ensuring an unbroken chain of systemic health monitoring and architectural records without requiring destructive file rewrites.
 
-### 2. 时序实体层 (Temporal Entities)
-Stored in the `entities` table within `cortex.db`. Each entity uses a composite primary key `(id, valid_at)` and follows the temporal schema:
+### 2. 时序实体模型 (Temporal Entities Model)
+Every node within the system's memory represents a unique, isolated concept bounded by time.
+- **Function**: Entities (such as technical concepts, projects, or configurations) are tracked securely. Old concepts are never deleted; they simply "expire," providing a flawless historical snapshot of the system's previous understanding.
 
-```json
-{
-  "id": "unique-slug-id",            // Composite PK Part 1
-  "type": "tech|concept|project|code_file|config_property|...",
-  "name": "Human Readable Name",     // Name
-  "desc": "Short description.",      // Description
-  "weight": 1.0,                     // Synaptic Weight
-  "last_activated": 1700000000.0,    // Last Activated (Unix float)
-  "valid_at": "ISO-8601-String",     // Composite PK Part 2 (Start of lifespan)
-  "invalid_at": "ISO-8601-String"    // Soft-Delete Anchor (NULL if active)
-}
-```
+### 3. 时序关系模型 (Temporal Relations Model)
+Nodes are connected via directed conceptual edges.
+- **Function**: Like entities, connections between ideas are temporally anchored, allowing the system to verify the validity of logical dependencies at any specific point in the project's history.
 
-### 3. 时序关系层 (Temporal Relations)
-Stored in the `relations` table within `cortex.db`. Each row defines a directed edge with a temporal anchor `valid_at`:
+### 4. 认知免疫类型 (Cognitive Immune Types)
+Specific, constrained relationship definitions intended to protect logical integrity:
+- `conflicts_with`: Flags architectural or logic incompatibilities.
+- `deprecates`: Safely transitions focus from obsolete structures to newer implementations.
+- `unaffected_by`: Creates definitive isolation firewalls against perceived systemic risks.
+- `defines`: Hard-links physical system files to abstract logic entities.
+- `inherits_from`: Enables strict hierarchical mapping across the knowledge matrix.
 
-```json
-{
-  "source": "source-entity-id",      // Source Node
-  "relation": "predicate-string",    // Predicate
-  "target": "destination-entity-id", // Target Node
-  "weight": 1.0,                     // Edge Strength
-  "valid_at": "ISO-8601-String",     // Start of relationship lifespan
-  "invalid_at": "ISO-8601-String"    // Soft-Delete Anchor (NULL if active)
-}
-```
-
-### 4. 认知免疫与结构系统 (Cognitive Immune & Structure System)
-Special relation types designed to maintain knowledge integrity and model logic:
-
-- 💥 `conflicts_with`: Indicates a semantic or technical conflict (e.g., library incompatibility).
-- ⚰️ `deprecates`: Indicates that the source entity supersedes or obsoletes the destination entity.
-- 🛡️ `unaffected_by`: Explicitly states that the source entity is immune or unrelated to a vulnerability/issue in the destination entity.
-- 🧱 `defines`: Maps a file entity to a structure entity like a class, function, or markdown section.
-- 🧬 `inherits_from`: Used for class hierarchy tracking to empower transitive inference.
-
-### 5. 原始输入层 (Inputs)
-- 📁 `inputs/*.md` and `inputs/archive/*/*.md`
-  Raw text or search results from the Harvester with Architect Filters applied. These files are **immutable** events.
+### 5. 原始情报流 (Input Streams)
+Raw external intelligence and system observations are persisted as immutable, read-only events, ensuring an incorruptible baseline of evidence for the deductive engines.

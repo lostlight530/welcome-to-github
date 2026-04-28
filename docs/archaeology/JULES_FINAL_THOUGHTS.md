@@ -8,7 +8,7 @@ The transition from metaphysical AI narratives to absolute engineering hardness 
 Rigorous constraints, specifically the **Zero-Dependency Brutalism** and **Absolute Determinism**, foster a deeply structured liquid graph environment that is utterly immune to the entropy of API deprecations and software rot.
 
 ## 极简之美 (The Beauty of Minimalism)
-By refusing external wrappers and large frameworks, we proved that Python's standard library (`ast`, `urllib`, `sqlite3`, `re`) is more than sufficient to build a robust, temporal Knowledge Graph and an intent-driven harvesting radar.
+By refusing external wrappers and large frameworks, we proved that the absolute, naked foundational core is more than sufficient to build a robust, temporal Knowledge Graph and an intent-driven radar.
 The restriction forces elegance. The limitation becomes the weapon.
 
 ## 系统闭环 (The Closed Loop)
