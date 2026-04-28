@@ -1,9 +1,17 @@
-# 第四纪元：绝对决定论
+# 第四纪元：绝对决定论 (Phase IV: Absolute Determinism)
 
-## 阶段描述
-Introduction of 4D temporal knowledge graph and anti-shake radar
-Absolute determinism enforced to eradicate LLM hallucinations
+> **"Eradicate the hallucination. In pure math we trust."**
+> **Epoch Marker**: 2026-04-24
 
-## 核心架构
-Implementation of temporal schema with valid_at and invalid_at timestamps
-Double-Clutch Anti-Shake logic utilizing ETag and SHA-256 validation
+## 1. 历史背景 (Historical Context)
+随着对系统可控性的极致追求，我们发现即使是最少量的 LLM 推理也可能导致不可复现的结构漂移。系统需要走向一条绝对确定的物理学演进之路。
+
+## 2. 时空图谱重构 (Temporal Knowledge Graph)
+- **4D 时空架构**: 废除了破坏性的覆盖更新，引入绝对的时间边界字段。所有知识更新都遵循 **附加写入法 (Append-Only)**，旧知识自动失效退隐，但历史轨迹永不被删除。
+- **关联搜索**: 彻底封杀大模型的时空错乱幻觉，所有的图谱查询转化为纯粹、确定性的时间维度过滤。
+
+## 3. 防抖雷达 (Double-Clutch Anti-Shake)
+外部情报抓取实现了严密的算力熔断保护：
+- 第一层网络协议级的前置阻挡。
+- 第二层深度物理一致性校验。
+只有在探测到内容发生不可逆的实质性演变时，信号才会放行并触发下游计算，彻底扼杀了无效轮询带来的算力黑洞。

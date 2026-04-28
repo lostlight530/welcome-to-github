@@ -11,22 +11,20 @@ This directory houses a **Stateful, Append-Only Knowledge Graph** designed to ev
 The system mimics a biological brain with core integrated layers:
 
 1. 🗄️ **记忆层 (Memory / Storage)**
-   - **SQLite Database (`cortex.db`)**: Centralized ephemeral storage functioning as a 4D Temporal Graph (utilizing `valid_at` and `invalid_at`). The legacy Append-Only JSONL remains the absolute immutable truth ("Text is Law").
-   - **Memories**:
-     - `memories/MISSION_ACTIVE.md`: The Architect's Daily Brief and cognitive focus, dynamically injected with a UTC System Pulse and brain entropy.
-     - `memories/QUANTITATIVE_LEDGER.md`: An immutable, Append-Only ledger recording the daily physical state (entities, relations, compression rate) driven entirely by time and deterministic mathematics.
+   - A centralized, ephemeral 4D Temporal Graph that safely maps all active and deprecated knowledge states.
+   - An immutable, append-only physical ledger that chronologically records system health, structural metrics, and current architectural focus areas.
 
 2. ⚙️ **皮层引擎 (Cortex / Engine)**
-   - `cortex.py`: The core engine driving FTS5 full-text search, Synaptic Associative Search (Graph-Augmented Retrieval), and calculating quantitative dashboard metrics (Compression Rate, Low-Connectivity).
+   - The core engine responsible for orchestrating knowledge retrieval, full-text associative mapping, and computing system-wide quantitative health metrics.
 
 3. 👁️ **全知之眼 (Scholar / Omniscience)**
-   - `scholar.py`: Deeply parses the repository using AST (for Python) and a Polyglot Regex State Machine (for JS/TS), writing local project understanding directly into the graph without external dependencies.
+   - The structural scanner that comprehensively maps the internal codebase geometry, converting source files into queryable graph configurations.
 
 4. 🧠 **额叶皮层 (Reason / Cognition)**
-   - `reason.py`: The deep thinking engine that analyzes the graph using pure Python mathematical PageRank/Markov Chain implementations to identify epistemic depth and isolated nodes.
+   - The deductive component that calculates knowledge density, identifies isolated conceptual orphans, and surfaces actionable targets for system evolution.
 
 5. 🔌 **中央神经系统 (Nexus / Central Command)**
-   - `nexus.py` & `nexus_mcp.py`: The unified Command Line Interface (CLI) and Model Context Protocol Server. It features a Phase V Trust Gateway that actively slashes agent trust for malformed inputs, physically blocking depleted agents.
+   - The unified command interface and security layer. It acts as a strict gateway that validates, tracks, and penalizes external entity interactions to protect the integrity of the graph.
 
 ---
 
@@ -79,5 +77,5 @@ See [SCHEMA.md](./SCHEMA.md) for the "Gene Code" of this system.
 
 The brain is wired directly into GitHub Actions with a **Unified Lifecycle**:
 
-- 🧬 **`nexus-life-cycle.yml`**: A nightly heartbeat that rebuilds memory, ingests internal state (Omniscience), ponders deep logic (Cognition), and evolves strategy.
-  - **The System Pulse**: The system ensures continuous Git history updates through an embedded exact UTC timestamp (`System Pulse`). This physical time variation breaks Git's idempotency lock, guaranteeing that the system outputs an explicit "I am alive" commit (`--allow-empty`) every single night, even if no nodes change. It operates under strict Zero-Dependency Brutalism constraints.
+- 🧬 **`nexus-life-cycle.yml`**: A scheduled, fully automated pipeline that continuously validates the knowledge base, scans for structural changes, runs deductive metrics, and safely proposes mutations.
+  - **The System Pulse**: An absolute temporal mechanism ensuring the system remains continuously active, verifiable, and free from automated hibernation or Git starvation.

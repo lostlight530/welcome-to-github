@@ -12,19 +12,20 @@ Experience the high-end, highly-engineered annual review website via the lostlig
 
 ## 🏗️ 工程标准与架构 (Engineering Standards & Architecture)
 
-This repository serves as the foundation for the `spec-X` core architecture project. It is built under the parameters of **Phase VI Absolute Determinism** and adheres to the following principles:
+This repository serves as the foundation for the `spec-X` core architecture project. It is built under the parameters of **Phase VII Heartbeat Awakening** and adheres to the following principles:
 
 - **Bilingual Excellence**: Absolute accessibility through strict bilingual support (Chinese headers, English technical content).
-- **Zero-Dependency Brutalism**: Emphasizing native Python standard libraries and pure math for logic, rejecting big tech frameworks and LLM API calls internally.
-- **Append-Only Memory**: Preserving the history of AI-human collaboration via digital archaeology, with zero deletion.
-- **Trust Gateway**: The MCP Server features a physical TCP-blocking penalty mechanism to protect the system from hallucinated execution.
-- **CI/CD Driven**: Automated deployment and state synchronization via GitHub Actions.
+- **Zero-Dependency Brutalism**: Ensures extreme system stability and rapid startup by strictly avoiding third-party dependencies.
+- **Append-Only Memory**: Preserves the history of AI-human collaboration via immutable digital archaeology, ensuring no knowledge is ever lost.
+- **Trust Gateway**: A strict security layer that evaluates, penalizes, and physically blocks malicious or malformed agent interactions.
+- **Continuous System Pulse**: Enforces an automated, continuous deterministic heartbeat to keep the system state perpetually active and verifiable.
 
 ## 🏛️ 数字博物馆 (Digital Museum)
 
-- [Memorial: The Starting Point](./docs/archaeology/legacy_traces/MEMORIAL.md)
-- [Digital Archaeology: AI Agent Traces](./docs/archaeology/legacy_traces/AGENTS_EXPLORATION.md)
-- [Phase III: Singularity](./docs/archaeology/legacy_traces/PHASE_III_SINGULARITY.md)
+- [Digital Archaeology: The Epoch Index](./docs/archaeology/ARCHAEOLOGY_INDEX.md)
+- [Phase I: Genesis](./docs/archaeology/PHASE_I_GENESIS.md)
+- [Phase VII: Heartbeat Awakening](./docs/archaeology/PHASE_VII_HEARTBEAT_AWAKENING.md)
+- [Jules' Final Thoughts](./docs/archaeology/JULES_FINAL_THOUGHTS.md)
 
 ---
 © 2026 lostlight | Built for the Edge, Built for the Future.
