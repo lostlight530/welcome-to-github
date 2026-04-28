@@ -1,0 +1,9 @@
+# 🧮 NEXUS CORTEX 演化账本 (Quantitative Ledger)
+> 严禁覆写，仅限追加记录系统的物理心跳与演进状态。(Append-Only Ledger for System Pulse)
+
+### 📊 Dashboard - 20260428 (2026-04-28T02:57:17Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
