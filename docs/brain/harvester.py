@@ -171,7 +171,7 @@ class Harvester:
                     content += f"\n## 💡 项目洞察 (Insight)\n> **Architect's Analysis**: {header_tags}\n"
 
                 # Trust Score calculation based on tags
-                score = 80 + (10 * len(analysis_tags))
+                score = min(100, 80 + (10 * len(analysis_tags)))
                 content += f"\n## 🛡️ 信任评分 (Trust Score)\n> Score: {score}/100\n"
 
                 content += f"\n## 🔨 最近提交 (Recent Commits)\n*Summary from release notes:*\n\n{body[:3000]}\n"
