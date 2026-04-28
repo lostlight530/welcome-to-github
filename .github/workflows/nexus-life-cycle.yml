@@ -51,10 +51,6 @@ jobs:
     - name: 🛡️ Run Evolution Cycle (Sandbox Verification & Report)
       run: python docs/brain/nexus.py evolve
 
-    - name: 🗑️ Clean Untracked Reports
-      run: |
-        git clean -fd docs/brain/memories/
-
     - name: 🔄 Sync world-line (Autostash)
       run: |
         git config --global user.name "github-actions[bot]"
@@ -77,4 +73,5 @@ jobs:
       with:
         commit_message: "🧬 lifecycle: ingested, pondered & evolved [skip ci]"
         branch: main
+        commit_options: '--allow-empty'
         file_pattern: "docs/brain/memories/** docs/brain/inputs/** docs/brain/knowledge/**"

@@ -10,7 +10,12 @@
 
 ## Ⅱ. 数据结构 (Data Structures)
 
-### 1. 时序实体层 (Temporal Entities)
+### 1. 物理心跳与量化账本 (System Pulse & Quantitative Ledger)
+The system eschews daily fragmented reporting in favor of an **Append-Only Quantitative Ledger** (`QUANTITATIVE_LEDGER.md`).
+- **Mechanism**: At every run, `reason.py` injects a precise ISO 8601 UTC timestamp (`System Pulse`).
+- **Purpose**: This absolute physical parameter ensures a deterministic diff for Git, bypassing "zero-change" locks and enforcing a continuous heartbeat on the repository, thereby keeping the system "alive" without any external AI hallucinatory inputs.
+
+### 2. 时序实体层 (Temporal Entities)
 Stored in the `entities` table within `cortex.db`. Each entity uses a composite primary key `(id, valid_at)` and follows the temporal schema:
 
 ```json
@@ -26,7 +31,7 @@ Stored in the `entities` table within `cortex.db`. Each entity uses a composite 
 }
 ```
 
-### 2. 时序关系层 (Temporal Relations)
+### 3. 时序关系层 (Temporal Relations)
 Stored in the `relations` table within `cortex.db`. Each row defines a directed edge with a temporal anchor `valid_at`:
 
 ```json
@@ -40,7 +45,7 @@ Stored in the `relations` table within `cortex.db`. Each row defines a directed 
 }
 ```
 
-### 3. 认知免疫与结构系统 (Cognitive Immune & Structure System)
+### 4. 认知免疫与结构系统 (Cognitive Immune & Structure System)
 Special relation types designed to maintain knowledge integrity and model logic:
 
 - 💥 `conflicts_with`: Indicates a semantic or technical conflict (e.g., library incompatibility).
@@ -49,6 +54,6 @@ Special relation types designed to maintain knowledge integrity and model logic:
 - 🧱 `defines`: Maps a file entity to a structure entity like a class, function, or markdown section.
 - 🧬 `inherits_from`: Used for class hierarchy tracking to empower transitive inference.
 
-### 4. 原始输入层 (Inputs)
+### 5. 原始输入层 (Inputs)
 - 📁 `inputs/*.md` and `inputs/archive/*/*.md`
   Raw text or search results from the Harvester with Architect Filters applied. These files are **immutable** events.

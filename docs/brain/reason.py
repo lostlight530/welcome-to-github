@@ -138,60 +138,34 @@ class ReasoningEngine:
             memories_dir = os.path.join(os.path.dirname(__file__), 'memories')
             os.makedirs(memories_dir, exist_ok=True)
 
-            # Anchor 1: Quantitative Dashboard (量化仪表盘)
+            # Anchor 1: Quantitative Ledger (Append-Only)
+            pulse_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
             dash_tmpl = Template(
-                "# 📊 NEXUS CORTEX 量化仪表盘 (Quantitative Dashboard) - $date\n\n"
-                "## 📈 核心系统指标 (Core System Metrics)\n"
-                "| Metric | Value |\n"
-                "| :--- | :--- |\n"
-                "| Active Entities | $active_entities |\n"
-                "| Active Relations | $active_relations |\n"
-                "| Compression Rate | $compression_rate |\n"
-                "| Low-Connectivity Nodes | $low_connectivity |\n"
+                "### 📊 Dashboard - $date ($pulse_time)\n"
+                "- **Active Entities**: $active_entities\n"
+                "- **Active Relations**: $active_relations\n"
+                "- **Compression Rate**: $compression_rate\n"
+                "- **Low-Connectivity Nodes**: $low_connectivity\n\n"
             )
 
-            # Backfill Mechanism (Simulating pondering during downtime to maintain chronological continuity)
-            # Find the most recent dashboard file
-            existing_dashboards = sorted(glob.glob(os.path.join(memories_dir, "*-quantitative-dashboard.md")))
-            last_date = None
-            if existing_dashboards:
-                for file_path in reversed(existing_dashboards):
-                    filename = os.path.basename(file_path)
-                    try:
-                        date_str = filename.split('-')[0]
-                        if len(date_str) == 8 and date_str.isdigit():
-                            last_date = datetime.strptime(date_str, "%Y%m%d")
-                            break
-                    except ValueError:
-                        continue
+            dash_content = dash_tmpl.safe_substitute(
+                date=today_str,
+                pulse_time=pulse_time,
+                active_entities=metrics.get('active_entities', 0),
+                active_relations=metrics.get('active_relations', 0),
+                compression_rate=f"{metrics.get('compression_rate', 0.0):.4f}",
+                low_connectivity=metrics.get('low_connectivity', 0)
+            )
 
-            # If there's a gap, backfill up to today (inclusive)
-            if last_date and last_date < today.replace(hour=0, minute=0, second=0, microsecond=0):
-                current_fill_date = last_date + timedelta(days=1)
-                while current_fill_date.replace(hour=0, minute=0, second=0, microsecond=0) <= today.replace(hour=0, minute=0, second=0, microsecond=0):
-                    fill_date_str = current_fill_date.strftime("%Y%m%d")
-                    fill_content = dash_tmpl.safe_substitute(
-                        date=fill_date_str,
-                        active_entities=metrics.get('active_entities', 0),
-                        active_relations=metrics.get('active_relations', 0),
-                        compression_rate=f"{metrics.get('compression_rate', 0.0):.4f}",
-                        low_connectivity=metrics.get('low_connectivity', 0)
-                    )
-                    with open(os.path.join(memories_dir, f"{fill_date_str}-quantitative-dashboard.md"), 'w', encoding='utf-8') as f:
-                        f.write(fill_content)
-                    print(f"[Reasoning] Backfilled Quantitative Dashboard for {fill_date_str}")
-                    current_fill_date += timedelta(days=1)
-            else:
-                # No gap, just generate today
-                dash_content = dash_tmpl.safe_substitute(
-                    date=today_str,
-                    active_entities=metrics.get('active_entities', 0),
-                    active_relations=metrics.get('active_relations', 0),
-                    compression_rate=f"{metrics.get('compression_rate', 0.0):.4f}",
-                    low_connectivity=metrics.get('low_connectivity', 0)
-                )
-                with open(os.path.join(memories_dir, f"{today_str}-quantitative-dashboard.md"), 'w', encoding='utf-8') as f:
-                    f.write(dash_content)
+            ledger_path = os.path.join(memories_dir, "QUANTITATIVE_LEDGER.md")
+            if not os.path.exists(ledger_path):
+                with open(ledger_path, 'w', encoding='utf-8') as f:
+                    f.write("# 🧮 NEXUS CORTEX 演化账本 (Quantitative Ledger)\n> 严禁覆写，仅限追加记录系统的物理心跳与演进状态。(Append-Only Ledger for System Pulse)\n\n")
+
+            with open(ledger_path, 'a', encoding='utf-8') as f:
+                f.write(dash_content)
+
+            print(f"[Reasoning] Engine successfully appended metrics to QUANTITATIVE_LEDGER.md")
 
             # Anchor 2: MISSION ACTIVE (绝对悬赏令 - SOP)
             # Replaced natural language targets with actionable CLI commands
@@ -225,9 +199,14 @@ class ReasoningEngine:
                 except Exception as e:
                     print(f"[Reasoning Error] Failed to read harvester state: {e}")
 
+            # Get stats for dynamic pulse injection
+            stats = self.cortex.get_stats()
+            brain_density = f"{stats.get('density', 0.0):.4f}"
+
             mission_tmpl = Template(
                 "# 📜 绝对悬赏令 (MISSION ACTIVE)\n"
-                "> Standard Operating Procedure (SOP) Automation Checklist.\n\n"
+                "> Standard Operating Procedure (SOP) Automation Checklist.\n"
+                "> ⏳ System Pulse: $pulse_time | 🧠 Brain Entropy (Density): $brain_density\n\n"
                 "## 🎯 监控目标 (Target)\n"
                 "$targets\n\n"
                 "## 🧠 认知阵眼 (Cognitive Hubs)\n"
@@ -242,6 +221,8 @@ class ReasoningEngine:
                 "Writeback Success Rate: 0.00% (Preparatory State Locked)\n"
             )
             mission_content = mission_tmpl.safe_substitute(
+                pulse_time=pulse_time,
+                brain_density=brain_density,
                 targets=targets_str,
                 pagerank_hub=pagerank_str,
                 new_releases=new_releases_str,
