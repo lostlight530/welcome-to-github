@@ -90,13 +90,13 @@ def main() -> None:
                 os.remove(DB_PATH)
             cortex = Cortex(DB_PATH)
             # Load from factory logic here if needed
-            print("Database rebuilt from schemas.")
+            print("Database rebuilt from schemas. / 数据库已从 Schema 重建。")
 
         elif args.command == 'clean':
             # Safe cleanup, protect `.harvester_state.json`
             if DB_PATH.exists(): os.remove(DB_PATH)
             if DB_PATH.with_suffix('.db-journal').exists(): os.remove(DB_PATH.with_suffix('.db-journal'))
-            print("Temporary caches cleared.")
+            print("Temporary caches cleared. / 临时缓存已清理。")
 
         elif args.command == 'add':
             data = {"id": args.id, "type": args.type, "name": args.name, "desc": args.desc, "updated_at": datetime.datetime.now().isoformat(), "tags": []}
@@ -113,13 +113,13 @@ def main() -> None:
 
         elif args.command == 'status':
             stats = cortex.get_stats()
-            print("🧠 NEXUS CORTEX STATUS")
+            print("🧠 NEXUS CORTEX STATUS / 状态报告")
             print(f"Entities : {stats['entities']}")
             print(f"Relations: {stats['relations']}")
             print(f"Density  : {stats['density']:.4f}")
 
     except Exception as e:
-        print(f"[Nexus Error] Execution failed: {e}")
+        print(f"[Nexus Error | Nexus 错误] Execution failed / 执行失败: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":

@@ -47,7 +47,7 @@ class Scholar:
 
     def ingest_repository(self, root_path):
         """[Omniscience Protocol] Deep scan of the codebase."""
-        print(f"🧠 Scholar starting deep scan of: {root_path}")
+        print(f"🧠 Scholar starting deep scan of: {root_path} / 学者开始深度扫描: {root_path}")
         root = Path(root_path)
         count = 0
 
@@ -63,9 +63,9 @@ class Scholar:
                     self._digest_file(root, filepath)
                     count += 1
                 except Exception as e:
-                    print(f"   ⚠️ Failed to digest {file}: {e}")
+                    print(f"   ⚠️ Failed to digest {file}: {e} / 无法提取文件: {file}")
 
-        print(f"✅ Ingestion Complete. {count} files mapped into Cortex.")
+        print(f"✅ Ingestion Complete. {count} files mapped into Cortex. / 提取完成。共映射 {count} 个文件至皮质层。")
 
     def _digest_file(self, root, filepath):
         rel_path = filepath.relative_to(root)
@@ -170,7 +170,7 @@ class Scholar:
             if isinstance(data, dict):
                 _extract_props(data)
         except Exception as e:
-            print(f"      [Config Error] {filepath.name}: {e}")
+            print(f"      [Config Error | 配置错误] {filepath.name}: {e}")
 
     def _analyze_polyglot_structure(self, filepath, file_id):
         """Phase V: Brutalist C++/TS/JS parser via Regex State Machine."""
@@ -185,7 +185,7 @@ class Scholar:
                 self.cortex.connect_entities(ent["parent"], "defines", ent["id"], save_to_disk=True)
 
         except Exception as e:
-            print(f"      [Polyglot File Error] {filepath.name}: {e}")
+            print(f"      [Polyglot File Error | 多语种解析错误] {filepath.name}: {e}")
 
     def _analyze_javascript_regex_ast(self, content: str, file_id: str) -> list[dict[str, str]]:
         """Phase V: Deterministic Polyglot Regex State Machine for JS/TS/C++."""
@@ -210,7 +210,7 @@ class Scholar:
                 })
             return extracted_entities
         except Exception as e:
-            print(f"[Scholar Error] Regex AST parsing halted: {str(e)}")
+            print(f"[Scholar Error | 学者错误] Regex AST parsing halted: {str(e)} / 正则 AST 解析中断: {str(e)}")
             return []
 
     def _analyze_python_ast(self, filepath, file_id):

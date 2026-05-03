@@ -22,7 +22,7 @@ class Evolver:
 
     def run_daily_cycle(self):
         try:
-            logging.info("Starting Daily Evolution Cycle...")
+            logging.info("Starting Daily Evolution Cycle... / 启动每日演化周期...")
 
             # 0. AST Hot-Patching (Genetic Auto-Recombination)
             self._genetic_auto_recombination()
@@ -44,9 +44,9 @@ class Evolver:
             # 6. Archive processed inputs
             self._archive_inputs()
 
-            logging.info("Cycle Complete.")
+            logging.info("Cycle Complete. / 周期完成。")
         except Exception as e:
-            logging.error(f"Cycle failed: {e}")
+            logging.error(f"Cycle failed / 周期失败: {e}")
 
     def _trigger_render(self, metrics, orphans):
         try:
@@ -55,13 +55,13 @@ class Evolver:
             isolated_nodes = [o['name'] for o in orphans]
             r._render_daily_archives(metrics, isolated_nodes)
         except Exception as e:
-            logging.error(f"Render failed: {e}")
+            logging.error(f"Render failed / 渲染失败: {e}")
 
     def _genetic_auto_recombination(self):
         """Phase VI: Preparatory State AST Mutator"""
-        logging.info("Initiating Genetic Auto-Recombination (AST Mutator)...")
-        logging.info("SYSTEM STATUS: Preparatory State Locked.")
-        logging.info("Writeback Success Rate locked at 0.00% to prevent Ouroboros loop.")
+        logging.info("Initiating Genetic Auto-Recombination (AST Mutator)... / 启动基因自动重组 (AST 变异)...")
+        logging.info("SYSTEM STATUS: Preparatory State Locked. / 系统状态：预备状态已锁定。")
+        logging.info("Writeback Success Rate locked at 0.00% to prevent Ouroboros loop. / 回写成功率锁定在 0.00% 以防止衔尾蛇循环。")
 
         target_file = self.brain_path / "evolution.py"
         try:
@@ -85,14 +85,14 @@ class Evolver:
 
             # Verify compilation in sandbox before any writes
             compile(mutated_tree, filename="<ast>", mode="exec")
-            logging.info("AST Mutation Sandbox check passed. (Physical write bypassed).")
+            logging.info("AST Mutation Sandbox check passed. (Physical write bypassed). / AST 变异沙盒检查通过。（已跳过物理写入）。")
 
         except Exception as e:
-            logging.error(f"Genetic Recombination Failed: {e}")
+            logging.error(f"Genetic Recombination Failed / 基因重组失败: {e}")
 
     def _run_sandbox_tests(self):
         """AST Loop Preparation: Verifies local MCP and systems logic via subprocess."""
-        logging.info("Executing Sandbox Verification Protocol...")
+        logging.info("Executing Sandbox Verification Protocol... / 执行沙盒验证协议...")
         test_script = self.brain_path / "test_mcp.py"
         if test_script.exists():
             try:
@@ -103,9 +103,9 @@ class Evolver:
                     text=True,
                     check=True
                 )
-                logging.info(f"Sandbox Verification Passed: {result.stdout.strip().splitlines()[-1]}")
+                logging.info(f"Sandbox Verification Passed / 沙盒验证通过: {result.stdout.strip().splitlines()[-1]}")
             except subprocess.CalledProcessError as e:
-                logging.error(f"Sandbox Verification Failed! Exit Code {e.returncode}")
+                logging.error(f"Sandbox Verification Failed! Exit Code {e.returncode} / 沙盒验证失败！退出码 {e.returncode}")
                 logging.error(e.stderr)
                 raise RuntimeError("Sandbox Verification aborted the Evolution Cycle due to protocol failures.") from e
 
@@ -115,7 +115,7 @@ class Evolver:
             insights = r.ponder()
             return insights
         except Exception as e:
-            logging.error(f"Failed to ponder: {e}")
+            logging.error(f"Failed to ponder / 推演失败: {e}")
             return []
 
     def _scan_inputs(self):

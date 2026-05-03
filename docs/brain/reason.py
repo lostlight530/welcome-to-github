@@ -19,7 +19,7 @@ class ReasoningEngine:
         if not self.cortex or not self.db_path.exists():
             return ["❌ **Critical**: Cortex DB not found. Cannot think without memory."]
 
-        print("🤔 NEXUS is pondering (Active Inference)...")
+        print("🤔 NEXUS is pondering (Active Inference) / NEXUS 正在推演 (主动推理)...")
         insights = []
 
         try:
@@ -101,7 +101,7 @@ class ReasoningEngine:
                 ranks = new_ranks
             return ranks
         except Exception as e:
-            print(f"[Reasoning Error] Matrix math failed: {str(e)}")
+            print(f"[Reasoning Error | 推理错误] Matrix math failed / 矩阵计算失败: {str(e)}")
             return {}
 
     def _generate_pagerank_bounty(self):
@@ -165,7 +165,7 @@ class ReasoningEngine:
             with open(ledger_path, 'a', encoding='utf-8') as f:
                 f.write(dash_content)
 
-            print(f"[Reasoning] Engine successfully appended metrics to QUANTITATIVE_LEDGER.md")
+            print(f"[Reasoning | 推理引擎] Engine successfully appended metrics to QUANTITATIVE_LEDGER.md / 成功将指标追加至量化账本")
 
             # Anchor 2: MISSION ACTIVE (绝对悬赏令 - SOP)
             # Replaced natural language targets with actionable CLI commands
@@ -179,8 +179,8 @@ class ReasoningEngine:
             # Read Harvester State to dynamically render New Releases and Commits
             import json
             state_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'brain', 'inputs', '.harvester_state.json')
-            new_releases_str = "Awaiting native Harvester ingestion cycle."
-            recent_commits_str = "Awaiting repository sync."
+            new_releases_str = "Awaiting native Harvester ingestion cycle. / 等待原生收割机吞噬周期。"
+            recent_commits_str = "Awaiting repository sync. / 等待代码库同步。"
 
             if os.path.exists(state_file):
                 try:
@@ -195,9 +195,9 @@ class ReasoningEngine:
 
                         if releases:
                             new_releases_str = "\n".join(releases)
-                            recent_commits_str = "Radar sync complete. Please refer to individual repository intel reports."
+                            recent_commits_str = "Radar sync complete. Please refer to individual repository intel reports. / 雷达同步完成。请参考各个仓库的情报报告。"
                 except Exception as e:
-                    print(f"[Reasoning Error] Failed to read harvester state: {e}")
+                    print(f"[Reasoning Error | 推理错误] Failed to read harvester state / 读取收割机状态失败: {e}")
 
             # Get stats for dynamic pulse injection
             stats = self.cortex.get_stats()
@@ -231,9 +231,9 @@ class ReasoningEngine:
             with open(os.path.join(memories_dir, "MISSION_ACTIVE.md"), 'w', encoding='utf-8') as f:
                 f.write(mission_content)
 
-            print(f"[Reasoning] Engine successfully rendered Quantitative Dashboard via Templates.")
+            print(f"[Reasoning | 推理引擎] Engine successfully rendered Quantitative Dashboard via Templates / 成功通过模板渲染量化仪表盘。")
         except Exception as e:
-            print(f"[Reasoning Error] Template enforcement failed: {str(e)}")
+            print(f"[Reasoning Error | 推理错误] Template enforcement failed / 模板执行失败: {str(e)}")
 
     def _generate_structural_intuitions(self):
         """Find nodes that share exact targets (Structural Overlap / Epistemic Depth)"""
@@ -251,7 +251,7 @@ class ReasoningEngine:
             '''
             return self._query(sql)
         except Exception as e:
-            print(f"[Reasoning Error] _generate_structural_intuitions failed: {e}")
+            print(f"[Reasoning Error | 推理错误] _generate_structural_intuitions failed / 结构直觉生成失败: {e}")
             return []
 
     def _generate_curiosity(self):
@@ -273,7 +273,7 @@ class ReasoningEngine:
             results = self._query(sql)
             return [f"'{row[0]}'" for row in results] if results else []
         except Exception as e:
-            print(f"[Reasoning Error] _generate_curiosity failed: {e}")
+            print(f"[Reasoning Error | 推理错误] _generate_curiosity failed / 好奇心生成失败: {e}")
             return []
 
     def _query(self, sql):

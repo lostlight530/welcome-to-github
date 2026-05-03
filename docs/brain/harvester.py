@@ -55,7 +55,7 @@ class Harvester:
 
     def _fetch_repo_data(self, repo):
         """Thread worker to fetch data for a single repository."""
-        print(f"   [Radar] Scanning Target: {repo}...")
+        print(f"   [Radar | 雷达] Scanning Target: {repo}... / 扫描目标: {repo}...")
         url = f"https://api.github.com/repos/{repo}/releases/latest"
         result_file = None
 
@@ -96,7 +96,7 @@ class Harvester:
                 last_hash = repo_state.get('last_hash')
 
             if last_hash == content_hash:
-                print(f"      => [Anti-Shake] Hash match for {repo} (Noise filtered). Content is structurally identical, aborting digest.")
+                print(f"      => [Anti-Shake | 防抖机制] Hash match for {repo} (Noise filtered). Content is structurally identical, aborting digest. / {repo} 哈希匹配（已过滤噪音）。内容结构一致，中止提取。")
                 with self.state_lock:
                     self.state[repo] = self.state.get(repo, {})
                     self.state[repo]['etag'] = new_etag
@@ -131,7 +131,7 @@ class Harvester:
 
                 if meaningful_changes == 0 and len(diff) > 0:
                     is_trivial_update = True
-                    print(f"      => [Anti-Shake] Diff for {repo} is trivial (timestamps/metadata only). Aborting digest.")
+                    print(f"      => [Anti-Shake | 防抖机制] Diff for {repo} is trivial (timestamps/metadata only). Aborting digest. / {repo} 的差异微不足道（仅时间戳/元数据）。中止提取。")
 
             if is_trivial_update:
                 with self.state_lock:
@@ -154,7 +154,7 @@ class Harvester:
                 self.state[repo]['last_hash'] = content_hash
 
             if tag != last_tag or last_hash != content_hash:
-                print(f"   🔥 [Signal] Valid Structural Update: {repo} @ {tag}")
+                print(f"   🔥 [Signal | 信号] Valid Structural Update: {repo} @ {tag} / 有效的结构化更新：{repo} @ {tag}")
                 analysis_tags = self._analyze_content(body)
                 header_tags = " ".join(analysis_tags)
 
@@ -225,7 +225,7 @@ class Harvester:
                 if "/" in entity_name and "docs/brain" not in entity_name and len(entity_name.split("/")) == 2:
                     if entity_name not in self.targets:
                         self.targets[entity_name] = ["releases"]
-                        print(f"   [Radar Intent] Added direct target from SOP command: {entity_name}")
+                        print(f"   [Radar Intent | 雷达意图] Added direct target from SOP command: {entity_name} / 从 SOP 命令添加直接目标: {entity_name}")
                     continue
 
                 # Check 2: Cortex DB Graph Lookup for linked whitelist targets
@@ -256,17 +256,17 @@ class Harvester:
                                 clean_repo = f"{repo_parts[0]}/{repo_parts[1]}"
                                 if clean_repo not in self.targets:
                                     self.targets[clean_repo] = ["releases"]
-                                    print(f"   [Radar Intent] Graph Reverse Lookup resolved {entity_name} -> {clean_repo}")
+                                    print(f"   [Radar Intent | 雷达意图] Graph Reverse Lookup resolved {entity_name} -> {clean_repo} / 图逆向查找解析: {entity_name} -> {clean_repo}")
                 except Exception as e:
-                    print(f"   [Radar Intent] Graph lookup failed for {entity_name}: {e}")
+                    print(f"   [Radar Intent | 雷达意图] Graph lookup failed for {entity_name}: {e} / 图查找失败: {entity_name}: {e}")
 
             conn.close()
         except Exception as e:
-            print(f"[Harvester Error] Failed to read intents: {e}")
+            print(f"[Harvester Error | 收割机错误] Failed to read intents: {e} / 读取意图失败: {e}")
 
     def fetch_github_data(self):
         try:
-            print("[Harvester] Initiating asynchronous radar sweep (Zero-Dependency Concurrency)...")
+            print("[Harvester | 收割机] Initiating asynchronous radar sweep (Zero-Dependency Concurrency)... / 启动异步雷达扫描（零依赖并发）...")
             new_files = []
 
             # Read self-driven intents before sweeping
@@ -281,10 +281,10 @@ class Harvester:
                         if res:
                             new_files.append(res)
                     except Exception as exc:
-                        print(f"   [Radar Error] Target generated an exception: {exc}")
+                        print(f"   [Radar Error | 雷达错误] Target generated an exception: {exc} / 目标抛出异常: {exc}")
 
             return new_files
         except Exception as e:
-            print(f"[Harvester Error] fetch_github_data failed: {e}")
+            print(f"[Harvester Error | 收割机错误] fetch_github_data failed: {e} / fetch_github_data 失败: {e}")
             return []
 

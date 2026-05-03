@@ -83,7 +83,7 @@ class Cortex:
             with open(filepath, 'a', encoding='utf-8') as f:
                 f.write(json.dumps(data, ensure_ascii=False) + "\n")
         except Exception as e:
-            print(f"⚠️ Failed to write text memory: {e}")
+            print(f"⚠️ [Cortex Error | 皮质层错误] Failed to write text memory / 写入文本记忆失败: {e}")
 
     def search(self, query: str, limit: int = 10) -> List[Dict]:
         """Synaptic Search: Combines Full-Text + 1-Hop Graph Association"""
@@ -241,7 +241,7 @@ class Cortex:
             cursor.execute(sql, (limit,))
             return [dict(row) for row in cursor.fetchall()]
         except Exception as e:
-            print(f"[Cortex Error] Failed to get orphans: {e}")
+            print(f"[Cortex Error | 皮质层错误] Failed to get orphans / 获取孤立节点失败: {e}")
             return []
 
     def suture_orphans(self):
@@ -250,9 +250,9 @@ class Cortex:
             orphans = self.get_orphans(limit=10)
             if not orphans: return
             for orphan in orphans:
-                self.connect_entities(orphan['id'], 'is_capability_of', 'concept_nexus_system', "Auto-sutured ghost node", save_to_disk=True)
+                self.connect_entities(orphan['id'], 'is_capability_of', 'concept_nexus_system', "Auto-sutured ghost node / 自动缝合的幽灵节点", save_to_disk=True)
         except Exception as e:
-            print(f"[Cortex Error] Orphan suturing failed: {str(e)}")
+            print(f"[Cortex Error | 皮质层错误] Orphan suturing failed / 孤立节点缝合失败: {str(e)}")
 
     def get_stats(self):
         cursor = self.conn.cursor()
@@ -276,7 +276,7 @@ class Cortex:
 
             # Compression Rate calculation using strict SQLite mathematical cast
             sql_compression = '''
-                SELECT 1.0 - (SELECT COUNT(id) FROM entities WHERE invalid_at IS NULL) / CAST((SELECT COUNT(id) FROM entities) AS REAL)
+                SELECT 1.0 - (SELECT COUNT(id) FROM entities WHERE invalid_at IS NULL) / CAST(NULLIF((SELECT COUNT(id) FROM entities), 0) AS REAL)
             '''
             compression_rate = cursor.execute(sql_compression).fetchone()[0]
             if compression_rate is None:
@@ -300,7 +300,7 @@ class Cortex:
             low_connectivity = cursor.execute(sql_low_connectivity).fetchone()[0] or 0
 
         except Exception as e:
-            print(f"[Cortex Error] Metrics extraction failed: {str(e)}")
+            print(f"[Cortex Error | 皮质层错误] Metrics extraction failed / 指标提取失败: {str(e)}")
             return {
                 'active_entities': 0,
                 'active_relations': 0,

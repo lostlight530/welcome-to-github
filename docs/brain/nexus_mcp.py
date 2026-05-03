@@ -191,7 +191,7 @@ class MCPServer:
                         pipeline = args["pipeline"]
                     except KeyError:
                         self._slash_trust(agent_id, penalty=10)
-                        raise ValueError("Missing 'pipeline' key in arguments. Trust slashed (-10).")
+                        raise ValueError("Missing 'pipeline' key in arguments. Trust slashed (-10). / 信任分已扣除 (-10)。")
                     p_args = args.get("pipeline_args", {})
                     results = []
 
@@ -213,7 +213,7 @@ class MCPServer:
                         "jsonrpc": "2.0",
                         "id": msg_id,
                         "result": {
-                            "content": [{"type": "text", "text": json.dumps({"blueprint_status": "Complete", "stages": results}, ensure_ascii=False)}]
+                            "content": [{"type": "text", "text": json.dumps({"blueprint_status": "Complete / 完成", "stages": results}, ensure_ascii=False)}]
                         }
                     }
 
@@ -222,7 +222,7 @@ class MCPServer:
                         query = args["query"]
                     except KeyError:
                         self._slash_trust(agent_id, penalty=10)
-                        raise ValueError("Missing 'query' key in arguments. Trust slashed (-10).")
+                        raise ValueError("Missing 'query' key in arguments. Trust slashed (-10). / 信任分已扣除 (-10)。")
 
                     # Liquid Graph Context: Augment search with immediate topological neighborhood
                     results = self.cortex.search(query)
@@ -252,7 +252,7 @@ class MCPServer:
                         eid = args["id"]
                     except KeyError:
                         self._slash_trust(agent_id, penalty=10)
-                        raise ValueError("Missing 'id' key in arguments. Trust slashed (-10).")
+                        raise ValueError("Missing 'id' key in arguments. Trust slashed (-10). / 信任分已扣除 (-10)。")
 
                     entity = self.cortex.get_entity(eid)
                     if entity:
@@ -264,7 +264,7 @@ class MCPServer:
                             }
                         }
                     else:
-                        return {"jsonrpc": "2.0", "id": msg_id, "error": {"code": -32602, "message": f"Entity '{eid}' not found"}}
+                        return {"jsonrpc": "2.0", "id": msg_id, "error": {"code": -32602, "message": f"Entity '{eid}' not found / 未找到实体 '{eid}'"}}
 
                 elif name == "add_memory":
                     try:
@@ -273,7 +273,7 @@ class MCPServer:
                         edesc = args["desc"]
                     except KeyError:
                         self._slash_trust(agent_id, penalty=10)
-                        raise ValueError("Missing 'id', 'name', or 'desc' in arguments. Trust slashed (-10).")
+                        raise ValueError("Missing 'id', 'name', or 'desc' in arguments. Trust slashed (-10). / 信任分已扣除 (-10)。")
 
                     self.cortex.add_entity(
                         id=eid,
@@ -285,7 +285,7 @@ class MCPServer:
                         "jsonrpc": "2.0",
                         "id": msg_id,
                         "result": {
-                            "content": [{"type": "text", "text": f"Entity '{eid}' added successfully to cortex DB."}]
+                            "content": [{"type": "text", "text": f"Entity '{eid}' added successfully to cortex DB. / 实体 '{eid}' 成功添加至皮质层数据库。"}]
                         }
                     }
                 elif name == "trigger_harvester":
@@ -293,9 +293,9 @@ class MCPServer:
                     intent = args.get("intent", "fetch_release")
                     harvester = Harvester(self.root_dir)
                     new_files = harvester.fetch_github_data()
-                    msg = "Intent-driven harvest complete. No new high-signal data."
+                    msg = "Intent-driven harvest complete. No new high-signal data. / 意图驱动收割完成。未发现新的高价值信号。"
                     if new_files:
-                        msg = f"Harvest complete. Fetched {len(new_files)} new context chunks into docs/brain/inputs/."
+                        msg = f"Harvest complete. Fetched {len(new_files)} new context chunks into docs/brain/inputs/. / 收割完成。已抓取 {len(new_files)} 个新上下文片段至 docs/brain/inputs/。"
                     return {
                         "jsonrpc": "2.0",
                         "id": msg_id,
@@ -311,7 +311,7 @@ class MCPServer:
 
                         if len(report.strip()) < 50:
                             self._slash_trust(agent_id, penalty=20)
-                            raise ValueError("Report is too shallow. Trust slashed (-20).")
+                            raise ValueError("Report is too shallow. Trust slashed (-20). / 信任分已扣除 (-20)。")
 
                         # Add bounty reward logic, increase trust score
                         cursor = self.cortex.conn.cursor()
@@ -324,16 +324,16 @@ class MCPServer:
 
                     except KeyError as e:
                         self._slash_trust(agent_id, penalty=10)
-                        raise ValueError(f"Missing parameter in bounty submission: {e}. Trust slashed (-10).")
+                        raise ValueError(f"Missing parameter in bounty submission: {e}. Trust slashed (-10). / 信任分已扣除 (-10)。")
                     except ValueError as e:
                         self._slash_trust(agent_id, penalty=15)
-                        raise ValueError(f"Invalid format: {e}. Trust slashed (-15).")
+                        raise ValueError(f"Invalid format: {e}. Trust slashed (-15). / 信任分已扣除 (-15)。")
 
                     return {
                         "jsonrpc": "2.0",
                         "id": msg_id,
                         "result": {
-                            "content": [{"type": "text", "text": f"Bounty accepted. Agent '{agent_id}' rewarded +5 trust points."}]
+                            "content": [{"type": "text", "text": f"Bounty accepted. Agent '{agent_id}' rewarded +5 trust points. / 悬赏已接受。智能体 '{agent_id}' 获得 +5 信任分奖励。"}]
                         }
                     }
                 else:

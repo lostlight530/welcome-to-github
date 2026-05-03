@@ -113,7 +113,7 @@ def add_entity(category: str, id: str, type: str, name: str, desc: str, tags: Op
 
     # Let exceptions bubble up to FastMCP
     factory.add_entity(category, data)
-    return f"Successfully added entity '{id}' to category '{category}'."
+    return f"Successfully added entity '{id}' to category '{category}'. / 成功将实体 '{id}' 添加至分类 '{category}'。"
 
 @mcp.tool()
 def connect_entities(src: str, rel: str, dst: str, context: str = "") -> str:
@@ -146,11 +146,11 @@ def connect_entities(src: str, rel: str, dst: str, context: str = "") -> str:
 
     # Let exceptions bubble up to FastMCP
     factory.add_relation(data)
-    return f"Successfully connected '{src}' --[{rel}]--> '{dst}'."
+    return f"Successfully connected '{src}' --[{rel}]--> '{dst}'. / 成功建立连接 '{src}' --[{rel}]--> '{dst}'。"
 
 if __name__ == "__main__":
-    print(f"[Nexus] Starting MCP Demo Server (Full Matrix) on stdio...", file=sys.stderr)
+    print(f"[Nexus] Starting MCP Demo Server (Full Matrix) on stdio... / 在 stdio 上启动 MCP 演示服务器 (Full Matrix)...", file=sys.stderr)
     try:
         mcp.run(transport="stdio")
     except Exception as e:
-        print(f"[Nexus] Error: {e}", file=sys.stderr)
+        print(f"[Nexus Error | Nexus 错误] Error / 错误: {e}", file=sys.stderr)
