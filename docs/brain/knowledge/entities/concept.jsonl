@@ -2179,3 +2179,41 @@
 {"id": "concept_rebuild_database_from_jsonl_ledger", "type": "concept", "name": "Rebuild database from JSONL ledger", "desc": "Section in README.md", "valid_at": "2026-05-03T12:24:16.829444"}
 {"id": "concept_ⅲ_图谱规则_schema__rules", "type": "concept", "name": "Ⅲ. 图谱规则 (Schema & Rules)", "desc": "Section in README.md", "valid_at": "2026-05-03T12:24:16.835753"}
 {"id": "concept_ⅳ_cicd_自动化_automation", "type": "concept", "name": "Ⅳ. CI/CD 自动化 (Automation)", "desc": "Section in README.md", "valid_at": "2026-05-03T12:24:16.841336"}
+{"id": "concept_lostlight__20252026_年度回顾_year_in_review", "type": "concept", "name": "lostlight | 2025-2026 年度回顾 (Year in Review)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:18.862351"}
+{"id": "concept_线上入口_live_portal", "type": "concept", "name": "🚀 线上入口 (Live Portal)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:18.866511"}
+{"id": "concept_工程标准与架构_engineering_standards__architecture", "type": "concept", "name": "🏗️ 工程标准与架构 (Engineering Standards & Architecture)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:18.870409"}
+{"id": "concept_数字博物馆_digital_museum", "type": "concept", "name": "🏛️ 数字博物馆 (Digital Museum)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:18.874191"}
+{"id": "concept_安全策略_security_policy", "type": "concept", "name": "安全策略 (Security Policy)", "desc": "Section in SECURITY.md", "valid_at": "2026-05-04T00:34:18.879339"}
+{"id": "concept_支持的版本_supported_versions", "type": "concept", "name": "支持的版本 (Supported Versions)", "desc": "Section in SECURITY.md", "valid_at": "2026-05-04T00:34:18.883032"}
+{"id": "concept_报告漏洞_reporting_a_vulnerability", "type": "concept", "name": "报告漏洞 (Reporting a Vulnerability)", "desc": "Section in SECURITY.md", "valid_at": "2026-05-04T00:34:18.886906"}
+{"id": "concept_nexus_cortex_认知合成协议_cognitive_synthesis_protocol", "type": "concept", "name": "🧠 NEXUS CORTEX: 认知合成协议 (Cognitive Synthesis Protocol)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.063069"}
+{"id": "concept_ⅰ_系统架构_architecture", "type": "concept", "name": "Ⅰ. 系统架构 (Architecture)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.067046"}
+{"id": "concept_ⅱ_使用指南_usage_guide__nexus_cli", "type": "concept", "name": "Ⅱ. 使用指南 (Usage Guide - Nexus CLI)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.072532"}
+{"id": "concept_1_进化与思考_evolve__ponder", "type": "concept", "name": "1. 进化与思考 (Evolve & Ponder)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.077793"}
+{"id": "concept_ingest_internal_codebase_mapping_via_ast", "type": "concept", "name": "Ingest internal codebase mapping via AST", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.081890"}
+{"id": "concept_deep_ponder_the_graph_for_anomalies__hidden_bridges", "type": "concept", "name": "Deep ponder the graph for anomalies & hidden bridges", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.085965"}
+{"id": "concept_run_daily_evolution_cycle_includes_sandbox_verificat", "type": "concept", "name": "Run Daily Evolution Cycle (Includes Sandbox Verification)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.089626"}
+{"id": "concept_2_观察_observe__read", "type": "concept", "name": "2. 观察 (Observe / Read)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.093099"}
+{"id": "concept_check_brain_health__entropy", "type": "concept", "name": "Check Brain Health & Entropy", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.097168"}
+{"id": "concept_search_concepts_via_synaptic_associative_search", "type": "concept", "name": "Search Concepts via Synaptic Associative Search", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.100642"}
+{"id": "concept_3_清理与恢复_clean__restore", "type": "concept", "name": "3. 清理与恢复 (Clean & Restore)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.104176"}
+{"id": "concept_clear_temporary_cache_targets_protects_harvesterstat", "type": "concept", "name": "Clear Temporary Cache Targets (Protects .harvester_state.json)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.108184"}
+{"id": "concept_rebuild_database_from_jsonl_ledger", "type": "concept", "name": "Rebuild database from JSONL ledger", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.112135"}
+{"id": "concept_ⅲ_图谱规则_schema__rules", "type": "concept", "name": "Ⅲ. 图谱规则 (Schema & Rules)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.115928"}
+{"id": "concept_ⅳ_cicd_自动化_automation", "type": "concept", "name": "Ⅳ. CI/CD 自动化 (Automation)", "desc": "Section in README.md", "valid_at": "2026-05-04T00:34:19.119647"}
+{"id": "concept_核心架构与运行协议_core_architecture__operational_protocols", "type": "concept", "name": "核心架构与运行协议 (Core Architecture & Operational Protocols)", "desc": "Section in AGENTS.md", "valid_at": "2026-05-04T00:34:19.125228"}
+{"id": "concept_系统哲学与身份定位_system_philosophy__identity", "type": "concept", "name": "系统哲学与身份定位 (System Philosophy & Identity)", "desc": "Section in AGENTS.md", "valid_at": "2026-05-04T00:34:19.129135"}
+{"id": "concept_ⅰ_工程化闭环_architecture__workflow", "type": "concept", "name": "Ⅰ. 工程化闭环 (Architecture & Workflow)", "desc": "Section in AGENTS.md", "valid_at": "2026-05-04T00:34:19.132985"}
+{"id": "concept_ⅱ_核心法则_core_philosophy", "type": "concept", "name": "Ⅱ. 核心法则 (Core Philosophy)", "desc": "Section in AGENTS.md", "valid_at": "2026-05-04T00:34:19.137745"}
+{"id": "concept_ⅲ_允许写入的目录_whitelisted_directories", "type": "concept", "name": "Ⅲ. 允许写入的目录 (Whitelisted Directories)", "desc": "Section in AGENTS.md", "valid_at": "2026-05-04T00:34:19.142123"}
+{"id": "concept_ⅳ_情报与感知_intelligence__senses", "type": "concept", "name": "Ⅳ. 情报与感知 (Intelligence & Senses)", "desc": "Section in AGENTS.md", "valid_at": "2026-05-04T00:34:19.146360"}
+{"id": "concept_ⅴ_系统最佳实践_system_best_practices", "type": "concept", "name": "Ⅴ. 系统最佳实践 (System Best Practices)", "desc": "Section in AGENTS.md", "valid_at": "2026-05-04T00:34:19.149939"}
+{"id": "concept_ⅵ_交互接口_interface", "type": "concept", "name": "Ⅵ. 交互接口 (Interface)", "desc": "Section in AGENTS.md", "valid_at": "2026-05-04T00:34:19.153856"}
+{"id": "concept_知识库架构定义_knowledge_base_schema_definition", "type": "concept", "name": "知识库架构定义 (Knowledge Base Schema Definition)", "desc": "Section in SCHEMA.md", "valid_at": "2026-05-04T00:34:19.372402"}
+{"id": "concept_ⅰ_架构决策记录_architecture_decision_record__adr", "type": "concept", "name": "Ⅰ. 架构决策记录 (Architecture Decision Record - ADR)", "desc": "Section in SCHEMA.md", "valid_at": "2026-05-04T00:34:19.377145"}
+{"id": "concept_ⅱ_逻辑结构_logical_structures", "type": "concept", "name": "Ⅱ. 逻辑结构 (Logical Structures)", "desc": "Section in SCHEMA.md", "valid_at": "2026-05-04T00:34:19.381867"}
+{"id": "concept_1_量化账本机制_quantitative_ledger_mechanism", "type": "concept", "name": "1. 量化账本机制 (Quantitative Ledger Mechanism)", "desc": "Section in SCHEMA.md", "valid_at": "2026-05-04T00:34:19.385957"}
+{"id": "concept_2_时序实体模型_temporal_entities_model", "type": "concept", "name": "2. 时序实体模型 (Temporal Entities Model)", "desc": "Section in SCHEMA.md", "valid_at": "2026-05-04T00:34:19.389982"}
+{"id": "concept_3_时序关系模型_temporal_relations_model", "type": "concept", "name": "3. 时序关系模型 (Temporal Relations Model)", "desc": "Section in SCHEMA.md", "valid_at": "2026-05-04T00:34:19.393841"}
+{"id": "concept_4_认知免疫类型_cognitive_immune_types", "type": "concept", "name": "4. 认知免疫类型 (Cognitive Immune Types)", "desc": "Section in SCHEMA.md", "valid_at": "2026-05-04T00:34:19.398142"}
+{"id": "concept_5_原始情报流_input_streams", "type": "concept", "name": "5. 原始情报流 (Input Streams)", "desc": "Section in SCHEMA.md", "valid_at": "2026-05-04T00:34:19.401926"}
