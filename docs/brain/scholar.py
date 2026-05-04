@@ -3,6 +3,7 @@ import ast
 import re
 import datetime
 import json
+import fnmatch
 from pathlib import Path
 
 # Try to connect to the Mind
@@ -27,15 +28,14 @@ class Scholar:
         # Ignored patterns (Noise Filter)
         self.ignore_dirs = {
             '.git', '__pycache__', 'node_modules', 'cortex.db', 'memories',
-            'inputs', '.raw_cache', 'knowledge', 'archaeology', 'venv', '.idea', '.vscode', 'site-packages'
+            'inputs', '.raw_cache', 'knowledge', 'archaeology', 'archive', 'venv', '.idea', '.vscode', 'site-packages'
         }
         self.ignore_files = {
             '.DS_Store', 'cortex.db', 'cortex.db-journal', '.gitignore',
             'package-lock.json', 'yarn.lock', 'requirements.txt',
             'LICENSE', 'tailwind.config.js', 'postcss.config.js',
             'index.html', '.editorconfig', 'main.js', 'main.css',
-            '__init__.py', '.gitkeep', 'feature_request.md',
-            'custom.md', 'bug_report.md'
+            '__init__.py', '.gitkeep', '*.md'
         }
 
     def _load_config(self):
@@ -56,7 +56,7 @@ class Scholar:
             dirnames[:] = [d for d in dirnames if d not in self.ignore_dirs]
 
             for file in filenames:
-                if file in self.ignore_files or file.endswith(('.pyc', '.db')): continue
+                if any(fnmatch.fnmatch(file, pat) for pat in self.ignore_files) or file.endswith(('.pyc', '.db')): continue
 
                 filepath = Path(dirpath) / file
                 try:
