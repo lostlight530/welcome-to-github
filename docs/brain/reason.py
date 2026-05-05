@@ -128,6 +128,7 @@ class ReasoningEngine:
     def _render_daily_archives(self, metrics: dict, isolated_nodes: list):
         """Phase VI: Hardcore Quantitative Dashboard Rendering (Zero-Dependency)."""
         import os
+        import re
         from datetime import datetime, timedelta
         import glob
         from string import Template
@@ -137,6 +138,67 @@ class ReasoningEngine:
             today_str = today.strftime("%Y%m%d")
             memories_dir = os.path.join(os.path.dirname(__file__), 'memories')
             os.makedirs(memories_dir, exist_ok=True)
+
+            # --- Missing Daily Dashboard Backfill Mechanism ---
+            existing_dashboards = sorted(glob.glob(os.path.join(memories_dir, "*-quantitative-dashboard.md")))
+            last_date_str = None
+            if existing_dashboards:
+                last_dash_name = os.path.basename(existing_dashboards[-1])
+                match = re.search(r'^(\d{8})-quantitative-dashboard\.md', last_dash_name)
+                if match:
+                    last_date_str = match.group(1)
+
+            if last_date_str:
+                last_date = datetime.strptime(last_date_str, "%Y%m%d")
+                delta_days = (today - last_date).days
+                for i in range(1, delta_days + 1):
+                    backfill_date = last_date + timedelta(days=i)
+                    backfill_str = backfill_date.strftime("%Y%m%d")
+                    backfill_path = os.path.join(memories_dir, f"{backfill_str}-quantitative-dashboard.md")
+                    if not os.path.exists(backfill_path):
+                        dash_tmpl = Template(
+                            "# 📊 NEXUS CORTEX 量化仪表盘 (Quantitative Dashboard) - $date\n\n"
+                            "## 📈 核心系统指标 (Core System Metrics)\n"
+                            "| Metric | Value |\n"
+                            "| :--- | :--- |\n"
+                            "| Active Entities | $active_entities |\n"
+                            "| Active Relations | $active_relations |\n"
+                            "| Compression Rate | $compression_rate |\n"
+                            "| Low-Connectivity Nodes | $low_connectivity |\n"
+                        )
+                        dash_content = dash_tmpl.safe_substitute(
+                            date=backfill_str,
+                            active_entities=metrics.get('active_entities', 0),
+                            active_relations=metrics.get('active_relations', 0),
+                            compression_rate=f"{metrics.get('compression_rate', 0.0):.4f}",
+                            low_connectivity=metrics.get('low_connectivity', 0)
+                        )
+                        with open(backfill_path, 'w', encoding='utf-8') as f:
+                            f.write(dash_content)
+                        print(f"[Reasoning | 推理引擎] Backfilled quantitative dashboard for {backfill_str} / 回填量化仪表盘 {backfill_str}")
+
+            # Always render today's dashboard
+            today_dash_path = os.path.join(memories_dir, f"{today_str}-quantitative-dashboard.md")
+            if not os.path.exists(today_dash_path):
+                dash_tmpl = Template(
+                    "# 📊 NEXUS CORTEX 量化仪表盘 (Quantitative Dashboard) - $date\n\n"
+                    "## 📈 核心系统指标 (Core System Metrics)\n"
+                    "| Metric | Value |\n"
+                    "| :--- | :--- |\n"
+                    "| Active Entities | $active_entities |\n"
+                    "| Active Relations | $active_relations |\n"
+                    "| Compression Rate | $compression_rate |\n"
+                    "| Low-Connectivity Nodes | $low_connectivity |\n"
+                )
+                dash_content = dash_tmpl.safe_substitute(
+                    date=today_str,
+                    active_entities=metrics.get('active_entities', 0),
+                    active_relations=metrics.get('active_relations', 0),
+                    compression_rate=f"{metrics.get('compression_rate', 0.0):.4f}",
+                    low_connectivity=metrics.get('low_connectivity', 0)
+                )
+                with open(today_dash_path, 'w', encoding='utf-8') as f:
+                    f.write(dash_content)
 
             # Anchor 1: Quantitative Ledger (Append-Only)
             pulse_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
