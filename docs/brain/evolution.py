@@ -33,6 +33,9 @@ class Evolver:
             # 2. Rebuild ephemeral index from JSONL ledger
             self.cortex._init_db()
 
+            # 2.5 Resolve isolation
+            self.cortex.suture_orphans()
+
             # 3. Process new inputs (Harvester)
             # 4. Cognitive Reflection
             metrics = self.cortex.get_dashboard_metrics()

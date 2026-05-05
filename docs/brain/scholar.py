@@ -35,7 +35,7 @@ class Scholar:
             'package-lock.json', 'yarn.lock', 'requirements.txt',
             'LICENSE', 'tailwind.config.js', 'postcss.config.js',
             'index.html', '.editorconfig', 'main.js', 'main.css',
-            '__init__.py', '.gitkeep', '*.md'
+            '__init__.py', '.gitkeep', '*.md', 'package.json'
         }
 
     def _load_config(self):
