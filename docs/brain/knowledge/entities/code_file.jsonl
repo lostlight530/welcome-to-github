@@ -1682,3 +1682,17 @@
 {"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-05-08T22:54:14.846607"}
 {"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-05-08T22:54:14.852750"}
 {"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-05-08T22:54:14.877694"}
+{"id": "file_src_scripts_translations_js", "type": "code_file", "name": "translations.js", "desc": "Source file at: src/scripts/translations.js", "valid_at": "2026-05-09T07:48:45.698952"}
+{"id": "file__github_workflows_deploy_yml", "type": "code_file", "name": "deploy.yml", "desc": "Source file at: .github/workflows/deploy.yml", "valid_at": "2026-05-09T07:48:45.709686"}
+{"id": "file__github_workflows_nexus-life-cycle_yml", "type": "code_file", "name": "nexus-life-cycle.yml", "desc": "Source file at: .github/workflows/nexus-life-cycle.yml", "valid_at": "2026-05-09T07:48:46.695415"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-05-09T07:48:46.966999"}
+{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-05-09T07:48:47.081543"}
+{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-05-09T07:48:47.702210"}
+{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-05-09T07:48:47.708704"}
+{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-05-09T07:48:47.779054"}
+{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-05-09T07:48:47.887559"}
+{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-05-09T07:48:48.172246"}
+{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-05-09T07:48:48.394584"}
+{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-05-09T07:48:48.542580"}
+{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-05-09T07:48:48.550120"}
+{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-05-09T07:48:48.631807"}
