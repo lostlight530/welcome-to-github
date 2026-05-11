@@ -27,15 +27,16 @@ class Scholar:
 
         # Ignored patterns (Noise Filter)
         self.ignore_dirs = {
-            '.git', '__pycache__', 'node_modules', 'cortex.db', 'memories',
-            'inputs', '.raw_cache', 'knowledge', 'archaeology', 'archive', 'venv', '.idea', '.vscode', 'site-packages'
+            '.git', '__pycache__', 'node_modules', 'cortex.db',
+            'archive', 'venv', '.idea', '.vscode', 'site-packages',
+            'docs/brain/knowledge', 'docs/brain/inputs', 'docs/brain/memories', '.raw_cache'
         }
         self.ignore_files = {
             '.DS_Store', 'cortex.db', 'cortex.db-journal', '.gitignore',
             'package-lock.json', 'yarn.lock', 'requirements.txt',
             'LICENSE', 'tailwind.config.js', 'postcss.config.js',
             'index.html', '.editorconfig', 'main.js', 'main.css',
-            '__init__.py', '.gitkeep', '*.md', 'package.json'
+            '__init__.py', '.gitkeep', 'package.json'
         }
 
     def _load_config(self):
@@ -52,11 +53,25 @@ class Scholar:
         count = 0
 
         for dirpath, dirnames, filenames in os.walk(root):
-            # Prune ignored directories
-            dirnames[:] = [d for d in dirnames if d not in self.ignore_dirs]
+            # Phase IV: Directory pruning. We check if the dirpath + d ends with our ignored full paths,
+            # or if the dirname exactly matches base ignore patterns.
+            valid_dirs = []
+            for d in dirnames:
+                full_d_path = (Path(dirpath) / d).as_posix()
+                should_ignore = False
+                for ig in self.ignore_dirs:
+                    if d == ig or full_d_path.endswith(ig):
+                        should_ignore = True
+                        break
+                if not should_ignore:
+                    valid_dirs.append(d)
+            dirnames[:] = valid_dirs
+
+            # Ouroboros Prevention
+            if '.raw_cache' in dirnames: dirnames.remove('.raw_cache')
 
             for file in filenames:
-                if any(fnmatch.fnmatch(file, pat) for pat in self.ignore_files) or file.endswith(('.pyc', '.db')): continue
+                if any(fnmatch.fnmatch(file, pat) for pat in self.ignore_files) or file.endswith(('.pyc', '.db', '.md')): continue
 
                 filepath = Path(dirpath) / file
                 try:

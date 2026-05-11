@@ -6,7 +6,6 @@ from dataclasses import asdict
 from typing import List, Optional
 from datetime import datetime
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
-from mcp.server.fastmcp import FastMCP
 
 # Ensure we can import existing brain modules
 brain_root = os.path.dirname(os.path.abspath(__file__))
@@ -15,11 +14,16 @@ sys.path.append(brain_root)
 from cortex import Cortex
 from factory import KnowledgeFactory
 
-# Initialize FastMCP Server
-mcp = FastMCP("Nexus Cortex Demo")
+try:
+    from mcp.server.fastmcp import FastMCP
+    # Initialize FastMCP Server
+    mcp = FastMCP("Nexus Cortex Demo")
+except ImportError:
+    mcp = None
+    print("[Warning] 'mcp' module not found. Demo server cannot run. / 警告：未找到 'mcp' 模块，演示服务器无法运行。", file=sys.stderr)
 
 # Initialize Cortex (Read) and Factory (Write)
-cortex = Cortex(brain_root)
+cortex = Cortex(os.path.join(brain_root, "cortex.db"))
 factory = KnowledgeFactory(brain_root)
 
 # Security Constants
@@ -48,7 +52,11 @@ def validate_category(category: str) -> None:
     except Exception as e:
         raise ValueError(f"Validation failed: {e}")
 
-@mcp.resource("knowledge://stats/entropy")
+if mcp:
+    @mcp.resource("knowledge://stats/entropy")
+    def _resource_get_entropy_stats() -> str:
+        return get_entropy_stats()
+
 def get_entropy_stats() -> str:
     """
     Returns the current entropy report of the knowledge graph.
@@ -58,7 +66,11 @@ def get_entropy_stats() -> str:
     report = cortex.analyze_entropy()
     return json.dumps(asdict(report), ensure_ascii=False)
 
-@mcp.tool()
+if mcp:
+    @mcp.tool()
+    def _tool_get_entropy_report() -> str:
+        return get_entropy_report()
+
 def get_entropy_report() -> str:
     """
     Triggers an immediate analysis of the knowledge graph.
@@ -66,7 +78,11 @@ def get_entropy_report() -> str:
     """
     return get_entropy_stats()
 
-@mcp.tool()
+if mcp:
+    @mcp.tool()
+    def _tool_get_current_time(timezone_name: str = "UTC") -> str:
+        return get_current_time(timezone_name)
+
 def get_current_time(timezone_name: str = "UTC") -> str:
     """
     Returns the current time in the specified timezone (default: UTC).
@@ -84,7 +100,11 @@ def get_current_time(timezone_name: str = "UTC") -> str:
     now = datetime.now(tz)
     return now.isoformat()
 
-@mcp.tool()
+if mcp:
+    @mcp.tool()
+    def _tool_add_entity(category: str, id: str, type: str, name: str, desc: str, tags: Optional[List[str]] = None) -> str:
+        return add_entity(category, id, type, name, desc, tags)
+
 def add_entity(category: str, id: str, type: str, name: str, desc: str, tags: Optional[List[str]] = None) -> str:
     """
     Safely adds a new entity to the knowledge graph.
@@ -115,7 +135,11 @@ def add_entity(category: str, id: str, type: str, name: str, desc: str, tags: Op
     factory.add_entity(category, data)
     return f"Successfully added entity '{id}' to category '{category}'. / 成功将实体 '{id}' 添加至分类 '{category}'。"
 
-@mcp.tool()
+if mcp:
+    @mcp.tool()
+    def _tool_connect_entities(src: str, rel: str, dst: str, context: str = "") -> str:
+        return connect_entities(src, rel, dst, context)
+
 def connect_entities(src: str, rel: str, dst: str, context: str = "") -> str:
     """
     Connects two existing entities.
@@ -149,8 +173,11 @@ def connect_entities(src: str, rel: str, dst: str, context: str = "") -> str:
     return f"Successfully connected '{src}' --[{rel}]--> '{dst}'. / 成功建立连接 '{src}' --[{rel}]--> '{dst}'。"
 
 if __name__ == "__main__":
-    print(f"[Nexus] Starting MCP Demo Server (Full Matrix) on stdio... / 在 stdio 上启动 MCP 演示服务器 (Full Matrix)...", file=sys.stderr)
-    try:
-        mcp.run(transport="stdio")
-    except Exception as e:
-        print(f"[Nexus Error | Nexus 错误] Error / 错误: {e}", file=sys.stderr)
+    if mcp:
+        print(f"[Nexus] Starting MCP Demo Server (Full Matrix) on stdio... / 在 stdio 上启动 MCP 演示服务器 (Full Matrix)...", file=sys.stderr)
+        try:
+            mcp.run(transport="stdio")
+        except Exception as e:
+            print(f"[Nexus Error | Nexus 错误] Error / 错误: {e}", file=sys.stderr)
+    else:
+        sys.exit(0)
