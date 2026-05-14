@@ -71,7 +71,7 @@ class Scholar:
             if '.raw_cache' in dirnames: dirnames.remove('.raw_cache')
 
             for file in filenames:
-                if any(fnmatch.fnmatch(file, pat) for pat in self.ignore_files) or file.endswith(('.pyc', '.db', '.md')): continue
+                if any(fnmatch.fnmatch(file, pat) for pat in self.ignore_files) or file.endswith(('.pyc', '.db', '.md', '.jsonl')): continue
 
                 filepath = Path(dirpath) / file
                 try:
