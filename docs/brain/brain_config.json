@@ -7,7 +7,8 @@
   "ignore_paths": [
     "docs/brain/knowledge",
     "docs/brain/inputs",
-    "docs/brain/memories"
+    "docs/brain/memories",
+    ".raw_cache"
   ],
   "whitelist": {
     "Google-XLA-Compiler": "https://raw.githubusercontent.com/openxla/xla/main/README.md",
