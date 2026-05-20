@@ -172,3 +172,5 @@
 {"id": "polyglot_interface_using", "type": "code_component", "name": "using", "desc": "Component in translations.js", "valid_at": "2026-05-19T08:47:57.034592"}
 {"id": "polyglot_const_translations", "type": "code_component", "name": "translations", "desc": "Component in translations.js", "valid_at": "2026-05-19T23:00:54.722819"}
 {"id": "polyglot_interface_using", "type": "code_component", "name": "using", "desc": "Component in translations.js", "valid_at": "2026-05-19T23:00:54.727062"}
+{"id": "polyglot_const_translations", "type": "code_component", "name": "translations", "desc": "Component in translations.js", "valid_at": "2026-05-20T12:10:59.522405"}
+{"id": "polyglot_interface_using", "type": "code_component", "name": "using", "desc": "Component in translations.js", "valid_at": "2026-05-20T12:10:59.528708"}
