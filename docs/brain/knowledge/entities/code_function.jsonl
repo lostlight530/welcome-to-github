@@ -7277,3 +7277,275 @@
 {"id": "func__generate_structural_intuitions", "type": "code_function", "name": "_generate_structural_intuitions", "desc": "Find nodes that share exact targets (Structural Overlap / Epistemic Depth)", "valid_at": "2026-05-21T12:53:56.794252"}
 {"id": "func__generate_curiosity", "type": "code_function", "name": "_generate_curiosity", "desc": "Find nodes with exactly 1 edge (Superficial Knowledge)", "valid_at": "2026-05-21T12:53:56.798218"}
 {"id": "func__query", "type": "code_function", "name": "_query", "desc": "Python Function", "valid_at": "2026-05-21T12:53:56.802304"}
+{"id": "func___init__", "type": "code_function", "name": "__init__", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.411459"}
+{"id": "func_run_daily_cycle", "type": "code_function", "name": "run_daily_cycle", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.418362"}
+{"id": "func__trigger_render", "type": "code_function", "name": "_trigger_render", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.425253"}
+{"id": "func__genetic_auto_recombination", "type": "code_function", "name": "_genetic_auto_recombination", "desc": "Phase VI: Preparatory State AST Mutator", "valid_at": "2026-05-21T20:37:43.432526"}
+{"id": "func__run_sandbox_tests", "type": "code_function", "name": "_run_sandbox_tests", "desc": "AST Loop Preparation: Verifies local MCP and systems logic via subprocess.", "valid_at": "2026-05-21T20:37:43.439590"}
+{"id": "func__incubate_ideas", "type": "code_function", "name": "_incubate_ideas", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.446431"}
+{"id": "func__scan_inputs", "type": "code_function", "name": "_scan_inputs", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.453117"}
+{"id": "func__archive_inputs", "type": "code_function", "name": "_archive_inputs", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.459993"}
+{"id": "func_visit_FunctionDef", "type": "code_function", "name": "visit_FunctionDef", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.475859"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-05-21T20:37:43.505093"}
+{"id": "func_touch_entity", "type": "code_function", "name": "touch_entity", "desc": "Legacy touch. Now routes to activate_memory.", "valid_at": "2026-05-21T20:37:43.512762"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-05-21T20:37:43.521872"}
+{"id": "func_add_relation", "type": "code_function", "name": "add_relation", "desc": "Adds a new relation to the knowledge graph.", "valid_at": "2026-05-21T20:37:43.529416"}
+{"id": "func__append_line", "type": "code_function", "name": "_append_line", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.537117"}
+{"id": "func_ponder", "type": "code_function", "name": "ponder", "desc": "Cognitive Loop: Structural Analysis, Self-Reflection & Curiosity", "valid_at": "2026-05-21T20:37:43.568562"}
+{"id": "func__calculate_pagerank", "type": "code_function", "name": "_calculate_pagerank", "desc": "Phase V: Pure mathematical centrality deduction without external libraries.", "valid_at": "2026-05-21T20:37:43.577939"}
+{"id": "func__generate_pagerank_bounty", "type": "code_function", "name": "_generate_pagerank_bounty", "desc": "Calculate PageRank on the active graph to find the true central hub.", "valid_at": "2026-05-21T20:37:43.586009"}
+{"id": "func__render_daily_archives", "type": "code_function", "name": "_render_daily_archives", "desc": "Phase VI: Hardcore Quantitative Dashboard Rendering (Zero-Dependency).", "valid_at": "2026-05-21T20:37:43.594192"}
+{"id": "func__generate_structural_intuitions", "type": "code_function", "name": "_generate_structural_intuitions", "desc": "Find nodes that share exact targets (Structural Overlap / Epistemic Depth)", "valid_at": "2026-05-21T20:37:43.602346"}
+{"id": "func__generate_curiosity", "type": "code_function", "name": "_generate_curiosity", "desc": "Find nodes with exactly 1 edge (Superficial Knowledge)", "valid_at": "2026-05-21T20:37:43.610607"}
+{"id": "func__query", "type": "code_function", "name": "_query", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.618083"}
+{"id": "func_test_mcp_server", "type": "code_function", "name": "test_mcp_server", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.885942"}
+{"id": "func__load_state", "type": "code_function", "name": "_load_state", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.914522"}
+{"id": "func__save_state", "type": "code_function", "name": "_save_state", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.921628"}
+{"id": "func__analyze_content", "type": "code_function", "name": "_analyze_content", "desc": "Architect's Filters: Semantic Tagging", "valid_at": "2026-05-21T20:37:43.929158"}
+{"id": "func__fetch_repo_data", "type": "code_function", "name": "_fetch_repo_data", "desc": "Thread worker to fetch data for a single repository.", "valid_at": "2026-05-21T20:37:43.936691"}
+{"id": "func__read_mission_active_intents", "type": "code_function", "name": "_read_mission_active_intents", "desc": "Phase V/VI: Self-Driven Intent Probes via SQLite DB Graph Reversal.", "valid_at": "2026-05-21T20:37:43.944211"}
+{"id": "func_fetch_github_data", "type": "code_function", "name": "fetch_github_data", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.951398"}
+{"id": "func__init_db", "type": "code_function", "name": "_init_db", "desc": "Python Function", "valid_at": "2026-05-21T20:37:43.983878"}
+{"id": "func__log_to_jsonl", "type": "code_function", "name": "_log_to_jsonl", "desc": "Append knowledge to the immutable text ledger.", "valid_at": "2026-05-21T20:37:43.991314"}
+{"id": "func_search", "type": "code_function", "name": "search", "desc": "Synaptic Search: Combines Full-Text + 1-Hop Graph Association", "valid_at": "2026-05-21T20:37:43.997999"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.004677"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.011704"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.018305"}
+{"id": "func_decay_memories", "type": "code_function", "name": "decay_memories", "desc": "Biological Decay with Sovereignty Protection", "valid_at": "2026-05-21T20:37:44.025341"}
+{"id": "func_get_orphans", "type": "code_function", "name": "get_orphans", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.031989"}
+{"id": "func_suture_orphans", "type": "code_function", "name": "suture_orphans", "desc": "Phase V: Deterministic Orphan Suturing. Ghost nodes are connected internally.", "valid_at": "2026-05-21T20:37:44.039032"}
+{"id": "func_get_stats", "type": "code_function", "name": "get_stats", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.046126"}
+{"id": "func_get_dashboard_metrics", "type": "code_function", "name": "get_dashboard_metrics", "desc": "Phase VI: Quantitative Dashboard Metrics extraction.", "valid_at": "2026-05-21T20:37:44.053965"}
+{"id": "func_validate_id", "type": "code_function", "name": "validate_id", "desc": "Enforces strict ID format to prevent path traversal.\n强制执行严格的 ID 格式以防止路径遍历。", "valid_at": "2026-05-21T20:37:44.068184"}
+{"id": "func_validate_category", "type": "code_function", "name": "validate_category", "desc": "Enforces category whitelist to prevent arbitrary file writes.\n强制执行类别白名单以防止任意文件写入。", "valid_at": "2026-05-21T20:37:44.076064"}
+{"id": "func_get_entropy_stats", "type": "code_function", "name": "get_entropy_stats", "desc": "Returns the current entropy report of the knowledge graph.\n返回知识图谱的当前熵值报告。", "valid_at": "2026-05-21T20:37:44.084565"}
+{"id": "func_get_entropy_report", "type": "code_function", "name": "get_entropy_report", "desc": "Triggers an immediate analysis of the knowledge graph.\n触发对知识图谱的即时分析。", "valid_at": "2026-05-21T20:37:44.094141"}
+{"id": "func_get_current_time", "type": "code_function", "name": "get_current_time", "desc": "Returns the current time in the specified timezone (default: UTC).\nFormat: ISO 8601 (YYYY-MM-DDTHH:M", "valid_at": "2026-05-21T20:37:44.104810"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-05-21T20:37:44.114568"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-05-21T20:37:44.124061"}
+{"id": "func__resource_get_entropy_stats", "type": "code_function", "name": "_resource_get_entropy_stats", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.133298"}
+{"id": "func__tool_get_entropy_report", "type": "code_function", "name": "_tool_get_entropy_report", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.142541"}
+{"id": "func__tool_get_current_time", "type": "code_function", "name": "_tool_get_current_time", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.151902"}
+{"id": "func__tool_add_entity", "type": "code_function", "name": "_tool_add_entity", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.160670"}
+{"id": "func__tool_connect_entities", "type": "code_function", "name": "_tool_connect_entities", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.170278"}
+{"id": "func__init_trust_ledger", "type": "code_function", "name": "_init_trust_ledger", "desc": "[Phase V] Initialize the Cold-Blooded Trust Ledger", "valid_at": "2026-05-21T20:37:44.205150"}
+{"id": "func__verify_agent_trust", "type": "code_function", "name": "_verify_agent_trust", "desc": "[Phase V] Cold-Blooded Ledger Verification", "valid_at": "2026-05-21T20:37:44.214880"}
+{"id": "func__slash_trust", "type": "code_function", "name": "_slash_trust", "desc": "[Phase V] Punish Hallucinations", "valid_at": "2026-05-21T20:37:44.224072"}
+{"id": "func_handle_request", "type": "code_function", "name": "handle_request", "desc": "Handles JSON-RPC 2.0 requests.", "valid_at": "2026-05-21T20:37:44.233020"}
+{"id": "func_run", "type": "code_function", "name": "run", "desc": "Main loop reading from Stdin.", "valid_at": "2026-05-21T20:37:44.241864"}
+{"id": "func_main", "type": "code_function", "name": "main", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.259769"}
+{"id": "func__load_config", "type": "code_function", "name": "_load_config", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.296953"}
+{"id": "func_ingest_repository", "type": "code_function", "name": "ingest_repository", "desc": "[Omniscience Protocol] Deep scan of the codebase.", "valid_at": "2026-05-21T20:37:44.305959"}
+{"id": "func__digest_file", "type": "code_function", "name": "_digest_file", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.314778"}
+{"id": "func__strip_version", "type": "code_function", "name": "_strip_version", "desc": "Phase V: Strip version numbers to ensure pure entity IDs.", "valid_at": "2026-05-21T20:37:44.323115"}
+{"id": "func__analyze_config_structure", "type": "code_function", "name": "_analyze_config_structure", "desc": "Phase IV: Universal Digestion. Extracts deterministic properties from JSON/YAML configurations.", "valid_at": "2026-05-21T20:37:44.331781"}
+{"id": "func__analyze_polyglot_structure", "type": "code_function", "name": "_analyze_polyglot_structure", "desc": "Phase V: Brutalist C++/TS/JS parser via Regex State Machine.", "valid_at": "2026-05-21T20:37:44.340588"}
+{"id": "func__analyze_javascript_regex_ast", "type": "code_function", "name": "_analyze_javascript_regex_ast", "desc": "Phase V: Deterministic Polyglot Regex State Machine for JS/TS/C++.", "valid_at": "2026-05-21T20:37:44.349216"}
+{"id": "func__analyze_python_ast", "type": "code_function", "name": "_analyze_python_ast", "desc": "Use Python's native AST to understand code structure.", "valid_at": "2026-05-21T20:37:44.358110"}
+{"id": "func__analyze_markdown_structure", "type": "code_function", "name": "_analyze_markdown_structure", "desc": "Extract headers as knowledge nodes.", "valid_at": "2026-05-21T20:37:44.366870"}
+{"id": "func_learn", "type": "code_function", "name": "learn", "desc": "Legacy single file learning (kept for compatibility)", "valid_at": "2026-05-21T20:37:44.376560"}
+{"id": "func__extract_props", "type": "code_function", "name": "_extract_props", "desc": "Python Function", "valid_at": "2026-05-21T20:37:44.386353"}
+{"id": "func___init__", "type": "code_function", "name": "__init__", "desc": "Python Function", "valid_at": "2026-05-21T21:02:10.784922"}
+{"id": "func_run_daily_cycle", "type": "code_function", "name": "run_daily_cycle", "desc": "Python Function", "valid_at": "2026-05-21T21:02:10.793421"}
+{"id": "func__trigger_render", "type": "code_function", "name": "_trigger_render", "desc": "Python Function", "valid_at": "2026-05-21T21:02:10.801469"}
+{"id": "func__genetic_auto_recombination", "type": "code_function", "name": "_genetic_auto_recombination", "desc": "Phase VI: Preparatory State AST Mutator", "valid_at": "2026-05-21T21:02:10.809719"}
+{"id": "func__run_sandbox_tests", "type": "code_function", "name": "_run_sandbox_tests", "desc": "AST Loop Preparation: Verifies local MCP and systems logic via subprocess.", "valid_at": "2026-05-21T21:02:10.817575"}
+{"id": "func__incubate_ideas", "type": "code_function", "name": "_incubate_ideas", "desc": "Python Function", "valid_at": "2026-05-21T21:02:10.826312"}
+{"id": "func__scan_inputs", "type": "code_function", "name": "_scan_inputs", "desc": "Python Function", "valid_at": "2026-05-21T21:02:10.836074"}
+{"id": "func__archive_inputs", "type": "code_function", "name": "_archive_inputs", "desc": "Python Function", "valid_at": "2026-05-21T21:02:10.844967"}
+{"id": "func_visit_FunctionDef", "type": "code_function", "name": "visit_FunctionDef", "desc": "Python Function", "valid_at": "2026-05-21T21:02:10.862097"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-05-21T21:02:10.896187"}
+{"id": "func_touch_entity", "type": "code_function", "name": "touch_entity", "desc": "Legacy touch. Now routes to activate_memory.", "valid_at": "2026-05-21T21:02:10.904387"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-05-21T21:02:10.913518"}
+{"id": "func_add_relation", "type": "code_function", "name": "add_relation", "desc": "Adds a new relation to the knowledge graph.", "valid_at": "2026-05-21T21:02:10.922643"}
+{"id": "func__append_line", "type": "code_function", "name": "_append_line", "desc": "Python Function", "valid_at": "2026-05-21T21:02:10.933077"}
+{"id": "func_ponder", "type": "code_function", "name": "ponder", "desc": "Cognitive Loop: Structural Analysis, Self-Reflection & Curiosity", "valid_at": "2026-05-21T21:02:10.970351"}
+{"id": "func__calculate_pagerank", "type": "code_function", "name": "_calculate_pagerank", "desc": "Phase V: Pure mathematical centrality deduction without external libraries.", "valid_at": "2026-05-21T21:02:10.979156"}
+{"id": "func__generate_pagerank_bounty", "type": "code_function", "name": "_generate_pagerank_bounty", "desc": "Calculate PageRank on the active graph to find the true central hub.", "valid_at": "2026-05-21T21:02:10.989133"}
+{"id": "func__render_daily_archives", "type": "code_function", "name": "_render_daily_archives", "desc": "Phase VI: Hardcore Quantitative Dashboard Rendering (Zero-Dependency).", "valid_at": "2026-05-21T21:02:10.997657"}
+{"id": "func__generate_structural_intuitions", "type": "code_function", "name": "_generate_structural_intuitions", "desc": "Find nodes that share exact targets (Structural Overlap / Epistemic Depth)", "valid_at": "2026-05-21T21:02:11.005279"}
+{"id": "func__generate_curiosity", "type": "code_function", "name": "_generate_curiosity", "desc": "Find nodes with exactly 1 edge (Superficial Knowledge)", "valid_at": "2026-05-21T21:02:11.015452"}
+{"id": "func__query", "type": "code_function", "name": "_query", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.023404"}
+{"id": "func_test_mcp_server", "type": "code_function", "name": "test_mcp_server", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.317472"}
+{"id": "func__load_state", "type": "code_function", "name": "_load_state", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.349660"}
+{"id": "func__save_state", "type": "code_function", "name": "_save_state", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.357414"}
+{"id": "func__analyze_content", "type": "code_function", "name": "_analyze_content", "desc": "Architect's Filters: Semantic Tagging", "valid_at": "2026-05-21T21:02:11.366191"}
+{"id": "func__fetch_repo_data", "type": "code_function", "name": "_fetch_repo_data", "desc": "Thread worker to fetch data for a single repository.", "valid_at": "2026-05-21T21:02:11.375516"}
+{"id": "func__read_mission_active_intents", "type": "code_function", "name": "_read_mission_active_intents", "desc": "Phase V/VI: Self-Driven Intent Probes via SQLite DB Graph Reversal.", "valid_at": "2026-05-21T21:02:11.385810"}
+{"id": "func_fetch_github_data", "type": "code_function", "name": "fetch_github_data", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.393572"}
+{"id": "func__init_db", "type": "code_function", "name": "_init_db", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.434116"}
+{"id": "func__log_to_jsonl", "type": "code_function", "name": "_log_to_jsonl", "desc": "Append knowledge to the immutable text ledger.", "valid_at": "2026-05-21T21:02:11.443691"}
+{"id": "func_search", "type": "code_function", "name": "search", "desc": "Synaptic Search: Combines Full-Text + 1-Hop Graph Association", "valid_at": "2026-05-21T21:02:11.452622"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.462072"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.471544"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.480777"}
+{"id": "func_decay_memories", "type": "code_function", "name": "decay_memories", "desc": "Biological Decay with Sovereignty Protection", "valid_at": "2026-05-21T21:02:11.490044"}
+{"id": "func_get_orphans", "type": "code_function", "name": "get_orphans", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.499296"}
+{"id": "func_suture_orphans", "type": "code_function", "name": "suture_orphans", "desc": "Phase V: Deterministic Orphan Suturing. Ghost nodes are connected internally.", "valid_at": "2026-05-21T21:02:11.508588"}
+{"id": "func_get_stats", "type": "code_function", "name": "get_stats", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.518427"}
+{"id": "func_get_dashboard_metrics", "type": "code_function", "name": "get_dashboard_metrics", "desc": "Phase VI: Quantitative Dashboard Metrics extraction.", "valid_at": "2026-05-21T21:02:11.528305"}
+{"id": "func_validate_id", "type": "code_function", "name": "validate_id", "desc": "Enforces strict ID format to prevent path traversal.\n强制执行严格的 ID 格式以防止路径遍历。", "valid_at": "2026-05-21T21:02:11.547050"}
+{"id": "func_validate_category", "type": "code_function", "name": "validate_category", "desc": "Enforces category whitelist to prevent arbitrary file writes.\n强制执行类别白名单以防止任意文件写入。", "valid_at": "2026-05-21T21:02:11.557438"}
+{"id": "func_get_entropy_stats", "type": "code_function", "name": "get_entropy_stats", "desc": "Returns the current entropy report of the knowledge graph.\n返回知识图谱的当前熵值报告。", "valid_at": "2026-05-21T21:02:11.567172"}
+{"id": "func_get_entropy_report", "type": "code_function", "name": "get_entropy_report", "desc": "Triggers an immediate analysis of the knowledge graph.\n触发对知识图谱的即时分析。", "valid_at": "2026-05-21T21:02:11.577153"}
+{"id": "func_get_current_time", "type": "code_function", "name": "get_current_time", "desc": "Returns the current time in the specified timezone (default: UTC).\nFormat: ISO 8601 (YYYY-MM-DDTHH:M", "valid_at": "2026-05-21T21:02:11.588774"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-05-21T21:02:11.598890"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-05-21T21:02:11.609777"}
+{"id": "func__resource_get_entropy_stats", "type": "code_function", "name": "_resource_get_entropy_stats", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.620543"}
+{"id": "func__tool_get_entropy_report", "type": "code_function", "name": "_tool_get_entropy_report", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.629287"}
+{"id": "func__tool_get_current_time", "type": "code_function", "name": "_tool_get_current_time", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.638134"}
+{"id": "func__tool_add_entity", "type": "code_function", "name": "_tool_add_entity", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.646841"}
+{"id": "func__tool_connect_entities", "type": "code_function", "name": "_tool_connect_entities", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.655408"}
+{"id": "func__init_trust_ledger", "type": "code_function", "name": "_init_trust_ledger", "desc": "[Phase V] Initialize the Cold-Blooded Trust Ledger", "valid_at": "2026-05-21T21:02:11.689073"}
+{"id": "func__verify_agent_trust", "type": "code_function", "name": "_verify_agent_trust", "desc": "[Phase V] Cold-Blooded Ledger Verification", "valid_at": "2026-05-21T21:02:11.697306"}
+{"id": "func__slash_trust", "type": "code_function", "name": "_slash_trust", "desc": "[Phase V] Punish Hallucinations", "valid_at": "2026-05-21T21:02:11.706026"}
+{"id": "func_handle_request", "type": "code_function", "name": "handle_request", "desc": "Handles JSON-RPC 2.0 requests.", "valid_at": "2026-05-21T21:02:11.713533"}
+{"id": "func_run", "type": "code_function", "name": "run", "desc": "Main loop reading from Stdin.", "valid_at": "2026-05-21T21:02:11.721833"}
+{"id": "func_main", "type": "code_function", "name": "main", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.739711"}
+{"id": "func__load_config", "type": "code_function", "name": "_load_config", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.773615"}
+{"id": "func_ingest_repository", "type": "code_function", "name": "ingest_repository", "desc": "[Omniscience Protocol] Deep scan of the codebase.", "valid_at": "2026-05-21T21:02:11.782739"}
+{"id": "func__digest_file", "type": "code_function", "name": "_digest_file", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.791698"}
+{"id": "func__strip_version", "type": "code_function", "name": "_strip_version", "desc": "Phase V: Strip version numbers to ensure pure entity IDs.", "valid_at": "2026-05-21T21:02:11.800212"}
+{"id": "func__analyze_config_structure", "type": "code_function", "name": "_analyze_config_structure", "desc": "Phase IV: Universal Digestion. Extracts deterministic properties from JSON/YAML configurations.", "valid_at": "2026-05-21T21:02:11.811444"}
+{"id": "func__analyze_polyglot_structure", "type": "code_function", "name": "_analyze_polyglot_structure", "desc": "Phase V: Brutalist C++/TS/JS parser via Regex State Machine.", "valid_at": "2026-05-21T21:02:11.820275"}
+{"id": "func__analyze_javascript_regex_ast", "type": "code_function", "name": "_analyze_javascript_regex_ast", "desc": "Phase V: Deterministic Polyglot Regex State Machine for JS/TS/C++.", "valid_at": "2026-05-21T21:02:11.829303"}
+{"id": "func__analyze_python_ast", "type": "code_function", "name": "_analyze_python_ast", "desc": "Use Python's native AST to understand code structure.", "valid_at": "2026-05-21T21:02:11.838486"}
+{"id": "func__analyze_markdown_structure", "type": "code_function", "name": "_analyze_markdown_structure", "desc": "Extract headers as knowledge nodes.", "valid_at": "2026-05-21T21:02:11.847357"}
+{"id": "func_learn", "type": "code_function", "name": "learn", "desc": "Legacy single file learning (kept for compatibility)", "valid_at": "2026-05-21T21:02:11.858217"}
+{"id": "func__extract_props", "type": "code_function", "name": "_extract_props", "desc": "Python Function", "valid_at": "2026-05-21T21:02:11.869490"}
+{"id": "func___init__", "type": "code_function", "name": "__init__", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.166673"}
+{"id": "func_run_daily_cycle", "type": "code_function", "name": "run_daily_cycle", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.174742"}
+{"id": "func__trigger_render", "type": "code_function", "name": "_trigger_render", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.182622"}
+{"id": "func__genetic_auto_recombination", "type": "code_function", "name": "_genetic_auto_recombination", "desc": "Phase VI: Preparatory State AST Mutator", "valid_at": "2026-05-21T21:05:02.191952"}
+{"id": "func__run_sandbox_tests", "type": "code_function", "name": "_run_sandbox_tests", "desc": "AST Loop Preparation: Verifies local MCP and systems logic via subprocess.", "valid_at": "2026-05-21T21:05:02.199504"}
+{"id": "func__incubate_ideas", "type": "code_function", "name": "_incubate_ideas", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.206367"}
+{"id": "func__scan_inputs", "type": "code_function", "name": "_scan_inputs", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.213906"}
+{"id": "func__archive_inputs", "type": "code_function", "name": "_archive_inputs", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.221674"}
+{"id": "func_visit_FunctionDef", "type": "code_function", "name": "visit_FunctionDef", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.237824"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-05-21T21:05:02.268083"}
+{"id": "func_touch_entity", "type": "code_function", "name": "touch_entity", "desc": "Legacy touch. Now routes to activate_memory.", "valid_at": "2026-05-21T21:05:02.276747"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-05-21T21:05:02.285245"}
+{"id": "func_add_relation", "type": "code_function", "name": "add_relation", "desc": "Adds a new relation to the knowledge graph.", "valid_at": "2026-05-21T21:05:02.294082"}
+{"id": "func__append_line", "type": "code_function", "name": "_append_line", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.302522"}
+{"id": "func_ponder", "type": "code_function", "name": "ponder", "desc": "Cognitive Loop: Structural Analysis, Self-Reflection & Curiosity", "valid_at": "2026-05-21T21:05:02.334717"}
+{"id": "func__calculate_pagerank", "type": "code_function", "name": "_calculate_pagerank", "desc": "Phase V: Pure mathematical centrality deduction without external libraries.", "valid_at": "2026-05-21T21:05:02.343471"}
+{"id": "func__generate_pagerank_bounty", "type": "code_function", "name": "_generate_pagerank_bounty", "desc": "Calculate PageRank on the active graph to find the true central hub.", "valid_at": "2026-05-21T21:05:02.352658"}
+{"id": "func__render_daily_archives", "type": "code_function", "name": "_render_daily_archives", "desc": "Phase VI: Hardcore Quantitative Dashboard Rendering (Zero-Dependency).", "valid_at": "2026-05-21T21:05:02.360618"}
+{"id": "func__generate_structural_intuitions", "type": "code_function", "name": "_generate_structural_intuitions", "desc": "Find nodes that share exact targets (Structural Overlap / Epistemic Depth)", "valid_at": "2026-05-21T21:05:02.368545"}
+{"id": "func__generate_curiosity", "type": "code_function", "name": "_generate_curiosity", "desc": "Find nodes with exactly 1 edge (Superficial Knowledge)", "valid_at": "2026-05-21T21:05:02.377227"}
+{"id": "func__query", "type": "code_function", "name": "_query", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.385489"}
+{"id": "func_test_mcp_server", "type": "code_function", "name": "test_mcp_server", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.692494"}
+{"id": "func__load_state", "type": "code_function", "name": "_load_state", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.725978"}
+{"id": "func__save_state", "type": "code_function", "name": "_save_state", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.734567"}
+{"id": "func__analyze_content", "type": "code_function", "name": "_analyze_content", "desc": "Architect's Filters: Semantic Tagging", "valid_at": "2026-05-21T21:05:02.743023"}
+{"id": "func__fetch_repo_data", "type": "code_function", "name": "_fetch_repo_data", "desc": "Thread worker to fetch data for a single repository.", "valid_at": "2026-05-21T21:05:02.751828"}
+{"id": "func__read_mission_active_intents", "type": "code_function", "name": "_read_mission_active_intents", "desc": "Phase V/VI: Self-Driven Intent Probes via SQLite DB Graph Reversal.", "valid_at": "2026-05-21T21:05:02.760354"}
+{"id": "func_fetch_github_data", "type": "code_function", "name": "fetch_github_data", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.769146"}
+{"id": "func__init_db", "type": "code_function", "name": "_init_db", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.805673"}
+{"id": "func__log_to_jsonl", "type": "code_function", "name": "_log_to_jsonl", "desc": "Append knowledge to the immutable text ledger.", "valid_at": "2026-05-21T21:05:02.814702"}
+{"id": "func_search", "type": "code_function", "name": "search", "desc": "Synaptic Search: Combines Full-Text + 1-Hop Graph Association", "valid_at": "2026-05-21T21:05:02.823136"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.831795"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.840015"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.848805"}
+{"id": "func_decay_memories", "type": "code_function", "name": "decay_memories", "desc": "Biological Decay with Sovereignty Protection", "valid_at": "2026-05-21T21:05:02.857619"}
+{"id": "func_get_orphans", "type": "code_function", "name": "get_orphans", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.867145"}
+{"id": "func_suture_orphans", "type": "code_function", "name": "suture_orphans", "desc": "Phase V: Deterministic Orphan Suturing. Ghost nodes are connected internally.", "valid_at": "2026-05-21T21:05:02.875293"}
+{"id": "func_get_stats", "type": "code_function", "name": "get_stats", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.884084"}
+{"id": "func_get_dashboard_metrics", "type": "code_function", "name": "get_dashboard_metrics", "desc": "Phase VI: Quantitative Dashboard Metrics extraction.", "valid_at": "2026-05-21T21:05:02.894326"}
+{"id": "func_validate_id", "type": "code_function", "name": "validate_id", "desc": "Enforces strict ID format to prevent path traversal.\n强制执行严格的 ID 格式以防止路径遍历。", "valid_at": "2026-05-21T21:05:02.911864"}
+{"id": "func_validate_category", "type": "code_function", "name": "validate_category", "desc": "Enforces category whitelist to prevent arbitrary file writes.\n强制执行类别白名单以防止任意文件写入。", "valid_at": "2026-05-21T21:05:02.921058"}
+{"id": "func_get_entropy_stats", "type": "code_function", "name": "get_entropy_stats", "desc": "Returns the current entropy report of the knowledge graph.\n返回知识图谱的当前熵值报告。", "valid_at": "2026-05-21T21:05:02.929876"}
+{"id": "func_get_entropy_report", "type": "code_function", "name": "get_entropy_report", "desc": "Triggers an immediate analysis of the knowledge graph.\n触发对知识图谱的即时分析。", "valid_at": "2026-05-21T21:05:02.938985"}
+{"id": "func_get_current_time", "type": "code_function", "name": "get_current_time", "desc": "Returns the current time in the specified timezone (default: UTC).\nFormat: ISO 8601 (YYYY-MM-DDTHH:M", "valid_at": "2026-05-21T21:05:02.948876"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-05-21T21:05:02.958168"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-05-21T21:05:02.967276"}
+{"id": "func__resource_get_entropy_stats", "type": "code_function", "name": "_resource_get_entropy_stats", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.976530"}
+{"id": "func__tool_get_entropy_report", "type": "code_function", "name": "_tool_get_entropy_report", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.985077"}
+{"id": "func__tool_get_current_time", "type": "code_function", "name": "_tool_get_current_time", "desc": "Python Function", "valid_at": "2026-05-21T21:05:02.993923"}
+{"id": "func__tool_add_entity", "type": "code_function", "name": "_tool_add_entity", "desc": "Python Function", "valid_at": "2026-05-21T21:05:03.003880"}
+{"id": "func__tool_connect_entities", "type": "code_function", "name": "_tool_connect_entities", "desc": "Python Function", "valid_at": "2026-05-21T21:05:03.012396"}
+{"id": "func__init_trust_ledger", "type": "code_function", "name": "_init_trust_ledger", "desc": "[Phase V] Initialize the Cold-Blooded Trust Ledger", "valid_at": "2026-05-21T21:05:03.048587"}
+{"id": "func__verify_agent_trust", "type": "code_function", "name": "_verify_agent_trust", "desc": "[Phase V] Cold-Blooded Ledger Verification", "valid_at": "2026-05-21T21:05:03.057683"}
+{"id": "func__slash_trust", "type": "code_function", "name": "_slash_trust", "desc": "[Phase V] Punish Hallucinations", "valid_at": "2026-05-21T21:05:03.067308"}
+{"id": "func_handle_request", "type": "code_function", "name": "handle_request", "desc": "Handles JSON-RPC 2.0 requests.", "valid_at": "2026-05-21T21:05:03.078203"}
+{"id": "func_run", "type": "code_function", "name": "run", "desc": "Main loop reading from Stdin.", "valid_at": "2026-05-21T21:05:03.087718"}
+{"id": "func_main", "type": "code_function", "name": "main", "desc": "Python Function", "valid_at": "2026-05-21T21:05:03.107443"}
+{"id": "func__load_config", "type": "code_function", "name": "_load_config", "desc": "Python Function", "valid_at": "2026-05-21T21:05:03.146523"}
+{"id": "func_ingest_repository", "type": "code_function", "name": "ingest_repository", "desc": "[Omniscience Protocol] Deep scan of the codebase.", "valid_at": "2026-05-21T21:05:03.155897"}
+{"id": "func__digest_file", "type": "code_function", "name": "_digest_file", "desc": "Python Function", "valid_at": "2026-05-21T21:05:03.166119"}
+{"id": "func__strip_version", "type": "code_function", "name": "_strip_version", "desc": "Phase V: Strip version numbers to ensure pure entity IDs.", "valid_at": "2026-05-21T21:05:03.176673"}
+{"id": "func__analyze_config_structure", "type": "code_function", "name": "_analyze_config_structure", "desc": "Phase IV: Universal Digestion. Extracts deterministic properties from JSON/YAML configurations.", "valid_at": "2026-05-21T21:05:03.186838"}
+{"id": "func__analyze_polyglot_structure", "type": "code_function", "name": "_analyze_polyglot_structure", "desc": "Phase V: Brutalist C++/TS/JS parser via Regex State Machine.", "valid_at": "2026-05-21T21:05:03.196759"}
+{"id": "func__analyze_javascript_regex_ast", "type": "code_function", "name": "_analyze_javascript_regex_ast", "desc": "Phase V: Deterministic Polyglot Regex State Machine for JS/TS/C++.", "valid_at": "2026-05-21T21:05:03.207709"}
+{"id": "func__analyze_python_ast", "type": "code_function", "name": "_analyze_python_ast", "desc": "Use Python's native AST to understand code structure.", "valid_at": "2026-05-21T21:05:03.217828"}
+{"id": "func__analyze_markdown_structure", "type": "code_function", "name": "_analyze_markdown_structure", "desc": "Extract headers as knowledge nodes.", "valid_at": "2026-05-21T21:05:03.228785"}
+{"id": "func_learn", "type": "code_function", "name": "learn", "desc": "Legacy single file learning (kept for compatibility)", "valid_at": "2026-05-21T21:05:03.239825"}
+{"id": "func__extract_props", "type": "code_function", "name": "_extract_props", "desc": "Python Function", "valid_at": "2026-05-21T21:05:03.251452"}
+{"id": "func___init__", "type": "code_function", "name": "__init__", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.040911"}
+{"id": "func_run_daily_cycle", "type": "code_function", "name": "run_daily_cycle", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.049817"}
+{"id": "func__trigger_render", "type": "code_function", "name": "_trigger_render", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.059926"}
+{"id": "func__genetic_auto_recombination", "type": "code_function", "name": "_genetic_auto_recombination", "desc": "Phase VI: Preparatory State AST Mutator", "valid_at": "2026-05-21T21:07:16.069211"}
+{"id": "func__run_sandbox_tests", "type": "code_function", "name": "_run_sandbox_tests", "desc": "AST Loop Preparation: Verifies local MCP and systems logic via subprocess.", "valid_at": "2026-05-21T21:07:16.078719"}
+{"id": "func__incubate_ideas", "type": "code_function", "name": "_incubate_ideas", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.087050"}
+{"id": "func__scan_inputs", "type": "code_function", "name": "_scan_inputs", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.096832"}
+{"id": "func__archive_inputs", "type": "code_function", "name": "_archive_inputs", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.105172"}
+{"id": "func_visit_FunctionDef", "type": "code_function", "name": "visit_FunctionDef", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.123924"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-05-21T21:07:16.155963"}
+{"id": "func_touch_entity", "type": "code_function", "name": "touch_entity", "desc": "Legacy touch. Now routes to activate_memory.", "valid_at": "2026-05-21T21:07:16.165827"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-05-21T21:07:16.174710"}
+{"id": "func_add_relation", "type": "code_function", "name": "add_relation", "desc": "Adds a new relation to the knowledge graph.", "valid_at": "2026-05-21T21:07:16.182842"}
+{"id": "func__append_line", "type": "code_function", "name": "_append_line", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.191729"}
+{"id": "func_ponder", "type": "code_function", "name": "ponder", "desc": "Cognitive Loop: Structural Analysis, Self-Reflection & Curiosity", "valid_at": "2026-05-21T21:07:16.221379"}
+{"id": "func__calculate_pagerank", "type": "code_function", "name": "_calculate_pagerank", "desc": "Phase V: Pure mathematical centrality deduction without external libraries.", "valid_at": "2026-05-21T21:07:16.229329"}
+{"id": "func__generate_pagerank_bounty", "type": "code_function", "name": "_generate_pagerank_bounty", "desc": "Calculate PageRank on the active graph to find the true central hub.", "valid_at": "2026-05-21T21:07:16.237454"}
+{"id": "func__render_daily_archives", "type": "code_function", "name": "_render_daily_archives", "desc": "Phase VI: Hardcore Quantitative Dashboard Rendering (Zero-Dependency).", "valid_at": "2026-05-21T21:07:16.245969"}
+{"id": "func__generate_structural_intuitions", "type": "code_function", "name": "_generate_structural_intuitions", "desc": "Find nodes that share exact targets (Structural Overlap / Epistemic Depth)", "valid_at": "2026-05-21T21:07:16.258803"}
+{"id": "func__generate_curiosity", "type": "code_function", "name": "_generate_curiosity", "desc": "Find nodes with exactly 1 edge (Superficial Knowledge)", "valid_at": "2026-05-21T21:07:16.268038"}
+{"id": "func__query", "type": "code_function", "name": "_query", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.275897"}
+{"id": "func_test_mcp_server", "type": "code_function", "name": "test_mcp_server", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.539471"}
+{"id": "func__load_state", "type": "code_function", "name": "_load_state", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.568839"}
+{"id": "func__save_state", "type": "code_function", "name": "_save_state", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.576037"}
+{"id": "func__analyze_content", "type": "code_function", "name": "_analyze_content", "desc": "Architect's Filters: Semantic Tagging", "valid_at": "2026-05-21T21:07:16.583171"}
+{"id": "func__fetch_repo_data", "type": "code_function", "name": "_fetch_repo_data", "desc": "Thread worker to fetch data for a single repository.", "valid_at": "2026-05-21T21:07:16.591036"}
+{"id": "func__read_mission_active_intents", "type": "code_function", "name": "_read_mission_active_intents", "desc": "Phase V/VI: Self-Driven Intent Probes via SQLite DB Graph Reversal.", "valid_at": "2026-05-21T21:07:16.598808"}
+{"id": "func_fetch_github_data", "type": "code_function", "name": "fetch_github_data", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.606100"}
+{"id": "func__init_db", "type": "code_function", "name": "_init_db", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.637328"}
+{"id": "func__log_to_jsonl", "type": "code_function", "name": "_log_to_jsonl", "desc": "Append knowledge to the immutable text ledger.", "valid_at": "2026-05-21T21:07:16.644588"}
+{"id": "func_search", "type": "code_function", "name": "search", "desc": "Synaptic Search: Combines Full-Text + 1-Hop Graph Association", "valid_at": "2026-05-21T21:07:16.651872"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.658786"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.666169"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.673176"}
+{"id": "func_decay_memories", "type": "code_function", "name": "decay_memories", "desc": "Biological Decay with Sovereignty Protection", "valid_at": "2026-05-21T21:07:16.680597"}
+{"id": "func_get_orphans", "type": "code_function", "name": "get_orphans", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.687445"}
+{"id": "func_suture_orphans", "type": "code_function", "name": "suture_orphans", "desc": "Phase V: Deterministic Orphan Suturing. Ghost nodes are connected internally.", "valid_at": "2026-05-21T21:07:16.695323"}
+{"id": "func_get_stats", "type": "code_function", "name": "get_stats", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.702494"}
+{"id": "func_get_dashboard_metrics", "type": "code_function", "name": "get_dashboard_metrics", "desc": "Phase VI: Quantitative Dashboard Metrics extraction.", "valid_at": "2026-05-21T21:07:16.710728"}
+{"id": "func_validate_id", "type": "code_function", "name": "validate_id", "desc": "Enforces strict ID format to prevent path traversal.\n强制执行严格的 ID 格式以防止路径遍历。", "valid_at": "2026-05-21T21:07:16.725041"}
+{"id": "func_validate_category", "type": "code_function", "name": "validate_category", "desc": "Enforces category whitelist to prevent arbitrary file writes.\n强制执行类别白名单以防止任意文件写入。", "valid_at": "2026-05-21T21:07:16.732174"}
+{"id": "func_get_entropy_stats", "type": "code_function", "name": "get_entropy_stats", "desc": "Returns the current entropy report of the knowledge graph.\n返回知识图谱的当前熵值报告。", "valid_at": "2026-05-21T21:07:16.739186"}
+{"id": "func_get_entropy_report", "type": "code_function", "name": "get_entropy_report", "desc": "Triggers an immediate analysis of the knowledge graph.\n触发对知识图谱的即时分析。", "valid_at": "2026-05-21T21:07:16.746189"}
+{"id": "func_get_current_time", "type": "code_function", "name": "get_current_time", "desc": "Returns the current time in the specified timezone (default: UTC).\nFormat: ISO 8601 (YYYY-MM-DDTHH:M", "valid_at": "2026-05-21T21:07:16.754458"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Safely adds a new entity to the knowledge graph.\nStrictly Append-Only: Fails if ID already exists.\n安", "valid_at": "2026-05-21T21:07:16.761852"}
+{"id": "func_connect_entities", "type": "code_function", "name": "connect_entities", "desc": "Connects two existing entities.\nFails if either entity does not exist.\n连接两个现有实体。如果任一实体不存在则失败。", "valid_at": "2026-05-21T21:07:16.768931"}
+{"id": "func__resource_get_entropy_stats", "type": "code_function", "name": "_resource_get_entropy_stats", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.776273"}
+{"id": "func__tool_get_entropy_report", "type": "code_function", "name": "_tool_get_entropy_report", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.783893"}
+{"id": "func__tool_get_current_time", "type": "code_function", "name": "_tool_get_current_time", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.791439"}
+{"id": "func__tool_add_entity", "type": "code_function", "name": "_tool_add_entity", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.798481"}
+{"id": "func__tool_connect_entities", "type": "code_function", "name": "_tool_connect_entities", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.805511"}
+{"id": "func__init_trust_ledger", "type": "code_function", "name": "_init_trust_ledger", "desc": "[Phase V] Initialize the Cold-Blooded Trust Ledger", "valid_at": "2026-05-21T21:07:16.835892"}
+{"id": "func__verify_agent_trust", "type": "code_function", "name": "_verify_agent_trust", "desc": "[Phase V] Cold-Blooded Ledger Verification", "valid_at": "2026-05-21T21:07:16.843184"}
+{"id": "func__slash_trust", "type": "code_function", "name": "_slash_trust", "desc": "[Phase V] Punish Hallucinations", "valid_at": "2026-05-21T21:07:16.852137"}
+{"id": "func_handle_request", "type": "code_function", "name": "handle_request", "desc": "Handles JSON-RPC 2.0 requests.", "valid_at": "2026-05-21T21:07:16.861154"}
+{"id": "func_run", "type": "code_function", "name": "run", "desc": "Main loop reading from Stdin.", "valid_at": "2026-05-21T21:07:16.870025"}
+{"id": "func_main", "type": "code_function", "name": "main", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.887334"}
+{"id": "func__load_config", "type": "code_function", "name": "_load_config", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.923279"}
+{"id": "func_ingest_repository", "type": "code_function", "name": "ingest_repository", "desc": "[Omniscience Protocol] Deep scan of the codebase.", "valid_at": "2026-05-21T21:07:16.932584"}
+{"id": "func__digest_file", "type": "code_function", "name": "_digest_file", "desc": "Python Function", "valid_at": "2026-05-21T21:07:16.941758"}
+{"id": "func__strip_version", "type": "code_function", "name": "_strip_version", "desc": "Phase V: Strip version numbers to ensure pure entity IDs.", "valid_at": "2026-05-21T21:07:16.951059"}
+{"id": "func__analyze_config_structure", "type": "code_function", "name": "_analyze_config_structure", "desc": "Phase IV: Universal Digestion. Extracts deterministic properties from JSON/YAML configurations.", "valid_at": "2026-05-21T21:07:16.959562"}
+{"id": "func__analyze_polyglot_structure", "type": "code_function", "name": "_analyze_polyglot_structure", "desc": "Phase V: Brutalist C++/TS/JS parser via Regex State Machine.", "valid_at": "2026-05-21T21:07:16.967893"}
+{"id": "func__analyze_javascript_regex_ast", "type": "code_function", "name": "_analyze_javascript_regex_ast", "desc": "Phase V: Deterministic Polyglot Regex State Machine for JS/TS/C++.", "valid_at": "2026-05-21T21:07:16.975831"}
+{"id": "func__analyze_python_ast", "type": "code_function", "name": "_analyze_python_ast", "desc": "Use Python's native AST to understand code structure.", "valid_at": "2026-05-21T21:07:16.983802"}
+{"id": "func__analyze_markdown_structure", "type": "code_function", "name": "_analyze_markdown_structure", "desc": "Extract headers as knowledge nodes.", "valid_at": "2026-05-21T21:07:16.991892"}
+{"id": "func_learn", "type": "code_function", "name": "learn", "desc": "Legacy single file learning (kept for compatibility)", "valid_at": "2026-05-21T21:07:17.000909"}
+{"id": "func__extract_props", "type": "code_function", "name": "_extract_props", "desc": "Python Function", "valid_at": "2026-05-21T21:07:17.009385"}
