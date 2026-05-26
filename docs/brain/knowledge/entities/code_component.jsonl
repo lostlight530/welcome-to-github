@@ -210,3 +210,5 @@
 {"id": "polyglot_interface_using", "type": "code_component", "name": "using", "desc": "Component in translations.js", "valid_at": "2026-05-25T12:13:40.117218"}
 {"id": "polyglot_const_translations", "type": "code_component", "name": "translations", "desc": "Component in translations.js", "valid_at": "2026-05-25T23:00:31.612793"}
 {"id": "polyglot_interface_using", "type": "code_component", "name": "using", "desc": "Component in translations.js", "valid_at": "2026-05-25T23:00:31.616185"}
+{"id": "polyglot_const_translations", "type": "code_component", "name": "translations", "desc": "Component in translations.js", "valid_at": "2026-05-26T05:59:33.729681"}
+{"id": "polyglot_interface_using", "type": "code_component", "name": "using", "desc": "Component in translations.js", "valid_at": "2026-05-26T05:59:33.732786"}
