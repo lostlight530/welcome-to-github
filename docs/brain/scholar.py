@@ -27,16 +27,14 @@ class Scholar:
 
         # Ignored patterns (Noise Filter)
         self.ignore_dirs = {
-            '.git', '__pycache__', 'node_modules', 'cortex.db',
-            'archive', 'venv', '.idea', '.vscode', 'site-packages',
-            'docs/brain/knowledge', 'docs/brain/inputs', 'docs/brain/memories', '.raw_cache'
+            '.git', '__pycache__', 'node_modules', 'dist', 'build', '.github',
+            'docs/brain/knowledge', 'docs/brain/inputs', 'docs/brain/memories', '.raw_cache',
+            'docs/archaeology', 'docs/brain/inputs/archive'
         }
         self.ignore_files = {
             '.DS_Store', 'cortex.db', 'cortex.db-journal', '.gitignore',
-            'package-lock.json', 'yarn.lock', 'requirements.txt',
-            'LICENSE', 'tailwind.config.js', 'postcss.config.js',
-            'index.html', '.editorconfig', 'main.js', 'main.css',
-            '__init__.py', '.gitkeep', 'package.json'
+            '*.md', '*.js', '*.css', '*.html', 'package.json', 'package-lock.json',
+            'tailwind.config.js', 'postcss.config.js', '__init__.py', '.gitkeep'
         }
 
     def _load_config(self):
@@ -177,6 +175,8 @@ class Scholar:
                         new_key = f"{parent_key}[{idx}]"
                         _extract_props(v, new_key)
                 elif isinstance(obj, (str, int, float, bool)):
+                    # Phase V: Flattening and namespacing config properties correctly
+                    # Removing the duplicate prop creation, it should be namespaced with file_id.
                     prop_id = f"{file_id}_prop_{parent_key.replace('.', '_').replace('[', '_').replace(']', '')}"
                     desc = str(obj)[:100]
                     self.cortex.add_entity(prop_id, "config_property", parent_key, desc, save_to_disk=True)

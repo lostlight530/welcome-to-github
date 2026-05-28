@@ -231,10 +231,11 @@ class Cortex:
             cursor = self.conn.cursor()
             sql = '''
                 SELECT e.id, e.name, e.weight FROM entities e
-                LEFT JOIN relations r1 ON e.id = r1.source
-                LEFT JOIN relations r2 ON e.id = r2.target
+                LEFT JOIN relations r1 ON e.id = r1.source AND r1.invalid_at IS NULL
+                LEFT JOIN relations r2 ON e.id = r2.target AND r2.invalid_at IS NULL
                 WHERE r1.source IS NULL AND r2.target IS NULL
                 AND e.weight > 0.5
+                AND e.invalid_at IS NULL
                 ORDER BY e.weight DESC
                 LIMIT ?
             '''
