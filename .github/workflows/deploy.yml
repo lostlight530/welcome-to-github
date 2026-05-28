@@ -16,6 +16,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
+  GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
 jobs:
@@ -28,11 +29,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         env:
+  GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
         env:
+  GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
         with:
           enablement: true
@@ -40,6 +43,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         env:
+  GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
         with:
           path: '.'
@@ -48,4 +52,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         env:
+  GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'

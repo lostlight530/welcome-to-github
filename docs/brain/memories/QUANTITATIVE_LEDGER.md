@@ -546,3 +546,8 @@
 - **Compression Rate**: 0.0267
 - **Low-Connectivity Nodes**: 130
 
+### 📊 Dashboard - 20260528 (2026-05-28T17:04:05Z)
+- **Active Entities**: 117
+- **Active Relations**: 116
+- **Compression Rate**: 0.0331
+- **Low-Connectivity Nodes**: 104

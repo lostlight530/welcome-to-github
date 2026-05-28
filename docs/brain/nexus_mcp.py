@@ -271,6 +271,10 @@ class MCPServer:
                         eid = args["id"]
                         ename = args["name"]
                         edesc = args["desc"]
+
+                        import re
+                        if not re.match(r"^[a-z0-9-]+$", eid):
+                            raise ValueError(f"Invalid ID format for '{eid}': must match ^[a-z0-9-]+$")
                     except KeyError:
                         self._slash_trust(agent_id, penalty=10)
                         raise ValueError("Missing 'id', 'name', or 'desc' in arguments. Trust slashed (-10). / 信任分已扣除 (-10)。")
@@ -315,7 +319,7 @@ class MCPServer:
 
                         # Add bounty reward logic, increase trust score
                         cursor = self.cortex.conn.cursor()
-                        cursor.execute("UPDATE agent_trust SET score = score + 5 WHERE id = ?", (agent_id,))
+                        cursor.execute("UPDATE agent_trust SET score = MIN(100, score + 5) WHERE id = ?", (agent_id,))
                         self.cortex.conn.commit()
 
                         # Add target info into cortex
