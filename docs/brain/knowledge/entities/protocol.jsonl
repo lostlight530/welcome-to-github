@@ -1,2 +1,2 @@
-{"id": "mcp", "type": "protocol", "name": "Model Context Protocol", "desc": "Standard for connecting AI models to external data and tools."}
-{"id": "protocol-mcp", "type": "protocol", "name": "Model Context Protocol", "desc": "Standard for connecting AI models to external data and tools via Client-Host-Server architecture."}
+{"id": "mcp", "type": "protocol", "name": "Model Context Protocol", "desc": "Standard for connecting AI models to external data and tools.", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "protocol-mcp", "type": "protocol", "name": "Model Context Protocol", "desc": "Standard for connecting AI models to external data and tools via Client-Host-Server architecture.", "valid_at": "2026-05-31T00:00:00Z"}

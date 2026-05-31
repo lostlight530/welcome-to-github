@@ -15,7 +15,10 @@ from cortex import Cortex
 from factory import KnowledgeFactory
 
 try:
+    try:
     from mcp.server.fastmcp import FastMCP
+except ImportError:
+    pass
     # Initialize FastMCP Server
     mcp = FastMCP("Nexus Cortex Demo")
 except ImportError:

@@ -3,7 +3,7 @@
 ## 📈 核心系统指标 (Core System Metrics)
 | Metric | Value |
 | :--- | :--- |
-| Active Entities | 116 |
-| Active Relations | 112 |
-| Compression Rate | 0.0413 |
+| Active Entities | 117 |
+| Active Relations | 116 |
+| Compression Rate | 0.0331 |
 | Low-Connectivity Nodes | 104 |

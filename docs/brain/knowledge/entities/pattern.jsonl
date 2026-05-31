@@ -1,8 +1,8 @@
-{"id": "arch-pattern-gemma-2b", "type": "pattern", "name": "Multi-Query Attention", "desc": "Uses MQA for efficient inference."}
-{"id": "arch-pattern-gemma-2b", "type": "pattern", "name": "XLA Optimization", "desc": "Optimized for TPU/GPU execution via XLA."}
-{"id": "arch-pattern-gemma-2b", "type": "pattern", "name": "Quantization Support", "desc": "Supports int8/int4 execution on mobile."}
-{"id": "arch-pattern-on-device-llm", "type": "pattern", "name": "Memory Management", "desc": "Requires careful memory management (RAM < 8GB)."}
-{"id": "arch-pattern-on-device-llm", "type": "pattern", "name": "Delegate Acceleration", "desc": "Relies on delegate acceleration (NPU/DSP)."}
-{"id": "arch-pattern-on-device-llm", "type": "pattern", "name": "Privacy-First", "desc": "Architecture ensures no data leaves device."}
-{"id": "privacy-on-device", "type": "pattern", "name": "Privacy-First Architecture", "desc": "Data processing remains on device to ensure privacy."}
-{"id": "pattern-edge-first", "type": "pattern", "name": "Edge-First Architecture", "desc": "Critical UX paths run on-device; Cloud is treated as an enhancement, not a dependency."}
+{"id": "arch-pattern-gemma-2b", "type": "pattern", "name": "Multi-Query Attention", "desc": "Uses MQA for efficient inference.", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "arch-pattern-gemma-2b", "type": "pattern", "name": "XLA Optimization", "desc": "Optimized for TPU/GPU execution via XLA.", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "arch-pattern-gemma-2b", "type": "pattern", "name": "Quantization Support", "desc": "Supports int8/int4 execution on mobile.", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "arch-pattern-on-device-llm", "type": "pattern", "name": "Memory Management", "desc": "Requires careful memory management (RAM < 8GB).", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "arch-pattern-on-device-llm", "type": "pattern", "name": "Delegate Acceleration", "desc": "Relies on delegate acceleration (NPU/DSP).", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "arch-pattern-on-device-llm", "type": "pattern", "name": "Privacy-First", "desc": "Architecture ensures no data leaves device.", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "privacy-on-device", "type": "pattern", "name": "Privacy-First Architecture", "desc": "Data processing remains on device to ensure privacy.", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "pattern-edge-first", "type": "pattern", "name": "Edge-First Architecture", "desc": "Critical UX paths run on-device; Cloud is treated as an enhancement, not a dependency.", "valid_at": "2026-05-31T00:00:00Z"}

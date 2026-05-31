@@ -82,7 +82,7 @@ class Scholar:
 
     def _digest_file(self, root, filepath):
         rel_path = filepath.relative_to(root)
-        file_id = f"file_{str(rel_path).replace('/', '_').replace('.', '_')}"
+        file_id = self._strip_version(f"file_" + str(rel_path).replace("/", "_").replace(".", "_"))
 
         # 1. Register File Node
         if self.cortex:
@@ -177,7 +177,7 @@ class Scholar:
                 elif isinstance(obj, (str, int, float, bool)):
                     # Phase V: Flattening and namespacing config properties correctly
                     # Removing the duplicate prop creation, it should be namespaced with file_id.
-                    prop_id = f"{file_id}_prop_{parent_key.replace('.', '_').replace('[', '_').replace(']', '')}"
+                    prop_id = self._strip_version(f"{file_id}_prop_" + parent_key.replace(".", "_").replace("[", "_").replace("]", ""))
                     desc = str(obj)[:100]
                     self.cortex.add_entity(prop_id, "config_property", parent_key, desc, save_to_disk=True)
                     self.cortex.connect_entities(file_id, "defines", prop_id, save_to_disk=True)
@@ -216,7 +216,7 @@ class Scholar:
                 e_name = self._strip_version(e_name)
 
                 # Namespace generation to prevent global ID collisions
-                true_id = f"polyglot_{e_type.lower()}_{e_name}"
+                true_id = self._strip_version(f"polyglot_{e_type.lower()}_{e_name}")
                 extracted_entities.append({
                     "id": true_id,
                     "type": "code_component",
@@ -240,7 +240,7 @@ class Scholar:
                 # Classes
                 if isinstance(node, ast.ClassDef):
                     class_name = self._strip_version(node.name)
-                    class_id = f"class_{class_name}"
+                    class_id = self._strip_version(f"class_{class_name}")
                     desc = ast.get_docstring(node) or "Python Class"
                     self.cortex.add_entity(class_id, "code_class", class_name, desc[:100], save_to_disk=True)
                     self.cortex.connect_entities(file_id, "defines", class_id, save_to_disk=True)
@@ -253,7 +253,7 @@ class Scholar:
                 # Functions
                 elif isinstance(node, ast.FunctionDef):
                     func_name = self._strip_version(node.name)
-                    func_id = f"func_{func_name}"
+                    func_id = self._strip_version(f"func_{func_name}")
                     desc = ast.get_docstring(node) or "Python Function"
                     self.cortex.add_entity(func_id, "code_function", func_name, desc[:100], save_to_disk=True)
                     self.cortex.connect_entities(file_id, "defines", func_id, save_to_disk=True)
@@ -272,7 +272,7 @@ class Scholar:
                         safe_title = "".join([c for c in title if c.isalnum() or c == ' ']).strip().replace(' ', '_').lower()
                         safe_title = self._strip_version(safe_title)
                         if safe_title:
-                            concept_id = f"concept_{safe_title}"[:60]
+                            concept_id = self._strip_version(f"concept_{safe_title}"[:60])
                             self.cortex.add_entity(concept_id, "concept", title, f"Section in {filepath.name}", save_to_disk=True)
                             self.cortex.connect_entities(file_id, "documents", concept_id, save_to_disk=True)
         except Exception:

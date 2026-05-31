@@ -1,0 +1,600 @@
+# 🧮 NEXUS CORTEX 演化账本 (Quantitative Ledger)
+> 严禁覆写，仅限追加记录系统的物理心跳与演进状态。(Append-Only Ledger for System Pulse)
+
+### 📊 Dashboard - 20260428 (2026-04-28T02:57:17Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260428 (2026-04-28T02:58:46Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260428 (2026-04-28T03:14:14Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260428 (2026-04-28T03:40:38Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260428 (2026-04-28T03:56:42Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260428 (2026-04-28T22:56:07Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260429 (2026-04-29T04:17:35Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260429 (2026-04-29T22:56:01Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260430 (2026-04-30T22:52:28Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260501 (2026-05-01T01:10:32Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260501 (2026-05-01T22:49:42Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260502 (2026-05-02T06:46:00Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260502 (2026-05-02T22:40:00Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260503 (2026-05-03T01:40:19Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260503 (2026-05-03T12:26:07Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+### 📊 Dashboard - 20260504 (2026-05-04T00:34:20Z)
+- **Active Entities**: 195
+- **Active Relations**: 185
+- **Compression Rate**: 0.0201
+- **Low-Connectivity Nodes**: 173
+
+### 📊 Dashboard - 20260504 (2026-05-04T02:39:55Z)
+- **Active Entities**: 152
+- **Active Relations**: 147
+- **Compression Rate**: 0.0256
+- **Low-Connectivity Nodes**: 135
+### 📊 Dashboard - 20260504 (2026-05-04T04:53:00Z)
+- **Active Entities**: 152
+- **Active Relations**: 147
+- **Compression Rate**: 0.0256
+- **Low-Connectivity Nodes**: 135
+
+### 📊 Dashboard - 20260504 (2026-05-04T04:55:19Z)
+- **Active Entities**: 152
+- **Active Relations**: 147
+- **Compression Rate**: 0.0256
+- **Low-Connectivity Nodes**: 135
+
+### 📊 Dashboard - 20260504 (2026-05-04T22:56:30Z)
+- **Active Entities**: 152
+- **Active Relations**: 147
+- **Compression Rate**: 0.0256
+- **Low-Connectivity Nodes**: 135
+
+### 📊 Dashboard - 20260505 (2026-05-05T01:05:30Z)
+- **Active Entities**: 152
+- **Active Relations**: 147
+- **Compression Rate**: 0.0256
+- **Low-Connectivity Nodes**: 135
+
+### 📊 Dashboard - 20260505 (2026-05-05T06:05:58Z)
+- **Active Entities**: 152
+- **Active Relations**: 147
+- **Compression Rate**: 0.0256
+- **Low-Connectivity Nodes**: 135
+
+### 📊 Dashboard - 20260505 (2026-05-05T06:07:09Z)
+- **Active Entities**: 140
+- **Active Relations**: 136
+- **Compression Rate**: 0.0278
+- **Low-Connectivity Nodes**: 124
+
+### 📊 Dashboard - 20260505 (2026-05-05T22:53:53Z)
+- **Active Entities**: 140
+- **Active Relations**: 136
+- **Compression Rate**: 0.0278
+- **Low-Connectivity Nodes**: 124
+
+### 📊 Dashboard - 20260505 (2026-05-05T22:57:22Z)
+- **Active Entities**: 140
+- **Active Relations**: 136
+- **Compression Rate**: 0.0278
+- **Low-Connectivity Nodes**: 124
+
+### 📊 Dashboard - 20260506 (2026-05-06T22:52:29Z)
+- **Active Entities**: 140
+- **Active Relations**: 136
+- **Compression Rate**: 0.0278
+- **Low-Connectivity Nodes**: 124
+
+### 📊 Dashboard - 20260507 (2026-05-07T04:16:38Z)
+- **Active Entities**: 140
+- **Active Relations**: 136
+- **Compression Rate**: 0.0278
+- **Low-Connectivity Nodes**: 124
+
+### 📊 Dashboard - 20260507 (2026-05-07T22:59:52Z)
+- **Active Entities**: 140
+- **Active Relations**: 136
+- **Compression Rate**: 0.0278
+- **Low-Connectivity Nodes**: 124
+
+### 📊 Dashboard - 20260508 (2026-05-08T06:43:15Z)
+- **Active Entities**: 140
+- **Active Relations**: 136
+- **Compression Rate**: 0.0278
+- **Low-Connectivity Nodes**: 124
+
+### 📊 Dashboard - 20260508 (2026-05-08T22:54:15Z)
+- **Active Entities**: 140
+- **Active Relations**: 136
+- **Compression Rate**: 0.0278
+- **Low-Connectivity Nodes**: 124
+
+### 📊 Dashboard - 20260509 (2026-05-09T07:48:50Z)
+- **Active Entities**: 140
+- **Active Relations**: 136
+- **Compression Rate**: 0.0278
+- **Low-Connectivity Nodes**: 124
+
+### 📊 Dashboard - 20260509 (2026-05-09T22:42:09Z)
+- **Active Entities**: 140
+- **Active Relations**: 136
+- **Compression Rate**: 0.0278
+- **Low-Connectivity Nodes**: 124
+
+### 📊 Dashboard - 20260510 (2026-05-10T06:48:39Z)
+- **Active Entities**: 140
+- **Active Relations**: 136
+- **Compression Rate**: 0.0278
+- **Low-Connectivity Nodes**: 124
+
+### 📊 Dashboard - 20260510 (2026-05-10T22:45:19Z)
+- **Active Entities**: 140
+- **Active Relations**: 136
+- **Compression Rate**: 0.0278
+- **Low-Connectivity Nodes**: 124
+
+### 📊 Dashboard - 20260511 (2026-05-11T03:35:31Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+### 📊 Dashboard - 20260511 (2026-05-11T03:54:59Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260511 (2026-05-11T22:52:28Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260512 (2026-05-12T11:15:04Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260512 (2026-05-12T22:59:47Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260513 (2026-05-13T14:56:16Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260513 (2026-05-13T23:04:18Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260514 (2026-05-14T08:00:58Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260514 (2026-05-14T08:53:03Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260514 (2026-05-14T09:40:04Z)
+- **Active Entities**: 145
+- **Active Relations**: 199
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 72
+
+### 📊 Dashboard - 20260514 (2026-05-14T09:54:38Z)
+- **Active Entities**: 145
+- **Active Relations**: 198
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 72
+
+### 📊 Dashboard - 20260514 (2026-05-14T11:28:44Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260514 (2026-05-14T11:40:39Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260514 (2026-05-14T11:42:54Z)
+- **Active Entities**: 145
+- **Active Relations**: 198
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 72
+
+### 📊 Dashboard - 20260514 (2026-05-14T12:00:43Z)
+- **Active Entities**: 145
+- **Active Relations**: 198
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 72
+
+### 📊 Dashboard - 20260514 (2026-05-14T12:16:13Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260514 (2026-05-14T12:17:43Z)
+- **Active Entities**: 145
+- **Active Relations**: 198
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 72
+### 📊 Dashboard - 20260514 (2026-05-14T14:44:32Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260514 (2026-05-14T22:55:07Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260515 (2026-05-15T07:25:01Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260515 (2026-05-15T22:53:39Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260516 (2026-05-16T07:12:32Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260516 (2026-05-16T22:43:06Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260517 (2026-05-17T14:50:44Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260517 (2026-05-17T22:53:06Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260518 (2026-05-18T01:41:09Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+### 📊 Dashboard - 20260518 (2026-05-18T02:32:13Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260518 (2026-05-18T23:00:15Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260519 (2026-05-19T03:02:03Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260519 (2026-05-19T08:32:46Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260519 (2026-05-19T08:43:37Z)
+- **Active Entities**: 145
+- **Active Relations**: 141
+- **Compression Rate**: 0.0268
+- **Low-Connectivity Nodes**: 129
+
+### 📊 Dashboard - 20260519 (2026-05-19T08:47:57Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260519 (2026-05-19T23:00:55Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260520 (2026-05-20T12:11:00Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260520 (2026-05-20T23:12:05Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260521 (2026-05-21T12:53:57Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260521 (2026-05-21T20:37:46Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260521 (2026-05-21T20:38:52Z)
+- **Active Entities**: 0
+- **Active Relations**: 0
+- **Compression Rate**: 0.0000
+- **Low-Connectivity Nodes**: 0
+
+### 📊 Dashboard - 20260521 (2026-05-21T21:02:13Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260521 (2026-05-21T21:05:04Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260521 (2026-05-21T21:07:18Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+### 📊 Dashboard - 20260521 (2026-05-21T23:02:44Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260522 (2026-05-22T09:21:16Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260522 (2026-05-22T22:42:06Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260522 (2026-05-22T22:57:28Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260523 (2026-05-23T13:55:33Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260523 (2026-05-23T16:03:12Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260523 (2026-05-23T16:11:18Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+### 📊 Dashboard - 20260524 (2026-05-24T10:21:33Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260524 (2026-05-24T10:23:49Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260524 (2026-05-24T22:57:12Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260525 (2026-05-25T12:13:40Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260525 (2026-05-25T23:00:32Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260526 (2026-05-26T05:59:34Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260526 (2026-05-26T23:09:14Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260527 (2026-05-27T13:29:26Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260527 (2026-05-27T23:16:01Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260528 (2026-05-28T07:13:22Z)
+- **Active Entities**: 146
+- **Active Relations**: 142
+- **Compression Rate**: 0.0267
+- **Low-Connectivity Nodes**: 130
+
+### 📊 Dashboard - 20260528 (2026-05-28T17:04:05Z)
+- **Active Entities**: 117
+- **Active Relations**: 116
+- **Compression Rate**: 0.0331
+- **Low-Connectivity Nodes**: 104
+### 📊 Dashboard - 20260528 (2026-05-28T19:06:39Z)
+- **Active Entities**: 117
+- **Active Relations**: 116
+- **Compression Rate**: 0.0331
+- **Low-Connectivity Nodes**: 104
+
+### 📊 Dashboard - 20260528 (2026-05-28T19:25:51Z)
+- **Active Entities**: 117
+- **Active Relations**: 116
+- **Compression Rate**: 0.0331
+- **Low-Connectivity Nodes**: 104
+
+### 📊 Dashboard - 20260528 (2026-05-28T23:18:26Z)
+- **Active Entities**: 117
+- **Active Relations**: 116
+- **Compression Rate**: 0.0331
+- **Low-Connectivity Nodes**: 104
+
+### 📊 Dashboard - 20260529 (2026-05-29T03:28:07Z)
+- **Active Entities**: 117
+- **Active Relations**: 116
+- **Compression Rate**: 0.0331
+- **Low-Connectivity Nodes**: 104
+
+### 📊 Dashboard - 20260529 (2026-05-29T23:14:36Z)
+- **Active Entities**: 117
+- **Active Relations**: 116
+- **Compression Rate**: 0.0331
+- **Low-Connectivity Nodes**: 104
+
+### 📊 Dashboard - 20260530 (2026-05-30T06:44:45Z)
+- **Active Entities**: 117
+- **Active Relations**: 116
+- **Compression Rate**: 0.0331
+- **Low-Connectivity Nodes**: 104
+
+### 📊 Dashboard - 20260530 (2026-05-30T22:58:35Z)
+- **Active Entities**: 117
+- **Active Relations**: 116
+- **Compression Rate**: 0.0331
+- **Low-Connectivity Nodes**: 104
+
+### 📊 Dashboard - 20260531 (2026-05-31T13:56:13Z)
+- **Active Entities**: 117
+- **Active Relations**: 116
+- **Compression Rate**: 0.0331
+- **Low-Connectivity Nodes**: 104

@@ -11843,3 +11843,115 @@
 {"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func_visit_FunctionDef", "desc": "", "valid_at": "2026-05-31T13:56:13.200111"}
 {"src": "file_LICENSE", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-05-31T13:56:13.707051"}
 {"src": "file__editorconfig", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-05-31T13:56:13.709270"}
+{"src": "file_fix_scholar2_py", "relation": "defines", "dst": "func_fix_scholar", "desc": "", "valid_at": "2026-05-31T15:23:12.567418"}
+{"src": "file_fix_json_fragments_py", "relation": "defines", "dst": "func_fix_id", "desc": "", "valid_at": "2026-05-31T15:23:12.579268"}
+{"src": "file_fix_json_fragments_py", "relation": "defines", "dst": "func_process_file", "desc": "", "valid_at": "2026-05-31T15:23:12.585001"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "class_Evolver", "desc": "", "valid_at": "2026-05-31T15:23:12.610349"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func___init__", "desc": "", "valid_at": "2026-05-31T15:23:12.617332"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func_run_daily_cycle", "desc": "", "valid_at": "2026-05-31T15:23:12.624260"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func__trigger_render", "desc": "", "valid_at": "2026-05-31T15:23:12.631740"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func__genetic_auto_recombination", "desc": "", "valid_at": "2026-05-31T15:23:12.639510"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func__run_sandbox_tests", "desc": "", "valid_at": "2026-05-31T15:23:12.646606"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func__incubate_ideas", "desc": "", "valid_at": "2026-05-31T15:23:12.653696"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func__scan_inputs", "desc": "", "valid_at": "2026-05-31T15:23:12.660317"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func__archive_inputs", "desc": "", "valid_at": "2026-05-31T15:23:12.666655"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "class_SelfMutator", "desc": "", "valid_at": "2026-05-31T15:23:12.673098"}
+{"src": "file_docs_brain_evolution_py", "relation": "defines", "dst": "func_visit_FunctionDef", "desc": "", "valid_at": "2026-05-31T15:23:12.679505"}
+{"src": "file_docs_brain_factory_py", "relation": "defines", "dst": "class_KnowledgeFactory", "desc": "", "valid_at": "2026-05-31T15:23:12.691495"}
+{"src": "file_docs_brain_factory_py", "relation": "defines", "dst": "func___init__", "desc": "", "valid_at": "2026-05-31T15:23:12.697929"}
+{"src": "file_docs_brain_factory_py", "relation": "defines", "dst": "func_add_entity", "desc": "", "valid_at": "2026-05-31T15:23:12.704698"}
+{"src": "file_docs_brain_factory_py", "relation": "defines", "dst": "func_touch_entity", "desc": "", "valid_at": "2026-05-31T15:23:12.713408"}
+{"src": "file_docs_brain_factory_py", "relation": "defines", "dst": "func_activate_memory", "desc": "", "valid_at": "2026-05-31T15:23:12.720635"}
+{"src": "file_docs_brain_factory_py", "relation": "defines", "dst": "func_add_relation", "desc": "", "valid_at": "2026-05-31T15:23:12.727877"}
+{"src": "file_docs_brain_factory_py", "relation": "defines", "dst": "func__append_line", "desc": "", "valid_at": "2026-05-31T15:23:12.734534"}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "class_ReasoningEngine", "desc": "", "valid_at": "2026-05-31T15:23:12.747957"}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func___init__", "desc": "", "valid_at": "2026-05-31T15:23:12.753651"}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func_ponder", "desc": "", "valid_at": "2026-05-31T15:23:12.759344"}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__calculate_pagerank", "desc": "", "valid_at": "2026-05-31T15:23:12.766122"}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__generate_pagerank_bounty", "desc": "", "valid_at": "2026-05-31T15:23:12.772301"}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__render_daily_archives", "desc": "", "valid_at": "2026-05-31T15:23:12.778538"}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__generate_structural_intuitions", "desc": "", "valid_at": "2026-05-31T15:23:12.785084"}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__generate_curiosity", "desc": "", "valid_at": "2026-05-31T15:23:12.794893"}
+{"src": "file_docs_brain_reason_py", "relation": "defines", "dst": "func__query", "desc": "", "valid_at": "2026-05-31T15:23:12.801337"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_settings_max_read_length", "desc": "", "valid_at": "2026-05-31T15:23:12.813600"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_settings_target_branch", "desc": "", "valid_at": "2026-05-31T15:23:12.819335"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_settings_philosophy", "desc": "", "valid_at": "2026-05-31T15:23:12.825936"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_ignore_paths", "desc": "", "valid_at": "2026-05-31T15:23:12.832306"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Google-XLA-Compiler", "desc": "", "valid_at": "2026-05-31T15:23:12.843351"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_PyTorch-Autograd-Design", "desc": "", "valid_at": "2026-05-31T15:23:12.850154"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_HuggingFace-Transformers-Philosophy", "desc": "", "valid_at": "2026-05-31T15:23:12.856309"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Microsoft-DeepSpeed", "desc": "", "valid_at": "2026-05-31T15:23:12.861687"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_OpenAI-Triton", "desc": "", "valid_at": "2026-05-31T15:23:12.868923"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Rust-Ownership-Model", "desc": "", "valid_at": "2026-05-31T15:23:12.875064"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Golang-Concurrency-Design", "desc": "", "valid_at": "2026-05-31T15:23:12.880845"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_LLVM-Architecture", "desc": "", "valid_at": "2026-05-31T15:23:12.886275"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_V8-JavaScript-Engine", "desc": "", "valid_at": "2026-05-31T15:23:12.891868"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Kubernetes-Architecture-Design", "desc": "", "valid_at": "2026-05-31T15:23:12.897494"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Envoy-Proxy-Threading-Model", "desc": "", "valid_at": "2026-05-31T15:23:12.903528"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_HashiCorp-Raft-Consensus", "desc": "", "valid_at": "2026-05-31T15:23:12.909555"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Docker-Containerd-Architecture", "desc": "", "valid_at": "2026-05-31T15:23:12.915280"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_PostgreSQL-MVCC-Internals", "desc": "", "valid_at": "2026-05-31T15:23:12.920790"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Redis-Event-Loop", "desc": "", "valid_at": "2026-05-31T15:23:12.926307"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_PingCAP-TiDB-HTAP", "desc": "", "valid_at": "2026-05-31T15:23:12.931907"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Facebook-RocksDB-LSM-Tree", "desc": "", "valid_at": "2026-05-31T15:23:12.937902"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Anthropic-MCP-Specification", "desc": "", "valid_at": "2026-05-31T15:23:12.943906"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Google-gRPC-Core-Design", "desc": "", "valid_at": "2026-05-31T15:23:12.951319"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Meta-GraphQL-Specification", "desc": "", "valid_at": "2026-05-31T15:23:12.959384"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Apache-Kafka-Log-Design", "desc": "", "valid_at": "2026-05-31T15:23:12.966347"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_React-Fiber-Architecture", "desc": "", "valid_at": "2026-05-31T15:23:12.973558"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Flutter-Engine-Architecture", "desc": "", "valid_at": "2026-05-31T15:23:12.979174"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_WebAssembly-Core-Specification", "desc": "", "valid_at": "2026-05-31T15:23:12.985822"}
+{"src": "file_docs_brain_brain_config_json", "relation": "defines", "dst": "file_docs_brain_brain_config_json_prop_whitelist_Microsoft-VSCode-Architecture", "desc": "", "valid_at": "2026-05-31T15:23:12.992691"}
+{"src": "file_docs_brain_test_mcp_py", "relation": "defines", "dst": "func_test_mcp_server", "desc": "", "valid_at": "2026-05-31T15:23:13.004226"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "class_Harvester", "desc": "", "valid_at": "2026-05-31T15:23:13.018934"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func___init__", "desc": "", "valid_at": "2026-05-31T15:23:13.025778"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__load_state", "desc": "", "valid_at": "2026-05-31T15:23:13.032340"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__save_state", "desc": "", "valid_at": "2026-05-31T15:23:13.038605"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__analyze_content", "desc": "", "valid_at": "2026-05-31T15:23:13.045866"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__fetch_repo_data", "desc": "", "valid_at": "2026-05-31T15:23:13.052653"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__read_mission_active_intents", "desc": "", "valid_at": "2026-05-31T15:23:13.059078"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func_fetch_github_data", "desc": "", "valid_at": "2026-05-31T15:23:13.067296"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "class_Cortex", "desc": "", "valid_at": "2026-05-31T15:23:13.083517"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func___init__", "desc": "", "valid_at": "2026-05-31T15:23:13.089460"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func__init_db", "desc": "", "valid_at": "2026-05-31T15:23:13.096266"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func__log_to_jsonl", "desc": "", "valid_at": "2026-05-31T15:23:13.102928"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func_search", "desc": "", "valid_at": "2026-05-31T15:23:13.109637"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func_add_entity", "desc": "", "valid_at": "2026-05-31T15:23:13.116426"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func_connect_entities", "desc": "", "valid_at": "2026-05-31T15:23:13.124260"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func_activate_memory", "desc": "", "valid_at": "2026-05-31T15:23:13.131266"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func_decay_memories", "desc": "", "valid_at": "2026-05-31T15:23:13.138112"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func_get_orphans", "desc": "", "valid_at": "2026-05-31T15:23:13.144569"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func_suture_orphans", "desc": "", "valid_at": "2026-05-31T15:23:13.150719"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func_get_stats", "desc": "", "valid_at": "2026-05-31T15:23:13.156939"}
+{"src": "file_docs_brain_cortex_py", "relation": "defines", "dst": "func_get_dashboard_metrics", "desc": "", "valid_at": "2026-05-31T15:23:13.162832"}
+{"src": "file_docs_brain_nexus_mcp_py", "relation": "defines", "dst": "class_MCPServer", "desc": "", "valid_at": "2026-05-31T15:23:13.187496"}
+{"src": "file_docs_brain_nexus_mcp_py", "relation": "defines", "dst": "func___init__", "desc": "", "valid_at": "2026-05-31T15:23:13.194163"}
+{"src": "file_docs_brain_nexus_mcp_py", "relation": "defines", "dst": "func__init_trust_ledger", "desc": "", "valid_at": "2026-05-31T15:23:13.200530"}
+{"src": "file_docs_brain_nexus_mcp_py", "relation": "defines", "dst": "func__verify_agent_trust", "desc": "", "valid_at": "2026-05-31T15:23:13.206344"}
+{"src": "file_docs_brain_nexus_mcp_py", "relation": "defines", "dst": "func__slash_trust", "desc": "", "valid_at": "2026-05-31T15:23:13.212661"}
+{"src": "file_docs_brain_nexus_mcp_py", "relation": "defines", "dst": "func_handle_request", "desc": "", "valid_at": "2026-05-31T15:23:13.218675"}
+{"src": "file_docs_brain_nexus_mcp_py", "relation": "defines", "dst": "func_run", "desc": "", "valid_at": "2026-05-31T15:23:13.224703"}
+{"src": "file_docs_brain_nexus_py", "relation": "defines", "dst": "func_main", "desc": "", "valid_at": "2026-05-31T15:23:13.239157"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "class_Scholar", "desc": "", "valid_at": "2026-05-31T15:23:13.255347"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func___init__", "desc": "", "valid_at": "2026-05-31T15:23:13.261742"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func__load_config", "desc": "", "valid_at": "2026-05-31T15:23:13.268740"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func_ingest_repository", "desc": "", "valid_at": "2026-05-31T15:23:13.274897"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func__digest_file", "desc": "", "valid_at": "2026-05-31T15:23:13.281748"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func__strip_version", "desc": "", "valid_at": "2026-05-31T15:23:13.288419"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func__analyze_config_structure", "desc": "", "valid_at": "2026-05-31T15:23:13.294990"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func__analyze_polyglot_structure", "desc": "", "valid_at": "2026-05-31T15:23:13.300928"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func__analyze_javascript_regex_ast", "desc": "", "valid_at": "2026-05-31T15:23:13.307482"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func__analyze_python_ast", "desc": "", "valid_at": "2026-05-31T15:23:13.313467"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func__analyze_markdown_structure", "desc": "", "valid_at": "2026-05-31T15:23:13.320135"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func_learn", "desc": "", "valid_at": "2026-05-31T15:23:13.326815"}
+{"src": "file_docs_brain_scholar_py", "relation": "defines", "dst": "func__extract_props", "desc": "", "valid_at": "2026-05-31T15:23:13.334221"}
+{"src": "file_LICENSE", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-05-31T15:23:14.654614"}
+{"src": "file_fix_reason_py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-05-31T15:23:14.658238"}
+{"src": "file_test_re_py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-05-31T15:23:14.661911"}
+{"src": "file_fix_scholar_syntax_py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-05-31T15:23:14.664859"}
+{"src": "file_fix_mcp_imports_py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-05-31T15:23:14.667929"}
+{"src": "file_fix_scholar_py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-05-31T15:23:14.670697"}
+{"src": "file_fix_evolution_py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-05-31T15:23:14.674004"}
+{"src": "file__editorconfig", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-05-31T15:23:14.677322"}
+{"src": "file_fix_scholar_syntax2_py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-05-31T15:23:14.680530"}
+{"src": "file_docs_brain_mcp_demo_py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-05-31T15:23:14.683675"}
