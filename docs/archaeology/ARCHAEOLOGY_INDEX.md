@@ -15,3 +15,5 @@
 ## 旧日遗产归档
 
 Legacy files are permanently archived under `legacy_traces/` to adhere to Append-Only constraints
+## Recent Activity
+- 2026-06-01: No legacy traces migrated this week.
