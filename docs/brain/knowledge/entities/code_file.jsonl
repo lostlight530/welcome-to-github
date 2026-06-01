@@ -2641,3 +2641,16 @@
 {"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-06-01T06:58:24.418729"}
 {"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-06-01T06:58:24.464885"}
 {"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-06-01T06:58:24.607335"}
+{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-06-01T08:32:20.067223"}
+{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-06-01T08:32:20.070721"}
+{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-06-01T08:32:20.073658"}
+{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-06-01T08:32:20.166565"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-06-01T08:32:20.223855"}
+{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-06-01T08:32:20.304603"}
+{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-06-01T08:32:20.563792"}
+{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-06-01T08:32:20.579250"}
+{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-06-01T08:32:20.660013"}
+{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-06-01T08:32:20.790771"}
+{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-06-01T08:32:20.793744"}
+{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-06-01T08:32:20.861058"}
+{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-06-01T08:32:20.874789"}
