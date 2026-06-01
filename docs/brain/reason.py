@@ -125,6 +125,30 @@ class ReasoningEngine:
         top_node_id = max(ranks, key=ranks.get)
         return node_names.get(top_node_id, top_node_id)
 
+    def _generate_pagerank_top_hubs(self, limit=10):
+        nodes_raw = self._query("SELECT id, name FROM entities WHERE invalid_at IS NULL")
+        edges_raw = self._query("SELECT source, target FROM relations WHERE invalid_at IS NULL")
+
+        if not nodes_raw or not edges_raw:
+            return "Pending inference. / 等待推演。"
+
+        nodes = [row[0] for row in nodes_raw]
+        node_names = {row[0]: row[1] for row in nodes_raw}
+        edges = [(row[0], row[1]) for row in edges_raw]
+
+        ranks = self._calculate_pagerank(nodes, edges)
+
+        if not ranks:
+            return "Pending inference. / 等待推演。"
+
+        sorted_hubs = sorted(ranks.items(), key=lambda x: x[1], reverse=True)[:limit]
+        hub_lines = []
+        for i, (node_id, score) in enumerate(sorted_hubs, 1):
+            name = node_names.get(node_id, node_id)
+            hub_lines.append(f"[{i}+{name}+{score:.4f}+0.0]")
+
+        return "\n".join(hub_lines)
+
     def _render_daily_archives(self, metrics: dict, isolated_nodes: list):
         """Phase VI: Hardcore Quantitative Dashboard Rendering (Zero-Dependency)."""
         import os
@@ -138,6 +162,62 @@ class ReasoningEngine:
             today_str = today.strftime("%Y%m%d")
             memories_dir = os.path.join(os.path.dirname(__file__), 'memories')
             os.makedirs(memories_dir, exist_ok=True)
+
+            # --- Extract dynamic values ---
+
+            # Trust score
+            try:
+                trust_score = self._query("SELECT SUM(100 - score) FROM agent_trust")
+                trust_slashes = int(trust_score[0][0]) if trust_score and trust_score[0][0] is not None else 0
+            except Exception:
+                trust_slashes = 0
+
+            # 7-day trend
+            try:
+                e_growth = self._query("SELECT COUNT(*) FROM entities WHERE valid_at >= date('now', '-7 days') AND invalid_at IS NULL")
+                r_growth = self._query("SELECT COUNT(*) FROM relations WHERE valid_at >= date('now', '-7 days') AND invalid_at IS NULL")
+                entity_growth = e_growth[0][0] if e_growth else 0
+                relation_growth = r_growth[0][0] if r_growth else 0
+            except Exception:
+                entity_growth = 0
+                relation_growth = 0
+
+            # Mission focus
+            mission_focus = "Pending inference. / 等待推演。"
+            try:
+                mission_path = os.path.join(memories_dir, "MISSION_ACTIVE.md")
+                if os.path.exists(mission_path):
+                    with open(mission_path, 'r', encoding='utf-8') as f:
+                        m_content = f.read()
+                    m = re.search(r'## 🎯 监控目标 \(Target\)\n(.*?)\n', m_content)
+                    if m:
+                        focus_line = m.group(1).strip()
+                        if focus_line.startswith('- [ ]'):
+                            mission_focus = focus_line[5:].strip()
+                        elif focus_line.startswith('- [x]'):
+                            mission_focus = focus_line[5:].strip()
+                        else:
+                            mission_focus = focus_line
+            except Exception:
+                pass
+
+            mission_bounties = len(isolated_nodes)
+            orphan_alert = len(isolated_nodes)
+            pagerank_hubs = self._generate_pagerank_top_hubs(10)
+
+            active_entities = metrics.get('active_entities', 0)
+            active_relations = metrics.get('active_relations', 0)
+            compression_rate = f"{metrics.get('compression_rate', 0.0) * 100:.2f}"
+
+            dash_template_str = (
+                "KB Stats: Entities=[$active_entities] Relations=[$active_relations] Compression Rate=[$compression_rate%]\n"
+                "PageRank Top 10 Hubs:\n"
+                "$pagerank_hubs\n"
+                "Orphan Alert: [$orphan_alert] AST Islands (Isolated Nodes)\n"
+                "Trust Score: [$trust_score]\n"
+                "MISSION_ACTIVE: Focus=[$mission_focus] Bounties=[$mission_bounties]\n"
+                "7-Day Trend: $entity_growth | $relation_growth"
+            )
 
             # --- Missing Daily Dashboard Backfill Mechanism ---
             existing_dashboards = sorted(glob.glob(os.path.join(memories_dir, "*-quantitative-dashboard.md")))
@@ -156,22 +236,18 @@ class ReasoningEngine:
                     backfill_str = backfill_date.strftime("%Y%m%d")
                     backfill_path = os.path.join(memories_dir, f"{backfill_str}-quantitative-dashboard.md")
                     if not os.path.exists(backfill_path):
-                        dash_tmpl = Template(
-                            "# 📊 NEXUS CORTEX 量化仪表盘 (Quantitative Dashboard) - $date\n\n"
-                            "## 📈 核心系统指标 (Core System Metrics)\n"
-                            "| Metric | Value |\n"
-                            "| :--- | :--- |\n"
-                            "| Active Entities | $active_entities |\n"
-                            "| Active Relations | $active_relations |\n"
-                            "| Compression Rate | $compression_rate |\n"
-                            "| Low-Connectivity Nodes | $low_connectivity |\n"
-                        )
+                        dash_tmpl = Template(dash_template_str)
                         dash_content = dash_tmpl.safe_substitute(
-                            date=backfill_str,
-                            active_entities=metrics.get('active_entities', 0),
-                            active_relations=metrics.get('active_relations', 0),
-                            compression_rate=f"{metrics.get('compression_rate', 0.0):.4f}",
-                            low_connectivity=metrics.get('low_connectivity', 0)
+                            active_entities=active_entities,
+                            active_relations=active_relations,
+                            compression_rate=compression_rate,
+                            pagerank_hubs=pagerank_hubs,
+                            orphan_alert=orphan_alert,
+                            trust_score=trust_slashes,
+                            mission_focus=mission_focus,
+                            mission_bounties=mission_bounties,
+                            entity_growth=entity_growth,
+                            relation_growth=relation_growth
                         )
                         with open(backfill_path, 'w', encoding='utf-8') as f:
                             f.write(dash_content)
@@ -179,23 +255,19 @@ class ReasoningEngine:
 
             # Always render today's dashboard
             today_dash_path = os.path.join(memories_dir, f"{today_str}-quantitative-dashboard.md")
-            if not os.path.exists(today_dash_path):
-                dash_tmpl = Template(
-                    "# 📊 NEXUS CORTEX 量化仪表盘 (Quantitative Dashboard) - $date\n\n"
-                    "## 📈 核心系统指标 (Core System Metrics)\n"
-                    "| Metric | Value |\n"
-                    "| :--- | :--- |\n"
-                    "| Active Entities | $active_entities |\n"
-                    "| Active Relations | $active_relations |\n"
-                    "| Compression Rate | $compression_rate |\n"
-                    "| Low-Connectivity Nodes | $low_connectivity |\n"
-                )
+            if not os.path.exists(today_dash_path) or True: # Force write for today
+                dash_tmpl = Template(dash_template_str)
                 dash_content = dash_tmpl.safe_substitute(
-                    date=today_str,
-                    active_entities=metrics.get('active_entities', 0),
-                    active_relations=metrics.get('active_relations', 0),
-                    compression_rate=f"{metrics.get('compression_rate', 0.0):.4f}",
-                    low_connectivity=metrics.get('low_connectivity', 0)
+                    active_entities=active_entities,
+                    active_relations=active_relations,
+                    compression_rate=compression_rate,
+                    pagerank_hubs=pagerank_hubs,
+                    orphan_alert=orphan_alert,
+                    trust_score=trust_slashes,
+                    mission_focus=mission_focus,
+                    mission_bounties=mission_bounties,
+                    entity_growth=entity_growth,
+                    relation_growth=relation_growth
                 )
                 with open(today_dash_path, 'w', encoding='utf-8') as f:
                     f.write(dash_content)
@@ -210,7 +282,7 @@ class ReasoningEngine:
                 "- **Low-Connectivity Nodes**: $low_connectivity\n\n"
             )
 
-            dash_content = dash_tmpl.safe_substitute(
+            dash_content_ledger = dash_tmpl.safe_substitute(
                 date=today_str,
                 pulse_time=pulse_time,
                 active_entities=metrics.get('active_entities', 0),
@@ -225,7 +297,7 @@ class ReasoningEngine:
                     f.write("# 🧮 NEXUS CORTEX 演化账本 (Quantitative Ledger)\n> 严禁覆写，仅限追加记录系统的物理心跳与演进状态。(Append-Only Ledger for System Pulse)\n\n")
 
             with open(ledger_path, 'a', encoding='utf-8') as f:
-                f.write(dash_content)
+                f.write(dash_content_ledger)
 
             print(f"[Reasoning | 推理引擎] Engine successfully appended metrics to QUANTITATIVE_LEDGER.md / 成功将指标追加至量化账本")
 
@@ -236,7 +308,7 @@ class ReasoningEngine:
 
             # Calculate PageRank Target Hub
             pagerank_hub = self._generate_pagerank_bounty()
-            pagerank_str = f"**Cognitive Hub (PageRank)**: `{pagerank_hub}`" if pagerank_hub else "Cognitive Hub: Pending inference."
+            pagerank_str = f"**Cognitive Hub (PageRank)**: `{pagerank_hub}`" if pagerank_hub else "Cognitive Hub: Pending inference. / 等待推演。"
 
             # Read Harvester State to dynamically render New Releases and Commits
             import json
