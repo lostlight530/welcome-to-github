@@ -160,7 +160,8 @@ class Harvester:
 
                 # Structure strictly following memory anchors
                 timestamp = datetime.datetime.now().strftime("%Y-%m-%d")
-                filename = f"{repo.replace('/', '_')}_{tag}.md"
+                clean_tag = tag if tag.startswith('v') else f"v{tag}"
+                filename = f"{repo.replace('/', '_')}_{clean_tag}.md"
                 filepath = self.inputs_path / filename
 
                 content = f"# ℹ️ Intel Report: {repo}\n"
@@ -174,7 +175,7 @@ class Harvester:
                 score = min(100, 80 + (10 * len(analysis_tags)))
                 content += f"\n## 🛡️ 信任评分 (Trust Score)\n> Score: {score}/100\n"
 
-                content += f"\n## 🔨 最近提交 (Recent Commits)\n*Summary from release notes:*\n\n{body[:3000]}\n"
+                content += f"\n## 🔨 最近提交 (Recent Commits)\n*Summary from release notes:*\n\n{body}\n"
 
                 with open(filepath, 'w', encoding='utf-8') as f:
                     f.write(content)
