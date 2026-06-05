@@ -4,7 +4,7 @@
 
 ## 🚀 新版本发布 (New Release)
 > Version: v0.22.0
-> Date: 2026-06-05T03:35:03.368296
+> Date: 2026-06-05T03:30:59.328326
 
 ## 💡 项目洞察 (Insight)
 > **Architect's Analysis**: 🏷️ Edge-Ready ⚠️ Breaking-Change
@@ -160,4 +160,3 @@ This release features 459 commits from 230 contributors (63 new)!
 * @zhengluo-nv made their first contribution in https://github.com/vllm-project/vllm/pull/43105
 * @zhougit86 made their first contribution in https://github.com/vllm-project/vllm/pull/42739
 * @zx3xyy made their first contribution in https://github.com/vllm-project/vllm/pull/42855
-
