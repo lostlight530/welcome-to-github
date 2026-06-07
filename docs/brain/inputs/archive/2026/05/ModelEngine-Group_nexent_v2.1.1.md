@@ -19,7 +19,7 @@
 
 我们很高兴地宣布Nexent v2.1.1 正式发布！🎉
 
-Nexent 是一个开源智能体平台，能够将流程的自然语言转化为完整的多模态智能体 —— 无需编排，无需复杂拖拉拽。基于 MCP 工具生态，Nexent 提供强大的模型集成、数据处理、知识库管理、零代码智能体开发能力。我们的目标很简单：将数据、模型和工具整合到一个智能中心中，使日常工作流程更智能、更互联。
+Nexent 是一个开源智能体平台，能够将流程的自然语言转化为完整的多模态智能体 —— 无需编排，无需复杂拖拉拽基于 MCP 工具生态，Nexent 提供强大的模型集成、数据处理、知识库管理、零代码智能体开发能力我们的目标很简单：将数据、模型和工具整合到一个智能中心中，使日常工作流程更智能、更互联
 
 We are excited to announce that Nexent v2.1.1 is released! 🎉
 Nexent is an open-source agent platform that turns process-level natural language into complete multimodal agents — no diagrams, no wiring. Built on the MCP tool ecosystem, Nexent provides model integration, data processing, knowledge-base management, and zero-code agent development. Our goal is simple: to bring data, models, and tools together in one smart hub, making daily workflows smarter and more connected.
@@ -28,27 +28,27 @@ Nexent is an open-source agent platform that turns process-level natural languag
 
 ## 新功能 / New Features
 ### Nacos A2A Client 支持 / Nacos A2A Client Support
-支持通过 Nacos 发现和调用外部 A2A Agent，实现跨平台 Agent 互操作。
+支持通过 Nacos 发现和调用外部 A2A Agent，实现跨平台 Agent 互操作
 Support discovering and calling external A2A agents via Nacos for cross-platform agent interoperability.
 
 ### 新文件类型支持 / New File Type Support
-扩展文件解析能力，支持更多文件格式（如 JSON 等），新增 JSON chunk processor。
+扩展文件解析能力，支持更多文件格式（如 JSON 等），新增 JSON chunk processor
 Extended file parsing capabilities to support more file formats with new JSON chunk processor.
 
 ### 向量数据库自动摘要 / Auto Summary for Vector Database
-向量数据库自动生成文档摘要，支持自定义摘要频率。
+向量数据库自动生成文档摘要，支持自定义摘要频率
 Auto-generate document summaries for vector databases with customizable frequency.
 
 ### 数据处理性能优化 / Data Processing Performance Optimization
-优化文件处理流程，提升数据处理速度，改进文件分割策略。
+优化文件处理流程，提升数据处理速度，改进文件分割策略
 Optimized file processing pipeline and improved data processing speed with better file splitting strategies.
 
 ### 最终答案提示增强 / Enhanced Final Answer Prompts
-达到最大步骤限制时，增强提示要求提供全面总结。
+达到最大步骤限制时，增强提示要求提供全面总结
 Enhanced prompts to request comprehensive summaries when maximum step limit is reached.
 
 ### 语音模型支持 / Voice Model Support
-新增阿里云和火山引擎 STT/TTS 模型导入支持。
+新增阿里云和火山引擎 STT/TTS 模型导入支持
 Added support for importing Alibaba Cloud and Volcengine STT/TTS models.
 
 ---

@@ -5,7 +5,7 @@
 
 ## 🎯 Objective (目标)
 **Assess and Mitigate Impact of Breaking Changes in Core Vision/Edge Stack.**
-(评估并缓解视觉/端侧核心技术栈破坏性更新的影响。)
+(评估并缓解视觉/端侧核心技术栈破坏性更新的影响)
 
 ## 🚨 Critical Alerts (关键警报)
 

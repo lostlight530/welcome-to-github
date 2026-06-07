@@ -18,7 +18,7 @@
 # 🚀 Nexent v2.0.0 正式发布 / Nexent v2.0.0 Released
 
 我们很高兴地宣布 **Nexent v2.0.0** 正式发布！🎉
-这是一个 **里程碑版本**，带来了全新的能力体系、部署升级以及多项核心功能增强，标志着 Nexent 在 **可扩展性、工程化能力与企业级部署** 上迈入新阶段。
+这是一个 **里程碑版本**，带来了全新的能力体系、部署升级以及多项核心功能增强，标志着 Nexent 在 **可扩展性、工程化能力与企业级部署** 上迈入新阶段
 
 We are excited to announce the official release of **Nexent v2.0.0**! 🎉
 This milestone release introduces a new capability system, enhanced deployment support, and major feature improvements, marking a significant step forward in scalability, engineering, and enterprise readiness.

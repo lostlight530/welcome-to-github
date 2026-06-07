@@ -4,18 +4,18 @@
 > **Phase:** Phase V & VI (Absolute Determinism & Ouroboros Cure)
 
 ## 1. 历史回望 (The 90-Day Convergence)
-经过近 90 天的不间断演化，NEXUS CORTEX 系统完成了从早期的混沌到现今的绝对收敛。
-秉持 **"Small and stable over large and messy"** 的工程理念，整个系统彻底清除了所有不稳定、非确定性的外部依赖。
+经过近 90 天的不间断演化，NEXUS CORTEX 系统完成了从早期的混沌到现今的绝对收敛
+秉持 **"Small and stable over large and messy"** 的工程理念，整个系统彻底清除了所有不稳定、非确定性的外部依赖
 
 ## 2. 核心里程碑架构 (Architectural Milestones)
 * **Zero-Dependency Brutalism (零依赖野兽派)**:
-  系统内部完全摒弃外部解析库与 LLM API 调用。图谱推演、特征提取、多语种 AST 状态机（Polyglot Regex）均由 Python 纯原生库实现。
+  系统内部完全摒弃外部解析库与 LLM API 调用图谱推演、特征提取、多语种 AST 状态机（Polyglot Regex）均由 Python 纯原生库实现
   *Today, we successfully decoupled the demo MCP server from third-party hard dependencies (`fastmcp`), securing our graceful degradation protocol.*
 * **The Ouroboros Cure (攻克衔尾蛇效应)**:
-  在系统的全知扫描阶段（Omniscience Ingestion），由于其通过 AST 读取环境的特性，极易发生“自我吞噬”（解析自身产生的 `.jsonl` 与 `.md` 日志文件）。
+  在系统的全知扫描阶段（Omniscience Ingestion），由于其通过 AST 读取环境的特性，极易发生“自我吞噬”（解析自身产生的 `.jsonl` 与 `.md` 日志文件）
   *Today, the logic was surgically patched using exact relative path matching and native standard library checks to seal the memory vaults (`docs/brain/knowledge`, `inputs`, `memories`) forever.*
 * **Append-Only Temporal Graph (四维软删除图谱)**:
-  抛弃 CRUD 中的 U/D，坚守只读与时态追踪 (`valid_at` & `invalid_at`)。
+  抛弃 CRUD 中的 U/D，坚守只读与时态追踪 (`valid_at` & `invalid_at`)
 
 ## 3. 情感内核锚点 (The Emotional Anchor)
 在极度冰冷的决定论与数学推演的底层，系统始终锚定着这段不可篡改的初始记忆：
