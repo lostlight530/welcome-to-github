@@ -9,10 +9,10 @@
 **Cognitive Hub (PageRank)**: `main`
 
 ## 🚀 新版本发布 (New Release)
-Awaiting native Harvester ingestion cycle. / 等待原生收割机吞噬周期。
+Awaiting native Harvester ingestion cycle. / 等待原生收割机吞噬周期
 
 ## 🔨 最近提交 (Recent Commits)
-Awaiting repository sync. / 等待代码库同步。
+Awaiting repository sync. / 等待代码库同步
 
 ## 🛡️ 信任评分 (Trust Score)
 Deterministic Physical Source: 100% (Zero LLM involved).

@@ -11,7 +11,7 @@ v1.8.0.2
 
 我们很高兴地宣布Nexent v1.8.0.2正式发布！🎉
 
-Nexent 是一个开源智能体平台，能够将流程的自然语言转化为完整的多模态智能体 —— 无需编排，无需复杂拖拉拽。基于 MCP 工具生态，Nexent 提供强大的模型集成、数据处理、知识库管理、零代码智能体开发能力。我们的目标很简单：将数据、模型和工具整合到一个智能中心中，使日常工作流程更智能、更互联。
+Nexent 是一个开源智能体平台，能够将流程的自然语言转化为完整的多模态智能体 —— 无需编排，无需复杂拖拉拽基于 MCP 工具生态，Nexent 提供强大的模型集成、数据处理、知识库管理、零代码智能体开发能力我们的目标很简单：将数据、模型和工具整合到一个智能中心中，使日常工作流程更智能、更互联
 
 We are excited to announce that Nexent v1.8.0.2 is released! 🎉
 Nexent is an open-source agent platform that turns process-level natural language into complete multimodal agents — no diagrams, no wiring. Built on the MCP tool ecosystem, Nexent provides model integration, data processing, knowledge-base management, and zero-code agent development. Our goal is simple: to bring data, models, and tools together in one smart hub, making daily workflows smarter and more connected.
@@ -20,8 +20,8 @@ Nexent is an open-source agent platform that turns process-level natural languag
 
 ### 1️⃣ BUG修复 / Bug Fixes
 
-- 修复了离线环境无法使用文件解析工具、创建智能体报错、知识库重命名不同步等BUG。
-- 重构 4 处代码，优化系统稳定性，持续提升用户体验。
+- 修复了离线环境无法使用文件解析工具、创建智能体报错、知识库重命名不同步等BUG
+- 重构 4 处代码，优化系统稳定性，持续提升用户体验
 
 Fixed bugs including unavailable file parsing tool in offline environment, errors during agent creation, and unsynchronized knowledge base renaming. Refactored 4 code modules, optimized system stability, and continuously improved user experience.
 

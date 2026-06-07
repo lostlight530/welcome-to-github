@@ -10,7 +10,7 @@ v1.8.0.1-hotfix
 
 ### 1️⃣ 智能体保存报错修复 / Agent Save Error Fix
 
-修复了更新工具及添加智能体关联关系时出现的报错问题。
+修复了更新工具及添加智能体关联关系时出现的报错问题
 
 Fixed the error that occurred when updating a tool and adding an agent relationship.
 
