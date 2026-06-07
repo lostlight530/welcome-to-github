@@ -19,7 +19,7 @@
 
 我们很高兴地宣布Nexent v2.1.0正式发布！🎉
 
-Nexent 是一个开源智能体平台，能够将流程的自然语言转化为完整的多模态智能体 —— 无需编排，无需复杂拖拉拽。基于 MCP 工具生态，Nexent 提供强大的模型集成、数据处理、知识库管理、零代码智能体开发能力。我们的目标很简单：将数据、模型和工具整合到一个智能中心中，使日常工作流程更智能、更互联。
+Nexent 是一个开源智能体平台，能够将流程的自然语言转化为完整的多模态智能体 —— 无需编排，无需复杂拖拉拽基于 MCP 工具生态，Nexent 提供强大的模型集成、数据处理、知识库管理、零代码智能体开发能力我们的目标很简单：将数据、模型和工具整合到一个智能中心中，使日常工作流程更智能、更互联
 
 We are excited to announce that Nexent v2.1.0 is released! 🎉
 Nexent is an open-source agent platform that turns process-level natural language into complete multimodal agents — no diagrams, no wiring. Built on the MCP tool ecosystem, Nexent provides model integration, data processing, knowledge-base management, and zero-code agent development. Our goal is simple: to bring data, models, and tools together in one smart hub, making daily workflows smarter and more connected.
@@ -27,35 +27,35 @@ Nexent is an open-source agent platform that turns process-level natural languag
 ## 新功能 / New Features
 
 ### A2A 协议支持 / A2A Protocol Support
-平台 Agent 可发布为 A2A 服务，支持外部发现和调用；也可反向发现和调用外部 A2A Agent，支持直接对话。覆盖后端 API、数据库、SDK、前端全链路。
+平台 Agent 可发布为 A2A 服务，支持外部发现和调用；也可反向发现和调用外部 A2A Agent，支持直接对话覆盖后端 API、数据库、SDK、前端全链路
 Platform agents can be published as A2A services; external A2A agents can be discovered and called with direct chat support. Covers backend API, database, SDK, and frontend end-to-end.
 
 ### SQL 数据库工具 / SQL Database Tools
-新增 MySQL、PostgreSQL、MSSQL 数据库执行工具。
+新增 MySQL、PostgreSQL、MSSQL 数据库执行工具
 Added SQL execute tools for MySQL, PostgreSQL, and MSSQL.
 
 ### NL2Skill 多轮对话 / NL2Skill Multi-turn Support
-支持多轮自然语言生成技能，复杂技能生成，官方技能预装。
+支持多轮自然语言生成技能，复杂技能生成，官方技能预装
 Supports multi-turn skill generation, complicated skill creation, and official skills pre-installation.
 
 ### 模型监控 / Model Monitoring
-新增模型调用监控，支持 Token 使用追踪和统计。
+新增模型调用监控，支持 Token 使用追踪和统计
 Added model monitoring with token usage tracking and statistics.
 
 ### Agent 上下文管理 / Agent Context Management
-新增上下文压缩、Token 估算、指标日志。
+新增上下文压缩、Token 估算、指标日志
 Added context compression, token estimation, and metrics logging.
 
 ### 模型与版本对比 / Model & Version Comparison
-支持不同模型和 Agent 版本对比功能。
+支持不同模型和 Agent 版本对比功能
 Added comparison for different models and agent versions.
 
 ### OAuth 重构 & API 转 MCP / OAuth Refactor & API to MCP
-OAuth 实现重构；API 到 MCP 服务转换重构。
+OAuth 实现重构；API 到 MCP 服务转换重构
 Refactored OAuth implementation and API to MCP service transformation.
 
 ### 个人文件权限隔离 / Personal File Permission Isolation
-个人上传文件权限隔离，添加登录认证验证。
+个人上传文件权限隔离，添加登录认证验证
 Personal file uploads with permission isolation and authentication verification.
 
 ---
