@@ -21,3 +21,4 @@ Legacy files are permanently archived under `legacy_traces/` to adhere to Append
 ## Recent Activity
 - 2026-06-01: No legacy traces migrated this week.
 - 2026-06-07: Added 4 new incremental indices (JULES_FINAL_THOUGHTS, MILESTONE_90_DAYS_COMMEMORATION, architecture-audit-20260425, system-architecture-analysis).
+- 2026-06-07: Added index for strict formatting rule enforcement (formatting-modifications-202606.md).
