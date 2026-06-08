@@ -1,3 +1,5 @@
-# Archaeology Calibration Report (2026-06)
-- Logical consistency across PHASE_*.md validated.
-- AST Hot-patching history reflects no legacy conflicts.
+# 月度时空校准 (PHASE CALIBRATION)
+
+TIMELINE_DOCS_VERIFIED: 2
+LOGIC_PARADOX_DETECTED: NONE
+PHASE_JUMP_REQUIRED: NO
