@@ -4,7 +4,7 @@
 
 ## 🚀 新版本发布 (New Release)
 > Version: v1.0.8
-> Date: 2026-06-11T09:32:05.436114
+> Date: 2026-06-11T23:23:30.016620
 
 ## 💡 项目洞察 (Insight)
 > **Architect's Analysis**: ⚠️ Breaking-Change 🔗 Agent-Protocol
@@ -44,3 +44,4 @@ This release focuses on production readiness across observability, credential ma
 ## Change Scope
 - 155 files changed: 6,629 insertions and 2,304 deletions.
 - Full comparison: https://github.com/iflytek/astron-agent/compare/v1.0.7...v1.0.8
+
