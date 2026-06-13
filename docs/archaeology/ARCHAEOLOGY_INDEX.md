@@ -26,3 +26,6 @@ Legacy files are permanently archived under `legacy_traces/` to adhere to Append
 ### 2026-06-08 架构扫描记录
 * **扫描结果**: `No legacy files migrated this week.`
 * **系统状态**: 历史归档区保持静默，无覆写或删改动作。
+- 2026-06-13: [W3] Generated W23 Entity Alignment Report (2026-W23-entity-alignment.md).
+- 2026-06-13: [W3] Generated W24 Entity Alignment Report (2026-W24-entity-alignment.md).
+- 2026-06-13: [Simulation] Mocked daily intelligence and dashboards for 2026-06-01 to 2026-06-13.
