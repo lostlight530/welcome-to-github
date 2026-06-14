@@ -4,7 +4,7 @@
 
 ## 🚀 新版本发布 (New Release)
 > Version: v0.23.0
-> Date: 2026-06-14T00:08:42.273743
+> Date: 2026-06-14T03:12:52.794260
 
 ## 💡 项目洞察 (Insight)
 > **Architect's Analysis**: 🏷️ Edge-Ready ⚠️ Breaking-Change
@@ -27,14 +27,14 @@ This release features 408 commits from 200 contributors (63 new)!
 * **Model Runner V2 expands to more dense models**: MRv2 is now selected by default for **Llama and Mistral dense models** (#43458) in addition to Qwen3. It gained a FlashInfer sampler (#42472), breakable CUDA graphs (#44050), pipeline-parallel bubble elimination (#42187), kernel block-size support for hybrid models (#38831), and Gemma 4 MTP (#43241).
 * **Rust frontend grows up**: The experimental Rust frontend added a streaming `generate` endpoint (#43779), dynamic LoRA endpoints (#43778), `/version` (#43854) and `/server_info` (#43942) endpoints, a server-router extension hook (#43774), request-ID headers (#43883), and many new tool parsers (InternLM2 #43481, hy_v3 #43872, Phi-4-mini #44213, Gemma4 #43850).
 * **Gemma 4**: Added encoder-free **Gemma 4 Unified** support (#44429) and Gemma 4 MTP (#43241), plus numerous accuracy and startup fixes.
-* **Transformers v5 compatibility**: vLLM now targets Transformers v5, deprecating v4 support (#40389), with vendored MiniCPM-V/O processors (#44282) and compatibility fixes for Sarvam (#38804) and Voxtral (#44559).
+* **Transformers v5 compatibility**: vLLM now targets Transformers v5, with vendored MiniCPM-V/O processors (#44282) and compatibility fixes for Sarvam (#38804) and Voxtral (#44559).
 * **Multi-tier KV cache offloading**: The offloading framework gained an **object-store secondary tier** (#41968), HMA enabled by default for capable connectors (#41847), tiering support for HMA models (#44287), and a per-request offloading policy via the `on_new_request` lifecycle hook (#43205).
 * **Unified parser**: Reasoning and tool-call parsing are now unified behind a single `Parser.parse()` interface (#44267), with the Responses parser migrated to it (#42977).
 
 ### Model Support
-* **New models**: MiMo-V2.5 (#40967), Step-3.7-Flash (#43859), Cosmos3 Reasoner (#43356), Gemma 4 Unified encoder-free (#44429), JetBrains Mellum v2 (#43992), Granite Speech Plus (#43519), Cohere Mini Code (#44707).
+* **New models**: Step-3.7-Flash (#43859), Cosmos3 Reasoner (#43356), Gemma 4 Unified encoder-free (#44429), JetBrains Mellum v2 (#43992), Granite Speech Plus (#43519), Cohere Mini Code (#44707).
 * **Gemma 4**: Encoder-free Unified support (#44429), MTP (#43241), native ViT linear layers (#43798), vision-embedder excluded from quantization (#44571), and fixes for MTP under TP>1 (#43909), block-table mismatch under concurrency (#43982), transformers-processor startup crash (#44232), and CPU init (#44615).
-* **Transformers v5**: Deprecate v4 support (#40389), vendor MiniCPM-V/O processors (#44282), Sarvam compat (#38804), Voxtral `fetch_audio` for transformers≥5.10 (#44559).
+* **Transformers v5**: Vendor MiniCPM-V/O processors (#44282), Sarvam compat (#38804), Voxtral `fetch_audio` for transformers≥5.10 (#44559).
 * **Model fixes & enhancements**: Qwen3-VL/Qwen3-omni-thinker deepstack accuracy under `torch.compile` (#43617), EVS for Qwen3-VL (#44205), GLM-5.1 PP loading (#42944), GLM-4.1V processor logits (#43575), GLM-4.6V video loader (#44417), OlmoHybrid init (#43846), HyperCLOVAX remote-code removal (#43860), Bailing-MoE rotary factor (#43770), Step3 PP residual KeyError (#37622), MiniCPM-V-4.6 video (#44509), MiniCPM-O audio unpadding (#38053), MiniCPM-V batched preprocessing (#44609), FunASR-Nano init (#44215), Cohere routing method (#44021), Kimi-K2.5 FlashInfer ViT metadata (#44493).
 * **Multimodal**: Auto-select registered video loader for VLMs (#44126), O(log n) multimodal item handling per step (#44212), local image encoding in benchmarks (#43843), interleaved custom image benchmark datasets (#43636).
 * **Pooling/Classification**: Proper exceptions for pooling UX (#44593), `extra_repr()` for pooler classes (#44805), LoRA-adapter-name pooling fix (#44410), resettled generative scoring entrypoint (#44153), expanded pooler unit tests (#43818, #44471).
@@ -85,7 +85,6 @@ This release features 408 commits from 200 contributors (63 new)!
 * Removed the stale cuDNN frontend upper bound (#42599); Docker fixes for flashinfer-jit-cache (#44366), FlashInfer CuTe DSL JIT `libcublas-dev` (#39855), and CUTLASS DSL cu13 install order (#45204).
 
 ### Deprecations
-* Deprecate Transformers v4 support (#40389).
 * Deprecate `JAISLMHeadModel` (#43784).
 * Begin the deprecation cycle for the NixlConnector `kv_both` role (#43874).
 * Remove functions previously scheduled for deprecation in v0.21.0 (#43358).
