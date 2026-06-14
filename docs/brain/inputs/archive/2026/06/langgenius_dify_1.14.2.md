@@ -1,18 +1,18 @@
 # ℹ️ Intel Report: langgenius/dify
-## 🎯 监控目标 (Target)
+# 🎯 监控目标 (Target)
 > langgenius/dify
 
-## 🚀 新版本发布 (New Release)
+# 🚀 新版本发布 (New Release)
 > Version: 1.14.2
 > Date: 2026-06-02T02:51:03.873185
 
-## 💡 项目洞察 (Insight)
+# 💡 架构洞察 (Architectural Insight)
 > **Architect's Analysis**: ⚠️ Breaking-Change 🔗 Agent-Protocol
 
-## 🛡️ 信任评分 (Trust Score)
+# 🛡️ 信任评分 (Trust Score)
 > Score: 100/100
 
-## 🔨 最近提交 (Recent Commits)
+# 🔨 最近提交 (Recent Commits)
 *Summary from release notes:*
 
 ## 🚀 What's New in v1.14.2?

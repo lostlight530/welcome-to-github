@@ -1,18 +1,18 @@
 # ℹ️ Intel Report: google-ai-edge/mediapipe
-## 🎯 监控目标 (Target)
+# 🎯 监控目标 (Target)
 > google-ai-edge/mediapipe
 
-## 🚀 新版本发布 (New Release)
+# 🚀 新版本发布 (New Release)
 > Version: v0.10.35
 > Date: 2026-06-14T09:48:40.919191
 
-## 💡 项目洞察 (Insight)
+# 💡 架构洞察 (Architectural Insight)
 > **Architect's Analysis**: 🏷️ Edge-Ready
 
-## 🛡️ 信任评分 (Trust Score)
+# 🛡️ 信任评分 (Trust Score)
 > Score: 90/100
 
-## 🔨 最近提交 (Recent Commits)
+# 🔨 最近提交 (Recent Commits)
 *Summary from release notes:*
 
 ### Framework and core calculator improvements

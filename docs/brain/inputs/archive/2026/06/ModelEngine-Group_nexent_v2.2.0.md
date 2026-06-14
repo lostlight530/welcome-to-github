@@ -1,48 +1,48 @@
 # ℹ️ Intel Report: ModelEngine-Group/nexent
-## 🎯 监控目标 (Target)
+# 🎯 监控目标 (Target)
 > ModelEngine-Group/nexent
 
-## 🚀 新版本发布 (New Release)
+# 🚀 新版本发布 (New Release)
 > Version: v2.2.0
 > Date: 2026-06-14T09:48:40.885204
 
-## 💡 项目洞察 (Insight)
+# 💡 架构洞察 (Architectural Insight)
 > **Architect's Analysis**: 🏷️ Edge-Ready 🔗 Agent-Protocol
 
-## 🛡️ 信任评分 (Trust Score)
+# 🛡️ 信任评分 (Trust Score)
 > Score: 100/100
 
-## 🔨 最近提交 (Recent Commits)
+# 🔨 最近提交 (Recent Commits)
 *Summary from release notes:*
 
 # 🚀 Nexent：开源智能体平台 / Nexent: Open Source Intelligent Agent Platform
 
 我们很高兴地宣布Nexent v2.2.0 正式发布！🎉
 
-Nexent 是一个开源智能体平台，能够将流程的自然语言转化为完整的多模态智能体 —— 无需编排，无需复杂拖拉拽。基于 MCP 工具生态，Nexent 提供强大的模型集成、数据处理、知识库管理、零代码智能体开发能力。我们的目标很简单：将数据、模型和工具整合到一个智能中心中，使日常工作流程更智能、更互联。
+Nexent 是一个开源智能体平台，能够将流程的自然语言转化为完整的多模态智能体 —— 无需编排，无需复杂拖拉拽.基于 MCP 工具生态，Nexent 提供强大的模型集成、数据处理、知识库管理、零代码智能体开发能力.我们的目标很简单：将数据、模型和工具整合到一个智能中心中，使日常工作流程更智能、更互联.
 
 We are excited to announce that Nexent v2.2.0 is released! 🎉
 Nexent is an open-source agent platform that turns process-level natural language into complete multimodal agents — no diagrams, no wiring. Built on the MCP tool ecosystem, Nexent provides model integration, data processing, knowledge-base management, and zero-code agent development. Our goal is simple: to bring data, models, and tools together in one smart hub, making daily workflows smarter and more connected.
 
 ---
 ## 新功能 / New Features
-- 新增或增强了 Agent 生成模板管理、A2A 相关协作能力、Vision-Language 识别与音频理解工具。 / Added or improved agent generation template management, A2A collaboration capabilities, and vision-language plus audio understanding tools.
-- 支持用户配置模型并发限制和超时时间，提升推理资源控制能力。 / Added user-configurable model concurrency limits and timeout settings to improve inference resource control.
-- 增强上下文管理，并为 Agent 上下文模块增加基准测试。 / Improved context management and added benchmarks for the agent context module.
-- 新增技能、MCP 服务、自定义 header、工具执行日志等平台扩展能力。 / Added platform extensibility for skills, MCP services, custom headers, and tool execution logging.
-- 新增资源权限与角色相关能力，例如 `ASSET_OWNER` 角色与资源可见性控制。 / Added resource access features such as the `ASSET_OWNER` role and resource visibility enforcement.
-- 扩展多模态与文档能力，包括 office/PDF 图片抽取与检索、TTS 语音模型支持等。 / Expanded multimodal and document capabilities, including image extraction/retrieval for office/PDF files and TTS model support.
+- 新增或增强了 Agent 生成模板管理、A2A 相关协作能力、Vision-Language 识别与音频理解工具. / Added or improved agent generation template management, A2A collaboration capabilities, and vision-language plus audio understanding tools.
+- 支持用户配置模型并发限制和超时时间，提升推理资源控制能力. / Added user-configurable model concurrency limits and timeout settings to improve inference resource control.
+- 增强上下文管理，并为 Agent 上下文模块增加基准测试. / Improved context management and added benchmarks for the agent context module.
+- 新增技能、MCP 服务、自定义 header、工具执行日志等平台扩展能力. / Added platform extensibility for skills, MCP services, custom headers, and tool execution logging.
+- 新增资源权限与角色相关能力，例如 `ASSET_OWNER` 角色与资源可见性控制. / Added resource access features such as the `ASSET_OWNER` role and resource visibility enforcement.
+- 扩展多模态与文档能力，包括 office/PDF 图片抽取与检索、TTS 语音模型支持等. / Expanded multimodal and document capabilities, including image extraction/retrieval for office/PDF files and TTS model support.
 ## Bug 修复 / Bug Fixes
-- 修复外部协作 Agent 保存、权限控制、模型添加、Agent Prompt 生成等问题。 / Fixed external collaboration agent saving, permission control, model addition, and agent prompt generation issues.
-- 修复 MCP 集成相关问题，包括代理环境变量干扰与工具调用异常。 / Fixed MCP integration issues, including proxy environment variable interference and tool call failures.
-- 修复知识库与会话历史相关问题，例如记录缺少 `embedding_model_id`、会话历史未正确保存。 / Fixed knowledge base and conversation history issues, such as missing `embedding_model_id` and incorrect history persistence.
-- 修复调试模式中错误信息不充分、模型输出历史未包含、`iData` 工具调用失败等问题。 / Fixed insufficient error details in debug mode, missing model output history, and `iData` tool call failures.
-- 修复登录/注册、技能/工具按钮状态、无网络场景下 VLM 添加、图片预览旋转等体验问题。 / Fixed UX issues around login/register flows, skill/tool button states, VLM addition without network access, and image preview rotation.
-- 修复部署持久化、Docker SQL 重复、监控环境变量同步等问题。 / Fixed deployment persistence, Docker SQL duplication, and monitoring environment variable sync issues.
+- 修复外部协作 Agent 保存、权限控制、模型添加、Agent Prompt 生成等问题. / Fixed external collaboration agent saving, permission control, model addition, and agent prompt generation issues.
+- 修复 MCP 集成相关问题，包括代理环境变量干扰与工具调用异常. / Fixed MCP integration issues, including proxy environment variable interference and tool call failures.
+- 修复知识库与会话历史相关问题，例如记录缺少 `embedding_model_id`、会话历史未正确保存. / Fixed knowledge base and conversation history issues, such as missing `embedding_model_id` and incorrect history persistence.
+- 修复调试模式中错误信息不充分、模型输出历史未包含、`iData` 工具调用失败等问题. / Fixed insufficient error details in debug mode, missing model output history, and `iData` tool call failures.
+- 修复登录/注册、技能/工具按钮状态、无网络场景下 VLM 添加、图片预览旋转等体验问题. / Fixed UX issues around login/register flows, skill/tool button states, VLM addition without network access, and image preview rotation.
+- 修复部署持久化、Docker SQL 重复、监控环境变量同步等问题. / Fixed deployment persistence, Docker SQL duplication, and monitoring environment variable sync issues.
 ## 文档与部署变化 / Docs & Deployment Changes
-- 新增 SQL tools 文档、MCP 服务 API 文档，并更新 skill 相关说明。 / Added SQL tools documentation, MCP service API documentation, and updated skill-related docs.
-- 增加离线部署包构建流程，并优化部署脚本与 Helm 指南。 / Added offline deployment package build flow and improved deployment scripts and Helm guidance.
-- 增加引导用户 star 仓库的文案与文档提示。 / Added prompts and documentation nudges encouraging users to star the repository.
+- 新增 SQL tools 文档、MCP 服务 API 文档，并更新 skill 相关说明. / Added SQL tools documentation, MCP service API documentation, and updated skill-related docs.
+- 增加离线部署包构建流程，并优化部署脚本与 Helm 指南. / Added offline deployment package build flow and improved deployment scripts and Helm guidance.
+- 增加引导用户 star 仓库的文案与文档提示. / Added prompts and documentation nudges encouraging users to star the repository.
 
 ## What's Changed
 * Fix external collaboration agent saving and related bugs by @Dallas98 in https://github.com/ModelEngine-Group/nexent/pull/2993

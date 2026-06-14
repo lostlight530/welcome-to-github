@@ -1,15 +1,15 @@
 # ℹ️ Intel Report: microsoft/markitdown
-## 🎯 监控目标 (Target)
+# 🎯 监控目标 (Target)
 > microsoft/markitdown
 
-## 🚀 新版本发布 (New Release)
+# 🚀 新版本发布 (New Release)
 > Version: v0.1.6
 > Date: 2026-06-14T09:48:40.925829
 
-## 🛡️ 信任评分 (Trust Score)
+# 🛡️ 信任评分 (Trust Score)
 > Score: 80/100
 
-## 🔨 最近提交 (Recent Commits)
+# 🔨 最近提交 (Recent Commits)
 *Summary from release notes:*
 
 ## What's Changed

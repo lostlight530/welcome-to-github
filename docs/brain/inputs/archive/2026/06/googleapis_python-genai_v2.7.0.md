@@ -1,15 +1,15 @@
 # ℹ️ Intel Report: googleapis/python-genai
-## 🎯 监控目标 (Target)
+# 🎯 监控目标 (Target)
 > googleapis/python-genai
 
-## 🚀 新版本发布 (New Release)
+# 🚀 新版本发布 (New Release)
 > Version: v2.7.0
 > Date: 2026-06-03T04:49:01.917601
 
-## 🛡️ 信任评分 (Trust Score)
+# 🛡️ 信任评分 (Trust Score)
 > Score: 80/100
 
-## 🔨 最近提交 (Recent Commits)
+# 🔨 最近提交 (Recent Commits)
 *Summary from release notes:*
 
 ## [2.7.0](https://github.com/googleapis/python-genai/compare/v2.6.0...v2.7.0) (2026-05-27)

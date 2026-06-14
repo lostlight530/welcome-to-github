@@ -1,18 +1,18 @@
 # ℹ️ Intel Report: vllm-project/vllm
-## 🎯 监控目标 (Target)
+# 🎯 监控目标 (Target)
 > vllm-project/vllm
 
-## 🚀 新版本发布 (New Release)
+# 🚀 新版本发布 (New Release)
 > Version: v0.22.1
 > Date: 2026-06-13T03:46:41.776581
 
-## 💡 项目洞察 (Insight)
+# 💡 架构洞察 (Architectural Insight)
 > **Architect's Analysis**: 🏷️ Edge-Ready ⚠️ Breaking-Change
 
-## 🛡️ 信任评分 (Trust Score)
+# 🛡️ 信任评分 (Trust Score)
 > Score: 100/100
 
-## 🔨 最近提交 (Recent Commits)
+# 🔨 最近提交 (Recent Commits)
 *Summary from release notes:*
 
 ## Highlights
