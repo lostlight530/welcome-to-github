@@ -1,18 +1,18 @@
 # ℹ️ Intel Report: ModelEngine-Group/nexent
-## 🎯 监控目标 (Target)
+# 🎯 监控目标 (Target)
 > ModelEngine-Group/nexent
 
-## 🚀 新版本发布 (New Release)
+# 🚀 新版本发布 (New Release)
 > Version: v2.1.1
 > Date: 2026-06-03T02:25:13.401474
 
-## 💡 项目洞察 (Insight)
+# 💡 架构洞察 (Architectural Insight)
 > **Architect's Analysis**: 🔗 Agent-Protocol
 
-## 🛡️ 信任评分 (Trust Score)
+# 🛡️ 信任评分 (Trust Score)
 > Score: 90/100
 
-## 🔨 最近提交 (Recent Commits)
+# 🔨 最近提交 (Recent Commits)
 *Summary from release notes:*
 
 # 🚀 Nexent：开源智能体平台 / Nexent: Open Source Intelligent Agent Platform

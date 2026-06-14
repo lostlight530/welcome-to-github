@@ -1,18 +1,18 @@
 # ℹ️ Intel Report: huggingface/transformers
-## 🎯 监控目标 (Target)
+# 🎯 监控目标 (Target)
 > huggingface/transformers
 
-## 🚀 新版本发布 (New Release)
+# 🚀 新版本发布 (New Release)
 > Version: v5.11.0
 > Date: 2026-06-12T12:28:09.318784
 
-## 💡 项目洞察 (Insight)
+# 💡 架构洞察 (Architectural Insight)
 > **Architect's Analysis**: 🏷️ Edge-Ready 🔗 Agent-Protocol
 
-## 🛡️ 信任评分 (Trust Score)
+# 🛡️ 信任评分 (Trust Score)
 > Score: 100/100
 
-## 🔨 最近提交 (Recent Commits)
+# 🔨 最近提交 (Recent Commits)
 *Summary from release notes:*
 
 # Release v5.11.0

@@ -1,18 +1,18 @@
 # ℹ️ Intel Report: iflytek/astron-agent
-## 🎯 监控目标 (Target)
+# 🎯 监控目标 (Target)
 > iflytek/astron-agent
 
-## 🚀 新版本发布 (New Release)
+# 🚀 新版本发布 (New Release)
 > Version: v1.0.8
 > Date: 2026-06-14T16:06:29.754160
 
-## 💡 项目洞察 (Insight)
+# 💡 架构洞察 (Architectural Insight)
 > **Architect's Analysis**: ⚠️ Breaking-Change 🔗 Agent-Protocol
 
-## 🛡️ 信任评分 (Trust Score)
+# 🛡️ 信任评分 (Trust Score)
 > Score: 100/100
 
-## 🔨 最近提交 (Recent Commits)
+# 🔨 最近提交 (Recent Commits)
 *Summary from release notes:*
 
 This release focuses on production readiness across observability, credential management, workflow execution security, and deployment operations. It adds health checks, gateway authentication, platform account management, and several security hardening fixes.
