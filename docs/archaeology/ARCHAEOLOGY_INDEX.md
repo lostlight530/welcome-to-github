@@ -31,3 +31,8 @@ Legacy files are permanently archived under `legacy_traces/` to adhere to Append
 * **迁移来源**: `docs/brain/memories/` 等日常活动目录
 * **考古归宿**: `docs/archaeology/legacy_traces/` (包含 18 个日常 Dashboard, 18 个 Mission 文件及部分旧版核心思考如 `system-architecture-analysis.md` 等)
 * **封存原因**: 根据 PHASE VI 与 PHASE VII 演进准则，系统已完全废弃基于主观语言描述的认知报告与碎片化的每日文件，全面收敛为基于数学图谱与绝对决定论的中央自动化记录旧日遗迹被安全移入归档区
+
+### [2026-06-21] 架构迁移记录
+* **迁移来源**: `docs/brain/memories/` 等日常记录目录
+* **考古归宿**: `docs/archaeology/legacy_traces/` (包含 45 个历史文件，如各类 Mission 和 Dashboard 等)
+* **封存原因**: 根据系统演进准则与 Append-Only 原则，本周将过时的日常碎片报告与冗余的活动记录封存，进一步收敛系统为单一不可变的量化账本以保持极简工程架构
