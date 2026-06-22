@@ -4,7 +4,7 @@
 During the early June 2026 architecture review, a strict formatting constraint was enforced across the repository to adhere to the principle of "Quiet, Pragmatic, Engineering Excellence".
 
 ## Actions Taken
-1. **Punctuation Stripping**: All Chinese periods ("。") have been explicitly removed from all generated memory artifacts, dashboards, ledgers, and frontend translations.
+1. **Punctuation Stripping**: All Chinese periods ("") have been explicitly removed from all generated memory artifacts, dashboards, ledgers, and frontend translations.
 2. **Deterministic Output**: The rendering pipelines have been updated implicitly via rule adherence to prevent any injection of unnecessary punctuation.
 
 ## Affected Scopes
