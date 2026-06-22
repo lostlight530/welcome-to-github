@@ -1,5 +1,5 @@
-Schema: Checked=4 Compliant=4 Violations=0
-Cross-Repo: [test_mcp_server+Brain Record+Actual+✅]
-Stale Nodes (Soft-Deleted): []
-Auto-Bridged (nexus.py connect): []
-Needs Human Architect: []
+SCHEMA_COMPLIANCE: CHECKED=4 COMPLIANT=4 VIOLATIONS=0
+CROSS_REPO_MAPPED: [test_mcp_server+Brain Record+Actual+✅]
+ORPHAN_NODES_DETECTED: NONE
+AUTO_BRIDGED_NODES: NONE
+NEEDS_HUMAN_BRIDGE: NONE
