@@ -4,7 +4,7 @@
 
 ## 🚀 新版本发布 (New Release)
 > Version: v2.2.1
-> Date: 2026-06-28T03:52:47.091049
+> Date: 2026-06-28T09:15:08.288918
 
 ## 💡 项目洞察 (Insight)
 > **Architect's Analysis**: ⚠️ Breaking-Change 🔗 Agent-Protocol
