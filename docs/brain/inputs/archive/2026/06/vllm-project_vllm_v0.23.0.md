@@ -4,7 +4,7 @@
 
 ## 🚀 新版本发布 (New Release)
 > Version: v0.23.0
-> Date: 2026-06-28T01:00:38.775988
+> Date: 2026-06-28T01:11:18.638594
 
 ## 💡 项目洞察 (Insight)
 > **Architect's Analysis**: 🏷️ Edge-Ready ⚠️ Breaking-Change
