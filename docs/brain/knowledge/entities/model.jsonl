@@ -4,4 +4,4 @@
 {"id": "voxtral-realtime", "type": "model", "name": "VoxtralRealtime (Streaming ASR)", "desc": "Low-latency streaming ASR model.", "valid_at": "2026-05-31T00:00:00Z"}
 {"id": "qwen3-5-moe", "type": "model", "name": "Qwen3.5 MoE (4-bit Mobile)", "desc": "Efficient 4-bit MoE model for mobile devices.", "valid_at": "2026-05-31T00:00:00Z"}
 {"id": "eurobert", "type": "model", "name": "EuroBERT (Bidirectional Llama)", "desc": "Bidirectional transformer.", "valid_at": "2026-05-31T00:00:00Z"}
-{"id": "eurobert", "type": "model", "name": "EuroBERT", "desc": "\u5f00\u6e90\u7684\u9876\u7ea7\u591a\u8bed\u8a00\u7f16\u7801\u5668\u6a21\u578b (Encoder)\u3002\u8bad\u7ec3\u4e8e 5 \u4e07\u4ebf Token\uff0c\u4e13\u4e3a RAG\u3001\u4ee3\u7801\u548c\u6570\u5b66\u63a8\u7406\u4f18\u5316\u3002", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "eurobert", "type": "model", "name": "EuroBERT", "desc": "开源的顶级多语言编码器模型 (Encoder)训练于 5 万亿 Token，专为 RAG、代码和数学推理优化", "valid_at": "2026-05-31T00:00:00Z"}
