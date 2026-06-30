@@ -23,7 +23,7 @@
 {"id": "python", "type": "tech", "name": "Python", "desc": "Primary language for AI/ML and scripting.", "valid_at": "2026-05-31T00:00:00Z"}
 {"id": "vertex-ai", "type": "tech", "name": "Google Vertex AI", "desc": "Unified AI platform on Google Cloud.", "valid_at": "2026-05-31T00:00:00Z"}
 {"id": "mediapipe", "type": "tech", "name": "MediaPipe", "desc": "Cross-platform framework for building multimodal ML pipelines.", "valid_at": "2026-05-31T00:00:00Z"}
-{"id": "jax-metal", "type": "tech", "name": "JAX Metal", "desc": "Apple \u5b98\u65b9\u7684 JAX \u63d2\u4ef6\u3002\u5229\u7528 OpenXLA \u5c06\u673a\u5668\u5b66\u4e60\u5de5\u4f5c\u8d1f\u8f7d\u76f4\u63a5\u7f16\u8bd1\u81f3 Apple Silicon GPU (\u539f\u751f Metal \u67b6\u6784)\u3002", "valid_at": "2026-05-31T00:00:00Z"}
-{"id": "vllm-0-17", "type": "tech", "name": "vLLM 0.17.1", "desc": "\u9ad8\u541e\u5410\u91cf\u5927\u6a21\u578b\u63a8\u7406\u5f15\u64ce\u66f4\u65b0\u7248", "valid_at": "2026-05-31T00:00:00Z"}
-{"id": "tensorrt-llm", "type": "tech", "name": "TensorRT-LLM", "desc": "Nvidia\u7684\u7ade\u54c1\u7ea7\u5927\u6a21\u578b\u63a8\u7406\u6846\u67b6\u3002", "valid_at": "2026-05-31T00:00:00Z"}
-{"id": "llama-cpp", "type": "tech", "name": "llama.cpp", "desc": "\u57fa\u4e8eC++\u7684\u8f7b\u91cf\u7ea7\u8fb9\u7f18\u7aef\u5927\u6a21\u578b\u63a8\u7406\u5f15\u64ce\u3002", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "jax-metal", "type": "tech", "name": "JAX Metal", "desc": "Apple 官方的 JAX 插件利用 OpenXLA 将机器学习工作负载直接编译至 Apple Silicon GPU (原生 Metal 架构)", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "vllm-0-17", "type": "tech", "name": "vLLM 0.17.1", "desc": "高吞吐量大模型推理引擎更新版", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "tensorrt-llm", "type": "tech", "name": "TensorRT-LLM", "desc": "Nvidia的竞品级大模型推理框架", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "llama-cpp", "type": "tech", "name": "llama.cpp", "desc": "基于C++的轻量级边缘端大模型推理引擎", "valid_at": "2026-05-31T00:00:00Z"}
