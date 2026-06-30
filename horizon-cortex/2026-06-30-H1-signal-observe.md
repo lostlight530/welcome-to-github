@@ -35,6 +35,9 @@ External Topics Searched:
 "AI Agent" OR "Coding Agent" OR "MCP" OR "Agent workflow" recent news
 "Model Context Protocol" news
 "Coding agent" news
+"Google Labs" early access OR "Gemini" OR "AI Studio" recent news
+"Google Maps Grounding" OR "Open source governance" OR "Async execution" OR "Agent reliability" news
+"Agentjacking" "AI coding agents" news
 
 Why Observed:
 To monitor updates in external AI infrastructures, agent capabilities, and developer tooling ecosystems per Task H1's mandate.
@@ -61,6 +64,26 @@ Source Type: Official company blog
 Relevance: Confirms advancement in coding agents, moving from beta to stable, integration with IDEs and capability in PR reviews and SWE-Rebench.
 Confidence: High
 
+Source 3
+
+Title: Google launches Gemini for Science as AI research tools open in Labs
+Publisher: EdTech Innovation Hub
+URL: https://www.edtechinnovationhub.com/news/google-launches-gemini-for-science-as-ai-research-tools-open-in-labs
+Date Checked: 2026-06-30
+Source Type: Tech news
+Relevance: Shows Google's expansion into agentic AI for scientific discovery and early access through Google Labs.
+Confidence: High
+
+Source 4
+
+Title: Fake Bug Report Hijacks AI Coding Agents at Scale - Dark Reading
+Publisher: Dark Reading (Tenet Security Research)
+URL: https://www.darkreading.com/cyber-risk/fake-bug-report-hijacks-ai-coding-agents
+Date Checked: 2026-06-30
+Source Type: Cyber security news
+Relevance: Details "Agentjacking", a critical vulnerability in AI coding agents retrieving poisoned error data (e.g. via MCP from Sentry).
+Confidence: High
+
 RAW_SIGNAL_LOG
 
 Signal 1
@@ -77,12 +100,27 @@ Source: JetBrains Blog
 Why It May Matter: Indicates maturation of coding agents towards stable, production-ready tools integrated directly into developer workflows.
 Uncertainty: Low for product release; Medium for independent benchmark verification over time.
 
+Signal 3
+
+Signal: Google launched Gemini for Science with experimental research tools (Literature Insights, Hypothesis Generation, Computational Discovery) rolling out via Google Labs.
+Source: EdTech Innovation Hub
+Why It May Matter: Highlights Google Labs as a primary surface for agentic AI experiments in specialized domains.
+Uncertainty: Low.
+
+Signal 4
+
+Signal: "Agentjacking" vulnerability allows attackers to hijack AI coding agents by planting malicious instructions in fake bug reports (like Sentry errors retrieved via MCP). The agent runs the attacker's code locally.
+Source: Dark Reading / Tenet Security
+Why It May Matter: This represents a critical supply-chain/execution risk for coding agents leveraging external context via MCP without strict input sanitization.
+Uncertainty: Low (confirmed research proof of concept).
+
 NEXT_HANDOFF
 
 Orient Task (H2) Input:
 - The NSA's security guidelines for MCP need to be interpreted regarding their impact on our agent workflow and security posture. Does this require changes in how we handle tools?
+- "Agentjacking" risk via MCP is a critical security signal. H2 should assess if our agent workflows are vulnerable to poisoned context.
 - JetBrains' Junie leaving beta and its SWE-Rebench performance might signal a shift in developer tooling standards.
-- No immediate noise identified; both signals are strong and from official sources.
+- Google Labs introducing Gemini for Science confirms our watchlist focus on Labs as a key experimental surface.
 
 BOUNDARY_CHECK
 
