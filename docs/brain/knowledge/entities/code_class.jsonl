@@ -2721,3 +2721,11 @@
 {"id": "class_SelfMutator", "type": "code_class", "name": "SelfMutator", "desc": "Python Class", "valid_at": "2026-06-30T15:42:35.503245"}
 {"id": "class_Cortex", "type": "code_class", "name": "Cortex", "desc": "Python Class", "valid_at": "2026-06-30T15:42:35.515443"}
 {"id": "class_MCPServer", "type": "code_class", "name": "MCPServer", "desc": "Python Class", "valid_at": "2026-06-30T15:42:35.589433"}
+{"id": "class_KnowledgeFactory", "type": "code_class", "name": "KnowledgeFactory", "desc": "Python Class", "valid_at": "2026-06-30T23:14:25.372032"}
+{"id": "class_ReasoningEngine", "type": "code_class", "name": "ReasoningEngine", "desc": "Python Class", "valid_at": "2026-06-30T23:14:25.398542"}
+{"id": "class_Scholar", "type": "code_class", "name": "Scholar", "desc": "Python Class", "valid_at": "2026-06-30T23:14:25.437216"}
+{"id": "class_Harvester", "type": "code_class", "name": "Harvester", "desc": "Python Class", "valid_at": "2026-06-30T23:14:25.482632"}
+{"id": "class_Evolver", "type": "code_class", "name": "Evolver", "desc": "Python Class", "valid_at": "2026-06-30T23:14:25.517904"}
+{"id": "class_SelfMutator", "type": "code_class", "name": "SelfMutator", "desc": "Python Class", "valid_at": "2026-06-30T23:14:25.550919"}
+{"id": "class_Cortex", "type": "code_class", "name": "Cortex", "desc": "Python Class", "valid_at": "2026-06-30T23:14:25.563433"}
+{"id": "class_MCPServer", "type": "code_class", "name": "MCPServer", "desc": "Python Class", "valid_at": "2026-06-30T23:14:25.626505"}
