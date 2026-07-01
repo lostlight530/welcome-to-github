@@ -12,7 +12,7 @@ Cadence: Daily
 
 Loop Stage: Observe
 
-Run Date: 2026-06-30
+Run Date: 2026-07-01
 
 Agent: Jules
 
@@ -49,7 +49,7 @@ Source 1
 Title: NSA Releases Security Design Considerations for AI-Driven Automation Leveraging the Model Context Protocol
 Publisher: NSA
 URL: https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4496698/nsa-releases-security-design-considerations-for-ai-driven-automation-leveraging/
-Date Checked: 2026-06-30
+Date Checked: 2026-07-01
 Source Type: Official press release / Security advisory
 Relevance: Directly addresses Model Context Protocol (MCP) security in AI-enabled systems, indicating accelerating adoption.
 Confidence: High
@@ -59,7 +59,7 @@ Source 2
 Title: Junie: The JetBrains AI Coding Agent Leaves Beta
 Publisher: JetBrains
 URL: https://blog.jetbrains.com/junie/2026/06/junie-coding-agent-out-of-beta/
-Date Checked: 2026-06-30
+Date Checked: 2026-07-01
 Source Type: Official company blog
 Relevance: Confirms advancement in coding agents, moving from beta to stable, integration with IDEs and capability in PR reviews and SWE-Rebench.
 Confidence: High
@@ -69,7 +69,7 @@ Source 3
 Title: Google launches Gemini for Science as AI research tools open in Labs
 Publisher: EdTech Innovation Hub
 URL: https://www.edtechinnovationhub.com/news/google-launches-gemini-for-science-as-ai-research-tools-open-in-labs
-Date Checked: 2026-06-30
+Date Checked: 2026-07-01
 Source Type: Tech news
 Relevance: Shows Google's expansion into agentic AI for scientific discovery and early access through Google Labs.
 Confidence: High
@@ -79,7 +79,7 @@ Source 4
 Title: Fake Bug Report Hijacks AI Coding Agents at Scale - Dark Reading
 Publisher: Dark Reading (Tenet Security Research)
 URL: https://www.darkreading.com/cyber-risk/fake-bug-report-hijacks-ai-coding-agents
-Date Checked: 2026-06-30
+Date Checked: 2026-07-01
 Source Type: Cyber security news
 Relevance: Details "Agentjacking", a critical vulnerability in AI coding agents retrieving poisoned error data (e.g. via MCP from Sentry).
 Confidence: High
