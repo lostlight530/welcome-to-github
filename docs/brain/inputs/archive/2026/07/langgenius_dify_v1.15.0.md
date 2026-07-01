@@ -4,7 +4,7 @@
 
 ## 🚀 新版本发布 (New Release)
 > Version: 1.15.0
-> Date: 2026-07-01T01:08:26.208856
+> Date: 2026-07-01T23:16:47.031769
 
 ## 💡 项目洞察 (Insight)
 > **Architect's Analysis**: 🏷️ Edge-Ready ⚠️ Breaking-Change 🔗 Agent-Protocol
@@ -32,7 +32,7 @@
 - **More accessible** — plugin permission hints, restored contact-us menu, skip-nav link, and keyboard focus polish (#37310, #37774, #37644)
 
 ### New Features
-**difyctl — drive Dify from the command line**
+**difyctl — drive Dify from the command line** ([Docs](https://docs.dify.ai/en/cli/overview))
 - difyctl is a command-line client for Dify: you can now run apps and workflows straight from your terminal, so personal agents, scripts, and CI pipelines can invoke Dify workflows without opening the web UI (#37036)
 - Install it on any platform (macOS, Linux, Windows) with a single command and no access token — binaries are published as public releases with checksum verification (#37036, #37454)
 - Pass scoped environment variables to CLI tool runs, and get clearer, consistent error messages (including friendly rate-limit handling) across both difyctl and the `/openapi/v1` API (#37324, #37285, #37313, #36896)
