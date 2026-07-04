@@ -33,6 +33,13 @@ jobs:
         with:
           enablement: true
 
+      - name: Show files to be uploaded
+        run: |
+          echo "Listing repository root:"
+          ls -la
+          echo "Recursive listing:"
+          ls -R
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
