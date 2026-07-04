@@ -1,5 +1,5 @@
-{"id": "npu-edge", "type": "hardware", "name": "NPU (Neural Processing Unit)", "desc": "Dedicated edge AI accelerator.", "valid_at": "2026-05-31T00:00:00Z"}
-{"id": "cuda-backend", "type": "hardware", "name": "CUDA Backend", "desc": "NVIDIA GPU acceleration layer.", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "npu-edge", "type": "hardware", "name": "NPU (Neural Processing Unit)", "desc": "Dedicated edge AI accelerator.", "tags": [], "updated_at": "2026-03-04T03:00:42.241110", "weight": 1.5, "last_activated": "2026-03-04T03:00:42.241110", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "cuda-backend", "type": "hardware", "name": "CUDA Backend", "desc": "NVIDIA GPU acceleration layer.", "tags": [], "updated_at": "2026-03-05T14:38:34.668829", "weight": 1.5, "last_activated": "2026-03-05T14:38:34.668829", "valid_at": "2026-05-31T00:00:00Z"}
 {"id": "rtx-blackwell", "type": "hardware", "name": "RTX Blackwell (SM120)", "desc": "Next-generation NVIDIA GPU architecture optimized for MoE.", "valid_at": "2026-05-31T00:00:00Z"}
 {"id": "sm120-blackwell", "type": "hardware", "name": "RTX Blackwell (SM120)", "desc": "NVIDIA Blackwell GPU Architecture.", "valid_at": "2026-05-31T00:00:00Z"}
 {"id": "huawei-ascend-npu", "type": "hardware", "name": "Huawei Ascend NPU", "desc": "华为昇腾AI算力芯片，国产化端侧/云侧算力基座", "valid_at": "2026-05-31T00:00:00Z"}

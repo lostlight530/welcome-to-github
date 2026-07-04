@@ -1,7 +1,6 @@
-{"id": "vibevoice-asr", "type": "model", "name": "VibeVoice ASR (Microsoft)", "desc": "Voice recognition model.", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "vibevoice-asr", "type": "model", "name": "VibeVoice ASR (Microsoft)", "desc": "Voice recognition model.", "tags": [], "updated_at": "2026-03-05T14:38:34.328080", "weight": 1.5, "last_activated": "2026-03-05T14:38:34.328080", "valid_at": "2026-05-31T00:00:00Z"}
 {"id": "step-3-5-flash", "type": "model", "name": "Step-3.5-Flash", "desc": "Efficient multimodal model supported in vLLM v0.15.1.", "valid_at": "2026-05-31T00:00:00Z"}
 {"id": "glm", "type": "model", "name": "GLM-5 (744B/40B Active)", "desc": "Sparse MoE model with 40B active params.", "valid_at": "2026-05-31T00:00:00Z"}
 {"id": "voxtral-realtime", "type": "model", "name": "VoxtralRealtime (Streaming ASR)", "desc": "Low-latency streaming ASR model.", "valid_at": "2026-05-31T00:00:00Z"}
 {"id": "qwen3-5-moe", "type": "model", "name": "Qwen3.5 MoE (4-bit Mobile)", "desc": "Efficient 4-bit MoE model for mobile devices.", "valid_at": "2026-05-31T00:00:00Z"}
-{"id": "eurobert", "type": "model", "name": "EuroBERT (Bidirectional Llama)", "desc": "Bidirectional transformer.", "valid_at": "2026-05-31T00:00:00Z"}
 {"id": "eurobert", "type": "model", "name": "EuroBERT", "desc": "开源的顶级多语言编码器模型 (Encoder)训练于 5 万亿 Token，专为 RAG、代码和数学推理优化", "valid_at": "2026-05-31T00:00:00Z"}
