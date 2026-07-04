@@ -17,7 +17,6 @@ concurrency:
 
 env:
   GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
 jobs:
   deploy:
@@ -29,17 +28,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Debounce rapid commits
-        run: sleep 10
-
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
         with:
           enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          name: github-pages
           path: '.'
 
       - name: Deploy to GitHub Pages
