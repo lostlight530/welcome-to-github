@@ -17,6 +17,7 @@ concurrency:
 
 env:
   GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: 'true'
 
 jobs:
   deploy:
@@ -41,7 +42,7 @@ jobs:
           ls -R
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           name: github-pages
           path: '.'
