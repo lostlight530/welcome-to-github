@@ -28,15 +28,18 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Install and Build
+      - name: Prepare artifact directory
         run: |
-          npm install
-          npm run build
+          mkdir public
+          cp index.html public/
+          if [ -d src ]; then cp -r src public/; fi
+          if [ -d docs ]; then cp -r docs public/; fi
+          if [ -d horizon-cortex ]; then cp -r horizon-cortex public/; fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: 'dist'
+          path: 'public'
 
       - name: Deploy to GitHub Pages
         id: deployment
