@@ -15,10 +15,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-env:
-  GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: 'true'
-
 jobs:
   deploy:
     environment:
@@ -31,21 +27,16 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
-      - name: Show files to be uploaded
+      - name: Install and Build
         run: |
-          echo "Listing repository root:"
-          ls -la
-          echo "Recursive listing:"
-          ls -R
+          npm install
+          npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          name: github-pages
-          path: '.'
+          path: 'dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
