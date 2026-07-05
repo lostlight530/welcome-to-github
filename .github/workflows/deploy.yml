@@ -25,21 +25,30 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Prepare artifact directory
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Vite project
+        run: npm run build
+
+      - name: Prepare static assets
         run: |
-          mkdir public
-          cp index.html public/
-          if [ -d src ]; then cp -r src public/; fi
-          if [ -d docs ]; then cp -r docs public/; fi
-          if [ -d horizon-cortex ]; then cp -r horizon-cortex public/; fi
+          if [ -d docs ]; then cp -r docs dist/; fi
+          if [ -d horizon-cortex ]; then cp -r horizon-cortex dist/; fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: 'public'
+          path: 'dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
