@@ -24,34 +24,34 @@ External Topics Searched:
 "Huawei Ascend" 910C GPU DeepSeek
 
 Why Observed:
-根据 H1 任务要求，持续监控外部 AI 基础设施、Edge AI 能力以及 MCP 工具生态系统的更新
+As required by H1, continuously monitor updates in external AI infrastructure, Edge AI capabilities, and the MCP tool ecosystem. / 根据 H1 任务要求，持续监控外部 AI 基础设施、Edge AI 能力以及 MCP 工具生态系统的更新
 
 EXTERNAL_SOURCE_RECORDS
 
 - Source: Tom's Hardware
   URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/deepseek-research-suggests-huaweis-ascend-910c-delivers-60-percent-nvidia-h100-inference-performance
-  Summary: 业界评估显示华为 Ascend 910C 的推理性能可达到 Nvidia H100 的 60%
+  Summary: Industry benchmarks suggest Huawei Ascend 910C's inference performance can reach 60% of Nvidia H100. / 业界评估显示华为 Ascend 910C 的推理性能可达到 Nvidia H100 的 60%
   Reliability: Medium
 - Source: Arxiv (Huawei Open Weight Model)
   URL: https://arxiv.org/abs/2505.21411
-  Summary: 华为发布了一款在 Ascend GPU 上训练的开源模型，证明了纯国产算力生态的可行性
+  Summary: Huawei released an open-source model trained on Ascend GPUs, proving the feasibility of a purely domestic compute ecosystem. / 华为发布了一款在 Ascend GPU 上训练的开源模型，证明了纯国产算力生态的可行性
   Reliability: High
 
 RAW_SIGNAL_LOG
 
 Signal 1
 
-Signal: 业界评估显示华为 Ascend 910C 的推理性能可达到 Nvidia H100 的 60%
+Signal: Industry benchmarks suggest Huawei Ascend 910C's inference performance can reach 60% of Nvidia H100. / 业界评估显示华为 Ascend 910C 的推理性能可达到 Nvidia H100 的 60%
 
-Why It May Matter: It represents a recent ecosystem update for Edge AI and Agent infrastructure
+Why It May Matter: It represents a recent ecosystem update for Edge AI and Agent infrastructure. / 为什么这很重要：它代表了边缘人工智能和代理基础设施的最新生态系统更新
 
 Uncertainty: Medium
 
 Signal 2
 
-Signal: 华为发布了一款在 Ascend GPU 上训练的开源模型，证明了纯国产算力生态的可行性
+Signal: Huawei released an open-source model trained on Ascend GPUs, proving the feasibility of a purely domestic compute ecosystem. / 华为发布了一款在 Ascend GPU 上训练的开源模型，证明了纯国产算力生态的可行性
 
-Why It May Matter: It represents a recent ecosystem update for Edge AI and Agent infrastructure
+Why It May Matter: It represents a recent ecosystem update for Edge AI and Agent infrastructure. / 为什么这很重要：它代表了边缘人工智能和代理基础设施的最新生态系统更新
 
 Uncertainty: Medium
 

@@ -60,6 +60,6 @@ No horizon-cortex file overwritten
 
 BOUNDARY_CHECK
 
-确认没有读取宿主仓库机制
-确认没有读取 GitHub Actions
-确认没有写入 horizon-cortex 之外的文件
+Confirmed no reading of host repository mechanisms. / 确认没有读取宿主仓库机制
+Confirmed no reading of GitHub Actions. / 确认没有读取 GitHub Actions
+Confirmed no writing to files outside horizon-cortex. / 确认没有写入 horizon-cortex 之外的文件

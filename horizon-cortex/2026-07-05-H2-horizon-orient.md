@@ -46,12 +46,12 @@ ORIENTATION_NOTES
 
 NO_DECISION_SECTION
 
-明确列出今天不做的决策:
+Explicitly list decisions NOT to make today / 明确列出今天不做的决策:
 不盲目跟进编写教程
 不对核心系统结构做破坏性重构
 不修改宿主仓库的任何代码或配置
 
-明确列出今天不能修改的内容:
+Explicitly list contents NOT to modify today / 明确列出今天不能修改的内容:
 不修改宿主仓库的任何代码或配置
 不读取 GitHub Actions 或 README
 不向 horizon-cortex 外部写入文件
