@@ -1,207 +1,235 @@
-{"id": "file-requirements-txt", "type": "code_file", "name": "requirements.txt", "desc": "Source file at: requirements.txt", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259048+00:00"}
-{"id": "file-index-html", "type": "code_file", "name": "index.html", "desc": "Source file at: index.html", "valid_at": "2026-04-25T22:58:55.422720", "invalid_at": "2026-07-08T12:24:02.259080+00:00"}
-{"id": "file-readme-md", "type": "code_file", "name": "README.md", "desc": "Source file at: README.md", "valid_at": "2026-05-04T00:34:18.859875", "invalid_at": "2026-07-08T12:24:02.259098+00:00"}
-{"id": "file-postcss-config-js", "type": "code_file", "name": "postcss.config.js", "desc": "Source file at: postcss.config.js", "valid_at": "2026-04-25T22:58:55.420599", "invalid_at": "2026-07-08T12:24:02.259113+00:00"}
-{"id": "file-tailwind-config-js", "type": "code_file", "name": "tailwind.config.js", "desc": "Source file at: tailwind.config.js", "valid_at": "2026-04-25T22:58:55.396363", "invalid_at": "2026-07-08T12:24:02.259129+00:00"}
-{"id": "file-package-json", "type": "code_file", "name": "package.json", "desc": "Source file at: package.json", "valid_at": "2026-05-05T06:05:57.347276", "invalid_at": "2026-07-08T12:24:02.259145+00:00"}
-{"id": "file-editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-04-25T22:58:55.424958", "invalid_at": "2026-07-08T12:24:02.259160+00:00"}
-{"id": "file-license", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-05-31T13:56:12.779470", "invalid_at": "2026-07-08T12:24:02.259174+00:00"}
-{"id": "file-security-md", "type": "code_file", "name": "SECURITY.md", "desc": "Source file at: SECURITY.md", "valid_at": "2026-05-04T00:34:18.878234", "invalid_at": "2026-07-08T12:24:02.259189+00:00"}
-{"id": "file-docs-brain-cortex-py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-05-31T13:56:12.782365", "invalid_at": "2026-07-08T12:24:02.259204+00:00"}
-{"id": "file-docs-brain-readme-md", "type": "code_file", "name": "README.md", "desc": "Source file at: docs/brain/README.md", "valid_at": "2026-05-04T00:34:19.061770", "invalid_at": "2026-07-08T12:24:02.259219+00:00"}
-{"id": "file-docs-brain-nexus-mcp-py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-05-31T13:56:12.862341", "invalid_at": "2026-07-08T12:24:02.259234+00:00"}
-{"id": "file-docs-brain-agents-md", "type": "code_file", "name": "AGENTS.md", "desc": "Source file at: docs/brain/AGENTS.md", "valid_at": "2026-05-04T00:34:19.123607", "invalid_at": "2026-07-08T12:24:02.259249+00:00"}
-{"id": "file-docs-brain-init-py", "type": "code_file", "name": "__init__.py", "desc": "Source file at: docs/brain/__init__.py", "valid_at": "2026-04-25T23:05:01.452285", "invalid_at": "2026-07-08T12:24:02.259264+00:00"}
-{"id": "file-docs-brain-harvester-py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-05-31T13:56:13.028020", "invalid_at": "2026-07-08T12:24:02.259278+00:00"}
-{"id": "file-docs-brain-nexus-py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-05-31T13:56:12.831521", "invalid_at": "2026-07-08T12:24:02.259293+00:00"}
-{"id": "file-docs-brain-evolution-py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-05-31T13:56:13.164882", "invalid_at": "2026-07-08T12:24:02.259307+00:00"}
-{"id": "file-docs-brain-brain-config-json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-05-31T13:56:13.059601", "invalid_at": "2026-07-08T12:24:02.259322+00:00"}
-{"id": "file-docs-brain-test-mcp-py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-05-31T13:56:12.893076", "invalid_at": "2026-07-08T12:24:02.259337+00:00"}
-{"id": "file-docs-brain-scholar-py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-05-31T13:56:12.978538", "invalid_at": "2026-07-08T12:24:02.259352+00:00"}
-{"id": "file-docs-brain-schema-md", "type": "code_file", "name": "SCHEMA.md", "desc": "Source file at: docs/brain/SCHEMA.md", "valid_at": "2026-05-04T00:34:19.371145", "invalid_at": "2026-07-08T12:24:02.259366+00:00"}
-{"id": "file-docs-brain-factory-py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-05-31T13:56:12.837644", "invalid_at": "2026-07-08T12:24:02.259381+00:00"}
-{"id": "file-docs-brain-mcp-demo-py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-05-31T13:56:12.898974", "invalid_at": "2026-07-08T12:24:02.259395+00:00"}
-{"id": "file-docs-brain-intelligence-gitkeep", "type": "code_file", "name": ".gitkeep", "desc": "Source file at: docs/brain/intelligence/.gitkeep", "valid_at": "2026-04-25T23:05:02.322953", "invalid_at": "2026-07-08T12:24:02.259410+00:00"}
-{"id": "file-docs-brain-knowledge-snapshot-json", "type": "code_file", "name": "snapshot.json", "desc": "Source file at: docs/brain/knowledge/snapshot.json", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259424+00:00"}
-{"id": "file-docs-brain-knowledge-relations-2026-03-jsonl", "type": "code_file", "name": "2026-03.jsonl", "desc": "Source file at: docs/brain/knowledge/relations/2026-03.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259440+00:00"}
-{"id": "file-docs-brain-knowledge-relations-2026-02-jsonl", "type": "code_file", "name": "2026-02.jsonl", "desc": "Source file at: docs/brain/knowledge/relations/2026-02.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259455+00:00"}
-{"id": "file-docs-brain-knowledge-entities-project-jsonl", "type": "code_file", "name": "project.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/project.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259469+00:00"}
-{"id": "file-docs-brain-knowledge-entities-tech-stack-jsonl", "type": "code_file", "name": "tech_stack.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/tech_stack.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259484+00:00"}
-{"id": "file-docs-brain-knowledge-entities-concepts-jsonl", "type": "code_file", "name": "concepts.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/concepts.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259499+00:00"}
-{"id": "file-docs-brain-knowledge-entities-hardware-jsonl", "type": "code_file", "name": "hardware.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/hardware.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259513+00:00"}
-{"id": "file-docs-brain-knowledge-entities-code-function-jsonl", "type": "code_file", "name": "code_function.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/code_function.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259528+00:00"}
-{"id": "file-docs-brain-knowledge-entities-patterns-jsonl", "type": "code_file", "name": "patterns.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/patterns.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259547+00:00"}
-{"id": "file-docs-brain-knowledge-entities-hardwares-jsonl", "type": "code_file", "name": "hardwares.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/hardwares.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259562+00:00"}
-{"id": "file-docs-brain-knowledge-entities-platform-jsonl", "type": "code_file", "name": "platform.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/platform.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259576+00:00"}
-{"id": "file-docs-brain-knowledge-entities-code-class-jsonl", "type": "code_file", "name": "code_class.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/code_class.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259591+00:00"}
-{"id": "file-docs-brain-knowledge-entities-domain-jsonl", "type": "code_file", "name": "domain.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/domain.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259608+00:00"}
-{"id": "file-docs-brain-knowledge-entities-tech-jsonl", "type": "code_file", "name": "tech.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/tech.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259623+00:00"}
-{"id": "file-docs-brain-knowledge-entities-pattern-jsonl", "type": "code_file", "name": "pattern.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/pattern.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259637+00:00"}
-{"id": "file-docs-brain-knowledge-entities-protocol-jsonl", "type": "code_file", "name": "protocol.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/protocol.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259652+00:00"}
-{"id": "file-docs-brain-knowledge-entities-techs-jsonl", "type": "code_file", "name": "techs.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/techs.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259666+00:00"}
-{"id": "file-docs-brain-knowledge-entities-model-jsonl", "type": "code_file", "name": "model.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/model.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259680+00:00"}
-{"id": "file-docs-brain-knowledge-entities-tool-jsonl", "type": "code_file", "name": "tool.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/tool.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259695+00:00"}
-{"id": "file-docs-brain-knowledge-entities-code-file-jsonl", "type": "code_file", "name": "code_file.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/code_file.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259709+00:00"}
-{"id": "file-docs-brain-knowledge-entities-projects-jsonl", "type": "code_file", "name": "projects.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/projects.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259723+00:00"}
-{"id": "file-docs-brain-knowledge-entities-platforms-jsonl", "type": "code_file", "name": "platforms.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/platforms.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259738+00:00"}
-{"id": "file-docs-brain-knowledge-entities-models-jsonl", "type": "code_file", "name": "models.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/models.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259752+00:00"}
-{"id": "file-docs-brain-knowledge-entities-standards-jsonl", "type": "code_file", "name": "standards.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/standards.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259766+00:00"}
-{"id": "file-docs-brain-knowledge-entities-standard-jsonl", "type": "code_file", "name": "standard.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/standard.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259780+00:00"}
-{"id": "file-docs-brain-knowledge-entities-concept-jsonl", "type": "code_file", "name": "concept.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/concept.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259795+00:00"}
-{"id": "file-docs-brain-knowledge-entities-entity-jsonl", "type": "code_file", "name": "entity.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/entity.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259809+00:00"}
-{"id": "file-docs-brain-knowledge-entities-tech-stack-ai-jsonl", "type": "code_file", "name": "ai.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/tech_stack/ai.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259823+00:00"}
-{"id": "file-github-issue-template-bug-report-md", "type": "code_file", "name": "bug_report.md", "desc": "Source file at: .github/ISSUE_TEMPLATE/bug_report.md", "valid_at": "2026-04-25T23:13:39.712191", "invalid_at": "2026-07-08T12:24:02.259838+00:00"}
-{"id": "file-github-issue-template-custom-md", "type": "code_file", "name": "custom.md", "desc": "Source file at: .github/ISSUE_TEMPLATE/custom.md", "valid_at": "2026-04-25T23:13:39.709804", "invalid_at": "2026-07-08T12:24:02.259853+00:00"}
-{"id": "file-github-issue-template-feature-request-md", "type": "code_file", "name": "feature_request.md", "desc": "Source file at: .github/ISSUE_TEMPLATE/feature_request.md", "valid_at": "2026-04-25T23:05:02.506993", "invalid_at": "2026-07-08T12:24:02.259868+00:00"}
-{"id": "file-github-workflows-brain-integrity-yml", "type": "code_file", "name": "brain-integrity.yml", "desc": "Source file at: .github/workflows/brain-integrity.yml", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259882+00:00"}
-{"id": "file-github-workflows-deploy-yml", "type": "code_file", "name": "deploy.yml", "desc": "Source file at: .github/workflows/deploy.yml", "valid_at": "2026-05-28T07:13:21.846937", "invalid_at": "2026-07-08T12:24:02.259896+00:00"}
-{"id": "file-github-workflows-brain-evolution-yml", "type": "code_file", "name": "brain-evolution.yml", "desc": "Source file at: .github/workflows/brain-evolution.yml", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.259958+00:00"}
-{"id": "file-src-scripts-translations-js", "type": "code_file", "name": "translations.js", "desc": "Source file at: src/scripts/translations.js", "valid_at": "2026-05-28T07:13:22.391240", "invalid_at": "2026-07-08T12:24:02.259977+00:00"}
-{"id": "file-src-scripts-main-js", "type": "code_file", "name": "main.js", "desc": "Source file at: src/scripts/main.js", "valid_at": "2026-04-25T23:05:01.198782", "invalid_at": "2026-07-08T12:24:02.259993+00:00"}
-{"id": "file-src-styles-main-css", "type": "code_file", "name": "main.css", "desc": "Source file at: src/styles/main.css", "valid_at": "2026-04-25T23:05:01.217874", "invalid_at": "2026-07-08T12:24:02.260008+00:00"}
-{"id": "file-docs-brain-reason-py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-05-31T13:56:12.942124", "invalid_at": "2026-07-08T12:24:02.260106+00:00"}
-{"id": "file-docs-brain-knowledge-entities-philosophy-jsonl", "type": "code_file", "name": "philosophy.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/philosophy.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.260127+00:00"}
-{"id": "file-docs-brain-knowledge-entities-component-jsonl", "type": "code_file", "name": "component.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/component.jsonl", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.260143+00:00"}
-{"id": "file-github-workflows-nexus-life-cycle-yml", "type": "code_file", "name": "nexus-life-cycle.yml", "desc": "Source file at: .github/workflows/nexus-life-cycle.yml", "valid_at": "2026-05-28T07:13:21.895704", "invalid_at": "2026-07-08T12:24:02.260158+00:00"}
-{"id": "file-test-backfill-py", "type": "code_file", "name": "test_backfill.py", "desc": "Source file at: test_backfill.py", "valid_at": "2026-04-27T10:19:47.646840", "invalid_at": "2026-07-08T12:24:02.260174+00:00"}
-{"id": "file-fix-today-py", "type": "code_file", "name": "fix_today.py", "desc": "Source file at: fix_today.py", "valid_at": "2026-04-27T10:19:47.651977", "invalid_at": "2026-07-08T12:24:02.260189+00:00"}
-{"id": "file-fix-date-py", "type": "code_file", "name": "fix_date.py", "desc": "Source file at: fix_date.py", "valid_at": "2026-04-27T10:19:47.804767", "invalid_at": "2026-07-08T12:24:02.260204+00:00"}
-{"id": "file--editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-05-31T13:56:12.781188", "invalid_at": "2026-07-08T12:24:02.260218+00:00"}
-{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-04T05:00:29.061101", "invalid_at": "2026-07-08T12:24:02.260233+00:00"}
-{"id": "file_fix_reason_py", "type": "code_file", "name": "fix_reason.py", "desc": "Source file at: fix_reason.py", "valid_at": "2026-05-31T15:23:12.552304", "invalid_at": "2026-07-08T12:24:02.260248+00:00"}
-{"id": "file_test_re_py", "type": "code_file", "name": "test_re.py", "desc": "Source file at: test_re.py", "valid_at": "2026-05-31T15:23:12.554634", "invalid_at": "2026-07-08T12:24:02.260262+00:00"}
-{"id": "file_fix_scholar_syntax_py", "type": "code_file", "name": "fix_scholar_syntax.py", "desc": "Source file at: fix_scholar_syntax.py", "valid_at": "2026-05-31T15:23:12.556963", "invalid_at": "2026-07-08T12:24:02.260277+00:00"}
-{"id": "file_fix_mcp_imports_py", "type": "code_file", "name": "fix_mcp_imports.py", "desc": "Source file at: fix_mcp_imports.py", "valid_at": "2026-05-31T15:23:12.559583", "invalid_at": "2026-07-08T12:24:02.260292+00:00"}
-{"id": "file_fix_scholar2_py", "type": "code_file", "name": "fix_scholar2.py", "desc": "Source file at: fix_scholar2.py", "valid_at": "2026-05-31T15:23:12.562322", "invalid_at": "2026-07-08T12:24:02.260306+00:00"}
-{"id": "file_fix_json_fragments_py", "type": "code_file", "name": "fix_json_fragments.py", "desc": "Source file at: fix_json_fragments.py", "valid_at": "2026-05-31T15:23:12.574072", "invalid_at": "2026-07-08T12:24:02.260321+00:00"}
-{"id": "file_fix_scholar_py", "type": "code_file", "name": "fix_scholar.py", "desc": "Source file at: fix_scholar.py", "valid_at": "2026-05-31T15:23:12.591385", "invalid_at": "2026-07-08T12:24:02.260335+00:00"}
-{"id": "file_fix_evolution_py", "type": "code_file", "name": "fix_evolution.py", "desc": "Source file at: fix_evolution.py", "valid_at": "2026-05-31T15:23:12.593791", "invalid_at": "2026-07-08T12:24:02.260351+00:00"}
-{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-04T05:00:29.065973", "invalid_at": "2026-07-08T12:24:02.260365+00:00"}
-{"id": "file_fix_scholar_syntax2_py", "type": "code_file", "name": "fix_scholar_syntax2.py", "desc": "Source file at: fix_scholar_syntax2.py", "valid_at": "2026-05-31T15:23:12.598874", "invalid_at": "2026-07-08T12:24:02.260380+00:00"}
-{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-04T05:00:29.380724", "invalid_at": "2026-07-08T12:24:02.260394+00:00"}
-{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-04T05:00:29.195180", "invalid_at": "2026-07-08T12:24:02.260409+00:00"}
-{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-04T05:00:29.226173", "invalid_at": "2026-07-08T12:24:02.260424+00:00"}
-{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-04T05:00:29.067701", "invalid_at": "2026-07-08T12:24:02.260438+00:00"}
-{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-04T05:00:29.502497", "invalid_at": "2026-07-08T12:24:02.260453+00:00"}
-{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-04T05:00:29.328838", "invalid_at": "2026-07-08T12:24:02.260467+00:00"}
-{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-04T05:00:29.435290", "invalid_at": "2026-07-08T12:24:02.260482+00:00"}
-{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-04T05:00:29.511362", "invalid_at": "2026-07-08T12:24:02.260496+00:00"}
-{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-04T05:00:29.513380", "invalid_at": "2026-07-08T12:24:02.260510+00:00"}
-{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-04T05:00:29.369762", "invalid_at": "2026-07-08T12:24:02.260525+00:00"}
-{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-04T05:00:29.273395", "invalid_at": "2026-07-08T12:24:02.260543+00:00"}
-{"id": "file_patch_reason_4_py", "type": "code_file", "name": "patch_reason_4.py", "desc": "Source file at: patch_reason_4.py", "valid_at": "2026-06-01T11:24:11.924876", "invalid_at": "2026-07-08T12:24:02.260557+00:00"}
-{"id": "file_fix_zh_py", "type": "code_file", "name": "fix_zh.py", "desc": "Source file at: fix_zh.py", "valid_at": "2026-06-01T11:24:11.928352", "invalid_at": "2026-07-08T12:24:02.260572+00:00"}
-{"id": "file_test_dash_py", "type": "code_file", "name": "test_dash.py", "desc": "Source file at: test_dash.py", "valid_at": "2026-06-01T11:24:11.930804", "invalid_at": "2026-07-08T12:24:02.260587+00:00"}
-{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-04T05:00:29.062876", "invalid_at": "2026-07-08T12:24:02.260601+00:00"}
-{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-04T22:43:10.236419", "invalid_at": "2026-07-08T12:24:02.260615+00:00"}
-{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-04T22:43:10.238141", "invalid_at": "2026-07-08T12:24:02.260629+00:00"}
-{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-04T22:43:10.239973", "invalid_at": "2026-07-08T12:24:02.260644+00:00"}
-{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-04T22:43:10.241302", "invalid_at": "2026-07-08T12:24:02.260658+00:00"}
-{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-04T22:43:10.325508", "invalid_at": "2026-07-08T12:24:02.260672+00:00"}
-{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-04T22:43:10.349003", "invalid_at": "2026-07-08T12:24:02.260686+00:00"}
-{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-04T22:43:10.384038", "invalid_at": "2026-07-08T12:24:02.260701+00:00"}
-{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-04T22:43:10.425977", "invalid_at": "2026-07-08T12:24:02.260715+00:00"}
-{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-04T22:43:10.453365", "invalid_at": "2026-07-08T12:24:02.260734+00:00"}
-{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-04T22:43:10.458985", "invalid_at": "2026-07-08T12:24:02.260749+00:00"}
-{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-04T22:43:10.493369", "invalid_at": "2026-07-08T12:24:02.260763+00:00"}
-{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-04T22:43:10.533756", "invalid_at": "2026-07-08T12:24:02.260777+00:00"}
-{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-04T22:43:10.538574", "invalid_at": "2026-07-08T12:24:02.260792+00:00"}
-{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-04T22:43:10.539666", "invalid_at": "2026-07-08T12:24:02.260806+00:00"}
-{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-04T22:58:11.448831", "invalid_at": "2026-07-08T12:24:02.260821+00:00"}
-{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-04T22:58:11.450516", "invalid_at": "2026-07-08T12:24:02.260835+00:00"}
-{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-04T22:58:11.452317", "invalid_at": "2026-07-08T12:24:02.260849+00:00"}
-{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-04T22:58:11.453554", "invalid_at": "2026-07-08T12:24:02.260863+00:00"}
-{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-04T22:58:11.550597", "invalid_at": "2026-07-08T12:24:02.260878+00:00"}
-{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-04T22:58:11.574900", "invalid_at": "2026-07-08T12:24:02.260892+00:00"}
-{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-04T22:58:11.614914", "invalid_at": "2026-07-08T12:24:02.260950+00:00"}
-{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-04T22:58:11.660408", "invalid_at": "2026-07-08T12:24:02.260971+00:00"}
-{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-04T22:58:11.690875", "invalid_at": "2026-07-08T12:24:02.260988+00:00"}
-{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-04T22:58:11.697131", "invalid_at": "2026-07-08T12:24:02.261002+00:00"}
-{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-04T22:58:11.734947", "invalid_at": "2026-07-08T12:24:02.261017+00:00"}
-{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-04T22:58:11.777938", "invalid_at": "2026-07-08T12:24:02.261038+00:00"}
-{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-04T22:58:11.783239", "invalid_at": "2026-07-08T12:24:02.261053+00:00"}
-{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-04T22:58:11.784469", "invalid_at": "2026-07-08T12:24:02.261068+00:00"}
-{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-05T23:01:32.440888", "invalid_at": "2026-07-08T12:24:02.261083+00:00"}
-{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-05T23:01:32.442804", "invalid_at": "2026-07-08T12:24:02.261097+00:00"}
-{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-05T23:01:32.444987", "invalid_at": "2026-07-08T12:24:02.261111+00:00"}
-{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-05T23:01:32.446499", "invalid_at": "2026-07-08T12:24:02.261126+00:00"}
-{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-05T23:01:32.580755", "invalid_at": "2026-07-08T12:24:02.261140+00:00"}
-{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-05T23:01:32.622249", "invalid_at": "2026-07-08T12:24:02.261154+00:00"}
-{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-05T23:01:32.685300", "invalid_at": "2026-07-08T12:24:02.261170+00:00"}
-{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-05T23:01:32.753288", "invalid_at": "2026-07-08T12:24:02.261184+00:00"}
-{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-05T23:01:32.796915", "invalid_at": "2026-07-08T12:24:02.261198+00:00"}
-{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-05T23:01:32.804710", "invalid_at": "2026-07-08T12:24:02.261213+00:00"}
-{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-05T23:01:32.857071", "invalid_at": "2026-07-08T12:24:02.261227+00:00"}
-{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-05T23:01:32.926493", "invalid_at": "2026-07-08T12:24:02.261241+00:00"}
-{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-05T23:01:32.933851", "invalid_at": "2026-07-08T12:24:02.261256+00:00"}
-{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-05T23:01:32.935557", "invalid_at": "2026-07-08T12:24:02.261270+00:00"}
-{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-06T01:05:10.428337", "invalid_at": "2026-07-08T12:24:02.261285+00:00"}
-{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-06T01:05:10.430041", "invalid_at": "2026-07-08T12:24:02.261299+00:00"}
-{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-06T01:05:10.433871", "invalid_at": "2026-07-08T12:24:02.261314+00:00"}
-{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-06T01:05:10.435280", "invalid_at": "2026-07-08T12:24:02.261331+00:00"}
-{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-06T01:05:10.563988", "invalid_at": "2026-07-08T12:24:02.261346+00:00"}
-{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-06T01:05:10.598384", "invalid_at": "2026-07-08T12:24:02.261361+00:00"}
-{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-06T01:05:10.649189", "invalid_at": "2026-07-08T12:24:02.261375+00:00"}
-{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-06T01:05:10.707793", "invalid_at": "2026-07-08T12:24:02.261389+00:00"}
-{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-06T01:05:10.745857", "invalid_at": "2026-07-08T12:24:02.261403+00:00"}
-{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-06T01:05:10.753520", "invalid_at": "2026-07-08T12:24:02.261417+00:00"}
-{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-06T01:05:10.802341", "invalid_at": "2026-07-08T12:24:02.261432+00:00"}
-{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-06T01:05:10.862000", "invalid_at": "2026-07-08T12:24:02.261446+00:00"}
-{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-06T01:05:10.870682", "invalid_at": "2026-07-08T12:24:02.261461+00:00"}
-{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-06T01:05:10.872943", "invalid_at": "2026-07-08T12:24:02.261475+00:00"}
-{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-06T23:08:41.810442", "invalid_at": "2026-07-08T12:24:02.261490+00:00"}
-{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-06T23:08:41.811924", "invalid_at": "2026-07-08T12:24:02.261504+00:00"}
-{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-06T23:08:41.813410", "invalid_at": "2026-07-08T12:24:02.261518+00:00"}
-{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-06T23:08:41.814697", "invalid_at": "2026-07-08T12:24:02.261535+00:00"}
-{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-06T23:08:41.914000", "invalid_at": "2026-07-08T12:24:02.261550+00:00"}
-{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-06T23:08:41.940370", "invalid_at": "2026-07-08T12:24:02.261564+00:00"}
-{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-06T23:08:41.982932", "invalid_at": "2026-07-08T12:24:02.261578+00:00"}
-{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-06T23:08:42.039685", "invalid_at": "2026-07-08T12:24:02.261592+00:00"}
-{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-06T23:08:42.082280", "invalid_at": "2026-07-08T12:24:02.261607+00:00"}
-{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-06T23:08:42.093190", "invalid_at": "2026-07-08T12:24:02.261620+00:00"}
-{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-06T23:08:42.144538", "invalid_at": "2026-07-08T12:24:02.261635+00:00"}
-{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-06T23:08:42.198607", "invalid_at": "2026-07-08T12:24:02.261649+00:00"}
-{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-06T23:08:42.206034", "invalid_at": "2026-07-08T12:24:02.261663+00:00"}
-{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-06T23:08:42.207727", "invalid_at": "2026-07-08T12:24:02.261677+00:00"}
-{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-07T01:12:05.069164", "invalid_at": "2026-07-08T12:24:02.261692+00:00"}
-{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-07T01:12:05.071078", "invalid_at": "2026-07-08T12:24:02.261706+00:00"}
-{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-07T01:12:05.072726", "invalid_at": "2026-07-08T12:24:02.261720+00:00"}
-{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-07T01:12:05.073844", "invalid_at": "2026-07-08T12:24:02.261734+00:00"}
-{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-07T01:12:05.167306", "invalid_at": "2026-07-08T12:24:02.261748+00:00"}
-{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-07T01:12:05.192373", "invalid_at": "2026-07-08T12:24:02.261763+00:00"}
-{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-07T01:12:05.241130", "invalid_at": "2026-07-08T12:24:02.261777+00:00"}
-{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-07T01:12:05.298129", "invalid_at": "2026-07-08T12:24:02.261791+00:00"}
-{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-07T01:12:05.335829", "invalid_at": "2026-07-08T12:24:02.261805+00:00"}
-{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-07T01:12:05.344605", "invalid_at": "2026-07-08T12:24:02.261823+00:00"}
-{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-07T01:12:05.385314", "invalid_at": "2026-07-08T12:24:02.261837+00:00"}
-{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-07T01:12:05.430320", "invalid_at": "2026-07-08T12:24:02.261851+00:00"}
-{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-07T01:12:05.435320", "invalid_at": "2026-07-08T12:24:02.261866+00:00"}
-{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-07T01:12:05.436463", "invalid_at": "2026-07-08T12:24:02.261880+00:00"}
-{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-07T23:02:25.866111", "invalid_at": "2026-07-08T12:24:02.261894+00:00"}
-{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-07T23:02:25.868064", "invalid_at": "2026-07-08T12:24:02.261945+00:00"}
-{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-07T23:02:25.869852", "invalid_at": "2026-07-08T12:24:02.261966+00:00"}
-{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-07T23:02:25.871334", "invalid_at": "2026-07-08T12:24:02.261982+00:00"}
-{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-07T23:02:25.991287", "invalid_at": "2026-07-08T12:24:02.261997+00:00"}
-{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-07T23:02:26.022025", "invalid_at": "2026-07-08T12:24:02.262012+00:00"}
-{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-07T23:02:26.078268", "invalid_at": "2026-07-08T12:24:02.262027+00:00"}
-{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-07T23:02:26.146810", "invalid_at": "2026-07-08T12:24:02.262048+00:00"}
-{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-07T23:02:26.185748", "invalid_at": "2026-07-08T12:24:02.262062+00:00"}
-{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-07T23:02:26.193509", "invalid_at": "2026-07-08T12:24:02.262077+00:00"}
-{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-07T23:02:26.241185", "invalid_at": "2026-07-08T12:24:02.262092+00:00"}
-{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-07T23:02:26.297641", "invalid_at": "2026-07-08T12:24:02.262106+00:00"}
-{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-07T23:02:26.304123", "invalid_at": "2026-07-08T12:24:02.262120+00:00"}
-{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-07T23:02:26.305613", "invalid_at": "2026-07-08T12:24:02.262134+00:00"}
-{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-07T23:35:01.943079", "invalid_at": "2026-07-08T12:24:02.262149+00:00"}
-{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-07T23:35:01.945058", "invalid_at": "2026-07-08T12:24:02.262163+00:00"}
-{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-07T23:35:01.946922", "invalid_at": "2026-07-08T12:24:02.262178+00:00"}
-{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-07T23:35:01.948424", "invalid_at": "2026-07-08T12:24:02.262192+00:00"}
-{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-07T23:35:02.070961", "invalid_at": "2026-07-08T12:24:02.262207+00:00"}
-{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-07T23:35:02.102315", "invalid_at": "2026-07-08T12:24:02.262221+00:00"}
-{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-07T23:35:02.148111", "invalid_at": "2026-07-08T12:24:02.262236+00:00"}
-{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-07T23:35:02.205223", "invalid_at": "2026-07-08T12:24:02.262250+00:00"}
-{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-07T23:35:02.241840", "invalid_at": "2026-07-08T12:24:02.262265+00:00"}
-{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-07T23:35:02.249404", "invalid_at": "2026-07-08T12:24:02.262279+00:00"}
-{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-07T23:35:02.295995", "invalid_at": "2026-07-08T12:24:02.262294+00:00"}
-{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-07T23:35:02.354495", "invalid_at": "2026-07-08T12:24:02.262308+00:00"}
-{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-07T23:35:02.360595", "invalid_at": "2026-07-08T12:24:02.262323+00:00"}
-{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-07T23:35:02.361981", "invalid_at": "2026-07-08T12:24:02.262337+00:00"}
+{"id": "file-requirements-txt", "type": "code_file", "name": "requirements.txt", "desc": "Source file at: requirements.txt", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-index-html", "type": "code_file", "name": "index.html", "desc": "Source file at: index.html", "valid_at": "2026-04-25T22:58:55.422720"}
+{"id": "file-readme-md", "type": "code_file", "name": "README.md", "desc": "Source file at: README.md", "valid_at": "2026-05-04T00:34:18.859875"}
+{"id": "file-postcss-config-js", "type": "code_file", "name": "postcss.config.js", "desc": "Source file at: postcss.config.js", "valid_at": "2026-04-25T22:58:55.420599"}
+{"id": "file-tailwind-config-js", "type": "code_file", "name": "tailwind.config.js", "desc": "Source file at: tailwind.config.js", "valid_at": "2026-04-25T22:58:55.396363"}
+{"id": "file-package-json", "type": "code_file", "name": "package.json", "desc": "Source file at: package.json", "valid_at": "2026-05-05T06:05:57.347276"}
+{"id": "file-editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-04-25T22:58:55.424958"}
+{"id": "file-license", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-05-31T13:56:12.779470"}
+{"id": "file-security-md", "type": "code_file", "name": "SECURITY.md", "desc": "Source file at: SECURITY.md", "valid_at": "2026-05-04T00:34:18.878234"}
+{"id": "file-docs-brain-cortex-py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-05-31T13:56:12.782365"}
+{"id": "file-docs-brain-readme-md", "type": "code_file", "name": "README.md", "desc": "Source file at: docs/brain/README.md", "valid_at": "2026-05-04T00:34:19.061770"}
+{"id": "file-docs-brain-nexus-mcp-py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-05-31T13:56:12.862341"}
+{"id": "file-docs-brain-agents-md", "type": "code_file", "name": "AGENTS.md", "desc": "Source file at: docs/brain/AGENTS.md", "valid_at": "2026-05-04T00:34:19.123607"}
+{"id": "file-docs-brain-init-py", "type": "code_file", "name": "__init__.py", "desc": "Source file at: docs/brain/__init__.py", "valid_at": "2026-04-25T23:05:01.452285"}
+{"id": "file-docs-brain-harvester-py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-05-31T13:56:13.028020"}
+{"id": "file-docs-brain-nexus-py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-05-31T13:56:12.831521"}
+{"id": "file-docs-brain-evolution-py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-05-31T13:56:13.164882"}
+{"id": "file-docs-brain-brain-config-json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-05-31T13:56:13.059601"}
+{"id": "file-docs-brain-test-mcp-py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-05-31T13:56:12.893076"}
+{"id": "file-docs-brain-scholar-py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-05-31T13:56:12.978538"}
+{"id": "file-docs-brain-schema-md", "type": "code_file", "name": "SCHEMA.md", "desc": "Source file at: docs/brain/SCHEMA.md", "valid_at": "2026-05-04T00:34:19.371145"}
+{"id": "file-docs-brain-factory-py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-05-31T13:56:12.837644"}
+{"id": "file-docs-brain-mcp-demo-py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-05-31T13:56:12.898974"}
+{"id": "file-docs-brain-intelligence-gitkeep", "type": "code_file", "name": ".gitkeep", "desc": "Source file at: docs/brain/intelligence/.gitkeep", "valid_at": "2026-04-25T23:05:02.322953"}
+{"id": "file-docs-brain-knowledge-snapshot-json", "type": "code_file", "name": "snapshot.json", "desc": "Source file at: docs/brain/knowledge/snapshot.json", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-relations-2026-03-jsonl", "type": "code_file", "name": "2026-03.jsonl", "desc": "Source file at: docs/brain/knowledge/relations/2026-03.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-relations-2026-02-jsonl", "type": "code_file", "name": "2026-02.jsonl", "desc": "Source file at: docs/brain/knowledge/relations/2026-02.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-project-jsonl", "type": "code_file", "name": "project.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/project.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-tech-stack-jsonl", "type": "code_file", "name": "tech_stack.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/tech_stack.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-concepts-jsonl", "type": "code_file", "name": "concepts.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/concepts.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-hardware-jsonl", "type": "code_file", "name": "hardware.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/hardware.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-code-function-jsonl", "type": "code_file", "name": "code_function.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/code_function.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-patterns-jsonl", "type": "code_file", "name": "patterns.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/patterns.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-hardwares-jsonl", "type": "code_file", "name": "hardwares.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/hardwares.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-platform-jsonl", "type": "code_file", "name": "platform.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/platform.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-code-class-jsonl", "type": "code_file", "name": "code_class.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/code_class.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-domain-jsonl", "type": "code_file", "name": "domain.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/domain.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-tech-jsonl", "type": "code_file", "name": "tech.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/tech.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-pattern-jsonl", "type": "code_file", "name": "pattern.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/pattern.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-protocol-jsonl", "type": "code_file", "name": "protocol.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/protocol.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-techs-jsonl", "type": "code_file", "name": "techs.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/techs.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-model-jsonl", "type": "code_file", "name": "model.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/model.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-tool-jsonl", "type": "code_file", "name": "tool.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/tool.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-code-file-jsonl", "type": "code_file", "name": "code_file.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/code_file.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-projects-jsonl", "type": "code_file", "name": "projects.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/projects.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-platforms-jsonl", "type": "code_file", "name": "platforms.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/platforms.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-models-jsonl", "type": "code_file", "name": "models.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/models.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-standards-jsonl", "type": "code_file", "name": "standards.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/standards.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-standard-jsonl", "type": "code_file", "name": "standard.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/standard.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-concept-jsonl", "type": "code_file", "name": "concept.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/concept.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-entity-jsonl", "type": "code_file", "name": "entity.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/entity.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-tech-stack-ai-jsonl", "type": "code_file", "name": "ai.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/tech_stack/ai.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-github-issue-template-bug-report-md", "type": "code_file", "name": "bug_report.md", "desc": "Source file at: .github/ISSUE_TEMPLATE/bug_report.md", "valid_at": "2026-04-25T23:13:39.712191"}
+{"id": "file-github-issue-template-custom-md", "type": "code_file", "name": "custom.md", "desc": "Source file at: .github/ISSUE_TEMPLATE/custom.md", "valid_at": "2026-04-25T23:13:39.709804"}
+{"id": "file-github-issue-template-feature-request-md", "type": "code_file", "name": "feature_request.md", "desc": "Source file at: .github/ISSUE_TEMPLATE/feature_request.md", "valid_at": "2026-04-25T23:05:02.506993"}
+{"id": "file-github-workflows-brain-integrity-yml", "type": "code_file", "name": "brain-integrity.yml", "desc": "Source file at: .github/workflows/brain-integrity.yml", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-github-workflows-deploy-yml", "type": "code_file", "name": "deploy.yml", "desc": "Source file at: .github/workflows/deploy.yml", "valid_at": "2026-05-28T07:13:21.846937"}
+{"id": "file-github-workflows-brain-evolution-yml", "type": "code_file", "name": "brain-evolution.yml", "desc": "Source file at: .github/workflows/brain-evolution.yml", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-src-scripts-translations-js", "type": "code_file", "name": "translations.js", "desc": "Source file at: src/scripts/translations.js", "valid_at": "2026-05-28T07:13:22.391240"}
+{"id": "file-src-scripts-main-js", "type": "code_file", "name": "main.js", "desc": "Source file at: src/scripts/main.js", "valid_at": "2026-04-25T23:05:01.198782"}
+{"id": "file-src-styles-main-css", "type": "code_file", "name": "main.css", "desc": "Source file at: src/styles/main.css", "valid_at": "2026-04-25T23:05:01.217874"}
+{"id": "file-docs-brain-reason-py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-05-31T13:56:12.942124"}
+{"id": "file-docs-brain-knowledge-entities-philosophy-jsonl", "type": "code_file", "name": "philosophy.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/philosophy.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-docs-brain-knowledge-entities-component-jsonl", "type": "code_file", "name": "component.jsonl", "desc": "Source file at: docs/brain/knowledge/entities/component.jsonl", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "file-github-workflows-nexus-life-cycle-yml", "type": "code_file", "name": "nexus-life-cycle.yml", "desc": "Source file at: .github/workflows/nexus-life-cycle.yml", "valid_at": "2026-05-28T07:13:21.895704"}
+{"id": "file-test-backfill-py", "type": "code_file", "name": "test_backfill.py", "desc": "Source file at: test_backfill.py", "valid_at": "2026-04-27T10:19:47.646840"}
+{"id": "file-fix-today-py", "type": "code_file", "name": "fix_today.py", "desc": "Source file at: fix_today.py", "valid_at": "2026-04-27T10:19:47.651977"}
+{"id": "file-fix-date-py", "type": "code_file", "name": "fix_date.py", "desc": "Source file at: fix_date.py", "valid_at": "2026-04-27T10:19:47.804767"}
+{"id": "file--editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-05-31T13:56:12.781188"}
+{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-04T05:00:29.061101"}
+{"id": "file_fix_reason_py", "type": "code_file", "name": "fix_reason.py", "desc": "Source file at: fix_reason.py", "valid_at": "2026-05-31T15:23:12.552304"}
+{"id": "file_test_re_py", "type": "code_file", "name": "test_re.py", "desc": "Source file at: test_re.py", "valid_at": "2026-05-31T15:23:12.554634"}
+{"id": "file_fix_scholar_syntax_py", "type": "code_file", "name": "fix_scholar_syntax.py", "desc": "Source file at: fix_scholar_syntax.py", "valid_at": "2026-05-31T15:23:12.556963"}
+{"id": "file_fix_mcp_imports_py", "type": "code_file", "name": "fix_mcp_imports.py", "desc": "Source file at: fix_mcp_imports.py", "valid_at": "2026-05-31T15:23:12.559583"}
+{"id": "file_fix_scholar2_py", "type": "code_file", "name": "fix_scholar2.py", "desc": "Source file at: fix_scholar2.py", "valid_at": "2026-05-31T15:23:12.562322"}
+{"id": "file_fix_json_fragments_py", "type": "code_file", "name": "fix_json_fragments.py", "desc": "Source file at: fix_json_fragments.py", "valid_at": "2026-05-31T15:23:12.574072"}
+{"id": "file_fix_scholar_py", "type": "code_file", "name": "fix_scholar.py", "desc": "Source file at: fix_scholar.py", "valid_at": "2026-05-31T15:23:12.591385"}
+{"id": "file_fix_evolution_py", "type": "code_file", "name": "fix_evolution.py", "desc": "Source file at: fix_evolution.py", "valid_at": "2026-05-31T15:23:12.593791"}
+{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-04T05:00:29.065973"}
+{"id": "file_fix_scholar_syntax2_py", "type": "code_file", "name": "fix_scholar_syntax2.py", "desc": "Source file at: fix_scholar_syntax2.py", "valid_at": "2026-05-31T15:23:12.598874"}
+{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-04T05:00:29.380724"}
+{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-04T05:00:29.195180"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-04T05:00:29.226173"}
+{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-04T05:00:29.067701"}
+{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-04T05:00:29.502497"}
+{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-04T05:00:29.328838"}
+{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-04T05:00:29.435290"}
+{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-04T05:00:29.511362"}
+{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-04T05:00:29.513380"}
+{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-04T05:00:29.369762"}
+{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-04T05:00:29.273395"}
+{"id": "file_patch_reason_4_py", "type": "code_file", "name": "patch_reason_4.py", "desc": "Source file at: patch_reason_4.py", "valid_at": "2026-06-01T11:24:11.924876"}
+{"id": "file_fix_zh_py", "type": "code_file", "name": "fix_zh.py", "desc": "Source file at: fix_zh.py", "valid_at": "2026-06-01T11:24:11.928352"}
+{"id": "file_test_dash_py", "type": "code_file", "name": "test_dash.py", "desc": "Source file at: test_dash.py", "valid_at": "2026-06-01T11:24:11.930804"}
+{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-04T05:00:29.062876"}
+{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-04T22:43:10.236419"}
+{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-04T22:43:10.238141"}
+{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-04T22:43:10.239973"}
+{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-04T22:43:10.241302"}
+{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-04T22:43:10.325508"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-04T22:43:10.349003"}
+{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-04T22:43:10.384038"}
+{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-04T22:43:10.425977"}
+{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-04T22:43:10.453365"}
+{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-04T22:43:10.458985"}
+{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-04T22:43:10.493369"}
+{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-04T22:43:10.533756"}
+{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-04T22:43:10.538574"}
+{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-04T22:43:10.539666"}
+{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-04T22:58:11.448831"}
+{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-04T22:58:11.450516"}
+{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-04T22:58:11.452317"}
+{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-04T22:58:11.453554"}
+{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-04T22:58:11.550597"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-04T22:58:11.574900"}
+{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-04T22:58:11.614914"}
+{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-04T22:58:11.660408"}
+{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-04T22:58:11.690875"}
+{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-04T22:58:11.697131"}
+{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-04T22:58:11.734947"}
+{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-04T22:58:11.777938"}
+{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-04T22:58:11.783239"}
+{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-04T22:58:11.784469"}
+{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-05T23:01:32.440888"}
+{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-05T23:01:32.442804"}
+{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-05T23:01:32.444987"}
+{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-05T23:01:32.446499"}
+{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-05T23:01:32.580755"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-05T23:01:32.622249"}
+{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-05T23:01:32.685300"}
+{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-05T23:01:32.753288"}
+{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-05T23:01:32.796915"}
+{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-05T23:01:32.804710"}
+{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-05T23:01:32.857071"}
+{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-05T23:01:32.926493"}
+{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-05T23:01:32.933851"}
+{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-05T23:01:32.935557"}
+{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-06T01:05:10.428337"}
+{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-06T01:05:10.430041"}
+{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-06T01:05:10.433871"}
+{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-06T01:05:10.435280"}
+{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-06T01:05:10.563988"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-06T01:05:10.598384"}
+{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-06T01:05:10.649189"}
+{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-06T01:05:10.707793"}
+{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-06T01:05:10.745857"}
+{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-06T01:05:10.753520"}
+{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-06T01:05:10.802341"}
+{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-06T01:05:10.862000"}
+{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-06T01:05:10.870682"}
+{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-06T01:05:10.872943"}
+{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-06T23:08:41.810442"}
+{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-06T23:08:41.811924"}
+{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-06T23:08:41.813410"}
+{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-06T23:08:41.814697"}
+{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-06T23:08:41.914000"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-06T23:08:41.940370"}
+{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-06T23:08:41.982932"}
+{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-06T23:08:42.039685"}
+{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-06T23:08:42.082280"}
+{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-06T23:08:42.093190"}
+{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-06T23:08:42.144538"}
+{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-06T23:08:42.198607"}
+{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-06T23:08:42.206034"}
+{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-06T23:08:42.207727"}
+{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-07T01:12:05.069164"}
+{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-07T01:12:05.071078"}
+{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-07T01:12:05.072726"}
+{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-07T01:12:05.073844"}
+{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-07T01:12:05.167306"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-07T01:12:05.192373"}
+{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-07T01:12:05.241130"}
+{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-07T01:12:05.298129"}
+{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-07T01:12:05.335829"}
+{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-07T01:12:05.344605"}
+{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-07T01:12:05.385314"}
+{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-07T01:12:05.430320"}
+{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-07T01:12:05.435320"}
+{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-07T01:12:05.436463"}
+{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-07T23:02:25.866111"}
+{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-07T23:02:25.868064"}
+{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-07T23:02:25.869852"}
+{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-07T23:02:25.871334"}
+{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-07T23:02:25.991287"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-07T23:02:26.022025"}
+{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-07T23:02:26.078268"}
+{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-07T23:02:26.146810"}
+{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-07T23:02:26.185748"}
+{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-07T23:02:26.193509"}
+{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-07T23:02:26.241185"}
+{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-07T23:02:26.297641"}
+{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-07T23:02:26.304123"}
+{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-07T23:02:26.305613"}
+{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-07T23:35:01.943079"}
+{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-07T23:35:01.945058"}
+{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-07T23:35:01.946922"}
+{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-07T23:35:01.948424"}
+{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-07T23:35:02.070961"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-07T23:35:02.102315"}
+{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-07T23:35:02.148111"}
+{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-07T23:35:02.205223"}
+{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-07T23:35:02.241840"}
+{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-07T23:35:02.249404"}
+{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-07T23:35:02.295995"}
+{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-07T23:35:02.354495"}
+{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-07T23:35:02.360595"}
+{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-07T23:35:02.361981"}
+{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-08T12:49:17.776475"}
+{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-08T12:49:17.778270"}
+{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-08T12:49:17.779998"}
+{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-08T12:49:17.781438"}
+{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-08T12:49:17.896728"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-08T12:49:17.927773"}
+{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-08T12:49:17.976464"}
+{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-08T12:49:18.032795"}
+{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-08T12:49:18.075076"}
+{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-08T12:49:18.085543"}
+{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-08T12:49:18.138873"}
+{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-08T12:49:18.202338"}
+{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-08T12:49:18.209230"}
+{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-08T12:49:18.210949"}
+{"id": "file_LICENSE", "type": "code_file", "name": "LICENSE", "desc": "Source file at: LICENSE", "valid_at": "2026-07-08T12:57:27.320554"}
+{"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-08T12:57:27.322444"}
+{"id": "file__editorconfig", "type": "code_file", "name": ".editorconfig", "desc": "Source file at: .editorconfig", "valid_at": "2026-07-08T12:57:27.324284"}
+{"id": "file_docs_brain_brain_config_json", "type": "code_file", "name": "brain_config.json", "desc": "Source file at: docs/brain/brain_config.json", "valid_at": "2026-07-08T12:57:27.325666"}
+{"id": "file_docs_brain_factory_py", "type": "code_file", "name": "factory.py", "desc": "Source file at: docs/brain/factory.py", "valid_at": "2026-07-08T12:57:27.451423"}
+{"id": "file_docs_brain_reason_py", "type": "code_file", "name": "reason.py", "desc": "Source file at: docs/brain/reason.py", "valid_at": "2026-07-08T12:57:27.487483"}
+{"id": "file_docs_brain_scholar_py", "type": "code_file", "name": "scholar.py", "desc": "Source file at: docs/brain/scholar.py", "valid_at": "2026-07-08T12:57:27.535808"}
+{"id": "file_docs_brain_harvester_py", "type": "code_file", "name": "harvester.py", "desc": "Source file at: docs/brain/harvester.py", "valid_at": "2026-07-08T12:57:27.596772"}
+{"id": "file_docs_brain_nexus_py", "type": "code_file", "name": "nexus.py", "desc": "Source file at: docs/brain/nexus.py", "valid_at": "2026-07-08T12:57:27.638218"}
+{"id": "file_docs_brain_evolution_py", "type": "code_file", "name": "evolution.py", "desc": "Source file at: docs/brain/evolution.py", "valid_at": "2026-07-08T12:57:27.648416"}
+{"id": "file_docs_brain_cortex_py", "type": "code_file", "name": "cortex.py", "desc": "Source file at: docs/brain/cortex.py", "valid_at": "2026-07-08T12:57:27.706386"}
+{"id": "file_docs_brain_test_mcp_py", "type": "code_file", "name": "test_mcp.py", "desc": "Source file at: docs/brain/test_mcp.py", "valid_at": "2026-07-08T12:57:27.768974"}
+{"id": "file_docs_brain_mcp_demo_py", "type": "code_file", "name": "mcp_demo.py", "desc": "Source file at: docs/brain/mcp_demo.py", "valid_at": "2026-07-08T12:57:27.775286"}
+{"id": "file_docs_brain_nexus_mcp_py", "type": "code_file", "name": "nexus_mcp.py", "desc": "Source file at: docs/brain/nexus_mcp.py", "valid_at": "2026-07-08T12:57:27.777099"}
