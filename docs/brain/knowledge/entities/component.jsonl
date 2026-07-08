@@ -1,3 +1,3 @@
-{"id": "mcp-host", "type": "component", "name": "MCP Host", "desc": "The AI application (e.g., Claude, IDE) that initiates connections.", "valid_at": "2026-05-31T00:00:00Z"}
-{"id": "mcp-client", "type": "component", "name": "MCP Client", "desc": "The connector within the Host that speaks 1:1 with a Server.", "valid_at": "2026-05-31T00:00:00Z"}
-{"id": "mcp-server", "type": "component", "name": "MCP Server", "desc": "Lightweight gateway exposing specific Resources, Prompts, or Tools.", "valid_at": "2026-05-31T00:00:00Z"}
+{"id": "mcp-host", "type": "component", "name": "MCP Host", "desc": "The AI application (e.g., Claude, IDE) that initiates connections.", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.239737+00:00"}
+{"id": "mcp-client", "type": "component", "name": "MCP Client", "desc": "The connector within the Host that speaks 1:1 with a Server.", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.239764+00:00"}
+{"id": "mcp-server", "type": "component", "name": "MCP Server", "desc": "Lightweight gateway exposing specific Resources, Prompts, or Tools.", "valid_at": "2026-05-31T00:00:00Z", "invalid_at": "2026-07-08T12:24:02.239781+00:00"}

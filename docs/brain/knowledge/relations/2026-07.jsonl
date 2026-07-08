@@ -1558,3 +1558,4 @@
 {"src": "file_format_py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-07T23:35:03.150921"}
 {"src": "file__editorconfig", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-07T23:35:03.152731"}
 {"src": "file_docs_brain_mcp_demo_py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-07T23:35:03.154568"}
+{"source": "model-context-protocol", "target": "edge-ai-inference", "type": "integrates_with", "valid_at": "2026-07-08T12:24:02.282258+00:00", "description": "MCP allows edge devices and inference models to standardize tool access and communication."}
