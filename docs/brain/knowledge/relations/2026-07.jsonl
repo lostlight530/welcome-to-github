@@ -123,3 +123,13 @@
 {"src": "file-docs-brain-evolution-py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-09T21:48:38.881535"}
 {"src": "file-docs-brain-brain-config-json", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-09T21:48:38.883061"}
 {"src": "file-docs-brain-test-mcp-py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-09T21:48:38.884721"}
+{"src": "file-docs-brain-scholar-py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-09T23:12:22.688038"}
+{"src": "file-docs-brain-schema-md", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-09T23:12:22.690318"}
+{"src": "file-docs-brain-factory-py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-09T23:12:22.692517"}
+{"src": "file-docs-brain-mcp-demo-py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-09T23:12:22.694322"}
+{"src": "file-docs-brain-intelligence-gitkeep", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-09T23:12:22.696395"}
+{"src": "file-docs-brain-knowledge-snapshot-json", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-09T23:12:22.698408"}
+{"src": "file-docs-brain-knowledge-relations-2026-03-jsonl", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-09T23:12:22.707688"}
+{"src": "file-docs-brain-knowledge-relations-2026-02-jsonl", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-09T23:12:22.709680"}
+{"src": "file-docs-brain-knowledge-entities-project-jsonl", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-09T23:12:22.711665"}
+{"src": "file-docs-brain-knowledge-entities-tech-stack-jsonl", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-09T23:12:22.713290"}
