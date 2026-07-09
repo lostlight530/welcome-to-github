@@ -1,12 +1,16 @@
 # 📜 绝对悬赏令 (MISSION ACTIVE)
 > Standard Operating Procedure (SOP) Automation Checklist.
-> ⏳ System Pulse: 2026-07-09T11:54:10Z | 🧠 Brain Entropy (Density): 1.1838
+> ⏳ System Pulse: 2026-07-09T12:46:37Z | 🧠 Brain Entropy (Density): 1.0952
 
 ## 🎯 监控目标 (Target)
-- [x] Topology optimal. No immediate active inference required.
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "cortex.py" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "README.md" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "nexus_mcp.py" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "AGENTS.md" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "__init__.py" "is_capability_of" "concept_nexus_system"`
 
 ## 🧠 认知阵眼 (Cognitive Hubs)
-**Cognitive Hub (PageRank)**: `main`
+**Cognitive Hub (PageRank)**: `Context Window`
 
 ## 🚀 新版本发布 (New Release)
 Awaiting native Harvester ingestion cycle. / 等待原生收割机吞噬周期。
