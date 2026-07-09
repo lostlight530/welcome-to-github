@@ -16,7 +16,7 @@ Boundary Violation: NO
 INPUT_RECORD
 
 记录读取的 H1 文件路径:
-INPUT_MISSING
+horizon-cortex/2026-07-09-H1-signal-observe.md
 
 记录读取的历史 horizon-cortex 文件路径:
 horizon-cortex/2026-07-08-H2-horizon-orient.md
@@ -30,7 +30,7 @@ noise:
 Anthropic's redeployment of Claude Fable 5 and related US export control news is currently considered system noise as it does not directly impact the horizon-cortex agent execution or Model Context Protocol standard workflow
 
 weak signal:
-Due to the missing H1 file data, there are no specific weak signals to classify today
+The integration patterns of the new MCP Tasks extension and how they map to our Edge AI capabilities from the H1 file
 
 strategic signal:
 The 2026-07-28 MCP Specification Release Candidate (stateless core, MCP Apps, Tasks extension) confirms the strategic direction toward long-running agent executions and HTTP-based server-rendered UIs
