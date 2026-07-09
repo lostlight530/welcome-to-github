@@ -142,3 +142,7 @@
 {"id": "file_docs_brain_brain_config_json_prop_ignore_paths", "type": "config_property", "name": "ignore_paths[1]", "desc": "docs/brain/inputs", "valid_at": "2026-07-09T12:46:37.150123"}
 {"id": "file_docs_brain_brain_config_json_prop_ignore_paths", "type": "config_property", "name": "ignore_paths[2]", "desc": "docs/brain/memories", "valid_at": "2026-07-09T12:46:37.151295"}
 {"id": "file_docs_brain_brain_config_json_prop_ignore_paths", "type": "config_property", "name": "ignore_paths[3]", "desc": ".raw_cache", "valid_at": "2026-07-09T12:46:37.152404"}
+{"id": "file_docs_brain_brain_config_json_prop_ignore_paths", "type": "config_property", "name": "ignore_paths[0]", "desc": "docs/brain/knowledge", "valid_at": "2026-07-09T21:48:38.019670"}
+{"id": "file_docs_brain_brain_config_json_prop_ignore_paths", "type": "config_property", "name": "ignore_paths[1]", "desc": "docs/brain/inputs", "valid_at": "2026-07-09T21:48:38.021510"}
+{"id": "file_docs_brain_brain_config_json_prop_ignore_paths", "type": "config_property", "name": "ignore_paths[2]", "desc": "docs/brain/memories", "valid_at": "2026-07-09T21:48:38.022784"}
+{"id": "file_docs_brain_brain_config_json_prop_ignore_paths", "type": "config_property", "name": "ignore_paths[3]", "desc": ".raw_cache", "valid_at": "2026-07-09T21:48:38.023929"}
