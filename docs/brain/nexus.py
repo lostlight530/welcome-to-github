@@ -89,8 +89,35 @@ def main() -> None:
             if DB_PATH.exists():
                 os.remove(DB_PATH)
             cortex = Cortex(DB_PATH)
-            # Load from factory logic here if needed
-            print("Database rebuilt from schemas. / 数据库已从 Schema 重建。")
+
+            import glob
+            # Load entities
+            print("Rebuilding entities... / 正在重建实体...")
+            for f_path in glob.glob(str(BRAIN_ROOT / "knowledge" / "entities" / "*.jsonl"), recursive=True):
+                with open(f_path, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        try:
+                            data = json.loads(line)
+                            if 'id' in data and 'type' in data and 'name' in data and 'desc' in data:
+                                cortex.add_entity(data['id'], data['type'], data['name'], data['desc'], save_to_disk=False)
+                        except:
+                            pass
+
+            # Load relations
+            print("Rebuilding relations... / 正在重建关系...")
+            for f_path in glob.glob(str(BRAIN_ROOT / "knowledge" / "relations" / "*.jsonl"), recursive=True):
+                with open(f_path, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        try:
+                            data = json.loads(line)
+                            # Sometimes relations have 'rel' instead of 'relation' in older JSONLs, let's support both
+                            rel = data.get('relation') or data.get('rel')
+                            if 'src' in data and rel and 'dst' in data:
+                                cortex.connect_entities(data['src'], rel, data['dst'], data.get('desc', data.get('context', '')), save_to_disk=False)
+                        except:
+                            pass
+
+            print("Database rebuilt from schemas and JSONL fragments. / 数据库已从 Schema 和 JSONL 碎片重建。")
 
         elif args.command == 'clean':
             # Safe cleanup, protect `.harvester_state.json`
