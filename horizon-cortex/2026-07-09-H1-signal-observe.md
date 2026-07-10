@@ -16,58 +16,74 @@ Boundary Violation: NO
 
 INPUT_RECORD
 Local Files Read:
+horizon-cortex/2026-07-09-H1-signal-observe.md
 horizon-cortex/2026-07-08-H1-signal-observe.md
 
 External Topics Searched:
-Model Context Protocol, MCP Tasks extension, Edge AI updates, long-running agent execution, stateless HTTP core
+Model Context Protocol, MCP updates 2026, Google Maps Grounding, Gemini Coding Agent news
 
 Why Observed:
-According to H1 task requirements, monitoring updates in external AI infrastructure and the MCP tool ecosystem is crucial. (根据 H1 任务要求，监控外部 AI 基础设施和 MCP 工具生态系统的更新至关重要)
+According to H1 task requirements, monitoring updates in external AI infrastructure and the MCP tool ecosystem is crucial (根据 H1 任务要求，监控外部 AI 基础设施和 MCP 工具生态系统的更新至关重要)
 
 EXTERNAL_SOURCE_RECORDS
 
 Source 1
-Title: The biggest MCP spec update ships July 28: What changes for AI agent authentication
-Publisher: WorkOS
-URL: https://workos.com/blog/mcp-2026-spec-agent-authentication
+Title: AI Model Context Protocol Adds Centralised Auth for Enterprise
+Publisher: InfoQ
+URL: https://www.infoq.com/news/2026/07/mcp-ema-enterprise-auth/
 Date Checked: 2026-07-09
-Source Type: Tech Blog
-Relevance: Describes the upcoming MCP 2026-07-28 release candidate, stateless core, and MCP Tasks extension
+Source Type: Tech News
+Relevance: Describes the stable Enterprise-Managed Authorisation extension for MCP
 Confidence: High
 
 Source 2
-Title: How Async AI Agent Workflows Survive Failures
-Publisher: Augment Code
-URL: https://www.augmentcode.com/guides/async-ai-agent-workflows
+Title: Gemini Enterprise release notes
+Publisher: Google Cloud
+URL: https://docs.cloud.google.com/gemini/enterprise/docs/release-notes
 Date Checked: 2026-07-09
-Source Type: Tech Blog
-Relevance: Discusses durable long-running execution for agents and state checkpointing
-Confidence: Medium
+Source Type: Official Documentation
+Relevance: Details new AlphaEvolve code optimization agent for Gemini Enterprise
+Confidence: High
+
+Source 3
+Title: Google Upgrades Gemini API with Background Execution and Remote MCP Integration
+Publisher: Dawan Africa
+URL: https://www.dawan.africa/news/google-upgrades-gemini-api-with-background-execution-and-remote-mcp-integration
+Date Checked: 2026-07-09
+Source Type: Tech News
+Relevance: Highlights background execution and remote MCP server integration for Gemini Managed Agents
+Confidence: High
 
 RAW_SIGNAL_LOG
 
 Signal 1
-Signal: The 2026-07-28 MCP Specification Release Candidate (stateless core, MCP Apps, Tasks extension) confirms the strategic direction toward long-running agent executions. (2026-07-28 MCP 规范候选版本确认了向长时间运行的代理执行迈进的战略方向)
-Source: WorkOS
-Why It May Matter: It will impact how horizon-cortex agent execution and Model Context Protocol standard workflows are designed. (这将影响 horizon-cortex 代理执行和 MCP 标准工作流的设计)
+Signal: The Model Context Protocol team promoted its Enterprise-Managed Authorisation extension to stable status (MCP 团队已将企业管理的授权扩展提升至稳定状态)
+Source: InfoQ
+Why It May Matter: This centralized auth approach replaces per-server consent prompts, making enterprise deployment much more scalable (这种集中的身份验证方法取代了每个服务器的同意提示，使企业部署更具扩展性)
 Uncertainty: Low
 
 Signal 2
-Signal: Anthropic's redeployment of Claude Fable 5 and related US export control news. (Anthropic 重新部署 Claude Fable 5 及相关的美国出口管制新闻)
-Source: General Web
-Why It May Matter: Not directly related to MCP or Edge AI workflows. (与 MCP 或 Edge AI 工作流无直接关系)
-Uncertainty: High
+Signal: Google Cloud launched AlphaEvolve, a code optimization and discovery agent on Gemini Enterprise (Google Cloud 在 Gemini Enterprise 上推出了 AlphaEvolve 代码优化和发现代理)
+Source: Google Cloud
+Why It May Matter: Coding agents are advancing beyond basic code completion to autonomous algorithmic optimization (编码代理正从基本的代码自动补全向自主算法优化迈进)
+Uncertainty: Low
+
+Signal 3
+Signal: Google upgraded the Gemini API with background execution for long-running tasks and remote MCP integration for managed agents (Google 升级了 Gemini API，为托管代理提供了长时间运行任务的后台执行和远程 MCP 集成功能)
+Source: Tech News
+Why It May Matter: This improves asynchronous execution reliability and simplifies connection to private databases via remote MCP (这提高了异步执行可靠性，并简化了通过远程 MCP 连接私有数据库的过程)
+Uncertainty: Low
 
 NEXT_HANDOFF
 
 写给 H2 的输入提示 (Input prompt for H2):
-Please evaluate the impact of the upcoming MCP 2026-07-28 spec update (Tasks extension) on current agent workflows and persistent state management. (请评估即将发布的 MCP 2026-07-28 规范更新(Tasks 扩展)对当前代理工作流和持久状态管理的影响)
+Please evaluate how the new MCP Enterprise-Managed Authorisation extension impacts security workflows, and analyze the Gemini API background execution capabilities (请评估新的 MCP 企业管理授权扩展如何影响安全工作流，并分析 Gemini API 后台执行功能)
 
 指出哪些信号需要明天或今天的 Orient 任务解释 (Which signals need to be interpreted by tomorrow's or today's Orient task):
-The integration patterns of the new MCP Tasks extension and how they map to our Edge AI capabilities. (新 MCP Tasks 扩展的集成模式以及它们如何映射到我们的 Edge AI 能力)
+The integration patterns for Gemini API's new remote MCP connection capabilities and background execution (Gemini API 新的远程 MCP 连接功能和后台执行的集成模式)
 
 指出哪些信号可能只是噪音 (Which signals might just be noise):
-General AI news such as Claude Fable 5 redeployment not related to MCP or Edge AI execution workflows. (与 MCP 或 Edge AI 执行工作流无关的一般 AI 新闻，如 Claude Fable 5 重新部署，可能是噪音)
+General AI news not strictly related to coding agents or MCP capabilities (与编码代理或 MCP 功能没有严格关联的一般 AI 新闻)
 
 BOUNDARY_CHECK
 
