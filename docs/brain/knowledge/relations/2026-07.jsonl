@@ -346,3 +346,37 @@
 {"src": "file-fix-today-py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T06:23:42.025222"}
 {"src": "file-fix-date-py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T06:23:42.027776"}
 {"src": "file--editorconfig", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T06:23:42.029627"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__json", "desc": "", "valid_at": "2026-07-11T11:29:46.679444"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__api", "desc": "", "valid_at": "2026-07-11T11:29:46.682317"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__selected", "desc": "", "valid_at": "2026-07-11T11:29:46.684980"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__normalized", "desc": "", "valid_at": "2026-07-11T11:29:46.687312"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func_validate_profiles", "desc": "", "valid_at": "2026-07-11T11:29:46.689508"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__archive_stale", "desc": "", "valid_at": "2026-07-11T11:29:46.691967"}
+{"src": "file_docs_brain_harvester_py", "relation": "defines", "dst": "func__source", "desc": "", "valid_at": "2026-07-11T11:29:46.694341"}
+{"src": "file_docs_brain_report_hygiene_core_py", "relation": "defines", "dst": "func_atomic_write", "desc": "", "valid_at": "2026-07-11T11:29:46.700670"}
+{"src": "file_docs_brain_report_hygiene_core_py", "relation": "defines", "dst": "func_values", "desc": "", "valid_at": "2026-07-11T11:29:46.702991"}
+{"src": "file_docs_brain_report_hygiene_core_py", "relation": "defines", "dst": "func_assert_period", "desc": "", "valid_at": "2026-07-11T11:29:46.705688"}
+{"src": "file_docs_brain_report_hygiene_core_py", "relation": "defines", "dst": "func_render_welcome", "desc": "", "valid_at": "2026-07-11T11:29:46.708089"}
+{"src": "file_docs_brain_report_hygiene_core_py", "relation": "defines", "dst": "func_render_zero", "desc": "", "valid_at": "2026-07-11T11:29:46.710375"}
+{"src": "file_docs_brain_report_hygiene_core_py", "relation": "defines", "dst": "func_main", "desc": "", "valid_at": "2026-07-11T11:29:46.712191"}
+{"src": "file_docs_brain_document_hygiene_py", "relation": "defines", "dst": "func_atomic_write", "desc": "", "valid_at": "2026-07-11T11:29:47.037307"}
+{"src": "file_docs_brain_document_hygiene_py", "relation": "defines", "dst": "func_headings", "desc": "", "valid_at": "2026-07-11T11:29:47.039949"}
+{"src": "file_docs_brain_document_hygiene_py", "relation": "defines", "dst": "func_render_snapshot", "desc": "", "valid_at": "2026-07-11T11:29:47.043267"}
+{"src": "file_docs_brain_document_hygiene_py", "relation": "defines", "dst": "func_validate_owned_punctuation", "desc": "", "valid_at": "2026-07-11T11:29:47.045866"}
+{"src": "file_docs_brain_document_hygiene_py", "relation": "defines", "dst": "func_maintain_jsonl", "desc": "", "valid_at": "2026-07-11T11:29:47.048385"}
+{"src": "file_docs_brain_report_hygiene_py", "relation": "defines", "dst": "func_validate_owned_report", "desc": "", "valid_at": "2026-07-11T11:29:47.053048"}
+{"src": "file_docs_brain_report_hygiene_py", "relation": "defines", "dst": "func_already_formatted", "desc": "", "valid_at": "2026-07-11T11:29:47.055767"}
+{"src": "file_tests_test_harvester_readability_py", "relation": "defines", "dst": "class_ReadabilityContracts", "desc": "", "valid_at": "2026-07-11T11:29:47.085236"}
+{"src": "file_tests_test_harvester_readability_py", "relation": "defines", "dst": "func_test_snapshot_is_human_readable_and_traceable", "desc": "", "valid_at": "2026-07-11T11:29:47.088455"}
+{"src": "file_tests_test_harvester_readability_py", "relation": "defines", "dst": "func_test_jsonl_maintenance_recurses_and_deduplicates", "desc": "", "valid_at": "2026-07-11T11:29:47.091255"}
+{"src": "file_tests_test_harvester_readability_py", "relation": "defines", "dst": "func_test_truncated_tree_is_a_hard_failure", "desc": "", "valid_at": "2026-07-11T11:29:47.094095"}
+{"src": "tool-use", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:30:01.525628"}
+{"src": "cve-2026", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:30:01.527388"}
+{"src": "cve-2025", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:30:01.528741"}
+{"src": "concept-lostlight-20252026-year-in-review", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:30:01.530097"}
+{"src": "concept-live-portal", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:30:01.531235"}
+{"src": "concept-engineering-standards", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:30:01.532349"}
+{"src": "concept-digital-museum", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:30:01.533511"}
+{"src": "concept-security-policy", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:30:01.534717"}
+{"src": "concept-supported-versions", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:30:01.535906"}
+{"src": "concept-reporting-a-vulnerability", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:30:01.537027"}

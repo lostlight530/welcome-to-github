@@ -95,3 +95,7 @@
 {"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-04T05:00:29.062876", "invalid_at": "2026-07-08T12:24:02.260601+00:00"}
 {"id": "file_docs_brain_source_profiles_json", "type": "code_file", "name": "source_profiles.json", "desc": "Source file at: docs/brain/source_profiles.json", "valid_at": "2026-07-11T06:09:09.452450"}
 {"id": "file_tests_test_harvester_py", "type": "code_file", "name": "test_harvester.py", "desc": "Source file at: tests/test_harvester.py", "valid_at": "2026-07-11T06:09:11.061925"}
+{"id": "file_docs_brain_report_hygiene_core_py", "type": "code_file", "name": "report_hygiene_core.py", "desc": "Source file at: docs/brain/report_hygiene_core.py", "valid_at": "2026-07-11T11:29:46.697982"}
+{"id": "file_docs_brain_document_hygiene_py", "type": "code_file", "name": "document_hygiene.py", "desc": "Source file at: docs/brain/document_hygiene.py", "valid_at": "2026-07-11T11:29:47.034829"}
+{"id": "file_docs_brain_report_hygiene_py", "type": "code_file", "name": "report_hygiene.py", "desc": "Source file at: docs/brain/report_hygiene.py", "valid_at": "2026-07-11T11:29:47.050867"}
+{"id": "file_tests_test_harvester_readability_py", "type": "code_file", "name": "test_harvester_readability.py", "desc": "Source file at: tests/test_harvester_readability.py", "valid_at": "2026-07-11T11:29:47.082512"}

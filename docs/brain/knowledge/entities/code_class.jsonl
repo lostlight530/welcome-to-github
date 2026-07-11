@@ -16,3 +16,4 @@
 {"id": "class_MCPServer", "type": "code_class", "name": "MCPServer", "desc": "Python Class", "valid_at": "2026-07-04T05:00:29.518729", "invalid_at": "2026-07-08T12:24:02.234700+00:00"}
 {"id": "class_Scholar", "type": "code_class", "name": "Scholar", "desc": "Python Class", "valid_at": "2026-07-04T05:00:29.276906", "invalid_at": "2026-07-08T12:24:02.234714+00:00"}
 {"id": "class_HarvesterContracts", "type": "code_class", "name": "HarvesterContracts", "desc": "Python Class", "valid_at": "2026-07-11T06:09:11.063396"}
+{"id": "class_ReadabilityContracts", "type": "code_class", "name": "ReadabilityContracts", "desc": "Python Class", "valid_at": "2026-07-11T11:29:47.084273"}

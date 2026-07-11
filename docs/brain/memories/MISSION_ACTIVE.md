@@ -2,11 +2,11 @@
 
 ## 建议动作
 
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "Tool Use" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "CVE-2026-0994 (Protobuf Vulnerability)" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "CVE-2025-69223 (aiohttp Vulnerability)" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "lostlight | 2025-2026 年度回顾 (Year in Review)" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "🚀 线上入口 (Live Portal)" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "🧠 NEXUS CORTEX: 认知合成协议 (Cognitive Synthesis Protocol)" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "Ⅰ. 系统架构 (Architecture)" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "Ⅱ. 使用指南 (Usage Guide - Nexus CLI)" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "1. Observe (Read / 观察)" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "Check Brain Health & Entropy" "is_capability_of" "concept_nexus_system"`
 
 ## 约束
 
