@@ -6,6 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "docs" / "brain"))
 from harvester import Harvester
+from evolution import Evolver
 
 
 class HarvesterContracts(unittest.TestCase):
@@ -19,6 +20,22 @@ class HarvesterContracts(unittest.TestCase):
     def test_noise_normalization(self):
         self.assertEqual(Harvester._normalized("![badge](https://shields.io/x)\nArchitecture"), "Architecture")
 
+    def test_evolver_keeps_input_contract_out_of_monthly_archive(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).parent) as tmp:
+            inputs = Path(tmp) / "inputs"
+            inputs.mkdir()
+            contract = inputs / "ARCHIVE_AND_HARVESTER.md"
+            contract.write_text("contract", encoding="utf-8")
+            incoming = inputs / "incoming.md"
+            incoming.write_text("input", encoding="utf-8")
+            evolver = Evolver.__new__(Evolver)
+            evolver.inputs_path = inputs
+
+            evolver._archive_inputs()
+
+            self.assertTrue(contract.exists())
+            self.assertFalse(incoming.exists())
+            self.assertEqual(len(list((inputs / "archive").rglob("incoming.md"))), 1)
 
 if __name__ == "__main__":
     unittest.main()

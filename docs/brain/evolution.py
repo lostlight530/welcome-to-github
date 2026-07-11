@@ -135,6 +135,11 @@ class Evolver:
         archive_dir.mkdir(parents=True, exist_ok=True)
 
         for f in self.inputs_path.iterdir():
-            if f.is_file() and f.name.endswith(".md") and not f.name.startswith('.'):
+            if (
+                f.is_file()
+                and f.name.endswith(".md")
+                and not f.name.startswith('.')
+                and f.name != "ARCHIVE_AND_HARVESTER.md"
+            ):
                 shutil.move(str(f), str(archive_dir / f.name))
 
