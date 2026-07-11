@@ -380,3 +380,13 @@
 {"src": "concept-security-policy", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:30:01.534717"}
 {"src": "concept-supported-versions", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:30:01.535906"}
 {"src": "concept-reporting-a-vulnerability", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:30:01.537027"}
+{"src": "concept-nexus-cortex-cognitive-synthesis-protocol", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:33:31.043758"}
+{"src": "concept-architecture", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:33:31.045873"}
+{"src": "concept-usage-guide-nexus-cli", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:33:31.048085"}
+{"src": "concept-1-observe-read", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:33:31.049681"}
+{"src": "concept-check-brain-health-entropy", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:33:31.051464"}
+{"src": "concept-search-concepts-via-synaptic-associative-search", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:33:31.053163"}
+{"src": "concept-check-subconscious-intuitions", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:33:31.055341"}
+{"src": "concept-2-evolve-write", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:33:31.056901"}
+{"src": "concept-run-daily-evolution-cycle", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:33:31.058666"}
+{"src": "concept-updates-docsbrainmemoriesmissionactivemd", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:33:31.062729"}
