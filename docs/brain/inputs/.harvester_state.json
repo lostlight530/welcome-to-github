@@ -1,1 +1,10 @@
-{}
+{
+    "schema_version":  2,
+    "baseline":  "2026-07-11T13:40:00+08:00",
+    "legacy_state":  {
+
+                     },
+    "repositories":  {
+
+                     }
+}

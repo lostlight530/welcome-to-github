@@ -40,10 +40,10 @@ jobs:
       - name: Build Vite project
         run: npm run build
 
-      - name: Prepare static assets
+      - name: Prepare public memorial
         run: |
-          if [ -d docs ]; then cp -r docs dist/; fi
-          if [ -d horizon-cortex ]; then cp -r horizon-cortex dist/; fi
+          mkdir -p dist/docs/archaeology/legacy_traces
+          cp docs/archaeology/legacy_traces/MEMORIAL.md dist/docs/archaeology/legacy_traces/MEMORIAL.md
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
