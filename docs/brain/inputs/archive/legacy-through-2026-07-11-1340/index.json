@@ -1,0 +1,1317 @@
+{
+  "schema_version": 1,
+  "cutoff": "2026-07-11T13:40:00+08:00",
+  "file_count": 131,
+  "files": [
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/modelcontextprotocol_python-sdk_v2.0.0a2.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/01-protocols/modelcontextprotocol_python-sdk/2026/06/modelcontextprotocol_python-sdk_v2.0.0a2.md",
+      "layer": "01-protocols",
+      "source_namespace": "modelcontextprotocol_python-sdk",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "7bb0a269226d63d981dae91606d226d82cda0e302470861b4e28ba67b3c0dbb7"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/modelcontextprotocol_python-sdk_v2.0.0a3.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/01-protocols/modelcontextprotocol_python-sdk/2026/06/modelcontextprotocol_python-sdk_v2.0.0a3.md",
+      "layer": "01-protocols",
+      "source_namespace": "modelcontextprotocol_python-sdk",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "62f171e14ca94be7da00cb3307a86e3a9523124a72722d6948e528a70d0e29c3"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/modelcontextprotocol_servers_v2026.6.3.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/01-protocols/modelcontextprotocol_servers/2026/06/modelcontextprotocol_servers_v2026.6.3.md",
+      "layer": "01-protocols",
+      "source_namespace": "modelcontextprotocol_servers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "b802dda6716f51d3e957810e7e230396c70574c6c6e20cbafefff2c0c90784b1"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/microsoft_semantic-kernel_vpython-1.43.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/02-agent-runtime/microsoft_semantic-kernel/2026/06/microsoft_semantic-kernel_vpython-1.43.0.md",
+      "layer": "02-agent-runtime",
+      "source_namespace": "microsoft_semantic-kernel",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "f3da264f8eac366a360efd968c18f5fc52ed80ed3eaf9ec985ecdaefa46f5894"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/microsoft_semantic-kernel_vpython-1.43.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/02-agent-runtime/microsoft_semantic-kernel/2026/06/microsoft_semantic-kernel_vpython-1.43.1.md",
+      "layer": "02-agent-runtime",
+      "source_namespace": "microsoft_semantic-kernel",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "bb9d97cab81528439feac51e44bb4acfd02b5762f4129a7d9ed8a774f9e1d322"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/iflytek_astron-agent_v1.0.2.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/iflytek_astron-agent/2026/03/iflytek_astron-agent_v1.0.2.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "iflytek_astron-agent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "6d64822b2b9dac63e6fe1fe30b30b0caa8f2bcdce8bffa52a1a92dcd074a38dd"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/iflytek_astron-agent_v1.0.3.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/iflytek_astron-agent/2026/03/iflytek_astron-agent_v1.0.3.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "iflytek_astron-agent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "f1361b0c16b05659d1fc03f2147decfe9354e62ddc704cdee7cab5af6310c0c9"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/iflytek_astron-agent_v1.0.4.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/iflytek_astron-agent/2026/04/iflytek_astron-agent_v1.0.4.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "iflytek_astron-agent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "e393a638fea983e9db837a025906fc8653ee4c568dcc257a47f45208193f1746"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/iflytek_astron-agent_v1.0.5.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/iflytek_astron-agent/2026/04/iflytek_astron-agent_v1.0.5.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "iflytek_astron-agent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "88cd95c83bddca0fc7709b5b78783ad19c65d4fea2a13effd5f3f382e7bd02a9"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/iflytek_astron-agent_v1.0.6.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/iflytek_astron-agent/2026/04/iflytek_astron-agent_v1.0.6.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "iflytek_astron-agent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "accfc5db26a3c1fdd066060a81d458f13f8b22bedeceb0dae4ab2bd221d4fc6d"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/iflytek_astron-agent_v1.0.6.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/iflytek_astron-agent/2026/05/iflytek_astron-agent_v1.0.6.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "iflytek_astron-agent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "fb47fa03b2f51f002f132c019a02a3aeccfd7724371768174be9149b51ee658e"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/iflytek_astron-agent_v1.0.7.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/iflytek_astron-agent/2026/05/iflytek_astron-agent_v1.0.7.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "iflytek_astron-agent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "0b0b1b51eee614dd7e0cf7f6a876288f955d562bb50669230c8d67f95436c63c"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/iflytek_astron-agent_v1.0.8.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/iflytek_astron-agent/2026/05/iflytek_astron-agent_v1.0.8.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "iflytek_astron-agent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "29147845fa9bd8f0e74dbb84bd8dd681519efcb6a7e3ee063d78f26a2a65fd28"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/iflytek_astron-agent_v1.0.8.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/iflytek_astron-agent/2026/06/iflytek_astron-agent_v1.0.8.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "iflytek_astron-agent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "63a3e6e9b45a56dd552cf7bad9848a2b3c1f0ba7d3d51b916338b873779b4c2f"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/iflytek_astron-agent_v1.0.9.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/iflytek_astron-agent/2026/06/iflytek_astron-agent_v1.0.9.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "iflytek_astron-agent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "c3e9d73b5235b534cbd72ec8a64244a441c83c93a3df017390b2c8cb036d9e4b"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/07/iflytek_astron-agent_v1.0.9.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/iflytek_astron-agent/2026/07/iflytek_astron-agent_v1.0.9.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "iflytek_astron-agent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "7514724c1cbd57a0e736e36bd7a27228504a0f2a42200bb54b5a44f7d152e809"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/07/iflytek_astron-agent_v1.1.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/iflytek_astron-agent/2026/07/iflytek_astron-agent_v1.1.0.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "iflytek_astron-agent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "7bacc1355bd20a66a202fa5c27a3a38f5153c66039760813c2a3873253f712a5"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/langgenius_dify_1.13.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/langgenius_dify/2026/03/langgenius_dify_1.13.0.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "langgenius_dify",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "0b2853de39a7ac93c62ed5239d349469822fd1f88b6b256bed93032b570e4d7f"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/langgenius_dify_1.13.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/langgenius_dify/2026/03/langgenius_dify_1.13.1.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "langgenius_dify",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "5fe676ca10dc2cfe0b79757e53f58488daebab16271da4242cedf3bf10aae05e"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/langgenius_dify_1.13.2.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/langgenius_dify/2026/03/langgenius_dify_1.13.2.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "langgenius_dify",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "0f260c8f43293dc33f089e98f8bb41288a402a44a0816ef60b28e2a3e2398e58"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/langgenius_dify_1.13.3.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/langgenius_dify/2026/03/langgenius_dify_1.13.3.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "langgenius_dify",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "f2059e3abbc27e91c46762442f72b46fdba4b9c1c1a685f17047d60548106e9b"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/langgenius_dify_1.13.3.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/langgenius_dify/2026/04/langgenius_dify_1.13.3.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "langgenius_dify",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "f069a1f312b68c8561319465f61c20e9dfee51be5e7e4e9dc7924b0f35044559"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/langgenius_dify_1.14.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/langgenius_dify/2026/04/langgenius_dify_1.14.0.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "langgenius_dify",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "9dad03b369ff2d83475de08307e1929bafc3cc4db2d3bb2cc9c957a754469814"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/langgenius_dify_1.14.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/langgenius_dify/2026/05/langgenius_dify_1.14.0.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "langgenius_dify",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "eb995c0f452159b79f6f2842cee2341f07078c1b8252e9d5d2f9cd2f5bf433ef"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/langgenius_dify_1.14.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/langgenius_dify/2026/05/langgenius_dify_1.14.1.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "langgenius_dify",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "e6669e0a8f90a103aee1c643bb8661be27bfc29a786a8b68bf2380c6e59f01ef"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/langgenius_dify_1.14.2.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/langgenius_dify/2026/05/langgenius_dify_1.14.2.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "langgenius_dify",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "734a4079d2b3ea69f3d62d95bd940c3b0e83a066d07db580d1253a5b94f302d1"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/langgenius_dify_1.14.2.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/langgenius_dify/2026/06/langgenius_dify_1.14.2.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "langgenius_dify",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "c40140bc11563ec6f0798b7f28dfdf8d47fbf8cad1e939bfd7a91ddf1a79da01"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/langgenius_dify_v1.14.2.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/langgenius_dify/2026/06/langgenius_dify_v1.14.2.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "langgenius_dify",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "a6d1ec0ccec93ee8a7ef133057f61b2417f0bc807542381a265f2ac432153b6a"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/langgenius_dify_v1.15.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/langgenius_dify/2026/06/langgenius_dify_v1.15.0.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "langgenius_dify",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "f8b9d8571ba17ca1d7bbd452f05d6cf0c9424a71feaaae5923ae8ce41a4e377f"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/07/langgenius_dify_v1.15.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/langgenius_dify/2026/07/langgenius_dify_v1.15.0.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "langgenius_dify",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "992a3d94f5153659558d5297f1fbc565d2451b5a572c9edb1979d72348cf33b2"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/ModelEngine-Group_nexent_v1.8.0.1-hotfix.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/03/ModelEngine-Group_nexent_v1.8.0.1-hotfix.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "67e13a022f6c22b0d4fa668acd74841c1a2f6b67c31b020c7a291b2ec130d36c"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/ModelEngine-Group_nexent_v1.8.0.2.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/03/ModelEngine-Group_nexent_v1.8.0.2.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "5ee7f5a466597348e361c05dc7f01156bca2d5e71f7e609f1970d504d13e5e69"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/ModelEngine-Group_nexent_v1.8.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/03/ModelEngine-Group_nexent_v1.8.1.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "f80115241ea778e2e3ed47550bfdc115fccc5b1f6874374f76b17e2f5bd682b9"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/ModelEngine-Group_nexent_v2.0.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/03/ModelEngine-Group_nexent_v2.0.0.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "bcb5fc0f7f7fcdb99403fadeedd7cf0162af07e6424c8a6b916355019ea659db"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/ModelEngine-Group_nexent_v2.0.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/04/ModelEngine-Group_nexent_v2.0.1.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "c17aa9c300cb5ab516c67c0af3b8ecc74d9f3c34367aed4e585effd55920e711"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/ModelEngine-Group_nexent_v2.0.2.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/04/ModelEngine-Group_nexent_v2.0.2.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "bca5dcef2f2bd0204c888aa4664e69da0f188924fb1570b5edd713b50e829f09"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/ModelEngine-Group_nexent_v2.1.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/04/ModelEngine-Group_nexent_v2.1.0.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "46a2c32e20ca87e9fc04e1cf7d575de6eac533f14d424744f51b783f470f9452"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/ModelEngine-Group_nexent_v2.1.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/05/ModelEngine-Group_nexent_v2.1.0.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "87720fe9764e9226baa5b938a73fc867f1d85414ef16bd2bd91327a037aeeb15"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/ModelEngine-Group_nexent_v2.1.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/05/ModelEngine-Group_nexent_v2.1.1.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "13f177359470a05e806d4317cd3540fc515b191c12e0e4566396ea3d62383338"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/ModelEngine-Group_nexent_v2.1.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/06/ModelEngine-Group_nexent_v2.1.1.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "11172cc932a5cecc7f5d94aa0d15b493cb62a790f35b106902c2e435829a57fa"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/ModelEngine-Group_nexent_v2.2.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/06/ModelEngine-Group_nexent_v2.2.0.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "f4e6dec233ea16267f5fcc7735c335c5582cf5e88b8ec746d42cabc5b7c6ec62"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/ModelEngine-Group_nexent_v2.2.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/06/ModelEngine-Group_nexent_v2.2.1.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "318ab9a2c79b6a108e4dfddd81cb0c1b1b3a999c27e8e6bb8cbf65f7b2036f61"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/07/ModelEngine-Group_nexent_v2.2.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/07/ModelEngine-Group_nexent_v2.2.1.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "014e10e8db48f7668616d43f02f79279a8e3ed612cc700bef01bcd3cf3610f88"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/07/ModelEngine-Group_nexent_v2.2.2.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/04-complex-agent-systems/modelengine-group_nexent/2026/07/ModelEngine-Group_nexent_v2.2.2.md",
+      "layer": "04-complex-agent-systems",
+      "source_namespace": "modelengine-group_nexent",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "9cd836cfdde64eb3354e9ee24bb48629e91c73300d02311373cf07c2039e92ec"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/google_genai_v1.0.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/google_genai/2026/06/google_genai_v1.0.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "google_genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "5cb9e1b25c15549768db4e302e538da36bb28b72ee5c996826cea6a4a6fba57a"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/googleapis_python-genai_v1.67.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/03/googleapis_python-genai_v1.67.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "e25459451d16e7c08da9b4272bc1e5d8c54391a9e10343a2d5a9a84e29e4f128"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/googleapis_python-genai_v1.68.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/03/googleapis_python-genai_v1.68.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "6ddd6c5608f7a82ce6f7035b215f4c29d706d1c61c589b7ab2ec508e0ea75359"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/googleapis_python-genai_v1.69.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/03/googleapis_python-genai_v1.69.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "b9905584861168dc9048fb1324bff0e2841f506e99cd9e22b8d8dbd6f91864a2"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/googleapis_python-genai_v1.70.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/04/googleapis_python-genai_v1.70.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "382346da3de24fe3811a8f8c810e16f3741e79e14482561818157885b7aff8d3"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/googleapis_python-genai_v1.71.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/04/googleapis_python-genai_v1.71.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "1eaab32d4286fcd07f69f0493d3bb1cd73c46b1936235ee5436164d23fc50e80"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/googleapis_python-genai_v1.72.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/04/googleapis_python-genai_v1.72.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "b8e1363f3b3c9d2b8e54d895fa4bab16fe709f323699540d080de5d2ed7e1620"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/googleapis_python-genai_v1.73.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/04/googleapis_python-genai_v1.73.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "b82f8c06d8f24aba4810fdc71cb6adc687bda7193d9e84688aecb808ec228369"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/googleapis_python-genai_v1.73.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/04/googleapis_python-genai_v1.73.1.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "5f5b20ec67a8b2627f30be458c8f8eb69656a89bd6db7db5c420f6df510cac61"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/googleapis_python-genai_v1.74.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/04/googleapis_python-genai_v1.74.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "0429fe9d9b19eaec5291b87fa6951450e249c2b5f3c6578cffdccbf3c79b9e57"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/googleapis_python-genai_v1.74.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/05/googleapis_python-genai_v1.74.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "945deb77eba41e0f1333e72f78f722ce49e71ca4e8aa015c19fa69995f5b8a8a"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/googleapis_python-genai_v1.75.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/05/googleapis_python-genai_v1.75.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "a0662611a7952eb6993371907e9a95848d684b0c8288e898aeacf81b32d8254d"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/googleapis_python-genai_v2.0.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/05/googleapis_python-genai_v2.0.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "ee5dc39b996cfc06f06898af181f370fba389e45f1054322f37af704fc7cfdfc"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/googleapis_python-genai_v2.0.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/05/googleapis_python-genai_v2.0.1.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "9fdd8508984b304c25b90021d2e057b16e18df5bad5137e459601c968ba6bb72"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/googleapis_python-genai_v2.1.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/05/googleapis_python-genai_v2.1.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "3318bbc080483dd878fe500d424967565a7d7218e97619af5df1231f107cdb19"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/googleapis_python-genai_v2.2.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/05/googleapis_python-genai_v2.2.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "7ba13cf98b1fc54bc78edce1bddca8db45ffc18d739fd0e1618932da1dcf81a0"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/googleapis_python-genai_v2.3.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/05/googleapis_python-genai_v2.3.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "144c1be12b69e675f3dfb62031c375a48a39205a86b9488425a1013750888bc0"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/googleapis_python-genai_v2.4.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/05/googleapis_python-genai_v2.4.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "08437576a96c962377d911c3c75a36534bc59b51496171065098369419a3e795"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/googleapis_python-genai_v2.5.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/05/googleapis_python-genai_v2.5.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "582a72e1dd1cf1965c74cf8021ae5c1c7cb13427d8419ed4e31efc3dbeede2ad"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/googleapis_python-genai_v2.6.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/05/googleapis_python-genai_v2.6.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "c7abbe9739601177576121fb95a6c7d3ff2681f33e93430cb1708b88de38c4e4"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/googleapis_python-genai_v2.7.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/05/googleapis_python-genai_v2.7.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "ab9101df8d92c3f14e461c6f5b7513926ff9113d45ce2fec4e0a80101328d226"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/googleapis_python-genai_v2.10.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/06/googleapis_python-genai_v2.10.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "83a98ba26b1aeb30bb9105c0d3f5798f38b24d66be436d8d3f115e753c736537"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/googleapis_python-genai_v2.7.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/06/googleapis_python-genai_v2.7.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "250762eac5fd064c3cc2c283f04d461951bef5be322ecd0c8af698b5ba6931c7"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/googleapis_python-genai_v2.8.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/06/googleapis_python-genai_v2.8.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "f40c4a0675ae28cdfdcd00e77004d9cc90a8d37fa2ffb1bfeb6b98c26429ac7b"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/googleapis_python-genai_v2.9.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/06/googleapis_python-genai_v2.9.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "7e2232ff9321ecfe308d6723b4ebdc4c388506cc762d56d9c48eca8eb9a94074"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/googleapis_python-genai_v2.9.0-rc0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/06/googleapis_python-genai_v2.9.0-rc0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "c0d1aefbe4f67c6cee4d5ad380713637298117dd146e66516024c38184e83c13"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/googleapis_python-genai_v2.9.0-rc1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/06/googleapis_python-genai_v2.9.0-rc1.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "19265df1f853e20c545a647f8ab13f743979f92942387d0e074c4eb03ab571ef"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/07/googleapis_python-genai_v2.10.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/07/googleapis_python-genai_v2.10.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "21ade0388a0114bfaff3f2b3fb4b19f8c4a936728cb4ef824dcb4a5914220123"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/07/googleapis_python-genai_v2.11.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/05-provider-sdk-gateway/googleapis_python-genai/2026/07/googleapis_python-genai_v2.11.0.md",
+      "layer": "05-provider-sdk-gateway",
+      "source_namespace": "googleapis_python-genai",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "5359bac5ba1cf2ef5a7f551fcdfea2e048f08b24a271326d0bea61474645cf69"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/02/vllm-project_vllm_v0.15.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/02/vllm-project_vllm_v0.15.1.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "40af0c7e0d424fdf83df72618ad3d975eb2a200a4d0f79230863a39d62f67ef2"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/vllm-project_vllm_v0.16.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/03/vllm-project_vllm_v0.16.0.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "de5fb2e4fabf0eeae34ea2dbd12015ddd47a83a72698ccb35fc2ec98ab83f3a4"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/vllm-project_vllm_v0.17.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/03/vllm-project_vllm_v0.17.0.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "9ad1e16e3c5b4a11086fdea2857e89cb4a4c1036e6b806990d397113fbb455c3"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/vllm-project_vllm_v0.17.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/03/vllm-project_vllm_v0.17.1.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "d8d645bd7c776d3a38e3739cc2c1d79e5c2faacb76cae2d10bed76a33c871ba1"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/vllm-project_vllm_v0.18.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/03/vllm-project_vllm_v0.18.0.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "752bf4c2f1673c489700650dc9150f253bcd46e19c15490a43ed58041f67f99a"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/vllm-project_vllm_v0.18.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/03/vllm-project_vllm_v0.18.1.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "728cb6814845467e3a6791e81d2c7dca7342d1082cdfa44d1194a823be15cd0f"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/vllm-project_vllm_v0.18.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/04/vllm-project_vllm_v0.18.1.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "2c38567a52fe910b4297a47ae8274c583999912baf50e546b6d12b09aac9550f"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/vllm-project_vllm_v0.19.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/04/vllm-project_vllm_v0.19.0.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "85a33475edf2219fd42235bc10505cce5c19ea9aae1154720f41d4d740b4bceb"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/vllm-project_vllm_v0.19.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/04/vllm-project_vllm_v0.19.1.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "b62b7f09a07d4357ce3065ca422d531800dbf1e767d08a0569d2b357bcb41bce"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/vllm-project_vllm_v0.20.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/04/vllm-project_vllm_v0.20.0.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "ce6794d0567aee6659680955a7e9b2904a26fc5eebe9b8139f00df53883789f2"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/vllm-project_vllm_v0.20.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/05/vllm-project_vllm_v0.20.0.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "7e0755db72a04983316fa6fcc97ef6571b88c6bb1947072ccdc628a1953ff8c7"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/vllm-project_vllm_v0.20.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/05/vllm-project_vllm_v0.20.1.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "e8c6460075e42c4efe73dbc41b416503c3be5160352e1e7f77e75ba79ea80029"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/vllm-project_vllm_v0.20.2.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/05/vllm-project_vllm_v0.20.2.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "15a5e126d61c234294e1b5bc63203e1ecd811d93eb1d4701977f3aa70ca9fc21"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/vllm-project_vllm_v0.21.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/05/vllm-project_vllm_v0.21.0.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "730495cd4f284bbc96d8694cc942f7a8aa9eb17093c89709dc53996eca1cf98f"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/vllm-project_vllm_v0.22.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/05/vllm-project_vllm_v0.22.0.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "3c15b795a5d0873300d287787c7d7ed637a7d1b54028dbfe234567f471a1e5b8"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/vllm-project_vllm_v0.22.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/06/vllm-project_vllm_v0.22.0.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "602fa9d137664fec50589ce4cf975812854d2c439af5ce22f70a0f9254487a5d"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/vllm-project_vllm_v0.22.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/06/vllm-project_vllm_v0.22.1.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "67627f9712681445a8b3458ab78f4294d2e430da18c6e59c70aedbb34dbd5b40"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/vllm-project_vllm_v0.23.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/06/vllm-project_vllm_v0.23.0.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "6242563df1d66cb203c8f97a71eecc8cc766effe8d210581743dded2475f572b"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/vllm-project_vllm_v0.24.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/06/vllm-project_vllm_v0.24.0.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "97461a77ad5ed916ab1b7931efa751bfc6ff88e3df4a148289835c931030e04b"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/07/vllm-project_vllm_v0.24.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/06-serving-inference/vllm-project/2026/07/vllm-project_vllm_v0.24.0.md",
+      "layer": "06-serving-inference",
+      "source_namespace": "vllm-project",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "b8f3b9ea17457e772c6776b2c251df618c3c335fd57e62b74a1eb81eed69f51e"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/02/huggingface_transformers_v5.2.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/02/huggingface_transformers_v5.2.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "764fce4855eeafa81022234a136b8bd39b24e7183ee906f4cf1613b8b2c2c9ce"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/huggingface_transformers_v5.3.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/03/huggingface_transformers_v5.3.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "f0c66ab71d558eea919b5185bf764171a1ebf8e18956ff8046d2b4c5a45f97ab"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/huggingface_transformers_v5.4.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/03/huggingface_transformers_v5.4.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "7b348bd421830f13b0b07f84330a1bb583cd32d519f7eb08075cef99e77e7338"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/huggingface_transformers_v5.4.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/04/huggingface_transformers_v5.4.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "357f3ded6d231250cab01daa6363f12f3c17909691109e51f13bfdbf3bef9180"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/huggingface_transformers_v5.5.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/04/huggingface_transformers_v5.5.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "d9b6c96a44aec082b89be2420eb6c08a62a028065f13270dbd2a5719ae0225cc"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/huggingface_transformers_v5.5.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/04/huggingface_transformers_v5.5.1.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "d34c477c67181b6399db64731d429c28dc22aa0f7bf3c37c8ea1fd56e86554cc"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/huggingface_transformers_v5.5.3.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/04/huggingface_transformers_v5.5.3.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "cd9c6f1c919f45add791b653b27856be37b804e550eb1438192c03bd0220be1e"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/huggingface_transformers_v5.5.4.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/04/huggingface_transformers_v5.5.4.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "4a9993598ec82cedfa0ce23420428f022c3b1df373e89478911fef6d439819d3"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/huggingface_transformers_v5.6.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/04/huggingface_transformers_v5.6.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "784cbe5552080a8b3f93fd676a973bba0c4b93f2e5b7b1e31b301ec307f7886d"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/huggingface_transformers_v5.6.2.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/04/huggingface_transformers_v5.6.2.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "351a8ac2415e54892193933acbb76cc28f664b356f1230fb968701c26b87847e"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/huggingface_transformers_v5.7.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/04/huggingface_transformers_v5.7.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "8c6f5ca4779517c5665861ad6ca27a3f2c850b0435adec1f98a788461c457737"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/huggingface_transformers_v5.7.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/05/huggingface_transformers_v5.7.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "a9bf1a296cb6c4c118a3b35fe29ac7fac7e5e9bce4e8e249e7499b11ff2cad4a"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/huggingface_transformers_v5.8.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/05/huggingface_transformers_v5.8.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "a5b181400c29e794f12949b3b079f956b9e35627d459ab7b05a9a374a1f32fa5"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/huggingface_transformers_v5.8.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/05/huggingface_transformers_v5.8.1.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "4ce62a4404592b20bae93abcc4759154cb213d825fe37d8d37490f047d0dbcbb"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/huggingface_transformers_v5.9.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/05/huggingface_transformers_v5.9.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "f050621473ee9009974858456e89c4e3d3a891e32353431601fc785ded18863e"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/huggingface_transformers_v5.10.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/06/huggingface_transformers_v5.10.1.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "0d69fb09bc21cf35917ecff39dd2aa9e44c1bf332bd6d1edbad6da3b1ba1df45"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/huggingface_transformers_v5.10.2.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/06/huggingface_transformers_v5.10.2.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "a300ccea102da4bcfaec5ac84e389250c01d952e2f7d8053c1f2a445d807c146"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/huggingface_transformers_v5.11.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/06/huggingface_transformers_v5.11.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "346d13549dae33c983e35193d47fe24275847143acce0dfe9ed77249af6c5be7"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/huggingface_transformers_v5.12.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/06/huggingface_transformers_v5.12.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "719fd759f37423386fd793da6ecfae9651f037c30aac113c3a449ef40a39ee4d"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/huggingface_transformers_v5.12.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/06/huggingface_transformers_v5.12.1.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "6a5ebac2cd4b78d7347fdee39dce7c6fc40358bfad8c89a4ca3b96d6a743e7d5"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/huggingface_transformers_v5.9.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/06/huggingface_transformers_v5.9.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "c8d41f57025e2a6d512b4f73d4bceead46c5c6d03b8fa2ed675a76cee0a0de5d"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/07/huggingface_transformers_v5.12.1.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/07/huggingface_transformers_v5.12.1.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "86bcdb1382133a52383006ec174c90f95713211569ea29e5e2c6d035902c917f"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/07/huggingface_transformers_v5.13.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/huggingface_transformers/2026/07/huggingface_transformers_v5.13.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "huggingface_transformers",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "3475d082aef665d45a0e588a6f228f60c588373739120f83d2bdebd949d64d15"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/mindspore-ai_mindspore_v2.3.0.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/07-model-and-training/mindspore-ai_mindspore/2026/06/mindspore-ai_mindspore_v2.3.0.md",
+      "layer": "07-model-and-training",
+      "source_namespace": "mindspore-ai_mindspore",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "549c342bb0758385a0e0263c3bed29810ea6100cef411f8e1f9f6dada7ffc08d"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/google-ai-edge_mediapipe_v0.10.32.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/google-ai-edge_mediapipe/2026/03/google-ai-edge_mediapipe_v0.10.32.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "google-ai-edge_mediapipe",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "f7042f2e9da0f1c95cbad23b29c4a0d74337a6553e0ccfa250299ff6611b3bef"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/google-ai-edge_mediapipe_v0.10.33.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/google-ai-edge_mediapipe/2026/03/google-ai-edge_mediapipe_v0.10.33.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "google-ai-edge_mediapipe",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "5eb84cef0423fc0de6525cd8fd311ef1f04154b256a089dfbf77663c15182f49"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/google-ai-edge_mediapipe_v0.10.33.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/google-ai-edge_mediapipe/2026/04/google-ai-edge_mediapipe_v0.10.33.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "google-ai-edge_mediapipe",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "e10e85a6dbf1e8c723207db5e00f49b6ee7f87cfd7cacea5947f27fea552a808"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/google-ai-edge_mediapipe_v0.10.35.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/google-ai-edge_mediapipe/2026/04/google-ai-edge_mediapipe_v0.10.35.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "google-ai-edge_mediapipe",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "9223dfaf0ba73fe0552111bef131aaa6425841c27e9e8ec811da261a42989441"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/google-ai-edge_mediapipe_v0.10.35.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/google-ai-edge_mediapipe/2026/05/google-ai-edge_mediapipe_v0.10.35.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "google-ai-edge_mediapipe",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "c51b2e05b1a0531582d844754ffb9337db3aa582cbd1ce74be5b15cd2a814bed"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/google-ai-edge_mediapipe_v0.10.35.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/google-ai-edge_mediapipe/2026/06/google-ai-edge_mediapipe_v0.10.35.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "google-ai-edge_mediapipe",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "afc5f6ea5ac250c4f42fd01cbbd90f9c6f07c5512b26ff2d7e73add0ed1ea871"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/07/google-ai-edge_mediapipe_v0.10.35.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/google-ai-edge_mediapipe/2026/07/google-ai-edge_mediapipe_v0.10.35.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "google-ai-edge_mediapipe",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "4b28118122155a34560e8920662cf16441b5543a4aa0e28bfefb6959ef76bc5e"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/02/microsoft_markitdown_v0.1.5.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/microsoft_markitdown/2026/02/microsoft_markitdown_v0.1.5.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "microsoft_markitdown",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "ed7d51260fe956a077fef824e45d9d0f3e4052d5e75aacbba8fbe51765fba1bf"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/03/microsoft_markitdown_v0.1.5.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/microsoft_markitdown/2026/03/microsoft_markitdown_v0.1.5.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "microsoft_markitdown",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "68ea12675d476e0263497723e6933024016d6fdd231aaad5d74dd32d47c4d875"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/04/microsoft_markitdown_v0.1.5.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/microsoft_markitdown/2026/04/microsoft_markitdown_v0.1.5.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "microsoft_markitdown",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "48a655f955994a8219cad7cdf62a3afbc0cd3b8f89408d7e78df0e06e8ebccba"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/microsoft_markitdown_v0.1.5.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/microsoft_markitdown/2026/05/microsoft_markitdown_v0.1.5.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "microsoft_markitdown",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "b87303f9035c1e63b2a68f17d26a2bdbb972212714ce841e11c6584daa24ce45"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/05/microsoft_markitdown_v0.1.6.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/microsoft_markitdown/2026/05/microsoft_markitdown_v0.1.6.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "microsoft_markitdown",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "b60df70a3d8a660268cc325a1e19f5b4f57ca689c5ba7fc25935358804531325"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/06/microsoft_markitdown_v0.1.6.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/microsoft_markitdown/2026/06/microsoft_markitdown_v0.1.6.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "microsoft_markitdown",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "708af03079f6a18c88546f00e214f5c956ff8141a8b965d9c6b9d55bb38a6a38"
+    },
+    {
+      "original_path": "docs/brain/inputs/archive/2026/07/microsoft_markitdown_v0.1.6.md",
+      "archive_path": "docs/brain/inputs/archive/legacy-through-2026-07-11-1340/08-tooling-reference/microsoft_markitdown/2026/07/microsoft_markitdown_v0.1.6.md",
+      "layer": "08-tooling-reference",
+      "source_namespace": "microsoft_markitdown",
+      "primary_owner": "welcome",
+      "status": "legacy",
+      "cutoff": "2026-07-11T13:40:00+08:00",
+      "sha256": "d4fe999e8597f3dc41cdfd26a834818bfdc8a68fcf171cc4bac7526ac81df5b6"
+    }
+  ]
+}

@@ -42,6 +42,9 @@ python docs/brain/nexus.py ponder
 
 # Run Daily Evolution Cycle (Includes Sandbox Verification)
 python docs/brain/nexus.py evolve
+
+# Synchronize approved profile sources
+python docs/brain/nexus.py harvest
 ```
 
 ### 2. 观察 (Observe / Read)
@@ -77,5 +80,5 @@ See [SCHEMA.md](./SCHEMA.md) for the "Gene Code" of this system.
 
 The brain is wired directly into GitHub Actions with a **Unified Lifecycle**:
 
-- 🧬 **`nexus-life-cycle.yml`**: A scheduled, fully automated pipeline that continuously validates the knowledge base, scans for structural changes, runs deductive metrics, and safely proposes mutations.
+- 🧬 **`nexus-life-cycle.yml`**: A scheduled and push-triggered lifecycle that rebuilds state, harvests the 15 declared profile sources, validates harvester contracts, ingests structural changes, runs deductive metrics, and commits generated artifacts only to the triggering branch.
   - **The System Pulse**: An absolute temporal mechanism ensuring the system remains continuously active, verifiable, and free from automated hibernation or Git starvation.

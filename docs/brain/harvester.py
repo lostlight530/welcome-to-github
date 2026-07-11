@@ -1,291 +1,90 @@
-import urllib.request
-import json
-import os
-import datetime
-import re
-import threading
-import hashlib
-import difflib
+﻿"""Profile-driven GitHub document harvester using only the standard library"""
+import base64, datetime as dt, difflib, fnmatch, hashlib, json, os, re
+import urllib.error, urllib.request
 from pathlib import Path
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
 class Harvester:
-    def __init__(self, brain_path):
-        self.brain_path = Path(brain_path)
-        self.inputs_path = self.brain_path / "inputs"
-        self.state_file = self.inputs_path / ".harvester_state.json"
-        self.state_lock = threading.Lock()
-        self.state = self._load_state()
+    def __init__(self, root=None):
+        here=Path(__file__).resolve()
+        if root is not None and (Path(root)/"inputs").exists():
+            self.inputs=Path(root)/"inputs"; self.profile_path=Path(root)/"source_profiles.json"
+        else:
+            project=Path(root) if root else here.parents[3]
+            self.inputs=project/"data"/"inputs"; self.profile_path=self.inputs/"source_profiles.json"
+        self.state_path=self.inputs/".harvester_state.json"; self.cache=self.inputs/".raw_cache"
+        self.token=os.environ.get("GITHUB_TOKEN",""); self.dry=os.environ.get("HARVESTER_DRY_RUN","0")=="1"
+        self.profiles=self._json(self.profile_path,{})
+        old=self._json(self.state_path,{})
+        self.state=old if "repositories" in old else {"schema_version":2,"legacy_state":old,"repositories":{}}
 
-        # [Architect's Watchlist] Phase A Radar
-        self.targets = {
-            "ModelEngine-Group/nexent": ["releases", "commits"],
-            "iflytek/astron-agent": ["releases", "commits"],
-            "langgenius/dify": ["releases"],
-            "vllm-project/vllm": ["releases"],
-            "huggingface/transformers": ["releases"],
-            "google-ai-edge/mediapipe": ["releases"],
-            "microsoft/markitdown": ["releases"],
-            "googleapis/python-genai": ["releases"]
-        }
+    @staticmethod
+    def _json(path, default):
+        try: return json.loads(Path(path).read_text(encoding="utf-8"))
+        except (OSError,json.JSONDecodeError): return default
 
-    def _load_state(self):
-        if self.state_file.exists():
-            with open(self.state_file, 'r') as f:
-                return json.load(f)
-        return {}
+    def _api(self,url):
+        headers={"Accept":"application/vnd.github+json","User-Agent":"Nexus-Document-Harvester/2"}
+        if self.token: headers["Authorization"]=f"Bearer {self.token}"
+        with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=30) as r:
+            return json.loads(r.read().decode("utf-8"))
 
-    def _save_state(self):
-        with open(self.state_file, 'w') as f:
-            json.dump(self.state, f, indent=2)
+    @staticmethod
+    def _selected(path,patterns,ignored):
+        value=path.lower()
+        if any(fnmatch.fnmatch(value,p.lower()) for p in ignored): return False
+        return value=="readme.md" or any(fnmatch.fnmatch(value,p.lower()) for p in patterns)
 
-    def _analyze_content(self, text):
-        """Architect's Filters: Semantic Tagging"""
-        tags = []
-        # Edge AI
-        if re.search(r'(?i)(onnx|gguf|litert|android|ios|arm|npu|quantiz)', text):
-            tags.append("🏷️ Edge-Ready")
-        # Breaking Changes
-        if re.search(r'(?i)(breaking|deprecated|removed|migration)', text):
-            tags.append("⚠️ Breaking-Change")
-        # Agent Protocol
-        if re.search(r'(?i)(mcp|plugin|workflow|skill|orchestrat|hitl)', text):
-            tags.append("🔗 Agent-Protocol")
-        return tags
+    @staticmethod
+    def _normalized(text):
+        kept=[]
+        for line in text.splitlines():
+            if re.search(r"(?i)(badge|shields\.io|updated[_ -]?at|last[_ -]?updated)",line): continue
+            line=re.sub(r"\s+"," ",line).strip()
+            if line: kept.append(line)
+        return "\n".join(kept)
 
-    def _fetch_repo_data(self, repo):
-        """Thread worker to fetch data for a single repository."""
-        print(f"   [Radar | 雷达] Scanning Target: {repo}... / 扫描目标: {repo}...")
-        url = f"https://api.github.com/repos/{repo}/releases/latest"
-        result_file = None
+    def validate_profiles(self):
+        owner=self.profiles.get("owner"); seen=set()
+        for p in self.profiles.get("sources",[]):
+            key=p.get("repo","").lower()
+            if p.get("primary_owner")!=owner: raise ValueError(f"owner mismatch: {key}")
+            if owner=="zero" and not p.get("promotion_approved"): raise ValueError(f"unapproved source: {key}")
+            if key in seen: raise ValueError(f"duplicate source: {key}")
+            seen.add(key)
+        return True
 
-        try:
-            with self.state_lock:
-                repo_state = self.state.get(repo, {})
-                etag = repo_state.get('etag')
-                last_tag = repo_state.get('last_tag')
-
-            # Intent-Driven Whitelist Probes: Use standard library with HTTP Caching (ETag)
-            headers = {"User-Agent": "Nexus-Cortex/2.5 (Zero-Dependency)"}
-            if etag:
-                headers["If-None-Match"] = etag
-
-            req = urllib.request.Request(url, headers=headers)
-            try:
-                with urllib.request.urlopen(req, timeout=10) as response:
-                    raw_content = response.read().decode()
-                    data = json.loads(raw_content)
-                    tag = data.get('tag_name', 'unknown')
-                    body = data.get('body', '') or "No description provided."
-                    new_etag = response.getheader('ETag')
-            except urllib.error.HTTPError as e:
-                if e.code == 304:
-                    # Not Modified: ETag matched, no new data. Preserve rate limit.
-                    return None
-                else:
-                    raise e
-
-            # Phase IV.2: Double-Clutch Anti-Shake (SHA-256 + Diff)
-            # Deterministic noise stripping prior to hash (Zero-Dependency)
-            clean_content = re.sub(r'(?i)\b(date|time|updated_at|timestamp)\s*[:=]\s*["\']?\d{4}-\d{2}-\d{2}T?\d{0,2}:?\d{0,2}[:.]?\d{0,3}Z?["\']?', '', raw_content)
-            clean_content = re.sub(r'\d{4}-\d{2}-\d{2}', '', clean_content)
-
-            content_hash = hashlib.sha256(clean_content.encode('utf-8')).hexdigest()
-
-            with self.state_lock:
-                last_hash = repo_state.get('last_hash')
-
-            if last_hash == content_hash:
-                print(f"      => [Anti-Shake | 防抖机制] Hash match for {repo} (Noise filtered). Content is structurally identical, aborting digest. / {repo} 哈希匹配（已过滤噪音）。内容结构一致，中止提取。")
-                with self.state_lock:
-                    self.state[repo] = self.state.get(repo, {})
-                    self.state[repo]['etag'] = new_etag
-                return None
-
-            # Fallback Diff if Hash Changed (checking for trivial whitespace/timestamp changes)
-            cache_dir = self.inputs_path / ".raw_cache"
-            cache_dir.mkdir(parents=True, exist_ok=True)
-            cache_file = cache_dir / f"{repo.replace('/', '_')}.json"
-
-            is_trivial_update = False
-            if cache_file.exists() and last_hash:
-                with open(cache_file, 'r', encoding='utf-8') as f:
-                    old_content = f.read()
-
-                # Zero-dependency diff
-                diff = list(difflib.unified_diff(
-                    old_content.splitlines(),
-                    raw_content.splitlines(),
-                    n=0
-                ))
-
-                # Check if diff only contains lines with dates, timestamps, or stats
-                meaningful_changes = 0
-                for line in diff:
-                    if line.startswith('+') or line.startswith('-'):
-                        if not line.startswith('+++') and not line.startswith('---'):
-                            text = line[1:].lower()
-                            # If the change is NOT just a date, timestamp, or a number update, it's meaningful
-                            if not re.search(r'\b(date|time|updated_at|timestamp)\b|\d{4}-\d{2}-\d{2}', text) and len(text.strip()) > 3:
-                                meaningful_changes += 1
-
-                if meaningful_changes == 0 and len(diff) > 0:
-                    is_trivial_update = True
-                    print(f"      => [Anti-Shake | 防抖机制] Diff for {repo} is trivial (timestamps/metadata only). Aborting digest. / {repo} 的差异微不足道（仅时间戳/元数据）。中止提取。")
-
-            if is_trivial_update:
-                with self.state_lock:
-                    self.state[repo] = self.state.get(repo, {})
-                    self.state[repo]['etag'] = new_etag
-                    self.state[repo]['last_hash'] = content_hash
-                with open(cache_file, 'w', encoding='utf-8') as f:
-                    f.write(raw_content)
-                return None
-
-            # Proceed with the update
-            with open(cache_file, 'w', encoding='utf-8') as f:
-                f.write(raw_content)
-
-            with self.state_lock:
-                if repo not in self.state:
-                    self.state[repo] = {}
-                self.state[repo]['etag'] = new_etag
-                self.state[repo]['last_tag'] = tag
-                self.state[repo]['last_hash'] = content_hash
-
-            if tag != last_tag or last_hash != content_hash:
-                print(f"   🔥 [Signal | 信号] Valid Structural Update: {repo} @ {tag} / 有效的结构化更新：{repo} @ {tag}")
-                analysis_tags = self._analyze_content(body)
-                header_tags = " ".join(analysis_tags)
-
-                # Structure strictly following memory anchors
-                timestamp = datetime.datetime.now().strftime("%Y-%m-%d")
-                clean_tag = tag if tag.startswith('v') else f"v{tag}"
-                filename = f"{repo.replace('/', '_')}_{clean_tag}.md"
-                filepath = self.inputs_path / filename
-
-                content = f"# ℹ️ Intel Report: {repo}\n"
-                content += f"## 🎯 监控目标 (Target)\n> {repo}\n\n"
-                content += f"## 🚀 新版本发布 (New Release)\n> Version: {tag}\n> Date: {datetime.datetime.now().isoformat()}\n"
-
-                if header_tags:
-                    content += f"\n## 💡 项目洞察 (Insight)\n> **Architect's Analysis**: {header_tags}\n"
-
-                # Trust Score calculation based on tags
-                score = min(100, 80 + (10 * len(analysis_tags)))
-                content += f"\n## 🛡️ 信任评分 (Trust Score)\n> Score: {score}/100\n"
-
-                content += f"\n## 🔨 最近提交 (Recent Commits)\n*Summary from release notes:*\n\n{body}\n"
-
-                with open(filepath, 'w', encoding='utf-8') as f:
-                    f.write(content)
-
-                with self.state_lock:
-                    self.state[repo] = {'last_tag': tag, 'updated_at': timestamp, 'etag': new_etag}
-                result_file = str(filepath)
-            else:
-                # Update ETag even if tag hasn't changed to stay synced
-                with self.state_lock:
-                    self.state[repo]['etag'] = new_etag
-
-        except Exception as e:
-            # Silently degrade on network errors to maintain system anti-fragility
-            pass
-
-        return result_file
-
-    def _read_mission_active_intents(self):
-        """Phase V/VI: Self-Driven Intent Probes via SQLite DB Graph Reversal."""
-        mission_path = self.brain_path / "memories" / "MISSION_ACTIVE.md"
-        if not mission_path.exists(): return
-
-        try:
-            with open(mission_path, 'r', encoding='utf-8') as f:
-                content = f.read()
-
-            import re
-            import sqlite3
-
-            # Phase VI SOP Automation: Extract explicitly declared entities that require SOP execution
-            # Match: `python docs/brain/nexus.py connect "ENTITY_NAME" ...`
-            matches = re.findall(r'nexus\.py connect\s+"([^"]+)"', content)
-
-            if not matches: return
-
-            db_path = self.brain_path / "cortex.db"
-            if not db_path.exists(): return
-
-            conn = sqlite3.connect(db_path)
-            cursor = conn.cursor()
-
-            for entity_name in matches:
-                # To resolve abstract entities into actionable targets, find connected 'config_property' or 'concept' elements
-                # that might hold URL/Repo references, but specifically we check if the entity itself looks like a repo string
-
-                # Check 1: Does the entity name itself look like a repo?
-                if "/" in entity_name and "docs/brain" not in entity_name and len(entity_name.split("/")) == 2:
-                    if entity_name not in self.targets:
-                        self.targets[entity_name] = ["releases"]
-                        print(f"   [Radar Intent | 雷达意图] Added direct target from SOP command: {entity_name} / 从 SOP 命令添加直接目标: {entity_name}")
-                    continue
-
-                # Check 2: Cortex DB Graph Lookup for linked whitelist targets
-                # If the entity is abstract (e.g. "NEXUS System"), see if there is any target that is a URL repo we monitor
-                # In this deterministic system, we map out from the isolated node.
-                try:
-                    sql = '''
-                        SELECT e.name
-                        FROM relations r
-                        JOIN entities e ON (r.target = e.id OR r.source = e.id)
-                        WHERE (r.source = (SELECT id FROM entities WHERE name = ?)
-                           OR r.target = (SELECT id FROM entities WHERE name = ?))
-                          AND e.name LIKE 'https://github.com/%'
-                          AND e.invalid_at IS NULL
-                        LIMIT 1
-                    '''
-                    cursor.execute(sql, (entity_name, entity_name))
-                    result = cursor.fetchone()
-                    if result:
-                        url = result[0]
-                        # Extract owner/repo from https://github.com/owner/repo
-                        repo_match = re.search(r'github\.com/([a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+)', url)
-                        if repo_match:
-                            repo_str = repo_match.group(1)
-                            # Remove trailing fragments like .md or /main/...
-                            repo_parts = repo_str.split('/')
-                            if len(repo_parts) >= 2:
-                                clean_repo = f"{repo_parts[0]}/{repo_parts[1]}"
-                                if clean_repo not in self.targets:
-                                    self.targets[clean_repo] = ["releases"]
-                                    print(f"   [Radar Intent | 雷达意图] Graph Reverse Lookup resolved {entity_name} -> {clean_repo} / 图逆向查找解析: {entity_name} -> {clean_repo}")
-                except Exception as e:
-                    print(f"   [Radar Intent | 雷达意图] Graph lookup failed for {entity_name}: {e} / 图查找失败: {entity_name}: {e}")
-
-            conn.close()
-        except Exception as e:
-            print(f"[Harvester Error | 收割机错误] Failed to read intents: {e} / 读取意图失败: {e}")
+    def _source(self,p):
+        repo=p["repo"]; meta=self._api(f"https://api.github.com/repos/{repo}")
+        tree=self._api(f"https://api.github.com/repos/{repo}/git/trees/{meta['default_branch']}?recursive=1")
+        rs=self.state["repositories"].setdefault(repo,{"documents":{}}); changed=[]
+        items=[x for x in tree.get("tree",[]) if x.get("type")=="blob" and self._selected(x["path"],p.get("documents",[]),p.get("ignore_patterns",[]))]
+        for item in sorted(items,key=lambda x:x["path"]):
+            path,sha=item["path"],item["sha"]; previous=rs["documents"].get(path,{})
+            if previous.get("sha")==sha: continue
+            blob=self._api(f"https://api.github.com/repos/{repo}/git/blobs/{sha}")
+            if blob.get("encoding")!="base64": continue
+            text=base64.b64decode(blob["content"]).decode("utf-8",errors="replace")
+            digest=hashlib.sha256(self._normalized(text).encode()).hexdigest()
+            if previous.get("content_hash")==digest:
+                rs["documents"][path]={**previous,"sha":sha}; continue
+            namespace=repo.lower().replace("/","_").replace("-","_")
+            entity=f"doc_{namespace}_{re.sub(r'[^a-z0-9]+','_',path.lower()).strip('_')}_{sha[:12]}"
+            target=self.inputs/"current"/p["layer"]/namespace/(path.replace("/","__")+f"__{sha[:12]}.md")
+            cache=self.cache/namespace/(path.replace("/","__")+".txt")
+            old=cache.read_text(encoding="utf-8") if cache.exists() else ""
+            diff="\n".join(difflib.unified_diff(old.splitlines(),text.splitlines(),fromfile="previous",tofile=sha,n=3))
+            provenance={"source_repo":repo,"source_path":path,"source_sha":sha,"retrieved_at":dt.datetime.now(dt.timezone.utc).isoformat(),"confidence":1.0,"primary_owner":p["primary_owner"],"entity_id":entity}
+            if not self.dry:
+                target.parent.mkdir(parents=True,exist_ok=True); cache.parent.mkdir(parents=True,exist_ok=True)
+                target.write_text("PROVENANCE: "+json.dumps(provenance,ensure_ascii=False,sort_keys=True)+"\n\n# Source Document\n\n"+text+"\n\n# Document Diff\n\n```diff\n"+diff+"\n```\n",encoding="utf-8")
+                cache.write_text(text,encoding="utf-8")
+            rs["documents"][path]={"sha":sha,"content_hash":digest,"entity_id":entity,"output":str(target)}; changed.append(str(target))
+        rs["last_checked_at"]=dt.datetime.now(dt.timezone.utc).isoformat(); return changed
 
     def fetch_github_data(self):
-        try:
-            print("[Harvester | 收割机] Initiating asynchronous radar sweep (Zero-Dependency Concurrency)... / 启动异步雷达扫描（零依赖并发）...")
-            new_files = []
-
-            # Read self-driven intents before sweeping
-            self._read_mission_active_intents()
-
-            # Liquid Time-Series Graph Injection - Phase 4 Concurrency
-            with ThreadPoolExecutor(max_workers=5) as executor:
-                future_to_repo = {executor.submit(self._fetch_repo_data, repo): repo for repo in self.targets.keys()}
-                for future in as_completed(future_to_repo):
-                    try:
-                        res = future.result()
-                        if res:
-                            new_files.append(res)
-                    except Exception as exc:
-                        print(f"   [Radar Error | 雷达错误] Target generated an exception: {exc} / 目标抛出异常: {exc}")
-
-            return new_files
-        except Exception as e:
-            print(f"[Harvester Error | 收割机错误] fetch_github_data failed: {e} / fetch_github_data 失败: {e}")
-            return []
-
+        self.validate_profiles(); changed=[]
+        for p in self.profiles.get("sources",[]):
+            try: changed.extend(self._source(p))
+            except (urllib.error.URLError,KeyError,ValueError) as exc: print(f"[Harvester] {p.get('repo')}: {exc}")
+        if not self.dry: self.state_path.write_text(json.dumps(self.state,ensure_ascii=False,indent=2,sort_keys=True),encoding="utf-8")
+        return changed
