@@ -1,4 +1,4 @@
-KB Stats: Entities=[761] Relations=[883] Compression Rate=[39.98%]
+KB Stats: Entities=[761] Relations=[893] Compression Rate=[49.80%]
 PageRank Top 10 Hubs:
 [1+Context Window+0.0008+0.0]
 [2+Model Context Protocol+0.0006+0.0]
@@ -12,5 +12,5 @@ PageRank Top 10 Hubs:
 [10+Context Engineering+0.0005+0.0]
 Orphan Alert: [10] AST Islands (Isolated Nodes)
 Trust Score: [100]
-MISSION_ACTIVE: Focus=[Executable SOP: `python docs/brain/nexus.py connect "concept.jsonl" "is_capability_of" "concept_nexus_system"`] Bounties=[10]
-7-Day Trend: 761 | 883
+MISSION_ACTIVE: Focus=[Executable SOP: `python docs/brain/nexus.py connect "main.js" "is_capability_of" "concept_nexus_system"`] Bounties=[10]
+7-Day Trend: 761 | 893
