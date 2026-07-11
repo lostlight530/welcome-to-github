@@ -390,3 +390,13 @@
 {"src": "concept-2-evolve-write", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:33:31.056901"}
 {"src": "concept-run-daily-evolution-cycle", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:33:31.058666"}
 {"src": "concept-updates-docsbrainmemoriesmissionactivemd", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:33:31.062729"}
+{"src": "concept-3-ingest-action", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:38:18.961154"}
+{"src": "concept-add-new-concept", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:38:18.963014"}
+{"src": "concept-connect-concepts", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:38:18.964551"}
+{"src": "concept-4-clean-maintenance", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:38:18.966097"}
+{"src": "concept-clear-temporary-cache-targets", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:38:18.967809"}
+{"src": "concept-schema-rules", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:38:18.969552"}
+{"src": "concept-automation-cicd", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:38:18.971074"}
+{"src": "concept-architecture-workflow", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:38:18.972684"}
+{"src": "concept-core-philosophy", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:38:18.974284"}
+{"src": "concept-whitelisted-directories", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-11T11:38:18.975955"}

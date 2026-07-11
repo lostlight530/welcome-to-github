@@ -4,8 +4,8 @@
 
 - 系统状态 `ONLINE`.
 - 实体 `787`.
-- 关系 `937`.
-- 压缩率 `61.38%`.
+- 关系 `947`.
+- 压缩率 `65.57%`.
 - 信任评分 `100`.
 
 ## 记忆健康
@@ -32,7 +32,7 @@
 <summary>展开机器原始数据</summary>
 
 ```text
-KB Stats: Entities=[787] Relations=[937] Compression Rate=[61.38%]
+KB Stats: Entities=[787] Relations=[947] Compression Rate=[65.57%]
 PageRank Top 10 Hubs:
 [1+Context Window+0.0008+0.0]
 [2+Model Context Protocol+0.0006+0.0]
@@ -47,7 +47,7 @@ PageRank Top 10 Hubs:
 Orphan Alert: [10] AST Islands (Isolated Nodes)
 Trust Score: [100]
 MISSION_ACTIVE: Focus=[Pending inference. / 等待推演。] Bounties=[10]
-7-Day Trend: 787 | 937
+7-Day Trend: 787 | 947
 ```
 
 </details>
