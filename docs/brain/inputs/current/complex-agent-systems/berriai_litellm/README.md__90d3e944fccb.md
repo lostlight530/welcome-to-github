@@ -1,6 +1,54 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_berriai_litellm_readme_md_90d3e944fccb", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:08:54.677610+00:00", "source_path": "README.md", "source_repo": "BerriAI/litellm", "source_sha": "90d3e944fccb79d25e5bdb7f3a136a149aab1cd8"}
+# BerriAI/litellm · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [BerriAI/litellm](https://github.com/BerriAI/litellm) |
+| 来源文件 | [README.md](https://github.com/BerriAI/litellm/blob/90d3e944fccb79d25e5bdb7f3a136a149aab1cd8/README.md) |
+| 来源版本 | `90d3e944fccb79d25e5bdb7f3a136a149aab1cd8` |
+| 摄取时间 | `2026-07-11T06:08:54.677610+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_berriai_litellm_readme_md_90d3e944fccb` |
+
+## 本次变化
+
+- 新增行数 `666`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- What is LiteLLM
+- Why LiteLLM
+- OSS Adopters
+- Features
+- Python SDK
+- OpenAI
+- Anthropic
+- AI Gateway (Proxy Server)
+- Python SDK - A2A Protocol
+- AI Gateway (Proxy Server)
+- Python SDK - MCP Bridge
+- AI Gateway - MCP Gateway
+- Use with Cursor IDE
+- Supported Providers ([Website Supported Models](https://models.litellm.ai/) | [Docs](https://docs.litellm.ai/docs/providers))
+- Get Started
+- Deploy on AWS or GCP with Terraform
+- AWS — ECS Fargate + Aurora + ElastiCache + ALB
+- main.tf
+- GCP — Cloud Run + Cloud SQL + Memorystore + HTTPS LB
+- main.tf
+- Both stacks include
+- Run in Developer Mode
+- Services
+- Backend
+
+<details>
+<summary>展开完整外部原文</summary>
 
 <h1 align="center">
         🚅 LiteLLM
@@ -669,8 +717,10 @@ All these checks must pass before your PR can be merged.
   <img src="https://contrib.rocks/image?repo=BerriAI/litellm" />
 </a>
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -1346,3 +1396,5 @@ All these checks must pass before your PR can be merged.
 +  <img src="https://contrib.rocks/image?repo=BerriAI/litellm" />
 +</a>
 ```
+
+</details>

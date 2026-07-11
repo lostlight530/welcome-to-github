@@ -1,6 +1,42 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_coze_dev_coze_studio_readme_md_6f4221d80688", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:09:02.304458+00:00", "source_path": "README.md", "source_repo": "coze-dev/coze-studio", "source_sha": "6f4221d806888d45596156bec6f5599294ea6a2f"}
+# coze-dev/coze-studio · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [coze-dev/coze-studio](https://github.com/coze-dev/coze-studio) |
+| 来源文件 | [README.md](https://github.com/coze-dev/coze-studio/blob/6f4221d806888d45596156bec6f5599294ea6a2f/README.md) |
+| 来源版本 | `6f4221d806888d45596156bec6f5599294ea6a2f` |
+| 摄取时间 | `2026-07-11T06:09:02.304458+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_coze_dev_coze_studio_readme_md_6f4221d80688` |
+
+## 本次变化
+
+- 新增行数 `132`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- What is Coze Studio?
+- Feature list
+- Quickstart
+- Developer Guide
+- Using the open-source version of Coze Studio
+- License
+- Community contributions
+- Security and privacy
+- Join Community
+- 🐛 Issue Reports & Feature Requests
+- 💬 Technical Discussion & Communication
+- Acknowledgments
+
+<details>
+<summary>展开完整外部原文</summary>
 
 ![Image](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/943f576df3424fa98580c2ad18946719~tplv-goo7wpa0wc-image.image)
 
@@ -135,8 +171,10 @@ Thank you to all the developers and community members who have contributed to th
 * The [Hertz](https://github.com/cloudwego/hertz) team - Go HTTP framework with high-performance and strong-extensibility for building micro-services
 * All users who participated in testing and feedback
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -278,3 +316,5 @@ Thank you to all the developers and community members who have contributed to th
 +* The [Hertz](https://github.com/cloudwego/hertz) team - Go HTTP framework with high-performance and strong-extensibility for building micro-services
 +* All users who participated in testing and feedback
 ```
+
+</details>

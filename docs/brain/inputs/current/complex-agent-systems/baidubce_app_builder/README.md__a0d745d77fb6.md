@@ -1,6 +1,54 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_baidubce_app_builder_readme_md_a0d745d77fb6", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:09:05.053906+00:00", "source_path": "README.md", "source_repo": "baidubce/app-builder", "source_sha": "a0d745d77fb6f9d04e71349a5acb6f3b5ddc2dff"}
+# baidubce/app-builder · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [baidubce/app-builder](https://github.com/baidubce/app-builder) |
+| 来源文件 | [README.md](https://github.com/baidubce/app-builder/blob/a0d745d77fb6f9d04e71349a5acb6f3b5ddc2dff/README.md) |
+| 来源版本 | `a0d745d77fb6f9d04e71349a5acb6f3b5ddc2dff` |
+| 摄取时间 | `2026-07-11T06:09:05.053906+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_baidubce_app_builder_readme_md_a0d745d77fb6` |
+
+## 本次变化
+
+- 新增行数 `347`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- 什么是AppBuilder-SDK
+- AppBuilder-SDK 有哪些功能？
+- 使用 AppBuilder-SDK 可以构建什么应用？
+- **产业级RAG应用**
+- 如何安装AppBuilder-SDK
+- 百度智能云千帆AppBuilder-SDK 最新版本 1.1.0 (2025-06-20)
+- 快速开始你的AI原生应用开发之旅
+- 1. 调用大模型
+- 代码示例
+- 设置环境中的TOKEN，请替换为您的个人TOKEN
+- 定义prompt模板
+- 定义输入，调用playground组件
+- 以打字机的方式，流式展示大模型回答内容
+- 流式输出结束后，可再次打印完整的大模型对话结果，除回答内容外，还包括token的用量情况
+- 回答展示
+- 2. 调用能力组件
+- 代码示例
+- 设置环境中的TOKEN，使用请替换为您的个人TOKEN
+- 输出运行结果
+- 回答展示
+- 3. 调用AI原生应用
+- 代码示例
+- 设置环境中的TOKEN，请替换为您的个人TOKEN
+- 从AppBuilder网页获取并传入应用ID，以下为说唱导师应用ID
+
+<details>
+<summary>展开完整外部原文</summary>
 
 <div align="center">
 <img src='docs/image/logo.png' alt='logo' width='700' >
@@ -349,9 +397,10 @@ Hook:
 
 AppBuilder-SDK遵循Apache-2.0开源协议。
 
+</details>
 
-
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -708,3 +757,5 @@ AppBuilder-SDK遵循Apache-2.0开源协议。
 +AppBuilder-SDK遵循Apache-2.0开源协议。
 +
 ```
+
+</details>

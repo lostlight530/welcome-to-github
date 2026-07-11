@@ -1,6 +1,40 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_modelengine_group_nexent_readme_md_dd78f2763d15", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:08:58.039336+00:00", "source_path": "README.md", "source_repo": "ModelEngine-Group/nexent", "source_sha": "dd78f2763d15d217db85f2c6f59115d3d4118ab5"}
+# ModelEngine-Group/nexent · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [ModelEngine-Group/nexent](https://github.com/ModelEngine-Group/nexent) |
+| 来源文件 | [README.md](https://github.com/ModelEngine-Group/nexent/blob/dd78f2763d15d217db85f2c6f59115d3d4118ab5/README.md) |
+| 来源版本 | `dd78f2763d15d217db85f2c6f59115d3d4118ab5` |
+| 摄取时间 | `2026-07-11T06:08:58.039336+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_modelengine_group_nexent_readme_md_dd78f2763d15` |
+
+## 本次变化
+
+- 新增行数 `130`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- 🚀 Get Started Now
+- Option 1: Try Our Official Demo
+- Option 2: Deploy on Your Own
+- System Requirements
+- Docker Deployment (Recommended for Individuals/Small Teams)
+- Kubernetes Deployment (For Enterprise Production)
+- ✨ Core Features
+- 🤝 Join Our Community
+- 📖 What's Next
+- 📄 License
+
+<details>
+<summary>展开完整外部原文</summary>
 
 ![Nexent Banner](./assets/NexentBanner.png)
 
@@ -133,8 +167,10 @@ Ready to dive deeper? Here are the main documentation entry points:
 
 Nexent is licensed under the [MIT License](LICENSE).
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -274,3 +310,5 @@ Nexent is licensed under the [MIT License](LICENSE).
 +
 +Nexent is licensed under the [MIT License](LICENSE).
 ```
+
+</details>

@@ -1,6 +1,54 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_ollama_ollama_readme_md_1e5a52d240f3", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:08:51.140118+00:00", "source_path": "README.md", "source_repo": "ollama/ollama", "source_sha": "1e5a52d240f331abd8807a8100daced065bb4cbc"}
+# ollama/ollama · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [ollama/ollama](https://github.com/ollama/ollama) |
+| 来源文件 | [README.md](https://github.com/ollama/ollama/blob/1e5a52d240f331abd8807a8100daced065bb4cbc/README.md) |
+| 来源版本 | `1e5a52d240f331abd8807a8100daced065bb4cbc` |
+| 摄取时间 | `2026-07-11T06:08:51.140118+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_ollama_ollama_readme_md_1e5a52d240f3` |
+
+## 本次变化
+
+- 新增行数 `356`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- Ollama
+- Download
+- macOS
+- Windows
+- Linux
+- Docker
+- Libraries
+- Community
+- Get started
+- Coding
+- AI assistant
+- Chat with a model
+- REST API
+- Python
+- JavaScript
+- Supported backends
+- Documentation
+- Community Integrations
+- Chat Interfaces
+- Web
+- Desktop
+- Mobile
+- Code Editors & Development
+- Libraries & SDKs
+
+<details>
+<summary>展开完整外部原文</summary>
 
 <p align="center">
   <a href="https://ollama.com">
@@ -359,8 +407,10 @@ console.log(response.message.content);
 - [Flox](https://flox.dev/blog/ollama-part-one)
 - [Guix channel](https://codeberg.org/tusharhero/ollama-guix)
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -726,3 +776,5 @@ console.log(response.message.content);
 +- [Flox](https://flox.dev/blog/ollama-part-one)
 +- [Guix channel](https://codeberg.org/tusharhero/ollama-guix)
 ```
+
+</details>

@@ -1,6 +1,46 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_moonshotai_kimi_cli_readme_md_44bbde6d2563", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:09:08.868141+00:00", "source_path": "README.md", "source_repo": "MoonshotAI/kimi-cli", "source_sha": "44bbde6d2563aff36a279cdfb43430e1f9616f67"}
+# MoonshotAI/kimi-cli · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [MoonshotAI/kimi-cli](https://github.com/MoonshotAI/kimi-cli) |
+| 来源文件 | [README.md](https://github.com/MoonshotAI/kimi-cli/blob/44bbde6d2563aff36a279cdfb43430e1f9616f67/README.md) |
+| 来源版本 | `44bbde6d2563aff36a279cdfb43430e1f9616f67` |
+| 摄取时间 | `2026-07-11T06:09:08.868141+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_moonshotai_kimi_cli_readme_md_44bbde6d2563` |
+
+## 本次变化
+
+- 新增行数 `177`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- Kimi CLI
+- Getting Started
+- Key Features
+- Shell command mode
+- VS Code extension
+- IDE integration via ACP
+- Zsh integration
+- MCP support
+- Add streamable HTTP server:
+- Add streamable HTTP server with OAuth authorization:
+- Add stdio server:
+- List added MCP servers:
+- Remove an MCP server:
+- Authorize an MCP server:
+- More
+- Development
+
+<details>
+<summary>展开完整外部原文</summary>
 
 # Kimi CLI
 
@@ -180,8 +220,10 @@ make help  # show all make targets
 
 Note: `make build` and `make build-bin` automatically run `make build-web` to embed the web UI.
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -368,3 +410,5 @@ Note: `make build` and `make build-bin` automatically run `make build-web` to em
 +
 +Note: `make build` and `make build-bin` automatically run `make build-web` to embed the web UI.
 ```
+
+</details>

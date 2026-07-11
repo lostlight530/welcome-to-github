@@ -197,3 +197,28 @@
 {"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-07-11T06:23:30.906980"}
 {"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-07-11T06:23:31.514301"}
 {"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-07-11T06:23:31.517138"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-07-11T11:29:46.642631"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-07-11T11:29:46.644789"}
+{"id": "func__json", "type": "code_function", "name": "_json", "desc": "Python Function", "valid_at": "2026-07-11T11:29:46.678550"}
+{"id": "func__api", "type": "code_function", "name": "_api", "desc": "Python Function", "valid_at": "2026-07-11T11:29:46.681413"}
+{"id": "func__selected", "type": "code_function", "name": "_selected", "desc": "Python Function", "valid_at": "2026-07-11T11:29:46.684159"}
+{"id": "func__normalized", "type": "code_function", "name": "_normalized", "desc": "Python Function", "valid_at": "2026-07-11T11:29:46.686502"}
+{"id": "func_validate_profiles", "type": "code_function", "name": "validate_profiles", "desc": "Python Function", "valid_at": "2026-07-11T11:29:46.688648"}
+{"id": "func__archive_stale", "type": "code_function", "name": "_archive_stale", "desc": "Python Function", "valid_at": "2026-07-11T11:29:46.690953"}
+{"id": "func__source", "type": "code_function", "name": "_source", "desc": "Python Function", "valid_at": "2026-07-11T11:29:46.693533"}
+{"id": "func_atomic_write", "type": "code_function", "name": "atomic_write", "desc": "Python Function", "valid_at": "2026-07-11T11:29:46.699774"}
+{"id": "func_values", "type": "code_function", "name": "values", "desc": "Python Function", "valid_at": "2026-07-11T11:29:46.702157"}
+{"id": "func_assert_period", "type": "code_function", "name": "assert_period", "desc": "Python Function", "valid_at": "2026-07-11T11:29:46.704433"}
+{"id": "func_render_welcome", "type": "code_function", "name": "render_welcome", "desc": "Python Function", "valid_at": "2026-07-11T11:29:46.707168"}
+{"id": "func_render_zero", "type": "code_function", "name": "render_zero", "desc": "Python Function", "valid_at": "2026-07-11T11:29:46.709551"}
+{"id": "func_headings", "type": "code_function", "name": "headings", "desc": "Python Function", "valid_at": "2026-07-11T11:29:47.038855"}
+{"id": "func_render_snapshot", "type": "code_function", "name": "render_snapshot", "desc": "Python Function", "valid_at": "2026-07-11T11:29:47.042143"}
+{"id": "func_validate_owned_punctuation", "type": "code_function", "name": "validate_owned_punctuation", "desc": "Python Function", "valid_at": "2026-07-11T11:29:47.044904"}
+{"id": "func_maintain_jsonl", "type": "code_function", "name": "maintain_jsonl", "desc": "Python Function", "valid_at": "2026-07-11T11:29:47.047455"}
+{"id": "func_validate_owned_report", "type": "code_function", "name": "validate_owned_report", "desc": "Python Function", "valid_at": "2026-07-11T11:29:47.052105"}
+{"id": "func_already_formatted", "type": "code_function", "name": "already_formatted", "desc": "Python Function", "valid_at": "2026-07-11T11:29:47.054600"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-07-11T11:29:47.063206"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-07-11T11:29:47.064865"}
+{"id": "func_test_snapshot_is_human_readable_and_traceable", "type": "code_function", "name": "test_snapshot_is_human_readable_and_traceable", "desc": "Python Function", "valid_at": "2026-07-11T11:29:47.086999"}
+{"id": "func_test_jsonl_maintenance_recurses_and_deduplicates", "type": "code_function", "name": "test_jsonl_maintenance_recurses_and_deduplicates", "desc": "Python Function", "valid_at": "2026-07-11T11:29:47.090265"}
+{"id": "func_test_truncated_tree_is_a_hard_failure", "type": "code_function", "name": "test_truncated_tree_is_a_hard_failure", "desc": "Python Function", "valid_at": "2026-07-11T11:29:47.093013"}
