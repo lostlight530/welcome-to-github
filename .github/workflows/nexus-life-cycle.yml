@@ -13,7 +13,7 @@ on:
 
 env:
   GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
-
+  PYTHONUTF8: '1'
 
 jobs:
   consciousness:
@@ -21,55 +21,43 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
-    - name: Checkout Reality
-      uses: actions/checkout@v5
-
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v6
-      with:
-        python-version: '3.10'
-
-    - name: 🏗️ Rebuild Memory (Wake Up)
-      run: python docs/brain/nexus.py rebuild
-
-    - name: 📡 Harvest External Facts (Profile Driven)
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: python docs/brain/nexus.py harvest
-
-    - name: 🧪 Validate Harvester Contracts
-      run: python -m unittest discover -s tests -p test_harvester.py
-
-    - name: 👁️ Ingest Self-Codebase (X-Ray Digestion)
-      run: python docs/brain/nexus.py ingest
-
-    - name: 🤔 Deep Ponder (Mathematical Graph Inference)
-      run: python docs/brain/nexus.py ponder
-
-    - name: 🛡️ Run Evolution Cycle (Sandbox Verification & Report)
-      run: python docs/brain/nexus.py evolve
-
-    - name: 🔄 Sync world-line (Autostash)
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git pull --rebase --autostash origin "${{ github.ref_name }}"
-
-    - name: 🛡️ Resolve Stash Conflicts
-      run: |
-        if git ls-files -u | grep -q .; then
-          echo "Merge conflicts detected from autostash pop. Resolving in favor of local changes (theirs)..."
-          git checkout --theirs .
-          git add .
-          git stash drop || true
-        fi
-
-    - name: 💾 Commit Cognitive Changes
-      uses: stefanzweifel/git-auto-commit-action@v7
-      with:
-        commit_message: "🧬 lifecycle: ingested, pondered & evolved [skip ci]"
-        branch: ${{ github.ref_name }}
-        commit_options: '--allow-empty'
-        file_pattern: "docs/brain/memories/** docs/brain/inputs/** docs/brain/knowledge/**"
+      - name: Checkout Reality
+        uses: actions/checkout@v5
+        with:
+          clean: true
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.10'
+      - name: Rebuild Memory
+        run: python docs/brain/nexus.py rebuild
+      - name: Harvest Approved External Documents
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python docs/brain/nexus.py harvest
+      - name: Validate Harvester Contracts
+        run: python -m unittest discover -s tests -p 'test_harvester*.py'
+      - name: Validate JSONL Ledgers
+        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import maintain_jsonl; print(maintain_jsonl('docs/brain/knowledge'))"
+      - name: Ingest Self-Codebase
+        run: python docs/brain/nexus.py ingest
+      - name: Deep Ponder
+        run: python docs/brain/nexus.py ponder
+      - name: Run Evolution Cycle
+        run: python docs/brain/nexus.py evolve
+      - name: Render Human-Readable Reports
+        run: python docs/brain/report_hygiene.py welcome docs/brain/memories
+      - name: Final Verification
+        run: python -m unittest discover -s tests -p 'test*.py'
+      - name: Sync World-Line
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin "${{ github.ref_name }}"
+      - name: Commit Cognitive Changes
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "🧬 lifecycle: verified cognitive update [skip ci]"
+          branch: ${{ github.ref_name }}
+          file_pattern: "docs/brain/memories/** docs/brain/inputs/** docs/brain/knowledge/**"

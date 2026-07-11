@@ -1,6 +1,54 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_moonshotai_kimi_cli_changelog_md_fa0812663bdd", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:09:08.591000+00:00", "source_path": "CHANGELOG.md", "source_repo": "MoonshotAI/kimi-cli", "source_sha": "fa0812663bddfc2b827ad775ae5895e815781eba"}
+# MoonshotAI/kimi-cli · CHANGELOG.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [MoonshotAI/kimi-cli](https://github.com/MoonshotAI/kimi-cli) |
+| 来源文件 | [CHANGELOG.md](https://github.com/MoonshotAI/kimi-cli/blob/fa0812663bddfc2b827ad775ae5895e815781eba/CHANGELOG.md) |
+| 来源版本 | `fa0812663bddfc2b827ad775ae5895e815781eba` |
+| 摄取时间 | `2026-07-11T06:09:08.591000+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_moonshotai_kimi_cli_changelog_md_fa0812663bdd` |
+
+## 本次变化
+
+- 新增行数 `1289`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- Changelog
+- Unreleased
+- 1.47.0 (2026-06-05)
+- 1.46.0 (2026-05-28)
+- 1.45.0 (2026-05-26)
+- 1.44.0 (2026-05-13)
+- 1.43.0 (2026-05-12)
+- 1.42.0 (2026-05-11)
+- 1.41.0 (2026-04-30)
+- 1.40.0 (2026-04-28)
+- 1.39.0 (2026-04-24)
+- 1.38.0 (2026-04-22)
+- 1.37.0 (2026-04-20)
+- 1.36.0 (2026-04-17)
+- 1.35.0 (2026-04-15)
+- 1.34.0 (2026-04-14)
+- 1.33.0 (2026-04-13)
+- 1.32.0 (2026-04-13)
+- 1.31.0 (2026-04-10)
+- 1.30.0 (2026-04-02)
+- 1.29.0 (2026-04-01)
+- 1.28.0 (2026-03-30)
+- 1.27.0 (2026-03-28)
+- 1.26.0 (2026-03-25)
+
+<details>
+<summary>展开完整外部原文</summary>
 
 # Changelog
 
@@ -1292,8 +1340,10 @@ Only write entries that are worth mentioning to users.
 - Support custom agent defined with YAML
 - Support oneshot task via `kimi -c`
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -2592,3 +2642,5 @@ Only write entries that are worth mentioning to users.
 +- Support custom agent defined with YAML
 +- Support oneshot task via `kimi -c`
 ```
+
+</details>

@@ -1,6 +1,36 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_openhands_openhands_readme_md_e19bf15581f8", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:08:46.149317+00:00", "source_path": "README.md", "source_repo": "OpenHands/OpenHands", "source_sha": "e19bf15581f8e4a9a4167172ff4262f3de01003e"}
+# OpenHands/OpenHands · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) |
+| 来源文件 | [README.md](https://github.com/OpenHands/OpenHands/blob/e19bf15581f8e4a9a4167172ff4262f3de01003e/README.md) |
+| 来源版本 | `e19bf15581f8e4a9a4167172ff4262f3de01003e` |
+| 摄取时间 | `2026-07-11T06:08:46.149317+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_openhands_openhands_readme_md_e19bf15581f8` |
+
+## 本次变化
+
+- 新增行数 `150`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- Quickstart
+- Option 1: Without a Sandbox
+- Option 2: With a Docker Sandbox
+- Option 3: From Source
+- Architecture
+- More documentation
+
+<details>
+<summary>展开完整外部原文</summary>
 
 <a name="readme-top"></a>
 <div align="center">
@@ -153,8 +183,10 @@ The Agent Server is often paired with an [Automation Server](https://github.com/
 - [Development guide](./Development.md)
 - [Self-hosting guide](https://docs.openhands.dev/openhands/usage/agent-canvas/backend-setup/vm)
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -314,3 +346,5 @@ The Agent Server is often paired with an [Automation Server](https://github.com/
 +- [Development guide](./Development.md)
 +- [Self-hosting guide](https://docs.openhands.dev/openhands/usage/agent-canvas/backend-setup/vm)
 ```
+
+</details>

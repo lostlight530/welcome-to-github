@@ -1,6 +1,54 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_jd_opensource_joyagent_jdgenie_readme_md_d53eff2b4b63", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:09:03.610016+00:00", "source_path": "README.md", "source_repo": "jd-opensource/joyagent-jdgenie", "source_sha": "d53eff2b4b63605f892625e6a409b68066895243"}
+# jd-opensource/joyagent-jdgenie · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [jd-opensource/joyagent-jdgenie](https://github.com/jd-opensource/joyagent-jdgenie) |
+| 来源文件 | [README.md](https://github.com/jd-opensource/joyagent-jdgenie/blob/d53eff2b4b63605f892625e6a409b68066895243/README.md) |
+| 来源版本 | `d53eff2b4b63605f892625e6a409b68066895243` |
+| 摄取时间 | `2026-07-11T06:09:03.610016+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_jd_opensource_joyagent_jdgenie_readme_md_d53eff2b4b63` |
+
+## 本次变化
+
+- 新增行数 `402`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- Agent开源git开源文档
+- 业界首个开源高完成度轻量化通用多智能体产品(JoyAgent-JDGenie)
+- new release
+- 简介
+- 案例展示
+- 产品对比
+- 框架效果先进性
+- Test集效果 65.12%
+- Validation集效果 75.15%
+- 系统架构
+- 主要特点和优势
+- 主要创新点
+- multi-level and multi-pattern thinking:结合多种智能体设计模式支持多层级的规划和思考
+- cross task workflow memory:跨任务级别的相似任务memory
+- tool evolution via auto-disassembly-and-reassembly of atom-tools
+- 快速开始
+- 方式1: docker 一键启动服务
+- 方式2: 手动初始化环境，启动服务
+- 环境准备
+- 方案1：手动step by step部署手册
+- 方案2：手动一键启动部署（推荐）
+- 二次开发
+- 如何添加自己的MCP工具到JoyAgent-JDGenie中
+- 配置文件
+
+<details>
+<summary>展开完整外部原文</summary>
 
 # Agent开源git开源文档
 简体中文 | [English Version](README_EN.md)
@@ -405,8 +453,10 @@ sh start_genie.sh
 
 [//]: # (![contact]&#40;./docs/img/contact.jpg&#41;)
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -818,3 +868,5 @@ sh start_genie.sh
 +
 +[//]: # (![contact]&#40;./docs/img/contact.jpg&#41;)
 ```
+
+</details>

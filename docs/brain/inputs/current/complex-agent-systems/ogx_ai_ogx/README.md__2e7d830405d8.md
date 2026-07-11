@@ -1,6 +1,38 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_ogx_ai_ogx_readme_md_2e7d830405d8", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:08:52.814407+00:00", "source_path": "README.md", "source_repo": "ogx-ai/ogx", "source_sha": "2e7d830405d85ad872a11dc57e068f116979fa53"}
+# ogx-ai/ogx · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [ogx-ai/ogx](https://github.com/ogx-ai/ogx) |
+| 来源文件 | [README.md](https://github.com/ogx-ai/ogx/blob/2e7d830405d85ad872a11dc57e068f116979fa53/README.md) |
+| 来源版本 | `2e7d830405d85ad872a11dc57e068f116979fa53` |
+| 摄取时间 | `2026-07-11T06:08:52.814407+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_ogx_ai_ogx_readme_md_2e7d830405d8` |
+
+## 本次变化
+
+- 新增行数 `109`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- What you get
+- Use any model, use any infrastructure
+- Get started
+- One-line install
+- Or install via uv
+- Start the server (uses the starter distribution with Ollama)
+- Resources
+- Community
+
+<details>
+<summary>展开完整外部原文</summary>
 
 <h1 align="center">OGX</h1>
 
@@ -112,8 +144,10 @@ Thanks to all our amazing contributors!
   <img src="https://contrib.rocks/image?repo=ogx-ai/ogx" alt="OGX contributors" />
 </a>
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -232,3 +266,5 @@ Thanks to all our amazing contributors!
 +  <img src="https://contrib.rocks/image?repo=ogx-ai/ogx" alt="OGX contributors" />
 +</a>
 ```
+
+</details>

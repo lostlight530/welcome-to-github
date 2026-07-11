@@ -1,6 +1,54 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_agentuniverse_ai_agentuniverse_changelog_md_81936688ea61", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:09:06.774407+00:00", "source_path": "CHANGELOG.md", "source_repo": "agentuniverse-ai/agentUniverse", "source_sha": "81936688ea61b7131e390519c19e055f8879851e"}
+# agentuniverse-ai/agentUniverse · CHANGELOG.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [agentuniverse-ai/agentUniverse](https://github.com/agentuniverse-ai/agentUniverse) |
+| 来源文件 | [CHANGELOG.md](https://github.com/agentuniverse-ai/agentUniverse/blob/81936688ea61b7131e390519c19e055f8879851e/CHANGELOG.md) |
+| 来源版本 | `81936688ea61b7131e390519c19e055f8879851e` |
+| 摄取时间 | `2026-07-11T06:09:06.774407+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_agentuniverse_ai_agentuniverse_changelog_md_81936688ea61` |
+
+## 本次变化
+
+- 新增行数 `344`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- Changelog
+- Version Number Format
+- Record Types
+- Version Update History
+- [0.0.19] - 2025-11-17
+- Added
+- Fixed
+- Note
+- [0.0.18] - 2025-07-10
+- Added
+- Fixed
+- Note
+- [0.0.17] - 2025-05-22
+- Added
+- Changed
+- Deprecated
+- Note
+- [0.0.16] - 2025-04-17
+- Added
+- Note
+- [0.0.15] - 2025-03-03
+- Added
+- Changed
+- Note
+
+<details>
+<summary>展开完整外部原文</summary>
 
 # Changelog
 **************************************
@@ -347,7 +395,10 @@ If your system has external access, we strongly recommend installing version v0.
 ### Init
 - Project initialization commit. This framework is a large model multi-agent framework. Enjoy using it!
 
-# Document Diff
+</details>
+
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -701,3 +752,5 @@ If your system has external access, we strongly recommend installing version v0.
 +### Init
 +- Project initialization commit. This framework is a large model multi-agent framework. Enjoy using it!
 ```
+
+</details>

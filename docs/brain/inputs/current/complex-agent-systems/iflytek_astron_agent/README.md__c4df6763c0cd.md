@@ -1,6 +1,54 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_iflytek_astron_agent_readme_md_c4df6763c0cd", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:08:56.565680+00:00", "source_path": "README.md", "source_repo": "iflytek/astron-agent", "source_sha": "c4df6763c0cd53e42ac4cc52601374e90eab0658"}
+# iflytek/astron-agent · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [iflytek/astron-agent](https://github.com/iflytek/astron-agent) |
+| 来源文件 | [README.md](https://github.com/iflytek/astron-agent/blob/c4df6763c0cd53e42ac4cc52601374e90eab0658/README.md) |
+| 来源版本 | `c4df6763c0cd53e42ac4cc52601374e90eab0658` |
+| 摄取时间 | `2026-07-11T06:08:56.565680+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_iflytek_astron_agent_readme_md_c4df6763c0cd` |
+
+## 本次变化
+
+- 新增行数 `160`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- 🔭 What is Astron Agent
+- Why Choose Astron Agent?
+- Key Features
+- 🤝 [Adopters](https://iflytek.github.io/astron-agent/cases/)
+- 📰 News
+- 🔄 Ongoing
+- 📅 Past
+- 🚀 Quick Start
+- Option 1: Docker Compose (Recommended for Quick Start)
+- Clone the repository
+- Navigate to the Docker deployment directory
+- Copy environment configuration
+- Configure environment variables
+- Start all services (including Casdoor)
+- 📊 Service Access Addresses
+- Option 2: Helm (For Kubernetes Environments)
+- Coming soon
+- helm repo add astron-agent https://iflytek.github.io/astron-agent
+- helm install astron-agent astron-agent/astron-agent
+- 📖 Using Astron Cloud
+- 📚 Documentation
+- 🤝 Contributing
+- 🌟 Star History
+- 📞 Support
+
+<details>
+<summary>展开完整外部原文</summary>
 
 <div align="center">
 
@@ -163,8 +211,10 @@ We welcome contributions of all kinds! Please see our [Contributing Guide](CONTR
 
 This project is licensed under the [Apache 2.0 License](LICENSE), allowing free use, modification, distribution, and commercial use without any restrictions.
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -334,3 +384,5 @@ This project is licensed under the [Apache 2.0 License](LICENSE), allowing free 
 +
 +This project is licensed under the [Apache 2.0 License](LICENSE), allowing free use, modification, distribution, and commercial use without any restrictions.
 ```
+
+</details>

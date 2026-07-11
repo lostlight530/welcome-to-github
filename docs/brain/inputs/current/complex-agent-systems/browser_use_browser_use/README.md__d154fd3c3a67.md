@@ -1,6 +1,47 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_browser_use_browser_use_readme_md_d154fd3c3a67", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:08:49.773983+00:00", "source_path": "README.md", "source_repo": "browser-use/browser-use", "source_sha": "d154fd3c3a67eaec4406afe3e6557f04474a1c29"}
+# browser-use/browser-use · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [browser-use/browser-use](https://github.com/browser-use/browser-use) |
+| 来源文件 | [README.md](https://github.com/browser-use/browser-use/blob/d154fd3c3a67eaec4406afe3e6557f04474a1c29/README.md) |
+| 来源版本 | `d154fd3c3a67eaec4406afe3e6557f04474a1c29` |
+| 摄取时间 | `2026-07-11T06:08:49.773983+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_browser_use_browser_use_readme_md_d154fd3c3a67` |
+
+## 本次变化
+
+- 新增行数 `304`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- What can Browser Use do?
+- 📋 Fill Forms
+- Task: "Fill in this job application with my resume and information."
+- 🍎 Shop for Groceries
+- Task: "Put this list of items into my instacart."
+- 💻 Be Your Personal Assistant
+- Task: "Help me find parts for a custom PC."
+- Quickstart
+- Python library: the easiest way to automate the web
+- or: pip install browser-use
+- .env
+- GOOGLE_API_KEY=your-key
+- ANTHROPIC_API_KEY=your-key
+- Open Source vs Cloud
+- Integrations, hosting, custom tools, MCP, and more on our [Docs ↗](https://docs.browser-use.com)
+- FAQ
+- Citation
+
+<details>
+<summary>展开完整外部原文</summary>
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/2ccdb752-22fb-41c7-8948-857fc1ad7e24">
@@ -307,8 +348,10 @@ If you use Browser Use in your research or project, please cite:
 
 <div align="center"> Made with ❤️ in Zurich and San Francisco </div>
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -622,3 +665,5 @@ If you use Browser Use in your research or project, please cite:
 +
 +<div align="center"> Made with ❤️ in Zurich and San Francisco </div>
 ```
+
+</details>

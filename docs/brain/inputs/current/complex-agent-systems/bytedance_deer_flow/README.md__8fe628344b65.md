@@ -1,6 +1,54 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_bytedance_deer_flow_readme_md_8fe628344b65", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:08:59.864241+00:00", "source_path": "README.md", "source_repo": "bytedance/deer-flow", "source_sha": "8fe628344b6536f3c4f56a1b59dca0fdda9d4479"}
+# bytedance/deer-flow · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [bytedance/deer-flow](https://github.com/bytedance/deer-flow) |
+| 来源文件 | [README.md](https://github.com/bytedance/deer-flow/blob/8fe628344b6536f3c4f56a1b59dca0fdda9d4479/README.md) |
+| 来源版本 | `8fe628344b6536f3c4f56a1b59dca0fdda9d4479` |
+| 摄取时间 | `2026-07-11T06:08:59.864241+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_bytedance_deer_flow_readme_md_8fe628344b65` |
+
+## 本次变化
+
+- 新增行数 `895`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- 🦌 DeerFlow - 2.0
+- Official Website
+- Coding Plan from ByteDance Volcengine
+- InfoQuest
+- Table of Contents
+- One-Line Agent Setup
+- Quick Start
+- Configuration
+- Running the Application
+- Deployment Sizing
+- Option 1: Docker (Recommended)
+- Option 2: Local Development
+- Startup Modes
+- Docker Production Deployment
+- One-step (build + start)
+- Two-step (build once, start later)
+- Stop
+- Advanced
+- Sandbox Mode
+- MCP Server
+- IM Channels
+- Telegram
+- Slack
+- Feishu / Lark
+
+<details>
+<summary>展开完整外部原文</summary>
 
 # 🦌 DeerFlow - 2.0
 
@@ -898,8 +946,10 @@ Your unwavering commitment and expertise have been the driving force behind Deer
 
 [![Star History Chart](https://api.star-history.com/svg?repos=bytedance/deer-flow&type=Date)](https://star-history.com/#bytedance/deer-flow&Date)
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -1804,3 +1854,5 @@ Your unwavering commitment and expertise have been the driving force behind Deer
 +
 +[![Star History Chart](https://api.star-history.com/svg?repos=bytedance/deer-flow&type=Date)](https://star-history.com/#bytedance/deer-flow&Date)
 ```
+
+</details>

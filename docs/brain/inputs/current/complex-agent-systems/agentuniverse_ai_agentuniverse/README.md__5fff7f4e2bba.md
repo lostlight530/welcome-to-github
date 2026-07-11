@@ -1,6 +1,54 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_agentuniverse_ai_agentuniverse_readme_md_5fff7f4e2bba", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:09:07.088315+00:00", "source_path": "README.md", "source_repo": "agentuniverse-ai/agentUniverse", "source_sha": "5fff7f4e2bbab8306b1ca9c84999072031d6f3ae"}
+# agentuniverse-ai/agentUniverse · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [agentuniverse-ai/agentUniverse](https://github.com/agentuniverse-ai/agentUniverse) |
+| 来源文件 | [README.md](https://github.com/agentuniverse-ai/agentUniverse/blob/5fff7f4e2bbab8306b1ca9c84999072031d6f3ae/README.md) |
+| 来源版本 | `5fff7f4e2bbab8306b1ca9c84999072031d6f3ae` |
+| 摄取时间 | `2026-07-11T06:09:07.088315+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_agentuniverse_ai_agentuniverse_readme_md_5fff7f4e2bba` |
+
+## 本次变化
+
+- 新增行数 `225`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- agentUniverse
+- What is agentUniverse?
+- Table of Contents
+- Quick Start
+- Installation
+- Run the first example
+- How to build an agent application
+- Standard Project Scaffolding
+- Quick Start for Building a Single Agent
+- Building Typical Multi-Agent Applications
+- Creating and Using Agent Templates
+- Using and Publishing MCP Servers
+- Agent Application Observability
+- Common Tips and Advanced Techniques
+- Set up the visual agentic workflow platform
+- Why use agentUniverse
+- Concept
+- Multi Agent Collaboration
+- Key Features
+- Sample Apps
+- Commercial Product base on agentUniverse
+- Documents
+- User Guide
+- API Reference
+
+<details>
+<summary>展开完整外部原文</summary>
 
 # agentUniverse
 ****************************************
@@ -228,8 +276,10 @@ Overview: This document introduces in detailed the mechanisms and principles und
 
 This project is partially built upon excellent open-source projects such as Langchain, Pydantic, Gunicorn, Flask, SQLAlchemy, chromadb, etc. (The detailed dependency list can be found in pyproject.toml). We would like to express our heartfelt gratitude to the related projects and their contributors. 🙏🙏🙏
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -464,3 +514,5 @@ This project is partially built upon excellent open-source projects such as Lang
 +
 +This project is partially built upon excellent open-source projects such as Langchain, Pydantic, Gunicorn, Flask, SQLAlchemy, chromadb, etc. (The detailed dependency list can be found in pyproject.toml). We would like to express our heartfelt gratitude to the related projects and their contributors. 🙏🙏🙏
 ```
+
+</details>

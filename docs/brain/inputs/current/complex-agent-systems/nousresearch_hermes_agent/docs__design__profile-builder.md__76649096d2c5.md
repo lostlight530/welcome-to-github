@@ -1,6 +1,40 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_nousresearch_hermes_agent_docs_design_profile_builder_md_76649096d2c5", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:08:44.629631+00:00", "source_path": "docs/design/profile-builder.md", "source_repo": "NousResearch/hermes-agent", "source_sha": "76649096d2c54ee83260f434c768ba3f5349a98d"}
+# NousResearch/hermes-agent · docs/design/profile-builder.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) |
+| 来源文件 | [docs/design/profile-builder.md](https://github.com/NousResearch/hermes-agent/blob/76649096d2c54ee83260f434c768ba3f5349a98d/docs/design/profile-builder.md) |
+| 来源版本 | `76649096d2c54ee83260f434c768ba3f5349a98d` |
+| 摄取时间 | `2026-07-11T06:08:44.629631+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_nousresearch_hermes_agent_docs_design_profile_builder_md_76649096d2c5` |
+
+## 本次变化
+
+- 新增行数 `146`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- Profile Builder — Dashboard-Native, Full-Featured Profile Creation
+- Why this, not the CLI wizard
+- What already exists (reuse, don't rebuild)
+- Two architectural seams found while grounding this design
+- Seam #1 — hub-skill install cannot use the HERMES_HOME override
+- Seam #2 — hub installs are async, so create cannot be fully atomic
+- Proposed backend change (small, follows existing patterns)
+- Proposed frontend — dedicated builder page `/profiles/new`
+- Open product decisions (need Teknium)
+- Verification plan (when built)
+
+<details>
+<summary>展开完整外部原文</summary>
 
 # Profile Builder — Dashboard-Native, Full-Featured Profile Creation
 
@@ -149,8 +183,10 @@ Nothing writes to disk until ⑤.
 - `cd web && npm run build` (no JS test suite in web/).
 - Targeted: `pytest tests/<web_server profile tests> -k profile_create`.
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -306,3 +342,5 @@ Nothing writes to disk until ⑤.
 +- `cd web && npm run build` (no JS test suite in web/).
 +- Targeted: `pytest tests/<web_server profile tests> -k profile_create`.
 ```
+
+</details>

@@ -1,6 +1,52 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_bytedance_deer_flow_changelog_md_f14e0c10780d", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:08:59.487942+00:00", "source_path": "CHANGELOG.md", "source_repo": "bytedance/deer-flow", "source_sha": "f14e0c10780dd8d1f9b9e19d519f9d1f34ab38a7"}
+# bytedance/deer-flow · CHANGELOG.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [bytedance/deer-flow](https://github.com/bytedance/deer-flow) |
+| 来源文件 | [CHANGELOG.md](https://github.com/bytedance/deer-flow/blob/f14e0c10780dd8d1f9b9e19d519f9d1f34ab38a7/CHANGELOG.md) |
+| 来源版本 | `f14e0c10780dd8d1f9b9e19d519f9d1f34ab38a7` |
+| 摄取时间 | `2026-07-11T06:08:59.487942+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_bytedance_deer_flow_changelog_md_f14e0c10780d` |
+
+## 本次变化
+
+- 新增行数 `520`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- Changelog
+- [2.0.0] — 2026-06-15
+- ⚠ Breaking changes
+- Added
+- Agents & runtime
+- Models & integrations
+- Observability
+- Skills
+- Performance
+- Security
+- Fixed
+- Runtime, gateway & persistence
+- Agents, subagents & middleware
+- Memory & tracing
+- Tools, sandbox & MCP
+- Skills & channels
+- Auth
+- Frontend
+- Build, deploy, scripts & config
+- Changed
+- Documentation
+- Internal
+
+<details>
+<summary>展开完整外部原文</summary>
 
 # Changelog
 
@@ -523,8 +569,10 @@ with **180 merged pull requests** since the first 2.0 milestone tag.
 [#3657]: https://github.com/bytedance/deer-flow/pull/3657
 [#3658]: https://github.com/bytedance/deer-flow/pull/3658
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -1054,3 +1102,5 @@ with **180 merged pull requests** since the first 2.0 milestone tag.
 +[#3657]: https://github.com/bytedance/deer-flow/pull/3657
 +[#3658]: https://github.com/bytedance/deer-flow/pull/3658
 ```
+
+</details>

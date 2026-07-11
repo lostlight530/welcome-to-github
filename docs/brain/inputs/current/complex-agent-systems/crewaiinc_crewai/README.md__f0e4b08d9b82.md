@@ -1,6 +1,54 @@
-PROVENANCE: {"confidence": 1.0, "entity_id": "doc_crewaiinc_crewai_readme_md_f0e4b08d9b82", "primary_owner": "welcome", "retrieved_at": "2026-07-11T06:08:48.514290+00:00", "source_path": "README.md", "source_repo": "crewAIInc/crewAI", "source_sha": "f0e4b08d9b8289c6c08e0651070ff7d17b40f806"}
+# crewAIInc/crewAI · README.md
 
-# Source Document
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) |
+| 来源文件 | [README.md](https://github.com/crewAIInc/crewAI/blob/f0e4b08d9b8289c6c08e0651070ff7d17b40f806/README.md) |
+| 来源版本 | `f0e4b08d9b8289c6c08e0651070ff7d17b40f806` |
+| 摄取时间 | `2026-07-11T06:08:48.514290+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_crewaiinc_crewai_readme_md_f0e4b08d9b82` |
+
+## 本次变化
+
+- 新增行数 `818`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- Fast and Flexible Multi-Agent Automation Framework
+- CrewAI AMP Suite
+- Crew Control Plane Key Features:
+- Table of contents
+- Build with AI
+- Why CrewAI?
+- Getting Started
+- Understanding Flows and Crews
+- Getting Started with Installation
+- 1. Installation
+- Troubleshooting Dependencies
+- Common Issues
+- 2. Setting Up Your Crew with the YAML Configuration
+- To customize your project, you can:
+- Example of a simple crew with a sequential process:
+- src/my_project/config/agents.yaml
+- src/my_project/config/tasks.yaml
+- src/my_project/crew.py
+- src/my_project/main.py
+- 3. Running Your Crew
+- Key Features
+- Examples
+- Quick Tutorial
+- Write Job Descriptions
+
+<details>
+<summary>展开完整外部原文</summary>
 
 <p align="center">
   <a href="https://github.com/crewAIInc/crewAI">
@@ -821,8 +869,10 @@ A: Yes, CrewAI provides extensive beginner-friendly tutorials, courses, and docu
 
 A: Yes, CrewAI fully supports human-in-the-loop workflows, allowing seamless collaboration between human experts and AI agents for enhanced decision-making.
 
+</details>
 
-# Document Diff
+<details>
+<summary>展开完整版本差异</summary>
 
 ```diff
 --- previous
@@ -1650,3 +1700,5 @@ A: Yes, CrewAI fully supports human-in-the-loop workflows, allowing seamless col
 +
 +A: Yes, CrewAI fully supports human-in-the-loop workflows, allowing seamless collaboration between human experts and AI agents for enhanced decision-making.
 ```
+
+</details>
