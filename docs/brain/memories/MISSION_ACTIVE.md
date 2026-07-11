@@ -2,11 +2,11 @@
 
 ## 建议动作
 
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "Ⅳ. 情报与感知 (Intelligence & Senses)" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "Ⅴ. 系统最佳实践 (System Best Practices)" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "Ⅵ. 交互接口 (Interface)" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "知识库架构定义 (Knowledge Base Schema Definition)" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "Ⅰ. 架构决策记录 (Architecture Decision Record - ADR)" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "1. 进化与思考 (Evolve & Ponder)" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "Ingest internal codebase mapping via AST" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "Deep ponder the graph for anomalies & hidden bridges" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "2. 观察 (Observe / Read)" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "3. 清理与恢复 (Clean & Restore)" "is_capability_of" "concept_nexus_system"`
 
 ## 约束
 
