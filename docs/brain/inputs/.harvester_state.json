@@ -1,10 +1,196 @@
 {
-    "schema_version":  2,
-    "baseline":  "2026-07-11T13:40:00+08:00",
-    "legacy_state":  {
-
-                     },
-    "repositories":  {
-
-                     }
+  "baseline": "2026-07-11T13:40:00+08:00",
+  "legacy_state": {},
+  "repositories": {
+    "BerriAI/litellm": {
+      "documents": {
+        "README.md": {
+          "content_hash": "4eb106b1c70ee1e0ebdbe2a0157be0696ec226e9c9839be1afa856da3a1fd299",
+          "entity_id": "doc_berriai_litellm_readme_md_90d3e944fccb",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/berriai_litellm/README.md__90d3e944fccb.md",
+          "sha": "90d3e944fccb79d25e5bdb7f3a136a149aab1cd8"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:19.672010+00:00"
+    },
+    "ModelEngine-Group/nexent": {
+      "documents": {
+        "README.md": {
+          "content_hash": "c54bc5d9186f8df4f5cc22da63c81eb7e3db3964e9787b3af673f691c1840e21",
+          "entity_id": "doc_modelengine_group_nexent_readme_md_dd78f2763d15",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/modelengine_group_nexent/README.md__dd78f2763d15.md",
+          "sha": "dd78f2763d15d217db85f2c6f59115d3d4118ab5"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:21.856301+00:00"
+    },
+    "MoonshotAI/kimi-cli": {
+      "documents": {
+        "CHANGELOG.md": {
+          "content_hash": "9ecf7b94c0f4c7e0e8a04195cbf78746bcbe2e56520a149fffc8dd7fe78b842f",
+          "entity_id": "doc_moonshotai_kimi_cli_changelog_md_fa0812663bdd",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/moonshotai_kimi_cli/CHANGELOG.md__fa0812663bdd.md",
+          "sha": "fa0812663bddfc2b827ad775ae5895e815781eba"
+        },
+        "README.md": {
+          "content_hash": "ccbb54a41760a728e7d8ca6de9345402414b32bc2d26231042c89124cd10b636",
+          "entity_id": "doc_moonshotai_kimi_cli_readme_md_44bbde6d2563",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/moonshotai_kimi_cli/README.md__44bbde6d2563.md",
+          "sha": "44bbde6d2563aff36a279cdfb43430e1f9616f67"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:27.958818+00:00"
+    },
+    "NousResearch/hermes-agent": {
+      "documents": {
+        "README.md": {
+          "content_hash": "a5f3c90761522169ffeea60b1ed1f17c5dbdf29dfd5b6d7edb1b45ca62c03d35",
+          "entity_id": "doc_nousresearch_hermes_agent_readme_md_ba1322a38920",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/nousresearch_hermes_agent/README.md__ba1322a38920.md",
+          "sha": "ba1322a389207c79032386e4053ac0e69a3c199d"
+        },
+        "docs/design/profile-builder.md": {
+          "content_hash": "ee3243d68b99ea4a23d6825aef24e195a0b944912dadf581d64d49d3b43fac92",
+          "entity_id": "doc_nousresearch_hermes_agent_docs_design_profile_builder_md_76649096d2c5",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/nousresearch_hermes_agent/docs__design__profile-builder.md__76649096d2c5.md",
+          "sha": "76649096d2c54ee83260f434c768ba3f5349a98d"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:12.695122+00:00"
+    },
+    "OpenHands/OpenHands": {
+      "documents": {
+        "README.md": {
+          "content_hash": "9e71dc023e88b2a5ddd7ca1e3db1ecac90d4a6ade80ab5e5efc73c501f6b837d",
+          "entity_id": "doc_openhands_openhands_readme_md_e19bf15581f8",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/openhands_openhands/README.md__e19bf15581f8.md",
+          "sha": "e19bf15581f8e4a9a4167172ff4262f3de01003e"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:13.677710+00:00"
+    },
+    "agentuniverse-ai/agentUniverse": {
+      "documents": {
+        "CHANGELOG.md": {
+          "content_hash": "40ade110c0eb83b9f6dd29b131bb076bc37fe25da97de55b8441755694a5be99",
+          "entity_id": "doc_agentuniverse_ai_agentuniverse_changelog_md_81936688ea61",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/agentuniverse_ai_agentuniverse/CHANGELOG.md__81936688ea61.md",
+          "sha": "81936688ea61b7131e390519c19e055f8879851e"
+        },
+        "README.md": {
+          "content_hash": "54443a906040830257603a6736fcd1a0872954dbf9bae2db9486f76fad0f4244",
+          "entity_id": "doc_agentuniverse_ai_agentuniverse_readme_md_5fff7f4e2bba",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/agentuniverse_ai_agentuniverse/README.md__5fff7f4e2bba.md",
+          "sha": "5fff7f4e2bbab8306b1ca9c84999072031d6f3ae"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:27.172020+00:00"
+    },
+    "baidubce/app-builder": {
+      "documents": {
+        "README.md": {
+          "content_hash": "6eadb4f11c3216e91c2a38aa5bc5b030e1a2a55fc531fcf3c759814d3307b926",
+          "entity_id": "doc_baidubce_app_builder_readme_md_a0d745d77fb6",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/baidubce_app_builder/README.md__a0d745d77fb6.md",
+          "sha": "a0d745d77fb6f9d04e71349a5acb6f3b5ddc2dff"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:26.057831+00:00"
+    },
+    "browser-use/browser-use": {
+      "documents": {
+        "README.md": {
+          "content_hash": "c101481cd1a952565ca57c34a87c2754548539559ce6138769012e79eb27147f",
+          "entity_id": "doc_browser_use_browser_use_readme_md_d154fd3c3a67",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/browser_use_browser_use/README.md__d154fd3c3a67.md",
+          "sha": "d154fd3c3a67eaec4406afe3e6557f04474a1c29"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:16.275319+00:00"
+    },
+    "bytedance/deer-flow": {
+      "documents": {
+        "CHANGELOG.md": {
+          "content_hash": "339a0b7126bbdac62dd88df1aad988247db8b60f6d3acf522e87b000eada7229",
+          "entity_id": "doc_bytedance_deer_flow_changelog_md_f14e0c10780d",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/bytedance_deer_flow/CHANGELOG.md__f14e0c10780d.md",
+          "sha": "f14e0c10780dd8d1f9b9e19d519f9d1f34ab38a7"
+        },
+        "README.md": {
+          "content_hash": "0f803c52830fb35af51bb0e1483e9d99afec84cf2f0d4e37b6fe4f7210bb47dc",
+          "entity_id": "doc_bytedance_deer_flow_readme_md_8fe628344b65",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/bytedance_deer_flow/README.md__8fe628344b65.md",
+          "sha": "8fe628344b6536f3c4f56a1b59dca0fdda9d4479"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:22.815800+00:00"
+    },
+    "coze-dev/coze-studio": {
+      "documents": {
+        "README.md": {
+          "content_hash": "7cb0761292dfd7ff93e80ac942fa2a00e07194a941ad6bfc5db0ff57e64b4c9d",
+          "entity_id": "doc_coze_dev_coze_studio_readme_md_6f4221d80688",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/coze_dev_coze_studio/README.md__6f4221d80688.md",
+          "sha": "6f4221d806888d45596156bec6f5599294ea6a2f"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:24.520453+00:00"
+    },
+    "crewAIInc/crewAI": {
+      "documents": {
+        "README.md": {
+          "content_hash": "9bdf12a09736390349227659ae3cfe5df5c6ecccc4010abb9c2c81abdd1a51ca",
+          "entity_id": "doc_crewaiinc_crewai_readme_md_f0e4b08d9b82",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/crewaiinc_crewai/README.md__f0e4b08d9b82.md",
+          "sha": "f0e4b08d9b8289c6c08e0651070ff7d17b40f806"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:15.544939+00:00"
+    },
+    "iflytek/astron-agent": {
+      "documents": {
+        "README.md": {
+          "content_hash": "39ee6fd35b8358813ba2445ddae39340919018d83d4e41e6600986f33a716a8b",
+          "entity_id": "doc_iflytek_astron_agent_readme_md_c4df6763c0cd",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/iflytek_astron_agent/README.md__c4df6763c0cd.md",
+          "sha": "c4df6763c0cd53e42ac4cc52601374e90eab0658"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:20.884771+00:00"
+    },
+    "jd-opensource/joyagent-jdgenie": {
+      "documents": {
+        "README.md": {
+          "content_hash": "fea7d331429c63fcb10b066a588a79e8794edcd998f7d1880fece3de3e900437",
+          "entity_id": "doc_jd_opensource_joyagent_jdgenie_readme_md_d53eff2b4b63",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/jd_opensource_joyagent_jdgenie/README.md__d53eff2b4b63.md",
+          "sha": "d53eff2b4b63605f892625e6a409b68066895243"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:25.210713+00:00"
+    },
+    "ogx-ai/ogx": {
+      "documents": {
+        "README.md": {
+          "content_hash": "251b7b21a9c9a8a7bd017b19eea02e126dde9c1155cae345cc3e1521cbf65c69",
+          "entity_id": "doc_ogx_ai_ogx_readme_md_2e7d830405d8",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/ogx_ai_ogx/README.md__2e7d830405d8.md",
+          "sha": "2e7d830405d85ad872a11dc57e068f116979fa53"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:18.350281+00:00"
+    },
+    "ollama/ollama": {
+      "documents": {
+        "README.md": {
+          "content_hash": "2932f2f81e859917fd05794b27f73b1a63e19fc3df3fb1e4085677b9a0278da7",
+          "entity_id": "doc_ollama_ollama_readme_md_1e5a52d240f3",
+          "output": "/home/runner/work/welcome-to-github/welcome-to-github/docs/brain/inputs/current/complex-agent-systems/ollama_ollama/README.md__1e5a52d240f3.md",
+          "sha": "1e5a52d240f331abd8807a8100daced065bb4cbc"
+        }
+      },
+      "last_checked_at": "2026-07-11T06:09:17.132885+00:00"
+    }
+  },
+  "schema_version": 2
 }

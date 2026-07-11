@@ -93,3 +93,5 @@
 {"id": "file_fix_zh_py", "type": "code_file", "name": "fix_zh.py", "desc": "Source file at: fix_zh.py", "valid_at": "2026-06-01T11:24:11.928352", "invalid_at": "2026-07-08T12:24:02.260572+00:00"}
 {"id": "file_test_dash_py", "type": "code_file", "name": "test_dash.py", "desc": "Source file at: test_dash.py", "valid_at": "2026-06-01T11:24:11.930804", "invalid_at": "2026-07-08T12:24:02.260587+00:00"}
 {"id": "file_format_py", "type": "code_file", "name": "format.py", "desc": "Source file at: format.py", "valid_at": "2026-07-04T05:00:29.062876", "invalid_at": "2026-07-08T12:24:02.260601+00:00"}
+{"id": "file_docs_brain_source_profiles_json", "type": "code_file", "name": "source_profiles.json", "desc": "Source file at: docs/brain/source_profiles.json", "valid_at": "2026-07-11T06:09:09.452450"}
+{"id": "file_tests_test_harvester_py", "type": "code_file", "name": "test_harvester.py", "desc": "Source file at: tests/test_harvester.py", "valid_at": "2026-07-11T06:09:11.061925"}

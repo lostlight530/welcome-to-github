@@ -1,13 +1,13 @@
 # 📜 绝对悬赏令 (MISSION ACTIVE)
 > Standard Operating Procedure (SOP) Automation Checklist.
-> ⏳ System Pulse: 2026-07-10T22:59:26Z | 🧠 Brain Entropy (Density): 1.0963
+> ⏳ System Pulse: 2026-07-11T06:09:28Z | 🧠 Brain Entropy (Density): 1.0940
 
 ## 🎯 监控目标 (Target)
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "protocol.jsonl" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "techs.jsonl" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "model.jsonl" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "tool.jsonl" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "code_file.jsonl" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "concept.jsonl" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "entity.jsonl" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "ai.jsonl" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "bug_report.md" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "custom.md" "is_capability_of" "concept_nexus_system"`
 
 ## 🧠 认知阵眼 (Cognitive Hubs)
 **Cognitive Hub (PageRank)**: `Context Window`
