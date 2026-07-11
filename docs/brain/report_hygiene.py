@@ -2,7 +2,17 @@
 import sys
 from pathlib import Path
 
-from report_hygiene_core import main
+import report_hygiene_core as core
+
+
+def validate_owned_report(text):
+    owned = text.split("<details>", 1)[0]
+    if "。" in owned:
+        raise ValueError("generated report contains a Chinese full stop")
+
+
+core.assert_period = validate_owned_report
+main = core.main
 
 
 def already_formatted(mode, memories):
