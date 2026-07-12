@@ -2,11 +2,11 @@
 
 ## 建议动作
 
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "1. 进化与思考 (Evolve & Ponder)" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "Ingest internal codebase mapping via AST" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "Deep ponder the graph for anomalies & hidden bridges" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "2. 观察 (Observe / Read)" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "3. 清理与恢复 (Clean & Restore)" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "Project Configuration" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "PagedAttention" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "Dual-Write Mechanism" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "Heavyweight Frameworks" "is_capability_of" "concept_nexus_system"`
+- [ ] Executable SOP: `python docs/brain/nexus.py connect "Knowledge Crystallization" "is_capability_of" "concept_nexus_system"`
 
 ## 约束
 

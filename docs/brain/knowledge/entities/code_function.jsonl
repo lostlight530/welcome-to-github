@@ -234,3 +234,7 @@
 {"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-07-11T22:50:05.528689"}
 {"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-07-11T22:50:06.472550"}
 {"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-07-11T22:50:06.474626"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。", "valid_at": "2026-07-12T22:50:20.542669"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重", "valid_at": "2026-07-12T22:50:20.544913"}
+{"id": "func_add_entity", "type": "code_function", "name": "add_entity", "desc": "Python Function", "valid_at": "2026-07-12T22:50:21.099254"}
+{"id": "func_activate_memory", "type": "code_function", "name": "activate_memory", "desc": "Python Function", "valid_at": "2026-07-12T22:50:21.102024"}
