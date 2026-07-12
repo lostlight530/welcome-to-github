@@ -38,7 +38,7 @@ jobs:
         run: npm ci
 
       - name: Build Vite project
-        run: npm run build
+        run: npm run build -- --base=/welcome-to-github/
 
       - name: Prepare public memorial
         run: |
