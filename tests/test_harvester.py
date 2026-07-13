@@ -7,6 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parents[1] / "docs" / "brain"))
 from harvester import Harvester
 from evolution import Evolver
+from scholar import Scholar
 
 
 class HarvesterContracts(unittest.TestCase):
@@ -19,6 +20,12 @@ class HarvesterContracts(unittest.TestCase):
 
     def test_noise_normalization(self):
         self.assertEqual(Harvester._normalized("![badge](https://shields.io/x)\nArchitecture"), "Architecture")
+    def test_structural_array_index_is_not_treated_as_a_version(self):
+        scholar = Scholar.__new__(Scholar)
+        entity_id = "file_source_profiles_prop_sources_7_documents_0"
+
+        self.assertEqual(scholar._strip_version(entity_id), entity_id)
+        self.assertEqual(scholar._strip_version("component_v1.2.3"), "component")
 
     def test_evolver_keeps_input_contract_out_of_monthly_archive(self):
         with tempfile.TemporaryDirectory(dir=Path(__file__).parent) as tmp:

@@ -28,6 +28,7 @@ def main() -> None:
         # --- Life Cycle ---
         subparsers.add_parser('evolve', help='Run Daily Cycle (Harvest -> Dream -> Plan)')
         subparsers.add_parser('harvest', help='Run Sensory Harvester (External)')
+        subparsers.add_parser('project', help='Project current external evidence into the graph')
         subparsers.add_parser('ingest', help='Deep Scan Codebase (Internal)') # <--- Omniscience
         subparsers.add_parser('ponder', help='Run Deep Inference (Cognition)') # <--- Reasoning
         subparsers.add_parser('rebuild', help='Rebuild DB from Text (Restoration)')
@@ -71,6 +72,10 @@ def main() -> None:
             from harvester import Harvester
             h = Harvester(BRAIN_ROOT)
             h.fetch_github_data()
+
+        elif args.command == 'project':
+            from document_hygiene import project_current_snapshots
+            print(project_current_snapshots(BRAIN_ROOT / "inputs", BRAIN_ROOT / "knowledge"))
 
         elif args.command == 'ingest':
             from scholar import Scholar

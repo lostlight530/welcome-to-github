@@ -1,0 +1,174 @@
+{
+    "schema":  "nexus-ledger-archive",
+    "created_at":  "2026-07-13T13:40:00+08:00",
+    "files":  [
+                  {
+                      "path":  "entities/bounty_report.jsonl",
+                      "size":  309,
+                      "sha256":  "8a52e42e94bd9575c42259001f25592b54458a2f1e8f1ba816224c871fc38d89",
+                      "records":  1
+                  },
+                  {
+                      "path":  "entities/code_class.jsonl",
+                      "size":  3495,
+                      "sha256":  "bab2ee2ee29e7cb635698cc4715433195bddce21b00549ab44ce44c73058490d",
+                      "records":  19
+                  },
+                  {
+                      "path":  "entities/code_component.jsonl",
+                      "size":  430,
+                      "sha256":  "9ec0656b3d675dabce42ae66435c3dfcde2744c816fafbd2ab11fb998fa63af5",
+                      "records":  2
+                  },
+                  {
+                      "path":  "entities/code_file.jsonl",
+                      "size":  23458,
+                      "sha256":  "d06a99e046d157ad07c277c0692e8e08c23b0b3be03d5978d7d9637c0af1ce3f",
+                      "records":  101
+                  },
+                  {
+                      "path":  "entities/code_function.jsonl",
+                      "size":  52494,
+                      "sha256":  "81b05b4166746f26976f2bb7000b40195f507d5d4ddfb7a8d03b3b09812297f9",
+                      "records":  244
+                  },
+                  {
+                      "path":  "entities/component.jsonl",
+                      "size":  675,
+                      "sha256":  "80003a6978ae747715f646353ebf0b8dba8f3cd8ae6dd671ff2a0dd2b6520fcc",
+                      "records":  3
+                  },
+                  {
+                      "path":  "entities/concept.jsonl",
+                      "size":  27921,
+                      "sha256":  "4d2d7df879c7bd1d1213ae96ef778764fcc9b5cf12e72bb606ded13417d45ea7",
+                      "records":  110
+                  },
+                  {
+                      "path":  "entities/config_property.jsonl",
+                      "size":  517672,
+                      "sha256":  "ba218eaedb7e37cc110014b57c1c365f74ec676cd6cc370b4f5de6d5e90bf7f9",
+                      "records":  2490
+                  },
+                  {
+                      "path":  "entities/domain.jsonl",
+                      "size":  216,
+                      "sha256":  "498a7cc5bb799bf5052f3cc5fbed337555733f4d1656d901a17627c4f6e3f69d",
+                      "records":  1
+                  },
+                  {
+                      "path":  "entities/entity.jsonl",
+                      "size":  11495,
+                      "sha256":  "a77c78da88177d0937ddee39ee1fbc50ec516637f469fc0ca0465574d28578fd",
+                      "records":  40
+                  },
+                  {
+                      "path":  "entities/hardware.jsonl",
+                      "size":  1382,
+                      "sha256":  "2d5029385760169b3d210ac23cad2e3703bd865c018ee44f2bf4b07c4e3b3e19",
+                      "records":  5
+                  },
+                  {
+                      "path":  "entities/model.jsonl",
+                      "size":  1542,
+                      "sha256":  "ffbe4443c83b0470d64559b93ed4fe75abfd09d0b0564b7689b3097e661976ba",
+                      "records":  6
+                  },
+                  {
+                      "path":  "entities/pattern.jsonl",
+                      "size":  1100,
+                      "sha256":  "8e6c58906c7671f250ef239c7348654e95af7116a8cb579260ffb7d59d226ae2",
+                      "records":  4
+                  },
+                  {
+                      "path":  "entities/philosophy.jsonl",
+                      "size":  1020,
+                      "sha256":  "595af56dcb3b47efb86f2b9c7a94e4f7071e55f8a0412984d1e0aee49f2a0f59",
+                      "records":  3
+                  },
+                  {
+                      "path":  "entities/platform.jsonl",
+                      "size":  385,
+                      "sha256":  "fd0c127aae904c55b609989e5c0688f4ecce9a5cc1e4b1f9670386e77911c391",
+                      "records":  1
+                  },
+                  {
+                      "path":  "entities/project.jsonl",
+                      "size":  747,
+                      "sha256":  "cab2d3640362958ddf33f757d3a4f8b45ed32b117f9a858d2c64ee302b72eb64",
+                      "records":  3
+                  },
+                  {
+                      "path":  "entities/protocol.jsonl",
+                      "size":  499,
+                      "sha256":  "fe284324f7011601639b8e0e22bd41f580edde7d4d4b23e73a5884141ea9cae0",
+                      "records":  2
+                  },
+                  {
+                      "path":  "entities/standard.jsonl",
+                      "size":  351,
+                      "sha256":  "e86be36236b5d96421f963fccbd6edbfa8aee507f226ec4b705d82320d8c14a6",
+                      "records":  1
+                  },
+                  {
+                      "path":  "entities/tech.jsonl",
+                      "size":  7570,
+                      "sha256":  "84f32cc8a0bc1be4df61d64c42ee74d11d26475569f29ea3fb737ba37a1b3ad4",
+                      "records":  30
+                  },
+                  {
+                      "path":  "entities/tech_stack.jsonl",
+                      "size":  2176,
+                      "sha256":  "5e41dbfc7cf7d1c5ec3e0c12eada9d8a46a43c69cc9bea266b98a6cb93f1de39",
+                      "records":  8
+                  },
+                  {
+                      "path":  "entities/tool.jsonl",
+                      "size":  754,
+                      "sha256":  "65253223618d0935ddd24199d2cb9f6a714f61102cf7008ef1575134f2904118",
+                      "records":  4
+                  },
+                  {
+                      "path":  "entities/tech_stack/ai.jsonl",
+                      "size":  864,
+                      "sha256":  "9d54c2abbed1eb35338b102158b8d1c1789a9e9ff2e765237627ee400d82e8a0",
+                      "records":  4
+                  },
+                  {
+                      "path":  "relations/2026-02.jsonl",
+                      "size":  8265,
+                      "sha256":  "a3d09d599d4547ccaf9c94fbae6d226e55650e62e9c4e4afcdfee8a274ff3d1f",
+                      "records":  48
+                  },
+                  {
+                      "path":  "relations/2026-03.jsonl",
+                      "size":  74484,
+                      "sha256":  "93fe1e59f6861dde24aef9d49acfd1706fe75e7f0093e1a713577ce390572c6a",
+                      "records":  469
+                  },
+                  {
+                      "path":  "relations/2026-04.jsonl",
+                      "size":  42035,
+                      "sha256":  "86cb339e0ede571f00a3fa2e47be82f88c419abd6b0d5ebc0c88ae80e8e1baa4",
+                      "records":  244
+                  },
+                  {
+                      "path":  "relations/2026-05.jsonl",
+                      "size":  46615,
+                      "sha256":  "36b08bf7ffd224fa60c333d9bf1ad6dd4e64278788190313369ac13132135ed2",
+                      "records":  262
+                  },
+                  {
+                      "path":  "relations/2026-06.jsonl",
+                      "size":  17775,
+                      "sha256":  "a072c191945bec44f500407811b74e9736a1378b1b608935ee51e485a69fb22a",
+                      "records":  108
+                  },
+                  {
+                      "path":  "relations/2026-07.jsonl",
+                      "size":  82973,
+                      "sha256":  "5d66d61d4ab4102c3055cd6d1ab9e4eb0d42b2508be1f735adfa1db00cfa09f0",
+                      "records":  432
+                  }
+              ]
+}

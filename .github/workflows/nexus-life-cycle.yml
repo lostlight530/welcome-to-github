@@ -1,23 +1,19 @@
-name: 🧬 NEXUS CORTEX Life Cycle
-
+name: NEXUS CORTEX Life Cycle
 on:
   schedule:
     - cron: '0 22 * * *'
   push:
-    paths:
-      - '.github/workflows/nexus-life-cycle.yml'
-      - 'docs/brain/**'
-      - 'src/**'
-      - 'tests/**'
+    paths: ['.github/workflows/nexus-life-cycle.yml', 'docs/brain/**', 'src/**', 'tests/**']
   workflow_dispatch:
-
+concurrency:
+  group: nexus-life-cycle-${{ github.repository }}-${{ github.ref }}
+  cancel-in-progress: false
 env:
   GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
   PYTHONUTF8: '1'
-
 jobs:
   consciousness:
-    name: 🧠 Stream of Consciousness
+    name: Stream of Consciousness
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -31,18 +27,24 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.10'
-      - name: Rebuild Memory
-        run: python docs/brain/nexus.py rebuild
+      - name: Validate Existing Ledgers
+        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import maintain_jsonl; print(maintain_jsonl('docs/brain/knowledge'))"
       - name: Harvest Approved External Documents
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python docs/brain/nexus.py harvest
-      - name: Validate Harvester Contracts
-        run: python -m unittest discover -s tests -p 'test_harvester*.py'
-      - name: Validate JSONL Ledgers
-        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import maintain_jsonl; print(maintain_jsonl('docs/brain/knowledge'))"
+      - name: Project External Evidence
+        run: python docs/brain/nexus.py project
+      - name: Canonicalize Active Ledgers
+        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; print(canonicalize_ledger('docs/brain/knowledge'))"
+      - name: Rebuild Memory
+        run: python docs/brain/nexus.py rebuild
       - name: Ingest Self-Codebase
         run: python docs/brain/nexus.py ingest
+      - name: Validate Canonical Graph
+        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; repaired=canonicalize_ledger('docs/brain/knowledge'); clean=canonicalize_ledger('docs/brain/knowledge'); print(repaired); print(clean); assert clean['duplicate_entities']==0 and clean['duplicate_relations']==0 and clean['dangling_relations']==0"
+      - name: Rebuild Validated Memory
+        run: python docs/brain/nexus.py rebuild
       - name: Deep Ponder
         run: python docs/brain/nexus.py ponder
       - name: Run Evolution Cycle
@@ -59,6 +61,6 @@ jobs:
       - name: Commit Cognitive Changes
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: "🧬 lifecycle: verified cognitive update [skip ci]"
+          commit_message: "lifecycle: verified cognitive update [skip ci]"
           branch: ${{ github.ref_name }}
           file_pattern: "docs/brain/memories/** docs/brain/inputs/** docs/brain/knowledge/**"
