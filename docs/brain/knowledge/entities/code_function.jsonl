@@ -1,3 +1,102 @@
+{"desc":"Python Function","id":"file_docs_brain_cortex_py__func___init__","name":"__init__","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_cortex_py__func__init_db","name":"_init_db","type":"code_function"}
+{"desc":"Append knowledge to the immutable text ledger.","id":"file_docs_brain_cortex_py__func__log_to_jsonl","name":"_log_to_jsonl","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_cortex_py__func_activate_memory","name":"activate_memory","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_cortex_py__func_add_entity","name":"add_entity","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_cortex_py__func_connect_entities","name":"connect_entities","type":"code_function"}
+{"desc":"Biological Decay with Sovereignty Protection","id":"file_docs_brain_cortex_py__func_decay_memories","name":"decay_memories","type":"code_function"}
+{"desc":"Phase VI: Quantitative Dashboard Metrics extraction.","id":"file_docs_brain_cortex_py__func_get_dashboard_metrics","name":"get_dashboard_metrics","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_cortex_py__func_get_orphans","name":"get_orphans","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_cortex_py__func_get_stats","name":"get_stats","type":"code_function"}
+{"desc":"Synaptic Search: Combines Full-Text + 1-Hop Graph Association","id":"file_docs_brain_cortex_py__func_search","name":"search","type":"code_function"}
+{"desc":"Phase V: Deterministic Orphan Suturing. Ghost nodes are connected internally.","id":"file_docs_brain_cortex_py__func_suture_orphans","name":"suture_orphans","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func__active_jsonl_files","name":"_active_jsonl_files","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func__normalize_record","name":"_normalize_record","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func__payload","name":"_payload","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func__slug","name":"_slug","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func__snapshot_metadata","name":"_snapshot_metadata","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func__write_records","name":"_write_records","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func_atomic_write","name":"atomic_write","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func_canonicalize_ledger","name":"canonicalize_ledger","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func_headings","name":"headings","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func_ledger_hash","name":"ledger_hash","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func_maintain_jsonl","name":"maintain_jsonl","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func_project_current_snapshots","name":"project_current_snapshots","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func_render_snapshot","name":"render_snapshot","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func_validate_owned_punctuation","name":"validate_owned_punctuation","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_document_hygiene_py__func_verify_hash_chain","name":"verify_hash_chain","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_evolution_py__func___init__","name":"__init__","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_evolution_py__func__archive_inputs","name":"_archive_inputs","type":"code_function"}
+{"desc":"Phase VI: Preparatory State AST Mutator","id":"file_docs_brain_evolution_py__func__genetic_auto_recombination","name":"_genetic_auto_recombination","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_evolution_py__func__incubate_ideas","name":"_incubate_ideas","type":"code_function"}
+{"desc":"AST Loop Preparation: Verifies local MCP and systems logic via subprocess.","id":"file_docs_brain_evolution_py__func__run_sandbox_tests","name":"_run_sandbox_tests","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_evolution_py__func__scan_inputs","name":"_scan_inputs","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_evolution_py__func__trigger_render","name":"_trigger_render","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_evolution_py__func_run_daily_cycle","name":"run_daily_cycle","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_evolution_py__func_visit_FunctionDef","name":"visit_FunctionDef","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_factory_py__func___init__","name":"__init__","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_factory_py__func__append_line","name":"_append_line","type":"code_function"}
+{"desc":"Neural Upgrade: Activates a memory, increasing its weight and updating the timestamp.\n神经升级：激活记忆，增加权重","id":"file_docs_brain_factory_py__func_activate_memory","name":"activate_memory","type":"code_function"}
+{"desc":"Adds a new entity to the knowledge graph.\n向知识图谱添加新实体。","id":"file_docs_brain_factory_py__func_add_entity","name":"add_entity","type":"code_function"}
+{"desc":"Adds a new relation to the knowledge graph.","id":"file_docs_brain_factory_py__func_add_relation","name":"add_relation","type":"code_function"}
+{"desc":"Legacy touch. Now routes to activate_memory.","id":"file_docs_brain_factory_py__func_touch_entity","name":"touch_entity","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_harvester_py__func___init__","name":"__init__","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_harvester_py__func__api","name":"_api","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_harvester_py__func__archive_stale","name":"_archive_stale","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_harvester_py__func__json","name":"_json","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_harvester_py__func__normalized","name":"_normalized","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_harvester_py__func__prune_cache","name":"_prune_cache","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_harvester_py__func__selected","name":"_selected","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_harvester_py__func__source","name":"_source","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_harvester_py__func_fetch_github_data","name":"fetch_github_data","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_harvester_py__func_validate_profiles","name":"validate_profiles","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_nexus_mcp_py__func___init__","name":"__init__","type":"code_function"}
+{"desc":"[Phase V] Initialize the Cold-Blooded Trust Ledger","id":"file_docs_brain_nexus_mcp_py__func__init_trust_ledger","name":"_init_trust_ledger","type":"code_function"}
+{"desc":"[Phase V] Punish Hallucinations","id":"file_docs_brain_nexus_mcp_py__func__slash_trust","name":"_slash_trust","type":"code_function"}
+{"desc":"[Phase V] Cold-Blooded Ledger Verification","id":"file_docs_brain_nexus_mcp_py__func__verify_agent_trust","name":"_verify_agent_trust","type":"code_function"}
+{"desc":"Handles JSON-RPC 2.0 requests.","id":"file_docs_brain_nexus_mcp_py__func_handle_request","name":"handle_request","type":"code_function"}
+{"desc":"Main loop reading from Stdin.","id":"file_docs_brain_nexus_mcp_py__func_run","name":"run","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_nexus_py__func_main","name":"main","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_reason_py__func___init__","name":"__init__","type":"code_function"}
+{"desc":"Phase V: Pure mathematical centrality deduction without external libraries.","id":"file_docs_brain_reason_py__func__calculate_pagerank","name":"_calculate_pagerank","type":"code_function"}
+{"desc":"Find nodes with exactly 1 edge (Superficial Knowledge)","id":"file_docs_brain_reason_py__func__generate_curiosity","name":"_generate_curiosity","type":"code_function"}
+{"desc":"Calculate PageRank on the active graph to find the true central hub.","id":"file_docs_brain_reason_py__func__generate_pagerank_bounty","name":"_generate_pagerank_bounty","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_reason_py__func__generate_pagerank_top_hubs","name":"_generate_pagerank_top_hubs","type":"code_function"}
+{"desc":"Find nodes that share exact targets (Structural Overlap / Epistemic Depth)","id":"file_docs_brain_reason_py__func__generate_structural_intuitions","name":"_generate_structural_intuitions","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_reason_py__func__query","name":"_query","type":"code_function"}
+{"desc":"Phase VI: Hardcore Quantitative Dashboard Rendering (Zero-Dependency).","id":"file_docs_brain_reason_py__func__render_daily_archives","name":"_render_daily_archives","type":"code_function"}
+{"desc":"Cognitive Loop: Structural Analysis, Self-Reflection & Curiosity","id":"file_docs_brain_reason_py__func_ponder","name":"ponder","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_report_hygiene_core_py__func_assert_period","name":"assert_period","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_report_hygiene_core_py__func_atomic_write","name":"atomic_write","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_report_hygiene_core_py__func_main","name":"main","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_report_hygiene_core_py__func_render_welcome","name":"render_welcome","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_report_hygiene_core_py__func_render_zero","name":"render_zero","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_report_hygiene_core_py__func_values","name":"values","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_report_hygiene_py__func_already_formatted","name":"already_formatted","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_report_hygiene_py__func_validate_owned_report","name":"validate_owned_report","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_scholar_py__func___init__","name":"__init__","type":"code_function"}
+{"desc":"Phase IV: Universal Digestion. Extracts deterministic properties from JSON/YAML configurations.","id":"file_docs_brain_scholar_py__func__analyze_config_structure","name":"_analyze_config_structure","type":"code_function"}
+{"desc":"Phase V: Deterministic Polyglot Regex State Machine for JS/TS/C++.","id":"file_docs_brain_scholar_py__func__analyze_javascript_regex_ast","name":"_analyze_javascript_regex_ast","type":"code_function"}
+{"desc":"Extract headers as knowledge nodes.","id":"file_docs_brain_scholar_py__func__analyze_markdown_structure","name":"_analyze_markdown_structure","type":"code_function"}
+{"desc":"Phase V: Brutalist C++/TS/JS parser via Regex State Machine.","id":"file_docs_brain_scholar_py__func__analyze_polyglot_structure","name":"_analyze_polyglot_structure","type":"code_function"}
+{"desc":"Use Python's native AST to understand code structure.","id":"file_docs_brain_scholar_py__func__analyze_python_ast","name":"_analyze_python_ast","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_scholar_py__func__digest_file","name":"_digest_file","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_scholar_py__func__extract_props","name":"_extract_props","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_scholar_py__func__load_config","name":"_load_config","type":"code_function"}
+{"desc":"Phase V: Strip version numbers to ensure pure entity IDs.","id":"file_docs_brain_scholar_py__func__strip_version","name":"_strip_version","type":"code_function"}
+{"desc":"[Omniscience Protocol] Deep scan of the codebase.","id":"file_docs_brain_scholar_py__func_ingest_repository","name":"ingest_repository","type":"code_function"}
+{"desc":"Legacy single file learning (kept for compatibility)","id":"file_docs_brain_scholar_py__func_learn","name":"learn","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_test_mcp_py__func_test_mcp_server","name":"test_mcp_server","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_evolver_keeps_input_contract_out_of_monthly_archive","name":"test_evolver_keeps_input_contract_out_of_monthly_archive","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_external_links_are_not_selected","name":"test_external_links_are_not_selected","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_noise_normalization","name":"test_noise_normalization","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_profiles_have_unique_welcome_owner","name":"test_profiles_have_unique_welcome_owner","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_structural_array_index_is_not_treated_as_a_version","name":"test_structural_array_index_is_not_treated_as_a_version","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_canonicalization_removes_semantic_duplicates_and_dangling_relations","name":"test_canonicalization_removes_semantic_duplicates_and_dangling_relations","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_current_snapshot_projection_is_stable_and_idempotent","name":"test_current_snapshot_projection_is_stable_and_idempotent","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_jsonl_maintenance_recurses_and_deduplicates","name":"test_jsonl_maintenance_recurses_and_deduplicates","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_snapshot_is_human_readable_and_traceable","name":"test_snapshot_is_human_readable_and_traceable","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_truncated_tree_is_a_hard_failure","name":"test_truncated_tree_is_a_hard_failure","type":"code_function"}
 {"desc":"Python Function","id":"func__api","name":"_api","type":"code_function"}
 {"desc":"Python Function","id":"func__archive_stale","name":"_archive_stale","type":"code_function"}
 {"desc":"Python Function","id":"func__json","name":"_json","type":"code_function"}

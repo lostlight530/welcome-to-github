@@ -1,0 +1,10 @@
+{"src": "mcp", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-13T17:20:55.145911"}
+{"src": "mediapipe", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-13T17:20:55.147653"}
+{"src": "file_LICENSE", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-13T17:20:55.148968"}
+{"src": "file__editorconfig", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-13T17:20:55.150361"}
+{"src": "file_docs_brain_mcp_demo_py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-13T17:20:55.151715"}
+{"src": "file_format_py", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-13T17:20:55.153037"}
+{"src": "func__api", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-13T17:20:55.154473"}
+{"src": "func__archive_stale", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-13T17:20:55.155837"}
+{"src": "func__json", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-13T17:20:55.157139"}
+{"src": "func__normalized", "relation": "is_capability_of", "dst": "concept_nexus_system", "desc": "Auto-sutured ghost node / 自动缝合的幽灵节点", "valid_at": "2026-07-13T17:20:55.158454"}
