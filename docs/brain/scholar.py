@@ -107,7 +107,7 @@ class Scholar:
     def _strip_version(self, name: str) -> str:
         """Phase V: Strip version numbers to ensure pure entity IDs."""
         # e.g., _v1.0.0, -v5.5.0, _v0.19
-        return re.sub(r'[_v\-]+[0-9]+(?:\.[0-9]+)*[A-Za-z0-9]*$', '', name, flags=re.IGNORECASE)
+        return re.sub(r'(?:^|[_-])v[0-9]+(?:[._][0-9]+)*(?:[a-z0-9-]*)$', '', name, flags=re.IGNORECASE)
 
     def _analyze_config_structure(self, filepath, file_id):
         """Phase IV: Universal Digestion. Extracts deterministic properties from JSON/YAML configurations."""
@@ -216,7 +216,7 @@ class Scholar:
                 e_name = self._strip_version(e_name)
 
                 # Namespace generation to prevent global ID collisions
-                true_id = self._strip_version(f"polyglot_{e_type.lower()}_{e_name}")
+                true_id = self._strip_version(f"{file_id}__polyglot_{e_type.lower()}_{e_name}")
                 extracted_entities.append({
                     "id": true_id,
                     "type": "code_component",
@@ -240,7 +240,7 @@ class Scholar:
                 # Classes
                 if isinstance(node, ast.ClassDef):
                     class_name = self._strip_version(node.name)
-                    class_id = self._strip_version(f"class_{class_name}")
+                    class_id = self._strip_version(f"{file_id}__class_{class_name}")
                     desc = ast.get_docstring(node) or "Python Class"
                     self.cortex.add_entity(class_id, "code_class", class_name, desc[:100], save_to_disk=True)
                     self.cortex.connect_entities(file_id, "defines", class_id, save_to_disk=True)
@@ -253,7 +253,7 @@ class Scholar:
                 # Functions
                 elif isinstance(node, ast.FunctionDef):
                     func_name = self._strip_version(node.name)
-                    func_id = self._strip_version(f"func_{func_name}")
+                    func_id = self._strip_version(f"{file_id}__func_{func_name}")
                     desc = ast.get_docstring(node) or "Python Function"
                     self.cortex.add_entity(func_id, "code_function", func_name, desc[:100], save_to_disk=True)
                     self.cortex.connect_entities(file_id, "defines", func_id, save_to_disk=True)
@@ -272,7 +272,7 @@ class Scholar:
                         safe_title = "".join([c for c in title if c.isalnum() or c == ' ']).strip().replace(' ', '_').lower()
                         safe_title = self._strip_version(safe_title)
                         if safe_title:
-                            concept_id = self._strip_version(f"concept_{safe_title}"[:60])
+                            concept_id = self._strip_version(f"{file_id}__concept_{safe_title}")
                             self.cortex.add_entity(concept_id, "concept", title, f"Section in {filepath.name}", save_to_disk=True)
                             self.cortex.connect_entities(file_id, "documents", concept_id, save_to_disk=True)
         except Exception:

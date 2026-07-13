@@ -43,9 +43,19 @@ class Harvester:
         headers = {"Accept": "application/vnd.github+json", "User-Agent": "Nexus-Document-Harvester/3"}
         if self.token:
             headers["Authorization"] = f"Bearer {self.token}"
-        with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=30) as response:
-            return json.loads(response.read().decode("utf-8"))
-
+        request = urllib.request.Request(url, headers=headers)
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(request, timeout=30) as response:
+                    return json.loads(response.read().decode("utf-8"))
+            except urllib.error.HTTPError as exc:
+                if exc.code not in {429, 500, 502, 503, 504} or attempt == 2:
+                    raise
+            except urllib.error.URLError:
+                if attempt == 2:
+                    raise
+            time.sleep(2 ** attempt)
+        raise RuntimeError(f"unreachable retry state: {url}")
     @staticmethod
     def _selected(path, patterns, ignored):
         value = path.lower()
@@ -114,7 +124,7 @@ class Harvester:
                 repo_state["documents"][path] = {**previous, "sha": sha}
                 continue
             namespace = repo.lower().replace("/", "_").replace("-", "_")
-            entity = f"doc_{namespace}_{re.sub(r'[^a-z0-9]+', '_', path.lower()).strip('_')}_{sha[:12]}"
+            entity = f"external_doc_{namespace}_{re.sub(r'[^a-z0-9]+', '_', path.lower()).strip('_' )}"
             target = self.inputs / "current" / profile["layer"] / namespace / (path.replace("/", "__") + f"__{sha[:12]}.md")
             cache = self.cache / namespace / (path.replace("/", "__") + ".txt")
             old = cache.read_text(encoding="utf-8") if cache.exists() else ""
@@ -134,6 +144,21 @@ class Harvester:
         repo_state["last_checked_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
         return changed
 
+    def _prune_cache(self):
+        expected = set()
+        for repo, repo_state in self.state.get("repositories", {}).items():
+            namespace = repo.lower().replace("/", "_").replace("-", "_")
+            for source_path in repo_state.get("documents", {}):
+                expected.add((self.cache / namespace / (source_path.replace("/", "__") + ".txt")).resolve())
+        removed = 0
+        if self.cache.exists():
+            for path in sorted(self.cache.rglob("*"), reverse=True):
+                if path.is_file() and path.resolve() not in expected:
+                    path.unlink()
+                    removed += 1
+                elif path.is_dir() and not any(path.iterdir()):
+                    path.rmdir()
+        return removed
     def fetch_github_data(self):
         self.validate_profiles()
         changed, failures = [], []
