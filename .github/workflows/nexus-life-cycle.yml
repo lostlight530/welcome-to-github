@@ -42,7 +42,7 @@ jobs:
       - name: Ingest Self-Codebase
         run: python docs/brain/nexus.py ingest
       - name: Validate Canonical Graph
-        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; r=canonicalize_ledger('docs/brain/knowledge'); print(r); assert r['duplicate_entities']==0 and r['duplicate_relations']==0 and r['dangling_relations']==0"
+        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; repaired=canonicalize_ledger('docs/brain/knowledge'); clean=canonicalize_ledger('docs/brain/knowledge'); print(repaired); print(clean); assert clean['duplicate_entities']==0 and clean['duplicate_relations']==0 and clean['dangling_relations']==0"
       - name: Rebuild Validated Memory
         run: python docs/brain/nexus.py rebuild
       - name: Deep Ponder
