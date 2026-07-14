@@ -51,6 +51,8 @@ Reason: The final MCP specification ships on July 28, making it critical to esta
 Source Decision: Shift architectural focus towards the MCP 2026-07-28 Tasks extension for handling long-running asynchronous agent execution.
 Expected Effect: Internal systems will be prepared for the upcoming MCP spec, enhancing the reliability of asynchronous agent workflows.
 Risk Reduced: Low.
+
+Strategic Execution: Implementing these observation metrics in our documentation layer ensures our tactical decisions are always aligned with the reality of Edge AI limitations and capabilities. / 战略执行：在我们的文档层实施这些观察指标可确保我们的战术决策始终与 Edge AI 的局限性和能力的现实保持一致.
 No Host Repository Change: YES.
 
 Action 2

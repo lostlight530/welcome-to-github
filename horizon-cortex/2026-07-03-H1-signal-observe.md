@@ -47,6 +47,8 @@ Why It May Matter: It represents a recent ecosystem update for Edge AI and Agent
 
 Uncertainty: Medium
 
+Strategic Analysis: As lightweight models become more prevalent, the bottleneck shifts from inference speed to memory bandwidth. This requires us to prioritize memory-efficient edge implementations. / 战略分析：随着轻量级模型变得越来越普遍，瓶颈从推理速度转移到了内存带宽.这要求我们优先考虑内存高效的端侧实现.
+
 Signal 2
 
 Signal: Introducing the latest video (Veo) and image generation models (Imagen 3) on Vertex AI. / 在 Vertex AI 上引入最新的视频 (Veo) 和图像生成模型 (Imagen 3)

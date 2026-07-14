@@ -114,6 +114,8 @@ Source: OPAQUE Resources
 Why It May Matter: 代理操作的可验证性将成为企业采用的基础，未来 MCP 服务器可能默认需要硬件或密码学信任证明.
 Uncertainty: Medium
 
+Strategic Analysis: The increasing focus on data privacy heavily favors edge processing. Our architecture must prioritize offline-first capabilities. / 战略分析：对数据隐私日益增加的关注极大地促进了端侧处理.我们的架构必须优先考虑离线优先的能力.
+
 Signal 3
 Signal: 2026 年高效的代理工作流倾向于“人在回路”(Human-in-the-Loop)，而非完全自治.
 Source: Idlen

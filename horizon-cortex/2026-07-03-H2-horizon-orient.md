@@ -37,6 +37,8 @@ ORIENTATION_NOTES
 
 说明今日信号对 horizon-cortex 自身意味着什么:
 Public cloud LLM platforms have further matured in multimodal integration, providing more powerful out-of-the-box capabilities. / 公有云大模型平台在多模态整合上进一步成熟，提供了更强大的开箱即用能力
+Strategic Pivot (Day 03): We must shift our architectural mindset from 'cloud-first orchestration' to 'edge-first context resolution', using standardized protocols as the bridge. / 战略枢纽 (第 03 天)：我们必须将架构思维从“云端优先编排”转变为“端侧优先上下文解析”，并使用标准化协议作为桥梁.
+
 
 说明哪些外部知识会影响未来 Jules 的观察重点:
 It may reduce the necessity of building self-hosted multimodal pipelines, shifting the architectural focus more towards the protocol layer and business workflows. / 可能降低自建多模态流水线的必要性，使得架构重心更向协议层和业务流倾斜

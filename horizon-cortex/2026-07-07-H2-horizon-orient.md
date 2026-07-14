@@ -45,6 +45,8 @@ ORIENTATION_NOTES
 
 说明今日信号对 horizon-cortex 自身意味着什么 (What today's signals mean for horizon-cortex itself):
 The evolution of MCP into a core data transformation layer implies that our integration strategies should focus not only on connectivity but also on the intelligent parsing and structuring of data payloads before they reach the Agent. / MCP 演变为核心数据转换层意味着我们的集成策略不仅应关注连通性，还应关注在数据负载到达 Agent 之前的智能解析和结构化
+Strategic Pivot (Day 07): We must shift our architectural mindset from 'cloud-first orchestration' to 'edge-first context resolution', using standardized protocols as the bridge. / 战略枢纽 (第 07 天)：我们必须将架构思维从“云端优先编排”转变为“端侧优先上下文解析”，并使用标准化协议作为桥梁.
+
 
 说明哪些外部知识会影响未来 Jules 的观察重点 (Which external knowledge will affect Jules' future observation focus):
 The introduction of native Google Maps Grounding in Gemini will shift the observation focus toward spatial reasoning capabilities and how Edge AI can leverage such context. / Gemini 中原生 Google Maps Grounding 的引入将把观察重点转向空间推理能力以及 Edge AI 如何利用此类上下文

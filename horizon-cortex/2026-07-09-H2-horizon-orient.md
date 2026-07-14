@@ -45,6 +45,8 @@ ORIENTATION_NOTES
 
 说明今日信号对 horizon-cortex 自身意味着什么:
 The ongoing validation of the MCP Tasks extension and stateless HTTP core means horizon-cortex must continue prioritizing the observation of long-running agent workflows
+Strategic Pivot (Day 09): We must shift our architectural mindset from 'cloud-first orchestration' to 'edge-first context resolution', using standardized protocols as the bridge. / 战略枢纽 (第 09 天)：我们必须将架构思维从“云端优先编排”转变为“端侧优先上下文解析”，并使用标准化协议作为桥梁.
+
 
 说明哪些外部知识会影响未来 Jules 的观察重点:
 Future Jules observations will be heavily influenced by how the MCP Tasks extension is adopted in practice and how it handles asynchronous edge executions
