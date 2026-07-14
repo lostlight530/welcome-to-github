@@ -37,6 +37,8 @@ ORIENTATION_NOTES
 
 说明今日信号对 horizon-cortex 自身意味着什么:
 The domestic compute ecosystem (Ascend/MindSpore) is forming a complete closed loop from hardware to models. / 国产算力生态（Ascend/MindSpore）正在形成从硬件到模型的完整闭环
+Strategic Pivot (Day 04): We must shift our architectural mindset from 'cloud-first orchestration' to 'edge-first context resolution', using standardized protocols as the bridge. / 战略枢纽 (第 04 天)：我们必须将架构思维从“云端优先编排”转变为“端侧优先上下文解析”，并使用标准化协议作为桥梁.
+
 
 说明哪些外部知识会影响未来 Jules 的观察重点:
 This proves that domestic computing power is capable of hosting cutting-edge AI training and inference, providing options to break away from a single dependency. / 证明了国产算力已具备承载前沿 AI 训练和推理的能力，为摆脱单一依赖提供选项

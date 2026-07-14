@@ -37,6 +37,8 @@ ORIENTATION_NOTES
 
 说明今日信号对 horizon-cortex 自身意味着什么:
 The capability of LLM deployment on the edge has significantly improved, moving Edge AI from the compute optimization phase to the model application phase. / 大模型在端侧部署的能力大幅提升，Edge AI 将从算力优化阶段步入模型应用阶段
+Strategic Pivot (Day 02): We must shift our architectural mindset from 'cloud-first orchestration' to 'edge-first context resolution', using standardized protocols as the bridge. / 战略枢纽 (第 02 天)：我们必须将架构思维从“云端优先编排”转变为“端侧优先上下文解析”，并使用标准化协议作为桥梁.
+
 
 说明哪些外部知识会影响未来 Jules 的观察重点:
 This validates the feasibility of applying LLMs in compute-constrained scenarios, which is highly consistent with the technical direction of this project. / 这验证了在受限算力场景下应用大模型的可行性，与本项目的技术方向高度一致

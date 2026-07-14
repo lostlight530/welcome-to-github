@@ -37,6 +37,8 @@ ORIENTATION_NOTES
 
 说明今日信号对 horizon-cortex 自身意味着什么:
 开发者教育和协议的生态普及正在加速，Edge AI 和 MCP 逐渐下沉到基础应用
+Strategic Pivot (Day 05): We must shift our architectural mindset from 'cloud-first orchestration' to 'edge-first context resolution', using standardized protocols as the bridge. / 战略枢纽 (第 05 天)：我们必须将架构思维从“云端优先编排”转变为“端侧优先上下文解析”，并使用标准化协议作为桥梁.
+
 
 说明哪些外部知识会影响未来 Jules 的观察重点:
 预示着这些曾经前沿的技术方向即将在中小型应用中全面铺开

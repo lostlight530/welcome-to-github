@@ -45,6 +45,8 @@ ORIENTATION_NOTES
 
 说明今日信号对 horizon-cortex 自身意味着什么 (What today's signals mean for horizon-cortex itself):
 The increasing autonomy of Coding Agents and the standardization of MCP mean that horizon-cortex must prepare its architecture to support more robust, self-driven processes while maintaining strict compliance with safety boundaries. / Coding Agent 自治化水平的提高和 MCP 的标准化意味着 horizon-cortex 必须调整其架构，以支持更强大、自驱动的流程，同时保持对安全边界的严格遵守
+Strategic Pivot (Day 06): We must shift our architectural mindset from 'cloud-first orchestration' to 'edge-first context resolution', using standardized protocols as the bridge. / 战略枢纽 (第 06 天)：我们必须将架构思维从“云端优先编排”转变为“端侧优先上下文解析”，并使用标准化协议作为桥梁.
+
 
 说明哪些外部知识会影响未来 Jules 的观察重点 (Which external knowledge will affect Jules' future observation focus):
 The evolution of the Agent Gateway as a key layer for unifying multi-agent workflows and implementing open-source governance will be a critical area of focus. / Agent Gateway 作为统合多智能体工作流并实现开源治理的关键层的演进将是一个重要的关注领域

@@ -47,6 +47,8 @@ Why It May Matter: It represents a recent ecosystem update for Edge AI and Agent
 
 Uncertainty: Medium
 
+Strategic Analysis: Agent architectures are moving towards modular components. We must adopt a loosely coupled design to easily integrate future capabilities without rewriting the core loop. / 战略分析：代理架构正向模块化组件发展.我们必须采用松耦合设计，以便在不重写核心循环的情况下轻松集成未来的能力.
+
 Signal 2
 
 Signal: Huawei released an open-source model trained on Ascend GPUs, proving the feasibility of a purely domestic compute ecosystem. / 华为发布了一款在 Ascend GPU 上训练的开源模型，证明了纯国产算力生态的可行性

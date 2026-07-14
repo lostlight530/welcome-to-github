@@ -45,6 +45,8 @@ ORIENTATION_NOTES
 
 说明今日信号对 horizon-cortex 自身意味着什么 (What today's signals mean for horizon-cortex itself):
 Due to lack of H1 input, no direct signal analysis from H1 can be performed today. However, external searches confirm that the 2026-07-28 MCP Specification Release Candidate delivers on the 2026 roadmap, introducing a stateless core that scales on ordinary HTTP infrastructure, server-rendered UIs through MCP Apps, and long-running work through the Tasks extension. / 由于缺乏 H1 输入，今天无法进行直接的信号分析，但通过外部搜索确认了 2026-07-28 MCP 规范发布候选版兑现了 2026 路线图，引入了在普通 HTTP 基础设施上扩展的无状态核心，通过 MCP Apps 提供的服务器渲染 UI，以及通过 Tasks 扩展支持的长时间运行任务
+Strategic Pivot (Day 08): We must shift our architectural mindset from 'cloud-first orchestration' to 'edge-first context resolution', using standardized protocols as the bridge. / 战略枢纽 (第 08 天)：我们必须将架构思维从“云端优先编排”转变为“端侧优先上下文解析”，并使用标准化协议作为桥梁.
+
 
 说明哪些外部知识会影响未来 Jules 的观察重点 (Which external knowledge will affect Jules' future observation focus):
 The major revisions to the MCP protocol, particularly the Tasks extension for long-running work and stateless core, will significantly impact how scheduled agent executions and MCP tool orchestration are tracked. / MCP 协议的重大修订，特别是用于长时间运行任务的 Tasks 扩展和无状态核心，将显着影响如何跟踪计划内的 Agent 执行和 MCP 工具编排

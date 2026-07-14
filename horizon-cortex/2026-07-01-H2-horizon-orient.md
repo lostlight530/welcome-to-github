@@ -37,6 +37,8 @@ ORIENTATION_NOTES
 
 说明今日信号对 horizon-cortex 自身意味着什么:
 The standardization of MCP means all future Agent toolchains might converge to this standard, making its ecosystem evolution worth close attention. / MCP 的标准化意味着未来所有的 Agent 工具链可能会向此标准收敛，值得密切关注其生态演进
+Strategic Pivot (Day 01): We must shift our architectural mindset from 'cloud-first orchestration' to 'edge-first context resolution', using standardized protocols as the bridge. / 战略枢纽 (第 01 天)：我们必须将架构思维从“云端优先编排”转变为“端侧优先上下文解析”，并使用标准化协议作为桥梁.
+
 
 说明哪些外部知识会影响未来 Jules 的观察重点:
 It may be necessary to evaluate introducing the MCP protocol into our own ecosystem components. / 可能需要评估将 MCP 协议引入到自身的生态组件中
