@@ -17,8 +17,8 @@
 
 | 排名 | 节点 | PageRank |
 | --- | --- | --- |
-| 1 | main | 0.0004 |
-| 2 | test_mcp_server | 0.0004 |
+| 1 | README.md | 0.0004 |
+| 2 | README.md | 0.0004 |
 | 3 | README.md | 0.0004 |
 | 4 | README.md | 0.0004 |
 | 5 | README.md | 0.0004 |
@@ -34,8 +34,8 @@
 ```text
 KB Stats: Entities=[637] Relations=[600] Compression Rate=[0.00%]
 PageRank Top 10 Hubs:
-[1+main+0.0004+0.0]
-[2+test_mcp_server+0.0004+0.0]
+[1+README.md+0.0004+0.0]
+[2+README.md+0.0004+0.0]
 [3+README.md+0.0004+0.0]
 [4+README.md+0.0004+0.0]
 [5+README.md+0.0004+0.0]
