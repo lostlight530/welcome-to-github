@@ -1,5 +1,6 @@
 import datetime
 import sys
+import traceback
 import os
 import argparse
 import shutil
@@ -151,6 +152,7 @@ def main() -> None:
             print(f"Density  : {stats['density']:.4f}")
 
     except Exception as e:
+        traceback.print_exc()
         print(f"[Nexus Error | Nexus 错误] Execution failed / 执行失败: {e}")
         sys.exit(1)
 
