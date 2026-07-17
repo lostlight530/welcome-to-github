@@ -10,11 +10,13 @@ concurrency:
   cancel-in-progress: false
 env:
   GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
+  PYTHONDONTWRITEBYTECODE: '1'
   PYTHONUTF8: '1'
 jobs:
   consciousness:
     name: Stream of Consciousness
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: write
     steps:
@@ -27,6 +29,10 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.10'
+      - name: Validate Runtime Contracts
+        run: |
+          python -c "from pathlib import Path; names=('nexus.py','harvester.py','document_hygiene.py','cortex.py','evolution.py','scholar.py','reason.py','factory.py','report_hygiene.py','report_hygiene_core.py'); files=[Path('docs/brain')/name for name in names] + sorted(Path('tests').glob('*.py')); [compile(path.read_bytes(), str(path), 'exec') for path in files]; print(f'compiled {len(files)} lifecycle Python files')"
+          python -m unittest discover -s tests -p 'test*.py'
       - name: Validate Existing Ledgers
         run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import maintain_jsonl; print(maintain_jsonl('docs/brain/knowledge'))"
       - name: Harvest Approved External Documents
