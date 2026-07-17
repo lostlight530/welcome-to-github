@@ -568,6 +568,7 @@
 {"desc":"","dst":"file_docs_brain_test_mcp_py__func_test_mcp_server","relation":"defines","src":"file_docs_brain_test_mcp_py"}
 {"desc":"","dst":"class_HarvesterContracts","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__class_HarvesterContracts","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_api_retries_transient_network_failures_with_backoff","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_evolver_keeps_input_contract_out_of_monthly_archive","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_external_links_are_not_selected","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_noise_normalization","relation":"defines","src":"file_tests_test_harvester_py"}
