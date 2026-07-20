@@ -18,16 +18,13 @@ INPUT_RECORD
 - Task: Gather raw signals for edge AI practitioners.
 
 EXTERNAL_SOURCE_RECORDS
-- [https://anthropic.com/news]
-- [https://google.com/ai/news]
-- [https://mindspore.cn/news]
-- [https://github.com/microsoft/semantic-kernel]
+- [https://www.anthropic.com/news]
+- [https://code.claude.com/docs/en/whats-new]
 
 RAW_SIGNAL_LOG
-- Signal A: Anthropic announced new MCP server stability improvements. (Anthropic 宣布了新的 MCP 服务器稳定性提升.)
-- Signal B: Google GenAI JAX team released optimized parallel execution tools. (Google GenAI JAX 团队发布了优化的并行执行工具.)
-- Signal C: Huawei MindSpore introduced enhanced dynamic graph support. (华为 MindSpore 引入了增强的动态图支持.)
-- Signal D: Microsoft Semantic Kernel merged major routing capabilities. (微软 Semantic Kernel 合并了主要的路由能力.)
+- Signal A: Anthropic introduced Claude for Teachers. (Anthropic 推出了面向教师的 Claude)
+- Signal B: Anthropic Claude Code added `claude mcp login` for shell authentication of MCP servers. (Anthropic Claude Code 增加了 `claude mcp login` 用于在 shell 中认证 MCP 服务器)
+- Signal C: Claude Code shell mode now responds to command output automatically. (Claude Code shell 模式现在会自动响应命令输出)
 
 NEXT_HANDOFF
 Proceed to H2 Daily Horizon Orient task.
