@@ -566,6 +566,8 @@
 {"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_9_watch_commits","relation":"defines","src":"file_docs_brain_source_profiles_json"}
 {"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_9_watch_releases","relation":"defines","src":"file_docs_brain_source_profiles_json"}
 {"desc":"","dst":"file_docs_brain_test_mcp_py__func_test_mcp_server","relation":"defines","src":"file_docs_brain_test_mcp_py"}
+{"desc":"","dst":"file_parallax_tools_check_py__func_main","relation":"defines","src":"file_parallax_tools_check_py"}
+{"desc":"","dst":"file_parallax_tools_check_py__func_validate","relation":"defines","src":"file_parallax_tools_check_py"}
 {"desc":"","dst":"class_HarvesterContracts","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__class_HarvesterContracts","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_api_retries_transient_network_failures_with_backoff","relation":"defines","src":"file_tests_test_harvester_py"}

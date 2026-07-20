@@ -87,6 +87,8 @@
 {"desc":"[Omniscience Protocol] Deep scan of the codebase.","id":"file_docs_brain_scholar_py__func_ingest_repository","name":"ingest_repository","type":"code_function"}
 {"desc":"Legacy single file learning (kept for compatibility)","id":"file_docs_brain_scholar_py__func_learn","name":"learn","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_test_mcp_py__func_test_mcp_server","name":"test_mcp_server","type":"code_function"}
+{"desc":"Python Function","id":"file_parallax_tools_check_py__func_main","name":"main","type":"code_function"}
+{"desc":"Python Function","id":"file_parallax_tools_check_py__func_validate","name":"validate","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_api_retries_transient_network_failures_with_backoff","name":"test_api_retries_transient_network_failures_with_backoff","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_evolver_keeps_input_contract_out_of_monthly_archive","name":"test_evolver_keeps_input_contract_out_of_monthly_archive","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_evolver_propagates_cycle_failure","name":"test_evolver_propagates_cycle_failure","type":"code_function"}
