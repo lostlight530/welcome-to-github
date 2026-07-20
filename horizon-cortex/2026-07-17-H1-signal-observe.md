@@ -18,16 +18,13 @@ INPUT_RECORD
 - Task: Gather raw signals for edge AI practitioners.
 
 EXTERNAL_SOURCE_RECORDS
-- [https://anthropic.com/news]
-- [https://google.com/ai/news]
-- [https://mindspore.cn/news]
-- [https://github.com/microsoft/semantic-kernel]
+- [https://pypi.org/project/semantic-kernel/]
+- [https://learn.microsoft.com/en-us/dotnet/api/microsoft.semantickernel.connectors.onnx]
 
 RAW_SIGNAL_LOG
-- Signal A: Anthropic announced new MCP server stability improvements. (Anthropic 宣布了新的 MCP 服务器稳定性提升.)
-- Signal B: Google GenAI JAX team released optimized parallel execution tools. (Google GenAI JAX 团队发布了优化的并行执行工具.)
-- Signal C: Huawei MindSpore introduced enhanced dynamic graph support. (华为 MindSpore 引入了增强的动态图支持.)
-- Signal D: Microsoft Semantic Kernel merged major routing capabilities. (微软 Semantic Kernel 合并了主要的路由能力.)
+- Signal A: Semantic Kernel Python is now Microsoft Agent Framework 1.0, offering multi-agent orchestration. (Semantic Kernel Python 现在是 Microsoft Agent Framework 1.0，提供多智能体编排)
+- Signal B: Microsoft Agent Framework supports cross-runtime interoperability via A2A and MCP. (Microsoft Agent Framework 通过 A2A 和 MCP 支持跨运行时互操作性)
+- Signal C: Semantic Kernel .NET provides `BertOnnxTextEmbeddingGenerationService` using a BERT ONNX model. (Semantic Kernel .NET 提供了使用 BERT ONNX 模型的 `BertOnnxTextEmbeddingGenerationService`)
 
 NEXT_HANDOFF
 Proceed to H2 Daily Horizon Orient task.

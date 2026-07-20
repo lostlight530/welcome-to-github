@@ -18,16 +18,13 @@ INPUT_RECORD
 - Task: Gather raw signals for edge AI practitioners.
 
 EXTERNAL_SOURCE_RECORDS
-- [https://anthropic.com/news]
-- [https://google.com/ai/news]
-- [https://mindspore.cn/news]
-- [https://github.com/microsoft/semantic-kernel]
+- [https://docs.cloud.google.com/vertex-ai/docs/core-release-notes]
+- [https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech]
 
 RAW_SIGNAL_LOG
-- Signal A: Anthropic announced new MCP server stability improvements. (Anthropic 宣布了新的 MCP 服务器稳定性提升.)
-- Signal B: Google GenAI JAX team released optimized parallel execution tools. (Google GenAI JAX 团队发布了优化的并行执行工具.)
-- Signal C: Huawei MindSpore introduced enhanced dynamic graph support. (华为 MindSpore 引入了增强的动态图支持.)
-- Signal D: Microsoft Semantic Kernel merged major routing capabilities. (微软 Semantic Kernel 合并了主要的路由能力.)
+- Signal A: Google Vector Search 2.0 became generally available, unifying data and vectors. (Google Vector Search 2.0 全面可用，统一了数据和向量)
+- Signal B: Huawei announced Ascend 950PR and 950DT chips supporting low-precision data formats like MXFP4. (华为发布 Ascend 950PR 和 950DT 芯片，支持 MXFP4 等低精度数据格式)
+- Signal C: Huawei Kunpeng 950 processor unveiled with up to 192 cores and confidential computing capabilities. (华为鲲鹏 950 处理器亮相，最高 192 核，并具备机密计算能力)
 
 NEXT_HANDOFF
 Proceed to H2 Daily Horizon Orient task.
