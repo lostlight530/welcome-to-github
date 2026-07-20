@@ -50,6 +50,7 @@ class Evolver:
             logging.info("Cycle Complete. / 周期完成。")
         except Exception as e:
             logging.error(f"Cycle failed / 周期失败: {e}")
+            raise
 
     def _trigger_render(self, metrics, orphans):
         try:
@@ -59,6 +60,7 @@ class Evolver:
             r._render_daily_archives(metrics, isolated_nodes)
         except Exception as e:
             logging.error(f"Render failed / 渲染失败: {e}")
+            raise
 
     def _genetic_auto_recombination(self):
         """Phase VI: Preparatory State AST Mutator"""
@@ -92,6 +94,7 @@ class Evolver:
 
         except Exception as e:
             logging.error(f"Genetic Recombination Failed / 基因重组失败: {e}")
+            raise
 
     def _run_sandbox_tests(self):
         """AST Loop Preparation: Verifies local MCP and systems logic via subprocess."""
