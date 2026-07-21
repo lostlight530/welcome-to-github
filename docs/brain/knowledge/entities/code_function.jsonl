@@ -96,8 +96,11 @@
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_evolver_propagates_render_failure","name":"test_evolver_propagates_render_failure","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_external_links_are_not_selected","name":"test_external_links_are_not_selected","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_noise_normalization","name":"test_noise_normalization","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_orphan_suturing_creates_its_target_entity","name":"test_orphan_suturing_creates_its_target_entity","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_orphan_suturing_propagates_write_failure","name":"test_orphan_suturing_propagates_write_failure","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_profiles_have_unique_welcome_owner","name":"test_profiles_have_unique_welcome_owner","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_structural_array_index_is_not_treated_as_a_version","name":"test_structural_array_index_is_not_treated_as_a_version","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_canonicalization_normalizes_description_alias","name":"test_canonicalization_normalizes_description_alias","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_canonicalization_removes_semantic_duplicates_and_dangling_relations","name":"test_canonicalization_removes_semantic_duplicates_and_dangling_relations","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_current_snapshot_projection_is_stable_and_idempotent","name":"test_current_snapshot_projection_is_stable_and_idempotent","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_jsonl_maintenance_recurses_and_deduplicates","name":"test_jsonl_maintenance_recurses_and_deduplicates","type":"code_function"}

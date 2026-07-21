@@ -1,5 +1,5 @@
-{"description":"Deployment of AI models on edge devices like factory floors and retail stores, shifting compute from data centers.","id":"edge-ai-inference","metadata":{"tags":["AI","Edge","Deployment"]},"name":"Edge AI Inference","type":"tech"}
+{"desc":"Deployment of AI models on edge devices like factory floors and retail stores, shifting compute from data centers.","id":"edge-ai-inference","metadata":{"tags":["AI","Edge","Deployment"]},"name":"Edge AI Inference","type":"tech"}
 {"desc":"Cross-platform framework for building multimodal ML pipelines.","id":"mediapipe","name":"MediaPipe","tags":["edge-ai","vision"],"type":"tech"}
-{"description":"Standardized protocol for tool integration acting like a USB-C port for AI apps, evolving towards enterprise state and tasks.","id":"model-context-protocol","metadata":{"tags":["AI","Integration","Protocol"]},"name":"Model Context Protocol","type":"tech"}
+{"desc":"Standardized protocol for tool integration acting like a USB-C port for AI apps, evolving towards enterprise state and tasks.","id":"model-context-protocol","metadata":{"tags":["AI","Integration","Protocol"]},"name":"Model Context Protocol","type":"tech"}
 {"desc":"Primary language for AI/ML and scripting.","id":"python","name":"Python","tags":["lang","backend"],"type":"tech"}
 {"desc":"Unified AI platform on Google Cloud.","id":"vertex-ai","name":"Google Vertex AI","tags":["cloud","ml-ops"],"type":"tech"}
