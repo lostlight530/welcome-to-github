@@ -250,10 +250,18 @@ class Cortex:
         try:
             orphans = self.get_orphans(limit=10)
             if not orphans: return
+            target_id = "concept_nexus_system"
+            target = self.conn.execute(
+                "SELECT 1 FROM entities WHERE id = ? AND invalid_at IS NULL",
+                (target_id,),
+            ).fetchone()
+            if target is None:
+                self.add_entity(target_id, "concept", "NEXUS System", "Deterministic graph root")
             for orphan in orphans:
                 self.connect_entities(orphan['id'], 'is_capability_of', 'concept_nexus_system', "Auto-sutured ghost node / 自动缝合的幽灵节点", save_to_disk=True)
         except Exception as e:
             print(f"[Cortex Error | 皮质层错误] Orphan suturing failed / 孤立节点缝合失败: {str(e)}")
+            raise
 
     def get_stats(self):
         cursor = self.conn.cursor()

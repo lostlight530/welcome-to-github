@@ -4,9 +4,10 @@ import tempfile
 import unittest
 import urllib.error
 from pathlib import Path
-from unittest.mock import call, patch
+from unittest.mock import Mock, call, patch
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "docs" / "brain"))
+from cortex import Cortex
 from harvester import Harvester
 from evolution import Evolver
 from scholar import Scholar
@@ -84,6 +85,50 @@ class HarvesterContracts(unittest.TestCase):
             self.assertTrue(contract.exists())
             self.assertFalse(incoming.exists())
             self.assertEqual(len(list((inputs / "archive").rglob("incoming.md"))), 1)
+
+    def test_orphan_suturing_creates_its_target_entity(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            cortex = Cortex(root / "cortex.db")
+            try:
+                cortex.add_entity("orphan", "concept", "Orphan", "Isolated")
+
+                cortex.suture_orphans()
+
+                target = cortex.conn.execute(
+                    "SELECT 1 FROM entities WHERE id = ? AND invalid_at IS NULL",
+                    ("concept_nexus_system",),
+                ).fetchone()
+                dangling = cortex.conn.execute(
+                    """
+                    SELECT COUNT(*) FROM relations r
+                    LEFT JOIN entities src ON src.id = r.source AND src.invalid_at IS NULL
+                    LEFT JOIN entities dst ON dst.id = r.target AND dst.invalid_at IS NULL
+                    WHERE r.invalid_at IS NULL AND (src.id IS NULL OR dst.id IS NULL)
+                    """
+                ).fetchone()[0]
+                self_loop = cortex.conn.execute(
+                    """
+                    SELECT COUNT(*) FROM relations
+                    WHERE source = ? AND target = ? AND invalid_at IS NULL
+                    """,
+                    ("concept_nexus_system", "concept_nexus_system"),
+                ).fetchone()[0]
+                self.assertIsNotNone(target)
+                self.assertEqual(dangling, 0)
+                self.assertEqual(self_loop, 0)
+            finally:
+                cortex.conn.close()
+
+    def test_orphan_suturing_propagates_write_failure(self):
+        cortex = Cortex.__new__(Cortex)
+        cortex.get_orphans = lambda limit=10: [{"id": "orphan"}]
+        cortex.conn = Mock()
+        cortex.conn.execute.return_value.fetchone.return_value = (1,)
+
+        with patch.object(cortex, "connect_entities", side_effect=RuntimeError("write failed")):
+            with self.assertRaisesRegex(RuntimeError, "write failed"):
+                cortex.suture_orphans()
 
 if __name__ == "__main__":
     unittest.main()
