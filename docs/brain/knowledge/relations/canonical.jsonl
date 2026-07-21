@@ -52,6 +52,7 @@
 {"desc":"","dst":"file_docs_brain_brain_config_json_prop_whitelist_Redis-Event-Loop","relation":"defines","src":"file_docs_brain_brain_config_json"}
 {"desc":"","dst":"file_docs_brain_brain_config_json_prop_whitelist_Rust-Ownership-Model","relation":"defines","src":"file_docs_brain_brain_config_json"}
 {"desc":"","dst":"file_docs_brain_brain_config_json_prop_whitelist_WebAssembly-Core-Specification","relation":"defines","src":"file_docs_brain_brain_config_json"}
+{"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"file_docs_brain_brain_config_json_prop_ignore_paths"}
 {"desc":"","dst":"file_docs_brain_cortex_py__class_Cortex","relation":"defines","src":"file_docs_brain_cortex_py"}
 {"desc":"","dst":"file_docs_brain_cortex_py__func___init__","relation":"defines","src":"file_docs_brain_cortex_py"}
 {"desc":"","dst":"file_docs_brain_cortex_py__func__init_db","relation":"defines","src":"file_docs_brain_cortex_py"}
@@ -603,6 +604,13 @@
 {"desc":"","dst":"func_test_truncated_tree_is_a_hard_failure","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func__api"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func__archive_stale"}
+{"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func__json"}
+{"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func__normalized"}
+{"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func__selected"}
+{"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func__source"}
+{"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func_activate_memory"}
+{"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func_add_entity"}
+{"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func_validate_profiles"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"mcp"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"mediapipe"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"model-context-protocol"}

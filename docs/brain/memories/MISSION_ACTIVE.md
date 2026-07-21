@@ -2,11 +2,7 @@
 
 ## 建议动作
 
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "_json" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "_normalized" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "_selected" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "_source" "is_capability_of" "concept_nexus_system"`
-- [ ] Executable SOP: `python docs/brain/nexus.py connect "activate_memory" "is_capability_of" "concept_nexus_system"`
+- 当前没有待执行动作.
 
 ## 约束
 
