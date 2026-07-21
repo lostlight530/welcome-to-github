@@ -193,6 +193,8 @@ def _normalize_record(item: dict) -> dict:
         record["dst"] = record.pop("target")
     if "relation" not in record and "rel" in record:
         record["relation"] = record.pop("rel")
+    if "desc" not in record and "description" in record:
+        record["desc"] = record.pop("description")
     if "desc" not in record and "context" in record:
         record["desc"] = record.pop("context")
     return record

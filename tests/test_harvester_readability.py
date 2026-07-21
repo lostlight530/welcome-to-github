@@ -89,6 +89,30 @@ class ReadabilityContracts(unittest.TestCase):
             self.assertEqual(result["entities"], 2)
             self.assertEqual(result["relations"], 1)
 
+    def test_canonicalization_normalizes_description_alias(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            entities = root / "entities"
+            entities.mkdir()
+            (entities / "tech.jsonl").write_text(
+                json.dumps(
+                    {
+                        "id": "model-context-protocol",
+                        "type": "tech",
+                        "name": "Model Context Protocol",
+                        "description": "Tool integration protocol",
+                    }
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+
+            canonicalize_ledger(root)
+
+            record = json.loads((entities / "tech.jsonl").read_text(encoding="utf-8"))
+            self.assertEqual(record["desc"], "Tool integration protocol")
+            self.assertNotIn("description", record)
+
     def test_truncated_tree_is_a_hard_failure(self):
         harvester = Harvester.__new__(Harvester)
         harvester.state = {"repositories": {}}
