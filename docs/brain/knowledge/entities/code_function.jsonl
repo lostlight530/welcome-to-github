@@ -64,6 +64,7 @@
 {"desc":"Python Function","id":"file_docs_brain_reason_py__func__generate_pagerank_top_hubs","name":"_generate_pagerank_top_hubs","type":"code_function"}
 {"desc":"Find nodes that share exact targets (Structural Overlap / Epistemic Depth)","id":"file_docs_brain_reason_py__func__generate_structural_intuitions","name":"_generate_structural_intuitions","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_reason_py__func__query","name":"_query","type":"code_function"}
+{"desc":"Read release metadata from the current versioned Harvester state.","id":"file_docs_brain_reason_py__func__read_harvester_releases","name":"_read_harvester_releases","type":"code_function"}
 {"desc":"Phase VI: Hardcore Quantitative Dashboard Rendering (Zero-Dependency).","id":"file_docs_brain_reason_py__func__render_daily_archives","name":"_render_daily_archives","type":"code_function"}
 {"desc":"Cognitive Loop: Structural Analysis, Self-Reflection & Curiosity","id":"file_docs_brain_reason_py__func_ponder","name":"ponder","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_report_hygiene_core_py__func_assert_period","name":"assert_period","type":"code_function"}
@@ -99,6 +100,7 @@
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_orphan_suturing_creates_its_target_entity","name":"test_orphan_suturing_creates_its_target_entity","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_orphan_suturing_propagates_write_failure","name":"test_orphan_suturing_propagates_write_failure","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_profiles_have_unique_welcome_owner","name":"test_profiles_have_unique_welcome_owner","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_reason_reads_current_harvester_state_schema","name":"test_reason_reads_current_harvester_state_schema","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_structural_array_index_is_not_treated_as_a_version","name":"test_structural_array_index_is_not_treated_as_a_version","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_canonicalization_normalizes_description_alias","name":"test_canonicalization_normalizes_description_alias","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_canonicalization_removes_semantic_duplicates_and_dangling_relations","name":"test_canonicalization_removes_semantic_duplicates_and_dangling_relations","type":"code_function"}

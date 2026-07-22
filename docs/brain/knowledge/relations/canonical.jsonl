@@ -132,6 +132,7 @@
 {"desc":"","dst":"file_docs_brain_reason_py__func__generate_pagerank_top_hubs","relation":"defines","src":"file_docs_brain_reason_py"}
 {"desc":"","dst":"file_docs_brain_reason_py__func__generate_structural_intuitions","relation":"defines","src":"file_docs_brain_reason_py"}
 {"desc":"","dst":"file_docs_brain_reason_py__func__query","relation":"defines","src":"file_docs_brain_reason_py"}
+{"desc":"","dst":"file_docs_brain_reason_py__func__read_harvester_releases","relation":"defines","src":"file_docs_brain_reason_py"}
 {"desc":"","dst":"file_docs_brain_reason_py__func__render_daily_archives","relation":"defines","src":"file_docs_brain_reason_py"}
 {"desc":"","dst":"file_docs_brain_reason_py__func_ponder","relation":"defines","src":"file_docs_brain_reason_py"}
 {"desc":"","dst":"file_docs_brain_report_hygiene_core_py__func_assert_period","relation":"defines","src":"file_docs_brain_report_hygiene_core_py"}
@@ -586,6 +587,7 @@
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_orphan_suturing_creates_its_target_entity","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_orphan_suturing_propagates_write_failure","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_profiles_have_unique_welcome_owner","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_reason_reads_current_harvester_state_schema","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_structural_array_index_is_not_treated_as_a_version","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"func_test_evolver_keeps_input_contract_out_of_monthly_archive","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"func_test_external_links_are_not_selected","relation":"defines","src":"file_tests_test_harvester_py"}
