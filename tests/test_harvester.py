@@ -10,6 +10,7 @@ sys.path.insert(0, str(Path(__file__).parents[1] / "docs" / "brain"))
 from cortex import Cortex
 from harvester import Harvester
 from evolution import Evolver
+from reason import ReasoningEngine
 from scholar import Scholar
 
 
@@ -62,6 +63,28 @@ class HarvesterContracts(unittest.TestCase):
         with patch("evolution.ReasoningEngine", side_effect=RuntimeError("render failed")):
             with self.assertRaisesRegex(RuntimeError, "render failed"):
                 evolver._trigger_render({}, [])
+
+    def test_reason_reads_current_harvester_state_schema(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state_path = Path(tmp) / ".harvester_state.json"
+            state_path.write_text(
+                json.dumps({
+                    "schema_version": 3,
+                    "baseline": "2026-07-11T13:40:00+08:00",
+                    "repositories": {
+                        "owner/repo": {
+                            "last_tag": "v1",
+                            "last_checked_at": "2026-07-22T00:00:00Z",
+                        }
+                    },
+                }),
+                encoding="utf-8",
+            )
+
+            self.assertEqual(
+                ReasoningEngine._read_harvester_releases(state_path),
+                ["- **owner/repo** @ `v1` (Last Updated: 2026-07-22T00:00:00Z)"],
+            )
 
     def test_evolver_propagates_mutator_failure(self):
         evolver = Evolver.__new__(Evolver)

@@ -149,6 +149,31 @@ class ReasoningEngine:
 
         return "\n".join(hub_lines)
 
+    @staticmethod
+    def _read_harvester_releases(state_file):
+        """Read release metadata from the current versioned Harvester state."""
+        import json
+
+        with open(state_file, 'r', encoding='utf-8') as sf:
+            state_data = json.load(sf)
+
+        if not isinstance(state_data, dict):
+            raise ValueError("harvester state must be a JSON object")
+
+        repositories = state_data.get('repositories')
+        if not isinstance(repositories, dict):
+            raise ValueError("harvester state repositories must be a JSON object")
+
+        releases = []
+        for repo, info in repositories.items():
+            if not isinstance(info, dict):
+                raise ValueError(f"harvester repository state must be a JSON object: {repo}")
+            tag = info.get('last_tag')
+            updated_at = info.get('updated_at') or info.get('last_checked_at')
+            if tag:
+                releases.append(f"- **{repo}** @ `{tag}` (Last Updated: {updated_at})")
+        return releases
+
     def _render_daily_archives(self, metrics: dict, isolated_nodes: list):
         """Phase VI: Hardcore Quantitative Dashboard Rendering (Zero-Dependency)."""
         import os
@@ -311,27 +336,15 @@ class ReasoningEngine:
             pagerank_str = f"**Cognitive Hub (PageRank)**: `{pagerank_hub}`" if pagerank_hub else "Cognitive Hub: Pending inference. / 等待推演。"
 
             # Read Harvester State to dynamically render New Releases and Commits
-            import json
             state_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'brain', 'inputs', '.harvester_state.json')
             new_releases_str = "Awaiting native Harvester ingestion cycle. / 等待原生收割机吞噬周期。"
             recent_commits_str = "Awaiting repository sync. / 等待代码库同步。"
 
             if os.path.exists(state_file):
-                try:
-                    with open(state_file, 'r', encoding='utf-8') as sf:
-                        state_data = json.load(sf)
-                        releases = []
-                        for repo, info in state_data.items():
-                            tag = info.get('last_tag')
-                            updated_at = info.get('updated_at')
-                            if tag:
-                                releases.append(f"- **{repo}** @ `{tag}` (Last Updated: {updated_at})")
-
-                        if releases:
-                            new_releases_str = "\n".join(releases)
-                            recent_commits_str = "Radar sync complete. Please refer to individual repository intel reports. / 雷达同步完成。请参考各个仓库的情报报告。"
-                except Exception as e:
-                    print(f"[Reasoning Error | 推理错误] Failed to read harvester state / 读取收割机状态失败: {e}")
+                releases = self._read_harvester_releases(state_file)
+                if releases:
+                    new_releases_str = "\n".join(releases)
+                    recent_commits_str = "Radar sync complete. Please refer to individual repository intel reports. / 雷达同步完成.请参考各个仓库的情报报告."
 
             # Get stats for dynamic pulse injection
             stats = self.cortex.get_stats()
@@ -368,6 +381,7 @@ class ReasoningEngine:
             print(f"[Reasoning | 推理引擎] Engine successfully rendered Quantitative Dashboard via Templates / 成功通过模板渲染量化仪表盘。")
         except Exception as e:
             print(f"[Reasoning Error | 推理错误] Template enforcement failed / 模板执行失败: {str(e)}")
+            raise
 
     def _generate_structural_intuitions(self):
         """Find nodes that share exact targets (Structural Overlap / Epistemic Depth)"""
