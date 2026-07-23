@@ -13,42 +13,68 @@ Write Scope: horizon-cortex only
 Boundary Violation: NO
 
 INPUT_RECORD
-- 读取文件: horizon-cortex/2026-07-22-H1-signal-observe.md, horizon-cortex/2026-07-22-H2-horizon-orient.md
-- 联网搜索主题: "AI Agent", "Model Context Protocol", "MCP", "Agent memory", "Vertex AI", "Open source integration"
-- 观察原因: 继续跟踪 MCP 协议在企业级和开源生态中的普及情况, 以及 AI 智能体内存管理的最新进展, 指导我们的基础设施设计.
+- 读取文件: horizon-cortex/2026-07-22-H2-horizon-orient.md
+- 联网搜索主题: "AI Agent", "MCP", "Coding Agent", "Google Labs", "Gemini / AI Studio", "Google Maps Grounding", "Async execution", "Agent workflow", "Agent reliability", "Open source governance", "Developer tooling"
+- 观察原因: 持续追踪外部技术栈和规范的演进, 特别是关于 AI Agents、MCP 的普及, 以及 Gemini 的新能力, 帮助系统掌握最新前沿技术.
 
 EXTERNAL_SOURCE_RECORDS
-- Title: Anthropic's Model Context Protocol (MCP) achieves widespread ecosystem adoption by mid-2026
-- Publisher: TechNews
-- URL: https://technews.example.com/2026/07/23/mcp-ecosystem-adoption
+- Title: ACP vs MCP: What's the difference for agentic coding? - CircleCI
+- Publisher: CircleCI
+- URL: https://circleci.com/blog/acp-vs-mcp-whats-the-difference-for-agentic-coding/
 - Date Checked: 2026-07-23
-- Source Type: Tech News
+- Source Type: Tech Blog
 - Relevance: High
 - Confidence: High
 
-- Title: Advanced Memory Systems for AI Agents: Beyond Vector Databases
-- Publisher: AI Research Institute
-- URL: https://ai-research.example.org/papers/agent-memory-2026
+- Title: MCP Servers Explained: What They Are and Why Every AI Agent Needs Them | MindStudio
+- Publisher: MindStudio
+- URL: https://www.mindstudio.ai/blog/mcp-servers-explained-ai-agents
 - Date Checked: 2026-07-23
-- Source Type: Research Paper
+- Source Type: Tech Blog
 - Relevance: High
 - Confidence: Medium
 
+- Title: Bringing the real world to your AI application using Firebase AI Logic
+- Publisher: Firebase Blog
+- URL: https://firebase.blog/posts/2026/05/ai-logic-maps-grounding/
+- Date Checked: 2026-07-23
+- Source Type: Official Blog
+- Relevance: Medium
+- Confidence: High
+
+- Title: OPAQUE 3.0 Brings Verifiable Trust to AI Agents with Governance and Confidential MCP
+- Publisher: OPAQUE
+- URL: https://www.opaque.co/resources/articles/opaque-extends-the-agent-governance-toolkit-with-verifiable-identity-and-first-ever-verifiably-governed-and-secure-mcp
+- Date Checked: 2026-07-23
+- Source Type: Press Release
+- Relevance: Medium
+- Confidence: Medium
+
 RAW_SIGNAL_LOG
-- Signal A: Model Context Protocol (MCP) 已经得到了数百个开源项目和企业服务(如 GitHub, Slack, Notion) 的原生支持, 形成了一个庞大且标准化的 "Context Registry".
-- Source: TechNews - MCP Ecosystem Adoption
-- Why It May Matter: MCP 已成为事实上的行业标准. 我们不应再投入资源构建专有的数据连接器, 而应全面转向开发和集成 MCP 服务器.
+- Signal: ACP (Agent Client Protocol) 和 MCP (Model Context Protocol) 正在形成互补. ACP 连接代码编辑器与 AI 编码代理, 而 MCP 连接代理与工具及数据. 开发者可以结合两者使用.
+- Source: CircleCI - ACP vs MCP
+- Why It May Matter: 这表明 AI Coding Agent 生态正在从零散的定制集成走向标准化协议栈. 了解并遵循这套协议将极大提升我们在各种编辑器环境中的适应力.
 - Uncertainty: Low
 
-- Signal B: AI Agent 的记忆系统正在从简单的向量数据库检索(RAG)转向基于图谱(Graph-based)和事件流(Event-stream)的复合记忆架构, 能够更好地处理时间关联性和实体关系.
-- Source: AI Research Institute - Advanced Memory Systems
-- Why It May Matter: 边缘 AI 智能体要在长期运行中保持可靠性, 必须升级记忆机制. 这种架构变化会直接影响我们下一步的技术选型.
+- Signal: MCP 正在快速普及, 众多 MCP 服务器已在公共注册表中可用, 使得 AI Agent 能够通过标准化接口访问文件系统、数据库和 API.
+- Source: MindStudio, Fastio
+- Why It May Matter: 我们应该优先采用标准化的 MCP 服务器来扩展 Agent 能力, 放弃一次性定制开发, 以拥抱生态红利.
 - Uncertainty: Low
+
+- Signal: Google 推出 Firebase AI Logic SDK 的 Grounding with Google Maps 功能, 帮助开发者利用实时地理空间数据减少模型在地理位置上的幻觉.
+- Source: Firebase Blog
+- Why It May Matter: 空间感知应用通过 Maps Grounding 获得了更高的响应准确率. 这对涉及 LBS (Location Based Services) 的 Agent 应用是个强力工具.
+- Uncertainty: Low
+
+- Signal: OPAQUE 发布 Agent Governance Toolkit (AGT) 和 Confidential MCP, 尝试在安全和验证硬件内运行 MCP 并强制执行治理策略.
+- Source: OPAQUE
+- Why It May Matter: 这是 MCP 安全性与企业合规需求结合的早期信号. 对于零信任架构下的 AI Agent 部署, 这种机制将非常关键.
+- Uncertainty: Medium
 
 NEXT_HANDOFF
-- 建议 H2 Orient 任务探讨全面采用 MCP 标准后, 对现有架构的重构计划.
-- 分析复合记忆架构(Graph + Event)是否适合轻量级的 Edge AI 场景, 还是主要用于云端重型 Agent.
-- 信号 A 确认了之前的趋势, 非常关键. 信号 B 属于技术深水区, 需要 H2 仔细定向.
+- 建议 H2 Orient 重点解释 ACP 和 MCP 协同使用的可行性与技术路径.
+- 解释 OPAQUE 提出的 Confidential MCP 机制与 OWASP MCP Top 10 安全策略的关系.
+- 地理位置 Grounding (Firebase AI Logic SDK) 的信号可能是长期的业务技术选型参考, 暂时不需要立即行动, 可视作储备知识.
 
 BOUNDARY_CHECK
 - 确认没有读取宿主仓库机制: 已确认
