@@ -1,5 +1,4 @@
 CORTEX_RUN_HEADER
-
 Cortex: horizon-cortex
 Host Repository: welcome-to-github
 Task ID: H3
@@ -15,28 +14,25 @@ Boundary Violation: NO
 
 INPUT_RECORD
 - Run Date: 2026-07-19
-- Task: Weekly signal synthesis and position decision.
+- Task: Weekly signal synthesis and position decision for W29.
 - H1/H2 Input Files: 2026-07-13 to 2026-07-19
 
 WEEKLY_SIGNAL_SYNTHESIS
-- Ecosystem maturation around Agentic architectures (Microsoft Agent Framework 1.0, Claude Sonnet 5). (围绕智能体架构的生态系统成熟 (Microsoft Agent Framework 1.0, Claude Sonnet 5))
-- Enhanced interoperability protocols (MCP integrations in MAF and Claude Code). (增强的互操作性协议 (MAF 和 Claude Code 中的 MCP 集成))
-- Edge/Local compute optimization (MindSpore FPGA/Ascend, Semantic Kernel ONNX in .NET). (边缘/本地计算优化 (MindSpore FPGA/Ascend, .NET 中的 Semantic Kernel ONNX))
-- Data/Infrastructure consolidation (Google Vector Search 2.0 unification). (数据/基础架构整合 (Google Vector Search 2.0 统一))
+W29 处于行业动态的密集爆发期, 尤其是安全性和可靠性成为核心议题. OWASP 针对 MCP 的十大安全风险以及 "Agent Reliability Engineering (ARE)" 的概念表明, 行业正在快速成熟, 从 "Make it work" 转向 "Make it secure and reliable".
 
 DECISION_SET
-1. Update internal knowledge models to reflect Microsoft Agent Framework 1.0 as the successor to Semantic Kernel Python. (更新内部知识模型，以反映 Microsoft Agent Framework 1.0 作为 Semantic Kernel Python 的继任者)
-2. Prioritize MCP (Model Context Protocol) as the standard for tool interoperability in all horizon-cortex design drafts. (在所有 horizon-cortex 设计草案中，优先将 MCP (模型上下文协议) 作为工具互操作性的标准)
-3. Incorporate Ascend/MindSpore hardware-aware optimizations into future Edge AI architecture discussions. (将感知硬件的 Ascend/MindSpore 优化纳入未来的边缘 AI 架构讨论)
+1. 引入安全前置: 决定在设计任何新的 MCP Server 前, 必须进行 OWASP 风险筛查.
+2. 建立 ARE 指标集: 同意将 Agent Reliability Score 作为评估智能体能否上线的基准之一.
+3. 聚焦 "Context Engineering": 将上下文管理上升为独立的技术模块, 而不仅是 Prompt 的一部分.
 
 DO_NOT_PURSUME
-- Do not initiate migration of host repository tools to new frameworks; maintain passive observation. (不要启动主机存储库工具到新框架的迁移；保持被动观察)
+- 今天不做宿主仓库代码库的扫描和安全审计.
+- 不决策具体的安全自动化扫描工具.
 
 HANDOFF_TO_H4
-- Draft updates for internal horizon-cortex architecture guidelines reflecting the shift to multi-agent frameworks and MCP standard. (起草内部 horizon-cortex 架构指南的更新，反映向多智能体框架和 MCP 标准的转变)
+H4 需要生成一份包含 ARE 原则和 MCP 安全基准的内部指导说明文件(存放在 horizon-cortex 内), 作为后续开发的理论基础. 严禁修改外部代码.
 
 BOUNDARY_CHECK
-Confirmed no read of host repository.
-Confirmed no read of GitHub Actions.
-Confirmed write restricted to horizon-cortex.
-Confirmed no host repo modifications proposed in HANDOFF.
+确认没有读取宿主仓库机制: 已确认
+确认没有读取 GitHub Actions: 已确认
+确认没有写入 horizon-cortex 之外的文件: 已确认
