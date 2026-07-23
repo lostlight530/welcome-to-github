@@ -8,6 +8,7 @@ sys.path.insert(0, str(Path(__file__).parents[1] / "docs" / "brain"))
 from document_hygiene import (
     canonicalize_ledger,
     maintain_jsonl,
+    prune_generated_paths,
     project_current_snapshots,
     render_snapshot,
     validate_owned_punctuation,
@@ -58,6 +59,11 @@ class ReadabilityContracts(unittest.TestCase):
             self.assertEqual(first, {"documents": 1, "repositories": 1, "relations": 1})
             self.assertEqual(second, first)
             self.assertEqual(after, before)
+            canonicalize_ledger(knowledge)
+            project_current_snapshots(inputs, knowledge)
+            clean = canonicalize_ledger(knowledge)
+            self.assertEqual(clean["duplicate_relations"], 0)
+
             document = json.loads((knowledge / "entities" / "external_document.jsonl").read_text(encoding="utf-8"))
             self.assertEqual(document["id"], "external_doc_owner_repo_readme_md")
 
@@ -121,6 +127,67 @@ class ReadabilityContracts(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "truncated"):
             harvester._source({"repo": "owner/repo", "documents": [], "ignore_patterns": [], "layer": "test", "primary_owner": "welcome"})
 
+
+    def test_pruning_excluded_sources_rebuilds_only_active_ledger(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            entities = root / "entities"
+            relations = root / "relations"
+            archive = root / "archive" / "sealed.jsonl"
+            entities.mkdir()
+            relations.mkdir()
+            archive.parent.mkdir()
+            archive.write_bytes(b'{"id":"sealed"}\n')
+            sealed = archive.read_bytes()
+            records = [
+                {
+                    "id": "file_protected_tool_py",
+                    "type": "code_file",
+                    "name": "tool.py",
+                    "desc": "Source file at: protected/tool.py",
+                },
+                {
+                    "id": "file_protected_tool_py__func_run",
+                    "type": "code_function",
+                    "name": "run",
+                    "desc": "Python Function",
+                },
+                {"id": "safe", "type": "concept", "name": "Safe", "desc": ""},
+                {"id": "shared", "type": "concept", "name": "Shared", "desc": ""},
+            ]
+            (entities / "items.jsonl").write_text(
+                "".join(json.dumps(item) + "\n" for item in records),
+                encoding="utf-8",
+            )
+            relation_records = [
+                {
+                    "src": "file_protected_tool_py",
+                    "relation": "defines",
+                    "dst": "file_protected_tool_py__func_run",
+                },
+                {
+                    "src": "file_protected_tool_py",
+                    "relation": "links",
+                    "dst": "shared",
+                },
+                {"src": "safe", "relation": "links", "dst": "shared"},
+            ]
+            (relations / "items.jsonl").write_text(
+                "".join(json.dumps(item) + "\n" for item in relation_records),
+                encoding="utf-8",
+            )
+
+            result = prune_generated_paths(root, ("protected",))
+            active_ids = {
+                json.loads(line)["id"]
+                for path in (root / "entities").glob("*.jsonl")
+                for line in path.read_text(encoding="utf-8").splitlines()
+            }
+
+            self.assertEqual(result["removed_entities"], 2)
+            self.assertEqual(result["removed_relations"], 2)
+            self.assertEqual(active_ids, {"safe", "shared"})
+            self.assertEqual(archive.read_bytes(), sealed)
 
 if __name__ == "__main__":
     unittest.main()
