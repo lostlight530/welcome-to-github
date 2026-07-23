@@ -11,33 +11,90 @@ REQUIRED = (
     "METHOD.md",
     "CASES.md",
     "NOTES.md",
-    "records/2026-07.md",
     "templates/daily.md",
     "templates/weekly.md",
     "templates/monthly.md",
     "tools/check.py",
 )
-FORBIDDEN_SUFFIXES = {".db", ".jsonl", ".pyc", ".tmp"}
+FORBIDDEN_SUFFIXES = {
+    ".db",
+    ".jsonl",
+    ".lock",
+    ".pyc",
+    ".sqlite",
+    ".sqlite3",
+    ".tmp",
+}
+FORBIDDEN_DIRS = {"__pycache__", ".cache", "cache"}
+PUBLIC_FORBIDDEN = (
+    "完整任务" + " Prompt",
+    "选题" + "权重",
+    "私人" + " SOP",
+    "内部" + "推理",
+    "用户" + "信息",
+)
+DAILY_HEADINGS = (
+    "## 记录信息",
+    "## 研究摘要",
+    "## 研究问题",
+    "## 可证伪假设",
+    "## 历史背景",
+    "## 证据矩阵",
+    "## 控制条件",
+    "## 实验设计",
+    "## 原始观测",
+    "## 试验比较",
+    "## 历史比较",
+    "## 指标结果",
+    "## 反例检查",
+    "## 暂时结论",
+    "## 历史关系",
+    "## 复验条件",
+    "## 验证结果",
+)
 TEMPLATE_HEADINGS = {
-    "templates/daily.md": ("## 研究问题", "## 证据", "## 反例", "## 复验条件", "## 指标"),
+    "templates/daily.md": DAILY_HEADINGS,
     "templates/weekly.md": ("## 覆盖区间", "## 重复信号", "## 冲突与漂移", "## 状态决定"),
     "templates/monthly.md": ("## 证据覆盖", "## 已复验发现", "## 失效记录", "## 有效速度"),
 }
+LINK_PATTERN = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
+DATE_FILE_PATTERN = re.compile(r"^(\d{4}-\d{2}-\d{2})\.md$")
+RECORD_ID_PATTERN = re.compile(r"^- 记录 ID:\s*(\S+)\s*$", re.MULTILINE)
+
+
+def validate_local_links(path: Path, text: str, errors: list[str]) -> None:
+    for target in LINK_PATTERN.findall(text):
+        target = target.split("#", 1)[0]
+        if not target or target.startswith(("https://", "http://", "#")):
+            continue
+        resolved = (path.parent / target).resolve()
+        try:
+            resolved.relative_to(ROOT)
+        except ValueError:
+            errors.append(f"link escapes parallax: {path.relative_to(ROOT).as_posix()} -> {target}")
+            continue
+        if not resolved.exists():
+            errors.append(f"broken local link: {path.relative_to(ROOT).as_posix()} -> {target}")
 
 
 def validate() -> list[str]:
     errors: list[str] = []
     files = sorted(path for path in ROOT.rglob("*") if path.is_file())
+    record_ids: dict[str, str] = {}
 
     for relative in REQUIRED:
         if not (ROOT / relative).is_file():
             errors.append(f"missing required file: {relative}")
 
+    monthly_files = sorted((ROOT / "records").glob("????-??.md"))
+    if not monthly_files:
+        errors.append("missing monthly record")
+
     for path in files:
         relative = path.relative_to(ROOT).as_posix()
         if path.suffix.lower() in FORBIDDEN_SUFFIXES:
             errors.append(f"forbidden artifact: {relative}")
-        if "__pycache__" in path.parts:
+        if any(part.lower() in FORBIDDEN_DIRS for part in path.parts):
             errors.append(f"forbidden cache: {relative}")
         try:
             text = path.read_text(encoding="utf-8")
@@ -48,11 +105,35 @@ def validate() -> list[str]:
             errors.append(f"empty file: {relative}")
         if chr(0x3002) in text:
             errors.append(f"forbidden punctuation: {relative}")
-        local_scheme = "file:" + "//"
-        if local_scheme in text.lower():
-            errors.append(f"local link: {relative}")
+        if "file:" + "//" in text.lower():
+            errors.append(f"local scheme: {relative}")
         if re.search(r"\bv\d+(?:\.\d+)*\b", text, re.IGNORECASE):
             errors.append(f"version label: {relative}")
+        for phrase in PUBLIC_FORBIDDEN:
+            if phrase in text:
+                errors.append(f"forbidden public phrase in {relative}: {phrase}")
+        validate_local_links(path, text, errors)
+
+        date_match = DATE_FILE_PATTERN.match(path.name)
+        if path.parent.parent.name == "records" and date_match:
+            expected_month = date_match.group(1)[:7]
+            if path.parent.name != expected_month:
+                errors.append(f"daily record in wrong month: {relative}")
+            if f"- 上海日期: {date_match.group(1)}" not in text:
+                errors.append(f"daily date mismatch: {relative}")
+            for heading in DAILY_HEADINGS:
+                if heading not in text:
+                    errors.append(f"missing daily heading in {relative}: {heading}")
+            ids = RECORD_ID_PATTERN.findall(text)
+            if len(ids) != 1:
+                errors.append(f"daily record ID count is {len(ids)}: {relative}")
+            elif ids[0] in record_ids:
+                errors.append(f"duplicate record ID {ids[0]}: {record_ids[ids[0]]}, {relative}")
+            else:
+                record_ids[ids[0]] = relative
+            monthly = ROOT / "records" / f"{expected_month}.md"
+            if monthly.is_file() and path.name not in monthly.read_text(encoding="utf-8"):
+                errors.append(f"daily record missing from monthly index: {relative}")
 
     for relative, headings in TEMPLATE_HEADINGS.items():
         path = ROOT / relative
@@ -62,13 +143,6 @@ def validate() -> list[str]:
         for heading in headings:
             if heading not in text:
                 errors.append(f"missing heading in {relative}: {heading}")
-
-    record = ROOT / "records/2026-07.md"
-    if record.is_file():
-        text = record.read_text(encoding="utf-8")
-        for heading in ("### 研究问题", "### 证据", "### 原始观测", "### 反例", "### 暂时结论", "### 复验条件"):
-            if heading not in text:
-                errors.append(f"missing record heading: {heading}")
 
     return errors
 
@@ -80,7 +154,8 @@ def main() -> int:
             print(f"ERROR {error}")
         return 1
     count = sum(1 for path in ROOT.rglob("*") if path.is_file())
-    print(f"OK parallax files={count}")
+    daily = sum(1 for path in (ROOT / "records").glob("????-??/????-??-??.md"))
+    print(f"OK parallax files={count} daily_records={daily}")
     return 0
 
 
