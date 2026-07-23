@@ -43,10 +43,14 @@ jobs:
         run: python docs/brain/nexus.py project
       - name: Canonicalize Active Ledgers
         run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; print(canonicalize_ledger('docs/brain/knowledge'))"
+      - name: Remove Protected Sources from Active Graph
+        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import prune_generated_paths; print(prune_generated_paths('docs/brain/knowledge', ('horizon-cortex', 'parallax')))"
       - name: Rebuild Memory
         run: python docs/brain/nexus.py rebuild
       - name: Ingest Self-Codebase
         run: python docs/brain/nexus.py ingest
+      - name: Re-prune Protected Sources
+        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import prune_generated_paths; print(prune_generated_paths('docs/brain/knowledge', ('horizon-cortex', 'parallax')))"
       - name: Validate Canonical Graph
         run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; repaired=canonicalize_ledger('docs/brain/knowledge'); clean=canonicalize_ledger('docs/brain/knowledge'); print(repaired); print(clean); assert clean['duplicate_entities']==0 and clean['duplicate_relations']==0 and clean['dangling_relations']==0"
       - name: Rebuild Validated Memory
@@ -58,17 +62,57 @@ jobs:
       - name: Render Human-Readable Reports
         run: python docs/brain/report_hygiene.py welcome docs/brain/memories
       - name: Validate Post-Evolution Graph
-        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; post=canonicalize_ledger('docs/brain/knowledge'); print(post); assert post['duplicate_entities']==0 and post['duplicate_relations']==0 and post['dangling_relations']==0"
+        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; repaired=canonicalize_ledger('docs/brain/knowledge'); clean=canonicalize_ledger('docs/brain/knowledge'); print(repaired); print(clean); assert clean['duplicate_entities']==0 and clean['duplicate_relations']==0 and clean['dangling_relations']==0"
+      - name: Rebuild Post-Evolution Memory
+        run: python docs/brain/nexus.py rebuild
       - name: Final Verification
         run: python -m unittest discover -s tests -p 'test*.py'
       - name: Sync World-Line
+        if: github.ref == 'refs/heads/main'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase --autostash origin "${{ github.ref_name }}"
+          git fetch origin main
+          core_changes="$(git diff --name-only "$GITHUB_SHA..origin/main" | grep -Ev '^docs/brain/(memories|inputs|knowledge)/' || true)"
+          if [ -n "$core_changes" ]; then
+            echo "Core files changed on main while this run was active:"
+            echo "$core_changes"
+            exit 1
+          fi
+          git pull --rebase --autostash origin main
+      - name: Verify Rebased World-Line
+        if: github.ref == 'refs/heads/main'
+        run: |
+          python -c "from pathlib import Path; names=('nexus.py','harvester.py','document_hygiene.py','cortex.py','evolution.py','scholar.py','reason.py','factory.py','report_hygiene.py','report_hygiene_core.py'); files=[Path('docs/brain')/name for name in names] + sorted(Path('tests').glob('*.py')); [compile(path.read_bytes(), str(path), 'exec') for path in files]; print(f'compiled {len(files)} lifecycle Python files')"
+          python -m unittest discover -s tests -p 'test*.py'
+          python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; repaired=canonicalize_ledger('docs/brain/knowledge'); clean=canonicalize_ledger('docs/brain/knowledge'); print(repaired); print(clean); assert clean['duplicate_entities']==0 and clean['duplicate_relations']==0 and clean['dangling_relations']==0"
+          python - <<'PY'
+          import subprocess
+
+          allowed = (
+              "docs/brain/memories/",
+              "docs/brain/inputs/",
+              "docs/brain/knowledge/",
+          )
+          commands = (
+              ("git", "diff", "--name-only"),
+              ("git", "ls-files", "--others", "--exclude-standard"),
+          )
+          changed = {
+              path
+              for command in commands
+              for path in subprocess.check_output(command, text=True).splitlines()
+              if path
+          }
+          unexpected = sorted(path for path in changed if not path.startswith(allowed))
+          if unexpected:
+              raise SystemExit(f"unexpected lifecycle paths: {unexpected}")
+          PY
+          git diff --check
       - name: Commit Cognitive Changes
+        if: github.ref == 'refs/heads/main'
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "lifecycle: verified cognitive update [skip ci]"
-          branch: ${{ github.ref_name }}
+          branch: main
           file_pattern: "docs/brain/memories/** docs/brain/inputs/** docs/brain/knowledge/**"

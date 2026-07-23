@@ -75,9 +75,11 @@
 {"desc":"","dst":"file_docs_brain_document_hygiene_py__func_atomic_write","relation":"defines","src":"file_docs_brain_document_hygiene_py"}
 {"desc":"","dst":"file_docs_brain_document_hygiene_py__func_canonicalize_ledger","relation":"defines","src":"file_docs_brain_document_hygiene_py"}
 {"desc":"","dst":"file_docs_brain_document_hygiene_py__func_headings","relation":"defines","src":"file_docs_brain_document_hygiene_py"}
+{"desc":"","dst":"file_docs_brain_document_hygiene_py__func_is_excluded","relation":"defines","src":"file_docs_brain_document_hygiene_py"}
 {"desc":"","dst":"file_docs_brain_document_hygiene_py__func_ledger_hash","relation":"defines","src":"file_docs_brain_document_hygiene_py"}
 {"desc":"","dst":"file_docs_brain_document_hygiene_py__func_maintain_jsonl","relation":"defines","src":"file_docs_brain_document_hygiene_py"}
 {"desc":"","dst":"file_docs_brain_document_hygiene_py__func_project_current_snapshots","relation":"defines","src":"file_docs_brain_document_hygiene_py"}
+{"desc":"","dst":"file_docs_brain_document_hygiene_py__func_prune_generated_paths","relation":"defines","src":"file_docs_brain_document_hygiene_py"}
 {"desc":"","dst":"file_docs_brain_document_hygiene_py__func_render_snapshot","relation":"defines","src":"file_docs_brain_document_hygiene_py"}
 {"desc":"","dst":"file_docs_brain_document_hygiene_py__func_validate_owned_punctuation","relation":"defines","src":"file_docs_brain_document_hygiene_py"}
 {"desc":"","dst":"file_docs_brain_document_hygiene_py__func_verify_hash_chain","relation":"defines","src":"file_docs_brain_document_hygiene_py"}
@@ -108,11 +110,14 @@
 {"desc":"","dst":"file_docs_brain_harvester_py__func___init__","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func__api","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func__archive_stale","relation":"defines","src":"file_docs_brain_harvester_py"}
+{"desc":"","dst":"file_docs_brain_harvester_py__func__blob_text","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func__json","relation":"defines","src":"file_docs_brain_harvester_py"}
+{"desc":"","dst":"file_docs_brain_harvester_py__func__move_to_archive","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func__normalized","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func__prune_cache","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func__selected","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func__source","relation":"defines","src":"file_docs_brain_harvester_py"}
+{"desc":"","dst":"file_docs_brain_harvester_py__func__validated_state","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func_fetch_github_data","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func_validate_profiles","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"file_docs_brain_mcp_demo_py"}
@@ -159,6 +164,8 @@
 {"desc":"","dst":"file_docs_brain_scholar_py__func__analyze_python_ast","relation":"defines","src":"file_docs_brain_scholar_py"}
 {"desc":"","dst":"file_docs_brain_scholar_py__func__digest_file","relation":"defines","src":"file_docs_brain_scholar_py"}
 {"desc":"","dst":"file_docs_brain_scholar_py__func__extract_props","relation":"defines","src":"file_docs_brain_scholar_py"}
+{"desc":"","dst":"file_docs_brain_scholar_py__func__file_id","relation":"defines","src":"file_docs_brain_scholar_py"}
+{"desc":"","dst":"file_docs_brain_scholar_py__func__is_supported_path","relation":"defines","src":"file_docs_brain_scholar_py"}
 {"desc":"","dst":"file_docs_brain_scholar_py__func__load_config","relation":"defines","src":"file_docs_brain_scholar_py"}
 {"desc":"","dst":"file_docs_brain_scholar_py__func__strip_version","relation":"defines","src":"file_docs_brain_scholar_py"}
 {"desc":"","dst":"file_docs_brain_scholar_py__func_ingest_repository","relation":"defines","src":"file_docs_brain_scholar_py"}
@@ -573,11 +580,14 @@
 {"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_9_watch_releases","relation":"defines","src":"file_docs_brain_source_profiles_json"}
 {"desc":"","dst":"file_docs_brain_test_mcp_py__func_test_mcp_server","relation":"defines","src":"file_docs_brain_test_mcp_py"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"file_format_py"}
-{"desc":"","dst":"file_parallax_tools_check_py__func_main","relation":"defines","src":"file_parallax_tools_check_py"}
-{"desc":"","dst":"file_parallax_tools_check_py__func_validate","relation":"defines","src":"file_parallax_tools_check_py"}
 {"desc":"","dst":"class_HarvesterContracts","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__class_HarvesterContracts","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__class_RecordingCortex","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func___init__","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_add_entity","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_connect_entities","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_api_retries_transient_network_failures_with_backoff","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_archive_collision_never_overwrites_different_content","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_evolver_keeps_input_contract_out_of_monthly_archive","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_evolver_propagates_cycle_failure","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_evolver_propagates_mutator_failure","relation":"defines","src":"file_tests_test_harvester_py"}
@@ -586,8 +596,15 @@
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_noise_normalization","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_orphan_suturing_creates_its_target_entity","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_orphan_suturing_propagates_write_failure","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_previous_diff_baseline_comes_from_recorded_git_blob","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_profiles_have_unique_welcome_owner","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_reason_reads_current_harvester_state_schema","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_rebuild_does_not_open_database_before_replacing_it","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_removed_source_is_archived_and_removed_from_state","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_scholar_excludes_parallel_systems_and_unsupported_files","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_scholar_file_ids_are_platform_independent","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_scholar_links_only_local_inheritance_targets","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_state_rejects_non_mapping_repository_records","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_structural_array_index_is_not_treated_as_a_version","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"func_test_evolver_keeps_input_contract_out_of_monthly_archive","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"func_test_external_links_are_not_selected","relation":"defines","src":"file_tests_test_harvester_py"}
@@ -599,6 +616,7 @@
 {"desc":"","dst":"file_tests_test_harvester_readability_py__func_test_canonicalization_removes_semantic_duplicates_and_dangling_relations","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"file_tests_test_harvester_readability_py__func_test_current_snapshot_projection_is_stable_and_idempotent","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"file_tests_test_harvester_readability_py__func_test_jsonl_maintenance_recurses_and_deduplicates","relation":"defines","src":"file_tests_test_harvester_readability_py"}
+{"desc":"","dst":"file_tests_test_harvester_readability_py__func_test_pruning_excluded_sources_rebuilds_only_active_ledger","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"file_tests_test_harvester_readability_py__func_test_snapshot_is_human_readable_and_traceable","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"file_tests_test_harvester_readability_py__func_test_truncated_tree_is_a_hard_failure","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"func_test_jsonl_maintenance_recurses_and_deduplicates","relation":"defines","src":"file_tests_test_harvester_readability_py"}

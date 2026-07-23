@@ -22,6 +22,8 @@ BRAIN_ROOT = Path(__file__).parent
 DB_PATH = BRAIN_ROOT / "cortex.db"
 
 def main() -> None:
+    cortex = None
+    factory = None
     try:
         parser = argparse.ArgumentParser(description="NEXUS CORTEX: The Sovereign Intelligence")
         subparsers = parser.add_subparsers(dest='command', help='Available commands')
@@ -62,7 +64,6 @@ def main() -> None:
             sys.exit(1)
 
         cortex = Cortex(DB_PATH)
-        factory = KnowledgeFactory(str(BRAIN_ROOT))
 
         if args.command == 'evolve':
             from evolution import Evolver
@@ -92,6 +93,8 @@ def main() -> None:
                 print(f"  - {insight}")
 
         elif args.command == 'rebuild':
+            cortex.conn.close()
+            cortex = None
             if DB_PATH.exists():
                 os.remove(DB_PATH)
             cortex = Cortex(DB_PATH)
@@ -126,16 +129,20 @@ def main() -> None:
             print("Database rebuilt from schemas and JSONL fragments. / 数据库已从 Schema 和 JSONL 碎片重建。")
 
         elif args.command == 'clean':
+            cortex.conn.close()
+            cortex = None
             # Safe cleanup, protect `.harvester_state.json`
             if DB_PATH.exists(): os.remove(DB_PATH)
             if DB_PATH.with_suffix('.db-journal').exists(): os.remove(DB_PATH.with_suffix('.db-journal'))
             print("Temporary caches cleared. / 临时缓存已清理。")
 
         elif args.command == 'add':
+            factory = KnowledgeFactory(str(BRAIN_ROOT))
             data = {"id": args.id, "type": args.type, "name": args.name, "desc": args.desc, "updated_at": datetime.datetime.now().isoformat(), "tags": []}
             factory.add_entity(args.category, data)
 
         elif args.command == 'connect':
+            factory = KnowledgeFactory(str(BRAIN_ROOT))
             data = {"src": args.src, "rel": args.rel, "dst": args.dst, "context": args.desc, "created_at": datetime.datetime.now().isoformat()}
             factory.add_relation(data)
 
@@ -155,6 +162,11 @@ def main() -> None:
         traceback.print_exc()
         print(f"[Nexus Error | Nexus 错误] Execution failed / 执行失败: {e}")
         sys.exit(1)
+    finally:
+        if cortex is not None:
+            cortex.conn.close()
+        if factory is not None:
+            factory.cortex.conn.close()
 
 if __name__ == "__main__":
     main()

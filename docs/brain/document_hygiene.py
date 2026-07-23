@@ -263,6 +263,130 @@ def canonicalize_ledger(root: Path, hash_chain: bool = False) -> dict:
         "invalid": invalid,
     }
 
+def prune_generated_paths(
+    root: Path,
+    excluded_roots,
+    hash_chain: bool = False,
+) -> dict:
+    root = Path(root)
+    excluded = {
+        str(value).replace("\\", "/").strip("./").lower()
+        for value in excluded_roots
+        if str(value).strip("./")
+    }
+
+    def is_excluded(value) -> bool:
+        normalized = str(value or "").replace("\\", "/").strip("./").lower()
+        return any(
+            normalized == prefix or normalized.startswith(prefix + "/")
+            for prefix in excluded
+        )
+
+    files = _active_jsonl_files(root) if root.exists() else []
+    entities = {}
+    relations = {}
+    for path in files:
+        for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            if not line.strip():
+                continue
+            try:
+                raw = json.loads(line)
+            except json.JSONDecodeError as exc:
+                raise ValueError(f"{path}:{number}: invalid JSONL: {exc}") from exc
+            item = _normalize_record(raw)
+            if item.get("id"):
+                entity_id = str(item["id"])
+                if raw.get("invalid_at"):
+                    entities.pop(entity_id, None)
+                else:
+                    entities[entity_id] = item
+            elif item.get("src") and item.get("relation") and item.get("dst"):
+                key = (str(item["src"]), str(item["relation"]), str(item["dst"]))
+                if raw.get("invalid_at"):
+                    relations.pop(key, None)
+                else:
+                    relations[key] = item
+
+    file_prefixes = {
+        "file_" + prefix.replace("/", "_").replace(".", "_")
+        for prefix in excluded
+    }
+    removed = set()
+    for entity_id, item in entities.items():
+        desc = str(item.get("desc", ""))
+        described_path = (
+            desc.split("Source file at:", 1)[1].strip()
+            if "Source file at:" in desc
+            else ""
+        )
+        if (
+            is_excluded(described_path)
+            or is_excluded(item.get("source_path"))
+            or any(entity_id.lower().startswith(prefix) for prefix in file_prefixes)
+        ):
+            removed.add(entity_id)
+
+    derivation_relations = {"defines", "documents"}
+    while True:
+        added = set()
+        for entity_id in set(entities) - removed:
+            incoming = [
+                (source, relation)
+                for source, relation, target in relations
+                if target == entity_id
+            ]
+            if (
+                incoming
+                and all(source in removed for source, _ in incoming)
+                and any(relation in derivation_relations for _, relation in incoming)
+            ):
+                added.add(entity_id)
+        if not added:
+            break
+        removed.update(added)
+
+    kept_entities = {
+        entity_id: item
+        for entity_id, item in entities.items()
+        if entity_id not in removed
+    }
+    kept_relations = {
+        key: item
+        for key, item in relations.items()
+        if key[0] not in removed and key[2] not in removed
+    }
+    for path in files:
+        path.unlink()
+    for entity_type in sorted(
+        {str(item.get("type", "concept")) for item in kept_entities.values()}
+    ):
+        records = sorted(
+            (
+                item
+                for item in kept_entities.values()
+                if str(item.get("type", "concept")) == entity_type
+            ),
+            key=lambda item: str(item["id"]),
+        )
+        _write_records(
+            root / "entities" / f"{_slug(entity_type) or 'concept'}.jsonl",
+            records,
+            root,
+            hash_chain,
+        )
+    _write_records(
+        root / "relations" / "canonical.jsonl",
+        [kept_relations[key] for key in sorted(kept_relations)],
+        root,
+        hash_chain,
+    )
+    return {
+        "removed_entities": len(entities) - len(kept_entities),
+        "removed_relations": len(relations) - len(kept_relations),
+        "entities": len(kept_entities),
+        "relations": len(kept_relations),
+    }
+
 
 def _snapshot_metadata(path: Path) -> dict | None:
     text = path.read_text(encoding="utf-8")
@@ -330,9 +454,42 @@ def project_current_snapshots(inputs: Path, knowledge: Path, hash_chain: bool = 
         knowledge,
         hash_chain,
     )
+    relation_root = knowledge / "relations"
+    relation_files = (
+        _active_jsonl_files(relation_root) if relation_root.exists() else []
+    )
+    preserved_relations = {}
+    for path in relation_files:
+        for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            if not line.strip():
+                continue
+            try:
+                raw = json.loads(line)
+            except json.JSONDecodeError as exc:
+                raise ValueError(f"{path}:{number}: invalid JSONL: {exc}") from exc
+            item = _normalize_record(raw)
+            if not (
+                item.get("src") and item.get("relation") and item.get("dst")
+            ):
+                continue
+            key = (str(item["src"]), str(item["relation"]), str(item["dst"]))
+            scoped = (
+                key[1] == "has_snapshot"
+                and key[0].startswith("external_repo_")
+                and key[2].startswith("external_doc_")
+            )
+            if scoped:
+                continue
+            if raw.get("invalid_at"):
+                preserved_relations.pop(key, None)
+            else:
+                preserved_relations[key] = item
+    for path in relation_files:
+        path.unlink()
+    preserved_relations.update(relations)
     _write_records(
-        knowledge / "relations" / "external_documents.jsonl",
-        [relations[key] for key in sorted(relations)],
+        knowledge / "relations" / "canonical.jsonl",
+        [preserved_relations[key] for key in sorted(preserved_relations)],
         knowledge,
         hash_chain,
     )

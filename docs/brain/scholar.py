@@ -13,6 +13,22 @@ except ImportError:
     pass
 
 class Scholar:
+    PROTECTED_ROOTS = ("horizon-cortex", "parallax")
+    SUPPORTED_SUFFIXES = {
+        ".py", ".js", ".jsx", ".ts", ".tsx",
+        ".cpp", ".cc", ".h", ".hpp", ".c",
+        ".json", ".yaml", ".yml",
+    }
+
+    @classmethod
+    def _is_supported_path(cls, path):
+        normalized = Path(path).as_posix().strip("./").lower()
+        protected = any(
+            normalized == root or normalized.startswith(root + "/")
+            for root in cls.PROTECTED_ROOTS
+        )
+        return not protected and Path(normalized).suffix in cls.SUPPORTED_SUFFIXES
+
     def __init__(self, brain_path):
         self.brain_path = Path(brain_path)
         self.memories_path = self.brain_path / "memories"
@@ -29,7 +45,7 @@ class Scholar:
         self.ignore_dirs = {
             '.git', '__pycache__', 'node_modules', 'dist', 'build', '.github',
             'docs/brain/knowledge', 'docs/brain/inputs', 'docs/brain/memories', '.raw_cache',
-            'docs/archaeology', 'docs/brain/inputs/archive'
+            'docs/archaeology', 'docs/brain/inputs/archive', 'horizon-cortex', 'parallax'
         }
         self.ignore_files = {
             '.DS_Store', 'cortex.db', 'cortex.db-journal', '.gitignore',
@@ -72,6 +88,8 @@ class Scholar:
                 if any(fnmatch.fnmatch(file, pat) for pat in self.ignore_files) or file.endswith(('.pyc', '.db', '.md', '.jsonl')): continue
 
                 filepath = Path(dirpath) / file
+                if not self._is_supported_path(filepath.relative_to(root)):
+                    continue
                 try:
                     self._digest_file(root, filepath)
                     count += 1
@@ -80,9 +98,16 @@ class Scholar:
 
         print(f"✅ Ingestion Complete. {count} files mapped into Cortex. / 提取完成。共映射 {count} 个文件至皮质层。")
 
+    def _file_id(self, rel_path):
+        """Build a platform-independent entity ID from a repository path."""
+        normalized = rel_path.as_posix()
+        return self._strip_version(
+            "file_" + normalized.replace("/", "_").replace(".", "_")
+        )
+
     def _digest_file(self, root, filepath):
         rel_path = filepath.relative_to(root)
-        file_id = self._strip_version(f"file_" + str(rel_path).replace("/", "_").replace(".", "_"))
+        file_id = self._file_id(rel_path)
 
         # 1. Register File Node
         if self.cortex:
@@ -90,7 +115,7 @@ class Scholar:
                 id=file_id,
                 type_slug="code_file",
                 name=filepath.name,
-                desc=f"Source file at: {rel_path}",
+                desc=f"Source file at: {rel_path.as_posix()}",
                 save_to_disk=True
             )
 
@@ -236,6 +261,11 @@ class Scholar:
                 content = f.read()
             tree = ast.parse(content)
 
+            local_classes = {
+                self._strip_version(node.name)
+                for node in ast.walk(tree)
+                if isinstance(node, ast.ClassDef)
+            }
             for node in ast.walk(tree):
                 # Classes
                 if isinstance(node, ast.ClassDef):
@@ -246,9 +276,15 @@ class Scholar:
                     self.cortex.connect_entities(file_id, "defines", class_id, save_to_disk=True)
                     # Inheritance
                     for base in node.bases:
-                        if isinstance(base, ast.Name):
+                        if (
+                            isinstance(base, ast.Name)
+                            and self._strip_version(base.id) in local_classes
+                        ):
                             base_name = self._strip_version(base.id)
-                            self.cortex.connect_entities(class_id, "inherits_from", f"class_{base_name}", save_to_disk=True)
+                            target = self._strip_version(
+                                f"{file_id}__class_{base_name}"
+                            )
+                            self.cortex.connect_entities(class_id, "inherits_from", target, save_to_disk=True)
 
                 # Functions
                 elif isinstance(node, ast.FunctionDef):

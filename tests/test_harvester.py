@@ -1,9 +1,10 @@
+import base64
 import json
 import sys
 import tempfile
 import unittest
 import urllib.error
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 from unittest.mock import Mock, call, patch
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "docs" / "brain"))
@@ -12,9 +13,115 @@ from harvester import Harvester
 from evolution import Evolver
 from reason import ReasoningEngine
 from scholar import Scholar
+import nexus as nexus_module
 
 
 class HarvesterContracts(unittest.TestCase):
+    def test_state_rejects_non_mapping_repository_records(self):
+        with self.assertRaisesRegex(ValueError, "repositories"):
+            Harvester._validated_state({"repositories": "invalid"})
+
+    def test_previous_diff_baseline_comes_from_recorded_git_blob(self):
+        harvester = Harvester.__new__(Harvester)
+        harvester._api = Mock(
+            return_value={
+                "encoding": "base64",
+                "content": base64.b64encode(b"previous body").decode("ascii"),
+            }
+        )
+
+        self.assertEqual(
+            harvester._blob_text("owner/repo", "old-sha"),
+            "previous body",
+        )
+        harvester._api.assert_called_once_with(
+            "https://api.github.com/repos/owner/repo/git/blobs/old-sha"
+        )
+
+    def test_removed_source_is_archived_and_removed_from_state(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            harvester = Harvester.__new__(Harvester)
+            harvester.inputs = Path(tmp)
+            current = harvester.inputs / "current" / "test" / "owner_repo"
+            current.mkdir(parents=True)
+            snapshot = current / "README.md__old.md"
+            snapshot.write_text("sealed snapshot", encoding="utf-8")
+            harvester.state = {
+                "repositories": {
+                    "owner/repo": {
+                        "documents": {
+                            "README.md": {
+                                "sha": "old",
+                                "output": snapshot.relative_to(harvester.inputs).as_posix(),
+                            }
+                        }
+                    }
+                }
+            }
+            harvester._api = Mock(
+                side_effect=[
+                    {"default_branch": "main"},
+                    {"tree": [], "truncated": False},
+                ]
+            )
+            harvester.dry = False
+
+            changed = harvester._source(
+                {
+                    "repo": "owner/repo",
+                    "documents": ["README.md"],
+                    "ignore_patterns": [],
+                    "layer": "test",
+                    "primary_owner": "welcome",
+                }
+            )
+
+            self.assertEqual(changed, [])
+            self.assertFalse(snapshot.exists())
+            self.assertEqual(
+                list((harvester.inputs / "archive").rglob(snapshot.name))[0].read_text(
+                    encoding="utf-8"
+                ),
+                "sealed snapshot",
+            )
+            self.assertNotIn(
+                "README.md",
+                harvester.state["repositories"]["owner/repo"]["documents"],
+            )
+
+    def test_archive_collision_never_overwrites_different_content(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            harvester = Harvester.__new__(Harvester)
+            harvester.inputs = Path(tmp)
+            current = harvester.inputs / "current" / "test" / "owner_repo"
+            current.mkdir(parents=True)
+            stale = current / "README.md__same.md"
+            stale.write_text("current", encoding="utf-8")
+            archive = (
+                harvester.inputs
+                / "archive"
+                / "2026"
+                / "07"
+                / "test"
+                / "owner_repo"
+                / stale.name
+            )
+            archive.parent.mkdir(parents=True)
+            archive.write_text("sealed", encoding="utf-8")
+
+            with patch("harvester.dt.datetime") as clock:
+                clock.now.return_value.strftime.return_value = "2026/07"
+                with self.assertRaisesRegex(FileExistsError, "archive collision"):
+                    harvester._archive_stale(
+                        current / "README.md__new.md",
+                        "README.md",
+                        "test",
+                        "owner_repo",
+                    )
+
+            self.assertEqual(stale.read_text(encoding="utf-8"), "current")
+            self.assertEqual(archive.read_text(encoding="utf-8"), "sealed")
+
     def test_profiles_have_unique_welcome_owner(self):
         h = Harvester(Path(__file__).parents[1] / "docs" / "brain")
         self.assertTrue(h.validate_profiles())
@@ -152,6 +259,82 @@ class HarvesterContracts(unittest.TestCase):
         with patch.object(cortex, "connect_entities", side_effect=RuntimeError("write failed")):
             with self.assertRaisesRegex(RuntimeError, "write failed"):
                 cortex.suture_orphans()
+
+    def test_scholar_file_ids_are_platform_independent(self):
+        scholar = Scholar.__new__(Scholar)
+        self.assertEqual(
+            scholar._file_id(PureWindowsPath("docs/brain/reason.py")),
+            "file_docs_brain_reason_py",
+        )
+
+    def test_scholar_excludes_parallel_systems_and_unsupported_files(self):
+        self.assertFalse(
+            Scholar._is_supported_path(Path("horizon-cortex/owned.py"))
+        )
+        self.assertFalse(Scholar._is_supported_path(Path("parallax/owned.py")))
+        self.assertFalse(Scholar._is_supported_path(Path("index.html")))
+        self.assertTrue(Scholar._is_supported_path(Path("docs/brain/reason.py")))
+
+    def test_scholar_links_only_local_inheritance_targets(self):
+        class RecordingCortex:
+            def __init__(self):
+                self.entities = []
+                self.relations = []
+
+            def add_entity(
+                self,
+                entity_id,
+                type_slug,
+                name,
+                desc,
+                save_to_disk=True,
+            ):
+                self.entities.append(entity_id)
+
+            def connect_entities(
+                self,
+                source,
+                relation,
+                target,
+                desc="",
+                save_to_disk=True,
+            ):
+                self.relations.append((source, relation, target))
+
+        with tempfile.TemporaryDirectory() as tmp:
+            source = Path(tmp) / "inheritance.py"
+            source.write_text(
+                "class Base:\n    pass\n\n"
+                "class Child(Base):\n    pass\n\n"
+                "class External(http.server.BaseHTTPRequestHandler):\n    pass\n",
+                encoding="utf-8",
+            )
+            scholar = Scholar.__new__(Scholar)
+            scholar.cortex = RecordingCortex()
+            scholar._analyze_python_ast(source, "file_inheritance_py")
+
+            self.assertIn(
+                (
+                    "file_inheritance_py__class_Child",
+                    "inherits_from",
+                    "file_inheritance_py__class_Base",
+                ),
+                scholar.cortex.relations,
+            )
+            self.assertFalse(
+                any(target.startswith("class_") for _, _, target in scholar.cortex.relations)
+            )
+    def test_rebuild_does_not_open_database_before_replacing_it(self):
+        cortex = Mock()
+        cortex.conn = Mock()
+        with patch.object(sys, "argv", ["nexus.py", "rebuild"]):
+            with patch.object(nexus_module, "Cortex", return_value=cortex) as factory:
+                with patch.object(nexus_module.os, "remove"):
+                    nexus_module.main()
+
+        self.assertEqual(factory.call_count, 2)
+        self.assertEqual(cortex.conn.close.call_count, 2)
+
 
 if __name__ == "__main__":
     unittest.main()
