@@ -324,6 +324,12 @@ class HarvesterContracts(unittest.TestCase):
             self.assertFalse(
                 any(target.startswith("class_") for _, _, target in scholar.cortex.relations)
             )
+    def test_nexus_resolves_relative_module_paths(self):
+        brain_root = nexus_module._brain_root("docs/brain/nexus.py")
+
+        self.assertTrue(brain_root.is_absolute())
+        self.assertEqual(brain_root, (Path.cwd() / "docs" / "brain").resolve())
+
     def test_rebuild_does_not_open_database_before_replacing_it(self):
         cortex = Mock()
         cortex.conn = Mock()
