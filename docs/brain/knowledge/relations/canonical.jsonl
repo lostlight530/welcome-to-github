@@ -128,6 +128,7 @@
 {"desc":"","dst":"file_docs_brain_nexus_mcp_py__func__verify_agent_trust","relation":"defines","src":"file_docs_brain_nexus_mcp_py"}
 {"desc":"","dst":"file_docs_brain_nexus_mcp_py__func_handle_request","relation":"defines","src":"file_docs_brain_nexus_mcp_py"}
 {"desc":"","dst":"file_docs_brain_nexus_mcp_py__func_run","relation":"defines","src":"file_docs_brain_nexus_mcp_py"}
+{"desc":"","dst":"file_docs_brain_nexus_py__func__brain_root","relation":"defines","src":"file_docs_brain_nexus_py"}
 {"desc":"","dst":"file_docs_brain_nexus_py__func_main","relation":"defines","src":"file_docs_brain_nexus_py"}
 {"desc":"","dst":"file_docs_brain_reason_py__class_ReasoningEngine","relation":"defines","src":"file_docs_brain_reason_py"}
 {"desc":"","dst":"file_docs_brain_reason_py__func___init__","relation":"defines","src":"file_docs_brain_reason_py"}
@@ -593,6 +594,7 @@
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_evolver_propagates_mutator_failure","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_evolver_propagates_render_failure","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_external_links_are_not_selected","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_nexus_resolves_relative_module_paths","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_noise_normalization","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_orphan_suturing_creates_its_target_entity","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_orphan_suturing_propagates_write_failure","relation":"defines","src":"file_tests_test_harvester_py"}

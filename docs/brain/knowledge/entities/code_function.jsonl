@@ -61,6 +61,7 @@
 {"desc":"[Phase V] Cold-Blooded Ledger Verification","id":"file_docs_brain_nexus_mcp_py__func__verify_agent_trust","name":"_verify_agent_trust","type":"code_function"}
 {"desc":"Handles JSON-RPC 2.0 requests.","id":"file_docs_brain_nexus_mcp_py__func_handle_request","name":"handle_request","type":"code_function"}
 {"desc":"Main loop reading from Stdin.","id":"file_docs_brain_nexus_mcp_py__func_run","name":"run","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_nexus_py__func__brain_root","name":"_brain_root","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_nexus_py__func_main","name":"main","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_reason_py__func___init__","name":"__init__","type":"code_function"}
 {"desc":"Phase V: Pure mathematical centrality deduction without external libraries.","id":"file_docs_brain_reason_py__func__calculate_pagerank","name":"_calculate_pagerank","type":"code_function"}
@@ -105,6 +106,7 @@
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_evolver_propagates_mutator_failure","name":"test_evolver_propagates_mutator_failure","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_evolver_propagates_render_failure","name":"test_evolver_propagates_render_failure","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_external_links_are_not_selected","name":"test_external_links_are_not_selected","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_nexus_resolves_relative_module_paths","name":"test_nexus_resolves_relative_module_paths","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_noise_normalization","name":"test_noise_normalization","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_orphan_suturing_creates_its_target_entity","name":"test_orphan_suturing_creates_its_target_entity","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_orphan_suturing_propagates_write_failure","name":"test_orphan_suturing_propagates_write_failure","type":"code_function"}
