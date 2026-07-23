@@ -73,7 +73,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin main
-          core_changes="$(git diff --name-only "$GITHUB_SHA..origin/main" | grep -Ev '^docs/brain/(memories|inputs|knowledge)/' || true)"
+          core_changes="$(git diff --name-only "$GITHUB_SHA..origin/main" | grep -Ev '^(docs/brain/(memories|inputs|knowledge)/|horizon-cortex/|parallax/|src/|index\.html$)' || true)"
           if [ -n "$core_changes" ]; then
             echo "Core files changed on main while this run was active:"
             echo "$core_changes"

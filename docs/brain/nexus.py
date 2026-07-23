@@ -18,7 +18,11 @@ try:
 except ImportError:
     pass
 
-BRAIN_ROOT = Path(__file__).parent
+def _brain_root(module_file):
+    return Path(module_file).resolve().parent
+
+
+BRAIN_ROOT = _brain_root(__file__)
 DB_PATH = BRAIN_ROOT / "cortex.db"
 
 def main() -> None:
