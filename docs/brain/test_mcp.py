@@ -4,12 +4,13 @@ import sys
 import os
 
 # Ensure we test the exact MCP server
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+BRAIN_ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(BRAIN_ROOT)
 from nexus_mcp import MCPServer
 
 def test_mcp_server():
     print("[Test] Initializing MCP Server test...")
-    server = MCPServer("docs/brain")
+    server = MCPServer(BRAIN_ROOT)
 
     # 1. Test Initialization
     print("[Test] Testing 'initialize'...")
