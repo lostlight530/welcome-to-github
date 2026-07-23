@@ -1,3 +1,4 @@
+import sys
 import os
 import shutil
 import datetime
@@ -102,18 +103,30 @@ class Evolver:
         test_script = self.brain_path / "test_mcp.py"
         if test_script.exists():
             try:
-                # We strictly only assert (Code 0), keeping safety intact
+                # Use the same interpreter and run from the brain path to ensure relative imports work
                 result = subprocess.run(
-                    ["python", str(test_script)],
+                    [sys.executable, str(test_script.name)],
                     capture_output=True,
                     text=True,
-                    check=True
+                    check=True,
+                    cwd=str(self.brain_path)
                 )
-                logging.info(f"Sandbox Verification Passed / 沙盒验证通过: {result.stdout.strip().splitlines()[-1]}")
+                # If the test script prints multiple lines, log the last non-empty line for brevity
+                out_lines = [ln for ln in result.stdout.splitlines() if ln.strip()]
+                last_line = out_lines[-1] if out_lines else result.stdout.strip()
+                logging.info(f"Sandbox Verification Passed / 沙盒验证通过: {last_line}")
             except subprocess.CalledProcessError as e:
+                # Include stdout/stderr in logs to make CI failures actionable
                 logging.error(f"Sandbox Verification Failed! Exit Code {e.returncode} / 沙盒验证失败！退出码 {e.returncode}")
-                logging.error(e.stderr)
-                raise RuntimeError("Sandbox Verification aborted the Evolution Cycle due to protocol failures.") from e
+                logging.error("=== sandbox stdout ===")
+                logging.error(e.stdout or "<no stdout>")
+                logging.error("=== sandbox stderr ===")
+                logging.error(e.stderr or "<no stderr>")
+                # raise a more informative exception including captured output
+                raise RuntimeError(
+                    "Sandbox Verification aborted the Evolution Cycle due to protocol failures. "
+                    f"See sandbox stdout/stderr in logs. exit_code={e.returncode}"
+                ) from e
 
     def _incubate_ideas(self):
         try:
