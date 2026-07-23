@@ -18,8 +18,8 @@
 | 排名 | 节点 | PageRank |
 | --- | --- | --- |
 | 1 | NEXUS System | 0.0036 |
-| 2 | README.md | 0.0004 |
-| 3 | README.md | 0.0004 |
+| 2 | Google Vertex AI | 0.0004 |
+| 3 | test_mcp_server | 0.0004 |
 | 4 | README.md | 0.0004 |
 | 5 | README.md | 0.0004 |
 | 6 | README.md | 0.0004 |
@@ -35,8 +35,8 @@
 KB Stats: Entities=[671] Relations=[639] Compression Rate=[0.00%]
 PageRank Top 10 Hubs:
 [1+NEXUS System+0.0036+0.0]
-[2+README.md+0.0004+0.0]
-[3+README.md+0.0004+0.0]
+[2+Google Vertex AI+0.0004+0.0]
+[3+test_mcp_server+0.0004+0.0]
 [4+README.md+0.0004+0.0]
 [5+README.md+0.0004+0.0]
 [6+README.md+0.0004+0.0]
