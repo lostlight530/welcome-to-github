@@ -60,6 +60,8 @@ TEMPLATE_HEADINGS = {
 LINK_PATTERN = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 DATE_FILE_PATTERN = re.compile(r"^(\d{4}-\d{2}-\d{2})\.md$")
 RECORD_ID_PATTERN = re.compile(r"^- 记录 ID:\s*(\S+)\s*$", re.MULTILINE)
+NOTE_PATTERN = re.compile(r"^## (N-\d+).*?(?=^## |\Z)", re.MULTILINE | re.DOTALL)
+NOTE_SUPPORT_PATTERN = re.compile(r"PX-\d{8}-P\d+")
 
 
 def validate_local_links(path: Path, text: str, errors: list[str]) -> None:
@@ -143,6 +145,26 @@ def validate() -> list[str]:
         for heading in headings:
             if heading not in text:
                 errors.append(f"missing heading in {relative}: {heading}")
+
+    notes_path = ROOT / "NOTES.md"
+    if notes_path.is_file():
+        notes = notes_path.read_text(encoding="utf-8")
+        for match in NOTE_PATTERN.finditer(notes):
+            note_id = match.group(1)
+            section = match.group(0)
+            supports = set(NOTE_SUPPORT_PATTERN.findall(section))
+            if len(supports) < 3:
+                errors.append(f"long-term note has fewer than three support records: {note_id}")
+            windows = {support[3:11] for support in supports}
+            if len(windows) < 2:
+                errors.append(f"long-term note has fewer than two time windows: {note_id}")
+            for support in supports:
+                if support not in record_ids:
+                    errors.append(f"long-term note references missing record {support}: {note_id}")
+            if "### 反例检查" not in section:
+                errors.append(f"long-term note missing counterexample check: {note_id}")
+            if "失效条件" not in section:
+                errors.append(f"long-term note missing invalidation condition: {note_id}")
 
     return errors
 
