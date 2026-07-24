@@ -127,6 +127,7 @@
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_pruning_excluded_sources_rebuilds_only_active_ledger","name":"test_pruning_excluded_sources_rebuilds_only_active_ledger","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_snapshot_is_human_readable_and_traceable","name":"test_snapshot_is_human_readable_and_traceable","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_truncated_tree_is_a_hard_failure","name":"test_truncated_tree_is_a_hard_failure","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_report_hygiene_full_output_py__func_test_rejects_chinese_full_stop_inside_details","name":"test_rejects_chinese_full_stop_inside_details","type":"code_function"}
 {"desc":"Python Function","id":"func__api","name":"_api","type":"code_function"}
 {"desc":"Python Function","id":"func__archive_stale","name":"_archive_stale","type":"code_function"}
 {"desc":"Python Function","id":"func__json","name":"_json","type":"code_function"}

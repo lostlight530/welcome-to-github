@@ -624,6 +624,8 @@
 {"desc":"","dst":"func_test_jsonl_maintenance_recurses_and_deduplicates","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"func_test_snapshot_is_human_readable_and_traceable","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"func_test_truncated_tree_is_a_hard_failure","relation":"defines","src":"file_tests_test_harvester_readability_py"}
+{"desc":"","dst":"file_tests_test_report_hygiene_full_output_py__class_ReportHygieneFullOutputTests","relation":"defines","src":"file_tests_test_report_hygiene_full_output_py"}
+{"desc":"","dst":"file_tests_test_report_hygiene_full_output_py__func_test_rejects_chinese_full_stop_inside_details","relation":"defines","src":"file_tests_test_report_hygiene_full_output_py"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func__api"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func__archive_stale"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func__json"}

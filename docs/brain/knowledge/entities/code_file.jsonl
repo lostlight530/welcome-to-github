@@ -18,3 +18,4 @@
 {"desc":"Source file at: format.py","id":"file_format_py","name":"format.py","type":"code_file"}
 {"desc":"Source file at: tests/test_harvester.py","id":"file_tests_test_harvester_py","name":"test_harvester.py","type":"code_file"}
 {"desc":"Source file at: tests/test_harvester_readability.py","id":"file_tests_test_harvester_readability_py","name":"test_harvester_readability.py","type":"code_file"}
+{"desc":"Source file at: tests/test_report_hygiene_full_output.py","id":"file_tests_test_report_hygiene_full_output_py","name":"test_report_hygiene_full_output.py","type":"code_file"}
