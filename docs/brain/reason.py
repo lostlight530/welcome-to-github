@@ -130,7 +130,7 @@ class ReasoningEngine:
         edges_raw = self._query("SELECT source, target FROM relations WHERE invalid_at IS NULL")
 
         if not nodes_raw or not edges_raw:
-            return "Pending inference. / 等待推演。"
+            return "Pending inference. / 等待推演."
 
         nodes = [row[0] for row in nodes_raw]
         node_names = {row[0]: row[1] for row in nodes_raw}
@@ -139,7 +139,7 @@ class ReasoningEngine:
         ranks = self._calculate_pagerank(nodes, edges)
 
         if not ranks:
-            return "Pending inference. / 等待推演。"
+            return "Pending inference. / 等待推演."
 
         sorted_hubs = sorted(ranks.items(), key=lambda x: x[1], reverse=True)[:limit]
         hub_lines = []
@@ -208,7 +208,7 @@ class ReasoningEngine:
                 relation_growth = 0
 
             # Mission focus
-            mission_focus = "Pending inference. / 等待推演。"
+            mission_focus = "Pending inference. / 等待推演."
             try:
                 mission_path = os.path.join(memories_dir, "MISSION_ACTIVE.md")
                 if os.path.exists(mission_path):
@@ -319,7 +319,7 @@ class ReasoningEngine:
             ledger_path = os.path.join(memories_dir, "QUANTITATIVE_LEDGER.md")
             if not os.path.exists(ledger_path):
                 with open(ledger_path, 'w', encoding='utf-8') as f:
-                    f.write("# 🧮 NEXUS CORTEX 演化账本 (Quantitative Ledger)\n> 严禁覆写，仅限追加记录系统的物理心跳与演进状态。(Append-Only Ledger for System Pulse)\n\n")
+                    f.write("# 🧮 NEXUS CORTEX 演化账本 (Quantitative Ledger)\n> 严禁覆写，仅限追加记录系统的物理心跳与演进状态.(Append-Only Ledger for System Pulse)\n\n")
 
             with open(ledger_path, 'a', encoding='utf-8') as f:
                 f.write(dash_content_ledger)
@@ -333,12 +333,12 @@ class ReasoningEngine:
 
             # Calculate PageRank Target Hub
             pagerank_hub = self._generate_pagerank_bounty()
-            pagerank_str = f"**Cognitive Hub (PageRank)**: `{pagerank_hub}`" if pagerank_hub else "Cognitive Hub: Pending inference. / 等待推演。"
+            pagerank_str = f"**Cognitive Hub (PageRank)**: `{pagerank_hub}`" if pagerank_hub else "Cognitive Hub: Pending inference. / 等待推演."
 
             # Read Harvester State to dynamically render New Releases and Commits
             state_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'brain', 'inputs', '.harvester_state.json')
-            new_releases_str = "Awaiting native Harvester ingestion cycle. / 等待原生收割机吞噬周期。"
-            recent_commits_str = "Awaiting repository sync. / 等待代码库同步。"
+            new_releases_str = "Awaiting native Harvester ingestion cycle. / 等待原生收割机吞噬周期."
+            recent_commits_str = "Awaiting repository sync. / 等待代码库同步."
 
             if os.path.exists(state_file):
                 releases = self._read_harvester_releases(state_file)
@@ -378,7 +378,7 @@ class ReasoningEngine:
             with open(os.path.join(memories_dir, "MISSION_ACTIVE.md"), 'w', encoding='utf-8') as f:
                 f.write(mission_content)
 
-            print(f"[Reasoning | 推理引擎] Engine successfully rendered Quantitative Dashboard via Templates / 成功通过模板渲染量化仪表盘。")
+            print(f"[Reasoning | 推理引擎] Engine successfully rendered Quantitative Dashboard via Templates / 成功通过模板渲染量化仪表盘.")
         except Exception as e:
             print(f"[Reasoning Error | 推理错误] Template enforcement failed / 模板执行失败: {str(e)}")
             raise
