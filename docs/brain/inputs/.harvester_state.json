@@ -11,7 +11,7 @@
           "sha": "32b0160dbaaf0ec0e9ae1e178e4a406e3215c487"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:40.205534+00:00"
+      "last_checked_at": "2026-07-24T23:02:05.419858+00:00"
     },
     "ModelEngine-Group/nexent": {
       "documents": {
@@ -22,7 +22,7 @@
           "sha": "de8fffeb480e9ad352574401bcd8ceda9fa3e9f3"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:41.683771+00:00"
+      "last_checked_at": "2026-07-24T23:02:06.349478+00:00"
     },
     "MoonshotAI/kimi-cli": {
       "documents": {
@@ -39,7 +39,7 @@
           "sha": "44bbde6d2563aff36a279cdfb43430e1f9616f67"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:45.939403+00:00"
+      "last_checked_at": "2026-07-24T23:02:09.096805+00:00"
     },
     "NousResearch/hermes-agent": {
       "documents": {
@@ -56,7 +56,7 @@
           "sha": "76649096d2c54ee83260f434c768ba3f5349a98d"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:35.058216+00:00"
+      "last_checked_at": "2026-07-24T23:02:01.964747+00:00"
     },
     "OpenHands/OpenHands": {
       "documents": {
@@ -67,7 +67,7 @@
           "sha": "91552c24a330662ac4b8c77e4bd3f20453b046b7"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:35.825860+00:00"
+      "last_checked_at": "2026-07-24T23:02:02.389290+00:00"
     },
     "agentuniverse-ai/agentUniverse": {
       "documents": {
@@ -84,7 +84,7 @@
           "sha": "5fff7f4e2bbab8306b1ca9c84999072031d6f3ae"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:45.420640+00:00"
+      "last_checked_at": "2026-07-24T23:02:08.794820+00:00"
     },
     "baidubce/app-builder": {
       "documents": {
@@ -95,7 +95,7 @@
           "sha": "a0d745d77fb6f9d04e71349a5acb6f3b5ddc2dff"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:44.615560+00:00"
+      "last_checked_at": "2026-07-24T23:02:08.374084+00:00"
     },
     "browser-use/browser-use": {
       "documents": {
@@ -106,7 +106,7 @@
           "sha": "4eec68396b2cfe2f81cb0ebae79930d123baaf9e"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:37.762162+00:00"
+      "last_checked_at": "2026-07-24T23:02:03.919831+00:00"
     },
     "bytedance/deer-flow": {
       "documents": {
@@ -123,7 +123,7 @@
           "sha": "79a5a7829c249a8121541b57dd8b7b54705ebd9b"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:42.304737+00:00"
+      "last_checked_at": "2026-07-24T23:02:06.683161+00:00"
     },
     "coze-dev/coze-studio": {
       "documents": {
@@ -134,7 +134,7 @@
           "sha": "6f4221d806888d45596156bec6f5599294ea6a2f"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:43.566024+00:00"
+      "last_checked_at": "2026-07-24T23:02:07.514190+00:00"
     },
     "crewAIInc/crewAI": {
       "documents": {
@@ -145,7 +145,7 @@
           "sha": "f0e4b08d9b8289c6c08e0651070ff7d17b40f806"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:37.276594+00:00"
+      "last_checked_at": "2026-07-24T23:02:03.608918+00:00"
     },
     "iflytek/astron-agent": {
       "documents": {
@@ -156,7 +156,7 @@
           "sha": "ed917cbe80d1047d2064ccc541391a8bd4ca93c5"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:41.026089+00:00"
+      "last_checked_at": "2026-07-24T23:02:05.992172+00:00"
     },
     "jd-opensource/joyagent-jdgenie": {
       "documents": {
@@ -167,7 +167,7 @@
           "sha": "d53eff2b4b63605f892625e6a409b68066895243"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:44.056948+00:00"
+      "last_checked_at": "2026-07-24T23:02:07.846078+00:00"
     },
     "ogx-ai/ogx": {
       "documents": {
@@ -178,7 +178,7 @@
           "sha": "2e7d830405d85ad872a11dc57e068f116979fa53"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:39.254918+00:00"
+      "last_checked_at": "2026-07-24T23:02:04.841065+00:00"
     },
     "ollama/ollama": {
       "documents": {
@@ -189,7 +189,7 @@
           "sha": "1e5a52d240f331abd8807a8100daced065bb4cbc"
         }
       },
-      "last_checked_at": "2026-07-24T12:41:38.334816+00:00"
+      "last_checked_at": "2026-07-24T23:02:04.263466+00:00"
     }
   },
   "schema_version": 3
