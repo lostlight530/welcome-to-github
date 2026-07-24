@@ -6,8 +6,7 @@ import report_hygiene_core as core
 
 
 def validate_owned_report(text):
-    owned = text.split("<details>", 1)[0]
-    if "。" in owned:
+    if "。" in text:
         raise ValueError("generated report contains a Chinese full stop")
 
 
