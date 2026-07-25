@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import re
 import sys
+from datetime import date, timedelta
 from pathlib import Path
 
 
@@ -58,6 +59,7 @@ TEMPLATE_HEADINGS = {
     "templates/monthly.md": ("## 证据覆盖", "## 已复验发现", "## 失效记录", "## 有效速度"),
 }
 LINK_PATTERN = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
+URL_PATTERN = re.compile(r"https?://[^\s)]+")
 DATE_FILE_PATTERN = re.compile(r"^(\d{4}-\d{2}-\d{2})\.md$")
 RECORD_ID_PATTERN = re.compile(r"^- 记录 ID:\s*(\S+)\s*$", re.MULTILINE)
 NOTE_PATTERN = re.compile(r"^## (N-\d+).*?(?=^## |\Z)", re.MULTILINE | re.DOTALL)
@@ -83,6 +85,7 @@ def validate() -> list[str]:
     errors: list[str] = []
     files = sorted(path for path in ROOT.rglob("*") if path.is_file())
     record_ids: dict[str, str] = {}
+    daily_dates: list[tuple[date, str]] = []
 
     for relative in REQUIRED:
         if not (ROOT / relative).is_file():
@@ -109,7 +112,8 @@ def validate() -> list[str]:
             errors.append(f"forbidden punctuation: {relative}")
         if "file:" + "//" in text.lower():
             errors.append(f"local scheme: {relative}")
-        if re.search(r"\bv\d+(?:\.\d+)*\b", text, re.IGNORECASE):
+        prose = URL_PATTERN.sub("", text)
+        if re.search(r"\bv\d+(?:\.\d+)*\b", prose, re.IGNORECASE):
             errors.append(f"version label: {relative}")
         for phrase in PUBLIC_FORBIDDEN:
             if phrase in text:
@@ -118,6 +122,11 @@ def validate() -> list[str]:
 
         date_match = DATE_FILE_PATTERN.match(path.name)
         if path.parent.parent.name == "records" and date_match:
+            try:
+                parsed_date = date.fromisoformat(date_match.group(1))
+                daily_dates.append((parsed_date, relative))
+            except ValueError:
+                errors.append(f"invalid daily date: {relative}")
             expected_month = date_match.group(1)[:7]
             if path.parent.name != expected_month:
                 errors.append(f"daily record in wrong month: {relative}")
@@ -137,6 +146,28 @@ def validate() -> list[str]:
             if monthly.is_file() and path.name not in monthly.read_text(encoding="utf-8"):
                 errors.append(f"daily record missing from monthly index: {relative}")
 
+    if daily_dates:
+        ordered_dates = sorted(item[0] for item in daily_dates)
+        present_dates = set(ordered_dates)
+        cursor = ordered_dates[0]
+        while cursor <= ordered_dates[-1]:
+            if cursor not in present_dates:
+                errors.append(f"missing daily record in date chain: {cursor.isoformat()}")
+            cursor += timedelta(days=1)
+
+        readme_path = ROOT / "README.md"
+        if readme_path.is_file():
+            readme = readme_path.read_text(encoding="utf-8")
+            latest_matches = re.findall(
+                r"^- 最新记录日期:\s*(\d{4}-\d{2}-\d{2})\s*$", readme, re.MULTILINE
+            )
+            if len(latest_matches) != 1:
+                errors.append(f"README latest record date count is {len(latest_matches)}")
+            elif latest_matches[0] != ordered_dates[-1].isoformat():
+                errors.append(
+                    "README latest record date mismatch: "
+                    f"{latest_matches[0]} != {ordered_dates[-1].isoformat()}"
+                )
     for relative, headings in TEMPLATE_HEADINGS.items():
         path = ROOT / relative
         if not path.is_file():
