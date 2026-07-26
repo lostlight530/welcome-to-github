@@ -12,6 +12,7 @@ REQUIRED = (
     "METHOD.md",
     "CASES.md",
     "NOTES.md",
+    "audits/README.md",
     "records/2026-07.md",
     "specials/README.md",
     "templates/daily.md",
@@ -57,16 +58,23 @@ DAILY_HEADINGS = (
     "## 验证结果",
 )
 SPECIAL_HEADINGS = DAILY_HEADINGS
+AUDIT_HEADINGS = (
+    "## 审计信息",
+    "## 覆盖区间",
+    "## 纳入记录",
+    "## 覆盖情况",
+    "## 重复信号",
+    "## 冲突与漂移",
+    "## 特殊专题维护",
+    "## 反例检查",
+    "## 状态决定",
+    "## 下一阶段控制项",
+    "## 验证结果",
+)
 TEMPLATE_HEADINGS = {
     "templates/daily.md": DAILY_HEADINGS,
     "templates/special.md": SPECIAL_HEADINGS,
-    "templates/weekly.md": (
-        "## 覆盖区间",
-        "## 纳入记录",
-        "## 重复信号",
-        "## 冲突与漂移",
-        "## 状态决定",
-    ),
+    "templates/weekly.md": AUDIT_HEADINGS,
     "templates/monthly.md": (
         "## 覆盖区间",
         "## 记录构成",
@@ -83,6 +91,7 @@ DAILY_PATTERN = re.compile(r"^records/(\d{4}-\d{2})/(\d{4}-\d{2}-\d{2})\.md$")
 SPECIAL_PATTERN = re.compile(
     r"^specials/(\d{4}-\d{2})/(\d{4}-\d{2}-\d{2})-[a-z0-9-]+\.md$"
 )
+AUDIT_PATTERN = re.compile(r"^audits/(\d{4}-W\d{2})\.md$")
 RECORD_ID_PATTERN = re.compile(r"^- 记录 ID:\s*(\S+)\s*$", re.MULTILINE)
 NOTE_PATTERN = re.compile(r"^## (N-\d+).*?(?=^## |\Z)", re.MULTILINE | re.DOTALL)
 NOTE_SUPPORT_PATTERN = re.compile(r"PX-(?:S-)?\d{8}-P\d+")
@@ -143,6 +152,8 @@ def validate() -> list[str]:
     topic_windows: list[date] = []
     daily_files: list[Path] = []
     special_files: list[Path] = []
+    audit_files: list[Path] = []
+    audit_record_refs: dict[str, set[str]] = {}
     cases_path = ROOT / "CASES.md"
     cases_text = cases_path.read_text(encoding="utf-8") if cases_path.is_file() else ""
 
@@ -183,6 +194,7 @@ def validate() -> list[str]:
 
         daily_match = DAILY_PATTERN.fullmatch(relative)
         special_match = SPECIAL_PATTERN.fullmatch(relative)
+        audit_match = AUDIT_PATTERN.fullmatch(relative)
         if daily_match:
             daily_files.append(path)
             file_date_text = daily_match.group(2)
@@ -295,6 +307,28 @@ def validate() -> list[str]:
                         errors.append(f"duplicate record ID: {record_id}")
                     record_windows[record_id] = window
 
+        if audit_match:
+            audit_files.append(path)
+            period = audit_match.group(1)
+            if metadata(text, "记录类型") != ["周期审计"]:
+                errors.append(f"audit record type mismatch: {relative}")
+            audit_ids = metadata(text, "审计 ID")
+            expected_audit_id = f"PA-{period}"
+            if audit_ids != [expected_audit_id]:
+                errors.append(
+                    f"audit ID mismatch: {relative} -> {', '.join(audit_ids)}"
+                )
+            parse_single_date(text, "审计日期", relative, errors)
+            for heading in AUDIT_HEADINGS:
+                if heading not in text:
+                    errors.append(f"missing audit heading in {relative}: {heading}")
+            audit_index = ROOT / "audits" / "README.md"
+            if audit_index.is_file() and path.name not in audit_index.read_text(
+                encoding="utf-8"
+            ):
+                errors.append(f"audit missing from audit index: {relative}")
+            audit_record_refs[relative] = set(NOTE_SUPPORT_PATTERN.findall(text))
+
     if daily_dates:
         ordered_dates = sorted(daily_dates)
         present_dates = set(ordered_dates)
@@ -340,6 +374,11 @@ def validate() -> list[str]:
             if window_count is not None and window_count != expected_windows:
                 errors.append(
                     f"README topic window count mismatch: {window_count} != {expected_windows}"
+                )
+            audit_count = read_labeled_count(readme, "README", "周期审计", errors)
+            if audit_count is not None and audit_count != len(audit_files):
+                errors.append(
+                    f"README audit count mismatch: {audit_count} != {len(audit_files)}"
                 )
 
     for monthly_path in monthly_files:
@@ -388,6 +427,15 @@ def validate() -> list[str]:
             if heading not in text:
                 errors.append(f"missing heading in {relative}: {heading}")
 
+    for audit_relative, references in audit_record_refs.items():
+        if not references:
+            errors.append(f"audit has no research record references: {audit_relative}")
+        for reference in references:
+            if reference not in record_windows:
+                errors.append(
+                    f"audit references missing record {reference}: {audit_relative}"
+                )
+
     notes_path = ROOT / "NOTES.md"
     if notes_path.is_file():
         notes = notes_path.read_text(encoding="utf-8")
@@ -424,7 +472,11 @@ def main() -> int:
     count = sum(1 for path in ROOT.rglob("*") if path.is_file())
     daily = sum(1 for path in ROOT.rglob("*.md") if DAILY_PATTERN.fullmatch(path.relative_to(ROOT).as_posix()))
     special = sum(1 for path in ROOT.rglob("*.md") if SPECIAL_PATTERN.fullmatch(path.relative_to(ROOT).as_posix()))
-    print(f"OK parallax files={count} daily_topics={daily} special_topics={special}")
+    audits = sum(1 for path in ROOT.rglob("*.md") if AUDIT_PATTERN.fullmatch(path.relative_to(ROOT).as_posix()))
+    print(
+        f"OK parallax files={count} daily_topics={daily} "
+        f"special_topics={special} audits={audits}"
+    )
     return 0
 
 
