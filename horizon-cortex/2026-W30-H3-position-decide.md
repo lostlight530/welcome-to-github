@@ -26,6 +26,7 @@ INPUT_RECORD
 - horizon-cortex/2026-07-24-H2-horizon-orient.md
 - horizon-cortex/2026-07-25-H1-signal-observe.md
 - horizon-cortex/2026-07-25-H2-horizon-orient.md
+- horizon-cortex/2026-07-26-H1-signal-observe.md
 - horizon-cortex/2026-07-26-H2-horizon-orient.md
 
 读取的历史 H3 / H4 / H6 文件:

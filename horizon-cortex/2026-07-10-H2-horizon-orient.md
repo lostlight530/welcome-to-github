@@ -16,7 +16,7 @@ Boundary Violation: NO
 INPUT_RECORD
 
 记录读取的 H1 文件路径:
-INPUT_MISSING
+horizon-cortex/2026-07-10-H1-signal-observe.md
 
 记录读取的历史 horizon-cortex 文件路径:
 horizon-cortex/2026-07-09-H2-horizon-orient.md

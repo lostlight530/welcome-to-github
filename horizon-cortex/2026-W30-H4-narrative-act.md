@@ -27,6 +27,7 @@ INPUT_RECORD
   - horizon-cortex/2026-07-24-H2-horizon-orient.md
   - horizon-cortex/2026-07-25-H1-signal-observe.md
   - horizon-cortex/2026-07-25-H2-horizon-orient.md
+  - horizon-cortex/2026-07-26-H1-signal-observe.md
   - horizon-cortex/2026-07-26-H2-horizon-orient.md
 - 联网复核来源:
   - "MCP Stateless 2026" (Context Studios Blog, MCP Playground)

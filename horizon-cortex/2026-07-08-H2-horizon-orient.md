@@ -16,7 +16,7 @@ Boundary Violation: NO
 INPUT_RECORD
 
 记录读取的 H1 文件路径 (Record of H1 files read):
-INPUT_MISSING
+horizon-cortex/2026-07-08-H1-signal-observe.md
 
 记录读取的历史 horizon-cortex 文件路径 (Record of historical horizon-cortex files read):
 horizon-cortex/2026-07-07-H2-horizon-orient.md
@@ -27,24 +27,26 @@ horizon-cortex/2026-07-07-H2-horizon-orient.md
 SIGNAL_CLASSIFICATION
 
 noise:
-Due to the missing H1 file data, there are no specific H1 signals to classify today. / 由于缺少 H1 文件数据，今天没有具体的 H1 信号可以分类
+None identified for this classification today. / 今天没有识别出此类别的信号
 
 weak signal:
-Due to the missing H1 file data, there are no specific H1 signals to classify today. / 由于缺少 H1 文件数据，今天没有具体的 H1 信号可以分类
+None identified for this classification today. / 今天没有识别出此类别的信号
 
 strategic signal:
-Due to the missing H1 file data, there are no specific H1 signals to classify today. / 由于缺少 H1 文件数据，今天没有具体的 H1 信号可以分类
+The MCP 2026-07-28 release candidate rewrites the protocol's foundation, changing authentication and removing sessions. (MCP 2026-07-28 候选版本重写了协议基础，改变了身份验证并移除了会话)；
+Google Gemini platform introduces native Google Maps Grounding support for places and routing. (Google Gemini 平台引入了原生的 Google Maps Grounding 支持，包含地点和路线)；
+Async AI agent workflows require durable long-running execution and state checkpointing to survive timeouts and crashes. (异步 AI 代理工作流需要持久的长时间运行执行和状态检查点，以在超时和崩溃中存活)
 
 watchlist:
-Due to the missing H1 file data, there are no specific H1 signals to classify today. / 由于缺少 H1 文件数据，今天没有具体的 H1 信号可以分类
+Requires continued monitoring on how these architectural shifts affect long-running agents. / 需要持续监控这些架构转变如何影响长时间运行的代理
 
 ignore:
-Due to the missing H1 file data, there are no specific H1 signals to classify today. / 由于缺少 H1 文件数据，今天没有具体的 H1 信号可以分类
+None identified for this classification today. / 今天没有识别出此类别的信号
 
 ORIENTATION_NOTES
 
 说明今日信号对 horizon-cortex 自身意味着什么 (What today's signals mean for horizon-cortex itself):
-Due to lack of H1 input, no direct signal analysis from H1 can be performed today. However, external searches confirm that the 2026-07-28 MCP Specification Release Candidate delivers on the 2026 roadmap, introducing a stateless core that scales on ordinary HTTP infrastructure, server-rendered UIs through MCP Apps, and long-running work through the Tasks extension. / 由于缺乏 H1 输入，今天无法进行直接的信号分析，但通过外部搜索确认了 2026-07-28 MCP 规范发布候选版兑现了 2026 路线图，引入了在普通 HTTP 基础设施上扩展的无状态核心，通过 MCP Apps 提供的服务器渲染 UI，以及通过 Tasks 扩展支持的长时间运行任务
+External searches confirm that the 2026-07-28 MCP Specification Release Candidate delivers on the 2026 roadmap, introducing a stateless core that scales on ordinary HTTP infrastructure, server-rendered UIs through MCP Apps, and long-running work through the Tasks extension. / 通过外部搜索确认了 2026-07-28 MCP 规范发布候选版兑现了 2026 路线图，引入了在普通 HTTP 基础设施上扩展的无状态核心，通过 MCP Apps 提供的服务器渲染 UI，以及通过 Tasks 扩展支持的长时间运行任务
 Strategic Pivot (Day 08): We must shift our architectural mindset from 'cloud-first orchestration' to 'edge-first context resolution', using standardized protocols as the bridge. / 战略枢纽 (第 08 天)：我们必须将架构思维从“云端优先编排”转变为“端侧优先上下文解析”，并使用标准化协议作为桥梁.
 
 
