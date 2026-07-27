@@ -17,6 +17,7 @@
 {"desc":"Current approved external evidence","dst":"external_doc_nousresearch_hermes_agent_readme_md","relation":"has_snapshot","src":"external_repo_nousresearch_hermes_agent"}
 {"desc":"Current approved external evidence","dst":"external_doc_ogx_ai_ogx_readme_md","relation":"has_snapshot","src":"external_repo_ogx_ai_ogx"}
 {"desc":"Current approved external evidence","dst":"external_doc_ollama_ollama_readme_md","relation":"has_snapshot","src":"external_repo_ollama_ollama"}
+{"desc":"Current approved external evidence","dst":"external_doc_openhands_openhands_changelog_md","relation":"has_snapshot","src":"external_repo_openhands_openhands"}
 {"desc":"Current approved external evidence","dst":"external_doc_openhands_openhands_readme_md","relation":"has_snapshot","src":"external_repo_openhands_openhands"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"file_LICENSE"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"file__editorconfig"}
