@@ -31,6 +31,7 @@
 {"desc":"Python Function","id":"file_docs_brain_evolution_py__func__archive_inputs","name":"_archive_inputs","type":"code_function"}
 {"desc":"Phase VI: Preparatory State AST Mutator","id":"file_docs_brain_evolution_py__func__genetic_auto_recombination","name":"_genetic_auto_recombination","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_evolution_py__func__incubate_ideas","name":"_incubate_ideas","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_evolution_py__func__move_to_archive","name":"_move_to_archive","type":"code_function"}
 {"desc":"AST Loop Preparation: Verifies local MCP and systems logic via subprocess.","id":"file_docs_brain_evolution_py__func__run_sandbox_tests","name":"_run_sandbox_tests","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_evolution_py__func__scan_inputs","name":"_scan_inputs","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_evolution_py__func__trigger_render","name":"_trigger_render","type":"code_function"}
@@ -99,13 +100,18 @@
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func___init__","name":"__init__","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_add_entity","name":"add_entity","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_connect_entities","name":"connect_entities","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_response","name":"response","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_api_retries_transient_network_failures_with_backoff","name":"test_api_retries_transient_network_failures_with_backoff","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_archive_collision_never_overwrites_different_content","name":"test_archive_collision_never_overwrites_different_content","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_corrupt_state_fails_closed","name":"test_corrupt_state_fails_closed","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_evolver_archive_collision_preserves_both_files","name":"test_evolver_archive_collision_preserves_both_files","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_evolver_keeps_input_contract_out_of_monthly_archive","name":"test_evolver_keeps_input_contract_out_of_monthly_archive","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_evolver_propagates_cycle_failure","name":"test_evolver_propagates_cycle_failure","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_evolver_propagates_mutator_failure","name":"test_evolver_propagates_mutator_failure","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_evolver_propagates_render_failure","name":"test_evolver_propagates_render_failure","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_external_links_are_not_selected","name":"test_external_links_are_not_selected","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_legacy_blob_state_is_migrated_once","name":"test_legacy_blob_state_is_migrated_once","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_missing_state_requires_explicit_bootstrap","name":"test_missing_state_requires_explicit_bootstrap","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_nexus_resolves_relative_module_paths","name":"test_nexus_resolves_relative_module_paths","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_noise_normalization","name":"test_noise_normalization","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_orphan_suturing_creates_its_target_entity","name":"test_orphan_suturing_creates_its_target_entity","type":"code_function"}
@@ -118,8 +124,10 @@
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_scholar_excludes_parallel_systems_and_unsupported_files","name":"test_scholar_excludes_parallel_systems_and_unsupported_files","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_scholar_file_ids_are_platform_independent","name":"test_scholar_file_ids_are_platform_independent","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_scholar_links_only_local_inheritance_targets","name":"test_scholar_links_only_local_inheritance_targets","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_source_snapshot_uses_pinned_commit_tree_and_blob","name":"test_source_snapshot_uses_pinned_commit_tree_and_blob","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_state_rejects_non_mapping_repository_records","name":"test_state_rejects_non_mapping_repository_records","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_structural_array_index_is_not_treated_as_a_version","name":"test_structural_array_index_is_not_treated_as_a_version","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_response","name":"response","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_canonicalization_normalizes_description_alias","name":"test_canonicalization_normalizes_description_alias","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_canonicalization_removes_semantic_duplicates_and_dangling_relations","name":"test_canonicalization_removes_semantic_duplicates_and_dangling_relations","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_current_snapshot_projection_is_stable_and_idempotent","name":"test_current_snapshot_projection_is_stable_and_idempotent","type":"code_function"}

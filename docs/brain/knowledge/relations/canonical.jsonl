@@ -95,6 +95,7 @@
 {"desc":"","dst":"file_docs_brain_evolution_py__func__archive_inputs","relation":"defines","src":"file_docs_brain_evolution_py"}
 {"desc":"","dst":"file_docs_brain_evolution_py__func__genetic_auto_recombination","relation":"defines","src":"file_docs_brain_evolution_py"}
 {"desc":"","dst":"file_docs_brain_evolution_py__func__incubate_ideas","relation":"defines","src":"file_docs_brain_evolution_py"}
+{"desc":"","dst":"file_docs_brain_evolution_py__func__move_to_archive","relation":"defines","src":"file_docs_brain_evolution_py"}
 {"desc":"","dst":"file_docs_brain_evolution_py__func__run_sandbox_tests","relation":"defines","src":"file_docs_brain_evolution_py"}
 {"desc":"","dst":"file_docs_brain_evolution_py__func__scan_inputs","relation":"defines","src":"file_docs_brain_evolution_py"}
 {"desc":"","dst":"file_docs_brain_evolution_py__func__trigger_render","relation":"defines","src":"file_docs_brain_evolution_py"}
@@ -588,13 +589,18 @@
 {"desc":"","dst":"file_tests_test_harvester_py__func___init__","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_add_entity","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_connect_entities","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_response","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_api_retries_transient_network_failures_with_backoff","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_archive_collision_never_overwrites_different_content","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_corrupt_state_fails_closed","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_evolver_archive_collision_preserves_both_files","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_evolver_keeps_input_contract_out_of_monthly_archive","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_evolver_propagates_cycle_failure","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_evolver_propagates_mutator_failure","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_evolver_propagates_render_failure","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_external_links_are_not_selected","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_legacy_blob_state_is_migrated_once","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_missing_state_requires_explicit_bootstrap","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_nexus_resolves_relative_module_paths","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_noise_normalization","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_orphan_suturing_creates_its_target_entity","relation":"defines","src":"file_tests_test_harvester_py"}
@@ -607,6 +613,7 @@
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_scholar_excludes_parallel_systems_and_unsupported_files","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_scholar_file_ids_are_platform_independent","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_scholar_links_only_local_inheritance_targets","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_source_snapshot_uses_pinned_commit_tree_and_blob","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_state_rejects_non_mapping_repository_records","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_structural_array_index_is_not_treated_as_a_version","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"func_test_evolver_keeps_input_contract_out_of_monthly_archive","relation":"defines","src":"file_tests_test_harvester_py"}
@@ -615,6 +622,7 @@
 {"desc":"","dst":"func_test_profiles_have_unique_welcome_owner","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"class_ReadabilityContracts","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"file_tests_test_harvester_readability_py__class_ReadabilityContracts","relation":"defines","src":"file_tests_test_harvester_readability_py"}
+{"desc":"","dst":"file_tests_test_harvester_readability_py__func_response","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"file_tests_test_harvester_readability_py__func_test_canonicalization_normalizes_description_alias","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"file_tests_test_harvester_readability_py__func_test_canonicalization_removes_semantic_duplicates_and_dangling_relations","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"file_tests_test_harvester_readability_py__func_test_current_snapshot_projection_is_stable_and_idempotent","relation":"defines","src":"file_tests_test_harvester_readability_py"}

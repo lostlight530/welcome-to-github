@@ -1,0 +1,272 @@
+# ogx-ai/ogx · README.md
+
+> 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [ogx-ai/ogx](https://github.com/ogx-ai/ogx) |
+| 来源文件 | [README.md](https://github.com/ogx-ai/ogx/blob/ebaaff8b17b8e3a7190c7b26565eda111659336c/README.md) |
+| 来源版本 | `ebaaff8b17b8e3a7190c7b26565eda111659336c` |
+| 来源目录 Tree | `29751056f563ba0b6fed07dda1de5e8a7d283bc5` |
+| 来源内容 Blob | `2e7d830405d85ad872a11dc57e068f116979fa53` |
+| 摄取时间 | `2026-07-28T07:52:21.979300+00:00` |
+| 归属层 | `complex-agent-systems` |
+| 可信度 | `1.0` |
+| 记忆实体 | `doc_ogx_ai_ogx_readme_md_2e7d830405d8` |
+
+## 本次变化
+
+- 新增行数 `109`.
+- 删除行数 `0`.
+- 内容哈希变化时才生成新快照.
+
+## 阅读导航
+
+- What you get
+- Use any model, use any infrastructure
+- Get started
+- One-line install
+- Or install via uv
+- Start the server (uses the starter distribution with Ollama)
+- Resources
+- Community
+
+<details>
+<summary>展开完整外部原文</summary>
+
+<h1 align="center">OGX</h1>
+
+<p align="center">
+  <a href="https://pypi.org/project/ogx/"><img src="https://img.shields.io/pypi/v/ogx?logo=pypi" alt="PyPI Version"></a>
+  <a href="https://pypi.org/project/ogx/"><img src="https://img.shields.io/pypi/dm/ogx" alt="PyPI Downloads"></a>
+  <a href="https://hub.docker.com/u/ogxai"><img src="https://img.shields.io/docker/pulls/ogxai/distribution-starter?logo=docker" alt="Docker Hub Pulls"></a>
+  <a href="https://github.com/ogx-ai/ogx/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/ogx.svg" alt="License"></a>
+  <a href="https://discord.gg/bUYRqEvK6"><img src="https://img.shields.io/discord/1257833999603335178?color=5865F2&logo=discord&logoColor=ffffff" alt="Discord"></a>
+  <a href="https://github.com/ogx-ai/ogx/actions/workflows/unit-tests.yml?query=branch%3Amain"><img src="https://github.com/ogx-ai/ogx/actions/workflows/unit-tests.yml/badge.svg?branch=main" alt="Unit Tests"></a>
+  <a href="https://github.com/ogx-ai/ogx/actions/workflows/integration-tests.yml?query=branch%3Amain"><img src="https://github.com/ogx-ai/ogx/actions/workflows/integration-tests.yml/badge.svg?branch=main" alt="Integration Tests"></a>
+  <a href="https://ogx-ai.github.io/docs/api-openai/conformance"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fogx-ai%2Fogx%2Fmain%2Fdocs%2Fstatic%2Fopenai-coverage.json&query=%24.summary.conformance.score&suffix=%25&label=OpenResponses%20Conformance&color=brightgreen" alt="OpenResponses Conformance"></a>
+  <a href="https://deepwiki.com/ogx-ai/ogx"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
+</p>
+
+[**Quick Start**](https://ogx-ai.github.io/docs/getting_started/quickstart) | [**Documentation**](https://ogx-ai.github.io/docs) | [**OpenAI API Compatibility**](https://ogx-ai.github.io/docs/api-openai) | [**Discord**](https://discord.gg/bUYRqEvK6)
+
+> [!IMPORTANT]
+> **Llama Stack is now OGX.** The name changed, and so did the mission — model-agnostic, multi-SDK, production-grade. [Read the full announcement →](https://ogx-ai.github.io/blog/from-llama-stack-to-ogx)
+
+**Open-source agentic API server for building AI applications. OpenAI-compatible. Any model, any infrastructure.**
+
+<p align="center">
+  <img src="docs/static/img/architecture-animated.svg" alt="OGX Architecture" width="100%">
+</p>
+
+OGX is a drop-in replacement for the OpenAI API that you can run anywhere — your laptop, your datacenter, or the cloud. Use any OpenAI-compatible client or agentic framework. Swap between Llama, GPT, Gemini, Mistral, or any model without changing your application code.
+
+```python
+from openai import OpenAI
+
+client = OpenAI(base_url="http://localhost:8321/v1", api_key="fake")
+response = client.chat.completions.create(
+    model="llama-3.3-70b",
+    messages=[{"role": "user", "content": "Hello"}],
+)
+```
+
+## What you get
+
+- **Chat Completions & Embeddings** — standard `/v1/chat/completions`, `/v1/completions`, and `/v1/embeddings` endpoints, compatible with any OpenAI client
+- **Responses API** — server-side agentic orchestration with tool calling, MCP server integration, and built-in file search (RAG) in a single API call ([learn more](https://ogx-ai.github.io/docs/api-openai))
+- **Vector Stores & Files** — `/v1/vector_stores` and `/v1/files` for managed document storage and search
+- **Batches** — `/v1/batches` for offline batch processing
+- **Skills** — `/v1alpha/skills` for managing versioned skill bundles (zip archives with SKILL.md manifests) that agents can invoke
+- **[Open Responses](https://www.openresponses.org/) conformant** — the Responses API implementation passes the Open Responses conformance test suite
+- **Multi-SDK support** — use the [Anthropic SDK](https://docs.anthropic.com/en/api/messages) (`/v1/messages`) or [Google GenAI SDK](https://ai.google.dev/gemini-api/docs/interactions) (`/v1alpha/interactions`) natively alongside the OpenAI API
+
+## Use any model, use any infrastructure
+
+OGX has a pluggable provider architecture. Develop locally with Ollama, deploy to production with vLLM, or connect to a managed service — the API stays the same.
+
+See the [provider documentation](https://ogx-ai.github.io/docs/providers) for the full list.
+
+## Get started
+
+Install and run a OGX server:
+
+```bash
+# One-line install
+curl -LsSf https://github.com/ogx-ai/ogx/raw/main/scripts/install.sh | bash
+
+# Or install via uv
+uv pip install ogx[starter]
+
+# Start the server (uses the starter distribution with Ollama)
+uv run ogx run starter
+```
+
+Then connect with any OpenAI, Anthropic, or Google GenAI client — [Python](https://github.com/openai/openai-python), [TypeScript](https://github.com/openai/openai-node), [curl](https://platform.openai.com/docs/api-reference), or any framework that speaks these APIs.
+
+See the [Quick Start guide](https://ogx-ai.github.io/docs/getting_started/quickstart) for detailed setup.
+
+## Resources
+
+- [Documentation](https://ogx-ai.github.io/docs) — full reference
+- [OpenAI API Compatibility](https://ogx-ai.github.io/docs/api-openai) — endpoint coverage and provider matrix
+- [Getting Started Notebook](./docs/getting_started.ipynb) — text and vision inference walkthrough
+- [Contributing](CONTRIBUTING.md) — how to contribute
+
+**Client SDKs:**
+
+OGX provides official client SDKs for Python and TypeScript:
+
+|  Language |  SDK | Package |
+| :----: | :----: | :----: |
+| Python |  [ogx-client-python](https://github.com/ogx-ai/ogx-client-python) | [![PyPI version](https://img.shields.io/pypi/v/ogx_client.svg)](https://pypi.org/project/ogx_client/) |
+| TypeScript   | [ogx-client-typescript](https://github.com/ogx-ai/ogx-client-typescript) | [![NPM version](https://img.shields.io/npm/v/ogx-client.svg)](https://npmjs.org/package/ogx-client) |
+
+**Alternative Python SDK:**
+
+For users who prefer an OpenAPI Generator-based SDK, an alternative Python client is available:
+
+- **[ogx-open-client](https://pypi.org/project/ogx-open-client/)** — Auto-generated from OpenAPI spec, provides similar functionality with a different generation approach
+- **[Usage Examples](client-sdks/openapi/USAGE_EXAMPLES.md)** — End-to-end code examples for all major features
+- **[Strategy & Rationale](client-sdks/openapi/STRATEGY.md)** — Why two SDKs, when to use which, and long-term plans
+
+The official `ogx_client` SDK is recommended for most use cases. The `ogx_open_client` package offers an alternative for teams with specific OpenAPI tooling requirements.
+
+## Community
+
+We hold regular community calls every Thursday at 09:00 AM PST — see the [Community Event on Discord](https://discord.gg/bUYRqEvK6) for details.
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ogx-ai/ogx&type=Date)](https://www.star-history.com/#ogx-ai/ogx&Date)
+
+Thanks to all our amazing contributors!
+
+<a href="https://github.com/ogx-ai/ogx/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ogx-ai/ogx" alt="OGX contributors" />
+</a>
+
+</details>
+
+<details>
+<summary>展开完整版本差异</summary>
+
+```diff
+--- previous
+
++++ 2e7d830405d85ad872a11dc57e068f116979fa53
+
+@@ -0,0 +1,109 @@
+
++<h1 align="center">OGX</h1>
++
++<p align="center">
++  <a href="https://pypi.org/project/ogx/"><img src="https://img.shields.io/pypi/v/ogx?logo=pypi" alt="PyPI Version"></a>
++  <a href="https://pypi.org/project/ogx/"><img src="https://img.shields.io/pypi/dm/ogx" alt="PyPI Downloads"></a>
++  <a href="https://hub.docker.com/u/ogxai"><img src="https://img.shields.io/docker/pulls/ogxai/distribution-starter?logo=docker" alt="Docker Hub Pulls"></a>
++  <a href="https://github.com/ogx-ai/ogx/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/ogx.svg" alt="License"></a>
++  <a href="https://discord.gg/bUYRqEvK6"><img src="https://img.shields.io/discord/1257833999603335178?color=5865F2&logo=discord&logoColor=ffffff" alt="Discord"></a>
++  <a href="https://github.com/ogx-ai/ogx/actions/workflows/unit-tests.yml?query=branch%3Amain"><img src="https://github.com/ogx-ai/ogx/actions/workflows/unit-tests.yml/badge.svg?branch=main" alt="Unit Tests"></a>
++  <a href="https://github.com/ogx-ai/ogx/actions/workflows/integration-tests.yml?query=branch%3Amain"><img src="https://github.com/ogx-ai/ogx/actions/workflows/integration-tests.yml/badge.svg?branch=main" alt="Integration Tests"></a>
++  <a href="https://ogx-ai.github.io/docs/api-openai/conformance"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fogx-ai%2Fogx%2Fmain%2Fdocs%2Fstatic%2Fopenai-coverage.json&query=%24.summary.conformance.score&suffix=%25&label=OpenResponses%20Conformance&color=brightgreen" alt="OpenResponses Conformance"></a>
++  <a href="https://deepwiki.com/ogx-ai/ogx"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
++</p>
++
++[**Quick Start**](https://ogx-ai.github.io/docs/getting_started/quickstart) | [**Documentation**](https://ogx-ai.github.io/docs) | [**OpenAI API Compatibility**](https://ogx-ai.github.io/docs/api-openai) | [**Discord**](https://discord.gg/bUYRqEvK6)
++
++> [!IMPORTANT]
++> **Llama Stack is now OGX.** The name changed, and so did the mission — model-agnostic, multi-SDK, production-grade. [Read the full announcement →](https://ogx-ai.github.io/blog/from-llama-stack-to-ogx)
++
++**Open-source agentic API server for building AI applications. OpenAI-compatible. Any model, any infrastructure.**
++
++<p align="center">
++  <img src="docs/static/img/architecture-animated.svg" alt="OGX Architecture" width="100%">
++</p>
++
++OGX is a drop-in replacement for the OpenAI API that you can run anywhere — your laptop, your datacenter, or the cloud. Use any OpenAI-compatible client or agentic framework. Swap between Llama, GPT, Gemini, Mistral, or any model without changing your application code.
++
++```python
++from openai import OpenAI
++
++client = OpenAI(base_url="http://localhost:8321/v1", api_key="fake")
++response = client.chat.completions.create(
++    model="llama-3.3-70b",
++    messages=[{"role": "user", "content": "Hello"}],
++)
++```
++
++## What you get
++
++- **Chat Completions & Embeddings** — standard `/v1/chat/completions`, `/v1/completions`, and `/v1/embeddings` endpoints, compatible with any OpenAI client
++- **Responses API** — server-side agentic orchestration with tool calling, MCP server integration, and built-in file search (RAG) in a single API call ([learn more](https://ogx-ai.github.io/docs/api-openai))
++- **Vector Stores & Files** — `/v1/vector_stores` and `/v1/files` for managed document storage and search
++- **Batches** — `/v1/batches` for offline batch processing
++- **Skills** — `/v1alpha/skills` for managing versioned skill bundles (zip archives with SKILL.md manifests) that agents can invoke
++- **[Open Responses](https://www.openresponses.org/) conformant** — the Responses API implementation passes the Open Responses conformance test suite
++- **Multi-SDK support** — use the [Anthropic SDK](https://docs.anthropic.com/en/api/messages) (`/v1/messages`) or [Google GenAI SDK](https://ai.google.dev/gemini-api/docs/interactions) (`/v1alpha/interactions`) natively alongside the OpenAI API
++
++## Use any model, use any infrastructure
++
++OGX has a pluggable provider architecture. Develop locally with Ollama, deploy to production with vLLM, or connect to a managed service — the API stays the same.
++
++See the [provider documentation](https://ogx-ai.github.io/docs/providers) for the full list.
++
++## Get started
++
++Install and run a OGX server:
++
++```bash
++# One-line install
++curl -LsSf https://github.com/ogx-ai/ogx/raw/main/scripts/install.sh | bash
++
++# Or install via uv
++uv pip install ogx[starter]
++
++# Start the server (uses the starter distribution with Ollama)
++uv run ogx run starter
++```
++
++Then connect with any OpenAI, Anthropic, or Google GenAI client — [Python](https://github.com/openai/openai-python), [TypeScript](https://github.com/openai/openai-node), [curl](https://platform.openai.com/docs/api-reference), or any framework that speaks these APIs.
++
++See the [Quick Start guide](https://ogx-ai.github.io/docs/getting_started/quickstart) for detailed setup.
++
++## Resources
++
++- [Documentation](https://ogx-ai.github.io/docs) — full reference
++- [OpenAI API Compatibility](https://ogx-ai.github.io/docs/api-openai) — endpoint coverage and provider matrix
++- [Getting Started Notebook](./docs/getting_started.ipynb) — text and vision inference walkthrough
++- [Contributing](CONTRIBUTING.md) — how to contribute
++
++**Client SDKs:**
++
++OGX provides official client SDKs for Python and TypeScript:
++
++|  Language |  SDK | Package |
++| :----: | :----: | :----: |
++| Python |  [ogx-client-python](https://github.com/ogx-ai/ogx-client-python) | [![PyPI version](https://img.shields.io/pypi/v/ogx_client.svg)](https://pypi.org/project/ogx_client/) |
++| TypeScript   | [ogx-client-typescript](https://github.com/ogx-ai/ogx-client-typescript) | [![NPM version](https://img.shields.io/npm/v/ogx-client.svg)](https://npmjs.org/package/ogx-client) |
++
++**Alternative Python SDK:**
++
++For users who prefer an OpenAPI Generator-based SDK, an alternative Python client is available:
++
++- **[ogx-open-client](https://pypi.org/project/ogx-open-client/)** — Auto-generated from OpenAPI spec, provides similar functionality with a different generation approach
++- **[Usage Examples](client-sdks/openapi/USAGE_EXAMPLES.md)** — End-to-end code examples for all major features
++- **[Strategy & Rationale](client-sdks/openapi/STRATEGY.md)** — Why two SDKs, when to use which, and long-term plans
++
++The official `ogx_client` SDK is recommended for most use cases. The `ogx_open_client` package offers an alternative for teams with specific OpenAPI tooling requirements.
++
++## Community
++
++We hold regular community calls every Thursday at 09:00 AM PST — see the [Community Event on Discord](https://discord.gg/bUYRqEvK6) for details.
++
++[![Star History Chart](https://api.star-history.com/svg?repos=ogx-ai/ogx&type=Date)](https://www.star-history.com/#ogx-ai/ogx&Date)
++
++Thanks to all our amazing contributors!
++
++<a href="https://github.com/ogx-ai/ogx/graphs/contributors">
++  <img src="https://contrib.rocks/image?repo=ogx-ai/ogx" alt="OGX contributors" />
++</a>
+```
+
+</details>
