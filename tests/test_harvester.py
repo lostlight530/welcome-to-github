@@ -63,6 +63,10 @@ class HarvesterContracts(unittest.TestCase):
             harvester._api = Mock(
                 side_effect=[
                     {"default_branch": "main"},
+                    {
+                        "sha": "commit-sha",
+                        "commit": {"tree": {"sha": "tree-sha"}},
+                    },
                     {"tree": [], "truncated": False},
                 ]
             )
