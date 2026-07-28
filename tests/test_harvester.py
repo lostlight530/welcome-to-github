@@ -133,22 +133,29 @@ class HarvesterContracts(unittest.TestCase):
             commit_sha = "c" * 40
             tree_sha = "t" * 40
             blob_sha = "b" * 40
-            harvester._api = Mock(
-                side_effect=[
-                    {"default_branch": "main"},
-                    {"sha": commit_sha, "commit": {"tree": {"sha": tree_sha}}},
-                    {
+            def response(url):
+                if url == "https://api.github.com/repos/owner/repo":
+                    return {"default_branch": "main"}
+                if url.endswith("/commits/main"):
+                    return {
+                        "sha": commit_sha,
+                        "commit": {"tree": {"sha": tree_sha}},
+                    }
+                if "/git/trees/" in url:
+                    return {
                         "tree": [
                             {"type": "blob", "path": "README.md", "sha": blob_sha}
                         ],
                         "truncated": False,
-                    },
-                    {
+                    }
+                if "/git/blobs/" in url:
+                    return {
                         "encoding": "base64",
                         "content": base64.b64encode(b"# Source\n").decode("ascii"),
-                    },
-                ]
-            )
+                    }
+                raise AssertionError(f"unexpected API URL: {url}")
+
+            harvester._api = Mock(side_effect=response)
 
             changed = harvester._source(
                 {
@@ -217,19 +224,29 @@ class HarvesterContracts(unittest.TestCase):
                     }
                 }
             }
-            metadata = {"default_branch": "main"}
-            commit = {"sha": commit_sha, "commit": {"tree": {"sha": tree_sha}}}
-            tree = {
-                "tree": [{"type": "blob", "path": "README.md", "sha": blob_sha}],
-                "truncated": False,
-            }
-            blob = {
-                "encoding": "base64",
-                "content": base64.b64encode(source.encode()).decode("ascii"),
-            }
-            harvester._api = Mock(
-                side_effect=[metadata, commit, tree, blob, metadata, commit, tree]
-            )
+            def response(url):
+                if url == "https://api.github.com/repos/owner/repo":
+                    return {"default_branch": "main"}
+                if url.endswith("/commits/main"):
+                    return {
+                        "sha": commit_sha,
+                        "commit": {"tree": {"sha": tree_sha}},
+                    }
+                if "/git/trees/" in url:
+                    return {
+                        "tree": [
+                            {"type": "blob", "path": "README.md", "sha": blob_sha}
+                        ],
+                        "truncated": False,
+                    }
+                if "/git/blobs/" in url:
+                    return {
+                        "encoding": "base64",
+                        "content": base64.b64encode(source.encode()).decode("ascii"),
+                    }
+                raise AssertionError(f"unexpected API URL: {url}")
+
+            harvester._api = Mock(side_effect=response)
             harvester.dry = False
             profile = {
                 "repo": "owner/repo",
