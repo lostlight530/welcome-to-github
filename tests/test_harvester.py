@@ -1,4 +1,6 @@
 import base64
+import hashlib
+import os
 import json
 import sys
 import tempfile
@@ -61,6 +63,10 @@ class HarvesterContracts(unittest.TestCase):
             harvester._api = Mock(
                 side_effect=[
                     {"default_branch": "main"},
+                    {
+                        "sha": "commit-sha",
+                        "commit": {"tree": {"sha": "tree-sha"}},
+                    },
                     {"tree": [], "truncated": False},
                 ]
             )
@@ -121,6 +127,213 @@ class HarvesterContracts(unittest.TestCase):
 
             self.assertEqual(stale.read_text(encoding="utf-8"), "current")
             self.assertEqual(archive.read_text(encoding="utf-8"), "sealed")
+
+    def test_source_snapshot_uses_pinned_commit_tree_and_blob(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            harvester = Harvester.__new__(Harvester)
+            harvester.inputs = Path(tmp)
+            harvester.state = {"repositories": {}}
+            harvester.dry = False
+            commit_sha = "c" * 40
+            tree_sha = "t" * 40
+            blob_sha = "b" * 40
+            def response(url):
+                if url == "https://api.github.com/repos/owner/repo":
+                    return {"default_branch": "main"}
+                if url.endswith("/commits/main"):
+                    return {
+                        "sha": commit_sha,
+                        "commit": {"tree": {"sha": tree_sha}},
+                    }
+                if "/git/trees/" in url:
+                    return {
+                        "tree": [
+                            {"type": "blob", "path": "README.md", "sha": blob_sha}
+                        ],
+                        "truncated": False,
+                    }
+                if "/git/blobs/" in url:
+                    return {
+                        "encoding": "base64",
+                        "content": base64.b64encode(b"# Source\n").decode("ascii"),
+                    }
+                raise AssertionError(f"unexpected API URL: {url}")
+
+            harvester._api = Mock(side_effect=response)
+
+            changed = harvester._source(
+                {
+                    "repo": "owner/repo",
+                    "documents": ["README.md"],
+                    "ignore_patterns": [],
+                    "layer": "test",
+                    "primary_owner": "welcome",
+                }
+            )
+
+            rendered = (harvester.inputs / changed[0]).read_text(encoding="utf-8")
+            document = harvester.state["repositories"]["owner/repo"]["documents"]["README.md"]
+            self.assertIn(
+                f"https://github.com/owner/repo/blob/{commit_sha}/README.md",
+                rendered,
+            )
+            self.assertNotIn(f"/blob/{blob_sha}/README.md", rendered)
+            self.assertEqual(document["commit_sha"], commit_sha)
+            self.assertEqual(document["tree_sha"], tree_sha)
+            self.assertEqual(document["blob_sha"], blob_sha)
+            self.assertEqual(
+                harvester._api.call_args_list[:3],
+                [
+                    call("https://api.github.com/repos/owner/repo"),
+                    call("https://api.github.com/repos/owner/repo/commits/main"),
+                    call(
+                        f"https://api.github.com/repos/owner/repo/git/trees/{tree_sha}?recursive=1"
+                    ),
+                ],
+            )
+
+    def test_legacy_blob_state_is_migrated_once(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            harvester = Harvester.__new__(Harvester)
+            harvester.inputs = Path(tmp)
+            old_snapshot = (
+                harvester.inputs
+                / "current"
+                / "test"
+                / "owner_repo"
+                / "README.md__bbbbbbbbbbbb.md"
+            )
+            old_snapshot.parent.mkdir(parents=True)
+            old_snapshot.write_text("legacy", encoding="utf-8")
+            source = "# Source\n"
+            digest = hashlib.sha256(
+                Harvester._normalized(source).encode()
+            ).hexdigest()
+            blob_sha = "b" * 40
+            commit_sha = "c" * 40
+            tree_sha = "t" * 40
+            harvester.state = {
+                "repositories": {
+                    "owner/repo": {
+                        "documents": {
+                            "README.md": {
+                                "sha": blob_sha,
+                                "content_hash": digest,
+                                "entity_id": "existing-entity",
+                                "output": old_snapshot.relative_to(
+                                    harvester.inputs
+                                ).as_posix(),
+                            }
+                        }
+                    }
+                }
+            }
+            def response(url):
+                if url == "https://api.github.com/repos/owner/repo":
+                    return {"default_branch": "main"}
+                if url.endswith("/commits/main"):
+                    return {
+                        "sha": commit_sha,
+                        "commit": {"tree": {"sha": tree_sha}},
+                    }
+                if "/git/trees/" in url:
+                    return {
+                        "tree": [
+                            {"type": "blob", "path": "README.md", "sha": blob_sha}
+                        ],
+                        "truncated": False,
+                    }
+                if "/git/blobs/" in url:
+                    return {
+                        "encoding": "base64",
+                        "content": base64.b64encode(source.encode()).decode("ascii"),
+                    }
+                raise AssertionError(f"unexpected API URL: {url}")
+
+            harvester._api = Mock(side_effect=response)
+            harvester.dry = False
+            profile = {
+                "repo": "owner/repo",
+                "documents": ["README.md"],
+                "ignore_patterns": [],
+                "layer": "test",
+                "primary_owner": "welcome",
+            }
+
+            first = harvester._source(profile)
+            second = harvester._source(profile)
+
+            self.assertEqual(len(first), 1)
+            self.assertEqual(second, [])
+            document = harvester.state["repositories"]["owner/repo"]["documents"]["README.md"]
+            self.assertEqual(document["commit_sha"], commit_sha)
+            self.assertEqual(document["tree_sha"], tree_sha)
+            self.assertEqual(document["blob_sha"], blob_sha)
+            blob_calls = [
+                item
+                for item in harvester._api.call_args_list
+                if "/git/blobs/" in item.args[0]
+            ]
+            self.assertEqual(len(blob_calls), 1)
+
+    def test_missing_state_requires_explicit_bootstrap(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "inputs").mkdir()
+            (root / "source_profiles.json").write_text(
+                '{"owner":"welcome","sources":[]}',
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(FileNotFoundError, "state"):
+                Harvester(root)
+
+            with patch.dict(os.environ, {"HARVESTER_BOOTSTRAP": "1"}):
+                harvester = Harvester(root)
+
+            self.assertEqual(harvester.state["schema_version"], 4)
+            self.assertEqual(harvester.state["repositories"], {})
+
+    def test_corrupt_state_fails_closed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "inputs").mkdir()
+            (root / "source_profiles.json").write_text(
+                '{"owner":"welcome","sources":[]}',
+                encoding="utf-8",
+            )
+            (root / "inputs" / ".harvester_state.json").write_text(
+                "{",
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(ValueError, "invalid JSON"):
+                Harvester(root)
+
+    def test_evolver_archive_collision_preserves_both_files(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            inputs = Path(tmp) / "inputs"
+            inputs.mkdir()
+            incoming = inputs / "incoming.md"
+            incoming.write_text("new", encoding="utf-8")
+            now = __import__("datetime").datetime.now()
+            archived = (
+                inputs
+                / "archive"
+                / str(now.year)
+                / f"{now.month:02d}"
+                / incoming.name
+            )
+            archived.parent.mkdir(parents=True)
+            archived.write_text("sealed", encoding="utf-8")
+            evolver = Evolver.__new__(Evolver)
+            evolver.inputs_path = inputs
+
+            with self.assertRaisesRegex(FileExistsError, "archive collision"):
+                evolver._archive_inputs()
+
+            self.assertEqual(incoming.read_text(encoding="utf-8"), "new")
+            self.assertEqual(archived.read_text(encoding="utf-8"), "sealed")
 
     def test_profiles_have_unique_welcome_owner(self):
         h = Harvester(Path(__file__).parents[1] / "docs" / "brain")

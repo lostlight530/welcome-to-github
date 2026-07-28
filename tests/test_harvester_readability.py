@@ -123,7 +123,19 @@ class ReadabilityContracts(unittest.TestCase):
         harvester = Harvester.__new__(Harvester)
         harvester.state = {"repositories": {}}
         harvester.inputs = Path("inputs")
-        harvester._api = lambda url: {"default_branch": "main"} if "/repos/" in url and "/git/trees/" not in url else {"truncated": True}
+        def response(url):
+            if url == "https://api.github.com/repos/owner/repo":
+                return {"default_branch": "main"}
+            if "/commits/" in url:
+                return {
+                    "sha": "commit-sha",
+                    "commit": {"tree": {"sha": "tree-sha"}},
+                }
+            if "/git/trees/" in url:
+                return {"tree": [], "truncated": True}
+            raise AssertionError(f"unexpected API URL: {url}")
+
+        harvester._api = response
         with self.assertRaisesRegex(ValueError, "truncated"):
             harvester._source({"repo": "owner/repo", "documents": [], "ignore_patterns": [], "layer": "test", "primary_owner": "welcome"})
 
