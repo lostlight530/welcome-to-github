@@ -40,12 +40,14 @@ def headings(text: str, limit: int = 24) -> list[str]:
 def render_snapshot(provenance: dict, source: str, diff: str, layer: str) -> str:
     repo = provenance["source_repo"]
     source_path = provenance["source_path"]
-    source_sha = provenance["source_sha"]
+    commit_sha = provenance.get("commit_sha") or provenance["source_sha"]
+    tree_sha = provenance.get("tree_sha")
+    blob_sha = provenance.get("blob_sha")
     navigation = headings(source)
     added = sum(1 for line in diff.splitlines() if line.startswith("+") and not line.startswith("+++"))
     removed = sum(1 for line in diff.splitlines() if line.startswith("-") and not line.startswith("---"))
     nav = "\n".join(f"- {item}" for item in navigation) or "- 未发现 Markdown 标题."
-    source_url = f"https://github.com/{repo}/blob/{source_sha}/{source_path}"
+    source_url = f"https://github.com/{repo}/blob/{commit_sha}/{source_path}"
     owned = f"""# {repo} · {source_path}
 
 > 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
@@ -56,7 +58,9 @@ def render_snapshot(provenance: dict, source: str, diff: str, layer: str) -> str
 | --- | --- |
 | 来源仓库 | [{repo}](https://github.com/{repo}) |
 | 来源文件 | [{source_path}]({source_url}) |
-| 来源版本 | `{source_sha}` |
+| 来源版本 | `{commit_sha}` |
+| 来源目录 Tree | `{tree_sha or 'legacy'}` |
+| 来源内容 Blob | `{blob_sha or 'legacy'}` |
 | 摄取时间 | `{provenance['retrieved_at']}` |
 | 归属层 | `{layer}` |
 | 可信度 | `{provenance.get('confidence', 1.0)}` |

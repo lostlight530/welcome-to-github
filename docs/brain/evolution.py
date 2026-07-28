@@ -145,6 +145,16 @@ class Evolver:
                     files.append(f)
         return files
 
+    @staticmethod
+    def _move_to_archive(source, destination):
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        if destination.exists():
+            if source.read_bytes() != destination.read_bytes():
+                raise FileExistsError(f"archive collision: {destination}")
+            source.unlink()
+            return
+        os.replace(source, destination)
+
     def _archive_inputs(self):
         now = datetime.datetime.now()
         archive_dir = self.inputs_path / "archive" / f"{now.year}" / f"{now.month:02d}"
@@ -154,8 +164,7 @@ class Evolver:
             if (
                 f.is_file()
                 and f.name.endswith(".md")
-                and not f.name.startswith('.')
+                and not f.name.startswith(".")
                 and f.name != "ARCHIVE_AND_HARVESTER.md"
             ):
-                shutil.move(str(f), str(archive_dir / f.name))
-
+                self._move_to_archive(f, archive_dir / f.name)
