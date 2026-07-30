@@ -4,34 +4,116 @@ Host Repository: welcome-to-github
 Task ID: H5
 Cadence: Monthly
 Loop Stage: Reflect
-Run Date: 2026-07-27
+Run Month: 2026-07
 Agent: Jules
-Knowledge Source: horizon-cortex local files
+Knowledge Source: Monthly H1-H4 + External Web + horizon-cortex local files
 Repository Inspection: NO
 GitHub Actions Inspection: NO
 Write Scope: horizon-cortex only
 Boundary Violation: NO
 
 INPUT_RECORD
-- Run Date: 2026-07-27
-- Task: Monthly Signal Reflection for July 2026.
-- Input Files: W27, W28, W29, W30 H3/H4 files, plus daily H1/H2 logs up to 07-27.
+Read H1/H2/H3/H4 Files:
+- horizon-cortex/2026-07-01-H1-signal-observe.md
+- horizon-cortex/2026-07-01-H2-horizon-orient.md
+- horizon-cortex/2026-07-02-H1-signal-observe.md
+- horizon-cortex/2026-07-02-H2-horizon-orient.md
+- horizon-cortex/2026-07-03-H1-signal-observe.md
+- horizon-cortex/2026-07-03-H2-horizon-orient.md
+- horizon-cortex/2026-07-04-H1-signal-observe.md
+- horizon-cortex/2026-07-04-H2-horizon-orient.md
+- horizon-cortex/2026-07-05-H1-signal-observe.md
+- horizon-cortex/2026-07-05-H2-horizon-orient.md
+- horizon-cortex/2026-07-06-H1-signal-observe.md
+- horizon-cortex/2026-07-06-H2-horizon-orient.md
+- horizon-cortex/2026-07-07-H1-signal-observe.md
+- horizon-cortex/2026-07-07-H2-horizon-orient.md
+- horizon-cortex/2026-07-08-H1-signal-observe.md
+- horizon-cortex/2026-07-08-H2-horizon-orient.md
+- horizon-cortex/2026-07-09-H1-signal-observe.md
+- horizon-cortex/2026-07-09-H2-horizon-orient.md
+- horizon-cortex/2026-07-10-H1-signal-observe.md
+- horizon-cortex/2026-07-10-H2-horizon-orient.md
+- horizon-cortex/2026-07-11-H1-signal-observe.md
+- horizon-cortex/2026-07-11-H2-horizon-orient.md
+- horizon-cortex/2026-07-12-H1-signal-observe.md
+- horizon-cortex/2026-07-12-H2-horizon-orient.md
+- horizon-cortex/2026-07-13-H1-signal-observe.md
+- horizon-cortex/2026-07-13-H2-horizon-orient.md
+- horizon-cortex/2026-07-14-H1-signal-observe.md
+- horizon-cortex/2026-07-14-H2-horizon-orient.md
+- horizon-cortex/2026-07-15-H1-signal-observe.md
+- horizon-cortex/2026-07-15-H2-horizon-orient.md
+- horizon-cortex/2026-07-16-H1-signal-observe.md
+- horizon-cortex/2026-07-16-H2-horizon-orient.md
+- horizon-cortex/2026-07-17-H1-signal-observe.md
+- horizon-cortex/2026-07-17-H2-horizon-orient.md
+- horizon-cortex/2026-07-18-H1-signal-observe.md
+- horizon-cortex/2026-07-18-H2-horizon-orient.md
+- horizon-cortex/2026-07-19-H1-signal-observe.md
+- horizon-cortex/2026-07-19-H2-horizon-orient.md
+- horizon-cortex/2026-07-20-H1-signal-observe.md
+- horizon-cortex/2026-07-20-H2-horizon-orient.md
+- horizon-cortex/2026-07-21-H1-signal-observe.md
+- horizon-cortex/2026-07-21-H2-horizon-orient.md
+- horizon-cortex/2026-07-22-H1-signal-observe.md
+- horizon-cortex/2026-07-22-H2-horizon-orient.md
+- horizon-cortex/2026-07-23-H1-signal-observe.md
+- horizon-cortex/2026-07-23-H2-horizon-orient.md
+- horizon-cortex/2026-07-24-H1-signal-observe.md
+- horizon-cortex/2026-07-24-H2-horizon-orient.md
+- horizon-cortex/2026-07-25-H1-signal-observe.md
+- horizon-cortex/2026-07-25-H2-horizon-orient.md
+- horizon-cortex/2026-07-26-H1-signal-observe.md
+- horizon-cortex/2026-07-26-H2-horizon-orient.md
+- horizon-cortex/2026-07-27-H1-signal-observe.md
+- horizon-cortex/2026-07-27-H2-horizon-orient.md
+- horizon-cortex/2026-07-28-H1-signal-observe.md
+- horizon-cortex/2026-07-28-H2-horizon-orient.md
+- horizon-cortex/2026-07-29-H1-signal-observe.md
+- horizon-cortex/2026-07-29-H2-horizon-orient.md
+- horizon-cortex/2026-07-30-H2-horizon-orient.md
+- horizon-cortex/2026-W27-H3-position-decide.md
+- horizon-cortex/2026-W27-H4-narrative-act.md
+- horizon-cortex/2026-W28-H3-position-decide.md
+- horizon-cortex/2026-W28-H4-narrative-act.md
+- horizon-cortex/2026-W29-H3-position-decide.md
+- horizon-cortex/2026-W29-H4-narrative-act.md
+- horizon-cortex/2026-W30-H3-position-decide.md
+- horizon-cortex/2026-W30-H4-narrative-act.md
 
-MONTHLY_SIGNAL_REFLECTION
-1. 从 "Make it Work" 到 "Make it Standardized":
-回顾 7 月的信号, MCP (Model Context Protocol) 毫无疑问占据了核心地位. 从 Anthropic 的最初提案, 到 Google Gemini 的支持, 再到开源社区的广泛跟进(包括政府黑客松的采用), MCP 已经确立了不可逆转的生态标准地位. 这迫使我们必须反思以往自定义集成 API 的做法, 全面拥抱标准化.
+Read Historic H5/H6 Files:
+NONE (June files missing, therefore MONTHLY_INPUT_GAP applies)
 
-2. Agent 可靠性成为工程焦点:
-"Agent Reliability Engineering" (ARE) 和 OWASP MCP Top 10 的出现是一个重要转折. 它意味着 AI Agent 不再仅仅是实验室里的玩具或演示 Demo, 而是正被严肃地视为企业级生产系统. 记忆架构向图谱和事件流演进, 以及 Durable Agent (Temporal集成) 的探索, 都是为了解决长时间运行状态下的可靠性问题.
+Web Search Verification Sources:
+- Cycode (OWASP MCP Top 10)
+- Microsoft Open Source / GitHub (Agent Control Specification, AGT, ASSERT)
+- CData Software, Developers Digest, azukiazusa.dev, Hashnode (MCP Stateless 2026-07-28 release candidate)
+- Faros AI (Agent Reliability Engineering - Harness Engineering)
 
-3. 边缘 AI 的能力边界被重塑:
-超长上下文能力正促使我们在端侧设备上重新思考 RAG 的必要性. 如果模型本身能够在端侧处理足够长的上下文, 那么将部分知识图谱查询负担下放至云端, 仅在端侧保持轻量级状态机, 可能是一种更优的架构平衡.
+SIGNAL_QUALITY_REVIEW
+- accurate: The adoption of MCP as an industry standard. Web search confirms MCP's stateless update (2026-07-28 release candidate) is a major architectural shift aimed at enterprise scalability.
+- accurate: The focus on Agent Reliability and Security. Microsoft's ACS and the OWASP MCP Top 10 are real, highly impactful industry developments addressing the "demo to production" gap.
+- premature: Treating complex graph RAG as obsolete in favor of purely relying on long-context models on edge devices. While long-context models are improving, enterprise workloads still heavily require durable agent checkpointing (e.g., Temporal) and robust evaluation frameworks (like ASSERT).
+- overhyped: Generic "top agent frameworks" rankings. As predicted in H3 decisions, the focus is correctly shifting to standardized runtime controls (ACS) and protocol-level security (OWASP MCP Top 10) rather than superficial lists.
 
-REFLECTION_NOTES
-- 我们之前的战略中, 对于安全性的假设过于乐观. 后续必须将 OWASP MCP Top 10 列入强制架构考量.
-- 必须加快对状态持久化技术的研究, 否则边缘设备断网将导致严重的工作流断裂.
+ERROR_AND_DRIFT_LOG
+- 重复判断: Early July H2 notes repeatedly stated "Strategic Pivot: We must adapt our agent execution model to be fully stateless and secure by default" without introducing new nuanced evidence each day.
+- 过度兴奋: We initially assumed the long-context capabilities of models like Claude Sonnet 5 might completely replace RAG. Web searches reveal that reliability engineering (ARE, ACS, Temporal) is the actual focus for long-running workflows, not just relying on the model's native context window.
+- 证据不足: The decision in W27 to default to edge-first and deprioritize complex RAG lacked solid engineering validation regarding the durability and reliability of edge agents.
+
+CORRECTION_NOTES
+- 保留 (Retain in H6): The transition of MCP to a stateless architecture (2026-07-28 release). This is a confirmed, critical technical shift that demands architectural migration.
+- 保留 (Retain in H6): The implementation of OWASP MCP Top 10 and Microsoft ACS. These represent the necessary maturity model (Agent Reliability Engineering) for deploying agents safely.
+- 降级 (Downgrade in H6): The immediate shift away from structured context management (RAG). Instead, reframe it under "Context Engineering" as part of a secure, durable harness for AI models.
+- 遗忘 (Forget in H6): Specific commercial agent benchmarking scores, as they do not provide actionable architectural guidance.
+
+HANDOFF_TO_H6
+- H6 需记录：MCP Stateless 架构迁移 (2026-07-28 规范) 是必须遵循的长期基础设施标准.
+- H6 需记录：Agent Reliability Engineering (ARE)，包括持久化状态机 (Temporal) 和标准化策略控制 (Microsoft ACS / OWASP MCP Top 10)，是构建下一代 Agent 系统的硬性要求.
+- 提醒：抛弃早期的定制 API 集成模式，全面拥抱安全优先的 MCP 生态.
 
 BOUNDARY_CHECK
-确认没有读取宿主仓库机制: 已确认
-确认没有读取 GitHub Actions: 已确认
-确认没有写入 horizon-cortex 之外的文件: 已确认
+确认没有读取宿主仓库机制
+确认没有读取 GitHub Actions
+确认没有写入 horizon-cortex 之外的文件
