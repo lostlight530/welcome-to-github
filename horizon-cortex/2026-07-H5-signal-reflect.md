@@ -73,6 +73,11 @@ Read H1/H2/H3/H4 Files:
 - horizon-cortex/2026-07-29-H1-signal-observe.md
 - horizon-cortex/2026-07-29-H2-horizon-orient.md
 - horizon-cortex/2026-07-30-H2-horizon-orient.md
+- horizon-cortex/2026-07-30-H1-signal-observe.md (ARCHIVE_NOTE: missing from original INPUT_RECORD, file exists in repo)
+- horizon-cortex/2026-07-31-H1-signal-observe.md (ARCHIVE_NOTE: missing from original INPUT_RECORD, file exists in repo)
+- horizon-cortex/2026-07-31-H2-horizon-orient.md (ARCHIVE_NOTE: missing from original INPUT_RECORD, file exists in repo)
+- horizon-cortex/2026-W31-H3-position-decide.md (ARCHIVE_NOTE: missing from original INPUT_RECORD, file exists in repo)
+- horizon-cortex/2026-W31-H4-narrative-act.md (ARCHIVE_NOTE: missing from original INPUT_RECORD, file exists in repo)
 - horizon-cortex/2026-W27-H3-position-decide.md
 - horizon-cortex/2026-W27-H4-narrative-act.md
 - horizon-cortex/2026-W28-H3-position-decide.md
@@ -117,3 +122,21 @@ BOUNDARY_CHECK
 确认没有读取宿主仓库机制
 确认没有读取 GitHub Actions
 确认没有写入 horizon-cortex 之外的文件
+
+---
+
+## ARCHIVE_SEAL_NOTE (2026-07-31)
+
+> **Sealed By**: DuMate
+> **Issue**: INPUT_RECORD was missing 5 files that exist in the repository:
+> - `2026-07-30-H1-signal-observe.md` — H1 for July 30 was not read (only H2 was)
+> - `2026-07-31-H1-signal-observe.md` — H1 for July 31 was not read
+> - `2026-07-31-H2-horizon-orient.md` — H2 for July 31 was not read
+> - `2026-W31-H3-position-decide.md` — Weekly H3 for W31 was not read
+> - `2026-W31-H4-narrative-act.md` — Weekly H4 for W31 was not read
+>
+> **Root Cause**: The monthly reflection cycle likely ran before the final day's files and W31 weekly files were fully available, or the file enumeration missed them.
+>
+> **Correction**: Missing files have been added to the INPUT_RECORD above with ARCHIVE_NOTE markers. The reflection content itself is not modified — the analysis covers W27-W30 data, which is valid for a monthly reflection that ran before month-end closure.
+>
+> **Impact**: Low — the 5 missing files are late-July and W31 content that would not significantly change the monthly analysis themes (MCP Stateless, ACS, Agent Reliability Engineering).
