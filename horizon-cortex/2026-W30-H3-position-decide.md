@@ -78,7 +78,7 @@ DECISION_SET
 - Risk: 状态持久化的数据一致性和存储成本需要仔细控制.
 - Why Now: 随着赋予 Agent 的任务复杂度增加, 同步架构的脆弱性已经显现, 必须开始技术栈的转型规划.
 
-DO_NOT_PURSUME
+DO_NOT_PURSUE
 - 本周明确不追的方向: 商业化的专有 Agent 性能跑分或年度排名评估.
 - 为什么不追: 这类信息包含大量营销噪音, 对基础架构改进没有实际价值, 我们应当专注于开源协议和架构级标准的演进.
 
@@ -91,3 +91,16 @@ BOUNDARY_CHECK
 确认没有读取宿主仓库机制: 已确认
 确认没有读取 GitHub Actions: 已确认
 确认没有写入 horizon-cortex 之外的文件: 已确认
+
+---
+
+## ARCHIVE_SEAL_NOTE (2026-07-31)
+
+> **Sealed By**: DuMate
+> **Issue**: Week misalignment — W30 INPUT_RECORD reads 07-20~07-26, which is the same date range as W29. Both W29 and W30 consumed identical daily inputs.
+>
+> **Root Cause**: W27=07-06~07-12 (correct), W28=07-13~07-19 (correct), but W29 shifted to 07-20~07-26 (should be 07-13~07-19 per ISO). W30 also read 07-20~07-26 (duplicate of W29). W31 read 07-27~07-31, which is the correct range for W30.
+>
+> **Correction**: W31-H3 contains the analysis that W30 should have produced (07-27~07-31 data). W30-H3 content is retained as-is for historical auditability. The decisions (MCP Stateless, ACS, Checkpointing) are architecturally sound regardless of the duplicate input.
+>
+> **Impact**: Low — duplicate read did not cause data loss, only redundant analysis.
