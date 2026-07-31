@@ -14,7 +14,7 @@
           "tree_sha": "8963032e5b9b428abc9b37a39fe126dcde0491c6"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:27.897069+00:00"
+      "last_checked_at": "2026-07-31T23:02:59.035197+00:00"
     },
     "ModelEngine-Group/nexent": {
       "documents": {
@@ -28,7 +28,7 @@
           "tree_sha": "4bd751000a6eaaebc914db8672d126e8cb41ca5a"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:29.144584+00:00"
+      "last_checked_at": "2026-07-31T23:03:01.873705+00:00"
     },
     "MoonshotAI/kimi-cli": {
       "documents": {
@@ -51,7 +51,7 @@
           "tree_sha": "96cf7e65f10325b717db982effd32b3cec55a331"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:33.074339+00:00"
+      "last_checked_at": "2026-07-31T23:03:10.330548+00:00"
     },
     "NousResearch/hermes-agent": {
       "documents": {
@@ -74,7 +74,7 @@
           "tree_sha": "dde1a14100619eb6a7a1ec6354ac21b10f21effe"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:23.665054+00:00"
+      "last_checked_at": "2026-07-31T23:02:49.324143+00:00"
     },
     "OpenHands/OpenHands": {
       "documents": {
@@ -97,7 +97,7 @@
           "tree_sha": "7a85806430dec292ad70f596b14a66f994435f0e"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:24.216942+00:00"
+      "last_checked_at": "2026-07-31T23:02:50.601078+00:00"
     },
     "agentuniverse-ai/agentUniverse": {
       "documents": {
@@ -120,7 +120,7 @@
           "tree_sha": "5150aef6ca84d3f2fe7ac784d54c954b61b454d5"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:32.597065+00:00"
+      "last_checked_at": "2026-07-31T23:03:09.087290+00:00"
     },
     "baidubce/app-builder": {
       "documents": {
@@ -134,7 +134,7 @@
           "tree_sha": "d73cb54a902389620762300878d430ca44cd7221"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:32.042342+00:00"
+      "last_checked_at": "2026-07-31T23:03:07.666158+00:00"
     },
     "browser-use/browser-use": {
       "documents": {
@@ -148,30 +148,30 @@
           "tree_sha": "6ebd132305353e4e62d8b7f61736ccbcbb377ab8"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:25.839612+00:00"
+      "last_checked_at": "2026-07-31T23:02:54.439388+00:00"
     },
     "bytedance/deer-flow": {
       "documents": {
         "CHANGELOG.md": {
-          "blob_sha": "bd0db7cfa4ae2f3b820652d5bd050a7b1f6d9811",
-          "commit_sha": "b3af8c918312891a305fd9f99644bc5f930b571c",
-          "content_hash": "19999eb1a0cbfc366f7adf7fe2ecdf40c4b5b3c3a3397aeeb5fbfbe1e0edc3c9",
+          "blob_sha": "d80022249809ec284495bf91ab74b0d73b7e8c87",
+          "commit_sha": "5b7ada0cac7afdcd44ddf0481bb3f1a681fd9504",
+          "content_hash": "0a0a5f4e8d1e159217f7288d46678b844d686ac440204e3b85dd3c13f48db4c4",
           "entity_id": "external_doc_bytedance_deer_flow_changelog_md",
-          "output": "current/complex-agent-systems/bytedance_deer_flow/CHANGELOG.md__bd0db7cfa4ae__b3af8c918312.md",
-          "sha": "bd0db7cfa4ae2f3b820652d5bd050a7b1f6d9811",
-          "tree_sha": "f5c1eb5ecb555b664663abf3a21207bad1ab7107"
+          "output": "current/complex-agent-systems/bytedance_deer_flow/CHANGELOG.md__d80022249809__5b7ada0cac7a.md",
+          "sha": "d80022249809ec284495bf91ab74b0d73b7e8c87",
+          "tree_sha": "967bd4595dcb2eb568474796b07355f46a9b0263"
         },
         "README.md": {
-          "blob_sha": "133c6bc4c9cb384258c672ebcb26e92fec35ea5b",
-          "commit_sha": "150f7740c703292a154762f3a71aa9e18d17bda3",
-          "content_hash": "ea28c2b83120242a48426be3bd1d8ce192ad889b8bc44218a0a656b0ac1e68aa",
+          "blob_sha": "e8891daefe09c82c7147fa203288941672f72d24",
+          "commit_sha": "5b7ada0cac7afdcd44ddf0481bb3f1a681fd9504",
+          "content_hash": "ef3b3958b36d171c3bd3e8ae2e92ba699a51cb36718de3ae9cb8f2d5fa054f7a",
           "entity_id": "external_doc_bytedance_deer_flow_readme_md",
-          "output": "current/complex-agent-systems/bytedance_deer_flow/README.md__133c6bc4c9cb__150f7740c703.md",
-          "sha": "133c6bc4c9cb384258c672ebcb26e92fec35ea5b",
-          "tree_sha": "15693b43e9ec6d88eccd266b4d1479b210844eb7"
+          "output": "current/complex-agent-systems/bytedance_deer_flow/README.md__e8891daefe09__5b7ada0cac7a.md",
+          "sha": "e8891daefe09c82c7147fa203288941672f72d24",
+          "tree_sha": "967bd4595dcb2eb568474796b07355f46a9b0263"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:29.692782+00:00"
+      "last_checked_at": "2026-07-31T23:03:03.403836+00:00"
     },
     "coze-dev/coze-studio": {
       "documents": {
@@ -185,7 +185,7 @@
           "tree_sha": "2ed3dcbcfb84da3df4c578865c4cabc51fe9d815"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:30.760986+00:00"
+      "last_checked_at": "2026-07-31T23:03:05.481724+00:00"
     },
     "crewAIInc/crewAI": {
       "documents": {
@@ -199,7 +199,7 @@
           "tree_sha": "e74ce6c30b9f97d1d2d64511e60456a191f270a1"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:25.363761+00:00"
+      "last_checked_at": "2026-07-31T23:02:53.316355+00:00"
     },
     "iflytek/astron-agent": {
       "documents": {
@@ -213,7 +213,7 @@
           "tree_sha": "42e5edb7a7125dc315befb13f5f51bdc907b6ffe"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:28.572851+00:00"
+      "last_checked_at": "2026-07-31T23:03:00.542924+00:00"
     },
     "jd-opensource/joyagent-jdgenie": {
       "documents": {
@@ -227,7 +227,7 @@
           "tree_sha": "d77c5c544348014d2f103d874cd1bdb650cd5033"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:31.293249+00:00"
+      "last_checked_at": "2026-07-31T23:03:06.502346+00:00"
     },
     "ogx-ai/ogx": {
       "documents": {
@@ -241,7 +241,7 @@
           "tree_sha": "047b805d03b2e35a93de13b0f7d44e5d6fed04bd"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:27.040689+00:00"
+      "last_checked_at": "2026-07-31T23:02:57.201348+00:00"
     },
     "ollama/ollama": {
       "documents": {
@@ -255,7 +255,7 @@
           "tree_sha": "c2734ba3654a24e4c55a00d2d9bf9dff3a99165d"
         }
       },
-      "last_checked_at": "2026-07-30T23:08:26.370701+00:00"
+      "last_checked_at": "2026-07-31T23:02:55.662131+00:00"
     }
   },
   "schema_version": 4
