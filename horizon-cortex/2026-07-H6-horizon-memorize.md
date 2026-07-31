@@ -75,6 +75,11 @@ INPUT_RECORD
   - 2026-07-29-H1-signal-observe.md
   - 2026-07-29-H2-horizon-orient.md
   - 2026-07-30-H2-horizon-orient.md
+  - 2026-07-30-H1-signal-observe.md (ARCHIVE_NOTE: missing from original INPUT_RECORD, file exists in repo)
+  - 2026-07-31-H1-signal-observe.md (ARCHIVE_NOTE: missing from original INPUT_RECORD, file exists in repo)
+  - 2026-07-31-H2-horizon-orient.md (ARCHIVE_NOTE: missing from original INPUT_RECORD, file exists in repo)
+  - 2026-W31-H3-position-decide.md (ARCHIVE_NOTE: missing from original INPUT_RECORD, file exists in repo)
+  - 2026-W31-H4-narrative-act.md (ARCHIVE_NOTE: missing from original INPUT_RECORD, file exists in repo)
   - 2026-W27-H3-position-decide.md
   - 2026-W27-H4-narrative-act.md
   - 2026-W28-H3-position-decide.md
@@ -84,7 +89,7 @@ INPUT_RECORD
   - 2026-W30-H3-position-decide.md
   - 2026-W30-H4-narrative-act.md
 - Historic H6 files:
-  - 2026-07-H6-horizon-memorize.md
+  - NONE (June files missing, MONTHLY_INPUT_GAP applies. Original listed self-reference to 2026-07-H6, corrected in archive seal.)
 - Web Sources:
   - descope.com/learn/post/mcp
   - blog.redlinesoft.net/posts/model-context-protocol-gemini-3
@@ -125,3 +130,14 @@ BOUNDARY_CHECK
 - Checked Host Repository Mechanism: NO
 - Checked GitHub Actions: NO
 - Wrote Outside horizon-cortex: NO
+
+---
+
+## ARCHIVE_SEAL_NOTE (2026-07-31)
+
+> **Sealed By**: DuMate
+> **Issue 1**: INPUT_RECORD was missing 5 files (same as H5): 07-30-H1, 07-31-H1/H2, W31-H3/H4. Added with ARCHIVE_NOTE markers.
+>
+> **Issue 2**: Historic H6 files listed `2026-07-H6-horizon-memorize.md` — a self-reference. This is the current month's H6 file, not a historic one. June H6 files are missing (MONTHLY_INPUT_GAP). Corrected.
+>
+> **Impact**: Low — the durable memories (MCP First, ARE, OWASP MCP Top 10) are architecturally sound and not affected by the missing late-July inputs.
