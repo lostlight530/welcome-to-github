@@ -97,6 +97,12 @@ NOTE_PATTERN = re.compile(r"^## (N-\d+).*?(?=^## |\Z)", re.MULTILINE | re.DOTALL
 NOTE_SUPPORT_PATTERN = re.compile(r"PX-(?:S-)?\d{8}-P\d+")
 
 
+HISTORICAL_MONTHLY_PATTERN = re.compile(
+    r'^## (\d{4}-\d{2}-\d{2})\s*\n(.*?)(?=^## |\Z)',
+    re.MULTILINE | re.DOTALL,
+)
+
+
 def metadata(text: str, label: str) -> list[str]:
     return re.findall(rf"^- {re.escape(label)}:\s*(.+?)\s*$", text, re.MULTILINE)
 
@@ -148,6 +154,7 @@ def validate() -> list[str]:
     errors: list[str] = []
     files = sorted(path for path in ROOT.rglob("*") if path.is_file())
     record_windows: dict[str, date] = {}
+    historical_record_windows: dict[str, date] = {}
     daily_dates: list[date] = []
     topic_windows: list[date] = []
     daily_files: list[Path] = []
@@ -329,6 +336,50 @@ def validate() -> list[str]:
                 errors.append(f"audit missing from audit index: {relative}")
             audit_record_refs[relative] = set(NOTE_SUPPORT_PATTERN.findall(text))
 
+    for monthly_path in monthly_files:
+        monthly_relative = monthly_path.relative_to(ROOT).as_posix()
+        monthly_text = monthly_path.read_text(encoding='utf-8')
+        for match in HISTORICAL_MONTHLY_PATTERN.finditer(monthly_text):
+            section_date_text = match.group(1)
+            section = match.group(0)
+            ids = RECORD_ID_PATTERN.findall(section)
+            if not ids:
+                continue
+            if len(ids) != 1:
+                errors.append(
+                    f'historical monthly record ID count is {len(ids)}: '
+                    f'{monthly_relative}#{section_date_text}'
+                )
+                continue
+            record_id = ids[0]
+            expected_prefix = 'PX-' + section_date_text.replace('-', '') + '-P'
+            if not re.fullmatch(r'PX-\d{8}-P\d+', record_id):
+                errors.append(f'invalid historical record ID: {record_id}')
+                continue
+            if not record_id.startswith(expected_prefix):
+                errors.append(f'historical record ID date mismatch: {record_id}')
+            window = parse_single_date(
+                section,
+                '独立时间窗口',
+                f'{monthly_relative}#{section_date_text}',
+                errors,
+            )
+            executed = parse_single_date(
+                section,
+                '实际执行日期',
+                f'{monthly_relative}#{section_date_text}',
+                errors,
+            )
+            if executed and window and executed != window:
+                errors.append(f'historical execution window mismatch: {record_id}')
+            case_ids = metadata(section, '案例 ID')
+            if len(case_ids) != 1 or f'## {case_ids[0]} ' not in cases_text:
+                errors.append(f'historical case reference mismatch: {record_id}')
+            if window:
+                if record_id in record_windows or record_id in historical_record_windows:
+                    errors.append(f'duplicate record ID: {record_id}')
+                historical_record_windows[record_id] = window
+
     if daily_dates:
         ordered_dates = sorted(daily_dates)
         present_dates = set(ordered_dates)
@@ -431,7 +482,10 @@ def validate() -> list[str]:
         if not references:
             errors.append(f"audit has no research record references: {audit_relative}")
         for reference in references:
-            if reference not in record_windows:
+            if (
+                reference not in record_windows
+                and reference not in historical_record_windows
+            ):
                 errors.append(
                     f"audit references missing record {reference}: {audit_relative}"
                 )
@@ -447,12 +501,14 @@ def validate() -> list[str]:
                 errors.append(f"long-term note has fewer than three support records: {note_id}")
             windows: set[date] = set()
             for support in supports:
-                if support not in record_windows:
+                if support in record_windows:
+                    windows.add(record_windows[support])
+                elif support in historical_record_windows:
+                    windows.add(historical_record_windows[support])
+                else:
                     errors.append(
                         f"long-term note references missing record {support}: {note_id}"
                     )
-                else:
-                    windows.add(record_windows[support])
             if len(windows) < 2:
                 errors.append(f"long-term note has fewer than two time windows: {note_id}")
             if "### 反例检查" not in section:
