@@ -6,19 +6,27 @@ Welcome to the digital portal of lostlight, an Edge AI practitioner focusing on 
 
 ## Live Portal
 
-Experience the high-end, highly-engineered annual review website via the lostlight-portal:
+The public presentation layer is available at:
 
 [lostlight.github.io/welcome-to-github](https://lostlight530.github.io/welcome-to-github/)
 
-## Engineering Standards & Architecture
+The portal is an independent display surface. Repository workflows and knowledge processing run separately.
 
-This repository serves as the foundation for the edge-first core architecture project. It is built under continuous integration and adheres to the following principles:
+## Engineering Standards and Architecture
 
-- **Bilingual Excellence**: Absolute accessibility through strict bilingual support (Chinese headers, English technical content).
-- **Zero-Dependency Brutalism**: Ensures extreme system stability and rapid startup by strictly avoiding third-party dependencies.
-- **Append-Only Memory**: Preserves the history of AI-human collaboration via immutable digital archaeology, ensuring no knowledge is ever lost.
-- **Trust Gateway**: A strict security layer that evaluates, penalizes, and physically blocks malicious or malformed agent interactions.
-- **Continuous System Pulse**: Enforces an automated, continuous deterministic heartbeat to keep the system state perpetually active and verifiable.
+This repository is the entry point for an edge-first research system and a deterministic knowledge lifecycle.
+
+- **Bilingual Accessibility**: Chinese navigation and English technical content remain readable without requiring a specialized client.
+- **Standard-Library Core**: The Python lifecycle uses the standard library. Explicitly declared browser assets may be delivered separately by the presentation layer.
+- **Append-Only Evidence**: Historical evidence is retained under the archive policy while active indexes remain reproducible from canonical ledgers.
+- **Validation Boundary**: Untrusted observations are accepted only after provenance, format, lifecycle, and human-review checks. This is a repository policy boundary, not a public network security service.
+- **Continuous System Pulse**: Scheduled and change-triggered checks keep the current repository state testable and auditable.
+
+## Security
+
+Security reports must use the private process described in [SECURITY.md](./SECURITY.md).
+
+Do not publish credentials, private data, or exploit details in a public issue.
 
 ## Digital Museum
 

@@ -1,84 +1,98 @@
-# 🧠 NEXUS CORTEX: 认知合成协议 (Cognitive Synthesis Protocol)
+# NEXUS CORTEX 认知合成协议
 
-> **"The digital brain of the lostlight-portal ecosystem and spec-X architecture."**
+> **"The evidence and knowledge layer of the lostlight portal."**
 
-此目录托管了一个**有状态的、仅追加知识图谱 (Stateful, Append-Only Knowledge Graph)**，旨在通过递归学习、多维信息采集和架构师的监督来实现自主进化。目前系统运行于 **Phase VII: Heartbeat Awakening (心跳觉醒)** 阶段。它作为一个“真理法庭 (Truth Court)”，具备全知之眼 (Deep AST Codebase Ingestion)、认知推演 (Graph Inference & Deep Pondering)、衔尾蛇免疫 (Ouroboros Protection) 以及严格的 MCP 信任网关 (Trust Gateway)。
+此目录维护一个有状态、可重建的知识图谱. 原始输入、规范活动账本、历史归档和临时 SQLite 索引承担不同职责，不把任何单一报告直接视为事实.
 
----
+## 系统架构
 
-## Ⅰ. 系统架构 (Architecture)
+### 记忆层
 
-The system mimics a biological brain with core integrated layers (系统模仿生物大脑，具有核心整合层):
+- JSONL 是可审计的事实账本.
+- SQLite 是可删除并重建的查询索引.
+- 历史归档保持来源原貌，活动图谱只保留当前规范记录.
 
-1. 🗄️ **记忆层 (Memory / Storage)**
-   - A centralized, ephemeral 4D Temporal Graph that safely maps all active and deprecated knowledge states. (一个集中的、短期的 4D 时序图谱，安全地映射所有活跃与废弃的知识状态。)
-   - An immutable, append-only physical ledger that chronologically records system health, structural metrics, and current architectural focus areas. (一个不可篡改的、仅追加的物理账本，按时间顺序记录系统健康、结构指标和当前架构的焦点领域。)
+### Cortex 引擎
 
-2. ⚙️ **皮层引擎 (Cortex / Engine)**
-   - The core engine responsible for orchestrating knowledge retrieval, full-text associative mapping, and computing system-wide quantitative health metrics. (核心引擎，负责编排知识检索、全文本联想映射以及计算系统级的量化健康指标。)
+- 提供知识检索、关系映射和结构指标.
+- 只从受约束的活动账本重建状态.
 
-3. 👁️ **全知之眼 (Scholar / Omniscience)**
-   - The structural scanner that comprehensively maps the internal codebase geometry, converting source files into queryable graph configurations without Ouroboros Loops. (结构扫描器，全面映射内部代码库几何结构，将源文件转化为可查询的图谱配置，且严格免疫拓扑死循环。)
+### Scholar 结构扫描
 
-4. 🧠 **额叶皮层 (Reason / Cognition)**
-   - The deductive component that calculates knowledge density, identifies isolated conceptual orphans, and surfaces actionable targets for system evolution. (演绎组件，计算知识密度、识别孤立的概念节点，并为系统进化提供可操作的具体目标。)
+- 使用 AST 映射当前代码结构.
+- 生成内容必须经过活动图谱规范化与写入边界检查.
 
-5. 🔌 **中央神经系统 (Nexus / Central Command)**
-   - The unified command interface and security layer. It acts as a strict gateway that validates, tracks, and penalizes external entity interactions to protect the integrity of the graph. (统一的指挥接口与安全层。它作为严格的信任网关，验证、追踪并惩罚外部实体的违规交互，以保护图谱的绝对完整性。)
+### Reason 推演
 
----
+- 计算知识密度、孤立节点和可验证的结构信号.
+- 输出是待审核的研究结果，不是来源真实性证明.
 
-## Ⅱ. 使用指南 (Usage Guide - Nexus CLI)
+### Nexus 生命周期
 
-All operations are performed via `nexus.py`.
+- 统一编排收割、投影、规范化、重建、推演与报告.
+- 拒绝未声明的写入路径.
+- 不提供公共网络服务或自动安全裁决.
 
-### 1. 进化与思考 (Evolve & Ponder)
+## 使用指南
+
+所有命令通过 `nexus.py` 执行.
+
+### 更新与推演
+
 ```bash
-# Ingest internal codebase mapping via AST
+# Map the current codebase through AST
 python docs/brain/nexus.py ingest
 
-# Deep ponder the graph for anomalies & hidden bridges
+# Calculate structural signals
 python docs/brain/nexus.py ponder
 
-# Run Daily Evolution Cycle (Includes Sandbox Verification)
+# Run the local evolution cycle
 python docs/brain/nexus.py evolve
 
 # Synchronize approved profile sources
 python docs/brain/nexus.py harvest
 ```
 
-### 2. 观察 (Observe / Read)
+### 观察与读取
+
 ```bash
-# Check Brain Health & Entropy
+# Inspect current graph health
 python docs/brain/nexus.py status
 
-# Search Concepts via Synaptic Associative Search
+# Search indexed concepts
 python docs/brain/nexus.py search "android"
 ```
 
-### 3. 清理与恢复 (Clean & Restore)
+### 清理与恢复
+
 ```bash
-# Clear Temporary Cache Targets (Protects .harvester_state.json)
+# Clear declared temporary cache targets
 python docs/brain/nexus.py clean
 
-# Rebuild database from JSONL ledger
+# Rebuild SQLite from the canonical JSONL ledger
 python docs/brain/nexus.py rebuild
 ```
 
----
+## 图谱规则
 
-## Ⅲ. 图谱规则 (Schema & Rules)
+See [SCHEMA.md](./SCHEMA.md) for the active schema.
 
-See [SCHEMA.md](./SCHEMA.md) for the "Gene Code" of this system.
+- 历史证据不做破坏性覆写.
+- 活动关系必须指向活动实体.
+- 归档、活动账本和临时索引不得混用.
+- 自动生成结果必须保留可追溯来源和明确边界.
 
-- 🚫 **Rule #1**: Never delete. Only append or deprecate via 4D temporal tracking.
-- 🔗 **Rule #2**: All relations must point to existing entities.
+## 自动化
 
----
+`.github/workflows/nexus-life-cycle.yml` 在计划任务或相关代码变化时运行统一生命周期.
 
-## Ⅳ. CI/CD 自动化 (Automation)
+它会验证当前 Python 文件和测试、同步批准来源、规范活动账本、重建临时索引、运行结构分析并检查最终写入边界.
 
-The brain is wired directly into GitHub Actions with a **Unified Lifecycle**:
+只有 `main` 分支允许自动提交声明范围内的生成产物. 分支和 PR 运行只验证，不写回仓库.
 
-- 🧬 **`nexus-life-cycle.yml`**: A scheduled and push-triggered lifecycle that rebuilds state, harvests the 15 declared profile sources, validates harvester contracts, ingests structural changes, runs deductive metrics, and commits generated artifacts only to the triggering branch.
-  - **The System Pulse**: An absolute temporal mechanism ensuring the system remains continuously active, verifiable, and free from automated hibernation or Git starvation.
+## 安全边界
+
+- 外部文档属于不可信输入，即使来源在允许列表中也不自动获得真实性.
+- 内容哈希只证明字节身份，不证明作者身份、授权或可信度.
+- 自动化验证不能替代人类 Review.
+- 漏洞必须按照仓库根目录 [SECURITY.md](../../SECURITY.md) 私密报告.
