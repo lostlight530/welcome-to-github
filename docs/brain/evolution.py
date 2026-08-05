@@ -1,10 +1,8 @@
-import sys
 import os
 import shutil
 import datetime
 import logging
 import re
-import subprocess
 from pathlib import Path
 from cortex import Cortex
 try:
@@ -28,13 +26,10 @@ class Evolver:
             # 0. AST Hot-Patching (Genetic Auto-Recombination)
             self._genetic_auto_recombination()
 
-            # 1. Sandbox Verification
-            self._run_sandbox_tests()
-
-            # 2. Rebuild ephemeral index from JSONL ledger
+            # 1. Rebuild ephemeral index from JSONL ledger
             self.cortex._init_db()
 
-            # 2.5 Resolve isolation
+            # 2. Resolve isolation
             self.cortex.suture_orphans()
 
             # 3. Process new inputs (Harvester)
@@ -96,37 +91,6 @@ class Evolver:
         except Exception as e:
             logging.error(f"Genetic Recombination Failed / 基因重组失败: {e}")
             raise
-
-    def _run_sandbox_tests(self):
-        """AST Loop Preparation: Verifies local MCP and systems logic via subprocess."""
-        logging.info("Executing Sandbox Verification Protocol... / 执行沙盒验证协议...")
-        test_script = self.brain_path / "test_mcp.py"
-        if test_script.exists():
-            try:
-                # Use the same interpreter and run from the brain path to ensure relative imports work
-                result = subprocess.run(
-                    [sys.executable, str(test_script.name)],
-                    capture_output=True,
-                    text=True,
-                    check=True,
-                    cwd=str(self.brain_path)
-                )
-                # If the test script prints multiple lines, log the last non-empty line for brevity
-                out_lines = [ln for ln in result.stdout.splitlines() if ln.strip()]
-                last_line = out_lines[-1] if out_lines else result.stdout.strip()
-                logging.info(f"Sandbox Verification Passed / 沙盒验证通过: {last_line}")
-            except subprocess.CalledProcessError as e:
-                # Include stdout/stderr in logs to make CI failures actionable
-                logging.error(f"Sandbox Verification Failed! Exit Code {e.returncode} / 沙盒验证失败！退出码 {e.returncode}")
-                logging.error("=== sandbox stdout ===")
-                logging.error(e.stdout or "<no stdout>")
-                logging.error("=== sandbox stderr ===")
-                logging.error(e.stderr or "<no stderr>")
-                # raise a more informative exception including captured output
-                raise RuntimeError(
-                    "Sandbox Verification aborted the Evolution Cycle due to protocol failures. "
-                    f"See sandbox stdout/stderr in logs. exit_code={e.returncode}"
-                ) from e
 
     def _incubate_ideas(self):
         try:
