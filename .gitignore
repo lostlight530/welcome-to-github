@@ -54,10 +54,7 @@ server.log
 verification/
 __pycache__/
 
-# Append this to .gitignore
+# Brain runtime state #
 docs/brain/*.db
 docs/brain/inputs/.harvester_state.json
 docs/brain/inputs/.raw_cache/
-
-# Keep internal agent prompts private
-docs/brain/agents/AGENT_PROMPTS_INTERNAL.md
