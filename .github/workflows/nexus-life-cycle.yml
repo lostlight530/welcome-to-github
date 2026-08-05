@@ -31,7 +31,7 @@ jobs:
           python-version: '3.10'
       - name: Validate Runtime Contracts
         run: |
-          python -c "from pathlib import Path; names=('nexus.py','nexus_mcp.py','test_mcp.py','harvester.py','document_hygiene.py','cortex.py','evolution.py','scholar.py','reason.py','factory.py','report_hygiene.py','report_hygiene_core.py'); files=[Path('docs/brain')/name for name in names] + sorted(Path('tests').glob('*.py')); [compile(path.read_bytes(), str(path), 'exec') for path in files]; print(f'compiled {len(files)} lifecycle Python files')"
+          python -c "from pathlib import Path; files=sorted(Path('docs/brain').glob('*.py')) + sorted(Path('tests').glob('*.py')); [compile(path.read_bytes(), str(path), 'exec') for path in files]; print(f'compiled {len(files)} lifecycle Python files')"
           python -m unittest discover -s tests -p 'test*.py'
       - name: Validate Existing Ledgers
         run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import maintain_jsonl; print(maintain_jsonl('docs/brain/knowledge'))"
@@ -108,7 +108,7 @@ jobs:
       - name: Verify Rebased World-Line
         if: github.ref == 'refs/heads/main'
         run: |
-          python -c "from pathlib import Path; names=('nexus.py','nexus_mcp.py','test_mcp.py','harvester.py','document_hygiene.py','cortex.py','evolution.py','scholar.py','reason.py','factory.py','report_hygiene.py','report_hygiene_core.py'); files=[Path('docs/brain')/name for name in names] + sorted(Path('tests').glob('*.py')); [compile(path.read_bytes(), str(path), 'exec') for path in files]; print(f'compiled {len(files)} lifecycle Python files')"
+          python -c "from pathlib import Path; files=sorted(Path('docs/brain').glob('*.py')) + sorted(Path('tests').glob('*.py')); [compile(path.read_bytes(), str(path), 'exec') for path in files]; print(f'compiled {len(files)} lifecycle Python files')"
           python -m unittest discover -s tests -p 'test*.py'
           python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; repaired=canonicalize_ledger('docs/brain/knowledge'); clean=canonicalize_ledger('docs/brain/knowledge'); print(repaired); print(clean); assert clean['duplicate_entities']==0 and clean['duplicate_relations']==0 and clean['dangling_relations']==0"
           python - <<'PY'
