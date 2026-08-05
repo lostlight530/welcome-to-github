@@ -1,27 +1,46 @@
 # Security Policy
 
-## Supported Versions
+## Supported State
 
-This repository operates under the deterministic autonomy architecture and is governed by Phase VII protocols.
+Security fixes apply to the latest commit on `main`.
 
-| Version | Supported |
-| --- | --- |
-| Phase VII (Current) | :white_check_mark: |
-| Phase VI | :white_check_mark: |
-| Phase V & Below | :x: |
+Feature branches, pull requests, generated reports, and historical snapshots are not maintained as independent release lines.
 
-## Reporting a Vulnerability
+## Private Reporting
 
-If you discover a vulnerability or a violation of the Trust Gateway / Zero-Dependency protocols, please submit a detailed report.
+Report suspected vulnerabilities through [GitHub Private Vulnerability Reporting](https://github.com/lostlight530/welcome-to-github/security/advisories/new).
 
-The repository runs on GitHub Actions with deterministic cron schedules. The Trust Gateway actively penalizes malformed MCP requests. If a security issue is identified, it will be analyzed within the deterministic pipeline and addressed promptly.
+Do not open a public issue containing:
+
+- credentials, tokens, or private data
+- working exploit details
+- unpatched workflow or Pages weaknesses
+- information that could put another repository or user at risk
+
+A useful report includes the affected path, commit SHA, reproducible steps, expected boundary, observed behavior, and potential impact.
+
+Reports are reviewed on a best-effort basis. No automated system accepts, triages, or resolves security reports without human review.
 
 ## Scope
 
-- GitHub Actions workflows (`.github/workflows/`)
-- Nexus lifecycle automation
-- Harvester data pipeline
-- Pages deployment (`index.html` via CDN Tailwind)
-- `docs/brain/` knowledge graph runtime
+Security-relevant surfaces include:
 
-Out of scope: archived historical assets under `docs/archaeology/` and `docs/brain/knowledge/archive/`.
+- GitHub Actions workflows under `.github/workflows/`
+- lifecycle and harvesting code under `docs/brain/`
+- active knowledge and input processing
+- the GitHub Pages presentation layer
+- repository permissions and generated-artifact write boundaries
+
+## Security Boundaries
+
+- This repository does not operate a public MCP server or remote Trust Gateway.
+- Deterministic validation reduces ambiguity but does not authenticate an external source.
+- A SHA-256 digest proves content identity, not author identity or trust.
+- Generated knowledge remains untrusted until its provenance and active-ledger constraints are verified.
+- GitHub Actions permissions are limited by each workflow and remain subject to human review.
+
+## Historical Material
+
+Historical assets under `docs/archaeology/` and archive directories are preserved as evidence and are not active runtime components.
+
+Incorrect or obsolete historical claims are normally out of scope. Exposed credentials, private data, unsafe executable content, or paths that affect the active runtime remain reportable regardless of location.
