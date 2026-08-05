@@ -64,6 +64,12 @@
 {"desc":"Main loop reading from Stdin.","id":"file_docs_brain_nexus_mcp_py__func_run","name":"run","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_nexus_py__func__brain_root","name":"_brain_root","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_nexus_py__func_main","name":"main","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_observation_contract_py__func___post_init__","name":"__post_init__","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_observation_contract_py__func__required_text","name":"_required_text","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_observation_contract_py__func__text_tuple","name":"_text_tuple","type":"code_function"}
+{"desc":"Return the SHA-256 identity of the canonical declaration.","id":"file_docs_brain_observation_contract_py__func_fingerprint","name":"fingerprint","type":"code_function"}
+{"desc":"Return a JSON-compatible declaration with stable field names.","id":"file_docs_brain_observation_contract_py__func_to_canonical_dict","name":"to_canonical_dict","type":"code_function"}
+{"desc":"Serialize without locale, clock, randomness, or platform variance.","id":"file_docs_brain_observation_contract_py__func_to_canonical_json","name":"to_canonical_json","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_reason_py__func___init__","name":"__init__","type":"code_function"}
 {"desc":"Phase V: Pure mathematical centrality deduction without external libraries.","id":"file_docs_brain_reason_py__func__calculate_pagerank","name":"_calculate_pagerank","type":"code_function"}
 {"desc":"Find nodes with exactly 1 edge (Superficial Knowledge)","id":"file_docs_brain_reason_py__func__generate_curiosity","name":"_generate_curiosity","type":"code_function"}

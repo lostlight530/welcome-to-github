@@ -6,6 +6,8 @@
 {"desc":"Python Class","id":"file_docs_brain_factory_py__class_KnowledgeFactory","name":"KnowledgeFactory","type":"code_class"}
 {"desc":"Python Class","id":"file_docs_brain_harvester_py__class_Harvester","name":"Harvester","type":"code_class"}
 {"desc":"Python Class","id":"file_docs_brain_nexus_mcp_py__class_MCPServer","name":"MCPServer","type":"code_class"}
+{"desc":"Raised when an observation declaration is incomplete or ambiguous.","id":"file_docs_brain_observation_contract_py__class_DeclarationValidationError","name":"DeclarationValidationError","type":"code_class"}
+{"desc":"Declare why an observation may enter a knowledge boundary.","id":"file_docs_brain_observation_contract_py__class_ObservationDeclaration","name":"ObservationDeclaration","type":"code_class"}
 {"desc":"Python Class","id":"file_docs_brain_reason_py__class_ReasoningEngine","name":"ReasoningEngine","type":"code_class"}
 {"desc":"Python Class","id":"file_docs_brain_scholar_py__class_Scholar","name":"Scholar","type":"code_class"}
 {"desc":"Python Class","id":"file_tests_test_harvester_py__class_HarvesterContracts","name":"HarvesterContracts","type":"code_class"}

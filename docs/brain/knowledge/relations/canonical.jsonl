@@ -132,6 +132,14 @@
 {"desc":"","dst":"file_docs_brain_nexus_mcp_py__func_run","relation":"defines","src":"file_docs_brain_nexus_mcp_py"}
 {"desc":"","dst":"file_docs_brain_nexus_py__func__brain_root","relation":"defines","src":"file_docs_brain_nexus_py"}
 {"desc":"","dst":"file_docs_brain_nexus_py__func_main","relation":"defines","src":"file_docs_brain_nexus_py"}
+{"desc":"","dst":"file_docs_brain_observation_contract_py__class_DeclarationValidationError","relation":"defines","src":"file_docs_brain_observation_contract_py"}
+{"desc":"","dst":"file_docs_brain_observation_contract_py__class_ObservationDeclaration","relation":"defines","src":"file_docs_brain_observation_contract_py"}
+{"desc":"","dst":"file_docs_brain_observation_contract_py__func___post_init__","relation":"defines","src":"file_docs_brain_observation_contract_py"}
+{"desc":"","dst":"file_docs_brain_observation_contract_py__func__required_text","relation":"defines","src":"file_docs_brain_observation_contract_py"}
+{"desc":"","dst":"file_docs_brain_observation_contract_py__func__text_tuple","relation":"defines","src":"file_docs_brain_observation_contract_py"}
+{"desc":"","dst":"file_docs_brain_observation_contract_py__func_fingerprint","relation":"defines","src":"file_docs_brain_observation_contract_py"}
+{"desc":"","dst":"file_docs_brain_observation_contract_py__func_to_canonical_dict","relation":"defines","src":"file_docs_brain_observation_contract_py"}
+{"desc":"","dst":"file_docs_brain_observation_contract_py__func_to_canonical_json","relation":"defines","src":"file_docs_brain_observation_contract_py"}
 {"desc":"","dst":"file_docs_brain_reason_py__class_ReasoningEngine","relation":"defines","src":"file_docs_brain_reason_py"}
 {"desc":"","dst":"file_docs_brain_reason_py__func___init__","relation":"defines","src":"file_docs_brain_reason_py"}
 {"desc":"","dst":"file_docs_brain_reason_py__func__calculate_pagerank","relation":"defines","src":"file_docs_brain_reason_py"}
