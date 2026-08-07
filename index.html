@@ -98,22 +98,51 @@
   <nav class="fixed top-0 w-full z-50 glass border-b border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
-        <a href="#home" class="text-xl font-bold tracking-tight gradient-text">lostlight</a>
+        <a href="#home" class="text-xl font-bold tracking-tight gradient-text shrink-0">lostlight</a>
 
+        <!-- Desktop nav -->
         <div class="hidden md:flex items-center space-x-2">
-          <a href="#home" id="nav-home" class="hover:text-google-blue px-3 py-2 transition-colors">Home</a>
-          <a href="#achievements" id="nav-achievements" class="hover:text-google-green px-3 py-2 transition-colors">Highlights</a>
-          <a href="#ecosystem" id="nav-ecosystem" class="hover:text-google-yellow px-3 py-2 transition-colors">Ecosystem</a>
-          <a href="#projects" id="nav-projects" class="hover:text-google-blue px-3 py-2 transition-colors">Projects</a>
-          <a href="#philosophy" id="nav-philosophy" class="hover:text-google-red px-3 py-2 transition-colors">Philosophy</a>
+          <a href="#home" id="nav-home" class="hover:text-google-blue px-3 py-2 transition-colors">首页</a>
+          <a href="#achievements" id="nav-achievements" class="hover:text-google-green px-3 py-2 transition-colors">年度成就</a>
+          <a href="#ecosystem" id="nav-ecosystem" class="hover:text-google-yellow px-3 py-2 transition-colors">生态贡献</a>
+          <a href="#projects" id="nav-projects" class="hover:text-google-blue px-3 py-2 transition-colors">核心项目</a>
+          <a href="#philosophy" id="nav-philosophy" class="hover:text-google-red px-3 py-2 transition-colors">工程哲学</a>
 
           <button
             id="langSwitch"
             class="ml-4 px-3 py-1.5 rounded-full border border-google-blue text-sm hover:bg-google-blue hover:text-white transition-all"
           >
-            EN / 中
+            中 / EN
           </button>
         </div>
+
+        <!-- Mobile: language switch always visible -->
+        <div class="flex md:hidden items-center gap-2">
+          <button
+            id="langSwitchMobile"
+            class="px-3 py-1.5 rounded-full border border-google-blue text-sm hover:bg-google-blue hover:text-white transition-all"
+          >
+            中 / EN
+          </button>
+          <!-- Hamburger -->
+          <button id="menuToggle" class="p-2 text-gray-400 hover:text-white transition-colors" aria-label="Menu">
+            <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu dropdown -->
+      <div id="mobileMenu" class="md:hidden hidden pb-4 space-y-1 border-t border-white/5 mt-1">
+        <a href="#home" id="nav-home-m" class="block px-3 py-2.5 text-sm hover:text-google-blue transition-colors">首页</a>
+        <a href="#achievements" id="nav-achievements-m" class="block px-3 py-2.5 text-sm hover:text-google-green transition-colors">年度成就</a>
+        <a href="#ecosystem" id="nav-ecosystem-m" class="block px-3 py-2.5 text-sm hover:text-google-yellow transition-colors">生态贡献</a>
+        <a href="#projects" id="nav-projects-m" class="block px-3 py-2.5 text-sm hover:text-google-blue transition-colors">核心项目</a>
+        <a href="#philosophy" id="nav-philosophy-m" class="block px-3 py-2.5 text-sm hover:text-google-red transition-colors">工程哲学</a>
       </div>
     </div>
   </nav>
@@ -229,7 +258,7 @@
         </p>
       </div>
 
-      <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
         <!-- Filled by JS -->
       </div>
     </div>
@@ -274,6 +303,31 @@
 
     let currentLang = 'zh';
     const btn = document.getElementById('langSwitch');
+    const btnMobile = document.getElementById('langSwitchMobile');
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+    const closeIcon = document.getElementById('closeIcon');
+    let menuOpen = false;
+
+    menuToggle.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      mobileMenu.classList.toggle('hidden', !menuOpen);
+      menuIcon.classList.toggle('hidden', menuOpen);
+      closeIcon.classList.toggle('hidden', !menuOpen);
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuOpen = false;
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
 
     function renderStats(items) {
       const statsGrid = document.getElementById('stats-grid');
@@ -354,6 +408,12 @@
       document.getElementById('nav-ecosystem').innerText = t.nav.ecosystem;
       document.getElementById('nav-projects').innerText = t.nav.projects;
       document.getElementById('nav-philosophy').innerText = t.nav.philosophy;
+      // Mobile nav
+      document.getElementById('nav-home-m').innerText = t.nav.home;
+      document.getElementById('nav-achievements-m').innerText = t.nav.achievements;
+      document.getElementById('nav-ecosystem-m').innerText = t.nav.ecosystem;
+      document.getElementById('nav-projects-m').innerText = t.nav.projects;
+      document.getElementById('nav-philosophy-m').innerText = t.nav.philosophy;
 
       // Hero
       document.getElementById('hero-role').innerText = t.hero.role;
@@ -392,13 +452,17 @@
       document.getElementById('footer-note').innerText = t.footer.note;
 
       btn.innerText = currentLang === 'zh' ? '中 / EN' : 'EN / 中';
+      btnMobile.innerText = currentLang === 'zh' ? '中 / EN' : 'EN / 中';
       document.documentElement.lang = currentLang === 'zh' ? 'zh-CN' : 'en';
     }
 
-    btn.addEventListener('click', () => {
+    function switchLang() {
       currentLang = currentLang === 'en' ? 'zh' : 'en';
       updateContent();
-    });
+    }
+
+    btn.addEventListener('click', switchLang);
+    btnMobile.addEventListener('click', switchLang);
 
     updateContent();
   </script>
