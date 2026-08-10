@@ -102,7 +102,7 @@ Decision ID: DEC-2026W32-03
 Decision: 后续 Agent 可靠性判断优先验证 trajectory / world-state / progress, 不允许仅凭最终文本或 HTTP 成功状态宣称任务完成
 Decision Type: STRENGTHEN_EVIDENCE
 Evidence: 本周 H2 连续出现 trajectory evaluation, partial success, loop detection, stagnation detection 和 progress predicate 信号
-Repository Record Comparison: 与 W31 的可靠性工程方向一致, 同时与 Parallax / Ballast 已形成的“状态码或表面完成不能替代后置条件”研究原则相容, 但 Horizon 不读取这些目录作为输入
+Repository Record Comparison: 与 W31 的可靠性工程方向一致, 本周继续把“完成”从文本判断收束为可检查的执行状态与后置条件
 Counterevidence: 本周相关工程文章多数不是 Tier 1 标准, 因此不设定统一数值阈值
 Expected Value: 降低 silent failure, false completion 和无限循环被误报为成功的风险
 Risk: 过度验证会增加调用开销
@@ -129,4 +129,5 @@ BOUNDARY_CHECK
 确认未实施宿主仓库决策: YES
 确认未升级长期记忆: YES
 确认未公开完整提示词或私有 Memory: YES
+确认未将外部调度器默认时区猜测写成已证实根因: YES
 确认周归属按 Asia/Shanghai 2026-08-03 至 2026-08-09 修复为 2026-W32: YES
