@@ -1,0 +1,65 @@
+name: Verify Horizon Cortex records
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'horizon-cortex/**'
+      - '.github/workflows/verify-horizon-cortex.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: horizon-contract-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Compile checker
+        run: python -m py_compile horizon-cortex/check.py
+      - name: Validate changed Horizon records
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          mapfile -t files < <(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- 'horizon-cortex/*.md')
+          if (( ${#files[@]} == 0 )); then
+            echo 'No Horizon Markdown records changed'
+            exit 0
+          fi
+          python horizon-cortex/check.py "${files[@]}"
+      - name: Validate current Horizon baseline
+        if: github.event_name == 'workflow_dispatch'
+        shell: bash
+        run: |
+          mapfile -t files < <(python - <<'PY'
+          from pathlib import Path
+          root = Path('horizon-cortex')
+          groups = (
+              '*-H1-signal-observe.md',
+              '*-H2-horizon-orient.md',
+              '*-H3-position-decide.md',
+              '*-H4-narrative-act.md',
+              '*-H5-signal-reflect.md',
+              '*-H6-horizon-memorize.md',
+          )
+          for pattern in groups:
+              matches = sorted(root.glob(pattern))
+              if matches:
+                  print(matches[-1].as_posix())
+          PY
+          )
+          python horizon-cortex/check.py "${files[@]}"
