@@ -35,9 +35,12 @@ class Harvester:
             self.state_path,
             label="harvester state",
             allow_missing=self.bootstrap,
-            default={"schema_version": 4, "repositories": {}},
+            default={"schema_version": 5, "repositories": {}},
         )
+        old_schema = old.get("schema_version", 3) if isinstance(old, dict) else None
         self.state = self._validated_state(old)
+        self.validate_profiles()
+        self._migrate_and_validate_snapshot_state(old_schema)
 
     @staticmethod
     def _json(path, *, label, allow_missing=False, default=None):
@@ -75,8 +78,183 @@ class Harvester:
             for path, document in documents.items():
                 if not isinstance(path, str) or not isinstance(document, dict):
                     raise ValueError(f"invalid repository document state: {repo}")
-        state["schema_version"] = 4
+        schema = state.get("schema_version", 4)
+        if not isinstance(schema, int) or schema < 1 or schema > 5:
+            raise ValueError(f"unsupported harvester state schema: {schema}")
+        state["schema_version"] = 5
         return state
+
+    @staticmethod
+    def _snapshot_metadata(text, *, label):
+        fields = {}
+        patterns = {
+            "commit_sha": r"\| 来源版本 \| `([0-9a-f]{40})` \|",
+            "tree_sha": r"\| 来源目录 Tree \| `([0-9a-f]{40})` \|",
+            "blob_sha": r"\| 来源内容 Blob \| `([0-9a-f]{40})` \|",
+        }
+        for field, pattern in patterns.items():
+            match = re.search(pattern, text)
+            if not match:
+                raise ValueError(f"missing snapshot provenance {field}: {label}")
+            fields[field] = match.group(1)
+        return fields
+
+    @staticmethod
+    def _snapshot_source(text, *, label):
+        marker = "\n</details>\n\n<details>\n<summary>"
+        first = re.search(r"<details>\s*<summary>.*?</summary>\s*\n", text, flags=re.DOTALL)
+        boundary = text.rfind(marker)
+        match = first if first and boundary > first.end() else None
+        if not match:
+            raise ValueError(f"missing snapshot source body: {label}")
+        return text[match.end():boundary].rstrip()
+
+    def _profile_for(self, repo):
+        matches = [
+            profile
+            for profile in self.profiles.get("sources", [])
+            if profile.get("repo") == repo
+        ]
+        if len(matches) != 1:
+            raise ValueError(f"snapshot source profile must be unique: {repo}")
+        return matches[0]
+
+    def _expected_output(self, repo, source_path, provenance):
+        profile = self._profile_for(repo)
+        namespace = repo.lower().replace("/", "_").replace("-", "_")
+        filename = (
+            source_path.replace("/", "__")
+            + f"__{provenance['blob_sha'][:12]}__{provenance['commit_sha'][:12]}.md"
+        )
+        return Path("current") / profile["layer"] / namespace / filename
+
+    def _snapshot_file_provenance(self, snapshot, *, repo, source_path):
+        try:
+            text = snapshot.read_text(encoding="utf-8")
+        except FileNotFoundError as exc:
+            raise ValueError(f"missing current snapshot: {repo}:{source_path}: {snapshot}") from exc
+        except OSError as exc:
+            raise ValueError(f"failed to read current snapshot: {repo}:{source_path}: {exc}") from exc
+        provenance = self._snapshot_metadata(text, label=f"{repo}:{source_path}")
+        source_url = f"https://github.com/{repo}/blob/{provenance['commit_sha']}/{source_path}"
+        if source_url not in text:
+            raise ValueError(f"snapshot provenance source mismatch: {repo}:{source_path}")
+        source = self._snapshot_source(text, label=f"{repo}:{source_path}")
+        provenance["content_hash"] = hashlib.sha256(
+            self._normalized(source).encode()
+        ).hexdigest()
+        return provenance
+
+    def _find_current_snapshot(self, *, repo, source_path):
+        profile = self._profile_for(repo)
+        namespace = repo.lower().replace("/", "_").replace("-", "_")
+        directory = self.inputs / "current" / profile["layer"] / namespace
+        prefix = source_path.replace("/", "__") + "__"
+        candidates = []
+        for snapshot in sorted(directory.glob(prefix + "*.md")):
+            provenance = self._snapshot_file_provenance(
+                snapshot, repo=repo, source_path=source_path
+            )
+            expected = (self.inputs / self._expected_output(repo, source_path, provenance)).resolve()
+            if snapshot.resolve() == expected:
+                candidates.append((snapshot, provenance))
+        if len(candidates) != 1:
+            raise ValueError(
+                f"expected exactly one current snapshot: {repo}:{source_path}: {len(candidates)}"
+            )
+        return candidates[0]
+
+    def _snapshot_provenance(self, document, *, repo, source_path):
+        output = document.get("output")
+        if not isinstance(output, str) or not output:
+            raise ValueError(f"missing snapshot output: {repo}:{source_path}")
+        relative = Path(output)
+        if (
+            relative.is_absolute()
+            or not relative.parts
+            or relative.parts[0].lower() != "current"
+            or any(part in {"", ".", ".."} for part in relative.parts)
+        ):
+            raise ValueError(f"snapshot output must be canonical current path: {repo}:{source_path}")
+        snapshot = (self.inputs / relative).resolve()
+        inputs = self.inputs.resolve()
+        current = (inputs / "current").resolve()
+        if (
+            snapshot == current
+            or current not in snapshot.parents
+            or inputs not in snapshot.parents
+            or "archive" in {part.lower() for part in relative.parts}
+        ):
+            raise ValueError(f"snapshot output escapes current inputs: {repo}:{source_path}")
+        provenance = self._snapshot_file_provenance(
+            snapshot, repo=repo, source_path=source_path
+        )
+        expected = (self.inputs / self._expected_output(repo, source_path, provenance)).resolve()
+        if snapshot != expected:
+            raise ValueError(f"snapshot output is not canonical current location: {repo}:{source_path}")
+        return provenance
+
+    def _migrate_and_validate_snapshot_state(self, old_schema):
+        if not isinstance(old_schema, int) or old_schema < 1 or old_schema > 5:
+            raise ValueError(f"unsupported harvester state schema: {old_schema}")
+        for repo, repo_state in self.state["repositories"].items():
+            for source_path, document in repo_state["documents"].items():
+                current = {
+                    field: document.get(field)
+                    for field in ("commit_sha", "tree_sha", "blob_sha")
+                }
+                if old_schema < 4 and not all(
+                    isinstance(value, str) and value for value in current.values()
+                ):
+                    continue
+                if old_schema < 5:
+                    if not all(isinstance(value, str) and value for value in current.values()):
+                        raise ValueError(
+                            f"cannot migrate incomplete observed provenance: {repo}:{source_path}"
+                        )
+                    snapshot_path, snapshot = self._find_current_snapshot(
+                        repo=repo, source_path=source_path
+                    )
+                    document.update(
+                        {
+                            "observed_commit_sha": current["commit_sha"],
+                            "observed_tree_sha": current["tree_sha"],
+                            "observed_blob_sha": current["blob_sha"],
+                            **snapshot,
+                            "sha": snapshot["blob_sha"],
+                            "output": snapshot_path.relative_to(self.inputs).as_posix(),
+                        }
+                    )
+                    continue
+                snapshot = self._snapshot_provenance(
+                    document,
+                    repo=repo,
+                    source_path=source_path,
+                )
+                observed = [
+                    document.get(field)
+                    for field in (
+                        "observed_commit_sha",
+                        "observed_tree_sha",
+                        "observed_blob_sha",
+                    )
+                ]
+                if not all(isinstance(value, str) and value for value in observed):
+                    raise ValueError(
+                        f"incomplete observed provenance: {repo}:{source_path}"
+                    )
+                snapshot_shas = {field: snapshot[field] for field in current}
+                content_hash = document.get("content_hash")
+                if (
+                    current != snapshot_shas
+                    or document.get("sha") != snapshot["blob_sha"]
+                    or not isinstance(content_hash, str)
+                    or not re.fullmatch(r"[0-9a-f]{64}", content_hash)
+                    or content_hash != snapshot["content_hash"]
+                ):
+                    raise ValueError(
+                        f"snapshot provenance or content hash state mismatch: {repo}:{source_path}"
+                    )
 
     def _blob_text(self, repo, sha):
         blob = self._api(f"https://api.github.com/repos/{repo}/git/blobs/{sha}")
@@ -136,7 +314,7 @@ class Harvester:
         sources = self.profiles.get("sources")
         if not isinstance(owner, str) or not owner:
             raise ValueError("source profiles owner must be a non-empty string")
-        if not isinstance(sources, list) or not sources:
+        if not isinstance(sources, list) or (not sources and not self.bootstrap):
             raise ValueError("source profiles sources must be a non-empty list")
         seen = set()
         for profile in sources:
@@ -150,7 +328,16 @@ class Harvester:
                 raise ValueError(f"owner mismatch: {key}")
             if owner == "zero" and not profile.get("promotion_approved"):
                 raise ValueError(f"unapproved source: {key}")
-            if not isinstance(profile.get("layer"), str) or not profile["layer"]:
+            layer = profile.get("layer")
+            if (
+                not isinstance(layer, str)
+                or not layer
+                or Path(layer).is_absolute()
+                or len(Path(layer).parts) != 1
+                or layer in {".", ".."}
+                or "/" in layer
+                or "\\" in layer
+            ):
                 raise ValueError(f"invalid source layer: {key}")
             if not isinstance(profile.get("documents"), list):
                 raise ValueError(f"invalid source documents: {key}")
@@ -220,21 +407,27 @@ class Harvester:
             if not isinstance(previous, dict):
                 raise ValueError(f"invalid document state: {repo}:{path}")
             previous_blob_sha = previous.get("blob_sha") or previous.get("sha")
+            observed_blob_sha = previous.get("observed_blob_sha") or previous_blob_sha
             provenance_complete = all(
                 isinstance(previous.get(field), str) and previous[field]
                 for field in ("commit_sha", "tree_sha", "blob_sha")
             )
-            if previous_blob_sha == blob_sha and provenance_complete:
+            if observed_blob_sha == blob_sha and provenance_complete:
+                repo_state["documents"][path] = {
+                    **previous,
+                    "observed_blob_sha": blob_sha,
+                    "observed_commit_sha": commit_sha,
+                    "observed_tree_sha": tree_sha,
+                }
                 continue
             text = self._blob_text(repo, blob_sha)
             digest = hashlib.sha256(self._normalized(text).encode()).hexdigest()
             if previous.get("content_hash") == digest and provenance_complete:
                 repo_state["documents"][path] = {
                     **previous,
-                    "sha": blob_sha,
-                    "blob_sha": blob_sha,
-                    "commit_sha": commit_sha,
-                    "tree_sha": tree_sha,
+                    "observed_blob_sha": blob_sha,
+                    "observed_commit_sha": commit_sha,
+                    "observed_tree_sha": tree_sha,
                 }
                 continue
             entity = previous.get("entity_id") or (
@@ -295,6 +488,9 @@ class Harvester:
                 "blob_sha": blob_sha,
                 "commit_sha": commit_sha,
                 "tree_sha": tree_sha,
+                "observed_blob_sha": blob_sha,
+                "observed_commit_sha": commit_sha,
+                "observed_tree_sha": tree_sha,
                 "content_hash": digest,
                 "entity_id": entity,
                 "output": relative,
@@ -329,6 +525,7 @@ class Harvester:
         if failures:
             raise RuntimeError("harvest failed: " + " | ".join(failures))
         if not self.dry:
+            self._migrate_and_validate_snapshot_state(5)
             atomic_write(self.state_path, json.dumps(self.state, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
         print(json.dumps({"updated": len(changed), "failed": 0}, ensure_ascii=False, sort_keys=True))
         return changed

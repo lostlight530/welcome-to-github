@@ -1,7 +1,7 @@
 import base64
 import hashlib
-import os
 import json
+import os
 import sys
 import tempfile
 import unittest
@@ -276,6 +276,426 @@ class HarvesterContracts(unittest.TestCase):
             ]
             self.assertEqual(len(blob_calls), 1)
 
+    def test_normalized_noise_only_advances_observed_provenance(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            harvester = Harvester.__new__(Harvester)
+            harvester.inputs = Path(tmp)
+            old_commit = "a" * 40
+            old_tree = "b" * 40
+            old_blob = "c" * 40
+            new_commit = "d" * 40
+            new_tree = "e" * 40
+            new_blob = "f" * 40
+            old_snapshot = (
+                harvester.inputs
+                / "current"
+                / "test"
+                / "owner_repo"
+                / f"README.md__{old_blob[:12]}__{old_commit[:12]}.md"
+            )
+            old_snapshot.parent.mkdir(parents=True)
+            old_snapshot.write_text(
+                "\n".join(
+                    [
+                        "# owner/repo · README.md",
+                        "",
+                        f"| 来源文件 | [README.md](https://github.com/owner/repo/blob/{old_commit}/README.md) |",
+                        f"| 来源版本 | `{old_commit}` |",
+                        f"| 来源目录 Tree | `{old_tree}` |",
+                        f"| 来源内容 Blob | `{old_blob}` |",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+            source = "![badge](https://img.shields.io/old)\n# Stable body\n"
+            digest = hashlib.sha256(
+                Harvester._normalized(source).encode()
+            ).hexdigest()
+            harvester.state = {
+                "schema_version": 5,
+                "repositories": {
+                    "owner/repo": {
+                        "documents": {
+                            "README.md": {
+                                "sha": old_blob,
+                                "blob_sha": old_blob,
+                                "commit_sha": old_commit,
+                                "tree_sha": old_tree,
+                                "observed_blob_sha": old_blob,
+                                "observed_commit_sha": old_commit,
+                                "observed_tree_sha": old_tree,
+                                "content_hash": digest,
+                                "entity_id": "existing-entity",
+                                "output": old_snapshot.relative_to(
+                                    harvester.inputs
+                                ).as_posix(),
+                            }
+                        }
+                    }
+                },
+            }
+
+            def response(url):
+                if url == "https://api.github.com/repos/owner/repo":
+                    return {"default_branch": "main"}
+                if url.endswith("/commits/main"):
+                    return {
+                        "sha": new_commit,
+                        "commit": {"tree": {"sha": new_tree}},
+                    }
+                if "/git/trees/" in url:
+                    return {
+                        "tree": [
+                            {"type": "blob", "path": "README.md", "sha": new_blob}
+                        ],
+                        "truncated": False,
+                    }
+                if url.endswith(f"/git/blobs/{new_blob}"):
+                    return {
+                        "encoding": "base64",
+                        "content": base64.b64encode(
+                            b"![badge](https://img.shields.io/new)\n# Stable body\n"
+                        ).decode("ascii"),
+                    }
+                raise AssertionError(f"unexpected API URL: {url}")
+
+            harvester._api = Mock(side_effect=response)
+            harvester.dry = False
+            changed = harvester._source(
+                {
+                    "repo": "owner/repo",
+                    "documents": ["README.md"],
+                    "ignore_patterns": [],
+                    "layer": "test",
+                    "primary_owner": "welcome",
+                }
+            )
+
+            document = harvester.state["repositories"]["owner/repo"]["documents"]["README.md"]
+            self.assertEqual(changed, [])
+            self.assertEqual(document["commit_sha"], old_commit)
+            self.assertEqual(document["tree_sha"], old_tree)
+            self.assertEqual(document["blob_sha"], old_blob)
+            self.assertEqual(document["observed_commit_sha"], new_commit)
+            self.assertEqual(document["observed_tree_sha"], new_tree)
+            self.assertEqual(document["observed_blob_sha"], new_blob)
+            self.assertTrue(old_snapshot.exists())
+
+    def test_schema_four_recovers_snapshot_provenance_from_current_output(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            inputs = root / "inputs"
+            current = inputs / "current" / "test" / "owner_repo"
+            current.mkdir(parents=True)
+            snapshot_commit = "a" * 40
+            snapshot_tree = "b" * 40
+            snapshot_blob = "c" * 40
+            observed_commit = "d" * 40
+            observed_tree = "e" * 40
+            observed_blob = "f" * 40
+            output = current / f"README.md__{snapshot_blob[:12]}__{snapshot_commit[:12]}.md"
+            output.write_text(
+                "\n".join(
+                    [
+                        "# owner/repo · README.md",
+                        "",
+                        f"| 来源文件 | [README.md](https://github.com/owner/repo/blob/{snapshot_commit}/README.md) |",
+                        f"| 来源版本 | `{snapshot_commit}` |",
+                        f"| 来源目录 Tree | `{snapshot_tree}` |",
+                        f"| 来源内容 Blob | `{snapshot_blob}` |",
+                        "",
+                        "<details>",
+                        "<summary>source</summary>",
+                        "",
+                        "# Stable body",
+                        "",
+                        "</details>",
+                        "",
+                        "<details>",
+                        "<summary>diff</summary>",
+                        "",
+                        "```diff",
+                        "```",
+                        "",
+                        "</details>",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+            (root / "source_profiles.json").write_text(
+                '{"owner":"welcome","sources":[{"repo":"owner/repo","primary_owner":"welcome","layer":"test","documents":["README.md"]}]}',
+                encoding="utf-8",
+            )
+            (inputs / ".harvester_state.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": 4,
+                        "repositories": {
+                            "owner/repo": {
+                                "documents": {
+                                    "README.md": {
+                                        "sha": observed_blob,
+                                        "blob_sha": observed_blob,
+                                        "commit_sha": observed_commit,
+                                        "tree_sha": observed_tree,
+                                        "content_hash": hashlib.sha256(
+                                            Harvester._normalized("# Old body").encode()
+                                        ).hexdigest(),
+                                        "entity_id": "existing-entity",
+                                        "output": output.relative_to(inputs).as_posix(),
+                                    }
+                                }
+                            }
+                        },
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            harvester = Harvester(root)
+            document = harvester.state["repositories"]["owner/repo"]["documents"]["README.md"]
+
+            self.assertEqual(harvester.state["schema_version"], 5)
+            self.assertEqual(document["commit_sha"], snapshot_commit)
+            self.assertEqual(document["tree_sha"], snapshot_tree)
+            self.assertEqual(document["blob_sha"], snapshot_blob)
+            self.assertEqual(document["observed_commit_sha"], observed_commit)
+            self.assertEqual(document["observed_tree_sha"], observed_tree)
+            self.assertEqual(document["observed_blob_sha"], observed_blob)
+
+    def test_unchanged_blob_advances_observed_commit_and_tree(self):
+        harvester = Harvester.__new__(Harvester)
+        blob_sha = "c" * 40
+        old_commit = "a" * 40
+        old_tree = "b" * 40
+        new_commit = "d" * 40
+        new_tree = "e" * 40
+        harvester.state = {
+            "schema_version": 5,
+            "repositories": {
+                "owner/repo": {
+                    "documents": {
+                        "README.md": {
+                            "sha": blob_sha,
+                            "blob_sha": blob_sha,
+                            "commit_sha": old_commit,
+                            "tree_sha": old_tree,
+                            "observed_blob_sha": blob_sha,
+                            "observed_commit_sha": old_commit,
+                            "observed_tree_sha": old_tree,
+                            "content_hash": "digest",
+                            "entity_id": "existing-entity",
+                            "output": "current/test/owner_repo/README.md",
+                        }
+                    }
+                }
+            },
+        }
+        harvester.dry = False
+        harvester._api = Mock(
+            side_effect=[
+                {"default_branch": "main"},
+                {"sha": new_commit, "commit": {"tree": {"sha": new_tree}}},
+                {
+                    "tree": [
+                        {"type": "blob", "path": "README.md", "sha": blob_sha}
+                    ],
+                    "truncated": False,
+                },
+            ]
+        )
+
+        changed = harvester._source(
+            {
+                "repo": "owner/repo",
+                "documents": ["README.md"],
+                "ignore_patterns": [],
+                "layer": "test",
+                "primary_owner": "welcome",
+            }
+        )
+
+        document = harvester.state["repositories"]["owner/repo"]["documents"]["README.md"]
+        self.assertEqual(changed, [])
+        self.assertEqual(document["commit_sha"], old_commit)
+        self.assertEqual(document["tree_sha"], old_tree)
+        self.assertEqual(document["blob_sha"], blob_sha)
+        self.assertEqual(document["observed_commit_sha"], new_commit)
+        self.assertEqual(document["observed_tree_sha"], new_tree)
+        self.assertEqual(document["observed_blob_sha"], blob_sha)
+
+    def test_schema_five_rejects_state_output_provenance_mismatch(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            inputs = root / "inputs"
+            current = inputs / "current" / "test" / "owner_repo"
+            current.mkdir(parents=True)
+            snapshot_commit = "a" * 40
+            snapshot_tree = "b" * 40
+            snapshot_blob = "c" * 40
+            output = current / f"README.md__{snapshot_blob[:12]}__{snapshot_commit[:12]}.md"
+            output.write_text(
+                "\n".join(
+                    [
+                        "# owner/repo · README.md",
+                        "",
+                        f"| 来源文件 | [README.md](https://github.com/owner/repo/blob/{snapshot_commit}/README.md) |",
+                        f"| 来源版本 | `{snapshot_commit}` |",
+                        f"| 来源目录 Tree | `{snapshot_tree}` |",
+                        f"| 来源内容 Blob | `{snapshot_blob}` |",
+                        "",
+                        "<details>",
+                        "<summary>source</summary>",
+                        "",
+                        "# Stable body",
+                        "",
+                        "</details>",
+                        "",
+                        "<details>",
+                        "<summary>diff</summary>",
+                        "",
+                        "```diff",
+                        "```",
+                        "",
+                        "</details>",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+            (root / "source_profiles.json").write_text(
+                '{"owner":"welcome","sources":[{"repo":"owner/repo","primary_owner":"welcome","layer":"test","documents":["README.md"]}]}',
+                encoding="utf-8",
+            )
+            (inputs / ".harvester_state.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": 5,
+                        "repositories": {
+                            "owner/repo": {
+                                "documents": {
+                                    "README.md": {
+                                        "sha": "f" * 40,
+                                        "blob_sha": "f" * 40,
+                                        "commit_sha": "d" * 40,
+                                        "tree_sha": "e" * 40,
+                                        "observed_blob_sha": "f" * 40,
+                                        "observed_commit_sha": "d" * 40,
+                                        "observed_tree_sha": "e" * 40,
+                                        "content_hash": "digest",
+                                        "entity_id": "existing-entity",
+                                        "output": output.relative_to(inputs).as_posix(),
+                                    }
+                                }
+                            }
+                        },
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(ValueError, "snapshot provenance"):
+                Harvester(root)
+
+    def test_schema_five_rejects_noncanonical_current_output_path(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            inputs = root / "inputs"
+            current = inputs / "current" / "test" / "owner_repo"
+            current.mkdir(parents=True)
+            commit_sha, tree_sha, blob_sha = "a" * 40, "b" * 40, "c" * 40
+            output = current / f"README.md__{blob_sha[:12]}__{commit_sha[:12]}.md"
+            output.write_text(
+                "\n".join(
+                    [
+                        "# owner/repo · README.md",
+                        "",
+                        f"| 来源文件 | [README.md](https://github.com/owner/repo/blob/{commit_sha}/README.md) |",
+                        f"| 来源版本 | `{commit_sha}` |",
+                        f"| 来源目录 Tree | `{tree_sha}` |",
+                        f"| 来源内容 Blob | `{blob_sha}` |",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+            (root / "source_profiles.json").write_text(
+                '{"owner":"welcome","sources":[{"repo":"owner/repo","primary_owner":"welcome","layer":"test","documents":["README.md"]}]}',
+                encoding="utf-8",
+            )
+            noncanonical = (
+                "current/test/../test/owner_repo/"
+                f"README.md__{blob_sha[:12]}__{commit_sha[:12]}.md"
+            )
+            (inputs / ".harvester_state.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": 5,
+                        "repositories": {
+                            "owner/repo": {
+                                "documents": {
+                                    "README.md": {
+                                        "sha": blob_sha,
+                                        "blob_sha": blob_sha,
+                                        "commit_sha": commit_sha,
+                                        "tree_sha": tree_sha,
+                                        "observed_blob_sha": blob_sha,
+                                        "observed_commit_sha": commit_sha,
+                                        "observed_tree_sha": tree_sha,
+                                        "content_hash": "digest",
+                                        "entity_id": "existing-entity",
+                                        "output": noncanonical,
+                                    }
+                                }
+                            }
+                        },
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(ValueError, "canonical current path"):
+                Harvester(root)
+
+    def test_legacy_sha_only_state_defers_to_controlled_source_migration(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            inputs = root / "inputs"
+            current = inputs / "current" / "test" / "owner_repo"
+            current.mkdir(parents=True)
+            output = current / "README.md__legacy.md"
+            output.write_text("legacy snapshot", encoding="utf-8")
+            (root / "source_profiles.json").write_text(
+                '{"owner":"welcome","sources":[{"repo":"owner/repo","primary_owner":"welcome","layer":"test","documents":["README.md"]}]}',
+                encoding="utf-8",
+            )
+            (inputs / ".harvester_state.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": 3,
+                        "repositories": {
+                            "owner/repo": {
+                                "documents": {
+                                    "README.md": {
+                                        "sha": "c" * 40,
+                                        "content_hash": "digest",
+                                        "entity_id": "existing-entity",
+                                        "output": output.relative_to(inputs).as_posix(),
+                                    }
+                                }
+                            }
+                        },
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            harvester = Harvester(root)
+
+            self.assertEqual(harvester.state["schema_version"], 5)
+            document = harvester.state["repositories"]["owner/repo"]["documents"]["README.md"]
+            self.assertEqual(document["sha"], "c" * 40)
+            self.assertNotIn("commit_sha", document)
+            self.assertNotIn("observed_blob_sha", document)
+
     def test_missing_state_requires_explicit_bootstrap(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -291,7 +711,7 @@ class HarvesterContracts(unittest.TestCase):
             with patch.dict(os.environ, {"HARVESTER_BOOTSTRAP": "1"}):
                 harvester = Harvester(root)
 
-            self.assertEqual(harvester.state["schema_version"], 4)
+            self.assertEqual(harvester.state["schema_version"], 5)
             self.assertEqual(harvester.state["repositories"], {})
 
     def test_corrupt_state_fails_closed(self):
