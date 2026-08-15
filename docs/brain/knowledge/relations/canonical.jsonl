@@ -13,6 +13,7 @@
 {"desc":"Current approved external evidence","dst":"external_doc_modelengine_group_nexent_readme_md","relation":"has_snapshot","src":"external_repo_modelengine_group_nexent"}
 {"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_cli_changelog_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_cli"}
 {"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_cli_readme_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_cli"}
+{"desc":"Current approved external evidence","dst":"external_doc_nousresearch_hermes_agent_docs_design_kanban_dialogs_index_html","relation":"has_snapshot","src":"external_repo_nousresearch_hermes_agent"}
 {"desc":"Current approved external evidence","dst":"external_doc_nousresearch_hermes_agent_docs_design_profile_builder_md","relation":"has_snapshot","src":"external_repo_nousresearch_hermes_agent"}
 {"desc":"Current approved external evidence","dst":"external_doc_nousresearch_hermes_agent_readme_md","relation":"has_snapshot","src":"external_repo_nousresearch_hermes_agent"}
 {"desc":"Current approved external evidence","dst":"external_doc_ogx_ai_ogx_readme_md","relation":"has_snapshot","src":"external_repo_ogx_ai_ogx"}
