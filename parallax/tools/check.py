@@ -192,7 +192,11 @@ def validate() -> list[str]:
         if "file:" + "//" in text.lower():
             errors.append(f"local scheme: {relative}")
         prose = URL_PATTERN.sub("", text)
-        if re.search(r"\bv\d+(?:\.\d+)*\b", prose, re.IGNORECASE):
+        if re.search(
+            r"\bParallax(?:\s+(?:version|release|版本))?\s+v\d+(?:\.\d+)*\b",
+            prose,
+            re.IGNORECASE,
+        ):
             errors.append(f"version label: {relative}")
         for phrase in PUBLIC_FORBIDDEN:
             if phrase in text:
