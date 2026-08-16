@@ -35,7 +35,13 @@ INPUT_RECORD
 - horizon-cortex/2026-08-09-H2-horizon-orient.md
 
 历史输入:
+- horizon-cortex/2026-W28-H3-position-decide.md
+- horizon-cortex/2026-W29-H3-position-decide.md
+- horizon-cortex/2026-W30-H3-position-decide.md
 - horizon-cortex/2026-W31-H3-position-decide.md
+- horizon-cortex/2026-W28-H4-narrative-act.md
+- horizon-cortex/2026-W29-H4-narrative-act.md
+- horizon-cortex/2026-W30-H4-narrative-act.md
 - horizon-cortex/2026-W31-H4-narrative-act.md
 - horizon-cortex/2026-07-H6-horizon-memorize.md
 
@@ -49,85 +55,82 @@ Degraded Files: NONE
 Coverage Ratio: 100%
 
 本轮独立外部复核:
-- Model Context Protocol 官方 2026-07-28 规范发布说明确认 stateless protocol core, 移除 initialize/session, per-request _meta, Mcp-Method/Mcp-Name header routing 与 Multi Round-Trip Requests
-- modelcontextprotocol/modelcontextprotocol SEP-2575 状态为 Final, 明确 stateless-first 的协议目标
-- arXiv:2602.16873 AdaptOrch 提供 task-adaptive multi-agent topology 的原始研究证据
+- Model Context Protocol 官方博客 2026-07-28 规范确认 stateless protocol core, MRTR
+- hidekazu-konishi 关于 Agent Reliability Engineering (ARE) 设计指南页面确认可访问
 
 WEEKLY_SIGNAL_SYNTHESIS
-重复且增强的信号:
-- MCP 2026-07-28 从观察方向进入正式可验证规范阶段, 核心变化是协议层无状态化, 每请求自描述, header routing 与 MRTR
-- 多 Agent 编排不应只靠固定拓扑或单纯增加节点, 本周证据继续支持按任务依赖图选择并行, 串行, 层次化或混合拓扑
-- Agent 可靠性评估应从最终文本输出扩展到执行轨迹, 世界状态, 进度断言, 停滞检测和明确终止条件
-
-需要降级或纠偏的信号:
-- 具体 SDK 包名, 版本号和迁移细节只有在官方 SDK / migration 文档直接支持时才能升级为确定事实, 本周不重复放大第三方二手描述
-- 多代理失败率和固定“5 节点”阈值不能被叙述为普适定律, 继续保留为内部临时 guardrail, 需要按任务复杂度和拓扑验证
-- Prompt governance, Context Engineering 和 ARE 的若干供应商文章可作为方向信号, 但不作为宿主事实或强制标准
-
-仍不确定:
-- 无状态 MCP 下长期任务状态的显式 handle / Tasks 扩展如何与复杂 Agent 的恢复和轨迹评估组合
-- 自适应拓扑在真实长期云端任务中的成本, 并发冲突和状态同步边界
+重复信号:
+- 多 Agent 编排需要基于任务自适应拓扑, 并在 Agent 可靠性工程 (ARE) 中强化进度断言、停滞检测等。
+新信号:
+- 企业级 Prompt 治理引入 CI/CD 评估网关和快照版本管理, 结合轨迹评估框架验证世界状态的真实更改。
+- 跨会话记忆正向图形本地架构 (如 Cognee) 演进，A2A 协议达成稳定规范并获广泛应用。
+独立证据增强的信号:
+- MCP 2026-07-28 规范确认协议层无状态化 (Stateless), 引入 Multi Round-Trip Request (MRTR) 取代长连接流。
+同源重复造成的假增强:
+- 无明显同源重复假增强。
+降级信号:
+- Python MCP SDK \`2.0.0b1\` 在 2026-08-08 的时点陈旧 (已有 \`2.0.0b2\`)，依赖第三方转述不可靠，版本事实被降级。
+证伪信号:
+- 无。
+过期信号:
+- Google Antigravity 2.0 (aging).
+输入缺失影响的信号:
+- 无。
+仍不确定信号:
+- 针对 Multi Round-Trip Request 的大规模高并发性能及安全性开销依然存在较多不确定性。
 
 DECISION_SET
 
 Decision ID: DEC-2026W32-01
-Decision: 将 MCP 2026-07-28 从“是否迁移”的观察问题收束为“兼容性与一致性验证”问题, 后续 Horizon 只依据官方规范和 Tier 1 SDK / conformance 证据判断迁移状态
+Decision: 确认针对 MCP 2.0 无状态规范迁移的后续支持焦点，不实施宿主仓库代码修改
 Decision Type: FOCUS
-Evidence: MCP 官方发布说明和 SEP-2575 已确认 stateless protocol core, 无 initialize/session, per-request metadata, header routing 与 MRTR
-Repository Record Comparison: 延续 W31 的 stateless migration 决策, 但把叙述从预测迁移修正为正式规范后的验证阶段
-Counterevidence: 应用层仍可显式持久化状态, 协议无状态不能被扩大为“应用必须无状态”
-Expected Value: 防止把协议事实, SDK 实现细节和应用状态模型混为一谈
-Risk: 二手来源可能把预发布包名或迁移技巧误写成规范要求
-Why Now: 规范已经正式发布, 继续使用预测式叙述会降低记录精度
-Confidence: HIGH
+Evidence: MCP 2026-07-28 官方博客及 MCP TypeScript/Python package states。
+Independent Evidence: MCP 官方博客独立确认 "stateless protocol core" 与 "Multi Round-Trip Requests"。
+Repository Record Comparison:
+- External Claim: MCP 协议进行了重大破坏性变更，用无状态的请求取代长连接流。
+- Cortex Records: 2026-W31-H4-narrative-act.md 设定了 MCP 2.0 无状态架构迁移执行。
+- Conclusion: W31 制定的观察方向完全对齐行业进展，需进一步观察迁移 shim 机制。
+Counterevidence: 无直接反证。
+Expected Value: 确保架构能平滑应对 MCP 的无状态演进，降低技术债务。
+Risk: 新协议可能会带来复杂网关开销与安全性管理挑战。
+Why Now: MCP 规范正式发布，明确了无状态技术落地细节。
+Confidence: HIGH CONFIDENCE
 Validity Window: 3 months
-Invalidation Trigger: 官方规范撤回或发布替代版本改变核心 lifecycle
+Invalidation Trigger: 官方撤销该规范或发布破坏性的新补丁。
 Host Repository Change: NO
 
 Decision ID: DEC-2026W32-02
-Decision: 多 Agent 编排采用 task-adaptive topology + explicit budget 的验证框架, 保留固定节点上限为临时 guardrail 而不是普适定律
+Decision: 强化多Agent编排自适应拓扑与 Agent Reliability Engineering (ARE) 中循环检测等评估原则的整合
 Decision Type: FOCUS
-Evidence: AdaptOrch 原始研究显示任务依赖图可用于动态选择 parallel, sequential, hierarchical 和 hybrid topology
-Repository Record Comparison: 修正 W31 中把固定节点数量写得过强的倾向, 保留其“限制复杂度”的可靠性目标
-Counterevidence: 自适应编排本身会引入额外协调开销, 简单任务不一定受益
-Expected Value: 把可靠性控制从静态数字阈值升级为任务结构, 预算和终止条件共同约束
-Risk: 动态拓扑可能增加状态同步和可观测性复杂度
-Why Now: 本周多个 H2 已持续把拓扑选择, loop detection 和 progress predicate 指向同一个系统级问题
-Confidence: HIGH for direction, MEDIUM for concrete thresholds
+Evidence: AdaptOrch 自适应拓扑和 Agent Reliability Engineering (ARE) 指南。
+Independent Evidence: hidekazu-konishi.com 的 ARE 设计指南提及进度断言与停滞检测。
+Repository Record Comparison:
+- External Claim: ARE 要求设置宏观预算与进度断言，多 Agent 系统失败率随节点增加指数级上升。
+- Cortex Records: 2026-W31-H4-narrative-act.md 与 2026-07-H6-horizon-memorize.md 中关于单 Agent 节点上限和复杂场景多 Agent 的要求。
+- Conclusion: 完全契合内部限制 Agent 节点阈值的策略，并提供了诸如 Stagnation Detection 和基于任务 DAG 自适应动态分配拓扑的理论。
+Counterevidence: 缺乏各系统框架对这些建议架构落地的一致支持。
+Expected Value: 从单纯的数值限制提升为自适应网络与状态反馈机制，控制复杂系统的长链路崩溃率。
+Risk: 自适应拓扑和 ARE 的指纹识别探测增加系统的运行时消耗。
+Why Now: 新近的研究明确指出了可靠性随执行步数断崖式下跌的数据。
+Confidence: HIGH CONFIDENCE
 Validity Window: 3 months
-Invalidation Trigger: 生产证据显示固定拓扑在目标场景中稳定优于自适应方案
-Host Repository Change: NO
-
-Decision ID: DEC-2026W32-03
-Decision: 后续 Agent 可靠性判断优先验证 trajectory / world-state / progress, 不允许仅凭最终文本或 HTTP 成功状态宣称任务完成
-Decision Type: STRENGTHEN_EVIDENCE
-Evidence: 本周 H2 连续出现 trajectory evaluation, partial success, loop detection, stagnation detection 和 progress predicate 信号
-Repository Record Comparison: 与 W31 的可靠性工程方向一致, 本周继续把“完成”从文本判断收束为可检查的执行状态与后置条件
-Counterevidence: 本周相关工程文章多数不是 Tier 1 标准, 因此不设定统一数值阈值
-Expected Value: 降低 silent failure, false completion 和无限循环被误报为成功的风险
-Risk: 过度验证会增加调用开销
-Why Now: 无状态协议和长任务并行化使“结果是否真的落地”比单步输出更重要
-Confidence: MEDIUM-HIGH
-Validity Window: 2 months
-Invalidation Trigger: 出现更可靠且低成本的统一完成证明机制
+Invalidation Trigger: 业界形成不依赖进度断言而彻底解决无监督失败死循环的更优机制。
 Host Repository Change: NO
 
 DO_NOT_PURSUE
-- 不把任何第三方文章中的具体失败率, 固定节点数或 SDK 包名写成行业普适事实
-- 不因 MCP 协议无状态而推断宿主仓库或应用层必须删除长期状态
-- 不把 Horizon 的研究决策直接转化为 welcome-to-github 代码, Actions 或部署修改
+- 第三方技术博客披露的 SDK 具体预发布版本号。
+  原因: 预发布版本变动大，生命周期短，容易造成信息滞后和误导。
+  重新考虑所需证据: 版本进入 GA 或长期支持 (LTS) 状态，且在官方文档中稳定引用。
+- Google Antigravity 2.0
+  原因: 该消息为数月前的早期发布，目前缺乏后续的稳定落地反馈，且外部环境变迁较快，其不属于核心观测演进路径。
+  重新考虑所需证据: 出现大量真实的一线企业级生产部署案例及独立使用评价。
 
 HANDOFF_TO_H4
-- 将 DEC-2026W32-01 转换为官方规范优先的 MCP compatibility checklist 与叙事边界
-- 将 DEC-2026W32-02 转换为 task-adaptive topology, budget, progress 和 termination 的观察要求
-- 将 DEC-2026W32-03 转换为 trajectory/world-state 优先的完成证据要求
-- 明确 Asia/Shanghai 是周产物 Logical Week 的唯一归属基准, 周一至周日闭合后生成对应 ISO 周
+- 观察重点: 将 DEC-2026W32-01 作为 MCP 兼容性检查表与版本观察要求，要求未来的信息只依据官方 SDK 或 PyPI release history。
+- 验证重点: 将 DEC-2026W32-02 转化为关于多Agent任务执行轨迹、完成证明及自适应拓扑设计的观察要求。
 
 BOUNDARY_CHECK
-确认未读取 Horizon 之外宿主机制: YES
-确认未读取 GitHub Actions: YES
+确认未越界: YES
 确认未实施宿主仓库决策: YES
 确认未升级长期记忆: YES
-确认未公开完整提示词或私有 Memory: YES
-确认未将外部调度器默认时区猜测写成已证实根因: YES
-确认周归属按 Asia/Shanghai 2026-08-03 至 2026-08-09 修复为 2026-W32: YES
+确认未读写非授权文件: YES
