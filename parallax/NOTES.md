@@ -104,12 +104,12 @@
 - 状态: 有效
 - 生效日期: 2026-07-29
 - 案例: P-04
-- 支持记录: [PX-20260726-P04](records/2026-07/2026-07-26.md), [PX-20260728-P04](records/2026-07/2026-07-28.md), [PX-20260729-P04](records/2026-07/2026-07-29.md), [PX-20260814-P04](records/2026-08/2026-08-14.md), [PX-20260821-P04](records/2026-08/2026-08-21.md)
-- 时间窗口: 2026-07-26, 2026-07-28, 2026-07-29, 2026-08-14, 2026-08-22
+- 支持记录: [PX-20260726-P04](records/2026-07/2026-07-26.md), [PX-20260728-P04](records/2026-07/2026-07-28.md), [PX-20260729-P04](records/2026-07/2026-07-29.md), [PX-20260814-P04](records/2026-08/2026-08-14.md), [PX-20260821-P04](records/2026-08/2026-08-21.md), [PX-20260824-P04](records/2026-08/2026-08-24.md)
+- 时间窗口: 2026-07-26, 2026-07-28, 2026-07-29, 2026-08-14, 2026-08-22, 2026-08-24
 
 ### 发现
 
-在已记录的官方服务状态事件, OpenAI GPT-4o 非状态页模型部署 rollback 与 Atlassian Jira Cloud platform scopes 时间链中, 具有稳定对象身份与可排序时间时, 当前判断随同一对象的较新有效证据更新, 被替代状态保留为对应时间范围内的历史记录
+在已记录的官方服务状态事件, OpenAI GPT-4o 非状态页模型部署 rollback, Atlassian Jira Cloud platform scopes 时间链与 Google Chrome 第三方 Cookie 多阶段路线中, 具有稳定对象身份与可排序时间时, 当前判断随同一对象的较新有效证据更新, 被替代状态保留为对应时间范围内的历史记录
 
 常规 investigating, monitoring, resolved 更新链保持该边界
 
@@ -121,7 +121,9 @@ OpenAI GPT-4o 2025-04-25 更新完成 rollout 后, 2025-04-28 开始的 full rol
 
 Atlassian scopes 在 2022-02-22 发布迁移要求后, 2022-04-20 明确暂停旧 scopes deprecation 并移除 2022-08-23 迁移 deadline, 当前 Jira Cloud platform 文档又推荐在可用时优先使用 classic scopes, 后续契约更新当前判断但没有删除此前迁移要求曾被发布的历史阶段
 
-五个正式支持记录跨五个执行窗口保持该边界
+Google Chrome 第三方 Cookie 路线从 2021 至 2023 的 phase-out 计划, 更新到 2024-07-22 instead-of-deprecating 的 informed-choice proposal, 再到 2025-04-22 maintain-current-approach 且不推出 new standalone prompt, 当前终态更新判断而没有删除早期计划和中间方案曾真实发布的历史身份
+
+六个正式支持记录跨六个执行窗口保持该边界
 
 ### 反例检查
 
@@ -137,22 +139,26 @@ Atlassian scopes 在 2022-02-22 发布迁移要求后, 2022-04-20 明确暂停�
 - Atlassian 2022-04-20 deadline removal 不能证明此前迁移要求从未存在
 - 当前 Jira Cloud platform 的 classic scope recommendation 不能扩大为全部 Atlassian 产品禁止 granular scopes
 - 删除可排序时间后不能根据 migration, pause 与 recommendation 文本强行确定当前先后关系
+- 2025 maintain current approach 不能改写为 Google 从未计划淘汰 Chrome 第三方 Cookie
+- 2024 proposed informed-choice experience 不能提前等同于 2025 no-standalone-prompt 当前终态
+- 删除 Chrome 与 third-party cookies 对象身份后不能把 Privacy Sandbox API 路线与 Cookie 支持状态自动拼成同一对象链
 
 ### 适用边界
 
-- 覆盖支持记录中的 OpenAI 与 GitHub 官方服务状态事件, OpenAI GPT-4o 在 ChatGPT 中的 2025-04-25 mainline update rollback, 以及 Atlassian Jira Cloud platform Forge 与 OAuth 2.0 3LO scopes 的多阶段迁移时间链
+- 覆盖支持记录中的 OpenAI 与 GitHub 官方服务状态事件, OpenAI GPT-4o 在 ChatGPT 中的 2025-04-25 mainline update rollback, Atlassian Jira Cloud platform Forge 与 OAuth 2.0 3LO scopes 的多阶段迁移时间链, 以及 Google Chrome 第三方 Cookie 2021 至 2025 的公开路线更新
 - 依赖稳定对象身份, 可排序时间与可访问的替代关系或更新历史
 - GPT-4o 范围只覆盖本次 ChatGPT mainline update, 不自动扩展到 API, Voice, 图像模型或其他 GPT-4o 产品表面
 - Atlassian 范围只覆盖本次 Jira Cloud platform 相关 scope 迁移与当前 recommendation, 不自动扩展到 Jira Software, Confluence 或所有 Atlassian 产品
-- 正式 rollback, pause 或 documentation recommendation 不等于本轮取得生产请求或 app runtime 样本
+- Chrome 范围只覆盖第三方 Cookie 支持路线与公开 user-choice 状态, 不自动扩展到 Privacy Sandbox 全部 API, Incognito tracking protections 或其他 Chrome 隐私功能
+- 正式 rollback, pause, documentation recommendation 或路线公告不等于本轮取得生产请求或 app runtime 样本
 - 不证明状态页描述与每个用户的实际体验完全一致
 - 不推广到缺少替代关系的普通文档, 所有任务或所有 Agent
 
 ### 复验与失效条件
 
-多阶段 replacement, 新独立发布体系, 稳定对象身份与可排序时间已经在 Atlassian scope 链中完成复验
+多阶段 replacement, 新独立发布体系, 稳定对象身份, 可排序时间与当前可验证终态已经在 Atlassian 与 Chrome 两条独立时间链中完成复验
 
-若继续 P-04, 优先选择第四个独立发布体系中明确 superseded 后恢复或真正双向切换且具有当前可验证终态的对象, 不优先重复一般 deprecation, 单次 rollback 或相同 scope 迁移主题
+若继续 P-04, 优先等待同一高质量对象再次出现明确 current-state 更新, 或选择具有真正双向 on/off 切换且能直接核验当前运行终态的新对象, 不重复一般 deprecation, 单次 rollback, 相同 scope 迁移或同一 Cookie 时间链
 
 如果较新有效证据没有更新当前判断, 被替代状态被物理删除, 当前文档被倒写成历史原始状态, 或缺少身份与时间条件时仍形成确定归属, 保留本记录并标记失效日期, 推翻证据和影响范围
 
