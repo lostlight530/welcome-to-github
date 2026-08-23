@@ -47,15 +47,15 @@
 - 输入: 旧契约与更新后的官方契约
 - 变化: 明确两者生效时间
 - 检查: 是否更新当前判断, 同时保留历史原因
-- 最近实际执行日期: 2026-08-22
+- 最近实际执行日期: 2026-08-24
 - 最近关联观察日期: 2026-08-10
-- 累计研究批次: 9
-- 独立执行窗口: 9
-- 已覆盖实验类型: 状态更新, 明确纠正, resolved 后 monitoring, 顺序交换, 关键状态缺失, 时间戳缺失, 事件身份缺失, 同日事件隔离, 事件重排, 冲突摘要, 跨事件反例, 跨发布者更新, 初始未知与后续归因, 初步结论边界, 历史纠错, 非状态页契约, deprecated API, deprecated module, removal 边界, 版本生效时间, 时间删除, 对象身份删除, 第三方兼容实现冲突, 模型部署 rollback, full rollback, previous version 恢复, 多阶段替代契约, deprecation pause, deadline removal, 当前文档恢复
+- 累计研究批次: 10
+- 独立执行窗口: 10
+- 已覆盖实验类型: 状态更新, 明确纠正, resolved 后 monitoring, 顺序交换, 关键状态缺失, 时间戳缺失, 事件身份缺失, 同日事件隔离, 事件重排, 冲突摘要, 跨事件反例, 跨发布者更新, 初始未知与后续归因, 初步结论边界, 历史纠错, 非状态页契约, deprecated API, deprecated module, removal 边界, 版本生效时间, 时间删除, 对象身份删除, 第三方兼容实现冲突, 模型部署 rollback, full rollback, previous version 恢复, 多阶段替代契约, deprecation pause, deadline removal, 当前文档恢复, 多阶段路线反转, phase-out 计划, instead-of-deprecating 更新, current approach 终态, standalone prompt 取消
 - 当前状态: 发现
-- 已知反例: 同日事件可以具有不同当前状态, 一个事件的 resolved 不能复制给相邻 monitoring 事件, 通用 resolved 模板不能证明真实事故, 首次 resolved 后仍可能出现 monitoring, 线性恢复事件不能代表所有更新路径, 动态页面快照不能代表后续状态, 后续归因可以更新当前判断但不能把初始未知改写为当时已知, 初步调查结论不能冒充最终报告, 当前动态事件页已经出现 write-up 发布标记时不能冒充真实的 write-up 发布前历史快照, 没有明确旧新契约生效时间时不能把正式事故复盘恢复计为 P-04 核心变化, Kubernetes v1.26 的 v1beta2 迁移目标不能证明 v1beta2 在 v1.29 后仍继续提供, 持久对象可通过新 API 访问不能证明旧 API 版本继续服务, 删除版本时间后不能仅凭迁移文本确定当前较新契约, 删除稳定资源身份后不能把相似 deprecated 说明拼成同一对象链, Python 3.10 的 deprecated 状态不能证明 distutils 在所有历史版本中都已移除, setuptools 第三方兼容提供不能证明 Python 3.12 标准库仍包含 distutils, 删除发布时间锚点后不能补出具体 Python 发布边界, GPT-4o full rollback 不能证明 4 月 25 日更新从未部署, system prompt 临时缓解不能替代 full rollback, previous version 不能补出公开 snapshot ID, 删除 GPT-4o 与 ChatGPT 对象身份后不能把相似 rollback 文本拼成同一部署链, Atlassian 2022-04-20 deadline removal 不能证明此前迁移要求从未存在, 当前 Jira Cloud platform 的 classic scope recommendation 不能扩大为全部 Atlassian 产品禁止 granular scopes
-- 下一复验条件: 多阶段 replacement, 新独立发布体系, 稳定对象身份与可排序时间均已满足, 后续不优先重复一般 deprecation, 单次 rollback 或相同 scope 迁移主题, 若继续 P-04 优先寻找明确 superseded 后恢复或真正双向切换且具有当前可验证终态的第四独立发布体系, 缺少高质量对象时返回其他已达到复验条件或近期覆盖不足的 CASE
-- 关联记录: [2026-07-26 每日专题](records/2026-07/2026-07-26.md), [2026-07-28 每日专题](records/2026-07/2026-07-28.md), [2026-07-29 每日专题](records/2026-07/2026-07-29.md), [2026-07-21 安全事件专题](specials/2026-07/2026-07-21-openai-hugging-face-security-incident.md), [2026-08-06 每日专题](records/2026-08/2026-08-06.md), [2026-08-10 关联观察, 不计数](records/2026-08/2026-08-10.md), [2026-08-11 每日专题](records/2026-08/2026-08-11.md), [2026-08-12 每日专题](records/2026-08/2026-08-12.md), [2026-08-14 每日专题](records/2026-08/2026-08-14.md), [2026-08-21 每日专题](records/2026-08/2026-08-21.md)
+- 已知反例: 同日事件可以具有不同当前状态, 一个事件的 resolved 不能复制给相邻 monitoring 事件, 通用 resolved 模板不能证明真实事故, 首次 resolved 后仍可能出现 monitoring, 线性恢复事件不能代表所有更新路径, 动态页面快照不能代表后续状态, 后续归因可以更新当前判断但不能把初始未知改写为当时已知, 初步调查结论不能冒充最终报告, 当前动态事件页已经出现 write-up 发布标记时不能冒充真实的 write-up 发布前历史快照, 没有明确旧新契约生效时间时不能把正式事故复盘恢复计为 P-04 核心变化, Kubernetes v1.26 的 v1beta2 迁移目标不能证明 v1beta2 在 v1.29 后仍继续提供, 持久对象可通过新 API 访问不能证明旧 API 版本继续服务, 删除版本时间后不能仅凭迁移文本确定当前较新契约, 删除稳定资源身份后不能把相似 deprecated 说明拼成同一对象链, Python 3.10 的 deprecated 状态不能证明 distutils 在所有历史版本中都已移除, setuptools 第三方兼容提供不能证明 Python 3.12 标准库仍包含 distutils, 删除发布时间锚点后不能补出具体 Python 发布边界, GPT-4o full rollback 不能证明 4 月 25 日更新从未部署, system prompt 临时缓解不能替代 full rollback, previous version 不能补出公开 snapshot ID, 删除 GPT-4o 与 ChatGPT 对象身份后不能把相似 rollback 文本拼成同一部署链, Atlassian 2022-04-20 deadline removal 不能证明此前迁移要求从未存在, 当前 Jira Cloud platform 的 classic scope recommendation 不能扩大为全部 Atlassian 产品禁止 granular scopes, 2025 maintain current approach 不能改写为 Google 从未计划淘汰 Chrome 第三方 Cookie, 2024 proposed informed-choice experience 不能提前等同于 2025 no-standalone-prompt 当前终态, 删除 Chrome 与 third-party cookies 对象身份后不能把 Privacy Sandbox API 路线与 Cookie 支持状态自动拼成同一对象链
+- 下一复验条件: 新独立发布体系, 多阶段路线反转, 稳定对象身份, 可排序时间与当前可验证终态均已在 Chrome 第三方 Cookie 时间链中满足, 后续不重复同一 Cookie 路线或一般 deprecation, 若继续 P-04 优先等待同一高质量对象再次出现明确 current-state 更新, 或选择具有真正双向 on/off 切换且能直接核验当前运行终态的新对象, 缺少高质量对象时返回其他已达到复验条件或近期覆盖不足的 CASE
+- 关联记录: [2026-07-26 每日专题](records/2026-07/2026-07-26.md), [2026-07-28 每日专题](records/2026-07/2026-07-28.md), [2026-07-29 每日专题](records/2026-07/2026-07-29.md), [2026-07-21 安全事件专题](specials/2026-07/2026-07-21-openai-hugging-face-security-incident.md), [2026-08-06 每日专题](records/2026-08/2026-08-06.md), [2026-08-10 关联观察, 不计数](records/2026-08/2026-08-10.md), [2026-08-11 每日专题](records/2026-08/2026-08-11.md), [2026-08-12 每日专题](records/2026-08/2026-08-12.md), [2026-08-14 每日专题](records/2026-08/2026-08-14.md), [2026-08-21 每日专题](records/2026-08/2026-08-21.md), [2026-08-24 每日专题](records/2026-08/2026-08-24.md)
 
 ## P-05 上下文干扰
 
