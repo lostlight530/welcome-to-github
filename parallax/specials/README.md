@@ -17,6 +17,8 @@
 | 2026-08-04 | PX-S-20260804-P05 | P-05 | 2026-08-05 | 2026-08-05 | 观察, N-04 边界扩展 | [OpenAI 第三方网络安全评估事件](2026-08/2026-08-04-openai-third-party-cyber-evaluations.md) |
 | 2026-08-05 | PX-S-20260805-P03 | P-03 | 2026-08-06 | 2026-08-06 | 观察, N-02 复发检查 | [OpenAI 三项服务事件](2026-08/2026-08-05-openai-service-events.md) |
 | 2026-08-13 | PX-S-20260813-P05 | P-05 | 2026-08-13 | 2026-08-13 | 观察, N-04 复发检查 | [OpenAI, Anthropic 与 Google 前沿模型官方评价可比性](2026-08/2026-08-13-frontier-model-evaluation-comparability.md) |
+| 2026-08-21 | PX-S-20260821-P05 | P-05 | 2026-08-23 | 2026-08-23 | 观察, N-04 支持范围扩展 | [Anthropic CHIVE counterfactual explanations](2026-08/2026-08-21-anthropic-chive-counterfactual-explanations.md) |
+| 2026-08-21 | PX-S-20260821-P03 | P-03 | 2026-08-23 | 2026-08-23 | 观察, P-03 AI agent lifecycle 复验 | [DeepMind SIMA 与 EVE research lifecycle boundary](2026-08/2026-08-21-deepmind-sima-eve-research-boundary.md) |
 
 ## 2026-08-01 维护
 
@@ -95,6 +97,19 @@
 - 本专题只作 N-04 复发检查, 不把三家跨厂商评价对象正式加入长期支持范围, 长期适用范围不扩大
 - 2026-08-07 至 2026-08-13 连续七日当前形成 8 个研究批次并覆盖 7 个实际执行日期窗口, 该复核不构成周期审计
 - 关联记录: [8 月阶段更新](../records/2026-08.md#2026-08-13-阶段更新)
+
+## 2026-08-23 维护
+
+- 新增两项 8 月 21 日 AI 特殊专题, 当前特殊专题总数增至 11
+- Anthropic CHIVE 专题形成 P-05 新研究批次并正式扩展 N-04 到 AI scientific experiment 的 result-branch 与 evidence-type identity
+- DeepMind SIMA 与 EVE 专题形成 P-03 新研究批次, 但不属于 N-02 coverage denominator 的正式支持范围
+- 两项专题均于 2026-08-23 实际核验, 与当日 Astra daily 共享 2026-08-23 一个执行窗口
+- 两项专题各完成 5 个 Trial, 同日三项研究共 15 个 Trial
+- CHIVE 公开代码只作为可复现材料边界, 本轮没有冒充已完整复现研究
+- SIMA offline research, Aura Guidance current feature 与 future live deployment 保持分离
+- 本次维护本身不增加研究批次, Trial 或执行窗口
+- 关联记录: [2026-W34 自然周终审](../records/2026-08.md#2026-w34-自然周终审)
+- 关联审计: [2026-W34](../audits/2026-W34.md)
 
 ## 2026-07-31 维护
 
