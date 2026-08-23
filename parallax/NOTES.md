@@ -161,12 +161,12 @@ Atlassian scopes 在 2022-02-22 发布迁移要求后, 2022-04-20 明确暂停�
 - 状态: 有效
 - 生效日期: 2026-07-31
 - 案例: P-05
-- 支持记录: [PX-20260725-P05](records/2026-07/2026-07-25.md), [PX-20260730-P05](records/2026-07/2026-07-30.md), [PX-20260731-P05](records/2026-07/2026-07-31.md), [PX-S-20260804-P05](specials/2026-08/2026-08-04-openai-third-party-cyber-evaluations.md), [PX-20260813-P05](records/2026-08/2026-08-13.md), [PX-20260820-P05](records/2026-08/2026-08-20.md)
-- 时间窗口: 2026-07-26, 2026-07-30, 2026-07-31, 2026-08-05, 2026-08-13, 2026-08-22
+- 支持记录: [PX-20260725-P05](records/2026-07/2026-07-25.md), [PX-20260730-P05](records/2026-07/2026-07-30.md), [PX-20260731-P05](records/2026-07/2026-07-31.md), [PX-S-20260804-P05](specials/2026-08/2026-08-04-openai-third-party-cyber-evaluations.md), [PX-20260813-P05](records/2026-08/2026-08-13.md), [PX-20260820-P05](records/2026-08/2026-08-20.md), [PX-S-20260821-P05](specials/2026-08/2026-08-21-anthropic-chive-counterfactual-explanations.md)
+- 时间窗口: 2026-07-26, 2026-07-30, 2026-07-31, 2026-08-05, 2026-08-13, 2026-08-22, 2026-08-23
 
 ### 发现
 
-在已记录的研究门槛, HTTP 语义, 无障碍对比度与多发布者网络安全评估材料中, 增加长上下文或与正文冲突的摘要没有替代可定位的直接支持
+在已记录的研究门槛, HTTP 语义, 无障碍对比度, 多发布者网络安全评估与 AI scientific experiment 材料中, 增加长上下文或与正文冲突的摘要没有替代可定位的直接支持
 
 删除关键支持时, 判断收窄为未验证
 
@@ -176,7 +176,9 @@ Irregular 自身正式报告加入后, 直接评估发布者与开发方二次�
 
 Anthropic 自身事故复盘加入后, 141006 次回顾运行, 3 起事故, 6 次相关运行与三个模型身份继续按直接发布者和统计层级分开保存, 相邻 AISI 材料没有改变 Anthropic 事故事实归属, 非受控个案也没有被升级为稳定模型排名
 
-六个实质不同批次跨六个执行窗口保持该边界
+CHIVE 科研专题加入后, evaluation no uplift, training-data generalization 与 applied-use caveat 按 result branch 分开保存, LLM-generated explanation 也没有替代 measured counterfactual outcome 的 evaluation-label 身份
+
+七个实质不同支持记录跨七个执行窗口保持该边界
 
 ### 反例检查
 
@@ -195,26 +197,31 @@ Anthropic 自身事故复盘加入后, 141006 次回顾运行, 3 起事故, 6 �
 - 3 起事故与 6 次相关运行不能互换或按三个模型机械平均
 - Anthropic 明确说明三个 isolated incidents 不是 controlled experimental comparison, 个案差异不能形成稳定模型安全排名
 - AISI 的 122 次运行与 19 项动作属于另一评估对象, 不能加入 Anthropic 的统计分母
+- CHIVE no uplift 只属于当前 counterfactual evaluation, 不能扩大为所有 applied interpretability tools 完全无用
+- CHIVE training-data generalization 不能改写为 activation-reading tools 在 evaluation 上产生 uplift
+- LLM-generated explanation 不能因为语言流畅而升级为 ground truth
+- CHIVE 代码公开不能冒充本轮已经完整复现研究结果
 
 ### 适用边界
 
-- 仅覆盖支持记录中的 Parallax 门槛材料, RFC 9110, WCAG 2.2, OpenAI 与 AISI 第三方评估材料, Irregular 自身正式评估报告以及 Anthropic 2026-07-30 官方事故复盘
+- 仅覆盖支持记录中的 Parallax 门槛材料, RFC 9110, WCAG 2.2, OpenAI 与 AISI 第三方评估材料, Irregular 自身正式评估报告, Anthropic 2026-07-30 官方事故复盘以及 2026-08 CHIVE scientific experiment
 - Irregular 范围只覆盖其 GPT-5.6 Sol FrontierCyber, CyScenarioBench 与 Atomic Challenges 报告中的直接结果, 配置与限制
-- Anthropic 范围只覆盖其复盘中的三起 isolated incidents, 涉及运行与模型身份, 不推广为一般部署事故率或模型总体排名
-- 只描述直接支持, 冲突摘要, 关键缺失, 统计对象与对象身份之间的判断边界
+- Anthropic incident 范围只覆盖其复盘中的三起 isolated incidents, 涉及运行与模型身份, 不推广为一般部署事故率或模型总体排名
+- CHIVE 范围只覆盖当前论文和官方研究页中的 counterfactual evaluation, training-data result 与 evidence-type identity, 不推广为所有 interpretability 方法的最终有效性判断
+- 只描述直接支持, 冲突摘要, 关键缺失, 统计对象, result branch, evidence type 与对象身份之间的判断边界
 - 不推广到所有长上下文, 所有规范, 所有任务或所有 Agent
 - 不证明长上下文长度本身是判断保持或失败的原因
 - 不把 capability-elicitation 或特定评估环境结果推广为普通部署的现实滥用画像
 
 ### 复验与失效条件
 
-事件关系删除已经完成, Anthropic 新发布者直接事故复盘也已完成
+事件关系删除, Anthropic 新发布者直接事故复盘与 CHIVE 科研结果支路分离已经完成
 
-后续优先等待 AISI 或 Anthropic 与 METR 的独立第三方复核正式发布, OpenAI 对此前第三方评估的明确纠正, 或取得同 benchmark, 同版本数据集, 统一公开 harness 与尽可能一致推理预算的跨厂商可重复结果
+后续优先等待 CHIVE 独立外部复现, AISI 或 Anthropic 与 METR 的独立第三方复核正式发布, OpenAI 对此前第三方评估的明确纠正, 或取得同 benchmark, 同版本数据集, 统一公开 harness 与尽可能一致推理预算的跨厂商可重复结果
 
-计划中的第三方复核不能写成已完成结果, 不重复采样同一事故页面制造新支持记录
+计划中的第三方复核不能写成已完成结果, 公开代码不能写成本轮已复现结果, 不重复采样同一事故或论文页面制造新支持记录
 
-如果冲突摘要改变判断边界, 关键支持缺失时仍形成无条件事实, 对象身份或统计层级缺失时仍猜测默认类别, 开发方二次汇总覆盖原始评估发布者直接事实归属, 或非受控个案被升级为稳定模型排名, 保留本记录并标记失效日期, 推翻证据和影响范围
+如果冲突摘要改变判断边界, 关键支持缺失时仍形成无条件事实, 对象身份, 统计层级, result branch 或 evidence type 缺失时仍猜测默认类别, 开发方二次汇总覆盖原始评估发布者直接事实归属, 非受控个案被升级为稳定模型排名, 或 generated explanation 被升级为 ground truth, 保留本记录并标记失效日期, 推翻证据和影响范围
 
 ## N-05 证据层级不能被顺序与文本命中替代
 
