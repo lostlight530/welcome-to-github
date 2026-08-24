@@ -1,15 +1,14 @@
 # Horizon Cortex — August Stage Audit through available 2026-08-24 evidence
 
-Historical filename note: this file retains its original `2026-08-through-23-stage-audit.md` path to avoid unnecessary path churn. Its maintained content now includes the actually available 2026-08-24 H1/H2 evidence.
+Historical filename note: this file retains `2026-08-through-23-stage-audit.md` for path stability while the maintained stage record includes the actually available 2026-08-24 H1/H2 pair.
 
-Status: `PROVISIONAL_STAGE_AUDIT`
-Maintenance review: 2026-08-24 Asia/Shanghai
+Status: `PROVISIONAL_STAGE_AUDIT`  
+Evidence cutoff: available evidence through 2026-08-24  
 Formal August H5/H6 monthly closure: `OPEN`
-Current evidence boundary: August 1–24 complete current Daily-pair inventory
 
-## 1. Scope and ownership
+## 1. Repository-native lifecycle
 
-This audit reviews the committed Horizon lifecycle by repository-native task identity:
+The committed Horizon record uses:
 
 - H1 Daily — Observe
 - H2 Daily — Orient
@@ -18,209 +17,193 @@ This audit reviews the committed Horizon lifecycle by repository-native task ide
 - H5 Monthly — Reflect
 - H6 Monthly — Memorize
 
-The H1/H2/H3/H4 artifacts reviewed here identify `Agent: Jules` and are treated as Jules-native execution history.
-
-The following maintenance records are a separate post-hoc reviewer/GPT interpretation layer:
-
-- this stage audit
-- `EVIDENCE_POLICY.md`
-- `2026-W33-reconciliation.md`
-- `2026-W34-reconciliation.md`
-
-Reviewer/GPT evidence policy can supersede the **current interpretation** of an over-broad historical claim. It does not prove that Jules consumed that policy during the original run.
-
-Control-plane state: `CONTROL_PLANES_DISTINCT`.
-
-No historical H1/H2/H3/H4 file is rewritten by this audit.
+Historical H1/H2/H3/H4 artifacts remain unchanged. This audit and the explicit reconciliation/evidence-policy files only narrow their **current interpretation** where retained evidence requires it.
 
 ## 2. Current Daily inventory
 
-### August 1–23
+Current repository paths contain H1 and H2 for every logical date from 2026-08-01 through 2026-08-24.
 
-Current repository inventory contains H1 and H2 for every logical date from 2026-08-01 through 2026-08-23.
+Current-path state:
 
-Current-path state: `H1_H2_PRESENT_23_OF_23`.
+`H1_H2_PRESENT_AUGUST_01_THROUGH_24`.
 
-This current inventory does not prove that every file was visible to every earlier Weekly aggregation at execution time. W34 is the concrete counterexample: final paths can be complete while the historical H4 correctly remains blocked because H3 was not visible when H4 executed.
+Path completeness does not establish that every file was visible to every earlier Weekly execution snapshot, nor does it validate every proposition inside those files.
 
-### August 24
+The W34 H4 case demonstrates the distinction: later H3 presence repaired final handoff availability, while the original H4 execution remains historically blocked.
 
-A final live recheck during this maintenance found both current paths:
-
-- `2026-08-24-H1-signal-observe.md`: PRESENT
-- `2026-08-24-H2-horizon-orient.md`: PRESENT
-
-The H2 became available after the earlier partial-day audit snapshot, so the reviewer record is updated rather than preserving a stale absence claim.
-
-Current August 24 state:
-
-`CURRENT_DAY_PAIR_PRESENT`.
-
-This means current path coverage is complete for August 1–24. It does not mean every claim in the 8/24 pair is independently verified or that the August month is closed.
-
-## 3. Daily evidence reconciliation ledger
-
-The purpose of this ledger is to preserve Daily execution history while identifying where current interpretation must be narrower than the original wording.
+## 3. Daily evidence reconciliation
 
 | Date | Current interpretation |
 |---|---|
-| 08-01 | H1/H2 were later reconciled: `_meta` is not a generic HTTP header, a universal SDK `legacy` compatibility mechanism was not established, and Anthropic's 90.2% result remains a configuration/eval-specific result |
-| 08-02 | H2 reconciliation correctly separates the Anthropic multi-agent research eval from the Augment customer case; original H1 over-broad wording remains historical only |
-| 08-03 | repeated `MCP 2.0`, `_meta`-header, “fully stateless”, topology-standard language inherited earlier errors; repetition does not create new authority |
-| 08-04 | Context Engineering, prompt governance, Maps grounding, and coding-agent taxonomy are useful vendor/research observations; they do not establish universal disciplines, legal requirements, or standard anti-hallucination architectures |
-| 08-05 | Label Studio reliability figures are source-specific vendor/reporting evidence; MCP host migration applicability was not established; later 08-10 calibration supersedes host-action implications |
-| 08-06 | A2A stability/adoption is useful evidence, but “150+ organizations” must not be converted into “150+ organizations are production users”; Cognee benchmark claims remain vendor-specific |
-| 08-07 | H1 states the retained 08-06 H2 was `INPUT_MISSING`, while the retained 08-06 H2 records `Input Status: SUCCESS` and `Task Status: SUCCESS`; current status is `HISTORICAL_INPUT_STATE_MISMATCH` |
-| 08-08 | later reconciliation correctly repairs stale Python MCP prerelease metadata and anchors version facts to official/package-registry evidence |
-| 08-09 | secondary reporting combines several multi-agent failure/agent-count figures and promotes them toward a five-node rule; current state is `PROVISIONAL_GUARDRAIL_NOT_EXTERNAL_LAW` |
-| 08-10 | evidence maturity pivot: official MCP facts are separated from host applicability; Tier-3 ARE guidance is explicitly watch-only; fixed node threshold is not externally validated |
-| 08-11 | H2 labels a secondary news/analysis survey article `VERIFIED_FROM_PRIMARY_SOURCE`; current authority is `SECONDARY_SOURCE_MISLABELED_PRIMARY` even though the survey signal may remain useful as bounded background |
-| 08-12 | Google engineering support is useful first-party implementation evidence; it is not itself the normative MCP specification and does not prove ecosystem-wide deployment |
-| 08-13 | GSA MCP hackathon evidence supports government experimentation/support, not government-wide production adoption; Atlan's compliance architecture is `VENDOR_COMPLIANCE_INTERPRETATION`, not a primary-law mandate |
-| 08-14 | A2A official evidence supports an inter-agent interoperability protocol; MCP-vs-A2A separation remains an analytical responsibility boundary rather than mandatory universal layering |
-| 08-15 | official project follow-up can verify Cloudflare Computer / DeerFlow / GPT Researcher implementation facts; project existence does not by itself establish an industry-wide runtime/topology law |
-| 08-16 | DeerFlow and Cloudflare remain implementation cases; Cloudflare Computer is explicitly preview-stage; architecture generalization remains bounded |
-| 08-17 | Better Stack is a third-party migration guide but H2 labels it `VERIFIED_FROM_PRIMARY_SOURCE`; current state is `SECONDARY_SOURCE_MISLABELED_PRIMARY / THIRD_PARTY_MIGRATION_GUIDANCE` |
-| 08-18 | Maps MCP/auth examples are provider-specific implementation evidence; vendor-specific auth headers are not promoted into generic MCP authorization law; VCE remains conceptual |
-| 08-19 | Google/Cloudflare support examples strengthen first-party implementation evidence but do not establish universal production adoption or adoption rate |
-| 08-20 | a community MCP-server aggregator is explicitly Tier 4 but H2 labels it `VERIFIED_FROM_PRIMARY_SOURCE`; current state is `SECONDARY_AGGREGATOR_MISLABELED_PRIMARY`; one community server does not prove de-facto ecosystem standardization |
-| 08-21 | vendor descriptions of MCP/A2A responsibilities are useful architecture comparisons; they do not establish a normative universal split; Permit.io PDP guidance remains vendor interpretation |
-| 08-22 | MCP/A2A/ACP/UCP “layer stack” comes from secondary/community taxonomy and is `ANALYTICAL_TAXONOMY_ONLY / NORMATIVE_LAYERING_NOT_ESTABLISHED`; weak download/adoption figures are not upgraded |
-| 08-23 | Equixly header/cache security analysis is a useful threat-model hypothesis; it is not evidence of a local Horizon/host vulnerability or incident and does not independently define normative MCP behavior |
-| 08-24 | H1/H2 both exist. Orca's three-layer runtime grouping is an analyst/security-vendor taxonomy, not proof that the market has normatively converged on exactly three layers. H2 further promotes it toward “industry rejection” of framework-contained execution; that stronger market claim is not established. MLflow `span-per-tick` remains framework engineering guidance, OpenTelemetry GenAI semantic conventions are a separate telemetry-standard surface, and kill-switch governance is a separate operational-control surface. H2's “industry consensus/standard path” wording is therefore bounded to `FRAMEWORK_GUIDANCE + OTEL_SEMANTIC_CONVENTION / ECOSYSTEM_CONSENSUS_NOT_ESTABLISHED` |
+| 08-01 | `_meta` is not a generic HTTP header; a universal SDK `legacy` mechanism was not established; Anthropic's 90.2% result remains configuration/eval-specific |
+| 08-02 | Anthropic multi-agent research evaluation and the separate Augment customer case are distinct evidence objects |
+| 08-03 | repeated `MCP 2.0`, `_meta`-header, fully-stateless and topology-standard language inherited earlier overclaims; repetition does not add authority |
+| 08-04 | context/prompt/coding-agent taxonomies remain vendor/research observations, not universal standards or legal requirements |
+| 08-05 | Label Studio reliability figures remain source-specific; host migration applicability was not established |
+| 08-06 | A2A support/adoption evidence does not mean every one of 150+ participating/supporting organizations is a production user; Cognee benchmark claims remain vendor-specific |
+| 08-07 | H1 says retained 08-06 H2 was `INPUT_MISSING`, while retained 08-06 H2 records success → `HISTORICAL_INPUT_STATE_MISMATCH` |
+| 08-08 | later reconciliation repairs stale Python MCP prerelease/version metadata using stronger current evidence |
+| 08-09 | secondary multi-agent failure/agent-count reporting does not establish a universal five-node law → `PROVISIONAL_GUARDRAIL_NOT_EXTERNAL_LAW` |
+| 08-10 | evidence maturity pivot: exact protocol facts separated from host applicability; fixed node threshold remains unvalidated externally |
+| 08-11 | secondary survey/news analysis was labelled primary → `SECONDARY_SOURCE_MISLABELED_PRIMARY` |
+| 08-12 | Google engineering material supports its own implementation/support facts, not normative MCP semantics or ecosystem-wide deployment |
+| 08-13 | GSA hackathon evidence supports experimentation/support, not government-wide production adoption; Atlan compliance architecture is vendor interpretation |
+| 08-14 | A2A official evidence supports an inter-agent protocol; A2A-vs-MCP remains an analytical responsibility boundary rather than mandatory layering |
+| 08-15 | named project implementation facts do not establish an industry-wide runtime/topology law |
+| 08-16 | DeerFlow/Cloudflare remain implementation cases; preview status and local design limits remain material |
+| 08-17 | Better Stack migration guidance is third-party but was labelled primary → `SECONDARY_SOURCE_MISLABELED_PRIMARY` |
+| 08-18 | provider-specific Maps/MCP/auth examples are implementation evidence, not generic protocol authorization law |
+| 08-19 | Google/Cloudflare examples strengthen first-party support evidence but do not establish broad production adoption rate |
+| 08-20 | Tier-4 community aggregator was labelled primary → `SECONDARY_AGGREGATOR_MISLABELED_PRIMARY` |
+| 08-21 | vendor MCP/A2A/PDP architecture descriptions remain comparison/interpretation, not normative universal architecture |
+| 08-22 | MCP/A2A/ACP/UCP stack is `ANALYTICAL_TAXONOMY_ONLY / NORMATIVE_LAYERING_NOT_ESTABLISHED` |
+| 08-23 | Equixly material is a useful threat-model hypothesis; no local Horizon/host vulnerability or incident is established |
+| 08-24 | H1/H2 both exist; Orca three-layer runtime grouping remains analyst taxonomy; MLflow `span-per-tick`, OpenTelemetry GenAI conventions, kill-switch governance and ecosystem consensus are separate evidence surfaces |
 
-## 4. Semantic inheritance defects
+## 4. Inheritance and source-authority defects
 
-Several August errors were not isolated to one Daily file. They propagated through the sequential lifecycle.
+The August sequence contains several cases where a proposition was repeated through H1→H2 or Daily→Weekly without independent evidence.
 
-Examples:
+Current rules:
 
-- pre-08-10 MCP shorthand/host-applicability assumptions recurred across multiple H1/H2 files
-- secondary multi-agent failure summaries fed the historical five-node guardrail
-- weak-source or vendor architecture wording was sometimes repeated by H2 and later Weekly synthesis
-- source labels such as `VERIFIED_FROM_PRIMARY_SOURCE` were occasionally applied to secondary/aggregator material
-- 08-24 demonstrates the same inheritance mechanism: H2 promotes H1's analyst/framework observations into stronger industry-consensus language without adding independent verification
-
-Current rule:
+`H2_RESTATEMENT_DOES_NOT_UPGRADE_H1_EVIDENCE`
 
 `WEEKLY_INHERITANCE_DOES_NOT_UPGRADE_EVIDENCE`.
 
-The same principle applies inside one Daily pair:
+Explicit retained source-label defects include:
 
-`H2_RESTATEMENT_DOES_NOT_UPGRADE_H1_EVIDENCE`.
+- 08-11 secondary survey/news analysis labelled primary
+- 08-17 Better Stack third-party migration guidance labelled primary
+- 08-20 community aggregator labelled primary
 
-A claim does not become more authoritative because it appears in H1, then H2, then H3/H4, or because later Daily records say it “validates” an older Horizon decision.
+The 08-24 defect class is different: source identities may be real, but H2 strengthens bounded analyst/framework observations into broader market/consensus claims without new independent evidence.
+
+Use:
+
+`SOURCE_ACCESS_VERIFIED != PRIMARY_SOURCE_FOR_CLAIM`
+
+and:
+
+`SOURCE_VERIFIED != ALL_DERIVED_CLAIMS_VERIFIED`.
 
 ## 5. Weekly reconciliation
 
-August intersects W31, W32, W33, and W34.
+### W31
 
-### W31 — historical strong claims superseded as current interpretation
+Historical W31 decisions remain real historical output, but current interpretation no longer treats these as established external laws:
 
-W31 H3/H4 preserve a real historical decision state, but several propositions are too strong under the current evidence standard:
+- generic `MCP 2.0` shorthand
+- `_meta`-header / universal legacy compatibility wording
+- generalized `90%` benefit language
+- a universal multi-agent architecture
+- fixed five-node maximum
+- zero-failure architecture
+- host migration timing without host applicability evidence
 
-- generic `MCP 2.0` shorthand plus `_meta`-header and universal `legacy` compatibility language
-- “90% scenarios benefit” generalized from third-party reporting
-- conflation of Anthropic's internal multi-agent research eval with a separate Augment customer case
-- multi-agent orchestration promoted to a universal standard architecture
-- a fixed single-agent decision maximum of five promoted as if externally established
-- an unrealistic “zero-failure architecture” stop condition
-- host migration timing discussed despite host implementation intentionally not being inspected
+Status:
 
-Current interpretation:
+`W31_HISTORY_PRESERVED / STRONG_CLAIMS_SUPERSEDED_AS_CURRENT_INTERPRETATION`.
 
-- MCP 2026-07-28 is an exact external protocol-version reference
-- host migration applicability remains unknown without authorized host evidence
-- the five-node value is at most a historical/provisional local guardrail
-- no universal optimal agent count or zero-failure architecture was established
+### W32
 
-Status: `W31_HISTORY_PRESERVED / STRONG_CLAIMS_SUPERSEDED_AS_CURRENT_INTERPRETATION`.
+W32 materially improved source/version discipline and narrowed the fixed-node idea toward a temporary guardrail.
 
-### W32 — partial self-correction
+Status:
 
-W32 explicitly corrected stale SDK version dependence and downgraded the fixed-node approach toward a temporary guardrail. H4 also states that unverified static thresholds must not be repeated as universal facts.
+`W32_DIRECTION_MATURED_WITH_BOUNDED_RESIDUALS`.
 
-Residual calibration:
+### W33
 
-- AdaptOrch supports bounded benchmark-specific topology findings, not a universal dynamic-topology law
-- ARE blog guidance remains independent engineering guidance, not an industry standard
-- trajectory/world-state/progress are useful evaluation dimensions but must not be confused with proof that any particular host outcome was correct
+W33 and its reconciliation correctly separate protocol version facts, named implementation cases, and conceptual VCE/evaluation ideas.
 
-Status: `W32_DIRECTION_MATURED_WITH_BOUNDED_RESIDUALS`.
+Status:
 
-### W33 — post-hoc calibration is materially sound
+`W33_POST_HOC_CALIBRATION_ACCEPTED`.
 
-W33 H3/H4 and `2026-W33-reconciliation.md` already separate:
-
-- MCP version facts from universal deployment claims
-- Cloudflare/DeerFlow case studies from universal topology rules
-- VCE as a conceptual research instrument from a finalized production metric
-
-Status: `W33_POST_HOC_CALIBRATION_ACCEPTED_WITH_SOURCE_AUTHORITY_POLICY_APPLIED`.
-
-### W34 — final handoff complete, historical H4 still blocked
-
-Current repository paths contain all seven H1/H2 pairs for 2026-08-17 through 2026-08-23 and W34 H3.
+### W34
 
 Historical H4 records:
 
 - `Decision Input Status: DECISION_INPUT_MISSING`
 - `Task Status: BLOCKED`
-- no H3 decision IDs available at that execution snapshot
 
-Therefore two facts remain simultaneously true:
+Later H3 presence repairs final repository delivery only.
 
-- historical H4 execution: `BLOCKED_BEFORE_H3_AVAILABLE`
-- final repository handoff: `POST_HOC_RECONCILED`
+Therefore:
 
-Later H3 presence does not retroactively create H4 success.
+- original H4 execution: `BLOCKED_BEFORE_H3_AVAILABLE`
+- final handoff state: `POST_HOC_RECONCILED`
 
-W34 H3 also requires claim-strength calibration:
+Later availability does not retroactively create H4 success.
 
-- Google/Cloudflare first-party support/examples do not by themselves prove broad “production adoption”
-- A2A-vs-MCP responsibility separation is an analytical design dimension, not a normative protocol stack law
-- secondary ecosystem taxonomies do not become independent protocol specifications merely because multiple vendors repeat them
+W34 external claims remain bounded:
 
-Status: `W34_DELIVERY_RECONCILED_NON_RETROACTIVELY / EXTERNAL_CLAIMS_BOUNDED`.
+- Google/Cloudflare support examples do not establish broad production adoption
+- A2A-vs-MCP is an analytical responsibility split, not a normative universal stack
+- repeated secondary taxonomies do not become protocol specifications
 
-## 6. Current source calibration
+## 6. Host implementation calibration
+
+The host repository contains a real NEXUS knowledge system, but Horizon evidence must not be promoted beyond that implementation.
+
+### Host scan boundary
+
+`docs/brain/scholar.py` explicitly excludes `horizon-cortex` and `parallax` from host-code ingestion.
+
+`HOST_CODE_STRUCTURE_SCAN != HORIZON_RESEARCH_INGESTION`.
+
+### SQLite/JSONL boundary
+
+`docs/brain/cortex.py` commits SQLite entity state before attempting the JSONL append. A JSONL write failure does not roll back the already committed SQLite state.
+
+Therefore:
+
+`SQLITE_WRITE_SUCCESS != JSONL_LEDGER_SYNC_VERIFIED`.
+
+A rebuildable JSONL surface does not prove continuous historical equivalence between the live DB and ledger.
+
+### Graph/reasoning boundary
+
+FTS retrieval, entity weights, graph density, orphan/cycle detection and PageRank-style ranking are local graph signals.
+
+Generated labels such as `absolute mathematical centrality`, `Self-Driven Goal`, `Epiphany`, or `Subconscious Intuition` are narrative/heuristic outputs, not theorem statements, semantic truth, or autonomous-intent evidence.
+
+### Historical dashboard backfill
+
+`docs/brain/reason.py` can create missing dated dashboard files later using metrics available during the later rendering run.
+
+Thus:
+
+`BACKFILLED_DASHBOARD != ORIGINAL_HISTORICAL_OBSERVATION`.
+
+A dashboard filename date, generation time and metric observation time must remain distinguishable.
+
+## 7. Protocol/source calibration
 
 ### MCP 2026-07-28
 
-Supported current proposition:
+Supported bounded proposition:
 
 `STATELESS_PROTOCOL_CORE_FOR_EXACT_REVISION`.
 
-Do not infer:
-
-- every application is stateless
-- every server has migrated
-- every SDK uses the same compatibility strategy
-- all deployment ecosystems are production-complete
-- host migration is required
-
-Host applicability remains `UNKNOWN` by Horizon's intentional repository-inspection boundary.
+Do not infer application statelessness, universal server migration, one universal compatibility strategy, or host migration requirement.
 
 ### A2A v1.0
 
-A2A provides stable inter-agent interoperability constructs including Agent Cards, Tasks, Messages, Artifacts, Context, streaming/push behavior, and extensions.
+A2A provides Agent Cards, Tasks, Messages, Artifacts, Context, streaming/push behavior and extensions.
 
-Current use in Horizon:
+Current use:
 
-`ANALYTICAL_RESPONSIBILITY_BOUNDARY`.
+`ANALYTICAL_RESPONSIBILITY_BOUNDARY / NORMATIVE_LAYERING_NOT_ESTABLISHED`.
 
-Not established:
+### OpenTelemetry / MLflow / governance
 
-`MANDATORY_HIGH_LAYER_OVER_MCP`.
+Keep separate:
 
-### OpenTelemetry / MLflow / operational governance
-
-For the 2026-08-24 H1/H2 pair, keep these evidence objects separate:
-
-1. OpenTelemetry GenAI semantic conventions — telemetry attributes/events/spans where defined
-2. MLflow `span-per-tick` and reasoning/tool instrumentation — framework/engineering guidance
-3. operational governance controls such as kill switches — product/governance features, not OpenTelemetry GenAI semantic conventions themselves
-4. ecosystem adoption/consensus — a separate empirical claim requiring broader evidence
+- OpenTelemetry GenAI semantic conventions
+- framework-specific tracing guidance such as MLflow `span-per-tick`
+- operational governance controls such as kill switches
+- empirical ecosystem adoption/consensus
 
 Current state:
 
@@ -228,107 +211,44 @@ Current state:
 
 ### Runtime taxonomy
 
-Orca Security's runtime grouping can be used as:
+Orca Security's three-layer grouping is:
 
 `ANALYST_TAXONOMY / STRATEGIC_WATCH_SIGNAL`.
 
-It does not independently establish:
+It is not proof of exactly three normative market layers or industry-wide rejection of framework-integrated execution.
 
-- exactly three normative market layers
-- industry-wide rejection of framework-integrated execution
-- universal sandbox architecture
+## 8. Legal, security, adoption, and benchmark boundaries
 
-## 7. Source-authority defects found in retained Daily history
+- vendor compliance architecture ≠ primary-law mandate
+- external security analysis ≠ local incident
+- first-party support ≠ broad production adoption
+- supporting organizations ≠ production-user count
+- bounded benchmark ≠ universal architecture threshold
+- repeated source lineage ≠ independent corroboration
 
-At minimum, this audit identifies these explicit source-label defects:
+Useful states include:
 
-- 2026-08-11 H2: secondary survey/news article mislabeled primary
-- 2026-08-17 H2: Better Stack third-party migration guide mislabeled primary
-- 2026-08-20 H2: Tier-4 community aggregator mislabeled primary
+- `VENDOR_COMPLIANCE_INTERPRETATION / LEGAL_ARCHITECTURE_NOT_ESTABLISHED`
+- `THREAT_MODEL_HYPOTHESIS / LOCAL_INCIDENT_NOT_ESTABLISHED`
+- `ADOPTION_RATE_NOT_ESTABLISHED`
+- `PROVISIONAL_GUARDRAIL_NOT_EXTERNAL_LAW`
 
-The 2026-08-24 pair is a different defect class: source identities may be real, but H2 strengthens bounded vendor/framework observations into broader ecosystem-consensus claims without additional evidence.
-
-These historical labels/claims remain in the original artifacts for provenance.
-
-Current interpretation is corrected by `EVIDENCE_POLICY.md` and this audit.
-
-`SOURCE_ACCESS_VERIFIED != PRIMARY_SOURCE_FOR_CLAIM`.
-
-`SOURCE_VERIFIED != ALL_DERIVED_CLAIMS_VERIFIED`.
-
-## 8. Regulatory and security boundaries
-
-### Compliance
-
-A vendor article can propose Context Layer / MCP / governance architecture for compliance. It does not establish that the EU AI Act or another regulation mandates that specific implementation.
-
-Status:
-
-`VENDOR_COMPLIANCE_INTERPRETATION / LEGAL_ARCHITECTURE_NOT_ESTABLISHED`.
-
-### Security
-
-Third-party security analysis can identify plausible stateless-MCP routing/cache/auth risks.
-
-Without local evidence:
-
-`THREAT_MODEL_HYPOTHESIS / LOCAL_INCIDENT_NOT_ESTABLISHED`.
-
-This audit creates no host security action, CI gate, runtime change, or mandatory implementation rule.
-
-## 9. Formal monthly boundary
+## 9. Formal month boundary
 
 Formal August H5/H6 remains `OPEN`.
 
-This maintenance does not fabricate future Daily evidence, create a synthetic final August memory, or backdate a Monthly closure.
-
-The current stage includes a complete current August 24 H1/H2 pair, but the natural month is still open and future dates are not synthesized.
+No future Daily evidence or final August memory is synthesized by this stage record.
 
 ## 10. Current stage conclusion
 
-The strongest supported current conclusion is:
-
-`AUGUST_HISTORY_RECONCILED_POST_HOC_WITH_SOURCE_AUTHORITY_AND_INHERITANCE_DEFECTS_BOUNDED_AND_2026_08_24_PAIR_PRESENT`.
+`AUGUST_HISTORY_RECONCILED_POST_HOC_WITH_SOURCE_AUTHORITY_INHERITANCE_AND_HOST_EVIDENCE_BOUNDARIES_EXPLICIT_AND_2026_08_24_PAIR_PRESENT`.
 
 This means:
 
-- H1/H2 current paths are present for August 1–24
+- current H1/H2 paths exist for August 1–24
 - historical source/claim defects remain visible but no longer control current interpretation
-- W31 strong architecture claims are superseded as current facts
-- W32/W33 show improving evidence maturity
 - W34 H4 remains historically blocked despite later complete handoff
-- August 24 has a complete current H1/H2 pair, with its market/observability claims bounded to their actual source strength
+- host NEXUS storage/reasoning evidence is now scoped to what the code actually establishes
 - formal August H5/H6 remains open
 
-It does **not** mean:
-
-- `24/24 execution success` proves all claims correct
-- every historical source label was correct
-- H2 restatement independently verified H1
-- repeated Weekly synthesis independently verified Daily claims
-- every first-party support example equals production adoption
-- A2A/MCP form a mandatory universal protocol stack
-- OpenTelemetry defines every observability/governance behavior described by MLflow or other tooling
-- Orca's runtime taxonomy is a universal market standard
-- host implementation changes are required
-- the August month is closed
-
-## 11. Carry-forward
-
-- use exact protocol versions instead of ambiguous marketing/version shorthand
-- verify source authority for the exact claim, not just source reachability
-- do not promote secondary/vendor/community sources to primary by direct access
-- do not let H2 restatement upgrade H1 evidence without new verification
-- distinguish support, deployment example, production use, adoption rate, and dominance
-- preserve Daily→Weekly inheritance lineage so repeated claims do not masquerade as independent evidence
-- keep legal/vendor compliance interpretations separate from primary law
-- keep threat-model hypotheses separate from local incidents
-- keep framework guidance, telemetry standards, governance controls, and ecosystem-consensus claims separate
-- preserve historical fail-closed states after later backfill
-- defer formal H5/H6 closure to the natural month lifecycle
-
-## 12. Boundary
-
-No host repository code, frontend, Jules prompt/memory/cadence, GPT/cloud task control, GitHub Actions, CI, merge gate, dependency, deployment, or runtime behavior is changed by this audit.
-
-Tests not run — documentation/evidence only.
+It does not mean every Daily claim is correct, every path existed at every historical snapshot, the host DB and JSONL ledger were always synchronized, backfilled dashboards are original point-in-time telemetry, or the August month is closed.
