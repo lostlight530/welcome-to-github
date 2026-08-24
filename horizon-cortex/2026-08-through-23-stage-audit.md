@@ -1,11 +1,11 @@
 # Horizon Cortex — August Stage Audit through available 2026-08-24 evidence
 
-Historical filename note: this file retains its original `2026-08-through-23-stage-audit.md` path to avoid unnecessary path churn. Its maintained content now includes the actually available 2026-08-24 H1 evidence.
+Historical filename note: this file retains its original `2026-08-through-23-stage-audit.md` path to avoid unnecessary path churn. Its maintained content now includes the actually available 2026-08-24 H1/H2 evidence.
 
 Status: `PROVISIONAL_STAGE_AUDIT`
 Maintenance review: 2026-08-24 Asia/Shanghai
 Formal August H5/H6 monthly closure: `OPEN`
-Current evidence boundary: August 1–23 complete Daily-pair inventory plus available August 24 H1 only
+Current evidence boundary: August 1–24 complete current Daily-pair inventory
 
 ## 1. Scope and ownership
 
@@ -45,18 +45,18 @@ This current inventory does not prove that every file was visible to every earli
 
 ### August 24
 
-At this maintenance review:
+A final live recheck during this maintenance found both current paths:
 
 - `2026-08-24-H1-signal-observe.md`: PRESENT
-- `2026-08-24-H2-horizon-orient.md`: NOT PRESENT in the current repository inventory inspected by this audit
+- `2026-08-24-H2-horizon-orient.md`: PRESENT
+
+The H2 became available after the earlier partial-day audit snapshot, so the reviewer record is updated rather than preserving a stale absence claim.
 
 Current August 24 state:
 
-`PARTIAL_DAY_OPEN / H1_PRESENT / H2_CURRENT_PATH_ABSENT_AT_AUDIT`
+`CURRENT_DAY_PAIR_PRESENT`.
 
-This audit does not convert current H2 absence into `NEVER_GENERATED`, `TASK_FAILED`, or a completed delivery-gap diagnosis. More delivery/execution evidence would be required.
-
-The file is therefore not a final “through August 24 complete Daily” audit.
+This means current path coverage is complete for August 1–24. It does not mean every claim in the 8/24 pair is independently verified or that the August month is closed.
 
 ## 3. Daily evidence reconciliation ledger
 
@@ -87,7 +87,7 @@ The purpose of this ledger is to preserve Daily execution history while identify
 | 08-21 | vendor descriptions of MCP/A2A responsibilities are useful architecture comparisons; they do not establish a normative universal split; Permit.io PDP guidance remains vendor interpretation |
 | 08-22 | MCP/A2A/ACP/UCP “layer stack” comes from secondary/community taxonomy and is `ANALYTICAL_TAXONOMY_ONLY / NORMATIVE_LAYERING_NOT_ESTABLISHED`; weak download/adoption figures are not upgraded |
 | 08-23 | Equixly header/cache security analysis is a useful threat-model hypothesis; it is not evidence of a local Horizon/host vulnerability or incident and does not independently define normative MCP behavior |
-| 08-24 | H1 exists, H2 does not yet exist in the audited inventory; Orca's three-layer runtime grouping is one analyst classification; MLflow `span-per-tick` is engineering guidance, OpenTelemetry GenAI semantic conventions are a separate telemetry standard surface, and governance/kill-switch features are separate from OpenTelemetry itself |
+| 08-24 | H1/H2 both exist. Orca's three-layer runtime grouping is an analyst/security-vendor taxonomy, not proof that the market has normatively converged on exactly three layers. H2 further promotes it toward “industry rejection” of framework-contained execution; that stronger market claim is not established. MLflow `span-per-tick` remains framework engineering guidance, OpenTelemetry GenAI semantic conventions are a separate telemetry-standard surface, and kill-switch governance is a separate operational-control surface. H2's “industry consensus/standard path” wording is therefore bounded to `FRAMEWORK_GUIDANCE + OTEL_SEMANTIC_CONVENTION / ECOSYSTEM_CONSENSUS_NOT_ESTABLISHED` |
 
 ## 4. Semantic inheritance defects
 
@@ -99,10 +99,15 @@ Examples:
 - secondary multi-agent failure summaries fed the historical five-node guardrail
 - weak-source or vendor architecture wording was sometimes repeated by H2 and later Weekly synthesis
 - source labels such as `VERIFIED_FROM_PRIMARY_SOURCE` were occasionally applied to secondary/aggregator material
+- 08-24 demonstrates the same inheritance mechanism: H2 promotes H1's analyst/framework observations into stronger industry-consensus language without adding independent verification
 
 Current rule:
 
 `WEEKLY_INHERITANCE_DOES_NOT_UPGRADE_EVIDENCE`.
+
+The same principle applies inside one Daily pair:
+
+`H2_RESTATEMENT_DOES_NOT_UPGRADE_H1_EVIDENCE`.
 
 A claim does not become more authoritative because it appears in H1, then H2, then H3/H4, or because later Daily records say it “validates” an older Horizon decision.
 
@@ -208,17 +213,30 @@ Not established:
 
 `MANDATORY_HIGH_LAYER_OVER_MCP`.
 
-### OpenTelemetry / agent observability
+### OpenTelemetry / MLflow / operational governance
 
-For 2026-08-24 H1, keep three evidence objects separate:
+For the 2026-08-24 H1/H2 pair, keep these evidence objects separate:
 
 1. OpenTelemetry GenAI semantic conventions — telemetry attributes/events/spans where defined
 2. MLflow `span-per-tick` and reasoning/tool instrumentation — framework/engineering guidance
 3. operational governance controls such as kill switches — product/governance features, not OpenTelemetry GenAI semantic conventions themselves
+4. ecosystem adoption/consensus — a separate empirical claim requiring broader evidence
 
 Current state:
 
-`OTEL_SEMANTIC_CONVENTION + FRAMEWORK_GUIDANCE + GOVERNANCE_FEATURE_ARE_DISTINCT`.
+`OTEL_SEMANTIC_CONVENTION + FRAMEWORK_GUIDANCE + GOVERNANCE_FEATURE_ARE_DISTINCT / ECOSYSTEM_CONSENSUS_NOT_ESTABLISHED`.
+
+### Runtime taxonomy
+
+Orca Security's runtime grouping can be used as:
+
+`ANALYST_TAXONOMY / STRATEGIC_WATCH_SIGNAL`.
+
+It does not independently establish:
+
+- exactly three normative market layers
+- industry-wide rejection of framework-integrated execution
+- universal sandbox architecture
 
 ## 7. Source-authority defects found in retained Daily history
 
@@ -228,11 +246,15 @@ At minimum, this audit identifies these explicit source-label defects:
 - 2026-08-17 H2: Better Stack third-party migration guide mislabeled primary
 - 2026-08-20 H2: Tier-4 community aggregator mislabeled primary
 
-These historical labels remain in the original artifacts for provenance.
+The 2026-08-24 pair is a different defect class: source identities may be real, but H2 strengthens bounded vendor/framework observations into broader ecosystem-consensus claims without additional evidence.
+
+These historical labels/claims remain in the original artifacts for provenance.
 
 Current interpretation is corrected by `EVIDENCE_POLICY.md` and this audit.
 
 `SOURCE_ACCESS_VERIFIED != PRIMARY_SOURCE_FOR_CLAIM`.
+
+`SOURCE_VERIFIED != ALL_DERIVED_CLAIMS_VERIFIED`.
 
 ## 8. Regulatory and security boundaries
 
@@ -260,31 +282,34 @@ Formal August H5/H6 remains `OPEN`.
 
 This maintenance does not fabricate future Daily evidence, create a synthetic final August memory, or backdate a Monthly closure.
 
-The current stage now includes an August 24 H1 artifact, but the August 24 Daily pair is incomplete in the audited repository inventory and the natural month is still open.
+The current stage includes a complete current August 24 H1/H2 pair, but the natural month is still open and future dates are not synthesized.
 
 ## 10. Current stage conclusion
 
 The strongest supported current conclusion is:
 
-`AUGUST_HISTORY_RECONCILED_POST_HOC_WITH_SOURCE_AUTHORITY_AND_INHERITANCE_DEFECTS_BOUNDED_AND_2026_08_24_PARTIAL_DAY_OPEN`
+`AUGUST_HISTORY_RECONCILED_POST_HOC_WITH_SOURCE_AUTHORITY_AND_INHERITANCE_DEFECTS_BOUNDED_AND_2026_08_24_PAIR_PRESENT`.
 
 This means:
 
-- H1/H2 history for August 1–23 is present in the current repository
+- H1/H2 current paths are present for August 1–24
 - historical source/claim defects remain visible but no longer control current interpretation
 - W31 strong architecture claims are superseded as current facts
 - W32/W33 show improving evidence maturity
 - W34 H4 remains historically blocked despite later complete handoff
-- August 24 currently has H1 only in the audited inventory
+- August 24 has a complete current H1/H2 pair, with its market/observability claims bounded to their actual source strength
 - formal August H5/H6 remains open
 
 It does **not** mean:
 
+- `24/24 execution success` proves all claims correct
 - every historical source label was correct
+- H2 restatement independently verified H1
 - repeated Weekly synthesis independently verified Daily claims
 - every first-party support example equals production adoption
 - A2A/MCP form a mandatory universal protocol stack
 - OpenTelemetry defines every observability/governance behavior described by MLflow or other tooling
+- Orca's runtime taxonomy is a universal market standard
 - host implementation changes are required
 - the August month is closed
 
@@ -293,12 +318,13 @@ It does **not** mean:
 - use exact protocol versions instead of ambiguous marketing/version shorthand
 - verify source authority for the exact claim, not just source reachability
 - do not promote secondary/vendor/community sources to primary by direct access
+- do not let H2 restatement upgrade H1 evidence without new verification
 - distinguish support, deployment example, production use, adoption rate, and dominance
 - preserve Daily→Weekly inheritance lineage so repeated claims do not masquerade as independent evidence
 - keep legal/vendor compliance interpretations separate from primary law
 - keep threat-model hypotheses separate from local incidents
+- keep framework guidance, telemetry standards, governance controls, and ecosystem-consensus claims separate
 - preserve historical fail-closed states after later backfill
-- treat current 2026-08-24 as partial until actual H2/delivery evidence exists
 - defer formal H5/H6 closure to the natural month lifecycle
 
 ## 12. Boundary
