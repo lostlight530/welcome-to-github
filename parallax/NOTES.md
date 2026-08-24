@@ -54,20 +54,24 @@
 - 状态: 有效
 - 生效日期: 2026-07-28
 - 案例: P-03
-- 支持记录: [PX-20260722-P03](records/2026-07/2026-07-22.md), [PX-S-20260725-P03](specials/2026-07/2026-07-25-openai-service-events.md), [PX-20260727-P03](records/2026-07/2026-07-27.md), [PX-20260822-P03](records/2026-08/2026-08-22.md)
-- 时间窗口: 2026-07-26, 2026-07-28, 2026-08-22
+- 支持记录: [PX-20260722-P03](records/2026-07/2026-07-22.md), [PX-S-20260725-P03](specials/2026-07/2026-07-25-openai-service-events.md), [PX-20260727-P03](records/2026-07/2026-07-27.md), [PX-20260822-P03](records/2026-08/2026-08-22.md), [PX-20260825-P03](records/2026-08/2026-08-25.md)
+- 时间窗口: 2026-07-26, 2026-07-28, 2026-08-22, 2026-08-25
 
 ### 发现
 
-在已记录的公开审计轨迹, 官方服务状态与请求级统计材料中, 判断只使用证据直接覆盖的总体, 时间窗口与统计单位, 不把缺失部分补成全称事实
+在已记录的公开审计轨迹, 官方服务状态, 请求级统计材料与 AWS 受控负载测试中, 判断只使用证据直接覆盖的总体, 时间窗口, 统计单位与公开精度, 不把缺失部分补成全称事实
 
 远端记录缺失只支持没有找到公开产物, 不能证明没有离线活动
 
 受影响组件或事件对象只支持公开事件范围, 没有请求分母时不能证明全部请求失败
 
-直接数值请求分母与公开比例出现后可以形成对应粒度的有边界量化, 但 request 与 source 等不同统计单位仍必须分开, 公开显示比例也不能在缺少直接 numerator 与底层精度时机械反推出发布者未直接给出的精确计数
+直接数值请求分母与公开比例出现后可以形成对应粒度的有边界量化, 但 request 与 source 等不同统计单位仍必须分开, 公开显示比例也不能在缺少 direct numerator 与底层精度时机械反推出发布者未直接给出的精确计数
 
-四个正式支持记录跨三个实际执行窗口保持该边界
+AWS 2017 Lambda concurrency 受控负载进一步给出同一运行的 direct total 5000 requests, exact 3076 HTTP 502 failures 与 exact 1924 HTTP 200 successes, 完整同单位 denominator 与 numerator 存在时允许在该运行边界内形成精确请求计数判断
+
+删除 exact status counts 后判断重新收窄, 删除 direct total 后状态计数的算术加总只能作为构造值, 不能冒充仍存在的 direct denominator 字段
+
+五个正式支持记录跨四个执行窗口保持该边界
 
 ### 反例检查
 
@@ -79,19 +83,25 @@
 - 3 false-negative sources 不能改写为 3 false-negative requests
 - 0.003% of requests 可以保留为公开比例, 但机械计算 12000 不能改写为 Cloudflare 直接发布的精确错误请求 numerator
 - no mitigated sources below threshold 不能证明其余所有 requests 都被正确分类
+- AWS 2017 受控运行的 3076 个 HTTP 502 只属于该 API Gateway + Lambda 测试对象与运行, 不能推广为所有 Lambda throttle 的统一响应状态
+- AWS 当前 Lambda Function URL 文档说明 concurrency 超限返回 HTTP 429, 直接反驳从历史 API Gateway 示例推出 throttle 一律为 HTTP 502
+- 5000, 3076 与 1924 的直接计数不构成 AWS Lambda 全局历史或当前生产失败率
 
 ### 适用边界
 
-- 覆盖支持记录中的公开提交轨迹, OpenAI 与 GitHub 状态事件, 以及 Cloudflare 400 million request rate limiting analysis
-- 只约束从部分记录到全称事实, 从显示比例到精确计数, 以及跨统计单位换算的扩大判断
+- 覆盖支持记录中的公开提交轨迹, OpenAI 与 GitHub 状态事件, Cloudflare 400 million request rate limiting analysis, 以及 AWS 2017 API Gateway + Lambda concurrency 受控负载测试
+- 只约束从部分记录到全称事实, 从显示比例到精确计数, 跨统计单位换算, 以及 direct field 与构造计算之间的扩大判断
 - Cloudflare 范围只覆盖该文章公开的 request 与 source 统计对象, 不推广到其全部生产流量或所有 rate limiting 实现
-- 直接分母存在时允许使用发布者实际给出的统计粒度, 但不自动证明精确 failed 或 successful request numerator
+- AWS 范围只覆盖官方文章中的两个固定 5000-request 受控运行及其直接状态计数, 不推广到当前生产流量, 所有 Lambda invocation surfaces 或一般 HTTP throttle status
+- direct denominator 存在时允许使用发布者实际给出的统计粒度, direct exact numerator 同时存在时允许对应运行内精确计数, 但不自动证明未覆盖 category 已穷尽或其他对象具有同样分布
 - 不证明未观察部分一定存在活动或成功请求
 - 不推广到所有完整分母统计报告, 所有任务或所有 Agent
 
 ### 复验与失效条件
 
-后续优先取得同一稳定对象和时间窗口直接同时发布数值 total requests 与 exact failed or successful requests 的独立发布者材料
+同一统计对象与窗口的 direct numeric total requests 与 exact failed or successful requests 已在 AWS 独立发布体系中完成复验
+
+后续统计方向不重复同一 AWS 页面, 优先选择另一个独立实现或正式事件, 检查 direct total 与多个 exact outcome categories 是否覆盖完整且单位一致, 或测试发布者 direct exact numerator 与 derived rate 的精度边界
 
 若只有显示比例, 保留其公开精度并把机械反推计数标为构造计算而不是原始精确观测
 
