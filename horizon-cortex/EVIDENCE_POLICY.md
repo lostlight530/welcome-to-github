@@ -3,11 +3,81 @@
 Status: independent post-hoc interpretation policy
 Maintenance calibration: 2026-08-24
 
-This file documents how maintainers should interpret committed Horizon H1–H6 artifacts. It is not a Jules prompt, memory entry, cadence rule, scheduler configuration, CI gate, GitHub Action, host-repository instruction, or hidden producer rule.
+This file documents how committed Horizon H1–H6 artifacts are interpreted against the repository that actually exists. It is descriptive repository research, not an instruction surface for artifact producers or the host runtime.
 
-## 1. Structural checker boundary
+## 1. Repository architecture grounding
 
-`horizon-cortex/check.py` validates deterministic artifact contracts such as names, required sections, logical dates/weeks, handoffs, decision/action IDs, and repository-boundary markers.
+Horizon is one evidence/research surface inside a repository with several distinct implementation domains. Claims in Horizon MUST be interpreted against those real boundaries instead of being promoted into a repository-wide architecture claim by default.
+
+### Public presentation surface
+
+- `index.html` is the public portal entry point.
+- `src/scripts/translations.js` provides presentation-layer translation content.
+- The portal is a display surface; it is not the NEXUS knowledge engine and it is not Horizon.
+
+### NEXUS Cortex knowledge lifecycle
+
+`docs/brain/` contains the repository's implemented local knowledge lifecycle.
+
+`docs/brain/nexus.py` exposes the current command surface:
+
+- `harvest` — synchronize explicitly configured external source material
+- `project` — normalize/project current source snapshots into the knowledge layer
+- `ingest` — map supported repository code/configuration structures
+- `ponder` — compute graph-derived structural signals
+- `evolve` — run the local evolution cycle
+- `rebuild` — reconstruct the SQLite index from canonical JSONL records
+- `search` / `status` — query the local graph/index state
+
+The implementation therefore supports a concrete distinction between:
+
+1. source/input material
+2. canonical JSONL knowledge records
+3. a rebuildable SQLite/FTS5 query index
+4. generated structural observations
+5. public presentation
+
+These are not interchangeable evidence surfaces.
+
+### Canonical ledger versus query index
+
+`docs/brain/cortex.py` persists entity/relation records to JSONL while maintaining a SQLite graph/index for active retrieval and structural analysis.
+
+- JSONL records are the durable text-side evidence/knowledge surface used by rebuild.
+- `cortex.db` is a local query/index surface and can be reconstructed from the JSONL knowledge records.
+- `valid_at` / `invalid_at` fields express application-level temporal validity for active graph state.
+- FTS5 and graph expansion support retrieval; retrieval rank or graph weight is not a truth score.
+- append-only application behavior is not cryptographic immutability and must not be described as such without a separate integrity mechanism.
+
+### Scholar mapping boundary
+
+`docs/brain/scholar.py` maps supported code/configuration structures into the graph. Its configured ignore/protected paths explicitly exclude research/control-plane directories including `horizon-cortex` and `parallax`, along with generated knowledge/input/memory paths.
+
+That exclusion is an important real architectural boundary:
+
+`HOST_CODE_STRUCTURE_SCAN != HORIZON_RESEARCH_INGESTION`.
+
+A Horizon statement does not automatically become a NEXUS graph fact merely because both live in the same repository.
+
+### Reasoning boundary
+
+`docs/brain/reason.py` computes structural observations such as orphan nodes, reciprocal relations, transitive patterns, PageRank-style centrality, graph-density signals, and generated research prompts/summaries.
+
+Those outputs are graph-derived heuristics over the current indexed state. They are not external-source verification, semantic truth, causal proof, or production telemetry.
+
+Use:
+
+`GRAPH_STRUCTURAL_SIGNAL / CLAIM_TRUTH_NOT_ESTABLISHED`.
+
+### Horizon and Parallax separation
+
+`horizon-cortex/` and `parallax/` are separate research/evidence surfaces. Their presence does not change the executable semantics of `docs/brain/**`, the public portal, or host code unless an explicit repository change does so.
+
+This policy does not publish or encode private maintenance reasoning, hidden prompts, future automation strategy, or unpublished control logic.
+
+## 2. Structural checker boundary
+
+`horizon-cortex/check.py` validates artifact contracts such as names, required sections, logical dates/weeks, handoffs, decision/action IDs, and repository-boundary markers.
 
 A checker pass does **not** establish:
 
@@ -20,10 +90,11 @@ A checker pass does **not** establish:
 - production adoption
 - local runtime success
 - local incident occurrence
+- NEXUS graph correctness beyond the fields actually checked
 
 Structural validity and evidentiary validity are separate states.
 
-## 2. Evidence states must not be collapsed
+## 3. Evidence states must not be collapsed
 
 Use distinct meanings for at least the following states:
 
@@ -37,13 +108,13 @@ Use distinct meanings for at least the following states:
 - `ANALYTICAL_TAXONOMY`: a useful classification that is not a normative standard
 - `THREAT_MODEL_HYPOTHESIS`: a plausible risk or attack analysis not yet demonstrated as a local incident
 - `LOCAL_INCIDENT_NOT_ESTABLISHED`: no evidence that the discussed external risk occurred in this repository
-- `HOST_APPLICABILITY_UNKNOWN`: host code/configuration was intentionally not inspected
+- `HOST_APPLICABILITY_UNKNOWN`: host code/configuration was not established by the Horizon artifact
 
 A source can be official for its own product while still being secondary or interpretive for a protocol-wide, market-wide, legal, or cross-ecosystem proposition.
 
 Directly opening a secondary article does not turn it into a primary source.
 
-## 3. Source authority is claim-specific
+## 4. Source authority is claim-specific
 
 For a material protocol or product claim prefer, in order:
 
@@ -62,30 +133,32 @@ Examples:
 - a community directory can establish that it lists a project, but not primary-source project identity, quality, durability, or ecosystem adoption
 - a survey article can report survey findings, but it is not automatically the primary survey dataset
 
-## 4. Repetition and inheritance do not upgrade evidence
+## 5. Repetition and inheritance do not upgrade evidence
 
-Horizon is a sequential research stream. H1 can feed H2; Daily artifacts can feed H3/H4; older H4/H6 can influence later search focus.
+Horizon is a sequential research stream. H1 can feed H2; Daily artifacts can feed H3/H4; older records can influence later research focus.
 
-Therefore repeated wording is **not independent corroboration**.
+Repeated wording is **not independent corroboration**.
 
 Rules:
 
 - H2 repeating H1 does not create a second source
 - H3 synthesizing seven H2 files does not increase authority if those files inherit the same weak upstream proposition
 - H4 acting on H3 does not upgrade a provisional decision into an externally established law
-- H6 memory does not become evidence for the external claim merely because later Daily artifacts compare against it
-- a later Daily record saying an older decision was “validated” does not establish validation unless fresh claim-level evidence actually supports the older proposition
+- a retained historical memory does not become evidence for an external claim merely because a later record compares against it
+- a later record saying an older decision was “validated” does not establish validation unless fresh claim-level evidence supports the older proposition
 
-Use: `WEEKLY_INHERITANCE_DOES_NOT_UPGRADE_EVIDENCE`.
+Use:
+
+`WEEKLY_INHERITANCE_DOES_NOT_UPGRADE_EVIDENCE`.
 
 When a later reconciliation narrows an upstream proposition, downstream inherited wording is interpreted through the narrowed proposition even if the historical downstream file remains unchanged.
 
-## 5. Historical input state and delivery state
+## 6. Historical input state and delivery state
 
 When they differ, record separately:
 
 - logical date / target week
-- actual execution time
+- actual execution time when available
 - generation/commit evidence
 - merge/delivery visibility
 - weekly/monthly aggregation snapshot visibility
@@ -95,13 +168,11 @@ When they differ, record separately:
 
 A later merge can repair final delivery without retroactively changing an earlier `BLOCKED` run to `SUCCESS`.
 
-If one historical artifact states an upstream file was `INPUT_MISSING` while the retained upstream artifact records `SUCCESS`, do not silently choose one. Record:
+If one historical artifact states an upstream file was `INPUT_MISSING` while the retained upstream artifact records `SUCCESS`, preserve the conflict as:
 
-`HISTORICAL_INPUT_STATE_MISMATCH`
+`HISTORICAL_INPUT_STATE_MISMATCH`.
 
-and preserve both artifacts unless stronger timestamped delivery evidence resolves the discrepancy.
-
-## 6. Support, deployment, adoption, and dominance are different claims
+## 7. Support, deployment, adoption, and dominance are different claims
 
 Never collapse these levels:
 
@@ -127,7 +198,7 @@ Use bounded labels such as:
 
 A press release saying a protocol has more than N participating/supporting organizations plus some production use does not establish that all N organizations are production users.
 
-## 7. Legal and compliance claims
+## 8. Legal and compliance claims
 
 Vendor compliance guidance may be useful as an engineering interpretation, but it cannot by itself establish that a statute or regulation mandates the vendor's preferred architecture.
 
@@ -139,9 +210,9 @@ Use:
 
 Do not infer that a Context Layer, MCP server, PDP, specific data platform, or other technical pattern is legally mandatory unless the primary legal/regulatory text directly supports that requirement.
 
-## 8. Protocol calibration — MCP 2026-07-28
+## 9. Protocol calibration — MCP 2026-07-28
 
-The official MCP 2026-07-28 release establishes a stateless **protocol core** for that version. It removes the prior required `initialize` / `initialized` exchange and protocol-level session mechanism, and adds/changes features including discovery/routing/cacheability/extensions/authorization/deprecation mechanisms described by that release.
+The official MCP 2026-07-28 release establishes a stateless **protocol core** for that version. It removes the prior required protocol-level initialization/session mechanism and changes/adds the mechanisms described by that exact release.
 
 Current interpretation rules:
 
@@ -149,28 +220,24 @@ Current interpretation rules:
 - a stateful application can still maintain explicit application state
 - vendor deployment examples do not prove ecosystem-wide migration
 - third-party migration guides do not become official compatibility guarantees
-- `_meta`, HTTP routing headers, auth headers, and application handles must not be collapsed into one generic “header/state” mechanism
-- exact header/extension claims should remain tied to the exact specification/source that defines them
+- metadata, routing, authorization, application handles, and durable application state must not be collapsed into one generic “state” mechanism
+- exact protocol claims remain tied to the exact specification/release that defines them
 
-Historical shorthand such as `MCP 2.0`, “fully stateless application”, “all servers must migrate”, or an assumed universal compatibility shim is not authoritative merely because it appears repeatedly in H1/H2/H3/H4.
+Historical shorthand such as `MCP 2.0`, “fully stateless application”, “all servers must migrate”, or an assumed universal compatibility shim is not authoritative merely because it appears repeatedly.
 
-## 9. A2A / MCP relationship
+## 10. A2A / MCP relationship
 
 A2A v1.0 is a stable agent-to-agent interoperability protocol with Agent Cards, Tasks, Messages, Artifacts, Context, streaming/push mechanisms, and extensions.
 
 It is reasonable to compare A2A and MCP as different responsibility surfaces.
 
-Do **not** promote ecosystem diagrams or vendor blogs into a normative universal layering law such as:
-
-- `MCP = mandatory low/tool layer`
-- `A2A = mandatory high/coordination layer`
-- `ACP/UCP = mandatory business layer`
+Do **not** promote ecosystem diagrams or vendor blogs into a normative universal layering law.
 
 Use:
 
 `ANALYTICAL_BOUNDARY_SUPPORTED / NORMATIVE_LAYERING_NOT_ESTABLISHED`.
 
-## 10. Research result and architecture-threshold boundary
+## 11. Research result and architecture-threshold boundary
 
 A bounded benchmark, internal eval, customer case study, survey, vendor benchmark, or secondary article cannot by itself establish a universal architecture threshold.
 
@@ -180,13 +247,13 @@ In particular:
 - a customer productivity anecdote is a separate evidence object
 - secondary summaries of multi-agent failure studies do not establish a universal “five-node law”
 - a fixed node/step limit can be a provisional local guardrail only if clearly labeled as such
-- no external evidence reviewed in this August stage establishes a universal zero-failure architecture or a universal optimal agent count
+- no external evidence reviewed in this August stage establishes a universal zero-failure architecture or universal optimal agent count
 
 Use:
 
 `PROVISIONAL_GUARDRAIL_NOT_EXTERNAL_LAW`.
 
-## 11. Observability and evaluation vocabulary
+## 12. Observability and evaluation vocabulary
 
 Keep these evidence surfaces distinct:
 
@@ -203,7 +270,7 @@ A trace proves that something was recorded, not that the outcome was correct.
 
 An observability article's recommended instrumentation pattern is not automatically a normative OpenTelemetry requirement.
 
-OpenTelemetry GenAI semantic conventions can establish supported telemetry concepts/attributes where defined; they do not by themselves establish every framework-specific tracing pattern, hidden reasoning capture, or operational governance feature such as a kill switch.
+OpenTelemetry GenAI semantic conventions can establish supported telemetry concepts/attributes where defined; they do not by themselves establish every framework-specific tracing pattern, hidden reasoning capture, or operational governance feature.
 
 Use:
 
@@ -211,24 +278,17 @@ Use:
 - `FRAMEWORK_ENGINEERING_GUIDANCE`
 - `GOVERNANCE_FEATURE_SEPARATE_FROM_TELEMETRY_STANDARD`
 
-## 12. Threat-model and security-analysis boundary
+## 13. Threat-model and security-analysis boundary
 
 A security vendor can identify plausible attack surfaces or control considerations. Unless independently demonstrated, keep these as threat-model hypotheses.
 
-Do not transform:
-
-- header/body mismatch analysis
-- stale capability/cache analysis
-- authorization architecture suggestions
-- an external OWASP-style category
-
-into a local incident, local vulnerability, or mandatory host remediation.
+Do not transform external threat analysis into a local incident, local vulnerability, or mandatory host remediation without local evidence.
 
 Use:
 
 `THREAT_MODEL_HYPOTHESIS / LOCAL_INCIDENT_NOT_ESTABLISHED`.
 
-## 13. Historical corrections
+## 14. Historical corrections
 
 Prefer reconciliation when later evidence changes interpretation but the original execution record remains useful.
 
@@ -240,27 +300,10 @@ A reconciliation should state:
 - what is superseded
 - what remains unresolved
 
-Do not rewrite history to pretend the later evidence was visible during the original task.
+Do not rewrite history to pretend later evidence was visible during the original task.
 
 Current interpretation may supersede historical wording without deleting the evidence that the wording was generated.
 
-## 14. GPT/Parallax quality transfer
-
-The separate Parallax research method provides useful reviewer-side disciplines that Horizon can reuse **as interpretation principles**, without merging control planes:
-
-- assigned/logical date differs from actual execution date
-- source reachability differs from source authority
-- facts, inferences, and unverified items are separate
-- later backfill cannot masquerade as same-day observation
-- repeated source count differs from source independence
-- weekly/monthly views are derived views and do not replace atomic evidence
-
-Horizon remains a Jules OODA-style research stream. Parallax remains a separate GPT-maintained research stream.
-
-A reviewer-side policy appearing later in the repository does not prove Jules consumed or enforced it during earlier runs.
-
 ## 15. Boundary
 
-This policy changes no host code, frontend, automation, scheduler, prompts, memory, GitHub Actions, CI, deployment, dependency, or runtime behavior.
-
-Documentation/evidence maintenance may state `tests not run — documentation/evidence only` when executable behavior is untouched. That statement is not test evidence and does not upgrade implementation status.
+This policy is documentation/evidence maintenance only. It changes no host code, public portal behavior, NEXUS runtime behavior, dependency set, deployment state, or artifact-production configuration.
