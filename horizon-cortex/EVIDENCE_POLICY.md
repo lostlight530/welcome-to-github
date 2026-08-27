@@ -1,9 +1,9 @@
 # Horizon Cortex Evidence Policy
 
-Status: post-hoc repository evidence policy  
-Calibration: 2026-08-24
+Status: current repository evidence policy  
+Calibration: 2026-08-27
 
-This file defines how committed Horizon artifacts are interpreted against the repository implementation that actually exists. It is an evidence contract, not a runtime capability claim.
+This file defines how committed Horizon artifacts are interpreted against the repository implementation and external evidence that actually exists. It is an evidence contract, not a runtime capability claim.
 
 ## 1. Repository realization map
 
@@ -11,150 +11,67 @@ Horizon is one research/evidence surface inside `welcome-to-github`. It is not t
 
 ### Presentation
 
-- `index.html` is the public portal
-- `src/scripts/translations.js` is presentation-layer translation content
-
-Presentation text does not determine NEXUS or Horizon evidence state.
+`index.html` and presentation scripts are public UI surfaces. Presentation text does not determine NEXUS or Horizon evidence state.
 
 ### NEXUS knowledge lifecycle
 
-`docs/brain/nexus.py` exposes the local command surface:
+`docs/brain/**` contains the host knowledge lifecycle, SQLite/JSONL state, retrieval, graph analysis, and generated memory/dashboard surfaces.
 
-- `harvest`
-- `project`
-- `ingest`
-- `ponder`
-- `evolve`
-- `rebuild`
-- `search`
-- `status`
-- explicit `add` / `connect`
-
-The repository therefore has distinct surfaces for external/source material, projected/ingested knowledge records, SQLite query/index state, graph-derived analysis, and public presentation.
-
-### Horizon isolation from host-code ingestion
-
-`docs/brain/scholar.py` explicitly excludes `horizon-cortex` and `parallax` from its supported host-code scan and ignores Markdown/research material.
+`docs/brain/scholar.py` excludes `horizon-cortex` and `parallax` from its host-code scan and ignores Markdown/research material.
 
 Use:
 
 `HOST_CODE_STRUCTURE_SCAN != HORIZON_RESEARCH_INGESTION`.
 
-A Horizon claim does not become a NEXUS graph fact merely because both live in the same repository.
+A Horizon claim does not become a NEXUS graph fact merely because both live in one repository.
 
-## 2. SQLite and JSONL are distinct persistence surfaces
+## 2. SQLite and JSONL are distinct host persistence surfaces
 
-`docs/brain/cortex.py` maintains SQLite graph/index state and appends JSONL knowledge records.
+The host SQLite and JSONL writes are not one atomic transaction. SQLite can commit before JSONL append is attempted.
 
-Important implementation fact: these writes are **not one atomic transaction**.
-
-For entity writes, SQLite state is committed before `_log_to_jsonl()` is attempted. JSONL failure is caught and reported without rolling back the already committed SQLite change.
-
-Therefore:
+Use:
 
 `SQLITE_WRITE_SUCCESS != JSONL_LEDGER_SYNC_VERIFIED`.
 
-And:
+and:
 
 `REBUILDABLE_JSONL_SURFACE != PROOF_OF_CONTINUOUS_DB_LEDGER_EQUIVALENCE`.
 
-Current JSONL behavior is append-oriented application persistence. It is not cryptographic immutability, tamper evidence, or external source authentication.
+JSONL append is not cryptographic source authentication or truth proof.
 
-The SQLite database is a local active query/index surface; JSONL records support reconstruction. Neither surface alone proves source truth.
+## 3. Host graph/retrieval labels are local heuristics
 
-## 3. Temporal graph state is application-level state
+FTS5 retrieval, entity weights, graph density, orphan counts, PageRank-like centrality, and generated labels describe local indexed state.
 
-`valid_at` / `invalid_at` in `docs/brain/cortex.py` express application-level validity intervals for entities and relations.
-
-They do not independently establish:
-
-- when an external fact became true
-- when a source was published
-- when a Horizon artifact observed that fact
-- cryptographically proven historical state
-
-Application timestamps and external-event provenance remain separate evidence dimensions.
-
-## 4. Retrieval and graph metrics are not truth scores
-
-FTS5 retrieval, graph expansion, entity weights, orphan counts, graph density, and PageRank-like centrality describe the indexed repository state.
-
-They do not independently establish semantic truth, causal importance, safety, adoption, or external correctness.
+They do not independently establish semantic truth, causal importance, safety, adoption, or autonomous intent.
 
 Use:
 
 `LOCAL_RETRIEVAL_OR_GRAPH_SIGNAL / CLAIM_TRUTH_NOT_ESTABLISHED`.
 
-## 5. Generated reasoning labels are heuristic narrative
+Generated labels such as `Epiphany`, `Ecosystem Choke Point`, or `Self-Driven Goal` are narrative/heuristic output, not cognition or authorized future action.
 
-`docs/brain/reason.py` emits human-readable strings such as:
+## 4. Backfilled dashboard dates are not original observations
 
-- `Isolation Risk`
-- `Cognitive Loop`
-- `Epiphany`
-- `Subconscious Intuition`
-- `Ecosystem Choke Point (PageRank)`
-- `Self-Driven Goal`
-
-These labels are generated interpretations of local graph patterns.
-
-In particular:
-
-- the maximum PageRank node is the top node under that implementation/run, not an “absolute mathematical centrality” theorem
-- a generated “Self-Driven Goal” is suggestion/narrative output, not evidence of autonomous intent or an externally authorized future action
-- a structural overlap or transitive pattern is not semantic or causal proof
-
-Use:
-
-`GRAPH_HEURISTIC_LABEL / SEMANTIC_AND_AUTONOMOUS_INTENT_NOT_ESTABLISHED`.
-
-## 6. Backfilled dashboard dates are not original observation times
-
-`docs/brain/reason.py` contains a missing-dashboard backfill mechanism. When dated dashboard files are absent, it can create files for earlier dates using metrics available during the later rendering run.
-
-Therefore a historical-looking filename does not by itself establish that those metrics were observed on that logical date.
-
-Keep separate:
-
-- dashboard logical/file date
-- actual generation time
-- metric observation time
-- source state used to render the dashboard
+The host can backfill missing historical dashboard filenames using metrics available during a later run.
 
 Use:
 
 `BACKFILLED_DASHBOARD != ORIGINAL_HISTORICAL_OBSERVATION`.
 
-A backfilled dashboard may be useful as a continuity/presentation artifact but must not be reused as point-in-time telemetry without independent generation/observation evidence.
+Keep separate logical/file date, actual generation time, metric observation time, and source state.
 
-## 7. Horizon checker boundary
+## 5. Horizon checker boundary
 
-`horizon-cortex/check.py` checks deterministic artifact contracts such as:
+`horizon-cortex/check.py` validates structural artifact contracts such as filename/task identity, sections, logical date/week, handoffs, Decision/Action IDs, and host-change boundaries.
 
-- filename/task identity
-- required sections
-- logical date/week
-- H1→H2 and H3→H4 handoffs
-- Decision/Action IDs
-- host-change boundary markers
-
-A checker pass does **not** establish:
-
-- external factual truth
-- source independence
-- source authority for the exact claim
-- legal/regulatory correctness
-- host applicability
-- production adoption
-- local incident occurrence
-- NEXUS DB/JSONL synchronization
-- runtime outcome correctness
+A checker pass does not establish external factual truth, source independence, source authority, legal correctness, host applicability, production adoption, local incidents, DB/JSONL synchronization, or runtime outcomes.
 
 Use:
 
 `STRUCTURAL_CONTRACT_PASS != CLAIM_VALIDATION`.
 
-## 8. Source access, identity, authority, and claim support are separate
+## 6. Source authority is claim-specific
 
 Keep distinct:
 
@@ -168,25 +85,121 @@ Keep distinct:
 - `CLAIM_SUPPORTED`
 - `HOST_APPLICABILITY_UNKNOWN`
 
-A source may be first-party for its own product while remaining interpretive or insufficient for a protocol-wide, market-wide, legal, or ecosystem-wide proposition.
+A first-party product blog can be primary for that product's own implementation while remaining secondary/interpretive for a protocol-wide or market-wide proposition.
 
 Directly opening a secondary article does not make it primary.
 
-## 9. Sequential repetition does not create independent evidence
+## 7. Daily H1 → H2 evidence SOP
 
-H1 may feed H2 and Daily artifacts may feed H3/H4. Repetition across that chain is inheritance, not independent corroboration.
+### H1 Observe
+
+H1 should record separately:
+
+1. source access
+2. source identity
+3. source authority for the exact proposition
+4. source publication/version/check time
+5. raw observed proposition
+6. uncertainty/noise
+7. whether independent H2 verification is needed
+
+A vendor classification or market map should remain an `ANALYTICAL_TAXONOMY` unless primary evidence supports a stronger claim.
+
+### H2 Orient
+
+H2 may add independent evidence and narrow/promote an H1 signal.
+
+It must not:
+
+- treat H1 repetition as independent corroboration
+- convert a protocol release into a host migration instruction
+- convert protocol statelessness into application statelessness
+- convert vendor/community layering into a universal normative architecture
+- use `must`, host-required, or “completely disproved” language without an authorized local decision/evidence surface
 
 Use:
 
-`H2_RESTATEMENT_DOES_NOT_UPGRADE_H1_EVIDENCE`
+`H2_RESTATEMENT_DOES_NOT_UPGRADE_H1_EVIDENCE`.
 
-and:
+## 8. MCP 2026-07-28 source hierarchy and current interpretation
+
+The final 2026-07-28 specification release is a primary protocol-version fact.
+
+Current primary-supported features include:
+
+- stateless protocol core
+- retirement of initialize/initialized and protocol session ID for the new core
+- self-describing requests
+- header-based routing
+- Multi Round-Trip Requests
+- cacheable/deterministic list behavior
+- formal extensions framework, including Tasks
+- authorization hardening
+- formal deprecation policy
+
+The May 21 material is a **release candidate**; the July 28 maintainer release is the stronger authority for final-version claims.
+
+Use:
+
+`MCP_2026_07_28_FINAL_RELEASE_FACT`.
+
+Keep:
+
+`PROTOCOL_STATELESSNESS != APPLICATION_STATELESSNESS`.
+
+The release candidate explicitly distinguished a stateless protocol from stateful applications. Therefore no Horizon artifact may infer that application state, durable task state, or host-local state management is obsolete merely from the protocol revision.
+
+MRTR supports multi-round interactions without constantly open bidirectional streams; it does not establish zero latency, automatic client correctness, or host implementation.
+
+## 9. A2A v1.0 source hierarchy and current interpretation
+
+Current official A2A materials identify v1.0.0 as the latest released version and position A2A as an open standard for agent interoperability, discovery, collaborative task management, and communication across heterogeneous systems.
+
+Official v1.0 material also states that A2A and MCP are complementary: MCP commonly serves tool/context integration at an individual-agent level while A2A focuses on agent-to-agent communication/coordination.
+
+Use:
+
+`A2A_MCP_COMPLEMENTARITY_PRIMARY_SUPPORTED`.
+
+This does not create a universal multi-protocol stack law involving every other protocol.
+
+Use:
+
+`ANALYTICAL_BOUNDARY_SUPPORTED / NORMATIVE_LAYERING_NOT_ESTABLISHED`.
+
+## 10. Sequential repetition and Weekly inheritance
+
+H1 may feed H2 and Daily artifacts may feed H3/H4. Repetition across that chain is inheritance, not independent corroboration.
 
 `WEEKLY_INHERITANCE_DOES_NOT_UPGRADE_EVIDENCE`.
 
-A later artifact can add new evidence only when it actually introduces an independent source, observation, or checked implementation surface.
+A later artifact adds evidence only when it actually adds an independent source, implementation observation, or checked surface.
 
-## 10. Historical execution, delivery, and current presence are distinct
+## 11. Weekly H3/H4 SOP
+
+A weekly synthesis must preserve source lineage and Daily uncertainty.
+
+It may:
+
+- cluster repeated themes
+- downgrade weak/duplicated signals
+- add independent evidence
+- record a bounded decision/action when the weekly task actually occurs
+
+It may not:
+
+- manufacture missing Daily evidence
+- turn repeated Daily discussion into adoption frequency
+- erase historical blocked/missing states
+- claim a week-complete H3/H4 before the weekly lifecycle produces one
+
+At the 2026-08-27 cutoff W35 is:
+
+`IN_PROGRESS`.
+
+See `2026-W35-partial-reconciliation.md`.
+
+## 12. Historical execution, delivery, and current presence are distinct
 
 Keep separate:
 
@@ -199,11 +212,11 @@ Keep separate:
 
 A later file cannot retroactively turn an earlier `BLOCKED` run into success.
 
-If two retained artifacts disagree about historical input state, preserve:
+If retained artifacts disagree about historical input state, preserve:
 
 `HISTORICAL_INPUT_STATE_MISMATCH`.
 
-## 11. Support, deployment, adoption, and dominance are different claims
+## 13. Support, deployment, adoption, and dominance are different claims
 
 Do not collapse:
 
@@ -211,96 +224,34 @@ Do not collapse:
 - implementation supports it
 - named deployment exists
 - production use exists
-- many independent organizations use it
-- broad ecosystem adoption exists
-- dominance/de-facto universality exists
+- broad adoption exists
+- dominance/universality exists
 
-Useful bounded labels:
+A support/participation count is not automatically a production-user count.
 
-- `PROTOCOL_VERSION_FACT`
-- `FIRST_PARTY_IMPLEMENTATION_SUPPORT`
-- `NAMED_DEPLOYMENT_EXAMPLE`
-- `ECOSYSTEM_OBSERVATION`
-- `ADOPTION_RATE_NOT_ESTABLISHED`
-- `UNIVERSAL_ADOPTION_NOT_ESTABLISHED`
+## 14. Benchmarks, observability, threats, and legal claims remain scoped
 
-A statement that 150+ organizations participate/support a protocol is not evidence that all 150+ are production users.
+A benchmark/vendor study cannot create universal thresholds.
 
-## 12. Protocol and architecture claims remain version- and claim-specific
+OpenTelemetry semantic conventions, framework-specific tracing guidance, and governance features remain distinct evidence surfaces.
 
-### MCP 2026-07-28
+External security analysis supports threat-model hypotheses, not local host incidents.
 
-The official release supports a stateless **protocol core** for that exact version.
+Vendor compliance interpretation does not create a legal architecture mandate.
 
-Do not infer application statelessness, universal migration, or one universal compatibility strategy.
-
-`PROTOCOL_STATELESSNESS != APPLICATION_STATELESSNESS`.
-
-### A2A v1.0
-
-A2A supplies inter-agent constructs including Agent Cards, Tasks, Messages, Artifacts, Context, streaming/push behavior, and extensions.
-
-A2A/MCP responsibility comparison can be an analytical design boundary.
-
-Use:
-
-`ANALYTICAL_BOUNDARY_SUPPORTED / NORMATIVE_LAYERING_NOT_ESTABLISHED`.
-
-Vendor/community diagrams do not create a universal protocol stack law.
-
-## 13. Benchmarks and thresholds remain scoped
-
-A benchmark, vendor study, survey, customer case study, or secondary failure report cannot by itself establish a universal architecture threshold.
-
-Historical five-node or zero-failure language is therefore interpreted as at most a provisional/local guardrail unless direct evidence supports more.
-
-Use:
-
-`PROVISIONAL_GUARDRAIL_NOT_EXTERNAL_LAW`.
-
-## 14. Observability surfaces must remain separate
-
-Keep distinct:
-
-- trace/span/transcript/trajectory
-- model/tool input and output
-- external/world-state change
-- outcome
-- grader result
-- reviewer decision
-- runtime governance feature
-
-OpenTelemetry GenAI semantic conventions establish the telemetry concepts they define. They do not automatically establish framework-specific patterns such as MLflow `span-per-tick`, hidden reasoning capture, kill-switch governance, or ecosystem consensus.
-
-Use:
-
-`OTEL_SEMANTIC_CONVENTION + FRAMEWORK_GUIDANCE + GOVERNANCE_FEATURE_ARE_DISTINCT`.
-
-## 15. Threat, legal, and local-host claims require their own evidence
-
-External security analysis can support a threat-model hypothesis, not a local Horizon/host incident.
-
-Use:
-
-`THREAT_MODEL_HYPOTHESIS / LOCAL_INCIDENT_NOT_ESTABLISHED`.
-
-Vendor compliance architecture can support engineering interpretation, not a legal mandate.
-
-Use:
-
-`VENDOR_COMPLIANCE_INTERPRETATION / LEGAL_ARCHITECTURE_NOT_ESTABLISHED`.
-
-## 16. Historical correction method
+## 15. Historical correction method
 
 Historical H1–H4 files remain point-in-time evidence.
 
-When later evidence changes current interpretation, prefer explicit reconciliation that records:
+Later reconciliation records:
 
-- historical state
-- later evidence
+- historical wording/state
+- stronger later evidence
 - current bounded interpretation
 - unresolved dimensions
 
-Current interpretation may change without rewriting the historical artifact.
+It does not rewrite the historical artifact.
 
-Formal August H5/H6 remains open until the natural monthly lifecycle has actual evidence.
+Current August stage authority: `2026-08-through-27-stage-audit.md`.
+
+Formal August H5/H6 remains `OPEN` until the natural monthly lifecycle has actual evidence.
