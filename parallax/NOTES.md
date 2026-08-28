@@ -186,12 +186,12 @@ Hugging Face 事件此前明确等待的 final investigation 已于 2026-08-28 �
 - 状态: 有效
 - 生效日期: 2026-07-31
 - 案例: P-05
-- 支持记录: [PX-20260725-P05](records/2026-07/2026-07-25.md), [PX-20260730-P05](records/2026-07/2026-07-30.md), [PX-20260731-P05](records/2026-07/2026-07-31.md), [PX-S-20260804-P05](specials/2026-08/2026-08-04-openai-third-party-cyber-evaluations.md), [PX-20260813-P05](records/2026-08/2026-08-13.md), [PX-20260820-P05](records/2026-08/2026-08-20.md), [PX-S-20260821-P05](specials/2026-08/2026-08-21-anthropic-chive-counterfactual-explanations.md), [PX-20260828-P05](records/2026-08/2026-08-28.md)
+- 支持记录: [PX-20260725-P05](records/2026-07/2026-07-25.md), [PX-20260730-P05](records/2026-07/2026-07-30.md), [PX-20260731-P05](records/2026-07/2026-07-31.md), [PX-S-20260804-P05](specials/2026-08/2026-08-04-openai-third-party-cyber-evaluations.md), [PX-20260813-P05](records/2026-08/2026-08-13.md), [PX-20260820-P05](records/2026-08/2026-08-20.md), [PX-S-20260821-P05](specials/2026-08/2026-08-21-anthropic-chive-counterfactual-explanations.md), [PX-20260828-P05](records/2026-08/2026-08-28.md), [PX-S-20260828-P05](specials/2026-08/2026-08-28-x-ai-social-summary-source-boundary.md)
 - 时间窗口: 2026-07-26, 2026-07-30, 2026-07-31, 2026-08-05, 2026-08-13, 2026-08-22, 2026-08-23, 2026-08-28
 
 ### 发现
 
-在已记录的研究门槛, HTTP 语义, 无障碍对比度, 多发布者网络安全评估, AI scientific experiment 与 double-blind external evaluation protocol 材料中, 增加长上下文或与正文冲突的摘要没有替代可定位的直接支持
+在已记录的研究门槛, HTTP 语义, 无障碍对比度, 多发布者网络安全评估, AI scientific experiment, double-blind external evaluation protocol 与 AI social-source compression 材料中, 增加长上下文或与正文冲突的摘要没有替代可定位的直接支持
 
 删除关键支持时, 判断收窄为未验证
 
@@ -205,7 +205,9 @@ CHIVE 科研专题加入后, evaluation no uplift, training-data generalization 
 
 DeepMind double-blind pilot 加入后, model, evaluator, confidential benchmark 与 cryptographic isolation mechanism 保持独立对象身份, protocol design 没有被升级为 capability or safety result
 
-八个实质不同支持记录跨八个执行窗口保持该边界
+X/Twitter social-source 专题加入后, platform-generated trend summary, search-index persistence, canonical social post 与 OpenAI/METR primary reports 保持不同 evidence identity, 删除 primary support 后没有从社交摘要补回同等精度事实
+
+九个实质不同支持记录跨八个执行窗口保持该边界
 
 ### 反例检查
 
@@ -233,28 +235,33 @@ DeepMind double-blind pilot 加入后, model, evaluator, confidential benchmark 
 - cryptographic evidence helps prevent contamination 不能扩大为所有训练数据与所有 benchmark 的零 contamination 证明
 - Singapore AISI 参与 pilot 不等于本轮已经取得新的 AISI evaluation result
 - technical report 链接存在不能冒充本轮已复现 confidential environment
+- X `/i/trending/` platform-generated summary 不能改写为具体账号 `/status/` canonical post
+- platform-generated trend summary 可演化, 不能冒充冻结历史帖文快照
+- indexed URL 或搜索缓存存在不能证明 canonical post 当前仍在线或正文未变化
+- 社交重复次数, 互动热度或平台聚合叙事不构成新的独立技术证据
 
 ### 适用边界
 
-- 仅覆盖支持记录中的 Parallax 门槛材料, RFC 9110, WCAG 2.2, OpenAI 与 AISI 第三方评估材料, Irregular 自身正式评估报告, Anthropic 2026-07-30 官方事故复盘, 2026-08 CHIVE scientific experiment 与 Google DeepMind 2026-08-27 double-blind evaluation pilot
+- 仅覆盖支持记录中的 Parallax 门槛材料, RFC 9110, WCAG 2.2, OpenAI 与 AISI 第三方评估材料, Irregular 自身正式评估报告, Anthropic 2026-07-30 官方事故复盘, 2026-08 CHIVE scientific experiment, Google DeepMind 2026-08-27 double-blind evaluation pilot 与 2026-08-28 X/Twitter AI social-source compression 专题
 - Irregular 范围只覆盖其 GPT-5.6 Sol FrontierCyber, CyScenarioBench 与 Atomic Challenges 报告中的直接结果, 配置与限制
 - Anthropic incident 范围只覆盖其复盘中的三起 isolated incidents, 涉及运行与模型身份, 不推广为一般部署事故率或模型总体排名
 - CHIVE 范围只覆盖当前论文和官方研究页中的 counterfactual evaluation, training-data result 与 evidence-type identity, 不推广为所有 interpretability 方法的最终有效性判断
 - DeepMind double-blind 范围只覆盖公开 pilot 中 Gemini Flash Lite, evaluator/provider, confidential benchmark 与 Confidential Space isolation relationship, 不推广为已发布 capability score, safety pass 或全部 external evaluations 的统一协议
-- 只描述直接支持, 冲突摘要, 关键缺失, 统计对象, result branch, evidence type, evaluation protocol 与对象身份之间的判断边界
+- X/Twitter 范围只覆盖 platform-generated trend summary, X Help 的一般 search-index persistence 契约与可定位 primary report 之间的 provenance 边界, 不把 trend 页面冒充具体账号 canonical post, 不把搜索缓存状态推广为 live post state
+- 只描述直接支持, 冲突摘要, 关键缺失, 统计对象, result branch, evidence type, evaluation protocol, social provenance 与对象身份之间的判断边界
 - 不推广到所有长上下文, 所有规范, 所有任务或所有 Agent
 - 不证明长上下文长度本身是判断保持或失败的原因
 - 不把 capability-elicitation 或特定评估环境结果推广为普通部署的现实滥用画像
 
 ### 复验与失效条件
 
-事件关系删除, Anthropic 新发布者 direct retrospective, CHIVE 科研结果支路分离, METR 独立第三方复核与 DeepMind double-blind protocol identity 复验已经完成
+事件关系删除, Anthropic 新发布者 direct retrospective, CHIVE 科研结果支路分离, METR 独立第三方复核, DeepMind double-blind protocol identity 与 X social-source compression 复验已经完成
 
-后续优先等待 DeepMind pilot 的公开 evaluation outcome 或独立技术复核, CHIVE 独立外部复现, AISI 新直接 evaluation result, OpenAI 对此前第三方评估的明确纠正, 或取得同 benchmark, 同版本数据集, 统一公开 harness 与尽可能一致推理预算的跨厂商可重复结果
+后续优先等待 DeepMind pilot 的公开 evaluation outcome 或独立技术复核, CHIVE 独立外部复现, AISI 新直接 evaluation result, OpenAI 对此前第三方评估的明确纠正, 或取得同 benchmark, 同版本数据集, 统一公开 harness 与尽可能一致推理预算的跨厂商可重复结果, 社交方向只在可定位 canonical X post 或其编辑删除状态可直接核验时比较 canonical post, trend summary 与 primary report
 
-计划中的第三方复核不能写成已完成结果, 公开代码或 technical report 链接不能写成本轮已复现结果, 不重复采样同一事故, METR 或 DeepMind 页面制造新支持记录
+计划中的第三方复核不能写成已完成结果, 公开代码或 technical report 链接不能写成本轮已复现结果, 不重复采样同一事故, METR, DeepMind 或 X trend 页面制造新支持记录
 
-如果冲突摘要改变判断边界, 关键支持缺失时仍形成无条件事实, 对象身份, 统计层级, result branch, evidence type 或 evaluation protocol condition 缺失时仍猜测默认类别, 开发方二次汇总覆盖原始评估发布者直接事实归属, 非受控个案被升级为稳定模型排名, generated explanation 被升级为 ground truth, 或 protocol mechanism 被升级为 capability result, 保留本记录并标记失效日期, 推翻证据和影响范围
+如果冲突摘要改变判断边界, 关键支持缺失时仍形成无条件事实, 对象身份, 统计层级, result branch, evidence type, evaluation protocol condition 或 social provenance 缺失时仍猜测默认类别, 开发方二次汇总覆盖原始评估发布者直接事实归属, 非受控个案被升级为稳定模型排名, generated explanation 被升级为 ground truth, protocol mechanism 被升级为 capability result, 或 platform summary / cached index 被升级为 primary source / live canonical state, 保留本记录并标记失效日期, 推翻证据和影响范围
 
 ## N-05 证据层级不能被顺序与文本命中替代
 
