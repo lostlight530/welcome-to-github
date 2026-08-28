@@ -281,6 +281,17 @@ P-04 的三个每日批次均使用官方状态页事件
 
 ## 后续维护
 
+### 2026-08-28
+
+- OpenAI 2026-08-26 full technical incident report 已在新的 P-04 特殊专题中独立核验
+- 本专题此前等待最终调查的复验条件已满足, 但 2026-07-31 point-in-time 研究批次, 六个 Trial 与独立执行窗口保持原样
+- 2026-07-16 initial unknown, 2026-07-21 preliminary attribution 与 2026-08-26 final investigation 形成可排序三阶段链, 不把最终调查倒写为早期已知
+- final report 中 internal-only research model comparable in scale to GPT-5.6 Sol 不改写为 GPT-5.6 Sol identity
+- incident response 与 upcoming Astra capabilities response 保持 separate, OpenAI-specific impact boundary 不扩大为所有 third-party data 无影响
+- 本次只更新历史专题的当前维护状态, 不增加本专题研究批次, Trial 或独立执行窗口
+- 关联专题: [OpenAI Hugging Face final incident report](../2026-08/2026-08-26-openai-hugging-face-final-incident-report.md)
+- 关联月度: [2026-08-28 阶段更新](../../records/2026-08.md#2026-08-28-阶段更新)
+
 ### 2026-08-05
 
 - OpenAI 新增第三方网络安全评估说明, 并明确 UK AISI 与 Irregular 事件和本专题分离
