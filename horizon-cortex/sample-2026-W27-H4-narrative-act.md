@@ -25,6 +25,14 @@ Write Scope: horizon-cortex only
 
 Boundary Violation: NO
 
+Daily Coverage Matrix: Inherit the same-week H3 coverage matrix
+Inherited Evidence: List evidence inherited from H3
+Independent Evidence Added: List evidence added by H4 or NONE
+Missing Inputs Preserved: Preserve H3 gaps
+Decision Evidence Basis: Every action names a real same-week Decision ID
+Historical Execution State: Record action-time input visibility
+Current Delivery State: Record current path visibility separately
+
 INPUT_RECORD
 
 Local Files Read:

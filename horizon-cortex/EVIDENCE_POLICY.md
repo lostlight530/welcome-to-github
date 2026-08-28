@@ -1,7 +1,7 @@
 # Horizon Cortex Evidence Policy
 
 Status: current repository evidence policy  
-Calibration: 2026-08-27
+Calibration: 2026-08-28
 
 This file defines how committed Horizon artifacts are interpreted against the repository implementation and external evidence that actually exists. It is an evidence contract, not a runtime capability claim.
 
@@ -255,3 +255,15 @@ It does not rewrite the historical artifact.
 Current August stage authority: `2026-08-through-27-stage-audit.md`.
 
 Formal August H5/H6 remains `OPEN` until the natural monthly lifecycle has actual evidence.
+
+## 16. Active daily and weekly record contract
+
+New H1 and H2 records identify source identity, authority for the exact claim, independent verification, host applicability, evidence-upgrade basis, original execution status, current path status, and record provenance.
+
+New H3 and H4 records provide a Daily coverage matrix, inherited and newly independent evidence, preserved missing inputs, decision evidence basis, historical execution state, and current delivery state.
+
+Substitutes and reconstructions use their real agent identity. A reconstruction cannot claim original success. Historical records remain byte-preserved and known legacy schema defects are interpreted through reconciliation records.
+
+`CURRENT_PATH_PRESENT != ORIGINAL_EXECUTION_SUCCESS`.
+
+`EXTERNAL_PROTOCOL_FACT != HOST_ADOPTION_REQUIREMENT`.
