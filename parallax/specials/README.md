@@ -20,6 +20,7 @@
 | 2026-08-21 | PX-S-20260821-P05 | P-05 | 2026-08-23 | 2026-08-23 | 观察, N-04 支持范围扩展 | [Anthropic CHIVE counterfactual explanations](2026-08/2026-08-21-anthropic-chive-counterfactual-explanations.md) |
 | 2026-08-21 | PX-S-20260821-P03 | P-03 | 2026-08-23 | 2026-08-23 | 观察, P-03 AI agent lifecycle 复验 | [DeepMind SIMA 与 EVE research lifecycle boundary](2026-08/2026-08-21-deepmind-sima-eve-research-boundary.md) |
 | 2026-08-26 | PX-S-20260826-P04 | P-04 | 2026-08-28 | 2026-08-28 | 观察, N-03 支持范围扩展 | [OpenAI Hugging Face final incident report](2026-08/2026-08-26-openai-hugging-face-final-incident-report.md) |
+| 2026-08-28 | PX-S-20260828-P05 | P-05 | 2026-08-28 | 2026-08-28 | 观察, N-04 支持范围扩展 | [X/Twitter AI 社交摘要与一手证据身份边界](2026-08/2026-08-28-x-ai-social-summary-source-boundary.md) |
 
 ## 2026-08-01 维护
 
@@ -115,10 +116,14 @@
 ## 2026-08-28 维护
 
 - 2026-07-21 安全事件专题此前等待的 final technical report 已于 2026-08-28 完成新窗口复验
-- 新增 2026-08-26 OpenAI Hugging Face final incident report 特殊专题, 当前特殊专题总数增至 12
-- 新专题形成 P-04 第 11 个研究批次和第 11 个 CASE 独立执行窗口, 并正式扩展 N-03 到 initial unknown, preliminary attribution 与 final investigation 三阶段安全事件链
+- 新增 2026-08-26 OpenAI Hugging Face final incident report 与 2026-08-28 X/Twitter AI 社交摘要两个特殊专题, 当前特殊专题总数增至 13
+- final-report special 形成 P-04 第 11 个研究批次和第 11 个 CASE 独立执行窗口, 并正式扩展 N-03 到 initial unknown, preliminary attribution 与 final investigation 三阶段安全事件链
+- X/Twitter special 形成 P-05 第 12 个研究批次, 与当日 DeepMind daily 共享 2026-08-28 CASE 执行窗口, P-05 独立执行窗口仍为 10
+- X `/i/trending/` 页面保留为 platform-generated summary, 不改写为具体账号 `/status/` canonical post
+- indexed URL 或搜索缓存存在不证明 canonical post 当前仍在线或正文未变化, 社交热度不构成独立技术证据
+- OpenAI final report 与 METR independent investigation 继续承担可定位 primary evidence, 删除 primary support 后不能从社交摘要恢复同等精度事实
 - 旧 7 月专题保留原 2026-07-31 研究批次, 本次维护只更新其当前复验状态, 不追加旧专题 Trial 或窗口
-- 新专题实际核验日期为 2026-08-28, 与当日 DeepMind double-blind daily 共享一个全局执行窗口
+- 两个 special 与当日 DeepMind double-blind daily 均实际核验于 2026-08-28, 三个研究批次共享一个全局执行窗口
 - final report 中 internal-only research model comparable in scale to GPT-5.6 Sol 没有被改写为 GPT-5.6 Sol identity
 - incident response 与 upcoming Astra capabilities response 保持 separate, OpenAI-specific impact boundary 没有扩大为所有 third-party data 无影响
 - 本次维护本身不增加研究批次, Trial 或执行窗口
