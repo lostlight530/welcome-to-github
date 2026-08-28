@@ -25,6 +25,15 @@ Write Scope: horizon-cortex only
 
 Boundary Violation: NO
 
+Source Identity: Name H1 and each independently checked source
+Source Authority For Claim: Separate protocol facts from vendor interpretation
+Independent Verification: Name evidence added beyond H1 or NONE
+Host Applicability: SUPPORTED, UNKNOWN, or NOT_APPLICABLE
+Evidence Upgrade Basis: Name the actual independent basis or NONE
+Original Execution Status: SUCCESS, BLOCKED, UNKNOWN, or NOT_RUN
+Current Path Status: PRESENT or ABSENT
+Record Provenance: JULES_NATIVE
+
 INPUT_RECORD
 
 Local Files Read:

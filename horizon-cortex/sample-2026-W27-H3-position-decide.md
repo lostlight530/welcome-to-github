@@ -25,6 +25,14 @@ Write Scope: horizon-cortex only
 
 Boundary Violation: NO
 
+Daily Coverage Matrix: List every expected H1 and H2 with execution-time visibility
+Inherited Evidence: List evidence inherited from Daily records
+Independent Evidence Added: List new independent sources or NONE
+Missing Inputs Preserved: List missing or blocked inputs without backfill
+Decision Evidence Basis: Map each Decision ID to its evidence
+Historical Execution State: Record the state at the weekly run
+Current Delivery State: Record current path visibility separately
+
 INPUT_RECORD
 
 Local Files Read:

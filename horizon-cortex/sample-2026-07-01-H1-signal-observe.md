@@ -25,6 +25,15 @@ Write Scope: horizon-cortex only
 
 Boundary Violation: NO
 
+Source Identity: Name the publisher and exact artifact
+Source Authority For Claim: State claim-specific authority
+Independent Verification: YES, NO, or REQUIRED
+Host Applicability: SUPPORTED, UNKNOWN, or NOT_APPLICABLE
+Evidence Upgrade Basis: Name independent evidence or NONE
+Original Execution Status: SUCCESS, BLOCKED, UNKNOWN, or NOT_RUN
+Current Path Status: PRESENT or ABSENT
+Record Provenance: JULES_NATIVE
+
 INPUT_RECORD
 
 Local Files Read:
