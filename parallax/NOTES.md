@@ -114,12 +114,12 @@ AWS 2017 Lambda concurrency 受控负载进一步给出同一运行的 direct to
 - 状态: 有效
 - 生效日期: 2026-07-29
 - 案例: P-04
-- 支持记录: [PX-20260726-P04](records/2026-07/2026-07-26.md), [PX-20260728-P04](records/2026-07/2026-07-28.md), [PX-20260729-P04](records/2026-07/2026-07-29.md), [PX-20260814-P04](records/2026-08/2026-08-14.md), [PX-20260821-P04](records/2026-08/2026-08-21.md), [PX-20260824-P04](records/2026-08/2026-08-24.md)
-- 时间窗口: 2026-07-26, 2026-07-28, 2026-07-29, 2026-08-14, 2026-08-22, 2026-08-24
+- 支持记录: [PX-20260726-P04](records/2026-07/2026-07-26.md), [PX-20260728-P04](records/2026-07/2026-07-28.md), [PX-20260729-P04](records/2026-07/2026-07-29.md), [PX-20260814-P04](records/2026-08/2026-08-14.md), [PX-20260821-P04](records/2026-08/2026-08-21.md), [PX-20260824-P04](records/2026-08/2026-08-24.md), [PX-S-20260826-P04](specials/2026-08/2026-08-26-openai-hugging-face-final-incident-report.md)
+- 时间窗口: 2026-07-26, 2026-07-28, 2026-07-29, 2026-08-14, 2026-08-22, 2026-08-24, 2026-08-28
 
 ### 发现
 
-在已记录的官方服务状态事件, OpenAI GPT-4o 非状态页模型部署 rollback, Atlassian Jira Cloud platform scopes 时间链与 Google Chrome 第三方 Cookie 多阶段路线中, 具有稳定对象身份与可排序时间时, 当前判断随同一对象的较新有效证据更新, 被替代状态保留为对应时间范围内的历史记录
+在已记录的官方服务状态事件, OpenAI GPT-4o 非状态页模型部署 rollback, Atlassian Jira Cloud platform scopes 时间链, Google Chrome 第三方 Cookie 多阶段路线与 Hugging Face 安全事件跨发布者调查链中, 具有稳定对象身份与可排序时间时, 当前判断随同一对象的较新有效证据更新, 被替代状态保留为对应时间范围内的历史记录
 
 常规 investigating, monitoring, resolved 更新链保持该边界
 
@@ -133,12 +133,14 @@ Atlassian scopes 在 2022-02-22 发布迁移要求后, 2022-04-20 明确暂停�
 
 Google Chrome 第三方 Cookie 路线从 2021 至 2023 的 phase-out 计划, 更新到 2024-07-22 instead-of-deprecating 的 informed-choice proposal, 再到 2025-04-22 maintain-current-approach 且不推出 new standalone prompt, 当前终态更新判断而没有删除早期计划和中间方案曾真实发布的历史身份
 
-六个正式支持记录跨六个执行窗口保持该边界
+Hugging Face 安全事件在 2026-07-16 的 initial unknown, OpenAI 2026-07-21 的 preliminary attribution 与 2026-08-26 的 full technical incident report 形成新的三阶段链, final investigation 更新 current judgment 而不倒写前两个阶段
+
+七个正式支持记录跨七个执行窗口保持该边界
 
 ### 反例检查
 
 - 同日不同事件可以具有不同当前状态, 不能跨事件复制更新
-- GitHub 测试事件的通用 resolved 文本不能证明真实客户事故
+- GitHub 测试事件的通用 resolved 文本不能证明真实事故
 - OpenAI 对照事件只经历线性 identified, monitoring, resolved, 反证所有事件都会在 resolved 后重新进入 monitoring
 - 删除时间戳后无法确定两次 resolved 与 monitoring 的先后
 - 删除事件 ID 后无法把相似更新可靠归属到同一事件
@@ -152,23 +154,30 @@ Google Chrome 第三方 Cookie 路线从 2021 至 2023 的 phase-out 计划, 更
 - 2025 maintain current approach 不能改写为 Google 从未计划淘汰 Chrome 第三方 Cookie
 - 2024 proposed informed-choice experience 不能提前等同于 2025 no-standalone-prompt 当前终态
 - 删除 Chrome 与 third-party cookies 对象身份后不能把 Privacy Sandbox API 路线与 Cookie 支持状态自动拼成同一对象链
+- 2026-08-26 final report 不能倒写为 Hugging Face 2026-07-16 已经知道具体模型身份
+- internal-only research model comparable in scale to GPT-5.6 Sol 不能直接改写为 GPT-5.6 Sol identity
+- incident response 与 upcoming Astra capabilities response 明确 separate, 不能把 Astra 并入该事件
+- OpenAI customer-data, functionality 与 availability 的无影响边界不能扩大为所有第三方数据均无影响
 
 ### 适用边界
 
-- 覆盖支持记录中的 OpenAI 与 GitHub 官方服务状态事件, OpenAI GPT-4o 在 ChatGPT 中的 2025-04-25 mainline update rollback, Atlassian Jira Cloud platform Forge 与 OAuth 2.0 3LO scopes 的多阶段迁移时间链, 以及 Google Chrome 第三方 Cookie 2021 至 2025 的公开路线更新
+- 覆盖支持记录中的 OpenAI 与 GitHub 官方服务状态事件, OpenAI GPT-4o 在 ChatGPT 中的 2025-04-25 mainline update rollback, Atlassian Jira Cloud platform Forge 与 OAuth 2.0 3LO scopes 的多阶段迁移时间链, Google Chrome 第三方 Cookie 2021 至 2025 的公开路线更新, 以及 2026 年 Hugging Face 安全事件 initial, preliminary 与 final investigation 三阶段链
 - 依赖稳定对象身份, 可排序时间与可访问的替代关系或更新历史
 - GPT-4o 范围只覆盖本次 ChatGPT mainline update, 不自动扩展到 API, Voice, 图像模型或其他 GPT-4o 产品表面
 - Atlassian 范围只覆盖本次 Jira Cloud platform 相关 scope 迁移与当前 recommendation, 不自动扩展到 Jira Software, Confluence 或所有 Atlassian 产品
 - Chrome 范围只覆盖第三方 Cookie 支持路线与公开 user-choice 状态, 不自动扩展到 Privacy Sandbox 全部 API, Incognito tracking protections 或其他 Chrome 隐私功能
-- 正式 rollback, pause, documentation recommendation 或路线公告不等于本轮取得生产请求或 app runtime 样本
-- 不证明状态页描述与每个用户的实际体验完全一致
+- Hugging Face incident 范围只覆盖公开说明中可定位的调查阶段, incident identity, model identity qualifier 与公开 impact boundary, 不包含本轮未执行的安全复现
+- 正式 rollback, pause, documentation recommendation, 路线公告或 final report 不等于本轮取得生产 runtime 样本
+- 不证明状态页或事故说明与每个受影响主体的实际体验完全一致
 - 不推广到缺少替代关系的普通文档, 所有任务或所有 Agent
 
 ### 复验与失效条件
 
-多阶段 replacement, 新独立发布体系, 稳定对象身份, 可排序时间与当前可验证终态已经在 Atlassian 与 Chrome 两条独立时间链中完成复验
+多阶段 replacement, 新独立发布体系, 稳定对象身份, 可排序时间与当前可验证终态已经在 Atlassian, Chrome 与 Hugging Face incident 三类对象中完成复验
 
-若继续 P-04, 优先等待同一高质量对象再次出现明确 current-state 更新, 或选择具有真正双向 on/off 切换且能直接核验当前运行终态的新对象, 不重复一般 deprecation, 单次 rollback, 相同 scope 迁移或同一 Cookie 时间链
+Hugging Face 事件此前明确等待的 final investigation 已于 2026-08-28 完成新窗口复验
+
+若继续 P-04, 优先等待现有高质量对象出现新的明确 correction 或 material current-state update, 或选择具有真正双向 on/off 切换且能直接核验当前运行终态的新对象, 不重复同一 final report, 一般 deprecation, 单次 rollback, 相同 scope 迁移或同一 Cookie 时间链
 
 如果较新有效证据没有更新当前判断, 被替代状态被物理删除, 当前文档被倒写成历史原始状态, 或缺少身份与时间条件时仍形成确定归属, 保留本记录并标记失效日期, 推翻证据和影响范围
 
@@ -177,12 +186,12 @@ Google Chrome 第三方 Cookie 路线从 2021 至 2023 的 phase-out 计划, 更
 - 状态: 有效
 - 生效日期: 2026-07-31
 - 案例: P-05
-- 支持记录: [PX-20260725-P05](records/2026-07/2026-07-25.md), [PX-20260730-P05](records/2026-07/2026-07-30.md), [PX-20260731-P05](records/2026-07/2026-07-31.md), [PX-S-20260804-P05](specials/2026-08/2026-08-04-openai-third-party-cyber-evaluations.md), [PX-20260813-P05](records/2026-08/2026-08-13.md), [PX-20260820-P05](records/2026-08/2026-08-20.md), [PX-S-20260821-P05](specials/2026-08/2026-08-21-anthropic-chive-counterfactual-explanations.md)
-- 时间窗口: 2026-07-26, 2026-07-30, 2026-07-31, 2026-08-05, 2026-08-13, 2026-08-22, 2026-08-23
+- 支持记录: [PX-20260725-P05](records/2026-07/2026-07-25.md), [PX-20260730-P05](records/2026-07/2026-07-30.md), [PX-20260731-P05](records/2026-07/2026-07-31.md), [PX-S-20260804-P05](specials/2026-08/2026-08-04-openai-third-party-cyber-evaluations.md), [PX-20260813-P05](records/2026-08/2026-08-13.md), [PX-20260820-P05](records/2026-08/2026-08-20.md), [PX-S-20260821-P05](specials/2026-08/2026-08-21-anthropic-chive-counterfactual-explanations.md), [PX-20260828-P05](records/2026-08/2026-08-28.md), [PX-S-20260828-P05](specials/2026-08/2026-08-28-x-ai-social-summary-source-boundary.md)
+- 时间窗口: 2026-07-26, 2026-07-30, 2026-07-31, 2026-08-05, 2026-08-13, 2026-08-22, 2026-08-23, 2026-08-28
 
 ### 发现
 
-在已记录的研究门槛, HTTP 语义, 无障碍对比度, 多发布者网络安全评估与 AI scientific experiment 材料中, 增加长上下文或与正文冲突的摘要没有替代可定位的直接支持
+在已记录的研究门槛, HTTP 语义, 无障碍对比度, 多发布者网络安全评估, AI scientific experiment, double-blind external evaluation protocol 与 AI social-source compression 材料中, 增加长上下文或与正文冲突的摘要没有替代可定位的直接支持
 
 删除关键支持时, 判断收窄为未验证
 
@@ -194,7 +203,11 @@ Anthropic 自身事故复盘加入后, 141006 次回顾运行, 3 起事故, 6 �
 
 CHIVE 科研专题加入后, evaluation no uplift, training-data generalization 与 applied-use caveat 按 result branch 分开保存, LLM-generated explanation 也没有替代 measured counterfactual outcome 的 evaluation-label 身份
 
-七个实质不同支持记录跨七个执行窗口保持该边界
+DeepMind double-blind pilot 加入后, model, evaluator, confidential benchmark 与 cryptographic isolation mechanism 保持独立对象身份, protocol design 没有被升级为 capability or safety result
+
+X/Twitter social-source 专题加入后, platform-generated trend summary, search-index persistence, canonical social post 与 OpenAI/METR primary reports 保持不同 evidence identity, 删除 primary support 后没有从社交摘要补回同等精度事实
+
+九个实质不同支持记录跨八个执行窗口保持该边界
 
 ### 反例检查
 
@@ -217,27 +230,38 @@ CHIVE 科研专题加入后, evaluation no uplift, training-data generalization 
 - CHIVE training-data generalization 不能改写为 activation-reading tools 在 evaluation 上产生 uplift
 - LLM-generated explanation 不能因为语言流畅而升级为 ground truth
 - CHIVE 代码公开不能冒充本轮已经完整复现研究结果
+- DeepMind double-blind pilot 不能自动证明 Gemini Flash Lite 安全或能力达标
+- benchmark contamination risk 不能改写为当前 benchmark 已知被污染
+- cryptographic evidence helps prevent contamination 不能扩大为所有训练数据与所有 benchmark 的零 contamination 证明
+- Singapore AISI 参与 pilot 不等于本轮已经取得新的 AISI evaluation result
+- technical report 链接存在不能冒充本轮已复现 confidential environment
+- X `/i/trending/` platform-generated summary 不能改写为具体账号 `/status/` canonical post
+- platform-generated trend summary 可演化, 不能冒充冻结历史帖文快照
+- indexed URL 或搜索缓存存在不能证明 canonical post 当前仍在线或正文未变化
+- 社交重复次数, 互动热度或平台聚合叙事不构成新的独立技术证据
 
 ### 适用边界
 
-- 仅覆盖支持记录中的 Parallax 门槛材料, RFC 9110, WCAG 2.2, OpenAI 与 AISI 第三方评估材料, Irregular 自身正式评估报告, Anthropic 2026-07-30 官方事故复盘以及 2026-08 CHIVE scientific experiment
+- 仅覆盖支持记录中的 Parallax 门槛材料, RFC 9110, WCAG 2.2, OpenAI 与 AISI 第三方评估材料, Irregular 自身正式评估报告, Anthropic 2026-07-30 官方事故复盘, 2026-08 CHIVE scientific experiment, Google DeepMind 2026-08-27 double-blind evaluation pilot 与 2026-08-28 X/Twitter AI social-source compression 专题
 - Irregular 范围只覆盖其 GPT-5.6 Sol FrontierCyber, CyScenarioBench 与 Atomic Challenges 报告中的直接结果, 配置与限制
 - Anthropic incident 范围只覆盖其复盘中的三起 isolated incidents, 涉及运行与模型身份, 不推广为一般部署事故率或模型总体排名
 - CHIVE 范围只覆盖当前论文和官方研究页中的 counterfactual evaluation, training-data result 与 evidence-type identity, 不推广为所有 interpretability 方法的最终有效性判断
-- 只描述直接支持, 冲突摘要, 关键缺失, 统计对象, result branch, evidence type 与对象身份之间的判断边界
+- DeepMind double-blind 范围只覆盖公开 pilot 中 Gemini Flash Lite, evaluator/provider, confidential benchmark 与 Confidential Space isolation relationship, 不推广为已发布 capability score, safety pass 或全部 external evaluations 的统一协议
+- X/Twitter 范围只覆盖 platform-generated trend summary, X Help 的一般 search-index persistence 契约与可定位 primary report 之间的 provenance 边界, 不把 trend 页面冒充具体账号 canonical post, 不把搜索缓存状态推广为 live post state
+- 只描述直接支持, 冲突摘要, 关键缺失, 统计对象, result branch, evidence type, evaluation protocol, social provenance 与对象身份之间的判断边界
 - 不推广到所有长上下文, 所有规范, 所有任务或所有 Agent
 - 不证明长上下文长度本身是判断保持或失败的原因
 - 不把 capability-elicitation 或特定评估环境结果推广为普通部署的现实滥用画像
 
 ### 复验与失效条件
 
-事件关系删除, Anthropic 新发布者直接事故复盘与 CHIVE 科研结果支路分离已经完成
+事件关系删除, Anthropic 新发布者 direct retrospective, CHIVE 科研结果支路分离, METR 独立第三方复核, DeepMind double-blind protocol identity 与 X social-source compression 复验已经完成
 
-后续优先等待 CHIVE 独立外部复现, AISI 或 Anthropic 与 METR 的独立第三方复核正式发布, OpenAI 对此前第三方评估的明确纠正, 或取得同 benchmark, 同版本数据集, 统一公开 harness 与尽可能一致推理预算的跨厂商可重复结果
+后续优先等待 DeepMind pilot 的公开 evaluation outcome 或独立技术复核, CHIVE 独立外部复现, AISI 新直接 evaluation result, OpenAI 对此前第三方评估的明确纠正, 或取得同 benchmark, 同版本数据集, 统一公开 harness 与尽可能一致推理预算的跨厂商可重复结果, 社交方向只在可定位 canonical X post 或其编辑删除状态可直接核验时比较 canonical post, trend summary 与 primary report
 
-计划中的第三方复核不能写成已完成结果, 公开代码不能写成本轮已复现结果, 不重复采样同一事故或论文页面制造新支持记录
+计划中的第三方复核不能写成已完成结果, 公开代码或 technical report 链接不能写成本轮已复现结果, 不重复采样同一事故, METR, DeepMind 或 X trend 页面制造新支持记录
 
-如果冲突摘要改变判断边界, 关键支持缺失时仍形成无条件事实, 对象身份, 统计层级, result branch 或 evidence type 缺失时仍猜测默认类别, 开发方二次汇总覆盖原始评估发布者直接事实归属, 非受控个案被升级为稳定模型排名, 或 generated explanation 被升级为 ground truth, 保留本记录并标记失效日期, 推翻证据和影响范围
+如果冲突摘要改变判断边界, 关键支持缺失时仍形成无条件事实, 对象身份, 统计层级, result branch, evidence type, evaluation protocol condition 或 social provenance 缺失时仍猜测默认类别, 开发方二次汇总覆盖原始评估发布者直接事实归属, 非受控个案被升级为稳定模型排名, generated explanation 被升级为 ground truth, protocol mechanism 被升级为 capability result, 或 platform summary / cached index 被升级为 primary source / live canonical state, 保留本记录并标记失效日期, 推翻证据和影响范围
 
 ## N-05 证据层级不能被顺序与文本命中替代
 
