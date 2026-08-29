@@ -5,14 +5,14 @@
 - 状态: 有效
 - 生效日期: 2026-07-24
 - 案例: P-02
-- 支持记录: [PX-20260721-P02](records/2026-07/2026-07-21.md), [PX-20260723-P02](records/2026-07/2026-07-23.md), [PX-20260724-P02](records/2026-07/2026-07-24.md), [PX-20260804-P02](records/2026-08/2026-08-04.md), [PX-20260805-P02](records/2026-08/2026-08-05.md), [PX-20260807-P02](records/2026-08/2026-08-07.md)
-- 时间窗口: 2026-07-21, 2026-07-23, 2026-07-24, 2026-08-04, 2026-08-05, 2026-08-07
+- 支持记录: [PX-20260721-P02](records/2026-07/2026-07-21.md), [PX-20260723-P02](records/2026-07/2026-07-23.md), [PX-20260724-P02](records/2026-07/2026-07-24.md), [PX-20260804-P02](records/2026-08/2026-08-04.md), [PX-20260805-P02](records/2026-08/2026-08-05.md), [PX-20260807-P02](records/2026-08/2026-08-07.md), [PX-20260830-P02](records/2026-08/2026-08-30.md)
+- 时间窗口: 2026-07-21, 2026-07-23, 2026-07-24, 2026-08-04, 2026-08-05, 2026-08-07, 2026-08-30
 
 ### 发现
 
-在已记录的保护机制, HTTP 404, Crossref HTTP 400, OpenAI HTTP 401 与 httpbin HTTP 503 材料中, 当证据允许多个原因时, 判断保持证据适用范围并要求关键条件, 可以避免把错误状态扩大为单一事实
+在已记录的保护机制, HTTP 404, Crossref HTTP 400, OpenAI HTTP 401, httpbin HTTP 503 与 Google Cloud Storage production 503 incident 材料中, 当证据允许多个原因或多个状态转移时, 判断保持证据适用范围并要求关键条件, 可以避免把通用错误状态扩大为单一事实
 
-六个日期窗口都保持来源顺序不改变判断边界
+七个日期窗口都保持来源顺序不改变判断边界
 
 第三个窗口换用 IETF 与 GitHub 两个发布者并隐藏显式评价字段, 结果仍保持
 
@@ -21,6 +21,10 @@
 第五个窗口换用 OpenAI Models API 与 HTTP 401, 缺失 Bearer 与无效 Bearer 返回相同状态但不同正文诊断
 
 第六个窗口换用 httpbin 状态生成端点与 HTTP 503, 恢复请求路径和端点契约后识别受控状态生成, 空正文与误导摘要没有被扩大为真实过载, 维护或恢复时间
+
+第七个窗口使用 Google Cloud Storage 2023-02-09 正式 production incident, 通用 Cloud Storage retry contract 把 5xx 视为通常值得 retry, 但 incident 直接给出 CMEK resumable-upload chunk 的 HTTP 503→retry→HTTP 410 response transition, 因为 upload 已被终止
+
+调换通用 retry/RFC 语义与 incident 页面顺序没有改变具体判断, 事件页面继续承担 operation scope 与 post-retry outcome
 
 ### 反例检查
 
@@ -33,21 +37,28 @@
 - OpenAI 同一端点的两项 401 响应分别标识缺失 Bearer 与 invalid_api_key
 - OpenAI 错误指南列出多种 401 原因, 反驳 401 必然等于错误密钥
 - httpbin 的 `/status/:codes` 可以按请求参数生成指定状态, 反驳每个 503 都代表真实生产事故
-- RFC 9110 同时允许临时过载与计划维护, 反驳 503 必然只有一个具体原因
-- 没有当前响应字节, Retry-After 或正式事件说明时, 不能补出本次故障原因和恢复时间
+- RFC 9110 同时允许临时过载与计划维护, 反驳仅凭 503 确定本次具体原因
+- Google Cloud Storage current retry contract 把 5xx 归为通常值得 retry, 但 2023-02-09 incident 的 retry 实际进入 HTTP 410 terminated-upload state, 反驳 retryable 必然等于 retry 成功
+- 410 不能单独证明 CMEK key 配置错误, incident 直接事实只说明 upload 已被终止
+- only customers using CMEK objects 不能扩大为所有 Cloud Storage uploads
+- 本轮没有 current production response bytes 或 Retry-After 实值, 不能把通用字段契约改写为实际 header
 
 ### 适用边界
 
-- 仅覆盖支持记录中的 GitHub 保护机制, HTTP 404, Crossref rows=1001 对应 HTTP 400, OpenAI Models API 缺失或无效 Bearer 对应 HTTP 401 与 httpbin 状态端点对应 HTTP 503
-- 不推广到其他 HTTP 400, 401 或 503 原因, 其他错误状态, 其他 API 或所有 Agent
+- 覆盖支持记录中的 GitHub 保护机制, HTTP 404, Crossref rows=1001 对应 HTTP 400, OpenAI Models API 缺失或无效 Bearer 对应 HTTP 401, httpbin 状态端点对应受控 HTTP 503, 以及 Google Cloud Storage 2023-02-09 CMEK resumable-upload production 503 incident
+- Google Cloud Storage 范围只覆盖该 incident 中 CMEK resumable-upload chunk 503 与 retry 后 terminated-upload 410 的具体链, 不推广到其他 Cloud Storage 503, 非 CMEK objects 或所有 resumable uploads
+- 通用 503/RFC 语义和 Cloud Storage retry 文档只能承担协议与产品契约, 不能替代特定 incident 的 actual state transition
+- 不推广到其他 HTTP 400, 401, 429 或 503 原因, 其他错误状态, 其他 API 或所有 Agent
 - httpbin 观察只覆盖受控状态端点契约, 不证明该服务当前生产运行状态
 - 同日多个 Trial 只共同构成一个时间窗口
 
 ### 复验与失效条件
 
-在新的日期窗口选择真实生产 API 的 HTTP 429 或 503, 优先取得 Retry-After, 明确错误正文或正式事件说明
+具有明确事件说明的 production 503 已在 Google Cloud Storage 2023-02-09 incident 完成复验
 
-如果来源顺序改变判断边界, 或关键条件缺失时出现无条件事实断言, 保留本记录并标记失效日期, 推翻证据和影响范围
+后续不重复该 incident, 优先在新的日期窗口安全取得真实 production 429 response sample 并核对请求对象, response body, Ratelimit, Ratelimit-Policy 与 Retry-After 实值, 或取得新的 current production 503 response sample 与明确正文或 Retry-After
+
+如果来源顺序改变判断边界, 关键条件缺失时出现无条件事实断言, 通用 retry contract 覆盖 operation-specific post-retry state, 或 current response 未取得时虚构 header/body, 保留本记录并标记失效日期, 推翻证据和影响范围
 
 ## N-02 缺少覆盖分母时不能形成全称事实
 
@@ -140,7 +151,7 @@ Hugging Face 安全事件在 2026-07-16 的 initial unknown, OpenAI 2026-07-21 �
 ### 反例检查
 
 - 同日不同事件可以具有不同当前状态, 不能跨事件复制更新
-- GitHub 测试事件的通用 resolved 文本不能证明真实事故
+- GitHub 测试事件的通用 resolved 文本不能证明真实客户事故
 - OpenAI 对照事件只经历线性 identified, monitoring, resolved, 反证所有事件都会在 resolved 后重新进入 monitoring
 - 删除时间戳后无法确定两次 resolved 与 monitoring 的先后
 - 删除事件 ID 后无法把相似更新可靠归属到同一事件
