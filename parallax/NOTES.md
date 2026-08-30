@@ -125,12 +125,12 @@ AWS 2017 Lambda concurrency 受控负载进一步给出同一运行的 direct to
 - 状态: 有效
 - 生效日期: 2026-07-29
 - 案例: P-04
-- 支持记录: [PX-20260726-P04](records/2026-07/2026-07-26.md), [PX-20260728-P04](records/2026-07/2026-07-28.md), [PX-20260729-P04](records/2026-07/2026-07-29.md), [PX-20260814-P04](records/2026-08/2026-08-14.md), [PX-20260821-P04](records/2026-08/2026-08-21.md), [PX-20260824-P04](records/2026-08/2026-08-24.md), [PX-S-20260826-P04](specials/2026-08/2026-08-26-openai-hugging-face-final-incident-report.md)
-- 时间窗口: 2026-07-26, 2026-07-28, 2026-07-29, 2026-08-14, 2026-08-22, 2026-08-24, 2026-08-28
+- 支持记录: [PX-20260726-P04](records/2026-07/2026-07-26.md), [PX-20260728-P04](records/2026-07/2026-07-28.md), [PX-20260729-P04](records/2026-07/2026-07-29.md), [PX-20260814-P04](records/2026-08/2026-08-14.md), [PX-20260821-P04](records/2026-08/2026-08-21.md), [PX-20260824-P04](records/2026-08/2026-08-24.md), [PX-S-20260826-P04](specials/2026-08/2026-08-26-openai-hugging-face-final-incident-report.md), [PX-20260831-P04](records/2026-08/2026-08-31.md)
+- 时间窗口: 2026-07-26, 2026-07-28, 2026-07-29, 2026-08-14, 2026-08-22, 2026-08-24, 2026-08-28, 2026-08-31
 
 ### 发现
 
-在已记录的官方服务状态事件, OpenAI GPT-4o 非状态页模型部署 rollback, Atlassian Jira Cloud platform scopes 时间链, Google Chrome 第三方 Cookie 多阶段路线与 Hugging Face 安全事件跨发布者调查链中, 具有稳定对象身份与可排序时间时, 当前判断随同一对象的较新有效证据更新, 被替代状态保留为对应时间范围内的历史记录
+在已记录的官方服务状态事件, OpenAI GPT-4o 非状态页模型部署 rollback, Atlassian Jira Cloud platform scopes 时间链, Google Chrome 第三方 Cookie 多阶段路线, Hugging Face 安全事件跨发布者调查链与 OpenAI quantitative System Card correction 中, 具有稳定对象身份与可排序时间时, 当前判断随同一对象的较新有效证据更新, 被替代状态保留为对应时间范围内的历史记录
 
 常规 investigating, monitoring, resolved 更新链保持该边界
 
@@ -146,7 +146,11 @@ Google Chrome 第三方 Cookie 路线从 2021 至 2023 的 phase-out 计划, 更
 
 Hugging Face 安全事件在 2026-07-16 的 initial unknown, OpenAI 2026-07-21 的 preliminary attribution 与 2026-08-26 的 full technical incident report 形成新的三阶段链, final investigation 更新 current judgment 而不倒写前两个阶段
 
-七个正式支持记录跨七个执行窗口保持该边界
+OpenAI 2026-08-19 System Card correction 将 GPT-5.5 hard-negative protein binding prediction 的 pass@4 从先前误报的 0.4% 更新为 1.48%, 并明确旧值实际属于 pass@1, 因此 current metric judgment 更新而旧错误值继续保留为 correction history
+
+GPT-5.6 System Card 对同一 GPT-5.5 correction 显示 1.5%, 与 GPT-5.5 页面 1.48% 在一位小数展示下兼容, 当前不制造两个独立 capability results 或来源冲突
+
+八个正式支持记录跨八个执行窗口保持该边界
 
 ### 反例检查
 
@@ -169,17 +173,22 @@ Hugging Face 安全事件在 2026-07-16 的 initial unknown, OpenAI 2026-07-21 �
 - internal-only research model comparable in scale to GPT-5.6 Sol 不能直接改写为 GPT-5.6 Sol identity
 - incident response 与 upcoming Astra capabilities response 明确 separate, 不能把 Astra 并入该事件
 - OpenAI customer-data, functionality 与 availability 的无影响边界不能扩大为所有第三方数据均无影响
+- GPT-5.5 旧 0.4% 不能继续作为 current pass@4 value, 也不能被物理删除为从未发布
+- GPT-5.5 页面 1.48% 与 GPT-5.6 页面 1.5% 同属 OpenAI 且可由 rounding precision 解释, 不能在缺少独立 rerun 时写成两个冲突结果
+- GPT-5.6 System Card 记录 GPT-5.5 correction 不会把该 corrected metric 改归属为 GPT-5.6
+- reporting correction 不能改写为 2026-08-19 model weights, training state 或 underlying capability jump
 
 ### 适用边界
 
-- 覆盖支持记录中的 OpenAI 与 GitHub 官方服务状态事件, OpenAI GPT-4o 在 ChatGPT 中的 2025-04-25 mainline update rollback, Atlassian Jira Cloud platform Forge 与 OAuth 2.0 3LO scopes 的多阶段迁移时间链, Google Chrome 第三方 Cookie 2021 至 2025 的公开路线更新, 以及 2026 年 Hugging Face 安全事件 initial, preliminary 与 final investigation 三阶段链
-- 依赖稳定对象身份, 可排序时间与可访问的替代关系或更新历史
+- 覆盖支持记录中的 OpenAI 与 GitHub 官方服务状态事件, OpenAI GPT-4o 在 ChatGPT 中的 2025-04-25 mainline update rollback, Atlassian Jira Cloud platform Forge 与 OAuth 2.0 3LO scopes 的多阶段迁移时间链, Google Chrome 第三方 Cookie 2021 至 2025 的公开路线更新, 2026 年 Hugging Face 安全事件 initial, preliminary 与 final investigation 三阶段链, 以及 GPT-5.5 hard-negative protein binding prediction quantitative System Card correction
+- 依赖稳定对象身份, 可排序时间与可访问的替代关系, correction history 或更新历史
 - GPT-4o 范围只覆盖本次 ChatGPT mainline update, 不自动扩展到 API, Voice, 图像模型或其他 GPT-4o 产品表面
 - Atlassian 范围只覆盖本次 Jira Cloud platform 相关 scope 迁移与当前 recommendation, 不自动扩展到 Jira Software, Confluence 或所有 Atlassian 产品
 - Chrome 范围只覆盖第三方 Cookie 支持路线与公开 user-choice 状态, 不自动扩展到 Privacy Sandbox 全部 API, Incognito tracking protections 或其他 Chrome 隐私功能
 - Hugging Face incident 范围只覆盖公开说明中可定位的调查阶段, incident identity, model identity qualifier 与公开 impact boundary, 不包含本轮未执行的安全复现
-- 正式 rollback, pause, documentation recommendation, 路线公告或 final report 不等于本轮取得生产 runtime 样本
-- 不证明状态页或事故说明与每个受影响主体的实际体验完全一致
+- GPT-5.5 quantitative correction 范围只覆盖指定 hard-negative protein binding prediction evaluation 的 pass@4/pass@1 metric identity 与当前公开 display precision, 不推广为 biology capability 总体变化, GPT-5.6 metric, underlying weights change 或本轮 evaluation rerun
+- 正式 rollback, pause, documentation recommendation, 路线公告, final report 或 reporting correction 不等于本轮取得生产或 evaluation runtime 样本
+- 不证明状态页, 事故说明或 System Card 与每个受影响主体或隐藏原始结果完全一致
 - 不推广到缺少替代关系的普通文档, 所有任务或所有 Agent
 
 ### 复验与失效条件
@@ -188,9 +197,11 @@ Hugging Face 安全事件在 2026-07-16 的 initial unknown, OpenAI 2026-07-21 �
 
 Hugging Face 事件此前明确等待的 final investigation 已于 2026-08-28 完成新窗口复验
 
-若继续 P-04, 优先等待现有高质量对象出现新的明确 correction 或 material current-state update, 或选择具有真正双向 on/off 切换且能直接核验当前运行终态的新对象, 不重复同一 final report, 一般 deprecation, 单次 rollback, 相同 scope 迁移或同一 Cookie 时间链
+2026-08-31 quantitative System Card explicit correction 已扩展 N-03 到 reporting correction 与 display-precision boundary
 
-如果较新有效证据没有更新当前判断, 被替代状态被物理删除, 当前文档被倒写成历史原始状态, 或缺少身份与时间条件时仍形成确定归属, 保留本记录并标记失效日期, 推翻证据和影响范围
+若继续 P-04, 优先新的独立发布者 quantitative correction, 同一高质量对象后续 material correction, 或选择具有真正双向 on/off 切换且能直接核验当前运行终态的新对象, 不重复本次 OpenAI System Card correction, 同一 final report, 一般 deprecation, 单次 rollback, 相同 scope 迁移或同一 Cookie 时间链
+
+如果较新有效证据没有更新当前判断, 被替代状态被物理删除, current display precision 被伪造成独立冲突结果, reporting correction 被扩大为 capability jump, 当前文档被倒写成历史原始状态, 或缺少身份与时间条件时仍形成确定归属, 保留本记录并标记失效日期, 推翻证据和影响范围
 
 ## N-04 长上下文不替代直接支持与对象身份
 
