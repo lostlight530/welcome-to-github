@@ -57,10 +57,12 @@ Coverage Ratio: 100%
 本轮独立外部复核:
 - MCP 2026-07-28 无状态核心规范获得了 Google Cloud 和 Cloudflare 的官方支持验证。
 - MCP 与 A2A 协议边界分离，Auth0 和 Redis 确认两者的区分应用。
+- 验证成本错误（VCEs）概念与实际自动化部署间的差距验证（目前只作为理论概念）。
 
 WEEKLY_SIGNAL_SYNTHESIS
 重复信号:
 - MCP 2026-07-28 规范推行 Stateless Core 和 Multi Round-Trip Requests (MRTR)，去除状态会话握手依赖。
+- 验证成本（Verification Cost / VCEs）作为学术维度的补充，并未得到产业界的通用工具实施。
 新信号:
 - Google Gemini API 新增 Grounding with Google Maps 功能。
 - A2A (Agent-to-Agent) 作为高层协同协议与底层 MCP 工具协议进一步解耦分离。
@@ -72,7 +74,8 @@ WEEKLY_SIGNAL_SYNTHESIS
 过期信号: 无。
 输入缺失影响的信号: 无。
 仍不确定信号:
-- 第三方 MCP 鉴权标准（Header Token 格式）的通用化进度。
+- 第三方 MCP 鉴权标准（Header Token 格式及一致性验证）的通用化进度。
+- A2A 标准能否持续成为所有跨代理通信无可争议的唯一标准。
 
 DECISION_SET
 
@@ -106,6 +109,21 @@ Validity Window: 3 months
 Invalidation Trigger: MCP 扩展了原生跨信任委托的 Agent 通信机制。
 Host Repository Change: NO
 
+Decision ID: DEC-2026W34-03
+Decision: 保持验证成本错误（VCEs）仅作为概念分析工具，不将其硬性升级为自动化评测指标, 绝不修改宿主仓库代码
+Decision Type: CONTINUE_WATCH
+Evidence: arXiv 预印本关于 VCEs 的定义和局限性说明。
+Independent Evidence: https://arxiv.org/html/2608.08709v1 中明确承认其实际评测缺乏通用基准。
+Repository Record Comparison: 继承并响应了 W33 (DEC-2026W33-03) 对于保守推进新学术概念的战略决定。
+Counterevidence: 工业界（如 LangChain 等）并未公布针对 VCEs 的现成基准测试库。
+Expected Value: 防止在理论概念落地前盲目重构评估基线，避免无谓的测试开发开销。
+Risk: 忽视验证成本导致的部署后人类监督过载。
+Why Now: 相关讨论处于早期理论形成期，未见通用工具集支持。
+Confidence: HIGH
+Validity Window: 6 months
+Invalidation Trigger: 出现公认的工业级 VCE 自动化评估库。
+Host Repository Change: NO
+
 DO_NOT_PURSUE
 方向: 依据 Google Maps MCP Server 或是 Gemini Map Grounding 修改宿主仓库的系统功能或鉴权机制。
 原因: 该事件为个别能力发布与开源适配，不代表宿主需求。
@@ -114,7 +132,7 @@ DO_NOT_PURSUE
 HANDOFF_TO_H4
 - H4 应将 DEC-2026W34-01 作为 MCP 无状态化迁移的行业实践观察标准。
 - H4 应将 DEC-2026W34-02 作为跨域 Agent 协作协议 (A2A 与 MCP) 拓扑和职责边界研究的观察维度。
-- 保留对 VCE (验证成本) 理论发展的被动监控。
+- H4 应将 DEC-2026W34-03 记录作为执行预算限制和隔离边界策略的基础理论保护。
 
 BOUNDARY_CHECK
 确认未越界：已确认。不包含对宿主仓库执行任何代码或配置更改的指导。
