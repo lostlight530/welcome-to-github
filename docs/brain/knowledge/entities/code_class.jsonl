@@ -13,4 +13,5 @@
 {"desc":"Python Class","id":"file_tests_test_harvester_py__class_HarvesterContracts","name":"HarvesterContracts","type":"code_class"}
 {"desc":"Python Class","id":"file_tests_test_harvester_py__class_RecordingCortex","name":"RecordingCortex","type":"code_class"}
 {"desc":"Python Class","id":"file_tests_test_harvester_readability_py__class_ReadabilityContracts","name":"ReadabilityContracts","type":"code_class"}
+{"desc":"Python Class","id":"file_tests_test_lifecycle_guard_py__class_LifecycleGuardTests","name":"LifecycleGuardTests","type":"code_class"}
 {"desc":"Python Class","id":"file_tests_test_report_hygiene_full_output_py__class_ReportHygieneFullOutputTests","name":"ReportHygieneFullOutputTests","type":"code_class"}

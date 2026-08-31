@@ -131,6 +131,19 @@
 {"desc":"","dst":"file_docs_brain_harvester_py__func__validated_state","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func_fetch_github_data","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func_validate_profiles","relation":"defines","src":"file_docs_brain_harvester_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__canonical","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__command_finalize","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__command_manifest","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__command_world_line","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__iso","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__utc","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_build_manifest","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_changed_paths","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_classify_delta","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_logical_cycle_time","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_main","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_snapshot_metrics","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_world_line_outcome","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"file_docs_brain_mcp_demo_py"}
 {"desc":"","dst":"file_docs_brain_nexus_mcp_py__class_MCPServer","relation":"defines","src":"file_docs_brain_nexus_mcp_py"}
 {"desc":"","dst":"file_docs_brain_nexus_mcp_py__func___init__","relation":"defines","src":"file_docs_brain_nexus_mcp_py"}
@@ -621,6 +634,7 @@
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_missing_state_requires_explicit_bootstrap","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_nexus_resolves_relative_module_paths","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_noise_normalization","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_normalized_noise_does_not_mutate_persisted_provenance","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_normalized_noise_only_advances_observed_provenance","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_orphan_suturing_creates_its_target_entity","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_orphan_suturing_propagates_write_failure","relation":"defines","src":"file_tests_test_harvester_py"}
@@ -639,6 +653,7 @@
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_state_rejects_non_mapping_repository_records","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_structural_array_index_is_not_treated_as_a_version","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_unchanged_blob_advances_observed_commit_and_tree","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_unchanged_blob_does_not_mutate_persisted_document_state","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"func_test_evolver_keeps_input_contract_out_of_monthly_archive","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"func_test_external_links_are_not_selected","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"func_test_noise_normalization","relation":"defines","src":"file_tests_test_harvester_py"}
@@ -656,6 +671,10 @@
 {"desc":"","dst":"func_test_jsonl_maintenance_recurses_and_deduplicates","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"func_test_snapshot_is_human_readable_and_traceable","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"func_test_truncated_tree_is_a_hard_failure","relation":"defines","src":"file_tests_test_harvester_readability_py"}
+{"desc":"","dst":"file_tests_test_lifecycle_guard_py__class_LifecycleGuardTests","relation":"defines","src":"file_tests_test_lifecycle_guard_py"}
+{"desc":"","dst":"file_tests_test_lifecycle_guard_py__func_test_manifest_is_deterministic_for_the_same_inputs","relation":"defines","src":"file_tests_test_lifecycle_guard_py"}
+{"desc":"","dst":"file_tests_test_lifecycle_guard_py__func_test_scheduled_cycle_uses_nominal_slot_not_delayed_start","relation":"defines","src":"file_tests_test_lifecycle_guard_py"}
+{"desc":"","dst":"file_tests_test_lifecycle_guard_py__func_test_world_line_change_is_a_green_no_apply_outcome","relation":"defines","src":"file_tests_test_lifecycle_guard_py"}
 {"desc":"","dst":"file_tests_test_report_hygiene_full_output_py__class_ReportHygieneFullOutputTests","relation":"defines","src":"file_tests_test_report_hygiene_full_output_py"}
 {"desc":"","dst":"file_tests_test_report_hygiene_full_output_py__func_test_rejects_chinese_full_stop_inside_details","relation":"defines","src":"file_tests_test_report_hygiene_full_output_py"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func__api"}

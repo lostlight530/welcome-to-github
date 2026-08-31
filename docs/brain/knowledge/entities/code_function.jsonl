@@ -64,6 +64,19 @@
 {"desc":"Python Function","id":"file_docs_brain_harvester_py__func__validated_state","name":"_validated_state","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_harvester_py__func_fetch_github_data","name":"fetch_github_data","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_harvester_py__func_validate_profiles","name":"validate_profiles","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__canonical","name":"_canonical","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__command_finalize","name":"_command_finalize","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__command_manifest","name":"_command_manifest","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__command_world_line","name":"_command_world_line","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__iso","name":"_iso","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__utc","name":"_utc","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func_build_manifest","name":"build_manifest","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func_changed_paths","name":"changed_paths","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func_classify_delta","name":"classify_delta","type":"code_function"}
+{"desc":"Return the nominal cycle slot instead of the delayed runner start time.","id":"file_docs_brain_lifecycle_guard_py__func_logical_cycle_time","name":"logical_cycle_time","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func_main","name":"main","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func_snapshot_metrics","name":"snapshot_metrics","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func_world_line_outcome","name":"world_line_outcome","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_nexus_mcp_py__func___init__","name":"__init__","type":"code_function"}
 {"desc":"[Phase V] Initialize the Cold-Blooded Trust Ledger","id":"file_docs_brain_nexus_mcp_py__func__init_trust_ledger","name":"_init_trust_ledger","type":"code_function"}
 {"desc":"[Phase V] Punish Hallucinations","id":"file_docs_brain_nexus_mcp_py__func__slash_trust","name":"_slash_trust","type":"code_function"}
@@ -129,6 +142,7 @@
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_missing_state_requires_explicit_bootstrap","name":"test_missing_state_requires_explicit_bootstrap","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_nexus_resolves_relative_module_paths","name":"test_nexus_resolves_relative_module_paths","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_noise_normalization","name":"test_noise_normalization","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_normalized_noise_does_not_mutate_persisted_provenance","name":"test_normalized_noise_does_not_mutate_persisted_provenance","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_normalized_noise_only_advances_observed_provenance","name":"test_normalized_noise_only_advances_observed_provenance","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_orphan_suturing_creates_its_target_entity","name":"test_orphan_suturing_creates_its_target_entity","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_orphan_suturing_propagates_write_failure","name":"test_orphan_suturing_propagates_write_failure","type":"code_function"}
@@ -147,6 +161,7 @@
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_state_rejects_non_mapping_repository_records","name":"test_state_rejects_non_mapping_repository_records","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_structural_array_index_is_not_treated_as_a_version","name":"test_structural_array_index_is_not_treated_as_a_version","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_unchanged_blob_advances_observed_commit_and_tree","name":"test_unchanged_blob_advances_observed_commit_and_tree","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_unchanged_blob_does_not_mutate_persisted_document_state","name":"test_unchanged_blob_does_not_mutate_persisted_document_state","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_response","name":"response","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_canonicalization_normalizes_description_alias","name":"test_canonicalization_normalizes_description_alias","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_canonicalization_removes_semantic_duplicates_and_dangling_relations","name":"test_canonicalization_removes_semantic_duplicates_and_dangling_relations","type":"code_function"}
@@ -155,6 +170,9 @@
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_pruning_excluded_sources_rebuilds_only_active_ledger","name":"test_pruning_excluded_sources_rebuilds_only_active_ledger","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_snapshot_is_human_readable_and_traceable","name":"test_snapshot_is_human_readable_and_traceable","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_truncated_tree_is_a_hard_failure","name":"test_truncated_tree_is_a_hard_failure","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_lifecycle_guard_py__func_test_manifest_is_deterministic_for_the_same_inputs","name":"test_manifest_is_deterministic_for_the_same_inputs","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_lifecycle_guard_py__func_test_scheduled_cycle_uses_nominal_slot_not_delayed_start","name":"test_scheduled_cycle_uses_nominal_slot_not_delayed_start","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_lifecycle_guard_py__func_test_world_line_change_is_a_green_no_apply_outcome","name":"test_world_line_change_is_a_green_no_apply_outcome","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_report_hygiene_full_output_py__func_test_rejects_chinese_full_stop_inside_details","name":"test_rejects_chinese_full_stop_inside_details","type":"code_function"}
 {"desc":"Python Function","id":"func__api","name":"_api","type":"code_function"}
 {"desc":"Python Function","id":"func__archive_stale","name":"_archive_stale","type":"code_function"}
