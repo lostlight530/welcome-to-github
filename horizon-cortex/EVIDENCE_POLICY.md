@@ -267,3 +267,23 @@ Substitutes and reconstructions use their real agent identity. A reconstruction 
 `CURRENT_PATH_PRESENT != ORIGINAL_EXECUTION_SUCCESS`.
 
 `EXTERNAL_PROTOCOL_FACT != HOST_ADOPTION_REQUIREMENT`.
+
+## 17. August closure and forward contract
+
+The 2026-08-01 through 2026-08-31 Daily surface contains 31 H1/H2 pairs.
+
+The files from 2026-08-29 through 2026-08-31 were generated after the active provenance contract was defined but do not contain its fields. They remain immutable point-in-time records and are calibrated by `2026-08-month-end-reconciliation.md`.
+
+W35 contains no H3. Its H4 is a retained fail-closed execution record with `DECISION_INPUT_MISSING`, `BLOCKED`, and `NO_ACTIONABLE_DECISION`. A missing H3 is acceptable only under that complete fail-closed state.
+
+Beginning with logical date 2026-09-01 and logical week 2026-W36, the checker requires the active contract even when a generator omits `Record Provenance` entirely.
+
+Monthly H5/H6 records require Daily and Weekly coverage matrices, inherited and independent evidence separation, preserved missing inputs, claim calibration, execution and path state separation, and real record provenance.
+
+H5 closes evidence review only after every calendar-day H1/H2 pair exists. H6 must name the same-month H5 and may retain only bounded doctrine that survived H5 calibration.
+
+`DAILY_COMPLETE != WEEKLY_DECISION_COMPLETE`.
+
+`WEEKLY_CLOSED != MONTHLY_CLOSED`.
+
+`MONTHLY_COMPRESSION != NEW_INDEPENDENT_EVIDENCE`.

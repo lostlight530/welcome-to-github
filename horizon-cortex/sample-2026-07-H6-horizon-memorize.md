@@ -1,152 +1,54 @@
-H6 Monthly Horizon Memorize
+# H6 Monthly Horizon Memorize Template
+
 CORTEX_RUN_HEADER
-
 Cortex: horizon-cortex
-
 Host Repository: welcome-to-github
-
 Task ID: H6
-
 Cadence: Monthly
-
 Loop Stage: Memorize
-
-Run Month: 2026-07
-
-Agent: Jules
-
-Knowledge Source: H5 reflection + Bootstrap H1-H4 + External Web + horizon-cortex local files
-
-Repository Inspection: NO
-
-GitHub Actions Inspection: NO
-
+Run Month: YYYY-MM
+Month Closure Status: CLOSED
+Agent: ACTUAL_AGENT
+Record Provenance: JULES_NATIVE_OR_AUTHORIZED_SUBSTITUTE
+Original Execution Status: ACTUAL_EXECUTION_STATE
+Current Path Status: CURRENT_DELIVERY_STATE
+Network Status: ACTUAL_NETWORK_STATE
 Write Scope: horizon-cortex only
-
 Boundary Violation: NO
 
 INPUT_RECORD
 
-Local Files Read:
+Name the same-month H5 file.
 
-horizon-cortex/2026-07-H5-signal-reflect.md
+## Daily Coverage Matrix
 
-horizon-cortex/2026-07-01-H1-signal-observe.md
+Reference H5 coverage without recounting Daily files as independent evidence.
 
-horizon-cortex/2026-07-01-H2-horizon-orient.md
+## Weekly Coverage Matrix
 
-horizon-cortex/2026-W27-H3-position-decide.md
+Preserve blocked and missing weekly states.
 
-horizon-cortex/2026-W27-H4-narrative-act.md
+## Inherited Evidence
 
-External Confirmation Topics:
+Identify every retained item as inherited unless new evidence is actually added.
 
-Jules scheduled tasks
+## Independent Evidence Added
 
-Google Labs experiment and feedback surface
+Use `NONE` when H6 only compresses H5.
 
-Maps Grounding Lite MCP and Resolution API
+## Missing Inputs Preserved
 
-Microsoft Copilot Tasks
+Do not convert current file presence into historical success.
 
-OIN 2 governance expansion
+## Claim Calibration
+
+Retain only bounded, falsifiable doctrine.
 
 DURABLE_MEMORY
 
-Memory 1
-
-Memory: horizon-cortex exists to track external agent execution signals through web-grounded periodic files
-
-Evidence: Jules scheduled task docs and Microsoft Copilot Tasks official positioning
-
-Why It Survived Reflection: Directly tied to recurring agent execution
-
-How Future Jules Should Use It: Future H1 and H2 should prioritize execution-related signals over general AI news
-
-Memory 2
-
-Memory: MCP and grounding tool surfaces are strategic watchlines, but should not be treated as complete execution layers without evidence
-
-Evidence: Maps Grounding Lite MCP tools and Resolution API docs
-
-Why It Survived Reflection: The tool surface is real, but roadmap inference must stay cautious
-
-How Future Jules Should Use It: Track capabilities, quotas, tools, composition patterns, and official changes
-
-Memory 3
-
-Memory: Google Labs is a valid external AI experiment ecosystem source, but private status must not be inferred from public pages
-
-Evidence: Google Labs official page
-
-Why It Survived Reflection: Strong ecosystem relevance, but identity claims require separate private evidence
-
-How Future Jules Should Use It: Use Labs as product-signal source, not personal-certification source
-
-Memory 4
-
-Memory: OIN 2 belongs in monthly governance context, not daily execution radar
-
-Evidence: OIN 2 FAQ and Table 13 expansion
-
-Why It Survived Reflection: Governance matters, but daily signal priority should stay focused
-
-How Future Jules Should Use It: Use for monthly open-source infrastructure positioning only
-
 EXPIRING_MEMORY
-
-Expiring 1
-
-Memory: All AI product updates are equally important
-
-Reason: Too broad, creates signal noise
-
-Expiring 2
-
-Memory: Public docs can prove private access or personal recognition
-
-Reason: Unsupported, must remain private-evidence dependent
 
 NEXT_MONTH_BASELINE
 
-Priority Observe:
-
-scheduled agent execution
-
-MCP and tool orchestration
-
-AI product feedback loops
-
-open-source governance only as monthly context
-
-Avoid:
-
-host repository maintenance
-
-GitHub Actions inspection
-
-Nexus memory continuation
-
-unsupported personal claims
-
-2026-02_TO_2026-06_BOOTSTRAP_LINE
-
-2026-02: answer-to-action shift becomes first historical signal
-
-2026-03: preview and early-access pathways become ecosystem pattern
-
-2026-04: MCP becomes agent-tool execution watchline
-
-2026-05: Google Labs multi-product AI surface becomes external observation map
-
-2026-06: Maps Grounding Lite and OIN 2 strengthen execution and governance context
-
 BOUNDARY_CHECK
-
-Repository Inspection: NO
-
-GitHub Actions Inspection: NO
-
-Files Outside horizon-cortex Written: NO
-
 Boundary Violation: NO
