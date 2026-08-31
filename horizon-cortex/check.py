@@ -99,6 +99,32 @@ WEEKLY_CONTRACT_FIELDS = (
     "Historical Execution State",
     "Current Delivery State",
 )
+MONTHLY_CONTRACT_FIELDS = (
+    "Daily Coverage Matrix",
+    "Weekly Coverage Matrix",
+    "Inherited Evidence",
+    "Independent Evidence Added",
+    "Missing Inputs Preserved",
+    "Claim Calibration",
+    "Original Execution Status",
+    "Current Path Status",
+    "Record Provenance",
+)
+ACTIVE_DAILY_CUTOFF = "2026-09-01"
+ACTIVE_WEEKLY_CUTOFF = "2026-W36"
+ACTIVE_MONTHLY_CUTOFF = "2026-08"
+VALIDATED_DAILY_FLOOR = "2026-08-01"
+VALIDATED_WEEKLY_FLOOR = "2026-W31"
+VALIDATED_MONTHLY_FLOOR = "2026-08"
+RECONCILED_LEGACY_CONTRACT_FILES = {
+    "2026-08-29-H1-signal-observe.md",
+    "2026-08-29-H2-horizon-orient.md",
+    "2026-08-30-H1-signal-observe.md",
+    "2026-08-30-H2-horizon-orient.md",
+    "2026-08-31-H1-signal-observe.md",
+    "2026-08-31-H2-horizon-orient.md",
+    "2026-W35-H4-narrative-act.md",
+}
 LEGACY_COMMON_EXCEPTIONS = {
     "2026-W31-H3-position-decide.md",
     "2026-W31-H4-narrative-act.md",
@@ -124,6 +150,24 @@ def iso_week_window(week: str) -> tuple[date, date]:
     year_text, week_text = week.split("-W")
     start = date.fromisocalendar(int(year_text), int(week_text), 1)
     return start, start + timedelta(days=6)
+
+
+def active_contract_required(path: Path, task: str, identity: str) -> bool:
+    if path.name in RECONCILED_LEGACY_CONTRACT_FILES:
+        return False
+    if task in {"H1", "H2"}:
+        return identity >= ACTIVE_DAILY_CUTOFF
+    if task in {"H3", "H4"}:
+        return identity >= ACTIVE_WEEKLY_CUTOFF
+    return identity >= ACTIVE_MONTHLY_CUTOFF
+
+
+def task_validation_required(task: str, identity: str) -> bool:
+    if task in {"H1", "H2"}:
+        return identity >= VALIDATED_DAILY_FLOOR
+    if task in {"H3", "H4"}:
+        return identity >= VALIDATED_WEEKLY_FLOOR
+    return identity >= VALIDATED_MONTHLY_FLOOR
 
 
 def validate_common(path: Path, task: str, identity: str, text: str) -> list[str]:
@@ -169,12 +213,19 @@ def validate_common(path: Path, task: str, identity: str, text: str) -> list[str
         errors.append(f"{path.name}: Boundary Violation is not NO/NONE")
 
     provenance = values.get("Record Provenance")
+    if active_contract_required(path, task, identity) and not provenance:
+        errors.append(f"{path.name}: active record lacks Record Provenance")
     if provenance:
         if provenance not in PROVENANCE_VALUES:
             errors.append(f"{path.name}: invalid Record Provenance {provenance!r}")
         if values.get("Agent") == "Jules" and provenance != "JULES_NATIVE":
             errors.append(f"{path.name}: substitute or reconstruction cannot claim Agent Jules")
-        required = DAILY_CONTRACT_FIELDS if task in {"H1", "H2"} else WEEKLY_CONTRACT_FIELDS
+        if task in {"H1", "H2"}:
+            required = DAILY_CONTRACT_FIELDS
+        elif task in {"H3", "H4"}:
+            required = WEEKLY_CONTRACT_FIELDS
+        else:
+            required = MONTHLY_CONTRACT_FIELDS
         for field in required:
             if field not in text:
                 errors.append(f"{path.name}: provenance record lacks {field}")
@@ -232,7 +283,16 @@ def validate_h4(path: Path, identity: str, text: str) -> list[str]:
 
     h3 = HORIZON / f"{identity}-H3-position-decide.md"
     if not h3.exists():
-        errors.append(f"{path.name}: same-week H3 input is missing")
+        values = fields(text)
+        fail_closed = (
+            values.get("Decision Input Status") == "DECISION_INPUT_MISSING"
+            and values.get("Task Status") == "BLOCKED"
+            and "H3 状态: INPUT_MISSING" in text
+            and "Action ID: NO_ACTIONABLE_DECISION" in text
+            and "Source Decision ID: NO_ACTIONABLE_DECISION" in text
+        )
+        if not fail_closed:
+            errors.append(f"{path.name}: same-week H3 input is missing without a strict fail-closed state")
         return errors
 
     h3_text = h3.read_text(encoding="utf-8")
@@ -249,6 +309,34 @@ def validate_h4(path: Path, identity: str, text: str) -> list[str]:
     if unknown:
         errors.append(f"{path.name}: actions reference unknown H3 decisions {unknown}")
     return errors
+
+
+def validate_h5(path: Path, identity: str, text: str) -> list[str]:
+    errors: list[str] = []
+    values = fields(text)
+    if values.get("Run Month") != identity:
+        errors.append(f"{path.name}: Run Month does not match {identity}")
+    if values.get("Month Closure Status") != "CLOSED":
+        errors.append(f"{path.name}: Month Closure Status must be CLOSED")
+    expected_days = 31 if identity.endswith(("-01", "-03", "-05", "-07", "-08", "-10", "-12")) else 30
+    if identity.endswith("-02"):
+        year = int(identity[:4])
+        expected_days = 29 if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0) else 28
+    for day in range(1, expected_days + 1):
+        stamp = f"{identity}-{day:02d}"
+        for task, suffix in (("H1", "signal-observe"), ("H2", "horizon-orient")):
+            if not (HORIZON / f"{stamp}-{task}-{suffix}.md").exists():
+                errors.append(f"{path.name}: missing monthly input {stamp}-{task}-{suffix}.md")
+    return errors
+
+
+def validate_h6(path: Path, identity: str, text: str) -> list[str]:
+    h5 = HORIZON / f"{identity}-H5-signal-reflect.md"
+    if not h5.exists():
+        return [f"{path.name}: same-month H5 input is missing"]
+    if h5.name not in text:
+        return [f"{path.name}: does not name the same-month H5 input"]
+    return []
 
 
 def validate_path(path: Path) -> list[str]:
@@ -269,6 +357,8 @@ def validate_path(path: Path) -> list[str]:
 
     task, identity = classified
     text = path.read_text(encoding="utf-8")
+    if not task_validation_required(task, identity):
+        return []
     errors = validate_common(path, task, identity, text)
     if task == "H1":
         errors.extend(validate_h1(path, text))
@@ -278,6 +368,10 @@ def validate_path(path: Path) -> list[str]:
         errors.extend(validate_h3(path, text))
     elif task == "H4":
         errors.extend(validate_h4(path, identity, text))
+    elif task == "H5":
+        errors.extend(validate_h5(path, identity, text))
+    elif task == "H6":
+        errors.extend(validate_h6(path, identity, text))
     return errors
 
 
