@@ -413,22 +413,10 @@ class Harvester:
                 for field in ("commit_sha", "tree_sha", "blob_sha")
             )
             if observed_blob_sha == blob_sha and provenance_complete:
-                repo_state["documents"][path] = {
-                    **previous,
-                    "observed_blob_sha": blob_sha,
-                    "observed_commit_sha": commit_sha,
-                    "observed_tree_sha": tree_sha,
-                }
                 continue
             text = self._blob_text(repo, blob_sha)
             digest = hashlib.sha256(self._normalized(text).encode()).hexdigest()
             if previous.get("content_hash") == digest and provenance_complete:
-                repo_state["documents"][path] = {
-                    **previous,
-                    "observed_blob_sha": blob_sha,
-                    "observed_commit_sha": commit_sha,
-                    "observed_tree_sha": tree_sha,
-                }
                 continue
             entity = previous.get("entity_id") or (
                 f"external_doc_{namespace}_"
@@ -496,6 +484,7 @@ class Harvester:
                 "output": relative,
             }
             changed.append(relative)
+        removed = False
         for path in sorted(set(repo_state["documents"]) - selected_paths):
             previous = repo_state["documents"][path]
             output = previous.get("output")
@@ -512,7 +501,9 @@ class Harvester:
                     )
                     self._move_to_archive(snapshot, destination)
             del repo_state["documents"][path]
-        repo_state["last_checked_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+            removed = True
+        if changed or removed:
+            repo_state["last_checked_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
         return changed
     def fetch_github_data(self):
         self.validate_profiles()

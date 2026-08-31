@@ -1,143 +1,181 @@
 name: NEXUS CORTEX Life Cycle
+
 on:
   schedule:
     - cron: '0 22 * * *'
   push:
     paths: ['.github/workflows/nexus-life-cycle.yml', 'docs/brain/**', 'src/**', 'tests/**']
+  pull_request:
+    paths: ['.github/workflows/nexus-life-cycle.yml', 'docs/brain/**', 'src/**', 'tests/**']
   workflow_dispatch:
+    inputs:
+      apply:
+        description: Apply a verified lifecycle candidate to main
+        required: false
+        default: false
+        type: boolean
+
 concurrency:
   group: nexus-life-cycle-${{ github.repository }}-${{ github.ref }}
   cancel-in-progress: false
+
 env:
   GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
   PYTHONDONTWRITEBYTECODE: '1'
   PYTHONUTF8: '1'
+
 jobs:
-  consciousness:
-    name: Stream of Consciousness
+  validate:
+    name: Read-only lifecycle validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout reality
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          clean: true
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.10'
+      - name: Validate runtime contracts
+        run: |
+          python -c "from pathlib import Path; files=sorted(Path('docs/brain').glob('*.py')) + sorted(Path('tests').glob('*.py')); [compile(path.read_bytes(), str(path), 'exec') for path in files]; print(f'compiled {len(files)} lifecycle Python files')"
+          python -m unittest discover -s tests -p 'test*.py'
+      - name: Validate active ledgers without rewriting
+        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import maintain_jsonl; result=maintain_jsonl('docs/brain/knowledge'); print(result); assert result['invalid']==0"
+      - name: Verify read-only boundary
+        run: |
+          test -z "$(git status --porcelain)"
+          git diff --check
+
+  apply:
+    name: Scheduled candidate and guarded apply
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'schedule' ||
+      (github.event_name == 'workflow_dispatch' && inputs.apply == true))
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
       contents: write
     steps:
-      - name: Checkout Reality
-        uses: actions/checkout@v5
+      - name: Checkout base world-line
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
         with:
           clean: true
           fetch-depth: 0
+          ref: main
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
         with:
           python-version: '3.10'
-      - name: Validate Runtime Contracts
+      - name: Record base world-line
+        id: base
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Validate runtime contracts
         run: |
           python -c "from pathlib import Path; files=sorted(Path('docs/brain').glob('*.py')) + sorted(Path('tests').glob('*.py')); [compile(path.read_bytes(), str(path), 'exec') for path in files]; print(f'compiled {len(files)} lifecycle Python files')"
           python -m unittest discover -s tests -p 'test*.py'
-      - name: Validate Existing Ledgers
-        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import maintain_jsonl; print(maintain_jsonl('docs/brain/knowledge'))"
-      - name: Harvest Approved External Documents
+      - name: Validate existing ledgers without rewriting
+        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import maintain_jsonl; result=maintain_jsonl('docs/brain/knowledge'); print(result); assert result['invalid']==0"
+      - name: Harvest approved external documents
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python docs/brain/nexus.py harvest
-      - name: Project External Evidence
+      - name: Project external evidence
         run: python docs/brain/nexus.py project
-      - name: Canonicalize Active Ledgers
-        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; print(canonicalize_ledger('docs/brain/knowledge'))"
-      - name: Remove Protected Sources from Active Graph
-        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import prune_generated_paths; print(prune_generated_paths('docs/brain/knowledge', ('horizon-cortex', 'parallax')))"
-      - name: Rebuild Memory
-        run: python docs/brain/nexus.py rebuild
-      - name: Ingest Self-Codebase
-        run: python docs/brain/nexus.py ingest
-      - name: Re-prune Protected Sources
-        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import prune_generated_paths; print(prune_generated_paths('docs/brain/knowledge', ('horizon-cortex', 'parallax')))"
-      - name: Validate Canonical Graph
-        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; repaired=canonicalize_ledger('docs/brain/knowledge'); clean=canonicalize_ledger('docs/brain/knowledge'); print(repaired); print(clean); assert clean['duplicate_entities']==0 and clean['duplicate_relations']==0 and clean['dangling_relations']==0"
-      - name: Rebuild Validated Memory
-        run: python docs/brain/nexus.py rebuild
-      - name: Deep Ponder
-        run: python docs/brain/nexus.py ponder
-      - name: Run Evolution Cycle
-        run: python docs/brain/nexus.py evolve
-      - name: Render Human-Readable Reports
-        run: python docs/brain/report_hygiene.py welcome docs/brain/memories
-      - name: Validate Post-Evolution Graph
-        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; repaired=canonicalize_ledger('docs/brain/knowledge'); clean=canonicalize_ledger('docs/brain/knowledge'); print(repaired); print(clean); assert clean['duplicate_entities']==0 and clean['duplicate_relations']==0 and clean['dangling_relations']==0"
-      - name: Rebuild Post-Evolution Memory
-        run: python docs/brain/nexus.py rebuild
-      - name: Final Verification
-        run: python -m unittest discover -s tests -p 'test*.py'
-      - name: Verify Lifecycle Write Boundary
+      - name: Canonicalize and isolate active graph
         run: |
-          python - <<'PY'
-          import subprocess
-
-          allowed = (
-              "docs/brain/memories/",
-              "docs/brain/inputs/",
-              "docs/brain/knowledge/",
-          )
-          commands = (
-              ("git", "diff", "--name-only"),
-              ("git", "ls-files", "--others", "--exclude-standard"),
-          )
-          changed = {
-              path
-              for command in commands
-              for path in subprocess.check_output(command, text=True).splitlines()
-              if path
-          }
-          unexpected = sorted(path for path in changed if not path.startswith(allowed))
-          if unexpected:
-              raise SystemExit(f"unexpected lifecycle paths: {unexpected}")
-          PY
-          git diff --check
-      - name: Sync World-Line
-        if: github.ref == 'refs/heads/main'
+          python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; print(canonicalize_ledger('docs/brain/knowledge'))"
+          python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import prune_generated_paths; print(prune_generated_paths('docs/brain/knowledge', ('horizon-cortex', 'parallax')))"
+      - name: Rebuild and ingest memory
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          core_changes="$(git diff --name-only "$GITHUB_SHA..origin/main" | grep -Ev '^(docs/brain/(memories|inputs|knowledge)/|horizon-cortex/|parallax/|src/|index\.html$)' || true)"
-          if [ -n "$core_changes" ]; then
-            echo "Core files changed on main while this run was active:"
-            echo "$core_changes"
-            exit 1
-          fi
-          git pull --rebase --autostash origin main
-      - name: Verify Rebased World-Line
-        if: github.ref == 'refs/heads/main'
+          python docs/brain/nexus.py rebuild
+          python docs/brain/nexus.py ingest
+          python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import prune_generated_paths; print(prune_generated_paths('docs/brain/knowledge', ('horizon-cortex', 'parallax')))"
+      - name: Validate canonical graph
         run: |
-          python -c "from pathlib import Path; files=sorted(Path('docs/brain').glob('*.py')) + sorted(Path('tests').glob('*.py')); [compile(path.read_bytes(), str(path), 'exec') for path in files]; print(f'compiled {len(files)} lifecycle Python files')"
-          python -m unittest discover -s tests -p 'test*.py'
           python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; repaired=canonicalize_ledger('docs/brain/knowledge'); clean=canonicalize_ledger('docs/brain/knowledge'); print(repaired); print(clean); assert clean['duplicate_entities']==0 and clean['duplicate_relations']==0 and clean['dangling_relations']==0"
+          python docs/brain/nexus.py rebuild
+      - name: Produce bounded lifecycle projections
+        run: |
+          python docs/brain/nexus.py ponder
+          python docs/brain/nexus.py evolve
+          python docs/brain/report_hygiene.py welcome docs/brain/memories
+      - name: Final graph and runtime verification
+        run: |
+          python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; repaired=canonicalize_ledger('docs/brain/knowledge'); clean=canonicalize_ledger('docs/brain/knowledge'); print(repaired); print(clean); assert clean['duplicate_entities']==0 and clean['duplicate_relations']==0 and clean['dangling_relations']==0"
+          python docs/brain/nexus.py rebuild
+          python -m unittest discover -s tests -p 'test*.py'
+      - name: Verify lifecycle write boundary
+        run: |
           python - <<'PY'
           import subprocess
-
-          allowed = (
-              "docs/brain/memories/",
-              "docs/brain/inputs/",
-              "docs/brain/knowledge/",
-          )
-          commands = (
-              ("git", "diff", "--name-only"),
-              ("git", "ls-files", "--others", "--exclude-standard"),
-          )
-          changed = {
-              path
-              for command in commands
-              for path in subprocess.check_output(command, text=True).splitlines()
-              if path
-          }
+          allowed = ("docs/brain/memories/", "docs/brain/inputs/", "docs/brain/knowledge/")
+          commands = (("git", "diff", "--name-only"), ("git", "ls-files", "--others", "--exclude-standard"))
+          changed = {path for command in commands for path in subprocess.check_output(command, text=True).splitlines() if path}
           unexpected = sorted(path for path in changed if not path.startswith(allowed))
           if unexpected:
               raise SystemExit(f"unexpected lifecycle paths: {unexpected}")
           PY
           git diff --check
-      - name: Commit Cognitive Changes
-        if: github.ref == 'refs/heads/main'
-        uses: stefanzweifel/git-auto-commit-action@v7
+      - name: Compare base world-line
+        id: world_line
+        env:
+          BASE_SHA: ${{ steps.base.outputs.sha }}
+        run: |
+          git fetch origin main
+          remote_sha="$(git rev-parse origin/main)"
+          python docs/brain/lifecycle_guard.py world-line --base-sha "$BASE_SHA" --remote-sha "$remote_sha"
+      - name: Build lifecycle manifest
+        id: manifest
+        env:
+          BASE_SHA: ${{ steps.base.outputs.sha }}
+        run: |
+          python docs/brain/lifecycle_guard.py manifest --repository "$GITHUB_REPOSITORY" --mode apply --base-sha "$BASE_SHA" --event-name "$GITHUB_EVENT_NAME" --output "$RUNNER_TEMP/lifecycle-manifest.json"
+      - name: Commit only a stable meaningful candidate
+        id: apply_candidate
+        env:
+          WORLD_LINE: ${{ steps.world_line.outputs.outcome }}
+          CANDIDATE_COUNT: ${{ steps.manifest.outputs.candidate_count }}
+        run: |
+          outcome="NO_MEANINGFUL_DELTA"
+          if [ "$WORLD_LINE" != "WORLD_LINE_STABLE" ]; then
+            outcome="CONFLICTED_WORLD_LINE_NO_APPLY"
+            echo "::warning::Main changed during this run. Candidate was not applied."
+          elif [ "$CANDIDATE_COUNT" != "0" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs/brain/memories docs/brain/inputs docs/brain/knowledge
+            if ! git diff --cached --quiet; then
+              git commit -m "lifecycle: apply verified cognitive delta [skip ci]"
+              if git push origin HEAD:main; then outcome="APPLIED"; else outcome="CONFLICTED_WORLD_LINE_NO_APPLY"; echo "::warning::Main advanced before push. Local candidate was not applied."; fi
+            fi
+          fi
+          echo "outcome=$outcome" >> "$GITHUB_OUTPUT"
+      - name: Finalize lifecycle manifest and summary
+        env:
+          APPLY_OUTCOME: ${{ steps.apply_candidate.outputs.outcome }}
+        run: |
+          python docs/brain/lifecycle_guard.py finalize --manifest "$RUNNER_TEMP/lifecycle-manifest.json" --outcome "$APPLY_OUTCOME"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          manifest = json.loads((Path(os.environ["RUNNER_TEMP"]) / "lifecycle-manifest.json").read_text(encoding="utf-8"))
+          with Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8") as summary:
+              summary.write("# Lifecycle result\n\n")
+              summary.write(f"- Outcome: `{manifest['outcome']}`\n- Logical cycle: `{manifest['logical_cycle_time']}`\n- Idempotency key: `{manifest['idempotency_key']}`\n- Candidate paths: `{len(manifest['candidate_paths'])}`\n")
+          PY
+      - name: Preserve lifecycle manifest
+        if: always()
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4
         with:
-          commit_message: "lifecycle: verified cognitive update [skip ci]"
-          branch: main
-          file_pattern: "docs/brain/memories/** docs/brain/inputs/** docs/brain/knowledge/**"
+          name: welcome-lifecycle-manifest-${{ github.run_id }}
+          path: ${{ runner.temp }}/lifecycle-manifest.json
+          if-no-files-found: warn
+          retention-days: 30

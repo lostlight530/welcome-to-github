@@ -276,7 +276,7 @@ class HarvesterContracts(unittest.TestCase):
             ]
             self.assertEqual(len(blob_calls), 1)
 
-    def test_normalized_noise_only_advances_observed_provenance(self):
+    def test_normalized_noise_does_not_mutate_persisted_provenance(self):
         with tempfile.TemporaryDirectory() as tmp:
             harvester = Harvester.__new__(Harvester)
             harvester.inputs = Path(tmp)
@@ -376,9 +376,9 @@ class HarvesterContracts(unittest.TestCase):
             self.assertEqual(document["commit_sha"], old_commit)
             self.assertEqual(document["tree_sha"], old_tree)
             self.assertEqual(document["blob_sha"], old_blob)
-            self.assertEqual(document["observed_commit_sha"], new_commit)
-            self.assertEqual(document["observed_tree_sha"], new_tree)
-            self.assertEqual(document["observed_blob_sha"], new_blob)
+            self.assertEqual(document["observed_commit_sha"], old_commit)
+            self.assertEqual(document["observed_tree_sha"], old_tree)
+            self.assertEqual(document["observed_blob_sha"], old_blob)
             self.assertTrue(old_snapshot.exists())
 
     def test_schema_four_recovers_snapshot_provenance_from_current_output(self):
@@ -463,7 +463,7 @@ class HarvesterContracts(unittest.TestCase):
             self.assertEqual(document["observed_tree_sha"], observed_tree)
             self.assertEqual(document["observed_blob_sha"], observed_blob)
 
-    def test_unchanged_blob_advances_observed_commit_and_tree(self):
+    def test_unchanged_blob_does_not_mutate_persisted_document_state(self):
         harvester = Harvester.__new__(Harvester)
         blob_sha = "c" * 40
         old_commit = "a" * 40
@@ -520,8 +520,8 @@ class HarvesterContracts(unittest.TestCase):
         self.assertEqual(document["commit_sha"], old_commit)
         self.assertEqual(document["tree_sha"], old_tree)
         self.assertEqual(document["blob_sha"], blob_sha)
-        self.assertEqual(document["observed_commit_sha"], new_commit)
-        self.assertEqual(document["observed_tree_sha"], new_tree)
+        self.assertEqual(document["observed_commit_sha"], old_commit)
+        self.assertEqual(document["observed_tree_sha"], old_tree)
         self.assertEqual(document["observed_blob_sha"], blob_sha)
 
     def test_schema_five_rejects_state_output_provenance_mismatch(self):
