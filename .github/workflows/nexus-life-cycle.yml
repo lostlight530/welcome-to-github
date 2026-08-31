@@ -42,16 +42,31 @@ jobs:
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
         with:
           python-version: '3.10'
+      - name: Capture human baseline
+        run: python docs/brain/lifecycle_guard.py snapshot --output "$RUNNER_TEMP/lifecycle-before.json"
       - name: Validate runtime contracts
+        id: contracts
         run: |
           python -c "from pathlib import Path; files=sorted(Path('docs/brain').glob('*.py')) + sorted(Path('tests').glob('*.py')); [compile(path.read_bytes(), str(path), 'exec') for path in files]; print(f'compiled {len(files)} lifecycle Python files')"
           python -m unittest discover -s tests -p 'test*.py'
       - name: Validate active ledgers without rewriting
+        id: ledgers
         run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import maintain_jsonl; result=maintain_jsonl('docs/brain/knowledge'); print(result); assert result['invalid']==0"
       - name: Verify read-only boundary
+        id: readonly
         run: |
           test -z "$(git status --porcelain)"
           git diff --check
+      - name: Publish human lifecycle receipt
+        if: always()
+        env:
+          VALIDATION_FAILED: ${{ steps.contracts.outcome == 'failure' || steps.ledgers.outcome == 'failure' || steps.readonly.outcome == 'failure' }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          validation_flag=()
+          if [ "$VALIDATION_FAILED" = "true" ]; then validation_flag+=(--validation-failed); fi
+          final_sha="$(git rev-parse HEAD 2>/dev/null || printf '%s' "$GITHUB_SHA")"
+          python docs/brain/lifecycle_guard.py receipt --before "$RUNNER_TEMP/lifecycle-before.json" --repository-kind welcome --event-name "$GITHUB_EVENT_NAME" --actor "$GITHUB_ACTOR" --triggering-actor "$GITHUB_TRIGGERING_ACTOR" --base-sha "$GITHUB_SHA" --final-sha "$final_sha" --job-status "$JOB_STATUS" --run-id "$GITHUB_RUN_ID" --run-attempt "$GITHUB_RUN_ATTEMPT" --gate "运行时契约=${{ steps.contracts.outcome }}" --gate "活动账本=${{ steps.ledgers.outcome }}" --gate "只读边界=${{ steps.readonly.outcome }}" --output "$GITHUB_STEP_SUMMARY" "${validation_flag[@]}"
 
   apply:
     name: Scheduled candidate and guarded apply
@@ -77,11 +92,15 @@ jobs:
       - name: Record base world-line
         id: base
         run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Capture human baseline
+        run: python docs/brain/lifecycle_guard.py snapshot --output "$RUNNER_TEMP/lifecycle-before.json"
       - name: Validate runtime contracts
+        id: contracts
         run: |
           python -c "from pathlib import Path; files=sorted(Path('docs/brain').glob('*.py')) + sorted(Path('tests').glob('*.py')); [compile(path.read_bytes(), str(path), 'exec') for path in files]; print(f'compiled {len(files)} lifecycle Python files')"
           python -m unittest discover -s tests -p 'test*.py'
       - name: Validate existing ledgers without rewriting
+        id: ledgers
         run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import maintain_jsonl; result=maintain_jsonl('docs/brain/knowledge'); print(result); assert result['invalid']==0"
       - name: Harvest approved external documents
         env:
@@ -99,6 +118,7 @@ jobs:
           python docs/brain/nexus.py ingest
           python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import prune_generated_paths; print(prune_generated_paths('docs/brain/knowledge', ('horizon-cortex', 'parallax')))"
       - name: Validate canonical graph
+        id: graph
         run: |
           python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; repaired=canonicalize_ledger('docs/brain/knowledge'); clean=canonicalize_ledger('docs/brain/knowledge'); print(repaired); print(clean); assert clean['duplicate_entities']==0 and clean['duplicate_relations']==0 and clean['dangling_relations']==0"
           python docs/brain/nexus.py rebuild
@@ -108,11 +128,13 @@ jobs:
           python docs/brain/nexus.py evolve
           python docs/brain/report_hygiene.py welcome docs/brain/memories
       - name: Final graph and runtime verification
+        id: final_verify
         run: |
           python -c "import sys; sys.path.insert(0, 'docs/brain'); from document_hygiene import canonicalize_ledger; repaired=canonicalize_ledger('docs/brain/knowledge'); clean=canonicalize_ledger('docs/brain/knowledge'); print(repaired); print(clean); assert clean['duplicate_entities']==0 and clean['duplicate_relations']==0 and clean['dangling_relations']==0"
           python docs/brain/nexus.py rebuild
           python -m unittest discover -s tests -p 'test*.py'
       - name: Verify lifecycle write boundary
+        id: boundary
         run: |
           python - <<'PY'
           import subprocess
@@ -158,19 +180,22 @@ jobs:
             fi
           fi
           echo "outcome=$outcome" >> "$GITHUB_OUTPUT"
-      - name: Finalize lifecycle manifest and summary
+      - name: Finalize lifecycle manifest
+        id: finalize
         env:
           APPLY_OUTCOME: ${{ steps.apply_candidate.outputs.outcome }}
+        run: python docs/brain/lifecycle_guard.py finalize --manifest "$RUNNER_TEMP/lifecycle-manifest.json" --outcome "$APPLY_OUTCOME"
+      - name: Publish human lifecycle receipt
+        if: always()
+        env:
+          VALIDATION_FAILED: ${{ steps.contracts.outcome == 'failure' || steps.ledgers.outcome == 'failure' || steps.graph.outcome == 'failure' || steps.final_verify.outcome == 'failure' || steps.boundary.outcome == 'failure' }}
+          JOB_STATUS: ${{ job.status }}
+          BASE_SHA: ${{ steps.base.outputs.sha }}
         run: |
-          python docs/brain/lifecycle_guard.py finalize --manifest "$RUNNER_TEMP/lifecycle-manifest.json" --outcome "$APPLY_OUTCOME"
-          python - <<'PY'
-          import json, os
-          from pathlib import Path
-          manifest = json.loads((Path(os.environ["RUNNER_TEMP"]) / "lifecycle-manifest.json").read_text(encoding="utf-8"))
-          with Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8") as summary:
-              summary.write("# Lifecycle result\n\n")
-              summary.write(f"- Outcome: `{manifest['outcome']}`\n- Logical cycle: `{manifest['logical_cycle_time']}`\n- Idempotency key: `{manifest['idempotency_key']}`\n- Candidate paths: `{len(manifest['candidate_paths'])}`\n")
-          PY
+          validation_flag=()
+          if [ "$VALIDATION_FAILED" = "true" ]; then validation_flag+=(--validation-failed); fi
+          final_sha="$(git rev-parse HEAD 2>/dev/null || printf '%s' "$BASE_SHA")"
+          python docs/brain/lifecycle_guard.py receipt --manifest "$RUNNER_TEMP/lifecycle-manifest.json" --before "$RUNNER_TEMP/lifecycle-before.json" --repository-kind welcome --event-name "$GITHUB_EVENT_NAME" --actor "$GITHUB_ACTOR" --triggering-actor "$GITHUB_TRIGGERING_ACTOR" --base-sha "$BASE_SHA" --final-sha "$final_sha" --job-status "$JOB_STATUS" --run-id "$GITHUB_RUN_ID" --run-attempt "$GITHUB_RUN_ATTEMPT" --gate "运行时契约=${{ steps.contracts.outcome }}" --gate "活动账本=${{ steps.ledgers.outcome }}" --gate "哈希链与图谱=${{ steps.graph.outcome }}" --gate "最终验证=${{ steps.final_verify.outcome }}" --gate "写入边界=${{ steps.boundary.outcome }}" --gate "世界线检查=${{ steps.world_line.outcome }}" --gate "应用步骤=${{ steps.apply_candidate.outcome }}" --output "$GITHUB_STEP_SUMMARY" "${validation_flag[@]}"
       - name: Preserve lifecycle manifest
         if: always()
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4
