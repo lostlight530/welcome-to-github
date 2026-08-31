@@ -38,6 +38,27 @@ Profile 不合法、GitHub Tree 截断、Blob 编码异常、来源网络失败�
 `horizon-cortex/**` 由 Jules 外部 SOP 生成并由人类审核 PR.
 
 本生命周期不格式化、不清理、不自动改写该目录.
+
+## GitHub Actions 生命周期
+
+本生命周期是确定性仓库维护程序，不是 Agent，也不代替 Jules 或 GPT 的独立维护体系.
+
+- Push 与 Pull Request 只执行只读校验，不摄取、不生成、不提交.
+- 手动运行默认只读，只有明确选择 apply 才进入候选生成链.
+- 每日计划运行以北京时间 06:00 对应的名义时隙作为 Logical Cycle Time，Runner 延迟不改变周期身份.
+- Source Time、Observed Time、Logical Cycle Time 与 Applied Time 分开记录，不用执行时间冒充来源时间.
+- 同一基础提交、逻辑周期、候选路径、语义增量和指标快照生成同一 Idempotency Key.
+- 上游仓库只变更 commit 或 tree 而目标 Blob 内容未变时，不改写活动采集状态.
+- 运行期间 main 发生变化时，不 rebase、不 autostash、不覆盖，结果记为 `CONFLICTED_WORLD_LINE_NO_APPLY`.
+- 没有有效候选时保持绿色并记为 `NO_MEANINGFUL_DELTA`.
+- 只有来源内容、知识账本或人类投影的允许路径可以进入候选提交.
+- Lifecycle Manifest 作为运行 Artifact 与 Job Summary 保存，不写入知识图谱.
+- Action 提交固定使用 `github-actions[bot]` 身份.
+
+结构校验失败、账本破损、越界写入和测试失败仍然必须红灯终止.
+
+安全的无变化与并发避让不是失败，不建立 Branch Protection、Required Check、Environment 或强制 Review 门禁.
+
 ## Active ledger maintenance
 
 - current/ is the only external snapshot set projected into the active graph.
@@ -49,4 +70,4 @@ Profile 不合法、GitHub Tree 截断、Blob 编码异常、来源网络失败�
 - Repeating the same lifecycle does not append an equivalent entity or relation.
 - Cache cleanup is limited to unreferenced raw-cache files and empty cache directories.
 - The active database is a rebuildable index and is never the sole source of truth.
-- horizon-cortex and aegis-cortex remain outside this lifecycle.
+- horizon-cortex and parallax remain outside this lifecycle.
