@@ -134,14 +134,21 @@
 {"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__canonical","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__command_finalize","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__command_manifest","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__command_receipt","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__command_snapshot","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__command_world_line","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__human_outcome","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__iso","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__metric_change","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__short_sha","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__utc","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func__write_json","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_build_manifest","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_changed_paths","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_classify_delta","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_logical_cycle_time","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_main","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
+{"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_render_lifecycle_receipt","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_snapshot_metrics","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"","dst":"file_docs_brain_lifecycle_guard_py__func_world_line_outcome","relation":"defines","src":"file_docs_brain_lifecycle_guard_py"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"file_docs_brain_mcp_demo_py"}
@@ -673,6 +680,8 @@
 {"desc":"","dst":"func_test_truncated_tree_is_a_hard_failure","relation":"defines","src":"file_tests_test_harvester_readability_py"}
 {"desc":"","dst":"file_tests_test_lifecycle_guard_py__class_LifecycleGuardTests","relation":"defines","src":"file_tests_test_lifecycle_guard_py"}
 {"desc":"","dst":"file_tests_test_lifecycle_guard_py__func_test_manifest_is_deterministic_for_the_same_inputs","relation":"defines","src":"file_tests_test_lifecycle_guard_py"}
+{"desc":"","dst":"file_tests_test_lifecycle_guard_py__func_test_receipt_combines_human_essentials_with_expandable_panorama","relation":"defines","src":"file_tests_test_lifecycle_guard_py"}
+{"desc":"","dst":"file_tests_test_lifecycle_guard_py__func_test_receipt_explains_validation_without_claiming_an_apply","relation":"defines","src":"file_tests_test_lifecycle_guard_py"}
 {"desc":"","dst":"file_tests_test_lifecycle_guard_py__func_test_scheduled_cycle_uses_nominal_slot_not_delayed_start","relation":"defines","src":"file_tests_test_lifecycle_guard_py"}
 {"desc":"","dst":"file_tests_test_lifecycle_guard_py__func_test_world_line_change_is_a_green_no_apply_outcome","relation":"defines","src":"file_tests_test_lifecycle_guard_py"}
 {"desc":"","dst":"file_tests_test_report_hygiene_full_output_py__class_ReportHygieneFullOutputTests","relation":"defines","src":"file_tests_test_report_hygiene_full_output_py"}

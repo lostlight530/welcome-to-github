@@ -67,14 +67,21 @@
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__canonical","name":"_canonical","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__command_finalize","name":"_command_finalize","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__command_manifest","name":"_command_manifest","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__command_receipt","name":"_command_receipt","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__command_snapshot","name":"_command_snapshot","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__command_world_line","name":"_command_world_line","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__human_outcome","name":"_human_outcome","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__iso","name":"_iso","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__metric_change","name":"_metric_change","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__short_sha","name":"_short_sha","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__utc","name":"_utc","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__write_json","name":"_write_json","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func_build_manifest","name":"build_manifest","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func_changed_paths","name":"changed_paths","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func_classify_delta","name":"classify_delta","type":"code_function"}
 {"desc":"Return the nominal cycle slot instead of the delayed runner start time.","id":"file_docs_brain_lifecycle_guard_py__func_logical_cycle_time","name":"logical_cycle_time","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func_main","name":"main","type":"code_function"}
+{"desc":"Render a concise human result followed by an expandable evidence panorama.","id":"file_docs_brain_lifecycle_guard_py__func_render_lifecycle_receipt","name":"render_lifecycle_receipt","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func_snapshot_metrics","name":"snapshot_metrics","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func_world_line_outcome","name":"world_line_outcome","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_nexus_mcp_py__func___init__","name":"__init__","type":"code_function"}
@@ -171,6 +178,8 @@
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_snapshot_is_human_readable_and_traceable","name":"test_snapshot_is_human_readable_and_traceable","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_truncated_tree_is_a_hard_failure","name":"test_truncated_tree_is_a_hard_failure","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_lifecycle_guard_py__func_test_manifest_is_deterministic_for_the_same_inputs","name":"test_manifest_is_deterministic_for_the_same_inputs","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_lifecycle_guard_py__func_test_receipt_combines_human_essentials_with_expandable_panorama","name":"test_receipt_combines_human_essentials_with_expandable_panorama","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_lifecycle_guard_py__func_test_receipt_explains_validation_without_claiming_an_apply","name":"test_receipt_explains_validation_without_claiming_an_apply","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_lifecycle_guard_py__func_test_scheduled_cycle_uses_nominal_slot_not_delayed_start","name":"test_scheduled_cycle_uses_nominal_slot_not_delayed_start","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_lifecycle_guard_py__func_test_world_line_change_is_a_green_no_apply_outcome","name":"test_world_line_change_is_a_green_no_apply_outcome","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_report_hygiene_full_output_py__func_test_rejects_chinese_full_stop_inside_details","name":"test_rejects_chinese_full_stop_inside_details","type":"code_function"}
