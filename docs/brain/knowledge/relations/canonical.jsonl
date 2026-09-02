@@ -14,6 +14,7 @@
 {"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_cli_changelog_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_cli"}
 {"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_cli_readme_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_cli"}
 {"desc":"Current approved external evidence","dst":"external_doc_nousresearch_hermes_agent_docs_design_kanban_dialogs_index_html","relation":"has_snapshot","src":"external_repo_nousresearch_hermes_agent"}
+{"desc":"Current approved external evidence","dst":"external_doc_nousresearch_hermes_agent_docs_design_multiplexing_gateway_md","relation":"has_snapshot","src":"external_repo_nousresearch_hermes_agent"}
 {"desc":"Current approved external evidence","dst":"external_doc_nousresearch_hermes_agent_docs_design_profile_builder_md","relation":"has_snapshot","src":"external_repo_nousresearch_hermes_agent"}
 {"desc":"Current approved external evidence","dst":"external_doc_nousresearch_hermes_agent_readme_md","relation":"has_snapshot","src":"external_repo_nousresearch_hermes_agent"}
 {"desc":"Current approved external evidence","dst":"external_doc_ogx_ai_ogx_readme_md","relation":"has_snapshot","src":"external_repo_ogx_ai_ogx"}
@@ -620,6 +621,24 @@
 {"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_9_watch_releases","relation":"defines","src":"file_docs_brain_source_profiles_json"}
 {"desc":"","dst":"file_docs_brain_test_mcp_py__func_test_mcp_server","relation":"defines","src":"file_docs_brain_test_mcp_py"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"file_format_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__class_MaintenanceContracts","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_check_both","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_load","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_setUp","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_closed_calendar_can_have_blocked_task","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_complete_cannot_hide_unresolved_work","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_complete_with_explicit_evidence_accepted","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_duplicate_status_rejected","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_empty_field_does_not_borrow_next_line","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_invalid_timestamp_fails","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_legacy_unknown_execution_not_invented","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_legacy_without_new_contract_compatible","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_missing_new_month_timestamp_fails","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_month_cannot_close_early","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_open_snapshot_preserves_gap","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_partial_keeps_unresolved_work","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_summary_without_log_not_complete","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_valid_maintenance","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
 {"desc":"","dst":"class_HarvesterContracts","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__class_HarvesterContracts","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__class_RecordingCortex","relation":"defines","src":"file_tests_test_harvester_py"}

@@ -10,6 +10,7 @@
 {"desc":"Declare why an observation may enter a knowledge boundary.","id":"file_docs_brain_observation_contract_py__class_ObservationDeclaration","name":"ObservationDeclaration","type":"code_class"}
 {"desc":"Python Class","id":"file_docs_brain_reason_py__class_ReasoningEngine","name":"ReasoningEngine","type":"code_class"}
 {"desc":"Python Class","id":"file_docs_brain_scholar_py__class_Scholar","name":"Scholar","type":"code_class"}
+{"desc":"Python Class","id":"file_tests_test_active_sop_contracts_py__class_MaintenanceContracts","name":"MaintenanceContracts","type":"code_class"}
 {"desc":"Python Class","id":"file_tests_test_harvester_py__class_HarvesterContracts","name":"HarvesterContracts","type":"code_class"}
 {"desc":"Python Class","id":"file_tests_test_harvester_py__class_RecordingCortex","name":"RecordingCortex","type":"code_class"}
 {"desc":"Python Class","id":"file_tests_test_harvester_readability_py__class_ReadabilityContracts","name":"ReadabilityContracts","type":"code_class"}

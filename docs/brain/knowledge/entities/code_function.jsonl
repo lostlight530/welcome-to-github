@@ -131,6 +131,23 @@
 {"desc":"[Omniscience Protocol] Deep scan of the codebase.","id":"file_docs_brain_scholar_py__func_ingest_repository","name":"ingest_repository","type":"code_function"}
 {"desc":"Legacy single file learning (kept for compatibility)","id":"file_docs_brain_scholar_py__func_learn","name":"learn","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_test_mcp_py__func_test_mcp_server","name":"test_mcp_server","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_check_both","name":"check_both","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_load","name":"load","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_setUp","name":"setUp","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_closed_calendar_can_have_blocked_task","name":"test_closed_calendar_can_have_blocked_task","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_complete_cannot_hide_unresolved_work","name":"test_complete_cannot_hide_unresolved_work","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_complete_with_explicit_evidence_accepted","name":"test_complete_with_explicit_evidence_accepted","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_duplicate_status_rejected","name":"test_duplicate_status_rejected","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_empty_field_does_not_borrow_next_line","name":"test_empty_field_does_not_borrow_next_line","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_invalid_timestamp_fails","name":"test_invalid_timestamp_fails","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_legacy_unknown_execution_not_invented","name":"test_legacy_unknown_execution_not_invented","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_legacy_without_new_contract_compatible","name":"test_legacy_without_new_contract_compatible","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_missing_new_month_timestamp_fails","name":"test_missing_new_month_timestamp_fails","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_month_cannot_close_early","name":"test_month_cannot_close_early","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_open_snapshot_preserves_gap","name":"test_open_snapshot_preserves_gap","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_partial_keeps_unresolved_work","name":"test_partial_keeps_unresolved_work","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_summary_without_log_not_complete","name":"test_summary_without_log_not_complete","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_valid_maintenance","name":"valid_maintenance","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func___init__","name":"__init__","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_add_entity","name":"add_entity","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_connect_entities","name":"connect_entities","type":"code_function"}

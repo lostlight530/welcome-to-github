@@ -18,6 +18,7 @@
 {"desc":"Source file at: docs/brain/source_profiles.json","id":"file_docs_brain_source_profiles_json","name":"source_profiles.json","type":"code_file"}
 {"desc":"Source file at: docs/brain/test_mcp.py","id":"file_docs_brain_test_mcp_py","name":"test_mcp.py","type":"code_file"}
 {"desc":"Source file at: format.py","id":"file_format_py","name":"format.py","type":"code_file"}
+{"desc":"Source file at: tests/test_active_sop_contracts.py","id":"file_tests_test_active_sop_contracts_py","name":"test_active_sop_contracts.py","type":"code_file"}
 {"desc":"Source file at: tests/test_harvester.py","id":"file_tests_test_harvester_py","name":"test_harvester.py","type":"code_file"}
 {"desc":"Source file at: tests/test_harvester_readability.py","id":"file_tests_test_harvester_readability_py","name":"test_harvester_readability.py","type":"code_file"}
 {"desc":"Source file at: tests/test_lifecycle_guard.py","id":"file_tests_test_lifecycle_guard_py","name":"test_lifecycle_guard.py","type":"code_file"}
