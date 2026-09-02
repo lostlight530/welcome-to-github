@@ -22,22 +22,22 @@ Expected H1: 31
 Expected H2: 31
 Expected H3: 5
 Expected H4: 5
-Actual Files: 70
-Missing Files: 3
+Originally Reported Actual Files: 70
+Originally Reported Missing Files: 3
 Blocked Files: 1
 Degraded Files: 0
 Duplicate Logical Dates: 0
 Future-dated Files: 0
-Coverage Ratios: 97%
+Originally Reported Coverage Ratios: 97%
 
 Coverage Window: 2026-08-01 to 2026-08-31
-Month Closure Status: CLOSED
+Month Closure Status: OPEN
 Input Status: MONTHLY_INPUT_GAP
 Network Status: NOT_RUN
 Task Status: BLOCKED
 
 MONTH_NOT_CLOSED
-任务由于目标月未结束而阻塞。
+任务由于目标月未结束而阻塞.
 
 INPUT_RECORD
 Daily Coverage Matrix: 31 H1 files and 31 H2 files are present for 2026-08-01 through 2026-08-31.
@@ -127,16 +127,30 @@ Claim Calibration: Protocol facts,named implementations,host applicability,and u
 - horizon-cortex/2026-06-H6-horizon-memorize.md
 
 SIGNAL_QUALITY_REVIEW
-无，任务因为 MONTH_NOT_CLOSED 被阻塞。
+无，任务因为 MONTH_NOT_CLOSED 被阻塞.
 
 ERROR_AND_DRIFT_LOG
-无，任务阻塞。
+无，任务阻塞.
 
 CORRECTION_NOTES
-无，任务阻塞。
+无，任务阻塞.
 
 HANDOFF_TO_H6
-无，任务阻塞。
+无，任务阻塞.
 
 BOUNDARY_CHECK
 Boundary Violation: NO
+
+## Current maintenance review
+
+Correction Date: 2026-09-02
+Correction Agent: Codex
+Monthly Maintenance Status: PARTIAL
+Maintenance Coverage: See 2026-09-02-maintenance-log.md for scoped paths and limits.
+Maintenance Change Log: 2026-09-02-maintenance-log.md
+Maintenance Validation: See the dated log for actual checks and their limits.
+Maintenance Unresolved: Full per-claim monthly propagation and all-source replay are not certified by this pass.
+
+The header retains the original author and execution facts. Corrections below or in the body are current review, not a replay of the original task.
+
+Calendar Interpretation: OPEN describes the original execution instant, before the target calendar month ended. The previously recorded CLOSED value was incorrect. The calendar ending later does not replay a blocked task or certify its conclusions.

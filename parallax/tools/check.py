@@ -108,7 +108,7 @@ HISTORICAL_MONTHLY_PATTERN = re.compile(
 
 
 def metadata(text: str, label: str) -> list[str]:
-    return re.findall(rf"^- {re.escape(label)}:\s*(.+?)\s*$", text, re.MULTILINE)
+    return re.findall(rf"^- {re.escape(label)}:[ \t]*([^\r\n]*)$", text, re.MULTILINE)
 
 
 def parse_single_date(
@@ -155,6 +155,32 @@ def read_labeled_count(
     return int(matches[0])
 
 
+
+def validate_monthly_maintenance(path: str, text: str) -> list[str]:
+    """Check the declared repair ledger, not the truth of its evidence."""
+    pattern = re.compile(r"^(?:-[ \t]*)?(?:\*\*)?([^:*\r\n]+?)(?:\*\*)?:[ \t]*([^\r\n]*)$", re.MULTILINE)
+    pairs = [(key.strip(), value.strip()) for key, value in pattern.findall(text)]
+    statuses = [value for key, value in pairs if key == "Monthly Maintenance Status"]
+    if not statuses:
+        return []  # Legacy records are not retroactively certified or upgraded.
+    errors = []
+    if len(statuses) != 1 or statuses[0] not in {"NOT_RUN", "PARTIAL", "COMPLETED"}:
+        errors.append(f"{path}: invalid or duplicate Monthly Maintenance Status")
+    for key in ("Maintenance Coverage", "Maintenance Change Log",
+                "Maintenance Validation", "Maintenance Unresolved"):
+        values = [value for name, value in pairs if name == key]
+        if len(values) != 1 or not values[0]:
+            errors.append(f"{path}: requires one nonempty {key}")
+    values = dict(pairs)
+    if statuses == ["COMPLETED"]:
+        if values.get("Maintenance Unresolved") != "NONE":
+            errors.append(f"{path}: complete maintenance cannot have unresolved work")
+        for key in ("Maintenance Coverage", "Maintenance Change Log", "Maintenance Validation"):
+            if values.get(key, "").upper() in {"", "NONE", "NOT_RUN", "UNKNOWN", "TODO"}:
+                errors.append(f"{path}: completed maintenance lacks {key} evidence")
+    return errors
+
+
 def validate() -> list[str]:
     errors: list[str] = []
     files = sorted(path for path in ROOT.rglob("*") if path.is_file())
@@ -190,6 +216,8 @@ def validate() -> list[str]:
         except UnicodeDecodeError:
             errors.append(f"not utf-8: {relative}")
             continue
+        if path.suffix.lower() == ".md":
+            errors.extend(validate_monthly_maintenance(relative, text))
         if not text.strip():
             errors.append(f"empty file: {relative}")
         if chr(0x3002) in text:

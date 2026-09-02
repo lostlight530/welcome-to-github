@@ -7,7 +7,7 @@ Task ID: H6
 Cadence: Monthly
 Loop Stage: Memorize
 Run Month: 2026-08
-Month Closure Status: CLOSED
+Month Closure Status: OPEN
 Execution Time Asia/Shanghai: 2026-08-31 13:17:15 +08:00
 Agent: Codex
 Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE
@@ -56,4 +56,19 @@ NEXT_MONTH_BASELINE
 
 BOUNDARY_CHECK
 Boundary Violation: NO
+
+
+## Current maintenance review
+
+Correction Date: 2026-09-02
+Correction Agent: Codex
+Monthly Maintenance Status: PARTIAL
+Maintenance Coverage: See 2026-09-02-maintenance-log.md for scoped paths and limits.
+Maintenance Change Log: 2026-09-02-maintenance-log.md
+Maintenance Validation: See the dated log for actual checks and their limits.
+Maintenance Unresolved: Full per-claim monthly propagation and all-source replay are not certified by this pass.
+
+The header retains the original author and execution facts. Corrections below or in the body are current review, not a replay of the original task.
+
+Calendar Interpretation: OPEN describes the original execution instant, before the target calendar month ended. The previously recorded CLOSED value was incorrect. The calendar ending later does not replay a blocked task or certify its conclusions.
 

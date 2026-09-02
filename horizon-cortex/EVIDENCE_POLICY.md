@@ -1,7 +1,7 @@
 # Horizon Cortex Evidence Policy
 
 Status: current repository evidence policy  
-Calibration: 2026-08-28
+Calibration: 2026-09-02
 
 This file defines how committed Horizon artifacts are interpreted against the repository implementation and external evidence that actually exists. It is an evidence contract, not a runtime capability claim.
 
@@ -250,11 +250,11 @@ Later reconciliation records:
 - current bounded interpretation
 - unresolved dimensions
 
-It does not rewrite the historical artifact.
+Authorized corrections may minimally update erroneous prose with an explicit maintenance log. Original execution facts remain unchanged.
 
-Current August stage authority: `2026-08-through-27-stage-audit.md`.
+The Aug 27 stage audit is an as-of snapshot, not the final authority for later delivery or correction. See `2026-09-02-maintenance-log.md` for this pass and its limits.
 
-Formal August H5/H6 remains `OPEN` until the natural monthly lifecycle has actual evidence.
+At the Aug 27 cutoff the August monthly surface was OPEN. Later file delivery does not by itself establish completed content maintenance.
 
 ## 16. Active daily and weekly record contract
 
@@ -262,7 +262,7 @@ New H1 and H2 records identify source identity, authority for the exact claim, i
 
 New H3 and H4 records provide a Daily coverage matrix, inherited and newly independent evidence, preserved missing inputs, decision evidence basis, historical execution state, and current delivery state.
 
-Substitutes and reconstructions use their real agent identity. A reconstruction cannot claim original success. Historical records remain byte-preserved and known legacy schema defects are interpreted through reconciliation records.
+Substitutes and reconstructions use their real agent identity. A reconstruction cannot claim original success. Historical execution facts remain preserved. Authorized prose corrections are logged, and legacy schema defects are not disguised as original compliant execution.
 
 `CURRENT_PATH_PRESENT != ORIGINAL_EXECUTION_SUCCESS`.
 
@@ -272,7 +272,7 @@ Substitutes and reconstructions use their real agent identity. A reconstruction 
 
 The 2026-08-01 through 2026-08-31 Daily surface contains 31 H1/H2 pairs.
 
-The files from 2026-08-29 through 2026-08-31 were generated after the active provenance contract was defined but do not contain its fields. They remain immutable point-in-time records and are calibrated by `2026-08-month-end-reconciliation.md`.
+The files from 2026-08-29 through 2026-08-31 were generated after the active provenance contract was defined but do not contain its fields. Their original execution facts remain point-in-time evidence and are calibrated by `2026-08-month-end-reconciliation.md`.
 
 W35 contains no H3. Its H4 is a retained fail-closed execution record with `DECISION_INPUT_MISSING`, `BLOCKED`, and `NO_ACTIONABLE_DECISION`. A missing H3 is acceptable only under that complete fail-closed state.
 
@@ -280,10 +280,37 @@ Beginning with logical date 2026-09-01 and logical week 2026-W36, the checker re
 
 Monthly H5/H6 records require Daily and Weekly coverage matrices, inherited and independent evidence separation, preserved missing inputs, claim calibration, execution and path state separation, and real record provenance.
 
-H5 closes evidence review only after every calendar-day H1/H2 pair exists. H6 must name the same-month H5 and may retain only bounded doctrine that survived H5 calibration.
+H5 may claim complete coverage only after the Shanghai calendar month ends and every calendar-day H1/H2 input has an explicitly reviewed delivery and quality state. File presence alone is insufficient. H6 must name the same-month H5 and may retain only bounded doctrine that survived H5 calibration.
 
 `DAILY_COMPLETE != WEEKLY_DECISION_COMPLETE`.
 
 `WEEKLY_CLOSED != MONTHLY_CLOSED`.
 
 `MONTHLY_COMPRESSION != NEW_INDEPENDENT_EVIDENCE`.
+
+## Monthly maintenance and correction
+
+A monthly summary is not a completed maintenance pass. Calendar closure, input delivery, original execution and current content quality are separate states.
+
+Within this maintenance surface only:
+
+1. Inventory every logical date, intersecting ISO week, monthly record and cited special/audit in the review window. Identify each input by path and immutable commit or PR head. Record delivered-but-unmerged separately from absent and unknown. A cross-month week keeps its full natural-week boundary and an explicit as-of cutoff.
+2. Check actual source access, publication time, claim authority, publisher independence and local applicability. Repeated Daily, Weekly and Monthly wording does not add evidence. A search query, abstract or retrieval hash does not prove a full-text review or an experiment.
+3. Correct confirmed wording, arithmetic, links and unsupported promotions in the original document with the smallest scoped edit. Preserve original author, logical date, execution timestamps, provenance and blocked state. Record the old claim, corrected claim, evidence, original commit, reviewer and real correction time in the maintenance log. Never make a later source look available to an earlier run.
+4. Trace each corrected claim through downstream daily handoffs, weekly decisions, monthly synthesis, durable findings and indexes. Update affected current interpretations and mark remaining dependencies unresolved. Do not silently repair a missing historical Decision ID by inventing a decision.
+5. Adjust active rules, templates and offline checks only for demonstrated recurring defects. Recheck unchanged boundaries. This process does not authorize host runtime, data, frontend, Actions or scheduler changes.
+6. Run the existing checks and proportionate regression tests. Log commands, results, skipped checks and remaining evidence gaps. No blanket completion from file counts, a green checker or an old audit alone.
+
+New monthly records use the following compact ledger. A NOT_RUN or PARTIAL result is valid and must not be promoted by the next summarizer.
+
+- `Monthly Maintenance Status`: NOT_RUN, PARTIAL or COMPLETED.
+- `Maintenance Coverage`: an exact path inventory and per-file disposition, including weekly/monthly dependencies.
+- `Maintenance Change Log`: the dated log, with original identity and before/after reasoning, or an explicitly documented no-change review.
+- `Maintenance Validation`: actual commands/results and semantic review limits.
+- `Maintenance Unresolved`: precise outstanding items, or NONE only after all scoped work is resolved.
+
+COMPLETED requires the complete scoped inventory, correction propagation, logged validation and no unresolved items. It does not certify universal correctness. A calendar month may be CLOSED while the review task remains BLOCKED or maintenance remains PARTIAL.
+
+Calendar closure uses the original Shanghai execution time, not the date a file was later merged or corrected. Before the first instant of the following month, use OPEN for the as-of snapshot. Missing legacy timestamps remain unknown, not fabricated.
+
+The offline checker validates declared ledger structure, not whether the linked evidence is true, independent or sufficient. The maintainer must read that evidence.

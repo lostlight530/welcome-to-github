@@ -7,7 +7,8 @@ Task ID: H5
 Cadence: Monthly
 Loop Stage: Reflect
 Run Month: YYYY-MM
-Month Closure Status: CLOSED
+Month Closure Status: OPEN
+Execution Time Asia/Shanghai: ACTUAL_ISO_TIMESTAMP_WITH_08_OFFSET
 Agent: ACTUAL_AGENT
 Record Provenance: JULES_NATIVE_OR_AUTHORIZED_SUBSTITUTE
 Original Execution Status: ACTUAL_EXECUTION_STATE
@@ -52,3 +53,18 @@ HANDOFF_TO_H6
 
 BOUNDARY_CHECK
 Boundary Violation: NO
+
+## Monthly maintenance ledger
+
+Monthly Maintenance Status: NOT_RUN
+Maintenance Coverage: TODO
+Maintenance Change Log: TODO
+Maintenance Validation: NOT_RUN
+Maintenance Unresolved: Full monthly maintenance has not run.
+
+List every scoped daily, weekly, monthly and referenced special/audit path with its actual disposition. Distinguish delivery, original execution and current quality. Correct supported defects in place, preserve execution facts, and propagate changed interpretations to dependent summaries and indexes.
+
+| File and original commit | Original claim | Correction and source | Downstream impact | Check result |
+| --- | --- | --- | --- | --- |
+
+Use the real correction time and reviewer identity. An unchanged file can be marked REVIEWED_NO_CHANGE only after its content was reviewed. Do not mark the entire month completed while entries are unresolved. A summary or checker pass alone does not complete maintenance.
