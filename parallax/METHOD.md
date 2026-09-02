@@ -140,4 +140,31 @@
 - 来源独立性按原始发布者和证据链判断,转载不构成新来源
 - 无法取得原始来源或支持命题的权威页面时,结论保持拒绝或无结论
 - 周期审计只复核既有记录,不增加实验数量或长期结论数量
-- 新证据不得回写历史记录,只能形成新的校准关系
+- 新证据不能伪装成原始观测. 已确认的正文错误允许原位微调,记录真实修正时间、原始版本、前后差异与依据,保留执行事实
+
+## Monthly maintenance and correction
+
+A monthly summary is not a completed maintenance pass. Calendar closure, input delivery, original execution and current content quality are separate states.
+
+Within this maintenance surface only:
+
+1. Inventory every logical date, intersecting ISO week, monthly record and cited special/audit in the review window. Identify each input by path and immutable commit or PR head. Record delivered-but-unmerged separately from absent and unknown. A cross-month week keeps its full natural-week boundary and an explicit as-of cutoff.
+2. Check actual source access, publication time, claim authority, publisher independence and local applicability. Repeated Daily, Weekly and Monthly wording does not add evidence. A search query, abstract or retrieval hash does not prove a full-text review or an experiment.
+3. Correct confirmed wording, arithmetic, links and unsupported promotions in the original document with the smallest scoped edit. Preserve original author, logical date, execution timestamps, provenance and blocked state. Record the old claim, corrected claim, evidence, original commit, reviewer and real correction time in the maintenance log. Never make a later source look available to an earlier run.
+4. Trace each corrected claim through downstream daily handoffs, weekly decisions, monthly synthesis, durable findings and indexes. Update affected current interpretations and mark remaining dependencies unresolved. Do not silently repair a missing historical Decision ID by inventing a decision.
+5. Adjust active rules, templates and offline checks only for demonstrated recurring defects. Recheck unchanged boundaries. This process does not authorize host runtime, data, frontend, Actions or scheduler changes.
+6. Run the existing checks and proportionate regression tests. Log commands, results, skipped checks and remaining evidence gaps. No blanket completion from file counts, a green checker or an old audit alone.
+
+New monthly records use the following compact ledger. A NOT_RUN or PARTIAL result is valid and must not be promoted by the next summarizer.
+
+- `Monthly Maintenance Status`: NOT_RUN, PARTIAL or COMPLETED.
+- `Maintenance Coverage`: an exact path inventory and per-file disposition, including weekly/monthly dependencies.
+- `Maintenance Change Log`: the dated log, with original identity and before/after reasoning, or an explicitly documented no-change review.
+- `Maintenance Validation`: actual commands/results and semantic review limits.
+- `Maintenance Unresolved`: precise outstanding items, or NONE only after all scoped work is resolved.
+
+COMPLETED requires the complete scoped inventory, correction propagation, logged validation and no unresolved items. It does not certify universal correctness. A calendar month may be CLOSED while the review task remains BLOCKED or maintenance remains PARTIAL.
+
+Calendar closure uses the original Shanghai execution time, not the date a file was later merged or corrected. Before the first instant of the following month, use OPEN for the as-of snapshot. Missing legacy timestamps remain unknown, not fabricated.
+
+The offline checker validates declared ledger structure, not whether the linked evidence is true, independent or sufficient. The maintainer must read that evidence.

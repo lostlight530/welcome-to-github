@@ -43,3 +43,18 @@
 ## 下一周期问题
 
 选择最能证伪现有候选的问题
+
+## Monthly maintenance ledger
+
+Monthly Maintenance Status: NOT_RUN
+Maintenance Coverage: TODO
+Maintenance Change Log: TODO
+Maintenance Validation: NOT_RUN
+Maintenance Unresolved: Full monthly maintenance has not run.
+
+List every scoped daily, weekly, monthly and referenced special/audit path with its actual disposition. Distinguish delivery, original execution and current quality. Correct supported defects in place, preserve execution facts, and propagate changed interpretations to dependent summaries and indexes.
+
+| File and original commit | Original claim | Correction and source | Downstream impact | Check result |
+| --- | --- | --- | --- | --- |
+
+Use the real correction time and reviewer identity. An unchanged file can be marked REVIEWED_NO_CHANGE only after its content was reviewed. Do not mark the entire month completed while entries are unresolved. A summary or checker pass alone does not complete maintenance.
