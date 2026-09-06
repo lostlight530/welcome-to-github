@@ -1,15 +1,17 @@
 # Jules source/content contract reconciliation — 2026-09-06
 
-Status: `ACTIVE_CONTRACT_REVIEWED / JULY_RECONSTRUCTION_CHAIN_RECONCILED / HISTORICAL_WORDING_PRESERVED / CURRENT_INTERPRETATION_CALIBRATED`
+Status: `ACTIVE_CONTRACT_REVIEWED / JULY_RECONSTRUCTION_CHAIN_RECONCILED / AUGUST_TASK_TIME_REWRITE_RECONCILED / HISTORICAL_WORDING_PRESERVED / CURRENT_INTERPRETATION_CALIBRATED`
 
 Review date: 2026-09-06
 Target agent: `Jules` only
 Repository: `lostlight530/welcome-to-github`
-Authority: current `horizon-cortex/EVIDENCE_POLICY.md`, retained H1/H2/H3/H4/H5/H6 records, merged Jules PR chronology, and existing dated maintenance/correction records.
+Authority: current `horizon-cortex/EVIDENCE_POLICY.md`, retained H1/H2/H3/H4/H5/H6 records, repository-visible Jules PR/commit chronology, and existing dated maintenance/correction records.
 
-This record is separate from the cadence inventory. File presence, original execution success, current file contents, later reconstruction, source access, claim authority, independent corroboration, host applicability and promotion eligibility are distinct states. Historical Jules artifacts remain point-in-time evidence and are not rewritten here.
+This record is separate from the cadence inventory. File presence, task existence, original execution success, current file contents, later reconstruction, merge/delivery state, source access, claim authority, independent corroboration, host applicability and promotion eligibility are distinct states. Historical Jules artifacts remain point-in-time evidence and are not rewritten here.
 
-No external web/GPT recertification was performed in this pass. The findings below are repository-internal contract checks: they compare what Jules recorded with the current Horizon evidence contract, merged task chronology and already-retained correction records.
+Operator context confirms that recurring Daily / Weekly / Monthly Jules tasks exist even where an output was left untested or unmerged. Repository evidence is therefore used to establish repository-visible execution, delivery, merge, rewrite and current-retention facts; absence from current main is not treated as proof that a recurring task did not exist.
+
+No external web/GPT recertification was performed in this pass. The findings below are repository-internal contract checks: they compare what Jules recorded with the current Horizon evidence contract, repository-visible task chronology and already-retained correction records.
 
 ## Active Daily content contract — 2026-09-01 through 2026-09-06
 
@@ -163,29 +165,71 @@ July current content verdict:
 
 `CURRENT_PATHS_COMPLETE / ORIGINAL_EXECUTION_LINEAGE_MIXED / POST_HOC_RECONSTRUCTION_PRESENT / POST_MONTH_H5_H6_ORDER_VALID / DURABLE_CLAIM_STRENGTH_REQUIRES_DOWNGRADE`
 
+## August task-time execution and correction chronology
+
+### HORIZON-HISTORY-08 — 2026-08-06 H2 original fail-closed state was later rewritten to success
+
+The original 2026-08-06 H2 execution, retained in the pre-rewrite history associated with PR #406 / commit `f420b600...`, recorded:
+
+- `Input Status: INPUT_MISSING`;
+- `Network Status: NOT_RUN`;
+- `Source Status: NOT_RUN`;
+- `Task Status: BLOCKED`.
+
+This was a task-time fail-closed snapshot: required same-day H1 input was not available to that H2 execution.
+
+Jules PR #410, head commit `d598fd1b8f0810f0022b14c93eb8bf8fab904896`, explicitly says it “fixes the improperly blocked `2026-08-06-H2-horizon-orient.md`”. Its patch changes the same H2 header from `INPUT_MISSING / NOT_RUN / NOT_RUN / BLOCKED` to `SUCCESS / NETWORK_VERIFIED / SOURCE_VERIFIED / SUCCESS` and adds later source/analysis content.
+
+Under the current temporal evidence contract, that later edit can describe a later reconciled/current state but cannot become evidence that the original H2 execution succeeded.
+
+Current classification:
+
+`ORIGINAL_2026_08_06_H2_BLOCKED_VALID / PR_410_POST_HOC_STATUS_REWRITE / CURRENT_08_06_H2_BODY_NOT_SOLE_ORIGINAL_EXECUTION_EVIDENCE`
+
+This is a concrete instance of the mismatch already abstractly retained in later August stage-audit material.
+
+### HORIZON-HISTORY-09 — explicit reconciliation is the preferred correction pattern
+
+Later August corrections demonstrate a stronger pattern than rewriting the original execution as if it had always succeeded:
+
+- commit `9a472127...` reconciles the 08-01 H2 source interpretation using `SUCCESS_AFTER_RECONCILIATION`, retains the original execution time, adds a reconciliation date, and scopes the `_meta`/header and performance claims;
+- commit `4c124d475...` reconciles 08-08 H2 SDK metadata, again records a reconciliation date and corrects the source/version interpretation without pretending the original metadata had been complete.
+
+Current governance preference:
+
+`ORIGINAL_EXECUTION_STATE + DATED_RECONCILIATION > POST_HOC_ORIGINAL_STATUS_REWRITE`
+
+This does not condemn the earlier maintenance attempt; it preserves its historical role while making the current interpretation temporally exact.
+
+### HORIZON-HISTORY-10 — W34 supplies the correct blocked-before-input reference pattern
+
+For W34, H4 executed before its required H3 input and correctly recorded `DECISION_INPUT_MISSING / BLOCKED`. H3 arrived later. The retained `2026-W34-reconciliation.md` preserves the historical state as `BLOCKED_BEFORE_H3_AVAILABLE` rather than converting the original H4 run to success.
+
+This is the same rule that governs 08-06 H2 and later W35/W36 cases:
+
+`LATER_INPUT_DELIVERY != ORIGINAL_INPUT_AVAILABILITY`
+
+`LATER_CURRENT_PATH != ORIGINAL_SUCCESS`
+
+August current documentary disposition:
+
+`CURRENT_PATHS_CAN_BE_COMPLETE / ORIGINAL_NEGATIVE_EXECUTION_STATES_REMAIN_POINT_IN_TIME_EVIDENCE / PR_410_REWRITE_REQUIRES_TASK_TIME_CALIBRATION / LATER_EXPLICIT_RECONCILIATIONS_SHOW_CORRECT_PATTERN`
+
 ## Weekly propagation — W35/W36
 
 - W35 retains its original H4 `DECISION_INPUT_MISSING / BLOCKED / NO_ACTIONABLE_DECISION`; later H3 delivery cannot repair that execution retroactively.
-- W36 H3 is missing and H4 is blocked. Therefore none of the 09-01..09-06 Daily source-strength claims can be described as a completed W36 decision/promotion.
+- W36 H3 repository artifact was not identified in the completed repository search, while the recurring task existence is operator-confirmed; H4 is a real fail-closed blocked execution. Therefore none of the 09-01..09-06 Daily source-strength claims can be described as a completed W36 decision/promotion.
 - Repeated MCP/A2A/vendor themes across Daily records are lineage/inheritance, not an adoption-frequency metric and not independent evidence.
 
 W36 promotion state:
 
-`NO_COMPLETED_H3_DECISION / NO_NEW_WEEKLY_EVIDENCE_PROMOTION_AUTHORIZED`
+`NO_REPOSITORY_VISIBLE_COMPLETED_W36_H3_DECISION / NO_NEW_WEEKLY_EVIDENCE_PROMOTION_AUTHORIZED`
 
 ## Monthly propagation
 
 - September is `MONTH_OPEN` on 2026-09-06.
 - The blocked September H6 supplies no durable-memory baseline.
 - No Daily or Weekly wording in this window may be compressed into a final H5/H6 September conclusion before natural-month closure and explicit quality review.
-
-## August boundary
-
-Existing August maintenance and month-end reconciliation retain legacy schema defects, blocked states and incomplete per-claim review. This pass has not yet independently re-certified every August external proposition.
-
-Current August disposition:
-
-`CADENCE_INVENTORIED / EXISTING_CORRECTIONS_RETAINED / FULL_PER_CLAIM_EXTERNAL_RECERTIFICATION_NOT_RUN`
 
 ## Validation performed in this content pass
 
@@ -198,6 +242,9 @@ Performed:
 - PR #327 file-level rewrite evidence reviewed;
 - July early Monthly and post-month H5/H6 ordering reviewed;
 - current July H5/H6 source/promotion structure reviewed;
+- 08-06 original H2 fail-closed state and PR #410 rewrite patch compared;
+- later explicit 08-01 and 08-08 reconciliation patterns reviewed as correction counterexamples;
+- W34 blocked-before-H3 reconciliation reviewed;
 - W35/W36 lifecycle state cross-checked against the cadence reconciliation.
 
 Not performed:
@@ -210,4 +257,4 @@ Not performed:
 
 ## Current verdict
 
-`JULY_CURRENT_FILES_INCLUDE_POST_HOC_RECONSTRUCTION / ORIGINAL_MISSING_INPUT_STATES_REQUIRE_TASK_TIME_CHRONOLOGY / JULY_POST_MONTH_H5_H6_ORDER_VALID_BUT_SOURCE_PROMOTION_OVERSTRONG / ACTIVE_SEPTEMBER_AUTHORITY_AND_INDEPENDENCE_DRIFT / W36_NO_PROMOTION / SEPTEMBER_OPEN`
+`JULY_CURRENT_FILES_INCLUDE_POST_HOC_RECONSTRUCTION / ORIGINAL_MISSING_INPUT_STATES_REQUIRE_TASK_TIME_CHRONOLOGY / JULY_POST_MONTH_H5_H6_ORDER_VALID_BUT_SOURCE_PROMOTION_OVERSTRONG / AUGUST_08_06_ORIGINAL_BLOCKED_STATE_LATER_REWRITTEN_AND_NOW_CALIBRATED / ACTIVE_SEPTEMBER_AUTHORITY_AND_INDEPENDENCE_DRIFT / W36_NO_REPOSITORY_VISIBLE_H3_PROMOTION / SEPTEMBER_OPEN`
