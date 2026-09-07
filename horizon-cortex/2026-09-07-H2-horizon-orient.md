@@ -18,7 +18,7 @@ Independent Verification: NONE
 Host Applicability: UNKNOWN
 Evidence Upgrade Basis: NONE
 Original Execution Status: BLOCKED
-Current Path Status: PRESENT_ON_PR_BRANCH
+Current Path Status: PRESENT
 Record Provenance: JULES_NATIVE
 Boundary Violation: NO
 
@@ -68,3 +68,12 @@ Original Task-Time Status Preserved: BLOCKED
 - Verification / Boundary Discipline: PRESERVED
 
 未执行 `horizon-cortex/check.py`; 本次不声称 checker PASS。
+
+## POST_MERGE_CURRENT_STATE_CORRECTION
+
+Correction Date: 2026-09-07
+Correction Agent: GPT Web Independent Maintainer
+Correction Type: CURRENT_PATH_RECONCILIATION
+Related Delivery: PR #531 merged
+
+PR #531 已完成合并，因此 `Current Path Status` 从 pre-merge 的 `PRESENT_ON_PR_BRANCH` 更新为当前事实 `PRESENT`。本修正只更新 delivery/current-path 状态；`Original Execution Status: BLOCKED`、task-time `INPUT_MISSING` 与未执行联网研究的历史事实全部保持不变。
