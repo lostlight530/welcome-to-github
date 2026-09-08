@@ -196,19 +196,19 @@
     "browser-use/browser-use": {
       "documents": {
         "README.md": {
-          "blob_sha": "8535f304bb43cd1d4d5cbe4310325727610c1b15",
-          "commit_sha": "28670f720f63cc5f525a2acd6d6072867689ab68",
-          "content_hash": "09ee78f45e1f3324a8eb5dc94ea9844f55580a61f6cec1ae7436598af2e266e4",
+          "blob_sha": "8df4f16fe574bd50aaa8852bd520733b8b630dd2",
+          "commit_sha": "2b1f9d377999a59fe7627c1a5aa88c12aa42e11f",
+          "content_hash": "5c1c2066ae5dc75517031482ad6850e035bc5c5861dde02809f756698b8daa01",
           "entity_id": "external_doc_browser_use_browser_use_readme_md",
-          "observed_blob_sha": "8535f304bb43cd1d4d5cbe4310325727610c1b15",
-          "observed_commit_sha": "5def56e6c0d47638c0fd2fd09e879a0fe842ea7d",
-          "observed_tree_sha": "ee52e113aaade34c9b7bc7f9c74c3aae5f9efb09",
-          "output": "current/complex-agent-systems/browser_use_browser_use/README.md__8535f304bb43__28670f720f63.md",
-          "sha": "8535f304bb43cd1d4d5cbe4310325727610c1b15",
-          "tree_sha": "02d3bcf2e6330b3e42aa7975ec835d5d407587db"
+          "observed_blob_sha": "8df4f16fe574bd50aaa8852bd520733b8b630dd2",
+          "observed_commit_sha": "2b1f9d377999a59fe7627c1a5aa88c12aa42e11f",
+          "observed_tree_sha": "57797d1379f3942fd575d6ccdc8a8ffb16b8e0ec",
+          "output": "current/complex-agent-systems/browser_use_browser_use/README.md__8df4f16fe574__2b1f9d377999.md",
+          "sha": "8df4f16fe574bd50aaa8852bd520733b8b630dd2",
+          "tree_sha": "57797d1379f3942fd575d6ccdc8a8ffb16b8e0ec"
         }
       },
-      "last_checked_at": "2026-08-31T00:14:08.866508+00:00"
+      "last_checked_at": "2026-09-08T00:01:09.108620+00:00"
     },
     "bytedance/deer-flow": {
       "documents": {
