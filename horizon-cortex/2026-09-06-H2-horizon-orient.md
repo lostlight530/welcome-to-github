@@ -117,3 +117,10 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未作最终周决策: YES
 - 未把外部信号宣称为宿主仓库事实: YES
+
+## CURRENT_RECONCILIATION_2026-09-13
+
+Reconciliation Treatment: RETAIN_COMPLEMENTARITY_WITH_MATURITY_UPDATE
+Historical State Preserved: YES
+Current Interpretation: MCP 工具访问与 A2A agent-to-agent 协作的责任分离仍是有用分析边界；但“行业已逐渐确立统一共识”“A2A 仍处发展阶段/尚未形成标准”这类时效性表述需要用当前官方 A2A v1 稳定线重新校准。A2A 已有 1.0/1.0.1 与稳定 SDK，不再只是 pre-standard；同时 stable release 仍不等于普遍生产采用。
+Evidence Calibration: Auth0/Merge.dev 是具名工程分析，不能单独建立跨行业共识。AWS 文档证明 named implementation/support，不建立 welcome-to-github 的认证网关改造要求。

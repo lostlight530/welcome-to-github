@@ -116,3 +116,10 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未作最终周决策: YES
 - 未把外部信号宣称为宿主仓库事实: YES
+
+## CURRENT_RECONCILIATION_2026-09-13
+
+Reconciliation Treatment: DOWNGRADE_UNIVERSAL_ARCHITECTURE
+Historical State Preserved: YES
+Current Interpretation: Orca 与 Mem0 材料保留为具名运行时/记忆架构案例和 watch evidence；“Durable Execution 是所有长周期 Agent 的核心基建要求”“Graph Memory/Multi-Scope 已成为标准能力”这类普遍化表述不再作为当前已验证事实继承。它们可以支持具体产品、方法和工程方向存在，但不能建立跨系统统一架构标准。
+Evidence Calibration: `CASE_STUDY / VENDOR_ENGINEERING != UNIVERSAL_STANDARD`。宿主适用性仍为 UNKNOWN；9 月 OPEN/BLOCKED H6 不作为 durable baseline。

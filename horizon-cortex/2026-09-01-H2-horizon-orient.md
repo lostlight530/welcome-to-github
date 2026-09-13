@@ -133,3 +133,10 @@ Correction Agent: Codex
 Correction Log: 2026-09-02-maintenance-log.md
 
 本次校准依据同仓 August H6 原文及 [维护者最终发布](https://blog.modelcontextprotocol.io/posts/2026-07-28/). 原执行事实保持不变,复核不计为新增当日观察.
+
+## CURRENT_RECONCILIATION_2026-09-13
+
+Reconciliation Treatment: RETAIN_WITH_EXISTING_CORRECTION
+Historical State Preserved: YES
+Current Interpretation: 保留 9 月 1 日 H2 对无状态核心、Tasks、MRTR 与鉴权方向的观察，但把“强证据”严格限定为协议/具名实现层；当前 final-spec 权威为 MCP 2026-07-28 final release。H2 对 H1 同一批来源的复核不增加独立来源数量，也不产生 welcome-to-github 的迁移授权。
+Evidence Calibration: August H6 的“外部协议事实不等于宿主采用”边界继续有效；当前解释不回写为原始执行时的新证据。

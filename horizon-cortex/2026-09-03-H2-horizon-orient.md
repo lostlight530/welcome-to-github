@@ -99,3 +99,10 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未作最终周决策: YES
 - 未把外部信号宣称为宿主仓库事实: YES
+
+## CURRENT_RECONCILIATION_2026-09-13
+
+Reconciliation Treatment: CURRENT_VERSION_AND_SCOPE_CALIBRATION
+Historical State Preserved: YES
+Current Interpretation: 原始 H2 对企业认证、Tasks/扩展与厂商分析的观察保留；但 2026-09-13 当前状态应以 MCP 2026-07-28 final release 取代“RC 尚未最终生效”的当前版本叙述。Toloka/WorkOS 与官方博客可以共同支持主题存在和具名分析，但不能把 MCP 直接升级为“全行业云基础架构标准”或把 adoption 视为已普遍完成。
+Evidence Calibration: current weekly synthesis 应使用 `protocol final fact / roadmap / named implementation / adoption / host applicability` 五层分离；`2026-09-H6` 仅保留为原执行读取记录，不作为已闭月 durable baseline。

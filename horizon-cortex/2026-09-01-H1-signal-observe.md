@@ -162,3 +162,10 @@ Correction Agent: Codex
 Correction Log: 2026-09-02-maintenance-log.md
 
 原执行时间、Agent 与执行状态保留. 本次校准使用 [维护者最终发布](https://blog.modelcontextprotocol.io/posts/2026-07-28/),原始 AAIF RC 解读不单独充当最终规范依据. 当前修正不是新增当日独立观察.
+
+## CURRENT_RECONCILIATION_2026-09-13
+
+Reconciliation Treatment: RETAIN_WITH_EXISTING_CORRECTION
+Historical State Preserved: YES
+Current Interpretation: 9 月 1 日的具名外部实现与协议演进观察保留；当前协议版本基线以 MCP 2026-07-28 final release 为准。AAIF RC 解读和 Google 实现材料可以支持方向/实现事实，但不能单独证明全行业普遍采用，也不能推出 welcome-to-github 必须迁移。
+Evidence Calibration: 原 2026-09-02 正文修正继续有效；本段只补充 2026-09-13 current-state 解释，不增加当日独立证据。

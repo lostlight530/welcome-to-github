@@ -103,3 +103,10 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未作最终周决策: YES
 - 未把外部信号宣称为宿主仓库事实: YES
+
+## CURRENT_RECONCILIATION_2026-09-13
+
+Reconciliation Treatment: OFFICIAL_GUIDE_NOT_UNIVERSAL_STANDARD
+Historical State Preserved: YES
+Current Interpretation: MCP 官方 `Agent skills` 文档可以可靠证明 MCP 生态提供了面向 AI 编码助手的官方开发指导/技能机制；它不单独证明该机制已经成为跨模型、跨工具或全行业统一标准，也不证明第三方生产采用率。原文件把它作为 strategic signal 的观察可以保留，但“标准路径/基础设施标准事实”的强度应在后续 Weekly 中收敛到 `OFFICIAL_DEVELOPER_GUIDANCE / NAMED_ECOSYSTEM_MECHANISM`。
+Evidence Calibration: `OFFICIAL_GUIDANCE != UNIVERSAL_ADOPTION_REQUIREMENT`；宿主适用性继续 UNKNOWN。

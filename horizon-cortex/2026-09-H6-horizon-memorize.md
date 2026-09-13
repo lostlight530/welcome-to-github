@@ -76,3 +76,14 @@ Maintenance Unresolved: Full per-claim monthly propagation and all-source replay
 The header retains the original author and execution facts. Corrections below or in the body are current review, not a replay of the original task.
 
 Calendar Interpretation: OPEN describes the original execution instant, before the target calendar month ended. The previously recorded CLOSED value was incorrect. The calendar ending later does not replay a blocked task or certify its conclusions.
+
+## CURRENT_RECONCILIATION_2026-09-13
+
+Reconciliation Treatment: MONTH_TO_DATE_ONLY
+Historical State Preserved: YES
+Current Month State: OPEN
+September Final H5/H6 Due: NO
+Current Interpretation: 本文件仍然是 2026-09-01 的早跑 `OPEN / REFLECTION_INPUT_MISSING / BLOCKED` 历史记录。到 2026-09-13，September 自然月仍未闭合，因此不能把它补写成 final H6，也不能把 9/1–9/13 的阶段观察压缩成 durable monthly memory。
+Month-to-Date Use: 9/1–9/13 的 Daily 与 W36 current reconciliation 可以进入独立的 month-to-date 汇总，但只能标记为阶段状态、候选主题和证据校准；不得产生 H5/H6 final 结论。
+Current Candidate Themes: MCP final-spec/current-roadmap 分层、A2A stable-v1 maturity、vendor implementation != universal architecture、later delivery != original availability。
+Not Promoted: NONE of the above is promoted here into durable monthly memory because the calendar month is still open.

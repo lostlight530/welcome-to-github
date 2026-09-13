@@ -46,7 +46,7 @@ Action ID: NO_ACTIONABLE_DECISION
 Action Type: OBSERVATION_FOCUS
 Action: NO_ACTIONABLE_DECISION
 Reason: NO_ACTIONABLE_DECISION
-Source Decision ID: NO_ACTIONABLE_DECISION
+Historical Source Decision ID: NO_ACTIONABLE_DECISION
 Evidence Preserved: NO_ACTIONABLE_DECISION
 Repository Record Comparison: NO_ACTIONABLE_DECISION
 Expected Effect: NO_ACTIONABLE_DECISION
@@ -81,3 +81,56 @@ BOUNDARY_CHECK
 - GitHub Actions Inspection: NO
 - Files Outside horizon-cortex Written: NO
 - Boundary Violation: NO
+
+## CURRENT_STATE_RECONCILIATION_2026-09-13
+
+Reconciliation Agent: GPT Web Independent Maintainer
+Reconciliation Type: LATER_CURRENT_STATE_ACTION_MAPPING
+Original Jules Execution Status Preserved: YES
+Original `DECISION_INPUT_MISSING / BLOCKED` Status Preserved: YES
+
+This section does not replay or overwrite the 2026-09-06 H4 execution. At that execution snapshot, H3 was unavailable and the BLOCKED record remains valid.
+
+A later human-authorized reconciliation has now produced `horizon-cortex/2026-W36-H3-position-decide.md` from the complete W36 Daily set. Current-state action mapping is therefore recorded below as a later reconciliation only.
+
+Current H3 Decision IDs:
+- DEC-2026W36-01 — MCP final/post-release evidence-layer baseline
+- DEC-2026W36-02 — A2A stable-v1 interoperability watch
+- DEC-2026W36-03 — vendor case study != universal architecture
+
+CURRENT_ACTION_RECORD
+
+Action ID: ACT-2026W36-R01
+Action Type: OBSERVATION_FOCUS
+Source Decision ID: DEC-2026W36-01
+Action: Future Horizon Daily records should distinguish final specification facts, roadmap intent, named implementation support, broad adoption and host applicability.
+Expected Effect: reduce RC/final/adoption mixing and same-source confidence inflation.
+Validity Window: W37-W40
+Stop Condition: newer MCP specification materially supersedes the baseline.
+Host Repository Change: NO
+GitHub Actions Change: NO
+New Static File: NO
+
+Action ID: ACT-2026W36-R02
+Action Type: VERIFICATION_PRIORITY
+Source Decision ID: DEC-2026W36-02
+Action: A2A observations should record exact specification/SDK maturity and keep stable release separate from ecosystem penetration.
+Expected Effect: current maturity without universal-adoption overclaim.
+Validity Window: W37-W42
+Stop Condition: major A2A replacement/deprecation/version shift.
+Host Repository Change: NO
+GitHub Actions Change: NO
+New Static File: NO
+
+Action ID: ACT-2026W36-R03
+Action Type: NARRATIVE_GUARDRAIL
+Source Decision ID: DEC-2026W36-03
+Action: Named vendor architectures remain CASE_STUDY/WATCH evidence unless independent cross-vendor evidence establishes a general standard.
+Expected Effect: prevent case-study-to-doctrine inflation.
+Validity Window: W37-W44
+Stop Condition: formal standard or strong independent production convergence evidence.
+Host Repository Change: NO
+GitHub Actions Change: NO
+New Static File: NO
+
+Current-state note: this reconciliation changes current guidance only. It does not claim H3 was available to the original H4 run and does not change the historical BLOCKED execution fact.
