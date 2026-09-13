@@ -20,7 +20,7 @@ Write Scope: horizon-cortex only
 Boundary Violation: NO
 Source Identity: Model Context Protocol Official Documentation
 Source Authority For Claim: Official documentation
-Independent Verification: YES
+Independent Verification: NONE
 Host Applicability: UNKNOWN
 Evidence Upgrade Basis: NONE
 Original Execution Status: SUCCESS
@@ -66,7 +66,7 @@ EXTERNAL_SOURCE_RECORDS
   Source Type: Official documentation
   Evidence Tier: Tier 1
   Access Status: SUCCESS
-  Independent Source: YES, primary protocol publisher
+  Independent Source: NO, primary protocol publisher; authoritative for the protocol definition but not independent corroboration
   Claim Supported: MCP is an open-source standard for connecting AI applications to external systems (data sources, tools, workflows).
   Claim Not Supported: Universal mandatory adoption, or requirement for this repository to migrate.
   Relevance: HIGH
