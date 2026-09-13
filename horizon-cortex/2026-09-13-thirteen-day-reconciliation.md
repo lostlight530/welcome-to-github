@@ -8,10 +8,9 @@
 - Agent: GPT Web Independent Maintainer
 - Record Provenance: HUMAN_AUTHORIZED_RECONCILIATION
 - Base Main Revision: f7a3a14591458528bf0992ff35294e0a364ff7b0
-- Scope: Daily H1/H2 for 2026-09-01 through 2026-09-13; W36 H3/H4; August H5/H6 current closure interpretation; W37 and September monthly due-state.
+- Scope: Daily H1/H2 for 2026-09-01 through 2026-09-13; W36 H3/H4; September month-to-date state only.
 - Historical Rewrite: NO
 - Jules Execution Identity Preserved: YES
-- Purpose: record current scientific/evidence calibration on top of original records without treating later review as the original execution.
 
 ## AUTHORITY_AND_METHOD
 
@@ -24,156 +23,121 @@ Current external authority used for protocol-state calibration:
 - A2A stable-v1 announcement: https://github.com/a2aproject/A2A/blob/main/docs/announcing-1.0.md
 - A2A JS stable-v1 changelog: https://github.com/a2aproject/a2a-js/blob/main/CHANGELOG.md
 
-Calibration rules applied consistently:
-- protocol fact != named implementation != broad adoption != host applicability;
+Calibration rules:
+- protocol fact != official guidance != named implementation != broad adoption != host applicability;
 - repeated access to the same source lineage does not create independent corroboration;
-- official developer guidance is not automatically a normative cross-industry architecture standard;
-- current path presence does not change an original INPUT_MISSING/BLOCKED execution snapshot;
-- current-month H6 in OPEN/BLOCKED state is not durable memory.
+- current path presence does not change original INPUT_MISSING/BLOCKED execution state;
+- September H6 OPEN/BLOCKED state is not durable monthly memory;
+- August records are historical inputs only where original September tasks actually referenced them; August is not a target of this reconciliation.
 
 ## DAILY_LEDGER
 
 ### 2026-09-01
-H1: `horizon-cortex/2026-09-01-H1-signal-observe.md`
-H2: `horizon-cortex/2026-09-01-H2-horizon-orient.md`
-Original State: SUCCESS / SUCCESS
-Current Treatment: RETAIN_WITH_EXISTING_CORRECTION
-Current Basis: the files already contain a 2026-09-02 body correction distinguishing release-candidate material from the final MCP 2026-07-28 authority and clarifying inherited-source independence.
-Current Meaning: protocol changes remain valid observations; no host migration requirement is created.
+H1/H2: SUCCESS / SUCCESS
+Treatment: RETAIN_WITH_EXISTING_CORRECTION
+Current Meaning: preserve protocol/implementation observations; current version authority is MCP 2026-07-28 final; no host migration requirement.
+Original-file reconciliation appended: YES.
 
 ### 2026-09-02
-H1: `horizon-cortex/2026-09-02-H1-signal-observe.md`
-H2: `horizon-cortex/2026-09-02-H2-horizon-orient.md`
-Original State: SUCCESS / SUCCESS
-Current Treatment: CALIBRATE_SCOPE
-Current Basis: Cloudflare and related implementation evidence supports named implementation behavior; final protocol authority is the MCP 2026-07-28 release, not an RC-era narrative.
-Correction: broad ecosystem-adoption or mandatory-architecture language is read as implementation-level evidence only unless independently supported.
+H1/H2: SUCCESS / SUCCESS
+Treatment: CALIBRATE_SCOPE
+Current Meaning: named implementation evidence remains implementation-level; broad adoption or mandatory architecture requires separate evidence.
+Original-file reconciliation appended: only where material; no forced no-op rewrite.
 
 ### 2026-09-03
-H1: `horizon-cortex/2026-09-03-H1-signal-observe.md`
-H2: `horizon-cortex/2026-09-03-H2-horizon-orient.md`
-Original State: SUCCESS / SUCCESS
-Current Treatment: CALIBRATE_MONTHLY_INPUT_AND_ADOPTION_SCOPE
-Current Basis: current-month September H6 was OPEN/BLOCKED and cannot serve as durable memory. Named vendor/integration evidence does not establish an enterprise-universal standard.
-Correction: preserve the observed products/protocols; downgrade universal-adoption wording.
+H1/H2: SUCCESS / SUCCESS
+Treatment: VERSION_AND_MONTHLY_INPUT_CALIBRATION
+Current Meaning: RC-era version state is historical; MCP final is current. September H6 OPEN/BLOCKED path may be recorded as an input actually read, but not used as durable memory.
+Original-file reconciliation appended: YES to H1/H2.
 
 ### 2026-09-04
-H1: `horizon-cortex/2026-09-04-H1-signal-observe.md`
-H2: `horizon-cortex/2026-09-04-H2-horizon-orient.md`
-Original State: SUCCESS / SUCCESS
-Current Treatment: VENDOR_IMPLEMENTATION_SCOPE
-Current Basis: Google/MLflow engineering materials establish named implementation choices. They do not establish that all systems should use the same observability/deployment architecture.
-Correction: product/engineering fact retained; universal architecture inference not promoted.
+H1/H2: SUCCESS / SUCCESS
+Treatment: VENDOR_IMPLEMENTATION_SCOPE
+Current Meaning: Google/MLflow and similar engineering material establishes named implementation choices, not universal architecture.
+Original-file reconciliation appended: only where material.
 
 ### 2026-09-05
-H1: `horizon-cortex/2026-09-05-H1-signal-observe.md`
-H2: `horizon-cortex/2026-09-05-H2-horizon-orient.md`
-Original State: SUCCESS / SUCCESS
-Current Treatment: DOWNGRADE_UNIVERSAL_ARCHITECTURE
-Current Basis: durable execution and graph-memory examples are vendor/research cases.
-Correction: retain as case studies/watch dimensions; do not call them mandatory core infrastructure or standard capability for every agent system.
+H1/H2: SUCCESS / SUCCESS
+Treatment: DOWNGRADE_UNIVERSAL_ARCHITECTURE
+Current Meaning: durable execution and graph-memory examples remain case studies/watch dimensions; no universal mandate.
+Original-file reconciliation appended: YES to H2.
 
 ### 2026-09-06
-H1: `horizon-cortex/2026-09-06-H1-signal-observe.md`
-H2: `horizon-cortex/2026-09-06-H2-horizon-orient.md`
-Original State: SUCCESS / SUCCESS
-Current Treatment: RETAIN_BOUNDARY_WITH_MATURITY_UPDATE
-Current Basis: MCP tool-access and A2A agent-coordination are usefully separated as responsibilities. A2A now has a stable v1 line.
-Correction: retain complementarity as an analysis boundary; replace any “still merely early/pre-standard” current wording with stable-v1 maturity, without claiming universal adoption.
+H1/H2: SUCCESS / SUCCESS
+Treatment: RETAIN_COMPLEMENTARITY_WITH_MATURITY_UPDATE
+Current Meaning: MCP tool access vs A2A agent collaboration remains a useful boundary; A2A now has stable-v1 maturity, while broad adoption remains unknown.
+Original-file reconciliation appended: YES to H2.
 
 ### 2026-09-07
-H1: `horizon-cortex/2026-09-07-H1-signal-observe.md`
-H2: `horizon-cortex/2026-09-07-H2-horizon-orient.md`
-Original State: H1 SUCCESS; H2 INPUT_MISSING/BLOCKED
-Current Treatment: PRESERVE_ORIGINAL_STATES
-Current Basis: H1 already contains independent GPT scientific correction and uses the final MCP release as primary protocol authority. H2 correctly records task-time H1 unavailability.
-Correction: no replay of original H2. Later H1 path presence remains a later delivery fact only.
+H1: SUCCESS
+H2: INPUT_MISSING / BLOCKED / NOT_RUN
+Treatment: PRESERVE_ORIGINAL_STATES
+Current Meaning: later H1 path presence does not replay H2.
+Original-file reconciliation appended: YES to H2.
 
 ### 2026-09-08
-H1: `horizon-cortex/2026-09-08-H1-signal-observe.md`
-H2: `horizon-cortex/2026-09-08-H2-horizon-orient.md`
-Original State: SUCCESS / SUCCESS
-Current Treatment: RETAIN_SINGLE_SOURCE_BOUNDARY
-Current Basis: official MCP documentation is authoritative for MCP's own definition, but a single protocol-publisher lineage is not independent evidence of ecosystem adoption.
-Correction: protocol definition retained; broad-adoption claims require separate evidence.
+H1/H2: SUCCESS / SUCCESS
+Treatment: RETAIN_SINGLE_SOURCE_BOUNDARY
+Current Meaning: official MCP pages establish MCP facts, not independent ecosystem-adoption evidence.
 
 ### 2026-09-09
-H1: `horizon-cortex/2026-09-09-H1-signal-observe.md`
-H2: `horizon-cortex/2026-09-09-H2-horizon-orient.md`
-Original State: SUCCESS / SUCCESS
-Current Treatment: RETAIN_NO_NEW_INDEPENDENCE
-Current Basis: H2 already records `Independent Verification: NONE` and an adoption-evidence gap.
-Correction: repeated official MCP explanation increases continuity, not independent corroboration.
+H1/H2: SUCCESS / SUCCESS
+Treatment: RETAIN_NO_NEW_INDEPENDENCE
+Current Meaning: repeated same-lineage official material adds continuity, not independent corroboration.
 
 ### 2026-09-10
-H1: `horizon-cortex/2026-09-10-H1-signal-observe.md`
-H2: `horizon-cortex/2026-09-10-H2-horizon-orient.md`
-Original State: SUCCESS / SUCCESS
-Current Treatment: RETAIN_PROTOCOL_FACT
-Current Basis: protocol architecture/deprecation facts from official documentation are suitable as protocol facts.
-Correction: retain protocol-scope conclusions; no host implementation inference.
+H1/H2: SUCCESS / SUCCESS
+Treatment: RETAIN_PROTOCOL_FACT
+Current Meaning: protocol/deprecation facts retained; no host implementation inference.
 
 ### 2026-09-11
-H1: `horizon-cortex/2026-09-11-H1-signal-observe.md`
-H2: `horizon-cortex/2026-09-11-H2-horizon-orient.md`
-Original State: SUCCESS / SUCCESS
-Current Treatment: GUIDE_NOT_STANDARD
-Current Basis: official Agent Skills material is authoritative for the MCP project's developer guidance and named tooling.
-Correction: treat Agent Skills as official developer guidance, not a universal protocol requirement or proof of broad third-party adoption.
+H1/H2: SUCCESS / SUCCESS
+Treatment: OFFICIAL_GUIDE_NOT_UNIVERSAL_STANDARD
+Current Meaning: Agent Skills is official developer guidance/named ecosystem mechanism, not proof of cross-tool universal adoption.
+Original-file reconciliation appended: YES to H2.
 
 ### 2026-09-12
-H1: `horizon-cortex/2026-09-12-H1-signal-observe.md`
-H2: `horizon-cortex/2026-09-12-H2-horizon-orient.md`
-Original State: SUCCESS / SUCCESS
-Current Treatment: GUIDE_NOT_UNIVERSAL
-Current Basis: Streamable HTTP/MCPB deployment guidance establishes documented MCP ecosystem mechanisms.
-Correction: retain named deployment paths; do not generalize them into required local or cross-industry deployment architecture.
+H1/H2: SUCCESS / SUCCESS
+Treatment: OFFICIAL_DEPLOYMENT_GUIDE_NOT_UNIVERSAL_ARCHITECTURE
+Current Meaning: Streamable HTTP/MCPB are named documented mechanisms; broad adoption and host requirement remain unproven.
+Original-file reconciliation appended: YES to H2.
 
 ### 2026-09-13
-H1: `horizon-cortex/2026-09-13-H1-signal-observe.md`
-H2: `horizon-cortex/2026-09-13-H2-horizon-orient.md`
-Base-main State Before Reconciliation: target files absent
+H1/H2 Base-main State: absent / absent
 Current Treatment: COMPLETED_ON_RECONCILIATION_BRANCH
-Current Basis: final MCP 2026-07-28 + 2026-08-22 roadmap + A2A stable-v1 release state.
-Current Meaning: version/maturity calibration completed without changing host architecture.
+Current Meaning: current protocol/maturity calibration completed from MCP final + roadmap + A2A stable-v1 records.
 
 ## WEEKLY_LEDGER
 
-Target due on 2026-09-13: `2026-W36` (2026-08-31 through 2026-09-06).
-Current W37 is still the current natural week and is NOT_DUE for weekly closure.
+Due completed weekly target inside this 13-day scope: `2026-W36` (2026-08-31 through 2026-09-06).
 
-H3 W36:
-- Base-main canonical path was absent.
-- `horizon-cortex/2026-W36-H3-position-decide.md` is completed on this reconciliation branch using all 7 H1 and 7 H2 W36 Daily inputs.
+- `2026-W36-H3-position-decide.md`: completed on reconciliation branch from 7 H1 + 7 H2 W36 Daily inputs.
+- Original `2026-W36-H4-narrative-act.md`: remains historically `DECISION_INPUT_MISSING / BLOCKED`.
+- Later current-state action mapping is appended to H4 without rewriting the original execution.
+- `2026-W37`: still open on 2026-09-13; no weekly final is created.
 
-H4 W36:
-- Original `horizon-cortex/2026-W36-H4-narrative-act.md` remains historically `DECISION_INPUT_MISSING / BLOCKED`.
-- A `CURRENT_STATE_RECONCILIATION_2026-09-13` section is appended on this branch and maps the later H3 decisions into current temporary operating guidance.
-- The appended section does not claim H3 was available to the original H4 execution.
+## SEPTEMBER_MONTH_TO_DATE
 
-## MONTHLY_LEDGER
+September is still OPEN on 2026-09-13.
 
-August target:
-- `horizon-cortex/2026-08-H5-signal-reflect.md` original execution remains `Month Closure Status: OPEN / BLOCKED` because it ran before natural month closure.
-- `horizon-cortex/2026-08-H6-horizon-memorize.md` retains its original early/open execution snapshot.
-- Current closed-month interpretation is recorded separately in `horizon-cortex/2026-08-monthly-closure-reconciliation-2026-09-13.md` so historical task-time facts are not overwritten.
-
-September target:
-- September 2026 has not naturally closed on 2026-09-13.
-- September H5/H6 final is `NOT_DUE`.
-- Existing September H6 OPEN/BLOCKED record remains historical evidence, not final monthly memory.
+- Existing `2026-09-H6-horizon-memorize.md` remains the original early `OPEN / REFLECTION_INPUT_MISSING / BLOCKED` record.
+- A current `MONTH_TO_DATE_ONLY / FINAL_NOT_DUE` reconciliation is appended to that file.
+- `2026-09-13-september-month-to-date-reconciliation.md` summarizes the first 13 days without promoting durable H5/H6 memory.
+- No September H5/H6 final is created.
+- August monthly records are not a target of this pass.
 
 ## CURRENT_BASELINE_AFTER_RECONCILIATION
 
-1. MCP 2026-07-28 final release, not the old release candidate, is the current protocol-version baseline.
-2. A2A has a stable v1 line; current records should not call it merely pre-standard.
-3. Repeated same-lineage protocol pages do not add independent source count.
-4. Vendor implementations and official developer guides are valuable observations but are not universal architecture requirements.
-5. Original Jules task-time execution states remain untouched; later current-state correction is explicitly separate.
-6. W36 is the completed weekly target; W37 is not yet closed.
-7. August is the latest closed monthly target; September final monthly closure is not due.
+1. MCP 2026-07-28 final is the current protocol-version authority.
+2. A2A has a stable v1 line; stable release != universal production adoption.
+3. Same-lineage repetition does not add independent source count.
+4. Official guidance and named vendor mechanisms are not universal architecture requirements.
+5. Original Jules task-time states remain historical facts; later reconciliation is separate.
+6. W36 is completed current weekly synthesis; W37 remains open.
+7. September monthly state is month-to-date only; final H5/H6 is not due.
 
 BOUNDARY_CHECK
-- No host repository mechanism or GitHub Actions modification is authorized by this reconciliation.
-- No original execution status is rewritten.
-- No private control prompt is copied into this file.
+- Host repository mechanisms modified: NO
+- GitHub Actions modified: NO
+- Original execution status rewritten: NO
+- August monthly work treated as current target: NO
