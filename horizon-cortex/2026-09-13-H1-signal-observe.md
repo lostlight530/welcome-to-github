@@ -17,9 +17,14 @@ Repository Inspection: NO
 GitHub Actions Inspection: NO
 Write Scope: horizon-cortex only
 Boundary Violation: NO
-Record Provenance: HUMAN_AUTHORIZED_RECONCILIATION
-Original Jules Record: NO_DELIVERED_TARGET_FILE_ON_BASE_MAIN
+Source Identity: MCP official 2026-07-28 final + 2026-08-22 roadmap; A2A official v1 release line
+Source Authority For Claim: OFFICIAL_PROTOCOL_AND_PROJECT_RELEASE_AUTHORITY_FOR_THEIR_OWN_VERSION_FACTS
+Independent Verification: TWO_DISTINCT_PROJECT_LINEAGES_MCP_AND_A2A; SAME_PROJECT_PAGES_NOT_COUNTED_AS_INDEPENDENT
+Host Applicability: UNKNOWN
+Evidence Upgrade Basis: current official final/release records checked on 2026-09-13; no host inference
+Original Execution Status: NO_DELIVERED_TARGET_FILE_ON_BASE_MAIN
 Current Path Status: PRESENT_ON_RECONCILIATION_BRANCH
+Record Provenance: HUMAN_AUTHORIZED_RECONCILIATION
 
 INPUT_RECORD
 - horizon-cortex/2026-09-12-H1-signal-observe.md
@@ -40,6 +45,7 @@ EXTERNAL_SOURCE_RECORDS
 Source ID: SRC-20260913-01
 Title: The 2026-07-28 Specification
 Publisher: Model Context Protocol maintainers
+URL: https://blog.modelcontextprotocol.io/posts/2026-07-28/
 Published Date: 2026-07-28
 Source Type: Official specification release
 Evidence Tier: Tier 1 for protocol-version facts
@@ -52,6 +58,7 @@ Confidence: HIGH
 Source ID: SRC-20260913-02
 Title: The New MCP Roadmap
 Publisher: Model Context Protocol maintainers
+URL: https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
 Published Date: 2026-08-22
 Source Type: Official roadmap
 Evidence Tier: Tier 1 for maintainer roadmap intent
@@ -64,6 +71,7 @@ Confidence: HIGH
 Source ID: SRC-20260913-03
 Title: A2A Protocol v1.0 / v1.0.1 releases and stable SDK line
 Publisher: A2A Project
+URL: https://github.com/a2aproject/A2A/releases
 Published Dates: 2026-03-12 onward
 Source Type: Official project release records
 Evidence Tier: Tier 1 for project release state
