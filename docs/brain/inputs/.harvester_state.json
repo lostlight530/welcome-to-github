@@ -78,45 +78,9 @@
           "output": "current/complex-agent-systems/nousresearch_hermes_agent/README.md__c05112266746__98e43be8e00c.md",
           "sha": "c05112266746ff99a3326a62c38c33fbc08ecd23",
           "tree_sha": "b4d518d11efc66cf692805ed240f2702f13cb122"
-        },
-        "docs/design/kanban-dialogs/index.html": {
-          "blob_sha": "f32f74f5a8e1297d1fa5b92420edcc819358af19",
-          "commit_sha": "17c7b0bebd3f10eface4af1cc7c1c6a60e200046",
-          "content_hash": "6fbf5840cb37cb276a9b9ab5d47929c3c28332afd3f264a0e45b7baa57717107",
-          "entity_id": "external_doc_nousresearch_hermes_agent_docs_design_kanban_dialogs_index_html",
-          "observed_blob_sha": "f32f74f5a8e1297d1fa5b92420edcc819358af19",
-          "observed_commit_sha": "4f22543509d1b91dc45bcb369447126c5eb14fb7",
-          "observed_tree_sha": "2bd2e91bcb64f0ecd04711c92aaa2ad52861c5d7",
-          "output": "current/complex-agent-systems/nousresearch_hermes_agent/docs__design__kanban-dialogs__index.html__f32f74f5a8e1__17c7b0bebd3f.md",
-          "sha": "f32f74f5a8e1297d1fa5b92420edcc819358af19",
-          "tree_sha": "4c3ed123f0e98afaf31b23da908c3bb1f50bec12"
-        },
-        "docs/design/multiplexing-gateway.md": {
-          "blob_sha": "cb9c5da63e6314aa1171b904d0a4f520feac640c",
-          "commit_sha": "593aa74c6182ce2e5e23bc102daaaae71710c05d",
-          "content_hash": "67b7d8d6ee9d976357a71411ac36999f3841afb147dfa89694d1c740aae7141b",
-          "entity_id": "external_doc_nousresearch_hermes_agent_docs_design_multiplexing_gateway_md",
-          "observed_blob_sha": "cb9c5da63e6314aa1171b904d0a4f520feac640c",
-          "observed_commit_sha": "593aa74c6182ce2e5e23bc102daaaae71710c05d",
-          "observed_tree_sha": "1a48cc0c4b4f62777c098f684bb8edf11bbfdccb",
-          "output": "current/complex-agent-systems/nousresearch_hermes_agent/docs__design__multiplexing-gateway.md__cb9c5da63e63__593aa74c6182.md",
-          "sha": "cb9c5da63e6314aa1171b904d0a4f520feac640c",
-          "tree_sha": "1a48cc0c4b4f62777c098f684bb8edf11bbfdccb"
-        },
-        "docs/design/profile-builder.md": {
-          "blob_sha": "76649096d2c54ee83260f434c768ba3f5349a98d",
-          "commit_sha": "5771a6ebe616738e684ce174de88c7718411a046",
-          "content_hash": "ee3243d68b99ea4a23d6825aef24e195a0b944912dadf581d64d49d3b43fac92",
-          "entity_id": "doc_nousresearch_hermes_agent_docs_design_profile_builder_md_76649096d2c5",
-          "observed_blob_sha": "76649096d2c54ee83260f434c768ba3f5349a98d",
-          "observed_commit_sha": "4f22543509d1b91dc45bcb369447126c5eb14fb7",
-          "observed_tree_sha": "2bd2e91bcb64f0ecd04711c92aaa2ad52861c5d7",
-          "output": "current/complex-agent-systems/nousresearch_hermes_agent/docs__design__profile-builder.md__76649096d2c5__5771a6ebe616.md",
-          "sha": "76649096d2c54ee83260f434c768ba3f5349a98d",
-          "tree_sha": "dde1a14100619eb6a7a1ec6354ac21b10f21effe"
         }
       },
-      "last_checked_at": "2026-09-02T23:53:06.436493+00:00"
+      "last_checked_at": "2026-09-13T23:54:48.139377+00:00"
     },
     "OpenHands/OpenHands": {
       "documents": {
@@ -196,48 +160,48 @@
     "browser-use/browser-use": {
       "documents": {
         "README.md": {
-          "blob_sha": "2a3c0208abf29df21b5ceacfd9fdc4d88df6e40b",
-          "commit_sha": "50f205533fe10ba35b553d2a3689c77b87bd5d0a",
-          "content_hash": "0a48a89fdaecb22a996bef41596e867ccbfbce090b7fa53c08bc9c37b6cf6d25",
+          "blob_sha": "ae0462a41e3479defd70fadc587d55751e7d7ada",
+          "commit_sha": "843819cb8131e1370948d381ede9be7f8366ddc4",
+          "content_hash": "31b63278a979d01be0418f1367d8f5c594525e020c377e1f6dfd946a7ca74c6e",
           "entity_id": "external_doc_browser_use_browser_use_readme_md",
-          "observed_blob_sha": "2a3c0208abf29df21b5ceacfd9fdc4d88df6e40b",
-          "observed_commit_sha": "50f205533fe10ba35b553d2a3689c77b87bd5d0a",
-          "observed_tree_sha": "5b421afc2d985329ebb09cd6177430113b14c302",
-          "output": "current/complex-agent-systems/browser_use_browser_use/README.md__2a3c0208abf2__50f205533fe1.md",
-          "sha": "2a3c0208abf29df21b5ceacfd9fdc4d88df6e40b",
-          "tree_sha": "5b421afc2d985329ebb09cd6177430113b14c302"
+          "observed_blob_sha": "ae0462a41e3479defd70fadc587d55751e7d7ada",
+          "observed_commit_sha": "843819cb8131e1370948d381ede9be7f8366ddc4",
+          "observed_tree_sha": "5f3e0ca4fbbddf1d190aa8d27f032ac153fceeea",
+          "output": "current/complex-agent-systems/browser_use_browser_use/README.md__ae0462a41e34__843819cb8131.md",
+          "sha": "ae0462a41e3479defd70fadc587d55751e7d7ada",
+          "tree_sha": "5f3e0ca4fbbddf1d190aa8d27f032ac153fceeea"
         }
       },
-      "last_checked_at": "2026-09-09T23:51:26.692780+00:00"
+      "last_checked_at": "2026-09-13T23:54:53.034893+00:00"
     },
     "bytedance/deer-flow": {
       "documents": {
         "CHANGELOG.md": {
-          "blob_sha": "23180fe44ed591b689db0b57dae45677a0f6183c",
-          "commit_sha": "ce635b7de6e9495d299874cf347e899fa5d315e4",
-          "content_hash": "17b11b21df36351c9d89b8ae98a97d69204872b6dcac3440cafa45d84bb44880",
+          "blob_sha": "7d8d62fda91b90335876e855cdbd6fc791ee671a",
+          "commit_sha": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "content_hash": "72347de195aab57ecfc74f0bd2304b68d5d614592e6a73453c1f580bf0ca5d62",
           "entity_id": "external_doc_bytedance_deer_flow_changelog_md",
-          "observed_blob_sha": "23180fe44ed591b689db0b57dae45677a0f6183c",
-          "observed_commit_sha": "ce635b7de6e9495d299874cf347e899fa5d315e4",
-          "observed_tree_sha": "8ca09d2a4342236633b9667644b6404fe686df05",
-          "output": "current/complex-agent-systems/bytedance_deer_flow/CHANGELOG.md__23180fe44ed5__ce635b7de6e9.md",
-          "sha": "23180fe44ed591b689db0b57dae45677a0f6183c",
-          "tree_sha": "8ca09d2a4342236633b9667644b6404fe686df05"
+          "observed_blob_sha": "7d8d62fda91b90335876e855cdbd6fc791ee671a",
+          "observed_commit_sha": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "observed_tree_sha": "57b31939a174bc5779e80dfb4b3f4727319caef3",
+          "output": "current/complex-agent-systems/bytedance_deer_flow/CHANGELOG.md__7d8d62fda91b__d5ae3882b670.md",
+          "sha": "7d8d62fda91b90335876e855cdbd6fc791ee671a",
+          "tree_sha": "57b31939a174bc5779e80dfb4b3f4727319caef3"
         },
         "README.md": {
-          "blob_sha": "7067aad3c42129f14d77ea45e9ba0c15d69edc37",
-          "commit_sha": "ce635b7de6e9495d299874cf347e899fa5d315e4",
-          "content_hash": "958e1a8fb61614bd1690ff7d3681327cc6f9bef229c0cba105ca9b377aa19b60",
+          "blob_sha": "cb111590bd1c1833392194404d629946f072390d",
+          "commit_sha": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "content_hash": "2e7b5c9335b5aa2ec0acd0a33ce4103fc01eef320b30bafaa3d78d35ff629980",
           "entity_id": "external_doc_bytedance_deer_flow_readme_md",
-          "observed_blob_sha": "7067aad3c42129f14d77ea45e9ba0c15d69edc37",
-          "observed_commit_sha": "ce635b7de6e9495d299874cf347e899fa5d315e4",
-          "observed_tree_sha": "8ca09d2a4342236633b9667644b6404fe686df05",
-          "output": "current/complex-agent-systems/bytedance_deer_flow/README.md__7067aad3c421__ce635b7de6e9.md",
-          "sha": "7067aad3c42129f14d77ea45e9ba0c15d69edc37",
-          "tree_sha": "8ca09d2a4342236633b9667644b6404fe686df05"
+          "observed_blob_sha": "cb111590bd1c1833392194404d629946f072390d",
+          "observed_commit_sha": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "observed_tree_sha": "57b31939a174bc5779e80dfb4b3f4727319caef3",
+          "output": "current/complex-agent-systems/bytedance_deer_flow/README.md__cb111590bd1c__d5ae3882b670.md",
+          "sha": "cb111590bd1c1833392194404d629946f072390d",
+          "tree_sha": "57b31939a174bc5779e80dfb4b3f4727319caef3"
         }
       },
-      "last_checked_at": "2026-09-12T23:48:29.019155+00:00"
+      "last_checked_at": "2026-09-13T23:55:03.006271+00:00"
     },
     "coze-dev/coze-studio": {
       "documents": {
