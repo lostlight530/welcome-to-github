@@ -18,8 +18,14 @@ Repository Inspection: NO
 GitHub Actions Inspection: NO
 Write Scope: horizon-cortex only
 Boundary Violation: NO
-Record Provenance: HUMAN_AUTHORIZED_RECONCILIATION
+Source Identity: MCP official 2026-07-28 final + 2026-08-22 roadmap; A2A official v1 release line
+Source Authority For Claim: OFFICIAL_PROTOCOL_AND_PROJECT_RELEASE_AUTHORITY_FOR_THEIR_OWN_VERSION_FACTS
+Independent Verification: TWO_DISTINCT_PROJECT_LINEAGES_MCP_AND_A2A; H2_RECHECK_OF_H1_SOURCES_DOES_NOT_ADD_INDEPENDENCE
+Host Applicability: UNKNOWN
+Evidence Upgrade Basis: same-day H1 plus direct recheck of current official protocol/project sources; no host inference
+Original Execution Status: NO_DELIVERED_TARGET_FILE_ON_BASE_MAIN
 Current Path Status: PRESENT_ON_RECONCILIATION_BRANCH
+Record Provenance: HUMAN_AUTHORIZED_RECONCILIATION
 
 INPUT_RECORD
 - Exact H1: horizon-cortex/2026-09-13-H1-signal-observe.md
