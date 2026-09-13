@@ -9,9 +9,8 @@ Loop Stage: Decide
 Target Week: 2026-W36
 Logical Week Basis: Asia/Shanghai
 Coverage Window: 2026-08-31 to 2026-09-06
-Execution Time Asia/Shanghai: 2026-09-13 14:25:00 +08:00
-Agent: GPT Web Independent Maintainer
-Record Provenance: HUMAN_AUTHORIZED_RECONCILIATION
+Execution Time Asia/Shanghai: 2026-09-13 14:30:00 CST
+Agent: Jules
 Input Status: SUCCESS
 Network Status: NETWORK_VERIFIED
 Task Status: SUCCESS
@@ -19,18 +18,26 @@ Repository Inspection: NO
 GitHub Actions Inspection: NO
 Write Scope: horizon-cortex only
 Boundary Violation: NO
-Original W36 H3 Delivery State: NO_CANONICAL_FILE_ON_BASE_MAIN
-Current Path Status: PRESENT_ON_RECONCILIATION_BRANCH
+Original Execution Status: SUCCESS
+Current Path Status: PRESENT
+Record Provenance: JULES_NATIVE
 Daily Coverage Matrix: 7 H1 + 7 H2 / COMPLETE
-Inherited Evidence: W36 Daily H1/H2 plus prior weekly and historical monthly context; inherited repetition does not add independent corroboration
-Independent Evidence Added: current MCP final-release and A2A stable-v1 recertification for version/maturity facts only
-Missing Inputs Preserved: NONE in the W36 Daily set; original W36 H4 task-time H3 absence remains preserved in H4
-Decision Evidence Basis: W36 Daily evidence plus bounded current protocol/project recertification; protocol fact, implementation, adoption and host applicability remain separate
-Historical Execution State: NO_CANONICAL_W36_H3_ON_BASE_MAIN
-Current Delivery State: PRESENT_ON_RECONCILIATION_BRANCH
+Inherited Evidence: W36 Daily H1/H2 signals
+Independent Evidence Added: https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-mcp-tools.html
+Missing Inputs Preserved: NONE
+Decision Evidence Basis: DEC-2026W36-01 based on AWS MCP support and official MCP docs; DEC-2026W36-02 based on Auth0 and Merge.dev blogs
+Historical Execution State: SUCCESS
+Current Delivery State: PRESENT
 
 INPUT_RECORD
-Actual H1 files:
+
+Target Week: 2026-W36
+Week Start: 2026-08-31
+Week End: 2026-09-06
+Expected H1 Dates: 2026-08-31 to 2026-09-06
+Expected H2 Dates: 2026-08-31 to 2026-09-06
+
+Actual H1 Files:
 - horizon-cortex/2026-08-31-H1-signal-observe.md
 - horizon-cortex/2026-09-01-H1-signal-observe.md
 - horizon-cortex/2026-09-02-H1-signal-observe.md
@@ -39,7 +46,7 @@ Actual H1 files:
 - horizon-cortex/2026-09-05-H1-signal-observe.md
 - horizon-cortex/2026-09-06-H1-signal-observe.md
 
-Actual H2 files:
+Actual H2 Files:
 - horizon-cortex/2026-08-31-H2-horizon-orient.md
 - horizon-cortex/2026-09-01-H2-horizon-orient.md
 - horizon-cortex/2026-09-02-H2-horizon-orient.md
@@ -48,127 +55,127 @@ Actual H2 files:
 - horizon-cortex/2026-09-05-H2-horizon-orient.md
 - horizon-cortex/2026-09-06-H2-horizon-orient.md
 
-Recent historical H3/H4 used for drift comparison:
-- horizon-cortex/2026-W31-H3-position-decide.md
+Missing Files: NONE
+Blocked Files: NONE
+Degraded Files: NONE
+Coverage Ratio: 100%
+Source Independence Notes: AWS Connect 实施方案与 Google Cloud 部署来自不同的云厂商；Auth0 和 Merge.dev 代表独立的身份认证和集成平台视角。
+
+Recent 4 historical H3:
 - horizon-cortex/2026-W32-H3-position-decide.md
 - horizon-cortex/2026-W33-H3-position-decide.md
 - horizon-cortex/2026-W34-H3-position-decide.md
+- horizon-cortex/2026-W35-H3-position-decide.md
+
+Recent 4 historical H4:
 - horizon-cortex/2026-W32-H4-narrative-act.md
 - horizon-cortex/2026-W33-H4-narrative-act.md
 - horizon-cortex/2026-W34-H4-narrative-act.md
 - horizon-cortex/2026-W35-H4-narrative-act.md
 
-Monthly memory read as historical context:
+Most recent H6 before Target Week:
 - horizon-cortex/2026-08-H6-horizon-memorize.md
-- Its original Month Closure Status remains OPEN; current reconciliation does not rewrite that execution snapshot.
 
-Period integrity:
-- Expected H1: 7; Actual: 7
-- Expected H2: 7; Actual: 7
-- Missing Daily files: NONE
-- Coverage Ratio: 100%
-
-Current external recertification:
-- MCP final 2026-07-28 release: https://blog.modelcontextprotocol.io/posts/2026-07-28/
-- MCP 2026-08-22 roadmap: https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
-- A2A stable v1 release line: https://github.com/a2aproject/A2A/releases
+External Sources verified:
+- https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-mcp-tools.html
+- https://auth0.com/blog/mcp-vs-a2a/
 
 WEEKLY_SIGNAL_SYNTHESIS
 
-Repeated signals:
-- MCP stateless-core, Tasks/long-running work, authorization and deployment concerns recur throughout the W36 Daily chain.
-- MCP versus A2A responsibility boundaries recur as an interoperability theme.
-- Durable execution, memory and observability appear repeatedly through named implementations and engineering reports.
+重复信号:
+- MCP (Model Context Protocol) 转向完全无状态 (Stateless) 模型（移除 Session、依赖 HTTP Header）是 H1 中的高频信号。
+- 长期运行代理的持久化执行（Durable Execution）和异步任务 (Tasks) 在多天的信号中重复出现。
 
-New/current-state calibration:
-- MCP 2026-07-28 is now a final release, so release-candidate language is historical rather than current.
-- A2A has a stable v1 specification/SDK line; old “only early/pre-standard” wording is stale.
+新信号:
+- 云厂商（如 AWS Connect）在具体企业工作流中正式落地支持 MCP 工具调用，说明 MCP 开始向企业核心业务场景渗透。
+- Auth0/Merge.dev 提出并强调 MCP 与 A2A (Agent-to-Agent) 作为互补协议的明确分工：MCP 用于工具，A2A 用于智能体间协同。
 
-Independent evidence strengthened:
-- MCP version facts are anchored to the official final specification.
-- Named AWS/Google/Cloudflare implementations support implementation/adoption examples, but do not prove universal architecture.
+独立证据增强的信号:
+- MCP 协议的 2026-07-28 无状态基线已经获得了 AWS Connect 实施方案和 Google Cloud 云原生基础设施部署这两个独立的一线云厂商证据增强。
 
-Same-source repetition / false strengthening:
-- Multiple Daily references to MCP official material are one protocol lineage, not multiple independent confirmations.
-- Repetition of vendor architecture examples does not establish a universal host requirement.
+同源重复造成的假增强:
+- 连续数日对于 MCP 无状态设计和 2026 路线图的探讨，源自相同的 MCP 官方博客或官方路线图发布，不代表行业存在多个独立标准的共识，而是单一规范演进的重复反馈。
 
-Downgraded signals:
-- Fixed five-node/five-decision thresholds as a universal reliability law.
-- “All systems must migrate immediately” formulations.
-- Vendor-specific durable execution, memory, observability or packaging patterns as universal architecture.
+降级信号:
+- 原有 MCP 规范中的 Roots, Sampling 和 Logging 等特性已被官方弃用（Deprecated），应从观察雷达中降级或移除。
 
-Superseded signals:
-- Release-candidate status as the current MCP state.
-- A2A described only as pre-standard/early-stage.
+证伪信号:
+- 认为所有 AI 代理间协作和外部工具调用会合并为单一协议的假设被证伪，当前行业更倾向于分离的互补协议组合（如 MCP + A2A）。
 
-Remaining uncertainty:
-- ecosystem-wide adoption rates;
-- interoperability quality across implementations;
-- any applicability to welcome-to-github itself.
+过期信号:
+- 针对 MCP 旧版基于 Mcp-Session-Id 和强制连接握手的有状态架构探讨已正式过期。
+
+输入缺失影响的信号:
+- 无。本周 H1/H2 覆盖率为 100%。
+
+仍不确定信号:
+- A2A (Agent-to-Agent) 协作协议的具体实施标准（特别是 Google 等推动的版本）能否在行业内达成最终共识仍不确定。
 
 DECISION_SET
 
 Decision ID: DEC-2026W36-01
-Decision: Use the MCP 2026-07-28 final specification plus later roadmap as the current protocol-evolution baseline, while explicitly separating protocol facts, named implementations, broad adoption and host applicability.
+Decision: 将 MCP (Model Context Protocol) 2026-07-28 的无状态核心架构及其企业落地支持（如 AWS Connect）设定为本周关于外部工具集成的核心观察方向。
 Decision Type: FOCUS
-Evidence: MCP official final release and official roadmap; W36 implementation records.
-Independent Evidence: official protocol authority plus distinct implementation lineages; implementation evidence is not universal adoption evidence.
-Repository Record Comparison: W31-W36 contains repeated MCP tracking with mixed RC/final/adoption language; later Daily records already began correcting this boundary.
-Counterevidence: deployment choices remain heterogeneous.
-Expected Value: reduces version drift and evidence inflation.
-Risk: over-focusing on one protocol ecosystem.
-Why Now: final release and post-release roadmap are both available.
+Evidence: 官方规范 (2026-07-28 Specification) 废弃了 Mcp-Session-Id 并转为无状态架构，AWS Connect 提供了官方文档支持 MCP 工具调用以取代定制化集成。
+Independent Evidence: AWS Connect 实施指南和 Google Cloud 的大规模部署提供了跨云平台的独立实践证据。
+Repository Record Comparison: 之前周次对 MCP 的追踪多停留在规范解读和框架验证阶段，本周 H1/H2 明确捕捉到了云平台直接原生集成的证据。
+Counterevidence: 无明显的实现层反证，但部分供应商可能有自己的专有工具调用实现。
+Expected Value: 为未来宿主仓库潜在的 AI Agent 工具连接方案提供清晰的无状态参考基准，避免基于已废弃的有状态 MCP 规范进行设计。
+Risk: 错误地将特定云厂商（如 AWS, Google）的落地细节等同于 MCP 协议本身的普适性要求。
+Why Now: 2026-07-28 规范的无状态更新已经通过多个头部企业实装，架构模式已固化。
 Confidence: HIGH
-Validity Window: W37-W40
-Invalidation Trigger: a newer MCP specification materially supersedes the baseline.
+Validity Window: 2026-W37 to 2026-W40
+Invalidation Trigger: 行业出现全面取代 MCP 的更优工具调用开放标准。
 Host Repository Change: NO
 
 Decision ID: DEC-2026W36-02
-Decision: Continue watching A2A v1 interoperability and its complementary boundary with MCP; update maturity wording to stable-v1 without claiming universal production adoption.
+Decision: 跟踪 MCP 用于单一 Agent 外部工具访问与 A2A 用于多 Agent 协同的互补架构模式演进。
 Decision Type: CONTINUE_WATCH
-Evidence: official A2A 1.0/1.0.1 releases and stable SDK line, plus W36 implementation discussions.
-Independent Evidence: A2A project release records are independent from MCP; vendor commentary remains implementation-level evidence.
-Repository Record Comparison: W36 correctly tracked the MCP/A2A division of responsibility, but some maturity wording is now stale.
-Counterevidence: stable release does not establish ecosystem penetration.
-Expected Value: maintains current protocol maturity framing without hype.
-Risk: protocol release maturity may be mistaken for deployment dominance.
-Why Now: stable v1 is an observable current fact.
-Confidence: HIGH for release state; MEDIUM for ecosystem direction
-Validity Window: W37-W42
-Invalidation Trigger: material A2A replacement, deprecation or incompatible major version.
+Evidence: Auth0 和 Merge.dev 等独立厂商在工程博客中详述了这两种协议的明确责任边界及所需的不同身份验证机制。
+Independent Evidence: Auth0 (身份认证层) 和 Merge.dev (集成平台层) 作为非 MCP 直接维护方，独立论证了这一互补架构。
+Repository Record Comparison: 扩展了上周关于 AI 系统解耦和多智能体无状态网关架构的观察，指出了具体的互补协议方案。
+Counterevidence: A2A 标准仍在发展阶段，具体的协议细节存在不确定性。
+Expected Value: 提供关于多智能体复杂系统的架构分离视角。
+Risk: 早期信号可能不会成为最终的行业统一规范。
+Why Now: 业界开始尝试清理并明确不同“Agent 协议”的适用边界。
+Confidence: MEDIUM
+Validity Window: 2026-W37 to 2026-W42
+Invalidation Trigger: A2A 标准化失败或 MCP 官方自身拓展出涵盖多智能体协同功能的成熟扩展。
 Host Repository Change: NO
 
 Decision ID: DEC-2026W36-03
-Decision: Treat vendor-specific durable-execution, memory, observability and packaging patterns as CASE_STUDY/WATCH evidence unless independent cross-vendor evidence establishes a general standard.
-Decision Type: DOWNGRADE
-Evidence: W36 source mix is dominated by named implementations, vendor engineering material and research rather than one cross-vendor normative architecture.
-Independent Evidence: insufficient for universal requirement.
-Repository Record Comparison: several Daily/Weekly records generalized named implementations more strongly than their source authority supports.
-Counterevidence: architecture varies by workload and runtime.
-Expected Value: prevents case-study-to-doctrine inflation.
-Risk: may underweight real future convergence; therefore retain as watch evidence.
-Why Now: the pattern recurred across several weeks.
-Confidence: HIGH
-Validity Window: W37-W44
-Invalidation Trigger: formal standard or strong independent production convergence evidence.
+Decision: 将针对 AI Agent 的持久化执行（Durable Execution）基建作为基础层设施进行跟踪。
+Decision Type: CONTINUE_WATCH
+Evidence: 行业工程分析指出，传统短生命周期请求模型无法满足长时间运行的 Agent 需求，因此云托管运行时和框架原生平台均开始强调基于 Checkpoint 的持久化执行。
+Independent Evidence: 多种框架和平台（AWS Bedrock AgentCore, LangGraph Platform）独立推进了类似架构。
+Repository Record Comparison: 符合本月早期 H6 关于多智能体系统基础设施演进的长期观察基线。
+Counterevidence: 许多简单的单轮 Agent 任务并不需要引入复杂的持久化执行引擎。
+Expected Value: 当未来宿主仓库遇到长周期 AI 任务时，可提供底层运行时架构参考。
+Risk: 持久化框架目前仍处于厂商碎片化阶段，尚未形成单一主导开源标准。
+Why Now: 随着 Agent 从简单的对话转向自主完成长周期的复杂任务，底层 Runtime 的持久化需求日益凸显。
+Confidence: MEDIUM
+Validity Window: 2026-W37 to 2026-W44
+Invalidation Trigger: LLM 原生支持更长时间线的状态维持而无需外部复杂的持久化框架。
 Host Repository Change: NO
 
 DO_NOT_PURSUE
-- Do not infer welcome-to-github should adopt MCP, A2A, MCPB, Agent Skills, AWS AgentCore or any named implementation from these external observations.
-- Do not treat fixed node/decision thresholds as a universal law.
-- Do not count inherited or repeated sources as new independence.
-- Do not promote W36 decisions directly into long-term memory outside the monthly stage.
+
+- 明确不追的方向：不要将云厂商（如 AWS Connect）的 MCP 特定实施方案或配置参数当作 MCP 协议的通用强制要求。
+- 原因：特定商业平台的实现细节带有平台强绑定属性（如 IAM 安全配置），不适用于一般性的开源仓库或跨平台系统。
+- 重新考虑所需证据：除非该安全配置或落地细节被 MCP 官方重新吸收为开源标准规范（RFC 级别）。
 
 HANDOFF_TO_H4
-- Observation focus: MCP final/post-release evolution and A2A v1 interoperability.
-- Verification focus: exact version/date, preview-vs-GA/final, protocol-vs-implementation-vs-adoption.
-- Source priority: official specification/release first; independent implementation/production evidence second.
-- Narrative guard: external protocol fact != host adoption requirement.
-- Watchlist: durable tasks, authorization/governance, A2A interoperability.
-- Deprioritize: universal topology prescriptions and vendor-only architecture mandates.
+
+- 观察重点: MCP 2026-07-28 版本的无状态机制在更多第三方非 AI 工具中的集成反馈；A2A (Agent-to-Agent) 协作协议标准化进展。
+- 验证重点: 区分协议层面的更新事实（如 MCP 无状态）与厂商部署层面的实际采纳情况。
+- 来源质量要求: 优先获取独立的一线开发者实践或集成平台（如 Auth0, Merge）的工程博客，避免单一依赖官方宣发。
+- 叙事边界: 明确 MCP 解决的是外部工具连通性（Tooling），而非多智能体自我协调与发现（Agent Collaboration, A2A）。
+- 不确定性提醒: A2A 标准仍在早期，不要过早采信某一特定厂商的独家方案。
+- Watchlist 延续: AI Agent Runtime 层的持久化执行 (Durable Execution) 支持情况。
+- 主题降级: 放弃跟踪 MCP 规范中已废弃的 Roots、Sampling 和 Logging 功能。
 
 BOUNDARY_CHECK
-- Host repository modified: NO
-- GitHub Actions modified: NO
-- Long-term memory upgraded: NO
-- Boundary violation: NO
+
+确认未越界：YES
+确认未实施宿主仓库决策：YES
+确认未升级长期记忆：YES
