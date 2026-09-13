@@ -21,6 +21,13 @@ Write Scope: horizon-cortex only
 Boundary Violation: NO
 Original W36 H3 Delivery State: NO_CANONICAL_FILE_ON_BASE_MAIN
 Current Path Status: PRESENT_ON_RECONCILIATION_BRANCH
+Daily Coverage Matrix: 7 H1 + 7 H2 / COMPLETE
+Inherited Evidence: W36 Daily H1/H2 plus prior weekly and historical monthly context; inherited repetition does not add independent corroboration
+Independent Evidence Added: current MCP final-release and A2A stable-v1 recertification for version/maturity facts only
+Missing Inputs Preserved: NONE in the W36 Daily set; original W36 H4 task-time H3 absence remains preserved in H4
+Decision Evidence Basis: W36 Daily evidence plus bounded current protocol/project recertification; protocol fact, implementation, adoption and host applicability remain separate
+Historical Execution State: NO_CANONICAL_W36_H3_ON_BASE_MAIN
+Current Delivery State: PRESENT_ON_RECONCILIATION_BRANCH
 
 INPUT_RECORD
 Actual H1 files:
