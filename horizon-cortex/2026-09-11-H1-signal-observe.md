@@ -20,7 +20,7 @@ Write Scope: horizon-cortex only
 Boundary Violation: NO
 Source Identity: Model Context Protocol Official Documentation
 Source Authority For Claim: Official documentation
-Independent Verification: YES
+Independent Verification: NONE
 Host Applicability: UNKNOWN
 Evidence Upgrade Basis: NONE
 Original Execution Status: SUCCESS
@@ -68,7 +68,7 @@ EXTERNAL_SOURCE_RECORDS
   Source Type: Official documentation
   Evidence Tier: Tier 1
   Access Status: SUCCESS
-  Independent Source: YES, primary protocol publisher
+  Independent Source: NO, primary protocol publisher; authoritative for the documented workflow but not independent corroboration
   Claim Supported: Agent skills (https://agentskills.io/home) are portable instruction sets that give AI coding assistants domain knowledge for a task, such as MCP server design and implementation. A reference set of MCP development skills is available as the mcp-server-dev plugin.
   Claim Not Supported: Universal adoption of Agent skills or mandatory host integration.
   Relevance: HIGH
