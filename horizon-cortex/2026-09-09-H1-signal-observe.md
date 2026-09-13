@@ -20,7 +20,7 @@ Write Scope: horizon-cortex only
 Boundary Violation: NO
 Source Identity: Model Context Protocol Official Documentation
 Source Authority For Claim: Official documentation
-Independent Verification: YES
+Independent Verification: NONE
 Host Applicability: UNKNOWN
 Evidence Upgrade Basis: NONE
 Original Execution Status: SUCCESS
@@ -65,7 +65,7 @@ EXTERNAL_SOURCE_RECORDS
   Source Type: Official documentation
   Evidence Tier: Tier 1
   Access Status: SUCCESS
-  Independent Source: YES, primary protocol publisher
+  Independent Source: NO, primary protocol publisher; authoritative for the protocol definition but not independent corroboration
   Claim Supported: MCP enables applications to connect to external systems (Google Calendar, Notion) and empowers developers and end-users with unified data source access.
   Claim Not Supported: Universal mandatory adoption in 2026 across third-party non-AI specific workflows.
   Relevance: HIGH
