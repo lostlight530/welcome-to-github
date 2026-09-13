@@ -20,7 +20,7 @@ Write Scope: horizon-cortex only
 Boundary Violation: NO
 Source Identity: Model Context Protocol Official Documentation
 Source Authority For Claim: Official documentation
-Independent Verification: YES
+Independent Verification: NONE
 Host Applicability: UNKNOWN
 Evidence Upgrade Basis: NONE
 Original Execution Status: SUCCESS
@@ -68,7 +68,7 @@ EXTERNAL_SOURCE_RECORDS
   Source Type: Official documentation
   Evidence Tier: Tier 1
   Access Status: SUCCESS
-  Independent Source: YES, primary protocol publisher
+  Independent Source: NO, primary protocol publisher; authoritative for the documented deployment paths but not independent corroboration
   Claim Supported: MCP defines deployment paths, notably Streamable HTTP for remote/cloud deployments with zero install friction, and MCP Bundles (MCPB) that package a local stdio server with its runtime (Node/Python) into a single archive for local interactions.
   Claim Not Supported: Widespread independent ecosystem migration to MCPB over standalone binaries.
   Relevance: HIGH
