@@ -9,7 +9,6 @@ Not archived here:
 - `parallax/**` periodic GPT/Codex Agent artifacts
 - active repository contracts, policies, architecture, schemas, checkers, or workflows
 - current external-maintenance procedure/templates
-- the current maintenance entry point `horizon-cortex/2026-09-15-daily-maintenance-reconciliation.md`
 - Jules-authored archaeology records under `docs/archaeology/**`
 
 ## Archive classes
@@ -39,5 +38,6 @@ Not archived here:
 | Jules content-contract reconciliation | `05-maintenance-and-reconciliation/2026-09-06--jules-content-contract--reconciliation.md` | `horizon-cortex/2026-09-06-jules-content-contract-reconciliation.md` |
 | September ten-day successor reconciliation | `05-maintenance-and-reconciliation/2026-09-10--sep-01-10--cadence-reconciliation.md` | `horizon-cortex/2026-09-10-ten-day-cadence-reconciliation.md` |
 | September 1-13 maintenance predecessor | `05-maintenance-and-reconciliation/2026-09-13--sep-01-13--maintenance-reconciliation.md` | `horizon-cortex/2026-09-13-full-sop-reconciliation.md` |
+| September 14-15 incremental maintenance reconciliation | `05-maintenance-and-reconciliation/2026-09-15--sep-14-15--maintenance-reconciliation.md` | `horizon-cortex/2026-09-15-daily-maintenance-reconciliation.md` |
 
-The old paths remain recoverable through Git history. The archive directory is historical storage, not a replacement for current task contracts or current maintenance authority.
+The old paths remain recoverable through Git history. The archive directory is historical storage, not a replacement for current task contracts or the current external-maintenance procedure.
