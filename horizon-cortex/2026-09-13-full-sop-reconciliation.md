@@ -1,6 +1,7 @@
 # Horizon September Maintenance Reconciliation — 2026-09-01 through 2026-09-13
 
-Status: CURRENT_MAINTENANCE_RECORD
+Status: HISTORICAL_MAINTENANCE_RECORD
+Superseded as current entry point by: `horizon-cortex/2026-09-15-daily-maintenance-reconciliation.md`
 Repository: `lostlight530/welcome-to-github`
 System: `horizon-cortex`
 Audit window: `2026-09-01` through `2026-09-13` Asia/Shanghai
@@ -112,3 +113,7 @@ No unrun check is reported as PASS.
 ## Maintenance result
 
 `SEP_01_13_REVIEWED / SOURCE_DRIFT_CORRECTED / SINGLE_CURRENT_AUDIT_RECORD / MONTH_OPEN`
+
+## Successor note — 2026-09-15
+
+This file remains the authoritative point-in-time record for the 2026-09-01 through 2026-09-13 pass. It is no longer the current maintenance entry point after the 2026-09-15 incremental Daily maintenance. No 2026-09-13 finding is withdrawn by that status change.
