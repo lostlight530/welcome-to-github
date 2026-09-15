@@ -27,6 +27,9 @@ Not archived here:
 | Jules August history correction | `01-corrections-and-errata/2026-09-07--jules-august-history--correction.md` | `horizon-cortex/2026-09-07-jules-august-history-correction.md` |
 | August through-23 stage audit | `03-stage-and-period-audits/2026-08-23--august-through-23--stage-audit.md` | `horizon-cortex/2026-08-through-23-stage-audit.md` |
 | August through-27 stage audit | `03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md` | `horizon-cortex/2026-08-through-27-stage-audit.md` |
+| August 1-28 daily/weekly reconciliation | `03-stage-and-period-audits/2026-08-28--august-01-28--daily-weekly-reconciliation.md` | `horizon-cortex/2026-08-01-through-28-daily-weekly-reconciliation.md` |
+| September 1-13 reconciliation ledger | `03-stage-and-period-audits/2026-09-13--sep-01-13--reconciliation-ledger.md` | `horizon-cortex/2026-09-13-thirteen-day-reconciliation.md` |
+| September 1-13 month-to-date reconciliation | `03-stage-and-period-audits/2026-09-13--sep-01-13--month-to-date-reconciliation.md` | `horizon-cortex/2026-09-13-september-month-to-date-reconciliation.md` |
 | August month-end reconciliation | `04-evidence-and-closure-ledgers/2026-08-31--august--month-end-reconciliation.md` | `horizon-cortex/2026-08-month-end-reconciliation.md` |
 | W33 post-hoc reconciliation | `05-maintenance-and-reconciliation/2026-W33--weekly-reconciliation.md` | `horizon-cortex/2026-W33-reconciliation.md` |
 | W34 post-hoc reconciliation | `05-maintenance-and-reconciliation/2026-W34--weekly-reconciliation.md` | `horizon-cortex/2026-W34-reconciliation.md` |
