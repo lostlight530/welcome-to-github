@@ -6,7 +6,7 @@ System: `horizon-cortex`
 Maintenance type: `INCREMENTAL_TWO_DAY_MAINTENANCE`
 Audit window: `2026-09-14` through `2026-09-15` Asia/Shanghai
 Base main at maintenance start: `e8de5cc4804c4a6043aaf5f1ba10f2d022d958b1`
-Predecessor maintenance record: `horizon-cortex/2026-09-13-full-sop-reconciliation.md`
+Predecessor maintenance record: `historical-audits/05-maintenance-and-reconciliation/2026-09-13--sep-01-13--maintenance-reconciliation.md`
 Historical rewrite policy: preserve Jules task-time execution facts; minimally correct current semantic fields and record temporal conflicts without inventing replacement execution facts.
 
 ## Scope boundary
