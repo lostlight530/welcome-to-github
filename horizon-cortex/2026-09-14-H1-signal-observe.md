@@ -37,7 +37,7 @@ INPUT_RECORD
 - 2026-09-13-H1: 了解最近一次 H1 捕捉到的 MCP 和 A2A 协议信号更新。
 - 2026-09-12-H2: 了解最近一次对 MCPB 封装和流式部署架构的独立分析和部署影响。
 - 2026-W36-H4: 获取 W36 周期目前的动作态势（当前处于 NO_ACTIONABLE_DECISION 和 BLOCKED 的延续状态）。
-- 2026-09-H6: 明确当前 9 月份的状态基线和约束。
+- 2026-09-H6: 读取 2026-09-01 早跑且 `OPEN / REFLECTION_INPUT_MISSING / BLOCKED` 的 September H6 历史记录，用于确认不得提前月度记忆提升的约束；该文件不是已提升的 9 月 baseline。
 
 本次尝试的搜索主题：
 - "Model Context Protocol" "MCP"
@@ -77,3 +77,12 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+## CURRENT_MAINTENANCE_CORRECTION_2026-09-15
+
+Correction Agent: GPT Independent Maintainer / HUMAN_AUTHORIZED_MAINTENANCE
+Correction Scope: interpretation only; original Jules execution facts preserved
+Original wording: `2026-09-H6: 明确当前 9 月份的状态基线和约束。`
+Corrected interpretation: the cited September H6 is the 2026-09-01 early `OPEN / REFLECTION_INPUT_MISSING / BLOCKED` record with `NO_DURABLE_MEMORY_PROMOTION`; it may constrain premature promotion but is not a promoted September baseline.
+Evidence: `horizon-cortex/2026-09-H6-horizon-memorize.md` and `horizon-cortex/2026-09-13-full-sop-reconciliation.md`.
+Original logical date, execution time, producer, task status, provenance, source-access state, and network state are unchanged.
