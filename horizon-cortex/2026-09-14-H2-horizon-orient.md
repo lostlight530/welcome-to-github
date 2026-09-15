@@ -48,35 +48,35 @@ Classification: unverified pending
 Verification Status: UNVERIFIED
 Verification Sources: NONE
 Repository Record Comparison: NONE
-Reason: NONE
+Reason: NETWORK_UNAVAILABLE / SOURCE_UNVERIFIED
 Evidence Strength: UNKNOWN
 Counterevidence: NONE
-Remaining Uncertainty: NONE
+Remaining Uncertainty: EXTERNAL_CHANGE_STATE_UNKNOWN_DUE_TO_NETWORK_UNAVAILABLE
 Promotion Eligibility: INELIGIBLE
 
 ORIENTATION_NOTES
-- 真实外部变化: 无
-- 营销叙事: 无
-- 应继续观察: 无
-- 旧假设应被削弱: 无
-- 判断尚未解决: 无
-- 哪些来源类型表现不可靠: 无
+- 真实外部变化: UNKNOWN（NETWORK_UNAVAILABLE / SOURCE_UNVERIFIED；未观察到证据不能证明没有变化）
+- 营销叙事: UNKNOWN
+- 应继续观察: 恢复外部来源访问后重新检查当日观察主题
+- 旧假设应被削弱: 无已验证依据
+- 判断尚未解决: 外部变化状态未验证
+- 哪些来源类型表现不可靠: 无法判断；本次是来源不可用而非来源质量比较
 
 NO_DECISION_SECTION
 - 今天没有做的决策: 无
 - 今天没有选择的架构: 无
 - 未授权的宿主仓库修改: 无
 - 未授权的长期记忆升级: 无
-- 仍需周度综合的问题: 无
+- 仍需周度综合的问题: 网络不可用造成的外部状态不确定性必须保留，不得聚合为“无变化”结论
 
 NEXT_HANDOFF
 - 已验证候选方向: 无
-- Watchlist: 无
+- Watchlist: 恢复网络后重新检查当日主题
 - 被降级或证伪的内容: 无
 - 由同一来源重复放大的内容: 无
-- 证据缺口: 无
+- 证据缺口: 外部来源不可用，无法验证是否存在实质新变化
 - 网络限制: 是
-- 需要更多观察窗口的方向: 无
+- 需要更多观察窗口的方向: 外部状态需在后续可联网窗口重新观察
 
 BOUNDARY_CHECK
 - 未做最终周决策: YES
@@ -87,3 +87,12 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+## CURRENT_MAINTENANCE_CORRECTION_2026-09-15
+
+Correction Agent: GPT Independent Maintainer / HUMAN_AUTHORIZED_MAINTENANCE
+Correction Scope: semantic calibration only; original Jules execution facts preserved
+Original current-path claims included `Remaining Uncertainty: NONE`, `真实外部变化: 无`, `判断尚未解决: 无`, and `证据缺口: 无` while the same record declared `NETWORK_UNAVAILABLE / SOURCE_UNVERIFIED / DEGRADED`.
+Corrected interpretation: external-change state remains unknown and an evidence gap remains when external sources are unavailable. `NO_MATERIAL_NEW_SIGNAL` means no material signal was established from available evidence; it does not establish that no external change occurred.
+Evidence boundary: `horizon-cortex/EVIDENCE_POLICY.md` requires uncertainty and source limitations to survive H1→H2 and later aggregation.
+Original logical date, recorded execution time, producer, task status, provenance, input state, and network/source status are unchanged.
