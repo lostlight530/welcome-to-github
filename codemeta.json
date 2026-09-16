@@ -7,7 +7,8 @@
   "license": "https://spdx.org/licenses/MIT.html",
   "author": {
     "@type": "Person",
-    "name": "lostlight530",
+    "@id": "https://orcid.org/0009-0001-3617-0832",
+    "name": "lightlost",
     "url": "https://github.com/lostlight530"
   },
   "applicationCategory": "Research Software",
