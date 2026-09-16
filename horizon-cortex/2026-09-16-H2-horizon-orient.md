@@ -7,9 +7,10 @@ Task ID: H2
 Cadence: Daily
 Loop Stage: Orient
 Logical Date: 2026-09-16
-Execution Time Asia/Shanghai: 2026-09-16 12:00:00 +08:00
+Execution Time UTC: UNKNOWN
+Execution Time Asia/Shanghai: UNKNOWN
 Agent: Jules
-Knowledge Source: External Web + horizon-cortex local files
+Knowledge Source: horizon-cortex input contract only
 Input Status: INPUT_MISSING
 Network Status: NOT_RUN
 Source Status: NONE
@@ -28,19 +29,27 @@ Current Path Status: PRESENT
 Record Provenance: JULES_NATIVE
 
 INPUT_RECORD
-INPUT_MISSING
+- Required Input: horizon-cortex/2026-09-16-H1-signal-observe.md
+- Input Status At H2 Execution: INPUT_MISSING
+- Substitute Prior-Day H1: NOT_ALLOWED
+- Historical Reconstruction: NOT_PERFORMED
 
 SIGNAL_CLASSIFICATION
 INPUT_MISSING
 
 ORIENTATION_NOTES
-INPUT_MISSING
+- 同日 H1 在本次 H2 的执行可见面中不可用，因此没有执行信号验证、解释或分类。
+- 后续 H1 到达或合并不改变本次 H2 的 point-in-time INPUT_MISSING 状态。
 
 NO_DECISION_SECTION
-INPUT_MISSING
+- 今天没有做的决策: 无
+- 今天没有选择的架构: 无
+- 未授权的宿主仓库修改: 无
+- 未授权的长期记忆升级: 无
 
 NEXT_HANDOFF
-INPUT_MISSING
+- 保留 INPUT_MISSING 作为本次 H2 的真实执行状态。
+- 不以后到的同日 H1 回填、重放或静默升级本次 H2。
 
 BOUNDARY_CHECK
 - 未做最终周决策: YES
