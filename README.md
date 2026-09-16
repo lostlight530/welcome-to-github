@@ -1,6 +1,6 @@
 # lostlight | 2025-2026 Year in Review
 
-[![DOI](https://zenodo.org/badge/973661186.svg)](https://zenodo.org/badge/latestdoi/973661186)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22790907.svg)](https://doi.org/10.5281/zenodo.22790907)
 
 > **"Small and Stable; Quiet and Pragmatic."**
 
