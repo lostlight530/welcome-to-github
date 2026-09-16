@@ -1,5 +1,7 @@
 # lostlight | 2025-2026 Year in Review
 
+[![DOI](https://zenodo.org/badge/973661186.svg)](https://zenodo.org/badge/latestdoi/973661186)
+
 > **"Small and Stable; Quiet and Pragmatic."**
 
 Welcome to the digital portal of lostlight, an Edge AI practitioner focusing on Python, Google Vertex AI, MediaPipe, and the Huawei Ascend ecosystems.
