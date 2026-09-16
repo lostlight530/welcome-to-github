@@ -3,6 +3,7 @@ message: "If you use this repository in your work, please cite it using the meta
 title: "welcome-to-github"
 authors:
   - name: "lostlight530"
+    orcid: "https://orcid.org/0009-0001-3617-0832"
     website: "https://github.com/lostlight530"
 repository-code: "https://github.com/lostlight530/welcome-to-github"
 license: MIT
