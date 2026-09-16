@@ -1,58 +1,53 @@
+# Contributing
 
+Contributions are welcome when they improve the current repository while preserving its evidence, provenance, recovery, and historical boundaries.
 
-# CONTRIBUTING
+## Before proposing a change
 
-## 1 基本原则  
-本仓库遵循五条工程哲学  
-1 稳定大于混沌  
-2 协议大于功能堆叠  
-3 先有 bug 再有 patch  
-4 零推广 靠代码说话  
-5 append only 可审计轨迹  
+- Start from the current `main` revision and read the relevant current repository documents before relying on historical snapshots or archived material.
+- Keep current state, historical observation, external claims, and proposals distinct.
+- Prefer a small, reviewable change with a clear owner and rollback.
+- Do not bundle unrelated architecture, maintenance, metadata, or historical cleanup into one pull request.
 
-所有贡献需符合以上原则
+## Issues
 
-## 2 贡献方式  
-### 2 1 Issue  
-欢迎提交 bug 报告 改进建议 架构讨论  
-请提供最小复现或明确上下文  
-所有讨论默认进入可审计轨迹  
+Use the repository Issue templates:
 
-### 2 2 Pull Request  
-PR 需满足  
-单一职责  
-可测试 可复用 可维护  
-不引入不必要依赖  
-不破坏协议边界  
-说明清晰 只写 What 和 Why  
+- **Bug report** for a reproducible defect in the current repository state.
+- **Proposal** for a bounded improvement with explicit non-goals and acceptance criteria.
+- **Evidence or governance correction** for a claim, metadata, governance, recovery, or provenance mismatch.
 
-评估标准  
-是否提升稳定性  
-是否降低复杂度  
-是否增强协议清晰度  
-是否符合零依赖原则  
+Security-sensitive reports belong in the private route described by `SECURITY.md`, not in a public issue.
 
-## 3 代码规范  
-遵循项目现有风格  
-文件命名清晰 可搜索  
-避免聪明代码 保持可维护性  
-新增逻辑需可审计  
+## Pull requests
 
-## 4 不接受的贡献  
-功能堆叠 炫技式实现  
-无必要依赖  
-破坏协议边界或稳定性  
-与仓库定位无关内容  
-纯 cosmetic PR  
+Use a feature branch and the pull-request template. A useful PR identifies:
 
-## 5 行为准则  
-本仓库遵循 GitHub 默认 Contributor Covenant  
-讨论需保持专业 克制 聚焦问题  
+- the base revision and exact scope
+- repository observations versus inference or proposal
+- affected implementation, contract, documentation, metadata, or governance surfaces
+- checks actually performed and their results
+- relevant checks intentionally left unrun
+- historical/provenance impact
+- security/privacy impact where applicable
+- a practical rollback
 
-## 6 许可  
-提交贡献即表示同意以仓库当前 LICENSE 发布  
+Never report an unrun check as passed. Do not silently rewrite historical evidence merely to make the archive match later knowledge; use a forward correction or reconciliation when the original record must remain auditable.
 
-## 7 贡献者署名  
-尊重贡献者署名权  
-达到一定贡献量后统一添加  
+## Style and scope
 
+Follow the existing repository style and naming conventions. Prefer clear, searchable, maintainable changes over clever or decorative complexity. New dependencies or new authority surfaces require an explicit reason and boundary.
+
+Purely cosmetic changes, unrelated feature accumulation, and changes that weaken protocol/evidence boundaries may be declined.
+
+## Conduct
+
+Keep discussion professional, specific, evidence-aware, and focused on the repository. Do not publish credentials, private information, or sensitive exploit details.
+
+## License and attribution
+
+Contributions to repository-owned work are submitted under the repository's current `LICENSE`. Third-party, archived, referenced, or vendored material retains its own attribution and licensing where applicable.
+
+Contributor credit should reflect actual contribution history. `AUTHORS` identifies the primary author/maintainer and does not erase Git commit or pull-request attribution.
+
+The repository owner retains final review and merge authority.

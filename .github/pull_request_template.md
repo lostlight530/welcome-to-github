@@ -1,17 +1,30 @@
-## 变更内容
-简述本次 PR 的核心改动  
-只写 What 和 Why  
+## Outcome and scope
+What changed, why, and what is explicitly out of scope?
 
-## 关联 Issue
-如有 填写  
-如无 留空  
+## Base and affected surfaces
+- Base revision / current `main` observed:
+- Implementation or contract paths affected:
+- Documentation / metadata / governance paths affected:
 
-## 自检清单
-- 单一职责  
-- 不引入不必要依赖  
-- 不破坏协议边界  
-- 可测试 可复用 可维护  
-- 变更可审计 append only  
+## Evidence boundary
+- [ ] Repository observations are distinguished from inference or proposal
+- [ ] External claims, if any, identify their source and observation date
+- [ ] Unknown, missing, or unverified state remains explicit
 
-## 其他说明
-补充上下文或截图
+## Verification
+List checks actually run and their results. List relevant checks that were intentionally not run; never report an unrun check as passed.
+
+## History and provenance
+- [ ] Historical artifacts were preserved unless the change explicitly corrects a non-historical current surface
+- [ ] Material corrections use a forward correction/reconciliation when rewriting history would falsify the record
+
+## Security and privacy
+State any impact on credentials, permissions, private data, generated artifacts, or public exposure. Follow `SECURITY.md` for sensitive details.
+
+## Rollback
+Describe the smallest safe rollback.
+
+## Final review
+- [ ] Change is focused and reviewable
+- [ ] Required repository-facing surfaces remain synchronized
+- [ ] No unrelated architecture or maintenance-system cleanup is bundled into this PR

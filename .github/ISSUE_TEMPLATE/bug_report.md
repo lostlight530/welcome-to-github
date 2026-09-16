@@ -1,38 +1,28 @@
 ---
 name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
-
+about: Report a reproducible defect in the current repository state
+title: "[Bug] "
+labels: ""
+assignees: ""
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## Affected path and revision
+Identify the file, component, or public surface and the commit SHA or `main` state you observed.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+## Minimal reproduction
+Provide the smallest reproducible sequence, input, or repository condition.
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Expected result
+Describe the observable result you expected.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+## Actual result
+Describe what occurred. Include sanitized logs or screenshots only when they materially help.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+## Evidence boundary
+State what you directly observed and what remains inferred, unknown, or unverified.
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+## Historical impact
+If this concerns a historical artifact, explain whether the record should be preserved with a correction or reconciliation rather than silently rewritten.
 
-**Additional context**
-Add any other context about the problem here.
+## Security and privacy
+Do not include credentials, private data, or exploit details. Use `SECURITY.md` for security-sensitive reports.

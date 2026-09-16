@@ -1,20 +1,25 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
+name: Proposal
+about: Propose a bounded improvement to the repository or its public surfaces
+title: "[Proposal] "
+labels: ""
+assignees: ""
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## Problem or user outcome
+Describe the concrete problem, maintenance need, or user-facing outcome.
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+## Proposed change
+Define the smallest useful change. Keep implementation architecture and repository authority boundaries explicit.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## Evidence and alternatives
+Separate observed repository facts from assumptions or preferences. Note relevant alternatives considered.
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+## Affected surfaces
+List implementation, contracts, documentation, metadata, governance, recovery, or historical records that would actually be affected.
+
+## Acceptance criteria
+State observable criteria for completion. Do not require checks that are irrelevant to the proposed scope.
+
+## Non-goals and risks
+State what this proposal intentionally does not change and any compatibility or provenance risks.
