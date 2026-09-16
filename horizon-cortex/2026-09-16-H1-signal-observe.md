@@ -18,11 +18,11 @@ Repository Inspection: NO
 GitHub Actions Inspection: NO
 Write Scope: horizon-cortex only
 Boundary Violation: NO
-Source Identity: Model Context Protocol Blog, NeuralCoreTech
-Source Authority For Claim: Model Context Protocol Blog, NeuralCoreTech
-Independent Verification: NONE
+Source Identity: Model Context Protocol official project sources
+Source Authority For Claim: OFFICIAL_PROJECT_PRIMARY
+Independent Verification: NO
 Host Applicability: UNKNOWN
-Evidence Upgrade Basis: NONE
+Evidence Upgrade Basis: OFFICIAL_CURRENT_ROADMAP_AND_SPEC_RELEASE
 Original Execution Status: NEW_EXECUTION
 Current Path Status: PRESENT
 Record Provenance: JULES_NATIVE
@@ -34,87 +34,73 @@ INPUT_RECORD
 - horizon-cortex/2026-09-H6-horizon-memorize.md
 
 实际读取的目的：
-- 2026-09-15-H1: 了解最近一次 H1 的观察状态及信号更新（上次为网络不可用，无实质新信号）。
-- 2026-09-15-H2: 了解昨日 H2 对信号的定向分析和未解明的不确定性（需要恢复外部来源访问后重新检查）。
-- 2026-W36-H4: 获取当前周执行状态与行动限制，确认需对现有 MCP/A2A 等规范保持追踪基线，不对未确认的趋势做结论。
-- 2026-09-H6: 确认当前 9 月份的状态基线和约束（该文件不是已提升的 9 月 baseline）。
+- 2026-09-15-H1: 了解最近一次 H1 的观察状态及网络限制。
+- 2026-09-15-H2: 了解昨日 H2 对外部变化状态保留的证据缺口。
+- 2026-W36-H4: 获取当前观察限制，避免把协议发布直接映射为宿主仓库要求。
+- 2026-09-H6: 仅作为 2026-09-01 早跑且 BLOCKED 的历史边界记录；不是已提升的 9 月 baseline。
 
 本次尝试的搜索主题：
-- "Model Context Protocol MCP 2026"
+- "Model Context Protocol MCP 2026 roadmap"
 - "Cloud Coding Agent 2026"
 
-观察原因：寻找 AI Agent 的底层通信协议、云端运行方案与可靠性等方向是否有新证据及成熟度验证。
-未能获得可靠证据的主题：无。
-
-本次采用的 H4 和 H6 观察重点:
-- 根据 W36-H4 历史行动限制，继续对现有 MCP/A2A 等规范保持追踪基线，不对未确认的趋势做结论。
-- September H6 仅作为 2026-09-01 早跑且 BLOCKED 的历史边界记录使用；其 `NO_DURABLE_MEMORY_PROMOTION` 状态不能被解释为已建立当前月度 baseline。
+观察原因：恢复前两日网络不可用后遗漏的 Agent 协议变化，并确认当前最新官方状态。
+未能获得可靠证据的主题：Cloud Coding Agent 市场趋势未取得足以进入 RAW_SIGNAL_LOG 的官方或高质量独立证据；不使用排行榜或比较页替代高质量来源。
 
 EXTERNAL_SOURCE_RECORDS
+
 Source ID: SRC-20260916-01
-Title: The 2026 MCP Roadmap
+Title: The New MCP Roadmap
 Publisher: Model Context Protocol Blog
-URL: https://blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/
-Published or Updated Date: 2026-03-09
+URL: https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
+Published or Updated Date: 2026-08-22
 Date Checked: 2026-09-16
-Source Type: Official engineering blogs
-Evidence Tier: Tier 2
+Source Type: Official project roadmap update
+Evidence Tier: Tier 1
 Access Status: ACCESSED
 Independent Source: YES
-Claim Supported: YES
-Claim Not Supported: NONE
+Claim Supported: MCP 在 2026-07-28 specification 之后发布新版 roadmap，并将下一阶段聚焦于 agentic messaging primitives、HTTP-native transport unification and hardening、agent identity and enterprise-ready security、improved primitives、improved SDK developer experience。
+Claim Not Supported: 上述 roadmap 项目均已完成或已被生产环境普遍采用。
 Relevance: HIGH
 Confidence: HIGH
-Limitations: The roadmap outlines intended features (e.g. transport scalability, agent communication gaps) rather than production-ready final specs for all these capabilities.
+Limitations: Roadmap 描述未来优先级与维护者方向，不等于功能已经进入正式规范或完成部署。
 
 Source ID: SRC-20260916-02
-Title: Best AI Coding Agents 2026: Claude Code, Cursor, Codex & Devin Desktop (Comparison)
-Publisher: NeuralCoreTech
-URL: https://neuralcoretech.com/best-ai-coding-agents-2026/
-Published or Updated Date: 2026-07-31
+Title: The 2026-07-28 Specification
+Publisher: Model Context Protocol Blog
+URL: https://blog.modelcontextprotocol.io/posts/2026-07-28/
+Published or Updated Date: 2026-07-28
 Date Checked: 2026-09-16
-Source Type: Reputable independent technical reporting
-Evidence Tier: Tier 3
+Source Type: Official specification release announcement
+Evidence Tier: Tier 1
 Access Status: ACCESSED
-Independent Source: YES
-Claim Supported: YES
-Claim Not Supported: NONE
+Independent Source: NO
+Claim Supported: 2026-07-28 release 已落地 stateless protocol core、Multi Round-Trip Requests、header-based routing、cacheable list results、authorization hardening、extensions framework 与更新后的 Tier 1 SDKs，并为新版 roadmap 提供已完成基线。
+Claim Not Supported: 后续 roadmap 中的 agent identity、progressive discovery、server-initiated events 等优先项已经完成。
 Relevance: HIGH
 Confidence: HIGH
-Limitations: The article summarizes the state of the market up to late July 2026 and reflects vendor pricing/models at that time. Pricing and benchmarks might change.
+Limitations: 与 SRC-20260916-01 属同一 MCP 官方项目来源谱系，只能作为同源状态连续性证据，不能算独立外部 corroboration。
 
 RAW_SIGNAL_LOG
-Signal ID: SIG-20260916-01
-Signal: MCP Roadmap focuses on Transport Evolution and Scalability, Agent Communication, Governance Maturation, and Enterprise Readiness for 2026.
-Source IDs: SRC-20260916-01
-What Changed: The Model Context Protocol project has updated its roadmap for 2026 with emphasis on evolving the streamable HTTP transport for stateful sessions and standardizing capability discovery, as well as refining task retries and expiry in agent communication.
-Why It May Matter: Indicates that MCP is moving towards stabilizing enterprise and scalable features rather than just adding new transports.
-Evidence Tier: Tier 2
-Confidence: High
-Uncertainty: None for the roadmap's existence, but the actual delivery of these features is subject to WG progress.
-Freshness: Current (as of March 2026 roadmap, accessed now)
-Possible Noise: None
-Needs H2 Verification: YES
 
-Signal ID: SIG-20260916-02
-Signal: Architectural shifts in AI Coding Agents point towards Agentic loops and Cloud-autonomous agents.
-Source IDs: SRC-20260916-02
-What Changed: The AI coding market has transitioned from pure IDE-embedded agents (inline autocomplete) towards agentic loops (Plan → Act → Observe → Repeat) and cloud-autonomous agents. Tools are increasingly utilizing standards like MCP and Agent Client Protocol (ACP).
-Why It May Matter: Reflects broader industry maturity and adoption of agent architectures, which is relevant for our observation scope on Cloud Coding Agents and agent workflow.
-Evidence Tier: Tier 3
-Confidence: High
-Uncertainty: The exact adoption rates and pricing dynamics might shift rapidly as mentioned in the source.
-Freshness: Current (late July 2026 context)
-Possible Noise: Vendor pricing specifics and claims (e.g. TELUS saving 500,000 hours) might be marketing noise, but the architectural trend is well supported.
+Signal ID: SIG-20260916-01
+Signal: MCP 在 2026-07-28 大版本落地后，于 2026-08-22 更新 roadmap，将下一阶段重心从上一版四大方向推进到五个更具体的协议与生态优先区。
+Source IDs: SRC-20260916-01, SRC-20260916-02
+What Changed: 旧的 2026-03 roadmap 已被新版 roadmap 取代。7 月规范已经交付 stateless core、MRTR、routing、cacheability、authorization hardening 与 extensions 等大量旧 roadmap 工作；新版 roadmap 进一步聚焦 agentic messaging、HTTP-native transport、agent identity/security、primitive result/discovery 改进和 SDK conformance/developer experience。
+Why It May Matter: 这说明 MCP 的当前观察重点已经从“是否推进可扩展传输与 agent communication”转向“已交付哪些核心变化，以及下一阶段 agent identity、长任务消息原语、progressive discovery 和 SDK conformance 如何成熟”。
+Evidence Tier: Tier 1
+Confidence: HIGH
+Uncertainty: Roadmap 中未来优先项的最终规范形态、时间表和实际部署成熟度仍未确定。
+Freshness: 2026-08-22 roadmap；在前两日 NETWORK_UNAVAILABLE 后恢复确认。
+Possible Noise: LOW；但 roadmap priority 不能被解释为 GA、部署完成或宿主仓库必须跟进。
 Needs H2 Verification: YES
 
 NEXT_HANDOFF
-- 哪些信号需要 H2 定向解释: SIG-20260916-01 和 SIG-20260916-02，需要解释这些协议标准和架构演进对当前基础设施的影响。
-- 哪些信号需要独立来源验证: 对 NeuralCoreTech 中关于 ACP (Agent Client Protocol) 广泛采用的声明，未来可能需要官方来源验证。
-- 哪些信号的新鲜度仍不确定: 无。
-- 哪些信号可能只是噪音: 无。
-- 哪些信号不应继续升级: 具体的厂商基准测试和定价不应升级为长期记忆。
-- H2 必须保留哪些联网或来源限制: H2 应该注意外部架构选择不能自动等同于宿主仓库的事实。
+- 哪些信号需要 H2 定向解释: SIG-20260916-01，重点区分已进入 2026-07-28 specification 的变化与仅处于新版 roadmap priority 的事项。
+- 哪些信号需要独立来源验证: MCP 的跨厂商实际部署成熟度、agent identity 与 progressive discovery 的真实采用情况仍需要独立实施证据。
+- 哪些信号的新鲜度仍不确定: 无；roadmap 与 specification 的发布日期均由 MCP 官方页面确认。
+- 哪些信号可能只是噪音: 无已准入噪音信号。
+- 哪些信号不应继续升级: 未取得高质量来源的 Cloud Coding Agent 市场趋势；任何排行榜、厂商定价和未经原始来源确认的采用率。
+- H2 必须保留哪些联网或来源限制: 两条 MCP 来源属于同一官方项目谱系；同源状态连续性不构成独立 corroboration，roadmap 也不等于功能已完成。
 
 BOUNDARY_CHECK
 - 未读取宿主仓库机制: YES
