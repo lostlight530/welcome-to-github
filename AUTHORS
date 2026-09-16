@@ -2,12 +2,18 @@
 
 ## Primary author and maintainer
 
-- **lostlight530**
-  - GitHub: https://github.com/lostlight530
-  - Google Developer Program: https://me.developers.google.com/u/lostlight-love-CXX
+**lostlight530**
 
-## Public research profile
+- GitHub: https://github.com/lostlight530
+- Google Developer Program: https://me.developers.google.com/u/lostlight-love-CXX
+- Public role: student developer and open-source enthusiast
+- Technical focus: agent workflows, multi-agent orchestration, MCP and skill ecosystems, trustworthy execution, reproducible AI evaluation, and open speech-data/community contribution
 
-Independent researcher and software maintainer focused on AI agents, research infrastructure, evidence systems, reproducible workflows, and scientific software.
+## Selected public open-source participation
 
-This file identifies authorship of repository-original work. Referenced, archived, vendored, or otherwise third-party materials retain their own attribution and licensing where applicable.
+- `iflytek/astron-agent` — workflow applications and public architecture discussions around structured execution contracts, trustworthiness, memory boundaries, recovery, and auditability.
+- `ModelEngine-Group/nexent` — public discussions on MCP, plugins, skills, Harness Engineering, and prompt-to-contract architecture, plus a merged community contribution.
+- `XHToken/Spark-X2.5` — individual reproducible math-reasoning evaluation submission for HER Hack-Astron #6.
+- `common-voice/common-voice` — community review of zh-CN Spontaneous Speech prompts before the locale became available in production.
+
+This file identifies authorship of repository-original work and provides public identity context for the primary maintainer. Participation in external projects does not imply ownership or maintainership of those projects. Referenced, archived, vendored, or otherwise third-party materials retain their own attribution and licensing where applicable.
