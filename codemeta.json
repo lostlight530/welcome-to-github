@@ -1,0 +1,23 @@
+{
+  "@context": "https://w3id.org/codemeta/3.1",
+  "@type": "SoftwareSourceCode",
+  "name": "welcome-to-github",
+  "description": "Public portal, trust gateway, and digital museum for an edge-first research system with a deterministic, append-only knowledge lifecycle and explicit provenance and validation boundaries.",
+  "codeRepository": "https://github.com/lostlight530/welcome-to-github",
+  "license": "https://spdx.org/licenses/MIT.html",
+  "author": {
+    "@type": "Person",
+    "name": "lostlight530",
+    "url": "https://github.com/lostlight530"
+  },
+  "applicationCategory": "Research Software",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "research infrastructure",
+    "knowledge lifecycle",
+    "provenance",
+    "reproducibility",
+    "edge ai",
+    "digital museum"
+  ]
+}
