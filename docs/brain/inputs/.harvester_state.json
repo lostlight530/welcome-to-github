@@ -274,19 +274,19 @@
     "ogx-ai/ogx": {
       "documents": {
         "README.md": {
-          "blob_sha": "ab77b894042fc4aac2aa3db15cfab888e170df20",
-          "commit_sha": "4c34ce13e341079a14262b40e14acbd3a7b36811",
-          "content_hash": "5141cf10ad52d167b719433f5d91b175f93dc7994a016db58bb05dcbf45be9e7",
+          "blob_sha": "154543aac7fcf1f0bdeebac89fb46bc9a64f9a7a",
+          "commit_sha": "ae4cdc400d1e203b1adc605c9ce16eb0e01b8da5",
+          "content_hash": "53a502bc3e91301167de9c75415f11a4b5913c4136e3f69e35a110c110c1614c",
           "entity_id": "doc_ogx_ai_ogx_readme_md_2e7d830405d8",
-          "observed_blob_sha": "ab77b894042fc4aac2aa3db15cfab888e170df20",
-          "observed_commit_sha": "8b355bfb7528355a9987f9b642c3e2ad48916dd6",
-          "observed_tree_sha": "c6267c3dd1f7135fe9489ccb1f2d3bb5481a0725",
-          "output": "current/complex-agent-systems/ogx_ai_ogx/README.md__ab77b894042f__4c34ce13e341.md",
-          "sha": "ab77b894042fc4aac2aa3db15cfab888e170df20",
-          "tree_sha": "fc39d958c785b20c58714eb927a6b45294864870"
+          "observed_blob_sha": "154543aac7fcf1f0bdeebac89fb46bc9a64f9a7a",
+          "observed_commit_sha": "ae4cdc400d1e203b1adc605c9ce16eb0e01b8da5",
+          "observed_tree_sha": "a6618547a14411aa2e8e1e99d2494fb98e39d237",
+          "output": "current/complex-agent-systems/ogx_ai_ogx/README.md__154543aac7fc__ae4cdc400d1e.md",
+          "sha": "154543aac7fcf1f0bdeebac89fb46bc9a64f9a7a",
+          "tree_sha": "a6618547a14411aa2e8e1e99d2494fb98e39d237"
         }
       },
-      "last_checked_at": "2026-08-31T00:14:10.428507+00:00"
+      "last_checked_at": "2026-09-16T00:00:00.839877+00:00"
     },
     "ollama/ollama": {
       "documents": {
