@@ -47,7 +47,7 @@ INPUT_RECORD
 - "Agent reliability" 2026
 
 观察原因：寻找 AI Agent 的底层通信协议、云端运行方案与可靠性等方向是否有新证据及成熟度验证。
-未能获得可靠证据的主题：所有的独立联网搜索（搜索引擎调用）全部未返回可靠的高质量结果，外部证据当前不可用 (NETWORK_UNAVAILABLE)。
+未能获得可靠证据的主题：所有独立联网搜索均未返回可用的高质量结果，外部证据当前不可用 (NETWORK_UNAVAILABLE)。
 
 本次采用的 H4 和 H6 观察重点:
 - 根据 W36-H4 历史行动限制，继续对现有 MCP/A2A 等规范保持追踪基线，不对未确认的趋势做结论。
@@ -60,19 +60,19 @@ RAW_SIGNAL_LOG
 Signal ID: NO_MATERIAL_NEW_SIGNAL
 Signal: 无实质新信号。
 Source IDs: NONE
-What Changed: 本次未探测到实质性外部环境和基础设施的新变化证据。
-Why It May Matter: 未探测到证据并不等于事件未发生，但在无外部证据确认的情况下，不制造虚假新颖性。
+What Changed: 本次未建立可验证的实质性外部环境和基础设施变化信号。
+Why It May Matter: 未建立新信号并不等于外部没有变化；在无外部证据确认的情况下，不制造虚假新颖性。
 Evidence Tier: Unknown
 Confidence: Unknown
-Uncertainty: Unknown
+Uncertainty: EXTERNAL_CHANGE_STATE_UNKNOWN_DUE_TO_NETWORK_UNAVAILABLE
 Freshness: Unknown
-Possible Noise: 无
+Possible Noise: 无法判断
 Needs H2 Verification: NO
 
 NEXT_HANDOFF
-- 鉴于今日未能成功捕获有效网络信息，H2 无需验证新信号。
-- H2 应重点维护现有历史周期的已知协议架构限制。
-- 未发现需打破现有 "外部协议存在不等于宿主必须跟进" 规则的证据。
+- 今日没有可验证的新信号可交由 H2 升级。
+- H2 应保留 NETWORK_UNAVAILABLE / SOURCE_UNVERIFIED 带来的外部状态不确定性。
+- H2 可继续维护现有历史周期的已知协议架构限制，但不得把未观察到新证据解释为外部无变化。
 
 BOUNDARY_CHECK
 - 未读取宿主仓库机制: YES
@@ -81,12 +81,3 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
-
-## CURRENT_MAINTENANCE_CORRECTION_2026-09-15
-
-Correction Agent: GPT Independent Maintainer / HUMAN_AUTHORIZED_MAINTENANCE
-Correction Scope: interpretation only; original Jules execution facts preserved
-Original wording: `2026-09-H6: 明确当前 9 月份的状态基线和约束。`
-Corrected interpretation: the cited September H6 is the 2026-09-01 early `OPEN / REFLECTION_INPUT_MISSING / BLOCKED` record with `NO_DURABLE_MEMORY_PROMOTION`; it may constrain premature promotion but is not a promoted September baseline.
-Evidence: `horizon-cortex/2026-09-H6-horizon-memorize.md` and `horizon-cortex/2026-09-13-full-sop-reconciliation.md`.
-Original logical date, execution time, producer, task status, provenance, source-access state, and network state are unchanged.
