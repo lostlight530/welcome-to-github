@@ -68,6 +68,14 @@
 | Trial | 核心判断 | 使用证据 | 判断边界 | 约束保持 | 拒绝情况 | 无依据声明 | 与基线差异 | 差异解释 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
+## 历史比较
+
+说明该事件与 historical snapshot, prior state, previous correction 或已有 CASE 的关系. Current page 不自动重建 old page.
+
+## 指标结果
+
+只有 metric identity, denominator 与统计单位明确时才量化. 否则写 `NOT_APPLICABLE` 或保持 unknown.
+
 ## 反例检查
 
 ## 暂时结论
