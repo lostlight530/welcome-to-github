@@ -1,12 +1,12 @@
 # 周期审计
 
-周期审计复核已完成研究的覆盖, 状态门槛, 反例, 证据变化与验证负担
+周期审计是已完成研究的 derived review surface.
 
-审计文件不构成新的研究批次或独立时间窗口
+它可以复核覆盖, 状态门槛, 反例, 证据变化与验证负担, 但不构成新的 research batch, Trial 或 independent execution window, 也不决定 Daily research 是否必须产出.
 
-同一 ISO 周期只维护一个审计文件
+从当前研究合同开始, `audit exists` 与 `research is valid` 明确分离.
 
-## 审计索引
+## 已有审计索引
 
 | 周期 | 审计日期 | 每日专题 | 特殊专题 | 研究批次 | 执行窗口 | 审计 |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
@@ -17,12 +17,27 @@
 | 2026-W34 | 2026-08-23 | 7 | 2 | 9 | 5 | [自然周审计](2026-W34.md) |
 | 2026-W35 | 2026-08-30 | 7 | 2 | 9 | 7 | [自然周审计](2026-W35.md) |
 
-2026-W35 已按 8 月 24 日至 8 月 30 日自然周闭合
+## Current state as of 2026-09-17
 
-2026-08 已在 2026-08-31 daily 完成后按 31/31 归属日期正式月终闭合
+- W35 是当前最后一个真实存在的 formal Parallax audit file
+- W36 的 Daily assigned-date coverage 已自然完成, 但仓库中没有 `audits/2026-W36.md`
+- W37 的 Daily assigned-date coverage 已自然完成, 但仓库中没有 `audits/2026-W37.md`
+- W38 当前覆盖 2026-09-14 至 2026-09-17, 4/7
+- 不从 Daily coverage 推导不存在的 audit execution
+- 不为了补齐索引制造 W36/W37 audit artifact
+- Daily mandatory research production 不再被 audit creation 阻塞
 
-2026-W36 自然周范围为 2026-08-31 至 2026-09-06, 七个每日归属日期均已有记录
+## 使用边界
 
-W36 当前为 7/7 daily coverage, 但 2026-09-06 上海自然日仍在进行中, 不创建 `audits/2026-W36.md`, 只在自然周闭合后执行正式周审计
+Audit 只能总结已经存在的 research evidence.
 
-August closed 与 W36 closed 是独立生命周期状态
+Audit 不得.
+
+- 增加 CASE support count
+- 增加 Trial count
+- 增加 independent execution windows
+- 把 UNKNOWN 或 NO_CONCLUSION 升级为正面结论
+- 把后来的证据倒写成 earlier Daily 当时已经可用
+- 作为每日研究是否产出的 gate
+
+如果未来重新启用 formal cycle audit, 使用 `templates/weekly.md`, 明确 `派生审计: YES`, `新增实验数量: 0`, `新增长期结论数量: 0`.
