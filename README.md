@@ -33,6 +33,18 @@ The portal is an independent display surface. Repository workflows and research 
 
 The Zenodo records identify archived software publications. They provide stable citation targets for those archived publications; they do not replace the evolving state of each repository's current `main` branch.
 
+## 2026 Public Milestones
+
+The current public repository record supports a few durable portfolio-level milestones:
+
+- **Ten independent software publications** — on 2026-09-16, each repository in the map above received its own Zenodo software publication and DOI rather than being collapsed into one umbrella record.
+- **A ten-repository research architecture** — the portfolio now spans five foundational/experimental repositories, three research-infrastructure repositories, and two outward-facing observatories, while preserving independent repository identity and evidence boundaries.
+- **Long-lived technical knowledge surfaces** — Axiom-0 and Reflective Continuum maintain explicit ADR/Methodology systems; Agent Foundations maintains a structured bilingual claim/source/provenance core; the three research-infrastructure repositories maintain active architecture and research-contract layers; the observatories maintain persistent scope, taxonomy, methodology, source, and workstream definitions alongside time-series research.
+- **Public citation identity** — repository citation metadata links the public author identity to ORCID [0009-0001-3617-0832](https://orcid.org/0009-0001-3617-0832), while each repository retains its own citation and release metadata.
+- **Preserved development history** — this repository keeps a separate digital-archaeology layer for earlier project phases instead of rewriting old project narratives to match the current ten-repository system.
+
+These are statements about public repository and publication records. They are not claims of universal scientific validation, product certification, or external adoption.
+
 ## Engineering and Research Principles
 
 Across the public repositories, a few principles remain deliberately stable:
@@ -73,6 +85,7 @@ The repository also preserves its own development history as a public digital ar
 - [Digital Archaeology: The Epoch Index](./docs/archaeology/ARCHAEOLOGY_INDEX.md)
 - [Phase I: Genesis](./docs/archaeology/PHASE_I_GENESIS.md)
 - [Phase VII: Heartbeat Awakening](./docs/archaeology/PHASE_VII_HEARTBEAT_AWAKENING.md)
+- [Phase VIII: Human-Readable Determinism](./docs/archaeology/PHASE_VIII_HUMAN_READABLE_DETERMINISM.md)
 
 ---
 © 2026 lostlight | Built for the Edge, Built for the Future.
