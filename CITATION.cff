@@ -6,6 +6,10 @@ authors:
     orcid: "https://orcid.org/0009-0001-3617-0832"
     website: "https://github.com/lostlight530"
 repository-code: "https://github.com/lostlight530/welcome-to-github"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22790907"
+date-released: 2026-09-16
 license: MIT
 abstract: >-
   Public portal, trust gateway, and digital museum for an edge-first research

@@ -1,86 +1,77 @@
 # Contributing
 
-Contributions are welcome when they improve the current repository while preserving Horizon/Parallax producer identity, evidence, provenance, recovery, and historical boundaries.
+Contributions are welcome when they improve the public portal, repository-owned implementation, research documentation, evidence surfaces, metadata, or developer experience without blurring the boundary between observed evidence and interpretation.
+
+## Choose the owning surface first
+
+This repository contains several distinct public surfaces. Keep a change with the surface that owns it:
+
+- root documentation and the GitHub Pages portal — public project and portfolio presentation;
+- repository-owned Python and lifecycle code — deterministic implementation and state-processing behavior;
+- `horizon-cortex/` and `parallax/` — research/evidence surfaces with their own current contracts;
+- archaeology and archived material — historical evidence that should remain point-in-time unless a correction is explicitly required;
+- `.github/`, citation files, release metadata, security, and contribution documents — repository infrastructure.
+
+A change in one surface does not automatically authorize changes in another.
 
 ## Before proposing a change
 
-- Start from the current merged `main` revision and read the most specific current repository authority before relying on historical snapshots, handoffs, or model memory.
-- For repository maintenance, also read `governance/README.md` and `governance/independent-gpt/README.md`.
-- Keep current state, historical observation, external claims, execution evidence, inference, and proposals distinct.
-- Prefer a bounded, reviewable change with a clear owner and rollback.
-- Inspect open pull requests and active maintenance branches before writing; use `COORDINATE` instead of creating a parallel repair for the same surface or logical period.
-- Never create or mutate a branch merely to test write permission.
+1. Start from current `main` and identify the current file, implementation, contract, or public surface that owns the behavior you want to change.
+2. Separate current implementation, observed execution, external source claims, repository analysis, and proposals.
+3. For code changes, define the input/output or state-transition behavior and add or update proportionate regression coverage.
+4. For research or evidence changes, identify the exact source, date/version, supported proposition, uncertainty, and local applicability.
+5. Preserve historical records when a forward correction or current-document update is sufficient.
+6. Keep the change bounded and reviewable; avoid unrelated cleanup in the same pull request.
 
-## Producer and plane boundaries
+## Evidence and documentation
 
-Keep these planes distinct:
+Public prose should describe only what the linked implementation, source, artifact, or retained observation supports.
+
+Keep these distinctions explicit when material:
 
 ```text
-Horizon native production != Parallax research
-Parallax Daily research production != maintenance/no-change task
-Independent GPT != native producer
-GitHub Actions != research truth
-current path presence != earlier execution
-later success != earlier success
-correction != history rewrite
+source exists != claim is true
+file exists != task executed
+checker passes != scientific validation
+hash identity != semantic equivalence
+current repository state != historical observation
+archived publication != later main revision
 ```
 
-Private Jules task prompts, repository memory, credentials, hidden reasoning, and unrelated operator context are not reconstructed into public repository files by default. This repository currently has no public `AGENTS.md`; do not infer one from private controls or prior conversations.
+When a source or result is uncertain, retain that uncertainty rather than strengthening the wording for readability.
 
-Parallax Daily/Special/CASE/NOTES artifacts are research evidence, not routine repository-maintenance edit targets. A separate authorized research correction may own one of those artifacts; ordinary maintenance does not silently rewrite it.
+## Implementation and dependencies
 
-## Issues
+Follow existing repository conventions and prefer the smallest dependency surface that solves the problem. New runtime dependencies, external services, public network exposure, or authority-bearing mechanisms require a clear justification, failure model, and rollback path.
 
-Use the repository Issue templates:
+Do not bundle generated artifacts, caches, credentials, private data, or unrelated local state into a contribution.
 
-- **Bug report** for a reproducible defect in the current repository state.
-- **Proposal** for a bounded improvement with explicit non-goals and acceptance criteria.
-- **Evidence or governance correction** for a claim, metadata, governance, recovery, maintenance, producer-identity, or provenance mismatch.
+## Verification
 
-Security-sensitive reports belong in the private route described by `SECURITY.md`, not in a public issue.
+Run checks that are relevant to the changed surface and supported by the repository. In the pull request, list the commands or review steps actually performed and their observed results.
 
-## Maintenance outcome
+Do not describe a check as passed when it was not run. If a relevant check could not be executed, state that limitation directly.
 
-For maintenance work:
-
-- no confirmed maintenance defect → `NO_CHANGE_REQUIRED`; no activity-only edit, branch, or PR;
-- bounded defect with safe ownership → `REPAIR`;
-- overlapping live ownership → `COORDINATE`;
-- missing authority/current state or unsafe delivery → `BLOCKED`.
+For evidence/document changes, verification may include source inspection, link/version checks, schema/format validation, and comparison against the current owning implementation or contract. Documentary review is not a substitute for runtime execution when runtime behavior is being claimed.
 
 ## Pull requests
 
-Use a feature/maintenance branch and the pull-request template. A useful PR identifies:
+Use the repository pull-request template and include:
 
-- exact base `main` revision and delivery head;
-- owning surface and logical period where relevant;
-- overlapping PR/branch state;
-- repository observations versus inference or proposal;
-- changed files and deliberately unchanged boundaries;
-- checks actually performed and their observed results;
-- relevant checks intentionally left unrun as `NOT_EXECUTED`;
-- historical/provenance and producer-identity impact;
-- security/privacy impact where applicable;
-- a practical rollback.
+- a concise explanation of the problem and change;
+- the affected repository surfaces;
+- implementation, evidence, compatibility, or metadata impact as applicable;
+- verification actually performed;
+- known limitations or checks not performed;
+- security/privacy impact when relevant;
+- the smallest practical rollback.
 
-Before delivery, refresh current `main`, recheck overlap, inspect the aggregate `main...branch` diff, open one Draft PR, and stop for maintainer review unless a different repository-native workflow explicitly applies.
+Keep historical or externally sourced material attributable. Do not silently rewrite point-in-time evidence to make it match later knowledge.
 
-Never report an unrun checker, Parallax check, workflow, or local command as passed. Do not silently rewrite historical evidence merely to make the archive match later knowledge; use the current owning maintenance/control source or an explicit forward correction when the historical artifact itself needs calibration.
+## Security and privacy
 
-Do not push directly to `main`, force-push history, or auto-merge maintenance work.
-
-## Style and scope
-
-Follow existing repository style and naming conventions. Prefer clear, searchable, maintainable changes over decorative complexity. New dependencies or new authority surfaces require an explicit reason and boundary.
-
-Purely cosmetic changes, unrelated feature accumulation, and changes that weaken protocol/evidence boundaries may be declined.
+Follow [SECURITY.md](./SECURITY.md) for sensitive security reports. Do not publish credentials, private data, exploit details that require coordinated disclosure, or non-public source material in issues or pull requests.
 
 ## Conduct, license, and attribution
 
-Keep discussion professional, specific, evidence-aware, and focused on the repository. Do not publish credentials, private information, private prompts, or sensitive exploit details.
-
-Contributions to repository-owned work are submitted under the current `LICENSE`. Third-party, archived, referenced, or vendored material retains its own attribution and licensing where applicable.
-
-Contributor credit should reflect actual contribution history. `AUTHORS` identifies the primary author/maintainer and does not erase Git commit or pull-request attribution.
-
-The repository owner retains final doctrine, review, and merge authority.
+Keep discussion technical, specific, and respectful. Contributions to repository-owned work are submitted under the current `LICENSE`. Third-party material retains its own attribution and licensing, and Git/PR history remains the source of contribution attribution.
