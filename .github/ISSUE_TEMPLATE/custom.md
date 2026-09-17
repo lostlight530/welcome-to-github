@@ -1,25 +1,34 @@
 ---
-name: Evidence or governance correction
-about: Correct a repository claim, document, metadata surface, or governance rule
+name: Evidence, maintenance, or governance correction
+about: Correct a repository claim, metadata surface, maintenance/control rule, producer identity, recovery pointer, or governance boundary
 title: "[Governance] "
 labels: ""
 assignees: ""
 ---
 
-## Exact claim or rule
-Identify the statement, metadata field, governance rule, or recovery pointer that needs correction.
+## Owning surface
+Identify the Horizon policy/artifact, Parallax maintenance/correction surface, repository governance rule, metadata field, or recovery pointer that owns the issue.
 
-## Current repository evidence
-Cite the current path/revision and distinguish current state from historical evidence.
+## Current repository fact
+Cite the current `main` revision and distinguish current state from historical point-in-time evidence.
 
-## Proposed correction
-Describe the bounded correction and why it is needed.
+## Evidence and producer identity
+Separate Horizon evidence, Parallax evidence, runner/checker evidence, external support, inference, and unknown state. Preserve actual producer identity.
 
-## History and provenance
-State whether an existing historical record must remain unchanged and whether a new correction or reconciliation record is required.
+## Historical / prior interpretation
+State the prior value only when material. Do not rewrite history to make later knowledge appear earlier.
 
-## Dependent surfaces
-List every repository-facing file or machine-readable surface that must remain synchronized.
+## Concurrency
+List overlapping open PRs / active maintenance branches for the same surface or logical period. Use `COORDINATE` when another live change owns the repair.
 
-## Review boundary
-State what is explicitly outside scope and how the change can be reverted.
+## Proposed bounded correction
+Identify the owning file(s) and direct synchronized projections. Do not manufacture unrelated architecture cleanup, research backfill, or activity-only edits.
+
+## Verification
+List checks actually executed and their observed results. Mark relevant unrun checks `NOT_EXECUTED`; document inspection is not `horizon-cortex/check.py` or `parallax/tools/check.py` execution.
+
+## Privacy / Jules boundary
+Do not paste private Jules prompts, repository memory, hidden reasoning, credentials, or unrelated operator context into this issue.
+
+## Review and rollback
+State explicit non-goals, unresolved evidence, and the smallest safe rollback. Final doctrine and merge authority remains with the maintainer.
