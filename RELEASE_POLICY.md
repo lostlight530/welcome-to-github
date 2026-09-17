@@ -12,3 +12,15 @@ This repository treats `main` as the current repository state and release tags a
 - Archive externally only after the release snapshot and its metadata have been validated.
 
 For current repository truth, follow the repository's native implementation, evidence, governance, and recovery surfaces rather than citation or archival metadata.
+
+## Current archived software publication
+
+The repository has a public Zenodo software publication dated **2026-09-16**.
+
+- DOI: `10.5281/zenodo.22790907`
+- DOI resolver: `https://doi.org/10.5281/zenodo.22790907`
+- Code repository: `https://github.com/lostlight530/welcome-to-github`
+
+This DOI is an archival publication identifier, not a moving identifier for every later `main` revision. Later repository changes must not be represented as part of the archived publication unless a new archival release explicitly includes them.
+
+A future archived release should preserve this record as point-in-time publication history and use its own confirmed release metadata. DOI presence, citation metadata, or archival availability does not by itself establish runtime execution, scientific validity, or reproduction.
