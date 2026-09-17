@@ -75,6 +75,14 @@
 | Trial | 核心判断 | 使用证据 | 判断边界 | 约束保持 | 拒绝情况 | 无依据声明 | 与基线差异 | 差异解释 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
+## 历史比较
+
+明确本轮相对前序 Daily, fixed historical material, previous current-state cut 或已有 CASE 的变化. Later evidence 不倒写 earlier observation.
+
+## 指标结果
+
+只记录具有明确分母, metric identity 或可计数 event 的量化结果. 没有合法量化时写 `NOT_APPLICABLE`.
+
 ## 反例检查
 
 必须至少尝试一个会让首选解释失败的 counterexample. 如果无法执行, 明确标记未执行原因.
