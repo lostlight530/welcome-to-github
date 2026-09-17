@@ -1,151 +1,63 @@
 # 特殊专题
 
-特殊专题记录具有独立公共价值的事件核验
+特殊专题记录具有独立公共价值的事件核验.
 
-它们不替代每日专题, 不增加归属日期连续性, 研究批次与实际执行窗口仍按 METHOD.md 计算
+它们不替代 Daily, 不增加 assigned-date continuity, 也不因为事件重要或页面数量多就自动增加 CASE support 或 NOTES finding.
+
+Special 的作用是把真实公共事件映射成可证伪研究问题, 并保留 event time, observation time, current state, publisher identity 与 evidence limitation.
+
+## 当前计数
+
+- 特殊专题: 13
+- 当前最新特殊专题事件日期: 2026-08-28
+- 2026-09-01 至 2026-09-17: 0 个新 Special
+- 9 月研究生产全部由 Daily 完成, Special 不承担 Daily continuity
 
 ## 专题索引
 
-| 事件日期 | 记录 ID | 案例 | 实际核验日期 | 最近维护日期 | 状态 | 专题 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 2026-07-21 | PX-S-20260721-P04 | P-04 | 2026-07-31 | 2026-08-28 | 观察, 最终报告已取得并另立复验 | [OpenAI 与 Hugging Face 安全事件归因更新](2026-07/2026-07-21-openai-hugging-face-security-incident.md) |
-| 2026-07-25 | PX-S-20260725-P03 | P-03 | 2026-07-26 | 2026-07-28 | 观察, P-03 支持记录, 覆盖纠错 | [OpenAI 错误率事件范围](2026-07/2026-07-25-openai-service-events.md) |
-| 2026-07-27 | PX-S-20260727-P03 | P-03 | 2026-07-29 | 2026-08-04 | 观察, 维护完成确认, 写操作未验证 | [OpenAI 开发者社区受限维护](2026-07/2026-07-27-openai-developer-community-maintenance.md) |
-| 2026-07-30 | PX-S-20260730-P03 | P-03 | 2026-07-31 | 2026-07-31 | 观察, N-02 复发检查 | [OpenAI 近期四场服务事件](2026-07/2026-07-30-openai-recent-service-events.md) |
-| 2026-07-31 | PX-S-20260731-P03 | P-03 | 2026-08-01 | 2026-08-01 | 观察, N-02 复发检查 | [OpenAI 企业与教育对话错误事件](2026-07/2026-07-31-openai-enterprise-education-chat-errors.md) |
-| 2026-08-04 | PX-S-20260804-P03 | P-03 | 2026-08-05 | 2026-08-05 | 观察, N-02 复发检查 | [OpenAI ChatGPT 对话错误事件](2026-08/2026-08-04-openai-chatgpt-conversation-errors.md) |
-| 2026-08-04 | PX-S-20260804-P05 | P-05 | 2026-08-05 | 2026-08-05 | 观察, N-04 边界扩展 | [OpenAI 第三方网络安全评估事件](2026-08/2026-08-04-openai-third-party-cyber-evaluations.md) |
-| 2026-08-05 | PX-S-20260805-P03 | P-03 | 2026-08-06 | 2026-08-06 | 观察, N-02 复发检查 | [OpenAI 三项服务事件](2026-08/2026-08-05-openai-service-events.md) |
-| 2026-08-13 | PX-S-20260813-P05 | P-05 | 2026-08-13 | 2026-08-13 | 观察, N-04 复发检查 | [OpenAI, Anthropic 与 Google 前沿模型官方评价可比性](2026-08/2026-08-13-frontier-model-evaluation-comparability.md) |
-| 2026-08-21 | PX-S-20260821-P05 | P-05 | 2026-08-23 | 2026-08-23 | 观察, N-04 支持范围扩展 | [Anthropic CHIVE counterfactual explanations](2026-08/2026-08-21-anthropic-chive-counterfactual-explanations.md) |
-| 2026-08-21 | PX-S-20260821-P03 | P-03 | 2026-08-23 | 2026-08-23 | 观察, P-03 AI agent lifecycle 复验 | [DeepMind SIMA 与 EVE research lifecycle boundary](2026-08/2026-08-21-deepmind-sima-eve-research-boundary.md) |
-| 2026-08-26 | PX-S-20260826-P04 | P-04 | 2026-08-28 | 2026-08-28 | 观察, N-03 支持范围扩展 | [OpenAI Hugging Face final incident report](2026-08/2026-08-26-openai-hugging-face-final-incident-report.md) |
-| 2026-08-28 | PX-S-20260828-P05 | P-05 | 2026-08-28 | 2026-08-28 | 观察, N-04 支持范围扩展 | [X/Twitter AI 社交摘要与一手证据身份边界](2026-08/2026-08-28-x-ai-social-summary-source-boundary.md) |
+| 事件日期 | 记录 ID | CASE | 实际核验日期 | 当前研究关系 | 专题 |
+| --- | --- | --- | --- | --- | --- |
+| 2026-07-21 | PX-S-20260721-P04 | P-04 | 2026-07-31 | security-event attribution 与 later final report relation | [OpenAI 与 Hugging Face 安全事件归因更新](2026-07/2026-07-21-openai-hugging-face-security-incident.md) |
+| 2026-07-25 | PX-S-20260725-P03 | P-03 | 2026-07-26 | impact scope 与 missing denominator | [OpenAI 错误率事件范围](2026-07/2026-07-25-openai-service-events.md) |
+| 2026-07-27 | PX-S-20260727-P03 | P-03 | 2026-07-29 | maintenance state 与 unverified user write action | [OpenAI 开发者社区受限维护](2026-07/2026-07-27-openai-developer-community-maintenance.md) |
+| 2026-07-30 | PX-S-20260730-P03 | P-03 | 2026-07-31 | multi-incident scope separation | [OpenAI 近期四场服务事件](2026-07/2026-07-30-openai-recent-service-events.md) |
+| 2026-07-31 | PX-S-20260731-P03 | P-03 | 2026-08-01 | partial-user impact 与 missing denominator | [OpenAI 企业与教育对话错误事件](2026-07/2026-07-31-openai-enterprise-education-chat-errors.md) |
+| 2026-08-04 | PX-S-20260804-P03 | P-03 | 2026-08-05 | current incident state 与 affected-scope identity | [OpenAI ChatGPT 对话错误事件](2026-08/2026-08-04-openai-chatgpt-conversation-errors.md) |
+| 2026-08-04 | PX-S-20260804-P05 | P-05 | 2026-08-05 | developer claim 与 independent evaluator evidence | [OpenAI 第三方网络安全评估事件](2026-08/2026-08-04-openai-third-party-cyber-evaluations.md) |
+| 2026-08-05 | PX-S-20260805-P03 | P-03 | 2026-08-06 | separate incidents and component scope | [OpenAI 三项服务事件](2026-08/2026-08-05-openai-service-events.md) |
+| 2026-08-13 | PX-S-20260813-P05 | P-05 | 2026-08-13 | cross-provider evaluation comparability | [OpenAI, Anthropic 与 Google 前沿模型官方评价可比性](2026-08/2026-08-13-frontier-model-evaluation-comparability.md) |
+| 2026-08-21 | PX-S-20260821-P05 | P-05 | 2026-08-23 | scientific experiment result-branch and evidence-type identity | [Anthropic CHIVE counterfactual explanations](2026-08/2026-08-21-anthropic-chive-counterfactual-explanations.md) |
+| 2026-08-21 | PX-S-20260821-P03 | P-03 | 2026-08-23 | research lifecycle boundary and deployment state | [DeepMind SIMA 与 EVE research lifecycle boundary](2026-08/2026-08-21-deepmind-sima-eve-research-boundary.md) |
+| 2026-08-26 | PX-S-20260826-P04 | P-04 | 2026-08-28 | final report and earlier incident-state relation | [OpenAI Hugging Face final incident report](2026-08/2026-08-26-openai-hugging-face-final-incident-report.md) |
+| 2026-08-28 | PX-S-20260828-P05 | P-05 | 2026-08-28 | social summary vs primary evidence identity | [X/Twitter AI 社交摘要与一手证据身份边界](2026-08/2026-08-28-x-ai-social-summary-source-boundary.md) |
 
-## 2026-08-01 维护
+## Current research role
 
-- 新增 7 月 31 日企业与教育对话错误事件, 当前共 5 项特殊专题
-- 新事件在原月末整理后出现, 按事件日期归入 7 月, 按 8 月 1 日计算实际核验窗口
-- 事件正文描述部分用户错误, impact none 与无组件标记没有被扩大为无人受影响
-- 当前材料缺少请求分母, 新专题只形成 N-02 复发检查
-- 安全事件页面最新标示更新仍为 7 月 29 日, 技术报告尚未取得
-- 社区维护主题仍保留受限与恢复说明, 普通账户写操作仍未验证
-- 关联记录: [8 月阶段更新](../records/2026-08.md#2026-08-01-阶段更新)
-- 关联审计: [2026-W31](../audits/2026-W31.md)
+Special 不再承担维护流水账角色.
 
-## 2026-08-02 维护
+动态页面发生变化时, 后续研究应在新的 Daily 或新的 Special 中明确记录 current-state cut 与 relation, 而不是把一串维护日志无限追加在 index 文件里.
 
-- 原开发者社区维护主题地址现在重定向为恢复主题
-- 当前正文明确维护完成且论坛重新可用, 旧受限状态保留为事件期间历史
-- 恢复主题仍提供登录故障处理建议, 普通账户回复与点赞没有实际提交核验
-- 安全事件页面最新明确更新仍为 7 月 29 日, 最终技术报告尚未取得
-- 状态事件接口没有 8 月 1 日或 2 日的新事件
-- 本次不新增重复特殊专题, 只维护既有事件的证据变化
-- 本次维护不增加研究批次, Trial 或执行窗口
-- 关联记录: [8 月阶段更新](../records/2026-08.md#2026-08-02-阶段更新)
-- 关联审计: [2026-W31](../audits/2026-W31.md)
+历史 Special 正文继续作为 point-in-time evidence. 本索引只维护定位, identity 与当前研究关系.
 
-## 2026-08-03 维护
+## 下一阶段适用场景
 
-- 状态事件接口没有 8 月 1 日至 3 日创建的新事件
-- 开发者社区旧维护地址仍重定向到同一主题 ID 的恢复标题
-- 当前主题继续明确维护完成且论坛重新可用, 登录, 回复与点赞仍未在普通账户中实际提交
-- 社区页面为 29361 字节, SHA-256 变为 08ff60cd6a59e0eb1dea2950c0eea526cf13ef629d5e8f370dd7cef033cd8809
-- 页面字节变化没有伴随可定位的状态语义变化, 不据此新增事件
-- 安全事件页面最新明确更新仍为 7 月 29 日, 仍计划在审查完成后发布技术报告
-- 本次不新增特殊专题, 不增加研究批次, Trial 或执行窗口
-- 关联记录: [8 月阶段更新](../records/2026-08.md#2026-08-03-阶段更新)
+优先创建 Special 的情况包括.
 
-## 2026-08-04 维护
+- 突发公开 incident 暴露新的 evidence identity 或 current-state ambiguity
+- benchmark/evaluator 出现独立 correction, adjudication 或 version transition
+- provider 与 independent evaluator 对同一对象形成可定位冲突
+- aggregate recovery 与 per-object completion 出现可公开验证差异
+- multi-agent, tool or retrieval chain 出现公开 provenance failure
 
-- 状态事件接口没有 8 月 1 日至 4 日创建的新事件
-- 开发者社区恢复主题继续说明维护完成且论坛重新可用
-- 社区页面为 29361 字节, SHA-256 为 fced2bcb1076905b583fec67eda1169395f18b6e7d107fc7879ecfb48163b40a
-- 普通账户回复, 点赞与其他写操作没有实际提交核验
-- 安全事件页面最新明确更新仍为 7 月 29 日, 最终技术报告尚未取得
-- 本次不新增特殊专题, 不增加研究批次, Trial 或执行窗口
-- 关联记录: [8 月阶段更新](../records/2026-08.md#2026-08-04-阶段更新)
+如果事件只是在已有 Daily 问题上提供一条补充来源, 不需要为了数量新建 Special.
 
-## 2026-08-05 维护
+## 计数与 promotion 边界
 
-- 状态接口新增 8 月 4 日 ChatGPT 对话错误事件, 当前已 resolved
-- 事件正文只支持四类计划中的部分用户可能遇到响应失败, 中断或未保存, 当前没有请求或用户分母
-- OpenAI 新增第三方网络安全评估说明, UK AISI 提供独立官方行为结果
-- 新说明明确 UK AISI 与 Irregular 事件和 Hugging Face 事件分离
-- 开发者社区恢复主题继续说明维护完成, 页面为 29669 字节, SHA-256 为 e7c2aae45f164528f59ccdf2149d0cb49989be320eaa272a04d4be89d45216ab
-- 社区页面字节变化没有伴随可定位的状态语义变化, 普通账户写操作仍未验证
-- Hugging Face 安全事件最终技术报告仍未取得
-- 本次新增两项特殊专题, 与每日专题共同形成三个研究批次并共享一个执行窗口
-- 关联记录: [8 月阶段更新](../records/2026-08.md#2026-08-05-阶段更新)
-## 2026-08-06 维护
+- 一个完整 Special 可以是一个 research batch
+- 同一 actual execution date 的多个 Daily/Special 共享 execution window
+- Special 不增加 Daily continuity
+- Special 不自动构成 independent publisher
+- Special 不自动升级 observation -> candidate -> finding
+- Special maintenance text 不计新的 batch 或 Trial
 
-- 状态接口新增 8 月 5 日三项独立事件, 已建立一项聚焦特殊专题
-- 三个事件分别涉及图像生成, Custom GPT actions 与带文件或图像的 ChatGPT 对话
-- 当前快照中一项 resolved, 两项 monitoring, 状态没有跨事件复制
-- 三个事件均缺少请求总量, 用户数量, 失败数与成功率
-- 事件数量与组件列表没有被扩大为全服务或全用户影响
-- Hugging Face 安全事件最终技术报告仍未取得
-- 本次新增一个特殊专题, 与每日专题共同形成两个研究批次并共享一个执行窗口
-- 关联记录: [8 月阶段更新](../records/2026-08.md#2026-08-06-阶段更新)
-
-## 2026-08-13 维护
-
-- 新增前沿模型官方评价可比性专题, 当前特殊专题总数增至 9
-- 专题只使用 OpenAI, Anthropic 与 Google DeepMind 的公开官方评价材料
-- 五个 Trial 检查跨厂商数值表, 方法字段缺失, 发布时间缺失与统一能力或风险排名冲突摘要
-- P-05 累计研究批次由 5 增至 6, 但本专题与同日每日专题共享 2026-08-13 执行窗口, 独立窗口仍为 5
-- OpenAI, Anthropic 与 Google 三个发布者分别计数, 同一发布者多个页面不重复计算
-- 本专题不建立三家公司总分, 总排名或统一安全风险序列
-- 本专题只作 N-04 复发检查, 不把三家跨厂商评价对象正式加入长期支持范围, 长期适用范围不扩大
-- 2026-08-07 至 2026-08-13 连续七日当前形成 8 个研究批次并覆盖 7 个实际执行日期窗口, 该复核不构成周期审计
-- 关联记录: [8 月阶段更新](../records/2026-08.md#2026-08-13-阶段更新)
-
-## 2026-08-23 维护
-
-- 新增两项 8 月 21 日 AI 特殊专题, 当前特殊专题总数增至 11
-- Anthropic CHIVE 专题形成 P-05 新研究批次并正式扩展 N-04 到 AI scientific experiment 的 result-branch 与 evidence-type identity
-- DeepMind SIMA 与 EVE 专题形成 P-03 新研究批次, 但不属于 N-02 coverage denominator 的正式支持范围
-- 两项专题均于 2026-08-23 实际核验, 与当日 Astra daily 共享 2026-08-23 一个执行窗口
-- 两项专题各完成 5 个 Trial, 同日三项研究共 15 个 Trial
-- CHIVE 公开代码只作为可复现材料边界, 本轮没有冒充已完整复现研究
-- SIMA offline research, Aura Guidance current feature 与 future live deployment 保持分离
-- 本次维护本身不增加研究批次, Trial 或执行窗口
-- 关联记录: [2026-W34 自然周终审](../records/2026-08.md#2026-w34-自然周终审)
-- 关联审计: [2026-W34](../audits/2026-W34.md)
-
-## 2026-08-28 维护
-
-- 2026-07-21 安全事件专题此前等待的 final technical report 已于 2026-08-28 完成新窗口复验
-- 新增 2026-08-26 OpenAI Hugging Face final incident report 与 2026-08-28 X/Twitter AI 社交摘要两个特殊专题, 当前特殊专题总数增至 13
-- final-report special 形成 P-04 第 11 个研究批次和第 11 个 CASE 独立执行窗口, 并正式扩展 N-03 到 initial unknown, preliminary attribution 与 final investigation 三阶段安全事件链
-- X/Twitter special 形成 P-05 第 12 个研究批次, 与当日 DeepMind daily 共享 2026-08-28 CASE 执行窗口, P-05 独立执行窗口仍为 10
-- X `/i/trending/` 页面保留为 platform-generated summary, 不改写为具体账号 `/status/` canonical post
-- indexed URL 或搜索缓存存在不证明 canonical post 当前仍在线或正文未变化, 社交热度不构成独立技术证据
-- OpenAI final report 与 METR independent investigation 继续承担可定位 primary evidence, 删除 primary support 后不能从社交摘要恢复同等精度事实
-- 旧 7 月专题保留原 2026-07-31 研究批次, 本次维护只更新其当前复验状态, 不追加旧专题 Trial 或窗口
-- 两个 special 与当日 DeepMind double-blind daily 均实际核验于 2026-08-28, 三个研究批次共享一个全局执行窗口
-- final report 中 internal-only research model comparable in scale to GPT-5.6 Sol 没有被改写为 GPT-5.6 Sol identity
-- incident response 与 upcoming Astra capabilities response 保持 separate, OpenAI-specific impact boundary 没有扩大为所有 third-party data 无影响
-- 本次维护本身不增加研究批次, Trial 或执行窗口
-- 关联记录: [2026-08-28 阶段更新](../records/2026-08.md#2026-08-28-阶段更新)
-- 关联复核: [W35 截至 8 月 28 日五日阶段复核](../records/2026-08.md#2026-w35-截至-8-月-28-日五日阶段复核)
-
-## 2026-07-31 维护
-
-- 2026-07-31 新增两项独立特殊专题, 当前共 4 项
-- 安全事件专题保留 Hugging Face 初始未知状态, 并使用 OpenAI 后续归因更新当前判断
-- 近期服务事件专题隔离四个事件身份, 不把相似标题扩大为连续四日全服务故障
-- 两项新增专题都在 2026-07-31 执行, 合计只增加一个独立执行窗口
-- 7 月 25 日事件页出现两项 write-up published, 但没有补足请求分母
-- 开发者社区当前仍可公开浏览, 未找到普通账户写操作恢复的明确公告
-- 关联记录: [7 月周期整理](../records/2026-07.md#7-月周期整理)
-- 关联审计: [2026-W31](../audits/2026-W31.md)
-
-## 2026-07-28 维护
-
-- 2026-07-28 复核三场事件页面, 事件接口, 组件接口与历史页
-- 第三场事件在 2026-07-27 16:32:09Z 新增 resolved 更新
-- 三场已选事件当前均为 resolved
-- 原 monitoring 快照保留其历史时间边界
-- 本次维护不构成新的研究批次或执行窗口
-- 关联记录: [2026-07-28 阶段更新](../records/2026-07.md)
+长期 promotion 仍完全服从 `METHOD.md` 和 `CASES.md` 的真实证据门槛.
