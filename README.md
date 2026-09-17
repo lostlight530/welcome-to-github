@@ -45,6 +45,18 @@ The current public repository record supports a few durable portfolio-level mile
 
 These are statements about public repository and publication records. They are not claims of universal scientific validation, product certification, or external adoption.
 
+## Repository-Native Guides
+
+The repository itself has several public layers with different roles:
+
+- [`horizon-cortex/README.md`](./horizon-cortex/README.md) — durable guide to the Horizon external-signal/evidence research surface and its boundary from NEXUS, Parallax, and maintenance.
+- [`horizon-cortex/EVIDENCE_POLICY.md`](./horizon-cortex/EVIDENCE_POLICY.md) — current Horizon evidence semantics and claim/source boundaries.
+- [`docs/archaeology/ARCHAEOLOGY_INDEX.md`](./docs/archaeology/ARCHAEOLOGY_INDEX.md) — living index over preserved development history and project phases.
+- [`SECURITY.md`](./SECURITY.md) — private vulnerability-reporting boundary.
+- [`RELEASE_POLICY.md`](./RELEASE_POLICY.md) — software publication/release identity and archival boundaries.
+
+The internal `docs/brain/**` knowledge-lifecycle implementation remains a separate host subsystem and is not summarized here as if it were the same thing as Horizon research or digital archaeology.
+
 ## Engineering and Research Principles
 
 Across the public repositories, a few principles remain deliberately stable:
