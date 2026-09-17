@@ -6,24 +6,27 @@
 
 自然月结束前只使用 as-of synthesis, 不提前写成 sealed final month.
 
+## 记录构成
+
+分别记录 Daily assigned-date coverage, actual execution-date coverage, native/substitute/reconstruction provenance, research batches, Trials, independent execution windows, Specials 与 derived audits.
+
+每日没有阳性发现仍必须有真实研究产出. `UNKNOWN`, `DEGRADED`, `PARTIAL`, `UNVERIFIED`, `EVIDENCE_INSUFFICIENT` 与 `NO_CONCLUSION` 都是合法 Daily outcome, 但不自动计长期支持.
+
+Special 不替代 Daily continuity. Audit 增加 0 research batches, 0 Trials, 0 independent execution windows.
+
 ## 每日研究覆盖
 
-分别记录.
-
-- Daily assigned-date coverage
-- actual execution-date coverage
-- native / substitute / reconstruction provenance
-- research batches
-- Trials
-- independent execution windows
-
-每日没有阳性发现仍必须有真实研究产出. `UNKNOWN`, `DEGRADED`, `PARTIAL`, `UNVERIFIED`, `EVIDENCE_INSUFFICIENT` 与 `NO_CONCLUSION` 都计为合法 Daily outcome, 但不自动计长期支持.
+列出每日研究问题, Research Surface, current boundary 与实际 execution date.
 
 ## 特殊专题
 
-分别统计特殊专题并说明其独立研究价值.
+分别统计特殊专题并说明其独立研究价值. 特殊专题不因为存在就自动升级 CASE 或 NOTES.
 
-特殊专题不替代 Daily continuity, 也不因为存在就自动升级 CASE 或 NOTES.
+## 证据覆盖
+
+按 claim-specific authority 总结公开权威来源, runtime evidence, benchmark/evaluator evidence, dynamic evidence, counterexample 与 unavailable primary evidence.
+
+明确 publisher count 与 independent source count, current page 与 historical snapshot, protocol 与 runtime result 的边界.
 
 ## Research surfaces
 
@@ -65,6 +68,16 @@
 ## 失效记录
 
 记录被新证据推翻的旧判断, invalidation date, impact scope 与 replacement evidence.
+
+## 稳定性与质量
+
+分别总结 judgment stability, unsupported claims, rational refusal, evidence identity preservation, source independence 与 verification burden.
+
+不压缩成综合分数.
+
+## 有效速度
+
+只记录完成 source verification, counterexample 与必要 validation 后的有效耗时或无效工作. 不把省略验证当作提速.
 
 ## AGI-scale research synthesis
 
