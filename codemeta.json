@@ -4,6 +4,8 @@
   "name": "welcome-to-github",
   "description": "Public portal, trust gateway, and digital museum for an edge-first research system with a deterministic, append-only knowledge lifecycle and explicit provenance and validation boundaries.",
   "codeRepository": "https://github.com/lostlight530/welcome-to-github",
+  "identifier": "https://doi.org/10.5281/zenodo.22790907",
+  "datePublished": "2026-09-16",
   "license": "https://spdx.org/licenses/MIT.html",
   "author": {
     "@type": "Person",
