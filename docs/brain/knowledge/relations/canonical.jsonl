@@ -20,6 +20,24 @@
 {"desc":"Current approved external evidence","dst":"external_doc_openhands_openhands_readme_md","relation":"has_snapshot","src":"external_repo_openhands_openhands"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"file_LICENSE"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"file__editorconfig"}
+{"desc":"","dst":"file_codemeta_json_prop_@context","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_@type","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_applicationCategory","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_author_@id","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_author_@type","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_author_name","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_author_url","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_codeRepository","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_description","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_isAccessibleForFree","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_keywords_0","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_keywords_1","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_keywords_2","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_keywords_3","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_keywords_4","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_keywords_5","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_license","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_name","relation":"defines","src":"file_codemeta_json"}
 {"desc":"","dst":"file_docs_brain_brain_config_json_prop_ignore_paths_0","relation":"defines","src":"file_docs_brain_brain_config_json"}
 {"desc":"","dst":"file_docs_brain_brain_config_json_prop_ignore_paths_1","relation":"defines","src":"file_docs_brain_brain_config_json"}
 {"desc":"","dst":"file_docs_brain_brain_config_json_prop_ignore_paths_2","relation":"defines","src":"file_docs_brain_brain_config_json"}

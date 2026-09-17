@@ -1,5 +1,6 @@
 {"desc":"Source file at: LICENSE","id":"file_LICENSE","name":"LICENSE","type":"code_file"}
 {"desc":"Source file at: .editorconfig","id":"file__editorconfig","name":".editorconfig","type":"code_file"}
+{"desc":"Source file at: codemeta.json","id":"file_codemeta_json","name":"codemeta.json","type":"code_file"}
 {"desc":"Source file at: docs/brain/brain_config.json","id":"file_docs_brain_brain_config_json","name":"brain_config.json","type":"code_file"}
 {"desc":"Source file at: docs/brain/cortex.py","id":"file_docs_brain_cortex_py","name":"cortex.py","type":"code_file"}
 {"desc":"Source file at: docs/brain/document_hygiene.py","id":"file_docs_brain_document_hygiene_py","name":"document_hygiene.py","type":"code_file"}

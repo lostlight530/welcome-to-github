@@ -1,3 +1,21 @@
+{"desc":"https://w3id.org/codemeta/3.1","id":"file_codemeta_json_prop_@context","name":"@context","type":"config_property"}
+{"desc":"SoftwareSourceCode","id":"file_codemeta_json_prop_@type","name":"@type","type":"config_property"}
+{"desc":"Research Software","id":"file_codemeta_json_prop_applicationCategory","name":"applicationCategory","type":"config_property"}
+{"desc":"https://orcid.org/0009-0001-3617-0832","id":"file_codemeta_json_prop_author_@id","name":"author.@id","type":"config_property"}
+{"desc":"Person","id":"file_codemeta_json_prop_author_@type","name":"author.@type","type":"config_property"}
+{"desc":"lightlost","id":"file_codemeta_json_prop_author_name","name":"author.name","type":"config_property"}
+{"desc":"https://github.com/lostlight530","id":"file_codemeta_json_prop_author_url","name":"author.url","type":"config_property"}
+{"desc":"https://github.com/lostlight530/welcome-to-github","id":"file_codemeta_json_prop_codeRepository","name":"codeRepository","type":"config_property"}
+{"desc":"Public portal, trust gateway, and digital museum for an edge-first research system with a determinis","id":"file_codemeta_json_prop_description","name":"description","type":"config_property"}
+{"desc":"True","id":"file_codemeta_json_prop_isAccessibleForFree","name":"isAccessibleForFree","type":"config_property"}
+{"desc":"research infrastructure","id":"file_codemeta_json_prop_keywords_0","name":"keywords[0]","type":"config_property"}
+{"desc":"knowledge lifecycle","id":"file_codemeta_json_prop_keywords_1","name":"keywords[1]","type":"config_property"}
+{"desc":"provenance","id":"file_codemeta_json_prop_keywords_2","name":"keywords[2]","type":"config_property"}
+{"desc":"reproducibility","id":"file_codemeta_json_prop_keywords_3","name":"keywords[3]","type":"config_property"}
+{"desc":"edge ai","id":"file_codemeta_json_prop_keywords_4","name":"keywords[4]","type":"config_property"}
+{"desc":"digital museum","id":"file_codemeta_json_prop_keywords_5","name":"keywords[5]","type":"config_property"}
+{"desc":"https://spdx.org/licenses/MIT.html","id":"file_codemeta_json_prop_license","name":"license","type":"config_property"}
+{"desc":"welcome-to-github","id":"file_codemeta_json_prop_name","name":"name","type":"config_property"}
 {"desc":".raw_cache","id":"file_docs_brain_brain_config_json_prop_ignore_paths","name":"ignore_paths[3]","type":"config_property"}
 {"desc":"docs/brain/knowledge","id":"file_docs_brain_brain_config_json_prop_ignore_paths_0","name":"ignore_paths[0]","type":"config_property"}
 {"desc":"docs/brain/inputs","id":"file_docs_brain_brain_config_json_prop_ignore_paths_1","name":"ignore_paths[1]","type":"config_property"}
