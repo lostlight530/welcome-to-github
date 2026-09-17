@@ -16,50 +16,64 @@
 
 ## 覆盖区间
 
-记录归属日期范围与实际执行日期范围
+记录归属日期范围与实际执行日期范围.
 
-每日专题与特殊专题分别计数
+Daily 与 Special 分别计数.
+
+本文件只复核已经存在的研究, 不补研究缺口, 不替代 Daily production.
 
 ## 纳入记录
 
-列出记录 ID, 记录类型, 归属或事件日期, 实际执行日期与独立时间窗口
+列出 record ID, record type, assigned/event date, actual execution date 与 independent execution window.
+
+如果某日期没有对应 formal audit predecessor, 不从 Daily coverage 推导 audit execution.
 
 ## 覆盖情况
 
-分别统计每日专题, 特殊专题, 研究批次与独立执行窗口
+分别统计 Daily, Special, research batches, Trials 与 independent execution windows.
 
-历史补录不得计为归属日期当天的执行窗口
+Audit 自身固定增加 0 batch, 0 Trial, 0 independent window.
 
-同日多个 Trial 只计一个独立时间窗口
+历史补录不得计为 assigned date 当天的 execution window.
 
 ## 重复信号
 
-列出跨研究批次重复出现的观察
+列出跨研究批次重复出现的 observation.
 
-明确是否跨实际执行窗口
+明确这些重复是否跨实际 execution windows, publisher, object, benchmark, harness 或 evaluator identity.
+
+相似主题不自动等于 independent replication.
 
 ## 冲突与漂移
 
-列出相互冲突, 无法复现或判断发生变化的部分
+列出 source conflict, current-state drift, benchmark/evaluator identity drift, missing fields 与无法复现内容.
+
+保留 UNKNOWN 与 NO_CONCLUSION, 不为了周期整理压平冲突.
 
 ## 特殊专题维护
 
-记录动态证据状态, 复核日期与对原判断的影响
+只说明 Special 的 current evidence relation 与 Daily research relation.
 
-明确维护是否形成新的受控 Trial
+Special maintenance 不自动增加 research batch 或 Trial.
 
 ## 反例检查
 
-说明主动寻找了哪些反证及其结果
+记录本周期最强 counterexample 以及是否推翻, 收窄或保持当前判断.
 
 ## 状态决定
 
-分别记录保持观察, 升级候选, 进入长期记录, 降级或失效的项目
+分别记录 observation, candidate, finding, invalidation, no conclusion 与 unchanged research boundary.
+
+任何 promotion 必须满足 METHOD 的独立批次和 execution-window 门槛, audit 本身不提供 promotion evidence.
 
 ## 下一阶段控制项
 
-只保留能够缩小不确定性的实验
+只保留能够缩小 uncertainty 或攻击 strongest current explanation 的 experiment.
+
+优先 real execution, independent evidence, delegated evidence, world-state drift, per-object completion 与 cross-evaluator relation.
 
 ## 验证结果
 
-记录结构, 引用, 证据可达性, 状态门槛与目录范围检查
+记录实际执行的 structural check, source verification 与未执行项.
+
+Checker PASS 不等于 external truth, source independence 或 research conclusion PASS.
