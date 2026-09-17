@@ -28,7 +28,9 @@
 {"desc":"","dst":"file_codemeta_json_prop_author_name","relation":"defines","src":"file_codemeta_json"}
 {"desc":"","dst":"file_codemeta_json_prop_author_url","relation":"defines","src":"file_codemeta_json"}
 {"desc":"","dst":"file_codemeta_json_prop_codeRepository","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_datePublished","relation":"defines","src":"file_codemeta_json"}
 {"desc":"","dst":"file_codemeta_json_prop_description","relation":"defines","src":"file_codemeta_json"}
+{"desc":"","dst":"file_codemeta_json_prop_identifier","relation":"defines","src":"file_codemeta_json"}
 {"desc":"","dst":"file_codemeta_json_prop_isAccessibleForFree","relation":"defines","src":"file_codemeta_json"}
 {"desc":"","dst":"file_codemeta_json_prop_keywords_0","relation":"defines","src":"file_codemeta_json"}
 {"desc":"","dst":"file_codemeta_json_prop_keywords_1","relation":"defines","src":"file_codemeta_json"}

@@ -6,7 +6,9 @@
 {"desc":"lightlost","id":"file_codemeta_json_prop_author_name","name":"author.name","type":"config_property"}
 {"desc":"https://github.com/lostlight530","id":"file_codemeta_json_prop_author_url","name":"author.url","type":"config_property"}
 {"desc":"https://github.com/lostlight530/welcome-to-github","id":"file_codemeta_json_prop_codeRepository","name":"codeRepository","type":"config_property"}
+{"desc":"2026-09-16","id":"file_codemeta_json_prop_datePublished","name":"datePublished","type":"config_property"}
 {"desc":"Public portal, trust gateway, and digital museum for an edge-first research system with a determinis","id":"file_codemeta_json_prop_description","name":"description","type":"config_property"}
+{"desc":"https://doi.org/10.5281/zenodo.22790907","id":"file_codemeta_json_prop_identifier","name":"identifier","type":"config_property"}
 {"desc":"True","id":"file_codemeta_json_prop_isAccessibleForFree","name":"isAccessibleForFree","type":"config_property"}
 {"desc":"research infrastructure","id":"file_codemeta_json_prop_keywords_0","name":"keywords[0]","type":"config_property"}
 {"desc":"knowledge lifecycle","id":"file_codemeta_json_prop_keywords_1","name":"keywords[1]","type":"config_property"}
