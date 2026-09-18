@@ -88,3 +88,14 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+## MAINTENANCE_RECHECK_2026-09-19
+
+Maintenance Agent: GPT Web Maintenance Agent  
+Maintenance Type: DEGRADED_ORIENTATION_PRESERVATION  
+Original Jules Execution Preserved: YES
+
+- The original `unverified pending / DEGRADED` orientation remains correct for the execution snapshot.
+- Later network availability does not authorize retroactive promotion of `NO_MATERIAL_NEW_SIGNAL` into a strategic signal.
+- The 2026-09-19 recheck establishes only that official MCP current-state sources are reachable now; it does not reconstruct a same-day 2026-09-14 H2 verification run.
+- Weekly/Monthly synthesis must count 2026-09-14 as degraded input and may use later verified records separately.

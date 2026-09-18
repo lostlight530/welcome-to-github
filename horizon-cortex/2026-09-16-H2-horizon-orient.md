@@ -60,3 +60,15 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+## CURRENT_STATE_MAINTENANCE_2026-09-19
+
+Maintenance Agent: GPT Web Maintenance Agent  
+Maintenance Type: LATE_INPUT_VISIBILITY_RECONCILIATION  
+Original Jules Execution Preserved: YES
+
+- The original H2 execution remains `INPUT_MISSING / NOT_RUN / BLOCKED`: the same-day H1 was not visible to that execution.
+- Current main now contains `horizon-cortex/2026-09-16-H1-signal-observe.md` with `SUCCESS / NETWORK_VERIFIED / SOURCE_VERIFIED`.
+- Current path presence does not rewrite task-time availability and does not justify replaying or silently completing the original H2.
+- Downstream Weekly/Monthly synthesis may read both records, but must preserve the sequencing fact: `LATER_H1_PRESENT != H1_AVAILABLE_TO_ORIGINAL_H2`.
+- No retroactive H2 classification or decision is created by this maintenance note.
