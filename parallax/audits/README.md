@@ -17,14 +17,15 @@
 | 2026-W34 | 2026-08-23 | 7 | 2 | 9 | 5 | [自然周审计](2026-W34.md) |
 | 2026-W35 | 2026-08-30 | 7 | 2 | 9 | 7 | [自然周审计](2026-W35.md) |
 
-## Current state as of 2026-09-17
+## Current state as of 2026-09-19
 
 - W35 是当前最后一个真实存在的 formal Parallax audit file
 - W36 的 Daily assigned-date coverage 已自然完成, 但仓库中没有 `audits/2026-W36.md`
 - W37 的 Daily assigned-date coverage 已自然完成, 但仓库中没有 `audits/2026-W37.md`
-- W38 当前覆盖 2026-09-14 至 2026-09-17, 4/7
+- W38 当前覆盖 2026-09-14 至 2026-09-19, 6/7
 - 不从 Daily coverage 推导不存在的 audit execution
 - 不为了补齐索引制造 W36/W37 audit artifact
+- 2026-09-18 与 2026-09-19 Daily 已存在于 main, 但 W38 尚未自然闭合, 因此当前不创建 W38 formal audit
 - Daily mandatory research production 不再被 audit creation 阻塞
 
 ## 使用边界
