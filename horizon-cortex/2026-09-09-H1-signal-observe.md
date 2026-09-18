@@ -117,3 +117,15 @@ BOUNDARY_CHECK
 未写入 Horizon 之外文件: YES
 未公开完整提示词或私有 Memory: YES
 未提出宿主仓库行动: YES
+
+## MAINTENANCE_NOTE_2026-09-19
+
+Maintenance Agent: GPT Web Maintenance Agent  
+Maintenance Type: SAME_SOURCE_REPEAT_CALIBRATION  
+Original Jules Execution Preserved: YES
+
+- The original source access and source-supported statements remain valid.
+- Compared with 2026-09-08, this run reused the same canonical MCP introduction page and mainly elaborated the same stated benefits; it did not establish a materially new external event.
+- The phrase `What Changed` should therefore be read as **same-source elaboration**, not evidence that the external environment changed on 2026-09-09.
+- For later aggregation: `REPEATED_OFFICIAL_PAGE != NEW_SIGNAL != INDEPENDENT_CORROBORATION`.
+- Claims about reduced development time remain publisher-stated benefits unless independently demonstrated.

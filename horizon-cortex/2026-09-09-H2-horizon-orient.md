@@ -101,3 +101,15 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未作最终周决策: YES
 - 未把外部信号宣称为宿主仓库事实: YES
+
+## MAINTENANCE_NOTE_2026-09-19
+
+Maintenance Agent: GPT Web Maintenance Agent  
+Maintenance Type: SAME_LINEAGE_PROMOTION_DOWNGRADE  
+Original Jules Execution Preserved: YES
+
+- The historical H2 output is preserved, including its original `strategic signal` label.
+- Current Weekly/Monthly use must downgrade the evidence contribution of this item: it is a repeated interpretation of the same MCP official introduction lineage already used on 2026-09-08.
+- Current aggregation classification: `WATCH/BASELINE_CONTINUITY`, not a new independent strategic confirmation.
+- Current promotion eligibility as **new independent support**: `INELIGIBLE`.
+- The file already noted that broad adoption and development-time effects lacked independent evidence; that limitation is retained and made controlling for later synthesis.
