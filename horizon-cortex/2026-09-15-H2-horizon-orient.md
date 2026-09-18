@@ -88,3 +88,14 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+## MAINTENANCE_RECHECK_2026-09-19
+
+Maintenance Agent: GPT Web Maintenance Agent  
+Maintenance Type: DEGRADED_ORIENTATION_PRESERVATION  
+Original Jules Execution Preserved: YES
+
+- Preserve the original `NETWORK_UNAVAILABLE / SOURCE_UNVERIFIED / DEGRADED` execution and `unverified pending` classification.
+- Later current-state verification must be consumed as later evidence, not backdated into this H2.
+- No independent corroboration is added to 2026-09-15 by this maintenance pass.
+- For downstream Weekly/Monthly use, this file contributes an explicit network/input limitation rather than a positive strategic observation.

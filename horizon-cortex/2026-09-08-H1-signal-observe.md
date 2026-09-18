@@ -118,3 +118,16 @@ BOUNDARY_CHECK
 未写入 Horizon 之外文件: YES
 未公开完整提示词或私有 Memory: YES
 未提出宿主仓库行动: YES
+
+## MAINTENANCE_NOTE_2026-09-19
+
+Maintenance Agent: GPT Web Maintenance Agent  
+Maintenance Type: SAME_SOURCE_NOVELTY_CALIBRATION  
+Original Jules Execution Preserved: YES
+
+- The original `SUCCESS / NETWORK_VERIFIED / SOURCE_VERIFIED` execution remains unchanged.
+- The MCP introduction page is authoritative for MCP's own definition, but this run did not establish an independent new external change after the MCP-heavy 2026-09-01 through 2026-09-06 record set.
+- For later Weekly/Monthly aggregation, treat `SIG-20260908-01` as **same-lineage baseline revalidation**, not a new independent strategic-support event.
+- The later MCP final release record confirms the current protocol baseline: https://blog.modelcontextprotocol.io/posts/2026-07-28/
+- Current aggregation rule: `OFFICIAL_DEFINITION_REVALIDATION != NEW_INDEPENDENT_SIGNAL`.
+- Host applicability remains `UNKNOWN`.

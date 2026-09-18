@@ -101,3 +101,15 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未作最终周决策: YES
 - 未把外部信号宣称为宿主仓库事实: YES
+
+## MAINTENANCE_NOTE_2026-09-19
+
+Maintenance Agent: GPT Web Maintenance Agent  
+Maintenance Type: PROMOTION_SCOPE_CALIBRATION  
+Original Jules Execution Preserved: YES
+
+- The original H2 classification remains part of the historical execution record.
+- Current aggregation treatment for `SIG-20260908-01`: `SAME_SOURCE_BASELINE / NOT_NEW_INDEPENDENT_SUPPORT`.
+- Reopening the same MCP official introduction page in H2 does not add source independence beyond H1 and does not justify counting this day as a second independent weekly confirmation.
+- The protocol-definition fact is retained; broad ecosystem adoption and host relevance still require separate evidence.
+- Current promotion boundary: the original `ELIGIBLE` field must not be interpreted as independent Weekly/Monthly promotion evidence by itself.

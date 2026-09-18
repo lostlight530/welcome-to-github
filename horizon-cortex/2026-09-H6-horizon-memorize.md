@@ -87,3 +87,14 @@ Current Interpretation: 本文件仍然是 2026-09-01 的早跑 `OPEN / REFLECTI
 Month-to-Date Use: 9/1–9/13 的 Daily 与 W36 current reconciliation 可以进入独立的 month-to-date 汇总，但只能标记为阶段状态、候选主题和证据校准；不得产生 H5/H6 final 结论。
 Current Candidate Themes: MCP final-spec/current-roadmap 分层、A2A stable-v1 maturity、vendor implementation != universal architecture、later delivery != original availability。
 Not Promoted: NONE of the above is promoted here into durable monthly memory because the calendar month is still open.
+
+## CURRENT_MAINTENANCE_NOTE_2026-09-19
+
+Maintenance Agent: GPT Web Maintenance Agent  
+Maintenance Type: MONTH_OPEN_STATUS_REFRESH  
+Original Jules Execution Preserved: YES
+
+- As of 2026-09-19, September 2026 is still naturally open. This file remains the 2026-09-01 early-run `OPEN / REFLECTION_INPUT_MISSING / BLOCKED` snapshot.
+- It is **not** a September final H6 and must not be used as a durable monthly baseline.
+- W37 periodic recovery performed during this maintenance pass does not authorize month closure or durable promotion.
+- Final September H5/H6 remain not due until the natural month has ended.

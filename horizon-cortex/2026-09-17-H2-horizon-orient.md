@@ -77,3 +77,14 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+## MAINTENANCE_RECHECK_2026-09-19
+
+Maintenance Agent: GPT Web Maintenance Agent  
+Maintenance Type: DEGRADED_ORIENTATION_PRESERVATION  
+Original Jules Execution Preserved: YES
+
+- The original H2 correctly inherited H1's network limitation and created no strategic signal.
+- The later 2026-09-19 MCP source recheck is current maintenance evidence only and does not change this H2 to `SUCCESS`.
+- `SIGNAL_CLASSIFICATION: NONE` remains historically valid for the original run.
+- Downstream synthesis may pair this degraded record with later verified MCP records, but must not treat the later recheck as same-day H2 verification.
