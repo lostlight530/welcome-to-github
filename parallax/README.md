@@ -39,7 +39,7 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 > Maintenance annotation — 2026-09-19
 >
-> 当前入口已校准到 main 中真实存在的 2026-09-19 Daily. 下方 `2026-09-17 research surfaces` 保留为当时阶段快照; 2026-09-18 与 2026-09-19 的后续增量以月度事实源和对应 Daily 为准. 本批注不回写任何历史 Daily.
+> 当前入口已校准到 main 中真实存在的 2026-09-19 Daily. 2026-09-01 至 2026-09-18 的 retrospective maintenance second pass 已记录在月度事实源: 历史 Daily 保留各自当时 schema 与 point-in-time judgment, 不按 2026-09-18 之后模板追溯补栏. 下方 `2026-09-17 research surfaces` 继续保留为当时阶段快照; 2026-09-19 属于当前状态, 不属于本次 9/1–9/18 回顾窗口.
 
 ## 2026-09-17 research surfaces
 
