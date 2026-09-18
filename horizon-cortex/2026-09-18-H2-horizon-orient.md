@@ -77,3 +77,14 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+## MAINTENANCE_RECHECK_2026-09-19
+
+Maintenance Agent: GPT Web Maintenance Agent  
+Maintenance Type: DEGRADED_ORIENTATION_PRESERVATION  
+Original Jules Execution Preserved: YES
+
+- Keep the original `DEGRADED` H2 state and absence of classified signals.
+- Later current-state source access does not authorize a replay, retroactive promotion, or synthetic same-day orientation.
+- For downstream use, this file contributes a real network-evidence gap. Later verified records remain separate evidence windows.
+- Aggregation rule: `LATER_VERIFICATION != ORIGINAL_ORIENTATION_EXECUTION`.

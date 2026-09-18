@@ -71,3 +71,16 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+## MAINTENANCE_RECHECK_2026-09-19
+
+Maintenance Agent: GPT Web Maintenance Agent  
+Maintenance Type: LATER_NETWORK_RECHECK_WITHOUT_RETROACTIVE_REPLAY  
+Original Jules Execution Preserved: YES
+
+- Preserve the original `NETWORK_UNAVAILABLE / Source Status NONE / DEGRADED` task-time state.
+- The exact MCP roadmap branch from the attempted search was rechecked successfully on 2026-09-19:
+  - https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
+  - https://blog.modelcontextprotocol.io/posts/2026-07-28/
+- The recheck confirms the current MCP roadmap/final-spec baseline, but it does not recreate the 2026-09-17 Daily search window and does not backfill the broader Cloud Coding Agent, Agent workflow, Agent observability, or generic AI Agent topics.
+- Current-use rule: consume this file as degraded Daily evidence plus a later bounded source recheck; do not count it as a successful original observation.
