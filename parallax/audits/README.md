@@ -25,7 +25,8 @@
 - W38 当前覆盖 2026-09-14 至 2026-09-19, 6/7
 - 不从 Daily coverage 推导不存在的 audit execution
 - 不为了补齐索引制造 W36/W37 audit artifact
-- 2026-09-18 与 2026-09-19 Daily 已存在于 main, 但 W38 尚未自然闭合, 因此当前不创建 W38 formal audit
+- 2026-09-17 lifecycle reconciliation 已把 formal cycle audit 降级为 optional derived review; natural-week closure 不再自动要求创建 audit
+- 因此 W36/W37 的缺失不是待补的周期债务, W38 当前 6/7 也只表示 Daily coverage, 不建立未来 audit obligation
 - Daily mandatory research production 不再被 audit creation 阻塞
 
 ## 使用边界
