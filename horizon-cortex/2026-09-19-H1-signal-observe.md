@@ -125,3 +125,15 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+## MAINTENANCE_ANNOTATION_2026-09-19
+- Review Class: FORWARD_RECONCILIATION
+- Original Jules Record Preserved: YES
+- Temporal Provenance Status: TEMPORAL_PROVENANCE_CONFLICT
+- Original Declared Execution Time: 2026-09-19T02:00:00Z / 2026-09-19T10:00:00+08:00
+- Immutable Git Commit Time: 2026-09-18T23:54:12Z / 2026-09-19T07:54:12+08:00
+- Current Interpretation: the declared execution timestamp is later than the immutable commit that already contains this artifact, so it is not usable as verified execution-time evidence; exact original execution time remains UNKNOWN rather than being reconstructed from commit time
+- Source-Family Calibration: SRC-20260919-01 and SRC-20260919-02 are two documents from the same MCP publisher family; the second source does not create independent corroboration
+- Claim Boundary: the July specification record and August roadmap record remain distinct current-release versus future-direction claims; roadmap content is not current host capability
+- Host Applicability: UNKNOWN
+- Later Maintenance Effect: interpretation narrowed only; original task status, network state, source records, and handoff are not rewritten
