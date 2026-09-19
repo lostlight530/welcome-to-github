@@ -16,18 +16,17 @@
 | 2026-W33 | 2026-08-17 | 7 | 1 | 8 | 7 | [自然周审计](2026-W33.md) |
 | 2026-W34 | 2026-08-23 | 7 | 2 | 9 | 5 | [自然周审计](2026-W34.md) |
 | 2026-W35 | 2026-08-30 | 7 | 2 | 9 | 7 | [自然周审计](2026-W35.md) |
+| 2026-W38 | 2026-09-20 | 7 | 0 | 7 | 7 | [自然周审计](2026-W38.md) |
 
-## Current state as of 2026-09-19
+## Current state as of 2026-09-20
 
-- W35 是当前最后一个真实存在的 formal Parallax audit file
-- W36 的 Daily assigned-date coverage 已自然完成, 但仓库中没有 `audits/2026-W36.md`
-- W37 的 Daily assigned-date coverage 已自然完成, 但仓库中没有 `audits/2026-W37.md`
-- W38 当前覆盖 2026-09-14 至 2026-09-19, 6/7
-- 不从 Daily coverage 推导不存在的 audit execution
-- 不为了补齐索引制造 W36/W37 audit artifact
-- 2026-09-17 lifecycle reconciliation 已把 formal cycle audit 降级为 optional derived review; natural-week closure 不再自动要求创建 audit
-- 因此 W36/W37 的缺失不是待补的周期债务, W38 当前 6/7 也只表示 Daily coverage, 不建立未来 audit obligation
-- Daily mandatory research production 不再被 audit creation 阻塞
+- W35 之后的 formal audit lifecycle 已在 2026-09-17 降级为 optional derived review
+- W36 与 W37 Daily assigned-date coverage 已自然完成, 但仓库中仍没有 `audits/2026-W36.md` 或 `audits/2026-W37.md`
+- W36/W37 的缺失保持历史事实, 本次不回填也不把它们解释为研究缺口
+- W38 Daily coverage 已自然完成 7/7, 并在自然周闭合后形成 `audits/2026-W38.md`
+- W38 audit 是 derived review, 固定增加 0 research batch, 0 Trial, 0 independent execution window, 0 finding
+- 创建 W38 audit 不恢复“每周必须有 audit”的旧 gate; future audit 仍与 Daily mandatory production 分离
+- Daily research validity 不依赖 audit existence
 
 ## 使用边界
 
