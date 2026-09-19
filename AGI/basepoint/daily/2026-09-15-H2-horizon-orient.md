@@ -108,3 +108,14 @@ Origin Continuity: PRESERVED
 - Preserve the original unverified/degraded classification.
 - Later current-state evidence is not backdated and adds no independent corroboration to this H2.
 - This file contributes a real limitation to downstream Weekly/Monthly synthesis rather than a positive strategic observation.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: DEGRADED_ORIENTATION
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- The original degraded network/input window remains degraded; later source access is a separate evidence window.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

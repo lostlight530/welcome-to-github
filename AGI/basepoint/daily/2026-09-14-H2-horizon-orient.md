@@ -108,3 +108,14 @@ Origin Continuity: PRESERVED
 - H2 remains a degraded orientation window; later access does not replay the missing same-day verification.
 - `NO_MATERIAL_NEW_SIGNAL` is not promoted retroactively.
 - Downstream synthesis should carry the limitation explicitly.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: DEGRADED_ORIENTATION
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- The original degraded network/input window remains degraded; later source access is a separate evidence window.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

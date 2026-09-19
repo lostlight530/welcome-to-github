@@ -101,3 +101,14 @@ Origin Continuity: PRESERVED
 - This H2 is human-authorized reconciliation and must remain distinct from Jules-native Daily execution.
 - Rechecking H1 sources in H2 does not add independence.
 - Weekly use may consume its current-state calibration while retaining the provenance gap from the original cadence.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: RECONCILIATION_RECORD
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- This remains a reconciliation-layer record and does not rewrite the task-time execution.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.
