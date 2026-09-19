@@ -150,6 +150,11 @@ const translations = {
       content:
         "我更相信可测试、可复用、可维护的长期系统价值，而不是短期炫目的功能堆叠"
     },
+    repositoryBridge: {
+      kicker: "当前仓库",
+      title: "继续查看当前仓库",
+      description: "本页保留 2025–2026 的展示语境 当前实现 研究边界与仓库文档以 current main 为准"
+    },
     footer: {
       greeting: "© 2026 LOSTLIGHT | 记录每一次工程自觉",
       note: "Quietly building reusable systems"
