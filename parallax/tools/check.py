@@ -284,20 +284,36 @@ def validate() -> list[str]:
                 errors.append(f"daily record ID count is {len(ids)}: {relative}")
             else:
                 record_id = ids[0]
-                expected_prefix = f"PX-{file_date_text.replace('-', '')}-P"
-                if not re.fullmatch(r"PX-\d{8}-P\d+", record_id):
-                    errors.append(f"invalid daily record ID: {relative} -> {record_id}")
-                elif not record_id.startswith(expected_prefix):
-                    errors.append(f"daily record ID date mismatch: {relative} -> {record_id}")
+                case_ids = metadata(text, "案例 ID")
+                case_raw = case_ids[0] if len(case_ids) == 1 else ""
+                case_id = case_raw.split(",", 1)[0].strip()
+                frontier_record = (
+                    case_id.startswith("FRONTIER-")
+                    and "不自动创建新 CASE support" in case_raw
+                )
+                if frontier_record:
+                    expected_prefix = f"PX-{file_date_text.replace('-', '')}-"
+                    if not re.fullmatch(r"PX-\d{8}-[A-Z][A-Z0-9-]+", record_id):
+                        errors.append(f"invalid frontier daily record ID: {relative} -> {record_id}")
+                    elif not record_id.startswith(expected_prefix):
+                        errors.append(f"daily record ID date mismatch: {relative} -> {record_id}")
+                else:
+                    expected_prefix = f"PX-{file_date_text.replace('-', '')}-P"
+                    if not re.fullmatch(r"PX-\d{8}-P\d+", record_id):
+                        errors.append(f"invalid daily record ID: {relative} -> {record_id}")
+                    elif not record_id.startswith(expected_prefix):
+                        errors.append(f"daily record ID date mismatch: {relative} -> {record_id}")
                 if expected_monthly.is_file():
                     monthly_text = expected_monthly.read_text(encoding="utf-8")
                     if record_id not in monthly_text:
                         errors.append(f"daily record ID missing from monthly index: {record_id}")
-                case_ids = metadata(text, "案例 ID")
-                if len(case_ids) != 1 or f"## {case_ids[0]} " not in cases_text:
-                    errors.append(f"daily case reference mismatch: {relative}")
-                elif path.name not in cases_text:
-                    errors.append(f"daily record missing from CASES: {relative}")
+                if len(case_ids) != 1:
+                    errors.append(f"daily case reference count is {len(case_ids)}: {relative}")
+                elif not frontier_record:
+                    if f"## {case_id} " not in cases_text:
+                        errors.append(f"daily case reference mismatch: {relative}")
+                    elif path.name not in cases_text:
+                        errors.append(f"daily record missing from CASES: {relative}")
                 if window:
                     if record_id in record_windows:
                         errors.append(f"duplicate record ID: {record_id}")

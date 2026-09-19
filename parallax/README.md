@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-09-19
-- 最新每日研究: [多 Agent 委托链中的 source provenance](records/2026-09/2026-09-19.md)
-- 每日专题: 61
+- 最新每日归属日期: 2026-09-20
+- 最新每日研究: [长推理期间的 world-state drift](records/2026-09/2026-09-20.md)
+- 每日专题: 62
 - 特殊专题: 13
-- 当前专题研究批次: 74
-- 当前专题独立执行日期窗口: 56
+- 当前专题研究批次: 75
+- 当前专题独立执行日期窗口: 57
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -35,7 +35,7 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 - 当前日记录模板: [templates/daily.md](templates/daily.md)
 - 当前周期整理模板: [templates/monthly.md](templates/monthly.md)
 
-截至 2026-09-19, 9 月已有 19/19 个每日归属日期研究记录. 这些记录没有产生新的 NOTES 级长期发现. 2026-09-18 扩展 system configuration identity, 2026-09-19 首次把 delegated evidence frontier 变成 Daily research batch.
+截至 2026-09-20, 9 月已有 20/20 个每日归属日期研究记录. 这些记录没有产生新的 NOTES 级长期发现. 2026-09-19 首次把 delegated evidence frontier 变成 Daily research batch, 2026-09-20 首次对 deliberation 期间的 world-state rebinding 完成 bounded Daily test.
 
 > Maintenance annotation — 2026-09-19
 >
