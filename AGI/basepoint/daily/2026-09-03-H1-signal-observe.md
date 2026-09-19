@@ -162,3 +162,14 @@ Origin Continuity: PRESERVED
 - The existing current-state reconciliation controls interpretation: historical RC-era wording is retained as history, while current protocol state follows the final release.
 - The September H6 path read by this run was an OPEN/BLOCKED point-in-time record, not a closed-month durable baseline.
 - Named vendor analysis remains named evidence, not industry-wide convergence.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: STABLE_WITH_CURRENT_BOUNDARY
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

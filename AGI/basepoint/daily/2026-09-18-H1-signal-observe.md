@@ -92,3 +92,14 @@ Origin Continuity: PRESERVED
 - Preserve the original `NETWORK_UNAVAILABLE / Source Status NONE / DEGRADED` state.
 - Later access to the MCP lineage resolves only current accessibility, not the missing 2026-09-18 observation window.
 - No positive Daily signal is backfilled.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: DEGRADED_WINDOW
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- The original degraded network/input window remains degraded; later source access is a separate evidence window.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

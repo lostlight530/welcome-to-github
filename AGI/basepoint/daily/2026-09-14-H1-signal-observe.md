@@ -99,3 +99,14 @@ Origin Continuity: PRESERVED
 - The original `NETWORK_UNAVAILABLE / SOURCE_UNVERIFIED / DEGRADED` state remains authoritative for task time.
 - Later source reachability confirms only current accessibility for the checked MCP lineage.
 - No synthetic 2026-09-14 positive signal is created.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: DEGRADED_WINDOW
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- The original degraded network/input window remains degraded; later source access is a separate evidence window.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

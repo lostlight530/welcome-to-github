@@ -132,3 +132,14 @@ Origin Continuity: PRESERVED
 - The existing downgrade remains controlling: durable execution, graph memory and multi-scope memory are concrete approaches, not proven universal requirements.
 - H2 interpretation must not promote vendor framing into a host requirement or cross-system standard.
 - Host applicability remains unknown.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: STABLE_WITH_GENERALIZATION_LIMIT
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

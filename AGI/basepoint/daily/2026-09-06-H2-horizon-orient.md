@@ -133,3 +133,14 @@ Origin Continuity: PRESERVED
 - Preserve the useful MCP/A2A responsibility split while keeping the existing maturity update: stable A2A releases do not equal universal production adoption.
 - Auth0/Merge interpretation is named engineering analysis, not consensus evidence.
 - AWS support is a named implementation and creates no host gateway migration requirement.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: STABLE_WITH_MATURITY_BOUNDARY
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

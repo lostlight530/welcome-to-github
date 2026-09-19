@@ -130,3 +130,14 @@ Origin Continuity: PRESERVED
 - The official architecture page can support exact MCP protocol-scope and deprecation facts documented there.
 - A single official project lineage does not provide independent ecosystem corroboration.
 - Protocol responsibility changes do not imply host implementation requirements.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: OFFICIAL_PROTOCOL_FACT
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

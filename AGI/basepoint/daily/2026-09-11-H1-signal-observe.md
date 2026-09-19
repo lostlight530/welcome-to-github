@@ -129,3 +129,14 @@ Origin Continuity: PRESERVED
 - The Agent Skills page proves a named MCP ecosystem guidance/mechanism.
 - It does not establish cross-model, cross-tool, or industry-wide adoption.
 - Treat the item as official developer guidance and a watch signal, not a universal development standard.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: OFFICIAL_GUIDANCE
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

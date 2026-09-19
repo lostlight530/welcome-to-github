@@ -97,3 +97,14 @@ Origin Continuity: PRESERVED
 - The original degraded H2 and absence of classified signals remain controlling.
 - Later verification belongs to a later evidence window and is not same-day H2 execution.
 - Carry forward the network-evidence gap explicitly.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: DEGRADED_ORIENTATION
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- The original degraded network/input window remains degraded; later source access is a separate evidence window.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

@@ -119,3 +119,14 @@ Origin Continuity: PRESERVED
 - Streamable HTTP/MCPB may be retained as official named deployment/distribution mechanisms.
 - The same project lineage and consecutive-day revisit do not establish broad adoption, ecosystem dominance or a host requirement.
 - The existing reconciliation limiting universal architecture claims remains controlling.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: NAMED_DEPLOYMENT_MECHANISM
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

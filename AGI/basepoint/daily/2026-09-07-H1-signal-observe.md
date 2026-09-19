@@ -195,3 +195,14 @@ Origin Continuity: PRESERVED
 - Multiple publisher lineages exist, but independence is claim-specific; not every proposition has primary corroboration.
 - The existing source/evidence calibration remains controlling for later aggregation.
 - Carry forward only claim-scoped support, not a run-level assumption that all signals are independently confirmed.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: STABLE_WITH_PARTIAL_INDEPENDENCE
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

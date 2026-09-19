@@ -122,3 +122,14 @@ Origin Continuity: PRESERVED
 - H2 reopened the same MCP lineage used by H1; this adds interpretation, not source independence.
 - The historical `ELIGIBLE` label must not be counted as new independent Weekly/Monthly promotion evidence.
 - Carry forward the protocol-definition fact while keeping ecosystem adoption and host relevance separate.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: BASELINE_REVALIDATION
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Repeated or inherited source lineages do not add independent support.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.
