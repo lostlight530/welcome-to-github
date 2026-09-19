@@ -181,3 +181,14 @@ Origin Continuity: PRESERVED
 - This H3 is human-authorized reconciliation, not evidence that a Jules-native H3 was available to the original W36 H4 run.
 - Its decisions may guide current interpretation, but producer/time identity must remain visible.
 - Carry forward: `LATER_WEEKLY_RECONCILIATION != ORIGINAL_UPSTREAM_AVAILABILITY`.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: LATER_WEEKLY_RECONCILIATION
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Recovery/reconciliation provenance remains explicit and is not converted into Jules-native replay.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

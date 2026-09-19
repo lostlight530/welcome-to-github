@@ -129,3 +129,14 @@ Origin Continuity: PRESERVED
 - This H4 is a later maintenance recovery and must remain separate from the original closed-unmerged Jules attempt.
 - Current action guidance may be used prospectively; it does not rewrite the native execution history.
 - Month closure is not implied.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: PERIODIC_RECOVERY
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Recovery/reconciliation provenance remains explicit and is not converted into Jules-native replay.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

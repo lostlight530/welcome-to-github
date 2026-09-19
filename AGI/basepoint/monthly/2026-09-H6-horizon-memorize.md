@@ -107,3 +107,14 @@ Origin Continuity: PRESERVED
 - This is the early September `OPEN / REFLECTION_INPUT_MISSING / BLOCKED` snapshot, not a final H6.
 - Weekly recovery does not authorize monthly durable-memory promotion.
 - Final September H5/H6 remain not due until natural month closure.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: MONTH_OPEN
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- September remains an open natural month; no final monthly closure is inferred.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

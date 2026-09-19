@@ -143,3 +143,14 @@ Origin Continuity: PRESERVED
 - The original H4 remains `BLOCKED`; later current-state guidance does not create a native successful H3→H4 chain in retrospect.
 - Use the later narrative guardrails as current guidance only.
 - Historical dependency failure remains part of the weekly record.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: ORIGINAL_BLOCKED_WITH_LATER_GUIDANCE
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Recovery/reconciliation provenance remains explicit and is not converted into Jules-native replay.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.
