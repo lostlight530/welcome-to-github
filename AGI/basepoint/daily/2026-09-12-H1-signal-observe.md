@@ -129,3 +129,14 @@ Origin Continuity: PRESERVED
 - This run returns to the same official Agent Skills lineage used on 2026-09-11.
 - Deployment/bundle mechanisms described on that page are valid named mechanisms, but the repeat does not add source independence or daily novelty by itself.
 - Carry forward: `REPEATED_OFFICIAL_GUIDE != NEW_INDEPENDENT_SIGNAL`.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: SAME_SOURCE_MECHANISM_CONTINUITY
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Repeated or inherited source lineages do not add independent support.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

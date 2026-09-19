@@ -112,3 +112,14 @@ Origin Continuity: PRESERVED
 - H2 interpretation is bounded to the official MCP project lineage and does not add independent support beyond H1.
 - The historical `ELIGIBLE` label is suitable only as a watch/synthesis candidate, not proof of broad architecture convergence.
 - Carry forward: `OFFICIAL_PROTOCOL_CHANGE != UNIVERSAL_AGENT_ARCHITECTURE`.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: OFFICIAL_PROTOCOL_FACT_WITH_PROMOTION_LIMIT
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.
