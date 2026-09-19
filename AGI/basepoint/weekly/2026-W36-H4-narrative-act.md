@@ -134,3 +134,12 @@ GitHub Actions Change: NO
 New Static File: NO
 
 Current-state note: this reconciliation changes current guidance only. It does not claim H3 was available to the original H4 run and does not change the historical BLOCKED execution fact.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: ORIGINAL_BLOCKED_WITH_LATER_GUIDANCE
+Origin Continuity: PRESERVED
+
+- The original H4 remains `BLOCKED`; later current-state guidance does not create a native successful H3→H4 chain in retrospect.
+- Use the later narrative guardrails as current guidance only.
+- Historical dependency failure remains part of the weekly record.

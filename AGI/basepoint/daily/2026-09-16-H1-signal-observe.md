@@ -109,3 +109,12 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: SAME_PROJECT_CURRENT_STATE
+Origin Continuity: PRESERVED
+
+- The final release and roadmap are authoritative/current MCP project surfaces, but they belong to the same project lineage and do not provide independent corroboration.
+- Roadmap material is forward-looking and must not be read as shipped functionality.
+- Carry forward: `ROADMAP != RELEASED_FEATURE` and `SAME_PROJECT_PAGES != INDEPENDENT_SOURCES`.

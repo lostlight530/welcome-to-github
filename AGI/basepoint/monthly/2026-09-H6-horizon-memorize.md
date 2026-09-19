@@ -98,3 +98,12 @@ Original Jules Execution Preserved: YES
 - It is **not** a September final H6 and must not be used as a durable monthly baseline.
 - W37 periodic recovery performed during this maintenance pass does not authorize month closure or durable promotion.
 - Final September H5/H6 remain not due until the natural month has ended.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: MONTH_OPEN
+Origin Continuity: PRESERVED
+
+- This is the early September `OPEN / REFLECTION_INPUT_MISSING / BLOCKED` snapshot, not a final H6.
+- Weekly recovery does not authorize monthly durable-memory promotion.
+- Final September H5/H6 remain not due until natural month closure.

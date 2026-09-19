@@ -176,3 +176,12 @@ BOUNDARY_CHECK
 - Long-term memory promoted: NO
 - Original Daily provenance rewritten: NO
 - Boundary violation: NO
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: PERIODIC_RECOVERY
+Origin Continuity: PRESERVED
+
+- This file is explicitly a human-authorized periodic maintenance recovery with a provenance gap, not a Jules-native replay.
+- It may close the current W37 decision surface while preserving degraded Daily inputs and missing native cadence provenance.
+- No host or long-term memory promotion follows automatically.

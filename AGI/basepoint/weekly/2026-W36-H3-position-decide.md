@@ -172,3 +172,12 @@ BOUNDARY_CHECK
 - GitHub Actions modified: NO
 - Long-term memory upgraded: NO
 - Boundary violation: NO
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: LATER_WEEKLY_RECONCILIATION
+Origin Continuity: PRESERVED
+
+- This H3 is human-authorized reconciliation, not evidence that a Jules-native H3 was available to the original W36 H4 run.
+- Its decisions may guide current interpretation, but producer/time identity must remain visible.
+- Carry forward: `LATER_WEEKLY_RECONCILIATION != ORIGINAL_UPSTREAM_AVAILABILITY`.
