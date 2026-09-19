@@ -8,10 +8,11 @@ Special 的作用是把真实公共事件映射成可证伪研究问题, 并保�
 
 ## 当前计数
 
-- 特殊专题: 13
-- 当前最新特殊专题事件日期: 2026-08-28
-- 2026-09-01 至 2026-09-17: 0 个新 Special
-- 9 月研究生产全部由 Daily 完成, Special 不承担 Daily continuity
+- 特殊专题: 17
+- 当前最新特殊专题事件日期: 2026-09-18
+- 2026-09-01 至 2026-09-20: 4 个新 Special
+- 4 个 September Special 均在 2026-09-20 完成实际核验, 与当日 Daily 共享 execution window
+- September Special 只增加 reality-mapping research batches, 不承担 Daily continuity, 不自动增加 CASE support
 
 ## 专题索引
 
@@ -30,6 +31,10 @@ Special 的作用是把真实公共事件映射成可证伪研究问题, 并保�
 | 2026-08-21 | PX-S-20260821-P03 | P-03 | 2026-08-23 | research lifecycle boundary and deployment state | [DeepMind SIMA 与 EVE research lifecycle boundary](2026-08/2026-08-21-deepmind-sima-eve-research-boundary.md) |
 | 2026-08-26 | PX-S-20260826-P04 | P-04 | 2026-08-28 | final report and earlier incident-state relation | [OpenAI Hugging Face final incident report](2026-08/2026-08-26-openai-hugging-face-final-incident-report.md) |
 | 2026-08-28 | PX-S-20260828-P05 | P-05 | 2026-08-28 | social summary vs primary evidence identity | [X/Twitter AI 社交摘要与一手证据身份边界](2026-08/2026-08-28-x-ai-social-summary-source-boundary.md) |
+| 2026-09-13 | PX-S-20260913-P04 | P-04 | 2026-09-20 | aggregate recovery vs queued-item completion | [Google SecOps normalization/detection backlog](2026-09/2026-09-13-google-secops-processing-backlog.md) |
+| 2026-09-14 | PX-S-20260914-P04 | P-04 | 2026-09-20 | managed-session aggregate recovery vs per-session completion | [OpenAI Agents API managed-session recovery](2026-09/2026-09-14-openai-agents-managed-session-recovery.md) |
+| 2026-09-15 | PX-S-20260915-P04 | P-04 | 2026-09-20 | mitigation vs historical export backfill completion | [Google SecOps export backfill](2026-09/2026-09-15-google-secops-export-backfill.md) |
+| 2026-09-18 | PX-S-20260918-P04 | P-04 | 2026-09-20 | service recovery vs refund/economic remediation completion | [OpenAI Agent API overbilling and refunds](2026-09/2026-09-18-openai-agent-api-overbilling-refunds.md) |
 
 ## Current research role
 
