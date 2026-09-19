@@ -169,3 +169,12 @@ Reconciliation Treatment: RETAIN_WITH_EXISTING_CORRECTION
 Historical State Preserved: YES
 Current Interpretation: 9 月 1 日的具名外部实现与协议演进观察保留；当前协议版本基线以 MCP 2026-07-28 final release 为准。AAIF RC 解读和 Google 实现材料可以支持方向/实现事实，但不能单独证明全行业普遍采用，也不能推出 welcome-to-github 必须迁移。
 Evidence Calibration: 原 2026-09-02 正文修正继续有效；本段只补充 2026-09-13 current-state 解释，不增加当日独立证据。
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: CALIBRATED_FINAL_RELEASE
+Origin Continuity: PRESERVED
+
+- The protocol-direction observations remain usable, but current MCP version authority is the 2026-07-28 final release rather than the earlier RC interpretation.
+- AAIF/Google materials support protocol direction and named implementation facts; they do not establish universal adoption or host applicability.
+- Carry forward: `PROTOCOL_FACT / NAMED_IMPLEMENTATION != INDUSTRY_ADOPTION != HOST_REQUIREMENT`.

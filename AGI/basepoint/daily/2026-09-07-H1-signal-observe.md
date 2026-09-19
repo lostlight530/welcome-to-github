@@ -186,3 +186,12 @@ Original Task-Time Status Preserved: SUCCESS
 - Verification / Boundary Discipline: CORRECTED
 
 未执行 `horizon-cortex/check.py`; 本次不声称 checker PASS。
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: STABLE_WITH_PARTIAL_INDEPENDENCE
+Origin Continuity: PRESERVED
+
+- Multiple publisher lineages exist, but independence is claim-specific; not every proposition has primary corroboration.
+- The existing source/evidence calibration remains controlling for later aggregation.
+- Carry forward only claim-scoped support, not a run-level assumption that all signals are independently confirmed.

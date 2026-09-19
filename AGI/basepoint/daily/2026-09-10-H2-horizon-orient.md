@@ -103,3 +103,12 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未作最终周决策: YES
 - 未把外部信号宣称为宿主仓库事实: YES
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: OFFICIAL_PROTOCOL_FACT_WITH_PROMOTION_LIMIT
+Origin Continuity: PRESERVED
+
+- H2 interpretation is bounded to the official MCP project lineage and does not add independent support beyond H1.
+- The historical `ELIGIBLE` label is suitable only as a watch/synthesis candidate, not proof of broad architecture convergence.
+- Carry forward: `OFFICIAL_PROTOCOL_CHANGE != UNIVERSAL_AGENT_ARCHITECTURE`.

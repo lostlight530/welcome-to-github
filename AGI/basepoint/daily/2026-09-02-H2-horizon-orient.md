@@ -110,3 +110,12 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未作最终周决策: YES
 - 未把外部信号宣称为宿主仓库事实: YES
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: CALIBRATED_SCOPE
+Origin Continuity: PRESERVED
+
+- H2 orientation inherits the same source lineages and does not create additional independence by reopening them.
+- Cloudflare supports a named implementation; it does not turn protocol behavior into a cross-industry deployment fact.
+- Any exact deprecation/version statement remains bounded by the authoritative final-spec state used in later records.

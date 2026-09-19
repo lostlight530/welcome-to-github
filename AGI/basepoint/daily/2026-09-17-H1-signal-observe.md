@@ -84,3 +84,12 @@ Original Jules Execution Preserved: YES
   - https://blog.modelcontextprotocol.io/posts/2026-07-28/
 - The recheck confirms the current MCP roadmap/final-spec baseline, but it does not recreate the 2026-09-17 Daily search window and does not backfill the broader Cloud Coding Agent, Agent workflow, Agent observability, or generic AI Agent topics.
 - Current-use rule: consume this file as degraded Daily evidence plus a later bounded source recheck; do not count it as a successful original observation.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: DEGRADED_WINDOW
+Origin Continuity: PRESERVED
+
+- Preserve the original network/source failure as task-time truth.
+- Later MCP roadmap/final-spec access is a separate bounded evidence window and does not recreate the broader 2026-09-17 search.
+- This Daily remains degraded for aggregation.

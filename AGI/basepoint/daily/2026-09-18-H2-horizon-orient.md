@@ -88,3 +88,12 @@ Original Jules Execution Preserved: YES
 - Later current-state source access does not authorize a replay, retroactive promotion, or synthetic same-day orientation.
 - For downstream use, this file contributes a real network-evidence gap. Later verified records remain separate evidence windows.
 - Aggregation rule: `LATER_VERIFICATION != ORIGINAL_ORIENTATION_EXECUTION`.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: DEGRADED_ORIENTATION
+Origin Continuity: PRESERVED
+
+- The original degraded H2 and absence of classified signals remain controlling.
+- Later verification belongs to a later evidence window and is not same-day H2 execution.
+- Carry forward the network-evidence gap explicitly.

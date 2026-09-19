@@ -120,3 +120,12 @@ BOUNDARY_CHECK
 - External evidence mapped to host fact: NO
 - Month closure claimed: NO
 - Boundary violation: NO
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: PERIODIC_RECOVERY
+Origin Continuity: PRESERVED
+
+- This H4 is a later maintenance recovery and must remain separate from the original closed-unmerged Jules attempt.
+- Current action guidance may be used prospectively; it does not rewrite the native execution history.
+- Month closure is not implied.

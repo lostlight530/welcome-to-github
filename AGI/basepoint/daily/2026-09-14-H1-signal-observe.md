@@ -90,3 +90,12 @@ Original Jules Execution Preserved: YES
   - https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
 - This later access confirms current MCP version/roadmap facts only. It does **not** prove what was observable to Jules on 2026-09-14 and does not recreate the missed Cloud Coding Agent, Agent evaluation, Agent memory, or Agent reliability searches.
 - No retroactive Daily signal is created. For later aggregation, this date remains a real degraded observation window with a bounded later recheck.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: DEGRADED_WINDOW
+Origin Continuity: PRESERVED
+
+- The original `NETWORK_UNAVAILABLE / SOURCE_UNVERIFIED / DEGRADED` state remains authoritative for task time.
+- Later source reachability confirms only current accessibility for the checked MCP lineage.
+- No synthetic 2026-09-14 positive signal is created.

@@ -161,3 +161,12 @@ BOUNDARY_CHECK
 未写入 Horizon 之外文件: YES
 未公开完整提示词或私有 Memory: YES
 未提出宿主仓库行动: YES
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: CALIBRATED_COMPLEMENTARITY
+Origin Continuity: PRESERVED
+
+- AWS documentation supports a named MCP implementation/support fact.
+- Auth0 and Merge are distinct publisher perspectives but do not by themselves establish an industry-wide consensus about MCP/A2A roles.
+- The MCP-tool / A2A-agent distinction is useful as an analytical boundary; broad adoption and host architecture implications remain separate questions.

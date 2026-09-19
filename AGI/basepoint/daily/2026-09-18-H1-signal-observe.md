@@ -83,3 +83,12 @@ Original Jules Execution Preserved: YES
   - https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
 - This resolves current accessibility for that specific protocol lineage only; it does not synthesize a missing 2026-09-18 signal and does not certify the other attempted search themes.
 - No positive Daily result is retroactively created.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: DEGRADED_WINDOW
+Origin Continuity: PRESERVED
+
+- Preserve the original `NETWORK_UNAVAILABLE / Source Status NONE / DEGRADED` state.
+- Later access to the MCP lineage resolves only current accessibility, not the missing 2026-09-18 observation window.
+- No positive Daily signal is backfilled.

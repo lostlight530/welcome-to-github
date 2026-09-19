@@ -84,3 +84,12 @@ Reconciliation Treatment: PRESERVE_ORIGINAL_BLOCKED_STATE
 Historical State Preserved: YES
 Current Interpretation: 9 月 7 日 H2 的 `INPUT_MISSING / BLOCKED / NOT_RUN` 继续作为完整有效历史事实保留。当前 main 上同日 H1 的后来存在、后续 PR 合并和 9 月 13 日全链 reconciliation 都不改变“原 H2 执行时不可见”的事实。
 Current Use: 后续 Weekly/Monthly 可以读取当前完整路径并在新的 reconciliation 层综合，但不得把新的可见性倒写成 9 月 7 日 H2 原始 SUCCESS，也不得补造当日未执行的外部 Orientation。
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: TASK_TIME_BLOCKED
+Origin Continuity: PRESERVED
+
+- The original `INPUT_MISSING / NOT_RUN / BLOCKED` state is the task-time fact.
+- Later H1 presence and later delivery do not replay or complete this H2.
+- Carry forward: `CURRENT_PATH_PRESENT != ORIGINAL_INPUT_AVAILABLE`.

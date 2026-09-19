@@ -117,3 +117,12 @@ BOUNDARY_CHECK
 - Horizon-external local files read: NO
 - Horizon-external local files written: NO
 - External protocol facts converted into host requirements: NO
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: RECONCILIATION_RECORD
+Origin Continuity: PRESERVED
+
+- This is a human-authorized reconciliation record, not a Jules-native Daily replay.
+- MCP and A2A are distinct project lineages; same-project pages are not counted as independent sources.
+- Downstream use must preserve producer identity and must not convert this later record into original task-time execution evidence.

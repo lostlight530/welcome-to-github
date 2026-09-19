@@ -94,3 +94,12 @@ Original Jules Execution Preserved: YES
   - https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
 - This closes only the **current accessibility** question for that protocol lineage. It does not establish that all 2026-09-15 search themes were successfully researched later, and it does not add a synthetic 2026-09-15 signal.
 - Current aggregation rule: `LATER_SOURCE_RECOVERY != ORIGINAL_DAILY_SUCCESS`.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: DEGRADED_WINDOW
+Origin Continuity: PRESERVED
+
+- Preserve the original network/source limitation as the task-time fact.
+- Later access to official MCP pages is a separate evidence window and does not establish that the full 2026-09-15 search set was completed.
+- Carry forward: `LATER_SOURCE_RECOVERY != ORIGINAL_DAILY_SUCCESS`.

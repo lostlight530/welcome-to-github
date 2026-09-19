@@ -113,3 +113,12 @@ Original Jules Execution Preserved: YES
 - Reopening the same MCP official introduction page in H2 does not add source independence beyond H1 and does not justify counting this day as a second independent weekly confirmation.
 - The protocol-definition fact is retained; broad ecosystem adoption and host relevance still require separate evidence.
 - Current promotion boundary: the original `ELIGIBLE` field must not be interpreted as independent Weekly/Monthly promotion evidence by itself.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: BASELINE_REVALIDATION
+Origin Continuity: PRESERVED
+
+- H2 reopened the same MCP lineage used by H1; this adds interpretation, not source independence.
+- The historical `ELIGIBLE` label must not be counted as new independent Weekly/Monthly promotion evidence.
+- Carry forward the protocol-definition fact while keeping ecosystem adoption and host relevance separate.

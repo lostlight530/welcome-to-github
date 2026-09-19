@@ -72,3 +72,12 @@ Original Jules Execution Preserved: YES
 - Current path presence does not rewrite task-time availability and does not justify replaying or silently completing the original H2.
 - Downstream Weekly/Monthly synthesis may read both records, but must preserve the sequencing fact: `LATER_H1_PRESENT != H1_AVAILABLE_TO_ORIGINAL_H2`.
 - No retroactive H2 classification or decision is created by this maintenance note.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: TASK_TIME_BLOCKED
+Origin Continuity: PRESERVED
+
+- The original `INPUT_MISSING / NOT_RUN / BLOCKED` state remains the execution fact.
+- The H1 path now present on main cannot be treated as input that was available to the original H2 run.
+- No replay or silent completion is inferred.

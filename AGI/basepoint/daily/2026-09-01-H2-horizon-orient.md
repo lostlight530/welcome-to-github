@@ -140,3 +140,12 @@ Reconciliation Treatment: RETAIN_WITH_EXISTING_CORRECTION
 Historical State Preserved: YES
 Current Interpretation: 保留 9 月 1 日 H2 对无状态核心、Tasks、MRTR 与鉴权方向的观察，但把“强证据”严格限定为协议/具名实现层；当前 final-spec 权威为 MCP 2026-07-28 final release。H2 对 H1 同一批来源的复核不增加独立来源数量，也不产生 welcome-to-github 的迁移授权。
 Evidence Calibration: August H6 的“外部协议事实不等于宿主采用”边界继续有效；当前解释不回写为原始执行时的新证据。
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: CALIBRATED_INHERITED_EVIDENCE
+Origin Continuity: PRESERVED
+
+- H2 reused and rechecked the H1 source set; that improves interpretation but does not add a new independent lineage.
+- Strong evidence is bounded to protocol and named implementation facts. Broad adoption, host migration and universal reliability effects remain unestablished.
+- Carry forward: `H2_RECHECK_OF_H1 != NEW_INDEPENDENT_SUPPORT`.

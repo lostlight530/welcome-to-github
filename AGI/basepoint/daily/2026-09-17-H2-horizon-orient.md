@@ -88,3 +88,12 @@ Original Jules Execution Preserved: YES
 - The later 2026-09-19 MCP source recheck is current maintenance evidence only and does not change this H2 to `SUCCESS`.
 - `SIGNAL_CLASSIFICATION: NONE` remains historically valid for the original run.
 - Downstream synthesis may pair this degraded record with later verified MCP records, but must not treat the later recheck as same-day H2 verification.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: DEGRADED_ORIENTATION
+Origin Continuity: PRESERVED
+
+- H2 correctly carries the H1 network limitation and contains no same-day strategic classification.
+- Later source access does not convert the record to SUCCESS.
+- `SIGNAL_CLASSIFICATION: NONE` remains the task-time result.

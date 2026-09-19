@@ -144,3 +144,12 @@ BOUNDARY_CHECK
 未写入 Horizon 之外文件: YES
 未公开完整提示词或私有 Memory: YES
 未提出宿主仓库行动: YES
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: CALIBRATED_CASE_STUDY
+Origin Continuity: PRESERVED
+
+- Orca and Mem0 materials are valid named vendor/engineering observations, but their market segmentation, benchmark and architecture language is not independent proof of a universal runtime or memory standard.
+- Retain the existence of the described approaches; downgrade broad market-normalization language to watch evidence.
+- Carry forward: `VENDOR_SURVEY / PRODUCT_BENCHMARK != UNIVERSAL_ARCHITECTURE`.

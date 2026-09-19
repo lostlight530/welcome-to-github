@@ -142,3 +142,12 @@ BOUNDARY_CHECK
 未写入 Horizon 之外文件: YES
 未公开完整提示词或私有 Memory: YES
 未提出宿主仓库行动: YES
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: CALIBRATED_SCOPE
+Origin Continuity: PRESERVED
+
+- Cloudflare and AAIF are distinct publisher lineages, so the record can retain multi-publisher support for the specific observations they each document.
+- `Independent Verification: YES` must not be expanded to universal ecosystem adoption, host applicability, or claims not jointly supported by those sources.
+- Exact current protocol-state claims should be interpreted through the final-release authority rather than RC-era wording.

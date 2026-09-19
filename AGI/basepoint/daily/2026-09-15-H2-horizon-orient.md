@@ -99,3 +99,12 @@ Original Jules Execution Preserved: YES
 - Later current-state verification must be consumed as later evidence, not backdated into this H2.
 - No independent corroboration is added to 2026-09-15 by this maintenance pass.
 - For downstream Weekly/Monthly use, this file contributes an explicit network/input limitation rather than a positive strategic observation.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: DEGRADED_ORIENTATION
+Origin Continuity: PRESERVED
+
+- Preserve the original unverified/degraded classification.
+- Later current-state evidence is not backdated and adds no independent corroboration to this H2.
+- This file contributes a real limitation to downstream Weekly/Monthly synthesis rather than a positive strategic observation.

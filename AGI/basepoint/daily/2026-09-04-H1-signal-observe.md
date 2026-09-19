@@ -144,3 +144,12 @@ BOUNDARY_CHECK
 未写入 Horizon 之外文件: YES
 未公开完整提示词或私有 Memory: YES
 未提出宿主仓库行动: YES
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: CALIBRATED_NAMED_IMPLEMENTATION
+Origin Continuity: PRESERVED
+
+- Google Developers material can support a named Google implementation pattern; it does not establish a universal deployment standard.
+- MLflow material is a named observability/tooling perspective. It is insufficient by itself to establish broad OpenTelemetry adoption across all agent systems.
+- Carry forward exact source-scoped claims; keep ecosystem-wide conclusions at watch level.
