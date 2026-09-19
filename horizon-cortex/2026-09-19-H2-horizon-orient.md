@@ -52,3 +52,16 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+## MAINTENANCE_ANNOTATION_2026-09-19
+- Review Class: LATER_INPUT_RECONCILIATION
+- Original Jules Record Preserved: YES
+- Original Input Status: INPUT_MISSING
+- Original Task Status: BLOCKED
+- Same-day upstream later delivered at: horizon-cortex/2026-09-19-H1-signal-observe.md
+- Current Path State: H1_PRESENT_AFTER_ORIGINAL_H2_EXECUTION
+- Current Interpretation: LATER_PATH_PRESENT != ORIGINAL_TASK_INPUT_AVAILABLE
+- Replay Performed: NO
+- Orientation Recomputed: NO
+- Evidence Upgrade: NONE
+- Carry-forward: the later H1 may inform future tasks, but it does not convert this H2 execution into SUCCESS and does not create a retroactive 2026-09-19 orientation decision
