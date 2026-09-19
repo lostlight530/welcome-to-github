@@ -97,3 +97,14 @@ Origin Continuity: PRESERVED
 - H2 correctly carries the H1 network limitation and contains no same-day strategic classification.
 - Later source access does not convert the record to SUCCESS.
 - `SIGNAL_CLASSIFICATION: NONE` remains the task-time result.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: DEGRADED_ORIENTATION
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- The original degraded network/input window remains degraded; later source access is a separate evidence window.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.
