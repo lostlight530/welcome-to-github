@@ -445,6 +445,27 @@
     </div>
   </section>
 
+
+  <!-- Current repository bridge -->
+  <section class="py-10 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="glass rounded-3xl p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div class="max-w-2xl text-left">
+          <div id="repo-bridge-kicker" class="text-xs uppercase tracking-[0.22em] text-google-blue mb-2">Current Repository</div>
+          <h2 id="repo-bridge-title" class="text-xl md:text-2xl font-bold text-white mb-2">Continue to the current repository</h2>
+          <p id="repo-bridge-desc" class="text-sm md:text-base text-gray-400 leading-relaxed">
+            This page is the 2025–2026 presentation surface. Current implementation, research boundaries and repository documentation live in the repository.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-3 shrink-0">
+          <a href="https://github.com/lostlight530/welcome-to-github" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full border border-white/10 hover:border-google-blue hover:text-google-blue transition">GitHub</a>
+          <a href="https://github.com/lostlight530/welcome-to-github/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full border border-white/10 hover:border-google-green hover:text-google-green transition">README</a>
+          <a href="https://github.com/lostlight530/welcome-to-github/blob/main/horizon-cortex/README.md" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full border border-white/10 hover:border-google-yellow hover:text-google-yellow transition">Horizon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="py-12 text-center border-t border-gray-800/50 mt-10">
     <div id="footer-greeting" class="mb-2 text-google-red font-semibold tracking-widest text-sm uppercase">
@@ -648,6 +669,11 @@
       document.getElementById('philosophy-title').innerText = t.philosophy.title;
       document.getElementById('philosophy-content').innerText = t.philosophy.content;
       renderPhilosophyPoints(t.philosophy.points);
+
+      // Repository bridge
+      document.getElementById('repo-bridge-kicker').innerText = t.repositoryBridge.kicker;
+      document.getElementById('repo-bridge-title').innerText = t.repositoryBridge.title;
+      document.getElementById('repo-bridge-desc').innerText = t.repositoryBridge.description;
 
       // Footer
       document.getElementById('footer-greeting').innerText = t.footer.greeting;

@@ -150,6 +150,11 @@ const translations = {
       content:
         "我更相信可测试、可复用、可维护的长期系统价值，而不是短期炫目的功能堆叠"
     },
+    repositoryBridge: {
+      kicker: "当前仓库",
+      title: "继续查看当前仓库",
+      description: "本页保留 2025–2026 的展示语境 当前实现 研究边界与仓库文档以 current main 为准"
+    },
     footer: {
       greeting: "© 2026 LOSTLIGHT | 记录每一次工程自觉",
       note: "Quietly building reusable systems"
@@ -307,6 +312,11 @@ const translations = {
       ],
       content:
         "I care more about testability, reusability, and maintainability than short-lived novelty Engineering should leave behind durable structure"
+    },
+    repositoryBridge: {
+      kicker: "Current Repository",
+      title: "Continue to the current repository",
+      description: "This page preserves the 2025–2026 presentation context Current implementation research boundaries and repository documentation follow current main"
     },
     footer: {
       greeting: "© 2026 LOSTLIGHT | Engineering with intention",
