@@ -131,3 +131,12 @@ Original Jules Execution Preserved: YES
 - The later MCP final release record confirms the current protocol baseline: https://blog.modelcontextprotocol.io/posts/2026-07-28/
 - Current aggregation rule: `OFFICIAL_DEFINITION_REVALIDATION != NEW_INDEPENDENT_SIGNAL`.
 - Host applicability remains `UNKNOWN`.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: BASELINE_REVALIDATION
+Origin Continuity: PRESERVED
+
+- The existing maintenance note remains controlling: this is a same-lineage MCP baseline revalidation rather than a materially new independent signal.
+- Official definition authority is retained; novelty, ecosystem adoption and host relevance require separate evidence.
+- Carry forward: `OFFICIAL_DEFINITION_REVALIDATION != NEW_INDEPENDENT_SIGNAL`.

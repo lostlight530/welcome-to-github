@@ -124,3 +124,12 @@ Reconciliation Treatment: RETAIN_COMPLEMENTARITY_WITH_MATURITY_UPDATE
 Historical State Preserved: YES
 Current Interpretation: MCP 工具访问与 A2A agent-to-agent 协作的责任分离仍是有用分析边界；但“行业已逐渐确立统一共识”“A2A 仍处发展阶段/尚未形成标准”这类时效性表述需要用当前官方 A2A v1 稳定线重新校准。A2A 已有 1.0/1.0.1 与稳定 SDK，不再只是 pre-standard；同时 stable release 仍不等于普遍生产采用。
 Evidence Calibration: Auth0/Merge.dev 是具名工程分析，不能单独建立跨行业共识。AWS 文档证明 named implementation/support，不建立 welcome-to-github 的认证网关改造要求。
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: STABLE_WITH_MATURITY_BOUNDARY
+Origin Continuity: PRESERVED
+
+- Preserve the useful MCP/A2A responsibility split while keeping the existing maturity update: stable A2A releases do not equal universal production adoption.
+- Auth0/Merge interpretation is named engineering analysis, not consensus evidence.
+- AWS support is a named implementation and creates no host gateway migration requirement.

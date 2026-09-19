@@ -114,3 +114,12 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未作最终周决策: YES
 - 未把外部信号宣称为宿主仓库事实: YES
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: CALIBRATED_GENERALIZATION
+Origin Continuity: PRESERVED
+
+- Read the Google item as a named implementation record, not proof that all major cloud environments or production agent stacks use the same architecture.
+- OpenTelemetry-related conclusions remain bounded to the documented tooling/examples; `COMMON_TOOLING_DIRECTION != UNIVERSAL_AGENT_STANDARD`.
+- No host architecture requirement follows from either signal.

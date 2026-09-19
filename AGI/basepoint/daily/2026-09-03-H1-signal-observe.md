@@ -153,3 +153,12 @@ Reconciliation Treatment: VERSION_AND_MONTHLY_INPUT_CALIBRATION
 Historical State Preserved: YES
 Current Interpretation: 原始 9 月 3 日观察保留为当时来源与叙事。当前协议版本事实已由 MCP 2026-07-28 final release supersede RC-era current-state framing；RC 页面仍是历史来源，不再作为“当前尚未最终生效”的版本状态。Toloka/WorkOS 可支持具名分析或采用叙事，但不能单独证明全行业企业级标准化。
 Monthly Input Calibration: 当日读取的 `2026-09-H6-horizon-memorize.md` 当前被确认为 OPEN/BLOCKED 历史记录，不是可继承的已闭月 durable memory；这不会改变 9 月 3 日原执行时实际读取了该路径的事实。
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: STABLE_WITH_CURRENT_BOUNDARY
+Origin Continuity: PRESERVED
+
+- The existing current-state reconciliation controls interpretation: historical RC-era wording is retained as history, while current protocol state follows the final release.
+- The September H6 path read by this run was an OPEN/BLOCKED point-in-time record, not a closed-month durable baseline.
+- Named vendor analysis remains named evidence, not industry-wide convergence.
