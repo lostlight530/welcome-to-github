@@ -39,10 +39,11 @@ Not archived here:
 | September ten-day successor reconciliation | `05-maintenance-and-reconciliation/2026-09-10--sep-01-10--cadence-reconciliation.md` | `horizon-cortex/2026-09-10-ten-day-cadence-reconciliation.md` |
 | September 1-13 maintenance predecessor | `05-maintenance-and-reconciliation/2026-09-13--sep-01-13--maintenance-reconciliation.md` | `horizon-cortex/2026-09-13-full-sop-reconciliation.md` |
 | September 14-15 incremental maintenance reconciliation | `05-maintenance-and-reconciliation/2026-09-15--sep-14-15--maintenance-reconciliation.md` | `horizon-cortex/2026-09-15-daily-maintenance-reconciliation.md` |
+| September 19 live execution and optimistic-lock reconciliation | `05-maintenance-and-reconciliation/2026-09-19--sep-19--maintenance-reconciliation.md` | created directly in archive |
 
 ## Current recovery note
 
-As of 2026-09-15, `05-maintenance-and-reconciliation/2026-09-15--sep-14-15--maintenance-reconciliation.md` is the latest completed independent maintenance record preserved in this archive. The `Previous path` column above records pre-relocation provenance only; it is not a live Horizon entry point and must not be used to infer a current file at that location.
+As of 2026-09-19, `05-maintenance-and-reconciliation/2026-09-19--sep-19--maintenance-reconciliation.md` is the latest completed independent maintenance record preserved in this archive. The `Previous path` column above records pre-relocation provenance only; it is not a live Horizon entry point and must not be used to infer a current file at that location.
 
 Current Horizon production authority remains with the active Horizon contracts and policies, including `horizon-cortex/EVIDENCE_POLICY.md`, together with the current Horizon production artifacts. Status labels inside archived maintenance records describe their write-time role and do not turn the archive into current production authority.
 
