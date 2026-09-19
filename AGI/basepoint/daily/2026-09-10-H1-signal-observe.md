@@ -121,3 +121,12 @@ BOUNDARY_CHECK
 未写入 Horizon 之外文件: YES
 未公开完整提示词或私有 Memory: YES
 未提出宿主仓库行动: YES
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: OFFICIAL_PROTOCOL_FACT
+Origin Continuity: PRESERVED
+
+- The official architecture page can support exact MCP protocol-scope and deprecation facts documented there.
+- A single official project lineage does not provide independent ecosystem corroboration.
+- Protocol responsibility changes do not imply host implementation requirements.

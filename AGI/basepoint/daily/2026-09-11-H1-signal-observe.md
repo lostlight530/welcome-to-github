@@ -120,3 +120,12 @@ BOUNDARY_CHECK
 未写入 Horizon 之外文件: YES
 未公开完整提示词或私有 Memory: YES
 未提出宿主仓库行动: YES
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: OFFICIAL_GUIDANCE
+Origin Continuity: PRESERVED
+
+- The Agent Skills page proves a named MCP ecosystem guidance/mechanism.
+- It does not establish cross-model, cross-tool, or industry-wide adoption.
+- Treat the item as official developer guidance and a watch signal, not a universal development standard.

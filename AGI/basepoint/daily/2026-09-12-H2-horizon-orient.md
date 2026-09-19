@@ -110,3 +110,12 @@ Reconciliation Treatment: OFFICIAL_DEPLOYMENT_GUIDE_NOT_UNIVERSAL_ARCHITECTURE
 Historical State Preserved: YES
 Current Interpretation: Streamable HTTP / MCP Bundles (MCPB) 可以作为 MCP 官方生态中记录明确的部署/分发机制保留；但“规范化路径已成为通用部署标准”“将重塑跨平台工具链分发范式”属于前瞻性推断，不作为当前已验证的普遍事实继承。当前可靠层级是 `OFFICIAL_NAMED_MECHANISM`，第三方普及率与效果仍需独立证据。
 Evidence Calibration: `OFFICIAL_GUIDANCE / NAMED_MECHANISM != BROAD_ADOPTION / HOST_REQUIREMENT`。宿主适用性继续 UNKNOWN；September H6 OPEN/BLOCKED 不作为 durable baseline。
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: NAMED_DEPLOYMENT_MECHANISM
+Origin Continuity: PRESERVED
+
+- Streamable HTTP/MCPB may be retained as official named deployment/distribution mechanisms.
+- The same project lineage and consecutive-day revisit do not establish broad adoption, ecosystem dominance or a host requirement.
+- The existing reconciliation limiting universal architecture claims remains controlling.

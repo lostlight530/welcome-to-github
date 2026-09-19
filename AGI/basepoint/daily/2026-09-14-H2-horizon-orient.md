@@ -99,3 +99,12 @@ Original Jules Execution Preserved: YES
 - Later network availability does not authorize retroactive promotion of `NO_MATERIAL_NEW_SIGNAL` into a strategic signal.
 - The 2026-09-19 recheck establishes only that official MCP current-state sources are reachable now; it does not reconstruct a same-day 2026-09-14 H2 verification run.
 - Weekly/Monthly synthesis must count 2026-09-14 as degraded input and may use later verified records separately.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: DEGRADED_ORIENTATION
+Origin Continuity: PRESERVED
+
+- H2 remains a degraded orientation window; later access does not replay the missing same-day verification.
+- `NO_MATERIAL_NEW_SIGNAL` is not promoted retroactively.
+- Downstream synthesis should carry the limitation explicitly.

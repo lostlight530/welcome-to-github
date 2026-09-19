@@ -92,3 +92,12 @@ BOUNDARY_CHECK
 - External signal declared as host fact: NO
 - Host repository or Actions inspected: NO
 - Boundary violation: NO
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: RECONCILIATION_RECORD
+Origin Continuity: PRESERVED
+
+- This H2 is human-authorized reconciliation and must remain distinct from Jules-native Daily execution.
+- Rechecking H1 sources in H2 does not add independence.
+- Weekly use may consume its current-state calibration while retaining the provenance gap from the original cadence.

@@ -113,3 +113,12 @@ Original Jules Execution Preserved: YES
 - Current aggregation classification: `WATCH/BASELINE_CONTINUITY`, not a new independent strategic confirmation.
 - Current promotion eligibility as **new independent support**: `INELIGIBLE`.
 - The file already noted that broad adoption and development-time effects lacked independent evidence; that limitation is retained and made controlling for later synthesis.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: SAME_LINEAGE_PROMOTION_LIMIT
+Origin Continuity: PRESERVED
+
+- The strategic label is retained as historical output, but the evidence contribution is baseline continuity rather than a new independent confirmation.
+- Broad adoption and quantified development-time effects remain unsupported by the repeated official page.
+- Current promotion as new independent support: INELIGIBLE.

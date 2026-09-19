@@ -110,3 +110,12 @@ Reconciliation Treatment: OFFICIAL_GUIDE_NOT_UNIVERSAL_STANDARD
 Historical State Preserved: YES
 Current Interpretation: MCP 官方 `Agent skills` 文档可以可靠证明 MCP 生态提供了面向 AI 编码助手的官方开发指导/技能机制；它不单独证明该机制已经成为跨模型、跨工具或全行业统一标准，也不证明第三方生产采用率。原文件把它作为 strategic signal 的观察可以保留，但“标准路径/基础设施标准事实”的强度应在后续 Weekly 中收敛到 `OFFICIAL_DEVELOPER_GUIDANCE / NAMED_ECOSYSTEM_MECHANISM`。
 Evidence Calibration: `OFFICIAL_GUIDANCE != UNIVERSAL_ADOPTION_REQUIREMENT`；宿主适用性继续 UNKNOWN。
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: OFFICIAL_GUIDANCE_NOT_UNIVERSAL_STANDARD
+Origin Continuity: PRESERVED
+
+- The existing reconciliation remains controlling.
+- Official Agent Skills guidance is real; claims that it is already a universal standard path are not established.
+- Host applicability remains unknown and no implementation mandate follows.
