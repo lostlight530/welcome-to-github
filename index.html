@@ -567,7 +567,7 @@
       if (!pageProgress || prefersReducedMotion) return;
       const max = document.documentElement.scrollHeight - window.innerHeight;
       const progress = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
-      pageProgress.style.transform = \`scaleX(\${progress})\`;
+      pageProgress.style.transform = `scaleX(${progress})`;
     }
 
     function initReveal() {
@@ -576,7 +576,7 @@
       )];
       nodes.forEach((node, index) => {
         node.dataset.reveal = '';
-        node.style.setProperty('--reveal-delay', \`\${Math.min(index % 4, 3) * 55}ms\`);
+        node.style.setProperty('--reveal-delay', `${Math.min(index % 4, 3) * 55}ms`);
       });
 
       if (prefersReducedMotion) {
