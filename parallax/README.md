@@ -27,7 +27,8 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
-- 周期审计: 6
+- 周期审计: 7
+- 最新周期审计: [2026-W38](audits/2026-W38.md)
 - 当前月度事实源: [2026-09](records/2026-09.md)
 - 当前方法: [METHOD.md](METHOD.md)
 - 控制案例: [CASES.md](CASES.md)
@@ -35,7 +36,7 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 - 当前日记录模板: [templates/daily.md](templates/daily.md)
 - 当前周期整理模板: [templates/monthly.md](templates/monthly.md)
 
-截至 2026-09-20, 9 月已有 20/20 个每日归属日期研究记录. 这些记录没有产生新的 NOTES 级长期发现. 2026-09-19 首次把 delegated evidence frontier 变成 Daily research batch, 2026-09-20 首次对 deliberation 期间的 world-state rebinding 完成 bounded Daily test.
+截至 2026-09-20, 9 月已有 20/20 个每日归属日期研究记录. W38 已自然完成 7/7 并形成 optional derived audit, 该 audit 不增加 research batch, Trial, execution window 或 finding. 这些记录没有产生新的 NOTES 级长期发现. 2026-09-19 首次把 delegated evidence frontier 变成 Daily research batch, 2026-09-20 首次对 deliberation 期间的 world-state rebinding 完成 bounded Daily test.
 
 > Maintenance annotation — 2026-09-19
 >
