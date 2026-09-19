@@ -91,9 +91,169 @@
       right: 10%;
       background: #EA4335;
     }
+  
+
+    /* 2026 visual refresh: digital yearbook / engineering memorial */
+    :root {
+      --museum-ink: #070a12;
+      --museum-panel: rgba(15, 23, 42, 0.62);
+      --museum-line: rgba(148, 163, 184, 0.14);
+      --museum-blue: #60a5fa;
+      --museum-green: #4ade80;
+      --museum-gold: #facc15;
+      --museum-red: #fb7185;
+    }
+
+    html { scroll-padding-top: 88px; }
+
+    body {
+      position: relative;
+      background:
+        radial-gradient(circle at 18% -10%, rgba(66, 133, 244, 0.16), transparent 34rem),
+        radial-gradient(circle at 86% 16%, rgba(234, 67, 53, 0.10), transparent 30rem),
+        linear-gradient(180deg, #080c16 0%, #0b0f1a 36%, #070a12 100%);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0.32;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: linear-gradient(to bottom, #000 0%, transparent 88%);
+    }
+
+    .page-progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      width: 100%;
+      height: 2px;
+      z-index: 80;
+      transform: scaleX(0);
+      transform-origin: left center;
+      background: linear-gradient(90deg, var(--museum-blue), var(--museum-green), var(--museum-gold), var(--museum-red));
+      box-shadow: 0 0 16px rgba(96, 165, 250, 0.35);
+      pointer-events: none;
+    }
+
+    nav.glass {
+      background: rgba(7, 10, 18, 0.74);
+      border-color: rgba(148, 163, 184, 0.12);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+    }
+
+    #home {
+      min-height: 76vh;
+      display: grid;
+      align-items: center;
+      isolation: isolate;
+    }
+
+    #home::before {
+      content: "";
+      position: absolute;
+      inset: 7rem 5vw 2rem;
+      z-index: -1;
+      border: 1px solid rgba(148, 163, 184, 0.10);
+      border-radius: 32px;
+      background:
+        linear-gradient(135deg, rgba(66,133,244,0.055), transparent 34%),
+        linear-gradient(315deg, rgba(251,188,5,0.035), transparent 34%);
+      box-shadow: inset 0 1px rgba(255,255,255,0.04), 0 28px 80px rgba(0,0,0,0.22);
+    }
+
+    #home::after {
+      content: "2025 — 2026";
+      position: absolute;
+      right: clamp(1rem, 5vw, 5rem);
+      bottom: 1.8rem;
+      color: rgba(148, 163, 184, 0.34);
+      font: 600 0.72rem/1 "Inter", sans-serif;
+      letter-spacing: 0.34em;
+      writing-mode: vertical-rl;
+    }
+
+    #hero-role {
+      display: inline-flex;
+      width: fit-content;
+      margin-inline: auto;
+      padding: 0.48rem 0.78rem;
+      border: 1px solid rgba(96,165,250,0.22);
+      border-radius: 999px;
+      background: rgba(15,23,42,0.48);
+    }
+
+    #hero-tagline {
+      text-wrap: balance;
+      text-shadow: 0 12px 54px rgba(66, 133, 244, 0.08);
+    }
+
+    .glass {
+      background:
+        linear-gradient(180deg, rgba(30, 41, 59, 0.66), rgba(15, 23, 42, 0.50));
+      border-color: var(--museum-line);
+      box-shadow: inset 0 1px rgba(255,255,255,0.035), 0 18px 54px rgba(0,0,0,0.12);
+    }
+
+    .card-hover {
+      will-change: transform;
+      transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease, background 260ms ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-4px);
+      border-color: rgba(96, 165, 250, 0.32);
+      box-shadow: inset 0 1px rgba(255,255,255,0.05), 0 22px 58px rgba(0,0,0,0.22);
+    }
+
+    section[id]:not(#home) {
+      scroll-margin-top: 88px;
+    }
+
+    .section-title {
+      text-wrap: balance;
+      font-size: clamp(2rem, 4vw, 3.35rem);
+    }
+
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 620ms cubic-bezier(.2,.7,.2,1), transform 620ms cubic-bezier(.2,.7,.2,1);
+      transition-delay: var(--reveal-delay, 0ms);
+    }
+
+    [data-reveal].is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (max-width: 768px) {
+      #home { min-height: auto; }
+      #home::before { inset: 6rem 0.75rem 1rem; border-radius: 24px; }
+      #home::after { display: none; }
+      .section-title { font-size: 2rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+      }
+      [data-reveal] { opacity: 1 !important; transform: none !important; }
+      .page-progress { display: none; }
+    }
+
   </style>
 </head>
 <body class="antialiased">
+  <div class="page-progress" id="pageProgress" aria-hidden="true"></div>
   <!-- Navigation -->
   <nav class="fixed top-0 w-full z-50 glass border-b border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -397,6 +557,48 @@
       if (descTag) descTag.setAttribute('content', meta.description);
     }
 
+
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const pageProgress = document.getElementById('pageProgress');
+    let revealObserver;
+
+    function updateReadingProgress() {
+      if (!pageProgress || prefersReducedMotion) return;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+      pageProgress.style.transform = \`scaleX(\${progress})\`;
+    }
+
+    function initReveal() {
+      const nodes = [...document.querySelectorAll(
+        'section:not(#home) .section-title, #stats-grid > *, #achievements .glass, #ecosystem-grid > *, #project-grid > *, #philosophy .glass'
+      )];
+      nodes.forEach((node, index) => {
+        node.dataset.reveal = '';
+        node.style.setProperty('--reveal-delay', \`\${Math.min(index % 4, 3) * 55}ms\`);
+      });
+
+      if (prefersReducedMotion) {
+        nodes.forEach(node => node.classList.add('is-visible'));
+        return;
+      }
+
+      revealObserver?.disconnect();
+      revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+
+      nodes.forEach(node => revealObserver.observe(node));
+    }
+
+    window.addEventListener('scroll', updateReadingProgress, { passive: true });
+    window.addEventListener('resize', updateReadingProgress);
+
     function updateContent() {
       const t = translations[currentLang];
 
@@ -454,6 +656,10 @@
       btn.innerText = currentLang === 'zh' ? '中 / EN' : 'EN / 中';
       btnMobile.innerText = currentLang === 'zh' ? '中 / EN' : 'EN / 中';
       document.documentElement.lang = currentLang === 'zh' ? 'zh-CN' : 'en';
+      requestAnimationFrame(() => {
+        initReveal();
+        updateReadingProgress();
+      });
     }
 
     function switchLang() {
