@@ -149,3 +149,14 @@ Origin Continuity: PRESERVED
 - H2 reused and rechecked the H1 source set; that improves interpretation but does not add a new independent lineage.
 - Strong evidence is bounded to protocol and named implementation facts. Broad adoption, host migration and universal reliability effects remain unestablished.
 - Carry forward: `H2_RECHECK_OF_H1 != NEW_INDEPENDENT_SUPPORT`.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: CALIBRATED_INHERITED_EVIDENCE
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Repeated or inherited source lineages do not add independent support.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

@@ -115,3 +115,14 @@ Origin Continuity: PRESERVED
 - Keep the existing five-layer separation: protocol final fact, roadmap, named implementation, adoption, host applicability.
 - H2 source reuse does not increase independence beyond the underlying H1/source lineages.
 - The September H6 path remains historical input visibility, not durable monthly memory.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: STABLE_WITH_CURRENT_BOUNDARY
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

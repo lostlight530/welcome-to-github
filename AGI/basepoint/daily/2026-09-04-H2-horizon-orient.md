@@ -123,3 +123,14 @@ Origin Continuity: PRESERVED
 - Read the Google item as a named implementation record, not proof that all major cloud environments or production agent stacks use the same architecture.
 - OpenTelemetry-related conclusions remain bounded to the documented tooling/examples; `COMMON_TOOLING_DIRECTION != UNIVERSAL_AGENT_STANDARD`.
 - No host architecture requirement follows from either signal.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: CALIBRATED_GENERALIZATION
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

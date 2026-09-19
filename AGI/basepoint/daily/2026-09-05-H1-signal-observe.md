@@ -153,3 +153,14 @@ Origin Continuity: PRESERVED
 - Orca and Mem0 materials are valid named vendor/engineering observations, but their market segmentation, benchmark and architecture language is not independent proof of a universal runtime or memory standard.
 - Retain the existence of the described approaches; downgrade broad market-normalization language to watch evidence.
 - Carry forward: `VENDOR_SURVEY / PRODUCT_BENCHMARK != UNIVERSAL_ARCHITECTURE`.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: CALIBRATED_CASE_STUDY
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

@@ -119,3 +119,14 @@ Origin Continuity: PRESERVED
 - H2 orientation inherits the same source lineages and does not create additional independence by reopening them.
 - Cloudflare supports a named implementation; it does not turn protocol behavior into a cross-industry deployment fact.
 - Any exact deprecation/version statement remains bounded by the authoritative final-spec state used in later records.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: CALIBRATED_SCOPE
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

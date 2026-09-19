@@ -185,3 +185,14 @@ Origin Continuity: PRESERVED
 - This file is explicitly a human-authorized periodic maintenance recovery with a provenance gap, not a Jules-native replay.
 - It may close the current W37 decision surface while preserving degraded Daily inputs and missing native cadence provenance.
 - No host or long-term memory promotion follows automatically.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: PERIODIC_RECOVERY
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Recovery/reconciliation provenance remains explicit and is not converted into Jules-native replay.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

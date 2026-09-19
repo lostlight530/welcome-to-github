@@ -81,3 +81,14 @@ Origin Continuity: PRESERVED
 - The original `INPUT_MISSING / NOT_RUN / BLOCKED` state remains the execution fact.
 - The H1 path now present on main cannot be treated as input that was available to the original H2 run.
 - No replay or silent completion is inferred.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: TASK_TIME_BLOCKED
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Task-time blockage remains controlling; later path presence does not rewrite original input availability.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

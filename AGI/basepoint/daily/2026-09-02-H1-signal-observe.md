@@ -151,3 +151,14 @@ Origin Continuity: PRESERVED
 - Cloudflare and AAIF are distinct publisher lineages, so the record can retain multi-publisher support for the specific observations they each document.
 - `Independent Verification: YES` must not be expanded to universal ecosystem adoption, host applicability, or claims not jointly supported by those sources.
 - Exact current protocol-state claims should be interpreted through the final-release authority rather than RC-era wording.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: CALIBRATED_SCOPE
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

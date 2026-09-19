@@ -170,3 +170,14 @@ Origin Continuity: PRESERVED
 - AWS documentation supports a named MCP implementation/support fact.
 - Auth0 and Merge are distinct publisher perspectives but do not by themselves establish an industry-wide consensus about MCP/A2A roles.
 - The MCP-tool / A2A-agent distinction is useful as an analytical boundary; broad adoption and host architecture implications remain separate questions.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: CALIBRATED_COMPLEMENTARITY
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

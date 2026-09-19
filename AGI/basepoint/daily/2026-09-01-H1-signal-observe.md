@@ -178,3 +178,14 @@ Origin Continuity: PRESERVED
 - The protocol-direction observations remain usable, but current MCP version authority is the 2026-07-28 final release rather than the earlier RC interpretation.
 - AAIF/Google materials support protocol direction and named implementation facts; they do not establish universal adoption or host applicability.
 - Carry forward: `PROTOCOL_FACT / NAMED_IMPLEMENTATION != INDUSTRY_ADOPTION != HOST_REQUIREMENT`.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: CALIBRATED_FINAL_RELEASE
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current authoritative reference checks do not justify broader adoption or host-applicability promotion beyond the existing Basepoint state.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

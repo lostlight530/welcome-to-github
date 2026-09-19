@@ -122,3 +122,14 @@ Origin Continuity: PRESERVED
 - The strategic label is retained as historical output, but the evidence contribution is baseline continuity rather than a new independent confirmation.
 - Broad adoption and quantified development-time effects remain unsupported by the repeated official page.
 - Current promotion as new independent support: INELIGIBLE.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: SAME_LINEAGE_PROMOTION_LIMIT
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Repeated or inherited source lineages do not add independent support.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

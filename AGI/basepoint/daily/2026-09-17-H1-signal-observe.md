@@ -93,3 +93,14 @@ Origin Continuity: PRESERVED
 - Preserve the original network/source failure as task-time truth.
 - Later MCP roadmap/final-spec access is a separate bounded evidence window and does not recreate the broader 2026-09-17 search.
 - This Daily remains degraded for aggregation.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: DEGRADED_WINDOW
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- The original degraded network/input window remains degraded; later source access is a separate evidence window.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

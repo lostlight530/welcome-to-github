@@ -118,3 +118,14 @@ Origin Continuity: PRESERVED
 - The final release and roadmap are authoritative/current MCP project surfaces, but they belong to the same project lineage and do not provide independent corroboration.
 - Roadmap material is forward-looking and must not be read as shipped functionality.
 - Carry forward: `ROADMAP != RELEASED_FEATURE` and `SAME_PROJECT_PAGES != INDEPENDENT_SOURCES`.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: SAME_PROJECT_CURRENT_STATE
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Same-project current-state evidence does not become cross-lineage independence.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.

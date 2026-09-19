@@ -140,3 +140,14 @@ Origin Continuity: PRESERVED
 - The existing maintenance note remains controlling: this is a same-lineage MCP baseline revalidation rather than a materially new independent signal.
 - Official definition authority is retained; novelty, ecosystem adoption and host relevance require separate evidence.
 - Carry forward: `OFFICIAL_DEFINITION_REVALIDATION != NEW_INDEPENDENT_SIGNAL`.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: BASELINE_REVALIDATION
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Repeated or inherited source lineages do not add independent support.
+- No additional promotion or retroactive execution claim is introduced by this checkpoint.
