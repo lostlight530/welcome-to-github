@@ -308,6 +308,11 @@ const translations = {
       content:
         "I care more about testability, reusability, and maintainability than short-lived novelty Engineering should leave behind durable structure"
     },
+    repositoryBridge: {
+      kicker: "Current Repository",
+      title: "Continue to the current repository",
+      description: "This page preserves the 2025–2026 presentation context Current implementation research boundaries and repository documentation follow current main"
+    },
     footer: {
       greeting: "© 2026 LOSTLIGHT | Engineering with intention",
       note: "Quiet Pragmatic Reusable"
