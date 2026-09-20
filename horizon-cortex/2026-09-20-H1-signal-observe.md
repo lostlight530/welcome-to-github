@@ -122,3 +122,43 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+
+## MAINTENANCE_ANNOTATION_2026-09-20
+
+Review Class: SOURCE_LINEAGE_AND_CONCURRENCY_CALIBRATION
+Original Jules Record Preserved: YES
+Original Task Status: SUCCESS
+Original Network Status: NETWORK_PARTIAL
+Original Record Provenance: JULES_NATIVE
+Current Path Status: PRESENT
+
+Current source-lineage interpretation:
+
+- SRC-20260920-01 and SRC-20260920-02 are two documents from the same Model Context Protocol publisher family
+- The July specification release and August roadmap are different documents and support different propositions
+- Their coexistence does not create two independent publisher lineages
+- Re-reading the same release and roadmap again on 2026-09-20 does not create new independent corroboration relative to 2026-09-19
+- The roadmap is future-direction evidence and is not current implementation evidence
+
+Concurrency state:
+
+- this H1 was created on Jules PR #602
+- same-day H2 executed from a snapshot where this H1 was not available on authority main
+- PR #602 later merged before PR #603
+- later delivery does not rewrite the H2 task-time INPUT_MISSING state
+
+Current interpretation:
+
+```text
+H1 current path present
+!= H1 available to original H2
+
+same publisher documents
+!= independent corroboration
+
+roadmap intent
+!= deployed capability
+```
+
+No H1 replay is performed by this annotation
