@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-09-20
-- 最新每日研究: [长推理期间的 world-state drift](records/2026-09/2026-09-20.md)
-- 每日专题: 62
+- 最新每日归属日期: 2026-09-21
+- 最新每日研究: [同一 benchmark surface 中的 evaluator authority identity](records/2026-09/2026-09-21.md)
+- 每日专题: 63
 - 特殊专题: 17
-- 当前专题研究批次: 79
-- 当前专题独立执行日期窗口: 57
+- 当前专题研究批次: 80
+- 当前专题独立执行日期窗口: 58
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -36,11 +36,11 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 - 当前日记录模板: [templates/daily.md](templates/daily.md)
 - 当前周期整理模板: [templates/monthly.md](templates/monthly.md)
 
-截至 2026-09-20, 9 月已有 20/20 个每日归属日期研究记录. W38 已自然完成 7/7 并形成 optional derived audit, 该 audit 不增加 research batch, Trial, execution window 或 finding. 这些记录没有产生新的 NOTES 级长期发现. 2026-09-19 首次把 delegated evidence frontier 变成 Daily research batch, 2026-09-20 首次对 deliberation 期间的 world-state rebinding 完成 bounded Daily test.
+截至 2026-09-21, 9 月已有 21/21 个每日归属日期研究记录. W38 已自然完成 7/7 并形成 optional derived audit, 该 audit 不增加 research batch, Trial, execution window 或 finding. W39 已由 2026-09-21 Daily 自然开始, 当前没有创建新的 derived audit. 这些记录没有产生新的 NOTES 级长期发现. 2026-09-19 首次把 delegated evidence frontier 变成 Daily research batch, 2026-09-20 首次对 deliberation 期间的 world-state rebinding 完成 bounded Daily test, 2026-09-21 首次把 evaluator authority identity 作为独立 Daily frontier 直接测试.
 
 > Maintenance annotation — 2026-09-19
 >
-> 当前入口已校准到 main 中真实存在的 2026-09-19 Daily. 2026-09-01 至 2026-09-18 的 retrospective maintenance second pass 已记录在月度事实源: 历史 Daily 保留各自当时 schema 与 point-in-time judgment, 不按 2026-09-18 之后模板追溯补栏. 下方 `2026-09-17 research surfaces` 继续保留为当时阶段快照; 2026-09-19 属于当前状态, 不属于本次 9/1–9/18 回顾窗口.
+> 当前入口已推进到 2026-09-21 Daily. 2026-09-01 至 2026-09-18 的 retrospective maintenance second pass 继续作为历史维护窗口保留: 历史 Daily 保留各自当时 schema 与 point-in-time judgment, 不按后续模板追溯补栏. 2026-09-19 至 2026-09-21 属于之后自然产生的 current research state, 不倒写进该 retrospective window.
 
 ## 2026-09-17 research surfaces
 
