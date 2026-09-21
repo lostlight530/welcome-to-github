@@ -18,9 +18,9 @@ Repository Inspection: NO
 GitHub Actions Inspection: NO
 Write Scope: horizon-cortex only
 Boundary Violation: NO
-Source Identity: Model Context Protocol Blog
+Source Identity: MCP Blog + A2A Official Repositories
 Source Authority For Claim: OFFICIAL
-Independent Verification: NO
+Independent Verification: NO_CROSS_PUBLISHER_CORROBORATION
 Host Applicability: UNKNOWN
 Evidence Upgrade Basis: NONE
 Original Execution Status: NEW_EXECUTION
@@ -86,45 +86,58 @@ Source ID: SRC-20260921-03
 Title: Releases · a2aproject/A2A
 Publisher: a2aproject
 URL: https://github.com/a2aproject/A2A/releases
-Published or Updated Date: UNKNOWN
+Published or Updated Date: 2026-05-26
 Date Checked: 2026-09-21
 Source Type: Official repository
 Evidence Tier: Tier 1
 Access Status: NETWORK_VERIFIED
 Independent Source: YES
-Claim Supported: A2A release.
-Claim Not Supported: NONE
-Relevance: High
+Claim Supported: A2A protocol repository release surface currently lists v1.0.1 as the latest core-protocol release.
+Claim Not Supported: This does not establish the latest SDK-specific release across language implementations.
+Relevance: Medium
 Confidence: HIGH
-Limitations: NONE
+Limitations: Core protocol release surface only.
 
 Source ID: SRC-20260921-04
 Title: a2a-js/CHANGELOG.md at main · a2aproject/a2a-js
 Publisher: a2aproject
 URL: https://github.com/a2aproject/a2a-js/blob/main/CHANGELOG.md
-Published or Updated Date: UNKNOWN
+Published or Updated Date: 2026-09-18
 Date Checked: 2026-09-21
-Source Type: Official repository
+Source Type: Official repository changelog
 Evidence Tier: Tier 1
 Access Status: NETWORK_VERIFIED
-Independent Source: YES
-Claim Supported: v1.0.0 is latest.
-Claim Not Supported: NONE
+Independent Source: NO — same A2A project lineage as SRC-20260921-03
+Claim Supported: a2a-js v1.2.0 is the latest changelog release observed in this run; it includes task-settlement and task-state/tenant-scoping implementation changes.
+Claim Not Supported: This SDK release does not by itself establish a new A2A protocol-core version, cross-language parity, deployment adoption, or host-repository capability.
 Relevance: High
 Confidence: HIGH
-Limitations: NONE
+Limitations: SDK-specific implementation release; no independent runtime reproduction.
 
 RAW_SIGNAL_LOG
 
-NO_MATERIAL_NEW_SIGNAL
+Signal ID: SIG-20260921-01
+Signal: a2a-js v1.2.0 was released on 2026-09-18 and was not present in the 2026-09-18 through 2026-09-20 Horizon H1 records reviewed for current-state comparison.
+Source IDs: SRC-20260921-04
+Signal Class: SDK_IMPLEMENTATION_RELEASE
+Freshness: NEW_TO_HORIZON_CURRENT_RECORD
+Evidence Strength: OFFICIAL_PROJECT_SOURCE
+Independent Corroboration: NONE
+Host Applicability: UNKNOWN
+Materiality: BOUNDED_MATERIAL_SIGNAL
+Boundary: a2a-js SDK release != A2A protocol-core maturity != cross-language SDK parity != host capability
+
+The MCP July specification and August roadmap are repeated source-lineage observations and do not create a new independent signal today.
+
+The A2A core repository release surface itself does not show a new 2026-09-21 protocol-core release. The new item identified in this run is specifically the a2a-js v1.2.0 implementation release.
 
 NEXT_HANDOFF
-- 哪些信号需要 H2 定向解释: NONE
-- 哪些信号需要独立来源验证: NONE
-- 哪些信号的新鲜度仍不确定: NONE
-- 哪些信号可能只是噪音: NONE
-- 哪些信号不应继续升级: NONE
-- H2 必须保留哪些联网或来源限制: H2 应当注意到今日整体网络状态为 NETWORK_PARTIAL，对于 Cloud Coding Agent 等主题缺乏新的观察。
+- 哪些信号需要 H2 定向解释: SIG-20260921-01，仅限 a2a-js v1.2.0 的 SDK-level implementation signal
+- 哪些信号需要独立来源验证: 如果后续要把 SDK release 扩大为 protocol maturity、跨语言 parity、deployability 或 host applicability，则必须新增独立且对象匹配的证据
+- 哪些信号的新鲜度仍不确定: 对 Horizon 记录而言 v1.2.0 是新观察；其 2026-09-18 发布日期由官方 changelog 给出
+- 哪些信号可能只是噪音: 单个 SDK 的 bug fix / implementation change 对更高层协议成熟度可能只是局部实现噪音
+- 哪些信号不应继续升级: 不得把 a2a-js v1.2.0 写成新的 A2A core protocol version，不得据此宣称宿主仓库能力变化
+- H2 必须保留哪些联网或来源限制: 今日整体网络状态为 NETWORK_PARTIAL；MCP 重读没有新独立 strengthening；A2A 新信号来自官方项目单一来源谱系，没有独立 runtime reproduction。
 
 BOUNDARY_CHECK
 - 未读取宿主仓库机制: YES
