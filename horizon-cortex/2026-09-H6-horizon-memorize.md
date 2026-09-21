@@ -291,3 +291,204 @@ Final H6 = NOT_DUE
 
 Durable Memory Promotion = NO
 ```
+
+## CURRENT_MONTH_TO_DATE_ANNOTATION_2026-09-22_REVIEW_CUT
+
+Maintenance Agent: GPT Web Maintenance Agent
+Maintenance Type: FORWARD_MONTH_TO_DATE_RECONCILIATION
+Original Jules Execution Preserved: YES
+Original Execution Date: 2026-09-01
+Original Reflection Input Status: REFLECTION_INPUT_MISSING
+Original Task Status: BLOCKED
+Original Durable Memory Promotion: NONE
+Current Month State: OPEN
+Natural Month Closure: NOT_DUE
+Final September H5: NOT_DUE / NOT_PRESENT
+Final September H6: NOT_DUE
+This File As Final H6: NO
+Current Use: MONTH_TO_DATE_BASELINE_ONLY
+Current Retained Daily Coverage Through: 2026-09-21
+Reconciliation Cut: 2026-09-22
+2026-09-22 H1/H2 Current Paths At Review Cut: NOT_OBSERVED_IN_CURRENT_MAIN
+2026-09-22 Historical Missing Classification: NOT_ASSIGNED_BY_THIS_RECONCILIATION
+
+This section advances only the current month-to-date interpretation from the prior 2026-09-20 annotation
+
+It does not replay the original H6, does not manufacture a 2026-09-22 Daily, and does not convert W39 into a closed Weekly period
+
+### File-by-file review — 2026-09-21 H1
+
+Reviewed file:
+
+`horizon-cortex/2026-09-21-H1-signal-observe.md`
+
+Observed task-time state:
+
+- Agent: Jules
+- Record Provenance: JULES_NATIVE
+- Network Status: NETWORK_PARTIAL
+- Source Status: PRESENT
+- Task Status: SUCCESS
+- Source Authority For Claim: OFFICIAL
+- Independent Verification: NO_CROSS_PUBLISHER_CORROBORATION
+- Host Applicability: UNKNOWN
+
+Material signal retained:
+
+- a2a-js v1.2.0 is recorded from the official A2A JavaScript changelog as a 2026-09-18 SDK-level implementation release
+- MCP July specification and August roadmap were revisited in the same publisher lineage and did not create new independent strengthening
+
+Current month-to-date interpretation:
+
+```text
+A2A_JS_SDK_RELEASE
+!= A2A_CORE_PROTOCOL_VERSION_CHANGE
+!= CROSS_LANGUAGE_PARITY
+!= DEPLOYMENT_ADOPTION
+!= HOST_CAPABILITY
+```
+
+The H1 file explicitly records `NETWORK_PARTIAL`
+
+Therefore the month-to-date layer must preserve that the observation opportunity succeeded within a partial-network evidence surface rather than converting it to universal external-state completeness
+
+The two MCP pages remain one MCP publisher lineage
+
+The A2A release surface and a2a-js changelog remain one A2A project lineage for independence accounting unless an object-matched independent publisher/source is added
+
+### File-by-file review — 2026-09-21 H2
+
+Reviewed file:
+
+`horizon-cortex/2026-09-21-H2-horizon-orient.md`
+
+Original task-time state:
+
+- Agent: Jules
+- Record Provenance: JULES_NATIVE
+- Input Status: INPUT_MISSING
+- Network Status: NOT_RUN
+- Source Status: NONE
+- Task Status: BLOCKED
+- Original Orientation Performed: NO
+
+Later current-state evidence:
+
+- same-date H1 is now present on current main
+- H1 merged after the original H2 task-time execution
+- the owning H2 already contains `CURRENT_EXECUTION_RECONCILIATION_2026-09-21`
+
+Current month-to-date interpretation:
+
+```text
+LATER_H1_PRESENT
+!= ORIGINAL_H2_INPUT_AVAILABLE
+
+CURRENT_UPSTREAM_SIGNAL_KNOWN
+!= ORIGINAL_H2_ORIENTATION_PERFORMED
+
+RECONCILIATION
+!= REPLAY
+!= SUCCESS_REWRITE
+```
+
+No retroactive H2 orientation is added by this Monthly annotation
+
+No H2 source independence, decision, Weekly promotion, or successful Observe→Orient chain is manufactured
+
+### Updated Daily coverage accounting
+
+Current retained H1 paths through 2026-09-21: 21 / 21
+
+Current retained H2 paths through 2026-09-21: 21 / 21
+
+Task-time completeness remains lower than current path completeness
+
+The existing exception set now also includes 2026-09-21 H2
+
+Current explicit task-time blocked H2 examples in the September baseline include:
+
+- 2026-09-07
+- 2026-09-16
+- 2026-09-19
+- 2026-09-20
+- 2026-09-21
+
+The 2026-09-13 pair remains later human-authorized reconciliation rather than native Jules cadence
+
+Therefore:
+
+```text
+CURRENT_PATH_COVERAGE_21_OF_21
+!= TWENTY_ONE_NATIVE_SUCCESSFUL_OBSERVE_ORIENT_CHAINS
+```
+
+### W39 state
+
+W39 begins on 2026-09-21
+
+At this review cut:
+
+- 2026-09-21 H1 current path: PRESENT
+- 2026-09-21 H2 current path: PRESENT with original BLOCKED state preserved
+- W39 H3 final: NOT_DUE
+- W39 H4 final: NOT_DUE
+- W39 natural-week closure: NOT_CLAIMED
+
+No Weekly artifact is created by this reconciliation
+
+### Current candidate-theme delta
+
+The prior 9/1–9/20 candidate themes remain intact
+
+2026-09-21 adds one more repository-local example to the dependency-visibility / optimistic-lock theme
+
+It does **not** add a new durable H6 memory
+
+The strongest current local pattern remains:
+
+```text
+UPSTREAM_PATH_EVENTUALLY_PRESENT
+!= DOWNSTREAM_INPUT_AVAILABLE_AT_EXECUTION_TIME
+```
+
+The strongest external-observation boundary remains:
+
+```text
+OFFICIAL_SDK_CHANGE
+!= PROTOCOL_MATURITY_CHANGE
+!= HOST_APPLICABILITY
+```
+
+### 2026-09-22 review-cut boundary
+
+No 2026-09-22 H1/H2 current path was observed on the reviewed main at this reconciliation cut
+
+This pass does not classify that absence as a historical missed task because this maintenance record is not reconstructing or certifying the scheduler's due-time state
+
+It records only:
+
+```text
+CURRENT_MAIN_PATH_NOT_OBSERVED_AT_REVIEW_CUT
+```
+
+and leaves later scheduled execution or later recovery to its own point-in-time record
+
+### Final boundary
+
+```text
+September 1–21 retained baseline = CURRENT_MONTH_TO_DATE_ONLY
+
+Month Closure Status = OPEN
+
+W39 = IN_PROGRESS
+
+Final H5 = NOT_DUE
+
+Final H6 = NOT_DUE
+
+Durable Memory Promotion = NO
+
+2026-09-22 Missing Classification = NOT_ASSIGNED
+```
+
