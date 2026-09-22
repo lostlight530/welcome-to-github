@@ -643,3 +643,34 @@ Final H6 = NOT_DUE
 Durable Memory Promotion = NO
 ```
 
+
+
+## NIGHTLY_FULL_REVIEW_2026-09-22
+
+Review scope: 2026-09-01 through 2026-09-22, every retained H1/H2 Daily pair, W36/W37/W38, W39 current open state, and September month-to-date ownership.
+
+This is a nightly retrospective reconciliation, not a new audit artifact and not a replay of earlier tasks.
+
+Key retained boundaries after file-by-file review:
+- current 22/22 H1/H2 paths do not mean 22 native successful Observe→Orient chains;
+- 2026-09-07, 09-16, 09-19, 09-20 and 09-21 retain task-time blocked/degraded H2 history where recorded;
+- 2026-09-13 remains human-authorized reconciliation rather than Jules-native cadence evidence;
+- 2026-09-22 H1 remains NO_MATERIAL_NEW_SIGNAL and H2 remains continuity verification only; no synthetic strategic signal is created;
+- W36/W37/W38 later current-state completion does not rewrite original blocked or missing-input snapshots;
+- W39 remains IN_PROGRESS; September remains OPEN; H5/H6 natural-month final remains NOT_DUE.
+
+Nightly interpretation:
+
+```text
+CURRENT_PATH_COMPLETE
+!= ORIGINAL_EXECUTION_COMPLETE
+!= NATIVE_CHAIN_COMPLETE
+
+LATER_RECONCILIATION
+!= EARLIER_INPUT_AVAILABILITY
+
+MONTH_OPEN
+!= FINAL_MONTHLY_MEMORY
+```
+
+No durable memory promotion is authorized by this nightly pass.

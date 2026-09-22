@@ -165,3 +165,9 @@ Inference 必须保持 inference. Unknown 必须保持 unknown.
 历史 Daily 继续作为 point-in-time primary evidence. 新方法不追溯改变旧实验的原始事实.
 
 维护, correction 与 audit 是独立治理 surface, 不是每日研究是否产出的 gate. 当真实修正发生时仍按 `METHOD.md` 的历史保真规则处理, 但 Parallax 的主循环始终是每日研究生产而不是维护活动.
+
+
+### Current pointer — 2026-09-22
+
+Latest primary Daily: `records/2026-09/2026-09-22.md`.
+September primary Daily coverage now runs through 2026-09-22. Derived pointer updates do not create research or audit credit.
