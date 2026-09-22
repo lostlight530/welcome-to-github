@@ -10,7 +10,7 @@ Logical Date: 2026-09-22
 Execution Time UTC: 2026-09-22T08:00:00Z
 Execution Time Asia/Shanghai: 2026-09-22T16:00:00+0800
 Agent: Jules
-Knowledge Source: horizon-cortex input contract only
+Knowledge Source: same-date H1 + allowed horizon-cortex history + claim-specific external web verification
 Input Status: PRESENT
 Network Status: NETWORK_PARTIAL
 Source Status: PRESENT
@@ -116,7 +116,7 @@ NEXT_HANDOFF
 - 由同一来源重复放大的内容: MCP 7月规范与8月路线图，A2A 发布状态。
 - 证据缺口: 缺乏独立搜索所带来的第三方对协议采用情况和缺陷的度量。
 - 网络限制: NETWORK_PARTIAL
-- 需要更多观察窗口的方向: NONE
+- 需要更多观察窗口的方向: MCP / A2A 的独立部署、采用与失效证据；在出现对象匹配的独立证据前不升级当前连续性观察
 
 BOUNDARY_CHECK
 - 未做最终周决策: YES
