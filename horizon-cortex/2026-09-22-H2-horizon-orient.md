@@ -48,53 +48,25 @@ INPUT_RECORD
 
 SIGNAL_CLASSIFICATION
 
-Signal ID: SIG-20260922-01
-H1 Claim: MCP 2026-07-28 规范发布，引入无状态协议核心。
-Classification: ignore
-Verification Status: VERIFIED
-Verification Sources: https://blog.modelcontextprotocol.io/posts/2026-07-28/
-Repository Record Comparison: 与 horizon-cortex/2026-W38-H4-narrative-act.md 中的记录进行对比，属于同一文档的重复读取，被认定为 continuity evidence。
-Reason: 没有出现新的材料变化（material change marker），仅仅是重复读取。
-Evidence Strength: LOW
-Counterevidence: NONE
-Remaining Uncertainty: 宿主仓库的适用性未知。
-Promotion Eligibility: NO
+NO_MATERIAL_NEW_SIGNAL
 
-Signal ID: SIG-20260922-02
-H1 Claim: MCP 路线图计划。
-Classification: ignore
-Verification Status: VERIFIED
-Verification Sources: https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
-Repository Record Comparison: 根据 horizon-cortex/2026-W38-H4-narrative-act.md 的指导（ACT-2026W38-H03），对 August roadmap 的重复读取仍属连续性证据。
-Reason: 缺乏新的独立验证或材料更新，保留连续性证据身份。
-Evidence Strength: LOW
-Counterevidence: NONE
-Remaining Uncertainty: 未来计划能否如期实现存在不确定性。
-Promotion Eligibility: NO
+- Same-date H1 `RAW_SIGNAL_LOG` contains no material Signal ID
+- No synthetic `SIG-20260922-*` records are created by H2
+- MCP/A2A pages opened in this run are retained as continuity / claim-specific verification context only
+- Re-reading those sources does not convert them into H1 signals
+- Strategic-signal promotion: NONE
+- Remaining uncertainty: NETWORK_PARTIAL limits broader independent discovery and host applicability remains UNKNOWN
 
-Signal ID: SIG-20260922-03
-H1 Claim: A2A protocol repository release surface currently lists v1.0.1 as the latest core-protocol release.
-Classification: ignore
-Verification Status: VERIFIED
-Verification Sources: https://github.com/a2aproject/A2A/releases
-Repository Record Comparison: 与 horizon-cortex/2026-09-21-H1-signal-observe.md 中的记录属于同一项目谱系。
-Reason: 只是核心协议发布列表的现状确认，未发现新版本。
-Evidence Strength: LOW
-Counterevidence: NONE
-Remaining Uncertainty: 跨语言 SDK 平价性不明确。
-Promotion Eligibility: NO
+Current boundary:
 
-Signal ID: SIG-20260922-04
-H1 Claim: a2a-js v1.2.0 is the latest changelog release observed; it includes task-settlement and task-state/tenant-scoping implementation changes.
-Classification: noise
-Verification Status: VERIFIED
-Verification Sources: https://github.com/a2aproject/a2a-js/blob/main/CHANGELOG.md
-Repository Record Comparison: 与 horizon-cortex/2026-09-21-H1-signal-observe.md 的观察完全一致，未增加新维度。
-Reason: 是对前一日发现的单一 SDK 级别更新的重复观察，不构成进一步升级的基础。
-Evidence Strength: MEDIUM
-Counterevidence: NONE
-Remaining Uncertainty: 部署采用和宿主能力影响未知。
-Promotion Eligibility: NO
+```text
+H1_NO_MATERIAL_NEW_SIGNAL
++
+H2_CONTINUITY_VERIFICATION
+!= NEW_H1_SIGNAL
+!= NEW_INDEPENDENT_EVIDENCE
+!= STRATEGIC_SIGNAL
+```
 
 ORIENTATION_NOTES
 - 根据 horizon-cortex/2026-W38-H4-narrative-act.md 的维护行动 ACT-2026W38-H03 规定，对 MCP 官方材料（如 7 月规范和 8 月路线图）的重复访问只作为连续性证据，除非观察到新的材料变化。因此这些信号未被升级为 strategic signal。

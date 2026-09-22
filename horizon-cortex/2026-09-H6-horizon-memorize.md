@@ -492,3 +492,154 @@ Durable Memory Promotion = NO
 2026-09-22 Missing Classification = NOT_ASSIGNED
 ```
 
+## CURRENT_MONTH_TO_DATE_EXTENSION_2026-09-22_AFTER_JULES_DELIVERY
+
+Maintenance Agent: GPT Web Maintenance Agent
+Maintenance Type: FORWARD_MONTH_TO_DATE_RECONCILIATION
+Original 2026-09-22 H1/H2 Files Preserved: YES
+Current Month State: OPEN
+Current Retained Daily Coverage Through: 2026-09-22
+Natural Month Closure: NOT_DUE
+Final September H5: NOT_DUE
+Final September H6: NOT_DUE
+W39 State: IN_PROGRESS
+Durable Memory Promotion: NO
+
+This section supersedes only the earlier point-in-time review-cut statement that 2026-09-22 paths had not yet been observed
+
+It does not erase that earlier observation
+
+The later Jules deliveries are new current-state evidence
+
+### File-by-file review — 2026-09-22 H1
+
+Reviewed file:
+
+`horizon-cortex/2026-09-22-H1-signal-observe.md`
+
+Observed task-time state:
+
+- Agent: Jules
+- Record Provenance: JULES_NATIVE
+- Network Status: NETWORK_PARTIAL
+- Source Status: PRESENT
+- Task Status: SUCCESS
+- Raw Signal Log: NO_MATERIAL_NEW_SIGNAL
+- Independent Verification: NO_CROSS_PUBLISHER_CORROBORATION
+- Host Applicability: UNKNOWN
+
+The run re-opened MCP and A2A official surfaces
+
+Those reads remain continuity evidence and same-project/same-publisher lineage observations
+
+No new material external signal was established
+
+Current interpretation:
+
+```text
+SOURCE_REVISIT
+!= NEW_SIGNAL
+
+CONTINUITY_EVIDENCE
+!= INDEPENDENT_CORROBORATION
+
+NO_MATERIAL_NEW_SIGNAL
+!= VERIFIED_GLOBAL_NO_CHANGE
+```
+
+Because the network remained partial, the run cannot establish that no relevant external change existed outside the inspected surfaces
+
+### File-by-file review — 2026-09-22 H2
+
+Reviewed file:
+
+`horizon-cortex/2026-09-22-H2-horizon-orient.md`
+
+Task-time state:
+
+- Agent: Jules
+- Input Status: PRESENT
+- Network Status: NETWORK_PARTIAL
+- Source Status: PRESENT
+- Task Status: DEGRADED
+- same-date H1 consumed
+- Host Applicability: UNKNOWN
+- Promotion Eligibility: NONE
+
+Periodic review found one owning-source semantic defect in the first merged H2 draft
+
+The H1 raw signal log was `NO_MATERIAL_NEW_SIGNAL`, but H2 had assigned four synthetic `SIG-20260922-*` identifiers to continuity/source checks
+
+That would incorrectly turn source revisits into H1 signals
+
+The H2 owning source is corrected forward to:
+
+```text
+H1_NO_MATERIAL_NEW_SIGNAL
++
+H2_CONTINUITY_VERIFICATION
+!= NEW_H1_SIGNAL
+!= STRATEGIC_SIGNAL
+```
+
+Git history retains the earlier body
+
+The correction does not alter H1
+
+It does not invent a new signal
+
+It does not create source independence
+
+It does not convert DEGRADED to SUCCESS
+
+### Updated Daily coverage accounting
+
+Current retained H1 paths through 2026-09-22: 22 / 22
+
+Current retained H2 paths through 2026-09-22: 22 / 22
+
+Task-time heterogeneity remains explicit
+
+The historical blocked H2 dates remain blocked
+
+The 2026-09-22 pair is a Jules-native H1 SUCCESS / H2 DEGRADED pair, not a new strategic-signal chain
+
+### W39 state
+
+W39 remains IN_PROGRESS
+
+Current retained dates:
+- 2026-09-21
+- 2026-09-22
+
+H3 final: NOT_DUE
+H4 final: NOT_DUE
+Natural-week closure: NOT_CLAIMED
+
+No W39 Weekly artifact is created by this reconciliation
+
+### Current month-to-date effect
+
+2026-09-22 does not add a durable memory candidate
+
+It strengthens an existing methodological boundary:
+
+```text
+REPEATED_OFFICIAL_SOURCE_CHECK
+!= NEW_SIGNAL
+!= NEW_INDEPENDENT_EVIDENCE
+```
+
+No host-repository fact or action is inferred
+
+### Final current boundary
+
+```text
+September 1–22 retained baseline = CURRENT_MONTH_TO_DATE_ONLY
+Month Closure Status = OPEN
+W39 = IN_PROGRESS
+Final H5 = NOT_DUE
+Final H6 = NOT_DUE
+Durable Memory Promotion = NO
+```
+
