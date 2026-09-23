@@ -140,3 +140,26 @@ Reconciliation Treatment: RETAIN_WITH_EXISTING_CORRECTION
 Historical State Preserved: YES
 Current Interpretation: 保留 9 月 1 日 H2 对无状态核心、Tasks、MRTR 与鉴权方向的观察，但把“强证据”严格限定为协议/具名实现层；当前 final-spec 权威为 MCP 2026-07-28 final release。H2 对 H1 同一批来源的复核不增加独立来源数量，也不产生 welcome-to-github 的迁移授权。
 Evidence Calibration: August H6 的“外部协议事实不等于宿主采用”边界继续有效；当前解释不回写为原始执行时的新证据。
+
+
+## DUAL_VIEW_MAINTENANCE_2026-09-23
+
+### N-1 / September artifact view
+
+- This file remains the owning point-in-time H2 artifact for 2026-09-01; its original task-time status, inputs, source limitations, unknowns, and failures remain controlling.
+- This maintenance does not add a new execution, source observation, task success, or independent corroboration.
+- Later repository completeness must not be projected backward into the original record.
+
+### N / 2026-09-23 current interpretation
+
+- Current September inventory and later same-month artifacts may change what is currently visible, but do not rewrite what this artifact observed or could use at execution time.
+- Current path presence and later delivery are documentary state, not retroactive execution evidence.
+- Any stronger current conclusion still requires its own evidence rather than inheriting authority from this annotation.
+
+```text
+N_MINUS_1_ARTIFACT_TRUTH
++
+N_CURRENT_INTERPRETATION
+!= HISTORY_REWRITE
+!= RETROACTIVE_SUCCESS
+```
