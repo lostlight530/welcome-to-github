@@ -169,26 +169,3 @@ Reconciliation Treatment: RETAIN_WITH_EXISTING_CORRECTION
 Historical State Preserved: YES
 Current Interpretation: 9 月 1 日的具名外部实现与协议演进观察保留；当前协议版本基线以 MCP 2026-07-28 final release 为准。AAIF RC 解读和 Google 实现材料可以支持方向/实现事实，但不能单独证明全行业普遍采用，也不能推出 welcome-to-github 必须迁移。
 Evidence Calibration: 原 2026-09-02 正文修正继续有效；本段只补充 2026-09-13 current-state 解释，不增加当日独立证据。
-
-
-## DUAL_VIEW_MAINTENANCE_2026-09-23
-
-### N-1 / September artifact view
-
-- This file remains the owning point-in-time H1 artifact for 2026-09-01; its original task-time status, inputs, source limitations, unknowns, and failures remain controlling.
-- This maintenance does not add a new execution, source observation, task success, or independent corroboration.
-- Later repository completeness must not be projected backward into the original record.
-
-### N / 2026-09-23 current interpretation
-
-- Current September inventory and later same-month artifacts may change what is currently visible, but do not rewrite what this artifact observed or could use at execution time.
-- Current path presence and later delivery are documentary state, not retroactive execution evidence.
-- Any stronger current conclusion still requires its own evidence rather than inheriting authority from this annotation.
-
-```text
-N_MINUS_1_ARTIFACT_TRUTH
-+
-N_CURRENT_INTERPRETATION
-!= HISTORY_REWRITE
-!= RETROACTIVE_SUCCESS
-```
