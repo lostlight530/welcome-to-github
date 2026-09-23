@@ -99,3 +99,28 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+
+## DUAL_VIEW_MAINTENANCE_2026-09-23
+
+This is one maintenance annotation with two parallel views; the original H2 body remains the owning task-time record.
+
+### View 1 — N-1 / 2026-09-22 artifact calibration
+
+- Preserve `Task Status: DEGRADED`, `Input Status: PRESENT`, and `NETWORK_PARTIAL`.
+- Same-date H1 contained `NO_MATERIAL_NEW_SIGNAL`; H2 must not manufacture synthetic H1 signal identity.
+- Continuity verification is not independent corroboration or strategic-signal promotion.
+
+### View 2 — N / 2026-09-23 current interpretation
+
+- Later Horizon deliveries do not turn this degraded 9/22 orientation into success.
+- Current repository completeness is a separate plane from this task's original network/source limits.
+- No later H1/H2 pair is projected backward into this record.
+
+```text
+N_MINUS_1_H2_STATE
++
+N_CURRENT_REPOSITORY_VIEW
+!= STATUS_REWRITE
+!= NEW_H1_SIGNAL
+```

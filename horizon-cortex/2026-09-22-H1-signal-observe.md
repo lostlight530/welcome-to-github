@@ -135,3 +135,29 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+
+## DUAL_VIEW_MAINTENANCE_2026-09-23
+
+This is one maintenance annotation with two parallel views. Neither view replaces the original 2026-09-22 H1 body.
+
+### View 1 — N-1 / 2026-09-22 artifact calibration
+
+- Preserve the Jules task-time state: `SUCCESS` with `NETWORK_PARTIAL`.
+- Source-row identity does not override the run-level `NO_CROSS_PUBLISHER_CORROBORATION`.
+- MCP/A2A revisits remain bounded continuity/source observations.
+- `NO_MATERIAL_NEW_SIGNAL` is scoped to what was actually inspected, not a global no-change proof.
+
+### View 2 — N / 2026-09-23 current interpretation
+
+- Later repository activity does not upgrade or replay this H1.
+- Current main may contain newer Horizon artifacts, but they are later evidence, not 2026-09-22 task-time evidence.
+- No host capability, architecture adoption, or new strategic signal is inherited from later current state.
+
+```text
+N_MINUS_1_ARTIFACT_TRUTH
++
+N_CURRENT_INTERPRETATION
+!= HISTORY_REWRITE
+!= RETROACTIVE_EXECUTION
+```

@@ -674,3 +674,12 @@ MONTH_OPEN
 ```
 
 No durable memory promotion is authorized by this nightly pass.
+
+## SEPTEMBER_DUAL_CUTOFF_MAINTENANCE_2026-09-23
+
+### A1 / N-1 cutoff — 2026-09-22
+
+- Review scope: all retained September H1/H2 Daily pairs through 2026-09-22, W36/W37/W38, W39 open state, and the month-to-date H5/H6 ownership surface.
+- Calibration rule: preserve task-time INPUT_MISSING / BLOCKED / DEGRADED / NETWORK_PARTIAL states and later reconciliation provenance; current path presence is not retroactive execution success.
+- Specific 9/22 result: H1 remains NO_MATERIAL_NEW_SIGNAL within inspected surfaces; H2 remains DEGRADED continuity verification and does not manufacture strategic signals.
+- September remains OPEN. Final H5/H6 and durable memory promotion remain NOT_DUE / NO.
