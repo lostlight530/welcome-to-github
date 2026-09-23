@@ -675,6 +675,52 @@ MONTH_OPEN
 
 No durable memory promotion is authorized by this nightly pass.
 
+
+## CURRENT_MONTH_TO_DATE_EXTENSION_2026-09-23
+
+Maintenance type: A2 current-state reconciliation.
+This section updates the current September owner without rewriting any earlier Daily or Weekly execution.
+
+Current repository-visible Daily paths now include 2026-09-23 H1 and H2.
+
+The 2026-09-23 H2 task-time record is:
+
+- Input Status: INPUT_MISSING
+- Network Status: NOT_RUN
+- Source Status: NONE
+- Task Status: BLOCKED
+- Record Provenance: JULES_NATIVE
+
+The same-date H1 path is present on current main only as later current-state evidence relative to the blocked H2 execution.
+
+Therefore:
+
+```text
+CURRENT_H1_PATH_PRESENT
++
+CURRENT_H2_PATH_PRESENT
+!= H1_AVAILABLE_TO_H2_AT_TASK_TIME
+
+LATER_H1_DELIVERY
+!= RETROACTIVE_H2_ORIENTATION
+
+CURRENT_PATH_COVERAGE
+!= NATIVE_SUCCESSFUL_CHAIN_COVERAGE
+```
+
+Current month-to-date boundary:
+
+- retained H1 paths through 2026-09-23: 23 / 23
+- retained H2 paths through 2026-09-23: 23 / 23
+- 2026-09-23 H2 original status: BLOCKED
+- W39: IN_PROGRESS
+- September natural month: OPEN
+- final H5: NOT_DUE
+- final H6: NOT_DUE
+- durable memory promotion: NO
+
+The existing 9/22 and earlier task-time exceptions remain historical. No Weekly artifact is synthesized by this reconciliation.
+
 ## SEPTEMBER_DUAL_CUTOFF_MAINTENANCE_2026-09-23
 
 ### A1 / N-1 cutoff — 2026-09-22
@@ -683,3 +729,10 @@ No durable memory promotion is authorized by this nightly pass.
 - Calibration rule: preserve task-time INPUT_MISSING / BLOCKED / DEGRADED / NETWORK_PARTIAL states and later reconciliation provenance; current path presence is not retroactive execution success.
 - Specific 9/22 result: H1 remains NO_MATERIAL_NEW_SIGNAL within inspected surfaces; H2 remains DEGRADED continuity verification and does not manufacture strategic signals.
 - September remains OPEN. Final H5/H6 and durable memory promotion remain NOT_DUE / NO.
+
+### A2 / N cutoff — 2026-09-23
+
+- Current inventory includes 2026-09-23 H1 and H2 paths, but the 2026-09-23 H2 task-time record remains INPUT_MISSING / NOT_RUN / BLOCKED where originally recorded.
+- Current 23/23 path visibility is documentary completeness only; it is not 23 native successful Observe→Orient chains.
+- W39 remains IN_PROGRESS and September remains OPEN; no natural-month finalization or durable-memory promotion is created by this reconciliation.
+- This A2 note extends current interpretation only and does not replace the A1 / 2026-09-22 calibration above.

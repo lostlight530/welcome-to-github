@@ -171,3 +171,23 @@ Inference 必须保持 inference. Unknown 必须保持 unknown.
 
 Latest primary Daily: `records/2026-09/2026-09-22.md`.
 September primary Daily coverage now runs through 2026-09-22. Derived pointer updates do not create research or audit credit.
+
+
+### A2 current-state reconciliation — 2026-09-23
+
+At this repository cut, Parallax primary research remains current through the retained 2026-09-22 Daily.
+
+The host repository has newer 2026-09-23 Horizon task artifacts, but Horizon chronology does not advance Parallax research credit.
+
+```text
+HOST_REPOSITORY_ADVANCED
+!= PARALLAX_DAILY_EXECUTED
+
+HORIZON_CURRENT_PATH
+!= PARALLAX_RESEARCH_BATCH
+
+DERIVED_POINTER_REVIEW
+!= NEW_RESEARCH_CREDIT
+```
+
+Parallax therefore keeps its primary-Daily endpoint at 2026-09-22 until an actual Parallax Daily for a later Shanghai logical date exists.
