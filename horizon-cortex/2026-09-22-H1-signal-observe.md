@@ -137,34 +137,27 @@ BOUNDARY_CHECK
 - 未提出宿主仓库行动: YES
 
 
-## MAINTENANCE_CALIBRATION_2026-09-23
+## DUAL_VIEW_MAINTENANCE_2026-09-23
 
-Maintenance scope: n-1 periodic-artifact base repair for the retained 2026-09-22 H1 record.
-Original Jules execution body and task-time status above remain historical evidence.
+This is one maintenance annotation with two parallel views. Neither view replaces the original 2026-09-22 H1 body.
 
-Current bounded interpretation:
+### View 1 — N-1 / 2026-09-22 artifact calibration
 
-- `Task Status: SUCCESS` means the H1 task completed within its recorded scope. It does not mean the network was complete; `Network Status` remains `NETWORK_PARTIAL`.
-- `Independent Source: YES` on individual source rows identifies source-object separation at that row. It does not override the run-level `NO_CROSS_PUBLISHER_CORROBORATION`.
-- MCP Blog source revisits remain one publisher lineage for independence accounting.
-- A2A core-release and a2a-js changelog observations are same-project lineage and do not establish cross-language parity, deployment adoption, or host capability.
-- `NO_MATERIAL_NEW_SIGNAL` is a bounded observation under the sources actually inspected. It is not a verified claim that no relevant external change existed globally.
-- No host-repository adoption, runtime capability, or architecture change is inferred from this H1 record.
+- Preserve the Jules task-time state: `SUCCESS` with `NETWORK_PARTIAL`.
+- Source-row identity does not override the run-level `NO_CROSS_PUBLISHER_CORROBORATION`.
+- MCP/A2A revisits remain bounded continuity/source observations.
+- `NO_MATERIAL_NEW_SIGNAL` is scoped to what was actually inspected, not a global no-change proof.
 
-Controlling boundaries:
+### View 2 — N / 2026-09-23 current interpretation
+
+- Later repository activity does not upgrade or replay this H1.
+- Current main may contain newer Horizon artifacts, but they are later evidence, not 2026-09-22 task-time evidence.
+- No host capability, architecture adoption, or new strategic signal is inherited from later current state.
 
 ```text
-TASK_SUCCESS
-!= COMPLETE_NETWORK_COVERAGE
-
-SOURCE_ROW_INDEPENDENCE
-!= RUN_LEVEL_CROSS_PUBLISHER_CORROBORATION
-
-NO_MATERIAL_NEW_SIGNAL
-!= VERIFIED_GLOBAL_NO_CHANGE
-
-OFFICIAL_SOURCE_OBSERVATION
-!= HOST_REPOSITORY_ADOPTION
+N_MINUS_1_ARTIFACT_TRUTH
++
+N_CURRENT_INTERPRETATION
+!= HISTORY_REWRITE
+!= RETROACTIVE_EXECUTION
 ```
-
-This calibration adds current interpretation only. It does not replay H1, change the 2026-09-22 logical date, or convert later evidence into task-time evidence.
