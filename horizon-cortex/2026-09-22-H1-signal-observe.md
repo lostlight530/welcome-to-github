@@ -135,3 +135,36 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+
+## MAINTENANCE_CALIBRATION_2026-09-23
+
+Maintenance scope: n-1 periodic-artifact base repair for the retained 2026-09-22 H1 record.
+Original Jules execution body and task-time status above remain historical evidence.
+
+Current bounded interpretation:
+
+- `Task Status: SUCCESS` means the H1 task completed within its recorded scope. It does not mean the network was complete; `Network Status` remains `NETWORK_PARTIAL`.
+- `Independent Source: YES` on individual source rows identifies source-object separation at that row. It does not override the run-level `NO_CROSS_PUBLISHER_CORROBORATION`.
+- MCP Blog source revisits remain one publisher lineage for independence accounting.
+- A2A core-release and a2a-js changelog observations are same-project lineage and do not establish cross-language parity, deployment adoption, or host capability.
+- `NO_MATERIAL_NEW_SIGNAL` is a bounded observation under the sources actually inspected. It is not a verified claim that no relevant external change existed globally.
+- No host-repository adoption, runtime capability, or architecture change is inferred from this H1 record.
+
+Controlling boundaries:
+
+```text
+TASK_SUCCESS
+!= COMPLETE_NETWORK_COVERAGE
+
+SOURCE_ROW_INDEPENDENCE
+!= RUN_LEVEL_CROSS_PUBLISHER_CORROBORATION
+
+NO_MATERIAL_NEW_SIGNAL
+!= VERIFIED_GLOBAL_NO_CHANGE
+
+OFFICIAL_SOURCE_OBSERVATION
+!= HOST_REPOSITORY_ADOPTION
+```
+
+This calibration adds current interpretation only. It does not replay H1, change the 2026-09-22 logical date, or convert later evidence into task-time evidence.
