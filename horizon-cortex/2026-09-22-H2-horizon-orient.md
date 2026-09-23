@@ -101,34 +101,26 @@ BOUNDARY_CHECK
 - 未提出宿主仓库行动: YES
 
 
-## MAINTENANCE_CALIBRATION_2026-09-23
+## DUAL_VIEW_MAINTENANCE_2026-09-23
 
-Maintenance scope: n-1 periodic-artifact base repair for the retained 2026-09-22 H2 record.
-The original Jules execution state remains `DEGRADED` because broader discovery was limited by `NETWORK_PARTIAL`.
+This is one maintenance annotation with two parallel views; the original H2 body remains the owning task-time record.
 
-File-level reconciliation confirms:
+### View 1 — N-1 / 2026-09-22 artifact calibration
 
-- same-date H1 contains `NO_MATERIAL_NEW_SIGNAL`;
-- H2 correctly carries continuity/source verification without manufacturing synthetic H1 signal identities;
-- repeated access to MCP/A2A official surfaces remains continuity evidence, not new independent support;
-- `PRESENT` input establishes same-date H1 availability for this H2 execution, but does not upgrade source independence;
-- H2 orientation cannot convert official protocol observations into Welcome Host or NEXUS implementation facts.
+- Preserve `Task Status: DEGRADED`, `Input Status: PRESENT`, and `NETWORK_PARTIAL`.
+- Same-date H1 contained `NO_MATERIAL_NEW_SIGNAL`; H2 must not manufacture synthetic H1 signal identity.
+- Continuity verification is not independent corroboration or strategic-signal promotion.
 
-Controlling boundaries:
+### View 2 — N / 2026-09-23 current interpretation
+
+- Later Horizon deliveries do not turn this degraded 9/22 orientation into success.
+- Current repository completeness is a separate plane from this task's original network/source limits.
+- No later H1/H2 pair is projected backward into this record.
 
 ```text
-H1_NO_MATERIAL_NEW_SIGNAL
+N_MINUS_1_H2_STATE
 +
-H2_CONTINUITY_VERIFICATION
+N_CURRENT_REPOSITORY_VIEW
+!= STATUS_REWRITE
 != NEW_H1_SIGNAL
-!= NEW_INDEPENDENT_EVIDENCE
-!= STRATEGIC_SIGNAL
-
-INPUT_PRESENT
-!= SOURCE_INDEPENDENCE
-
-ORIENTATION_RESULT
-!= HOST_IMPLEMENTATION_FACT
 ```
-
-No historical status is rewritten and no later repository state is projected backward into this H2 execution.
