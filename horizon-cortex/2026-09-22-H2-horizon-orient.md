@@ -99,3 +99,36 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+
+
+## MAINTENANCE_CALIBRATION_2026-09-23
+
+Maintenance scope: n-1 periodic-artifact base repair for the retained 2026-09-22 H2 record.
+The original Jules execution state remains `DEGRADED` because broader discovery was limited by `NETWORK_PARTIAL`.
+
+File-level reconciliation confirms:
+
+- same-date H1 contains `NO_MATERIAL_NEW_SIGNAL`;
+- H2 correctly carries continuity/source verification without manufacturing synthetic H1 signal identities;
+- repeated access to MCP/A2A official surfaces remains continuity evidence, not new independent support;
+- `PRESENT` input establishes same-date H1 availability for this H2 execution, but does not upgrade source independence;
+- H2 orientation cannot convert official protocol observations into Welcome Host or NEXUS implementation facts.
+
+Controlling boundaries:
+
+```text
+H1_NO_MATERIAL_NEW_SIGNAL
++
+H2_CONTINUITY_VERIFICATION
+!= NEW_H1_SIGNAL
+!= NEW_INDEPENDENT_EVIDENCE
+!= STRATEGIC_SIGNAL
+
+INPUT_PRESENT
+!= SOURCE_INDEPENDENCE
+
+ORIENTATION_RESULT
+!= HOST_IMPLEMENTATION_FACT
+```
+
+No historical status is rewritten and no later repository state is projected backward into this H2 execution.
