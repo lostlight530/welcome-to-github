@@ -745,3 +745,30 @@ The existing 9/22 and earlier task-time exceptions remain historical. No Weekly 
 - 2026-09-23 remains a path-complete but not native-successful Observe→Orient chain because the original H2 was blocked before later H1 availability.
 - Current path completeness does not rewrite earlier execution availability.
 - September remains OPEN. Final H5/H6 and durable-memory promotion remain NOT_DUE / NO.
+### A2 / N cutoff — 2026-09-24 current-state reconciliation
+
+Current main now retains the 2026-09-24 H1/H2 pair on top of the complete A1 September-through-2026-09-23 review.
+
+2026-09-24 current Horizon state:
+- H1: `SUCCESS / NETWORK_PARTIAL`, with one official MCP Ruby SDK 1.0 fact whose external event date is 2026-07-27 and observation date is 2026-09-24.
+- H1 freshness: `HISTORICAL_NEWLY_DISCOVERED`, not a same-day external release.
+- H2: input present, `DEGRADED / NETWORK_PARTIAL`, watchlist only, no host applicability promotion.
+- H2 execution time: `UNVERIFIED`; repository delivery time is retained separately and is not backfilled into execution time.
+- Independent cross-publisher corroboration: not established.
+- Host applicability: UNKNOWN.
+- W39 remains IN_PROGRESS.
+- September remains OPEN.
+- final H5/H6 and durable-memory promotion remain NOT_DUE / NO.
+
+```text
+HISTORICAL_FACT_DISCOVERED_TODAY
+!= EXTERNAL_EVENT_TODAY
+
+DELIVERY_TIME
+!= EXECUTION_TIME
+
+CURRENT_PATH_COMPLETE
+!= ALL_NATIVE_CHAINS_SUCCESSFUL
+```
+
+This A2 section is additive to the A1 / 2026-09-23 cutoff and does not rewrite any earlier Daily, Weekly, blocked dependency, or network-degraded state.
