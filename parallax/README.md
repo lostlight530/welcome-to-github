@@ -213,3 +213,26 @@ RECONSTRUCTION
 ```
 
 The 2026-09-22 and 2026-09-23 maintenance annotations above remain historical point-in-time records and are not rewritten by this current reconciliation.
+### A2 current-state reconciliation — 2026-09-24
+
+Current Parallax state after the A1 full-period review:
+
+- assigned-date Daily artifacts through 2026-09-24: 24;
+- native primary Daily research units in September: 23;
+- 2026-09-23 remains `RECONSTRUCTION / NOT_RUN / UNVERIFIED` with zero research/execution-window credit;
+- 2026-09-24 is one native primary Daily on dynamic MCP tool inventory and action-time capability identity;
+- current research-batch / execution-window accounting remains the repository-recorded bounded accounting;
+- no CASE or NOTES promotion is created by this maintenance reconciliation.
+
+```text
+ASSIGNED_DATE_COVERAGE
+!= NATIVE_RESEARCH_COUNT
+
+RECONSTRUCTION
+!= NATIVE_EXECUTION
+
+TOOL_LIST_AT_S0
+!= ACTION_TIME_CAPABILITY_AT_S1
+```
+
+The A1 full-September-through-2026-09-23 annotations remain historical/current-boundary evidence and are not replaced.
