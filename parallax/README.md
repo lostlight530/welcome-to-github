@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-09-21
-- 最新每日研究: [同一 benchmark surface 中的 evaluator authority identity](records/2026-09/2026-09-21.md)
-- 每日专题: 63
+- 最新每日归属日期: 2026-09-24
+- 最新每日研究: [动态工具清单与执行时 capability identity](records/2026-09/2026-09-24.md)
+- 每日专题: 65
 - 特殊专题: 17
-- 当前专题研究批次: 80
-- 当前专题独立执行日期窗口: 58
+- 当前专题研究批次: 82
+- 当前专题独立执行日期窗口: 60
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -36,7 +36,7 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 - 当前日记录模板: [templates/daily.md](templates/daily.md)
 - 当前周期整理模板: [templates/monthly.md](templates/monthly.md)
 
-截至 2026-09-21, 9 月已有 21/21 个每日归属日期研究记录. W38 已自然完成 7/7 并形成 optional derived audit, 该 audit 不增加 research batch, Trial, execution window 或 finding. W39 已由 2026-09-21 Daily 自然开始, 当前没有创建新的 derived audit. 这些记录没有产生新的 NOTES 级长期发现. 2026-09-19 首次把 delegated evidence frontier 变成 Daily research batch, 2026-09-20 首次对 deliberation 期间的 world-state rebinding 完成 bounded Daily test, 2026-09-21 首次把 evaluator authority identity 作为独立 Daily frontier 直接测试.
+截至 2026-09-24, 9 月已有 24 个 assigned-date Daily artifacts, 其中 23 个 primary research units, 1 个 2026-09-23 RECONSTRUCTION / NOT_RUN / UNVERIFIED gap. W38 已自然完成 7/7 并形成 optional derived audit, 该 audit 不增加 research batch, Trial, execution window 或 finding. W39 已由 2026-09-21 Daily 自然开始. 2026-09-22 与 2026-09-24 各增加 1 个 primary research batch, 2026-09-23 reconstruction 增加 0 research batch 与 0 execution-window credit. 当前仍没有新增 NOTES 级长期发现.
 
 > Maintenance annotation — 2026-09-19
 >
@@ -191,3 +191,25 @@ DERIVED_POINTER_REVIEW
 ```
 
 Parallax therefore keeps its primary-Daily endpoint at 2026-09-22 until an actual Parallax Daily for a later Shanghai logical date exists.
+
+
+## Parallax current-state reconciliation — 2026-09-24
+
+Current repository truth now separates three adjacent states.
+
+- 2026-09-22 remains a retained primary Daily and one research batch.
+- 2026-09-23 is represented only as RECONSTRUCTION / NOT_RUN / UNVERIFIED. It restores assigned-date continuity and adds zero research batch, Trial, CASE support, NOTES finding or independent execution-window credit.
+- 2026-09-24 is one new primary Daily on MCP tool-state freshness and action-time capability identity.
+
+The current counter contract therefore keeps artifact continuity separate from research occurrence.
+
+```text
+ASSIGNED_DATE_ARTIFACT
+!= NATIVE_RESEARCH_EXECUTION
+
+RECONSTRUCTION
+!= RESEARCH_BATCH
+!= INDEPENDENT_EXECUTION_WINDOW
+```
+
+The 2026-09-22 and 2026-09-23 maintenance annotations above remain historical point-in-time records and are not rewritten by this current reconciliation.
