@@ -612,12 +612,23 @@ def main() -> int:
             print(f"ERROR {error}")
         return 1
     count = sum(1 for path in ROOT.rglob("*") if path.is_file())
-    daily = sum(1 for path in ROOT.rglob("*.md") if DAILY_PATTERN.fullmatch(path.relative_to(ROOT).as_posix()))
+    daily_paths = [
+        path for path in ROOT.rglob("*.md")
+        if DAILY_PATTERN.fullmatch(path.relative_to(ROOT).as_posix())
+    ]
+    research_daily = sum(
+        1
+        for path in daily_paths
+        if not any(
+            value.startswith("RECONSTRUCTION")
+            for value in metadata(path.read_text(encoding="utf-8"), "Record Provenance")
+        )
+    )
     special = sum(1 for path in ROOT.rglob("*.md") if SPECIAL_PATTERN.fullmatch(path.relative_to(ROOT).as_posix()))
     audits = sum(1 for path in ROOT.rglob("*.md") if AUDIT_PATTERN.fullmatch(path.relative_to(ROOT).as_posix()))
     print(
-        f"OK parallax files={count} daily_topics={daily} "
-        f"special_topics={special} audits={audits}"
+        f"OK parallax files={count} daily_artifacts={len(daily_paths)} "
+        f"research_daily_topics={research_daily} special_topics={special} audits={audits}"
     )
     return 0
 
