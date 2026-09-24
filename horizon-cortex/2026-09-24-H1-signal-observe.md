@@ -56,14 +56,14 @@ EXTERNAL_SOURCE_RECORDS
 Source ID: SRC-20260924-01
 Title: The Official Ruby SDK for MCP Reaches 1.0
 Publisher: Model Context Protocol Blog
-URL: https://blog.modelcontextprotocol.io/posts/
+URL: https://blog.modelcontextprotocol.io/posts/ruby-sdk-1-0/
 Published or Updated Date: 2026-07-27
 Date Checked: 2026-09-24
 Source Type: Official release notes
 Evidence Tier: Tier 1
 Access Status: NETWORK_VERIFIED
 Independent Source: YES
-Claim Supported: 官方 Ruby SDK 达到 1.0.0 版本，满足 Tier 2 要求。
+Claim Supported: 官方 Ruby SDK 在 2026-07-27 发布 1.0.0 稳定版，并满足全部 Tier 2 要求。
 Claim Not Supported: NONE
 Relevance: High
 Confidence: HIGH
@@ -72,22 +72,22 @@ Limitations: SDK 仅满足 Tier 2，向 Tier 1 的开发仍在进行中。
 RAW_SIGNAL_LOG
 
 Signal ID: SIG-20260924-01
-Signal: Model Context Protocol 官方 Ruby SDK 发布 1.0 稳定版，目前满足 Tier 2 评估要求。
+Signal: 2026-09-24 新发现一个此前未进入 Horizon 记录的历史官方信号: Model Context Protocol Ruby SDK 已于 2026-07-27 发布 1.0 稳定版，并满足 Tier 2 评估要求。
 Source IDs: SRC-20260924-01
-What Changed: 增加了对 Ruby 生态的稳定支持，达到 1.0 版本里程碑。
+What Changed: 相比已读取的 Horizon 历史记录，本轮补发现了一个此前未记录的官方发布事实。外部事件本身发生于 2026-07-27，不是 2026-09-24 当日发布。
 Why It May Matter: 扩充了 MCP 协议支持的语言生态，可能促进 Ruby 社区的 Agentic 工作流落地。
 Evidence Tier: Tier 1
 Confidence: HIGH
 Uncertainty: Low 对于发布事实，Medium 对于实际生态采用率。
-Freshness: 较新的协议支持信息，发布日期为 2026-07-27。
-Possible Noise: NO
+Freshness: HISTORICAL_NEWLY_DISCOVERED。External event date = 2026-07-27; observation date = 2026-09-24。不得把本条当作 2026-09-24 新发布。
+Possible Noise: CURRENT_NEWS_STALENESS_RISK。事实有效，但若忽略 publication date 会被误读为当日新变化。
 Needs H2 Verification: YES
 
 NEXT_HANDOFF
 
 - 哪些信号需要 H2 定向解释: SIG-20260924-01
 - 哪些信号需要独立来源验证: SIG-20260924-01 在实际采用率方面。
-- 哪些信号的新鲜度仍不确定: NONE
+- 哪些信号的新鲜度仍不确定: SIG-20260924-01 的 publication date 已确认，但其性质是 historical-newly-discovered，不是 2026-09-24 external change
 - 哪些信号可能只是噪音: NONE
 - 哪些信号不应继续升级: 实际采用率声明在缺乏额外证据前不应升级。
 - H2 必须保留哪些联网或来源限制: 今日网络搜索存在拦截，需维持 NETWORK_PARTIAL，宿主适用性必须保持 UNKNOWN。
