@@ -96,6 +96,7 @@ RECORD_ID_PATTERN = re.compile(r"^- 记录 ID:\s*(\S+)\s*$", re.MULTILINE)
 NOTE_PATTERN = re.compile(r"^## (N-\d+).*?(?=^## |\Z)", re.MULTILINE | re.DOTALL)
 NOTE_SUPPORT_PATTERN = re.compile(r"PX-(?:S-)?\d{8}-P\d+")
 LEGACY_AUDIT_SCHEMAS = {"audits/2026-W32.md"}
+PRESERVED_DAILY_SCHEMAS = {"records/2026-09/2026-09-22.md"}
 LEGACY_BROKEN_LINKS = {
     ("records/2026-08/2026-08-18.md", "../../2026-07/2026-07-22.md"),
 }
@@ -189,6 +190,8 @@ def validate() -> list[str]:
     daily_dates: list[date] = []
     topic_windows: list[date] = []
     daily_files: list[Path] = []
+    research_daily_files: list[Path] = []
+    reconstruction_record_ids: set[str] = set()
     special_files: list[Path] = []
     audit_files: list[Path] = []
     audit_record_refs: dict[str, set[str]] = {}
@@ -242,6 +245,14 @@ def validate() -> list[str]:
         if daily_match:
             daily_files.append(path)
             file_date_text = daily_match.group(2)
+            preserved_schema = relative in PRESERVED_DAILY_SCHEMAS
+            provenance_values = metadata(text, "Record Provenance")
+            is_reconstruction = (
+                len(provenance_values) == 1
+                and provenance_values[0].startswith("RECONSTRUCTION")
+            )
+            if not is_reconstruction:
+                research_daily_files.append(path)
             try:
                 file_date = date.fromisoformat(file_date_text)
                 daily_dates.append(file_date)
@@ -250,7 +261,7 @@ def validate() -> list[str]:
                 continue
             if daily_match.group(1) != file_date_text[:7]:
                 errors.append(f"daily record in wrong month: {relative}")
-            if metadata(text, "记录类型") != ["每日专题"]:
+            if not preserved_schema and metadata(text, "记录类型") != ["每日专题"]:
                 errors.append(f"daily record type mismatch: {relative}")
             if metadata(text, "Record Provenance"):
                 for label in (
@@ -269,16 +280,17 @@ def validate() -> list[str]:
                 errors.append(f"daily assigned date mismatch: {relative}")
             if executed and window and executed != window:
                 errors.append(f"daily execution window mismatch: {relative}")
-            if window:
+            if window and not is_reconstruction:
                 topic_windows.append(window)
             expected_monthly = ROOT / "records" / f"{file_date_text[:7]}.md"
             if expected_monthly.is_file() and path.name not in expected_monthly.read_text(
                 encoding="utf-8"
             ):
                 errors.append(f"daily record missing from monthly index: {relative}")
-            for heading in DAILY_HEADINGS:
-                if heading not in text:
-                    errors.append(f"missing daily heading in {relative}: {heading}")
+            if not preserved_schema:
+                for heading in DAILY_HEADINGS:
+                    if heading not in text:
+                        errors.append(f"missing daily heading in {relative}: {heading}")
             ids = RECORD_ID_PATTERN.findall(text)
             if len(ids) != 1:
                 errors.append(f"daily record ID count is {len(ids)}: {relative}")
@@ -318,6 +330,8 @@ def validate() -> list[str]:
                     if record_id in record_windows:
                         errors.append(f"duplicate record ID: {record_id}")
                     record_windows[record_id] = window
+                    if is_reconstruction:
+                        reconstruction_record_ids.add(record_id)
 
         if special_match:
             special_files.append(path)
@@ -479,15 +493,15 @@ def validate() -> list[str]:
             window_count = read_labeled_count(
                 readme, "README", "当前专题独立执行日期窗口", errors
             )
-            if daily_count is not None and daily_count != len(daily_files):
+            if daily_count is not None and daily_count != len(research_daily_files):
                 errors.append(
-                    f"README daily count mismatch: {daily_count} != {len(daily_files)}"
+                    f"README daily research-unit count mismatch: {daily_count} != {len(research_daily_files)}"
                 )
             if special_count is not None and special_count != len(special_files):
                 errors.append(
                     f"README special count mismatch: {special_count} != {len(special_files)}"
                 )
-            expected_batches = len(daily_files) + len(special_files)
+            expected_batches = len(research_daily_files) + len(special_files)
             if batch_count is not None and batch_count != expected_batches:
                 errors.append(
                     f"README topic batch count mismatch: {batch_count} != {expected_batches}"
@@ -506,7 +520,7 @@ def validate() -> list[str]:
     for monthly_path in monthly_files:
         month = monthly_path.stem
         monthly_text = monthly_path.read_text(encoding="utf-8")
-        month_daily = [path for path in daily_files if path.parent.name == month]
+        month_daily = [path for path in research_daily_files if path.parent.name == month]
         month_special = [path for path in special_files if path.parent.name == month]
         source = monthly_path.relative_to(ROOT).as_posix()
         daily_count = read_labeled_count(monthly_text, source, "每日专题", errors)
@@ -533,8 +547,9 @@ def validate() -> list[str]:
         month_windows = {
             record_windows[record_id]
             for record_id in record_windows
-            if record_id[3:9] == month.replace("-", "")
-            or record_id[5:11] == month.replace("-", "")
+            if record_id not in reconstruction_record_ids
+            and (record_id[3:9] == month.replace("-", "")
+            or record_id[5:11] == month.replace("-", ""))
         }
         if window_count is not None and window_count != len(month_windows):
             errors.append(
