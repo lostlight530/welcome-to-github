@@ -52,3 +52,27 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+## DUAL_VIEW_MAINTENANCE_2026-09-24
+
+The original H2 body remains the owning task-time record.
+
+### View 1 — A1 / N-1 full-period calibration through 2026-09-23
+
+- Review scope includes all September H1→H2 Daily chronology through 2026-09-23 plus all due Weekly and month-to-date H5/H6 surfaces.
+- Preserve this H2's original fail-closed dependency state: `INPUT_MISSING / NOT_RUN / BLOCKED`.
+- The later presence of the same-date H1 path is later delivery evidence, not proof that H1 was available to H2 at task time.
+- Current repository completeness is not native successful chain coverage.
+
+### View 2 — current interpretation at the 2026-09-24 review cut
+
+- Newer Horizon artifacts do not upgrade the 2026-09-23 blocked H2 into success.
+- Later source verification may contextualize the record but cannot replay the original orientation.
+- No host/NEXUS state or adoption claim is inherited.
+
+```text
+ORIGINAL_H2_BLOCKED
++
+LATER_CURRENT_PATH_COMPLETENESS
+!= RETROACTIVE_ORIENTATION
+!= SUCCESSFUL_CHAIN
+```

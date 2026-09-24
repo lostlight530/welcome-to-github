@@ -107,3 +107,27 @@ BOUNDARY_CHECK
 - 未写入 Horizon 之外文件: YES
 - 未公开完整提示词或私有 Memory: YES
 - 未提出宿主仓库行动: YES
+## DUAL_VIEW_MAINTENANCE_2026-09-24
+
+This annotation follows the September full-period maintenance method. The original 2026-09-23 H1 body remains the task-time record.
+
+### View 1 — A1 / N-1 full-period calibration through 2026-09-23
+
+- Review scope: every retained September H1/H2 Daily pair from 2026-09-01 through 2026-09-23, W36/W37/W38, open W39, and the September H5/H6 owner.
+- The 2026-09-23 H1 remains a Jules-native observation with its own recorded network/source limits.
+- Later H2 blocking and later repository completion do not change what H1 actually observed or when it became available.
+- Same-lineage continuity checks do not become independent corroboration, host capability evidence, or strategic-signal promotion.
+
+### View 2 — current interpretation at the 2026-09-24 review cut
+
+- Current main may retain both 2026-09-23 H1/H2 paths and newer 2026-09-24 artifacts.
+- Current path presence does not establish that H1 was available to the original 2026-09-23 H2 execution.
+- No later delivery is back-projected into earlier task-time availability.
+
+```text
+SEPTEMBER_FULL_REVIEW_THROUGH_2026_09_23
++
+CURRENT_2026_09_24_REPOSITORY_VIEW
+!= RETROACTIVE_EXECUTION
+!= HISTORY_REWRITE
+```

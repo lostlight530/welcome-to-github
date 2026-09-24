@@ -736,3 +736,12 @@ The existing 9/22 and earlier task-time exceptions remain historical. No Weekly 
 - Current 23/23 path visibility is documentary completeness only; it is not 23 native successful Observe→Orient chains.
 - W39 remains IN_PROGRESS and September remains OPEN; no natural-month finalization or durable-memory promotion is created by this reconciliation.
 - This A2 note extends current interpretation only and does not replace the A1 / 2026-09-22 calibration above.
+## SEPTEMBER_DUAL_CUTOFF_MAINTENANCE_2026-09-24
+
+### A1 / N-1 cutoff — full September review through 2026-09-23
+
+- Review scope: all retained September H1/H2 Daily pairs from 2026-09-01 through 2026-09-23, W36/W37/W38, W39 open state, and the month-to-date H5/H6 ownership surface.
+- Every original task-time `INPUT_MISSING`, `BLOCKED`, `DEGRADED`, `NETWORK_PARTIAL`, reconstruction, correction, and later-delivery boundary remains point-in-time evidence.
+- 2026-09-23 remains a path-complete but not native-successful Observe→Orient chain because the original H2 was blocked before later H1 availability.
+- Current path completeness does not rewrite earlier execution availability.
+- September remains OPEN. Final H5/H6 and durable-memory promotion remain NOT_DUE / NO.
