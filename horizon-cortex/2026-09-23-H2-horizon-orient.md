@@ -76,3 +76,22 @@ LATER_CURRENT_PATH_COMPLETENESS
 != RETROACTIVE_ORIENTATION
 != SUCCESSFUL_CHAIN
 ```
+
+## 中秋加班维护补充 — A1 / 2026-09-24
+
+本段是 2026-09-24 作为 N 日的回顾性维护注释, 不是 2026-09-23 H2 的原始任务时输出.
+
+这次中秋加班维护重新把 9 月 1 日至 9 月 23 日的 Horizon 连续性放回同一条时间线上检查, 重点不是把文件补齐成看起来连续, 而是确认哪些 Daily 当时真的可用, 哪些只是后来进入 current main. 对本文件而言, 原始 `INPUT_MISSING / BLOCKED` 仍然成立, 后来的 H1 路径存在只改变当前仓库视图, 不改变当时 H2 的输入事实.
+
+同时复核 Parallax 与 Horizon 的边界. 节日期间继续维护不等于把 Parallax 的独立研究结论提升为 Horizon 证据, 也不等于 Host 或 NEXUS 已经采用相同判断. 维护只增加当前解释层, 不增加原始观察次数, 不增加独立来源, 不制造历史成功.
+
+因此本轮对 2026-09-23 的处理保持为前向关系补充, 不回写 task-time state. 这也是本轮 A1 的核心: 可以把 9 月旧文件写得更完整, 但不能为了连续性把真实缺口抹平.
+
+```text
+MID_AUTUMN_MAINTENANCE
++
+FULL_SEPTEMBER_REVIEW_THROUGH_2026_09_23
+!= RETROACTIVE_INPUT
+!= RETROACTIVE_SUCCESS
+!= HOST_ADOPTION
+```
