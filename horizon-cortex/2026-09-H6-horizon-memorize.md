@@ -791,3 +791,27 @@ SEPTEMBER_RELATIONAL_CUT_2026_09_24
 LATER_2026_09_25_EVIDENCE
 != 2026_09_24_SNAPSHOT
 ```
+
+
+## 2026-09-25 A1 — September full-coverage maintenance through 2026-09-24
+
+Base revision: `0dcd141de7ba925a8ffca459289e803996dc2772`. Cutoff: 2026-09-24 Asia/Shanghai.
+
+Coverage decision summary:
+- 2026-09-01..2026-09-23 Horizon H1/H2, due Weekly surfaces, and prior September owner state: re-read against current main; prior point-in-time decisions remain authoritative and are `NO_FOLLOW_UP` except already-recorded corrections/reconciliations.
+- 2026-09-24 H1/H2: `APPEND_RELATION`. H1 remains `SUCCESS / NETWORK_PARTIAL`; H2 remains `DEGRADED / NETWORK_PARTIAL`. This does not upgrade source independence or host/NEXUS state.
+- W39: `NOT_DUE` for closure. September: `NOT_DUE` for natural-month final H5/H6 promotion.
+- Historical `INPUT_MISSING`, `BLOCKED`, reconstruction, later-delivery, and network-degraded states remain unchanged.
+
+```text
+A1_CUTOFF_2026_09_24
+=
+COVERAGE_RECHECKED
++
+DECISIONS_RECONFIRMED
+
+LATER_PATH_PRESENT
+!= ORIGINAL_INPUT_AVAILABLE
+CURRENT_COMPLETENESS
+!= HISTORICAL_SUCCESS
+```
