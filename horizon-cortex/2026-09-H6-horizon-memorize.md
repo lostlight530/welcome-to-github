@@ -815,3 +815,30 @@ LATER_PATH_PRESENT
 CURRENT_COMPLETENESS
 != HISTORICAL_SUCCESS
 ```
+
+
+## 2026-09-25 A2 — current September relational version
+
+Base revision after merged A1: `d84bf05a49d45184b6c86852c654f634169c8ffd`. N-day input: 2026-09-25.
+
+Current month evolution:
+- The merged A1 cutoff through 2026-09-24 remains intact.
+- 2026-09-25 H1 is Jules-native `SUCCESS / NETWORK_PARTIAL`, official-source lineage, with no cross-publisher corroboration and Host Applicability `UNKNOWN`.
+- 2026-09-25 H2 consumed the exact same-date H1 and is `DEGRADED / NETWORK_PARTIAL`; input is PRESENT, but independent verification remains NONE.
+- This strengthens chronology continuity only. It does not upgrade evidence independence, host/NEXUS adoption, runtime capability, or durable-memory promotion.
+- W39 remains OPEN/IN_PROGRESS. September remains OPEN. Final H5/H6 remains `NOT_DUE`.
+
+A2 evolution: `NO_MATERIAL_CHANGE` to durable Horizon doctrine; current chronology is extended through 2026-09-25.
+
+```text
+A1_MERGED_THROUGH_2026_09_24
++
+H1_H2_2026_09_25
+=
+CURRENT_SEPTEMBER_RELATION
+
+INPUT_PRESENT
+!= INDEPENDENT_CORROBORATION
+HORIZON_EVIDENCE
+!= HOST_OR_NEXUS_STATE
+```
