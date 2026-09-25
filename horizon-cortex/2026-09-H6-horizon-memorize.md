@@ -772,3 +772,22 @@ CURRENT_PATH_COMPLETE
 ```
 
 This A2 section is additive to the A1 / 2026-09-23 cutoff and does not rewrite any earlier Daily, Weekly, blocked dependency, or network-degraded state.
+
+## 中秋加班维护补充 — A2 / N = 2026-09-24
+
+本段保存 2026-09-24 这个逻辑切点的月内关系版本. 写入发生在更晚的维护窗口, 因此 2026-09-25 已经出现的文件属于 later evidence, 不被倒灌进 9 月 24 日的 snapshot.
+
+在 A1 已完整覆盖 9 月 1 日至 9 月 23 日之后, A2 只增加 9 月 24 日的新输入并重新判断整月关系. 9 月 24 日 H1/H2 继续保持 `SUCCESS / NETWORK_PARTIAL` 与 `DEGRADED / NETWORK_PARTIAL` 的原始边界, historical-newly-discovered fact 不被写成当日外部发布. W39 仍在进行, September 仍为 OPEN, final H5/H6 和 durable-memory promotion 在该切点都不成立.
+
+中秋加班维护的作用是把月内关系写清楚, 不是把 9 月 25 日的后来成功或后来来源提前到 9 月 24 日. Horizon 与 Host/NEXUS/Parallax 继续是不同证据平面.
+
+```text
+A1_MERGED_THROUGH_2026_09_23
++
+N_DAY_2026_09_24
+=
+SEPTEMBER_RELATIONAL_CUT_2026_09_24
+
+LATER_2026_09_25_EVIDENCE
+!= 2026_09_24_SNAPSHOT
+```
