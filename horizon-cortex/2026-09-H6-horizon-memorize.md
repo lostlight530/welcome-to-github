@@ -986,3 +986,158 @@ HORIZON_EVIDENCE
 - New independent-source credit: NONE.
 - New durable monthly promotion: NONE.
 - Handoff: merge this A1 successor, fresh-read main, then build the A2 successor for the 2026-09-25 current-month relational version.
+
+## SUCCESSOR_A2_CURRENT_MONTH_RELATION_2026-09-26_FOR_LOGICAL_2026-09-25
+
+- Maintenance task type: TEN_REPOSITORY_MONTHLY_A2_SUCCESSOR
+- Logical maintenance date: 2026-09-25
+- Current-month relation window: 2026-09-01 through 2026-09-25
+- Historical thin A2 PR retained: #631
+- Required predecessor successor A1: #635
+- A1 merged main used as A2 base: 3a9b779c5e4fe08f7dda5ba61262543047e27dd1
+- Owner family: Horizon H1/H2
+- Later 2026-09-26 artifacts may exist on transport main but are outside this logical A2 relation.
+- History rewrite: NO
+- Runtime/external replay by this successor: NOT_EXECUTED
+
+### A2 compilation rules
+
+- Inherit the merged A1 2026-09-01..2026-09-24 coverage ledger; do not duplicate historical corrections into old files.
+- Add the N-day input as a new relational edge, not as a replacement for the A1 snapshot.
+- Preserve all earlier BLOCKED/DEGRADED/RECONSTRUCTION/UNKNOWN states.
+- Preserve source-lineage and host/local applicability limits.
+- Preserve event/observation/execution/delivery/correction dates as distinct time axes.
+- Keep W39 and September OPEN at logical 2026-09-25.
+- Exclude 2026-09-26 later state from this current-month version.
+
+### Current-month relational ledger
+
+#### 2026-09-01
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-02
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-03
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-04
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-05
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-06
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-07
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-08
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-09
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-10
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-11
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-12
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-13
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-14
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-15
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-16
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-17
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-18
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-19
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-20
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-21
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-22
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-23
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-24
+- Relation source: inherited from merged A1 successor #635.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
+#### 2026-09-25
+- Relation source: N_DAY_INPUT_2026-09-25.
+- Decision: APPEND_RELATION.
+- Current-month effect: 2026-09-25 H1 is Jules-native SUCCESS / NETWORK_PARTIAL; H2 consumes the same-date H1 and is DEGRADED / NETWORK_PARTIAL. The observed MCP continuity remains same-publisher lineage, Host Applicability UNKNOWN, and no durable promotion follows.
+
+### N-day integration
+
+- 2026-09-25 H1 is Jules-native SUCCESS / NETWORK_PARTIAL; H2 consumes the same-date H1 and is DEGRADED / NETWORK_PARTIAL. The observed MCP continuity remains same-publisher lineage, Host Applicability UNKNOWN, and no durable promotion follows.
+- The N-day input extends chronology only within its owned evidence plane.
+- Same-source restatement or derived aggregation does not create independent corroboration.
+- N-day success does not repair earlier task-time missing/blocked/degraded states.
+- No natural-month final, durable-memory/doctrine promotion, or governance distillation is authorized.
+- W39 remains in progress; any later weekly settlement belongs to its own due window.
+
+### Current-vs-later boundary
+
+- Logical A2 current date = 2026-09-25.
+- Current repository transport date = later than the logical task.
+- 2026-09-26 material = LATER_EVIDENCE / OUTSIDE_A2_INPUT.
+- Later current-path presence may be mentioned only to prevent back-projection, never as 9/25 evidence.
+- Historical thin A2 remains a point-in-time record; this successor deepens and reconciles it.
+
+### A2 successor disposition
+
+- Relationship continuity: RECORDED_FOR_2026-09-01_THROUGH_2026-09-25.
+- N-day input: INTEGRATED.
+- Earlier negative states rewritten: NO.
+- New runtime/test/scientific-validation credit: NONE.
+- New independent-source credit: NONE.
+- New month-final/durable-governance credit: NONE.
+- September status: OPEN.
+- Natural-month close: NOT_DUE.
+- Successor maintenance status: COMPLETE_FOR_LOGICAL_2026-09-25_A2.
