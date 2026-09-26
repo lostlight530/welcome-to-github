@@ -842,3 +842,147 @@ INPUT_PRESENT
 HORIZON_EVIDENCE
 != HOST_OR_NEXUS_STATE
 ```
+
+## SUCCESSOR_A1_FULL_COVERAGE_2026-09-26_FOR_LOGICAL_2026-09-25
+
+- Maintenance task type: TEN_REPOSITORY_MONTHLY_A1_SUCCESSOR
+- Logical maintenance date: 2026-09-25
+- A1 cutoff: 2026-09-24 Asia/Shanghai
+- Historical thin A1 PR retained: #630
+- Successor purpose: restore full-coverage/decision depth without rewriting the merged thin PR.
+- Transport base is later current main; later 2026-09-25/26 artifacts are explicitly excluded from A1 evidence.
+- Owner family: Horizon H1/H2
+- History rewrite: NO
+- Runtime replay: NOT_EXECUTED
+- External recertification: NOT_PERFORMED_BY_THIS_SUCCESSOR
+- Natural September close: NOT_DUE at logical cutoff
+
+### Coverage method
+
+- Recover the existing month owner and prior dated reconciliations.
+- Preserve original task-time negative/degraded states where already recorded.
+- Use current path presence only as current repository state, never as proof of earlier availability.
+- Record one explicit decision per logical date so NO_FOLLOW_UP is distinguishable from NOT_REVIEWED.
+- Reuse existing correction/reconciliation ownership instead of cloning the same correction into historical files.
+- Do not award new research, source-independence, runtime, hypothesis, or durable-memory credit.
+
+### Date-by-date coverage ledger
+
+#### 2026-09-01
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: NO_FOLLOW_UP.
+- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
+#### 2026-09-02
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: NO_FOLLOW_UP.
+- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
+#### 2026-09-03
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: NO_FOLLOW_UP.
+- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
+#### 2026-09-04
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: NO_FOLLOW_UP.
+- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
+#### 2026-09-05
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: NO_FOLLOW_UP.
+- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
+#### 2026-09-06
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: NO_FOLLOW_UP.
+- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
+#### 2026-09-07
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
+- Rationale: H2 original INPUT_MISSING/BLOCKED preserved; later path presence is not task-time availability.
+#### 2026-09-08
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: NO_FOLLOW_UP.
+- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
+#### 2026-09-09
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: NO_FOLLOW_UP.
+- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
+#### 2026-09-10
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: NO_FOLLOW_UP.
+- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
+#### 2026-09-11
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: NO_FOLLOW_UP.
+- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
+#### 2026-09-12
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: NO_FOLLOW_UP.
+- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
+#### 2026-09-13
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
+- Rationale: Current pair is human-authorized reconciliation, not Jules-native cadence evidence.
+#### 2026-09-14
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
+- Rationale: Network/source degradation preserved; no verified external-change claim synthesized.
+#### 2026-09-15
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
+- Rationale: Network/source degradation preserved; execution time remains unknown where not established.
+#### 2026-09-16
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
+- Rationale: H2 original INPUT_MISSING/BLOCKED preserved after later H1 visibility.
+#### 2026-09-17
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
+- Rationale: NETWORK_UNAVAILABLE/DEGRADED remains negative evidence, not verified no-change.
+#### 2026-09-18
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
+- Rationale: NETWORK_UNAVAILABLE/DEGRADED remains negative evidence, not verified no-change.
+#### 2026-09-19
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
+- Rationale: Temporal provenance conflict and H2 INPUT_MISSING/BLOCKED remain preserved.
+#### 2026-09-20
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
+- Rationale: Optimistic-lock visibility failure preserved; later H1 merge does not replay H2.
+#### 2026-09-21
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: NO_FOLLOW_UP.
+- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
+#### 2026-09-22
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: NO_FOLLOW_UP.
+- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
+#### 2026-09-23
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
+- Rationale: Retain the already-recorded point-in-time state and any existing reconciliation; no duplicate correction is created.
+#### 2026-09-24
+- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
+- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
+- Rationale: Native H1 SUCCESS and H2 DEGRADED/NETWORK_PARTIAL remain bounded to the historical Ruby-SDK signal and same-lineage evidence.
+
+### Cross-period decisions
+
+- W36/W37/W38 remain historical weekly windows and are not replayed by this A1 successor.
+- W39 is still open at the 2026-09-24 cutoff; no weekly-final credit is created.
+- September is OPEN at the cutoff; natural-month finalization and durable promotion remain NOT_DUE.
+- Existing Special/derived artifacts retain their original provenance and do not become native Daily executions.
+- Existing reconstruction artifacts retain zero native-execution/research credit where already declared.
+- Same-publisher or same-lineage repetition remains non-independent unless an existing owner explicitly establishes otherwise.
+- Current repository completeness is not substituted for task-time completeness.
+- Later 2026-09-25 input belongs to A2, not this A1.
+- Later 2026-09-26 state is outside the logical task and is not back-projected.
+
+### A1 successor disposition
+
+- Coverage completeness: RECORDED_FOR_2026-09-01_THROUGH_2026-09-24.
+- Decision completeness: RECORDED_PER_LOGICAL_DATE.
+- Direct historical rewrite required: NO, except existing owning corrections already retained.
+- New runtime/test execution credit: NONE.
+- New independent-source credit: NONE.
+- New durable monthly promotion: NONE.
+- Handoff: merge this A1 successor, fresh-read main, then build the A2 successor for the 2026-09-25 current-month relational version.
