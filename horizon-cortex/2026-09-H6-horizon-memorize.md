@@ -1190,3 +1190,29 @@ HORIZON_EVIDENCE
 - Historical rewrite required: NO.
 - New research/runtime/source-independence credit: NONE.
 - Handoff: merge A1, fresh-read main, then compile A2 for 2026-09-26.
+
+
+## A2_CURRENT_MONTH_RELATION_2026-09-26
+
+- Logical maintenance date: 2026-09-26
+- Exact A1-merged base main: `57919defc4f03087b4b2caada0f41a294e12def4`
+- Current-month relation window: 2026-09-01 through 2026-09-26
+- A1 coverage through 2026-09-25: INHERITED_FROM_MERGED_A1.
+
+### N-day integration — Horizon
+- H1 2026-09-26: Jules-native DEGRADED / NETWORK_UNAVAILABLE / no external source recovered.
+- H2 2026-09-26: Jules-native INPUT_MISSING / BLOCKED / NOT_RUN at its task-time authority base.
+- Later H1 visibility in current main is recorded as later availability only; it does not replay or upgrade H2.
+- NO_MATERIAL_NEW_SIGNAL under unavailable network is an evidence gap, not verified ecosystem no-change.
+
+### Relation boundary
+- earlier BLOCKED/DEGRADED states remain preserved.
+- later path presence != task-time input availability.
+- same-day chronology does not collapse execution ordering.
+- no host applicability, independent-source, runtime or durable-memory credit is added.
+- W39 and September remain OPEN; natural-month close is NOT_DUE.
+
+### A2 disposition
+- 2026-09-26 Horizon relation: INTEGRATED_WITH_TEMPORAL_BOUNDARY.
+- Current September relation: UPDATED_THROUGH_2026-09-26.
+- Historical rewrite: NO.
