@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-09-25
-- 最新每日研究: [Handoff control transfer 与 provenance transfer 边界](records/2026-09/2026-09-25.md)
-- 每日专题: 66
+- 最新每日归属日期: 2026-09-27
+- 最新每日研究: [Trace presence 与 evidence recoverability 边界](records/2026-09/2026-09-27.md)
+- 每日专题: 67
 - 特殊专题: 17
-- 当前专题研究批次: 83
-- 当前专题独立执行日期窗口: 61
+- 当前专题研究批次: 84
+- 当前专题独立执行日期窗口: 62
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -36,7 +36,7 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 - 当前日记录模板: [templates/daily.md](templates/daily.md)
 - 当前周期整理模板: [templates/monthly.md](templates/monthly.md)
 
-截至 2026-09-25, 9 月已有 25 个 assigned-date Daily artifacts, 其中 24 个 primary research units, 1 个 2026-09-23 RECONSTRUCTION / NOT_RUN / UNVERIFIED gap. W38 已自然完成 7/7 并形成 optional derived audit, 该 audit 不增加 research batch, Trial, execution window 或 finding. W39 继续进行. 2026-09-25 新增 1 个 handoff-provenance primary research batch 与 1 个 execution window, derived README/monthly synchronization 增加 0 research credit. 当前仍没有新增 NOTES 级长期发现.
+截至 2026-09-27, 9 月已有 27 个 assigned-date Daily artifacts, 其中 25 个 primary research units, 2 个 RECONSTRUCTION / NOT_RUN / UNVERIFIED gaps on 2026-09-23 and 2026-09-26. W39 assigned-date artifact coverage reaches 7/7, but 2026-09-26 remains reconstruction-only and no derived W39 audit is created by this producer. 2026-09-27 新增 1 个 trace-recoverability primary research batch 与 1 个 execution window, derived README/monthly synchronization 增加 0 research credit. 当前仍没有新增 NOTES 级长期发现.
 
 > Maintenance annotation — 2026-09-19
 >
@@ -236,3 +236,25 @@ TOOL_LIST_AT_S0
 ```
 
 The A1 full-September-through-2026-09-23 annotations remain historical/current-boundary evidence and are not replaced.
+
+
+## Parallax current-state reconciliation — 2026-09-27
+
+Current repository truth separates the 2026-09-26 continuity repair from the 2026-09-27 native research unit.
+
+- 2026-09-26 is RECONSTRUCTION / NOT_RUN / UNVERIFIED because current main and merged PR #638 establish only that no retained primary Daily path was observed at the relevant cut, not that producer execution never occurred.
+- 2026-09-26 reconstruction adds 0 research batch, 0 Trial, 0 CASE support, 0 NOTES finding and 0 independent execution-window credit.
+- 2026-09-27 is one native primary Daily on trace presence versus evidence recoverability.
+- 2026-09-27 adds 1 research batch and 1 independent execution window.
+- W39 assigned-date artifact continuity is now complete through Sunday, but this producer does not create a derived W39 audit.
+
+```text
+RETAINED_PATH_ABSENCE
+!= PRODUCER_NON_EXECUTION
+
+TRACE_PRESENT
+!= FULL_CONTENT_CAPTURE
+!= COMPLETE_EVIDENCE_RECOVERABILITY
+```
+
+No merged historical Daily body is rewritten by this reconciliation.
