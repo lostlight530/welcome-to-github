@@ -1216,3 +1216,28 @@ HORIZON_EVIDENCE
 - 2026-09-26 Horizon relation: INTEGRATED_WITH_TEMPORAL_BOUNDARY.
 - Current September relation: UPDATED_THROUGH_2026-09-26.
 - Historical rewrite: NO.
+
+## A1_MONTH_TO_DATE_REVALIDATION_2026-09-27
+
+- Logical maintenance date: 2026-09-27
+- Cutoff: 2026-09-26
+- Exact base main: `96518491109c51510da971106763b05037062eb5`
+- Scope: Horizon H1/H2/weekly relations plus September H6 owner; 2026-09-27 native inputs are reserved for A2.
+- Prior 2026-09-01 through 2026-09-25 decisions were revalidated through the retained current owner chain; no prior decision block is rewritten.
+
+### Coverage decisions
+- 2026-09-01 through 2026-09-25: REVIEWED / RETAIN_EXISTING_DECISIONS / NO_SILENT_HISTORY_REWRITE
+- 2026-09-26 H1: REVIEWED / RETAIN_DEGRADED_NETWORK_UNAVAILABLE
+- 2026-09-26 H2: REVIEWED / RETAIN_INPUT_MISSING_BLOCKED_NOT_RUN
+- Later H1 visibility remains later availability only and does not replay the original H2 execution.
+
+### Cross-period decisions
+- W38 late H3 native delivery is outside this A1 cutoff as a 2026-09-27 arrival; its historical relation is reserved for A2.
+- W39 state at this cutoff is OPEN; no final weekly settlement is manufactured.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A1 disposition
+- 2026-09-26 Horizon: NO_FOLLOW_UP beyond preserved temporal boundary.
+- Coverage completeness through N-1: VERIFIED_IN_CURRENT_OWNER_CHAIN.
+- Historical rewrite required: NO.
+- New host/runtime/source-independence/durable-memory credit: NONE.
