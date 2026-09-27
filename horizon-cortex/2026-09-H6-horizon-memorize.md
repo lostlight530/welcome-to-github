@@ -1241,3 +1241,27 @@ HORIZON_EVIDENCE
 - Coverage completeness through N-1: VERIFIED_IN_CURRENT_OWNER_CHAIN.
 - Historical rewrite required: NO.
 - New host/runtime/source-independence/durable-memory credit: NONE.
+
+## A2_CURRENT_MONTH_RELATION_2026-09-27
+
+- Logical maintenance date: 2026-09-27
+- Exact A1-merged base main: `814f72acd03e60ce4f50fc10ec46b4ab814f2dfd`
+- Current-month relation window: 2026-09-01 through 2026-09-27
+- A1 coverage through 2026-09-26: INHERITED_FROM_MERGED_A1.
+
+### N-day integration — Horizon
+- 2026-09-27 H1: native signal-observe delivery retained; source/publication freshness uncertainty is not promoted beyond the recorded evidence.
+- 2026-09-27 H2: native orientation retained; publication-date recovery improves temporal identity while Host Applicability remains UNKNOWN and source independence is not increased.
+- W38 H3: a real Jules native execution arrived on 2026-09-27 after a prior maintenance-completion artifact already occupied the canonical path. Current relation is LATE_NATIVE_EXECUTION_AFTER_MAINTENANCE_COMPLETION; it does not establish that a native H3 existed at the original W38 close.
+- W39 H4: the native task was invoked before same-week H3 was available and correctly fail-closed to NOT_DUE / no action. This is preserved as scheduler/dependency-order evidence, not upgraded into a valid H4-after-H3 execution.
+
+### Relation boundary
+- later native success != earlier native success.
+- current path complete != original task-time complete.
+- H4 NOT_DUE != INPUT_MISSING/BLOCKED, but H4-before-H3 remains a scheduling-order defect.
+- no host implementation, GitHub Actions change, source-independence or durable-memory credit is added.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A2 disposition
+- 2026-09-27 Horizon relation: INTEGRATED_WITH_LATE_EXECUTION_AND_SCHEDULER_BOUNDARIES.
+- Historical rewrite: NO.
