@@ -87,7 +87,7 @@ Signal ID: SIG-20260927-04
 H1 Claim: AI agents autonomously managing LLM post-training loops (autofinetune) using Markdown specifications on Tunix/TPUs.
 Classification: watchlist
 Verification Status: SUCCESS
-Verification Sources: https://developers.googleblog.com/search/?query=Autonomous%20LLM%20post-training%20with%20Tunix%20on%20TPUs
+Verification Sources: https://developers.googleblog.com/en/autonomous-llm-post-training-with-tunix-on-tpus/
 Verification Date Recovery: H1 did not retain the source publication date; H2 rechecked the official Google Developers Blog index and recovered 2026-09-11.
 Repository Record Comparison: 响应了 2026-W38-H4 关于 evaluation 和 coding-agent 自主工作流的焦点。
 Reason: 自主微调（SFT/GRPO）循环展示了代理应用的高级形式，但其对特定环境（Tunix/TPUs）的强依赖限制了通用适用性，需要进一步观察其泛化能力。
