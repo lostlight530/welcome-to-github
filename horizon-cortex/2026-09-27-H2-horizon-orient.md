@@ -74,19 +74,21 @@ Signal ID: SIG-20260927-03
 H1 Claim: ADK for Kotlin 1.0 brings multi-agent, zero-reflection type-safe function calling and session persistence (Room) to Android.
 Classification: noise
 Verification Status: SUCCESS
-Verification Sources: https://developers.googleblog.com/
+Verification Sources: https://developers.googleblog.com/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond/
+Verification Date Recovery: H1 did not retain the source publication date; H2 independently rechecked the official post and recovered 2026-09-09.
 Repository Record Comparison: 仅代表不同开发语言（Kotlin/Android）的生态对齐，未引入基础架构或概念上的革新。
 Reason: 虽然对 Android 开发者非常重要，但从更高层次的架构观察来看，这属于平台功能的补充（追平 Python/Java），而非全新战略信号。
 Evidence Strength: High Confidence (Tier 2 Official engineering blog)
 Counterevidence: NONE
-Remaining Uncertainty: Low.
+Remaining Uncertainty: Low for the source-specific release facts; H1 freshness was previously UNVERIFIED because the publication date was not retained.
 Promotion Eligibility: NO
 
 Signal ID: SIG-20260927-04
 H1 Claim: AI agents autonomously managing LLM post-training loops (autofinetune) using Markdown specifications on Tunix/TPUs.
 Classification: watchlist
 Verification Status: SUCCESS
-Verification Sources: https://developers.googleblog.com/
+Verification Sources: https://developers.googleblog.com/search/?query=Autonomous%20LLM%20post-training%20with%20Tunix%20on%20TPUs
+Verification Date Recovery: H1 did not retain the source publication date; H2 rechecked the official Google Developers Blog index and recovered 2026-09-11.
 Repository Record Comparison: 响应了 2026-W38-H4 关于 evaluation 和 coding-agent 自主工作流的焦点。
 Reason: 自主微调（SFT/GRPO）循环展示了代理应用的高级形式，但其对特定环境（Tunix/TPUs）的强依赖限制了通用适用性，需要进一步观察其泛化能力。
 Evidence Strength: High Confidence (Tier 2 Official engineering blog)
@@ -112,7 +114,7 @@ NEXT_HANDOFF
 - Watchlist: 代理自主管理 LLM post-training (SIG-20260927-04)。
 - 被降级或证伪的内容: ADK for Kotlin 1.0 (SIG-20260927-03) 降级为 noise。
 - 由同一来源重复放大的内容: NONE。
-- 证据缺口: NONE。
+- 证据缺口: SIG-20260927-03/04 的发布日期在 H1 原始记录中未保留；H2 已通过官方 Google Developers Blog 页面/索引恢复 2026-09-09 与 2026-09-11。该后续恢复不改写 H1 当时的 UNVERIFIED freshness。
 - 网络限制: NONE。
 - 需要更多观察窗口的方向: 代理进行自主数据飞轮或微调闭环的通用性。
 
