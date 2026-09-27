@@ -452,3 +452,54 @@ It may synthesize current repository evidence while preserving task-time states 
 current weekly synthesis
 != contemporaneous Jules execution
 ```
+
+---
+
+## LATE_NATIVE_EXECUTION_RECONCILIATION — observed 2026-09-27
+
+This section preserves a later-arriving native H3 execution for target week 2026-W38 without rewriting the maintenance-completion record above.
+
+```text
+TARGET_WEEK = 2026-W38
+LATE_NATIVE_PRODUCER = Jules
+LATE_NATIVE_TASK_STATUS = SUCCESS
+LATE_NATIVE_NETWORK_STATUS = NETWORK_PARTIAL
+LATE_NATIVE_PR = #643
+LATE_NATIVE_HEAD_AT_RECONCILIATION = d0131f3695d157533e24c46f52a7e2372dcf0f19
+HISTORICAL_RELATION = LATE_NATIVE_EXECUTION_AFTER_MAINTENANCE_COMPLETION
+CURRENT_PATH_COVERAGE = 7 H1 + 7 H2
+ORIGINAL_TASK_TIME_GAPS_PRESERVED = 2026-09-16 H2; 2026-09-19 H2; 2026-09-20 H2
+INDEPENDENT_EVIDENCE_ADDED = NONE
+HOST_REPOSITORY_CHANGE = NO
+LONG_TERM_MEMORY_PROMOTION = NO
+```
+
+The late native run re-read the W38 Horizon corpus and produced three decision directions consistent with the retained repository evidence:
+
+1. **DEC-2026W38-01 — FOCUS**  
+   Preserve fail-closed Observe→Orient dependency semantics when the same-day upstream H1 was not visible to the original H2 authority snapshot. Later path presence remains annotation, not replay.
+
+2. **DEC-2026W38-02 — FOCUS**  
+   Preserve network-unavailable days as evidence gaps rather than negative findings about the external world.
+
+3. **DEC-2026W38-03 — CONTINUE_WATCH**  
+   Treat repeated MCP official material as continuity unless a material version, implementation, publication, or independently corroborated adoption change appears.
+
+### Late-run evidence boundary
+
+- The late native run is a real later execution; it is **not** evidence that a Jules H3 existed during the original W38 close.
+- The 7 H1 + 7 H2 paths are present on current main, but three H2 records preserve task-time `INPUT_MISSING / BLOCKED` states.
+- Repeated MCP official pages remain one publisher lineage and do not create new source independence.
+- The 2026-09-19 execution-time conflict remains unresolved; commit chronology must not be substituted for the artifact's declared execution time.
+- This reconciliation does not modify the W38 maintenance record above and does not promote any result into H6 durable memory.
+
+```text
+LATE_NATIVE_EXECUTION
+!= ORIGINAL_W38_EXECUTION_EXISTED
+
+CURRENT_PATH_COMPLETE
+!= ORIGINAL_TASK_TIME_COMPLETE
+
+LATER_NATIVE_SUCCESS
+!= EARLIER_NATIVE_SUCCESS
+```
