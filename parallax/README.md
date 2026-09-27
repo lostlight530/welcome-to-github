@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-09-27
-- 最新每日研究: [Trace presence 与 evidence recoverability 边界](records/2026-09/2026-09-27.md)
-- 每日专题: 67
+- 最新每日归属日期: 2026-09-28
+- 最新每日研究: [Session identifier 与 durable state continuity 边界](records/2026-09/2026-09-28.md)
+- 每日专题: 68
 - 特殊专题: 17
-- 当前专题研究批次: 84
-- 当前专题独立执行日期窗口: 62
+- 当前专题研究批次: 85
+- 当前专题独立执行日期窗口: 63
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -36,7 +36,7 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 - 当前日记录模板: [templates/daily.md](templates/daily.md)
 - 当前周期整理模板: [templates/monthly.md](templates/monthly.md)
 
-截至 2026-09-27, 9 月已有 27 个 assigned-date Daily artifacts, 其中 25 个 primary research units, 2 个 RECONSTRUCTION / NOT_RUN / UNVERIFIED gaps on 2026-09-23 and 2026-09-26. W39 assigned-date artifact coverage reaches 7/7, but 2026-09-26 remains reconstruction-only and no derived W39 audit is created by this producer. 2026-09-27 新增 1 个 trace-recoverability primary research batch 与 1 个 execution window, derived README/monthly synchronization 增加 0 research credit. 当前仍没有新增 NOTES 级长期发现.
+截至 2026-09-28, 9 月已有 28 个 assigned-date Daily artifacts, 其中 26 个 primary research units, 2 个 RECONSTRUCTION / NOT_RUN / UNVERIFIED gaps on 2026-09-23 and 2026-09-26. W39 assigned-date artifact coverage remains 7/7; 2026-09-28 starts W40 with one native Daily on session durability. 2026-09-28 新增 1 个 session-durability primary research batch 与 1 个 execution window; same-day strengthening 与 derived README/monthly synchronization 增加 0 additional research credit. 当前仍没有新增 NOTES 级长期发现.
 
 > Maintenance annotation — 2026-09-19
 >
@@ -258,3 +258,23 @@ TRACE_PRESENT
 ```
 
 No merged historical Daily body is rewritten by this reconciliation.
+
+
+## Parallax current-state reconciliation — 2026-09-28
+
+Current repository truth adds one native Daily after the completed W39 assigned-date chain.
+
+- 2026-09-28 is one native primary Daily on logical session identity versus durable state recovery.
+- Same-day rerun strengthens the same Daily and adds 0 additional research batch or execution-window credit.
+- OpenAI current contracts separate session identity from underlying storage and process lifetime; Google agents-cli independently separates local session identity from running-server lifetime and storage type.
+- The current bounded result is documentation-level only; no process/server restart matrix or recovered-state artifact was executed.
+- FRONTIER-SESSION-DURABILITY is not forced into the existing CASE ontology and creates 0 CASE support and 0 NOTES promotion.
+
+```text
+SAME_SESSION_ID
+!= SAME_STORAGE_BACKEND
+!= SAME_SERVER_OR_PROCESS_LIFETIME
+!= DURABLE_HISTORY_RECOVERED
+```
+
+Derived synchronization changes navigation/current counters only and adds zero research credit. No merged historical Daily is rewritten by this reconciliation.
