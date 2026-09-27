@@ -173,7 +173,7 @@ Why It May Matter: Highlights the expansion of mature agent runtimes into mobile
 Evidence Tier: Tier 2
 Confidence: High
 Uncertainty: Low.
-Freshness: New.
+Freshness: UNVERIFIED (source publication date not retained in this run).
 Possible Noise: YES (platform expansion rather than conceptual shift)
 Needs H2 Verification: NO
 
@@ -186,14 +186,14 @@ Why It May Matter: A practical application of coding agents and runtime pipeline
 Evidence Tier: Tier 2
 Confidence: High
 Uncertainty: Low.
-Freshness: New.
+Freshness: UNVERIFIED (source publication date not retained in this run).
 Possible Noise: NO
 Needs H2 Verification: YES
 
 NEXT_HANDOFF
 - 哪些信号需要 H2 定向解释: SIG-20260927-01 (MCP gateway integration) 和 SIG-20260927-02 (hybrid local/cloud architectures via Antigravity SDK).
 - 哪些信号需要独立来源验证: NONE
-- 哪些信号的新鲜度仍不确定: NONE
+- 哪些信号的新鲜度仍不确定: SIG-20260927-03, SIG-20260927-04
 - 哪些信号可能只是噪音: SIG-20260927-03
 - 哪些信号不应继续升级: SIG-20260927-03 (Mobile SDK parity is useful for Android developers but does not fundamentally alter general agent architectures).
 - H2 必须保留哪些联网或来源限制: 不得推断宿主仓库将采用 MCP API Gateway，必须保持 UNKNOWN. 不得夸大本地推理的能力范围。
