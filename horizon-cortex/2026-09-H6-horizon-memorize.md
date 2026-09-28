@@ -1291,3 +1291,31 @@ HORIZON_EVIDENCE
 - Historical rewrite required: NO.
 - 2026-09-28 native inputs consumed by A1: NO.
 - New host/runtime/source-independence/durable-memory credit: NONE.
+## A2_CURRENT_MONTH_RELATION_2026-09-28
+
+- Logical maintenance date: 2026-09-28
+- Exact A1-merged base main: `ad7b8a062c4003341db886457a0c7fb99c2ea0d2`
+- Current-month relation window: 2026-09-01 through 2026-09-28
+- A1 coverage through 2026-09-27: INHERITED_FROM_MERGED_A1.
+
+### N-day integration — Horizon
+- 2026-09-28 H1 and H2 are present as Jules-native Daily artifacts.
+- Both retained external objects are Google for Developers Blog pages. They are two source objects but one publisher lineage; per-record Independent Source fields do not create cross-publisher independent verification. The H1 header Independent Verification: NO and H2 header Independent Verification: NONE remain controlling for independence.
+- Agent Anomaly Detection is retained as a Gemini Enterprise Agent Platform private-preview capability claim, not broad ecosystem adoption or production guarantee.
+- The four challenge-submission patterns are retained as patterns observed in selected challenge submissions, not as an industry-wide standard, universal best practice, or mandatory architecture baseline.
+- Host applicability remains UNKNOWN; no welcome-to-github implementation claim is added.
+
+### Forward scope correction
+- SAME_PUBLISHER_MULTIPLE_URLS != INDEPENDENT_CORROBORATION.
+- SELECTED_CHALLENGE_PATTERNS != INDUSTRY_STANDARD_BASELINE.
+- PRIVATE_PREVIEW_CAPABILITY != GENERAL_AVAILABILITY_OR_BROAD_ADOPTION.
+- This A2 narrows interpretation forward and does not rewrite the native H1/H2 bodies.
+
+### Current-cut boundary
+- Any other 2026-09-28 periodic Horizon task not present at this review cut is NOT_YET_OBSERVED_AT_THIS_CHECK, not MISSING, FAILED, or NOT_EXECUTED.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A2 disposition
+- 2026-09-28 Horizon relation: NATIVE_H1_H2_INTEGRATED_WITH_SOURCE_LINEAGE_AND_SCOPE_CORRECTION.
+- Historical rewrite: NO.
+- New host/runtime/source-independence/durable-memory credit: NONE.
