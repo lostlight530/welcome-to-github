@@ -1265,3 +1265,29 @@ HORIZON_EVIDENCE
 ### A2 disposition
 - 2026-09-27 Horizon relation: INTEGRATED_WITH_LATE_EXECUTION_AND_SCHEDULER_BOUNDARIES.
 - Historical rewrite: NO.
+
+## A1_MONTH_TO_DATE_REVALIDATION_2026-09-28
+
+- Logical maintenance date: 2026-09-28
+- Cutoff: 2026-09-27
+- Exact base main: `7e1c10a8f55ba8d0f09650b6786656c0028676d8`
+- A1 consumes only 2026-09-01 through 2026-09-27 logical-date evidence. Any 2026-09-28 artifacts already visible on current main are intentionally excluded and reserved for A2.
+
+### Coverage decisions
+- 2026-09-01 through 2026-09-26: REVIEWED / RETAIN_MERGED_OWNER_DECISIONS / NO_SILENT_HISTORY_REWRITE
+- 2026-09-27 H1/H2: REVIEWED / RETAIN_NATIVE_DAILY_RELATION
+- W38 H3 late native execution: REVIEWED / RETAIN_LATE_NATIVE_EXECUTION_AFTER_MAINTENANCE_COMPLETION
+- W39 H4: REVIEWED / RETAIN_PREMATURE_DOWNSTREAM_NOT_DUE_AS_SCHEDULER_ORDER_EVIDENCE
+- Later native H3 delivery does not retroactively make the earlier H4 ordering valid.
+
+### Boundary
+- later native success != earlier native success.
+- current path complete != original task-time complete.
+- H4 NOT_DUE != missing/failed, while H4-before-H3 remains ordering evidence.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A1 disposition
+- Coverage through N-1 = 2026-09-27: VERIFIED_IN_CURRENT_OWNER_CHAIN.
+- Historical rewrite required: NO.
+- 2026-09-28 native inputs consumed by A1: NO.
+- New host/runtime/source-independence/durable-memory credit: NONE.
