@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-09-29
-- 最新每日研究: [Approval gate 与 task completion identity 边界](records/2026-09/2026-09-29.md)
-- 每日专题: 69
+- 最新每日归属日期: 2026-09-30
+- 最新每日研究: [Per-attempt timeout 与 end-to-end run budget 边界](records/2026-09/2026-09-30.md)
+- 每日专题: 70
 - 特殊专题: 17
-- 当前专题研究批次: 86
-- 当前专题独立执行日期窗口: 64
+- 当前专题研究批次: 87
+- 当前专题独立执行日期窗口: 65
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -36,7 +36,7 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 - 当前日记录模板: [templates/daily.md](templates/daily.md)
 - 当前周期整理模板: [templates/monthly.md](templates/monthly.md)
 
-截至 2026-09-29, 9 月已有 29 个 assigned-date Daily artifacts, 其中 27 个 primary research units, 2 个 RECONSTRUCTION / NOT_RUN / UNVERIFIED gaps on 2026-09-23 and 2026-09-26. W39 assigned-date artifact coverage remains 7/7; W40 currently has 2026-09-28 and 2026-09-29 native Daily units. 2026-09-29 新增 1 个 approval-completion primary research batch 与 1 个 execution window; derived README/monthly synchronization 增加 0 additional research credit. 当前仍没有新增 NOTES 级长期发现.
+截至 2026-09-30, 9 月已有 30 个 assigned-date Daily artifacts, 其中 28 个 primary research units, 2 个 RECONSTRUCTION / NOT_RUN / UNVERIFIED gaps on 2026-09-23 and 2026-09-26. W39 assigned-date artifact coverage remains 7/7; W40 currently has 2026-09-28, 2026-09-29 and 2026-09-30 native Daily units. 2026-09-30 新增 1 个 timeout-scope primary research batch 与 1 个 execution window; derived README/monthly synchronization 增加 0 additional research credit. 当前仍没有新增 NOTES 级长期发现.
 
 > Maintenance annotation — 2026-09-19
 >
@@ -296,3 +296,20 @@ APPROVAL_DECIDED
 ```
 
 Derived synchronization changes navigation/current counters only and adds zero research credit. No merged historical Daily is rewritten by this reconciliation.
+
+
+## Parallax current-state reconciliation — 2026-09-30
+
+- 2026-09-30 is one native primary Daily on per-attempt model timeout versus end-to-end workflow budget.
+- OpenAI current Agents SDK contract limits ModelSettings.timeout to each model-call attempt and explicitly excludes full-run, tool-execution and retry-backoff scope.
+- This is a single-publisher bounded result: independent source count remains 1 even though three current OpenAI documentation artifacts were read.
+- No SDK runtime timing matrix was executed; FRONTIER-TIMEOUT-SCOPE creates 0 CASE support and 0 NOTES promotion.
+
+```text
+MODEL_ATTEMPT_TIMEOUT
+!= TOOL_EXECUTION_TIMEOUT
+!= RETRY_BACKOFF_BUDGET
+!= END_TO_END_RUN_DEADLINE
+```
+
+Derived synchronization changes navigation/current counters only and adds zero research credit. No merged historical Daily is rewritten.
