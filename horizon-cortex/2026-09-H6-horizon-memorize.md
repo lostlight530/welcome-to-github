@@ -1345,3 +1345,30 @@ HORIZON_EVIDENCE
 - Historical rewrite required: NO.
 - 2026-09-29 native inputs consumed by A1: NO.
 - New host/runtime/source-independence/durable-memory credit: NONE.
+
+## A2_CURRENT_MONTH_RELATION_2026-09-29
+
+- Logical maintenance date: 2026-09-29
+- Exact A1-merged base main: `e268336d31235165b9de2cff5b3dfcbdc23e89ef`
+- Current-month relation window: 2026-09-01 through 2026-09-29.
+- A1 coverage through 2026-09-28: INHERITED_FROM_MERGED_A1.
+
+### N-day integration — Horizon
+- 2026-09-29 H1 and H2 are present as Jules-native Daily artifacts.
+- Both retained source objects are GitHub Blog pages from one publisher lineage; they do not provide cross-publisher independent corroboration.
+- Source-specific facts retained: GitHub Security Lab Taskflow Agent reports 24 Android vulnerabilities in its described workflow, and a related fuzzing Taskflow separates LLM decision work from MCP-tool execution in the documented C/C++ fuzzing pipeline.
+- These source-specific examples support a candidate workflow pattern only. They do not establish an industry-wide consensus, universal MCP generality, portable production reliability, or host-repository adoption.
+- Host applicability remains UNKNOWN; no welcome-to-github implementation claim is added.
+
+### Forward scope correction
+- TWO_GITHUB_BLOG_URLS != CROSS_PUBLISHER_CORROBORATION.
+- TASKFLOW_SECURITY_RESULTS != GENERAL_AGENT_RELIABILITY_PROOF.
+- SOURCE_SPECIFIC_MCP_USAGE != INDUSTRY_WIDE_STANDARDIZATION.
+- OFFICIAL_ENGINEERING_BLOG != INDEPENDENT_REPRODUCTION.
+- This A2 narrows interpretation forward and does not rewrite the native H1/H2 bodies.
+
+### A2 disposition
+- 2026-09-29 Horizon relation: NATIVE_H1_H2_INTEGRATED_WITH_SINGLE_PUBLISHER_AND_SCOPE_BOUNDARY.
+- Historical rewrite: NO.
+- New host/runtime/source-independence/durable-memory credit: NONE.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
