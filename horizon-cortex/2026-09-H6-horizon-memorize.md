@@ -1319,3 +1319,29 @@ HORIZON_EVIDENCE
 - 2026-09-28 Horizon relation: NATIVE_H1_H2_INTEGRATED_WITH_SOURCE_LINEAGE_AND_SCOPE_CORRECTION.
 - Historical rewrite: NO.
 - New host/runtime/source-independence/durable-memory credit: NONE.
+
+## A1_MONTH_TO_DATE_REVALIDATION_2026-09-29
+
+- Logical maintenance date: 2026-09-29
+- Cutoff: 2026-09-28
+- Exact base main: `746bf838b1acaa891fb956e2c76a46785a9acd23`
+- A1 consumes only 2026-09-01 through 2026-09-28 logical-date evidence. Any 2026-09-29 Horizon/Parallax artifacts already visible on current main are intentionally excluded and reserved for A2.
+
+### Coverage decisions
+- Through 2026-09-27: REVIEWED / RETAIN_EXISTING_OWNER_DECISIONS.
+- 2026-09-28 Horizon H1/H2: REVIEWED / RETAIN_NATIVE_DAILY_RELATION.
+- Same-publisher multiple URLs remain one publisher lineage; current evidence does not establish cross-publisher corroboration.
+- Private-preview capability and selected challenge patterns remain bounded to their source objects; no host adoption or industry-wide baseline is inferred.
+
+### Boundary
+- SAME_PUBLISHER_MULTIPLE_URLS != INDEPENDENT_CORROBORATION.
+- PRIVATE_PREVIEW_CAPABILITY != GENERAL_AVAILABILITY.
+- SELECTED_CHALLENGE_PATTERNS != INDUSTRY_STANDARD_BASELINE.
+- 2026-09-29 native artifacts visible on current main != A1 eligibility.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A1 disposition
+- Coverage through N-1 = 2026-09-28: VERIFIED_IN_CURRENT_OWNER_CHAIN.
+- Historical rewrite required: NO.
+- 2026-09-29 native inputs consumed by A1: NO.
+- New host/runtime/source-independence/durable-memory credit: NONE.
