@@ -53,3 +53,42 @@ SEPTEMBER_FINAL
 ```
 
 A1 result: MONTH_OPEN_BASELINE_INITIALIZED.
+
+
+## A2_CURRENT_MONTH_RELATION_2026-10-01
+
+- Logical maintenance date: 2026-10-01
+- Exact A1-merged base main: `0687a1b02720ea9e16fc2edef674b95667ec2f33`
+- Current month relation window: 2026-10-01
+- A1 coverage: INHERITED_FROM_MERGED_A1
+- Native H1 input: `horizon-cortex/2026-10-01-H1-signal-observe.md` / merged via PR #664
+- Native H2 input: `horizon-cortex/2026-10-01-H2-horizon-orient.md` / merged via PR #665
+- H1 retained state: DEGRADED under NETWORK_UNAVAILABLE, with NO_MATERIAL_NEW_SIGNAL
+- H2 retained relation: same-day Orient over the retained H1 state, without upgrading missing network evidence
+- W40 weekly final: NOT_DUE
+- October H5/H6 natural-month final: NOT_DUE
+- September H5/H6 completion remains prior-month history and is not reclassified as October input
+
+### Current relation
+
+```text
+H1_DEGRADED_NETWORK_STATE
++
+H2_SAME_DAY_ORIENTATION
+=
+OCTOBER_DAY_1_RELATION_RETAINED
+
+NO_MATERIAL_NEW_SIGNAL
+!= VERIFIED_ABSENCE_OF_EXTERNAL_CHANGE
+
+CURRENT_PATH_PRESENT
+!= STRONGER_ORIGINAL_EVIDENCE
+```
+
+### A2 disposition
+
+- October version state: OPEN
+- Day-1 integration: COMPLETE
+- Historical rewrite: NO
+- Extra audit executed: NO
+- New research, execution-window, source-independence, runtime, or durable-memory credit: NONE
