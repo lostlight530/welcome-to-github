@@ -7,1368 +7,196 @@ Task ID: H6
 Cadence: Monthly
 Loop Stage: Memorize
 Run Month: 2026-09
-Month Closure Status: OPEN
-Execution Time Asia/Shanghai: 2026-09-01 18:14:03 +08:00
+Target Month: 2026-09
+Month Closure Status: CLOSED
+Reflection Input Status: PRESENT
+Network Status: NETWORK_PARTIAL
+Task Status: COMPLETED_WITH_CALIBRATION
+Execution Time Asia/Shanghai: 2026-10-01 10:28:00 +08:00
 Agent: Jules
 Record Provenance: JULES_NATIVE
-Original Execution Status: NEW_EXECUTION
+Original Execution Status: SUCCESS
 Current Path Status: PRESENT
-Target Month: 2026-09
-Reflection Input Status: REFLECTION_INPUT_MISSING
-Network Status: NOT_RUN
-Task Status: BLOCKED
 Write Scope: horizon-cortex only
 Boundary Violation: NO
 
 INPUT_RECORD
 
-H5 路径和状态: NONE, horizon-cortex/2026-09-H5-signal-reflect.md is missing.
-实际读取的 H1 至 H4: NONE, due to missing H5.
+H5 路径和状态: horizon-cortex/2026-09-H5-signal-reflect.md (COMPLETED_WITH_CALIBRATION)
+
+实际读取的 H1 至 H4:
+- horizon-cortex/2026-09-01-H1-signal-observe.md
+- horizon-cortex/2026-09-01-H2-horizon-orient.md
+- horizon-cortex/2026-09-02-H1-signal-observe.md
+- horizon-cortex/2026-09-02-H2-horizon-orient.md
+- horizon-cortex/2026-09-03-H1-signal-observe.md
+- horizon-cortex/2026-09-03-H2-horizon-orient.md
+- horizon-cortex/2026-09-04-H1-signal-observe.md
+- horizon-cortex/2026-09-04-H2-horizon-orient.md
+- horizon-cortex/2026-09-05-H1-signal-observe.md
+- horizon-cortex/2026-09-05-H2-horizon-orient.md
+- horizon-cortex/2026-09-06-H1-signal-observe.md
+- horizon-cortex/2026-09-06-H2-horizon-orient.md
+- horizon-cortex/2026-09-07-H1-signal-observe.md
+- horizon-cortex/2026-09-07-H2-horizon-orient.md
+- horizon-cortex/2026-09-08-H1-signal-observe.md
+- horizon-cortex/2026-09-08-H2-horizon-orient.md
+- horizon-cortex/2026-09-09-H1-signal-observe.md
+- horizon-cortex/2026-09-09-H2-horizon-orient.md
+- horizon-cortex/2026-09-10-H1-signal-observe.md
+- horizon-cortex/2026-09-10-H2-horizon-orient.md
+- horizon-cortex/2026-09-11-H1-signal-observe.md
+- horizon-cortex/2026-09-11-H2-horizon-orient.md
+- horizon-cortex/2026-09-12-H1-signal-observe.md
+- horizon-cortex/2026-09-12-H2-horizon-orient.md
+- horizon-cortex/2026-09-13-H1-signal-observe.md
+- horizon-cortex/2026-09-13-H2-horizon-orient.md
+- horizon-cortex/2026-09-14-H1-signal-observe.md
+- horizon-cortex/2026-09-14-H2-horizon-orient.md
+- horizon-cortex/2026-09-15-H1-signal-observe.md
+- horizon-cortex/2026-09-15-H2-horizon-orient.md
+- horizon-cortex/2026-09-16-H1-signal-observe.md
+- horizon-cortex/2026-09-16-H2-horizon-orient.md
+- horizon-cortex/2026-09-17-H1-signal-observe.md
+- horizon-cortex/2026-09-17-H2-horizon-orient.md
+- horizon-cortex/2026-09-18-H1-signal-observe.md
+- horizon-cortex/2026-09-18-H2-horizon-orient.md
+- horizon-cortex/2026-09-19-H1-signal-observe.md
+- horizon-cortex/2026-09-19-H2-horizon-orient.md
+- horizon-cortex/2026-09-20-H1-signal-observe.md
+- horizon-cortex/2026-09-20-H2-horizon-orient.md
+- horizon-cortex/2026-09-21-H1-signal-observe.md
+- horizon-cortex/2026-09-21-H2-horizon-orient.md
+- horizon-cortex/2026-09-22-H1-signal-observe.md
+- horizon-cortex/2026-09-22-H2-horizon-orient.md
+- horizon-cortex/2026-09-23-H1-signal-observe.md
+- horizon-cortex/2026-09-23-H2-horizon-orient.md
+- horizon-cortex/2026-09-24-H1-signal-observe.md
+- horizon-cortex/2026-09-24-H2-horizon-orient.md
+- horizon-cortex/2026-09-25-H1-signal-observe.md
+- horizon-cortex/2026-09-25-H2-horizon-orient.md
+- horizon-cortex/2026-09-26-H1-signal-observe.md
+- horizon-cortex/2026-09-26-H2-horizon-orient.md
+- horizon-cortex/2026-09-27-H1-signal-observe.md
+- horizon-cortex/2026-09-27-H2-horizon-orient.md
+- horizon-cortex/2026-09-28-H1-signal-observe.md
+- horizon-cortex/2026-09-28-H2-horizon-orient.md
+- horizon-cortex/2026-09-29-H1-signal-observe.md
+- horizon-cortex/2026-09-29-H2-horizon-orient.md
+- horizon-cortex/2026-09-30-H1-signal-observe.md
+- horizon-cortex/2026-09-30-H2-horizon-orient.md
+- horizon-cortex/2026-W36-H3-position-decide.md
+- horizon-cortex/2026-W36-H4-narrative-act.md
+- horizon-cortex/2026-W37-H3-position-decide.md
+- horizon-cortex/2026-W37-H4-narrative-act.md
+- horizon-cortex/2026-W38-H3-position-decide.md
+- horizon-cortex/2026-W38-H4-narrative-act.md
+- horizon-cortex/2026-W39-H3-position-decide.md
+- horizon-cortex/2026-W39-H4-narrative-act.md
+
 历史 H6:
 - horizon-cortex/2026-08-H6-horizon-memorize.md
 - horizon-cortex/2026-07-H6-horizon-memorize.md
-当前目标 H6 已被排除的确认: Confirmed. The current target H6 is not treated as historical memory.
-缺失与降级输入: H5 is missing.
-外部来源: NONE
-独立来源说明: NONE
-网络限制: NOT_RUN
 
-Daily Coverage Matrix: NONE due to missing H5
-Weekly Coverage Matrix: NONE due to missing H5
-Inherited Evidence: NONE due to missing H5
-Independent Evidence Added: NONE
-Missing Inputs Preserved: H5 for 2026-09
-Claim Calibration: NONE due to missing H5
+当前目标 H6 已被排除的确认: 确认未将当前目标 H6 (horizon-cortex/2026-09-H6-horizon-memorize.md) 视为历史记忆读取。
+
+缺失与降级输入: H5 反映了多天存在 H1/H2 DEGRADED 和 BLOCKED (例如 09-07, 09-14 等)，以及 W36 H4 BLOCKED 和 W37 H3/H4 DEGRADED。这些缺口并未被填补或篡改，如实传递。
+
+外部来源: 官方博客和分析报告，包括 Google Developers Blog 和 AAIF，以及 A2A GitHub Releases / Auth0 指南。
+
+独立来源说明: MCP 无状态化有 Google Developers Blog 与 AAIF 博客等多方独立证实；A2A 有官方 Releases 及 Auth0 验证。
+
+网络限制: 执行过程中存在 NETWORK_PARTIAL，部分历史链接 404，通过有效内容进行验证。
+
+## Daily Coverage Matrix
+Inherited from H5, coverage matrix preserves the execution status of all 30 days of September 2026, without recounting Daily files as independent evidence.
+
+## Weekly Coverage Matrix
+Inherited from H5, W36 remains BLOCKED for H4, and W37 reflects the DEGRADED status accurately.
+
+## Inherited Evidence
+All retained durable memories are inherited from the H5 reflection unless new web verification is added.
+
+## Independent Evidence Added
+NONE.
+
+## Missing Inputs Preserved
+Missing or blocked path status (e.g. 09-19 H2 BLOCKED) are not converted into historical success, maintaining execution facts.
+
+## Claim Calibration
+Any claim regarding MCP stateless implementation is restricted to protocol-level updates, rejecting any mandatory host repository migration absolute narratives.
 
 DURABLE_MEMORY
 
-NO_DURABLE_MEMORY_PROMOTION
+Memory ID: MEM-202609-01
+Memory: MCP 2026-07-28 确立了无状态协议架构，移除了 Session，要求请求自描述。
+Memory Status: PROVISIONAL_DURABLE
+Scope: 基于 MCP 协议的工具交互集成。
+Evidence: 官方博客 (AAIF) 及 Google Developers Blog 证实了无状态架构升级。
+Independent Evidence: 检索并验证了 Google Developers Blog 及 AAIF 上的长篇技术解读。
+Repository Record Evidence: 2026-09-01-H1 等多份记录。
+Counterevidence: 无反证，这是一项客观的协议层更迭。
+Limitations: 仅限协议交互，应用层仍可维持自有状态逻辑。不代表宿主仓库必须升级。
+Confidence: HIGH
+Validity Window: 12个月或直至新的 MCP 大版本。
+Why It Survived Reflection: 是经过核实的外部标准重大更替，具备参考价值。
+How Future Jules Should Use It: 架构评估和观察时需知晓 MCP 主流正在转向无状态。
+How Future Jules Must Not Use It: 不得作为宿主仓库强制实施或已完成实施的依据。
+Revalidation Trigger: 新版本发布。
+Expiration Trigger: MCP 推出完全不同架构。
+Host Repository Claim: NO
+
+Memory ID: MEM-202609-02
+Memory: A2A (Agent-to-Agent) v1.0 确立为代理间通讯标准，与 MCP 是互补关系。
+Memory Status: PROVISIONAL_DURABLE
+Scope: 代理间通讯协议观察。
+Evidence: Auth0 集成指南及官方 Releases 验证了其互补而非替代单体应用。
+Independent Evidence: 外部检索验证了 Auth0 的实际应用案例。
+Repository Record Evidence: 2026-09-13-H1/H2 等记录。
+Counterevidence: 行业曾有过“多代理彻底替代单体”的过度炒作。
+Limitations: 具体落地成本和安全影响还需进一步确认。
+Confidence: MEDIUM
+Validity Window: 6个月。
+Why It Survived Reflection: 提供了 MCP 工具层以外的代理协同方案视角。
+How Future Jules Should Use It: 作为探索协同架构时的标准依据。
+How Future Jules Must Not Use It: 不得视为单体代理模式已经完全失效的证据。
+Revalidation Trigger: 下一个主版本 A2A 发布或大规模失效报告。
+Expiration Trigger: 行业转向新的多代理协议。
+Host Repository Claim: NO
 
 EXPIRING_MEMORY
 
-NONE
+Memory: 系统必须立刻迁移至新版 MCP 并彻底取代单体架构。
+Previous Status: PROVISIONAL_DURABLE
+New Status: DOWNGRADED
+Reason: 属于毫无根据的绝对化要求，外部标准的改变并非强制性的业务命令。
+Superseding Evidence: H5 的校准指出 A2A 与 MCP 为互补的可选项。
+Repository Record Conflict: 修正了历史 H3 中关于强制重构的夸大表述。
+What Future Jules Must Stop Assuming: 不得把协议发布直接等同于“必须”采用。
+Conditions for Reconsideration: 无。
 
 NEXT_MONTH_BASELINE
-
-NONE
+优先观察方向: MCP 无状态集成的实际落地缺陷、A2A 跨越不同厂商时的鉴权挑战。
+Watchlist: MCP 缓存机制的稳定性和大规模应用时的性能报告。
+待验证声明: 长期运行的 Tasks (SEP-2663) 在企业环境的真实可靠性。
+优先来源: Google Developers, Auth0, 官方规范库。
+应降低权重的来源: 盲目宣告旧架构已完全死去的营销号。
+应避免的叙事误差: 将新发布协议视为“必定毫无风险且立刻生效”。
+已知输入缺口: 9月中旬及月末存在多次的 H1/H2 DEGRADED 和 BLOCKED，降低了该时段信号的连续性。
+已知联网限制: 部分早期关于 A2A 的页面链接 404，需依赖官方 Release Notes。
+开放问题: 基于 HTTP 头路由的具体企业网关兼容性问题。
+记忆复核时间: 2026-10-31
+失效事件: MCP 大量回滚无状态设计。
+仓库不可触碰边界: 只有仓库读写边界可以定义为不可协商，严格不触碰宿主代码和配置。
 
 BOUNDARY_CHECK
-未读取宿主仓库
-未读取 GitHub Actions
-未读取 Horizon 之外文件
-未写入 Horizon 之外文件
-未把当前 H6 当作历史记忆
-未公开私有提示词
-未作宿主仓库事实声明
-未使用无证据绝对化记忆
-未伪造联网验证
-
-## Current maintenance review
-
-Correction Date: 2026-09-02
-Correction Agent: Codex
-Monthly Maintenance Status: PARTIAL
-Maintenance Coverage: See 2026-09-02-maintenance-log.md for scoped paths and limits.
-Maintenance Change Log: 2026-09-02-maintenance-log.md
-Maintenance Validation: See the dated log for actual checks and their limits.
-Maintenance Unresolved: Full per-claim monthly propagation and all-source replay are not certified by this pass.
-
-The header retains the original author and execution facts. Corrections below or in the body are current review, not a replay of the original task.
-
-Calendar Interpretation: OPEN describes the original execution instant, before the target calendar month ended. The previously recorded CLOSED value was incorrect. The calendar ending later does not replay a blocked task or certify its conclusions.
-
-## CURRENT_RECONCILIATION_2026-09-13
-
-Reconciliation Treatment: MONTH_TO_DATE_ONLY
-Historical State Preserved: YES
-Current Month State: OPEN
-September Final H5/H6 Due: NO
-Current Interpretation: 本文件仍然是 2026-09-01 的早跑 `OPEN / REFLECTION_INPUT_MISSING / BLOCKED` 历史记录。到 2026-09-13，September 自然月仍未闭合，因此不能把它补写成 final H6，也不能把 9/1–9/13 的阶段观察压缩成 durable monthly memory。
-Month-to-Date Use: 9/1–9/13 的 Daily 与 W36 current reconciliation 可以进入独立的 month-to-date 汇总，但只能标记为阶段状态、候选主题和证据校准；不得产生 H5/H6 final 结论。
-Current Candidate Themes: MCP final-spec/current-roadmap 分层、A2A stable-v1 maturity、vendor implementation != universal architecture、later delivery != original availability。
-Not Promoted: NONE of the above is promoted here into durable monthly memory because the calendar month is still open.
-
-## CURRENT_MAINTENANCE_NOTE_2026-09-19
-
-Maintenance Agent: GPT Web Maintenance Agent  
-Maintenance Type: MONTH_OPEN_STATUS_REFRESH  
-Original Jules Execution Preserved: YES
-
-- As of 2026-09-19, September 2026 is still naturally open. This file remains the 2026-09-01 early-run `OPEN / REFLECTION_INPUT_MISSING / BLOCKED` snapshot.
-- It is **not** a September final H6 and must not be used as a durable monthly baseline.
-- W37 periodic recovery performed during this maintenance pass does not authorize month closure or durable promotion.
-- Final September H5/H6 remain not due until the natural month has ended.
-
-
-## CURRENT_MONTH_TO_DATE_ANNOTATION_2026-09-20
-
-Maintenance Agent: GPT Web Maintenance Agent
-Maintenance Type: ORIGINAL_FILE_MONTH_TO_DATE_BASELINE
-Original Jules Execution Preserved: YES
-Original Execution Date: 2026-09-01
-Original Reflection Input Status: REFLECTION_INPUT_MISSING
-Original Task Status: BLOCKED
-Original Durable Memory Promotion: NONE
-Current Month State: OPEN
-Natural Month Closure: NOT_DUE
-Final September H5: NOT_DUE / NOT_PRESENT
-Final September H6: NOT_DUE
-This File As Final H6: NO
-Current Use: MONTH_TO_DATE_BASELINE_ONLY
-
-This section does not replay the original H6
-
-It records the current repository-visible September 1–20 baseline one logical date at a time so that later Weekly and natural-month tasks do not need to infer history from path presence alone
-
-### Daily baseline 2026-09-01 through 2026-09-20
-
-| Date | H1 current path | H2 current path | Producer / task-time state | Current month-to-date interpretation |
-| --- | --- | --- | --- | --- |
-| 2026-09-01 | PRESENT | PRESENT | historical September opening pair | retain existing correction lineage, no later path is treated as proof of a different original execution |
-| 2026-09-02 | PRESENT | PRESENT | historical pair | source authority remains claim-specific, no host adoption inferred |
-| 2026-09-03 | PRESENT | PRESENT | historical pair | multiple protocol/implementation observations remain claim-scoped |
-| 2026-09-04 | PRESENT | PRESENT | historical pair | named implementation evidence remains weaker than universal architecture |
-| 2026-09-05 | PRESENT | PRESENT | historical pair | architecture-scope calibration retained |
-| 2026-09-06 | PRESENT | PRESENT | historical pair | A2A stable-v1 maturity does not establish broad adoption |
-| 2026-09-07 | PRESENT | PRESENT | H1 present, H2 original INPUT_MISSING / BLOCKED / NOT_RUN | current path completeness does not convert original H2 to success |
-| 2026-09-08 | PRESENT | PRESENT | Jules-native pair | one MCP official lineage, independent verification previously narrowed to NONE |
-| 2026-09-09 | PRESENT | PRESENT | Jules-native pair | repeated same MCP lineage, not independent corroboration |
-| 2026-09-10 | PRESENT | PRESENT | Jules-native pair | source-independence correction retained |
-| 2026-09-11 | PRESENT | PRESENT | Jules-native pair | official named mechanisms do not establish broad adoption |
-| 2026-09-12 | PRESENT | PRESENT | Jules-native pair | deployment guidance remains source-bounded |
-| 2026-09-13 | PRESENT | PRESENT | GPT Web Independent Maintainer / HUMAN_AUTHORIZED_RECONCILIATION | current paths are reconciliation evidence, not Jules-native cadence evidence |
-| 2026-09-14 | PRESENT | PRESENT | H1/H2 Jules-native DEGRADED / NETWORK_UNAVAILABLE / SOURCE_UNVERIFIED | no material external signal established, external-change state remains UNKNOWN |
-| 2026-09-15 | PRESENT | PRESENT | H1/H2 Jules-native DEGRADED / NETWORK_UNAVAILABLE / SOURCE_UNVERIFIED | same as 9/14, plus recorded execution time remains unknown where not established |
-| 2026-09-16 | PRESENT | PRESENT | H1 SUCCESS, H2 original INPUT_MISSING / BLOCKED | later H1 presence does not replay original H2 |
-| 2026-09-17 | PRESENT | PRESENT | H1/H2 Jules-native DEGRADED / NETWORK_UNAVAILABLE | no source-backed external conclusion may be synthesized |
-| 2026-09-18 | PRESENT | PRESENT | H1/H2 Jules-native DEGRADED / NETWORK_UNAVAILABLE | evidence gap remains explicit |
-| 2026-09-19 | PRESENT | PRESENT | H1 SUCCESS / NETWORK_PARTIAL with temporal provenance conflict, H2 original INPUT_MISSING / BLOCKED | exact H1 execution time remains UNKNOWN, H2 stays fail-closed, MCP documents remain one publisher family |
-| 2026-09-20 | PRESENT | PRESENT | H1 SUCCESS / NETWORK_PARTIAL, H2 original INPUT_MISSING / BLOCKED | PR #602 H1 later merged before PR #603 H2, optimistic-lock visibility failure preserved |
-
-### Daily coverage accounting
-
-Current H1 path count through 2026-09-20: 20 / 20
-
-Current H2 path count through 2026-09-20: 20 / 20
-
-Current path completeness:
-
-```text
-20 H1 + 20 H2 paths present
-```
-
-Task-time completeness is lower than current path completeness because:
-
-- 2026-09-07 H2 was BLOCKED by missing same-day H1
-- 2026-09-16 H2 was BLOCKED by missing same-day H1
-- 2026-09-19 H2 was BLOCKED by missing same-day H1
-- 2026-09-20 H2 was BLOCKED by missing same-day H1
-- 2026-09-13 pair is later human-authorized reconciliation rather than Jules-native cadence
-- several W38 dates are network/source degraded
-
-Therefore:
-
-```text
-CURRENT_PATH_COVERAGE_20_OF_20
-!= TWENTY_NATIVE_SUCCESSFUL_OBSERVE_ORIENT_CHAINS
-```
-
-### Weekly baseline
-
-#### 2026-W36
-
-Coverage window: 2026-08-31 through 2026-09-06
-
-Current state:
-
-- current H3 synthesis exists
-- original H4 task-time execution remained DECISION_INPUT_MISSING / BLOCKED
-- later synthesis did not create a contemporaneous clean H3→H4 chain
-- inherited Daily source repetition remains one lineage unless independently strengthened
-
-Current interpretation:
-
-```text
-CURRENT_W36_SYNTHESIS_PRESENT
-+
-ORIGINAL_H4_BLOCKED_STATE_PRESERVED
-```
-
-#### 2026-W37
-
-Coverage window: 2026-09-07 through 2026-09-13
-
-Current state:
-
-- H3 current path present
-- H4 current path present
-- those current weekly files are maintenance-recovery artifacts, not an original native Jules final chain
-- 2026-09-07 H2 remains task-time BLOCKED
-- 2026-09-13 H1/H2 remain human-authorized reconciliation
-
-Current interpretation:
-
-```text
-CURRENT_W37_PERIODIC_RECOVERY_PRESENT
-!= ORIGINAL_JULES_NATIVE_WEEKLY_CHAIN
-```
-
-#### 2026-W38
-
-Coverage window: 2026-09-14 through 2026-09-20
-
-Current state:
-
-- 7 H1 current paths present
-- 7 H2 current paths present
-- H3 created as HUMAN_AUTHORIZED_PERIOD_COMPLETION after current inputs became visible
-- original Jules H4 executed earlier with DECISION_INPUT_MISSING / BLOCKED
-- the same H4 file now contains a later current-maintenance action completion section
-- 9/16, 9/19 and 9/20 H2 remain original task-time BLOCKED
-- 9/14, 9/15, 9/17 and 9/18 preserve network/source degradation
-
-Current interpretation:
-
-```text
-CURRENT_W38_DECISION_ACTION_SURFACE_COMPLETE
-WITH_ORIGINAL_TASK_TIME_GAPS_PRESERVED
-```
-
-### Month-to-date candidate themes
-
-These themes are current month-to-date synthesis only
-
-They are not durable H6 promotion
-
-1. Dependency visibility and optimistic-lock semantics
-   - current path presence does not prove original input availability
-   - repeated 9/7, 9/16, 9/19 and 9/20 fail-closed H2 cases make this a strong repository-local maintenance pattern
-
-2. Source-lineage independence
-   - repeated MCP official pages across dates remain one source lineage
-   - H2 restatement does not upgrade H1 evidence
-   - Weekly inheritance does not create independence
-
-3. Network and evidence gaps
-   - NETWORK_UNAVAILABLE and SOURCE_UNVERIFIED remain UNKNOWN external state
-   - no material signal established is weaker than verified no change
-
-4. Protocol state versus adoption
-   - specification release
-   - roadmap intent
-   - named implementation guidance
-   - broad deployment
-   - host applicability
-   remain different claims
-
-5. Historical execution versus current repository state
-   - blocked history survives later path completion
-   - reconciliation records do not become native producer history
-   - commit chronology and declared execution time remain separate evidence
-
-### Not promoted
-
-No durable September H6 memory is promoted by this annotation
-
-Reasons:
-
-- natural month has not ended
-- final September H5 has not executed
-- current September contains mixed provenance and preserved blocked states
-- W38 current completion includes later maintainer synthesis rather than a native original chain
-- month-to-date themes still require natural-month reflection before durable retention
-
-### Final boundary
-
-```text
-September 1–20 baseline = CURRENT_MONTH_TO_DATE_ONLY
-
-Month Closure Status = OPEN
-
-Final H5 = NOT_DUE
-
-Final H6 = NOT_DUE
-
-Durable Memory Promotion = NO
-```
-
-## CURRENT_MONTH_TO_DATE_ANNOTATION_2026-09-22_REVIEW_CUT
-
-Maintenance Agent: GPT Web Maintenance Agent
-Maintenance Type: FORWARD_MONTH_TO_DATE_RECONCILIATION
-Original Jules Execution Preserved: YES
-Original Execution Date: 2026-09-01
-Original Reflection Input Status: REFLECTION_INPUT_MISSING
-Original Task Status: BLOCKED
-Original Durable Memory Promotion: NONE
-Current Month State: OPEN
-Natural Month Closure: NOT_DUE
-Final September H5: NOT_DUE / NOT_PRESENT
-Final September H6: NOT_DUE
-This File As Final H6: NO
-Current Use: MONTH_TO_DATE_BASELINE_ONLY
-Current Retained Daily Coverage Through: 2026-09-21
-Reconciliation Cut: 2026-09-22
-2026-09-22 H1/H2 Current Paths At Review Cut: NOT_OBSERVED_IN_CURRENT_MAIN
-2026-09-22 Historical Missing Classification: NOT_ASSIGNED_BY_THIS_RECONCILIATION
-
-This section advances only the current month-to-date interpretation from the prior 2026-09-20 annotation
-
-It does not replay the original H6, does not manufacture a 2026-09-22 Daily, and does not convert W39 into a closed Weekly period
-
-### File-by-file review — 2026-09-21 H1
-
-Reviewed file:
-
-`horizon-cortex/2026-09-21-H1-signal-observe.md`
-
-Observed task-time state:
-
-- Agent: Jules
-- Record Provenance: JULES_NATIVE
-- Network Status: NETWORK_PARTIAL
-- Source Status: PRESENT
-- Task Status: SUCCESS
-- Source Authority For Claim: OFFICIAL
-- Independent Verification: NO_CROSS_PUBLISHER_CORROBORATION
-- Host Applicability: UNKNOWN
-
-Material signal retained:
-
-- a2a-js v1.2.0 is recorded from the official A2A JavaScript changelog as a 2026-09-18 SDK-level implementation release
-- MCP July specification and August roadmap were revisited in the same publisher lineage and did not create new independent strengthening
-
-Current month-to-date interpretation:
-
-```text
-A2A_JS_SDK_RELEASE
-!= A2A_CORE_PROTOCOL_VERSION_CHANGE
-!= CROSS_LANGUAGE_PARITY
-!= DEPLOYMENT_ADOPTION
-!= HOST_CAPABILITY
-```
-
-The H1 file explicitly records `NETWORK_PARTIAL`
-
-Therefore the month-to-date layer must preserve that the observation opportunity succeeded within a partial-network evidence surface rather than converting it to universal external-state completeness
-
-The two MCP pages remain one MCP publisher lineage
-
-The A2A release surface and a2a-js changelog remain one A2A project lineage for independence accounting unless an object-matched independent publisher/source is added
-
-### File-by-file review — 2026-09-21 H2
-
-Reviewed file:
-
-`horizon-cortex/2026-09-21-H2-horizon-orient.md`
-
-Original task-time state:
-
-- Agent: Jules
-- Record Provenance: JULES_NATIVE
-- Input Status: INPUT_MISSING
-- Network Status: NOT_RUN
-- Source Status: NONE
-- Task Status: BLOCKED
-- Original Orientation Performed: NO
-
-Later current-state evidence:
-
-- same-date H1 is now present on current main
-- H1 merged after the original H2 task-time execution
-- the owning H2 already contains `CURRENT_EXECUTION_RECONCILIATION_2026-09-21`
-
-Current month-to-date interpretation:
-
-```text
-LATER_H1_PRESENT
-!= ORIGINAL_H2_INPUT_AVAILABLE
-
-CURRENT_UPSTREAM_SIGNAL_KNOWN
-!= ORIGINAL_H2_ORIENTATION_PERFORMED
-
-RECONCILIATION
-!= REPLAY
-!= SUCCESS_REWRITE
-```
-
-No retroactive H2 orientation is added by this Monthly annotation
-
-No H2 source independence, decision, Weekly promotion, or successful Observe→Orient chain is manufactured
-
-### Updated Daily coverage accounting
-
-Current retained H1 paths through 2026-09-21: 21 / 21
-
-Current retained H2 paths through 2026-09-21: 21 / 21
-
-Task-time completeness remains lower than current path completeness
-
-The existing exception set now also includes 2026-09-21 H2
-
-Current explicit task-time blocked H2 examples in the September baseline include:
-
-- 2026-09-07
-- 2026-09-16
-- 2026-09-19
-- 2026-09-20
-- 2026-09-21
-
-The 2026-09-13 pair remains later human-authorized reconciliation rather than native Jules cadence
-
-Therefore:
-
-```text
-CURRENT_PATH_COVERAGE_21_OF_21
-!= TWENTY_ONE_NATIVE_SUCCESSFUL_OBSERVE_ORIENT_CHAINS
-```
-
-### W39 state
-
-W39 begins on 2026-09-21
-
-At this review cut:
-
-- 2026-09-21 H1 current path: PRESENT
-- 2026-09-21 H2 current path: PRESENT with original BLOCKED state preserved
-- W39 H3 final: NOT_DUE
-- W39 H4 final: NOT_DUE
-- W39 natural-week closure: NOT_CLAIMED
-
-No Weekly artifact is created by this reconciliation
-
-### Current candidate-theme delta
-
-The prior 9/1–9/20 candidate themes remain intact
-
-2026-09-21 adds one more repository-local example to the dependency-visibility / optimistic-lock theme
-
-It does **not** add a new durable H6 memory
-
-The strongest current local pattern remains:
-
-```text
-UPSTREAM_PATH_EVENTUALLY_PRESENT
-!= DOWNSTREAM_INPUT_AVAILABLE_AT_EXECUTION_TIME
-```
-
-The strongest external-observation boundary remains:
-
-```text
-OFFICIAL_SDK_CHANGE
-!= PROTOCOL_MATURITY_CHANGE
-!= HOST_APPLICABILITY
-```
-
-### 2026-09-22 review-cut boundary
-
-No 2026-09-22 H1/H2 current path was observed on the reviewed main at this reconciliation cut
-
-This pass does not classify that absence as a historical missed task because this maintenance record is not reconstructing or certifying the scheduler's due-time state
-
-It records only:
-
-```text
-CURRENT_MAIN_PATH_NOT_OBSERVED_AT_REVIEW_CUT
-```
-
-and leaves later scheduled execution or later recovery to its own point-in-time record
-
-### Final boundary
-
-```text
-September 1–21 retained baseline = CURRENT_MONTH_TO_DATE_ONLY
-
-Month Closure Status = OPEN
-
-W39 = IN_PROGRESS
-
-Final H5 = NOT_DUE
-
-Final H6 = NOT_DUE
-
-Durable Memory Promotion = NO
-
-2026-09-22 Missing Classification = NOT_ASSIGNED
-```
-
-## CURRENT_MONTH_TO_DATE_EXTENSION_2026-09-22_AFTER_JULES_DELIVERY
-
-Maintenance Agent: GPT Web Maintenance Agent
-Maintenance Type: FORWARD_MONTH_TO_DATE_RECONCILIATION
-Original 2026-09-22 H1/H2 Files Preserved: YES
-Current Month State: OPEN
-Current Retained Daily Coverage Through: 2026-09-22
-Natural Month Closure: NOT_DUE
-Final September H5: NOT_DUE
-Final September H6: NOT_DUE
-W39 State: IN_PROGRESS
-Durable Memory Promotion: NO
-
-This section supersedes only the earlier point-in-time review-cut statement that 2026-09-22 paths had not yet been observed
-
-It does not erase that earlier observation
-
-The later Jules deliveries are new current-state evidence
-
-### File-by-file review — 2026-09-22 H1
-
-Reviewed file:
-
-`horizon-cortex/2026-09-22-H1-signal-observe.md`
-
-Observed task-time state:
-
-- Agent: Jules
-- Record Provenance: JULES_NATIVE
-- Network Status: NETWORK_PARTIAL
-- Source Status: PRESENT
-- Task Status: SUCCESS
-- Raw Signal Log: NO_MATERIAL_NEW_SIGNAL
-- Independent Verification: NO_CROSS_PUBLISHER_CORROBORATION
-- Host Applicability: UNKNOWN
-
-The run re-opened MCP and A2A official surfaces
-
-Those reads remain continuity evidence and same-project/same-publisher lineage observations
-
-No new material external signal was established
-
-Current interpretation:
-
-```text
-SOURCE_REVISIT
-!= NEW_SIGNAL
-
-CONTINUITY_EVIDENCE
-!= INDEPENDENT_CORROBORATION
-
-NO_MATERIAL_NEW_SIGNAL
-!= VERIFIED_GLOBAL_NO_CHANGE
-```
-
-Because the network remained partial, the run cannot establish that no relevant external change existed outside the inspected surfaces
-
-### File-by-file review — 2026-09-22 H2
-
-Reviewed file:
-
-`horizon-cortex/2026-09-22-H2-horizon-orient.md`
-
-Task-time state:
-
-- Agent: Jules
-- Input Status: PRESENT
-- Network Status: NETWORK_PARTIAL
-- Source Status: PRESENT
-- Task Status: DEGRADED
-- same-date H1 consumed
-- Host Applicability: UNKNOWN
-- Promotion Eligibility: NONE
-
-Periodic review found one owning-source semantic defect in the first merged H2 draft
-
-The H1 raw signal log was `NO_MATERIAL_NEW_SIGNAL`, but H2 had assigned four synthetic `SIG-20260922-*` identifiers to continuity/source checks
-
-That would incorrectly turn source revisits into H1 signals
-
-The H2 owning source is corrected forward to:
-
-```text
-H1_NO_MATERIAL_NEW_SIGNAL
-+
-H2_CONTINUITY_VERIFICATION
-!= NEW_H1_SIGNAL
-!= STRATEGIC_SIGNAL
-```
-
-Git history retains the earlier body
-
-The correction does not alter H1
-
-It does not invent a new signal
-
-It does not create source independence
-
-It does not convert DEGRADED to SUCCESS
-
-### Updated Daily coverage accounting
-
-Current retained H1 paths through 2026-09-22: 22 / 22
-
-Current retained H2 paths through 2026-09-22: 22 / 22
-
-Task-time heterogeneity remains explicit
-
-The historical blocked H2 dates remain blocked
-
-The 2026-09-22 pair is a Jules-native H1 SUCCESS / H2 DEGRADED pair, not a new strategic-signal chain
-
-### W39 state
-
-W39 remains IN_PROGRESS
-
-Current retained dates:
-- 2026-09-21
-- 2026-09-22
-
-H3 final: NOT_DUE
-H4 final: NOT_DUE
-Natural-week closure: NOT_CLAIMED
-
-No W39 Weekly artifact is created by this reconciliation
-
-### Current month-to-date effect
-
-2026-09-22 does not add a durable memory candidate
-
-It strengthens an existing methodological boundary:
-
-```text
-REPEATED_OFFICIAL_SOURCE_CHECK
-!= NEW_SIGNAL
-!= NEW_INDEPENDENT_EVIDENCE
-```
-
-No host-repository fact or action is inferred
-
-### Final current boundary
-
-```text
-September 1–22 retained baseline = CURRENT_MONTH_TO_DATE_ONLY
-Month Closure Status = OPEN
-W39 = IN_PROGRESS
-Final H5 = NOT_DUE
-Final H6 = NOT_DUE
-Durable Memory Promotion = NO
-```
-
-
-
-## NIGHTLY_FULL_REVIEW_2026-09-22
-
-Review scope: 2026-09-01 through 2026-09-22, every retained H1/H2 Daily pair, W36/W37/W38, W39 current open state, and September month-to-date ownership.
-
-This is a nightly retrospective reconciliation, not a new audit artifact and not a replay of earlier tasks.
-
-Key retained boundaries after file-by-file review:
-- current 22/22 H1/H2 paths do not mean 22 native successful Observe→Orient chains;
-- 2026-09-07, 09-16, 09-19, 09-20 and 09-21 retain task-time blocked/degraded H2 history where recorded;
-- 2026-09-13 remains human-authorized reconciliation rather than Jules-native cadence evidence;
-- 2026-09-22 H1 remains NO_MATERIAL_NEW_SIGNAL and H2 remains continuity verification only; no synthetic strategic signal is created;
-- W36/W37/W38 later current-state completion does not rewrite original blocked or missing-input snapshots;
-- W39 remains IN_PROGRESS; September remains OPEN; H5/H6 natural-month final remains NOT_DUE.
-
-Nightly interpretation:
-
-```text
-CURRENT_PATH_COMPLETE
-!= ORIGINAL_EXECUTION_COMPLETE
-!= NATIVE_CHAIN_COMPLETE
-
-LATER_RECONCILIATION
-!= EARLIER_INPUT_AVAILABILITY
-
-MONTH_OPEN
-!= FINAL_MONTHLY_MEMORY
-```
-
-No durable memory promotion is authorized by this nightly pass.
-
-
-## CURRENT_MONTH_TO_DATE_EXTENSION_2026-09-23
-
-Maintenance type: A2 current-state reconciliation.
-This section updates the current September owner without rewriting any earlier Daily or Weekly execution.
-
-Current repository-visible Daily paths now include 2026-09-23 H1 and H2.
-
-The 2026-09-23 H2 task-time record is:
-
-- Input Status: INPUT_MISSING
-- Network Status: NOT_RUN
-- Source Status: NONE
-- Task Status: BLOCKED
-- Record Provenance: JULES_NATIVE
-
-The same-date H1 path is present on current main only as later current-state evidence relative to the blocked H2 execution.
-
-Therefore:
-
-```text
-CURRENT_H1_PATH_PRESENT
-+
-CURRENT_H2_PATH_PRESENT
-!= H1_AVAILABLE_TO_H2_AT_TASK_TIME
-
-LATER_H1_DELIVERY
-!= RETROACTIVE_H2_ORIENTATION
-
-CURRENT_PATH_COVERAGE
-!= NATIVE_SUCCESSFUL_CHAIN_COVERAGE
-```
-
-Current month-to-date boundary:
-
-- retained H1 paths through 2026-09-23: 23 / 23
-- retained H2 paths through 2026-09-23: 23 / 23
-- 2026-09-23 H2 original status: BLOCKED
-- W39: IN_PROGRESS
-- September natural month: OPEN
-- final H5: NOT_DUE
-- final H6: NOT_DUE
-- durable memory promotion: NO
-
-The existing 9/22 and earlier task-time exceptions remain historical. No Weekly artifact is synthesized by this reconciliation.
-
-## SEPTEMBER_DUAL_CUTOFF_MAINTENANCE_2026-09-23
-
-### A1 / N-1 cutoff — 2026-09-22
-
-- Review scope: all retained September H1/H2 Daily pairs through 2026-09-22, W36/W37/W38, W39 open state, and the month-to-date H5/H6 ownership surface.
-- Calibration rule: preserve task-time INPUT_MISSING / BLOCKED / DEGRADED / NETWORK_PARTIAL states and later reconciliation provenance; current path presence is not retroactive execution success.
-- Specific 9/22 result: H1 remains NO_MATERIAL_NEW_SIGNAL within inspected surfaces; H2 remains DEGRADED continuity verification and does not manufacture strategic signals.
-- September remains OPEN. Final H5/H6 and durable memory promotion remain NOT_DUE / NO.
-
-### A2 / N cutoff — 2026-09-23
-
-- Current inventory includes 2026-09-23 H1 and H2 paths, but the 2026-09-23 H2 task-time record remains INPUT_MISSING / NOT_RUN / BLOCKED where originally recorded.
-- Current 23/23 path visibility is documentary completeness only; it is not 23 native successful Observe→Orient chains.
-- W39 remains IN_PROGRESS and September remains OPEN; no natural-month finalization or durable-memory promotion is created by this reconciliation.
-- This A2 note extends current interpretation only and does not replace the A1 / 2026-09-22 calibration above.
-## SEPTEMBER_DUAL_CUTOFF_MAINTENANCE_2026-09-24
-
-### A1 / N-1 cutoff — full September review through 2026-09-23
-
-- Review scope: all retained September H1/H2 Daily pairs from 2026-09-01 through 2026-09-23, W36/W37/W38, W39 open state, and the month-to-date H5/H6 ownership surface.
-- Every original task-time `INPUT_MISSING`, `BLOCKED`, `DEGRADED`, `NETWORK_PARTIAL`, reconstruction, correction, and later-delivery boundary remains point-in-time evidence.
-- 2026-09-23 remains a path-complete but not native-successful Observe→Orient chain because the original H2 was blocked before later H1 availability.
-- Current path completeness does not rewrite earlier execution availability.
-- September remains OPEN. Final H5/H6 and durable-memory promotion remain NOT_DUE / NO.
-### A2 / N cutoff — 2026-09-24 current-state reconciliation
-
-Current main now retains the 2026-09-24 H1/H2 pair on top of the complete A1 September-through-2026-09-23 review.
-
-2026-09-24 current Horizon state:
-- H1: `SUCCESS / NETWORK_PARTIAL`, with one official MCP Ruby SDK 1.0 fact whose external event date is 2026-07-27 and observation date is 2026-09-24.
-- H1 freshness: `HISTORICAL_NEWLY_DISCOVERED`, not a same-day external release.
-- H2: input present, `DEGRADED / NETWORK_PARTIAL`, watchlist only, no host applicability promotion.
-- H2 execution time: `UNVERIFIED`; repository delivery time is retained separately and is not backfilled into execution time.
-- Independent cross-publisher corroboration: not established.
-- Host applicability: UNKNOWN.
-- W39 remains IN_PROGRESS.
-- September remains OPEN.
-- final H5/H6 and durable-memory promotion remain NOT_DUE / NO.
-
-```text
-HISTORICAL_FACT_DISCOVERED_TODAY
-!= EXTERNAL_EVENT_TODAY
-
-DELIVERY_TIME
-!= EXECUTION_TIME
-
-CURRENT_PATH_COMPLETE
-!= ALL_NATIVE_CHAINS_SUCCESSFUL
-```
-
-This A2 section is additive to the A1 / 2026-09-23 cutoff and does not rewrite any earlier Daily, Weekly, blocked dependency, or network-degraded state.
-
-## 中秋加班维护补充 — A2 / N = 2026-09-24
-
-本段保存 2026-09-24 这个逻辑切点的月内关系版本. 写入发生在更晚的维护窗口, 因此 2026-09-25 已经出现的文件属于 later evidence, 不被倒灌进 9 月 24 日的 snapshot.
-
-在 A1 已完整覆盖 9 月 1 日至 9 月 23 日之后, A2 只增加 9 月 24 日的新输入并重新判断整月关系. 9 月 24 日 H1/H2 继续保持 `SUCCESS / NETWORK_PARTIAL` 与 `DEGRADED / NETWORK_PARTIAL` 的原始边界, historical-newly-discovered fact 不被写成当日外部发布. W39 仍在进行, September 仍为 OPEN, final H5/H6 和 durable-memory promotion 在该切点都不成立.
-
-中秋加班维护的作用是把月内关系写清楚, 不是把 9 月 25 日的后来成功或后来来源提前到 9 月 24 日. Horizon 与 Host/NEXUS/Parallax 继续是不同证据平面.
-
-```text
-A1_MERGED_THROUGH_2026_09_23
-+
-N_DAY_2026_09_24
-=
-SEPTEMBER_RELATIONAL_CUT_2026_09_24
-
-LATER_2026_09_25_EVIDENCE
-!= 2026_09_24_SNAPSHOT
-```
-
-
-## 2026-09-25 A1 — September full-coverage maintenance through 2026-09-24
-
-Base revision: `0dcd141de7ba925a8ffca459289e803996dc2772`. Cutoff: 2026-09-24 Asia/Shanghai.
-
-Coverage decision summary:
-- 2026-09-01..2026-09-23 Horizon H1/H2, due Weekly surfaces, and prior September owner state: re-read against current main; prior point-in-time decisions remain authoritative and are `NO_FOLLOW_UP` except already-recorded corrections/reconciliations.
-- 2026-09-24 H1/H2: `APPEND_RELATION`. H1 remains `SUCCESS / NETWORK_PARTIAL`; H2 remains `DEGRADED / NETWORK_PARTIAL`. This does not upgrade source independence or host/NEXUS state.
-- W39: `NOT_DUE` for closure. September: `NOT_DUE` for natural-month final H5/H6 promotion.
-- Historical `INPUT_MISSING`, `BLOCKED`, reconstruction, later-delivery, and network-degraded states remain unchanged.
-
-```text
-A1_CUTOFF_2026_09_24
-=
-COVERAGE_RECHECKED
-+
-DECISIONS_RECONFIRMED
-
-LATER_PATH_PRESENT
-!= ORIGINAL_INPUT_AVAILABLE
-CURRENT_COMPLETENESS
-!= HISTORICAL_SUCCESS
-```
-
-
-## 2026-09-25 A2 — current September relational version
-
-Base revision after merged A1: `d84bf05a49d45184b6c86852c654f634169c8ffd`. N-day input: 2026-09-25.
-
-Current month evolution:
-- The merged A1 cutoff through 2026-09-24 remains intact.
-- 2026-09-25 H1 is Jules-native `SUCCESS / NETWORK_PARTIAL`, official-source lineage, with no cross-publisher corroboration and Host Applicability `UNKNOWN`.
-- 2026-09-25 H2 consumed the exact same-date H1 and is `DEGRADED / NETWORK_PARTIAL`; input is PRESENT, but independent verification remains NONE.
-- This strengthens chronology continuity only. It does not upgrade evidence independence, host/NEXUS adoption, runtime capability, or durable-memory promotion.
-- W39 remains OPEN/IN_PROGRESS. September remains OPEN. Final H5/H6 remains `NOT_DUE`.
-
-A2 evolution: `NO_MATERIAL_CHANGE` to durable Horizon doctrine; current chronology is extended through 2026-09-25.
-
-```text
-A1_MERGED_THROUGH_2026_09_24
-+
-H1_H2_2026_09_25
-=
-CURRENT_SEPTEMBER_RELATION
-
-INPUT_PRESENT
-!= INDEPENDENT_CORROBORATION
-HORIZON_EVIDENCE
-!= HOST_OR_NEXUS_STATE
-```
-
-## SUCCESSOR_A1_FULL_COVERAGE_2026-09-26_FOR_LOGICAL_2026-09-25
-
-- Maintenance task type: TEN_REPOSITORY_MONTHLY_A1_SUCCESSOR
-- Logical maintenance date: 2026-09-25
-- A1 cutoff: 2026-09-24 Asia/Shanghai
-- Historical thin A1 PR retained: #630
-- Successor purpose: restore full-coverage/decision depth without rewriting the merged thin PR.
-- Transport base is later current main; later 2026-09-25/26 artifacts are explicitly excluded from A1 evidence.
-- Owner family: Horizon H1/H2
-- History rewrite: NO
-- Runtime replay: NOT_EXECUTED
-- External recertification: NOT_PERFORMED_BY_THIS_SUCCESSOR
-- Natural September close: NOT_DUE at logical cutoff
-
-### Coverage method
-
-- Recover the existing month owner and prior dated reconciliations.
-- Preserve original task-time negative/degraded states where already recorded.
-- Use current path presence only as current repository state, never as proof of earlier availability.
-- Record one explicit decision per logical date so NO_FOLLOW_UP is distinguishable from NOT_REVIEWED.
-- Reuse existing correction/reconciliation ownership instead of cloning the same correction into historical files.
-- Do not award new research, source-independence, runtime, hypothesis, or durable-memory credit.
-
-### Date-by-date coverage ledger
-
-#### 2026-09-01
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: NO_FOLLOW_UP.
-- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
-#### 2026-09-02
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: NO_FOLLOW_UP.
-- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
-#### 2026-09-03
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: NO_FOLLOW_UP.
-- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
-#### 2026-09-04
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: NO_FOLLOW_UP.
-- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
-#### 2026-09-05
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: NO_FOLLOW_UP.
-- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
-#### 2026-09-06
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: NO_FOLLOW_UP.
-- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
-#### 2026-09-07
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
-- Rationale: H2 original INPUT_MISSING/BLOCKED preserved; later path presence is not task-time availability.
-#### 2026-09-08
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: NO_FOLLOW_UP.
-- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
-#### 2026-09-09
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: NO_FOLLOW_UP.
-- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
-#### 2026-09-10
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: NO_FOLLOW_UP.
-- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
-#### 2026-09-11
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: NO_FOLLOW_UP.
-- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
-#### 2026-09-12
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: NO_FOLLOW_UP.
-- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
-#### 2026-09-13
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
-- Rationale: Current pair is human-authorized reconciliation, not Jules-native cadence evidence.
-#### 2026-09-14
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
-- Rationale: Network/source degradation preserved; no verified external-change claim synthesized.
-#### 2026-09-15
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
-- Rationale: Network/source degradation preserved; execution time remains unknown where not established.
-#### 2026-09-16
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
-- Rationale: H2 original INPUT_MISSING/BLOCKED preserved after later H1 visibility.
-#### 2026-09-17
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
-- Rationale: NETWORK_UNAVAILABLE/DEGRADED remains negative evidence, not verified no-change.
-#### 2026-09-18
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
-- Rationale: NETWORK_UNAVAILABLE/DEGRADED remains negative evidence, not verified no-change.
-#### 2026-09-19
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
-- Rationale: Temporal provenance conflict and H2 INPUT_MISSING/BLOCKED remain preserved.
-#### 2026-09-20
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
-- Rationale: Optimistic-lock visibility failure preserved; later H1 merge does not replay H2.
-#### 2026-09-21
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: NO_FOLLOW_UP.
-- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
-#### 2026-09-22
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: NO_FOLLOW_UP.
-- Rationale: No new defect requiring direct historical-file mutation is established by the successor review; existing dated state remains controlling.
-#### 2026-09-23
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
-- Rationale: Retain the already-recorded point-in-time state and any existing reconciliation; no duplicate correction is created.
-#### 2026-09-24
-- Coverage: REVIEWED_IN_MONTH_OWNER / Horizon H1/H2.
-- Decision: APPEND_RELATION_OR_RETAIN_EXISTING_RECONCILIATION.
-- Rationale: Native H1 SUCCESS and H2 DEGRADED/NETWORK_PARTIAL remain bounded to the historical Ruby-SDK signal and same-lineage evidence.
-
-### Cross-period decisions
-
-- W36/W37/W38 remain historical weekly windows and are not replayed by this A1 successor.
-- W39 is still open at the 2026-09-24 cutoff; no weekly-final credit is created.
-- September is OPEN at the cutoff; natural-month finalization and durable promotion remain NOT_DUE.
-- Existing Special/derived artifacts retain their original provenance and do not become native Daily executions.
-- Existing reconstruction artifacts retain zero native-execution/research credit where already declared.
-- Same-publisher or same-lineage repetition remains non-independent unless an existing owner explicitly establishes otherwise.
-- Current repository completeness is not substituted for task-time completeness.
-- Later 2026-09-25 input belongs to A2, not this A1.
-- Later 2026-09-26 state is outside the logical task and is not back-projected.
-
-### A1 successor disposition
-
-- Coverage completeness: RECORDED_FOR_2026-09-01_THROUGH_2026-09-24.
-- Decision completeness: RECORDED_PER_LOGICAL_DATE.
-- Direct historical rewrite required: NO, except existing owning corrections already retained.
-- New runtime/test execution credit: NONE.
-- New independent-source credit: NONE.
-- New durable monthly promotion: NONE.
-- Handoff: merge this A1 successor, fresh-read main, then build the A2 successor for the 2026-09-25 current-month relational version.
-
-## SUCCESSOR_A2_CURRENT_MONTH_RELATION_2026-09-26_FOR_LOGICAL_2026-09-25
-
-- Maintenance task type: TEN_REPOSITORY_MONTHLY_A2_SUCCESSOR
-- Logical maintenance date: 2026-09-25
-- Current-month relation window: 2026-09-01 through 2026-09-25
-- Historical thin A2 PR retained: #631
-- Required predecessor successor A1: #635
-- A1 merged main used as A2 base: 3a9b779c5e4fe08f7dda5ba61262543047e27dd1
-- Owner family: Horizon H1/H2
-- Later 2026-09-26 artifacts may exist on transport main but are outside this logical A2 relation.
-- History rewrite: NO
-- Runtime/external replay by this successor: NOT_EXECUTED
-
-### A2 compilation rules
-
-- Inherit the merged A1 2026-09-01..2026-09-24 coverage ledger; do not duplicate historical corrections into old files.
-- Add the N-day input as a new relational edge, not as a replacement for the A1 snapshot.
-- Preserve all earlier BLOCKED/DEGRADED/RECONSTRUCTION/UNKNOWN states.
-- Preserve source-lineage and host/local applicability limits.
-- Preserve event/observation/execution/delivery/correction dates as distinct time axes.
-- Keep W39 and September OPEN at logical 2026-09-25.
-- Exclude 2026-09-26 later state from this current-month version.
-
-### Current-month relational ledger
-
-#### 2026-09-01
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-02
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-03
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-04
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-05
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-06
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-07
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-08
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-09
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-10
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-11
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-12
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-13
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-14
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-15
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-16
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-17
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-18
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-19
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-20
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-21
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-22
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-23
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-24
-- Relation source: inherited from merged A1 successor #635.
-- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
-- Current-month effect: earlier dated state remains part of the September chain; later path completeness does not upgrade task-time evidence.
-#### 2026-09-25
-- Relation source: N_DAY_INPUT_2026-09-25.
-- Decision: APPEND_RELATION.
-- Current-month effect: 2026-09-25 H1 is Jules-native SUCCESS / NETWORK_PARTIAL; H2 consumes the same-date H1 and is DEGRADED / NETWORK_PARTIAL. The observed MCP continuity remains same-publisher lineage, Host Applicability UNKNOWN, and no durable promotion follows.
-
-### N-day integration
-
-- 2026-09-25 H1 is Jules-native SUCCESS / NETWORK_PARTIAL; H2 consumes the same-date H1 and is DEGRADED / NETWORK_PARTIAL. The observed MCP continuity remains same-publisher lineage, Host Applicability UNKNOWN, and no durable promotion follows.
-- The N-day input extends chronology only within its owned evidence plane.
-- Same-source restatement or derived aggregation does not create independent corroboration.
-- N-day success does not repair earlier task-time missing/blocked/degraded states.
-- No natural-month final, durable-memory/doctrine promotion, or governance distillation is authorized.
-- W39 remains in progress; any later weekly settlement belongs to its own due window.
-
-### Current-vs-later boundary
-
-- Logical A2 current date = 2026-09-25.
-- Current repository transport date = later than the logical task.
-- 2026-09-26 material = LATER_EVIDENCE / OUTSIDE_A2_INPUT.
-- Later current-path presence may be mentioned only to prevent back-projection, never as 9/25 evidence.
-- Historical thin A2 remains a point-in-time record; this successor deepens and reconciles it.
-
-### A2 successor disposition
-
-- Relationship continuity: RECORDED_FOR_2026-09-01_THROUGH_2026-09-25.
-- N-day input: INTEGRATED.
-- Earlier negative states rewritten: NO.
-- New runtime/test/scientific-validation credit: NONE.
-- New independent-source credit: NONE.
-- New month-final/durable-governance credit: NONE.
-- September status: OPEN.
-- Natural-month close: NOT_DUE.
-- Successor maintenance status: COMPLETE_FOR_LOGICAL_2026-09-25_A2.
-
-
-## A1_MONTH_TO_DATE_REVALIDATION_2026-09-26
-
-- Logical maintenance date: 2026-09-26
-- Cutoff: 2026-09-25
-- Exact base main: `8827618c8c8d25f4e1e339fdcdfd9f35e16f7710`
-- Scope: Horizon H1/H2 + September H6 owner; Parallax September relation is reviewed in its own owner in the same A1 PR.
-- Method: fresh-read current month owner and retained September task-time/reconciliation chain; later 2026-09-26 artifacts are excluded from A1 evidence.
-
-### Coverage decisions
-- 2026-09-01: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-02: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-03: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-04: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-05: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-06: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-07: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-08: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-09: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-10: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-11: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-12: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-13: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-14: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-15: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-16: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-17: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-18: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-19: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-20: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-21: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-22: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-23: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-24: REVIEWED / RETAIN_EXISTING_DECISION / NO_NEW_OWNER_DEFECT
-- 2026-09-25: REVIEWED / RETAIN_EXISTING_A2_RELATION / NO_FOLLOW_UP. The H1 SUCCESS/NETWORK_PARTIAL and H2 DEGRADED/NETWORK_PARTIAL relation already has an owning reconciliation; no duplicate correction is created.
-
-### Cross-window boundary
-- W39: OPEN / NOT_DUE_FOR_FINAL_SETTLEMENT.
-- September: OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
-- Earlier BLOCKED/DEGRADED/NETWORK_PARTIAL states remain task-time facts.
-- Current-path completeness does not retroactively create earlier input availability, source independence, host applicability, or runtime credit.
-
-### A1 disposition
-- Coverage completeness through 2026-09-25: VERIFIED_IN_CURRENT_OWNER_CHAIN.
-- Decision completeness: RECORDED.
-- Historical rewrite required: NO.
-- New research/runtime/source-independence credit: NONE.
-- Handoff: merge A1, fresh-read main, then compile A2 for 2026-09-26.
-
-
-## A2_CURRENT_MONTH_RELATION_2026-09-26
-
-- Logical maintenance date: 2026-09-26
-- Exact A1-merged base main: `57919defc4f03087b4b2caada0f41a294e12def4`
-- Current-month relation window: 2026-09-01 through 2026-09-26
-- A1 coverage through 2026-09-25: INHERITED_FROM_MERGED_A1.
-
-### N-day integration — Horizon
-- H1 2026-09-26: Jules-native DEGRADED / NETWORK_UNAVAILABLE / no external source recovered.
-- H2 2026-09-26: Jules-native INPUT_MISSING / BLOCKED / NOT_RUN at its task-time authority base.
-- Later H1 visibility in current main is recorded as later availability only; it does not replay or upgrade H2.
-- NO_MATERIAL_NEW_SIGNAL under unavailable network is an evidence gap, not verified ecosystem no-change.
-
-### Relation boundary
-- earlier BLOCKED/DEGRADED states remain preserved.
-- later path presence != task-time input availability.
-- same-day chronology does not collapse execution ordering.
-- no host applicability, independent-source, runtime or durable-memory credit is added.
-- W39 and September remain OPEN; natural-month close is NOT_DUE.
-
-### A2 disposition
-- 2026-09-26 Horizon relation: INTEGRATED_WITH_TEMPORAL_BOUNDARY.
-- Current September relation: UPDATED_THROUGH_2026-09-26.
-- Historical rewrite: NO.
-
-## A1_MONTH_TO_DATE_REVALIDATION_2026-09-27
-
-- Logical maintenance date: 2026-09-27
-- Cutoff: 2026-09-26
-- Exact base main: `96518491109c51510da971106763b05037062eb5`
-- Scope: Horizon H1/H2/weekly relations plus September H6 owner; 2026-09-27 native inputs are reserved for A2.
-- Prior 2026-09-01 through 2026-09-25 decisions were revalidated through the retained current owner chain; no prior decision block is rewritten.
-
-### Coverage decisions
-- 2026-09-01 through 2026-09-25: REVIEWED / RETAIN_EXISTING_DECISIONS / NO_SILENT_HISTORY_REWRITE
-- 2026-09-26 H1: REVIEWED / RETAIN_DEGRADED_NETWORK_UNAVAILABLE
-- 2026-09-26 H2: REVIEWED / RETAIN_INPUT_MISSING_BLOCKED_NOT_RUN
-- Later H1 visibility remains later availability only and does not replay the original H2 execution.
-
-### Cross-period decisions
-- W38 late H3 native delivery is outside this A1 cutoff as a 2026-09-27 arrival; its historical relation is reserved for A2.
-- W39 state at this cutoff is OPEN; no final weekly settlement is manufactured.
-- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
-
-### A1 disposition
-- 2026-09-26 Horizon: NO_FOLLOW_UP beyond preserved temporal boundary.
-- Coverage completeness through N-1: VERIFIED_IN_CURRENT_OWNER_CHAIN.
-- Historical rewrite required: NO.
-- New host/runtime/source-independence/durable-memory credit: NONE.
-
-## A2_CURRENT_MONTH_RELATION_2026-09-27
-
-- Logical maintenance date: 2026-09-27
-- Exact A1-merged base main: `814f72acd03e60ce4f50fc10ec46b4ab814f2dfd`
-- Current-month relation window: 2026-09-01 through 2026-09-27
-- A1 coverage through 2026-09-26: INHERITED_FROM_MERGED_A1.
-
-### N-day integration — Horizon
-- 2026-09-27 H1: native signal-observe delivery retained; source/publication freshness uncertainty is not promoted beyond the recorded evidence.
-- 2026-09-27 H2: native orientation retained; publication-date recovery improves temporal identity while Host Applicability remains UNKNOWN and source independence is not increased.
-- W38 H3: a real Jules native execution arrived on 2026-09-27 after a prior maintenance-completion artifact already occupied the canonical path. Current relation is LATE_NATIVE_EXECUTION_AFTER_MAINTENANCE_COMPLETION; it does not establish that a native H3 existed at the original W38 close.
-- W39 H4: the native task was invoked before same-week H3 was available and correctly fail-closed to NOT_DUE / no action. This is preserved as scheduler/dependency-order evidence, not upgraded into a valid H4-after-H3 execution.
-
-### Relation boundary
-- later native success != earlier native success.
-- current path complete != original task-time complete.
-- H4 NOT_DUE != INPUT_MISSING/BLOCKED, but H4-before-H3 remains a scheduling-order defect.
-- no host implementation, GitHub Actions change, source-independence or durable-memory credit is added.
-- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
-
-### A2 disposition
-- 2026-09-27 Horizon relation: INTEGRATED_WITH_LATE_EXECUTION_AND_SCHEDULER_BOUNDARIES.
-- Historical rewrite: NO.
-
-## A1_MONTH_TO_DATE_REVALIDATION_2026-09-28
-
-- Logical maintenance date: 2026-09-28
-- Cutoff: 2026-09-27
-- Exact base main: `7e1c10a8f55ba8d0f09650b6786656c0028676d8`
-- A1 consumes only 2026-09-01 through 2026-09-27 logical-date evidence. Any 2026-09-28 artifacts already visible on current main are intentionally excluded and reserved for A2.
-
-### Coverage decisions
-- 2026-09-01 through 2026-09-26: REVIEWED / RETAIN_MERGED_OWNER_DECISIONS / NO_SILENT_HISTORY_REWRITE
-- 2026-09-27 H1/H2: REVIEWED / RETAIN_NATIVE_DAILY_RELATION
-- W38 H3 late native execution: REVIEWED / RETAIN_LATE_NATIVE_EXECUTION_AFTER_MAINTENANCE_COMPLETION
-- W39 H4: REVIEWED / RETAIN_PREMATURE_DOWNSTREAM_NOT_DUE_AS_SCHEDULER_ORDER_EVIDENCE
-- Later native H3 delivery does not retroactively make the earlier H4 ordering valid.
-
-### Boundary
-- later native success != earlier native success.
-- current path complete != original task-time complete.
-- H4 NOT_DUE != missing/failed, while H4-before-H3 remains ordering evidence.
-- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
-
-### A1 disposition
-- Coverage through N-1 = 2026-09-27: VERIFIED_IN_CURRENT_OWNER_CHAIN.
-- Historical rewrite required: NO.
-- 2026-09-28 native inputs consumed by A1: NO.
-- New host/runtime/source-independence/durable-memory credit: NONE.
-## A2_CURRENT_MONTH_RELATION_2026-09-28
-
-- Logical maintenance date: 2026-09-28
-- Exact A1-merged base main: `ad7b8a062c4003341db886457a0c7fb99c2ea0d2`
-- Current-month relation window: 2026-09-01 through 2026-09-28
-- A1 coverage through 2026-09-27: INHERITED_FROM_MERGED_A1.
-
-### N-day integration — Horizon
-- 2026-09-28 H1 and H2 are present as Jules-native Daily artifacts.
-- Both retained external objects are Google for Developers Blog pages. They are two source objects but one publisher lineage; per-record Independent Source fields do not create cross-publisher independent verification. The H1 header Independent Verification: NO and H2 header Independent Verification: NONE remain controlling for independence.
-- Agent Anomaly Detection is retained as a Gemini Enterprise Agent Platform private-preview capability claim, not broad ecosystem adoption or production guarantee.
-- The four challenge-submission patterns are retained as patterns observed in selected challenge submissions, not as an industry-wide standard, universal best practice, or mandatory architecture baseline.
-- Host applicability remains UNKNOWN; no welcome-to-github implementation claim is added.
-
-### Forward scope correction
-- SAME_PUBLISHER_MULTIPLE_URLS != INDEPENDENT_CORROBORATION.
-- SELECTED_CHALLENGE_PATTERNS != INDUSTRY_STANDARD_BASELINE.
-- PRIVATE_PREVIEW_CAPABILITY != GENERAL_AVAILABILITY_OR_BROAD_ADOPTION.
-- This A2 narrows interpretation forward and does not rewrite the native H1/H2 bodies.
-
-### Current-cut boundary
-- Any other 2026-09-28 periodic Horizon task not present at this review cut is NOT_YET_OBSERVED_AT_THIS_CHECK, not MISSING, FAILED, or NOT_EXECUTED.
-- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
-
-### A2 disposition
-- 2026-09-28 Horizon relation: NATIVE_H1_H2_INTEGRATED_WITH_SOURCE_LINEAGE_AND_SCOPE_CORRECTION.
-- Historical rewrite: NO.
-- New host/runtime/source-independence/durable-memory credit: NONE.
-
-## A1_MONTH_TO_DATE_REVALIDATION_2026-09-29
-
-- Logical maintenance date: 2026-09-29
-- Cutoff: 2026-09-28
-- Exact base main: `746bf838b1acaa891fb956e2c76a46785a9acd23`
-- A1 consumes only 2026-09-01 through 2026-09-28 logical-date evidence. Any 2026-09-29 Horizon/Parallax artifacts already visible on current main are intentionally excluded and reserved for A2.
-
-### Coverage decisions
-- Through 2026-09-27: REVIEWED / RETAIN_EXISTING_OWNER_DECISIONS.
-- 2026-09-28 Horizon H1/H2: REVIEWED / RETAIN_NATIVE_DAILY_RELATION.
-- Same-publisher multiple URLs remain one publisher lineage; current evidence does not establish cross-publisher corroboration.
-- Private-preview capability and selected challenge patterns remain bounded to their source objects; no host adoption or industry-wide baseline is inferred.
-
-### Boundary
-- SAME_PUBLISHER_MULTIPLE_URLS != INDEPENDENT_CORROBORATION.
-- PRIVATE_PREVIEW_CAPABILITY != GENERAL_AVAILABILITY.
-- SELECTED_CHALLENGE_PATTERNS != INDUSTRY_STANDARD_BASELINE.
-- 2026-09-29 native artifacts visible on current main != A1 eligibility.
-- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
-
-### A1 disposition
-- Coverage through N-1 = 2026-09-28: VERIFIED_IN_CURRENT_OWNER_CHAIN.
-- Historical rewrite required: NO.
-- 2026-09-29 native inputs consumed by A1: NO.
-- New host/runtime/source-independence/durable-memory credit: NONE.
-
-## A2_CURRENT_MONTH_RELATION_2026-09-29
-
-- Logical maintenance date: 2026-09-29
-- Exact A1-merged base main: `e268336d31235165b9de2cff5b3dfcbdc23e89ef`
-- Current-month relation window: 2026-09-01 through 2026-09-29.
-- A1 coverage through 2026-09-28: INHERITED_FROM_MERGED_A1.
-
-### N-day integration — Horizon
-- 2026-09-29 H1 and H2 are present as Jules-native Daily artifacts.
-- Both retained source objects are GitHub Blog pages from one publisher lineage; they do not provide cross-publisher independent corroboration.
-- Source-specific facts retained: GitHub Security Lab Taskflow Agent reports 24 Android vulnerabilities in its described workflow, and a related fuzzing Taskflow separates LLM decision work from MCP-tool execution in the documented C/C++ fuzzing pipeline.
-- These source-specific examples support a candidate workflow pattern only. They do not establish an industry-wide consensus, universal MCP generality, portable production reliability, or host-repository adoption.
-- Host applicability remains UNKNOWN; no welcome-to-github implementation claim is added.
-
-### Forward scope correction
-- TWO_GITHUB_BLOG_URLS != CROSS_PUBLISHER_CORROBORATION.
-- TASKFLOW_SECURITY_RESULTS != GENERAL_AGENT_RELIABILITY_PROOF.
-- SOURCE_SPECIFIC_MCP_USAGE != INDUSTRY_WIDE_STANDARDIZATION.
-- OFFICIAL_ENGINEERING_BLOG != INDEPENDENT_REPRODUCTION.
-- This A2 narrows interpretation forward and does not rewrite the native H1/H2 bodies.
-
-### A2 disposition
-- 2026-09-29 Horizon relation: NATIVE_H1_H2_INTEGRATED_WITH_SINGLE_PUBLISHER_AND_SCOPE_BOUNDARY.
-- Historical rewrite: NO.
-- New host/runtime/source-independence/durable-memory credit: NONE.
-- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+Boundary Violation: NO
+确认未读取宿主仓库。
+确认未读取 GitHub Actions。
+确认未读取 Horizon 之外文件。
+确认未写入 Horizon 之外文件。
+确认未把当前 H6 当作历史记忆。
+确认未公开私有提示词。
+确认未作宿主仓库事实声明。
+确认未使用无证据绝对化记忆。
+确认未伪造联网验证，所有状态基于实际网络访问获取。
