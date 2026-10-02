@@ -92,3 +92,49 @@ CURRENT_PATH_PRESENT
 - Historical rewrite: NO
 - Extra audit executed: NO
 - New research, execution-window, source-independence, runtime, or durable-memory credit: NONE
+
+
+## A1_FULL_COVERAGE_2026-10-02
+
+- Logical maintenance date: 2026-10-02
+- Exact base main: `77d2519aff699a5c55e696d073bb9e3d8d5067d6`
+- Coverage window: 2026-10-01
+- Coverage mode: MONTH_START_TO_N_MINUS_1_FULL_COVERAGE
+- A1 rule: REVIEWED != MODIFIED
+- Extra audit executed: NO
+- Runtime/checker replay: NOT_PERFORMED
+- Historical rewrite: NO
+
+### Coverage decisions
+
+| In-scope October-1 surface | Decision | Preserved boundary |
+| --- | --- | --- |
+| `horizon-cortex/2026-10-01-H1-signal-observe.md` | REVIEWED / NO_FOLLOW_UP | `NETWORK_UNAVAILABLE / DEGRADED` remains task-time evidence; no later source is backfilled |
+| `horizon-cortex/2026-10-01-H2-horizon-orient.md` | REVIEWED / NO_FOLLOW_UP | same-day orientation does not upgrade unavailable network evidence |
+| `parallax/records/2026-10/2026-10-01.md` | REVIEWED / NO_FOLLOW_UP | native Parallax Daily remains one primary research unit; index/pointer presence adds no research credit |
+| `parallax/records/2026-10.md` and current pointer/index surfaces | REVIEWED / NO_FOLLOW_UP | derived routing/current-state surfaces do not become new execution windows or independent evidence |
+| 2026-10-01 external Independent-GPT review and its source-scope correction | REVIEWED / NO_FOLLOW_UP | audit/correction plane remains separate from native Horizon/Parallax execution |
+
+### A1 disposition
+
+- Coverage completeness: COMPLETE_FOR_2026-10-01
+- Decision completeness: COMPLETE_FOR_2026-10-01
+- Owning-file correction required: NO
+- Original Daily mutation required: NO
+- W40 final: NOT_DUE
+- October H5/H6 natural-month final: NOT_DUE
+- Durable-memory promotion: NO
+- New research/source-independence/runtime credit: NONE
+
+```text
+FULL_COVERAGE_REVIEW
+!= MODIFY_EVERY_FILE
+
+NETWORK_UNAVAILABLE
+!= VERIFIED_ABSENCE
+
+AUDIT_OR_CORRECTION
+!= NATIVE_RESEARCH_EXECUTION
+```
+
+A1 result: VERIFIED_FULL_COVERAGE_THROUGH_2026-10-01.
