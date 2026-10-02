@@ -138,3 +138,69 @@ AUDIT_OR_CORRECTION
 ```
 
 A1 result: VERIFIED_FULL_COVERAGE_THROUGH_2026-10-01.
+
+
+## A2_CURRENT_MONTH_RELATION_2026-10-02
+
+- Logical maintenance date: 2026-10-02
+- Exact A1-merged base main: `2a2c753ec001641a3ed1da48669f3402250b000c`
+- Current month relation window: 2026-10-01 through 2026-10-02
+- A1 coverage through 2026-10-01: INHERITED_FROM_MERGED_A1
+- Month Closure Status: OPEN
+- W40 final: NOT_DUE
+- October H5/H6 natural-month final: NOT_DUE
+- Historical rewrite: NO
+- Extra runtime/checker execution: NOT_PERFORMED
+
+### N-day Horizon relation
+
+- H1 input: `horizon-cortex/2026-10-02-H1-signal-observe.md` / PR #671
+- H1 retained state: `DEGRADED / NETWORK_UNAVAILABLE`
+- H1 bounded interpretation: `NO_VERIFIABLE_MATERIAL_NEW_SIGNAL_IN_THIS_RUN`
+- H1 absence claim: NOT_ESTABLISHED; `NETWORK_UNAVAILABLE != VERIFIED_ABSENCE`
+- H2 input: `horizon-cortex/2026-10-02-H2-horizon-orient.md` / PR #672
+- H2 original task-time state: `INPUT_MISSING / BLOCKED / NOT_RUN`
+- Later H1 path availability: PRESENT_AFTER_ORIGINAL_H2_EXECUTION
+- H2 re-execution: NOT_PERFORMED
+- H2 evidence upgrade: NONE
+
+### N-day Parallax relation
+
+- Native Daily: `parallax/records/2026-10/2026-10-02.md`
+- Record state: PARTIAL
+- Research object: logical capability versus wire interaction shape
+- Independent publisher/evidence families: 2 / MCP and A2A
+- Native research-batch increment: 1
+- Independent execution-window increment: 1
+- Runtime protocol traces: 0 / NOT_EXECUTED
+- CASE support increment: 0
+- NOTES promotion: 0
+- Derived synchronization credit: 0
+
+### Current relation
+
+```text
+OCTOBER_1_FULL_COVERAGE
++
+OCTOBER_2_CURRENT_INPUTS
+=
+CURRENT_MONTH_RELATION_THROUGH_2026_10_02
+
+LATER_H1_DELIVERY
+!= ORIGINAL_H2_INPUT_AVAILABILITY
+
+CAPABILITY_EQUIVALENCE
+!= WIRE_EXECUTION_IDENTITY
+
+CONTRACT_LEVEL_EVIDENCE
+!= RUNTIME_TRACE
+```
+
+### A2 disposition
+
+- October version state: OPEN
+- Relationship continuity: UPDATED_THROUGH_2026-10-02
+- H2 historical blocked state: PRESERVED
+- Parallax native Daily: INTEGRATED_WITH_RUNTIME_BOUNDARY
+- Durable memory promotion: NO
+- New credit beyond native Parallax Daily/window: NONE
