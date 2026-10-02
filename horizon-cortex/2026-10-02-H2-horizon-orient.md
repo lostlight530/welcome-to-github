@@ -43,6 +43,15 @@ INPUT_MISSING
 NEXT_HANDOFF
 INPUT_MISSING
 
+FORWARD_RECONCILIATION
+- Original H2 Execution Base: `bb5b7cd0813a1bf290d673492833ef6baaedab3c`
+- Required H1 State At Original Execution: `INPUT_MISSING`
+- Later H1 Delivery: PR `#671` merged at `2026-10-02T02:28:50Z` as merge commit `7250b89b9b79b5519670c4da4da6d1c3711a1d71`
+- Current Repository Relationship: the 2026-10-02 H1 path became available only after this H2 execution had already recorded `BLOCKED`
+- Historical Interpretation: original H2 remains `INPUT_MISSING / BLOCKED`; later H1 delivery does not retroactively create H2 orientation or verification evidence
+- Re-execution Status: `NOT_PERFORMED`
+- Evidence Upgrade Basis: `NONE`
+
 BOUNDARY_CHECK
 - 未做最终周决策: YES
 - 未把外部信号宣称为宿主仓库事实: YES
