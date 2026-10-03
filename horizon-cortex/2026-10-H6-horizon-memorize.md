@@ -322,3 +322,37 @@ CONTRACT_EVIDENCE
 - W40 settlement: NOT_DUE
 - Durable memory promotion: NO
 - New credit beyond native Parallax Daily/window: NONE
+
+
+## A1_SUCCESSOR_FULL_COVERAGE_2026-10-03
+
+- Logical maintenance date: 2026-10-03
+- Exact successor base main: `fb3948173eef79b25c626b99cb77773469662816`
+- Coverage window: 2026-10-01 through 2026-10-02
+- Coverage mode: MONTH_START_TO_N_MINUS_1_FULL_COVERAGE
+- Predecessor same-day A1/A2: PRESERVED_AS_POINT_IN_TIME_HISTORY
+- Current-main movement after predecessor A2 before this successor: NONE OBSERVED
+- Successor review result: REVIEWED / NO_FOLLOW_UP
+- Historical rewrite: NO
+- Extra audit or runtime execution: NOT_PERFORMED
+- Current 2026-10-03 Horizon / Parallax relation: already represented by the earlier merged A2 and unchanged on this base.
+- New research, source-independence, execution-window, CASE, or memory credit: NONE.
+
+```text
+SUCCESSOR_RECHECK
+!= PREDECESSOR_HISTORY_REWRITE
+
+NO_FOLLOW_UP
+!= NOT_REVIEWED
+
+A1_N_MINUS_1_CUTOFF
+!= N_DAY_RELATIONAL_UPDATE
+```
+
+### Successor A1 disposition
+
+- Horizon / Parallax N-1 coverage: RECONFIRMED_THROUGH_2026-10-02
+- Owning historical artifact mutation required: NO
+- W40 settlement: NOT_DUE
+- October natural-month final: NOT_DUE
+- A2 dependency: MUST_FRESH_READ_THIS_A1_MERGED_MAIN
