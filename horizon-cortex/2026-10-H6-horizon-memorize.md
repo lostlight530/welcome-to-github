@@ -249,3 +249,76 @@ CURRENT_MONTH_OWNER
 NO_FOLLOW_UP
 != NOT_REVIEWED
 ```
+
+
+## A2_CURRENT_MONTH_RELATION_2026-10-03
+
+- Logical maintenance date: 2026-10-03
+- Exact A1-merged base main: `a9f84c74e92c572c0e7eb9b34008c16ec9f8f406`
+- Current month relation window: 2026-10-01 through 2026-10-03
+- A1 coverage through 2026-10-02: INHERITED_FROM_MERGED_A1
+- Month Closure Status: OPEN
+- W40 H3/H4 final: NOT_DUE
+- October H5/H6 natural-month final: NOT_DUE
+- Historical rewrite: NO
+- Extra audit executed: NO
+- Extra runtime/checker execution by maintenance: NOT_PERFORMED
+
+### N-day Horizon relation
+
+- H1 input: `horizon-cortex/2026-10-03-H1-signal-observe.md`
+- H1 task-time state: `DEGRADED / NETWORK_UNAVAILABLE / Source Status NONE`
+- H1 bounded signal: `NO_MATERIAL_NEW_SIGNAL / NO_VERIFIABLE_MATERIAL_NEW_SIGNAL_IN_THIS_RUN`
+- H1 absence claim: NOT_ESTABLISHED
+- H2 input: `horizon-cortex/2026-10-03-H2-horizon-orient.md`
+- H2 Input Status: PRESENT
+- H2 task state: `DEGRADED / NETWORK_UNAVAILABLE / Source Status NONE`
+- H2 strategic promotion: NONE
+- H2 final weekly decision: NOT_PERFORMED / NOT_AUTHORIZED
+
+### N-day Parallax relation
+
+- Native Daily: `parallax/records/2026-10/2026-10-03.md`
+- Research object: correlation/grouping identity versus concrete execution-attempt identity
+- Current state: PARTIAL
+- Native research-batch increment: 1
+- Independent execution-window increment: 1
+- OpenAI Agents SDK runtime: NOT_EXECUTED
+- MCP runtime / transport interruption replay: NOT_EXECUTED
+- Concrete trace export / request-log capture: NOT_EXECUTED
+- CASE support increment: 0
+- NOTES promotion: 0
+- Audit creation: 0
+- Derived synchronization credit: 0
+
+### Current relation
+
+```text
+OCTOBER_1_TO_2_FULL_COVERAGE
++
+OCTOBER_3_CURRENT_INPUTS
+=
+CURRENT_MONTH_RELATION_THROUGH_2026_10_03
+
+NETWORK_UNAVAILABLE
+!= VERIFIED_ABSENCE
+
+H1_PRESENT
+!= VERIFIED_EXTERNAL_CHANGE
+
+CORRELATION_OR_GROUP_ID
+!= CONCRETE_EXECUTION_ATTEMPT_ID
+
+CONTRACT_EVIDENCE
+!= RUNTIME_TRACE
+```
+
+### A2 disposition
+
+- October version state: OPEN
+- Relationship continuity: UPDATED_THROUGH_2026-10-03
+- Horizon 10/3 degraded network/source boundary: PRESERVED
+- Parallax 10/3 native Daily: INTEGRATED_WITH_ATTEMPT_IDENTITY_AND_RUNTIME_BOUNDARY
+- W40 settlement: NOT_DUE
+- Durable memory promotion: NO
+- New credit beyond native Parallax Daily/window: NONE
