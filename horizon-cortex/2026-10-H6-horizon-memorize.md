@@ -204,3 +204,48 @@ CONTRACT_LEVEL_EVIDENCE
 - Parallax native Daily: INTEGRATED_WITH_RUNTIME_BOUNDARY
 - Durable memory promotion: NO
 - New credit beyond native Parallax Daily/window: NONE
+
+
+## A1_FULL_COVERAGE_2026-10-03
+
+- Logical maintenance date: 2026-10-03
+- Exact base main: `2bede075c8e4771a353cf63b8d7045362a9cba00`
+- Coverage window: 2026-10-01 through 2026-10-02
+- Coverage mode: MONTH_START_TO_N_MINUS_1_FULL_COVERAGE
+- A1 rule: REVIEWED != MODIFIED
+- Historical rewrite: NO
+- Extra audit executed: NO
+- Extra runtime/checker execution: NOT_PERFORMED
+
+### Reviewed October surfaces
+
+| Surface | Decision | Preserved boundary |
+| --- | --- | --- |
+| `horizon-cortex/2026-10-01-H1-signal-observe.md` | REVIEWED / NO_FOLLOW_UP | task-time network/source state remains historical |
+| `horizon-cortex/2026-10-01-H2-horizon-orient.md` | REVIEWED / NO_FOLLOW_UP | later availability does not rewrite original dependency state |
+| `horizon-cortex/2026-10-02-H1-signal-observe.md` | REVIEWED / NO_FOLLOW_UP | `NETWORK_UNAVAILABLE != VERIFIED_ABSENCE` |
+| `horizon-cortex/2026-10-02-H2-horizon-orient.md` | REVIEWED / NO_FOLLOW_UP | original `INPUT_MISSING / BLOCKED / NOT_RUN` remains point-in-time truth |
+| `parallax/records/2026-10/2026-10-01.md` | REVIEWED / NO_FOLLOW_UP | native research credit remains owned by the Daily |
+| `parallax/records/2026-10/2026-10-02.md` | REVIEWED / NO_FOLLOW_UP | PARTIAL contract/runtime boundary preserved |
+| `parallax/records/2026-10.md` and `parallax/README.md` | REVIEWED / NO_FOLLOW_UP | derived synchronization adds zero research credit |
+| W40 H3/H4 and October H5/H6 final | NOT_DUE | current week/month remain open |
+
+### A1 disposition
+
+- Coverage completeness: COMPLETE_THROUGH_2026-10-02_AT_THIS_CHECK
+- Decision completeness: COMPLETE_THROUGH_2026-10-02_AT_THIS_CHECK
+- Owning historical Daily mutation required: NO
+- Weekly final mutation required: NO
+- Natural-month final mutation required: NO
+- New research / execution-window / source-independence / memory credit: NONE
+
+```text
+LATER_PATH_PRESENT
+!= ORIGINAL_INPUT_AVAILABLE
+
+CURRENT_MONTH_OWNER
+!= HISTORICAL_EXECUTION_LEDGER
+
+NO_FOLLOW_UP
+!= NOT_REVIEWED
+```
