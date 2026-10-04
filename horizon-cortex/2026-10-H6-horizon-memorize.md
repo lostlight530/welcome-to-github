@@ -575,3 +575,149 @@ N_DAY_2026_10_04_EXCLUDED
 =
 A1_COMPLETE_FOR_2026_10_04
 ```
+
+## A2 CURRENT MONTH RELATION — 2026-10-04
+
+- Plane: A2 / CURRENT_MONTH_RELATIONAL_VERSION
+- Logical date: 2026-10-04
+- Window: 2026-10-01..2026-10-04
+- Predecessor A1: PR #690 / MERGED
+- Fresh post-A1 base: ebdef3c649583eabd081a8a8946baa00da09f5fa
+- Historical rewrite: NO
+- Native replay: NO
+- Extra runtime execution: NOT_PERFORMED
+- Duplicate native credit: NONE
+
+### Dependency
+- A1 #690 is consumed as N-1 coverage foundation.
+- 2026-10-04 is consumed only in A2.
+- Prior A2 records remain point-in-time history.
+- Later visibility does not rewrite earlier availability.
+
+### 2026-10-01 inherited
+- Horizon H1/H2 relation retained.
+- Parallax Daily relation retained.
+- Month-open maintenance history retained.
+- September closure remains prior-month evidence.
+- October finality not inferred.
+- New credit: NONE.
+
+### 2026-10-02 inherited
+- Horizon H1/H2 relation retained.
+- Parallax Daily relation retained.
+- D30 #675 retained as audit-plane evidence.
+- D30 does not replace native Daily evidence.
+- D30 does not close October.
+- New credit: NONE.
+
+### 2026-10-03 inherited
+- Horizon degraded network boundary retained.
+- NETWORK_UNAVAILABLE != VERIFIED_ABSENCE.
+- Parallax attempt-identity boundary retained.
+- CONTRACT_EVIDENCE != RUNTIME_TRACE.
+- Successor maintenance chronology retained.
+- New credit: NONE.
+
+### 2026-10-04 Horizon
+- H1 #684: MERGED.
+- H2 #685: MERGED.
+- W39 H4 correction #686: MERGED.
+- W39 H3 #687: MERGED_LATER.
+- W39 H3 later presence does not rewrite old H4 input availability.
+- W40 H4 original Draft #688: CLOSED_UNMERGED.
+- W40 H4 rebuilt owner #689: MERGED.
+- W40 H4 task-time state remains fail-closed.
+- Same-week W40 H3 was not due/available at H4 execution cut.
+- W40 H4 is not upgraded to success.
+
+### 2026-10-04 Parallax
+- Daily #683: MERGED.
+- Logical date: 2026-10-04 Asia/Shanghai.
+- October Daily topic count: 4.
+- October research batch count: 4.
+- October execution-window count: 4.
+- Handoff tool payload is distinct from receiving-agent main input.
+- Receiving-agent main input is distinct from local application context.
+- Runtime A/B/C sentinel: NOT_EXECUTED.
+- Audit credit added by maintenance: 0.
+- Research credit added by maintenance: 0.
+
+### Current relation
+- Horizon producer state current through 2026-10-04.
+- W39 H3 current path is visible.
+- W39 H4 blocked chronology remains preserved.
+- W40 H4 fail-closed chronology remains preserved.
+- Parallax rolling owner current through 2026-10-04.
+- Parallax Monthly remains OPEN.
+- October H5/H6 final remains NOT_DUE.
+- No duplicate batch credit.
+- No duplicate execution-window credit.
+- No weekly success invented.
+
+### Boundary rules
+- LATER_PATH_PRESENT != ORIGINAL_INPUT_AVAILABLE.
+- CURRENT_PATH_COMPLETE != HISTORICAL_EXECUTION_COMPLETE.
+- LATER_SUCCESS != EARLIER_SUCCESS.
+- CURRENT_REPOSITORY_STATE != TASK_TIME_STATE.
+- MERGED_ARTIFACT != SUCCESSFUL_EXECUTION.
+- MERGED_MONTHLY_ARTIFACT != NATURAL_MONTH_CLOSE.
+- DUE_DATE != EXECUTION.
+- SCHEDULED != EXECUTED.
+- SAME_DATE != SAME_STATE.
+- SOURCE_CODE != EXECUTED_BEHAVIOR.
+- TEST_SOURCE != TEST_EXECUTION.
+- NATIVE_TASK_DELIVERY != A1_MAINTENANCE.
+- A1_MAINTENANCE != A2_RELATIONAL_VERSION.
+- A2_RELATIONAL_VERSION != PERIODIC_AUDIT.
+- PERIODIC_AUDIT != DURABLE_GOVERNANCE.
+
+### Contract boundaries
+- H3 processes previous completely ended ISO week.
+- H4 requires same-target-week H3 input.
+- LATER_W39_H3_PRESENT != ORIGINAL_W39_H4_H3_AVAILABLE.
+- Parallax one logical Daily equals one primary research batch.
+- Same-day rerun cannot inflate Daily count.
+- Audit adds zero research batches.
+- Audit adds zero execution windows.
+- Monthly derived view is not natural-month final.
+- Missing evidence is not negative evidence.
+- Later explanation is not earlier raw observation.
+
+### Validation
+- A1 merged before A2 branch: YES.
+- Fresh post-A1 main used: YES.
+- 10/1 relation preserved: YES.
+- 10/2 relation preserved: YES.
+- 10/3 relation preserved: YES.
+- 10/4 native state consumed: YES.
+- Earlier blocked state rewritten: NO.
+- Closed-unmerged history promoted: NO.
+- Duplicate native credit: NO.
+- Duplicate batch credit: NO.
+- Duplicate window credit: NO.
+- Runtime execution invented: NO.
+- Weekly lifecycle rewritten: NO.
+- Natural-month final invented: NO.
+- Periodic audit invented: NO.
+- Governance promotion: NO.
+- Parallel monthly owner: NO.
+
+### Disposition
+- October relation: CURRENT_THROUGH_2026-10-04.
+- October version state: OPEN.
+- Natural-month final: NOT_DUE.
+- Historical chronology: PRESERVED.
+- W39 H4 blocked state: PRESERVED.
+- W40 H4 fail-closed state: PRESERVED.
+- Parallax Daily count: 4.
+- New maintenance research credit: NONE.
+- New runtime credit: NONE.
+- New audit credit: NONE.
+- New governance credit: NONE.
+- Next A1 must fresh-read this merged main.
+
+```text
+MERGED_A1 + FRESH_MAIN_READ + 2026_10_04_NATIVE_INPUT
+= CURRENT_MONTH_RELATION_THROUGH_2026_10_04
+CURRENT_MONTH_RELATION != NATURAL_MONTH_FINAL
+```
