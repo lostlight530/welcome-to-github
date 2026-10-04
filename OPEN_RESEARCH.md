@@ -3,6 +3,13 @@
 Status: durable open-research production guide
 Scope: repository-level research positioning, research-production method, scholarly-metadata boundaries, and semantic-drift governance
 
+## Language policy / 语言政策
+
+English is the canonical and default language for this open-research contract. Chinese text is provided as an accessibility and interpretation aid. If a wording conflict appears, the English normative text governs; repository evidence and current owning contracts still outrank either translation.
+
+英文是本开放科研契约的默认与规范语言；中文用于辅助理解与可访问性。若中英文表述发生冲突，以英文规范文本为准，但仓库事实与当前 owning contract 的权威仍高于任何翻译。
+
+
 ## 1. Authority
 
 This file explains how open research is produced and reviewed in this repository. It does not replace implementation, architecture, methodology, evidence, maintenance, release, or historical authority.
@@ -187,3 +194,12 @@ citation != reproduction
 metadata consistency != scientific correctness
 external indexing != repository self-definition
 ```
+
+
+## 中文摘要
+
+本文件定义的是仓库长期开放科研方法，而不是新的总宪法。共同骨架包括：研究问题、可证伪假设、证据与来源身份、固定对象/版本/环境、实际执行程序、原始观测、反例检查、有界结论、研究增量与复验条件。
+
+仓库仍由自身 implementation、methodology、evidence、history 等原生权威文件定义；OpenAlex、OpenAIRE、Zenodo、DataCite 等外部系统只能派生或传播仓库语义，不能反向定义仓库身份。
+
+未来 scholarly metadata 应保持 canonical type、one-line positioning、primary domains、non-goals、少量高质量 subjects 与 5–7 个定义性 keywords。若外部分类偏移，先判断是否存在仓库自身歧义；没有歧义则记录为 downstream classifier noise，不为了分类器重写仓库本体。
