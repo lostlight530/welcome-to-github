@@ -1,5 +1,7 @@
 # lostlight | 2025-2026 Year in Review
 
+[Open Research / 开放科研](./OPEN_RESEARCH.md) · [Research Template / 科研模板](./RESEARCH_TEMPLATE.md)
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22790907.svg)](https://doi.org/10.5281/zenodo.22790907)
 
 > **"Small and Stable; Quiet and Pragmatic."**
