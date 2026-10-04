@@ -35,7 +35,11 @@ Scholarly Graph Representation != Repository Self-Definition
 External systems such as Zenodo, DataCite, OpenAlex, OpenAIRE, search engines, citation indexes, or automated classifiers are downstream representations
 They may be recorded as observations but never silently redefine this repository
 
+Positioning and research-execution boundaries are owned by [OPEN_RESEARCH.md](OPEN_RESEARCH.md). Provider or scheduler choice alone does not define a research domain; repository-native research workflows retain their substantive research role.
+
 ### External classification check
+
+Optional: complete this check only when the study concerns repository positioning or publication metadata. For other studies, omit this section or record NOT_APPLICABLE; do not run a downstream classifier merely to fill the template.
 
 - Channel / platform:
 - Observed classification:
@@ -43,7 +47,8 @@ They may be recorded as observations but never silently redefine this repository
 - Compared against canonical positioning:
 - Check status: RUN / NOT_RUN
 - Alignment (only when RUN): ALIGNED / PARTIALLY_ALIGNED / MISCLASSIFIED / CLASSIFIER_NOISE
-- Required repository change: NONE unless the repository's own canonical positioning is actually wrong
+- Required repository change: NONE unless a verified defect exists in repository-owned positioning or metadata
+- External classification alone does not justify changing repository identity
 - Downstream correction candidate:
 
 A downstream misclassification is evidence about the classifier or metadata projection, not evidence that the repository should change research identity
