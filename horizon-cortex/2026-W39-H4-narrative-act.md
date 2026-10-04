@@ -13,9 +13,9 @@ Execution Time UTC: 2026-09-27T03:00:00Z
 Execution Time Asia/Shanghai: 2026-09-27T11:00:00+08:00
 Agent: Jules
 Record Provenance: JULES_NATIVE
-Decision Input Status: UPSTREAM_NOT_DUE
+Decision Input Status: DECISION_INPUT_MISSING
 Network Status: NOT_RUN
-Task Status: NOT_DUE
+Task Status: BLOCKED
 Repository Inspection: NO
 GitHub Actions Inspection: NO
 Write Scope: horizon-cortex only
@@ -25,14 +25,14 @@ Inherited Evidence: NONE
 Independent Evidence Added: NONE
 Missing Inputs Preserved: NONE / H3 NOT_DUE_AT_OBSERVATION_CUT
 Decision Evidence Basis: NONE
-Historical Execution State: NOT_DUE
-Current Delivery State: NOT_DUE_RECORD
+Historical Execution State: NONE
+Current Delivery State: NONE
 Original Execution Status: NEW_EXECUTION
 Current Path Status: PRESENT
 
 INPUT_RECORD
 - H3 路径: horizon-cortex/2026-W39-H3-position-decide.md
-- H3 状态: NOT_DUE_AT_OBSERVATION_CUT
+- H3 状态: INPUT_MISSING
 - H3 Decision IDs: NONE
 - 实际读取的 H1 与 H2: NONE
 - 历史 H4: horizon-cortex/2026-W38-H4-narrative-act.md
@@ -42,10 +42,10 @@ INPUT_RECORD
 
 ACTION_RECORD
 Action ID: NO_ACTIONABLE_DECISION
-Action Type: NOT_DUE_GUARD
+Action Type: OBSERVATION_FOCUS
 Action: NO_ACTIONABLE_DECISION
-Reason: Same-week H3 decision input had not reached its scheduled execution time at this observation cut; absence is temporal NOT_DUE, not MISSING.
-Historical Source Decision ID: NO_ACTIONABLE_DECISION
+Reason: Same-week H3 decision input is missing; no actionable decision can be made.
+Source Decision ID: NO_ACTIONABLE_DECISION
 Expected Effect: NO_ACTIONABLE_DECISION
 Risk Reduced: NO_ACTIONABLE_DECISION
 Validity Window: NO_ACTIONABLE_DECISION
