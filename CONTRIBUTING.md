@@ -1,5 +1,9 @@
 # Contributing
 
+## Open research contributions
+
+For new research records or research-method contributions, start with [`RESEARCH_TEMPLATE.md`](./RESEARCH_TEMPLATE.md). It is the repository's open-research entry and prospective research-record template; repository-native implementation, methodology, evidence, and historical contracts remain authoritative for their own surfaces.
+
 Contributions are welcome when they improve the public portal, repository-owned implementation, research documentation, evidence surfaces, metadata, or developer experience without blurring the boundary between observed evidence and interpretation.
 
 ## Choose the owning surface first
