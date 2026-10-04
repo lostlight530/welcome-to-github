@@ -49,28 +49,17 @@ Keyword Match != Project Purpose
 Scholarly Graph Representation != Repository Self-Definition
 ```
 
-## Positioning and research execution / 定位与科研执行
+## Research scope and workflows / 科研范围与工作流
 
-Repository purpose, the implemented or studied research object, subject-specific methodology/contracts, and version-matched canonical metadata define repository positioning. Read README, this guide, CITATION.cff, CodeMeta, current implementation, and the applicable research contracts together for the question and version being examined. A fixed cross-repository file ranking is not a substitute for their native authority rules.
+Repository positioning follows its declared purpose, implemented or studied research objects, and applicable public contracts. Existing canonical positioning remains unchanged.
 
-```text
-Repository Positioning
-= repository purpose + implementation or research object
-+ applicable research methodology/contracts + version-matched canonical metadata
+Repository-owned workflows may implement research methods and produce bounded observations. Their substantive research role remains intact; the execution mechanism alone does not establish a research domain or scientific validity.
 
-Execution provider, scheduling, maintenance cadence, and delivery mechanism
-do not independently define repository type, primary domains, subjects, or keywords
-```
+仓库现有定位保持不变；自有工作流的科研作用保留，执行机制本身不构成研究领域或科学有效性的证明
 
-GPT automation, Jules periodic SOPs, maintenance cadence, Sentinel scheduling, and PR/delivery mechanics do not become research domains merely because they operate a repository. Classify by the actual subject and method, not by provider names, file locations, workflow labels, or task frequency.
+This repository's [native GitHub Actions lifecycle workflow](.github/workflows/nexus-life-cycle.yml) also supports repository-native research. Preserve that role. Workflow source identifies a versioned implementation; reading it does not establish that a run executed.
 
-A repository-owned workflow can itself implement a research method or study a research object. Its substantive implementation, method, and evidence contract remain part of repository-native research where applicable. Its trigger, schedule, and delivery mechanics are operational facts. Execution evidence supports only the property actually observed; workflow presence or a successful run does not independently prove scientific validity.
-
-仓库定位按研究目的、实现或研究对象、适用方法契约及对应版本的元数据判断，不按执行者、平台名称或任务频率投票；自有工作流中的科研实现、方法与证据契约仍属于科研本体，触发、调度和投递机制分别记录
-
-For welcome-to-github and Zero-Entropy Lab, repository-owned GitHub Actions are also research workflows. Preserve their research role; do not subtract them as an automation layer. Assess the implemented knowledge/state lifecycle, method, and evidence contract separately from scheduling or delivery. In this repository, [the native lifecycle workflow](.github/workflows/nexus-life-cycle.yml) is a versioned implementation surface; reading its source is not evidence that a run executed.
-
-本仓自有 GitHub Actions 也承载科研，不能整体排除或当作需要扣掉的自动化影响；科研内容与调度、投递机制按职责区分
+本仓自有 GitHub Actions 也承载科研，保留其科研作用；工作流源码存在不等于已执行
 
 ## 3. Open-research production model
 

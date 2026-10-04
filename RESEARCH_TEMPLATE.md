@@ -35,7 +35,7 @@ Scholarly Graph Representation != Repository Self-Definition
 External systems such as Zenodo, DataCite, OpenAlex, OpenAIRE, search engines, citation indexes, or automated classifiers are downstream representations
 They may be recorded as observations but never silently redefine this repository
 
-Positioning and research-execution boundaries are owned by [OPEN_RESEARCH.md](OPEN_RESEARCH.md). Provider or scheduler choice alone does not define a research domain; repository-native research workflows retain their substantive research role.
+Public research scope and workflow roles are described in [OPEN_RESEARCH.md](OPEN_RESEARCH.md). Existing canonical positioning and repository-native research workflows remain intact.
 
 ### External classification check
 
