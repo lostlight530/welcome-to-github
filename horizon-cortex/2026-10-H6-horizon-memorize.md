@@ -397,3 +397,181 @@ A2_SUCCESSOR
 - W40 settlement: NOT_DUE
 - October natural-month final: NOT_DUE
 - New research/source-independence/execution-window/memory credit: NONE
+
+## A1 FULL COVERAGE — 2026-10-04
+
+- Repository: `lostlight530/welcome-to-github`
+- Plane: `A1 / FULL_COVERAGE_MAINTENANCE`
+- Logical maintenance date: `2026-10-04`
+- Base main: `34146c38626dcce48597f2dd5160ca3097f6b829`
+- Coverage window: `2026-10-01..2026-10-03`
+- N-day excluded from A1: `2026-10-04`
+- Owner: `horizon-cortex/2026-10-H6-horizon-memorize.md`
+- Systems: Horizon + Parallax
+- Historical rewrite: `NO`
+- Native replay: `NO`
+- Extra runtime execution: `NOT_PERFORMED`
+- Extra network execution: `NOT_PERFORMED`
+- New research credit: `NONE`
+- New execution-window credit: `NONE`
+
+### 2026-10-01
+- Horizon H1 path: PRESENT.
+- Horizon H2 path: PRESENT.
+- Parallax Daily path: PRESENT.
+- October owner initialization A1 #668: MERGED.
+- October relation A2 #669: MERGED.
+- September H5/H6 closure remains prior-month evidence.
+- October natural-month closure is not inferred.
+- A1 decision: RETAIN.
+- Coverage status: COMPLETE_FOR_DATE.
+- Task-time states remain authoritative.
+- Later state does not rewrite 2026-10-01.
+- New source-independence credit: NONE.
+
+### 2026-10-02
+- Horizon H1 path: PRESENT.
+- Horizon H2 path: PRESENT.
+- Parallax Daily path: PRESENT.
+- A1 #673: MERGED.
+- A2 #674: MERGED.
+- September D30 audit #675: MERGED.
+- D30 is retrospective audit evidence.
+- D30 is not native Daily production.
+- D30 is not October natural-month closure.
+- A1 decision: RETAIN.
+- Coverage status: COMPLETE_FOR_DATE.
+- New research credit from audit routing: NONE.
+
+### 2026-10-03
+- Horizon H1 path: PRESENT.
+- Horizon H2 path: PRESENT.
+- Parallax Daily path: PRESENT.
+- A1 #679: MERGED.
+- A2 #680: MERGED.
+- Successor A1 #681: MERGED.
+- Successor A2 #682: MERGED.
+- Horizon network degradation remains preserved.
+- `NETWORK_UNAVAILABLE != VERIFIED_ABSENCE`.
+- Parallax correlation/group identity remains distinct from execution-attempt identity.
+- `CONTRACT_EVIDENCE != RUNTIME_TRACE`.
+- A1 decision: RETAIN_CURRENT_RELATION.
+- Coverage status: COMPLETE_FOR_DATE.
+
+### Maintenance chronology rules
+- Earlier A1 sections remain point-in-time records.
+- Earlier A2 sections remain point-in-time records.
+- Later native delivery does not establish earlier visibility.
+- Later merge does not establish earlier input availability.
+- Later success does not upgrade earlier degraded state.
+- Current main does not replace task-time state.
+- Closed-unmerged PRs are not current-main evidence.
+- Merged PR identity is not semantic-success identity.
+- Daily task identity is not scheduler-slot identity.
+- Audit execution is not native research execution.
+- Monthly owner update is not natural-month finalization.
+- Same logical date does not imply same state surface.
+
+### Artifact-class review
+- Horizon H1 Daily: REVIEWED / RETAIN.
+- Horizon H2 Daily: REVIEWED / RETAIN.
+- Horizon H3 Weekly: REVIEWED_AS_WEEKLY_OWNER.
+- Horizon H4 Weekly: REVIEWED_AS_WEEKLY_OWNER.
+- Parallax Daily: REVIEWED / RETAIN.
+- Parallax Special: REVIEW_IF_PRESENT / NO_DUPLICATE_CREDIT.
+- Parallax Audit: DERIVED / ZERO_RESEARCH_CREDIT.
+- Parallax Monthly: DERIVED_FACT_SOURCE / OPEN.
+- October H6 owner: APPEND_ONLY_RELATIONAL_OWNER.
+- September H5/H6: PRIOR_MONTH_FACT_SOURCE.
+- D30 audit: AUDIT_PLANE.
+- Prior A1: POINT_IN_TIME_HISTORY.
+- Prior A2: POINT_IN_TIME_HISTORY.
+
+### 2026-10-04 boundary only
+- Parallax Daily #683: MERGED.
+- H1 Daily #684: MERGED.
+- H2 Daily #685: MERGED.
+- W39 H4 correction #686: MERGED.
+- W39 H3 #687: MERGED_LATER.
+- Original W40 H4 Draft #688: CLOSED_UNMERGED.
+- Rebuilt W40 H4 #689: MERGED.
+- W39 H3 later presence does not rewrite the earlier W39 H4 blocked chronology.
+- W40 H4 fail-closed state remains task-time valid.
+- 2026-10-04 inputs are not consumed by this A1.
+- 2026-10-04 inputs are reserved for A2.
+
+### Evidence invariants
+- `LATER_PATH_PRESENT != ORIGINAL_INPUT_AVAILABLE`
+- `CURRENT_PATH_COMPLETE != HISTORICAL_EXECUTION_COMPLETE`
+- `LATER_SUCCESS != EARLIER_SUCCESS`
+- `CURRENT_REPOSITORY_STATE != TASK_TIME_STATE`
+- `MERGED_ARTIFACT != SUCCESSFUL_EXECUTION`
+- `MERGED_MONTHLY_ARTIFACT != NATURAL_MONTH_CLOSE`
+- `DUE_DATE != EXECUTION`
+- `SCHEDULED != EXECUTED`
+- `SAME_DATE != SAME_STATE`
+- `SOURCE_CODE != EXECUTED_BEHAVIOR`
+- `TEST_SOURCE != TEST_EXECUTION`
+- `NATIVE_TASK_DELIVERY != A1_MAINTENANCE`
+- `A1_MAINTENANCE != A2_RELATIONAL_VERSION`
+- `A2_RELATIONAL_VERSION != PERIODIC_AUDIT`
+- `PERIODIC_AUDIT != DURABLE_GOVERNANCE`
+
+### Horizon boundaries
+- H3 uses the previous completely ended ISO week.
+- H4 requires same-target-week H3 input.
+- W39 H3 and W40 H4 are different target-week identities.
+- Missing same-week H3 must fail closed.
+- A later H3 cannot retroactively make old H4 successful.
+- H5/H6 final only on a naturally closed month.
+- October H5/H6 final is not due.
+
+### Parallax boundaries
+- One Shanghai logical day permits at most one primary Daily research batch.
+- Same-day rerun strengthens the same Daily rather than increasing batch count.
+- Audit is a derived review and adds zero research batches.
+- Monthly is a derived fact-source/control view.
+- Missing evidence is not negative evidence.
+- Later explanation is not rewritten as earlier raw observation.
+- Contract evidence is not runtime execution evidence.
+
+### Completeness checklist
+- 2026-10-01 represented: YES.
+- 2026-10-02 represented: YES.
+- 2026-10-03 represented: YES.
+- N-1 coverage complete: YES.
+- 2026-10-04 excluded: YES.
+- D30 kept separate: YES.
+- Historical states preserved: YES.
+- Closed-unmerged history not promoted: YES.
+- Duplicate research credit: NO.
+- Duplicate execution-window credit: NO.
+- Runtime execution invented: NO.
+- Network execution invented: NO.
+- Weekly closure invented: NO.
+- Natural-month closure invented: NO.
+- Governance promotion performed: NO.
+- Parallel owner created: NO.
+- A2 allowed before A1 merge: NO.
+
+### A1 disposition
+- Coverage completeness: `COMPLETE_THROUGH_2026-10-03_AT_THIS_CHECK`.
+- Decision completeness: `COMPLETE_THROUGH_2026-10-03_AT_THIS_CHECK`.
+- October owner state: `OPEN`.
+- October natural-month final: `NOT_DUE`.
+- W40 H4 current relation: `FAIL_CLOSED_AT_TASK_TIME`.
+- New native research credit: `NONE`.
+- New runtime credit: `NONE`.
+- New audit credit: `NONE`.
+- New governance credit: `NONE`.
+- A2 dependency: `MUST_MERGE_THIS_A1_THEN_FRESH_READ_MAIN`.
+
+```text
+OCTOBER_1_TO_3_FULL_COVERAGE
++
+HISTORICAL_STATE_PRESERVED
++
+N_DAY_2026_10_04_EXCLUDED
+=
+A1_COMPLETE_FOR_2026_10_04
+```
