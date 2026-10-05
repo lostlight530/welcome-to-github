@@ -877,3 +877,157 @@ OCTOBER_1_TO_4_FULL_COVERAGE
 + N_DAY_2026_10_05_EXCLUDED
 = A1_COMPLETE_FOR_2026_10_05
 ```
+
+## A2 CURRENT MONTH RELATION — 2026-10-05 — HORIZON_PARALLAX
+
+- Repository: `lostlight530/welcome-to-github`
+- Plane: `A2 / CURRENT_MONTH_RELATIONAL_VERSION`
+- Logical maintenance date: `2026-10-05`
+- Exact A1-merged base main: `44d491f67113d0f0d19821de8a6979bda384eb38`
+- Required predecessor A1: PR #696 / MERGED
+- Fresh-read after A1 merge: YES
+- Current month relation window: `2026-10-01..2026-10-05`
+- Owner: `horizon-cortex/2026-10-H6-horizon-memorize.md`
+- Native system: Horizon / Parallax
+- Historical rewrite: NO
+- Native task replay: NO
+- Runtime/network/test execution by maintenance: NOT_PERFORMED
+- Duplicate native credit: NONE
+
+### 1. A1 dependency consumption
+- A1 #696 is present on this base.
+- A1 supplies complete MonthStart→2026-10-04 coverage.
+- A2 does not rerun A1.
+- A2 consumes 2026-10-05 native/current repository state.
+- Prior A1/A2/Special records remain point-in-time history.
+- Open Research framework relation from A1 remains part of the current repository model.
+
+### 2. Inherited 2026-10-01 relation
+- H1/H2 + Parallax month-open relation retained.
+- New A2 credit from inheritance: NONE.
+
+### 3. Inherited 2026-10-02 relation
+- H1/H2 + Parallax 10/2 relation retained; retrospective audit remains separate.
+- New A2 credit from inheritance: NONE.
+
+### 4. Inherited 2026-10-03 relation
+- Horizon degraded-network and Parallax attempt-identity boundaries retained.
+- New A2 credit from inheritance: NONE.
+
+### 5. Inherited 2026-10-04 relation
+- 10/4 Parallax/H1/H2 and W39/W40 weekly chronology retained.
+- W39 H4 blocked and W40 H4 fail-closed task-time states remain preserved.
+- Open Research framework merged on 10/4 remains current repository guidance.
+- New A2 credit from inheritance: NONE.
+
+### 6. 2026-10-05 native/current relation consumed
+- Parallax PR #693 is merged for logical 2026-10-05.
+- Its title records approval-validation identity as the Daily research focus.
+- H1 Daily #694 is merged for 2026-10-05.
+- H2 Daily #695 is merged for 2026-10-05.
+- H1→H2 producer ordering is present on current main.
+- No Weekly success is inferred merely from Daily presence.
+- No Parallax runtime sentinel execution is invented by maintenance.
+
+### 7. Open Research / scholarly-submission current relation
+- OPEN_RESEARCH.md: CURRENT / PRESENT.
+- RESEARCH_TEMPLATE.md: CURRENT / PRESENT.
+- README entry point: CURRENT / PRESENT.
+- CONTRIBUTING routing: CURRENT / PRESENT.
+- Repository-native method/evidence/implementation contracts remain stronger.
+- Prospective template does not retrofit historical records.
+- Scholarly metadata remains downstream of repository truth.
+- External classifier output remains non-authoritative.
+- Publication does not equal validation.
+- Citation does not equal reproduction.
+- Metadata consistency does not equal scientific correctness.
+- Repository identity is not changed for classifier convenience.
+- Submission-oriented metadata cannot erase unknown/negative evidence.
+- Open Research itself creates no native execution credit.
+- Open Research itself creates no independent source credit.
+
+### 8. Current relational synthesis
+- Horizon Daily producer state is current through 2026-10-05.
+- Parallax rolling October relation is current through 2026-10-05.
+- Historical weekly task-time states remain preserved.
+- Open Research is current as a repository-level guide, below Horizon/Parallax native contracts.
+- October H5/H6 natural-month final remains not due.
+
+### 9. Relation matrix
+| Surface | Current A2 state | Boundary |
+| --- | --- | --- |
+| 2026-10-01 | RETAINED | point-in-time history |
+| 2026-10-02 | RETAINED | audit/late-delivery chronology preserved |
+| 2026-10-03 | RETAINED | successor/history preserved |
+| 2026-10-04 | RETAINED | A1-covered relation including Open Research |
+| 2026-10-05 | CONSUMED_BY_THIS_A2 | native/current N-day relation |
+| OPEN_RESEARCH.md | CURRENT | guide below native authority |
+| RESEARCH_TEMPLATE.md | CURRENT | prospective template |
+| Rolling October owner | OPEN / CURRENT_THROUGH_2026-10-05 | not natural-month final |
+| Prior A1 | CONSUMED | full-coverage foundation |
+| Prior A2/Special | PRESERVED | no overwrite |
+
+### 10. Evidence invariants
+- LATER_PATH_PRESENT != ORIGINAL_INPUT_AVAILABLE.
+- CURRENT_PATH_COMPLETE != HISTORICAL_EXECUTION_COMPLETE.
+- LATER_SUCCESS != EARLIER_SUCCESS.
+- CURRENT_REPOSITORY_STATE != TASK_TIME_STATE.
+- SAME_DATE != SAME_STATE.
+- SOURCE_CODE != EXECUTED_BEHAVIOR.
+- TEST_SOURCE != TEST_EXECUTION.
+- PUBLICATION != VALIDATION.
+- CITATION != REPRODUCTION.
+- EXTERNAL_CLASSIFICATION != REPOSITORY_IDENTITY.
+- OPEN_RESEARCH_GUIDE != NATIVE_METHOD_CONTRACT.
+- RESEARCH_TEMPLATE != HISTORICAL_RECORD_REWRITE.
+- NATIVE_TASK_DELIVERY != A1_MAINTENANCE.
+- A1_MAINTENANCE != A2_RELATIONAL_VERSION.
+- A2_RELATIONAL_VERSION != PERIODIC_AUDIT.
+- PERIODIC_AUDIT != DURABLE_GOVERNANCE.
+
+### 11. Repository-specific boundaries
+- H3 target-week identity remains contract-bound.
+- H4 requires same-target-week H3 input.
+- Parallax one logical Daily equals one primary research batch.
+- APPROVAL_VALIDATION_IDENTITY_RESEARCH != RUNTIME_APPROVAL_EXECUTION.
+
+### 12. Validation checklist
+- A1 merged before A2 branch: YES.
+- A2 base equals fresh post-A1 main: YES.
+- 10/1 inherited relation preserved: YES.
+- 10/2 inherited relation preserved: YES.
+- 10/3 inherited relation preserved: YES.
+- 10/4 inherited/Open Research relation preserved: YES.
+- 10/5 current state consumed: YES.
+- Earlier blocked/degraded state rewritten: NO.
+- Closed-unmerged history promoted: NO.
+- Duplicate native credit: NO.
+- Duplicate research/execution-window credit: NO.
+- Runtime execution invented: NO.
+- Test execution invented: NO.
+- Publication/reproduction credit invented: NO.
+- Scientific-validity promotion invented: NO.
+- Natural-month final manufactured: NO.
+- Periodic audit manufactured: NO.
+- Durable governance promoted by A2: NO.
+- Parallel monthly owner created: NO.
+
+### 13. A2 disposition
+- Current October relation: `CURRENT_THROUGH_2026-10-05`.
+- October version state: `OPEN`.
+- Open Research framework: `CURRENT / BOUNDED_BY_NATIVE_AUTHORITY`.
+- Scholarly submission relation: `CURRENT / NO_VALIDATION_PROMOTION`.
+- Natural-month final: `NOT_DUE`.
+- Historical chronology: `PRESERVED`.
+- Native producer credit: `RETAINED_WITHOUT_DUPLICATION`.
+- New maintenance research/runtime/publication credit: `NONE`.
+- Successor dependency: `FUTURE_A1_MUST_FRESH_READ_THIS_MERGED_MAIN`.
+
+```text
+MERGED_A1
++ FRESH_MAIN_READ
++ 2026_10_05_NATIVE_CURRENT_INPUT
++ OPEN_RESEARCH_CURRENT_RELATION
+= CURRENT_MONTH_RELATION_THROUGH_2026_10_05
+CURRENT_MONTH_RELATION != NATURAL_MONTH_FINAL
+```
