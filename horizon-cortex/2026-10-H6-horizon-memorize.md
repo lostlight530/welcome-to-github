@@ -1031,3 +1031,188 @@ MERGED_A1
 = CURRENT_MONTH_RELATION_THROUGH_2026_10_05
 CURRENT_MONTH_RELATION != NATURAL_MONTH_FINAL
 ```
+
+
+## A1 FULL-COVERAGE MAINTENANCE — 2026-10-06 — HORIZON_PARALLAX
+
+- Repository: `lostlight530/welcome-to-github`
+- Plane: `A1 / FULL-COVERAGE MAINTENANCE`
+- Logical maintenance date: `2026-10-06`
+- Exact base main: `0cd31688a2a327b77e0cb2259151c760f530fd24`
+- Default branch: `main`
+- Coverage window: `2026-10-01..2026-10-05`
+- N-day boundary: `2026-10-06`
+- Owner: `horizon-cortex/2026-10-H6-horizon-memorize.md`
+- Current month identity: `2026-10`
+- Historical rewrite: NO
+- Native task replay: NO
+- Runtime/network/test execution by maintenance: NOT_PERFORMED
+- Natural-month final: NOT_DUE
+- New maintenance research credit: NONE
+- New maintenance execution-window credit: NONE
+
+### 1. Fresh-start evidence gate
+- Current main was re-read before branch creation.
+- Open PR overlap was checked before this write and no overlapping PR was present.
+- The branch starts from the exact current main recorded above.
+- Prior A1/A2 blocks remain point-in-time maintenance history.
+- Native Horizon and Parallax artifacts remain producer-owned evidence.
+- Current path presence is not used as proof of historical execution.
+- Later success is not used to rewrite earlier blocked, degraded, missing, or unknown state.
+- The October H6 owner is continued rather than replaced by a parallel maintenance owner.
+- This A1 is maintenance over MonthStart through N-1, not a producer task.
+
+### 2. Coverage denominator
+- 01. 2026-10-01 Horizon H1/H2 relation reviewed.
+- 02. 2026-10-01 Parallax month-open relation reviewed.
+- 03. 2026-10-02 Horizon H1/H2 relation reviewed.
+- 04. 2026-10-02 Parallax relation plus retrospective audit chronology reviewed.
+- 05. 2026-10-03 Horizon degraded-network chronology reviewed.
+- 06. 2026-10-03 Parallax successor relation reviewed.
+- 07. 2026-10-04 Horizon Daily and weekly relation reviewed.
+- 08. 2026-10-04 Parallax relation and weekly chronology reviewed.
+- 09. 2026-10-04 Open Research / template / routing relation reviewed.
+- 10. 2026-10-05 Parallax Daily relation reviewed.
+- 11. 2026-10-05 Horizon H1 producer artifact reviewed.
+- 12. 2026-10-05 Horizon H2 producer artifact reviewed.
+- 13. Rolling October H6 owner reviewed as maintenance owner, not natural-month final.
+- 14. Weekly task-time states reviewed separately from later path completeness.
+- 15. Negative, blocked, degraded, unknown, and not-executed evidence reviewed for preservation.
+
+### 3. 2026-10-01 decision
+- Decision: `NO_FOLLOW_UP / RETAIN`.
+- Month-open Horizon H1/H2 evidence remains producer-owned point-in-time history.
+- Month-open Parallax evidence remains on the Parallax research plane.
+- No later owner state creates additional native research or execution credit.
+- No current evidence requires rewriting the 2026-10-01 task-time state.
+- Coverage for 2026-10-01 is complete at this A1 cut.
+
+### 4. 2026-10-02 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_WITH_BOUNDARY`.
+- Retrospective audit material remains separate from native producer evidence.
+- Audit chronology does not become a new Horizon Daily or Parallax Daily.
+- Later maintenance does not convert historical uncertainty into success.
+- No duplicate research or execution-window credit is created.
+- Coverage for 2026-10-02 is complete at this A1 cut.
+
+### 5. 2026-10-03 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_WITH_PROVENANCE`.
+- Horizon degraded-network state remains a valid task-time state.
+- Missing external verification remains missing verification, not verified absence.
+- Parallax successor history remains separate from its predecessor state.
+- Current repository completeness does not prove original execution completeness.
+- Coverage for 2026-10-03 is complete at this A1 cut.
+
+### 6. 2026-10-04 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_RELATIONS`.
+- Horizon weekly chronology remains contract-bound.
+- Parallax weekly/research chronology remains on its own evidence plane.
+- Open Research remains subordinate to Horizon, Parallax, NEXUS, and host-native authority.
+- Prospective templates do not retrofit historical producer records.
+- Publication metadata does not create validation or reproduction evidence.
+- Coverage for 2026-10-04 is complete at this A1 cut.
+
+### 7. 2026-10-05 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_CURRENT_RELATION`.
+- Parallax 2026-10-05 producer delivery remains the approval-validation Daily relation.
+- Horizon H1 2026-10-05 remains the producer-owned Observe record.
+- Horizon H2 2026-10-05 remains the producer-owned Orient record.
+- H1→H2 visibility is retained without using later records to rewrite earlier task-time states.
+- The prior 2026-10-05 A2 relation remains the latest pre-N relational state.
+- No evidence found in this A1 requires a correction-in-place of that relation.
+- Coverage for 2026-10-05 is complete at this A1 cut.
+
+### 8. Artifact-class decision matrix
+| Surface | A1 decision | Evidence boundary |
+| --- | --- | --- |
+| Horizon producer artifacts 10/1–10/5 | REVIEWED | producer-owned point-in-time facts |
+| Parallax producer artifacts 10/1–10/5 | REVIEWED | research plane remains distinct |
+| Weekly / phase relation due by cutoff | REVIEWED_IF_PRESENT | no cadence promotion |
+| Rolling October H6 owner | APPEND_RELATION | maintenance relation only |
+| Special / retrospective material | REVIEWED_IF_PRESENT | separate from producer credit |
+| Prior A1/A2 blocks | RETAIN | historical maintenance states |
+| Open Research / research template | RETAIN | subordinate and prospective |
+| README / CONTRIBUTING routing | REVIEW_BY_RELATION | navigation is not runtime |
+| Negative / UNKNOWN evidence | PRESERVE | no success rewrite |
+| 2026-10-06 native/current state | BOUNDARY_ONLY | excluded from A1 consumption |
+
+### 9. N-day exclusion boundary
+- Parallax 2026-10-06 PR #698 is merged on current main.
+- Horizon H1 2026-10-06 PR #699 is merged.
+- Horizon H2 2026-10-06 PR #700 is merged after H1.
+- Current main advanced again through the bounded NEXUS lifecycle after the producer merges.
+- These N-day facts are visible only to establish the cutoff and current-main context.
+- They are not consumed into the MonthStart→N-1 A1 conclusion.
+- Their October relation is reserved for A2 after this A1 merges and main is fresh-read.
+- A1 therefore does not claim `CURRENT_THROUGH_2026-10-06`.
+- A1 does not duplicate producer-owned research or execution credit from 2026-10-06.
+
+### 10. Permanent evidence invariants
+- `HISTORY != CURRENT_STATE`
+- `CURRENT_PATH != HISTORICAL_EXECUTION`
+- `LATER_SUCCESS != EARLIER_SUCCESS`
+- `LATER_DELIVERY != EARLIER_AVAILABILITY`
+- `CURRENT_COMPLETENESS != HISTORICAL_COMPLETENESS`
+- `CORRECTION != HISTORY_REWRITE`
+- `REPETITION != INDEPENDENCE`
+- `INHERITANCE != INDEPENDENT_VERIFICATION`
+- `EXECUTION != CORRECTNESS`
+- `COMMAND_SUCCESS != VALID_COMPLETION`
+- `SOURCE_CODE != EXECUTED_BEHAVIOR`
+- `TEST_SOURCE != TEST_EXECUTION`
+- `PUBLICATION != VALIDATION`
+- `CITATION != REPRODUCTION`
+- `NATIVE_TASK_DELIVERY != A1_MAINTENANCE`
+- `A1_MAINTENANCE != A2_RELATIONAL_VERSION`
+- `A2_RELATIONAL_VERSION != PERIODIC_AUDIT`
+- `PERIODIC_AUDIT != DURABLE_GOVERNANCE`
+
+### 11. Repository-specific invariants
+- `HORIZON != PARALLAX != NEXUS != HOST_RUNTIME`
+- `H2_RESTATEMENT_DOES_NOT_UPGRADE_H1_EVIDENCE`
+- `POST_HOC_BACKFILL != ORIGINAL_UPSTREAM_AVAILABILITY`
+- `CURRENT_CONTENT != ORIGINAL_EXECUTION_EVIDENCE`
+- `PARALLAX_DAILY != HORIZON_DAILY`
+- `RUNTIME_SENTINEL_ABSENCE != EXECUTED_SUCCESS`
+
+### 12. Decision completeness
+- 2026-10-01: REVIEWED.
+- 2026-10-02: REVIEWED.
+- 2026-10-03: REVIEWED.
+- 2026-10-04: REVIEWED.
+- 2026-10-05: REVIEWED.
+- MonthStart→N-1 coverage: COMPLETE.
+- N-day 2026-10-06 consumed by A1: NO.
+- Historical task-time state rewritten: NO.
+- Negative evidence erased: NO.
+- UNKNOWN promoted to success: NO.
+- Closed-unmerged history promoted: NO.
+- Duplicate native credit created: NO.
+- Duplicate research credit created: NO.
+- Duplicate execution-window credit created: NO.
+- Runtime execution invented: NO.
+- Test execution invented: NO.
+- Publication/reproduction credit invented: NO.
+- Scientific-validity promotion invented: NO.
+- Natural-month final manufactured: NO.
+- Parallel owner created: NO.
+- A2 allowed before this A1 merge: NO.
+
+### 13. A1 disposition
+- Coverage completeness: `COMPLETE_THROUGH_2026-10-05_AT_THIS_CHECK`.
+- Decision completeness: `COMPLETE_THROUGH_2026-10-05_AT_THIS_CHECK`.
+- Current October state: `OPEN`.
+- Historical integrity: `PRESERVED`.
+- Required correction-in-place: `NONE_IDENTIFIED`.
+- Required conflict record: `NONE_IDENTIFIED`.
+- Required supersession: `NONE_IDENTIFIED`.
+- New maintenance research/runtime/publication credit: `NONE`.
+- A2 dependency: `MUST_MERGE_THIS_A1_THEN_FRESH_READ_CURRENT_MAIN`.
+
+```text
+OCTOBER_1_TO_5_FULL_COVERAGE
++ DECISION_COMPLETENESS
++ HISTORICAL_STATE_PRESERVED
++ N_DAY_2026_10_06_EXCLUDED
+= A1_COMPLETE_FOR_2026_10_06
+```
