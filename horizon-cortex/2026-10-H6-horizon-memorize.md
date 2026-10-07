@@ -1572,3 +1572,159 @@ OCTOBER_1_TO_6_FULL_COVERAGE
 + N_DAY_2026_10_07_EXCLUDED
 = A1_COMPLETE_FOR_2026_10_07
 ```
+
+
+## A2 CURRENT MONTH RELATION — 2026-10-07 — HORIZON_PARALLAX
+
+- Repository: `lostlight530/welcome-to-github`
+- Plane: `A2 / CURRENT_MONTH_RELATIONAL_VERSION`
+- Logical maintenance date: `2026-10-07`
+- Exact A1-merged base main: `7446cb11e847361a612a0e3e59b3664932926bdb`
+- Required predecessor A1: PR #706 / MERGED
+- Fresh-read after A1 merge: YES
+- Current month relation window: `2026-10-01..2026-10-07`
+- Owner: `horizon-cortex/2026-10-H6-horizon-memorize.md`
+- Historical rewrite: NO
+- Native replay: NO
+- External runtime execution by maintenance: NOT_PERFORMED
+- Duplicate native/research credit: NONE
+- Natural-month final: NOT_DUE
+
+### 1. A1 dependency consumption
+- A1 #706 is present on this exact base.
+- A1 supplies complete 10/1→10/6 coverage.
+- A2 consumes 2026-10-07 current producer state only after fresh-read main.
+- Prior Daily/Weekly/A1/A2 records remain point-in-time history.
+- Horizon, Parallax, NEXUS, and host runtime remain separate planes.
+- No historical body is rewritten.
+
+### 2. Inherited 10/1→10/6 relation
+- Month-open Horizon/Parallax relations remain retained.
+- Audit/weekly/special boundaries remain retained.
+- 10/5 approval-validation relation remains retained.
+- 10/6 Parallax continuation-identity research remains PARTIAL.
+- 10/6 Horizon H1/H2 remain DEGRADED / NETWORK_UNAVAILABLE / SOURCE_NONE.
+- 10/6 Parallax runtime wire capture remains NOT_EXECUTED.
+- No inherited relation creates new native or execution credit.
+
+### 3. 2026-10-07 Parallax relation
+- Parallax PR #703 is merged and producer-owned.
+- Record ID is `PX-20261007-CANCELLATION-SETTLEMENT`.
+- Research status is PARTIAL.
+- Research object separates cancellation intent, acknowledgement/local flag, terminal cancelled state, and settled execution.
+- MCP Tasks cancellation acknowledgement is treated as eventually consistent contract evidence.
+- OpenAI streaming cancelled flag remains distinct from `stream.completed` settlement.
+- A2A Cancel Task remains a cancellation attempt rather than guaranteed terminal cancellation.
+- Publisher identities: MCP, OpenAI, A2A.
+- Independent source count: 3.
+- Live cancellation runtimes executed: 0.
+- Cancellation wire traces captured: 0.
+- CASE support increment: 0.
+- NOTES promotion: 0.
+- A2 preserves contract-evidence scope and does not manufacture runtime behavior.
+
+### 4. Cancellation evidence boundary
+- `CANCELLATION_INTENT != CANCELLATION_ACK_OR_LOCAL_FLAG`.
+- `CANCELLATION_ACK_OR_LOCAL_FLAG != OBSERVABLE_TERMINAL_CANCELLED`.
+- `OBSERVABLE_TERMINAL_CANCELLED != RUN_SETTLED`.
+- Cancellation acknowledgement is not treated as a completion receipt.
+- Client retention policy is not treated as server-side settlement evidence.
+- No side-effect rollback or compensation completion is inferred.
+- No implementation-specific cancellation latency is inferred.
+
+### 5. 2026-10-07 Horizon H1 relation
+- H1 PR #704 is merged and producer-owned.
+- Logical Date is 2026-10-07.
+- Network Status is `NETWORK_UNAVAILABLE`.
+- Source Status is `NONE`.
+- Task Status is `DEGRADED`.
+- External Source Records are NONE.
+- Signal is `NO_MATERIAL_NEW_SIGNAL` with scope `NO_VERIFIABLE_MATERIAL_NEW_SIGNAL_IN_THIS_RUN`.
+- Freshness remains UNKNOWN.
+- H1 does not prove that the external world had no material change.
+- A2 preserves this run-bounded limitation.
+
+### 6. 2026-10-07 Horizon H2 relation
+- H2 PR #705 is merged after H1.
+- Input Status is PRESENT.
+- Network Status remains `NETWORK_UNAVAILABLE`.
+- Source Status remains `NONE`.
+- Task Status remains `DEGRADED`.
+- H2 explicitly consumes the degraded H1 input.
+- H2 performs no evidence upgrade.
+- H2 does not turn missing network evidence into strategic evidence.
+- H2 restatement creates no independent verification.
+
+### 7. Current relation matrix
+| Surface | A2 state | Boundary |
+| --- | --- | --- |
+| 10/1–10/4 | RETAINED | point-in-time history |
+| 10/5 | RETAINED | predecessor relation |
+| 10/6 | RETAINED_WITH_LIMITS | PARTIAL + DEGRADED preserved |
+| 10/7 Parallax | CONSUMED_PARTIAL | contract evidence, no runtime |
+| 10/7 H1 | CONSUMED_DEGRADED | network unavailable |
+| 10/7 H2 | CONSUMED_DEGRADED | no evidence upgrade |
+| NEXUS/host | SEPARATE | no cross-plane promotion |
+| October owner | OPEN / CURRENT_THROUGH_2026-10-07 | not final |
+
+### 8. Cross-day continuity
+- 10/6 continuation identity and 10/7 cancellation settlement are distinct research variables.
+- Topic adjacency does not create replication credit.
+- 10/7 does not rewrite 10/6 PARTIAL state.
+- 10/7 Horizon network failure does not rewrite 10/6 network failure.
+- Repeated DEGRADED producer status is not independent external-world evidence.
+- The owner records continuity without collapsing execution windows.
+
+### 9. Open Research / scholarly relation
+- Open Research remains supplementary.
+- Prospective templates do not retrofit historical Dailies.
+- Publication does not equal validation.
+- Citation does not equal reproduction.
+- Repository identity is not altered for submission/classifier convenience.
+- No publication or scientific-validity credit is created by A2.
+
+### 10. Evidence invariants
+- `HORIZON != PARALLAX != NEXUS != HOST_RUNTIME`.
+- `NETWORK_UNAVAILABLE != EXTERNAL_ABSENCE`.
+- `NO_VERIFIABLE_SIGNAL_IN_RUN != VERIFIED_WORLD_NO_CHANGE`.
+- `H2_RESTATEMENT_DOES_NOT_UPGRADE_H1_EVIDENCE`.
+- `CANCEL_REQUEST_OR_ACK != TERMINAL_CANCELLED_EVIDENCE`.
+- `TERMINAL_CANCELLED_EVIDENCE != SETTLED_EXECUTION_EVIDENCE`.
+- `DOCUMENTATION_CONTRACT != RUNTIME_WIRE_TRACE`.
+- `NATIVE_TASK_DELIVERY != MAINTENANCE_CREDIT`.
+- `A1_MAINTENANCE != A2_RELATIONAL_VERSION`.
+- `CURRENT_MONTH_RELATION != NATURAL_MONTH_FINAL`.
+
+### 11. Validation checklist
+- A1 #706 merged before A2 branch: YES.
+- Fresh post-A1 main used: YES.
+- 10/1→10/6 relation retained: YES.
+- 10/7 Parallax consumed: YES.
+- 10/7 H1 consumed with DEGRADED preserved: YES.
+- 10/7 H2 consumed with DEGRADED preserved: YES.
+- Cancellation ack promoted to terminal settlement: NO.
+- Parallax runtime execution invented: NO.
+- Horizon network failure rewritten as world no-change: NO.
+- H2 treated as independent verification: NO.
+- Duplicate research credit created: NO.
+- Natural-month final manufactured: NO.
+- Parallel owner created: NO.
+
+### 12. A2 disposition
+- Current October relation: `CURRENT_THROUGH_2026-10-07`.
+- October state: `OPEN`.
+- Parallax 10/7: `PARTIAL / CONTRACT_EVIDENCE_ONLY`.
+- Horizon 10/7: `DEGRADED / NETWORK_UNAVAILABLE / SOURCE_NONE`.
+- Cancellation settlement boundary: `PRESERVED`.
+- Historical chronology: `PRESERVED`.
+- New maintenance research/runtime/publication credit: `NONE`.
+- Next A1 must fresh-read this merged main.
+
+```text
+MERGED_A1
++ FRESH_MAIN_READ
++ 2026_10_07_PARALLAX_PARTIAL
++ 2026_10_07_H1_H2_DEGRADED
++ CANCELLATION_SETTLEMENT_BOUNDARY
+= CURRENT_MONTH_RELATION_THROUGH_2026_10_07
+```
