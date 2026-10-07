@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_kind": "ORIGINAL_WORKFLOW_BASELINE",
+  "record_status": "FROZEN_REFERENCE",
+  "capture_date": "2026-10-07",
+  "capture_timezone": "Asia/Shanghai",
+  "repository": "lostlight530/welcome-to-github",
+  "source_ref": "main",
+  "source_main_sha": "0b2e45c0b2eff554cf40431ce3c53693d86bc290",
+  "canonical_executable_source": ".github/workflows/nexus-life-cycle.yml",
+  "source_workflow_name": "NEXUS CORTEX Life Cycle",
+  "source_workflow_blob_sha": "c8fc0f838b03333231c82c9abf20e54370629cd0",
+  "source_content_sha256": "90519c058d6e2f2c1fa9701a682736dca429a57094e3593b792bcfb9f6760c18",
+  "source_line_count": 207,
+  "source_jobs": [
+    "validate",
+    "apply"
+  ],
+  "source_triggers": [
+    "schedule",
+    "push",
+    "pull_request",
+    "workflow_dispatch"
+  ],
+  "host_specific_change_surfaces": [
+    "docs/brain/**",
+    "src/**",
+    "tests/**"
+  ],
+  "agi_contains_executable_copy": false,
+  "executable_from_agi": false,
+  "workflowhub_registered": false,
+  "workflowhub_version": null,
+  "related_agi_basepoint_path": "AGI/basepoint",
+  "related_agi_basepoint_tree_sha": "7853f73882469cace61208be6e133dd5d4dd3337",
+  "related_task_checkpoint_path": "AGI/checkpoints/2026-10-07",
+  "related_pull_request": "https://github.com/lostlight530/welcome-to-github/pull/708",
+  "original_label_scope": "First workflow baseline recorded in the AGI workflow-history surface. This does not claim to be the repository's earliest historical implementation.",
+  "recovery_rule": "Resolve source_main_sha, read canonical_executable_source, verify source_workflow_blob_sha and source_content_sha256, then validate the recovered workflow before any publication or execution claim."
+}
