@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-07
-- 最新每日研究: [Cancellation acknowledgement 与 settled state 边界](records/2026-10/2026-10-07.md)
-- 每日专题: 77
+- 最新每日归属日期: 2026-10-08
+- 最新每日研究: [Progress / stream event 与 terminal result 边界](records/2026-10/2026-10-08.md)
+- 每日专题: 78
 - 特殊专题: 17
-- 当前专题研究批次: 94
-- 当前专题独立执行日期窗口: 72
+- 当前专题研究批次: 95
+- 当前专题独立执行日期窗口: 73
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -36,7 +36,7 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 - 当前日记录模板: [templates/daily.md](templates/daily.md)
 - 当前周期整理模板: [templates/monthly.md](templates/monthly.md)
 
-截至 2026-10-07, 9 月历史覆盖保持 30 个 assigned-date Daily artifacts，其中 28 个 primary research units, 2026-09-23 与 2026-09-26 仍是 RECONSTRUCTION / NOT_RUN / UNVERIFIED 且各自增加 0 research credit. 10 月已有 7 个 native Daily, 2026-10-07 新增 cancellation acknowledgement / settlement frontier; 10/7 新增 1 research batch 与 1 independent execution window. README/monthly synchronization 与 delivery validation 均增加 0 additional research credit, 当前仍没有新增 NOTES 级长期发现.
+截至 2026-10-08, 9 月历史覆盖保持 30 个 assigned-date Daily artifacts，其中 28 个 primary research units, 2026-09-23 与 2026-09-26 仍是 RECONSTRUCTION / NOT_RUN / UNVERIFIED 且各自增加 0 research credit. 10 月已有 8 个 native Daily, 2026-10-08 新增 progress / stream observability 与 terminal result frontier; 10/8 新增 1 research batch 与 1 independent execution window. README/monthly synchronization 与 delivery validation 均增加 0 additional research credit, 当前仍没有新增 NOTES 级长期发现.
 
 > Maintenance annotation — 2026-09-19
 >
