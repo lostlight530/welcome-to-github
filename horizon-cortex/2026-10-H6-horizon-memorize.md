@@ -1914,3 +1914,190 @@ INDEPENDENT_RUNTIME_OR_SCIENTIFIC_VERIFICATION
 - Confirm no producer/native or foreign PR inserted between A1 merge and A2 base recovery.
 - A2 may then consume the 2026-10-08 native layer together with this merged A1.
 - A2 must preserve the same source/runtime/history boundaries and must not duplicate prior credit.
+
+## A2 CURRENT-MONTH RELATION — 2026-10-08
+
+- Repository: `lostlight530/welcome-to-github`
+- Plane: `A2 / CURRENT_MONTH_RELATION`
+- Logical maintenance date: `2026-10-08`
+- System: Horizon / Parallax
+- Month start: `2026-10-01`
+- Current relation window: `2026-10-01..2026-10-08`
+- Exact fresh post-A1 base main: `f60d72d5472cd0e98634f325ea64e5a84ae570a1`
+- Existing owner: `horizon-cortex/2026-10-H6-horizon-memorize.md`
+- A1 dependency: `PRESENT_ON_BASE_AND_CONSUMED`
+- A1 coverage inherited: `COMPLETE_THROUGH_2026-10-07_AT_A1_CUT`
+- Owner policy: `SINGLE_EXISTING_OWNER / APPEND_ONLY`
+- Historical rewrite: `NO`
+- Native replay by maintenance: `NO`
+- Extra external research by maintenance: `NOT_PERFORMED`
+- Extra runtime/test execution by maintenance: `NOT_PERFORMED`
+- New independent-source credit by maintenance: `NONE`
+- Natural-month final: `NOT_DUE`
+
+### Dependency and freshness proof
+
+- This A2 was created only after all ten 2026-10-08 A1 PRs merged.
+- The base SHA above was freshly read from canonical main after the A1 merge.
+- Open PR count at this repository's post-A1 fresh-read was zero.
+- No cached pre-A1 base is used.
+- The merged A1 record remains part of current main and is not recreated here.
+- A2 extends the relation by consuming the 2026-10-08 producer-native layer.
+- Prior A1/A2 sections remain point-in-time history and are not rewritten.
+
+### Inherited A1 relation through 2026-10-07
+
+- MonthStart→N-1 coverage is inherited from the merged A1.
+- All dates 2026-10-01 through 2026-10-07 retain their recorded producer and maintenance states.
+- Historical blocked/degraded/unknown/partial states remain preserved.
+- Later success does not backfill earlier task-time availability.
+- Prior corrections remain corrections, not silent history replacement.
+- No research, runtime, source-independence, or local-incident credit is duplicated from A1.
+
+### 2026-10-08 native producer integration
+
+- 2026-10-08 H1 path is present on canonical main.
+- H1 Network Status is NETWORK_UNAVAILABLE; Source Status is NONE; Task Status is DEGRADED.
+- H1 records NO_VERIFIABLE_MATERIAL_NEW_SIGNAL_IN_THIS_RUN and Freshness UNKNOWN.
+- H1 absence of retrieved evidence is not treated as evidence that the external world did not change.
+- 2026-10-08 H2 path is present and consumes the same-day H1 input.
+- H2 remains NETWORK_UNAVAILABLE / DEGRADED with Verification Sources NONE.
+- H2 makes no strategic-memory promotion and preserves unresolved external verification.
+- The 2026-10-08 Parallax native daily lineage was merged before A1; this maintenance pass does not duplicate its source or runtime credit.
+- N-day producer records are consumed as evidence only within their recorded boundaries.
+- Maintenance integration does not transform documentary presence into implementation, runtime, or independent corroboration.
+
+### Current-month coverage matrix
+
+#### 2026-10-01
+- Relation source: inherited from merged A1.
+- Point-in-time producer state: PRESERVED.
+- Point-in-time maintenance state: PRESERVED.
+- Duplicate evidence credit in A2: NONE.
+- Historical mutation in A2: NO.
+
+#### 2026-10-02
+- Relation source: inherited from merged A1.
+- Point-in-time producer state: PRESERVED.
+- Point-in-time maintenance state: PRESERVED.
+- Duplicate evidence credit in A2: NONE.
+- Historical mutation in A2: NO.
+
+#### 2026-10-03
+- Relation source: inherited from merged A1.
+- Point-in-time producer state: PRESERVED.
+- Point-in-time maintenance state: PRESERVED.
+- Duplicate evidence credit in A2: NONE.
+- Historical mutation in A2: NO.
+
+#### 2026-10-04
+- Relation source: inherited from merged A1.
+- Point-in-time producer state: PRESERVED.
+- Point-in-time maintenance state: PRESERVED.
+- Duplicate evidence credit in A2: NONE.
+- Historical mutation in A2: NO.
+
+#### 2026-10-05
+- Relation source: inherited from merged A1.
+- Point-in-time producer state: PRESERVED.
+- Point-in-time maintenance state: PRESERVED.
+- Duplicate evidence credit in A2: NONE.
+- Historical mutation in A2: NO.
+
+#### 2026-10-06
+- Relation source: inherited from merged A1.
+- Point-in-time producer state: PRESERVED.
+- Point-in-time maintenance state: PRESERVED.
+- Duplicate evidence credit in A2: NONE.
+- Historical mutation in A2: NO.
+
+#### 2026-10-07
+- Relation source: inherited from merged A1.
+- Point-in-time producer state: PRESERVED.
+- Point-in-time maintenance state: PRESERVED.
+- Duplicate evidence credit in A2: NONE.
+- Historical mutation in A2: NO.
+
+#### 2026-10-08
+- Relation source: current producer-native layer plus fresh post-A1 base.
+- N-day producer visibility: PRESENT.
+- N-day relation status: INTEGRATED_WITH_RECORDED_BOUNDARIES.
+- Native task/runtime/source limitations: PRESERVED.
+- Duplicate producer credit: NONE.
+- Historical backfill: NONE.
+
+### Evidence and governance boundaries
+
+- NETWORK_UNAVAILABLE != VERIFIED_WORLD_NO_CHANGE.
+- NO_VERIFIABLE_MATERIAL_NEW_SIGNAL_IN_THIS_RUN != NO_EXTERNAL_CHANGE.
+- H1 source absence != source contradiction.
+- H2 orientation != long-term memory promotion.
+- Parallax documentary/contract evidence != live runtime execution.
+- Repeated evidence inside one protocol lineage != new independent-source identity.
+- UNKNOWN remains UNKNOWN where the repository has no execution or source evidence.
+- Negative evidence remains negative evidence and is not rephrased as capability.
+- A maintenance merge is governance evidence, not a producer-native rerun.
+- Same source or project lineage is not multiplied into independent corroboration.
+- No natural-month final is implied by an updated current-month relation.
+
+### Artifact-class disposition
+
+- Daily producer artifacts through N: RETAIN / INTEGRATE_ONCE.
+- Weekly artifacts: retain recorded OPEN/FINAL status; do not finalize early.
+- Monthly owner: update relation only; month closure remains OPEN.
+- Prior A1 blocks: RETAIN_AS_AUDIT_HISTORY.
+- Prior A2 blocks: RETAIN_AS_AUDIT_HISTORY.
+- Corrections: preserve original problem and correction provenance.
+- Closed-unmerged or superseded delivery records: no current-evidence promotion.
+- Index/registry surfaces: mutate only when needed for current relation semantics.
+- Independent-GPT maintenance: no producer execution credit.
+- Runtime evidence: only credit explicit recorded execution.
+
+### Decision-completeness check
+
+- A1 dependency was consumed from the merged base.
+- N-day producer layer was examined for relation update.
+- Month relation now covers 2026-10-01 through 2026-10-08.
+- No N-1 history was rewritten.
+- No missing evidence was invented.
+- No duplicate source credit was created.
+- No duplicate runtime or experiment credit was created.
+- No local incident was inferred from external evidence.
+- No weekly final was declared early.
+- No natural-month final was declared early.
+- No parallel owner was created.
+
+### A2 disposition
+
+- Current month relation: `UPDATED_THROUGH_2026-10-08`.
+- A1 dependency: `SATISFIED_FROM_FRESH_MERGED_MAIN`.
+- N-day integration: `COMPLETE_WITH_BOUNDARIES_PRESERVED`.
+- Historical rewrite: `NO`.
+- Extra producer replay: `NO`.
+- New independent-source credit: `NONE`.
+- New runtime credit by maintenance: `NONE`.
+- Natural-month closure: `OPEN / NOT_DUE`.
+- Unresolved maintenance defect: `NONE_IDENTIFIED_IN_THIS_PASS`.
+
+```text
+MERGED_A1_THROUGH_2026_10_07
++
+FRESH_POST_A1_MAIN
++
+2026_10_08_NATIVE_LAYER
+=
+CURRENT_MONTH_RELATION_THROUGH_2026_10_08
+
+MAINTENANCE_INTEGRATION
+!=
+NATIVE_REPLAY
+!=
+DUPLICATE_EVIDENCE_CREDIT
+```
+
+### Final handoff
+
+- Preserve this A2 as the current relation timepoint for 2026-10-08.
+- A future A1 must start from the then-current main and use MonthStart→N-1 for its own logical date.
+- A future A2 must again fresh-read after its A1 merges.
+- Any later correction must be appended or reconciled without erasing this point-in-time record.
