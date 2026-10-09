@@ -2101,3 +2101,163 @@ DUPLICATE_EVIDENCE_CREDIT
 - A future A1 must start from the then-current main and use MonthStart→N-1 for its own logical date.
 - A future A2 must again fresh-read after its A1 merges.
 - Any later correction must be appended or reconciled without erasing this point-in-time record.
+
+
+## A1 FULL-COVERAGE MAINTENANCE — 2026-10-09
+
+- Coverage: `2026-10-01..2026-10-08` / N-1; exclude 2026-10-09 native from A1.
+- Review basis: actual current-main October owner checkpoints; no historical producer/checker replay.
+- Owner: `horizon-cortex/2026-10-H6-horizon-memorize.md`; month OPEN, October H5/H6 final NOT_DUE.
+- Existing A1/A2 checkpoints and their original provenance remain immutable.
+- Today's A1 is only a new point-in-time relational audit, not a Jules-native H6.
+
+### Dated historical evidence and disposition
+
+#### 2026-10-01: A2_CURRENT_MONTH_RELATION_2026-10-01
+- Historical record 1: Current month relation window: 2026-10-01
+- Historical record 2: A1 coverage: INHERITED_FROM_MERGED_A1
+- Historical record 3: Native H1 input: `horizon-cortex/2026-10-01-H1-signal-observe.md` / merged via PR #664
+- Historical record 4: Native H2 input: `horizon-cortex/2026-10-01-H2-horizon-orient.md` / merged via PR #665
+- Historical record 5: H1 retained state: DEGRADED under NETWORK_UNAVAILABLE, with NO_MATERIAL_NEW_SIGNAL
+- Historical record 6: H2 retained relation: same-day Orient over the retained H1 state, without upgrading missing network evidence
+- Historical record 7: W40 weekly final: NOT_DUE
+- Dated H1 evidence audit: 2026-10-01 source/network limitation remains exactly the recorded observation, not proof of world-level absence.
+- Dated H2 interpretation audit: 2026-10-01 orientation cannot create primary-source verification beyond H1.
+- Dated Parallax audit: only the producer-recorded Daily/CASE/NOTES research credit survives; derived navigation does not add it.
+- Source-independence audit: 2026-10-01 rechecks within one publisher/project lineage cannot become a second independently corroborating source.
+- Temporal audit: later H1/H2 paths or merge times do not repair an earlier unavailable task-time dependency.
+- Counterfactual audit: absence of an external result or UNKNOWN applicability is not silently replaced by a success statement.
+- Decision: RETAIN_2026_10_01_AS_RECORDED / NO_HISTORY_REWRITE / NO_NEW_RUNTIME_CREDIT.
+
+#### 2026-10-02: A2_CURRENT_MONTH_RELATION_2026-10-02
+- Historical record 1: Current month relation window: 2026-10-01 through 2026-10-02
+- Historical record 2: A1 coverage through 2026-10-01: INHERITED_FROM_MERGED_A1
+- Historical record 3: Month Closure Status: OPEN
+- Historical record 4: W40 final: NOT_DUE
+- Historical record 5: October H5/H6 natural-month final: NOT_DUE
+- Historical record 6: Historical rewrite: NO
+- Historical record 7: Extra runtime/checker execution: NOT_PERFORMED
+- Dated H1 evidence audit: 2026-10-02 source/network limitation remains exactly the recorded observation, not proof of world-level absence.
+- Dated H2 interpretation audit: 2026-10-02 orientation cannot create primary-source verification beyond H1.
+- Dated Parallax audit: only the producer-recorded Daily/CASE/NOTES research credit survives; derived navigation does not add it.
+- Source-independence audit: 2026-10-02 rechecks within one publisher/project lineage cannot become a second independently corroborating source.
+- Temporal audit: later H1/H2 paths or merge times do not repair an earlier unavailable task-time dependency.
+- Counterfactual audit: absence of an external result or UNKNOWN applicability is not silently replaced by a success statement.
+- Decision: RETAIN_2026_10_02_AS_RECORDED / NO_HISTORY_REWRITE / NO_NEW_RUNTIME_CREDIT.
+
+#### 2026-10-03: A2_SUCCESSOR_CURRENT_MONTH_RELATION_2026-10-03
+- Historical record 1: Current month relation window: 2026-10-01 through 2026-10-03
+- Historical record 2: Successor A1 dependency: PRESENT_ON_BASE_AND_CONSUMED
+- Historical record 3: Predecessor same-day A2: PRESERVED_AS_POINT_IN_TIME_HISTORY
+- Historical record 4: New repository-native input after predecessor A2: NONE OBSERVED
+- Historical record 5: Successor relational outcome: NO_MATERIAL_RELATION_CHANGE
+- Historical record 6: Historical rewrite: NO
+- Historical record 7: Extra audit/runtime execution by maintenance: NOT_PERFORMED
+- Dated H1 evidence audit: 2026-10-03 source/network limitation remains exactly the recorded observation, not proof of world-level absence.
+- Dated H2 interpretation audit: 2026-10-03 orientation cannot create primary-source verification beyond H1.
+- Dated Parallax audit: only the producer-recorded Daily/CASE/NOTES research credit survives; derived navigation does not add it.
+- Source-independence audit: 2026-10-03 rechecks within one publisher/project lineage cannot become a second independently corroborating source.
+- Temporal audit: later H1/H2 paths or merge times do not repair an earlier unavailable task-time dependency.
+- Counterfactual audit: absence of an external result or UNKNOWN applicability is not silently replaced by a success statement.
+- Decision: RETAIN_2026_10_03_AS_RECORDED / NO_HISTORY_REWRITE / NO_NEW_RUNTIME_CREDIT.
+
+#### 2026-10-04: A2 CURRENT MONTH RELATION — 2026-10-04
+- Historical record 1: Logical date: 2026-10-04
+- Historical record 2: Window: 2026-10-01..2026-10-04
+- Historical record 3: Predecessor A1: PR #690 / MERGED
+- Historical record 4: Fresh post-A1 base: ebdef3c649583eabd081a8a8946baa00da09f5fa
+- Historical record 5: Historical rewrite: NO
+- Historical record 6: Native replay: NO
+- Historical record 7: Extra runtime execution: NOT_PERFORMED
+- Dated H1 evidence audit: 2026-10-04 source/network limitation remains exactly the recorded observation, not proof of world-level absence.
+- Dated H2 interpretation audit: 2026-10-04 orientation cannot create primary-source verification beyond H1.
+- Dated Parallax audit: only the producer-recorded Daily/CASE/NOTES research credit survives; derived navigation does not add it.
+- Source-independence audit: 2026-10-04 rechecks within one publisher/project lineage cannot become a second independently corroborating source.
+- Temporal audit: later H1/H2 paths or merge times do not repair an earlier unavailable task-time dependency.
+- Counterfactual audit: absence of an external result or UNKNOWN applicability is not silently replaced by a success statement.
+- Decision: RETAIN_2026_10_04_AS_RECORDED / NO_HISTORY_REWRITE / NO_NEW_RUNTIME_CREDIT.
+
+#### 2026-10-05: A2 CURRENT MONTH RELATION — 2026-10-05 — HORIZON_PARALLAX
+- Historical record 1: Required predecessor A1: PR #696 / MERGED
+- Historical record 2: Fresh-read after A1 merge: YES
+- Historical record 3: Current month relation window: `2026-10-01..2026-10-05`
+- Historical record 4: Native system: Horizon / Parallax
+- Historical record 5: Historical rewrite: NO
+- Historical record 6: Native task replay: NO
+- Historical record 7: Runtime/network/test execution by maintenance: NOT_PERFORMED
+- Dated H1 evidence audit: 2026-10-05 source/network limitation remains exactly the recorded observation, not proof of world-level absence.
+- Dated H2 interpretation audit: 2026-10-05 orientation cannot create primary-source verification beyond H1.
+- Dated Parallax audit: only the producer-recorded Daily/CASE/NOTES research credit survives; derived navigation does not add it.
+- Source-independence audit: 2026-10-05 rechecks within one publisher/project lineage cannot become a second independently corroborating source.
+- Temporal audit: later H1/H2 paths or merge times do not repair an earlier unavailable task-time dependency.
+- Counterfactual audit: absence of an external result or UNKNOWN applicability is not silently replaced by a success statement.
+- Decision: RETAIN_2026_10_05_AS_RECORDED / NO_HISTORY_REWRITE / NO_NEW_RUNTIME_CREDIT.
+
+#### 2026-10-06: A2 CURRENT MONTH RELATION — 2026-10-06 — HORIZON_PARALLAX
+- Historical record 1: Required predecessor A1: PR #701 / MERGED
+- Historical record 2: Fresh-read after A1 merge: YES
+- Historical record 3: Current month relation window: `2026-10-01..2026-10-06`
+- Historical record 4: Native systems: Horizon / Parallax / bounded NEXUS relation
+- Historical record 5: Historical rewrite: NO
+- Historical record 6: Native task replay: NO
+- Historical record 7: External network verification by maintenance: NOT_PERFORMED
+- Dated H1 evidence audit: 2026-10-06 source/network limitation remains exactly the recorded observation, not proof of world-level absence.
+- Dated H2 interpretation audit: 2026-10-06 orientation cannot create primary-source verification beyond H1.
+- Dated Parallax audit: only the producer-recorded Daily/CASE/NOTES research credit survives; derived navigation does not add it.
+- Source-independence audit: 2026-10-06 rechecks within one publisher/project lineage cannot become a second independently corroborating source.
+- Temporal audit: later H1/H2 paths or merge times do not repair an earlier unavailable task-time dependency.
+- Counterfactual audit: absence of an external result or UNKNOWN applicability is not silently replaced by a success statement.
+- Decision: RETAIN_2026_10_06_AS_RECORDED / NO_HISTORY_REWRITE / NO_NEW_RUNTIME_CREDIT.
+
+#### 2026-10-07: A2 CURRENT MONTH RELATION — 2026-10-07 — HORIZON_PARALLAX
+- Historical record 1: Required predecessor A1: PR #706 / MERGED
+- Historical record 2: Fresh-read after A1 merge: YES
+- Historical record 3: Current month relation window: `2026-10-01..2026-10-07`
+- Historical record 4: Historical rewrite: NO
+- Historical record 5: Native replay: NO
+- Historical record 6: External runtime execution by maintenance: NOT_PERFORMED
+- Historical record 7: Duplicate native/research credit: NONE
+- Dated H1 evidence audit: 2026-10-07 source/network limitation remains exactly the recorded observation, not proof of world-level absence.
+- Dated H2 interpretation audit: 2026-10-07 orientation cannot create primary-source verification beyond H1.
+- Dated Parallax audit: only the producer-recorded Daily/CASE/NOTES research credit survives; derived navigation does not add it.
+- Source-independence audit: 2026-10-07 rechecks within one publisher/project lineage cannot become a second independently corroborating source.
+- Temporal audit: later H1/H2 paths or merge times do not repair an earlier unavailable task-time dependency.
+- Counterfactual audit: absence of an external result or UNKNOWN applicability is not silently replaced by a success statement.
+- Decision: RETAIN_2026_10_07_AS_RECORDED / NO_HISTORY_REWRITE / NO_NEW_RUNTIME_CREDIT.
+
+#### 2026-10-08: A2 CURRENT-MONTH RELATION — 2026-10-08
+- Historical record 1: Month start: `2026-10-01`
+- Historical record 2: Current relation window: `2026-10-01..2026-10-08`
+- Historical record 3: Existing owner: `horizon-cortex/2026-10-H6-horizon-memorize.md`
+- Historical record 4: A1 dependency: `PRESENT_ON_BASE_AND_CONSUMED`
+- Historical record 5: A1 coverage inherited: `COMPLETE_THROUGH_2026-10-07_AT_A1_CUT`
+- Historical record 6: Historical rewrite: `NO`
+- Historical record 7: Native replay by maintenance: `NO`
+- Dated H1 evidence audit: 2026-10-08 source/network limitation remains exactly the recorded observation, not proof of world-level absence.
+- Dated H2 interpretation audit: 2026-10-08 orientation cannot create primary-source verification beyond H1.
+- Dated Parallax audit: only the producer-recorded Daily/CASE/NOTES research credit survives; derived navigation does not add it.
+- Source-independence audit: 2026-10-08 rechecks within one publisher/project lineage cannot become a second independently corroborating source.
+- Temporal audit: later H1/H2 paths or merge times do not repair an earlier unavailable task-time dependency.
+- Counterfactual audit: absence of an external result or UNKNOWN applicability is not silently replaced by a success statement.
+- Decision: RETAIN_2026_10_08_AS_RECORDED / NO_HISTORY_REWRITE / NO_NEW_RUNTIME_CREDIT.
+
+### Cross-cutting October review
+
+- Network status is evidence about search ability, not evidence that material events did not happen.
+- A search failure is never relabeled independent contradiction of a source.
+- H1 observation scope and H2 secondary orientation remain separated.
+- Same-day H2 dependency requires exact-date H1; later presence cannot backdate H2 input.
+- Publication date, observed date, execution date and merge date remain distinct.
+- Parallax `STATE_EVENT_RECOVERY` conceptual or synthetic observations are not live recovery proof.
+- Synthetic verifier independence is limited by shared fixture and semantic assumptions.
+- Protocol reconnect not executed cannot be credited as end-to-end recovery.
+- Research credit and index synchronization represent different artifact classes.
+- Historical fail/unknown/degraded records remain findable and unmodified.
+- Weekly H4 status follows its original date; no early weekly re-finalization.
+- October H6 month status is OPEN; natural-month H6 final NOT_DUE.
+- Independent GPT A1 work may reconcile but cannot impersonate producer-native H1/H2.
+- October owner remains the only relational owner; no duplicate or parallel month file.
+- No frontend, tests, workflow, native Daily, Parallax publisher ledger or protected path changed.
+- Maintenance did not execute external search, H1/H2 runtime, or Parallax checker.
+- 2026-10-09 producer layer is deferred exclusively to post-A1 A2.
+- Gate for next phase: all ten A1 merged; then fresh-read ten current mains.
