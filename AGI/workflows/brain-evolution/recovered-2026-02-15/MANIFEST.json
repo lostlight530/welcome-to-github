@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "record_kind": "RECOVERED_WORKFLOW_PRECURSOR",
+  "record_status": "FROZEN_REFERENCE",
+  "lineage_role": "EARLIEST_VERIFIED_EXECUTABLE_PRECURSOR",
+  "recovery_record_created_date": "2026-10-09",
+  "repository": "lostlight530/welcome-to-github",
+  "source_commit_sha": "a01c6e8df1f5e8ba80726ede6cbdb5de692e8741",
+  "source_commit_time_utc": "2026-02-15T15:09:31Z",
+  "canonical_executable_source": ".github/workflows/brain_evolution.yml",
+  "source_workflow_name": "Brain Evolution",
+  "source_workflow_blob_sha": "216a36eaa45d5b1b0ce922911cf460d939aeb6d6",
+  "source_content_sha256": "14a7d596f0369c229720fc598f141d6d7104d16e07fca8fdb886713a5040afcc",
+  "source_line_count": 61,
+  "source_jobs": [
+    "evolve-and-harvest"
+  ],
+  "source_triggers": [
+    "schedule",
+    "workflow_dispatch"
+  ],
+  "historical_role": "Daily external evidence harvesting with dated artifacts and a review-gated pull request",
+  "intermediate_evidence_commits": [
+    "90471216fda860eb209f188f30aa3b3bb5a383c3",
+    "98b3470ef42d25b431b69c654573c7ef735b6f8a",
+    "789878f9cc1692e383c8aa2046483e8c13b92267"
+  ],
+  "successor_record": "AGI/workflows/nexus-life-cycle/recovered-2026-03-09",
+  "agi_contains_executable_copy": false,
+  "executable_from_agi": false,
+  "workflowhub_registered_for_this_generation": false,
+  "recovery_rule": "Resolve source_commit_sha, read canonical_executable_source, verify source_workflow_blob_sha and source_content_sha256, then validate compatibility before any execution or publication claim."
+}
