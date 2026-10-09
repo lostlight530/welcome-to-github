@@ -2261,3 +2261,117 @@ DUPLICATE_EVIDENCE_CREDIT
 - Maintenance did not execute external search, H1/H2 runtime, or Parallax checker.
 - 2026-10-09 producer layer is deferred exclusively to post-A1 A2.
 - Gate for next phase: all ten A1 merged; then fresh-read ten current mains.
+
+
+## A2 CURRENT-MONTH RELATION — 2026-10-09
+
+- Repository: `lostlight530/welcome-to-github`; owner: `horizon-cortex/2026-10-H6-horizon-memorize.md`.
+- Logical maintenance date: 2026-10-09 (Asia/Shanghai).
+- October relation window: 2026-10-01..2026-10-09.
+- Exact post-A1 main base: `8e9278ee50ec6052202d271c3d4a6313af5e2427`.
+- Required A1 PR: #718 MERGED; A1 coverage through 2026-10-08 consumed from base.
+- Native producer integration: Horizon H1 #715, H2 #717; Parallax primary Daily #716.
+- Plane: relational maintenance, not native H1/H2, native Parallax or runtime replay.
+- Month closure OPEN; original H6/H5 natural-month final NOT_DUE.
+- Dated lineage and proof tiers retained; no historical mutation.
+- New independent-source/research/runtime credit by maintenance: NONE.
+
+### Historical date inheritance — recorded A1, not replayed
+
+- 2026-10-01 source: today's merged A1 owner checkpoint (`2026-10-01: A2_CURRENT_MONTH_RELATION_2026-10-01`); no replay.
+- 2026-10-01 review cut remains historical: known network / native-source / task execution states are unchanged.
+- 2026-10-01 evidence rule: no duplicate research, source-independence, or memory-promotion credit.
+- 2026-10-01 temporal rule: later main completeness does not backdate original task availability.
+- 2026-10-02 source: today's merged A1 owner checkpoint (`2026-10-02: A2_CURRENT_MONTH_RELATION_2026-10-02`); no replay.
+- 2026-10-02 review cut remains historical: known network / native-source / task execution states are unchanged.
+- 2026-10-02 evidence rule: no duplicate research, source-independence, or memory-promotion credit.
+- 2026-10-02 temporal rule: later main completeness does not backdate original task availability.
+- 2026-10-03 source: today's merged A1 owner checkpoint (`2026-10-03: A2_SUCCESSOR_CURRENT_MONTH_RELATION_2026-10-03`); no replay.
+- 2026-10-03 review cut remains historical: known network / native-source / task execution states are unchanged.
+- 2026-10-03 evidence rule: no duplicate research, source-independence, or memory-promotion credit.
+- 2026-10-03 temporal rule: later main completeness does not backdate original task availability.
+- 2026-10-04 source: today's merged A1 owner checkpoint (`2026-10-04: A2 CURRENT MONTH RELATION — 2026-10-04`); no replay.
+- 2026-10-04 review cut remains historical: known network / native-source / task execution states are unchanged.
+- 2026-10-04 evidence rule: no duplicate research, source-independence, or memory-promotion credit.
+- 2026-10-04 temporal rule: later main completeness does not backdate original task availability.
+- 2026-10-05 source: today's merged A1 owner checkpoint (`2026-10-05: A2 CURRENT MONTH RELATION — 2026-10-05 — HORIZON_PARALLAX`); no replay.
+- 2026-10-05 review cut remains historical: known network / native-source / task execution states are unchanged.
+- 2026-10-05 evidence rule: no duplicate research, source-independence, or memory-promotion credit.
+- 2026-10-05 temporal rule: later main completeness does not backdate original task availability.
+- 2026-10-06 source: today's merged A1 owner checkpoint (`2026-10-06: A2 CURRENT MONTH RELATION — 2026-10-06 — HORIZON_PARALLAX`); no replay.
+- 2026-10-06 review cut remains historical: known network / native-source / task execution states are unchanged.
+- 2026-10-06 evidence rule: no duplicate research, source-independence, or memory-promotion credit.
+- 2026-10-06 temporal rule: later main completeness does not backdate original task availability.
+- 2026-10-07 source: today's merged A1 owner checkpoint (`2026-10-07: A2 CURRENT MONTH RELATION — 2026-10-07 — HORIZON_PARALLAX`); no replay.
+- 2026-10-07 review cut remains historical: known network / native-source / task execution states are unchanged.
+- 2026-10-07 evidence rule: no duplicate research, source-independence, or memory-promotion credit.
+- 2026-10-07 temporal rule: later main completeness does not backdate original task availability.
+- 2026-10-08 source: today's merged A1 owner checkpoint (`2026-10-08: A2 CURRENT-MONTH RELATION — 2026-10-08`); no replay.
+- 2026-10-08 review cut remains historical: known network / native-source / task execution states are unchanged.
+- 2026-10-08 evidence rule: no duplicate research, source-independence, or memory-promotion credit.
+- 2026-10-08 temporal rule: later main completeness does not backdate original task availability.
+
+### 2026-10-09 native evidence / relationship decisions
+
+- N-day evidence/decision 01: Producer H1 PR #715 was merged and is Jules-native, exact logical date 2026-10-09.
+- N-day evidence/decision 02: H1 Network Status NETWORK_UNAVAILABLE and Source Status NONE, Task Status DEGRADED.
+- N-day evidence/decision 03: H1 source identity NONE, independent verification NONE and external freshness UNKNOWN.
+- N-day evidence/decision 04: H1 search coverage AI Agent, MCP and coding agent topics but no usable external pages.
+- N-day evidence/decision 05: H1 NO_VERIFIABLE_MATERIAL_NEW_SIGNAL_IN_THIS_RUN does not prove world no-change.
+- N-day evidence/decision 06: H1 cannot be treated as external corroboration for today’s Parallax research.
+- N-day evidence/decision 07: Producer H2 PR #717 was merged and consumes exact-date H1 2026-10-09.
+- N-day evidence/decision 08: H2 Task Status DEGRADED; H2 Network Status NETWORK_UNAVAILABLE and Source Status NONE.
+- N-day evidence/decision 09: H2 marks H1 placeholder signal ignore with Promotion Eligibility NO.
+- N-day evidence/decision 10: H2 search topics are not themselves validated sources or strategic signals.
+- N-day evidence/decision 11: H2 may preserve a watch for later verification without a memory-promotion claim.
+- N-day evidence/decision 12: Parallax native Daily PR #716 was merged separately from Horizon H1/H2.
+- N-day evidence/decision 13: Parallax Daily ID PX-20261009-STATE-EVENT-RECOVERY; dated research window 10/09.
+- N-day evidence/decision 14: Parallax primary research publisher identities A2A and MCP = two independent contracts.
+- N-day evidence/decision 15: Parallax A2A identity: protocol v1.0.1, Task/SubscribeToTask/GetTask.
+- N-day evidence/decision 16: Parallax MCP identity: Tasks Extension dated 2026-07-28, tasks/get DetailedTask.
+- N-day evidence/decision 17: Parallax A2A contract explicitly allows missed streamed status updates on reconnect.
+- N-day evidence/decision 18: Parallax A2A Task.history does not guarantee retention of all intermediate Messages.
+- N-day evidence/decision 19: Parallax GetTask historyLength may yield fewer results than client-requested.
+- N-day evidence/decision 20: Parallax MCP notifications/tasks are optional snapshots and no replay journal guaranteed in checked clauses.
+- N-day evidence/decision 21: These two contracts have different wire methods, version/date identities, and guarantees.
+- N-day evidence/decision 22: Parallax executes one deterministic synthetic projection control with two histories.
+- N-day evidence/decision 23: Synthetic histories differ in intermediate message but share final status and artifact.
+- N-day evidence/decision 24: Projection collision establishes non-unique reconstruction from terminal snapshot only.
+- N-day evidence/decision 25: Projection collision does NOT establish actual A2A event loss in live production.
+- N-day evidence/decision 26: Live A2A/MCP reconnect runtimes and transport traces: NOT_EXECUTED.
+- N-day evidence/decision 27: No real server journal, cursor validity, gap verification, or retention experiment was run.
+- N-day evidence/decision 28: Parallax bounded trials three; producer-source identities two; synthetic control one.
+- N-day evidence/decision 29: Daily research-batch increment one, independent execution-window increment one.
+- N-day evidence/decision 30: New CASE support increment zero and NOTES promotion zero; no Special or Audit.
+- N-day evidence/decision 31: Parallax README/monthly pointer adjustments remain derived bookkeeping only.
+- N-day evidence/decision 32: Task ID recovered != current Task retrieved != entire intermediate event history replayed.
+- N-day evidence/decision 33: 10/08 Parallax visibility-vs-terminal result differs from 10/09 snapshot-vs-history question.
+- N-day evidence/decision 34: Temporal independence of daily research window does not equal independent semantic verification.
+- N-day evidence/decision 35: Parallax source scope supports contract comparison, not global live protocol reliability.
+- N-day evidence/decision 36: Repeated A2A descriptions across records are still one publisher lineage.
+- N-day evidence/decision 37: H1 network outage does not negate separately recorded Parallax protocol research.
+- N-day evidence/decision 38: Horizon H6 monthly owner remains OPEN and original natural-month H6 NOT_DUE.
+- N-day evidence/decision 39: September frozen evidence and H4 point-in-time history retained.
+- N-day evidence/decision 40: No host code, frontend, CI, protected workflow, native Daily or protocol implementation modified.
+- N-day evidence/decision 41: Durable Horizon strategic memory promotion from these daily inputs is NOT_AUTHORIZED.
+- N-day evidence/decision 42: A1 N-1 10/01..10/08 was merged as PR #718 on this exact A2 base.
+- N-day evidence/decision 43: A2 consumes A1 only from post-merge main, not from original pre-A1 SHA.
+- N-day evidence/decision 44: No new runtime tests, source searches, independent experiments, or native executions by A2.
+- N-day evidence/decision 45: Current-month owner now relates 10/01..10/09 without rewriting 10/08 evidence.
+
+### Audit gates and disallowed inferences
+
+- Current observed H1 network failure: retain NETWORK_UNAVAILABLE rather than fabricate a 2026-10-09 web signal.
+- Current H2 inherits exact-date H1 and cannot convert no-source state into external verification.
+- Parallax independent research does not retroactively repair Horizon H1 source status.
+- Contract-level 'MAY miss' is not a measured rate of dropped events.
+- MCP snapshot specification lacks an inferred universal 'no replay possible' restriction.
+- Terminal artifact equivalence can hide distinct histories in bounded synthetic control only.
+- Source independence comes from publisher/evidence identity, not count of reviewed paragraphs.
+- Historical A1/A2 owner snapshots remain point-in-time audit evidence.
+- Original producer and repository maintenance author/provenance tags remain distinguishable.
+- October month remains OPEN; no early natural-month final, no H6 memory promotion.
+- Only this canonical monthly owner file is modified; no parallel owner created.
+- Complete relational status: UPDATED_THROUGH_2026-10-09_WITH_NATIVE_BOUNDARIES.
+- Future independent review can audit #715/#716/#717 and the A1→A2 merge chronology.
+- This maintenance adds no extra H1/H2 rerun, Parallax runtime, CASE, NOTES, or audit window.
