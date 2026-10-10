@@ -536,6 +536,31 @@
 {"desc":"lostlight530/welcome-to-github","id":"file_AGI_checkpoints_2026-10-07_MANIFEST_json_prop_repository","name":"repository","type":"config_property"}
 {"desc":"0b2e45c0b2eff554cf40431ce3c53693d86bc290","id":"file_AGI_checkpoints_2026-10-07_MANIFEST_json_prop_source_main_sha","name":"source_main_sha","type":"config_property"}
 {"desc":"False","id":"file_AGI_checkpoints_2026-10-07_MANIFEST_json_prop_workflow_history_included","name":"workflow_history_included","type":"config_property"}
+{"desc":"False","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_agi_contains_executable_copy","name":"agi_contains_executable_copy","type":"config_property"}
+{"desc":".github/workflows/brain_evolution.yml","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_canonical_executable_source","name":"canonical_executable_source","type":"config_property"}
+{"desc":"False","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_executable_from_agi","name":"executable_from_agi","type":"config_property"}
+{"desc":"Daily external evidence harvesting with dated artifacts and a review-gated pull request","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_historical_role","name":"historical_role","type":"config_property"}
+{"desc":"90471216fda860eb209f188f30aa3b3bb5a383c3","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_intermediate_evidence_commits_0","name":"intermediate_evidence_commits[0]","type":"config_property"}
+{"desc":"98b3470ef42d25b431b69c654573c7ef735b6f8a","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_intermediate_evidence_commits_1","name":"intermediate_evidence_commits[1]","type":"config_property"}
+{"desc":"789878f9cc1692e383c8aa2046483e8c13b92267","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_intermediate_evidence_commits_2","name":"intermediate_evidence_commits[2]","type":"config_property"}
+{"desc":"EARLIEST_VERIFIED_EXECUTABLE_PRECURSOR","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_lineage_role","name":"lineage_role","type":"config_property"}
+{"desc":"RECOVERED_WORKFLOW_PRECURSOR","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_record_kind","name":"record_kind","type":"config_property"}
+{"desc":"FROZEN_REFERENCE","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_record_status","name":"record_status","type":"config_property"}
+{"desc":"2026-10-09","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_recovery_record_created_date","name":"recovery_record_created_date","type":"config_property"}
+{"desc":"Resolve source_commit_sha, read canonical_executable_source, verify source_workflow_blob_sha and sou","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_recovery_rule","name":"recovery_rule","type":"config_property"}
+{"desc":"lostlight530/welcome-to-github","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_repository","name":"repository","type":"config_property"}
+{"desc":"1","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_schema_version","name":"schema_version","type":"config_property"}
+{"desc":"a01c6e8df1f5e8ba80726ede6cbdb5de692e8741","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_source_commit_sha","name":"source_commit_sha","type":"config_property"}
+{"desc":"2026-02-15T15:09:31Z","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_source_commit_time_utc","name":"source_commit_time_utc","type":"config_property"}
+{"desc":"14a7d596f0369c229720fc598f141d6d7104d16e07fca8fdb886713a5040afcc","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_source_content_sha256","name":"source_content_sha256","type":"config_property"}
+{"desc":"evolve-and-harvest","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_source_jobs_0","name":"source_jobs[0]","type":"config_property"}
+{"desc":"61","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_source_line_count","name":"source_line_count","type":"config_property"}
+{"desc":"schedule","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_source_triggers_0","name":"source_triggers[0]","type":"config_property"}
+{"desc":"workflow_dispatch","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_source_triggers_1","name":"source_triggers[1]","type":"config_property"}
+{"desc":"216a36eaa45d5b1b0ce922911cf460d939aeb6d6","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_source_workflow_blob_sha","name":"source_workflow_blob_sha","type":"config_property"}
+{"desc":"Brain Evolution","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_source_workflow_name","name":"source_workflow_name","type":"config_property"}
+{"desc":"AGI/workflows/nexus-life-cycle/recovered-2026-03-09","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_successor_record","name":"successor_record","type":"config_property"}
+{"desc":"False","id":"file_AGI_workflows_brain-evolution_recovered-2026-02-15_MANIFEST_json_prop_workflowhub_registered_for_this_generation","name":"workflowhub_registered_for_this_generation","type":"config_property"}
 {"desc":"False","id":"file_AGI_workflows_nexus-life-cycle_original-2026-10-07_MANIFEST_json_prop_agi_contains_executable_copy","name":"agi_contains_executable_copy","type":"config_property"}
 {"desc":".github/workflows/nexus-life-cycle.yml","id":"file_AGI_workflows_nexus-life-cycle_original-2026-10-07_MANIFEST_json_prop_canonical_executable_source","name":"canonical_executable_source","type":"config_property"}
 {"desc":"2026-10-07","id":"file_AGI_workflows_nexus-life-cycle_original-2026-10-07_MANIFEST_json_prop_capture_date","name":"capture_date","type":"config_property"}
@@ -567,6 +592,32 @@
 {"desc":"c8fc0f838b03333231c82c9abf20e54370629cd0","id":"file_AGI_workflows_nexus-life-cycle_original-2026-10-07_MANIFEST_json_prop_source_workflow_blob_sha","name":"source_workflow_blob_sha","type":"config_property"}
 {"desc":"NEXUS CORTEX Life Cycle","id":"file_AGI_workflows_nexus-life-cycle_original-2026-10-07_MANIFEST_json_prop_source_workflow_name","name":"source_workflow_name","type":"config_property"}
 {"desc":"False","id":"file_AGI_workflows_nexus-life-cycle_original-2026-10-07_MANIFEST_json_prop_workflowhub_registered","name":"workflowhub_registered","type":"config_property"}
+{"desc":"False","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_agi_contains_executable_copy","name":"agi_contains_executable_copy","type":"config_property"}
+{"desc":".github/workflows/nexus-life-cycle.yml","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_canonical_executable_source","name":"canonical_executable_source","type":"config_property"}
+{"desc":"8d3f27c6440abd3a9eba7d9a1e8717214bdb2dea","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_cross_repository_successor_commit_sha","name":"cross_repository_successor.commit_sha","type":"config_property"}
+{"desc":"HOST_SPECIFIC_ADAPTATION","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_cross_repository_successor_relation","name":"cross_repository_successor.relation","type":"config_property"}
+{"desc":"lostlight530/zero-entropy-lab","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_cross_repository_successor_repository","name":"cross_repository_successor.repository","type":"config_property"}
+{"desc":"False","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_executable_from_agi","name":"executable_from_agi","type":"config_property"}
+{"desc":"First named unified rebuild, ingest, ponder, evolve and persistence lifecycle","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_historical_role","name":"historical_role","type":"config_property"}
+{"desc":"FIRST_NAMED_UNIFIED_GENERATION","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_lineage_role","name":"lineage_role","type":"config_property"}
+{"desc":"AGI/workflows/brain-evolution/recovered-2026-02-15","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_predecessor_record","name":"predecessor_record","type":"config_property"}
+{"desc":"RECOVERED_WORKFLOW_GENERATION","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_record_kind","name":"record_kind","type":"config_property"}
+{"desc":"FROZEN_REFERENCE","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_record_status","name":"record_status","type":"config_property"}
+{"desc":"2026-10-09","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_recovery_record_created_date","name":"recovery_record_created_date","type":"config_property"}
+{"desc":"Resolve source_commit_sha, read canonical_executable_source, verify source_workflow_blob_sha and sou","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_recovery_rule","name":"recovery_rule","type":"config_property"}
+{"desc":"lostlight530/welcome-to-github","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_repository","name":"repository","type":"config_property"}
+{"desc":"1","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_schema_version","name":"schema_version","type":"config_property"}
+{"desc":"51df7db5a81324c7bed52cb098c249dc45685686","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_source_commit_sha","name":"source_commit_sha","type":"config_property"}
+{"desc":"2026-03-09T05:45:38Z","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_source_commit_time_utc","name":"source_commit_time_utc","type":"config_property"}
+{"desc":"4cdab7a75f374892165df2a648968aff26fc084178e83d76b1ed4670310db953","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_source_content_sha256","name":"source_content_sha256","type":"config_property"}
+{"desc":"consciousness","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_source_jobs_0","name":"source_jobs[0]","type":"config_property"}
+{"desc":"44","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_source_line_count","name":"source_line_count","type":"config_property"}
+{"desc":"schedule","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_source_triggers_0","name":"source_triggers[0]","type":"config_property"}
+{"desc":"push","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_source_triggers_1","name":"source_triggers[1]","type":"config_property"}
+{"desc":"workflow_dispatch","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_source_triggers_2","name":"source_triggers[2]","type":"config_property"}
+{"desc":"14e3bb5330e2ad6ace362af546edc6731724abfa","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_source_workflow_blob_sha","name":"source_workflow_blob_sha","type":"config_property"}
+{"desc":"NEXUS CORTEX Life Cycle","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_source_workflow_name","name":"source_workflow_name","type":"config_property"}
+{"desc":"False","id":"file_AGI_workflows_nexus-life-cycle_recovered-2026-03-09_MANIFEST_json_prop_workflowhub_registered_for_this_generation","name":"workflowhub_registered_for_this_generation","type":"config_property"}
 {"desc":"https://w3id.org/codemeta/3.1","id":"file_codemeta_json_prop_@context","name":"@context","type":"config_property"}
 {"desc":"SoftwareSourceCode","id":"file_codemeta_json_prop_@type","name":"@type","type":"config_property"}
 {"desc":"Research Software","id":"file_codemeta_json_prop_applicationCategory","name":"applicationCategory","type":"config_property"}
