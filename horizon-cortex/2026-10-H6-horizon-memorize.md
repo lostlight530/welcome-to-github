@@ -2557,3 +2557,175 @@ DUPLICATE_EVIDENCE_CREDIT
 - Month status: OPEN; natural-month final NOT_DUE and durable memory promotion NONE.
 - Next phase requires all 10 A1 merge SHAs plus ten refreshed main reads before 2026-10-10 A2 starts.
 - Correction rule: future contradictory evidence must append correction with its own observation cut.
+
+
+## A2 CURRENT-MONTH RELATION — 2026-10-10
+
+- Owner: `horizon-cortex/2026-10-H6-horizon-memorize.md`; system Horizon/Parallax; logical date 2026-10-10 Asia/Shanghai.
+- Exact fresh post-A1 main base: `a0f2e9393778ede69b7c624284efe1979a2a205b`.
+- Required A1 owner coverage: 2026-10-01..2026-10-09, appended and merged before this branch.
+- A2 relation window: 2026-10-01..2026-10-10; earlier dates inherited, 10/10 native layer added once.
+- H1 primary: horizon-cortex/2026-10-10-H1-signal-observe.md / Jules-native / PR #722.
+- H2 primary: horizon-cortex/2026-10-10-H2-horizon-orient.md / HUMAN_AUTHORIZED_SUBSTITUTE / PR #723.
+- Parallax primary: parallax/records/2026-10/2026-10-10.md / PR #721.
+- History owner: 2026-10-H6 remains OPEN / PROVISIONAL_NOT_FINAL, no strategic memory promotion.
+- New source and execution credit from THIS A2: NONE; native Parallax bounded control retains its separately recorded one window.
+- Three planes: Horizon degraded observe/orient, Parallax protocol/controlled experiment, maintenance governance, not one execution.
+
+### Inherited A1 10/01–10/09 evidence, not native replay
+
+#### 2026-10-01 / inherited A1 checkpoint
+- Historical source 1: Retained evidence 01 (2026-10-01): Current month relation window: 2026-10-01
+- Historical source 2: Retained evidence 02 (2026-10-01): A1 coverage: INHERITED_FROM_MERGED_A1
+- Historical source 3: Retained evidence 03 (2026-10-01): Native H1 input: `horizon-cortex/2026-10-01-H1-signal-observe.md` / merged via PR #664
+- Historical source 4: Retained evidence 04 (2026-10-01): Native H2 input: `horizon-cortex/2026-10-01-H2-horizon-orient.md` / merged via PR #665
+- 2026-10-01 relation decision: preserve earlier observation/provenance as a distinct task-time cut; no new daily research or independent-source credit.
+#### 2026-10-02 / inherited A1 checkpoint
+- Historical source 1: Retained evidence 01 (2026-10-02): Current month relation window: 2026-10-01 through 2026-10-02
+- Historical source 2: Retained evidence 02 (2026-10-02): A1 coverage through 2026-10-01: INHERITED_FROM_MERGED_A1
+- Historical source 3: Retained evidence 03 (2026-10-02): October H5/H6 natural-month final: NOT_DUE
+- Historical source 4: Retained evidence 04 (2026-10-02): Extra runtime/checker execution: NOT_PERFORMED
+- 2026-10-02 relation decision: preserve earlier observation/provenance as a distinct task-time cut; no new daily research or independent-source credit.
+#### 2026-10-03 / inherited A1 checkpoint
+- Historical source 1: Retained evidence 01 (2026-10-03): Current month relation window: 2026-10-01 through 2026-10-03
+- Historical source 2: Retained evidence 02 (2026-10-03): Successor A1 dependency: PRESENT_ON_BASE_AND_CONSUMED
+- Historical source 3: Retained evidence 03 (2026-10-03): Predecessor same-day A2: PRESERVED_AS_POINT_IN_TIME_HISTORY
+- Historical source 4: Retained evidence 04 (2026-10-03): New repository-native input after predecessor A2: NONE OBSERVED
+- 2026-10-03 relation decision: preserve earlier observation/provenance as a distinct task-time cut; no new daily research or independent-source credit.
+#### 2026-10-04 / inherited A1 checkpoint
+- Historical source 1: Retained evidence 01 (2026-10-04): Fresh post-A1 base: ebdef3c649583eabd081a8a8946baa00da09f5fa
+- Historical source 2: Retained evidence 02 (2026-10-04): Extra runtime execution: NOT_PERFORMED
+- Historical source 3: Retained evidence 03 (2026-10-04): A1 #690 is consumed as N-1 coverage foundation.
+- Historical source 4: Retained evidence 04 (2026-10-04): Prior A2 records remain point-in-time history.
+- 2026-10-04 relation decision: preserve earlier observation/provenance as a distinct task-time cut; no new daily research or independent-source credit.
+#### 2026-10-05 / inherited A1 checkpoint
+- Historical source 1: Retained evidence 01 (2026-10-05): Required predecessor A1: PR #696 / MERGED
+- Historical source 2: Retained evidence 02 (2026-10-05): Current month relation window: `2026-10-01..2026-10-05`
+- Historical source 3: Retained evidence 03 (2026-10-05): Runtime/network/test execution by maintenance: NOT_PERFORMED
+- Historical source 4: Retained evidence 04 (2026-10-05): A1 supplies complete MonthStart→2026-10-04 coverage.
+- 2026-10-05 relation decision: preserve earlier observation/provenance as a distinct task-time cut; no new daily research or independent-source credit.
+#### 2026-10-06 / inherited A1 checkpoint
+- Historical source 1: Retained evidence 01 (2026-10-06): Required predecessor A1: PR #701 / MERGED
+- Historical source 2: Retained evidence 02 (2026-10-06): Current month relation window: `2026-10-01..2026-10-06`
+- Historical source 3: Retained evidence 03 (2026-10-06): Native systems: Horizon / Parallax / bounded NEXUS relation
+- Historical source 4: Retained evidence 04 (2026-10-06): External network verification by maintenance: NOT_PERFORMED
+- 2026-10-06 relation decision: preserve earlier observation/provenance as a distinct task-time cut; no new daily research or independent-source credit.
+#### 2026-10-07 / inherited A1 checkpoint
+- Historical source 1: Retained evidence 01 (2026-10-07): Required predecessor A1: PR #706 / MERGED
+- Historical source 2: Retained evidence 02 (2026-10-07): Current month relation window: `2026-10-01..2026-10-07`
+- Historical source 3: Retained evidence 03 (2026-10-07): External runtime execution by maintenance: NOT_PERFORMED
+- Historical source 4: Retained evidence 04 (2026-10-07): Duplicate native/research credit: NONE
+- 2026-10-07 relation decision: preserve earlier observation/provenance as a distinct task-time cut; no new daily research or independent-source credit.
+#### 2026-10-08 / inherited A1 checkpoint
+- Historical source 1: Retained evidence 01 (2026-10-08): Existing owner: `horizon-cortex/2026-10-H6-horizon-memorize.md`
+- Historical source 2: Retained evidence 02 (2026-10-08): A1 dependency: `PRESENT_ON_BASE_AND_CONSUMED`
+- Historical source 3: Retained evidence 03 (2026-10-08): A1 coverage inherited: `COMPLETE_THROUGH_2026-10-07_AT_A1_CUT`
+- Historical source 4: Retained evidence 04 (2026-10-08): Extra external research by maintenance: `NOT_PERFORMED`
+- 2026-10-08 relation decision: preserve earlier observation/provenance as a distinct task-time cut; no new daily research or independent-source credit.
+#### 2026-10-09 / inherited A1 checkpoint
+- Historical source 1: Retained evidence 01 (2026-10-09): October relation window: 2026-10-01..2026-10-09.
+- Historical source 2: Retained evidence 02 (2026-10-09): Required A1 PR: #718 MERGED; A1 coverage through 2026-10-08 consumed from base.
+- Historical source 3: Retained evidence 03 (2026-10-09): Native producer integration: Horizon H1 #715, H2 #717; Parallax primary Daily #716.
+- Historical source 4: Retained evidence 04 (2026-10-09): Month closure OPEN; original H6/H5 natural-month final NOT_DUE.
+- 2026-10-09 relation decision: preserve earlier observation/provenance as a distinct task-time cut; no new daily research or independent-source credit.
+
+### N-day producer evidence from `horizon-cortex/2026-10-10-H1-signal-observe.md` (12 source facts)
+- Source witness 1: Execution Time Asia/Shanghai: 2026-10-10T08:00:00+08:00
+- Source witness 2: Knowledge Source: External Web + horizon-cortex local files
+- Source witness 3: - "Model Context Protocol" OR "Cloud Coding Agent" OR "Google Maps Grounding"
+- Source witness 4: 响应最近 H4 和 H6 设定的长期观察重点，覆盖 AI Agent、MCP、Agent 治理以及云端辅助编码方向的新变化，保持主题覆盖。
+- Source witness 5: - 由于网络不可用（NETWORK_UNAVAILABLE），上述所有外部搜索主题均未能获得可靠搜索结果，没有可以用来支持具体声明的页面。
+- Source witness 6: - 在无验证信号的情形下，不得根据不可用的网络环境制造事实变更声明。保持记录网络限制，不随意升级无来源信号。
+- Source witness 7: Observation Scope: NO_VERIFIABLE_MATERIAL_NEW_SIGNAL_IN_THIS_RUN
+- Source witness 8: Why It May Matter: 网络搜索未能返回结果，使得本次运行无法确认外部发生的 material change，因此保持对今日信号的保守无发现状态。
+- Source witness 9: - 哪些信号需要独立来源验证: 由于无新发现信号，不需要独立验证。待网络恢复后需再次检查今日所关注的主题。
+- Source witness 10: - 哪些信号的新鲜度仍不确定: 今日未能成功检查所有设定的外部主题，因此其外部信息的实际情况和新鲜度均属未知 (UNKNOWN)。
+- Source witness 11: - 哪些信号不应继续升级: 在当前网络不可用限制下未获得的信号不应被作为缺失证据证明某种确定性，绝不能作为 strategic memory 升级。
+- Source witness 12: - H2 必须保留哪些联网或来源限制: H2 必须保留 H1 的 NETWORK_UNAVAILABLE 状态，使用降级协议，并且在网络不可用状态下不得将缺失信息转化为证实的新变化。
+
+### N-day producer evidence from `horizon-cortex/2026-10-10-H2-horizon-orient.md` (23 source facts)
+- Source witness 1: Host Repository: welcome-to-github (IDENTITY_ONLY)
+- Source witness 2: Execution Time Asia/Shanghai: 2026-10-10T16:46:07.466+08:00
+- Source witness 3: Original Jules Execution Status: NOT_OBSERVED_AT_RECOVERY_START
+- Source witness 4: Current Path Status: HUMAN_AUTHORIZED_RECOVERY_DELIVERED
+- Source witness 5: Knowledge Source: EXACT_DATE_H1_AND_HORIZON_RECORDS
+- Source witness 6: Network Status: NETWORK_UNAVAILABLE (INHERITED_FROM_H1; NOT_NEW_EXTERNAL_SEARCH_CLAIM)
+- Source witness 7: - Same-logical-date hard-gate A1-equivalent H1 actually read: `horizon-cortex/2026-10-10-H1-signal-observe.md`.
+- Source witness 8: - H1 Task ID: H1 / Logical Date: 2026-10-10 / Task Status: DEGRADED.
+- Source witness 9: - H1 Network Status: NETWORK_UNAVAILABLE / Source Status: NONE / Record Provenance: JULES_NATIVE.
+- Source witness 10: - H1 exact signal ID: SIG-20261010-01 / NO_MATERIAL_NEW_SIGNAL / NO_VERIFIABLE_MATERIAL_NEW_SIGNAL_IN_THIS_RUN.
+- Source witness 11: - H1 external search attempts: AI Agent, Agent protocol, MCP, Cloud Coding Agent, Google Maps Grounding; no usable search result was reported.
+- Source witness 12: - Historical Horizon read: `horizon-cortex/2026-10-09-H2-horizon-orient.md` / network unavailable, no source upgrade.
+- Source witness 13: - H1 当日 Source Status NONE 使所有需要新外部来源支持的推断保持 UNKNOWN。
+- Source witness 14: - 应继续观察：H1 既定 AI Agent、MCP、Cloud Coding Agent 等主题在网络恢复后的下一次合法观察窗口重新检查。
+- Source witness 15: - 被降级内容：把没有可验证信号解释为世界层面的 NO MATERIAL CHANGE 的潜在推断被拒绝。
+- Source witness 16: - H4 历史 BLOCKED 不说明今日 H2 的依赖失败：今日同日 H1 文件已存在并实际读取。
+- Source witness 17: - Horizon 的长期月度 H6 是开放式关系记录，不应从今日二级解释产生长期记忆或周度最终决策。
+- Source witness 18: - Parallax 与 Horizon 运行来源不同，Parallax 当日新研究不得被本受限 H2 冒充为 H1 原生外部搜索证据。
+- Source witness 19: - 降级/拒绝: NO_MATERIAL_NEW_SIGNAL 不得升级为 NO_EXTERNAL_CHANGE.
+- Source witness 20: - 后继周度输入: Task Status DEGRADED；不把本替代交付记为 Jules native。
+- Source witness 21: - Provenance: HUMAN_AUTHORIZED_SUBSTITUTE / JULES_H2_NOT_OBSERVED_AT_RECOVERY_START.
+- Source witness 22: - Out-of-Horizon repository files read for this H2: NO.
+- Source witness 23: - Weekly/final decision or architecture selection: NO.
+
+### N-day producer evidence from `parallax/records/2026-10/2026-10-10.md` (39 source facts)
+- Source witness 1: - 案例 ID: FRONTIER-NOTIFICATION-DELIVERY，不自动创建新 CASE support
+- Source witness 2: - Research Surface: notification delivery / subscription lifecycle / acknowledgement provenance / application settlement
+- Source witness 3: - 实验类型: two-publisher bounded contract comparison plus executed synthetic projection counterexample
+- Source witness 4: - 关联记录: 2026-10-08 progress-terminal frontier; 2026-10-09 state-event recovery frontier
+- Source witness 5: - Record Provenance: GPT scheduled native primary Daily research, 2026-10-10 Asia/Shanghai
+- Source witness 6: - 原始发布者集合: Agent2Agent Protocol; Model Context Protocol
+- Source witness 7: - Evidence Identity Tuple: task ID / subscriber or webhook configuration / subscription acknowledgement / delivery attempt / HTTP receipt acknowledgement / application commit / access date
+- Source witness 8: - Object / Benchmark / System Identity: A2A v1.0.1 task push notification and webhook delivery; MCP Tasks Extension 2026-07-28 subscriptions/listen and notifications/tasks; synthetic finite delivery ledger; no benchmark
+- Source witness 9: - Execution / Harness / Evaluator Identity: directly verified versioned public protocol contracts and executed deterministic local JavaScript projection control; no live A2A webhook or MCP notification stream
+- Source witness 10: - 拒绝或无结论原因: current protocol contracts distinguish configuration or subscription acceptance from actual receipt and application settlement, but no live webhook, MCP stream, consumer transaction, retry trace or end-to-end delivery rate was measured
+- Source witness 11: 本日研究一个不同于 10/09 reconnect history 的命题: 配置了 task notification webhook, 或收到了 subscription acknowledged, 是否足以证明后续每个 task update 已被客户端成功接收并完成业务处理
+- Source witness 12: A2A v1.0.1 明确规定配置 webhook 后 agent MUST attempt delivery at least once, failed delivery retry 为 MAY, 连续失败后可以停止尝试; client 以 HTTP 2xx acknowledgement 表达 successful receipt, 且因可能重复投递而 SHOULD idempotent processing. 这些条款没有把已配置、已尝试、已收到 HTTP 2xx 和下游业务落账合并为一个状态
+- Source witness 13: MCP Tasks Extension 2026-07-28 允许 server MAY 发送 notifications/tasks, subscriptions/listen 的 acknowledged notification 返回 server 同意订阅的 task IDs; 每条实际发出的通知包含当时完整 DetailedTask, 但该 acknowledgement 不等于客户端已经收到任何后续 task notification
+- Source witness 14: 本轮额外执行 synthetic finite ledger: 保持 task ID、subscriptionAccepted 和 sendAttempted 相同, 令 transport receipt 不同; 再保持 transport 2xx 相同, 令 applicationApplied 不同. 两组可计算反例说明只观察前级标记不能唯一推断后级状态, 不构成真实协议丢包或重复率测量
+- Source witness 15: 在同一 task identity 下, A2A webhook configuration 或 MCP task subscription acknowledgement 是否足以证明 subsequent notification 的 successful receipt、exactly-once processing 与 application-side durable effect
+- Source witness 16: - 支持条件: 正式规范明确将 registration/subscription acknowledgement 与实际通知发送/接收分离, 且至少一个协议明确允许未完成投递或重复投递, bounded synthetic control 存在相同前级状态但不同后级结果
+- Source witness 17: - 推翻条件: 当前适用的正式合同要求配置或 subscription acknowledged 响应本身携带后续每个 notification 的可验证收据和业务提交证明, 或 synthetic 投影在固定条件下必然唯一确定 receipt 与 application outcome
+- Source witness 18: 2026-10-08 研究 intermediate event visibility 不等于 terminal completion, 变量是 lifecycle evidence
+- Source witness 19: 2026-10-09 研究 current-state recovery 不等于 gap-free event-history recovery, 变量是 reconnect snapshot 对历史覆盖的充分性
+- Source witness 20: 2026-10-10 切换为 notification delivery assurance: subscription/control-plane acceptance, transport delivery attempt, receipt acknowledgement 与 application-side effect 之间的证据断层. 三轮不能机械算成同一 CASE replication, 也不重写先前 merged Daily
+- Source witness 21: 12. 本轮没有真实 A2A webhook request/response, MCP subscription stream, consumer database commit, retry trace, delivered-event denominator 或 exactly-once measurement
+- Source witness 22: 10/09 关注恢复后的历史覆盖, 10/10 关注发送方配置/订阅承诺与接收方实际业务效果之间的证据. 本轮一个 native Daily research batch, 一个独立执行日期窗口 2026-10-10, 没有同日第二批次
+- Source witness 23: - Live MCP task notification runtimes executed: 0
+- Source witness 24: - Real end-to-end notification delivery receipts: 0
+- Source witness 25: 最强反例是具体部署实现 durable outbox, receiver inbox, stable event ID, application transaction and replay/ack ledger, 并且把应用提交结果绑定到可验证的回执. 这种 implementation-specific contract 能对指定事件提供比基础规范更强的 end-to-end proof, 但本轮未取得其实际运行证据
+- Source witness 26: 另一个反例是 webhook consumer 仅在 durable commit 完成后才返回 2xx. 对该特定 implementation, 已验证的 2xx 可能成为 application settlement 的证据, 但需要先证明 consumer 的 ack-after-commit 合同与实际运行, 不能从 A2A 一般 2xx receipt semantics 推断所有客户端都如此
+- Source witness 27: Synthetic C 刻意让 B/C 同为 HTTP 2xx 但业务效果不同, 证明 ledger 投影不足, 不能当作某个真实 A2A server/consumer 的故障观察
+- Source witness 28: A2A v1.0.1 明确只要求至少一次 webhook delivery attempt, retry 不是无条件强制, duplicate deliveries 可能发生. MCP Tasks Extension 的 task subscription acknowledgement 只建立 server agreed task IDs, 不是每个 future notification 的 receipt. 两者均不能单凭前级状态推出 exactly-once business effects
+- Source witness 29: 长期 Agent notification ledger 建议分别保存 task identity, subscriber/webhook identity, subscription acknowledgement, notification/event ID, send attempt, HTTP response or stream receipt, consumer deduplication, application transaction and independent reconciliation evidence
+- Source witness 30: 多 Agent 任务委托、异步回调与长时自动化中, 控制面已经接受订阅不能证明下游执行器已经观察、接受或持久应用关键通知. 需要明确谁对 delivery, receipt, processing 和 durable effects 提供证据
+- Source witness 31: 这是 distributed-agent evidence integrity 问题, 不是 AGI capability claim, 也不是 A2A 与 MCP 的真实可靠性优劣测量
+- Source witness 32: 本轮是 FRONTIER-NOTIFICATION-DELIVERY 新研究对象, 不强制映射旧 P-01 至 P-05 CASE, 不进入 NOTES. 无 Special 或 Audit, 不重写 merged historical Daily
+- Source witness 33: README/monthly 当前索引和计数同步属于 derived bookkeeping, 额外 research batch、Trial、execution window credit 均为 0
+- Source witness 34: 在可控 A2A v1.0.1 server 与 webhook consumer 上生成带唯一 event ID 的 task updates, 对照 configured webhook, actual POST attempts, HTTP 2xx/5xx/timeout, retry sequence, receiver durable inbox, business transaction commit, and final task state
+- Source witness 35: 在支持 MCP Tasks Extension 2026-07-28 的 server 上记录 subscriptions/listen acknowledged taskIds, notifications/tasks emission, client receive log and tasks/get snapshots, 控制 disconnect 与 capability omission, 不把不同协议的 ack semantics 合并
+- Source witness 36: 固定 task incarnation、server build、notification payload、subscriber identity、storage backend 与 event generation; 若缺少 server-side event log 或 consumer commit log, 将 end-to-end effect 标记 UNVERIFIED, 不报告 invented loss/duplicate rates
+- Source witness 37: Executed research: fresh remote main and open PR inspection; current Parallax README, METHOD, daily/monthly templates, CASES, NOTES, current October monthly, audit/special indexes, current checker and 10/08-10/09 Daily review; direct web read of versioned A2A v1.0.1 and MCP Tasks Extension 2026-07-28; deterministic local JavaScript three-case/five-predicate control with five true results
+- Source witness 38: NOT_EXECUTED research: live webhook POST, MCP subscription server/client, retry injection, wire capture, application database transaction, independent delivery denominator, CASE promotion, NOTES promotion, Special or Audit creation
+- Source witness 39: Delivery validation: exact PR-head scope, index consistency and current checker contract must be reported separately from external evidence sufficiency. The checker validates structure, not notification reliability
+
+### Orientation, source independence and completion adjudication
+- H1 Network Status NETWORK_UNAVAILABLE is a recorded source-access failure, not confirmation of no world changes.
+- H1 Source Status NONE and NO_VERIFIABLE_MATERIAL_NEW_SIGNAL_IN_THIS_RUN remain low-certainty observations.
+- H2 consumes 10/10 H1 exactly; no 10/09 fallback; H2 is a substitute and not Jules-native.
+- The H2 substitute was created after identifying absent same-day native H2 file; later recovery never proves earlier execution.
+- H2 task state DEGRADED, Source NONE, independent verification NONE, promotion NO.
+- No H1-or-H2 external AI Agent/MCP research credit is created by Parallax's separately verified research.
+- Parallax id PX-20261010-NOTIFICATION-DELIVERY identifies a new notification/effect boundary, not a rerun of 10/09 reconnect proof.
+- A2A v1.0.1 webhook MUST attempt at least one delivery; retry MAY, and may stop after continuing failures.
+- A2A HTTP 2xx indicates transport receipt acknowledgment, not app business commit.
+- MCP acknowledged subscription task IDs do not prove later notification receipt at client.
+- Synthetic identical subscription/attempt prefixes can yield different receipt and application outcomes.
+- Synthetic control is bounded and deterministic; live A2A webhooks/MCP subscriptions not executed.
+- 2 source publishers A2A and MCP are separated from one bounded synthetic runtime/evidence window.
+- No new CASE, NOTES, Special, cycle audit or additional native Daily credit from the maintenance layer.
+- The AGI workflow historical snapshots are metadata pointers, not active workflow replacements.
+- H6 natural-month final NOT_DUE; weekly/final strategic decision not formed in A2.
+- Post-merge owner remains a relation update, not a producer experiment, live protocol conformance, or source recheck.
+- Dated source order preserved: subscription accepted -> attempted -> receipt -> application commit cannot be collapsed.
+- Any later observed inconsistent delivery or source update requires new evidence and forward correction.
