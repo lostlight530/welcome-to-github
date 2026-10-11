@@ -2729,3 +2729,223 @@ DUPLICATE_EVIDENCE_CREDIT
 - Post-merge owner remains a relation update, not a producer experiment, live protocol conformance, or source recheck.
 - Dated source order preserved: subscription accepted -> attempted -> receipt -> application commit cannot be collapsed.
 - Any later observed inconsistent delivery or source update requires new evidence and forward correction.
+
+## A1 FULL-COVERAGE MAINTENANCE — 2026-10-11
+- Repository: `lostlight530/welcome-to-github`
+- Domain: Horizon / Parallax
+- Exact owner: `horizon-cortex/2026-10-H6-horizon-memorize.md`
+- Logical date: 2026-10-11 Asia/Shanghai
+- Coverage cutoff: 2026-10-10
+- Coverage window: 2026-10-01..2026-10-10
+- Exact base revision: `7e3e57b2161e7b9de62a9c7d59175baaaa397073`
+- Previous A1 lineage: #724
+- Previous A2 lineage: #725
+- Producer role: HUMAN_AUTHORIZED_GOVERNANCE_MAINTENANCE
+- Native task replay: NOT_PERFORMED
+- External research replay by maintenance: NOT_PERFORMED
+- Independent source credit added by maintenance: NONE
+- Research batch or execution-window credit added by maintenance: NONE
+- Historical rewrite: NO
+- Month closure: OPEN
+- Natural-month final: NOT_DUE
+
+### Coverage and decision contract
+- Every dated checkpoint in the cutoff window is reviewed as a separate point-in-time state
+- REVIEWED does not imply MODIFIED
+- NO_FOLLOW_UP does not imply NOT_REVIEWED
+- Existing valid reconciliation is reused rather than duplicated
+- Later repository visibility is not substituted for earlier task-time availability
+- Negative, blocked, degraded, partial, unknown, and not-computed states remain valid evidence
+- Maintenance does not manufacture source independence, runtime evidence, benchmark credit, or research output
+- Only the canonical October owner is modified by this A1
+- N-day 2026-10-11 native artifacts are outside the A1 producer cutoff and are handled only as post-cutoff visibility
+- The next A2 must start only after this A1 is merged and current main is freshly read
+
+#### 2026-10-01 full-coverage decision
+- Coverage identity: 2026-10-01 / Horizon / Parallax / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-02 full-coverage decision
+- Coverage identity: 2026-10-02 / Horizon / Parallax / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-03 full-coverage decision
+- Coverage identity: 2026-10-03 / Horizon / Parallax / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-04 full-coverage decision
+- Coverage identity: 2026-10-04 / Horizon / Parallax / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-05 full-coverage decision
+- Coverage identity: 2026-10-05 / Horizon / Parallax / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-06 full-coverage decision
+- Coverage identity: 2026-10-06 / Horizon / Parallax / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-07 full-coverage decision
+- Coverage identity: 2026-10-07 / Horizon / Parallax / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-08 full-coverage decision
+- Coverage identity: 2026-10-08 / Horizon / Parallax / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-09 full-coverage decision
+- Coverage identity: 2026-10-09 / Horizon / Parallax / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-10 full-coverage decision
+- Coverage identity: 2026-10-10 / Horizon / Parallax / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+### 2026-10-10 cutoff-specific evidence adjudication
+- Cutoff fact 1: 2026-10-10 H1 remains DEGRADED under NETWORK_UNAVAILABLE; source absence is not world-level no-change evidence
+- Cutoff fact 2: 2026-10-10 H2 is HUMAN_AUTHORIZED_SUBSTITUTE and inherits H1 network/source limits without promotion
+- Cutoff fact 3: 2026-10-10 Parallax Daily studies notification delivery, receipt acknowledgement, and application settlement as separate evidence stages
+- Cutoff fact 4: The Parallax synthetic projection is bounded evidence and is not a live A2A webhook or MCP subscription runtime
+- Cutoff fact 5: No new CASE, NOTES, Special, audit-window, durable-memory, host-runtime, or source-independence credit is created by A1
+- Cutoff fact 6: October H6 remains OPEN and is not a natural-month final memory seal
+- Cutoff decision: NO_FOLLOW_UP on original 2026-10-10 producer facts
+- Relationship action: RETAIN current 2026-10-10 A2 interpretation as point-in-time evidence
+- Historical mutation required: NO
+- New external verification required by A1: NO
+- New runtime verification claimed by A1: NO
+
+### Post-cutoff visibility boundary
+- Post-cutoff item 1: W40 H3 PR #730 was delivered on 2026-10-11 after this A1 cutoff and is excluded from 2026-10-10 producer credit
+- Post-cutoff item 2: Premature W41 H4 PR #731 was closed without merge and is not a canonical H4 artifact
+- Post-cutoff item 3: The post-cutoff W40 H3 path cannot retroactively prove that W40 H4 had a valid H3 input at its earlier execution cut
+- Post-cutoff artifacts are not counted in the A1 2026-10-01..2026-10-10 coverage denominator
+- Post-cutoff current paths may be consumed by A2 only after this A1 merges
+
+### Domain evidence boundaries rechecked
+- Boundary 01: Horizon research evidence != Welcome host fact
+- Boundary 02: Horizon != Parallax != GitHub Actions
+- Boundary 03: NETWORK_UNAVAILABLE != NO_EXTERNAL_CHANGE
+- Boundary 04: NO_MATERIAL_NEW_SIGNAL_IN_THIS_RUN != global no-change
+- Boundary 05: H2 substitute delivery != Jules-native execution
+- Boundary 06: current path presence != original task-time availability
+- Boundary 07: later H3 delivery != earlier H4 input availability
+- Boundary 08: same publisher revisit != independent corroboration
+- Boundary 09: subscription accepted != notification received
+- Boundary 10: HTTP 2xx receipt != application durable commit
+- Boundary 11: synthetic projection != production failure observation
+- Boundary 12: protocol documentation != deployed runtime conformance
+- Boundary 13: current monthly owner != natural-month final
+- Boundary 14: maintenance review != producer research batch
+- Boundary 15: maintenance review != execution-window credit
+- Boundary 16: maintenance source quotation != new external verification
+- Boundary 17: historical BLOCKED/DEGRADED states remain historical
+- Boundary 18: closed-unmerged PR history != canonical repository state
+- Boundary 19: current completeness != historical completeness
+- Boundary 20: correction moves forward and does not rewrite prior execution
+
+### A1 decision summary
+- Reviewed dated checkpoints: 10
+- Cutoff: 2026-10-10
+- Owning artifact modified: current October owner only
+- Historical producer artifacts rewritten: 0
+- New producer Dailies created: 0
+- New Weekly/Monthly/Special research artifacts created: 0
+- New runtime executions claimed: 0
+- New independent-source credit: 0
+- New audit-window credit: 0
+- New durable-memory promotion: 0
+- Current defect requiring owning-artifact correction: NONE beyond the forward boundary notes recorded here
+- Overall A1 disposition: COVERAGE_COMPLETE / DECISION_COMPLETE / HISTORY_PRESERVED
+- Merge prerequisite for A2: YES
+- A2 may consume 2026-10-11 current-main state only after this A1 merge
+- A1 status: READY_FOR_MAINTAINER_REVIEW
