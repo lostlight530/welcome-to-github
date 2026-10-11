@@ -2949,3 +2949,194 @@ DUPLICATE_EVIDENCE_CREDIT
 - Merge prerequisite for A2: YES
 - A2 may consume 2026-10-11 current-main state only after this A1 merge
 - A1 status: READY_FOR_MAINTAINER_REVIEW
+
+## A2 CURRENT-MONTH RELATION — 2026-10-11
+- Repository: `lostlight530/welcome-to-github`
+- Domain: Horizon / Parallax
+- Exact owner: `horizon-cortex/2026-10-H6-horizon-memorize.md`
+- Logical N: 2026-10-11 Asia/Shanghai
+- Relation window: 2026-10-01..2026-10-11
+- Fresh post-A1 base: `be963a8de5468159b98be3a9ae9d932ed5f2dca0`
+- Required predecessor A1: #732 / MERGED / CONSUMED
+- Open PR state at A2 branch cut: 0 observed
+- Producer role: HUMAN_AUTHORIZED_GOVERNANCE_RELATION
+- Historical rewrite: NO
+- Extra external research by A2: NOT_PERFORMED
+- Extra producer execution window by A2: NONE
+- New independent-source credit by A2: NONE
+- Month closure: OPEN
+- Natural-month final: NOT_DUE
+
+### Dependency and relation contract
+- A2 starts from current main only after A1 merge
+- A1 MonthStart→N-1 coverage is consumed as prerequisite, not duplicated as new producer evidence
+- N-day producer/recovery artifacts are integrated only when present on this exact base
+- A later merged artifact does not prove it existed at an earlier execution cut
+- Closed-unmerged PR history remains history and is not silently promoted
+- REVIEWED / RETAIN / NO_FOLLOW_UP are all explicit decisions
+- Current owner update does not create a new research batch or runtime observation
+- Negative and degraded states remain first-class evidence
+- Future corrections must append a new timepoint rather than rewrite this relation
+
+#### 2026-10-01 inherited A1 relation
+- A1 coverage source: merged predecessor #732
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical network/source/runtime limitations: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New source-independence credit: NONE
+- New research/window credit: NONE
+- Later 10/11 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-02 inherited A1 relation
+- A1 coverage source: merged predecessor #732
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical network/source/runtime limitations: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New source-independence credit: NONE
+- New research/window credit: NONE
+- Later 10/11 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-03 inherited A1 relation
+- A1 coverage source: merged predecessor #732
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical network/source/runtime limitations: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New source-independence credit: NONE
+- New research/window credit: NONE
+- Later 10/11 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-04 inherited A1 relation
+- A1 coverage source: merged predecessor #732
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical network/source/runtime limitations: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New source-independence credit: NONE
+- New research/window credit: NONE
+- Later 10/11 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-05 inherited A1 relation
+- A1 coverage source: merged predecessor #732
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical network/source/runtime limitations: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New source-independence credit: NONE
+- New research/window credit: NONE
+- Later 10/11 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-06 inherited A1 relation
+- A1 coverage source: merged predecessor #732
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical network/source/runtime limitations: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New source-independence credit: NONE
+- New research/window credit: NONE
+- Later 10/11 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-07 inherited A1 relation
+- A1 coverage source: merged predecessor #732
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical network/source/runtime limitations: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New source-independence credit: NONE
+- New research/window credit: NONE
+- Later 10/11 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-08 inherited A1 relation
+- A1 coverage source: merged predecessor #732
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical network/source/runtime limitations: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New source-independence credit: NONE
+- New research/window credit: NONE
+- Later 10/11 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-09 inherited A1 relation
+- A1 coverage source: merged predecessor #732
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical network/source/runtime limitations: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New source-independence credit: NONE
+- New research/window credit: NONE
+- Later 10/11 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-10 inherited A1 relation
+- A1 coverage source: merged predecessor #732
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical network/source/runtime limitations: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New source-independence credit: NONE
+- New research/window credit: NONE
+- Later 10/11 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+### 2026-10-11 current-main integration
+- Current fact 01: Parallax PR #727 is merged and adds exactly one 2026-10-11 native Daily research record plus README/monthly synchronization
+- Current fact 02: Parallax 10/11 research boundary: cache freshness does not independently prove current server capability state or a consistent multipage snapshot
+- Current fact 03: Parallax reports two publisher/evidence identities (A2A and MCP) and one bounded synthetic cache-control window; live AgentCard/MCP cache runtimes were NOT_EXECUTED
+- Current fact 04: Horizon H1 PR #728 is merged; same-date H1 is DEGRADED under network/source unavailability rather than a verified global no-change claim
+- Current fact 05: Horizon H2 PR #729 is merged as a human-authorized substitute after reported Jules failures; it is not Jules-native execution
+- Current fact 06: H2 consumes same-date H1 and preserves DEGRADED / NETWORK_UNAVAILABLE / Source NONE without inventing fresh external signals
+- Current fact 07: W40 H3 PR #730 is merged and preserves input gaps/partial network limitations for the completed prior ISO week
+- Current fact 08: Premature W41 H4 PR #731 is closed unmerged and is not canonical current-month evidence
+- Current fact 09: No current W41 H4 canonical artifact is inferred from the closed attempt
+- Current fact 10: October H6 remains OPEN; no natural-month memory final is created
+- Current-day disposition: INTEGRATED_WITH_PROVENANCE_AND_AVAILABILITY_BOUNDARIES
+- A2-created native Daily count: 0
+- A2-created H1/H2/H3/H4 count: 0
+- A2-created external execution windows: 0
+- Historical #731 promoted: NO
+
+### Evidence boundaries rechecked
+- Boundary 01: Parallax producer research != Horizon H1 evidence
+- Boundary 02: Horizon H1 != H2 producer identity
+- Boundary 03: substitute H2 != Jules-native run
+- Boundary 04: NETWORK_UNAVAILABLE != no world change
+- Boundary 05: Source NONE != verified absence
+- Boundary 06: synthetic cache control != live protocol runtime
+- Boundary 07: cache hit/freshness != authoritative current capability state
+- Boundary 08: multipage cache visibility != consistent snapshot
+- Boundary 09: same publisher family != independent corroboration
+- Boundary 10: H3 prior-week decision != current-week H4 authorization
+- Boundary 11: closed #731 != canonical H4
+- Boundary 12: later current path != earlier task-time availability
+- Boundary 13: A1 cutoff evidence != A2 N-day evidence
+- Boundary 14: A1 governance maintenance != producer Daily
+- Boundary 15: A2 owner relation != new experiment
+- Boundary 16: monthly owner OPEN != natural-month final
+- Boundary 17: historical degraded state remains historical
+- Boundary 18: current-main completeness != historical execution completeness
+- Boundary 19: delivery/merge chronology remains explicit
+- Boundary 20: correction moves forward without rewriting prior artifacts
+
+### A2 relation summary
+- Relation-through: 2026-10-11
+- A1 coverage prerequisite: SATISFIED
+- Current-day producer evidence consumed: YES
+- Closed-unmerged history consumed as canonical artifact: NO
+- New research credit from maintenance: NONE
+- New source-independence credit from maintenance: NONE
+- Historical facts rewritten: 0
+- Month final formed: NO
+- Current owner status: UPDATED_THROUGH_2026_10_11_WITH_NATIVE_BOUNDARIES
+- Future A1 must fresh-read this merged main
+- Future A2 must again start only after its own A1 merge
+- A2 status: READY_FOR_MAINTAINER_REVIEW
