@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "record_kind": "RECOVERED_WORKFLOW_GENERATION",
+  "record_status": "FROZEN_REFERENCE",
+  "lineage_role": "PROFILE_DRIVEN_HARVESTING_GENERATION",
+  "recovery_record_created_date": "2026-10-12",
+  "repository": "lostlight530/welcome-to-github",
+  "source_commit_sha": "6743ccbefb8cae9d7d7ff9b00e822f23900c2470",
+  "source_commit_time_utc": "2026-07-11T05:26:03Z",
+  "canonical_executable_source": ".github/workflows/nexus-life-cycle.yml",
+  "source_workflow_name": "NEXUS CORTEX Life Cycle",
+  "source_workflow_blob_sha": "00e51880371f5d07d717df996e58eb5016cd91b8",
+  "source_content_sha256": "a103591fe20afd0a7981fbf97c35710a2687588e0024d20039e290caefd09ccc",
+  "source_line_count": 75,
+  "source_jobs": [
+    "consciousness"
+  ],
+  "source_triggers": [
+    "schedule",
+    "push",
+    "workflow_dispatch"
+  ],
+  "historical_role": "Profile-driven external document harvesting with a focused harvester contract gate before ingestion",
+  "predecessor_record": "AGI/workflows/nexus-life-cycle/recovered-2026-03-31",
+  "historical_action_run": {
+    "url": "https://github.com/lostlight530/welcome-to-github/actions/runs/29142338521",
+    "conclusion": "success",
+    "scope": "Historical run for the source commit; not a present-day compatibility claim"
+  },
+  "agi_contains_executable_copy": false,
+  "executable_from_agi": false,
+  "workflowhub_registered_for_this_generation": false,
+  "recovery_rule": "Resolve source_commit_sha, read canonical_executable_source, verify source_workflow_blob_sha and source_content_sha256, then validate compatibility before any execution or publication claim."
+}
