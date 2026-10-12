@@ -905,6 +905,9 @@ class HarvesterContracts(unittest.TestCase):
             Scholar._is_supported_path(Path("horizon-cortex/owned.py"))
         )
         self.assertFalse(Scholar._is_supported_path(Path("parallax/owned.py")))
+        self.assertFalse(Scholar._is_supported_path(Path("AGI/workflows/revisions/snapshots/old.yml")))
+        self.assertFalse(Scholar._is_supported_path(Path("AGI/workflows/revisions/INDEX.json")))
+        self.assertTrue(Scholar._is_supported_path(Path("AGI/checkpoints/manifest.json")))
         self.assertFalse(Scholar._is_supported_path(Path("index.html")))
         self.assertTrue(Scholar._is_supported_path(Path("docs/brain/reason.py")))
 
