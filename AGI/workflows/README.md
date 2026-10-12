@@ -2,13 +2,13 @@
 
 ## Scope
 
-This index records selected architecture generations recovered from Git history
+This index records selected architecture generations recovered from Git history and points to their later byte-identical AGI backups
 
-It is an identity, provenance and recovery surface only
+The lineage records preserve identity, provenance and recovery evidence; [the backup inventory](backups/README.md) contains the selected historical YAML files
 
-No file under `AGI/workflows` is an executable GitHub Actions workflow
+No file under `AGI/workflows` is discovered as a GitHub Actions workflow, because GitHub Actions reads `.github/workflows` instead
 
-The canonical executable remains at the recorded Git commit and repository path
+The pinned Git commit and repository path remain the canonical historical source
 
 ## Selection rule
 
@@ -71,6 +71,14 @@ The selected 2026-07-11 generation is not asserted here to have its own Workflow
 Registration statements in older frozen manifests record their creation-time state; this index reports the later external registrations without rewriting those manifests
 
 A WorkflowHub revision comment is an external identity reference, not a replacement for the canonical Git commit and workflow content hash
+
+## Backup status
+
+As of 2026-10-12, the selected historical YAML files are also stored under [`AGI/workflows/backups`](backups/README.md), with each backup linked to its source commit, Git blob, SHA-256, description and WorkflowHub registration status
+
+The older frozen manifests truthfully described their creation-time state before these later backups existed; they are not rewritten
+
+Backups and future AGI experiments remain separate from the active `.github/workflows` lifecycle
 
 ## Boundary
 
