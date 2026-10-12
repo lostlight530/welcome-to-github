@@ -3319,3 +3319,185 @@ DUPLICATE_EVIDENCE_CREDIT
 - Runtime validations newly claimed: 0
 - Forward corrections already merged before A1: retained in current main
 - Overall: COVERAGE_COMPLETE / HISTORY_PRESERVED / READY_FOR_A2_AFTER_MERGE
+
+## A2 CURRENT-MAIN OCTOBER MAINTENANCE — 2026-10-12
+- Repository: lostlight530/welcome-to-github
+- Domain: Horizon / Parallax
+- Canonical owner: horizon-cortex/2026-10-H6-horizon-memorize.md
+- Logical date: 2026-10-12 Asia/Shanghai
+- Coverage window: 2026-10-01..2026-10-12
+- Relation-through: N = 2026-10-12
+- Fresh A1-merged base main: 849e5accadecbef01748004657fc4e6c5d5e7de1
+- A1 consumed: YES
+- Native 2026-10-12 artifacts consumed: YES_WHERE_PRESENT
+- Producer replay by A2: NOT_PERFORMED
+- Historical rewrite: NO
+- Month state: OPEN
+- Natural-month final: NOT_DUE
+
+### Full October relation review
+
+#### 2026-10-01
+- Relation date: 2026-10-01
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-02
+- Relation date: 2026-10-02
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-03
+- Relation date: 2026-10-03
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-04
+- Relation date: 2026-10-04
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-05
+- Relation date: 2026-10-05
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-06
+- Relation date: 2026-10-06
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-07
+- Relation date: 2026-10-07
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-08
+- Relation date: 2026-10-08
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-09
+- Relation date: 2026-10-09
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-10
+- Relation date: 2026-10-10
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-11
+- Relation date: 2026-10-11
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-12
+- Relation date: 2026-10-12
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+### 2026-10-12 native/current-main adjudication
+- N1: 10/12 H1 PR #735 merged: Google Labs single-publisher observations, Independent Verification = NO.
+- N2: 10/12 H2 PR #736 merged and remains downstream orientation, not a second independent source.
+- N3: 10/12 archive PRs #737/#738/#739 preserve selected historical workflow lineage and YAML history; archive presence is not original runtime proof.
+- N4: A1 PR #740 merged from exact fresh base and audited 10/01..10/11 without backdating.
+- N5: 10/12 current-main completeness is current state only; it does not repair earlier task-time absence.
+- N6: October H6 remains OPEN and natural-month final remains NOT_DUE.
+
+### Daily / Weekly / Monthly correction rules applied
+- Daily records remain producer-time evidence and are not rewritten by relation maintenance.
+- Weekly summaries may consume prior Daily evidence but cannot manufacture missing producer execution.
+- Monthly owners may record reconciliation and correction while month is OPEN.
+- Natural-month finalization is not due on 2026-10-12.
+- A later source discovery does not change a source's original publication date.
+- A later merge does not change an earlier task's input availability.
+- Same-publisher repetition does not create source independence.
+- Archive files do not prove archived workflows ran at their historical dates.
+- A current-success state does not erase earlier BLOCKED, DEGRADED, PARTIAL, UNKNOWN or NOT_COMPUTED states.
+- Correction must be forward, inspectable, and scoped to supported claims.
+- A2 is governance relation maintenance, not native producer replay.
+- No hidden runtime, benchmark, deployment, or conformance credit is added.
+
+### A2 evidence ledger
+- 2026-10-01..2026-10-11: consumed from A1-merged current main.
+- 2026-10-12: consumed from current main native/correction artifacts where present.
+- Historical rewrite count: 0.
+- Native runs replayed by A2: 0.
+- Independent sources newly credited by A2: 0.
+- Runtime validations newly claimed by A2: 0.
+- Monthly final seal: 0.
+- Relation-through advanced to: 2026-10-12.
+- Status: A2_RELATION_COMPLETE / MONTH_OPEN / HISTORY_PRESERVED
