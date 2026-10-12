@@ -1,0 +1,80 @@
+name: 🧬 NEXUS CORTEX Life Cycle
+
+on:
+  schedule:
+    - cron: '0 22 * * *'
+  push:
+    paths:
+      - 'docs/brain/**'
+      - 'src/**'
+  workflow_dispatch:
+
+env:
+  GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+jobs:
+  consciousness:
+    name: 🧠 Stream of Consciousness
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout Reality
+      uses: actions/checkout@v4
+      with:
+        ref: main
+
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+      env:
+  GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
+        # Phase V Dictator: Disable external dependency submission (Zero Dependency Brutalism)
+        # Fixes: HttpError: An error occurred while processing your request. - https://docs.github.com/rest/dependency-graph/dependency-submission
+        GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
+        # Prevent Node 20 deprecation warnings from actions
+        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+    - name: 🏗️ Rebuild Memory (Wake Up)
+      run: python docs/brain/nexus.py rebuild
+
+    - name: 📡 Harvest External Facts (Double-Clutch Radar)
+      run: python docs/brain/nexus.py harvest
+
+    - name: 👁️ Ingest Self-Codebase (X-Ray Digestion)
+      run: python docs/brain/nexus.py ingest
+
+    - name: 🤔 Deep Ponder (Mathematical Graph Inference)
+      run: python docs/brain/nexus.py ponder
+
+    - name: 🛡️ Run Evolution Cycle (Sandbox Verification & Report)
+      run: python docs/brain/nexus.py evolve
+
+    - name: 🔄 Sync world-line (Autostash)
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git pull --rebase --autostash origin main || true
+
+    - name: 🛡️ Resolve Stash Conflicts
+      run: |
+        if git ls-files -u | grep -q .; then
+          echo "Merge conflicts detected from autostash pop. Resolving in favor of local changes (theirs)..."
+          git checkout --theirs .
+          git add .
+          git stash drop || true
+        fi
+
+    - name: 💾 Commit Cognitive Changes
+      uses: stefanzweifel/git-auto-commit-action@v5
+      env:
+  GITHUB_DEPENDENCY_GRAPH_ENABLED: 'false'
+        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+      with:
+        commit_message: "🧬 lifecycle: ingested, pondered & evolved [skip ci]"
+        branch: main
+        commit_options: '--allow-empty'
+        file_pattern: "docs/brain/memories/** docs/brain/inputs/** docs/brain/knowledge/**"

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "record_kind": "RECOVERED_WORKFLOW_GENERATION",
+  "record_status": "FROZEN_REFERENCE",
+  "lineage_role": "LAYERED_HUMAN_RECEIPT",
+  "recovery_record_created_date": "2026-10-12",
+  "repository": "lostlight530/welcome-to-github",
+  "source_commit_sha": "3c7ebfb49f69f0f015075a98b869437265651001",
+  "source_commit_time_utc": "2026-08-31T12:53:56Z",
+  "canonical_executable_source": ".github/workflows/nexus-life-cycle.yml",
+  "source_workflow_name": "NEXUS CORTEX Life Cycle",
+  "source_workflow_blob_sha": "c8fc0f838b03333231c82c9abf20e54370629cd0",
+  "source_content_sha256": "90519c058d6e2f2c1fa9701a682736dca429a57094e3593b792bcfb9f6760c18",
+  "source_line_count": 207,
+  "source_jobs": [
+    "validate",
+    "apply"
+  ],
+  "source_triggers": [
+    "schedule",
+    "push",
+    "pull_request",
+    "workflow_dispatch"
+  ],
+  "historical_role": "Added human baseline capture and always-published lifecycle receipts to both validation and apply jobs, while preserving the guarded apply architecture",
+  "predecessor_record": "AGI/workflows/nexus-life-cycle/recovered-2026-08-31-deterministic",
+  "agi_backup_path": "AGI/workflows/revisions/snapshots/nexus-life-cycle/2026-08-31-3c7ebfb49f69/nexus-life-cycle.yml",
+  "agi_backup_blob_sha": "c8fc0f838b03333231c82c9abf20e54370629cd0",
+  "agi_copy_is_active_github_action": false,
+  "exact_commit_successful_workflow_run": null,
+  "later_same_blob_validation": "https://github.com/lostlight530/welcome-to-github/actions/runs/38190365573",
+  "recovery_rule": "Compare the AGI backup Git blob and SHA-256 to the pinned historical source, then perform current repository-specific validation before any replay, execution or publication claim."
+}
