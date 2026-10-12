@@ -1,0 +1,44 @@
+name: 🧬 NEXUS CORTEX Life Cycle
+
+on:
+  schedule:
+    - cron: '0 22 * * *'
+  push:
+    paths:
+      - 'docs/brain/**'
+      - 'src/**'
+  workflow_dispatch:
+
+jobs:
+  consciousness:
+    name: 🧠 Stream of Consciousness
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout Reality
+      uses: actions/checkout@v4
+
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: 🟢 Rebuild Memory (Wake Up)
+      run: python docs/brain/nexus.py rebuild
+
+    - name: 🔍 Ingest Self-Codebase (Omniscience)
+      run: python docs/brain/nexus.py ingest
+
+    - name: 🤔 Deep Ponder (Cognition)
+      run: python docs/brain/nexus.py ponder
+
+    - name: 🧬 Run Evolution Cycle (Strategy)
+      run: python docs/brain/nexus.py evolve
+
+    - name: 💾 Commit New Memories
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "🧬 lifecycle: ingested, pondered & evolved [skip ci]"
+        file_pattern: "docs/brain/memories/** docs/brain/inputs/** docs/brain/knowledge/**"
