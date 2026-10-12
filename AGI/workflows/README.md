@@ -36,15 +36,31 @@ The reviewed path history spans 2026-02-15 through 2026-08-31
    - First verified workflow formally named `NEXUS CORTEX Life Cycle`
    - Role: unified rebuild, ingest, ponder, evolve and persistence loop
 
-3. `nexus-life-cycle/original-2026-10-07`
+3. `nexus-life-cycle/recovered-2026-07-11`
+   - First selected profile-driven harvesting generation
+   - Role: profile-governed external document harvesting and a focused contract test before ingestion
+
+4. `nexus-life-cycle/original-2026-10-07`
    - First baseline formally recorded in the AGI workflow-history surface
    - Role: frozen reference to the mature bounded lifecycle
 
 ## Lineage
 
-`Brain Evolution 2026-02-15` -> `NEXUS CORTEX Life Cycle 2026-03-09` -> later Git evolution -> `AGI original baseline 2026-10-07`
+`Brain Evolution 2026-02-15` -> `NEXUS CORTEX Life Cycle 2026-03-09` -> later Git evolution -> `profile-driven harvesting 2026-07-11` -> later Git evolution -> `AGI original baseline 2026-10-07`
 
 Intermediate commits remain primary evidence for the transition and are listed in each recovered record
+
+## External registration status
+
+As checked on 2026-10-12, the standalone Brain Evolution precursor is registered at [WorkflowHub Version 1](https://workflowhub.eu/workflows/2337?version=1), DOI `10.48546/workflowhub.workflow.2337.1`
+
+The welcome NEXUS CORTEX lineage is registered through [WorkflowHub Version 5](https://workflowhub.eu/workflows/2332?version=5), DOI `10.48546/workflowhub.workflow.2332.5`, whose revision comment identifies the 2026-03-31 source commit
+
+The selected 2026-07-11 generation is not asserted here to have its own WorkflowHub version
+
+Registration statements in older frozen manifests record their creation-time state; this index reports the later external registrations without rewriting those manifests
+
+A WorkflowHub revision comment is an external identity reference, not a replacement for the canonical Git commit and workflow content hash
 
 ## Boundary
 
