@@ -21,9 +21,9 @@ It added the workflow and tests to push-path selection, used the triggering bran
 
 ## Predecessor and intervening history
 
-The selected AGI predecessor is the first named generation of 2026-03-09
+The previous selected AGI generation is `AGI/workflows/nexus-life-cycle/recovered-2026-03-31`
 
-The 2026-03-15 synchronized generation and the 2026-03-31 external-harvesting generation remain directly recoverable from Git history; this record does not overwrite or relabel them
+The 2026-03-15 synchronized generation is a separate earlier AGI record; intervening operational commits remain primary Git history
 
 ## Historical execution evidence
 
