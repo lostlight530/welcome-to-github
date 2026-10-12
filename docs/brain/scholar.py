@@ -13,7 +13,7 @@ except ImportError:
     pass
 
 class Scholar:
-    PROTECTED_ROOTS = ("horizon-cortex", "parallax")
+    PROTECTED_ROOTS = ("horizon-cortex", "parallax", "agi/workflows")
     SUPPORTED_SUFFIXES = {
         ".py", ".js", ".jsx", ".ts", ".tsx",
         ".cpp", ".cc", ".h", ".hpp", ".c",

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "record_kind": "RECOVERED_WORKFLOW_GENERATION",
+  "record_status": "FROZEN_REFERENCE",
+  "lineage_role": "DETERMINISTIC_GUARDED_LIFECYCLE",
+  "recovery_record_created_date": "2026-10-12",
+  "repository": "lostlight530/welcome-to-github",
+  "source_commit_sha": "d607cc3e1608a34eaf81d2040ccfa64382f02c12",
+  "source_commit_time_utc": "2026-08-31T11:41:52Z",
+  "canonical_executable_source": ".github/workflows/nexus-life-cycle.yml",
+  "source_workflow_name": "NEXUS CORTEX Life Cycle",
+  "source_workflow_blob_sha": "e4c56b69765a74581364c03f85090f2944ec20c0",
+  "source_content_sha256": "c50fccb9a5d33ff697361f46242be0b0087ec76713b234719e39aef3f41619f8",
+  "source_line_count": 182,
+  "source_jobs": [
+    "validate",
+    "apply"
+  ],
+  "source_triggers": [
+    "schedule",
+    "push",
+    "pull_request",
+    "workflow_dispatch"
+  ],
+  "historical_role": "Split the lifecycle into read-only validation and a main-only scheduled or explicitly approved apply path, with pinned actions, bounded candidate generation, world-line comparison, write-boundary verification and stable meaningful commits",
+  "predecessor_record": "AGI/workflows/nexus-life-cycle/recovered-2026-07-11",
+  "agi_backup_path": "AGI/workflows/revisions/snapshots/nexus-life-cycle/2026-08-31-d607cc3e1608/nexus-life-cycle.yml",
+  "agi_backup_blob_sha": "e4c56b69765a74581364c03f85090f2944ec20c0",
+  "agi_copy_is_active_github_action": false,
+  "exact_commit_successful_workflow_run": "https://github.com/lostlight530/welcome-to-github/actions/runs/33388340594",
+  "later_same_blob_validation": null,
+  "recovery_rule": "Compare the AGI backup Git blob and SHA-256 to the pinned historical source, then perform current repository-specific validation before any replay, execution or publication claim."
+}
