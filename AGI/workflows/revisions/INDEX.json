@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "scope": "All historical changes to the named GitHub Actions workflow paths, including the Brain Evolution removal event",
+  "scope": "All main-lineage changes to .github/workflows/brain_evolution.yml and .github/workflows/nexus-life-cycle.yml; separate early Brain companion paths are not included",
   "repository": "lostlight530/welcome-to-github",
   "captured_date": "2026-10-12",
   "validation": {
