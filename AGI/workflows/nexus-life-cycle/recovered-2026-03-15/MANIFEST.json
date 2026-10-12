@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "record_kind": "RECOVERED_WORKFLOW_GENERATION",
+  "record_status": "FROZEN_REFERENCE",
+  "lineage_role": "SYNCHRONIZED_BRANCH_EXPLICIT_GENERATION",
+  "recovery_record_created_date": "2026-10-12",
+  "repository": "lostlight530/welcome-to-github",
+  "source_commit_sha": "d8222a0e910d479ddf7c6576ff6662a1c5034c3d",
+  "source_commit_time_utc": "2026-03-15T11:14:34Z",
+  "canonical_executable_source": ".github/workflows/nexus-life-cycle.yml",
+  "source_workflow_name": "NEXUS CORTEX Life Cycle",
+  "source_workflow_blob_sha": "6985fd68410bc182034d04aa9b2a34f9379a6a5b",
+  "source_content_sha256": "61a815230a0a66b1618e72a0e0068cd0c4387479ae1ac501ebf81072289eb332",
+  "source_line_count": 66,
+  "source_jobs": [
+    "consciousness"
+  ],
+  "source_triggers": [
+    "schedule",
+    "push",
+    "workflow_dispatch"
+  ],
+  "historical_role": "First selected synchronized and main-branch-explicit lifecycle generation",
+  "predecessor_record": "AGI/workflows/nexus-life-cycle/recovered-2026-03-09",
+  "agi_contains_executable_copy": false,
+  "executable_from_agi": false,
+  "workflowhub_registered_for_this_generation": true,
+  "workflowhub_version_url": "https://workflowhub.eu/workflows/2332?version=4",
+  "workflowhub_version_doi": "10.48546/workflowhub.workflow.2332.4",
+  "recovery_rule": "Resolve source_commit_sha, read canonical_executable_source, verify source_workflow_blob_sha and source_content_sha256, then validate compatibility before any execution or publication claim."
+}
