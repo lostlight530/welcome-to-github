@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-13
-- 最新每日研究: [A2A artifact lineage 与 client acceptance 的证据边界](records/2026-10/2026-10-13.md)
-- 每日专题: 83
+- 最新每日归属日期: 2026-10-14
+- 最新每日研究: [A2A 授权请求与下游 MCP 委托身份边界](records/2026-10/2026-10-14.md)
+- 每日专题: 84
 - 特殊专题: 17
-- 当前专题研究批次: 100
-- 当前专题独立执行日期窗口: 78
+- 当前专题研究批次: 101
+- 当前专题独立执行日期窗口: 79
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -313,3 +313,12 @@ MODEL_ATTEMPT_TIMEOUT
 ```
 
 Derived synchronization changes navigation/current counters only and adds zero research credit. No merged historical Daily is rewritten.
+
+
+## Current pointer — 2026-10-14
+
+2026-10-14 native Daily 研究 A2A authorization request 与下游 MCP delegated authority, 直接核验 A2A, MCP, IETF 三个独立发布者的四份官方资料, 本地执行 11 个 synthetic cases 与 15 项通过断言, 结论 PARTIAL, 未执行真实 A2A/MCP/OAuth runtime, 不新增 CASE/NOTES/Special/Audit
+
+`A2A_AUTH_REQUIRED != CREDENTIAL_ISSUED != MCP_RESOURCE_OPERATION_AUTHORIZED`
+
+本日增加 1 research batch 和 1 independent execution window, derived synchronization 增加 0 research credit, 早期 README 维护注释保留其历史时点语义
