@@ -113,3 +113,15 @@ Files Outside horizon-cortex Written: NO
 Boundary Violation: NO
 未做最终周决策: YES
 未把外部信号宣称为宿主仓库事实: YES
+
+## Forward correction — 2026-10-14 — execution-time provenance
+
+- Original native producer PR: #753, H2 logical date 2026-10-14
+- Correction type: MISSING_EXECUTION_TIMESTAMP_FIELDS
+- Original H2 task-time content and producer-reported status: PRESERVED
+- Original report records `Run Date` and `Logical Date`, but does not capture an actual H2 `Execution Time UTC` or `Execution Time Asia/Shanghai`
+- H2 Execution Time UTC (original): NOT_RECORDED / UNKNOWN
+- H2 Execution Time Asia/Shanghai (original): NOT_RECORDED / UNKNOWN
+- GitHub PR #753 merge timestamp: 2026-10-14T02:31:12Z, which is delivery evidence, not H2 execution-time evidence
+- No H2 replay, source re-verification, or execution-time reconstruction was performed by this correction
+- For later native H2 runs, capture both observed execution timestamps in the original `CORTEX_RUN_HEADER`; do not infer them from Git commit or PR dates
