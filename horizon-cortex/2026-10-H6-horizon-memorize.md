@@ -4248,3 +4248,240 @@ DUPLICATE_EVIDENCE_CREDIT
 - Monthly final seal: 0
 - Relation-through: 2026-10-13
 - Status: FINAL_A2_COMPLETE / MONTH_OPEN / HISTORY_PRESERVED
+
+## A1 2026-10-14 Horizon original-file and continuity gate
+- Repository: lostlight530/welcome-to-github
+- Exact main: 36ee2bd0be98f6597a45a6cad2f2a8edfd42880e
+- N−1 coverage: 2026-10-01..2026-10-13
+- Read all existing 13 same-day H2 Orient native files at their exact main blob; inspected H1 file existence for all 13 dates
+- H1 file presence does not imply that H2 consumed it at historical producer-time
+- No same-day H1/H2 retroactive gate upgrade, and no substitution of GitHub merge time for H2 task execution time
+- The earlier 10/13 blocked-input state and later recovery are distinct time-point records; retain both historical surfaces
+- Parallax has an independent research origin and is not a Jules H1 source by default
+- W40/W41 contracts and this H6 monthly owner remain distinct from native daily task production
+- H6 natural-month final: NOT_DUE; October is OPEN / PROVISIONAL_NOT_FINAL
+- New independent source verification performed by maintainer: NONE
+
+### 2026-10-01 Horizon H1 → H2 evidence gate
+- H1 Git tree state: PRESENT at main
+- H1 native path: horizon-cortex/2026-10-01-H1-signal-observe.md
+- H2 native path: horizon-cortex/2026-10-01-H2-horizon-orient.md
+- H2 blob SHA: 26be2924210fa2c9ce347345909ea5b97fc5afe4
+- H2 recorded Input Status: Input Status: SUCCESS
+- H2 recorded Task Status: Task Status: DEGRADED
+- H2 recorded Network Status: Network Status: NETWORK_UNAVAILABLE
+- H2 recorded Source Status: Source Status: NONE
+- H2 recorded Original Execution Status: Original Execution Status: NEW_EXECUTION
+- H2 recorded Independent Verification: Independent Verification: NONE
+- H2 recorded Repository Inspection: Repository Inspection: NO
+- H2 recorded GitHub Actions Inspection: GitHub Actions Inspection: NO
+- H2 recorded Promotion Eligibility: Promotion Eligibility: NOT_ELIGIBLE
+- Recorded control sections: SIGNAL_CLASSIFICATION, NO_DECISION_SECTION, BOUNDARY_CHECK
+- Maintainer decision: keep producer-time gate state; path presence is not proof of actual task execution
+
+### 2026-10-02 Horizon H1 → H2 evidence gate
+- H1 Git tree state: PRESENT at main
+- H1 native path: horizon-cortex/2026-10-02-H1-signal-observe.md
+- H2 native path: horizon-cortex/2026-10-02-H2-horizon-orient.md
+- H2 blob SHA: 2c887297c188136786ba092922901d35b0287e6d
+- H2 recorded Input Status: Input Status: INPUT_MISSING
+- H2 recorded Task Status: Task Status: BLOCKED
+- H2 recorded Network Status: Network Status: NOT_RUN
+- H2 recorded Source Status: Source Status: NONE
+- H2 recorded Original Execution Status: Original Execution Status: BLOCKED
+- H2 recorded Independent Verification: Independent Verification: NONE
+- H2 recorded Repository Inspection: Repository Inspection: NO
+- H2 recorded GitHub Actions Inspection: GitHub Actions Inspection: NO
+- Recorded control sections: SIGNAL_CLASSIFICATION, NO_DECISION_SECTION, BOUNDARY_CHECK
+- Maintainer decision: keep producer-time gate state; path presence is not proof of actual task execution
+
+### 2026-10-03 Horizon H1 → H2 evidence gate
+- H1 Git tree state: PRESENT at main
+- H1 native path: horizon-cortex/2026-10-03-H1-signal-observe.md
+- H2 native path: horizon-cortex/2026-10-03-H2-horizon-orient.md
+- H2 blob SHA: 0e06a2eeff4253fe21752e6e76bd4882e92240f8
+- H2 recorded Input Status: Input Status: PRESENT
+- H2 recorded Task Status: Task Status: DEGRADED
+- H2 recorded Network Status: Network Status: NETWORK_UNAVAILABLE
+- H2 recorded Source Status: Source Status: NONE
+- H2 recorded Original Execution Status: Original Execution Status: NEW_EXECUTION
+- H2 recorded Independent Verification: Independent Verification: NONE
+- H2 recorded Repository Inspection: Repository Inspection: NO
+- H2 recorded GitHub Actions Inspection: GitHub Actions Inspection: NO
+- H2 recorded Promotion Eligibility: Promotion Eligibility: NO
+- Recorded control sections: SIGNAL_CLASSIFICATION, NO_DECISION_SECTION, BOUNDARY_CHECK
+- Maintainer decision: keep producer-time gate state; path presence is not proof of actual task execution
+
+### 2026-10-04 Horizon H1 → H2 evidence gate
+- H1 Git tree state: PRESENT at main
+- H1 native path: horizon-cortex/2026-10-04-H1-signal-observe.md
+- H2 native path: horizon-cortex/2026-10-04-H2-horizon-orient.md
+- H2 blob SHA: 245cd66c944188c1b56ed5736b34f28514964c4b
+- H2 recorded Input Status: Input Status: PRESENT
+- H2 recorded Task Status: Task Status: DEGRADED
+- H2 recorded Network Status: Network Status: NETWORK_UNAVAILABLE
+- H2 recorded Source Status: Source Status: NONE
+- H2 recorded Original Execution Status: Original Execution Status: NEW_EXECUTION
+- H2 recorded Independent Verification: Independent Verification: NONE
+- H2 recorded Repository Inspection: Repository Inspection: NO
+- H2 recorded GitHub Actions Inspection: GitHub Actions Inspection: NO
+- H2 recorded Promotion Eligibility: Promotion Eligibility: NO
+- Recorded control sections: SIGNAL_CLASSIFICATION, NO_DECISION_SECTION, BOUNDARY_CHECK
+- Maintainer decision: keep producer-time gate state; path presence is not proof of actual task execution
+
+### 2026-10-05 Horizon H1 → H2 evidence gate
+- H1 Git tree state: PRESENT at main
+- H1 native path: horizon-cortex/2026-10-05-H1-signal-observe.md
+- H2 native path: horizon-cortex/2026-10-05-H2-horizon-orient.md
+- H2 blob SHA: b52086ceb13f06c3ad919cd3ba1e5443cd96d938
+- H2 recorded Input Status: Input Status: PRESENT
+- H2 recorded Task Status: Task Status: DEGRADED
+- H2 recorded Network Status: Network Status: NETWORK_UNAVAILABLE
+- H2 recorded Source Status: Source Status: NONE
+- H2 recorded Original Execution Status: Original Execution Status: NEW_EXECUTION
+- H2 recorded Independent Verification: Independent Verification: NONE
+- H2 recorded Repository Inspection: Repository Inspection: NO
+- H2 recorded GitHub Actions Inspection: GitHub Actions Inspection: NO
+- H2 recorded Promotion Eligibility: Promotion Eligibility: NO
+- Recorded control sections: SIGNAL_CLASSIFICATION, NO_DECISION_SECTION, BOUNDARY_CHECK
+- Maintainer decision: keep producer-time gate state; path presence is not proof of actual task execution
+
+### 2026-10-06 Horizon H1 → H2 evidence gate
+- H1 Git tree state: PRESENT at main
+- H1 native path: horizon-cortex/2026-10-06-H1-signal-observe.md
+- H2 native path: horizon-cortex/2026-10-06-H2-horizon-orient.md
+- H2 blob SHA: aa2f54b39a4a7a572e55ec78374f631e92d361d6
+- H2 recorded Input Status: Input Status: PRESENT
+- H2 recorded Task Status: Task Status: DEGRADED
+- H2 recorded Network Status: Network Status: NETWORK_UNAVAILABLE
+- H2 recorded Source Status: Source Status: NONE
+- H2 recorded Original Execution Status: Original Execution Status: NEW_EXECUTION
+- H2 recorded Independent Verification: Independent Verification: NONE
+- H2 recorded Repository Inspection: Repository Inspection: NO
+- H2 recorded GitHub Actions Inspection: GitHub Actions Inspection: NO
+- H2 recorded Promotion Eligibility: Promotion Eligibility: NO
+- Recorded control sections: SIGNAL_CLASSIFICATION, NO_DECISION_SECTION, BOUNDARY_CHECK
+- Maintainer decision: keep producer-time gate state; path presence is not proof of actual task execution
+
+### 2026-10-07 Horizon H1 → H2 evidence gate
+- H1 Git tree state: PRESENT at main
+- H1 native path: horizon-cortex/2026-10-07-H1-signal-observe.md
+- H2 native path: horizon-cortex/2026-10-07-H2-horizon-orient.md
+- H2 blob SHA: 4fa2353e1c96d481b02c85823138c0012f9bbd12
+- H2 recorded Input Status: Input Status: PRESENT
+- H2 recorded Task Status: Task Status: DEGRADED
+- H2 recorded Network Status: Network Status: NETWORK_UNAVAILABLE
+- H2 recorded Source Status: Source Status: NONE
+- H2 recorded Original Execution Status: Original Execution Status: NEW_EXECUTION
+- H2 recorded Independent Verification: Independent Verification: NONE
+- H2 recorded Repository Inspection: Repository Inspection: NO
+- H2 recorded GitHub Actions Inspection: GitHub Actions Inspection: NO
+- H2 recorded Promotion Eligibility: Promotion Eligibility: NO
+- Recorded control sections: SIGNAL_CLASSIFICATION, NO_DECISION_SECTION, BOUNDARY_CHECK
+- Maintainer decision: keep producer-time gate state; path presence is not proof of actual task execution
+
+### 2026-10-08 Horizon H1 → H2 evidence gate
+- H1 Git tree state: PRESENT at main
+- H1 native path: horizon-cortex/2026-10-08-H1-signal-observe.md
+- H2 native path: horizon-cortex/2026-10-08-H2-horizon-orient.md
+- H2 blob SHA: bece799e9fdaf05618cf4835bbcf20ef579b6634
+- H2 recorded Input Status: Input Status: PRESENT
+- H2 recorded Task Status: Task Status: DEGRADED
+- H2 recorded Network Status: Network Status: NETWORK_UNAVAILABLE
+- H2 recorded Source Status: Source Status: NONE
+- H2 recorded Original Execution Status: Original Execution Status: NEW_EXECUTION
+- H2 recorded Independent Verification: Independent Verification: NONE
+- H2 recorded Repository Inspection: Repository Inspection: NO
+- H2 recorded GitHub Actions Inspection: GitHub Actions Inspection: NO
+- H2 recorded Promotion Eligibility: Promotion Eligibility: NO
+- Recorded control sections: SIGNAL_CLASSIFICATION, NO_DECISION_SECTION, BOUNDARY_CHECK
+- Maintainer decision: keep producer-time gate state; path presence is not proof of actual task execution
+
+### 2026-10-09 Horizon H1 → H2 evidence gate
+- H1 Git tree state: PRESENT at main
+- H1 native path: horizon-cortex/2026-10-09-H1-signal-observe.md
+- H2 native path: horizon-cortex/2026-10-09-H2-horizon-orient.md
+- H2 blob SHA: ddc4699b3d85ca9282c4d868085f4529792cd1e7
+- H2 recorded Input Status: Input Status: PRESENT
+- H2 recorded Task Status: Task Status: DEGRADED
+- H2 recorded Network Status: Network Status: NETWORK_UNAVAILABLE
+- H2 recorded Source Status: Source Status: NONE
+- H2 recorded Original Execution Status: Original Execution Status: NEW_EXECUTION
+- H2 recorded Independent Verification: Independent Verification: NONE
+- H2 recorded Repository Inspection: Repository Inspection: NO
+- H2 recorded GitHub Actions Inspection: GitHub Actions Inspection: NO
+- H2 recorded Promotion Eligibility: Promotion Eligibility: NO
+- Recorded control sections: SIGNAL_CLASSIFICATION, NO_DECISION_SECTION, BOUNDARY_CHECK
+- Maintainer decision: keep producer-time gate state; path presence is not proof of actual task execution
+
+### 2026-10-10 Horizon H1 → H2 evidence gate
+- H1 Git tree state: PRESENT at main
+- H1 native path: horizon-cortex/2026-10-10-H1-signal-observe.md
+- H2 native path: horizon-cortex/2026-10-10-H2-horizon-orient.md
+- H2 blob SHA: 5a3fa3c0a09f6f748f20e8dbbd99d55a5ed271b3
+- H2 recorded Input Status: Input Status: PRESENT
+- H2 recorded Task Status: Task Status: DEGRADED
+- H2 recorded Network Status: Network Status: NETWORK_UNAVAILABLE (INHERITED_FROM_H1; NOT_NEW_EXTERNAL_SEARCH_CLAIM)
+- H2 recorded Source Status: Source Status: NONE
+- H2 recorded Independent Verification: Independent Verification: NONE
+- H2 recorded Repository Inspection: Repository Inspection: NO
+- H2 recorded GitHub Actions Inspection: GitHub Actions Inspection: NO
+- H2 recorded Promotion Eligibility: Promotion Eligibility: NO
+- Recorded control sections: SIGNAL_CLASSIFICATION, NO_DECISION_SECTION, BOUNDARY_CHECK
+- Maintainer decision: keep producer-time gate state; path presence is not proof of actual task execution
+
+### 2026-10-11 Horizon H1 → H2 evidence gate
+- H1 Git tree state: PRESENT at main
+- H1 native path: horizon-cortex/2026-10-11-H1-signal-observe.md
+- H2 native path: horizon-cortex/2026-10-11-H2-horizon-orient.md
+- H2 blob SHA: ecd717d3031bc6556daf0e89c494d6d34f1d50d0
+- H2 recorded Input Status: Input Status: PRESENT
+- H2 recorded Task Status: Task Status: DEGRADED
+- H2 recorded Network Status: Network Status: NETWORK_UNAVAILABLE (INHERITED_FROM_H1; H2_EXTERNAL_VERIFICATION_NOT_RUN)
+- H2 recorded Source Status: Source Status: NONE
+- H2 recorded Independent Verification: Independent Verification: NONE
+- H2 recorded Repository Inspection: Repository Inspection: NO
+- H2 recorded GitHub Actions Inspection: GitHub Actions Inspection: NO
+- H2 recorded Promotion Eligibility: Promotion Eligibility: NO
+- Recorded control sections: SIGNAL_CLASSIFICATION, NO_DECISION_SECTION, BOUNDARY_CHECK
+- Maintainer decision: keep producer-time gate state; path presence is not proof of actual task execution
+
+### 2026-10-12 Horizon H1 → H2 evidence gate
+- H1 Git tree state: PRESENT at main
+- H1 native path: horizon-cortex/2026-10-12-H1-signal-observe.md
+- H2 native path: horizon-cortex/2026-10-12-H2-horizon-orient.md
+- H2 blob SHA: e13bb69bdd1947ebe72ec7c90f207141fdcafa13
+- H2 recorded Input Status: Input Status: PRESENT
+- H2 recorded Task Status: Task Status: SUCCESS
+- H2 recorded Network Status: Network Status: NETWORK_VERIFIED
+- H2 recorded Source Status: Source Status: PRESENT
+- H2 recorded Original Execution Status: Original Execution Status: SUCCESS
+- H2 recorded Independent Verification: Independent Verification: NONE
+- H2 recorded Repository Inspection: Repository Inspection: NO
+- H2 recorded GitHub Actions Inspection: GitHub Actions Inspection: NO
+- H2 recorded Promotion Eligibility: Promotion Eligibility: NO
+- Recorded control sections: SIGNAL_CLASSIFICATION, NO_DECISION_SECTION, BOUNDARY_CHECK
+- Maintainer decision: keep producer-time gate state; path presence is not proof of actual task execution
+
+### 2026-10-13 Horizon H1 → H2 evidence gate
+- H1 Git tree state: PRESENT at main
+- H1 native path: horizon-cortex/2026-10-13-H1-signal-observe.md
+- H2 native path: horizon-cortex/2026-10-13-H2-horizon-orient.md
+- H2 blob SHA: b6526a008df1c39315f58e73192945509afdabbf
+- H2 recorded Input Status: Input Status: INPUT_MISSING
+- H2 recorded Task Status: Task Status: BLOCKED
+- H2 recorded Network Status: Network Status: NOT_RUN
+- H2 recorded Source Status: Source Status: NONE
+- H2 recorded Original Execution Status: Original Execution Status: BLOCKED
+- H2 recorded Independent Verification: Independent Verification: NONE
+- H2 recorded Repository Inspection: Repository Inspection: NO
+- H2 recorded GitHub Actions Inspection: GitHub Actions Inspection: NO
+- Recorded control sections: SIGNAL_CLASSIFICATION, NO_DECISION_SECTION, BOUNDARY_CHECK
+- Maintainer decision: keep producer-time gate state; path presence is not proof of actual task execution
+
+### A1 decision
+- Native H1/H2 producer files modified: NONE
+- H2 declared status retained per artifact, no rerun
+- Temporal origin/independence unknowns preserved
+- 2026-10-14 H1 #752, H2 #753 and correction #754 are excluded from N−1 but reserved for A2
+- Next gate: A1 merged main then A2 through 10/14
