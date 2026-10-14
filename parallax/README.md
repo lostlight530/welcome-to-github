@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-14
-- 最新每日研究: [A2A 授权请求与下游 MCP 委托身份边界](records/2026-10/2026-10-14.md)
-- 每日专题: 84
+- 最新每日归属日期: 2026-10-15
+- 最新每日研究: [跨 Agent 工具提示与执行控制的身份边界](records/2026-10/2026-10-15.md)
+- 每日专题: 85
 - 特殊专题: 17
-- 当前专题研究批次: 101
-- 当前专题独立执行日期窗口: 79
+- 当前专题研究批次: 102
+- 当前专题独立执行日期窗口: 80
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -322,3 +322,12 @@ Derived synchronization changes navigation/current counters only and adds zero r
 `A2A_AUTH_REQUIRED != CREDENTIAL_ISSUED != MCP_RESOURCE_OPERATION_AUTHORIZED`
 
 本日增加 1 research batch 和 1 independent execution window, derived synchronization 增加 0 research credit, 早期 README 维护注释保留其历史时点语义
+
+
+## Current pointer — 2026-10-15
+
+2026-10-15 native Daily 研究 A2A AgentSkill 与 MCP tool-name/annotation 在跨 Agent 路由中的身份和控制边界, 直接读取 MCP 与 A2A 两个独立发布者的三份官方材料, 本地执行 11 个 synthetic cases 与 15 项通过断言, 结论 PARTIAL, 未执行真实 A2A/MCP/approval/sandbox runtime, 不新增 CASE/NOTES/Special/Audit
+
+`DISCOVERY_METADATA != TRUSTED_BINDING != EXECUTED_CONTROL`
+
+本日增加 1 research batch 和 1 independent execution window, derived synchronization 增加 0 research credit, 先前 current pointers 保留各自历史时点语义
