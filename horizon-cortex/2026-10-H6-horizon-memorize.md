@@ -4485,3 +4485,202 @@ DUPLICATE_EVIDENCE_CREDIT
 - Temporal origin/independence unknowns preserved
 - 2026-10-14 H1 #752, H2 #753 and correction #754 are excluded from N−1 but reserved for A2
 - Next gate: A1 merged main then A2 through 10/14
+
+## A2 2026-10-14 — October Horizon unified current-month relation
+- Canonical owner: horizon-cortex/2026-10-H6-horizon-memorize.md
+- Current main freshly read after all ten A1 merges: 5805195199539b359c512b68eeb69496161dfc3c
+- A1 inherited: #755, 2026-10-01 through 2026-10-13, month-to-N−1 with each original daily H1/H2 inspected
+- A2 scope: October 1–14 Daily H1/H2 and source, weekly H3/H4, monthly H5/H6 and Parallax separation
+- The 2026-10-14 native H1 #752 and H2 #753 are present; independent forward timestamp correction #754 is preserved
+- No owner action modifies the native producer Daily, Parallax or weekly original evidence
+- The Oct 13 BLOCKED state cannot be overwritten by Oct 14 SUCCESS
+- H3/H4 W41 remains the previously observed 7/7 input reconciliation with 14 degraded markers and no forced decision
+- W42 H3/H4 end-of-week conclusions: NOT_DUE; no synthetic weekly closure
+- Natural October H5/H6 final: NOT_DUE; H6 current file remains an OPEN maintenance relational owner
+- Parallax 2026-10-14 delegated-authorization/identity study is a separate observation, not Jules/H2 verification or current host implementation
+- Publisher identity: Putty, Opal and Stax observations all originate in Google Labs; three URLs do not establish three independent publisher lines
+- EVIDENCE_RERUN: NO; HOST_IMPLEMENTATION: NOT_TESTED; NEW_INDEPENDENT_SOURCE_CREDIT: ZERO
+- All day-by-day entries below are current relationship views, not new native producer executions
+
+### 2026-10-01 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-01
+- H1 native original: `horizon-cortex/2026-10-01-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-01-H2-horizon-orient.md`
+- H2 Git blob at inherited A1 cutoff: `26be2924210fa2c9ce347345909ea5b97fc5afe4`
+- Producer H2 Input Status: SUCCESS
+- Producer H2 Task Status: DEGRADED
+- Producer H2 Network Status: NETWORK_UNAVAILABLE
+- Producer H2 Source Status: NONE
+- Producer H2 Independent Verification: NONE
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### 2026-10-02 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-02
+- H1 native original: `horizon-cortex/2026-10-02-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-02-H2-horizon-orient.md`
+- H2 Git blob at inherited A1 cutoff: `2c887297c188136786ba092922901d35b0287e6d`
+- Producer H2 Input Status: INPUT_MISSING
+- Producer H2 Task Status: BLOCKED
+- Producer H2 Network Status: NOT_RUN
+- Producer H2 Source Status: NONE
+- Producer H2 Independent Verification: NONE
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### 2026-10-03 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-03
+- H1 native original: `horizon-cortex/2026-10-03-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-03-H2-horizon-orient.md`
+- H2 Git blob at inherited A1 cutoff: `0e06a2eeff4253fe21752e6e76bd4882e92240f8`
+- Producer H2 Input Status: PRESENT
+- Producer H2 Task Status: DEGRADED
+- Producer H2 Network Status: NETWORK_UNAVAILABLE
+- Producer H2 Source Status: NONE
+- Producer H2 Independent Verification: NONE
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### 2026-10-04 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-04
+- H1 native original: `horizon-cortex/2026-10-04-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-04-H2-horizon-orient.md`
+- H2 Git blob at inherited A1 cutoff: `245cd66c944188c1b56ed5736b34f28514964c4b`
+- Producer H2 Input Status: PRESENT
+- Producer H2 Task Status: DEGRADED
+- Producer H2 Network Status: NETWORK_UNAVAILABLE
+- Producer H2 Source Status: NONE
+- Producer H2 Independent Verification: NONE
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### 2026-10-05 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-05
+- H1 native original: `horizon-cortex/2026-10-05-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-05-H2-horizon-orient.md`
+- H2 Git blob at inherited A1 cutoff: `b52086ceb13f06c3ad919cd3ba1e5443cd96d938`
+- Producer H2 Input Status: PRESENT
+- Producer H2 Task Status: DEGRADED
+- Producer H2 Network Status: NETWORK_UNAVAILABLE
+- Producer H2 Source Status: NONE
+- Producer H2 Independent Verification: NONE
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### 2026-10-06 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-06
+- H1 native original: `horizon-cortex/2026-10-06-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-06-H2-horizon-orient.md`
+- H2 Git blob at inherited A1 cutoff: `aa2f54b39a4a7a572e55ec78374f631e92d361d6`
+- Producer H2 Input Status: PRESENT
+- Producer H2 Task Status: DEGRADED
+- Producer H2 Network Status: NETWORK_UNAVAILABLE
+- Producer H2 Source Status: NONE
+- Producer H2 Independent Verification: NONE
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### 2026-10-07 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-07
+- H1 native original: `horizon-cortex/2026-10-07-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-07-H2-horizon-orient.md`
+- H2 Git blob at inherited A1 cutoff: `4fa2353e1c96d481b02c85823138c0012f9bbd12`
+- Producer H2 Input Status: PRESENT
+- Producer H2 Task Status: DEGRADED
+- Producer H2 Network Status: NETWORK_UNAVAILABLE
+- Producer H2 Source Status: NONE
+- Producer H2 Independent Verification: NONE
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### 2026-10-08 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-08
+- H1 native original: `horizon-cortex/2026-10-08-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-08-H2-horizon-orient.md`
+- H2 Git blob at inherited A1 cutoff: `bece799e9fdaf05618cf4835bbcf20ef579b6634`
+- Producer H2 Input Status: PRESENT
+- Producer H2 Task Status: DEGRADED
+- Producer H2 Network Status: NETWORK_UNAVAILABLE
+- Producer H2 Source Status: NONE
+- Producer H2 Independent Verification: NONE
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### 2026-10-09 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-09
+- H1 native original: `horizon-cortex/2026-10-09-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-09-H2-horizon-orient.md`
+- H2 Git blob at inherited A1 cutoff: `ddc4699b3d85ca9282c4d868085f4529792cd1e7`
+- Producer H2 Input Status: PRESENT
+- Producer H2 Task Status: DEGRADED
+- Producer H2 Network Status: NETWORK_UNAVAILABLE
+- Producer H2 Source Status: NONE
+- Producer H2 Independent Verification: NONE
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### 2026-10-10 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-10
+- H1 native original: `horizon-cortex/2026-10-10-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-10-H2-horizon-orient.md`
+- H2 Git blob at inherited A1 cutoff: `5a3fa3c0a09f6f748f20e8dbbd99d55a5ed271b3`
+- Producer H2 Input Status: PRESENT
+- Producer H2 Task Status: DEGRADED
+- Producer H2 Network Status: NETWORK_UNAVAILABLE (INHERITED_FROM_H1; NOT_NEW_EXTERNAL_SEARCH_CLAIM)
+- Producer H2 Source Status: NONE
+- Producer H2 Independent Verification: NONE
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### 2026-10-11 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-11
+- H1 native original: `horizon-cortex/2026-10-11-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-11-H2-horizon-orient.md`
+- H2 Git blob at inherited A1 cutoff: `ecd717d3031bc6556daf0e89c494d6d34f1d50d0`
+- Producer H2 Input Status: PRESENT
+- Producer H2 Task Status: DEGRADED
+- Producer H2 Network Status: NETWORK_UNAVAILABLE (INHERITED_FROM_H1; H2_EXTERNAL_VERIFICATION_NOT_RUN)
+- Producer H2 Source Status: NONE
+- Producer H2 Independent Verification: NONE
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### 2026-10-12 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-12
+- H1 native original: `horizon-cortex/2026-10-12-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-12-H2-horizon-orient.md`
+- H2 Git blob at inherited A1 cutoff: `e13bb69bdd1947ebe72ec7c90f207141fdcafa13`
+- Producer H2 Input Status: PRESENT
+- Producer H2 Task Status: SUCCESS
+- Producer H2 Network Status: NETWORK_VERIFIED
+- Producer H2 Source Status: PRESENT
+- Producer H2 Independent Verification: NONE
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### 2026-10-13 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-13
+- H1 native original: `horizon-cortex/2026-10-13-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-13-H2-horizon-orient.md`
+- H2 Git blob at inherited A1 cutoff: `b6526a008df1c39315f58e73192945509afdabbf`
+- Producer H2 Input Status: INPUT_MISSING
+- Producer H2 Task Status: BLOCKED
+- Producer H2 Network Status: NOT_RUN
+- Producer H2 Source Status: NONE
+- Producer H2 Independent Verification: NONE
+- 10/13 H2 BLOCKED / INPUT_MISSING / NOT_RUN remains at its historical cutoff despite later current-path recovery
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### 2026-10-14 — H1/H2 source, timing and ownership continuity
+- Native producer date: 2026-10-14
+- H1 native original: `horizon-cortex/2026-10-14-H1-signal-observe.md`
+- H2 native original: `horizon-cortex/2026-10-14-H2-horizon-orient.md`
+- Verified H1 blob SHA: `96b868a36f9008428c78d3c58faa7541de520c78`
+- Verified H2 corrected blob SHA: `a43e10152913b66d3dbd35c7aff78cc746c6cfd7`
+- H1 producer: Jules / #752; UTC execution time 2026-10-13T23:32:56+00:00 as recorded in original H1
+- H2 producer: Jules / #753; H2 corrected source-time provenance in #754
+- H2 Input Status: PRESENT; Task Status: SUCCESS; Network Status: NETWORK_VERIFIED; Source Status: PRESENT
+- H2 execution-time UTC/Shanghai: NOT_RECORDED (logical date and merge date are not execution timestamps)
+- Three current H2 watchlist claims: Google Labs Putty / Opal / Stax, all from one Google Labs publisher lineage
+- H2 Promotion Eligibility: NO, independent corroboration: NONE, host applicability: UNKNOWN
+- Parallax independent research batch #751 is a separate GPT-Web2 producer plane, not H2 evidence independent check
+- Relation disposition: retain native status, source identity, and temporal boundaries; do not manufacture execution, source independence, or host adoption
+
+### A2 final boundaries
+- Month: OPEN / PROVISIONAL_NOT_FINAL
+- Oct 1–13: historical A1 date-specific statuses carried without substitution
+- Oct 14: Jules native source observations admitted at their own date and depth
+- H2 exact execution clock remains UNKNOWN, with correction provenance to #754
+- Independent source count for Oct 14 H2 three product claims: one publisher lineage, not three independent corroborations
+- W42 and October natural monthly final remain NOT_DUE
+- New host action, implementation or data promotion: NONE
+- Original artifacts modified by A2: ZERO
+- Owner relation written: YES, pending GitHub PR review/merge
