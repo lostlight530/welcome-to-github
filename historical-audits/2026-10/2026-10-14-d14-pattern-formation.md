@@ -65,3 +65,36 @@ The following states are transcribed from the current A2 relation; they do not r
 - GOVERNANCE_CANDIDATE: per-producer timestamp and publisher-lineage requirements for review, subject to repeated verification at D30
 - NEXT_AUDIT_DEPENDENCY: D30 2026-10-30; October natural close separately 2026-10-31
 - This audit does not create a new native Jules run, independent research batch, or month-final seal
+
+## Forward correction — 2026-10-14 — D14 daily state extraction
+- Correction target: the fourteen-day matrix earlier in this audit, as merged in #758
+- Reason: the original D14 table populated UNKNOWN for all days despite the Oct1–13 A1 owner recording per-date H2 fields and Oct14 native #753 recording success
+- Original audit and its UNKNOWN table remain present as historical review artifact; only this later extraction supersedes the **matrix values**, not the original H2 tasks
+- Reference: `horizon-cortex/2026-10-H6-horizon-memorize.md`, current owner Git blob `df7cb8f72190e63b72021d39bfdf111d9158ded8`; native Oct14 H2 blob `a43e10152913b66d3dbd35c7aff78cc746c6cfd7`
+- Extraction: the A1 `### YYYY-MM-DD Horizon H1 → H2 evidence gate` sections, plus Oct14 H2 #753 and provenance correction #754
+- Note: Oct01 H2 Input Status reads SUCCESS in its A1 textual field. It is reproduced literally, not reinterpreted as PRESENT
+- CodeQL/CI, PR merge time and current file presence are NOT task-time rerun evidence
+
+| Logical date | H2 input (as recorded) | H2 task | Source/network | Independent credit from audit | Exception |
+|---|---|---|---|---|---|
+| 2026-10-01 | SUCCESS | DEGRADED | NETWORK_UNAVAILABLE | NONE (no independence promoted) | A1 field-level source, not scheduler rerun |
+| 2026-10-02 | INPUT_MISSING | BLOCKED | NOT_RUN | NONE (no independence promoted) | A1 field-level source, not scheduler rerun |
+| 2026-10-03 | PRESENT | DEGRADED | NETWORK_UNAVAILABLE | NONE (no independence promoted) | A1 field-level source, not scheduler rerun |
+| 2026-10-04 | PRESENT | DEGRADED | NETWORK_UNAVAILABLE | NONE (no independence promoted) | A1 field-level source, not scheduler rerun |
+| 2026-10-05 | PRESENT | DEGRADED | NETWORK_UNAVAILABLE | NONE (no independence promoted) | A1 field-level source, not scheduler rerun |
+| 2026-10-06 | PRESENT | DEGRADED | NETWORK_UNAVAILABLE | NONE (no independence promoted) | A1 field-level source, not scheduler rerun |
+| 2026-10-07 | PRESENT | DEGRADED | NETWORK_UNAVAILABLE | NONE (no independence promoted) | A1 field-level source, not scheduler rerun |
+| 2026-10-08 | PRESENT | DEGRADED | NETWORK_UNAVAILABLE | NONE (no independence promoted) | A1 field-level source, not scheduler rerun |
+| 2026-10-09 | PRESENT | DEGRADED | NETWORK_UNAVAILABLE | NONE (no independence promoted) | A1 field-level source, not scheduler rerun |
+| 2026-10-10 | PRESENT | DEGRADED | NETWORK_UNAVAILABLE (INHERITED_FROM_H1; NOT_NEW_EXTERNAL_SEARCH_CLAIM) | NONE (no independence promoted) | A1 field-level source, not scheduler rerun |
+| 2026-10-11 | PRESENT | DEGRADED | NETWORK_UNAVAILABLE (INHERITED_FROM_H1; H2_EXTERNAL_VERIFICATION_NOT_RUN) | NONE (no independence promoted) | A1 field-level source, not scheduler rerun |
+| 2026-10-12 | PRESENT | SUCCESS | NETWORK_VERIFIED | NONE (no independence promoted) | A1 field-level source, not scheduler rerun |
+| 2026-10-13 | INPUT_MISSING | BLOCKED | NOT_RUN | NONE (no independence promoted) | A1 field-level source, not scheduler rerun |
+| 2026-10-14 | PRESENT | SUCCESS | NETWORK_VERIFIED | NONE | H2 original execution timestamp UNKNOWN, corrected #754 |
+
+### Reconciliation conclusion
+- The earlier all-UNKNOWN table is superseded by this dated evidence extraction for the checked A1/A2 source fields
+- Oct02 and Oct13 retain BLOCKED / INPUT_MISSING; Oct12 and Oct14 retain SUCCESS, so neither total failure nor continuous improvement is supported
+- Many intervening H2 records retain DEGRADED / NETWORK_UNAVAILABLE, independently of file presence
+- Oct14 H2 producer execution UTC/Shanghai remains NOT_RECORDED, despite a successful PR merge and H1 producer timestamps
+- D14 governance candidate remains CANDIDATE_ONLY; no production telemetry or independent research claim was added
