@@ -4485,3 +4485,239 @@ DUPLICATE_EVIDENCE_CREDIT
 - Temporal origin/independence unknowns preserved
 - 2026-10-14 H1 #752, H2 #753 and correction #754 are excluded from N−1 but reserved for A2
 - Next gate: A1 merged main then A2 through 10/14
+
+## A2 2026-10-14 | Full October Horizon relation through N
+- Repository: lostlight530/welcome-to-github
+- A1 dependency: merged PR #755, current main 5805195199539b359c512b68eeb69496161dfc3c
+- October relation window: 2026-10-01 through 2026-10-14 (inclusive)
+- A1 inheritance: Oct 1–13 reviewed original Horizon H1/H2 fields, per-date evidence and corrections; source state not re-labeled
+- N-day original additions: H1 #752, H2 #753, H2 forward correction #754, independent Parallax #751
+- Git tree used: exact GitHub current-main tree at 5805195199539b359c512b68eeb69496161dfc3c; all 14 H1 + 14 H2 + 14 Parallax paths checked for current presence
+- Original execution evidence vs current path presence: separate; earlier missing/degraded state not overwritten
+- H2 original execution UTC/Shanghai time Oct14: NOT_RECORDED; native GitHub merge time != producer execution
+- Publisher lineage for Oct14 H1/H2: Google Labs; source independence: NONE; watchlist stays watchlist
+- Parallax delegated-identity local synthetic fixture assertions are not end-to-end A2A/MCP/OAuth protocol validation or host adoption
+- W40 & W41 H3/H4 current path relation: PRESENT, PRESENT, PRESENT, PRESENT; no W42 final promotion before due and independently evidenced
+- Month final H6: NOT_DUE / MONTH_OPEN; this relation is maintenance, not the Jules original monthly execution
+- Scope: only canonical `horizon-cortex/2026-10-H6-horizon-memorize.md`; no production file, September freeze or lifecycle settings mutated
+
+### 2026-10-01 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-01-H1-signal-observe.md`
+- H1 immutable Git blob: `d6600cc374d70cea8217b0c8ad5e9738526a6f2b`
+- H2 file: `horizon-cortex/2026-10-01-H2-horizon-orient.md`
+- H2 immutable Git blob: `26be2924210fa2c9ce347345909ea5b97fc5afe4`
+- H2 input state at reviewed record: SUCCESS
+- H2 native task state at reviewed record: DEGRADED
+- H2 network/source boundary: NETWORK_UNAVAILABLE
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-01.md`
+- Parallax immutable blob: `d54222843ecffc562b71e0f073d5aaf9cabdf86d`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: A1 source status and task-time semantics are inherited, not re-executed or silently upgraded
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-02 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-02-H1-signal-observe.md`
+- H1 immutable Git blob: `cfaae2e88d2d2968769292b09d74cb404bb23892`
+- H2 file: `horizon-cortex/2026-10-02-H2-horizon-orient.md`
+- H2 immutable Git blob: `2c887297c188136786ba092922901d35b0287e6d`
+- H2 input state at reviewed record: INPUT_MISSING
+- H2 native task state at reviewed record: BLOCKED
+- H2 network/source boundary: NOT_RUN
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-02.md`
+- Parallax immutable blob: `e4b78b17335a41ff5c782dfd7a2cad41782d2e37`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: A1 source status and task-time semantics are inherited, not re-executed or silently upgraded
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-03 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-03-H1-signal-observe.md`
+- H1 immutable Git blob: `6b37b2be59ef93c58c3902f12ed2fbddbdf65ddb`
+- H2 file: `horizon-cortex/2026-10-03-H2-horizon-orient.md`
+- H2 immutable Git blob: `0e06a2eeff4253fe21752e6e76bd4882e92240f8`
+- H2 input state at reviewed record: PRESENT
+- H2 native task state at reviewed record: DEGRADED
+- H2 network/source boundary: NETWORK_UNAVAILABLE
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-03.md`
+- Parallax immutable blob: `7646cb0944f36d8e651a7034643c9d4009abcbe1`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: A1 source status and task-time semantics are inherited, not re-executed or silently upgraded
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-04 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-04-H1-signal-observe.md`
+- H1 immutable Git blob: `24b91b58eaccea5ceb16e761a0f6d8d2947314cb`
+- H2 file: `horizon-cortex/2026-10-04-H2-horizon-orient.md`
+- H2 immutable Git blob: `245cd66c944188c1b56ed5736b34f28514964c4b`
+- H2 input state at reviewed record: PRESENT
+- H2 native task state at reviewed record: DEGRADED
+- H2 network/source boundary: NETWORK_UNAVAILABLE
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-04.md`
+- Parallax immutable blob: `cbd7355065b7e762b6c181de680333b2c1e05990`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: A1 source status and task-time semantics are inherited, not re-executed or silently upgraded
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-05 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-05-H1-signal-observe.md`
+- H1 immutable Git blob: `43fbb2a88de0341440977cc834e10c1c0e7ff9ed`
+- H2 file: `horizon-cortex/2026-10-05-H2-horizon-orient.md`
+- H2 immutable Git blob: `b52086ceb13f06c3ad919cd3ba1e5443cd96d938`
+- H2 input state at reviewed record: PRESENT
+- H2 native task state at reviewed record: DEGRADED
+- H2 network/source boundary: NETWORK_UNAVAILABLE
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-05.md`
+- Parallax immutable blob: `0e8368829ea2ba72223202b55fa4b659c42bb3f1`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: A1 source status and task-time semantics are inherited, not re-executed or silently upgraded
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-06 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-06-H1-signal-observe.md`
+- H1 immutable Git blob: `badacb45f435f80065fe85eb366b754863509c68`
+- H2 file: `horizon-cortex/2026-10-06-H2-horizon-orient.md`
+- H2 immutable Git blob: `aa2f54b39a4a7a572e55ec78374f631e92d361d6`
+- H2 input state at reviewed record: PRESENT
+- H2 native task state at reviewed record: DEGRADED
+- H2 network/source boundary: NETWORK_UNAVAILABLE
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-06.md`
+- Parallax immutable blob: `56eb22aa70926d789453433ce3d84b07d749781b`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: A1 source status and task-time semantics are inherited, not re-executed or silently upgraded
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-07 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-07-H1-signal-observe.md`
+- H1 immutable Git blob: `e7cee61e3eeed05223981b64d41b314c8120b856`
+- H2 file: `horizon-cortex/2026-10-07-H2-horizon-orient.md`
+- H2 immutable Git blob: `4fa2353e1c96d481b02c85823138c0012f9bbd12`
+- H2 input state at reviewed record: PRESENT
+- H2 native task state at reviewed record: DEGRADED
+- H2 network/source boundary: NETWORK_UNAVAILABLE
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-07.md`
+- Parallax immutable blob: `3c3250d9d877f72363b2e8b8f799184dc977495d`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: A1 source status and task-time semantics are inherited, not re-executed or silently upgraded
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-08 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-08-H1-signal-observe.md`
+- H1 immutable Git blob: `2803312825d90e0dc8431b97144788832fe0baea`
+- H2 file: `horizon-cortex/2026-10-08-H2-horizon-orient.md`
+- H2 immutable Git blob: `bece799e9fdaf05618cf4835bbcf20ef579b6634`
+- H2 input state at reviewed record: PRESENT
+- H2 native task state at reviewed record: DEGRADED
+- H2 network/source boundary: NETWORK_UNAVAILABLE
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-08.md`
+- Parallax immutable blob: `f3f8e80f73f641820b2d6591de03bbe8b75a8ae5`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: A1 source status and task-time semantics are inherited, not re-executed or silently upgraded
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-09 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-09-H1-signal-observe.md`
+- H1 immutable Git blob: `3ad421f2564a3c99f7c7072fac8875404271259e`
+- H2 file: `horizon-cortex/2026-10-09-H2-horizon-orient.md`
+- H2 immutable Git blob: `ddc4699b3d85ca9282c4d868085f4529792cd1e7`
+- H2 input state at reviewed record: PRESENT
+- H2 native task state at reviewed record: DEGRADED
+- H2 network/source boundary: NETWORK_UNAVAILABLE
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-09.md`
+- Parallax immutable blob: `c8816a519ded333632f7a2b707e543476082a68a`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: A1 source status and task-time semantics are inherited, not re-executed or silently upgraded
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-10 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-10-H1-signal-observe.md`
+- H1 immutable Git blob: `0b309d35767ecb2093c042eb02e4c554b5a88eb4`
+- H2 file: `horizon-cortex/2026-10-10-H2-horizon-orient.md`
+- H2 immutable Git blob: `5a3fa3c0a09f6f748f20e8dbbd99d55a5ed271b3`
+- H2 input state at reviewed record: PRESENT
+- H2 native task state at reviewed record: DEGRADED
+- H2 network/source boundary: NETWORK_UNAVAILABLE (INHERITED_FROM_H1; NOT_NEW_EXTERNAL_SEARCH_CLAIM)
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-10.md`
+- Parallax immutable blob: `d28220260d6fd5e0cf7bc9d18feb84cfe78b0f02`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: A1 source status and task-time semantics are inherited, not re-executed or silently upgraded
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-11 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-11-H1-signal-observe.md`
+- H1 immutable Git blob: `e470c16e37af2dc779cf9154b7dd49520e1efb98`
+- H2 file: `horizon-cortex/2026-10-11-H2-horizon-orient.md`
+- H2 immutable Git blob: `ecd717d3031bc6556daf0e89c494d6d34f1d50d0`
+- H2 input state at reviewed record: PRESENT
+- H2 native task state at reviewed record: DEGRADED
+- H2 network/source boundary: NETWORK_UNAVAILABLE (INHERITED_FROM_H1; H2_EXTERNAL_VERIFICATION_NOT_RUN)
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-11.md`
+- Parallax immutable blob: `730e12f4cf858f041a72ec521e87e33bca6584d5`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: A1 source status and task-time semantics are inherited, not re-executed or silently upgraded
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-12 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-12-H1-signal-observe.md`
+- H1 immutable Git blob: `8b8595311b71984448fce0d35c222d34ff3f1fbc`
+- H2 file: `horizon-cortex/2026-10-12-H2-horizon-orient.md`
+- H2 immutable Git blob: `e13bb69bdd1947ebe72ec7c90f207141fdcafa13`
+- H2 input state at reviewed record: PRESENT
+- H2 native task state at reviewed record: SUCCESS
+- H2 network/source boundary: NETWORK_VERIFIED
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-12.md`
+- Parallax immutable blob: `ca52e3a1829cf4d786d70da512e9e9e93b14e42b`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: A1 source status and task-time semantics are inherited, not re-executed or silently upgraded
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-13 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-13-H1-signal-observe.md`
+- H1 immutable Git blob: `4b5de2da56b98f4d5487578fb7e6a44b13ac4f91`
+- H2 file: `horizon-cortex/2026-10-13-H2-horizon-orient.md`
+- H2 immutable Git blob: `b6526a008df1c39315f58e73192945509afdabbf`
+- H2 input state at reviewed record: INPUT_MISSING
+- H2 native task state at reviewed record: BLOCKED
+- H2 network/source boundary: NOT_RUN
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-13.md`
+- Parallax immutable blob: `7ad0e3060090ba2b1df052fc7c0053baaad0d579`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: Historical H2 BLOCKED / INPUT_MISSING remains true at original producer time; a later recovered H1 file must not backdate task-time availability.
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-14 — Horizon and Parallax planes
+- H1 file: `horizon-cortex/2026-10-14-H1-signal-observe.md`
+- H1 immutable Git blob: `96b868a36f9008428c78d3c58faa7541de520c78`
+- H2 file: `horizon-cortex/2026-10-14-H2-horizon-orient.md`
+- H2 immutable Git blob: `a43e10152913b66d3dbd35c7aff78cc746c6cfd7`
+- H2 input state at reviewed record: PRESENT
+- H2 native task state at reviewed record: SUCCESS
+- H2 network/source boundary: NETWORK_VERIFIED
+- Independent H2 corroboration gained by A2: NONE
+- Parallax primary research path: `parallax/records/2026-10/2026-10-14.md`
+- Parallax immutable blob: `62886081eee36e94a6f4807acab314a6a47870bd`
+- Same-date producer and Parallax research are separate execution/research planes; repeated theme is not new independent validation
+- Current relational decision: H1 #752 SUCCESS network-verified 2026-10-13T23:32:56Z (logical 10/14); H2 #753 SUCCESS on same-publisher Google Labs source; H2 original execution UTC/Shanghai time not captured, corrected via #754; no cross-source independent verification.
+- Historical correction/backdating: NO; durable signal or host action promotion: NONE
+
+### 2026-10-14 A2 disposition
+- October covered days: 14, H1/H2 and Parallax current-path presence checked for each day
+- A1 (Oct 1–13) consumed: YES, merged on current main
+- H2 Oct13 original BLOCKED and H2 Oct14 SUCCESS: both retained at their own cutoffs
+- H1 Oct14 Google Labs source: three surfaced official first-party objects, one publisher lineage, zero independent external corroborators counted
+- Parallax Oct14 local fixture: one primary research execution window claimed by its native producer, zero replay/execution credit from this A2
+- New runtime validation from maintenance: NONE
+- New independent scientific source support from maintenance: NONE
+- Durable governance or monthly-final promotion: NONE
+- Status: A2_COMPLETE / MONTH_OPEN / HISTORY_PRESERVED / AWAITING_GITHUB_MERGE
