@@ -4872,3 +4872,163 @@ DUPLICATE_EVIDENCE_CREDIT
 - Runtime/test claims by this independent maintainer: NOT_EXECUTED; maintenance checks are source identity and relationship checks.
 - A1 PR must be checked for its real diff, merge result, and post-merge owner blob before downstream gate.
 
+## A2 2026-10-15 | Horizon complete October H1→H2, weekly, Parallax and H6 relation
+- Authority: post-ten-A1-merge current main 5cc6df182d8fda757ba303a5671357501d08cfac; inherited A1 owner blob 011131e882ad5f2ce33dd3ac09105ca96c3d550f, PR #765 merged.
+- This A2 consumes the entire A1 October 1–14 history and the newly merged H1 #762 / H2 #763 October 15 original daily producer records.
+- Source, time, execution, PR delivery and external corroboration are separate axes; H2 success must follow actual H1 main availability.
+- October 15 native H1 task header records execution UTC 2026-10-14T23:45:27+00:00, H2 2026-10-15T01:46:25+00:00; both statuses SUCCESS.
+- H1 PR #762 merged UTC 2026-10-15T00:20:18Z; H2 task's reported time is later, consistent with visible H1 main.
+- Google Labs signal publisher-lineage is one primary publisher, not independently corroborated across three product names.
+- Parallax 15 independent daily research records are maintained in separate production plane, not native H1/H2 retries or free independent verification.
+- This source-relation A2 did not run Jules, external Google tooling, Parallax research code, NEXUS or host actions.
+- Week W40 closed under original source contract; W41 source files retained; W42 is current partially open period, and H5/H6 October final NOT_DUE.
+
+### 2026-10-01 | W40 October source→decision relation
+- H1 original `horizon-cortex/2026-10-01-H1-signal-observe.md`, current main blob `d6600cc374d70cea8217b0c8ad5e9738526a6f2b`, producer status `DEGRADED`.
+- H2 original `horizon-cortex/2026-10-01-H2-horizon-orient.md`, current main blob `26be2924210fa2c9ce347345909ea5b97fc5afe4`, producer status `DEGRADED`, H1 input `SUCCESS`.
+- H1-to-H2 gate on 2026-10-01: H2 retains DEGRADED or bounded evidence, not promoted to full verified source depth.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-01.md`, blob `d54222843ecffc562b71e0f073d5aaf9cabdf86d`; observation/research is a parallel producer plane, not H2 proof.
+- W40 weekly relationship: retain original weekly closing and H3/H4 source decisions.
+- 2026-10-01 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-01 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-02 | W40 October source→decision relation
+- H1 original `horizon-cortex/2026-10-02-H1-signal-observe.md`, current main blob `cfaae2e88d2d2968769292b09d74cb404bb23892`, producer status `DEGRADED`.
+- H2 original `horizon-cortex/2026-10-02-H2-horizon-orient.md`, current main blob `2c887297c188136786ba092922901d35b0287e6d`, producer status `BLOCKED`, H1 input `INPUT_MISSING`.
+- H1-to-H2 gate on 2026-10-02: H2 original INPUT_MISSING/BLOCKED; do not retrospectively repair execution by later H1 presence.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-02.md`, blob `e4b78b17335a41ff5c782dfd7a2cad41782d2e37`; observation/research is a parallel producer plane, not H2 proof.
+- W40 weekly relationship: retain original weekly closing and H3/H4 source decisions.
+- 2026-10-02 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-02 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-03 | W40 October source→decision relation
+- H1 original `horizon-cortex/2026-10-03-H1-signal-observe.md`, current main blob `6b37b2be59ef93c58c3902f12ed2fbddbdf65ddb`, producer status `DEGRADED`.
+- H2 original `horizon-cortex/2026-10-03-H2-horizon-orient.md`, current main blob `0e06a2eeff4253fe21752e6e76bd4882e92240f8`, producer status `DEGRADED`, H1 input `PRESENT`.
+- H1-to-H2 gate on 2026-10-03: H2 retains DEGRADED or bounded evidence, not promoted to full verified source depth.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-03.md`, blob `7646cb0944f36d8e651a7034643c9d4009abcbe1`; observation/research is a parallel producer plane, not H2 proof.
+- W40 weekly relationship: retain original weekly closing and H3/H4 source decisions.
+- 2026-10-03 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-03 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-04 | W40 October source→decision relation
+- H1 original `horizon-cortex/2026-10-04-H1-signal-observe.md`, current main blob `24b91b58eaccea5ceb16e761a0f6d8d2947314cb`, producer status `DEGRADED`.
+- H2 original `horizon-cortex/2026-10-04-H2-horizon-orient.md`, current main blob `245cd66c944188c1b56ed5736b34f28514964c4b`, producer status `DEGRADED`, H1 input `PRESENT`.
+- H1-to-H2 gate on 2026-10-04: H2 retains DEGRADED or bounded evidence, not promoted to full verified source depth.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-04.md`, blob `cbd7355065b7e762b6c181de680333b2c1e05990`; observation/research is a parallel producer plane, not H2 proof.
+- W40 weekly relationship: retain original weekly closing and H3/H4 source decisions.
+- 2026-10-04 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-04 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-05 | W41 October source→decision relation
+- H1 original `horizon-cortex/2026-10-05-H1-signal-observe.md`, current main blob `43fbb2a88de0341440977cc834e10c1c0e7ff9ed`, producer status `DEGRADED`.
+- H2 original `horizon-cortex/2026-10-05-H2-horizon-orient.md`, current main blob `b52086ceb13f06c3ad919cd3ba1e5443cd96d938`, producer status `DEGRADED`, H1 input `PRESENT`.
+- H1-to-H2 gate on 2026-10-05: H2 retains DEGRADED or bounded evidence, not promoted to full verified source depth.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-05.md`, blob `0e8368829ea2ba72223202b55fa4b659c42bb3f1`; observation/research is a parallel producer plane, not H2 proof.
+- W41 weekly relationship: retain original weekly closing and H3/H4 source decisions.
+- 2026-10-05 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-05 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-06 | W41 October source→decision relation
+- H1 original `horizon-cortex/2026-10-06-H1-signal-observe.md`, current main blob `badacb45f435f80065fe85eb366b754863509c68`, producer status `DEGRADED`.
+- H2 original `horizon-cortex/2026-10-06-H2-horizon-orient.md`, current main blob `aa2f54b39a4a7a572e55ec78374f631e92d361d6`, producer status `DEGRADED`, H1 input `PRESENT`.
+- H1-to-H2 gate on 2026-10-06: H2 retains DEGRADED or bounded evidence, not promoted to full verified source depth.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-06.md`, blob `56eb22aa70926d789453433ce3d84b07d749781b`; observation/research is a parallel producer plane, not H2 proof.
+- W41 weekly relationship: retain original weekly closing and H3/H4 source decisions.
+- 2026-10-06 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-06 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-07 | W41 October source→decision relation
+- H1 original `horizon-cortex/2026-10-07-H1-signal-observe.md`, current main blob `e7cee61e3eeed05223981b64d41b314c8120b856`, producer status `DEGRADED`.
+- H2 original `horizon-cortex/2026-10-07-H2-horizon-orient.md`, current main blob `4fa2353e1c96d481b02c85823138c0012f9bbd12`, producer status `DEGRADED`, H1 input `PRESENT`.
+- H1-to-H2 gate on 2026-10-07: H2 retains DEGRADED or bounded evidence, not promoted to full verified source depth.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-07.md`, blob `3c3250d9d877f72363b2e8b8f799184dc977495d`; observation/research is a parallel producer plane, not H2 proof.
+- W41 weekly relationship: retain original weekly closing and H3/H4 source decisions.
+- 2026-10-07 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-07 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-08 | W41 October source→decision relation
+- H1 original `horizon-cortex/2026-10-08-H1-signal-observe.md`, current main blob `2803312825d90e0dc8431b97144788832fe0baea`, producer status `DEGRADED`.
+- H2 original `horizon-cortex/2026-10-08-H2-horizon-orient.md`, current main blob `bece799e9fdaf05618cf4835bbcf20ef579b6634`, producer status `DEGRADED`, H1 input `PRESENT`.
+- H1-to-H2 gate on 2026-10-08: H2 retains DEGRADED or bounded evidence, not promoted to full verified source depth.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-08.md`, blob `f3f8e80f73f641820b2d6591de03bbe8b75a8ae5`; observation/research is a parallel producer plane, not H2 proof.
+- W41 weekly relationship: retain original weekly closing and H3/H4 source decisions.
+- 2026-10-08 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-08 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-09 | W41 October source→decision relation
+- H1 original `horizon-cortex/2026-10-09-H1-signal-observe.md`, current main blob `3ad421f2564a3c99f7c7072fac8875404271259e`, producer status `DEGRADED`.
+- H2 original `horizon-cortex/2026-10-09-H2-horizon-orient.md`, current main blob `ddc4699b3d85ca9282c4d868085f4529792cd1e7`, producer status `DEGRADED`, H1 input `PRESENT`.
+- H1-to-H2 gate on 2026-10-09: H2 retains DEGRADED or bounded evidence, not promoted to full verified source depth.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-09.md`, blob `c8816a519ded333632f7a2b707e543476082a68a`; observation/research is a parallel producer plane, not H2 proof.
+- W41 weekly relationship: retain original weekly closing and H3/H4 source decisions.
+- 2026-10-09 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-09 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-10 | W41 October source→decision relation
+- H1 original `horizon-cortex/2026-10-10-H1-signal-observe.md`, current main blob `0b309d35767ecb2093c042eb02e4c554b5a88eb4`, producer status `DEGRADED`.
+- H2 original `horizon-cortex/2026-10-10-H2-horizon-orient.md`, current main blob `5a3fa3c0a09f6f748f20e8dbbd99d55a5ed271b3`, producer status `DEGRADED`, H1 input `PRESENT`.
+- H1-to-H2 gate on 2026-10-10: H2 retains DEGRADED or bounded evidence, not promoted to full verified source depth.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-10.md`, blob `d28220260d6fd5e0cf7bc9d18feb84cfe78b0f02`; observation/research is a parallel producer plane, not H2 proof.
+- W41 weekly relationship: retain original weekly closing and H3/H4 source decisions.
+- 2026-10-10 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-10 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-11 | W41 October source→decision relation
+- H1 original `horizon-cortex/2026-10-11-H1-signal-observe.md`, current main blob `e470c16e37af2dc779cf9154b7dd49520e1efb98`, producer status `DEGRADED`.
+- H2 original `horizon-cortex/2026-10-11-H2-horizon-orient.md`, current main blob `ecd717d3031bc6556daf0e89c494d6d34f1d50d0`, producer status `DEGRADED`, H1 input `PRESENT`.
+- H1-to-H2 gate on 2026-10-11: H2 retains DEGRADED or bounded evidence, not promoted to full verified source depth.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-11.md`, blob `730e12f4cf858f041a72ec521e87e33bca6584d5`; observation/research is a parallel producer plane, not H2 proof.
+- W41 weekly relationship: retain original weekly closing and H3/H4 source decisions.
+- 2026-10-11 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-11 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-12 | W42 October source→decision relation
+- H1 original `horizon-cortex/2026-10-12-H1-signal-observe.md`, current main blob `8b8595311b71984448fce0d35c222d34ff3f1fbc`, producer status `SUCCESS`.
+- H2 original `horizon-cortex/2026-10-12-H2-horizon-orient.md`, current main blob `e13bb69bdd1947ebe72ec7c90f207141fdcafa13`, producer status `SUCCESS`, H1 input `PRESENT`.
+- H1-to-H2 gate on 2026-10-12: H2 native producer reports successful orientation; independent external corroboration is not implied.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-12.md`, blob `ca52e3a1829cf4d786d70da512e9e9e93b14e42b`; observation/research is a parallel producer plane, not H2 proof.
+- W42 weekly relationship: open current-week bridge, no week-final inference.
+- 2026-10-12 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-12 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-13 | W42 October source→decision relation
+- H1 original `horizon-cortex/2026-10-13-H1-signal-observe.md`, current main blob `4b5de2da56b98f4d5487578fb7e6a44b13ac4f91`, producer status `DEGRADED_RECOVERY_WITH_BOUNDED_EXTERNAL_EVIDENCE`.
+- H2 original `horizon-cortex/2026-10-13-H2-horizon-orient.md`, current main blob `b6526a008df1c39315f58e73192945509afdabbf`, producer status `BLOCKED`, H1 input `INPUT_MISSING`.
+- H1-to-H2 gate on 2026-10-13: H2 original INPUT_MISSING/BLOCKED; do not retrospectively repair execution by later H1 presence.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-13.md`, blob `7ad0e3060090ba2b1df052fc7c0053baaad0d579`; observation/research is a parallel producer plane, not H2 proof.
+- W42 weekly relationship: open current-week bridge, no week-final inference.
+- 2026-10-13 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-13 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-14 | W42 October source→decision relation
+- H1 original `horizon-cortex/2026-10-14-H1-signal-observe.md`, current main blob `96b868a36f9008428c78d3c58faa7541de520c78`, producer status `SUCCESS`.
+- H2 original `horizon-cortex/2026-10-14-H2-horizon-orient.md`, current main blob `a43e10152913b66d3dbd35c7aff78cc746c6cfd7`, producer status `SUCCESS`, H1 input `PRESENT`.
+- H1-to-H2 gate on 2026-10-14: H2 native producer reports successful orientation; independent external corroboration is not implied.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-14.md`, blob `62886081eee36e94a6f4807acab314a6a47870bd`; observation/research is a parallel producer plane, not H2 proof.
+- W42 weekly relationship: open current-week bridge, no week-final inference.
+- 2026-10-14 month bridge: A1 inheritance preserves source-time point-in-time status; only current relation changes, no retroactive network status.
+- 2026-10-14 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### 2026-10-15 | W42 October source→decision relation
+- H1 original `horizon-cortex/2026-10-15-H1-signal-observe.md`, current main blob `88e05844378f0f13035d31cf2b33d3650f2968b9`, producer status `SUCCESS`.
+- H2 original `horizon-cortex/2026-10-15-H2-horizon-orient.md`, current main blob `318a87f4b7cd4b5117e866c5d3e7afe8ad5b37a5`, producer status `SUCCESS`, H1 input `PRESENT`.
+- H1-to-H2 gate on 2026-10-15: H2 native producer reports successful orientation; independent external corroboration is not implied.
+- Separate Parallax original research `parallax/records/2026-10/2026-10-15.md`, blob `c197c66e4a063f7830b93c9a3619f73efa25eef1`; observation/research is a parallel producer plane, not H2 proof.
+- W42 weekly relationship: open current-week bridge, no week-final inference.
+- 2026-10-15 month bridge: A1 inheritance ends at Oct14; this original day is newly admitted by A2; only current relation changes, no retroactive network status.
+- 2026-10-15 output boundary: original producer source has its own date and code/claim surface; this A2 does not execute a new daily observe/orient cycle.
+
+### Week, month and downstream gates
+- W40 H3/H4 source files remain original current-main weekly decisions and are not replayed by this A2.
+- W41 H3/H4 source files remain separate original weekly documents; their evidence cannot silently repair daily DEGRADED or BLOCKED source statuses.
+- W42 H3/H4 is NOT_DUE for final weekly closure by October 15, as natural weekly period is October 12–18.
+- October H5 monthly reflection and H6 monthly final must not be sealed before natural month-end; current H6 is an OPEN rolling owner.
+- Parallax Daily October 1–15 exists in independent records, counted separately from two daily Horizon tasks.
+- H1/H2 temporal source contract: H2 must read H1 from main; overlapping PR without upstream merge cannot count as available.
+- Oct13 H2 original BLOCKED remains historical; October 15 H2 SUCCESS does not alter that point-in-time state.
+- Oct1–11 network degraded conditions remain limited at their original observation cutoff, despite later availability.
+- Current source lineage and independent evidence question remains unverified in this maintenance; same-publisher repetition not new source independence.
+- A1 original 14-day evidence matrix preserved intact, without rewriting prior daily or weekly files.
+- No scientific test, host implementation, document governance or publication work executed by A2.
+- A2 status: CURRENT_OCTOBER_RELATION_REFRESHED / MONTH_OPEN / HISTORY_PRESERVED, pending PR verification and merge.
+
