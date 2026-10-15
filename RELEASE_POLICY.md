@@ -13,7 +13,7 @@ This repository treats `main` as the current repository state and release tags a
 
 For current repository truth, follow the repository's native implementation, evidence, governance, and recovery surfaces rather than citation or archival metadata.
 
-## Current archived software publication
+## Initial archived software publication — 2026-09-16
 
 The repository has a public Zenodo software publication dated **2026-09-16**.
 
@@ -36,3 +36,14 @@ The September 16 publication described above is the **initial archival snapshot*
 | `v2026.10-open-research-production-framework` | 2026-10-04 | [`10.5281/zenodo.23137203`](https://doi.org/10.5281/zenodo.23137203) |
 
 The October GitHub release [`v2026.10-open-research-production-framework`](https://github.com/lostlight530/welcome-to-github/releases/tag/v2026.10-open-research-production-framework) reports `published_at=2026-10-04T13:00:12Z`. These identifiers are confirmed public release/DOI records, **not a claim that present `main` was frozen in that snapshot**. The existing `CITATION.cff` September 16 date remains a recorded archival baseline; do not silently rewrite it into a present-day retrieval or publication date. This documentation note creates **no new software release, DOI, prospective observation, or evidence of external research adoption**. The [independent identity audit](https://github.com/lostlight530/research-software-identity-audit) observes ten fixed software objects and remains an external control repository, not an eleventh research sample.
+
+## Archived checkpoint — 2026-10-14
+
+The fourth archived version is [v2026.10-fourteen-day-evidence-checkpoint](https://github.com/lostlight530/welcome-to-github/releases/tag/v2026.10-fourteen-day-evidence-checkpoint).
+
+- Version DOI: [10.5281/zenodo.23365504](https://doi.org/10.5281/zenodo.23365504)
+- GitHub `published_at`: `2026-10-14T11:14:44Z`
+- Tagged source commit: [`d1e732f81a03497af1c5afe43c1a00a77e87a828`](https://github.com/lostlight530/welcome-to-github/tree/d1e732f81a03497af1c5afe43c1a00a77e87a828)
+- Software-family concept DOI: [10.5281/zenodo.22790907](https://doi.org/10.5281/zenodo.22790907)
+
+Use the version DOI for this exact checkpoint and the concept DOI for the software family. `CITATION.cff` and CodeMeta retain the family identifier and recorded September 16 baseline date. Later changes to `main` belong to subsequent repository state; the checkpoint tag remains unchanged.

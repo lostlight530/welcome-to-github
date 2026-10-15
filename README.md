@@ -103,3 +103,7 @@ The repository also preserves its own development history as a public digital ar
 
 ---
 © 2026 lostlight | Built for the Edge, Built for the Future.
+
+## Archived checkpoint — 2026-10-14
+
+[v2026.10-fourteen-day-evidence-checkpoint](https://github.com/lostlight530/welcome-to-github/releases/tag/v2026.10-fourteen-day-evidence-checkpoint) is archived as [10.5281/zenodo.23365504](https://doi.org/10.5281/zenodo.23365504). For the software-family concept DOI, earlier versions and exact-checkpoint citation, see [Release and Archival Policy](RELEASE_POLICY.md).
