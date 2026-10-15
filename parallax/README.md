@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-15
-- 最新每日研究: [跨 Agent 工具提示与执行控制的身份边界](records/2026-10/2026-10-15.md)
-- 每日专题: 85
+- 最新每日归属日期: 2026-10-16
+- 最新每日研究: [跨 Agent Trace 关联与 Task 结果证据的身份边界](records/2026-10/2026-10-16.md)
+- 每日专题: 86
 - 特殊专题: 17
-- 当前专题研究批次: 102
-- 当前专题独立执行日期窗口: 80
+- 当前专题研究批次: 103
+- 当前专题独立执行日期窗口: 81
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -331,3 +331,12 @@ Derived synchronization changes navigation/current counters only and adds zero r
 `DISCOVERY_METADATA != TRUSTED_BINDING != EXECUTED_CONTROL`
 
 本日增加 1 research batch 和 1 independent execution window, derived synchronization 增加 0 research credit, 先前 current pointers 保留各自历史时点语义
+
+
+## Current pointer — 2026-10-16
+
+2026-10-16 native Daily 研究 W3C trace context、OpenTelemetry span status 与 A2A task/artifact/client evidence 的跨规范身份边界, 核验 W3C、OpenTelemetry、A2A 三个独立发布者四份官方材料, 本地执行 4 个 wire cases 与 12 个 policy cases、20 项通过断言, 结论 PARTIAL, 未执行真实 exporter、A2A runtime 或客户端验收, 不新增 CASE/NOTES/Special/Audit
+
+`VALID_TRACEPARENT != TRACE_EXPORTED != TASK_COMPLETED != ARTIFACT_VERIFIED != CLIENT_ACCEPTED`
+
+本日新增 1 research batch 和 1 independent execution window, derived synchronization 增加 0 research credit
