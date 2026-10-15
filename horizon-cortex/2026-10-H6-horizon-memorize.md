@@ -4721,3 +4721,154 @@ DUPLICATE_EVIDENCE_CREDIT
 - New independent scientific source support from maintenance: NONE
 - Durable governance or monthly-final promotion: NONE
 - Status: A2_COMPLETE / MONTH_OPEN / HISTORY_PRESERVED / AWAITING_GITHUB_MERGE
+
+## 2026-10-15 A1 | October 01–14 original daily file-by-file evidence gate
+- Maintenance producer: external independent GPT; native producer identity: retained Jules/assigned native task; no original daily source overwritten.
+- Original main authority at A1 start: a4397f80347109ea31dcf36501911e9e683dcde3; existing monthly owner blob: df7cb8f72190e63b72021d39bfdf111d9158ded8.
+- Cutoff: inclusive 2026-10-01..2026-10-14; 2026-10-15 inputs deliberately excluded for next A2.
+- File identity is Git blob (not execution certificate); task status below transcribed from individually fetched original daily records.
+- Network/verification descriptors are producer-reported; this maintenance did not rerun network calls or validate external facts.
+- Earlier October monthly A1 and A2 history remains immutable; this is a new dated maintenance checkpoint.
+- The two daily source tasks are separate; a merged downstream PR is not automatic source admissibility.
+- No original daily or weekly files modified by this A1.
+
+### 2026-10-01 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-01-H1-signal-observe.md`; main blob prefix `d6600cc374d7`.
+- H1 observed producer task status: `DEGRADED`; recorded network: `NETWORK_UNAVAILABLE`.
+- H1 evidentiary limit: explicit degraded acquisition remains historically degraded.
+- H2 original: `horizon-cortex/2026-10-01-H2-horizon-orient.md`; main blob prefix `26be2924210f`.
+- H2 observed producer task status: `DEGRADED`; recorded input: `SUCCESS`; network: `NETWORK_UNAVAILABLE`.
+- 2026-10-01 causal decision: H2 ran with bounded/degraded evidence; source claims must not be upgraded to independently verified evidence.
+- 2026-10-01 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### 2026-10-02 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-02-H1-signal-observe.md`; main blob prefix `cfaae2e88d2d`.
+- H1 observed producer task status: `DEGRADED`; recorded network: `NETWORK_UNAVAILABLE`.
+- H1 evidentiary limit: explicit degraded acquisition remains historically degraded.
+- H2 original: `horizon-cortex/2026-10-02-H2-horizon-orient.md`; main blob prefix `2c887297c188`.
+- H2 observed producer task status: `BLOCKED`; recorded input: `INPUT_MISSING`; network: `NOT_RUN`.
+- 2026-10-02 causal decision: H2 input gate failed at its original execution (INPUT_MISSING); presence of H1 on this refreshed main does not cure the historical failure.
+- 2026-10-02 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### 2026-10-03 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-03-H1-signal-observe.md`; main blob prefix `6b37b2be59ef`.
+- H1 observed producer task status: `DEGRADED`; recorded network: `NETWORK_UNAVAILABLE`.
+- H1 evidentiary limit: explicit degraded acquisition remains historically degraded.
+- H2 original: `horizon-cortex/2026-10-03-H2-horizon-orient.md`; main blob prefix `0e06a2eeff42`.
+- H2 observed producer task status: `DEGRADED`; recorded input: `PRESENT`; network: `NETWORK_UNAVAILABLE`.
+- 2026-10-03 causal decision: H2 ran with bounded/degraded evidence; source claims must not be upgraded to independently verified evidence.
+- 2026-10-03 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### 2026-10-04 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-04-H1-signal-observe.md`; main blob prefix `24b91b58eacc`.
+- H1 observed producer task status: `DEGRADED`; recorded network: `NETWORK_UNAVAILABLE`.
+- H1 evidentiary limit: explicit degraded acquisition remains historically degraded.
+- H2 original: `horizon-cortex/2026-10-04-H2-horizon-orient.md`; main blob prefix `245cd66c9441`.
+- H2 observed producer task status: `DEGRADED`; recorded input: `PRESENT`; network: `NETWORK_UNAVAILABLE`.
+- 2026-10-04 causal decision: H2 ran with bounded/degraded evidence; source claims must not be upgraded to independently verified evidence.
+- 2026-10-04 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### 2026-10-05 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-05-H1-signal-observe.md`; main blob prefix `43fbb2a88de0`.
+- H1 observed producer task status: `DEGRADED`; recorded network: `NETWORK_UNAVAILABLE`.
+- H1 evidentiary limit: explicit degraded acquisition remains historically degraded.
+- H2 original: `horizon-cortex/2026-10-05-H2-horizon-orient.md`; main blob prefix `b52086ceb13f`.
+- H2 observed producer task status: `DEGRADED`; recorded input: `PRESENT`; network: `NETWORK_UNAVAILABLE`.
+- 2026-10-05 causal decision: H2 ran with bounded/degraded evidence; source claims must not be upgraded to independently verified evidence.
+- 2026-10-05 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### 2026-10-06 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-06-H1-signal-observe.md`; main blob prefix `badacb45f435`.
+- H1 observed producer task status: `DEGRADED`; recorded network: `NETWORK_UNAVAILABLE`.
+- H1 evidentiary limit: explicit degraded acquisition remains historically degraded.
+- H2 original: `horizon-cortex/2026-10-06-H2-horizon-orient.md`; main blob prefix `aa2f54b39a4a`.
+- H2 observed producer task status: `DEGRADED`; recorded input: `PRESENT`; network: `NETWORK_UNAVAILABLE`.
+- 2026-10-06 causal decision: H2 ran with bounded/degraded evidence; source claims must not be upgraded to independently verified evidence.
+- 2026-10-06 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### 2026-10-07 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-07-H1-signal-observe.md`; main blob prefix `e7cee61e3eee`.
+- H1 observed producer task status: `DEGRADED`; recorded network: `NETWORK_UNAVAILABLE`.
+- H1 evidentiary limit: explicit degraded acquisition remains historically degraded.
+- H2 original: `horizon-cortex/2026-10-07-H2-horizon-orient.md`; main blob prefix `4fa2353e1c96`.
+- H2 observed producer task status: `DEGRADED`; recorded input: `PRESENT`; network: `NETWORK_UNAVAILABLE`.
+- 2026-10-07 causal decision: H2 ran with bounded/degraded evidence; source claims must not be upgraded to independently verified evidence.
+- 2026-10-07 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### 2026-10-08 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-08-H1-signal-observe.md`; main blob prefix `2803312825d9`.
+- H1 observed producer task status: `DEGRADED`; recorded network: `NETWORK_UNAVAILABLE`.
+- H1 evidentiary limit: explicit degraded acquisition remains historically degraded.
+- H2 original: `horizon-cortex/2026-10-08-H2-horizon-orient.md`; main blob prefix `bece799e9fda`.
+- H2 observed producer task status: `DEGRADED`; recorded input: `PRESENT`; network: `NETWORK_UNAVAILABLE`.
+- 2026-10-08 causal decision: H2 ran with bounded/degraded evidence; source claims must not be upgraded to independently verified evidence.
+- 2026-10-08 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### 2026-10-09 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-09-H1-signal-observe.md`; main blob prefix `3ad421f2564a`.
+- H1 observed producer task status: `DEGRADED`; recorded network: `NETWORK_UNAVAILABLE`.
+- H1 evidentiary limit: explicit degraded acquisition remains historically degraded.
+- H2 original: `horizon-cortex/2026-10-09-H2-horizon-orient.md`; main blob prefix `ddc4699b3d85`.
+- H2 observed producer task status: `DEGRADED`; recorded input: `PRESENT`; network: `NETWORK_UNAVAILABLE`.
+- 2026-10-09 causal decision: H2 ran with bounded/degraded evidence; source claims must not be upgraded to independently verified evidence.
+- 2026-10-09 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### 2026-10-10 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-10-H1-signal-observe.md`; main blob prefix `0b309d35767e`.
+- H1 observed producer task status: `DEGRADED`; recorded network: `NETWORK_UNAVAILABLE`.
+- H1 evidentiary limit: explicit degraded acquisition remains historically degraded.
+- H2 original: `horizon-cortex/2026-10-10-H2-horizon-orient.md`; main blob prefix `5a3fa3c0a09f`.
+- H2 observed producer task status: `DEGRADED`; recorded input: `PRESENT`; network: `NETWORK_UNAVAILABLE`.
+- 2026-10-10 causal decision: H2 ran with bounded/degraded evidence; source claims must not be upgraded to independently verified evidence.
+- 2026-10-10 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### 2026-10-11 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-11-H1-signal-observe.md`; main blob prefix `e470c16e37af`.
+- H1 observed producer task status: `DEGRADED`; recorded network: `NETWORK_UNAVAILABLE`.
+- H1 evidentiary limit: explicit degraded acquisition remains historically degraded.
+- H2 original: `horizon-cortex/2026-10-11-H2-horizon-orient.md`; main blob prefix `ecd717d3031b`.
+- H2 observed producer task status: `DEGRADED`; recorded input: `PRESENT`; network: `NETWORK_UNAVAILABLE`.
+- 2026-10-11 causal decision: H2 ran with bounded/degraded evidence; source claims must not be upgraded to independently verified evidence.
+- 2026-10-11 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### 2026-10-12 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-12-H1-signal-observe.md`; main blob prefix `8b8595311b71`.
+- H1 observed producer task status: `SUCCESS`; recorded network: `NETWORK_VERIFIED`.
+- H1 evidentiary limit: successful producer report is not an independent external re-execution.
+- H2 original: `horizon-cortex/2026-10-12-H2-horizon-orient.md`; main blob prefix `e13bb69bdd19`.
+- H2 observed producer task status: `SUCCESS`; recorded input: `PRESENT`; network: `NETWORK_VERIFIED`.
+- 2026-10-12 causal decision: H2 source record says SUCCESS with input PRESENT; task success is confined to its recorded native scope.
+- 2026-10-12 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### 2026-10-13 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-13-H1-signal-observe.md`; main blob prefix `4b5de2da56b9`.
+- H1 observed producer task status: `DEGRADED_RECOVERY_WITH_BOUNDED_EXTERNAL_EVIDENCE`; recorded network: `WEB_PRIMARY_AND_SECONDARY_SOURCES_RETRIEVED`.
+- H1 evidentiary limit: bounded/recovery run requires the original limitation to travel with all downstream claims.
+- H2 original: `horizon-cortex/2026-10-13-H2-horizon-orient.md`; main blob prefix `b6526a008df1`.
+- H2 observed producer task status: `BLOCKED`; recorded input: `INPUT_MISSING`; network: `NOT_RUN`.
+- 2026-10-13 causal decision: H2 input gate failed at its original execution (INPUT_MISSING); presence of H1 on this refreshed main does not cure the historical failure.
+- 2026-10-13 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### 2026-10-14 | H1 → H2
+- H1 original: `horizon-cortex/2026-10-14-H1-signal-observe.md`; main blob prefix `96b868a36f90`.
+- H1 observed producer task status: `SUCCESS`; recorded network: `NETWORK_VERIFIED`.
+- H1 evidentiary limit: successful producer report is not an independent external re-execution.
+- H2 original: `horizon-cortex/2026-10-14-H2-horizon-orient.md`; main blob prefix `a43e10152913`.
+- H2 observed producer task status: `SUCCESS`; recorded input: `PRESENT`; network: `NETWORK_VERIFIED`.
+- 2026-10-14 causal decision: H2 source record says SUCCESS with input PRESENT; task success is confined to its recorded native scope.
+- 2026-10-14 month decision: maintain two distinct native objects, two original source revisions, and their unmodified execution-time classification.
+
+### Weekly, monthly, upstream authority and completion boundary
+- Weekly sources: W40/W41 H3,H4: extant separate weekly decision files; W42 decision is not yet due for Monday-week-end closure; H5/H6 October final not due.
+- Monthly rolling owner is a relation and memory product, not a replay or unblocking of native daily producer tasks.
+- Date-scoped H2 BLOCKED count observed in this 14-day window: 2; retained, not normalized away.
+- Historical source degradation, partial external checks, and single-publisher lineage require explicit conditional language at later aggregation stages.
+- Do not infer host runtime implementation, scientific reproduction, independent corroboration, or disciplinary action from file counts.
+- Do not treat open/closed PR status alone as task-execution success; original file status controls.
+- A2 may start only after all ten A1 PRs are merged, followed by ten-repo fresh-read of main.
+- A2 inclusion date 2026-10-15 must be checked again from original current-main records, including any newly corrected producer evidence.
+- The original producer can carry an admissible BLOCKED status without any fictional remedial run.
+- A1 review disposition: historical native facts and explicit gaps preserved; October final remains OPEN.
+- Runtime/test claims by this independent maintainer: NOT_EXECUTED; maintenance checks are source identity and relationship checks.
+- A1 PR must be checked for its real diff, merge result, and post-merge owner blob before downstream gate.
+
