@@ -121,3 +121,23 @@ BOUNDARY_CHECK
 未提出宿主仓库行动: YES
 未做最终周决策: YES
 未把外部信号宣称为宿主仓库事实: YES
+
+## 2026-10-16 independent forward freshness reconciliation
+
+- Record kind: DATED_FORWARD_CORRECTION, not a Jules H2 rerun and not a replacement for the original H2 classification.
+- Owning original logical date: 2026-10-16; original H1 and H2 bodies above remain unchanged as task-time evidence.
+- Exact signal: SIG-20261016-02, Microsoft Copilot Tasks background/cloud-computer execution.
+- Supporting H1 Source 2 explicitly records The Verge article publication as 2026-02-26T22:56:09+00:00, despite the 2026-10-16 check date.
+- A source-check date is not the publication/event date; October 16 source access cannot independently establish an October 16 product launch or maturity transition.
+- The H2 VERIFIED label is bounded to the product/trend proposition as described in that older report; it does not prove newly deployed functionality or independent runtime acceptance on October 16.
+- The original H2 label "strategic signal" remains a contemporaneous orient-stage interpretation, not an independently established new October 16 strategic change.
+- Reconciled freshness class for current monthly/weekly consumption: EXISTING_TREND_REAFFIRMED / NEW_OCT16_DELTA_NOT_VERIFIED.
+- Reconciled evidence depth: SECONDARY_REPORT_FOR_VENDOR_PRODUCT / OFFICIAL_PRIMARY_RECHECK_NOT_PERFORMED_BY_THIS_CORRECTION.
+- H1-to-H2 causal history, original producer identity, original SUCCESS reports and merge order are preserved without rewrite.
+- A later independent first-party implementation/rollout/change log and publication/effective date could justify a separate new-delta candidate; none is asserted here.
+- H3 weekly promotion gate: keep this as background/context or watchlist pending fresh source-specific delta; do not treat the 2026-02 article as one new 2026-10-16 event.
+- Host/NEXUS/Parallax adoption and runtime applicability remain UNKNOWN; no host modification is authorized by this research correction.
+- No external source was revisited or external runtime executed by the independent maintainer in this record; correction relies on the H1 source metadata and H2 original statement already retained on repository main.
+- Source lineage: horizon-cortex/2026-10-16-H1-signal-observe.md (Source 2 metadata), this H2 original SIGNAL_CLASSIFICATION, horizon-cortex/EVIDENCE_POLICY.md section 6–7.
+- Correctness boundary: material date/source classification is narrowed only; no claim that Microsoft product existence itself is false.
+- Status: FRESHNESS_BOUNDARY_CORRECTED_FORWARD / ORIGINAL_RESEARCH_HISTORY_PRESERVED / MONTH_OPEN.
