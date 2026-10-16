@@ -5032,3 +5032,161 @@ DUPLICATE_EVIDENCE_CREDIT
 - No scientific test, host implementation, document governance or publication work executed by A2.
 - A2 status: CURRENT_OCTOBER_RELATION_REFRESHED / MONTH_OPEN / HISTORY_PRESERVED, pending PR verification and merge.
 
+## 2026-10-16 A1 — Horizon original October 1–15 full native relation inventory
+
+- Current main used for A1 baseline: `fc5d08f088762852ea60666b43612e5cffc8cece`; verified 15 H1 files, 15 H2 files, 15 independent Parallax Daily files
+- The normal A1 period is 2026-10-01 to 2026-10-15; today’s 2026-10-16 native tasks belong to successor A2
+- Original status, source verification and main-visible temporal dependency are distinct; no newly executed Jules Daily attempted by maintainer
+- W40/W41 H3-H4 remain original weekly producer files; W42 12–18 OPEN and weekly final not yet due
+- October H6 is current OPEN owner; October H5 final is NOT_DUE; Parallax research is separately authored and not an H1/H2 confirmation
+- No host NEXUS lifecycle or private task prompt read/executed by this monthly audit
+- Content reviews of current-month H1/H2 were performed in this maintenance session; Parallax source bodies outside original evidence list are retained by Git blob/path evidence only
+- No historical source or native production file rewritten; original producer identity, task-time successes and negative evidence remain
+- Decisions below are A1 per-day, not extra independent source support for current external claims
+### 2026-10-01 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-01-H1-signal-observe.md`, SHA `d6600cc374d70cea8217b0c8ad5e9738526a6f2b`
+- H1 task/source state: DEGRADED NETWORK_UNAVAILABLE
+- Native H2 `horizon-cortex/2026-10-01-H2-horizon-orient.md`, SHA `26be2924210fa2c9ce347345909ea5b97fc5afe4`
+- H2 dependency state: DEGRADED source NONE
+- Parallax `parallax/records/2026-10/2026-10-01.md`, SHA `d54222843ecffc562b71e0f073d5aaf9cabdf86d` (distinct producer plane)
+- Evidence-level decision: Network-unavailable, no-world-change assertion inadmissible
+- A1 disposition: NO_FOLLOW_UP to original producer; preserve stated verification level
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-02 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-02-H1-signal-observe.md`, SHA `cfaae2e88d2d2968769292b09d74cb404bb23892`
+- H1 task/source state: DEGRADED NETWORK_UNAVAILABLE
+- Native H2 `horizon-cortex/2026-10-02-H2-horizon-orient.md`, SHA `2c887297c188136786ba092922901d35b0287e6d`
+- H2 dependency state: BLOCKED INPUT_MISSING
+- Parallax `parallax/records/2026-10/2026-10-02.md`, SHA `e4b78b17335a41ff5c782dfd7a2cad41782d2e37` (distinct producer plane)
+- Evidence-level decision: Original H2 blocker immutable despite later H1 file presence
+- A1 disposition: KEEP ORIGINAL BLOCKED / LATER PATH DOES NOT REPAIR
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-03 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-03-H1-signal-observe.md`, SHA `6b37b2be59ef93c58c3902f12ed2fbddbdf65ddb`
+- H1 task/source state: DEGRADED NETWORK_UNAVAILABLE
+- Native H2 `horizon-cortex/2026-10-03-H2-horizon-orient.md`, SHA `0e06a2eeff4253fe21752e6e76bd4882e92240f8`
+- H2 dependency state: DEGRADED source NONE
+- Parallax `parallax/records/2026-10/2026-10-03.md`, SHA `7646cb0944f36d8e651a7034643c9d4009abcbe1` (distinct producer plane)
+- Evidence-level decision: Only local continuity, no external source corroboration
+- A1 disposition: NO_FOLLOW_UP to original producer; preserve stated verification level
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-04 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-04-H1-signal-observe.md`, SHA `24b91b58eaccea5ceb16e761a0f6d8d2947314cb`
+- H1 task/source state: DEGRADED NETWORK_UNAVAILABLE
+- Native H2 `horizon-cortex/2026-10-04-H2-horizon-orient.md`, SHA `245cd66c944188c1b56ed5736b34f28514964c4b`
+- H2 dependency state: DEGRADED source NONE
+- Parallax `parallax/records/2026-10/2026-10-04.md`, SHA `cbd7355065b7e762b6c181de680333b2c1e05990` (distinct producer plane)
+- Evidence-level decision: Preserve no signal as no verified signal in this run
+- A1 disposition: NO_FOLLOW_UP to original producer; preserve stated verification level
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-05 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-05-H1-signal-observe.md`, SHA `43fbb2a88de0341440977cc834e10c1c0e7ff9ed`
+- H1 task/source state: DEGRADED NETWORK_UNAVAILABLE
+- Native H2 `horizon-cortex/2026-10-05-H2-horizon-orient.md`, SHA `b52086ceb13f06c3ad919cd3ba1e5443cd96d938`
+- H2 dependency state: DEGRADED source NONE
+- Parallax `parallax/records/2026-10/2026-10-05.md`, SHA `0e8368829ea2ba72223202b55fa4b659c42bb3f1` (distinct producer plane)
+- Evidence-level decision: Do not extrapolate a degraded observation into ecosystem absence
+- A1 disposition: NO_FOLLOW_UP to original producer; preserve stated verification level
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-06 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-06-H1-signal-observe.md`, SHA `badacb45f435f80065fe85eb366b754863509c68`
+- H1 task/source state: DEGRADED NETWORK_UNAVAILABLE
+- Native H2 `horizon-cortex/2026-10-06-H2-horizon-orient.md`, SHA `aa2f54b39a4a7a572e55ec78374f631e92d361d6`
+- H2 dependency state: DEGRADED source NONE
+- Parallax `parallax/records/2026-10/2026-10-06.md`, SHA `56eb22aa70926d789453433ce3d84b07d749781b` (distinct producer plane)
+- Evidence-level decision: H2 inherits degraded H1, no fresh verification
+- A1 disposition: NO_FOLLOW_UP to original producer; preserve stated verification level
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-07 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-07-H1-signal-observe.md`, SHA `e7cee61e3eeed05223981b64d41b314c8120b856`
+- H1 task/source state: DEGRADED NETWORK_UNAVAILABLE
+- Native H2 `horizon-cortex/2026-10-07-H2-horizon-orient.md`, SHA `4fa2353e1c96d481b02c85823138c0012f9bbd12`
+- H2 dependency state: DEGRADED source NONE
+- Parallax `parallax/records/2026-10/2026-10-07.md`, SHA `3c3250d9d877f72363b2e8b8f799184dc977495d` (distinct producer plane)
+- Evidence-level decision: Two historical source documents are not independent if same lineage
+- A1 disposition: NO_FOLLOW_UP to original producer; preserve stated verification level
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-08 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-08-H1-signal-observe.md`, SHA `2803312825d90e0dc8431b97144788832fe0baea`
+- H1 task/source state: DEGRADED NETWORK_UNAVAILABLE
+- Native H2 `horizon-cortex/2026-10-08-H2-horizon-orient.md`, SHA `bece799e9fdaf05618cf4835bbcf20ef579b6634`
+- H2 dependency state: DEGRADED source NONE
+- Parallax `parallax/records/2026-10/2026-10-08.md`, SHA `f3f8e80f73f641820b2d6591de03bbe8b75a8ae5` (distinct producer plane)
+- Evidence-level decision: No runtime or host effect proof from unavailable search
+- A1 disposition: NO_FOLLOW_UP to original producer; preserve stated verification level
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-09 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-09-H1-signal-observe.md`, SHA `3ad421f2564a3c99f7c7072fac8875404271259e`
+- H1 task/source state: DEGRADED NETWORK_UNAVAILABLE
+- Native H2 `horizon-cortex/2026-10-09-H2-horizon-orient.md`, SHA `ddc4699b3d85ca9282c4d868085f4529792cd1e7`
+- H2 dependency state: DEGRADED source NONE
+- Parallax `parallax/records/2026-10/2026-10-09.md`, SHA `c8816a519ded333632f7a2b707e543476082a68a` (distinct producer plane)
+- Evidence-level decision: Prior memory cannot fill missing current external source
+- A1 disposition: NO_FOLLOW_UP to original producer; preserve stated verification level
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-10 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-10-H1-signal-observe.md`, SHA `0b309d35767ecb2093c042eb02e4c554b5a88eb4`
+- H1 task/source state: DEGRADED NETWORK_UNAVAILABLE
+- Native H2 `horizon-cortex/2026-10-10-H2-horizon-orient.md`, SHA `5a3fa3c0a09f6f748f20e8dbbd99d55a5ed271b3`
+- H2 dependency state: DEGRADED H2 no independent web check
+- Parallax `parallax/records/2026-10/2026-10-10.md`, SHA `d28220260d6fd5e0cf7bc9d18feb84cfe78b0f02` (distinct producer plane)
+- Evidence-level decision: H2 explicitly disclaims fresh external network verification
+- A1 disposition: NO_FOLLOW_UP to original producer; preserve stated verification level
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-11 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-11-H1-signal-observe.md`, SHA `e470c16e37af2dc779cf9154b7dd49520e1efb98`
+- H1 task/source state: DEGRADED NETWORK_UNAVAILABLE
+- Native H2 `horizon-cortex/2026-10-11-H2-horizon-orient.md`, SHA `ecd717d3031bc6556daf0e89c494d6d34f1d50d0`
+- H2 dependency state: DEGRADED external verify NOT_RUN
+- Parallax `parallax/records/2026-10/2026-10-11.md`, SHA `730e12f4cf858f041a72ec521e87e33bca6584d5` (distinct producer plane)
+- Evidence-level decision: Earlier task's source grade cannot be promoted through repetition
+- A1 disposition: NO_FOLLOW_UP to original producer; preserve stated verification level
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-12 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-12-H1-signal-observe.md`, SHA `8b8595311b71984448fce0d35c222d34ff3f1fbc`
+- H1 task/source state: SUCCESS CC household experiment
+- Native H2 `horizon-cortex/2026-10-12-H2-horizon-orient.md`, SHA `e13bb69bdd1947ebe72ec7c90f207141fdcafa13`
+- H2 dependency state: SUCCESS H1 present
+- Parallax `parallax/records/2026-10/2026-10-12.md`, SHA `ca52e3a1829cf4d786d70da512e9e9e93b14e42b` (distinct producer plane)
+- Evidence-level decision: Experimental Google Labs source indicates concept, not durable deployment
+- A1 disposition: NO_FOLLOW_UP to original producer; preserve stated verification level
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-13 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-13-H1-signal-observe.md`, SHA `4b5de2da56b98f4d5487578fb7e6a44b13ac4f91`
+- H1 task/source state: DEGRADED_RECOVERY
+- Native H2 `horizon-cortex/2026-10-13-H2-horizon-orient.md`, SHA `b6526a008df1c39315f58e73192945509afdabbf`
+- H2 dependency state: BLOCKED original H1 unavailable
+- Parallax `parallax/records/2026-10/2026-10-13.md`, SHA `7ad0e3060090ba2b1df052fc7c0053baaad0d579` (distinct producer plane)
+- Evidence-level decision: Late H1 recovery separate from originally BLOCKED H2 temporal authority
+- A1 disposition: KEEP ORIGINAL BLOCKED / LATER PATH DOES NOT REPAIR
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-14 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-14-H1-signal-observe.md`, SHA `96b868a36f9008428c78d3c58faa7541de520c78`
+- H1 task/source state: SUCCESS Google Labs collaborative research
+- Native H2 `horizon-cortex/2026-10-14-H2-horizon-orient.md`, SHA `a43e10152913b66d3dbd35c7aff78cc746c6cfd7`
+- H2 dependency state: SUCCESS H1 present
+- Parallax `parallax/records/2026-10/2026-10-14.md`, SHA `62886081eee36e94a6f4807acab314a6a47870bd` (distinct producer plane)
+- Evidence-level decision: Product signal requires later independent practical adoption evidence
+- A1 disposition: NO_FOLLOW_UP to original producer; preserve stated verification level
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+### 2026-10-15 | Horizon H1–H2 and parallel Parallax
+- Native H1 `horizon-cortex/2026-10-15-H1-signal-observe.md`, SHA `88e05844378f0f13035d31cf2b33d3650f2968b9`
+- H1 task/source state: SUCCESS Literature Insights
+- Native H2 `horizon-cortex/2026-10-15-H2-horizon-orient.md`, SHA `318a87f4b7cd4b5117e866c5d3e7afe8ad5b37a5`
+- H2 dependency state: SUCCESS H1 present
+- Parallax `parallax/records/2026-10/2026-10-15.md`, SHA `c197c66e4a063f7830b93c9a3619f73efa25eef1` (distinct producer plane)
+- Evidence-level decision: Literature listing indicates publisher claim, not verified research output
+- A1 disposition: NO_FOLLOW_UP to original producer; preserve stated verification level
+- Temporal relation: one day/source identity; H2 cannot independently validate H1 by restatement; Parallax is not a third H task
+
+### A1 source and cross-period gates
+- W40 original Horizon H3 and H4 checked by repository path identity; a blocked H4 cannot be made successful by a later H3 merge
+- W41 original H3/H4 retained; W42 not yet natural Sunday final
+- Oct13 H2 native BLOCKED at original execution despite separately recovered H1 file; no reclassification
+- Oct2 H2 blocked with INPUT_MISSING; later presence is insufficient evidence of task-time success
+- Many Oct1..11 H1 have NETWORK_UNAVAILABLE and their H2 descendants inherit degraded evidence; no false publication no-change conclusion
+- Oct15 publisher news/Google Labs references are source statements, not independent real-world product adoption
+- The already merged Oct16 native H2 freshness correction is subsequent source-boundary context; A1 cannot backdate it to Oct1..15
+- Exact file and Git blob presence confirms retention, not independent network, veracity or process conformance
+- A1 owner remains OPEN, original source SHA unchanged, review coverage recorded, downstream A2 must fresh-read today's actual main
+- Status: A1_15_DATES_NATIVE_CHAIN_COVERED / HISTORY_UNCHANGED / MONTH_OPEN / NEEDS_PR_MERGE
