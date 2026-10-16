@@ -5190,3 +5190,172 @@ DUPLICATE_EVIDENCE_CREDIT
 - Exact file and Git blob presence confirms retention, not independent network, veracity or process conformance
 - A1 owner remains OPEN, original source SHA unchanged, review coverage recorded, downstream A2 must fresh-read today's actual main
 - Status: A1_15_DATES_NATIVE_CHAIN_COVERED / HISTORY_UNCHANGED / MONTH_OPEN / NEEDS_PR_MERGE
+
+## A2 2026-10-16 Horizon complete current-month relational version
+
+- A1 #772 merged baseline `2a3e6a2d59d4f7d2a04e9a762e93e2d1e9a891ec`; single October owner H6 remains OPEN
+- All 16 H1/H2 original date pairs and independent Parallax daily identities have been reevaluated; no new native bytes rewritten
+- The 2026-10-16 H1/H2 success does not rewrite W40/W41 earlier degraded or blocked outcomes
+- W40 H3 original SUCCESS with INPUT_GAP, H4 BLOCKED from missing decision; success of upstream file is not proof of action
+- W41 H3 DEGRADED/NO_DECISION and H4 DEGRADED_NO_ACTION are separate weekly evidence claims
+- W42 2026-10-12..18 OPEN, H3/H4 end-of-week not due; month H5 final also not due
+- Source event date, current website access, original Jules task time, maintenance PR merge and Horizon monthly record each have separate clocks
+- Oct16 H2 forward correction #771 constrains older Feb Copilot article to EXISTING_TREND_REAFFIRMED rather than new October launch
+- All Parallax records are independently produced trace/evidence records; a span success does not establish target-task completion
+- The daily inventory below is a current source-to-decision relation and not a second independent producer run
+### 2026-10-01 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-01-H1-signal-observe.md`, blob `d6600cc374d70cea8217b0c8ad5e9738526a6f2b`
+- H1 observed source class: NETWORK_UNAVAILABLE
+- H2 native: `horizon-cortex/2026-10-01-H2-horizon-orient.md`, blob `26be2924210fa2c9ce347345909ea5b97fc5afe4`
+- H2 task-time outcome: DEGRADED
+- Current relational interpretation: No independent H1 source; NO_MATERIAL means unverified in this run
+- Independent Parallax: `parallax/records/2026-10/2026-10-01.md`, blob `d54222843ecffc562b71e0f073d5aaf9cabdf86d`; does not upgrade H1 source authority
+- Weekly synthesis gate: W40 cross-month; H4 BLOCKED
+- A2 status: NO_NEW_EXTERNAL_ACCEPTANCE
+### 2026-10-02 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-02-H1-signal-observe.md`, blob `cfaae2e88d2d2968769292b09d74cb404bb23892`
+- H1 observed source class: NETWORK_UNAVAILABLE
+- H2 native: `horizon-cortex/2026-10-02-H2-horizon-orient.md`, blob `2c887297c188136786ba092922901d35b0287e6d`
+- H2 task-time outcome: BLOCKED
+- Current relational interpretation: H2 original input unavailable at task time, later H1 cannot repair
+- Independent Parallax: `parallax/records/2026-10/2026-10-02.md`, blob `e4b78b17335a41ff5c782dfd7a2cad41782d2e37`; does not upgrade H1 source authority
+- Weekly synthesis gate: W40 cross-month; H4 BLOCKED
+- A2 status: ORIGINAL_BLOCKER_PRESERVED
+### 2026-10-03 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-03-H1-signal-observe.md`, blob `6b37b2be59ef93c58c3902f12ed2fbddbdf65ddb`
+- H1 observed source class: NETWORK_UNAVAILABLE
+- H2 native: `horizon-cortex/2026-10-03-H2-horizon-orient.md`, blob `0e06a2eeff4253fe21752e6e76bd4882e92240f8`
+- H2 task-time outcome: DEGRADED
+- Current relational interpretation: H1 no material current evidence, H2 same unverified signal lineage
+- Independent Parallax: `parallax/records/2026-10/2026-10-03.md`, blob `7646cb0944f36d8e651a7034643c9d4009abcbe1`; does not upgrade H1 source authority
+- Weekly synthesis gate: W40 cross-month; H4 BLOCKED
+- A2 status: NO_NEW_EXTERNAL_ACCEPTANCE
+### 2026-10-04 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-04-H1-signal-observe.md`, blob `24b91b58eaccea5ceb16e761a0f6d8d2947314cb`
+- H1 observed source class: NETWORK_UNAVAILABLE
+- H2 native: `horizon-cortex/2026-10-04-H2-horizon-orient.md`, blob `245cd66c944188c1b56ed5736b34f28514964c4b`
+- H2 task-time outcome: DEGRADED
+- Current relational interpretation: W40 closing source coverage limited; no credible upgrade to H4 action
+- Independent Parallax: `parallax/records/2026-10/2026-10-04.md`, blob `cbd7355065b7e762b6c181de680333b2c1e05990`; does not upgrade H1 source authority
+- Weekly synthesis gate: W40 cross-month; H4 BLOCKED
+- A2 status: NO_NEW_EXTERNAL_ACCEPTANCE
+### 2026-10-05 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-05-H1-signal-observe.md`, blob `43fbb2a88de0341440977cc834e10c1c0e7ff9ed`
+- H1 observed source class: NETWORK_UNAVAILABLE
+- H2 native: `horizon-cortex/2026-10-05-H2-horizon-orient.md`, blob `b52086ceb13f06c3ad919cd3ba1e5443cd96d938`
+- H2 task-time outcome: DEGRADED
+- Current relational interpretation: W41 starts with no externally verified new signal
+- Independent Parallax: `parallax/records/2026-10/2026-10-05.md`, blob `0e8368829ea2ba72223202b55fa4b659c42bb3f1`; does not upgrade H1 source authority
+- Weekly synthesis gate: W41 H3 NO_DECISION, H4 NO_ACTION
+- A2 status: NO_NEW_EXTERNAL_ACCEPTANCE
+### 2026-10-06 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-06-H1-signal-observe.md`, blob `badacb45f435f80065fe85eb366b754863509c68`
+- H1 observed source class: NETWORK_UNAVAILABLE
+- H2 native: `horizon-cortex/2026-10-06-H2-horizon-orient.md`, blob `aa2f54b39a4a7a572e55ec78374f631e92d361d6`
+- H2 task-time outcome: DEGRADED
+- Current relational interpretation: Repeated degraded outcome does not independently strengthen hypotheses
+- Independent Parallax: `parallax/records/2026-10/2026-10-06.md`, blob `56eb22aa70926d789453433ce3d84b07d749781b`; does not upgrade H1 source authority
+- Weekly synthesis gate: W41 H3 NO_DECISION, H4 NO_ACTION
+- A2 status: NO_NEW_EXTERNAL_ACCEPTANCE
+### 2026-10-07 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-07-H1-signal-observe.md`, blob `e7cee61e3eeed05223981b64d41b314c8120b856`
+- H1 observed source class: NETWORK_UNAVAILABLE
+- H2 native: `horizon-cortex/2026-10-07-H2-horizon-orient.md`, blob `4fa2353e1c96d481b02c85823138c0012f9bbd12`
+- H2 task-time outcome: DEGRADED
+- Current relational interpretation: No H1 publisher data; H2 remains derivative rather than corroboration
+- Independent Parallax: `parallax/records/2026-10/2026-10-07.md`, blob `3c3250d9d877f72363b2e8b8f799184dc977495d`; does not upgrade H1 source authority
+- Weekly synthesis gate: W41 H3 NO_DECISION, H4 NO_ACTION
+- A2 status: NO_NEW_EXTERNAL_ACCEPTANCE
+### 2026-10-08 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-08-H1-signal-observe.md`, blob `2803312825d90e0dc8431b97144788832fe0baea`
+- H1 observed source class: NETWORK_UNAVAILABLE
+- H2 native: `horizon-cortex/2026-10-08-H2-horizon-orient.md`, blob `bece799e9fdaf05618cf4835bbcf20ef579b6634`
+- H2 task-time outcome: DEGRADED
+- Current relational interpretation: Original native task result is coverage not external no-change
+- Independent Parallax: `parallax/records/2026-10/2026-10-08.md`, blob `f3f8e80f73f641820b2d6591de03bbe8b75a8ae5`; does not upgrade H1 source authority
+- Weekly synthesis gate: W41 H3 NO_DECISION, H4 NO_ACTION
+- A2 status: NO_NEW_EXTERNAL_ACCEPTANCE
+### 2026-10-09 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-09-H1-signal-observe.md`, blob `3ad421f2564a3c99f7c7072fac8875404271259e`
+- H1 observed source class: NETWORK_UNAVAILABLE
+- H2 native: `horizon-cortex/2026-10-09-H2-horizon-orient.md`, blob `ddc4699b3d85ca9282c4d868085f4529792cd1e7`
+- H2 task-time outcome: DEGRADED
+- Current relational interpretation: Do not create actionable decision from failed external source search
+- Independent Parallax: `parallax/records/2026-10/2026-10-09.md`, blob `c8816a519ded333632f7a2b707e543476082a68a`; does not upgrade H1 source authority
+- Weekly synthesis gate: W41 H3 NO_DECISION, H4 NO_ACTION
+- A2 status: NO_NEW_EXTERNAL_ACCEPTANCE
+### 2026-10-10 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-10-H1-signal-observe.md`, blob `0b309d35767ecb2093c042eb02e4c554b5a88eb4`
+- H1 observed source class: NETWORK_UNAVAILABLE
+- H2 native: `horizon-cortex/2026-10-10-H2-horizon-orient.md`, blob `5a3fa3c0a09f6f748f20e8dbbd99d55a5ed271b3`
+- H2 task-time outcome: DEGRADED_HUMAN_SUBSTITUTE
+- Current relational interpretation: H2 human-authorized substitute not original Jules producer
+- Independent Parallax: `parallax/records/2026-10/2026-10-10.md`, blob `d28220260d6fd5e0cf7bc9d18feb84cfe78b0f02`; does not upgrade H1 source authority
+- Weekly synthesis gate: W41 H3 NO_DECISION, H4 NO_ACTION
+- A2 status: NO_NEW_EXTERNAL_ACCEPTANCE
+### 2026-10-11 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-11-H1-signal-observe.md`, blob `e470c16e37af2dc779cf9154b7dd49520e1efb98`
+- H1 observed source class: NETWORK_UNAVAILABLE
+- H2 native: `horizon-cortex/2026-10-11-H2-horizon-orient.md`, blob `ecd717d3031bc6556daf0e89c494d6d34f1d50d0`
+- H2 task-time outcome: DEGRADED_HUMAN_SUBSTITUTE
+- Current relational interpretation: W41 Sunday native source DEGRADED, H3 NO_DECISION, H4 NO_ACTION
+- Independent Parallax: `parallax/records/2026-10/2026-10-11.md`, blob `730e12f4cf858f041a72ec521e87e33bca6584d5`; does not upgrade H1 source authority
+- Weekly synthesis gate: W41 H3 NO_DECISION, H4 NO_ACTION
+- A2 status: NO_NEW_EXTERNAL_ACCEPTANCE
+### 2026-10-12 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-12-H1-signal-observe.md`, blob `8b8595311b71984448fce0d35c222d34ff3f1fbc`
+- H1 observed source class: SUCCESS_CC_GOOGLE_LABS
+- H2 native: `horizon-cortex/2026-10-12-H2-horizon-orient.md`, blob `e13bb69bdd1947ebe72ec7c90f207141fdcafa13`
+- H2 task-time outcome: SUCCESS
+- Current relational interpretation: Household collaborative agent experimental claim; no adoption proof
+- Independent Parallax: `parallax/records/2026-10/2026-10-12.md`, blob `ca52e3a1829cf4d786d70da512e9e9e93b14e42b`; does not upgrade H1 source authority
+- Weekly synthesis gate: W42 OPEN, natural weekly close not due
+- A2 status: BOUNDED_PUBLISHER_SIGNAL
+### 2026-10-13 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-13-H1-signal-observe.md`, blob `4b5de2da56b98f4d5487578fb7e6a44b13ac4f91`
+- H1 observed source class: H1_LATE_RECOVERY
+- H2 native: `horizon-cortex/2026-10-13-H2-horizon-orient.md`, blob `b6526a008df1c39315f58e73192945509afdabbf`
+- H2 task-time outcome: BLOCKED_ORIGINAL
+- Current relational interpretation: Recovered H1 and original H2 blocker have different time authorities
+- Independent Parallax: `parallax/records/2026-10/2026-10-13.md`, blob `7ad0e3060090ba2b1df052fc7c0053baaad0d579`; does not upgrade H1 source authority
+- Weekly synthesis gate: W42 OPEN, natural weekly close not due
+- A2 status: ORIGINAL_BLOCKER_PRESERVED
+### 2026-10-14 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-14-H1-signal-observe.md`, blob `96b868a36f9008428c78d3c58faa7541de520c78`
+- H1 observed source class: SUCCESS_PUTTY
+- H2 native: `horizon-cortex/2026-10-14-H2-horizon-orient.md`, blob `a43e10152913b66d3dbd35c7aff78cc746c6cfd7`
+- H2 task-time outcome: SUCCESS
+- Current relational interpretation: Google Labs collaborative coding experiment; no deployed-result proof
+- Independent Parallax: `parallax/records/2026-10/2026-10-14.md`, blob `62886081eee36e94a6f4807acab314a6a47870bd`; does not upgrade H1 source authority
+- Weekly synthesis gate: W42 OPEN, natural weekly close not due
+- A2 status: BOUNDED_PUBLISHER_SIGNAL
+### 2026-10-15 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-15-H1-signal-observe.md`, blob `88e05844378f0f13035d31cf2b33d3650f2968b9`
+- H1 observed source class: SUCCESS_LITERATURE_INSIGHTS
+- H2 native: `horizon-cortex/2026-10-15-H2-horizon-orient.md`, blob `318a87f4b7cd4b5117e866c5d3e7afe8ad5b37a5`
+- H2 task-time outcome: SUCCESS
+- Current relational interpretation: Publisher literature tooling listing not independently tested scientific result
+- Independent Parallax: `parallax/records/2026-10/2026-10-15.md`, blob `c197c66e4a063f7830b93c9a3619f73efa25eef1`; does not upgrade H1 source authority
+- Weekly synthesis gate: W42 OPEN, natural weekly close not due
+- A2 status: BOUNDED_PUBLISHER_SIGNAL
+### 2026-10-16 source-to-decision relation
+- H1 native: `horizon-cortex/2026-10-16-H1-signal-observe.md`, blob `47c3e602f7c08609394ffdfe390f2d761f533f90`
+- H1 observed source class: SUCCESS_A2A_COPILOT_JULES
+- H2 native: `horizon-cortex/2026-10-16-H2-horizon-orient.md`, blob `d1f21d553193544258959771faa052fa6a2fdbfb`
+- H2 task-time outcome: SUCCESS_CORRECTED
+- Current relational interpretation: A2A watchlist; Copilot Feb-source existing trend, Jules noise
+- Independent Parallax: `parallax/records/2026-10/2026-10-16.md`, blob `aa642853c559b7cecacf3c1f57bfa92812879ace`; does not upgrade H1 source authority
+- Weekly synthesis gate: W42 OPEN, natural weekly close not due
+- A2 status: OLD_SOURCE_NOT_NEW_OCT16_DELTA
+
+### Current cross-week conclusions
+- W40 original H4 remains BLOCKED, even with present H3 source file
+- W41 native H3 and H4 remain DEGRADED_NO_DECISION and DEGRADED_NO_ACTION; no retroactive action
+- Oct12 CC and Oct14 Putty publisher news are experiments, not verified mass deployment
+- Oct13 H1 recovery changes present repository availability, not original H2 blocked source-time judgment
+- Oct15 Literature Insights is a product listing, not an independently tested research output
+- Oct16 A2A ecosystem claim is watchlist, while Copilot Tasks remains February existing trend and Jules maintenance noise
+- H1 and H2 source restatements are one lineage; duplication does not independently strengthen a hypothesis
+- Independent monthly maintenance has NOT_RUN host NEXUS or external SDK/conformance tests
+- W42 and October monthly OPEN; no Special task due or original pipeline rerun inferred
+- Outcome A2_MONTH_VERSION_2026_10_OPEN / ORIGINAL_NEGATIVES_PRESERVED / O16_SOURCE_FRESHNESS_NARROWED
