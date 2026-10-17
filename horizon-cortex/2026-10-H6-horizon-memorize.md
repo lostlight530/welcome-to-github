@@ -5512,3 +5512,145 @@ DUPLICATE_EVIDENCE_CREDIT
 - A2 must start only after all ten independent A1 PRs have merged and after a fresh main read, and must incorporate Oct17 native sources without rewriting this cutoff
 - A1 audit is GitHub source/metadata chronology only; no GitHub Actions, network source recertification or Parallax live runtime execution is claimed
 - Status: A1_16_DATES_48_ARTIFACT_IDENTITIES_CHECKED / HISTORICAL_GAPS_RETAINED / WEEK42_OPEN / MONTH_OPEN
+
+## 2026-10-17 A2 | Horizon one October relational state through native October 17
+
+- Exact post-A1 main `09232449e0c2cc66acd604c903731f5808451145`; A1 #777 fully merged, no partial A1 head used
+- Month identity 2026-10, OPEN: this is successor append to same H6 provisional owner, not a new monthly universe nor a natural H6 run
+- Current native October 17 H1/H2 producer claims SUCCESS/NETWORK_VERIFIED/PRESENT; H2 classifies repeated A2A/Microsoft/Waggle evidence as noise, no independent verified new signal
+- Today independent Parallax: GitHub/in-toto/SLSA/Sigstore contract comparison, 13 synthetic cases and 57 assertions by native producer; no actual signing/admission/runtime
+- Full October relation: early Oct1–11 NETWORK_UNAVAILABLE, Oct2 H2 missing source; Oct12 verified producer reappearance; Oct13 H1 human substitute and original H2 missing; Oct14–17 source-visible observations
+- W40/W41 H3 and H4 historical provenance and negative action states are unchanged; W42 Oct12–18 still in progress, H5/H6 natural final NOT_DUE
+- H1 source evidence, H2 orientation, Parallax scientific research and NEXUS/Host runtime are separate authority layers
+- Same publisher revisits and source order changes do not add independent support or turn original UNKNOWN into current implementation
+
+### Source-to-decision chain for each date in one current version
+#### 2026-10-01 | OCT01_11_DEGRADED_SOURCE
+- H1 Git object `horizon-cortex/2026-10-01-H1-signal-observe.md` / `d6600cc374d70cea8217b0c8ad5e9738526a6f2b`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-01-H2-horizon-orient.md` / `26be2924210fa2c9ce347345909ea5b97fc5afe4`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-01.md` / `d54222843ecffc562b71e0f073d5aaf9cabdf86d`; focus: completed vs semantic task result
+- Date-to-week relation: W40 boundary; no premature weekly final seal
+- Source-to-relation decision: Lack of upstream external verification bounds weekly action admissibility
+- Current month A2 disposition: `OCT01_11_DEGRADED_SOURCE`, zero extra independent source, runtime or research-window credits
+#### 2026-10-02 | OCT01_11_DEGRADED_SOURCE
+- H1 Git object `horizon-cortex/2026-10-02-H1-signal-observe.md` / `cfaae2e88d2d2968769292b09d74cb404bb23892`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-02-H2-horizon-orient.md` / `2c887297c188136786ba092922901d35b0287e6d`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-02.md` / `e4b78b17335a41ff5c782dfd7a2cad41782d2e37`; focus: logical capability vs wire shape
+- Date-to-week relation: W40 boundary; no premature weekly final seal
+- Source-to-relation decision: H2 original INPUT_MISSING; no backfilled input-time permission
+- Current month A2 disposition: `OCT01_11_DEGRADED_SOURCE`, zero extra independent source, runtime or research-window credits
+#### 2026-10-03 | OCT01_11_DEGRADED_SOURCE
+- H1 Git object `horizon-cortex/2026-10-03-H1-signal-observe.md` / `6b37b2be59ef93c58c3902f12ed2fbddbdf65ddb`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-03-H2-horizon-orient.md` / `0e06a2eeff4253fe21752e6e76bd4882e92240f8`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-03.md` / `7646cb0944f36d8e651a7034643c9d4009abcbe1`; focus: attempt/correlation identity
+- Date-to-week relation: W40 boundary; no premature weekly final seal
+- Source-to-relation decision: Lack of upstream external verification bounds weekly action admissibility
+- Current month A2 disposition: `OCT01_11_DEGRADED_SOURCE`, zero extra independent source, runtime or research-window credits
+#### 2026-10-04 | OCT01_11_DEGRADED_SOURCE
+- H1 Git object `horizon-cortex/2026-10-04-H1-signal-observe.md` / `24b91b58eaccea5ceb16e761a0f6d8d2947314cb`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-04-H2-horizon-orient.md` / `245cd66c944188c1b56ed5736b34f28514964c4b`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-04.md` / `cbd7355065b7e762b6c181de680333b2c1e05990`; focus: handoff context identity
+- Date-to-week relation: W40 boundary; no premature weekly final seal
+- Source-to-relation decision: Lack of upstream external verification bounds weekly action admissibility
+- Current month A2 disposition: `OCT01_11_DEGRADED_SOURCE`, zero extra independent source, runtime or research-window credits
+#### 2026-10-05 | OCT01_11_DEGRADED_SOURCE
+- H1 Git object `horizon-cortex/2026-10-05-H1-signal-observe.md` / `43fbb2a88de0341440977cc834e10c1c0e7ff9ed`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-05-H2-horizon-orient.md` / `b52086ceb13f06c3ad919cd3ba1e5443cd96d938`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-05.md` / `0e8368829ea2ba72223202b55fa4b659c42bb3f1`; focus: approval vs effect-time validation
+- Date-to-week relation: W41 producer history; no premature weekly final seal
+- Source-to-relation decision: Lack of upstream external verification bounds weekly action admissibility
+- Current month A2 disposition: `OCT01_11_DEGRADED_SOURCE`, zero extra independent source, runtime or research-window credits
+#### 2026-10-06 | OCT01_11_DEGRADED_SOURCE
+- H1 Git object `horizon-cortex/2026-10-06-H1-signal-observe.md` / `badacb45f435f80065fe85eb366b754863509c68`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-06-H2-horizon-orient.md` / `aa2f54b39a4a7a572e55ec78374f631e92d361d6`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-06.md` / `56eb22aa70926d789453433ce3d84b07d749781b`; focus: MCP continuation state
+- Date-to-week relation: W41 producer history; no premature weekly final seal
+- Source-to-relation decision: Lack of upstream external verification bounds weekly action admissibility
+- Current month A2 disposition: `OCT01_11_DEGRADED_SOURCE`, zero extra independent source, runtime or research-window credits
+#### 2026-10-07 | OCT01_11_DEGRADED_SOURCE
+- H1 Git object `horizon-cortex/2026-10-07-H1-signal-observe.md` / `e7cee61e3eeed05223981b64d41b314c8120b856`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-07-H2-horizon-orient.md` / `4fa2353e1c96d481b02c85823138c0012f9bbd12`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-07.md` / `3c3250d9d877f72363b2e8b8f799184dc977495d`; focus: cancellation ack vs settlement
+- Date-to-week relation: W41 producer history; no premature weekly final seal
+- Source-to-relation decision: Lack of upstream external verification bounds weekly action admissibility
+- Current month A2 disposition: `OCT01_11_DEGRADED_SOURCE`, zero extra independent source, runtime or research-window credits
+#### 2026-10-08 | OCT01_11_DEGRADED_SOURCE
+- H1 Git object `horizon-cortex/2026-10-08-H1-signal-observe.md` / `2803312825d90e0dc8431b97144788832fe0baea`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-08-H2-horizon-orient.md` / `bece799e9fdaf05618cf4835bbcf20ef579b6634`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-08.md` / `f3f8e80f73f641820b2d6591de03bbe8b75a8ae5`; focus: stream progress vs terminal result
+- Date-to-week relation: W41 producer history; no premature weekly final seal
+- Source-to-relation decision: Lack of upstream external verification bounds weekly action admissibility
+- Current month A2 disposition: `OCT01_11_DEGRADED_SOURCE`, zero extra independent source, runtime or research-window credits
+#### 2026-10-09 | OCT01_11_DEGRADED_SOURCE
+- H1 Git object `horizon-cortex/2026-10-09-H1-signal-observe.md` / `3ad421f2564a3c99f7c7072fac8875404271259e`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-09-H2-horizon-orient.md` / `ddc4699b3d85ca9282c4d868085f4529792cd1e7`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-09.md` / `c8816a519ded333632f7a2b707e543476082a68a`; focus: missed-event history vs current task state
+- Date-to-week relation: W41 producer history; no premature weekly final seal
+- Source-to-relation decision: Lack of upstream external verification bounds weekly action admissibility
+- Current month A2 disposition: `OCT01_11_DEGRADED_SOURCE`, zero extra independent source, runtime or research-window credits
+#### 2026-10-10 | OCT01_11_DEGRADED_SOURCE
+- H1 Git object `horizon-cortex/2026-10-10-H1-signal-observe.md` / `0b309d35767ecb2093c042eb02e4c554b5a88eb4`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-10-H2-horizon-orient.md` / `5a3fa3c0a09f6f748f20e8dbbd99d55a5ed271b3`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-10.md` / `d28220260d6fd5e0cf7bc9d18feb84cfe78b0f02`; focus: subscription acknowledgement vs receipt
+- Date-to-week relation: W41 producer history; no premature weekly final seal
+- Source-to-relation decision: Lack of upstream external verification bounds weekly action admissibility
+- Current month A2 disposition: `OCT01_11_DEGRADED_SOURCE`, zero extra independent source, runtime or research-window credits
+#### 2026-10-11 | OCT01_11_DEGRADED_SOURCE
+- H1 Git object `horizon-cortex/2026-10-11-H1-signal-observe.md` / `e470c16e37af2dc779cf9154b7dd49520e1efb98`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-11-H2-horizon-orient.md` / `ecd717d3031bc6556daf0e89c494d6d34f1d50d0`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-11.md` / `730e12f4cf858f041a72ec521e87e33bca6584d5`; focus: discovery cache vs live capability
+- Date-to-week relation: W41 producer history; no premature weekly final seal
+- Source-to-relation decision: Lack of upstream external verification bounds weekly action admissibility
+- Current month A2 disposition: `OCT01_11_DEGRADED_SOURCE`, zero extra independent source, runtime or research-window credits
+#### 2026-10-12 | FIRST_OCT_VERIFIED_PRODUCER_DATE
+- H1 Git object `horizon-cortex/2026-10-12-H1-signal-observe.md` / `8b8595311b71984448fce0d35c222d34ff3f1fbc`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-12-H2-horizon-orient.md` / `e13bb69bdd1947ebe72ec7c90f207141fdcafa13`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-12.md` / `ca52e3a1829cf4d786d70da512e9e9e93b14e42b`; focus: declared workspace roots vs enforced scope
+- Date-to-week relation: W42 open daily intake; no premature weekly final seal
+- Source-to-relation decision: New source check may update current belief, but no rewrite of older network outage
+- Current month A2 disposition: `FIRST_OCT_VERIFIED_PRODUCER_DATE`, zero extra independent source, runtime or research-window credits
+#### 2026-10-13 | POST_HOC_H1_AND_ORIGINAL_H2_BLOCKED
+- H1 Git object `horizon-cortex/2026-10-13-H1-signal-observe.md` / `4b5de2da56b98f4d5487578fb7e6a44b13ac4f91`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-13-H2-horizon-orient.md` / `b6526a008df1c39315f58e73192945509afdabbf`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-13.md` / `7ad0e3060090ba2b1df052fc7c0053baaad0d579`; focus: artifact lineage vs client acceptance
+- Date-to-week relation: W42 open daily intake; no premature weekly final seal
+- Source-to-relation decision: Later H1 substitute cannot convert original H2 BLOCKED
+- Current month A2 disposition: `POST_HOC_H1_AND_ORIGINAL_H2_BLOCKED`, zero extra independent source, runtime or research-window credits
+#### 2026-10-14 | PRODUCER_WEB_EVIDENCE_WITH_DATE_LIMITS
+- H1 Git object `horizon-cortex/2026-10-14-H1-signal-observe.md` / `96b868a36f9008428c78d3c58faa7541de520c78`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-14-H2-horizon-orient.md` / `a43e10152913b66d3dbd35c7aff78cc746c6cfd7`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-14.md` / `62886081eee36e94a6f4807acab314a6a47870bd`; focus: delegated authority vs downstream MCP
+- Date-to-week relation: W42 open daily intake; no premature weekly final seal
+- Source-to-relation decision: Producer web-access success only, no independently replicated host adoption
+- Current month A2 disposition: `PRODUCER_WEB_EVIDENCE_WITH_DATE_LIMITS`, zero extra independent source, runtime or research-window credits
+#### 2026-10-15 | PRODUCER_WEB_EVIDENCE_WITH_DATE_LIMITS
+- H1 Git object `horizon-cortex/2026-10-15-H1-signal-observe.md` / `88e05844378f0f13035d31cf2b33d3650f2968b9`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-15-H2-horizon-orient.md` / `318a87f4b7cd4b5117e866c5d3e7afe8ad5b37a5`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-15.md` / `c197c66e4a063f7830b93c9a3619f73efa25eef1`; focus: cross-agent prompting vs control
+- Date-to-week relation: W42 open daily intake; no premature weekly final seal
+- Source-to-relation decision: Producer web-access success only, no independently replicated host adoption
+- Current month A2 disposition: `PRODUCER_WEB_EVIDENCE_WITH_DATE_LIMITS`, zero extra independent source, runtime or research-window credits
+#### 2026-10-16 | PRODUCER_WEB_EVIDENCE_WITH_DATE_LIMITS
+- H1 Git object `horizon-cortex/2026-10-16-H1-signal-observe.md` / `47c3e602f7c08609394ffdfe390f2d761f533f90`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-16-H2-horizon-orient.md` / `d1f21d553193544258959771faa052fa6a2fdbfb`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-16.md` / `aa642853c559b7cecacf3c1f57bfa92812879ace`; focus: trace Ok vs task/receipt finality
+- Date-to-week relation: W42 open daily intake; no premature weekly final seal
+- Source-to-relation decision: Producer web-access success only, no independently replicated host adoption
+- Current month A2 disposition: `PRODUCER_WEB_EVIDENCE_WITH_DATE_LIMITS`, zero extra independent source, runtime or research-window credits
+#### 2026-10-17 | LATEST_NO_MATERIAL_HORIZON_PROMOTION
+- H1 Git object `horizon-cortex/2026-10-17-H1-signal-observe.md` / `d3424d7a90f1d71ddb21bc2dcfea93fd7b59813c`; original versus current publication clock preserved
+- H2 dependent Git object `horizon-cortex/2026-10-17-H2-horizon-orient.md` / `b6fa5b59435768305440b2380a58dfa959050442`; H2 is not independent confirmation by virtue of a second file
+- Parallax study `parallax/records/2026-10/2026-10-17.md` / `1c0988f4c5c216f18fc35615b9ba772d4d44c143`; focus: build attestation vs agent deployment acceptance
+- Date-to-week relation: W42 open daily intake; no premature weekly final seal
+- Source-to-relation decision: H2 repeated sources labelled noise; no new doctrine/watchlist promotion
+- Current month A2 disposition: `LATEST_NO_MATERIAL_HORIZON_PROMOTION`, zero extra independent source, runtime or research-window credits
+
+### Cross-date effect, conflict and next period
+- October H1 source-time break and later network recovery form a current chronology, not evidence that all sixteen prior research dates were source verified
+- Oct17 Parallax attestation test's 57 fixture assertions are only local synthetic policy validation, not a real verifier, deployment or accepted business task
+- Parallax Oct16 trace spans and Oct17 signatures share evidence-provenance problem but represent distinct object classes; none closes task/client acceptance gap
+- The original Oct13 INPUT_MISSING is a permanent historical outcome even though an October13 H1 file is currently retained
+- 2026-W42 covers October12–18; final H3→H4 dependency remains not due. Future weekly work must consume actual original source times, not this A2 as producer
+- A2 updates only October H6 relational owner; no separate NEXUS, host change, GitHub Actions, research CASE/NOTES credit, or source reread performed
+- Full checker and independent publisher comparison not executed here; SHA/blob and semantic source-state relations reviewed
+- A2 state 2026_10_ONE_OPEN_VERSION / 17_DATE_RELATION / OCT13_ORIGINAL_BLOCKED / ATT_METADATA_NOT_RUNTIME_ACCEPTANCE
