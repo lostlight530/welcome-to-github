@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-17
-- 最新每日研究: [构建证明与 Agent Runtime 交付验收的身份边界](records/2026-10/2026-10-17.md)
-- 每日专题: 87
+- 最新每日归属日期: 2026-10-18
+- 最新每日研究: [Durable replay 与外部 Tool side effect 幂等身份边界](records/2026-10/2026-10-18.md)
+- 每日专题: 88
 - 特殊专题: 17
-- 当前专题研究批次: 104
-- 当前专题独立执行日期窗口: 82
+- 当前专题研究批次: 105
+- 当前专题独立执行日期窗口: 83
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -349,3 +349,11 @@ Derived synchronization changes navigation/current counters only and adds zero r
 `ATTESTATION_PRESENT != PROVENANCE_VERIFIED != DEPLOYMENT_AUTHORIZED != RUNTIME_ACCEPTED`
 
 本日新增 1 research batch 和 1 independent execution window, 保存可重放测试程序与 derived index synchronization 增加 0 research credit
+
+## Current pointer — 2026-10-18
+
+2026-10-18 native Daily 研究 durable workflow replay、Activity/node retry 与外部 Tool effect-level idempotency 的身份边界, 核验 Temporal、LangChain、IETF 和 Stripe 四个独立发布者的五份官方材料, 本地 Python 3.13.5 执行 8 个 synthetic fault-injection cases 与 44 项通过断言, 结论 PARTIAL, 未执行真实 Temporal/LangGraph/Stripe runtime 或客户端业务验收, 不新增 CASE/NOTES/Special/Audit
+
+WORKFLOW_REPLAY != EXTERNAL_EFFECT_APPLIED_ONCE != BUSINESS_ACCEPTED
+
+本日新增 1 research batch 和 1 independent execution window, 可重放脚本及 derived synchronization 增加 0 additional research credit
