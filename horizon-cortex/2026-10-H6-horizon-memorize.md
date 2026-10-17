@@ -5381,7 +5381,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `DEGRADED`; input `SUCCESS`; network `NETWORK_UNAVAILABLE`; source `NONE`
 - H2 original classification sample: `noise`
 - Parallax study: `parallax/records/2026-10/2026-10-01.md`; Git blob `d54222843ecffc562b71e0f073d5aaf9cabdf86d`; topic: Completed task status / semantic success
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `DEGRADED_NETWORK_STATUS_PRESERVE`; H1 network unavailable, so later monthly reuse cannot upgrade original evidence
 #### 2026-10-02 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-02-H1-signal-observe.md`; Git blob `cfaae2e88d2d2968769292b09d74cb404bb23892`
@@ -5390,7 +5389,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `BLOCKED`; input `INPUT_MISSING`; network `NOT_RUN`; source `NONE`
 - H2 original classification sample: NO_EXTRACTABLE_CLASSIFICATION / DO_NOT_INFER_NEW_VERIFICATION
 - Parallax study: `parallax/records/2026-10/2026-10-02.md`; Git blob `e4b78b17335a41ff5c782dfd7a2cad41782d2e37`; topic: Capability versus wire interaction
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `HISTORICAL_INPUT_MISSING_PRESERVE`; H2 original INPUT_MISSING; retained H1 file is not task-time availability
 #### 2026-10-03 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-03-H1-signal-observe.md`; Git blob `6b37b2be59ef93c58c3902f12ed2fbddbdf65ddb`
@@ -5399,7 +5397,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `DEGRADED`; input `PRESENT`; network `NETWORK_UNAVAILABLE`; source `NONE`
 - H2 original classification sample: `ignore`
 - Parallax study: `parallax/records/2026-10/2026-10-03.md`; Git blob `7646cb0944f36d8e651a7034643c9d4009abcbe1`; topic: Correlation versus attempt identity
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `DEGRADED_NETWORK_STATUS_PRESERVE`; H1 network unavailable, so later monthly reuse cannot upgrade original evidence
 #### 2026-10-04 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-04-H1-signal-observe.md`; Git blob `24b91b58eaccea5ceb16e761a0f6d8d2947314cb`
@@ -5408,7 +5405,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `DEGRADED`; input `PRESENT`; network `NETWORK_UNAVAILABLE`; source `NONE`
 - H2 original classification sample: `ignore`
 - Parallax study: `parallax/records/2026-10/2026-10-04.md`; Git blob `cbd7355065b7e762b6c181de680333b2c1e05990`; topic: Handoff context identity
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `DEGRADED_NETWORK_STATUS_PRESERVE`; H1 network unavailable, so later monthly reuse cannot upgrade original evidence
 #### 2026-10-05 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-05-H1-signal-observe.md`; Git blob `43fbb2a88de0341440977cc834e10c1c0e7ff9ed`
@@ -5417,7 +5413,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `DEGRADED`; input `PRESENT`; network `NETWORK_UNAVAILABLE`; source `NONE`
 - H2 original classification sample: `ignore`
 - Parallax study: `parallax/records/2026-10/2026-10-05.md`; Git blob `0e8368829ea2ba72223202b55fa4b659c42bb3f1`; topic: Approval versus effect-time validation
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `DEGRADED_NETWORK_STATUS_PRESERVE`; H1 network unavailable, so later monthly reuse cannot upgrade original evidence
 #### 2026-10-06 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-06-H1-signal-observe.md`; Git blob `badacb45f435f80065fe85eb366b754863509c68`
@@ -5426,7 +5421,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `DEGRADED`; input `PRESENT`; network `NETWORK_UNAVAILABLE`; source `NONE`
 - H2 original classification sample: `ignore`
 - Parallax study: `parallax/records/2026-10/2026-10-06.md`; Git blob `56eb22aa70926d789453433ce3d84b07d749781b`; topic: MCP continuation identity
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `DEGRADED_NETWORK_STATUS_PRESERVE`; H1 network unavailable, so later monthly reuse cannot upgrade original evidence
 #### 2026-10-07 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-07-H1-signal-observe.md`; Git blob `e7cee61e3eeed05223981b64d41b314c8120b856`
@@ -5435,7 +5429,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `DEGRADED`; input `PRESENT`; network `NETWORK_UNAVAILABLE`; source `NONE`
 - H2 original classification sample: `ignore`
 - Parallax study: `parallax/records/2026-10/2026-10-07.md`; Git blob `3c3250d9d877f72363b2e8b8f799184dc977495d`; topic: Cancellation ack versus settlement
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `DEGRADED_NETWORK_STATUS_PRESERVE`; H1 network unavailable, so later monthly reuse cannot upgrade original evidence
 #### 2026-10-08 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-08-H1-signal-observe.md`; Git blob `2803312825d90e0dc8431b97144788832fe0baea`
@@ -5444,7 +5437,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `DEGRADED`; input `PRESENT`; network `NETWORK_UNAVAILABLE`; source `NONE`
 - H2 original classification sample: `ignore`
 - Parallax study: `parallax/records/2026-10/2026-10-08.md`; Git blob `f3f8e80f73f641820b2d6591de03bbe8b75a8ae5`; topic: Stream progress versus terminal result
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `DEGRADED_NETWORK_STATUS_PRESERVE`; H1 network unavailable, so later monthly reuse cannot upgrade original evidence
 #### 2026-10-09 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-09-H1-signal-observe.md`; Git blob `3ad421f2564a3c99f7c7072fac8875404271259e`
@@ -5453,7 +5445,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `DEGRADED`; input `PRESENT`; network `NETWORK_UNAVAILABLE`; source `NONE`
 - H2 original classification sample: `ignore`
 - Parallax study: `parallax/records/2026-10/2026-10-09.md`; Git blob `c8816a519ded333632f7a2b707e543476082a68a`; topic: Current-state versus missed-event recovery
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `DEGRADED_NETWORK_STATUS_PRESERVE`; H1 network unavailable, so later monthly reuse cannot upgrade original evidence
 #### 2026-10-10 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-10-H1-signal-observe.md`; Git blob `0b309d35767ecb2093c042eb02e4c554b5a88eb4`
@@ -5462,7 +5453,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `DEGRADED`; input `PRESENT`; network `NETWORK_UNAVAILABLE (INHERITED_FROM_H1; NOT_NEW_EXTERNAL_SEARCH_CLAIM)`; source `NONE`
 - H2 original classification sample: `IGNORE_FOR_PROMOTION / RETAIN_AS_DEGRADED_OBSERVATION`
 - Parallax study: `parallax/records/2026-10/2026-10-10.md`; Git blob `d28220260d6fd5e0cf7bc9d18feb84cfe78b0f02`; topic: Subscription ack versus end-to-end delivery
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `DEGRADED_NETWORK_STATUS_PRESERVE`; H1 network unavailable, so later monthly reuse cannot upgrade original evidence
 #### 2026-10-11 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-11-H1-signal-observe.md`; Git blob `e470c16e37af2dc779cf9154b7dd49520e1efb98`
@@ -5471,7 +5461,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `DEGRADED`; input `PRESENT`; network `NETWORK_UNAVAILABLE (INHERITED_FROM_H1; H2_EXTERNAL_VERIFICATION_NOT_RUN)`; source `NONE`
 - H2 original classification sample: `ignore`
 - Parallax study: `parallax/records/2026-10/2026-10-11.md`; Git blob `730e12f4cf858f041a72ec521e87e33bca6584d5`; topic: Discovery cache versus current capability
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `DEGRADED_NETWORK_STATUS_PRESERVE`; H1 network unavailable, so later monthly reuse cannot upgrade original evidence
 #### 2026-10-12 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-12-H1-signal-observe.md`; Git blob `8b8595311b71984448fce0d35c222d34ff3f1fbc`
@@ -5480,7 +5469,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `SUCCESS`; input `PRESENT`; network `NETWORK_VERIFIED`; source `PRESENT`
 - H2 original classification sample: `watchlist`, `strategic signal`, `ignore`
 - Parallax study: `parallax/records/2026-10/2026-10-12.md`; Git blob `ca52e3a1829cf4d786d70da512e9e9e93b14e42b`; topic: Workspace root declaration versus enforcement
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `NO_UNSUPPORTED_EVIDENCE_PROMOTION`; Producer-reported H1/H2 web access; no independent verification credit
 #### 2026-10-13 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-13-H1-signal-observe.md`; Git blob `4b5de2da56b98f4d5487578fb7e6a44b13ac4f91`
@@ -5489,7 +5477,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `BLOCKED`; input `INPUT_MISSING`; network `NOT_RUN`; source `NONE`
 - H2 original classification sample: NO_EXTRACTABLE_CLASSIFICATION / DO_NOT_INFER_NEW_VERIFICATION
 - Parallax study: `parallax/records/2026-10/2026-10-13.md`; Git blob `7ad0e3060090ba2b1df052fc7c0053baaad0d579`; topic: A2A artifact lineage versus acceptance
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `HISTORICAL_INPUT_MISSING_PRESERVE`; H1 is a later independent substitute; H2 original BLOCKED must persist
 #### 2026-10-14 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-14-H1-signal-observe.md`; Git blob `96b868a36f9008428c78d3c58faa7541de520c78`
@@ -5498,7 +5485,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `SUCCESS`; input `PRESENT`; network `NETWORK_VERIFIED`; source `PRESENT`
 - H2 original classification sample: `watchlist`, `watchlist`, `watchlist`
 - Parallax study: `parallax/records/2026-10/2026-10-14.md`; Git blob `62886081eee36e94a6f4807acab314a6a47870bd`; topic: A2A authorization versus MCP delegation
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `NO_UNSUPPORTED_EVIDENCE_PROMOTION`; Producer-reported H1/H2 web access; no independent verification credit
 #### 2026-10-15 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-15-H1-signal-observe.md`; Git blob `88e05844378f0f13035d31cf2b33d3650f2968b9`
@@ -5507,7 +5493,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `SUCCESS`; input `PRESENT`; network `NETWORK_VERIFIED`; source `PRESENT`
 - H2 original classification sample: `watchlist`, `watchlist`, `watchlist`
 - Parallax study: `parallax/records/2026-10/2026-10-15.md`; Git blob `c197c66e4a063f7830b93c9a3619f73efa25eef1`; topic: Cross-agent tool prompt versus control
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `NO_UNSUPPORTED_EVIDENCE_PROMOTION`; Producer-reported H1/H2 web access; no independent verification credit
 #### 2026-10-16 | H1 → H2; Parallax separated
 - H1 retained object: `horizon-cortex/2026-10-16-H1-signal-observe.md`; Git blob `47c3e602f7c08609394ffdfe390f2d761f533f90`
@@ -5516,7 +5501,6 @@ DUPLICATE_EVIDENCE_CREDIT
 - H2 original header evidence: status `SUCCESS`; input `PRESENT`; network `NETWORK_VERIFIED`; source `PRESENT`
 - H2 original classification sample: `watchlist`, `strategic signal`, `noise`
 - Parallax study: `parallax/records/2026-10/2026-10-16.md`; Git blob `aa642853c559b7cecacf3c1f57bfa92812879ace`; topic: Trace correlation versus task delivery proof
-- Native-to-research boundary: Parallax topic is separately observed controlled research, not a same-source corroboration or host runtime certification
 - A1 decision: `NO_UNSUPPORTED_EVIDENCE_PROMOTION`; Producer-reported H1/H2 web access; no independent verification credit
 
 ### A1 acceptance and handoff
