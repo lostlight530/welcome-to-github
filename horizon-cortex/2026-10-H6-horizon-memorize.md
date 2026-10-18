@@ -5654,3 +5654,217 @@ DUPLICATE_EVIDENCE_CREDIT
 - A2 updates only October H6 relational owner; no separate NEXUS, host change, GitHub Actions, research CASE/NOTES credit, or source reread performed
 - Full checker and independent publisher comparison not executed here; SHA/blob and semantic source-state relations reviewed
 - A2 state 2026_10_ONE_OPEN_VERSION / 17_DATE_RELATION / OCT13_ORIGINAL_BLOCKED / ATT_METADATA_NOT_RUNTIME_ACCEPTANCE
+
+## 2026-10-18 A1 | full October 01–17 original-source and merge-lineage reconciliation
+- Audit role: INDEPENDENT_GPT_A1 / first-round repository maintenance; logical cutoff 2026-10-17 Asia/Shanghai
+- Base main SHA: c4cbb296f704194fb570232664d1c770504565cb; canonical owner pre-append blob: 6ccdf200bf654818dcc2e3056823f41d8bae9500
+- Scope: native Daily pair + independent research Daily, historically due weekly documents and exact current month owner
+- Evidence surfaces: Git main tree path/blob identities, existing October owner source-time adjudications, GitHub PR created/merged metadata
+- Distinct grains: logical date / actual execution / PR delivery / merged Git object / current file blob / externally verified result
+- Historical invariant: existing primary research and blocked records unchanged; this A1 only adds an inspectable owner-level provenance ledger
+- Denominator is 17 assigned dates × 3 expected native-file identities = 51; file existence is not proof of original task-time availability
+- The October 18 native outputs already on main are intentionally excluded here; A2 will consume them only after A1 merge
+### Date-wise native-file presence and dependency decisions
+- 2026-10-01: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-02: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-03: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-04: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-05: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-06: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-07: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-08: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-09: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-10: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-11: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-12: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-13: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-14: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-15: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-16: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+- 2026-10-17: 3/3 exact current-main native paths; missing=NONE; original run success, availability and independent reproduction remain source-time dependent
+### Original file inventory, distinct blob identities and evidence decisions
+- `horizon-cortex/2026-10-01-H1-signal-observe.md` | blob=d6600cc374d70cea8217b0c8ad5e9738526a6f2b | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-01-H2-horizon-orient.md` | blob=26be2924210fa2c9ce347345909ea5b97fc5afe4 | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-02-H1-signal-observe.md` | blob=cfaae2e88d2d2968769292b09d74cb404bb23892 | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-02-H2-horizon-orient.md` | blob=2c887297c188136786ba092922901d35b0287e6d | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-03-H1-signal-observe.md` | blob=6b37b2be59ef93c58c3902f12ed2fbddbdf65ddb | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-03-H2-horizon-orient.md` | blob=0e06a2eeff4253fe21752e6e76bd4882e92240f8 | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-04-H1-signal-observe.md` | blob=24b91b58eaccea5ceb16e761a0f6d8d2947314cb | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-04-H2-horizon-orient.md` | blob=245cd66c944188c1b56ed5736b34f28514964c4b | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-05-H1-signal-observe.md` | blob=43fbb2a88de0341440977cc834e10c1c0e7ff9ed | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-05-H2-horizon-orient.md` | blob=b52086ceb13f06c3ad919cd3ba1e5443cd96d938 | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-06-H1-signal-observe.md` | blob=badacb45f435f80065fe85eb366b754863509c68 | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-06-H2-horizon-orient.md` | blob=aa2f54b39a4a7a572e55ec78374f631e92d361d6 | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-07-H1-signal-observe.md` | blob=e7cee61e3eeed05223981b64d41b314c8120b856 | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-07-H2-horizon-orient.md` | blob=4fa2353e1c96d481b02c85823138c0012f9bbd12 | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-08-H1-signal-observe.md` | blob=2803312825d90e0dc8431b97144788832fe0baea | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-08-H2-horizon-orient.md` | blob=bece799e9fdaf05618cf4835bbcf20ef579b6634 | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-09-H1-signal-observe.md` | blob=3ad421f2564a3c99f7c7072fac8875404271259e | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-09-H2-horizon-orient.md` | blob=ddc4699b3d85ca9282c4d868085f4529792cd1e7 | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-10-H1-signal-observe.md` | blob=0b309d35767ecb2093c042eb02e4c554b5a88eb4 | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-10-H2-horizon-orient.md` | blob=5a3fa3c0a09f6f748f20e8dbbd99d55a5ed271b3 | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-11-H1-signal-observe.md` | blob=e470c16e37af2dc779cf9154b7dd49520e1efb98 | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-11-H2-horizon-orient.md` | blob=ecd717d3031bc6556daf0e89c494d6d34f1d50d0 | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-12-H1-signal-observe.md` | blob=8b8595311b71984448fce0d35c222d34ff3f1fbc | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-12-H2-horizon-orient.md` | blob=e13bb69bdd1947ebe72ec7c90f207141fdcafa13 | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-13-H1-signal-observe.md` | blob=4b5de2da56b98f4d5487578fb7e6a44b13ac4f91 | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-13-H2-horizon-orient.md` | blob=b6526a008df1c39315f58e73192945509afdabbf | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-14-H1-signal-observe.md` | blob=96b868a36f9008428c78d3c58faa7541de520c78 | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-14-H2-horizon-orient.md` | blob=a43e10152913b66d3dbd35c7aff78cc746c6cfd7 | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-15-H1-signal-observe.md` | blob=88e05844378f0f13035d31cf2b33d3650f2968b9 | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-15-H2-horizon-orient.md` | blob=318a87f4b7cd4b5117e866c5d3e7afe8ad5b37a5 | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-16-H1-signal-observe.md` | blob=47c3e602f7c08609394ffdfe390f2d761f533f90 | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-16-H2-horizon-orient.md` | blob=d1f21d553193544258959771faa052fa6a2fdbfb | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-17-H1-signal-observe.md` | blob=d3424d7a90f1d71ddb21bc2dcfea93fd7b59813c | H1 OBSERVE: source network/evidence validity; no runtime adoption | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-10-17-H2-horizon-orient.md` | blob=b6fa5b59435768305440b2380a58dfa959050442 | H2 ORIENT: downstream dependence; time-of-run source availability governs | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `horizon-cortex/2026-W40-H3-position-decide.md` | blob=c9023aaf307b22e3334bd58a4979345a4ab61eae | WEEKLY DECIDE: only inherited previous full-week native evidence | prior-owner-exact-blob=NOT_INDEXED_OR_CHANGED | APPEND_RELATION_TO_OWNER_ONLY; file body unchanged
+- `horizon-cortex/2026-W40-H4-narrative-act.md` | blob=b56f47722f8c365f796ea79eb16989dd46e492ce | WEEKLY ACT: do not infer execution from decision prose | prior-owner-exact-blob=NOT_INDEXED_OR_CHANGED | APPEND_RELATION_TO_OWNER_ONLY; file body unchanged
+- `horizon-cortex/2026-W41-H3-position-decide.md` | blob=0c5b6da6573f3433e631da4667585db5669339c7 | WEEKLY DECIDE: only inherited previous full-week native evidence | prior-owner-exact-blob=NOT_INDEXED_OR_CHANGED | APPEND_RELATION_TO_OWNER_ONLY; file body unchanged
+- `horizon-cortex/2026-W41-H4-narrative-act.md` | blob=4b77f8277554af3615eafa88e0f3f99a08c4c23a | WEEKLY ACT: do not infer execution from decision prose | prior-owner-exact-blob=NOT_INDEXED_OR_CHANGED | APPEND_RELATION_TO_OWNER_ONLY; file body unchanged
+- `parallax/records/2026-10.md` | blob=4c1c1cb63ef89bb3b1cdc1951ae3cfbb0bfa3de2 | MONTH_OWNER: derived evidence routing, not an additional native execution | prior-owner-exact-blob=NOT_INDEXED_OR_CHANGED | APPEND_RELATION_TO_OWNER_ONLY; file body unchanged
+- `parallax/records/2026-10/2026-10-01.md` | blob=d54222843ecffc562b71e0f073d5aaf9cabdf86d | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-02.md` | blob=e4b78b17335a41ff5c782dfd7a2cad41782d2e37 | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-03.md` | blob=7646cb0944f36d8e651a7034643c9d4009abcbe1 | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-04.md` | blob=cbd7355065b7e762b6c181de680333b2c1e05990 | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-05.md` | blob=0e8368829ea2ba72223202b55fa4b659c42bb3f1 | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-06.md` | blob=56eb22aa70926d789453433ce3d84b07d749781b | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-07.md` | blob=3c3250d9d877f72363b2e8b8f799184dc977495d | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-08.md` | blob=f3f8e80f73f641820b2d6591de03bbe8b75a8ae5 | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-09.md` | blob=c8816a519ded333632f7a2b707e543476082a68a | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-10.md` | blob=d28220260d6fd5e0cf7bc9d18feb84cfe78b0f02 | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-11.md` | blob=730e12f4cf858f041a72ec521e87e33bca6584d5 | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-12.md` | blob=ca52e3a1829cf4d786d70da512e9e9e93b14e42b | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-13.md` | blob=7ad0e3060090ba2b1df052fc7c0053baaad0d579 | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-14.md` | blob=62886081eee36e94a6f4807acab314a6a47870bd | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-15.md` | blob=c197c66e4a063f7830b93c9a3619f73efa25eef1 | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-16.md` | blob=aa642853c559b7cecacf3c1f57bfa92812879ace | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+- `parallax/records/2026-10/2026-10-17.md` | blob=1c0988f4c5c216f18fc35615b9ba772d4d44c143 | PARALLAX: bounded evidence identity, independent native research window; CASE/NOTES not automatically promoted | prior-owner-exact-blob=MATCH | NO_FOLLOW_UP; file body unchanged
+### GitHub original and historical PR provenance (UTC creation, separate from logical task date)
+- PR #665 | created=2026-10-01T01:23:26Z | merged=2026-10-01T01:51:57Z | NATIVE_OR_RESEARCH | H2 Daily Horizon Orient 2026-10-01
+- PR #666 | created=2026-10-01T08:26:51Z | merged=2026-10-01T08:55:23Z | OTHER_PROJECT | H5 Monthly Signal Reflect
+- PR #667 | created=2026-10-01T10:38:35Z | merged=2026-10-01T12:46:20Z | OTHER_PROJECT | Update 2026-09 H6 Horizon Memorize
+- PR #668 | created=2026-10-01T13:22:37Z | merged=2026-10-01T13:22:41Z | MAINTENANCE_OR_CORRECTION | A1: initialize October relational owner — Horizon
+- PR #669 | created=2026-10-01T13:23:02Z | merged=2026-10-01T13:23:06Z | MAINTENANCE_OR_CORRECTION | A2: integrate October 1 Horizon task state
+- PR #670 | created=2026-10-01T20:06:52Z | merged=2026-10-01T22:18:10Z | NATIVE_OR_RESEARCH | parallax: 2026-10-02 wire interaction identity
+- PR #671 | created=2026-10-01T23:48:45Z | merged=2026-10-02T02:28:51Z | NATIVE_OR_RESEARCH | chore(horizon): add daily H1 signal observe for 2026-10-02
+- PR #672 | created=2026-10-02T01:14:51Z | merged=2026-10-02T02:30:46Z | NATIVE_OR_RESEARCH | Add 2026-10-02 H2 Horizon Orient with H1 Missing Protocol
+- PR #673 | created=2026-10-02T13:13:11Z | merged=2026-10-02T13:13:35Z | MAINTENANCE_OR_CORRECTION | October A1: full Horizon / Parallax review through 2026-10-01
+- PR #674 | created=2026-10-02T13:23:56Z | merged=2026-10-02T13:24:13Z | MAINTENANCE_OR_CORRECTION | October A2: reconcile Horizon / Parallax through 2026-10-02
+- PR #675 | created=2026-10-02T13:51:01Z | merged=2026-10-02T14:26:13Z | NATIVE_OR_RESEARCH | September D30 Independent GPT audit — Welcome / Horizon / Parallax
+- PR #676 | created=2026-10-02T23:10:45Z | merged=2026-10-02T23:12:48Z | NATIVE_OR_RESEARCH | parallax: 2026-10-03 correlation vs execution attempt identity
+- PR #677 | created=2026-10-03T00:02:49Z | merged=2026-10-03T00:11:13Z | NATIVE_OR_RESEARCH | docs(horizon): add H1 daily signal observe for 2026-10-03 under missing protocol
+- PR #678 | created=2026-10-03T01:34:07Z | merged=2026-10-03T04:33:23Z | NATIVE_OR_RESEARCH | Create H2 Daily Horizon Orient for 2026-10-03
+- PR #679 | created=2026-10-03T04:43:18Z | merged=2026-10-03T04:43:22Z | MAINTENANCE_OR_CORRECTION | October A1: full Horizon / Parallax review through 2026-10-02
+- PR #680 | created=2026-10-03T04:43:52Z | merged=2026-10-03T04:43:55Z | MAINTENANCE_OR_CORRECTION | October A2: reconcile Horizon / Parallax through 2026-10-03
+- PR #681 | created=2026-10-03T12:43:26Z | merged=2026-10-03T12:43:55Z | MAINTENANCE_OR_CORRECTION | October A1 successor: recheck Horizon / Parallax through 2026-10-02
+- PR #682 | created=2026-10-03T12:50:29Z | merged=2026-10-03T12:50:53Z | MAINTENANCE_OR_CORRECTION | October A2 successor: reconcile Horizon / Parallax current month
+- PR #683 | created=2026-10-03T23:38:37Z | merged=2026-10-03T23:39:30Z | NATIVE_OR_RESEARCH | parallax: 2026-10-04 handoff input planes identity
+- PR #684 | created=2026-10-04T00:11:17Z | merged=2026-10-04T00:17:14Z | NATIVE_OR_RESEARCH | Add H1 Daily Signal Observe for 2026-10-04
+- PR #685 | created=2026-10-04T01:16:14Z | merged=2026-10-04T01:17:14Z | NATIVE_OR_RESEARCH | Add H2 horizon orient document for 2026-10-04
+- PR #686 | created=2026-10-04T03:14:31Z | merged=2026-10-04T03:44:15Z | NATIVE_OR_RESEARCH | Update H4 W39 narrative act missing H3 input
+- PR #687 | created=2026-10-04T05:17:27Z | merged=2026-10-04T08:43:38Z | NATIVE_OR_RESEARCH | Add H3 Weekly Position Decide for 2026-W39
+- PR #688 | created=2026-10-04T06:08:27Z | merged=NOT_MERGED | NATIVE_OR_RESEARCH | Add W40 H4 Weekly Narrative Act
+- PR #689 | created=2026-10-04T08:47:43Z | merged=2026-10-04T08:48:05Z | NATIVE_OR_RESEARCH | Add W40 H4 Weekly Narrative Act
+- PR #690 | created=2026-10-04T09:08:50Z | merged=2026-10-04T09:08:56Z | MAINTENANCE_OR_CORRECTION | October A1: full Horizon / Parallax review through 2026-10-03
+- PR #691 | created=2026-10-04T09:19:53Z | merged=2026-10-04T09:19:58Z | MAINTENANCE_OR_CORRECTION | October A2: reconcile Horizon / Parallax through 2026-10-04
+- PR #692 | created=2026-10-04T10:18:32Z | merged=2026-10-04T12:01:34Z | NATIVE_OR_RESEARCH | docs: establish open research production framework
+- PR #693 | created=2026-10-04T22:37:46Z | merged=2026-10-04T22:38:41Z | NATIVE_OR_RESEARCH | parallax: 2026-10-05 approval validation identity
+- PR #694 | created=2026-10-05T00:06:19Z | merged=2026-10-05T00:28:04Z | NATIVE_OR_RESEARCH | Create H1 Daily Signal Observe for 2026-10-05
+- PR #695 | created=2026-10-05T01:44:52Z | merged=2026-10-05T04:55:14Z | NATIVE_OR_RESEARCH | Generate H2 Daily Horizon Orient for 2026-10-05
+- PR #696 | created=2026-10-05T13:43:18Z | merged=2026-10-05T13:44:39Z | MAINTENANCE_OR_CORRECTION | October A1: full Horizon / Parallax + open-research review through 2026-10-04
+- PR #697 | created=2026-10-05T13:51:32Z | merged=2026-10-05T13:51:39Z | MAINTENANCE_OR_CORRECTION | October A2: reconcile Horizon / Parallax + open-research through 2026-10-05
+- PR #698 | created=2026-10-05T23:18:55Z | merged=2026-10-05T23:19:18Z | NATIVE_OR_RESEARCH | parallax: add 2026-10-06 Daily research
+- PR #699 | created=2026-10-06T00:59:58Z | merged=2026-10-06T01:03:39Z | NATIVE_OR_RESEARCH | feat(horizon): create H1 daily observe file for 2026-10-06
+- PR #700 | created=2026-10-06T01:30:12Z | merged=2026-10-06T01:49:09Z | NATIVE_OR_RESEARCH | Add 2026-10-06 H2 Horizon Orient file
+- PR #701 | created=2026-10-06T08:34:09Z | merged=2026-10-06T08:43:13Z | MAINTENANCE_OR_CORRECTION | October A1: full Horizon / Parallax review through 2026-10-05
+- PR #702 | created=2026-10-06T08:45:36Z | merged=2026-10-06T08:53:31Z | MAINTENANCE_OR_CORRECTION | October A2: reconcile Horizon / Parallax through 2026-10-06
+- PR #703 | created=2026-10-06T23:06:23Z | merged=2026-10-06T23:08:49Z | NATIVE_OR_RESEARCH | parallax: add 2026-10-07 cancellation settlement Daily
+- PR #704 | created=2026-10-06T23:43:57Z | merged=2026-10-06T23:46:28Z | NATIVE_OR_RESEARCH | Add 2026-10-07 H1 daily signal observe report
+- PR #705 | created=2026-10-07T01:22:17Z | merged=2026-10-07T05:45:23Z | NATIVE_OR_RESEARCH | Create 2026-10-07 H2 Horizon Orient report
+- PR #706 | created=2026-10-07T07:14:01Z | merged=2026-10-07T07:19:21Z | MAINTENANCE_OR_CORRECTION | October A1: full Horizon / Parallax review through 2026-10-06
+- PR #707 | created=2026-10-07T07:21:44Z | merged=2026-10-07T07:28:10Z | MAINTENANCE_OR_CORRECTION | October A2: reconcile Horizon / Parallax through 2026-10-07
+- PR #708 | created=2026-10-07T12:24:45Z | merged=2026-10-07T13:13:32Z | OTHER_PROJECT | Archive task records and workflow identity through 2026-10-07
+- PR #709 | created=2026-10-07T19:59:04Z | merged=2026-10-07T23:22:13Z | NATIVE_OR_RESEARCH | parallax: add 2026-10-08 Daily research
+- PR #710 | created=2026-10-08T00:05:46Z | merged=2026-10-08T00:11:25Z | NATIVE_OR_RESEARCH | Add H1 Daily Signal Observe for 2026-10-08
+- PR #711 | created=2026-10-08T00:11:28Z | merged=2026-10-08T02:01:43Z | NATIVE_OR_RESEARCH | parallax: strengthen 2026-10-08 Daily evidence
+- PR #712 | created=2026-10-08T01:44:17Z | merged=2026-10-08T04:23:04Z | NATIVE_OR_RESEARCH | feat(horizon-cortex): add H2 Daily Horizon Orient for 2026-10-08
+- PR #713 | created=2026-10-08T07:29:07Z | merged=2026-10-08T07:35:55Z | MAINTENANCE_OR_CORRECTION | October A1: full Horizon / Parallax review through 2026-10-07
+- PR #714 | created=2026-10-08T07:38:28Z | merged=2026-10-08T07:45:35Z | MAINTENANCE_OR_CORRECTION | October A2: reconcile Horizon / Parallax through 2026-10-08
+- PR #715 | created=2026-10-09T00:09:25Z | merged=2026-10-09T00:16:36Z | NATIVE_OR_RESEARCH | H1 Daily Signal Observe 2026-10-09
+- PR #716 | created=2026-10-09T00:22:32Z | merged=2026-10-09T00:23:09Z | NATIVE_OR_RESEARCH | parallax: add 2026-10-09 Daily research
+- PR #717 | created=2026-10-09T01:45:14Z | merged=2026-10-09T02:27:01Z | NATIVE_OR_RESEARCH | Add H2 Daily Horizon Orient for 2026-10-09
+- PR #718 | created=2026-10-09T08:34:47Z | merged=2026-10-09T08:39:48Z | MAINTENANCE_OR_CORRECTION | October A1: Horizon/Parallax full owner review through 2026-10-08
+- PR #719 | created=2026-10-09T08:53:17Z | merged=2026-10-09T08:56:10Z | MAINTENANCE_OR_CORRECTION | October A2: Horizon/Parallax relation through 2026-10-09
+- PR #720 | created=2026-10-09T12:14:43Z | merged=2026-10-09T13:11:51Z | OTHER_PROJECT | docs(agi): recover original and next workflow generations
+- PR #721 | created=2026-10-09T23:38:13Z | merged=2026-10-09T23:38:27Z | NATIVE_OR_RESEARCH | parallax: add 2026-10-10 Daily research
+- PR #722 | created=2026-10-10T00:02:26Z | merged=2026-10-10T00:38:54Z | NATIVE_OR_RESEARCH | Add 2026-10-10 H1 Daily Signal Observe (Degraded State)
+- PR #723 | created=2026-10-10T08:46:21Z | merged=2026-10-10T08:46:39Z | NATIVE_OR_RESEARCH | Recover 2026-10-10 H2 Orient from exact-date degraded H1
+- PR #724 | created=2026-10-10T08:52:24Z | merged=2026-10-10T08:54:10Z | MAINTENANCE_OR_CORRECTION | October 10 A1: Horizon Parallax review through October 9
+- PR #725 | created=2026-10-10T09:03:57Z | merged=2026-10-10T09:05:53Z | MAINTENANCE_OR_CORRECTION | October 10 A2: Horizon Parallax relation through October 10
+- PR #726 | created=2026-10-10T15:05:54Z | merged=2026-10-10T15:08:04Z | OTHER_PROJECT | docs: reconcile concept DOI and three archived release identities
+- PR #727 | created=2026-10-10T23:28:43Z | merged=2026-10-10T23:29:10Z | NATIVE_OR_RESEARCH | parallax: add 2026-10-11 Daily research
+- PR #728 | created=2026-10-11T00:04:16Z | merged=2026-10-11T00:09:19Z | NATIVE_OR_RESEARCH | Add 2026-10-11 H1 signal observe report
+- PR #729 | created=2026-10-11T02:22:55Z | merged=2026-10-11T02:24:43Z | NATIVE_OR_RESEARCH | horizon: recover 2026-10-11 H2 Orient after Jules failure
+- PR #730 | created=2026-10-11T05:24:32Z | merged=2026-10-11T07:36:19Z | NATIVE_OR_RESEARCH | feat: add 2026-W40 H3 position decide
+- PR #731 | created=2026-10-11T06:45:30Z | merged=NOT_MERGED | NATIVE_OR_RESEARCH | chore: add W41 H4 Narrative Act in blocked state
+- PR #732 | created=2026-10-11T07:52:07Z | merged=2026-10-11T07:53:40Z | MAINTENANCE_OR_CORRECTION | October 11 A1: Horizon Parallax full review through October 10
+- PR #733 | created=2026-10-11T08:00:07Z | merged=2026-10-11T08:01:45Z | MAINTENANCE_OR_CORRECTION | October 11 A2: Horizon Parallax relation through October 11
+- PR #734 | created=2026-10-11T23:21:45Z | merged=2026-10-11T23:29:36Z | NATIVE_OR_RESEARCH | parallax: 2026-10-12 Daily — roots declaration vs enforcement
+- PR #735 | created=2026-10-12T00:13:01Z | merged=2026-10-12T00:25:41Z | NATIVE_OR_RESEARCH | chore: execute H1 daily signal observe for 2026-10-12
+- PR #736 | created=2026-10-12T01:29:22Z | merged=2026-10-12T01:44:18Z | NATIVE_OR_RESEARCH | H2 Daily Horizon Orient (2026-10-12)
+- PR #737 | created=2026-10-12T03:18:45Z | merged=2026-10-12T03:54:56Z | OTHER_PROJECT | docs(agi): complete selected historical NEXUS workflow lineage
+- PR #738 | created=2026-10-12T04:57:52Z | merged=2026-10-12T05:02:35Z | OTHER_PROJECT | docs(agi): preserve selected historical workflow YAML backups
+- PR #739 | created=2026-10-12T05:19:22Z | merged=2026-10-12T09:11:22Z | OTHER_PROJECT | docs(agi): preserve historical lifecycle revisions with archive ingestion guard
+- PR #740 | created=2026-10-12T11:02:08Z | merged=2026-10-12T11:05:56Z | MAINTENANCE_OR_CORRECTION | A1 2026-10-12: October maintenance through 2026-10-11
+- PR #741 | created=2026-10-12T11:07:23Z | merged=2026-10-12T11:10:47Z | MAINTENANCE_OR_CORRECTION | A2 2026-10-12: October maintenance through 2026-10-12
+- PR #742 | created=2026-10-12T23:04:35Z | merged=2026-10-12T23:07:24Z | NATIVE_OR_RESEARCH | parallax: 2026-10-13 Daily — artifact lineage and client acceptance
+- PR #743 | created=2026-10-13T01:21:41Z | merged=2026-10-13T01:27:39Z | NATIVE_OR_RESEARCH | Add 2026-10-13-H2-horizon-orient.md following H1 Missing Protocol
+- PR #744 | created=2026-10-13T08:15:27Z | merged=2026-10-13T08:18:57Z | MAINTENANCE_OR_CORRECTION | A1 2026-10-13: October maintenance through 2026-10-12
+- PR #745 | created=2026-10-13T08:20:32Z | merged=2026-10-13T08:24:06Z | MAINTENANCE_OR_CORRECTION | A2 2026-10-13: October maintenance through 2026-10-13
+- PR #746 | created=2026-10-13T08:34:02Z | merged=2026-10-13T08:38:16Z | NATIVE_OR_RESEARCH | Final A1 2026-10-13: reconcile through 2026-10-12
+- PR #747 | created=2026-10-13T08:40:17Z | merged=2026-10-13T08:44:41Z | MAINTENANCE_OR_CORRECTION | Final A2 2026-10-13: current month through 2026-10-13
+- PR #748 | created=2026-10-13T09:50:47Z | merged=2026-10-13T09:50:59Z | NATIVE_OR_RESEARCH | W41 Horizon H3: recover 7/7 paths, preserve 14 degraded inputs, NO_DECISION
+- PR #749 | created=2026-10-13T09:51:56Z | merged=2026-10-13T09:52:05Z | NATIVE_OR_RESEARCH | W41 H4: preserve NO_ACTIONABLE_DECISION after merged H3 recovery
+- PR #750 | created=2026-10-13T10:03:54Z | merged=2026-10-13T10:04:03Z | NATIVE_OR_RESEARCH | Horizon H1 10/13: dated external-source recovery, original H2 BLOCKED preserved
+- PR #751 | created=2026-10-13T22:35:11Z | merged=2026-10-13T22:54:34Z | NATIVE_OR_RESEARCH | Parallax Daily 2026-10-14: delegated authority identity boundaries
+- PR #752 | created=2026-10-13T23:40:36Z | merged=2026-10-13T23:56:38Z | NATIVE_OR_RESEARCH | Add 2026-10-14 H1 Daily Signal Observe
+- PR #753 | created=2026-10-14T02:08:14Z | merged=2026-10-14T02:31:12Z | NATIVE_OR_RESEARCH | H2 Daily Horizon Orient (2026-10-14)
+- PR #754 | created=2026-10-14T07:22:59Z | merged=2026-10-14T07:25:22Z | NATIVE_OR_RESEARCH | fix(horizon): record 2026-10-14 H2 execution-time evidence gap
+- PR #755 | created=2026-10-14T07:59:56Z | merged=2026-10-14T08:04:11Z | MAINTENANCE_OR_CORRECTION | A1 2026-10-14: Horizon H1/H2 continuity and producer-time gate
+- PR #756 | created=2026-10-14T09:01:11Z | merged=2026-10-14T09:02:51Z | MAINTENANCE_OR_CORRECTION | A2 2026-10-14: full-month Horizon/Parallax relation through N
+- PR #757 | created=2026-10-14T09:01:27Z | merged=NOT_MERGED | MAINTENANCE_OR_CORRECTION | A2 2026-10-14: complete Horizon October relation and H2 timing boundary
+- PR #758 | created=2026-10-14T09:05:48Z | merged=2026-10-14T09:09:31Z | OTHER_PROJECT | D14 2026-10-14: Horizon provenance pattern formation
+- PR #759 | created=2026-10-14T09:09:19Z | merged=NOT_MERGED | OTHER_PROJECT | D14 2026-10-14: independent pattern formation audit
+- PR #760 | created=2026-10-14T09:15:30Z | merged=2026-10-14T09:16:45Z | NATIVE_OR_RESEARCH | correct(d14): recover Horizon H2 states omitted by audit matrix
+- PR #761 | created=2026-10-14T23:16:02Z | merged=2026-10-14T23:18:21Z | NATIVE_OR_RESEARCH | parallax(daily): 2026-10-15 tool hints and trust boundary
+- PR #762 | created=2026-10-15T00:03:51Z | merged=2026-10-15T00:20:18Z | NATIVE_OR_RESEARCH | Add 2026-10-15 H1 Daily Signal Observe
+- PR #763 | created=2026-10-15T01:50:00Z | merged=2026-10-15T07:00:44Z | NATIVE_OR_RESEARCH | Add H2 Daily Horizon Orient for 2026-10-15
+- PR #764 | created=2026-10-15T01:56:43Z | merged=2026-10-15T02:09:13Z | NATIVE_OR_RESEARCH | docs(open-science): align archived checkpoint, citation and research reuse
+- PR #765 | created=2026-10-15T10:18:18Z | merged=2026-10-15T10:47:12Z | MAINTENANCE_OR_CORRECTION | A1 2026-10-15: H1/H2 original evidence coverage through Oct 14
+- PR #766 | created=2026-10-15T10:51:14Z | merged=2026-10-15T11:11:55Z | MAINTENANCE_OR_CORRECTION | A2 2026-10-15: Horizon full October H1/H2 and Parallax source relation
+- PR #767 | created=2026-10-15T15:41:00Z | merged=2026-10-15T15:50:35Z | NATIVE_OR_RESEARCH | docs(open-science): strengthen research handoff through Windows maintenance
+- PR #768 | created=2026-10-15T22:46:11Z | merged=2026-10-15T22:47:43Z | NATIVE_OR_RESEARCH | parallax(daily): 2026-10-16 trace and task evidence identity
+- PR #769 | created=2026-10-16T00:18:33Z | merged=2026-10-16T00:39:58Z | NATIVE_OR_RESEARCH | Add 2026-10-16 H1 Signal Observe
+- PR #770 | created=2026-10-16T01:23:54Z | merged=2026-10-16T02:31:54Z | NATIVE_OR_RESEARCH | Create 2026-10-16 H2 Horizon Orient Record
+- PR #771 | created=2026-10-16T09:14:15Z | merged=2026-10-16T09:15:06Z | NATIVE_OR_RESEARCH | Horizon Oct 16: reconcile H2 source freshness without rewriting native result
+- PR #772 | created=2026-10-16T09:44:59Z | merged=2026-10-16T09:45:17Z | MAINTENANCE_OR_CORRECTION | A1 Oct16 Horizon: 15-day native H1/H2 and Parallax source-time review
+- PR #773 | created=2026-10-16T10:28:20Z | merged=2026-10-16T10:28:33Z | MAINTENANCE_OR_CORRECTION | A2 Oct16 Horizon: current month H1/H2, Parallax and W40–W42 relation
+- PR #774 | created=2026-10-16T23:12:16Z | merged=2026-10-16T23:13:17Z | NATIVE_OR_RESEARCH | parallax(daily): 2026-10-17 attestation and runtime evidence boundary
+- PR #775 | created=2026-10-17T00:08:28Z | merged=2026-10-17T00:15:44Z | NATIVE_OR_RESEARCH | H1 Daily Signal Observe (2026-10-17)
+- PR #776 | created=2026-10-17T01:11:54Z | merged=2026-10-17T01:12:41Z | NATIVE_OR_RESEARCH | Create H2 file for 2026-10-17
+- PR #777 | created=2026-10-17T08:42:52Z | merged=2026-10-17T08:43:03Z | MAINTENANCE_OR_CORRECTION | A1 Oct17 Horizon: October 1–16 source-time H1/H2 and Parallax coverage
+- PR #778 | created=2026-10-17T12:12:03Z | merged=2026-10-17T12:12:10Z | MAINTENANCE_OR_CORRECTION | A2 Oct17 Horizon: full October H1/H2 Parallax relation after merged A1
+- PR #779 | created=2026-10-17T22:51:11Z | merged=2026-10-17T22:52:39Z | NATIVE_OR_RESEARCH | parallax(daily): 2026-10-18 retry and settlement identity boundary
+### Specific scientific/operational boundaries and A1 disposition
+- H1 failure or NETWORK_UNAVAILABLE is a valid original observation, not zero-data success and not a license to backdate later sources
+- H2 INPUT_MISSING/BLOCKED must retain its original execution-time input state even when the H1 file exists on current main
+- Parallax Daily controlled/synthetic results can support falsifiable local cases but do not imply production A2A/MCP/HTTP/Stripe acceptance
+- Parallax research batch, independent execution date and repeated PR/deliveries are non-additive statistical denominators
+- H3/H4 weekly authority is original decision/act lineage; later monthly A1 cannot promote missing decisions into approved action
+- Parallax CASE/NOTES promotion needs independent repeated support and counterexample review; no new promotion credited here
+- H6 October monthly remains OPEN; human/agent platform lifecycle receipts and NEXUS scheduler success are separate planes
+- Exact A1 source identity decisions: 51 previous-owner blob anchors among 56 selected files; non-anchors remain temporal/index questions, not presumed corruption
+- PR evidence: 115 PR objects created within UTC Oct01–Oct17, includes different maintenance/native workflows; never use this count as number of independent experiments
+- Original file modifications: ZERO; new CASE/NOTES, runtime, implementation, external replication, or audit credit: ZERO
+- Full file contents, live external sources and current integrated test suite independently replayed in this A1: NOT_EXECUTED
+- A1 disposition: COMPLETE_FOR_ENUMERATED_SOURCE_IDENTITIES / BOUNDED_PROVENANCE_REVIEW / ORIGINAL_HISTORICAL_STATES_PRESERVED / MONTH_OPEN
