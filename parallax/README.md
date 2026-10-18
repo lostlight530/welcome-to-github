@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-18
-- 最新每日研究: [请求确认、幂等重放与 Agent 任务结算的身份边界](records/2026-10/2026-10-18.md)
-- 每日专题: 88
+- 最新每日归属日期: 2026-10-19
+- 最新每日研究: [MCP Structured Output 版本形状与跨 Agent 验收的非等价边界](records/2026-10/2026-10-19.md)
+- 每日专题: 89
 - 特殊专题: 17
-- 当前专题研究批次: 105
-- 当前专题独立执行日期窗口: 83
+- 当前专题研究批次: 106
+- 当前专题独立执行日期窗口: 84
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -358,3 +358,12 @@ Derived synchronization changes navigation/current counters only and adds zero r
 `HTTP_202_ACCEPTED != IDEMPOTENCY_REPLAY_BOUND != A2A_TASK_SETTLED != EFFECT_VERIFIED != CLIENT_ACCEPTED`
 
 本日计 1 research batch 与 1 independent execution window, 不新增 CASE/NOTES/Special/Audit, 可重放脚本及 derived index 同步增量 credit 为 0
+
+
+## Current pointer — 2026-10-19
+
+2026-10-19 native Daily 核验 MCP 2025-11-25 与 2026-07-28 structuredContent 根类型差异、JSON Schema Draft 2020-12 断言和 A2A Task/Artifact/client acceptance 证据边界, 3 个独立发布者 5 份官方材料, Python 3.13.5/jsonschema 4.26.0 执行 24 个 cases 与 129 项通过断言, schema-valid 21、wire-shape-allowed 19、usable 15、task-bound 12、synthetic accepted 9
+
+`SCHEMA_INSTANCE_VALID != MCP_VERSIONED_WIRE_SHAPE_ALLOWED != TOOL_SUCCESS != A2A_TASK_ARTIFACT_BOUND != CLIENT_ACCEPTED`
+
+结论 PARTIAL, 未执行真实 MCP 协议协商、A2A runtime 或客户端业务验收, 不新增 CASE/NOTES/Special/Audit, 本日计 1 research batch 与 1 independent execution window, replay fixture 和 derived index sync 增加 0 research credit
