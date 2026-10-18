@@ -5868,3 +5868,148 @@ DUPLICATE_EVIDENCE_CREDIT
 - Original file modifications: ZERO; new CASE/NOTES, runtime, implementation, external replication, or audit credit: ZERO
 - Full file contents, live external sources and current integrated test suite independently replayed in this A1: NOT_EXECUTED
 - A1 disposition: COMPLETE_FOR_ENUMERATED_SOURCE_IDENTITIES / BOUNDED_PROVENANCE_REVIEW / ORIGINAL_HISTORICAL_STATES_PRESERVED / MONTH_OPEN
+
+## 2026-10-18 A2 | complete 18-day Horizon, Parallax and week-to-month evidence relationships
+- Exact A1-merged main: 0a5bfadcd57ac144828e57838cc81bb6b25c917a; original October owner blob: b5a60addad3c5998f1929aacc78a87da74e15da3
+- A2 consumes full October 1–18 current source set; it is not a second original Jules or Parallax research run
+- Original task-time NETWORK_UNAVAILABLE, INPUT_MISSING and bounded local experiments remain source-specific states
+- H1 source observation, H2 task-specific derived orientation, Parallax controlled research and monthly maintenance each maintain separate producer authority
+- A1 17-day provenance ledger remains untouched; A2 adds day 18 and refreshes all source-to-month relations
+
+### Individual eighteen-day source-to-dependency evidence chain
+#### 2026-10-01 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-01-H1-signal-observe.md | sha=d6600cc374d70cea8217b0c8ad5e9738526a6f2b | blob bytes=3088
+- H2 exact dependent: horizon-cortex/2026-10-01-H2-horizon-orient.md | sha=26be2924210fa2c9ce347345909ea5b97fc5afe4 | blob bytes=3352
+- Parallax independent daily: parallax/records/2026-10/2026-10-01.md | sha=d54222843ecffc562b71e0f073d5aaf9cabdf86d | blob bytes=8559
+- Logical dependency at 2026-10-01: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-01: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-01: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-02 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-02-H1-signal-observe.md | sha=cfaae2e88d2d2968769292b09d74cb404bb23892 | blob bytes=3819
+- H2 exact dependent: horizon-cortex/2026-10-02-H2-horizon-orient.md | sha=2c887297c188136786ba092922901d35b0287e6d | blob bytes=1934
+- Parallax independent daily: parallax/records/2026-10/2026-10-02.md | sha=e4b78b17335a41ff5c782dfd7a2cad41782d2e37 | blob bytes=10196
+- Logical dependency at 2026-10-02: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-02: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-02: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-03 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-03-H1-signal-observe.md | sha=6b37b2be59ef93c58c3902f12ed2fbddbdf65ddb | blob bytes=3913
+- H2 exact dependent: horizon-cortex/2026-10-03-H2-horizon-orient.md | sha=0e06a2eeff4253fe21752e6e76bd4882e92240f8 | blob bytes=3611
+- Parallax independent daily: parallax/records/2026-10/2026-10-03.md | sha=7646cb0944f36d8e651a7034643c9d4009abcbe1 | blob bytes=14488
+- Logical dependency at 2026-10-03: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-03: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-03: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-04 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-04-H1-signal-observe.md | sha=24b91b58eaccea5ceb16e761a0f6d8d2947314cb | blob bytes=3880
+- H2 exact dependent: horizon-cortex/2026-10-04-H2-horizon-orient.md | sha=245cd66c944188c1b56ed5736b34f28514964c4b | blob bytes=3762
+- Parallax independent daily: parallax/records/2026-10/2026-10-04.md | sha=cbd7355065b7e762b6c181de680333b2c1e05990 | blob bytes=15294
+- Logical dependency at 2026-10-04: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-04: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-04: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-05 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-05-H1-signal-observe.md | sha=43fbb2a88de0341440977cc834e10c1c0e7ff9ed | blob bytes=3853
+- H2 exact dependent: horizon-cortex/2026-10-05-H2-horizon-orient.md | sha=b52086ceb13f06c3ad919cd3ba1e5443cd96d938 | blob bytes=4405
+- Parallax independent daily: parallax/records/2026-10/2026-10-05.md | sha=0e8368829ea2ba72223202b55fa4b659c42bb3f1 | blob bytes=15190
+- Logical dependency at 2026-10-05: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-05: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-05: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-06 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-06-H1-signal-observe.md | sha=badacb45f435f80065fe85eb366b754863509c68 | blob bytes=3858
+- H2 exact dependent: horizon-cortex/2026-10-06-H2-horizon-orient.md | sha=aa2f54b39a4a7a572e55ec78374f631e92d361d6 | blob bytes=4303
+- Parallax independent daily: parallax/records/2026-10/2026-10-06.md | sha=56eb22aa70926d789453433ce3d84b07d749781b | blob bytes=7037
+- Logical dependency at 2026-10-06: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-06: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-06: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-07 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-07-H1-signal-observe.md | sha=e7cee61e3eeed05223981b64d41b314c8120b856 | blob bytes=3796
+- H2 exact dependent: horizon-cortex/2026-10-07-H2-horizon-orient.md | sha=4fa2353e1c96d481b02c85823138c0012f9bbd12 | blob bytes=3987
+- Parallax independent daily: parallax/records/2026-10/2026-10-07.md | sha=3c3250d9d877f72363b2e8b8f799184dc977495d | blob bytes=14873
+- Logical dependency at 2026-10-07: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-07: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-07: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-08 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-08-H1-signal-observe.md | sha=2803312825d90e0dc8431b97144788832fe0baea | blob bytes=3796
+- H2 exact dependent: horizon-cortex/2026-10-08-H2-horizon-orient.md | sha=bece799e9fdaf05618cf4835bbcf20ef579b6634 | blob bytes=3987
+- Parallax independent daily: parallax/records/2026-10/2026-10-08.md | sha=f3f8e80f73f641820b2d6591de03bbe8b75a8ae5 | blob bytes=16967
+- Logical dependency at 2026-10-08: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-08: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-08: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-09 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-09-H1-signal-observe.md | sha=3ad421f2564a3c99f7c7072fac8875404271259e | blob bytes=3791
+- H2 exact dependent: horizon-cortex/2026-10-09-H2-horizon-orient.md | sha=ddc4699b3d85ca9282c4d868085f4529792cd1e7 | blob bytes=4303
+- Parallax independent daily: parallax/records/2026-10/2026-10-09.md | sha=c8816a519ded333632f7a2b707e543476082a68a | blob bytes=15890
+- Logical dependency at 2026-10-09: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-09: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-09: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-10 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-10-H1-signal-observe.md | sha=0b309d35767ecb2093c042eb02e4c554b5a88eb4 | blob bytes=3791
+- H2 exact dependent: horizon-cortex/2026-10-10-H2-horizon-orient.md | sha=5a3fa3c0a09f6f748f20e8dbbd99d55a5ed271b3 | blob bytes=6299
+- Parallax independent daily: parallax/records/2026-10/2026-10-10.md | sha=d28220260d6fd5e0cf7bc9d18feb84cfe78b0f02 | blob bytes=16653
+- Logical dependency at 2026-10-10: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-10: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-10: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-11 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-11-H1-signal-observe.md | sha=e470c16e37af2dc779cf9154b7dd49520e1efb98 | blob bytes=3791
+- H2 exact dependent: horizon-cortex/2026-10-11-H2-horizon-orient.md | sha=ecd717d3031bc6556daf0e89c494d6d34f1d50d0 | blob bytes=7010
+- Parallax independent daily: parallax/records/2026-10/2026-10-11.md | sha=730e12f4cf858f041a72ec521e87e33bca6584d5 | blob bytes=15816
+- Logical dependency at 2026-10-11: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-11: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-11: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-12 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-12-H1-signal-observe.md | sha=8b8595311b71984448fce0d35c222d34ff3f1fbc | blob bytes=5772
+- H2 exact dependent: horizon-cortex/2026-10-12-H2-horizon-orient.md | sha=e13bb69bdd1947ebe72ec7c90f207141fdcafa13 | blob bytes=6481
+- Parallax independent daily: parallax/records/2026-10/2026-10-12.md | sha=ca52e3a1829cf4d786d70da512e9e9e93b14e42b | blob bytes=19697
+- Logical dependency at 2026-10-12: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-12: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-12: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-13 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-13-H1-signal-observe.md | sha=4b5de2da56b98f4d5487578fb7e6a44b13ac4f91 | blob bytes=10352
+- H2 exact dependent: horizon-cortex/2026-10-13-H2-horizon-orient.md | sha=b6526a008df1c39315f58e73192945509afdabbf | blob bytes=1120
+- Parallax independent daily: parallax/records/2026-10/2026-10-13.md | sha=7ad0e3060090ba2b1df052fc7c0053baaad0d579 | blob bytes=20526
+- Logical dependency at 2026-10-13: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-13: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-13: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-14 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-14-H1-signal-observe.md | sha=96b868a36f9008428c78d3c58faa7541de520c78 | blob bytes=6458
+- H2 exact dependent: horizon-cortex/2026-10-14-H2-horizon-orient.md | sha=a43e10152913b66d3dbd35c7aff78cc746c6cfd7 | blob bytes=5463
+- Parallax independent daily: parallax/records/2026-10/2026-10-14.md | sha=62886081eee36e94a6f4807acab314a6a47870bd | blob bytes=15182
+- Logical dependency at 2026-10-14: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-14: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-14: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-15 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-15-H1-signal-observe.md | sha=88e05844378f0f13035d31cf2b33d3650f2968b9 | blob bytes=6373
+- H2 exact dependent: horizon-cortex/2026-10-15-H2-horizon-orient.md | sha=318a87f4b7cd4b5117e866c5d3e7afe8ad5b37a5 | blob bytes=6221
+- Parallax independent daily: parallax/records/2026-10/2026-10-15.md | sha=c197c66e4a063f7830b93c9a3619f73efa25eef1 | blob bytes=17341
+- Logical dependency at 2026-10-15: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-15: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-15: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-16 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-16-H1-signal-observe.md | sha=47c3e602f7c08609394ffdfe390f2d761f533f90 | blob bytes=7974
+- H2 exact dependent: horizon-cortex/2026-10-16-H2-horizon-orient.md | sha=d1f21d553193544258959771faa052fa6a2fdbfb | blob bytes=8851
+- Parallax independent daily: parallax/records/2026-10/2026-10-16.md | sha=aa642853c559b7cecacf3c1f57bfa92812879ace | blob bytes=13634
+- Logical dependency at 2026-10-16: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-16: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-16: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-17 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-17-H1-signal-observe.md | sha=d3424d7a90f1d71ddb21bc2dcfea93fd7b59813c | blob bytes=5846
+- H2 exact dependent: horizon-cortex/2026-10-17-H2-horizon-orient.md | sha=b6fa5b59435768305440b2380a58dfa959050442 | blob bytes=3846
+- Parallax independent daily: parallax/records/2026-10/2026-10-17.md | sha=1c0988f4c5c216f18fc35615b9ba772d4d44c143 | blob bytes=14660
+- Logical dependency at 2026-10-17: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-17: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-17: A1_RECONCILED_HISTORY_INHERITED; no new research or runtime credit
+#### 2026-10-18 | source, derivative and independently owned research
+- H1 exact source: horizon-cortex/2026-10-18-H1-signal-observe.md | sha=9566b6add3ed8feeb43e791b47499f8edfe157bf | blob bytes=3238
+- H2 exact dependent: horizon-cortex/2026-10-18-H2-horizon-orient.md | sha=b00de134b20143102a1f8809a78e04e0a18c2df1 | blob bytes=1068
+- Parallax independent daily: parallax/records/2026-10/2026-10-18.md | sha=582d02a591e394b31b7a1f5ee4236f21fe6b29b3 | blob bytes=13991
+- Logical dependency at 2026-10-18: H2 may consume H1 only if available at original execution; present blob today does not retroactively satisfy source-time validation
+- Cross-study transfer at 2026-10-18: Parallax research constrains provenance interpretation without converting H1/H2 into independent experimental replication
+- A2 disposition at 2026-10-18: OCT18_NATIVE_INPUT_INTEGRATED_WITH_ORIGINAL_NEGATIVE_EVIDENCE; no new research or runtime credit
+
+### Real Oct18 source state and weekly reconciliation
+- Oct18 H1 source blob 9566b6add3ed8feeb43e791b47499f8edfe157bf retains NETWORK_UNAVAILABLE and bounded negative observation
+- Oct18 H2 source blob b00de134b20143102a1f8809a78e04e0a18c2df1 retains INPUT_MISSING/BLOCKED from original source time
+- Oct18 Parallax source blob 582d02a591e394b31b7a1f5ee4236f21fe6b29b3 is an independently owned research record, not a new H1/H2 execution
+- Existing W40/W41 source windows retained; W42 H4 and its original decision boundary are admitted as current Git evidence only
+- Month Final remains OPEN; independent paper/runtime/test repetition not performed by maintenance
+- A2 exact dated paths resolved: 54/54; all 18 dates reviewed as current Git ownership, not as verified external publisher runs
+- Previous errors and source identity uncertainty are preserved; the human-maintained final governance gate remains separate
+- A2 result: CURRENT_OCT18_MONTH_RELATION / TEMPORAL_INPUT_GATES_PRESERVED / NO_NEW_EXPERIMENT_OR_HOST_VERIFICATION
