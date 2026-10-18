@@ -177,31 +177,31 @@
     "bytedance/deer-flow": {
       "documents": {
         "CHANGELOG.md": {
-          "blob_sha": "caa6786652702a6cc0136171fff6960ccbefd367",
-          "commit_sha": "3c08a9f93e7b4abed7a3f5d26ec018958df839c3",
-          "content_hash": "e86877f96adcaa770c5f9dec1a0e718e8f9221228ab1080e84b13b331935b7ea",
+          "blob_sha": "d2e59cdac564c2929135bcfc3ada48895383f729",
+          "commit_sha": "2254ec6ed5ff1b86d056a23819eacd45c3771034",
+          "content_hash": "cce4647049f7ddb3e5adc67ebac7da8443e1320ef7d11222f63caf98729d9e6a",
           "entity_id": "external_doc_bytedance_deer_flow_changelog_md",
-          "observed_blob_sha": "caa6786652702a6cc0136171fff6960ccbefd367",
-          "observed_commit_sha": "3c08a9f93e7b4abed7a3f5d26ec018958df839c3",
-          "observed_tree_sha": "a500fd5397e5024b17f477fc03015d95199bdca3",
-          "output": "current/complex-agent-systems/bytedance_deer_flow/CHANGELOG.md__caa678665270__3c08a9f93e7b.md",
-          "sha": "caa6786652702a6cc0136171fff6960ccbefd367",
-          "tree_sha": "a500fd5397e5024b17f477fc03015d95199bdca3"
+          "observed_blob_sha": "d2e59cdac564c2929135bcfc3ada48895383f729",
+          "observed_commit_sha": "2254ec6ed5ff1b86d056a23819eacd45c3771034",
+          "observed_tree_sha": "3804402b305c5eb5e3f80e0756532ed70b9bf921",
+          "output": "current/complex-agent-systems/bytedance_deer_flow/CHANGELOG.md__d2e59cdac564__2254ec6ed5ff.md",
+          "sha": "d2e59cdac564c2929135bcfc3ada48895383f729",
+          "tree_sha": "3804402b305c5eb5e3f80e0756532ed70b9bf921"
         },
         "README.md": {
-          "blob_sha": "422f31c47711eade476b9e5f59db3c2f6cb4d625",
-          "commit_sha": "3c08a9f93e7b4abed7a3f5d26ec018958df839c3",
-          "content_hash": "16c8d28d3968b1975291aaacc70f17638746e92d9cd143ab8fef230c774aaef6",
+          "blob_sha": "8a5bf279d34f021585e35ae47d31869b8c0eb86d",
+          "commit_sha": "2254ec6ed5ff1b86d056a23819eacd45c3771034",
+          "content_hash": "4cf9fb32ebd6353e7f4e5a63584fcfd208aa107bb523786ea5151cb6faac323d",
           "entity_id": "external_doc_bytedance_deer_flow_readme_md",
-          "observed_blob_sha": "422f31c47711eade476b9e5f59db3c2f6cb4d625",
-          "observed_commit_sha": "3c08a9f93e7b4abed7a3f5d26ec018958df839c3",
-          "observed_tree_sha": "a500fd5397e5024b17f477fc03015d95199bdca3",
-          "output": "current/complex-agent-systems/bytedance_deer_flow/README.md__422f31c47711__3c08a9f93e7b.md",
-          "sha": "422f31c47711eade476b9e5f59db3c2f6cb4d625",
-          "tree_sha": "a500fd5397e5024b17f477fc03015d95199bdca3"
+          "observed_blob_sha": "8a5bf279d34f021585e35ae47d31869b8c0eb86d",
+          "observed_commit_sha": "2254ec6ed5ff1b86d056a23819eacd45c3771034",
+          "observed_tree_sha": "3804402b305c5eb5e3f80e0756532ed70b9bf921",
+          "output": "current/complex-agent-systems/bytedance_deer_flow/README.md__8a5bf279d34f__2254ec6ed5ff.md",
+          "sha": "8a5bf279d34f021585e35ae47d31869b8c0eb86d",
+          "tree_sha": "3804402b305c5eb5e3f80e0756532ed70b9bf921"
         }
       },
-      "last_checked_at": "2026-10-17T23:48:15.295460+00:00"
+      "last_checked_at": "2026-10-18T23:57:09.289757+00:00"
     },
     "coze-dev/coze-studio": {
       "documents": {
