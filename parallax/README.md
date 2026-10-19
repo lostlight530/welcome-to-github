@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-19
-- 最新每日研究: [MCP Structured Output 版本形状与跨 Agent 验收的非等价边界](records/2026-10/2026-10-19.md)
-- 每日专题: 89
+- 最新每日归属日期: 2026-10-20
+- 最新每日研究: [MCP Sampling 弃用、请求路径与工具结果身份边界](records/2026-10/2026-10-20.md)
+- 每日专题: 90
 - 特殊专题: 17
-- 当前专题研究批次: 106
-- 当前专题独立执行日期窗口: 84
+- 当前专题研究批次: 107
+- 当前专题独立执行日期窗口: 85
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -367,3 +367,14 @@ Derived synchronization changes navigation/current counters only and adds zero r
 `SCHEMA_INSTANCE_VALID != MCP_VERSIONED_WIRE_SHAPE_ALLOWED != TOOL_SUCCESS != A2A_TASK_ARTIFACT_BOUND != CLIENT_ACCEPTED`
 
 结论 PARTIAL, 未执行真实 MCP 协议协商、A2A runtime 或客户端业务验收, 不新增 CASE/NOTES/Special/Audit, 本日计 1 research batch 与 1 independent execution window, replay fixture 和 derived index sync 增加 0 research credit
+
+
+## Current pointer — 2026-10-20
+
+2026-10-20 native Daily 比较 MCP Sampling 两版规范与 Python/PHP SDK 两份文档, 同一发布者生态独立来源计 1, Python 3.13.5 执行 14 synthetic cases 与 46 passing assertions, 结论 PARTIAL, 未执行真实 SDK、LLM 或工具效果
+
+`DEPRECATED != REMOVED != ALL_SDK_APIS_UNAVAILABLE`
+
+`TOOL_USE_INTENT != MATCHED_TOOL_RESULTS != REAL_TOOL_EFFECT`
+
+本日新增 1 research batch 与 1 independent execution window, 不新增 CASE/NOTES/Special/Audit, replay 和 derived index 更新增加 0 research credit
