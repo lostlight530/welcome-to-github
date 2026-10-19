@@ -6162,3 +6162,130 @@ Correction: exactly two section-local keys were renamed to Maintenance Provenanc
 Owner identity preservation: the original top-level HUMAN_AUTHORIZED_MONTH_TO_DATE_BASELINE provenance remains unchanged. This file remains a provisional month-to-date owner, not a native H6/A6 execution or natural-month final.
 Validation boundary: exact base main recorded; exactly two targeted key replacements; original owner body otherwise preserved; branch content reread exactly. Repository-native checker remains NOT_EXECUTED in this environment; GitHub CI results are not claimed as a substitute for that checker.
 No new experiment, independent execution window, source-independence credit, host verification, durable governance promotion or month closure is created by this correction.
+
+
+
+## GPT6-A1-SUCCESSOR-2026-10-19 | Full 2026-10-01..18 native-source accountability
+- Verified main baseline: `e6d99d7da00a4f9149a6fd56ac2ac758a6032709` (post-native-gate); calendar cutoff Asia/Shanghai N−1=2026-10-18.
+- Role: GPT-6 OpenAI cloud model / External Independent GPT Maintainer; this is a successor, not a rewrite of prior merged A1 #790.
+- Owner identity unchanged: HUMAN_AUTHORIZED_MONTH_TO_DATE_BASELINE, NOT a Jules-native H6 run.
+- Evidence method: Git main exact recursive tree SHA/byte census of each source, comparison with pre-existing month A1/A2 source decisions, selected original native header re-reads.
+- Evidence limit: full original research documents and native checkers NOT independently executed on this review; tree blob identity alone never proves source-time task success.
+- Expected dated source denominator 18 × (H1 + H2 + independent Parallax daily) = 54; exact 54 current paths confirmed.
+- Historical source decisions keep original BLOCKED, DEGRADED, SUBSTITUTE, INPUT_MISSING and NOT_EXECUTED states, never backdated.
+- Old merged A1 #790 added 72 lines and A2 #791 added 63 lines; these historic PRs did not meet >=100 substantive-lines gate; this successor has separate PR identity and review evidence.
+### A1 file-by-file source custody (distinct path / current blob / byte count / role / decision)
+- `horizon-cortex/2026-10-01-H1-signal-observe.md` | GitBlob=d6600cc374d70cea8217b0c8ad5e9738526a6f2b | bytes=3088 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-01-H2-horizon-orient.md` | GitBlob=26be2924210fa2c9ce347345909ea5b97fc5afe4 | bytes=3352 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-01.md` | GitBlob=d54222843ecffc562b71e0f073d5aaf9cabdf86d | bytes=8559 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-02-H1-signal-observe.md` | GitBlob=cfaae2e88d2d2968769292b09d74cb404bb23892 | bytes=3819 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-02-H2-horizon-orient.md` | GitBlob=2c887297c188136786ba092922901d35b0287e6d | bytes=1934 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-02.md` | GitBlob=e4b78b17335a41ff5c782dfd7a2cad41782d2e37 | bytes=10196 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-03-H1-signal-observe.md` | GitBlob=6b37b2be59ef93c58c3902f12ed2fbddbdf65ddb | bytes=3913 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-03-H2-horizon-orient.md` | GitBlob=0e06a2eeff4253fe21752e6e76bd4882e92240f8 | bytes=3611 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-03.md` | GitBlob=7646cb0944f36d8e651a7034643c9d4009abcbe1 | bytes=14488 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-04-H1-signal-observe.md` | GitBlob=24b91b58eaccea5ceb16e761a0f6d8d2947314cb | bytes=3880 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-04-H2-horizon-orient.md` | GitBlob=245cd66c944188c1b56ed5736b34f28514964c4b | bytes=3762 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-04.md` | GitBlob=cbd7355065b7e762b6c181de680333b2c1e05990 | bytes=15294 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-05-H1-signal-observe.md` | GitBlob=43fbb2a88de0341440977cc834e10c1c0e7ff9ed | bytes=3853 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-05-H2-horizon-orient.md` | GitBlob=b52086ceb13f06c3ad919cd3ba1e5443cd96d938 | bytes=4405 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-05.md` | GitBlob=0e8368829ea2ba72223202b55fa4b659c42bb3f1 | bytes=15190 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-06-H1-signal-observe.md` | GitBlob=badacb45f435f80065fe85eb366b754863509c68 | bytes=3858 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-06-H2-horizon-orient.md` | GitBlob=aa2f54b39a4a7a572e55ec78374f631e92d361d6 | bytes=4303 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-06.md` | GitBlob=56eb22aa70926d789453433ce3d84b07d749781b | bytes=7037 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-07-H1-signal-observe.md` | GitBlob=e7cee61e3eeed05223981b64d41b314c8120b856 | bytes=3796 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-07-H2-horizon-orient.md` | GitBlob=4fa2353e1c96d481b02c85823138c0012f9bbd12 | bytes=3987 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-07.md` | GitBlob=3c3250d9d877f72363b2e8b8f799184dc977495d | bytes=14873 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-08-H1-signal-observe.md` | GitBlob=2803312825d90e0dc8431b97144788832fe0baea | bytes=3796 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-08-H2-horizon-orient.md` | GitBlob=bece799e9fdaf05618cf4835bbcf20ef579b6634 | bytes=3987 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-08.md` | GitBlob=f3f8e80f73f641820b2d6591de03bbe8b75a8ae5 | bytes=16967 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-09-H1-signal-observe.md` | GitBlob=3ad421f2564a3c99f7c7072fac8875404271259e | bytes=3791 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-09-H2-horizon-orient.md` | GitBlob=ddc4699b3d85ca9282c4d868085f4529792cd1e7 | bytes=4303 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-09.md` | GitBlob=c8816a519ded333632f7a2b707e543476082a68a | bytes=15890 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-10-H1-signal-observe.md` | GitBlob=0b309d35767ecb2093c042eb02e4c554b5a88eb4 | bytes=3791 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-10-H2-horizon-orient.md` | GitBlob=5a3fa3c0a09f6f748f20e8dbbd99d55a5ed271b3 | bytes=6299 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-10.md` | GitBlob=d28220260d6fd5e0cf7bc9d18feb84cfe78b0f02 | bytes=16653 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-11-H1-signal-observe.md` | GitBlob=e470c16e37af2dc779cf9154b7dd49520e1efb98 | bytes=3791 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-11-H2-horizon-orient.md` | GitBlob=ecd717d3031bc6556daf0e89c494d6d34f1d50d0 | bytes=7010 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-11.md` | GitBlob=730e12f4cf858f041a72ec521e87e33bca6584d5 | bytes=15816 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-12-H1-signal-observe.md` | GitBlob=8b8595311b71984448fce0d35c222d34ff3f1fbc | bytes=5772 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-12-H2-horizon-orient.md` | GitBlob=e13bb69bdd1947ebe72ec7c90f207141fdcafa13 | bytes=6481 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-12.md` | GitBlob=ca52e3a1829cf4d786d70da512e9e9e93b14e42b | bytes=19697 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-13-H1-signal-observe.md` | GitBlob=4b5de2da56b98f4d5487578fb7e6a44b13ac4f91 | bytes=10352 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-13-H2-horizon-orient.md` | GitBlob=b6526a008df1c39315f58e73192945509afdabbf | bytes=1120 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-13.md` | GitBlob=7ad0e3060090ba2b1df052fc7c0053baaad0d579 | bytes=20526 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-14-H1-signal-observe.md` | GitBlob=96b868a36f9008428c78d3c58faa7541de520c78 | bytes=6458 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-14-H2-horizon-orient.md` | GitBlob=a43e10152913b66d3dbd35c7aff78cc746c6cfd7 | bytes=5463 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-14.md` | GitBlob=62886081eee36e94a6f4807acab314a6a47870bd | bytes=15182 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-15-H1-signal-observe.md` | GitBlob=88e05844378f0f13035d31cf2b33d3650f2968b9 | bytes=6373 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-15-H2-horizon-orient.md` | GitBlob=318a87f4b7cd4b5117e866c5d3e7afe8ad5b37a5 | bytes=6221 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-15.md` | GitBlob=c197c66e4a063f7830b93c9a3619f73efa25eef1 | bytes=17341 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-16-H1-signal-observe.md` | GitBlob=47c3e602f7c08609394ffdfe390f2d761f533f90 | bytes=7974 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-16-H2-horizon-orient.md` | GitBlob=d1f21d553193544258959771faa052fa6a2fdbfb | bytes=8851 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-16.md` | GitBlob=aa642853c559b7cecacf3c1f57bfa92812879ace | bytes=13634 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-17-H1-signal-observe.md` | GitBlob=d3424d7a90f1d71ddb21bc2dcfea93fd7b59813c | bytes=5846 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-17-H2-horizon-orient.md` | GitBlob=b6fa5b59435768305440b2380a58dfa959050442 | bytes=3846 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-17.md` | GitBlob=1c0988f4c5c216f18fc35615b9ba772d4d44c143 | bytes=14660 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-18-H1-signal-observe.md` | GitBlob=9566b6add3ed8feeb43e791b47499f8edfe157bf | bytes=3238 | role=H1 original observation source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `horizon-cortex/2026-10-18-H2-horizon-orient.md` | GitBlob=b00de134b20143102a1f8809a78e04e0a18c2df1 | bytes=1068 | role=H2 downstream decision source | A1=HISTORICAL_STATUS_INHERITED_NOT_UPGRADED | modification=NO_SOURCE_REWRITE
+- `parallax/records/2026-10/2026-10-18.md` | GitBlob=582d02a591e394b31b7a1f5ee4236f21fe6b29b3 | bytes=13991 | role=Parallax separate native research window | A1=INDEPENDENT_RESEARCH_NOT_JULES_CREDIT | modification=NO_SOURCE_REWRITE
+### Day-specific relationship review (H1/H2 chronology and independent research)
+- 2026-10-01 H1→H2: current H1=d6600cc374d70ce; current H2=26be2924210fa2c; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-01 independent-plane relation: Parallax=d54222843ecffc5 (8559 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-02 H1→H2: current H1=cfaae2e88d2d296; current H2=2c887297c188136; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-02 independent-plane relation: Parallax=e4b78b17335a41f (10196 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-03 H1→H2: current H1=6b37b2be59ef93c; current H2=0e06a2eeff4253f; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-03 independent-plane relation: Parallax=7646cb0944f36d8 (14488 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-04 H1→H2: current H1=24b91b58eaccea5; current H2=245cd66c944188c; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-04 independent-plane relation: Parallax=cbd7355065b7e76 (15294 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-05 H1→H2: current H1=43fbb2a88de0341; current H2=b52086ceb13f06c; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-05 independent-plane relation: Parallax=0e8368829ea2ba7 (15190 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-06 H1→H2: current H1=badacb45f435f80; current H2=aa2f54b39a4a7a5; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-06 independent-plane relation: Parallax=56eb22aa70926d7 (7037 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-07 H1→H2: current H1=e7cee61e3eeed05; current H2=4fa2353e1c96d48; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-07 independent-plane relation: Parallax=3c3250d9d877f72 (14873 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-08 H1→H2: current H1=2803312825d90e0; current H2=bece799e9fdaf05; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-08 independent-plane relation: Parallax=f3f8e80f73f6418 (16967 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-09 H1→H2: current H1=3ad421f2564a3c9; current H2=ddc4699b3d85ca9; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-09 independent-plane relation: Parallax=c8816a519ded333 (15890 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-10 H1→H2: current H1=0b309d35767ecb2; current H2=5a3fa3c0a09f6f7; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-10 independent-plane relation: Parallax=d28220260d6fd5e (16653 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-11 H1→H2: current H1=e470c16e37af2dc; current H2=ecd717d3031bc65; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-11 independent-plane relation: Parallax=730e12f4cf858f0 (15816 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-12 H1→H2: current H1=8b8595311b71984; current H2=e13bb69bdd1947e; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-12 independent-plane relation: Parallax=ca52e3a1829cf4d (19697 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-13 H1→H2: current H1=4b5de2da56b98f4; current H2=b6526a008df1c39; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-13 independent-plane relation: Parallax=7ad0e3060090ba2 (20526 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-14 H1→H2: current H1=96b868a36f90084; current H2=a43e10152913b66; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-14 independent-plane relation: Parallax=62886081eee36e9 (15182 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-15 H1→H2: current H1=88e05844378f0f1; current H2=318a87f4b7cd4b5; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-15 independent-plane relation: Parallax=c197c66e4a063f7 (17341 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-16 H1→H2: current H1=47c3e602f7c0860; current H2=d1f21d553193544; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-16 independent-plane relation: Parallax=aa642853c559b7c (13634 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-17 H1→H2: current H1=d3424d7a90f1d71; current H2=b6fa5b594357683; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-17 independent-plane relation: Parallax=1c0988f4c5c216f (14660 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+- 2026-10-18 H1→H2: current H1=9566b6add3ed8fe; current H2=b00de134b201431; current presence=3/3; original execution/input gate remains controlled by source-time record, not maintenance.
+- 2026-10-18 independent-plane relation: Parallax=582d02a591e394b (13991 bytes) is independent original research, not a successful H2 run, checker result or extra GPT maintenance experiment.
+### W40–W42 weekly original evidence and dependencies
+- `horizon-cortex/2026-W40-H3-position-decide.md` | blob=c9023aaf307b22e3334bd58a4979345a4ab61eae | bytes=7705 | current custody present; historical weekly decision-input and block status retained, without replay.
+- `horizon-cortex/2026-W40-H4-narrative-act.md` | blob=b56f47722f8c365f796ea79eb16989dd46e492ce | bytes=2712 | current custody present; historical weekly decision-input and block status retained, without replay.
+- `horizon-cortex/2026-W41-H3-position-decide.md` | blob=0c5b6da6573f3433e631da4667585db5669339c7 | bytes=6910 | current custody present; historical weekly decision-input and block status retained, without replay.
+- `horizon-cortex/2026-W41-H4-narrative-act.md` | blob=4b77f8277554af3615eafa88e0f3f99a08c4c23a | bytes=4586 | current custody present; historical weekly decision-input and block status retained, without replay.
+- `horizon-cortex/2026-W42-H3-position-decide.md` | blob=4b51492eca7437270aafd5f444782b1dd73b2c9d | bytes=12721 | current custody present; historical weekly decision-input and block status retained, without replay.
+- `horizon-cortex/2026-W42-H4-narrative-act.md` | blob=74c2fc692bba2597f4e8aede30bb140052dfed32 | bytes=1889 | current custody present; historical weekly decision-input and block status retained, without replay.
+### Separately anchored sampled original-header checks
+- Header re-read `horizon-cortex/2026-10-02-H2-horizon-orient.md` @ 2c887297c188136786ba092922901d35b0287e6d: Input Status: INPUT_MISSING ; Task Status: BLOCKED ; Original Execution Status: BLOCKED ; Record Provenance: JULES_NATIVE.
+- Header re-read `horizon-cortex/2026-10-18-H1-signal-observe.md` @ 9566b6add3ed8feeb43e791b47499f8edfe157bf: Task Status: DEGRADED ; Original Execution Status: DEGRADED ; Record Provenance: JULES_NATIVE.
+- Header re-read `horizon-cortex/2026-10-18-H2-horizon-orient.md` @ b00de134b20143102a1f8809a78e04e0a18c2df1: Input Status: INPUT_MISSING ; Task Status: BLOCKED ; Original Execution Status: BLOCKED ; Record Provenance: JULES_NATIVE.
+- Header re-read `horizon-cortex/2026-W42-H4-narrative-act.md` @ 74c2fc692bba2597f4e8aede30bb140052dfed32: Record Provenance: JULES_NATIVE ; Decision Input Status: DECISION_INPUT_MISSING ; Task Status: BLOCKED ; Original Execution Status: NEW_EXECUTION.
+- Header re-read `horizon-cortex/2026-W42-H3-position-decide.md` @ 4b51492eca7437270aafd5f444782b1dd73b2c9d: Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE ; Input Status: INPUT_GAP ; Task Status: DEGRADED ; Original Execution Status: NOT_OBSERVED.
+- Derived Parallax October index blob=bfc3d38a923da1edbb7c84bb62e35f2e04f5463e, bytes=8194; index presence is not a new scientific experiment or a second research window.
+- Canonical H6 owner pre-maintenance blob=07070d3d5953d9e99408b35b268e0650e0e588f5; its original title, task provenance, natural-month OPEN state and earlier October snapshots remain in-place.
+- Original 2026-10-18 H1 had NETWORK_UNAVAILABLE/DEGRADED and H2 INPUT_MISSING/BLOCKED, not changed by later current source visibility.
+- W42 native H4 recorded DECISION_INPUT_MISSING/BLOCKED before later authorized H3 substitute; correct dependency chronology preserved.
+- The authorized substitute H1 for 2026-10-19 is outside the N−1 daily denominator and does not make same-day original H2 unblocked.
+- Parallax N-day October 19 native research is outside A1 cutoff, eligible for future A2 current-month reconciliation only.
+- No original Daily, Weekly or Parallax original research changed; this append has NO research, verifier, independent execution-window, CASE or durable governance credit.
+- A1 outcome: CUSTODY_54_OF_54_WITH_ORIGINAL_GAPS / CURRENT_SHA_IDENTITIES / NO_RETROACTIVE_EXECUTION / MONTH_OPEN.
+- Next Gate: merge all ten independent A1 PRs, fresh-read ten main SHAs, only then start A2 MonthStart→N.
+NATIVE_MODIFICATION_NOTE: only month owner H6 appended by GPT-6; no Jules or Parallax producer source file modified.
