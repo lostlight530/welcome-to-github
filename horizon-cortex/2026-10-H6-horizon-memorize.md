@@ -6013,3 +6013,75 @@ DUPLICATE_EVIDENCE_CREDIT
 - A2 exact dated paths resolved: 54/54; all 18 dates reviewed as current Git ownership, not as verified external publisher runs
 - Previous errors and source identity uncertainty are preserved; the human-maintained final governance gate remains separate
 - A2 result: CURRENT_OCT18_MONTH_RELATION / TEMPORAL_INPUT_GATES_PRESERVED / NO_NEW_EXPERIMENT_OR_HOST_VERIFICATION
+
+
+## 2026-10-19 A1 | Full October 01–18 source census and source-time reconciliation
+
+Maintenance role: INDEPENDENT_GPT_A1 / first-round repository maintenance
+Logical cutoff: 2026-10-18 Asia/Shanghai inclusive (MonthStart → N−1)
+Maintenance execution UTC: 2026-10-19T02:46:52+00:00
+Maintenance execution Asia/Shanghai: 2026-10-19T10:46:52+08:00
+Exact base main SHA: 4463a978d3b9a7cd498f4c84809efdbc4360342d
+Canonical owner pre-append blob: 35d0dbe68492370820ebd281d2f4c272016a5dd4
+Record Provenance: INDEPENDENT_GPT_MAINTENANCE
+Modification Class: APPEND_ONLY_MONTH_OWNER_RECONCILIATION
+
+### Coverage contract and revalidation
+- Expected daily denominator: 18 logical dates × 3 separately owned artifacts per date = 54.
+- Existing 2026-10-18 A1 block covers 2026-10-01..17 with 51 exact daily path/blob anchors. All 51 anchors were re-read against this current main and match exactly; drift=0.
+- The three 2026-10-18 objects below extend that ledger to 54/54 current-main daily paths. Current path presence is custody evidence only; it does not prove original task-time input availability, external truth, or runtime completion.
+- Daily coverage by logical date:
+- 2026-10-01: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-02: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-03: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-04: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-05: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-06: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-07: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-08: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-09: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-10: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-11: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-12: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-13: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-14: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-15: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-16: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-17: 3/3 exact current-main date paths; prior A1 per-object source-time decisions inherited and 51 old blob anchors revalidated unchanged
+- 2026-10-18: 3/3 exact current-main date paths; newly admitted current-main paths listed below; original task-time statuses remain binding
+- The existing 2026-10-01..17 per-object classifications remain in the prior A1 block and are not rewritten or silently reclassified.
+- Newly admitted 2026-10-18 exact current-main objects:
+- horizon-cortex/2026-10-18-H1-signal-observe.md | blob=9566b6add3ed8feeb43e791b47499f8edfe157bf | bytes=3238 | decision=NETWORK_UNAVAILABLE / DEGRADED; preserve source-time state
+- horizon-cortex/2026-10-18-H2-horizon-orient.md | blob=b00de134b20143102a1f8809a78e04e0a18c2df1 | bytes=1068 | decision=INPUT_MISSING / BLOCKED at original task time
+- parallax/records/2026-10/2026-10-18.md | blob=582d02a591e394b31b7a1f5ee4236f21fe6b29b3 | bytes=13991 | decision=independent Parallax Daily; not an H1/H2 execution or independent runtime verification
+
+### Weekly, monthly-owner and independent-index review
+- horizon-cortex/2026-W40-H3-position-decide.md | blob=c9023aaf307b22e3334bd58a4979345a4ab61eae | bytes=7705 | INPUT_GAP / NETWORK_PARTIAL / SUCCESS; preserve missing/degraded daily inputs.
+- horizon-cortex/2026-W40-H4-narrative-act.md | blob=b56f47722f8c365f796ea79eb16989dd46e492ce | bytes=2712 | BLOCKED at original decision-input cut; preserve.
+- horizon-cortex/2026-W41-H3-position-decide.md | blob=0c5b6da6573f3433e631da4667585db5669339c7 | bytes=6910 | DEGRADED / NETWORK_UNAVAILABLE / NO_DECISION; preserve.
+- horizon-cortex/2026-W41-H4-narrative-act.md | blob=4b77f8277554af3615eafa88e0f3f99a08c4c23a | bytes=4586 | HUMAN_AUTHORIZED_WEEKLY_RECOVERY / DEGRADED_NO_ACTION; original Jules execution NOT_OBSERVED.
+- horizon-cortex/2026-W42-H4-narrative-act.md | blob=74c2fc692bba2597f4e8aede30bb140052dfed32 | bytes=1889 | JULES_NATIVE / DECISION_INPUT_MISSING / BLOCKED. Original H3 input was missing at H4 task time.
+- horizon-cortex/2026-W42-H3-position-decide.md | blob=4b51492eca7437270aafd5f444782b1dd73b2c9d | bytes=12721 | HUMAN_AUTHORIZED_SUBSTITUTE, merged PR #789 at 2026-10-19T02:31:24Z; original H3 artifact/execution NOT_OBSERVED, current path PRESENT_AFTER_SUBSTITUTE. This post-cutoff substitute does not retroactively satisfy W42 H4.
+- October owner: horizon-cortex/2026-10-H6-horizon-memorize.md | pre-append blob=35d0dbe68492370820ebd281d2f4c272016a5dd4 | Month Closure OPEN / PROVISIONAL_NOT_FINAL; natural-month H6 final NOT_DUE.
+- Derived Parallax index: parallax/records/2026-10.md | blob=bfc3d38a923da1edbb7c84bb62e35f2e04f5463e | bytes=8194 | as-of 2026-10-19 lists 19 daily records and 0 Specials; only Oct 1–18 belongs to this A1 cutoff.
+- October Parallax Specials found in current main: 0. No missing special is inferred without a dated trigger/contract.
+- October H5 monthly final remains NOT_DUE under the current owner baseline; no premature month-end output is manufactured.
+
+### Delivery lineage and source-time boundaries
+- 2026-10-18 Parallax Daily: PR #779 merged 2026-10-17T22:52:39Z.
+- 2026-10-18 H1: PR #780 merged 2026-10-18T01:18:22Z; task-time state NETWORK_UNAVAILABLE / DEGRADED.
+- 2026-10-18 H2: PR #781 merged 2026-10-18T01:46:58Z; task-time state INPUT_MISSING / BLOCKED.
+- W42 H4: PR #783 merged 2026-10-18T06:52:02Z, before the H3 substitute PR #789 merged on 2026-10-19T02:31:24Z.
+- 2026-10-19 H1 substitute PR #788 and 2026-10-19 Parallax Daily are outside the A1 dated denominator; they are eligible for A2 current-state relation only, with substitute provenance preserved.
+
+### A1 decision summary and handoff
+- Daily object custody: 54/54 current-main paths; prior 51/51 exact blob anchors revalidated unchanged; new 2026-10-18 anchors=3/3.
+- Weekly decision/action state reviewed: W40–W42 exact paths and source-time state preserved; any later substitute remains explicitly later than its blocked dependent.
+- Monthly/derived owners reviewed without promoting month closure or independent research credit.
+- No existing primary daily, weekly, monthly-index or audit file was modified; only this canonical month owner receives an append-only A1 section.
+- No new experiment, independent execution window, source independence, host incident, runtime test or external verification credit is created by this maintenance.
+- A1 result: BOUNDED_COMPLETE_CUSTODY_CENSUS / ORIGINAL_INPUT_GAPS_PRESERVED / A2 MAY START ONLY AFTER A1 MERGE AND FRESH CURRENT-MAIN READ.
+
+NATIVE_MODIFICATION_NOTE
+- The only file modified by this maintenance is horizon-cortex/2026-10-H6-horizon-memorize.md, via an append-only owner section.
+- All original native records remain unchanged. HUMAN_AUTHORIZED_SUBSTITUTE records are cited as later current artifacts, never relabeled as Jules-native execution.
