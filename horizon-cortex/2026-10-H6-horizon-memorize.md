@@ -6289,3 +6289,131 @@ No new experiment, independent execution window, source-independence credit, hos
 - A1 outcome: CUSTODY_54_OF_54_WITH_ORIGINAL_GAPS / CURRENT_SHA_IDENTITIES / NO_RETROACTIVE_EXECUTION / MONTH_OPEN.
 - Next Gate: merge all ten independent A1 PRs, fresh-read ten main SHAs, only then start A2 MonthStart→N.
 NATIVE_MODIFICATION_NOTE: only month owner H6 appended by GPT-6; no Jules or Parallax producer source file modified.
+
+
+
+## GPT6-A2-SUCCESSOR-2026-10-19 | Fresh-main Horizon/Parallax N-day full relation
+- New A2 exact main with A1 #793 merged: `5bd724ba8daba98c5d3982da824c1032bd3e9c74`; owner blob preappend `12668c15d7a4b9c16f751268d190275d6a1eb51f`. A1 full Oct01–18 section is inherited, not restated as a new experiment.
+- A2 window: October 01–19 inclusive, Asia/Shanghai. Prior A1 cutoff October 18 remains unchanged; new October 19 source objects included once.
+- Maintenance Provenance: GPT-6 OpenAI cloud model / External Independent GPT Maintainer; original H6 HUMAN_AUTHORIZED_MONTH_TO_DATE_BASELINE provenance remains untouched.
+- Global Gate: all ten repos A1 merged and ten current main owners reread before this A2; duplicates in 3 repos are separately attributed source reviews, not extra independent research days.
+- 19×3 = 57 source date-path Git objects; current custody is not proof of Jules task success, live MCP runtime conformance, or independent Parallax source recertification.
+- H2 on Oct19 originally BLOCKED before post-hoc substitute H1; W42 original H4 BLOCKED before post-hoc H3. All original task-time gates remain intact.
+### N-day source owners: current SHA, role, derived relationship
+- DATE 2026-10-01 | `horizon-cortex/2026-10-01-H1-signal-observe.md` | blob=d6600cc374d70cea8217b0c8ad5e9738526a6f2b | bytes=3088 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-01 | `horizon-cortex/2026-10-01-H2-horizon-orient.md` | blob=26be2924210fa2c9ce347345909ea5b97fc5afe4 | bytes=3352 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-01 | `parallax/records/2026-10/2026-10-01.md` | blob=d54222843ecffc562b71e0f073d5aaf9cabdf86d | bytes=8559 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-02 | `horizon-cortex/2026-10-02-H1-signal-observe.md` | blob=cfaae2e88d2d2968769292b09d74cb404bb23892 | bytes=3819 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-02 | `horizon-cortex/2026-10-02-H2-horizon-orient.md` | blob=2c887297c188136786ba092922901d35b0287e6d | bytes=1934 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-02 | `parallax/records/2026-10/2026-10-02.md` | blob=e4b78b17335a41ff5c782dfd7a2cad41782d2e37 | bytes=10196 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-03 | `horizon-cortex/2026-10-03-H1-signal-observe.md` | blob=6b37b2be59ef93c58c3902f12ed2fbddbdf65ddb | bytes=3913 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-03 | `horizon-cortex/2026-10-03-H2-horizon-orient.md` | blob=0e06a2eeff4253fe21752e6e76bd4882e92240f8 | bytes=3611 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-03 | `parallax/records/2026-10/2026-10-03.md` | blob=7646cb0944f36d8e651a7034643c9d4009abcbe1 | bytes=14488 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-04 | `horizon-cortex/2026-10-04-H1-signal-observe.md` | blob=24b91b58eaccea5ceb16e761a0f6d8d2947314cb | bytes=3880 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-04 | `horizon-cortex/2026-10-04-H2-horizon-orient.md` | blob=245cd66c944188c1b56ed5736b34f28514964c4b | bytes=3762 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-04 | `parallax/records/2026-10/2026-10-04.md` | blob=cbd7355065b7e762b6c181de680333b2c1e05990 | bytes=15294 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-05 | `horizon-cortex/2026-10-05-H1-signal-observe.md` | blob=43fbb2a88de0341440977cc834e10c1c0e7ff9ed | bytes=3853 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-05 | `horizon-cortex/2026-10-05-H2-horizon-orient.md` | blob=b52086ceb13f06c3ad919cd3ba1e5443cd96d938 | bytes=4405 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-05 | `parallax/records/2026-10/2026-10-05.md` | blob=0e8368829ea2ba72223202b55fa4b659c42bb3f1 | bytes=15190 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-06 | `horizon-cortex/2026-10-06-H1-signal-observe.md` | blob=badacb45f435f80065fe85eb366b754863509c68 | bytes=3858 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-06 | `horizon-cortex/2026-10-06-H2-horizon-orient.md` | blob=aa2f54b39a4a7a572e55ec78374f631e92d361d6 | bytes=4303 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-06 | `parallax/records/2026-10/2026-10-06.md` | blob=56eb22aa70926d789453433ce3d84b07d749781b | bytes=7037 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-07 | `horizon-cortex/2026-10-07-H1-signal-observe.md` | blob=e7cee61e3eeed05223981b64d41b314c8120b856 | bytes=3796 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-07 | `horizon-cortex/2026-10-07-H2-horizon-orient.md` | blob=4fa2353e1c96d481b02c85823138c0012f9bbd12 | bytes=3987 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-07 | `parallax/records/2026-10/2026-10-07.md` | blob=3c3250d9d877f72363b2e8b8f799184dc977495d | bytes=14873 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-08 | `horizon-cortex/2026-10-08-H1-signal-observe.md` | blob=2803312825d90e0dc8431b97144788832fe0baea | bytes=3796 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-08 | `horizon-cortex/2026-10-08-H2-horizon-orient.md` | blob=bece799e9fdaf05618cf4835bbcf20ef579b6634 | bytes=3987 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-08 | `parallax/records/2026-10/2026-10-08.md` | blob=f3f8e80f73f641820b2d6591de03bbe8b75a8ae5 | bytes=16967 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-09 | `horizon-cortex/2026-10-09-H1-signal-observe.md` | blob=3ad421f2564a3c99f7c7072fac8875404271259e | bytes=3791 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-09 | `horizon-cortex/2026-10-09-H2-horizon-orient.md` | blob=ddc4699b3d85ca9282c4d868085f4529792cd1e7 | bytes=4303 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-09 | `parallax/records/2026-10/2026-10-09.md` | blob=c8816a519ded333632f7a2b707e543476082a68a | bytes=15890 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-10 | `horizon-cortex/2026-10-10-H1-signal-observe.md` | blob=0b309d35767ecb2093c042eb02e4c554b5a88eb4 | bytes=3791 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-10 | `horizon-cortex/2026-10-10-H2-horizon-orient.md` | blob=5a3fa3c0a09f6f748f20e8dbbd99d55a5ed271b3 | bytes=6299 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-10 | `parallax/records/2026-10/2026-10-10.md` | blob=d28220260d6fd5e0cf7bc9d18feb84cfe78b0f02 | bytes=16653 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-11 | `horizon-cortex/2026-10-11-H1-signal-observe.md` | blob=e470c16e37af2dc779cf9154b7dd49520e1efb98 | bytes=3791 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-11 | `horizon-cortex/2026-10-11-H2-horizon-orient.md` | blob=ecd717d3031bc6556daf0e89c494d6d34f1d50d0 | bytes=7010 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-11 | `parallax/records/2026-10/2026-10-11.md` | blob=730e12f4cf858f041a72ec521e87e33bca6584d5 | bytes=15816 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-12 | `horizon-cortex/2026-10-12-H1-signal-observe.md` | blob=8b8595311b71984448fce0d35c222d34ff3f1fbc | bytes=5772 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-12 | `horizon-cortex/2026-10-12-H2-horizon-orient.md` | blob=e13bb69bdd1947ebe72ec7c90f207141fdcafa13 | bytes=6481 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-12 | `parallax/records/2026-10/2026-10-12.md` | blob=ca52e3a1829cf4d786d70da512e9e9e93b14e42b | bytes=19697 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-13 | `horizon-cortex/2026-10-13-H1-signal-observe.md` | blob=4b5de2da56b98f4d5487578fb7e6a44b13ac4f91 | bytes=10352 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-13 | `horizon-cortex/2026-10-13-H2-horizon-orient.md` | blob=b6526a008df1c39315f58e73192945509afdabbf | bytes=1120 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-13 | `parallax/records/2026-10/2026-10-13.md` | blob=7ad0e3060090ba2b1df052fc7c0053baaad0d579 | bytes=20526 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-14 | `horizon-cortex/2026-10-14-H1-signal-observe.md` | blob=96b868a36f9008428c78d3c58faa7541de520c78 | bytes=6458 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-14 | `horizon-cortex/2026-10-14-H2-horizon-orient.md` | blob=a43e10152913b66d3dbd35c7aff78cc746c6cfd7 | bytes=5463 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-14 | `parallax/records/2026-10/2026-10-14.md` | blob=62886081eee36e94a6f4807acab314a6a47870bd | bytes=15182 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-15 | `horizon-cortex/2026-10-15-H1-signal-observe.md` | blob=88e05844378f0f13035d31cf2b33d3650f2968b9 | bytes=6373 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-15 | `horizon-cortex/2026-10-15-H2-horizon-orient.md` | blob=318a87f4b7cd4b5117e866c5d3e7afe8ad5b37a5 | bytes=6221 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-15 | `parallax/records/2026-10/2026-10-15.md` | blob=c197c66e4a063f7830b93c9a3619f73efa25eef1 | bytes=17341 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-16 | `horizon-cortex/2026-10-16-H1-signal-observe.md` | blob=47c3e602f7c08609394ffdfe390f2d761f533f90 | bytes=7974 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-16 | `horizon-cortex/2026-10-16-H2-horizon-orient.md` | blob=d1f21d553193544258959771faa052fa6a2fdbfb | bytes=8851 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-16 | `parallax/records/2026-10/2026-10-16.md` | blob=aa642853c559b7cecacf3c1f57bfa92812879ace | bytes=13634 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-17 | `horizon-cortex/2026-10-17-H1-signal-observe.md` | blob=d3424d7a90f1d71ddb21bc2dcfea93fd7b59813c | bytes=5846 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-17 | `horizon-cortex/2026-10-17-H2-horizon-orient.md` | blob=b6fa5b59435768305440b2380a58dfa959050442 | bytes=3846 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-17 | `parallax/records/2026-10/2026-10-17.md` | blob=1c0988f4c5c216f18fc35615b9ba772d4d44c143 | bytes=14660 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-18 | `horizon-cortex/2026-10-18-H1-signal-observe.md` | blob=9566b6add3ed8feeb43e791b47499f8edfe157bf | bytes=3238 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-18 | `horizon-cortex/2026-10-18-H2-horizon-orient.md` | blob=b00de134b20143102a1f8809a78e04e0a18c2df1 | bytes=1068 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-18 | `parallax/records/2026-10/2026-10-18.md` | blob=582d02a591e394b31b7a1f5ee4236f21fe6b29b3 | bytes=13991 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-19 | `horizon-cortex/2026-10-19-H1-signal-observe.md` | blob=1e9ed83bb2375d4d9a660f1bb3dd38da4efb5798 | bytes=12804 | role=Jules/H1 observed source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-19 | `horizon-cortex/2026-10-19-H2-horizon-orient.md` | blob=290976259931cd4d15f54ef1664ff15b8f6ff52d | bytes=1108 | role=Jules/H2 dependent source | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+- DATE 2026-10-19 | `parallax/records/2026-10/2026-10-19.md` | blob=eeb26bedf5039c3c3182de122a9d9fab04aed9b1 | bytes=16331 | role=Parallax independent primary research | A2 relation=KEEP_NATIVE_SOURCE_SCOPE
+### 19 source-time H1/H2 dependency decisions, excluding false retrospective success
+- PAIR 2026-10-01 H1→H2: H1 blob=d6600cc374d70cea8217, H2 blob=26be2924210fa2c9ce34; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-02 H1→H2: H1 blob=cfaae2e88d2d29687692, H2 blob=2c887297c188136786ba; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-03 H1→H2: H1 blob=6b37b2be59ef93c58c39, H2 blob=0e06a2eeff4253fe2175; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-04 H1→H2: H1 blob=24b91b58eaccea5ceb16, H2 blob=245cd66c944188c1b56e; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-05 H1→H2: H1 blob=43fbb2a88de034144097, H2 blob=b52086ceb13f06c3ad91; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-06 H1→H2: H1 blob=badacb45f435f80065fe, H2 blob=aa2f54b39a4a7a572e55; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-07 H1→H2: H1 blob=e7cee61e3eeed0522398, H2 blob=4fa2353e1c96d481b02c; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-08 H1→H2: H1 blob=2803312825d90e0dc843, H2 blob=bece799e9fdaf05618cf; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-09 H1→H2: H1 blob=3ad421f2564a3c99f7c7, H2 blob=ddc4699b3d85ca9282c4; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-10 H1→H2: H1 blob=0b309d35767ecb2093c0, H2 blob=5a3fa3c0a09f6f748f20; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-11 H1→H2: H1 blob=e470c16e37af2dc779cf, H2 blob=ecd717d3031bc6556daf; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-12 H1→H2: H1 blob=8b8595311b71984448fc, H2 blob=e13bb69bdd1947ebe72e; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-13 H1→H2: H1 blob=4b5de2da56b98f4d5487, H2 blob=b6526a008df1c39315f5; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-14 H1→H2: H1 blob=96b868a36f9008428c78, H2 blob=a43e10152913b66d3dbd; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-15 H1→H2: H1 blob=88e05844378f0f13035d, H2 blob=318a87f4b7cd4b5117e8; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-16 H1→H2: H1 blob=47c3e602f7c08609394f, H2 blob=d1f21d55319354425895; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-17 H1→H2: H1 blob=d3424d7a90f1d71ddb21, H2 blob=b6fa5b59435768305440; boundary=SOURCE_TIME_STATUS_INHERITED_FROM_A1_AND_NATIVE_FILES; monthly relation is not an executed replay.
+- PAIR 2026-10-18 H1→H2: H1 blob=9566b6add3ed8feeb43e, H2 blob=b00de134b20143102a1f; boundary=H1_DEGRADED_H2_BLOCKED; monthly relation is not an executed replay.
+- PAIR 2026-10-19 H1→H2: H1 blob=1e9ed83bb2375d4d9a66, H2 blob=290976259931cd4d15f5; boundary=H2_INPUT_MISSING_BLOCKED_BEFORE_H1_SUBSTITUTE; monthly relation is not an executed replay.
+### Independent Parallax/derived-month relation by logical date
+- RESEARCH 2026-10-01: independent Parallax source blob=d54222843ecffc562b71e0f073d5aaf9cabdf86d (8559 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-02: independent Parallax source blob=e4b78b17335a41ff5c782dfd7a2cad41782d2e37 (10196 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-03: independent Parallax source blob=7646cb0944f36d8e651a7034643c9d4009abcbe1 (14488 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-04: independent Parallax source blob=cbd7355065b7e762b6c181de680333b2c1e05990 (15294 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-05: independent Parallax source blob=0e8368829ea2ba72223202b55fa4b659c42bb3f1 (15190 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-06: independent Parallax source blob=56eb22aa70926d789453433ce3d84b07d749781b (7037 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-07: independent Parallax source blob=3c3250d9d877f72363b2e8b8f799184dc977495d (14873 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-08: independent Parallax source blob=f3f8e80f73f641820b2d6591de03bbe8b75a8ae5 (16967 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-09: independent Parallax source blob=c8816a519ded333632f7a2b707e543476082a68a (15890 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-10: independent Parallax source blob=d28220260d6fd5e0cf7bc9d18feb84cfe78b0f02 (16653 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-11: independent Parallax source blob=730e12f4cf858f041a72ec521e87e33bca6584d5 (15816 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-12: independent Parallax source blob=ca52e3a1829cf4d786d70da512e9e9e93b14e42b (19697 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-13: independent Parallax source blob=7ad0e3060090ba2b1df052fc7c0053baaad0d579 (20526 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-14: independent Parallax source blob=62886081eee36e94a6f4807acab314a6a47870bd (15182 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-15: independent Parallax source blob=c197c66e4a063f7830b93c9a3619f73efa25eef1 (17341 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-16: independent Parallax source blob=aa642853c559b7cecacf3c1f57bfa92812879ace (13634 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-17: independent Parallax source blob=1c0988f4c5c216f18fc35615b9ba772d4d44c143 (14660 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-18: independent Parallax source blob=582d02a591e394b31b7a1f5ee4236f21fe6b29b3 (13991 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+- RESEARCH 2026-10-19: independent Parallax source blob=eeb26bedf5039c3c3182de122a9d9fab04aed9b1 (16331 bytes) is not an original H1/H2 Jules source, no second local research-window credit from GPT A2.
+### Weekly handoff exact source identities
+- WEEKLY `horizon-cortex/2026-W40-H3-position-decide.md` @ c9023aaf307b22e3334bd58a4979345a4ab61eae / 7705 bytes; H3 decision provenance and H4 original input state retained; W43 new week not yet due for completed weekly output on 2026-10-19.
+- WEEKLY `horizon-cortex/2026-W40-H4-narrative-act.md` @ b56f47722f8c365f796ea79eb16989dd46e492ce / 2712 bytes; H3 decision provenance and H4 original input state retained; W43 new week not yet due for completed weekly output on 2026-10-19.
+- WEEKLY `horizon-cortex/2026-W41-H3-position-decide.md` @ 0c5b6da6573f3433e631da4667585db5669339c7 / 6910 bytes; H3 decision provenance and H4 original input state retained; W43 new week not yet due for completed weekly output on 2026-10-19.
+- WEEKLY `horizon-cortex/2026-W41-H4-narrative-act.md` @ 4b77f8277554af3615eafa88e0f3f99a08c4c23a / 4586 bytes; H3 decision provenance and H4 original input state retained; W43 new week not yet due for completed weekly output on 2026-10-19.
+- WEEKLY `horizon-cortex/2026-W42-H3-position-decide.md` @ 4b51492eca7437270aafd5f444782b1dd73b2c9d / 12721 bytes; H3 decision provenance and H4 original input state retained; W43 new week not yet due for completed weekly output on 2026-10-19.
+- WEEKLY `horizon-cortex/2026-W42-H4-narrative-act.md` @ 74c2fc692bba2597f4e8aede30bb140052dfed32 / 1889 bytes; H3 decision provenance and H4 original input state retained; W43 new week not yet due for completed weekly output on 2026-10-19.
+### Observed native headers and month owner progression
+- OBS `horizon-cortex/2026-10-19-H1-signal-observe.md`: Task Status: SUCCESS ; Original Execution Status: NOT_EXECUTED ; Current Path Status: PRESENT_AFTER_SUBSTITUTE ; Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE.
+- OBS `horizon-cortex/2026-10-19-H2-horizon-orient.md`: Input Status: INPUT_MISSING ; Task Status: BLOCKED ; Original Execution Status: BLOCKED ; Current Path Status: PRESENT ; Record Provenance: JULES_NATIVE.
+- OBS `horizon-cortex/2026-W42-H3-position-decide.md`: Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE ; Input Status: INPUT_GAP ; Task Status: DEGRADED ; Original Execution Status: NOT_OBSERVED ; Current Path Status: PRESENT_AFTER_SUBSTITUTE.
+- OBS `horizon-cortex/2026-W42-H4-narrative-act.md`: Record Provenance: JULES_NATIVE ; Decision Input Status: DECISION_INPUT_MISSING ; Task Status: BLOCKED ; Original Execution Status: NEW_EXECUTION ; Current Path Status: PRESENT.
+- Derived Parallax October index `parallax/records/2026-10.md` @ bfc3d38a923da1edbb7c84bb62e35f2e04f5463e; October 19 source was already a primary native research record, not an A2-run new study.
+- Old #790/#791 original below-100-line A1/A2 events remain historically noncompliant, not retroactively made valid by new #793/A2.
+- The A1 54/54 in-cutoff source set is inherited in the owner above; A2 adds date 19 for 57/57 full-calendar-to-N current-path custody.
+- Historical INPUT_MISSING, BLOCKED, DEGRADED, HUMAN_AUTHORIZED_SUBSTITUTE and NOT_EXECUTED are preserved without replacement.
+- October H6 remains OPEN / PROVISIONAL_NOT_FINAL and natural-month final NOT_DUE.
+- Validation: current main Git tree/selected source headers and owner identity re-read; full H6 native checker, external service or MCP/A2A runtime NOT_EXECUTED by GPT reviewer.
+- A2 outcome: OCT1_19_SOURCE_RELATION_57_57 / A1_INHERITED / H2_AND_H4_BLOCKED_PRESERVED / NO_RESEARCH_CREDIT / MONTH_OPEN.
+NATIVE_MODIFICATION_NOTE: append existing H6 owner only; Jules H1/H2 and Parallax primary files untouched.
