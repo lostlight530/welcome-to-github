@@ -18,12 +18,12 @@ Parallax 的核心问题不是 `今天有没有正面发现`.
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-20
-- 最新每日研究: [MCP Sampling 弃用、请求路径与工具结果身份边界](records/2026-10/2026-10-20.md)
-- 每日专题: 90
+- 最新每日归属日期: 2026-10-21
+- 最新每日研究: [GitHub CI 状态、运行证据与过滤投影](records/2026-10/2026-10-21.md)
+- 每日专题: 91
 - 特殊专题: 17
-- 当前专题研究批次: 107
-- 当前专题独立执行日期窗口: 85
+- 当前专题研究批次: 108
+- 当前专题独立执行日期窗口: 86
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -378,3 +378,14 @@ Derived synchronization changes navigation/current counters only and adds zero r
 `TOOL_USE_INTENT != MATCHED_TOOL_RESULTS != REAL_TOOL_EFFECT`
 
 本日新增 1 research batch 与 1 independent execution window, 不新增 CASE/NOTES/Special/Audit, replay 和 derived index 更新增加 0 research credit
+
+
+## Current pointer — 2026-10-21
+
+2026-10-21 native Daily 对 PR #786/#795 的固定 head SHA 直接读取 GitHub Checks、legacy Statuses、Actions runs/jobs 与事件过滤投影, 各有 4 success checks、0 legacy statuses/pending、1 success workflow run 和 3 success CodeQL jobs, filtered projection 各为 0, 结论 PARTIAL
+
+CHECK_RUN_SUCCESS != LEGACY_STATUS_SUCCESS != NATIVE_PARALLAX_CHECKER_PASS
+
+FILTERED_RUNS_EMPTY != RAW_WORKFLOW_RUNS_EMPTY
+
+本日新增 1 research batch 与 1 independent execution window, 无 CASE/NOTES/Special/Audit 新增, 未执行 native checker, derived synchronization 增加 0 research credit
