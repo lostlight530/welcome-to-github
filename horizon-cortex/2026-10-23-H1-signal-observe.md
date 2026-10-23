@@ -29,6 +29,7 @@ Write Scope: horizon-cortex only
 Boundary Violation: NO
 Base Main SHA: 9a56be35e0db32e6bea93c31f7ad0585203c7204
 Original Jules Execution Status: NOT_CLAIMED_FOR_THIS_DATE
+Original Execution Status: GPT_NATIVE_CURRENT_RUN / HISTORICAL_JULES_NOT_CLAIMED
 Current Path Status: DRAFT_PENDING_HUMAN_REVIEW
 
 INPUT_RECORD
