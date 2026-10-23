@@ -14,12 +14,12 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-23
-- 最新每日研究: [PR base drift and merge parent identity](records/2026-10/2026-10-23.md)
-- 每日专题: 93
+- 最新每日归属日期: 2026-10-24
+- 最新每日研究: [Branch tip and path-scoped blob continuity](records/2026-10/2026-10-24.md)
+- 每日专题: 94
 - 特殊专题: 17
-- 当前专题研究批次: 110
-- 当前专题独立执行日期窗口: 88
+- 当前专题研究批次: 111
+- 当前专题独立执行日期窗口: 89
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -54,7 +54,17 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-10-23
+## 当前研究边界 — 2026-10-24
+
+本日以两个固定 Git commits e5a8cd71 与 75ac544d 对照路径级 blob identity, 16 个 intervening commits 与 27 个 changed paths 不意味着每个文件内容变化, checker 与 2026-10-22 Daily blob 相同, README blob 不同, 本地 Python 3.13.5 synthetic fixture 18 项断言通过, GitHub 与 Git upstream 文档两个独立 publisher, 结论 PARTIAL
+
+`BRANCH_TIP_CHANGED != ALL_PATH_BLOBS_CHANGED`
+
+`SAME_PATH_BLOB_SHA_AT_TWO_REFS != SAME_COMMIT_OR_REPOSITORY_STATE`
+
+本日 native Daily 1、research batch 1、independent execution window 1, 无 CASE/NOTES/Special/Audit 增加, derived synchronization 研究 credit 为 0, exact native checker 未执行
+
+## 前序研究边界 — 2026-10-23
 
 本日对 PR #807 及对照 PR #806 的 exact Git commit graph 执行只读 bounded procedure, #807 记录 base d32c943e 与合并第一父 b665119a 不同, 其间 6 个主线提交影响 10 个非 Parallax 路径, 合并第一父到 merge commit 的变化只有 4 个 Parallax 文件, 而 PR head 到 merge commit 的比较展示 10 个主线侧路径
 
