@@ -10,10 +10,17 @@ Loop Stage: Observe
 Logical Date: 2026-10-23
 Logical Timezone: Asia/Shanghai
 Agent: GPT-6
-Record Provenance: GPT_NATIVE_PROSPECTIVE
+Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE
+Producer Identity: GPT_NATIVE_PROSPECTIVE
+Provenance Enum Note: current Horizon checker lacks a dedicated GPT_NATIVE value, so the authorized substitute enum is retained without attributing execution to Jules
 Task Status: SUCCESS_WITH_BOUNDED_PRIMARY_SOURCE_RESEARCH
 Network Status: PRIMARY_SOURCE_VERIFIED
 Source Status: TWO_DIFFERENT_SOURCE_CLASSES
+Source Identity: arXiv:2610.29869v1; W3C AI Agent Protocol CG meeting 2026-10-21 / PR #46
+Independent Verification: ORIGINAL_SOURCE_READ / NO_INDEPENDENT_EXPERIMENTAL_REPLICATION
+Evidence Upgrade Basis: NEW_EXACT_PAPER_IDENTITY_AND_DATED_PRIMARY_COMMUNITY_PROPOSAL
+Evidence Tier: AUTHOR_PREPRINT_AND_PRIMARY_CG_DISCUSSION_ONLY
+Confidence: HIGH_SOURCE_IDENTITY / PAPER_RESULTS_UNREPLICATED
 Source Authority For Claim: AUTHOR_PREPRINT_FOR_REPORTED_EXPERIMENT / COMMUNITY_GROUP_RECORD_FOR_DISCUSSION
 Host Applicability: UNKNOWN
 Independent Experiment: NOT_EXECUTED
