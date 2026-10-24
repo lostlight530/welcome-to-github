@@ -16,7 +16,7 @@ Producer Identity: GPT_NATIVE_PROSPECTIVE
 Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE
 Original Jules Execution Status: NOT_CLAIMED_FOR_THIS_DATE
 Network Status: PRIMARY_SOURCES_OPENED
-Source Status: TWO_DISTINCT_SOURCE_CLASSES
+Source Status: THREE_DISTINCT_SOURCE_CLASSES / NO_INDEPENDENT_RUNTIME_REPLICATION
 Source Identity: GHSA-22jm-h49p-29qw / MCP Tasks extension 2026-07-28 / arXiv:2610.17544v2
 Original Execution Status: GPT_NATIVE_PROSPECTIVE_CURRENT_RUN / NO_JULES_EXECUTION_CLAIM
 Task Status: SUCCESS
@@ -128,3 +128,16 @@ BOUNDARY_CHECK
 - No historical H1/H2 rewritten
 - No direct execution, graph write, or private task prompt disclosed
 - No H2 production started from an unmerged H1
+
+
+## FORWARD_CORRECTION_2026_10_24_SOURCE_CLASS_COUNT
+
+- Correction observation UTC: 2026-10-24T04:12:58.024Z
+- Original H1 header claimed `TWO_DISTINCT_SOURCE_CLASSES`, but H1's original `EXTERNAL_SOURCE_RECORDS` actually identified three source-object classes: SDK maintainer security advisory, official Tasks extension specification, and author preprint
+- CORRECT_IN_PLACE: header now says `THREE_DISTINCT_SOURCE_CLASSES`; this dated record preserves the old count, why it was wrong and the correction boundary rather than silently erasing an original claim
+- Correction-time external source check: `modelcontextprotocol/ext-tasks/specification/2026-07-28/tasks.md` Git blob `f312d47dda3cf5939307cf182d53c8670448f10a` read from the **external current main** at 2026-10-24T04:12:58.024Z
+- Exact checked rule: servers MUST check authentication and authorization on each task-related request; this Tasks extension has no `tasks/list`
+- Temporal boundary: this Git blob is a correction-time observation, **not** proof that original H1 pinned this blob or that the 2026-07-28 historical release had the same Git object identity
+- Independent-evidence boundary: three source objects/classes are not three independent reproductions of the SDK vulnerability; H2 rereading H1 sources adds no scientific independence
+- Scope: original source descriptions, original publication/check times, producer identity, run status, original PR #818, and previously merged H2 PR #819 are preserved as originally recorded; no host adoption or live exploit is inferred
+- Future retest: compare exact pinned specification Git content at retest time and separately pin affected/fixed SDK experiment revisions before promoting operational conclusions
