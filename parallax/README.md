@@ -56,13 +56,13 @@ CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录
 
 ## 当前研究边界 — 2026-10-25
 
-本日固定对照两个 GitHub Pages deploy run 39977997855 与 40062316438, 均有 completed/success job 与成功上传日志, 同名 `github-pages` ZIP 均为 13925 bytes 但报告 SHA256 不同, 旧 run 的历史上传日志仍在而当前 artifact list 为空, 新 run 的 artifact list 含一个 expired=false 对象, GitHub 单一 publisher, 结论 PARTIAL
+本日固定对照两个 GitHub Pages deploy run 39977997855 与 40062316438, 均有 completed/success job 与成功上传日志, 同名 `github-pages` ZIP 均为 13925 bytes 但报告 SHA256 不同, 旧 run 的历史上传日志仍在但当前 artifact list 为空且下载 API 返回 HTTP 404, 新 run 的 artifact list 含一个 expired=false 对象, 已实际下载新 ZIP 并用 Python 3.13.5 独立验证 13925 bytes 与 SHA256 25f845059ba338a34f9842c5f3d1071a0ca84157d73b8042715c217feb6d8a97, ZIP CRC 与 TAR 成员读取成功, GitHub 单一 publisher, 结论 PARTIAL
 
 `RUN_SUCCESS != CURRENT_ARTIFACT_LISTED != CURRENT_PUBLIC_SITE_VERIFIED`
 
 `SAME_ARTIFACT_NAME_AND_SIZE != SAME_ARCHIVE_DIGEST != SAME_RENDERED_BYTES`
 
-本日 native Daily 1、research batch 1、independent execution window 1, 无 CASE/NOTES/Special/Audit 增加, derived synchronization 研究 credit 为 0, exact native checker 未执行, producer 交付保持 Draft PR 待维护者审查
+本日 native Daily 1、research batch 1、independent execution window 1, 无 CASE/NOTES/Special/Audit 增加, derived synchronization 研究 credit 为 0, exact native checker 未执行, 下载 ZIP 字节的独立复核不等于公共 Pages 内容验证
 
 ## 前序研究边界 — 2026-10-24
 
