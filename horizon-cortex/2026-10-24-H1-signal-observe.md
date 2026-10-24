@@ -17,6 +17,8 @@ Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE
 Original Jules Execution Status: NOT_CLAIMED_FOR_THIS_DATE
 Network Status: PRIMARY_SOURCES_OPENED
 Source Status: TWO_DISTINCT_SOURCE_CLASSES
+Source Identity: GHSA-22jm-h49p-29qw / MCP Tasks extension 2026-07-28 / arXiv:2610.17544v2
+Original Execution Status: GPT_NATIVE_PROSPECTIVE_CURRENT_RUN / NO_JULES_EXECUTION_CLAIM
 Task Status: SUCCESS
 Knowledge Source: ORIGINAL_VENDOR_ADVISORY / MCP_EXTENSION_SPEC / VERSIONED_AUTHOR_PREPRINT
 Repository Inspection: HORIZON_ONLY_FOR_RESEARCH; cold-start metadata inspection separately performed
