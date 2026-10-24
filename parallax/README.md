@@ -14,12 +14,12 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-24
-- 最新每日研究: [Branch tip and path-scoped blob continuity](records/2026-10/2026-10-24.md)
-- 每日专题: 94
+- 最新每日归属日期: 2026-10-25
+- 最新每日研究: [Pages artifact custody versus deployment-run continuity](records/2026-10/2026-10-25.md)
+- 每日专题: 95
 - 特殊专题: 17
-- 当前专题研究批次: 111
-- 当前专题独立执行日期窗口: 89
+- 当前专题研究批次: 112
+- 当前专题独立执行日期窗口: 90
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -54,7 +54,17 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-10-24
+## 当前研究边界 — 2026-10-25
+
+本日固定对照两个 GitHub Pages deploy run 39977997855 与 40062316438, 均有 completed/success job 与成功上传日志, 同名 `github-pages` ZIP 均为 13925 bytes 但报告 SHA256 不同, 旧 run 的历史上传日志仍在而当前 artifact list 为空, 新 run 的 artifact list 含一个 expired=false 对象, GitHub 单一 publisher, 结论 PARTIAL
+
+`RUN_SUCCESS != CURRENT_ARTIFACT_LISTED != CURRENT_PUBLIC_SITE_VERIFIED`
+
+`SAME_ARTIFACT_NAME_AND_SIZE != SAME_ARCHIVE_DIGEST != SAME_RENDERED_BYTES`
+
+本日 native Daily 1、research batch 1、independent execution window 1, 无 CASE/NOTES/Special/Audit 增加, derived synchronization 研究 credit 为 0, exact native checker 未执行, producer 交付保持 Draft PR 待维护者审查
+
+## 前序研究边界 — 2026-10-24
 
 本日以两个固定 Git commits e5a8cd71 与 75ac544d 对照路径级 blob identity, 16 个 intervening commits 与 27 个 changed paths 不意味着每个文件内容变化, checker 与 2026-10-22 Daily blob 相同, README blob 不同, 本地 Python 3.13.5 synthetic fixture 18 项断言通过, GitHub 与 Git upstream 文档两个独立 publisher, 结论 PARTIAL
 
