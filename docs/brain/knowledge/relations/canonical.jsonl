@@ -2,6 +2,7 @@
 {"desc":"Current approved external evidence","dst":"external_doc_agentuniverse_ai_agentuniverse_changelog_md","relation":"has_snapshot","src":"external_repo_agentuniverse_ai_agentuniverse"}
 {"desc":"Current approved external evidence","dst":"external_doc_agentuniverse_ai_agentuniverse_docs_design_dashscope_embedding_order_md","relation":"has_snapshot","src":"external_repo_agentuniverse_ai_agentuniverse"}
 {"desc":"Current approved external evidence","dst":"external_doc_agentuniverse_ai_agentuniverse_docs_design_mcp_stdio_connection_options_md","relation":"has_snapshot","src":"external_repo_agentuniverse_ai_agentuniverse"}
+{"desc":"Current approved external evidence","dst":"external_doc_agentuniverse_ai_agentuniverse_docs_design_nlu_store_selection_md","relation":"has_snapshot","src":"external_repo_agentuniverse_ai_agentuniverse"}
 {"desc":"Current approved external evidence","dst":"external_doc_agentuniverse_ai_agentuniverse_docs_design_openai_embedding_langchain_md","relation":"has_snapshot","src":"external_repo_agentuniverse_ai_agentuniverse"}
 {"desc":"Current approved external evidence","dst":"external_doc_agentuniverse_ai_agentuniverse_readme_md","relation":"has_snapshot","src":"external_repo_agentuniverse_ai_agentuniverse"}
 {"desc":"Current approved external evidence","dst":"external_doc_baidubce_app_builder_readme_md","relation":"has_snapshot","src":"external_repo_baidubce_app_builder"}
