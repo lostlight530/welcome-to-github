@@ -95,6 +95,12 @@ AUDIT_PATTERN = re.compile(r"^audits/(\d{4}-W\d{2})\.md$")
 RECORD_ID_PATTERN = re.compile(r"^- 记录 ID:\s*(\S+)\s*$", re.MULTILINE)
 NOTE_PATTERN = re.compile(r"^## (N-\d+).*?(?=^## |\Z)", re.MULTILINE | re.DOTALL)
 NOTE_SUPPORT_PATTERN = re.compile(r"PX-(?:S-)?\d{8}-P\d+")
+# Audits may cite both legacy P-series and newer FRONTIER Daily record identities.
+# Keep the narrower NOTE pattern unchanged: this audit citation widening must not
+# silently promote FRONTIER observations to CASE/NOTES support.
+AUDIT_RECORD_REF_PATTERN = re.compile(
+    r"\bPX-(?:S-)?\d{8}-(?:P\d+|[A-Z][A-Z0-9-]+)\b"
+)
 LEGACY_AUDIT_SCHEMAS = {"audits/2026-W32.md"}
 PRESERVED_DAILY_SCHEMAS = {"records/2026-09/2026-09-22.md"}
 LEGACY_BROKEN_LINKS = {
@@ -419,7 +425,7 @@ def validate() -> list[str]:
                 encoding="utf-8"
             ):
                 errors.append(f"audit missing from audit index: {relative}")
-            audit_record_refs[relative] = set(NOTE_SUPPORT_PATTERN.findall(text))
+            audit_record_refs[relative] = set(AUDIT_RECORD_REF_PATTERN.findall(text))
 
     for monthly_path in monthly_files:
         monthly_relative = monthly_path.relative_to(ROOT).as_posix()
