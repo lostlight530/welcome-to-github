@@ -23,8 +23,8 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
-- 周期审计: 7
-- 最新周期审计: [2026-W38](audits/2026-W38.md)
+- 周期审计: 8
+- 最新周期审计: [2026-W43 Sunday as-of](audits/2026-W43.md)
 - 当前月度事实源: [2026-10](records/2026-10.md)
 - 当前方法: [METHOD.md](METHOD.md)
 - 控制案例: [CASES.md](CASES.md)
@@ -95,6 +95,14 @@ CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录
 `CURRENT_BRANCH_PROTECTION != HISTORICAL_MERGE_POLICY`
 
 本日一个 native Daily、一个 research batch、一个 independent execution window, 单一 GitHub publisher, bounded API evidence, 结论 PARTIAL, 不新增 CASE/NOTES/Special/Audit, derived index synchronization 额外研究 credit 为 0
+
+## 2026-W43 周级派生审查 — 2026-10-25 as-of
+
+- [W43 七日研究、证据身份与 checker 契约修正审查](audits/2026-W43.md) 纳入 2026-10-19 至 2026-10-25 的七份 native Daily, 七个实际执行窗口、七个研究批次、14 个 Daily 内已登记 Trials, 0 个新 Special
+- 10-25 同日 artifact ZIP 完整性验证后残留的 Trial A 旧限制已对齐, 未更改 Daily 本身的执行日期、Record ID、研究批次或 publisher count
+- 当前 checker 已区分 Audit record-reference 解析与 NOTES support gate, 可识别新式 FRONTIER Daily ID, 保留旧式 P 系列控制案例与原有 NOTES 门槛
+- 周日 as-of 表示 W43 当天已产出七条 Daily 但自然周尚未正式结束, 不视为 sealed week, 审计本身增加 0 research batch、0 Trial、0 independent execution window、0 finding
+- exact `python parallax/tools/check.py` 的完整树原生执行状态必须以实际执行日志为准, 本次针对 checker 规则的独立 Python fixture 不等于 native checker PASS
 
 ## 历史与验证边界
 
