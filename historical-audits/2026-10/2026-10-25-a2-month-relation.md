@@ -1,0 +1,165 @@
+# A2 | welcome-to-github | 2026-10 fixed monthly current relation through Oct25
+
+- Repository: `lostlight530/welcome-to-github`
+- Fresh **after all ten A1 merges**: `704361501c10e25497c686fbf28b64dba1c20cd0`
+- Merged own A1: `historical-audits/2026-10/2026-10-25-a1-source-custody.md` @ blob `44590ba06f9b4db7317fc7956db08fba427ebbd8`
+- Prior merged Oct24 A2 baseline: `9e8272213c6536e7d1720a27d34bdc6d8c189238`
+- Canonical monthly relational identity: `2026-10` (not a new natural month)
+- Complete interval: MonthStart=2026-10-01 through N=2026-10-25 inclusive
+- Exact native slot denominator: 75 source paths across 25 logical dates, missing 0.
+- Current versus previous A2: 19 changed paths, including current Oct25 Native input and merged A1 custody.
+- Producer boundary: Independent GPT relational maintenance; original Horizon/Aegis GPT Native and Parallax/Ballast Jules roles retained.
+- Status: OCTOBER_MONTH_OPEN; source delivery does not imply the native runtime/scientific truth was separately replayed.
+
+## A1→A2 invariant and corrected historical base
+- A1 Oct01–24 is a merged prerequisite at `44590ba06f9b4db7317fc7956db08fba427ebbd8`; it remains prior state, not rewritten by this A2.
+- The 2026-10-24 A2 carried one **now corrected original source availability** error; merged independent correction #827 must override its old absence-as-Git-state reading.
+- Parallax 2026-10-24 original PR #817 was already visible at old A2 base; correction #827 confirms exact blob without manufacturing extra runs.
+- N=Oct25 Native source PR(s) are #823, #824, #825, #826; add their observed result and limitations without rewriting Oct24.
+- H1 → H2 dependency / Parallax independent are **distinct source identities**, not independent corroboration of one claim.
+- Source repetition, PR merge, path presence and actual test execution are separate predicates.
+- October is OPEN; A2 only records the latest evidence relation, no natural month seal.
+- Weekly/Periodic audits and D7/D10/D14/D30 retain their own task cadence and do not get new execution credit from A2.
+
+## All 25 dates: current cross-task relational closure checks
+- 2026-10-01 | H1 → H2 dependency / Parallax independent | d6600cc374d7 → 26be2924210f → 57b7c48b443b | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-02 | H1 → H2 dependency / Parallax independent | cfaae2e88d2d → 2c887297c188 → ca648db1ad3f | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-03 | H1 → H2 dependency / Parallax independent | 6b37b2be59ef → 0e06a2eeff42 → 7646cb0944f3 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-04 | H1 → H2 dependency / Parallax independent | 24b91b58eacc → 245cd66c9441 → cbd7355065b7 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-05 | H1 → H2 dependency / Parallax independent | 43fbb2a88de0 → b52086ceb13f → 0e8368829ea2 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-06 | H1 → H2 dependency / Parallax independent | badacb45f435 → aa2f54b39a4a → 56eb22aa7092 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-07 | H1 → H2 dependency / Parallax independent | e7cee61e3eee → 4fa2353e1c96 → 3c3250d9d877 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-08 | H1 → H2 dependency / Parallax independent | 2803312825d9 → bece799e9fda → f3f8e80f73f6 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-09 | H1 → H2 dependency / Parallax independent | 3ad421f2564a → ddc4699b3d85 → c8816a519ded | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-10 | H1 → H2 dependency / Parallax independent | 0b309d35767e → 5a3fa3c0a09f → d28220260d6f | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-11 | H1 → H2 dependency / Parallax independent | e470c16e37af → ecd717d3031b → 730e12f4cf85 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-12 | H1 → H2 dependency / Parallax independent | 8b8595311b71 → e13bb69bdd19 → ca52e3a1829c | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-13 | H1 → H2 dependency / Parallax independent | 4b5de2da56b9 → b6526a008df1 → 7ad0e3060090 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-14 | H1 → H2 dependency / Parallax independent | 96b868a36f90 → a43e10152913 → 62886081eee3 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-15 | H1 → H2 dependency / Parallax independent | 88e05844378f → 318a87f4b7cd → c197c66e4a06 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-16 | H1 → H2 dependency / Parallax independent | 47c3e602f7c0 → d1f21d553193 → aa642853c559 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-17 | H1 → H2 dependency / Parallax independent | d3424d7a90f1 → b6fa5b594357 → 1c0988f4c5c2 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-18 | H1 → H2 dependency / Parallax independent | 9566b6add3ed → b00de134b201 → 582d02a591e3 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-19 | H1 → H2 dependency / Parallax independent | 1e9ed83bb237 → 290976259931 → eeb26bedf503 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-20 | H1 → H2 dependency / Parallax independent | 68b147dfbd7b → 44c13913cc8e → a2f7aad1ef78 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-21 | H1 → H2 dependency / Parallax independent | e37bc549c8ea → 38967150f9c5 → 0e2cc01df163 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-22 | H1 → H2 dependency / Parallax independent | c586eb8d6bac → d090a178b95a → 12272b98a594 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-23 | H1 → H2 dependency / Parallax independent | d7f914264dd3 → 112d25a6b436 → b1aacddacaf5 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-24 | H1 → H2 dependency / Parallax independent | 81c960fdb216 → d5bfd3983ff6 → fd701713a785 | A1_INHERITED_WITH_ORIGINAL_RESULT | no inferred scientific PASS
+- 2026-10-25 | H1 → H2 dependency / Parallax independent | 5c38051e51cb → 04d5db240f7c → ff38ccc60c41 | N_DAY_NATIVE_ADMITTED_AFTER_A1 | no inferred scientific PASS
+
+## Full current-month component lineage (each source blob distinct)
+- 001 | 2026-10-01 | `horizon-cortex/2026-10-01-H1-signal-observe.md` | `d6600cc374d70cea8217b0c8ad5e9738526a6f2b` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 002 | 2026-10-01 | `horizon-cortex/2026-10-01-H2-horizon-orient.md` | `26be2924210fa2c9ce347345909ea5b97fc5afe4` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 003 | 2026-10-01 | `parallax/records/2026-10/2026-10-01.md` | `57b7c48b443b0c910351a90edca3a1c691a48861` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 004 | 2026-10-02 | `horizon-cortex/2026-10-02-H1-signal-observe.md` | `cfaae2e88d2d2968769292b09d74cb404bb23892` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 005 | 2026-10-02 | `horizon-cortex/2026-10-02-H2-horizon-orient.md` | `2c887297c188136786ba092922901d35b0287e6d` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 006 | 2026-10-02 | `parallax/records/2026-10/2026-10-02.md` | `ca648db1ad3fce74c234092700504be4292323d5` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 007 | 2026-10-03 | `horizon-cortex/2026-10-03-H1-signal-observe.md` | `6b37b2be59ef93c58c3902f12ed2fbddbdf65ddb` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 008 | 2026-10-03 | `horizon-cortex/2026-10-03-H2-horizon-orient.md` | `0e06a2eeff4253fe21752e6e76bd4882e92240f8` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 009 | 2026-10-03 | `parallax/records/2026-10/2026-10-03.md` | `7646cb0944f36d8e651a7034643c9d4009abcbe1` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 010 | 2026-10-04 | `horizon-cortex/2026-10-04-H1-signal-observe.md` | `24b91b58eaccea5ceb16e761a0f6d8d2947314cb` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 011 | 2026-10-04 | `horizon-cortex/2026-10-04-H2-horizon-orient.md` | `245cd66c944188c1b56ed5736b34f28514964c4b` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 012 | 2026-10-04 | `parallax/records/2026-10/2026-10-04.md` | `cbd7355065b7e762b6c181de680333b2c1e05990` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 013 | 2026-10-05 | `horizon-cortex/2026-10-05-H1-signal-observe.md` | `43fbb2a88de0341440977cc834e10c1c0e7ff9ed` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 014 | 2026-10-05 | `horizon-cortex/2026-10-05-H2-horizon-orient.md` | `b52086ceb13f06c3ad919cd3ba1e5443cd96d938` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 015 | 2026-10-05 | `parallax/records/2026-10/2026-10-05.md` | `0e8368829ea2ba72223202b55fa4b659c42bb3f1` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 016 | 2026-10-06 | `horizon-cortex/2026-10-06-H1-signal-observe.md` | `badacb45f435f80065fe85eb366b754863509c68` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 017 | 2026-10-06 | `horizon-cortex/2026-10-06-H2-horizon-orient.md` | `aa2f54b39a4a7a572e55ec78374f631e92d361d6` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 018 | 2026-10-06 | `parallax/records/2026-10/2026-10-06.md` | `56eb22aa70926d789453433ce3d84b07d749781b` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 019 | 2026-10-07 | `horizon-cortex/2026-10-07-H1-signal-observe.md` | `e7cee61e3eeed05223981b64d41b314c8120b856` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 020 | 2026-10-07 | `horizon-cortex/2026-10-07-H2-horizon-orient.md` | `4fa2353e1c96d481b02c85823138c0012f9bbd12` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 021 | 2026-10-07 | `parallax/records/2026-10/2026-10-07.md` | `3c3250d9d877f72363b2e8b8f799184dc977495d` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 022 | 2026-10-08 | `horizon-cortex/2026-10-08-H1-signal-observe.md` | `2803312825d90e0dc8431b97144788832fe0baea` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 023 | 2026-10-08 | `horizon-cortex/2026-10-08-H2-horizon-orient.md` | `bece799e9fdaf05618cf4835bbcf20ef579b6634` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 024 | 2026-10-08 | `parallax/records/2026-10/2026-10-08.md` | `f3f8e80f73f641820b2d6591de03bbe8b75a8ae5` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 025 | 2026-10-09 | `horizon-cortex/2026-10-09-H1-signal-observe.md` | `3ad421f2564a3c99f7c7072fac8875404271259e` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 026 | 2026-10-09 | `horizon-cortex/2026-10-09-H2-horizon-orient.md` | `ddc4699b3d85ca9282c4d868085f4529792cd1e7` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 027 | 2026-10-09 | `parallax/records/2026-10/2026-10-09.md` | `c8816a519ded333632f7a2b707e543476082a68a` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 028 | 2026-10-10 | `horizon-cortex/2026-10-10-H1-signal-observe.md` | `0b309d35767ecb2093c042eb02e4c554b5a88eb4` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 029 | 2026-10-10 | `horizon-cortex/2026-10-10-H2-horizon-orient.md` | `5a3fa3c0a09f6f748f20e8dbbd99d55a5ed271b3` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 030 | 2026-10-10 | `parallax/records/2026-10/2026-10-10.md` | `d28220260d6fd5e0cf7bc9d18feb84cfe78b0f02` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 031 | 2026-10-11 | `horizon-cortex/2026-10-11-H1-signal-observe.md` | `e470c16e37af2dc779cf9154b7dd49520e1efb98` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 032 | 2026-10-11 | `horizon-cortex/2026-10-11-H2-horizon-orient.md` | `ecd717d3031bc6556daf0e89c494d6d34f1d50d0` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 033 | 2026-10-11 | `parallax/records/2026-10/2026-10-11.md` | `730e12f4cf858f041a72ec521e87e33bca6584d5` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 034 | 2026-10-12 | `horizon-cortex/2026-10-12-H1-signal-observe.md` | `8b8595311b71984448fce0d35c222d34ff3f1fbc` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 035 | 2026-10-12 | `horizon-cortex/2026-10-12-H2-horizon-orient.md` | `e13bb69bdd1947ebe72ec7c90f207141fdcafa13` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 036 | 2026-10-12 | `parallax/records/2026-10/2026-10-12.md` | `ca52e3a1829cf4d786d70da512e9e9e93b14e42b` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 037 | 2026-10-13 | `horizon-cortex/2026-10-13-H1-signal-observe.md` | `4b5de2da56b98f4d5487578fb7e6a44b13ac4f91` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 038 | 2026-10-13 | `horizon-cortex/2026-10-13-H2-horizon-orient.md` | `b6526a008df1c39315f58e73192945509afdabbf` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 039 | 2026-10-13 | `parallax/records/2026-10/2026-10-13.md` | `7ad0e3060090ba2b1df052fc7c0053baaad0d579` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 040 | 2026-10-14 | `horizon-cortex/2026-10-14-H1-signal-observe.md` | `96b868a36f9008428c78d3c58faa7541de520c78` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 041 | 2026-10-14 | `horizon-cortex/2026-10-14-H2-horizon-orient.md` | `a43e10152913b66d3dbd35c7aff78cc746c6cfd7` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 042 | 2026-10-14 | `parallax/records/2026-10/2026-10-14.md` | `62886081eee36e94a6f4807acab314a6a47870bd` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 043 | 2026-10-15 | `horizon-cortex/2026-10-15-H1-signal-observe.md` | `88e05844378f0f13035d31cf2b33d3650f2968b9` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 044 | 2026-10-15 | `horizon-cortex/2026-10-15-H2-horizon-orient.md` | `318a87f4b7cd4b5117e866c5d3e7afe8ad5b37a5` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 045 | 2026-10-15 | `parallax/records/2026-10/2026-10-15.md` | `c197c66e4a063f7830b93c9a3619f73efa25eef1` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 046 | 2026-10-16 | `horizon-cortex/2026-10-16-H1-signal-observe.md` | `47c3e602f7c08609394ffdfe390f2d761f533f90` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 047 | 2026-10-16 | `horizon-cortex/2026-10-16-H2-horizon-orient.md` | `d1f21d553193544258959771faa052fa6a2fdbfb` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 048 | 2026-10-16 | `parallax/records/2026-10/2026-10-16.md` | `aa642853c559b7cecacf3c1f57bfa92812879ace` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 049 | 2026-10-17 | `horizon-cortex/2026-10-17-H1-signal-observe.md` | `d3424d7a90f1d71ddb21bc2dcfea93fd7b59813c` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 050 | 2026-10-17 | `horizon-cortex/2026-10-17-H2-horizon-orient.md` | `b6fa5b59435768305440b2380a58dfa959050442` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 051 | 2026-10-17 | `parallax/records/2026-10/2026-10-17.md` | `1c0988f4c5c216f18fc35615b9ba772d4d44c143` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 052 | 2026-10-18 | `horizon-cortex/2026-10-18-H1-signal-observe.md` | `9566b6add3ed8feeb43e791b47499f8edfe157bf` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 053 | 2026-10-18 | `horizon-cortex/2026-10-18-H2-horizon-orient.md` | `b00de134b20143102a1f8809a78e04e0a18c2df1` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 054 | 2026-10-18 | `parallax/records/2026-10/2026-10-18.md` | `582d02a591e394b31b7a1f5ee4236f21fe6b29b3` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 055 | 2026-10-19 | `horizon-cortex/2026-10-19-H1-signal-observe.md` | `1e9ed83bb2375d4d9a660f1bb3dd38da4efb5798` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 056 | 2026-10-19 | `horizon-cortex/2026-10-19-H2-horizon-orient.md` | `290976259931cd4d15f54ef1664ff15b8f6ff52d` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 057 | 2026-10-19 | `parallax/records/2026-10/2026-10-19.md` | `eeb26bedf5039c3c3182de122a9d9fab04aed9b1` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 058 | 2026-10-20 | `horizon-cortex/2026-10-20-H1-signal-observe.md` | `68b147dfbd7b67abdc78d1ef7195c2ac3242cabd` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 059 | 2026-10-20 | `horizon-cortex/2026-10-20-H2-horizon-orient.md` | `44c13913cc8eb19caf4fb3c3ad95449779d9b750` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 060 | 2026-10-20 | `parallax/records/2026-10/2026-10-20.md` | `a2f7aad1ef784216b9cbe53efadf7ffe60009383` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 061 | 2026-10-21 | `horizon-cortex/2026-10-21-H1-signal-observe.md` | `e37bc549c8eacf732035bbe40e965c209d1710b0` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 062 | 2026-10-21 | `horizon-cortex/2026-10-21-H2-horizon-orient.md` | `38967150f9c5d5d38b8681751e0d5ab8c516702f` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 063 | 2026-10-21 | `parallax/records/2026-10/2026-10-21.md` | `0e2cc01df1638bcf9d0dadea57ec5e0a10b07d33` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 064 | 2026-10-22 | `horizon-cortex/2026-10-22-H1-signal-observe.md` | `c586eb8d6bac5643573671979feaf5c8fd1bd11f` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 065 | 2026-10-22 | `horizon-cortex/2026-10-22-H2-horizon-orient.md` | `d090a178b95ac8e17c8adc59834503d674fdd3f5` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 066 | 2026-10-22 | `parallax/records/2026-10/2026-10-22.md` | `12272b98a59410b980778011c6b05758499f30b6` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 067 | 2026-10-23 | `horizon-cortex/2026-10-23-H1-signal-observe.md` | `d7f914264dd3f7fa826d68a1a2ad960b89e62d23` | UPSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 068 | 2026-10-23 | `horizon-cortex/2026-10-23-H2-horizon-orient.md` | `112d25a6b436c51601e42b8b532bd0c1173c8474` | DOWNSTREAM_DAILY | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 069 | 2026-10-23 | `parallax/records/2026-10/2026-10-23.md` | `b1aacddacaf5d5638afc52c52e670ab15dce7792` | INDEPENDENT_NATIVE_RESEARCH | A1_HISTORICAL_INHERITED | source claim/status preserved
+- 070 | 2026-10-24 | `horizon-cortex/2026-10-24-H1-signal-observe.md` | `81c960fdb216c56e58275bba1798f03bd57346d5` | UPSTREAM_DAILY | PRIOR_DAY_A1_PLUS_CORRECTED_AVAILABILITY | source claim/status preserved
+- 071 | 2026-10-24 | `horizon-cortex/2026-10-24-H2-horizon-orient.md` | `d5bfd3983ff6a9d40cdffecdf0340c1909fb826c` | DOWNSTREAM_DAILY | PRIOR_DAY_A1_PLUS_CORRECTED_AVAILABILITY | source claim/status preserved
+- 072 | 2026-10-24 | `parallax/records/2026-10/2026-10-24.md` | `fd701713a785ce5a54c3b397a7c79ce01a533f55` | INDEPENDENT_NATIVE_RESEARCH | PRIOR_DAY_A1_PLUS_CORRECTED_AVAILABILITY | source claim/status preserved
+- 073 | 2026-10-25 | `horizon-cortex/2026-10-25-H1-signal-observe.md` | `5c38051e51cb4d99986a8350f28c923ff65c235c` | UPSTREAM_DAILY | CURRENT_N_DAY_INPUT | source claim/status preserved
+- 074 | 2026-10-25 | `horizon-cortex/2026-10-25-H2-horizon-orient.md` | `04d5db240f7c9e1d5b687a259a6a3551990b37e8` | DOWNSTREAM_DAILY | CURRENT_N_DAY_INPUT | source claim/status preserved
+- 075 | 2026-10-25 | `parallax/records/2026-10/2026-10-25.md` | `ff38ccc60c41ec3a5d76d4b2dc4790d7e7453fc3` | INDEPENDENT_NATIVE_RESEARCH | CURRENT_N_DAY_INPUT | source claim/status preserved
+
+## Monthly / weekly / Special relation and current N-day case
+- `horizon-cortex/2026-10-H6-horizon-memorize.md` | exact blob `d95c1ca227faff2daa3a98a98b859726893b63e2` | MONTH_OWNER_OPEN | source presence != natural close
+- `parallax/records/2026-10.md` | exact blob `759b7f16e3885cb9e1ecede04b1ba448205686f5` | MONTH_OWNER_OPEN | source presence != natural close
+- `parallax/audits/2026-W43.md` | exact blob `1cbe6e383d649ecbaa3640fda13c009b035724ad` | PERIODIC_OWNER_BOUNDED | source presence != natural close
+- 2026-10-25 Horizon H1 (#825) entered main before H2 (#826). This verifies upstream delivery order, not source truth or platform implementation.
+- 2026-10-25 Parallax (#823) performed bounded Pages artifact custody, with #824 following up on W43 and source/validator consistency; host deployment != currently served bytes.
+- Parallax original publisher count may be one original source family even with repeated Docs/Actions references; do not inflate independence.
+- W43 Parallax audit is a separate cadence with its own as-of cutoff, not implicit H3/H4 scientific success.
+
+## Exact delta since prior current-month A2
+- `docs/brain/inputs/.harvester_state.json` | modified | +19/-19 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `docs/brain/inputs/archive/2026/10/complex-agent-systems/bytedance_deer_flow/CHANGELOG.md__7a36c598600c__f6a5a64c9bc2.md` | renamed | +0/-0 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `docs/brain/inputs/archive/2026/10/complex-agent-systems/bytedance_deer_flow/README.md__17337e8d27ec__f6a5a64c9bc2.md` | renamed | +0/-0 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `docs/brain/inputs/current/complex-agent-systems/bytedance_deer_flow/CHANGELOG.md__d2864fce7987__e9074b712683.md` | added | +13186/-0 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `docs/brain/inputs/current/complex-agent-systems/bytedance_deer_flow/README.md__596b9a263e51__e9074b712683.md` | added | +4149/-0 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `docs/brain/knowledge/entities/external_document.jsonl` | modified | +2/-2 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `docs/brain/memories/20261025-quantitative-dashboard.md` | added | +53/-0 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `docs/brain/memories/QUANTITATIVE_LEDGER.md` | modified | +6/-0 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `historical-audits/2026-10/2026-10-24-a2-month-relation.md` | modified | +21/-0 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `historical-audits/2026-10/2026-10-25-a1-source-custody.md` | added | +292/-0 | TEN_A1_MERGED_EVIDENCE | Git diff only; no native replay
+- `horizon-cortex/2026-10-25-H1-signal-observe.md` | added | +124/-0 | N_DAY_ADDITION | Git diff only; no native replay
+- `horizon-cortex/2026-10-25-H2-horizon-orient.md` | added | +104/-0 | N_DAY_ADDITION | Git diff only; no native replay
+- `parallax/README.md` | modified | +26/-8 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `parallax/audits/2026-W43.md` | added | +138/-0 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `parallax/audits/README.md` | modified | +11/-1 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `parallax/records/2026-10.md` | modified | +21/-5 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `parallax/records/2026-10/2026-10-25.md` | added | +180/-0 | N_DAY_ADDITION | Git diff only; no native replay
+- `parallax/tools/check.py` | modified | +7/-1 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+- `parallax/tools/test_audit_record_refs.py` | added | +57/-0 | CORRECTION_OR_SYNC_REQUIRED | Git diff only; no native replay
+
+## Final A2 interpretation
+- All 75 canonical named daily source paths are present on post-A1 main, and all 25 logical dates have separate upstream/downstream/independent-research identities.
+- The exact source-to-source relation is traceable through SHA; links do not confer executable, scientific or independence credit.
+- Prev Oct24 visibility correction remains active; original assertion and the correction are both retained in Git history.
+- Current October month version stays OPEN, with known unknowns/failures preserved.
+- Code, source Daily, original Weekly/Monthly, Special, audits and user production ownership were not edited.
+- Deliver A2 only as a new dated relational update, then require final main SHA + PR + owner file + open PR=0 verification.
+
