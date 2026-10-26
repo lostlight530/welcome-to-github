@@ -61,6 +61,12 @@ public governance != private task prompt or private memory
 
 Parallax research may be read as evidence for Parallax's own state. Its Daily/Special/CASE/NOTES research artifacts are not default repository-maintenance edit targets. Maintenance/correction changes should use the owning current maintenance/control surface and preserve point-in-time research history unless a separate authorized research correction explicitly owns that artifact.
 
+## 2026-10-26 prospective producer transition
+
+The maintainer-declared ten-repository retirement of Jules from **future production** does not reattribute older Jules records. Horizon GPT Native prospective task artifacts keep their own exact producer and task-time provenance, while Parallax's native Daily/Special research has its separately observed execution identity. Independent GPT A1/A2/Periodic Audit maintenance is a different role and never becomes native-production evidence by writing a review.
+
+This current governance statement does not prove that every external/private Jules scheduler was disabled, that every future task actually executed, or that all ten repositories share one replacement producer. For any task/period, inspect current owning machine contract, original run artifact, Git/PR chronology, and failed or unexecuted states. Never backdate this handoff to historical tasks or silently rewrite the archived record.
+
 ## Maintenance decision and delivery
 
 For repository maintenance:
