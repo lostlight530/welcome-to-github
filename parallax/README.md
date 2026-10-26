@@ -56,15 +56,17 @@ CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录
 
 ## 当前研究边界 — 2026-10-27
 
-本日比较 2026-10-26 UTC 的 Pages runs 40320063198 与 40332296605, 两者 completed/success, 各有一个当前 listed/expired=false 的 github-pages artifact, 同为 13925 bytes 但报告 SHA256 不同, 旧 run 40161825898 从前日已列出转为本日 artifacts=[], 当前 main SHA 仅与较新 run head 相同, 这些都不证明公共 Pages 字节或删除原因, GitHub 单一 publisher, PARTIAL
+本日比较 2026-10-26 UTC 的 Pages runs 40320063198 与 40332296605, 两者 completed/success, 各有一个当前 listed/expired=false 的 github-pages artifact, 同为 13925 bytes, 同日进一步实际下载两份 ZIP 并以 Python 3.13.5 复算 SHA256, 两份 ZIP/TAR digest 不同且均通过 CRC, 但 TAR 中三个普通文件内容 SHA256 全相同, 差别仅见于八个成员的 mtime 元数据, 旧 run 40161825898 从前日已列出转为本日 artifacts=[], 当前 main 冷启动 SHA 仅与较新 run head 相同, 不证明公共 Pages 字节或删除原因, GitHub 单一 publisher, PARTIAL
 
-SAME_ARTIFACT_NAME_AND_SIZE != SAME_REPORTED_ARCHIVE_DIGEST != SAME_RENDERED_CONTENT
+SAME_ARTIFACT_NAME_AND_SIZE != SAME_ZIP_BYTES
+
+DIFFERENT_ZIP_OR_TAR_SHA256 != DIFFERENT_EXTRACTED_REGULAR_FILE_BYTES
 
 RUN_COMPLETED_SUCCESS != CURRENT_ARTIFACT_CUSTODY != PUBLIC_SITE_ACCEPTED
 
 CURRENT_MAIN_SHA_EQUALS_DEPLOY_HEAD != PUBLIC_SITE_BYTES_VERIFIED
 
-本日 native Daily 1、research batch 1、independent execution window 1, 2 个 bounded Trials, 无 CASE/NOTES/Special/Audit 增加, derived synchronization 研究 credit 为 0, exact native checker 未执行, 当前 ZIP 独立字节复核、删除事件与公共 Pages 验证均未执行
+本日 native Daily 1、research batch 1、independent execution window 1, 2 个 bounded Trials, 无 CASE/NOTES/Special/Audit 增加, derived synchronization 研究 credit 为 0, 两份 ZIP SHA256 与 TAR member digest 对比已真实执行, exact native checker、删除事件审计和公共 Pages HTTP 内容验证均未执行
 
 ## 前序研究边界 — 2026-10-26
 
