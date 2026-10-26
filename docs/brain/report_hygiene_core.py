@@ -76,7 +76,7 @@ def render_welcome(memories):
     if mission.exists():
         source = mission.read_text(encoding="utf-8")
         tasks = [line for line in source.splitlines() if line.startswith("- [ ]")]
-        mission_output = "# 当前任务\n\n## 建议动作\n\n" + ("\n".join(tasks) if tasks else "- 当前没有待执行动作.") + "\n\n## 约束\n\n- 结论必须可验证.\n- 自动生成内容只使用英文句号.\n- Jules 自主维护目录不由本流程改写.\n"
+        mission_output = "# 当前任务\n\n## 建议动作\n\n" + ("\n".join(tasks) if tasks else "- 当前没有待执行动作.") + "\n\n## 约束\n\n- 结论必须可验证.\n- 自动生成内容只使用英文句号.\n- 独立维护目录不由本流程改写.\n"
         assert_period(mission_output)
         atomic_write(mission, mission_output)
     return [dashboard, mission]
@@ -144,7 +144,7 @@ def render_zero(memories):
 
 - 结论必须可验证.
 - 自动生成内容只使用英文句号.
-- Jules 自主维护目录不由本流程改写.
+- 独立维护目录不由本流程改写.
 """
         assert_period(mission_output)
         atomic_write(mission, mission_output)
