@@ -96,6 +96,18 @@ This recovery kernel is intentionally repository-bounded. It neither requires no
 
 The repository currently has no public `AGENTS.md`; do not infer one from private task controls or prior conversations.
 
+## Public-release privacy preflight — 2026-10-26
+
+Apply this check to the complete proposed publication, not only the changed Markdown file
+
+1. **Public allowlist:** disclose repository-visible task identity, exact Git refs, authorized scope, evidence status, non-sensitive validation results, risks and rollback; do not reconstruct off-repository private controls
+2. **Pre-publish review:** inspect the final `main...branch` diff, PR title and description, intended comments, report attachments, copied command output and log excerpts for material that is not authorized for public distribution
+3. **Withhold restricted material:** never reproduce passwords, API credentials, access tokens, confidential instructions, private workspace memory, hidden reasoning, private personal information or nonpublic addresses in repository files, PRs, screenshots or logs
+4. **Fail closed:** when a suspect disclosure cannot be ruled out, stop publication and request a confidential maintainer decision; report only the issue category and affected surface, without quoting the underlying material
+5. **After confirmed exposure:** coordinate private incident response and relevant credential revocation/rotation; a follow-up edit alone does not remove old commits, caches or copies
+
+The check is a maintenance publication rule, not evidence of a historical secret scan, native scientific run, CI gate, or verified cancellation of a private scheduler. Retain original producer identity and historical research outcomes.
+
 ## Handoff minimum
 
 A durable handoff should make it possible to recover:
