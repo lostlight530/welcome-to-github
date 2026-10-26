@@ -14,7 +14,7 @@ My current public work connects edge-first engineering, agent systems, scientifi
 
 The public presentation layer is available at:
 
-[lostlight.github.io/welcome-to-github](https://lostlight530.github.io/welcome-to-github/)
+[lostlight530.github.io/welcome-to-github](https://lostlight530.github.io/welcome-to-github/)
 
 The portal is an independent display surface. Repository workflows and research systems run separately.
 

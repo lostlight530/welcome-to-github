@@ -33,15 +33,15 @@ Profile 不合法、GitHub Tree 截断、Blob 编码异常、来源网络失败�
 
 不得通过全局选择冲突一侧掩盖并发变更.
 
-## Jules 边界
+## 独立维护边界
 
-`horizon-cortex/**` 由 Jules 外部 SOP 生成并由人类审核 PR.
+`horizon-cortex/**` 是独立研究维护输出并由人类审核 PR.
 
 本生命周期不格式化、不清理、不自动改写该目录.
 
 ## GitHub Actions 生命周期
 
-本生命周期是确定性仓库维护程序，不是 Agent，也不代替 Jules 或 GPT 的独立维护体系.
+本生命周期是确定性仓库维护程序，不是 Agent，也不代替独立外部维护或辅助维护体系.
 
 - Push 与 Pull Request 只执行只读校验，不摄取、不生成、不提交.
 - 手动运行默认只读，只有明确选择 apply 才进入候选生成链.
