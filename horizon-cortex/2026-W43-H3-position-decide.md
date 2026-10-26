@@ -52,6 +52,7 @@ WEEKLY_SIGNAL_SYNTHESIS
 DECISION_SET
 Decision ID: NO_DECISION
 Decision Type: NO_DECISION / KEEP_EXISTING_WATCHLIST
+Host Repository Change: NO
 Decision: Do not promote W43 observations into a mandatory architecture change, new protocol dominance claim or durable Horizon memory.
 Reason: three originally BLOCKED H2 steps, two degraded original H1 network observations, and absent independent implementation replay prevent a reliable week-wide promotion.
 Next admissible decision: independent exact-version API / SDK runtime reproduction, counterexamples on unaffected configurations, and source-identified host code inspection, in a later valid research window.
