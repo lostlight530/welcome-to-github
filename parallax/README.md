@@ -14,12 +14,12 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-26
-- 最新每日研究: [Artifact expiry boundary versus durable run evidence](records/2026-10/2026-10-26.md)
-- 每日专题: 96
+- 最新每日归属日期: 2026-10-27
+- 最新每日研究: [Same-size Pages archives, current custody and deployment identity](records/2026-10/2026-10-27.md)
+- 每日专题: 97
 - 特殊专题: 17
-- 当前专题研究批次: 113
-- 当前专题独立执行日期窗口: 91
+- 当前专题研究批次: 114
+- 当前专题独立执行日期窗口: 92
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -54,7 +54,19 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-10-26
+## 当前研究边界 — 2026-10-27
+
+本日比较 2026-10-26 UTC 的 Pages runs 40320063198 与 40332296605, 两者 completed/success, 各有一个当前 listed/expired=false 的 github-pages artifact, 同为 13925 bytes 但报告 SHA256 不同, 旧 run 40161825898 从前日已列出转为本日 artifacts=[], 当前 main SHA 仅与较新 run head 相同, 这些都不证明公共 Pages 字节或删除原因, GitHub 单一 publisher, PARTIAL
+
+SAME_ARTIFACT_NAME_AND_SIZE != SAME_REPORTED_ARCHIVE_DIGEST != SAME_RENDERED_CONTENT
+
+RUN_COMPLETED_SUCCESS != CURRENT_ARTIFACT_CUSTODY != PUBLIC_SITE_ACCEPTED
+
+CURRENT_MAIN_SHA_EQUALS_DEPLOY_HEAD != PUBLIC_SITE_BYTES_VERIFIED
+
+本日 native Daily 1、research batch 1、independent execution window 1, 2 个 bounded Trials, 无 CASE/NOTES/Special/Audit 增加, derived synchronization 研究 credit 为 0, exact native checker 未执行, 当前 ZIP 独立字节复核、删除事件与公共 Pages 验证均未执行
+
+## 前序研究边界 — 2026-10-26
 
 本日跨日复验同一 GitHub Pages artifact 12547593574: 2026-10-25 Daily 已记录其 listed/expired=false 且下载 ZIP 完成 SHA256 复核, 2026-10-26 重新读取 run 40062316438 时 artifacts=[] 而 run/job 上传与部署成功记录仍保留, 新 run 40161825898 当前列出 expired=false 的 artifact 12586574064, 13924 bytes, 日志和 REST digest 一致, 历史观察与今日读数分离, GitHub 单一 publisher, 结论 PARTIAL
 
