@@ -1,0 +1,168 @@
+# A2 | welcome-to-github | 2026-10-26 current October evidence relation
+
+- Repository: `lostlight530/welcome-to-github`; logical date 2026-10-26 Asia/Shanghai.
+- Fresh post-ALL-TEN-A1 merged main: `eb32fb87c603efbc3c930d3cac05f0841eff245f`; direct A1 owner `historical-audits/2026-10/2026-10-26-a1-source-custody.md` blob `c9bb9042ca52adfb2cc0fc4c484cc883a0d542ed`.
+- Last Oct25 A2 merged baseline: `0d6422edcebdec9e87886d04d7a5974fe4584d59`; 2026-10 monthly relation is **OPEN** (not early natural-month completion).
+- Input scope: MonthStart 2026-10-01→N=2026-10-26 inclusive; 78 exact daily native slots / missing 0.
+- Source comparison previous A2→current main: 23 exact changed paths; 86 daily/weekly/context named source objects indexed below.
+- A1 Oct01–25 is immutable merged prerequisite, not rewritten here; Oct26 actual N-day native files are separate input.
+- Original native producers (Jules/authorized prospective GPT) remain distinct from this Independent GPT relation review.
+- This A2 did not execute repo-native tests, SDK reproducer, or scientific benchmark; GitHub blobs are source custody only.
+
+## N-day native relations and evidentiary limits
+- H1/H2 from openai-python v3.36.1 source lineage; host runtime adoption UNKNOWN; Parallax native bounded live GitHub artifact-list transition, success log != durable artifact retrievability.
+- A daily prerequisite chain is not two independent corroborations; embedded advisory/source lineage and separate Jules Parallax/Ballast are different producer classes.
+- 2026-W43 is logically Oct19–25 and its report can be delivered Oct26; a merge timestamp on Oct26 cannot expand its logical week.
+- October H5/H6 or A5/A6 natural-month terminal artifacts remain NOT_DUE/MONTH_OPEN, regardless of daily/weekly path visibility.
+- Do not award any new D7/D10/D14/D30 periodic audit success, producer-native test PASS, or science adoption from this maintenance record.
+
+## All 26 logical dates — exact three-way current native source relationship
+- 2026-10-01 | d6600cc374d70c → 26be2924210fa2 → 57b7c48b443b0c | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-02 | cfaae2e88d2d29 → 2c887297c18813 → ca648db1ad3fce | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-03 | 6b37b2be59ef93 → 0e06a2eeff4253 → 7646cb0944f36d | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-04 | 24b91b58eaccea → 245cd66c944188 → cbd7355065b7e7 | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-05 | 43fbb2a88de034 → b52086ceb13f06 → 0e8368829ea2ba | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-06 | badacb45f435f8 → aa2f54b39a4a7a → 56eb22aa70926d | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-07 | e7cee61e3eeed0 → 4fa2353e1c96d4 → 3c3250d9d877f7 | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-08 | 2803312825d90e → bece799e9fdaf0 → f3f8e80f73f641 | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-09 | 3ad421f2564a3c → ddc4699b3d85ca → c8816a519ded33 | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-10 | 0b309d35767ecb → 5a3fa3c0a09f6f → d28220260d6fd5 | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-11 | e470c16e37af2d → ecd717d3031bc6 → 730e12f4cf858f | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-12 | 8b8595311b7198 → e13bb69bdd1947 → ca52e3a1829cf4 | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-13 | 4b5de2da56b98f → b6526a008df1c3 → 7ad0e3060090ba | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-14 | 96b868a36f9008 → a43e10152913b6 → 62886081eee36e | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-15 | 88e05844378f0f → 318a87f4b7cd4b → c197c66e4a063f | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-16 | 47c3e602f7c086 → d1f21d55319354 → aa642853c559b7 | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-17 | d3424d7a90f1d7 → b6fa5b59435768 → 1c0988f4c5c216 | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-18 | 9566b6add3ed8f → b00de134b20143 → 582d02a591e394 | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-19 | 1e9ed83bb2375d → 290976259931cd → eeb26bedf5039c | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-20 | 68b147dfbd7b67 → 44c13913cc8eb1 → a2f7aad1ef7842 | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-21 | e37bc549c8eacf → 38967150f9c5d5 → 0e2cc01df1638b | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-22 | c586eb8d6bac56 → d090a178b95ac8 → 12272b98a59410 | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-23 | d7f914264dd3f7 → 112d25a6b436c5 → b1aacddacaf5d5 | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-24 | 81c960fdb216c5 → d5bfd3983ff6a9 → fd701713a785ce | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-25 | 5c38051e51cb4d → 04d5db240f7c9e → ff38ccc60c41ec | 3/3_PATH_VISIBLE | INHERITED_A1_BOUNDED_NATIVE_STATUS
+- 2026-10-26 | 31c15d427aee7a → b2aeef3cd73172 → 3c98831f6ba802 | 3/3_PATH_VISIBLE | NEW_N_DAY_INPUT_AUTHOR_REPORTED_STATUS
+
+## Named native, weekly, independent, and contextual immutable Git objects
+- 001 | `horizon-cortex/2026-10-01-H1-signal-observe.md` | blob `d6600cc374d70cea8217b0c8ad5e9738526a6f2b` | 3088 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 002 | `horizon-cortex/2026-10-01-H2-horizon-orient.md` | blob `26be2924210fa2c9ce347345909ea5b97fc5afe4` | 3352 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 003 | `horizon-cortex/2026-10-02-H1-signal-observe.md` | blob `cfaae2e88d2d2968769292b09d74cb404bb23892` | 3819 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 004 | `horizon-cortex/2026-10-02-H2-horizon-orient.md` | blob `2c887297c188136786ba092922901d35b0287e6d` | 1934 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 005 | `horizon-cortex/2026-10-03-H1-signal-observe.md` | blob `6b37b2be59ef93c58c3902f12ed2fbddbdf65ddb` | 3913 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 006 | `horizon-cortex/2026-10-03-H2-horizon-orient.md` | blob `0e06a2eeff4253fe21752e6e76bd4882e92240f8` | 3611 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 007 | `horizon-cortex/2026-10-04-H1-signal-observe.md` | blob `24b91b58eaccea5ceb16e761a0f6d8d2947314cb` | 3880 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 008 | `horizon-cortex/2026-10-04-H2-horizon-orient.md` | blob `245cd66c944188c1b56ed5736b34f28514964c4b` | 3762 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 009 | `horizon-cortex/2026-10-05-H1-signal-observe.md` | blob `43fbb2a88de0341440977cc834e10c1c0e7ff9ed` | 3853 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 010 | `horizon-cortex/2026-10-05-H2-horizon-orient.md` | blob `b52086ceb13f06c3ad919cd3ba1e5443cd96d938` | 4405 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 011 | `horizon-cortex/2026-10-06-H1-signal-observe.md` | blob `badacb45f435f80065fe85eb366b754863509c68` | 3858 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 012 | `horizon-cortex/2026-10-06-H2-horizon-orient.md` | blob `aa2f54b39a4a7a572e55ec78374f631e92d361d6` | 4303 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 013 | `horizon-cortex/2026-10-07-H1-signal-observe.md` | blob `e7cee61e3eeed05223981b64d41b314c8120b856` | 3796 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 014 | `horizon-cortex/2026-10-07-H2-horizon-orient.md` | blob `4fa2353e1c96d481b02c85823138c0012f9bbd12` | 3987 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 015 | `horizon-cortex/2026-10-08-H1-signal-observe.md` | blob `2803312825d90e0dc8431b97144788832fe0baea` | 3796 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 016 | `horizon-cortex/2026-10-08-H2-horizon-orient.md` | blob `bece799e9fdaf05618cf4835bbcf20ef579b6634` | 3987 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 017 | `horizon-cortex/2026-10-09-H1-signal-observe.md` | blob `3ad421f2564a3c99f7c7072fac8875404271259e` | 3791 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 018 | `horizon-cortex/2026-10-09-H2-horizon-orient.md` | blob `ddc4699b3d85ca9282c4d868085f4529792cd1e7` | 4303 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 019 | `horizon-cortex/2026-10-10-H1-signal-observe.md` | blob `0b309d35767ecb2093c042eb02e4c554b5a88eb4` | 3791 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 020 | `horizon-cortex/2026-10-10-H2-horizon-orient.md` | blob `5a3fa3c0a09f6f748f20e8dbbd99d55a5ed271b3` | 6299 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 021 | `horizon-cortex/2026-10-11-H1-signal-observe.md` | blob `e470c16e37af2dc779cf9154b7dd49520e1efb98` | 3791 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 022 | `horizon-cortex/2026-10-11-H2-horizon-orient.md` | blob `ecd717d3031bc6556daf0e89c494d6d34f1d50d0` | 7010 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 023 | `horizon-cortex/2026-10-12-H1-signal-observe.md` | blob `8b8595311b71984448fce0d35c222d34ff3f1fbc` | 5772 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 024 | `horizon-cortex/2026-10-12-H2-horizon-orient.md` | blob `e13bb69bdd1947ebe72ec7c90f207141fdcafa13` | 6481 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 025 | `horizon-cortex/2026-10-13-H1-signal-observe.md` | blob `4b5de2da56b98f4d5487578fb7e6a44b13ac4f91` | 10352 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 026 | `horizon-cortex/2026-10-13-H2-horizon-orient.md` | blob `b6526a008df1c39315f58e73192945509afdabbf` | 1120 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 027 | `horizon-cortex/2026-10-14-H1-signal-observe.md` | blob `96b868a36f9008428c78d3c58faa7541de520c78` | 6458 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 028 | `horizon-cortex/2026-10-14-H2-horizon-orient.md` | blob `a43e10152913b66d3dbd35c7aff78cc746c6cfd7` | 5463 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 029 | `horizon-cortex/2026-10-15-H1-signal-observe.md` | blob `88e05844378f0f13035d31cf2b33d3650f2968b9` | 6373 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 030 | `horizon-cortex/2026-10-15-H2-horizon-orient.md` | blob `318a87f4b7cd4b5117e866c5d3e7afe8ad5b37a5` | 6221 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 031 | `horizon-cortex/2026-10-16-H1-signal-observe.md` | blob `47c3e602f7c08609394ffdfe390f2d761f533f90` | 7974 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 032 | `horizon-cortex/2026-10-16-H2-horizon-orient.md` | blob `d1f21d553193544258959771faa052fa6a2fdbfb` | 8851 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 033 | `horizon-cortex/2026-10-17-H1-signal-observe.md` | blob `d3424d7a90f1d71ddb21bc2dcfea93fd7b59813c` | 5846 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 034 | `horizon-cortex/2026-10-17-H2-horizon-orient.md` | blob `b6fa5b59435768305440b2380a58dfa959050442` | 3846 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 035 | `horizon-cortex/2026-10-18-H1-signal-observe.md` | blob `9566b6add3ed8feeb43e791b47499f8edfe157bf` | 3238 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 036 | `horizon-cortex/2026-10-18-H2-horizon-orient.md` | blob `b00de134b20143102a1f8809a78e04e0a18c2df1` | 1068 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 037 | `horizon-cortex/2026-10-19-H1-signal-observe.md` | blob `1e9ed83bb2375d4d9a660f1bb3dd38da4efb5798` | 12804 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 038 | `horizon-cortex/2026-10-19-H2-horizon-orient.md` | blob `290976259931cd4d15f54ef1664ff15b8f6ff52d` | 1108 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 039 | `horizon-cortex/2026-10-20-H1-signal-observe.md` | blob `68b147dfbd7b67abdc78d1ef7195c2ac3242cabd` | 8802 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 040 | `horizon-cortex/2026-10-20-H2-horizon-orient.md` | blob `44c13913cc8eb19caf4fb3c3ad95449779d9b750` | 7853 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 041 | `horizon-cortex/2026-10-21-H1-signal-observe.md` | blob `e37bc549c8eacf732035bbe40e965c209d1710b0` | 3720 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 042 | `horizon-cortex/2026-10-21-H2-horizon-orient.md` | blob `38967150f9c5d5d38b8681751e0d5ab8c516702f` | 3964 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 043 | `horizon-cortex/2026-10-22-H1-signal-observe.md` | blob `c586eb8d6bac5643573671979feaf5c8fd1bd11f` | 9247 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 044 | `horizon-cortex/2026-10-22-H2-horizon-orient.md` | blob `d090a178b95ac8e17c8adc59834503d674fdd3f5` | 7999 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 045 | `horizon-cortex/2026-10-23-H1-signal-observe.md` | blob `d7f914264dd3f7fa826d68a1a2ad960b89e62d23` | 7808 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 046 | `horizon-cortex/2026-10-23-H2-horizon-orient.md` | blob `112d25a6b436c51601e42b8b532bd0c1173c8474` | 16647 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 047 | `horizon-cortex/2026-10-24-H1-signal-observe.md` | blob `81c960fdb216c56e58275bba1798f03bd57346d5` | 10163 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 048 | `horizon-cortex/2026-10-24-H2-horizon-orient.md` | blob `d5bfd3983ff6a9d40cdffecdf0340c1909fb826c` | 7896 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 049 | `horizon-cortex/2026-10-25-H1-signal-observe.md` | blob `5c38051e51cb4d99986a8350f28c923ff65c235c` | 7524 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 050 | `horizon-cortex/2026-10-25-H2-horizon-orient.md` | blob `04d5db240f7c9e1d5b687a259a6a3551990b37e8` | 9773 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 051 | `horizon-cortex/2026-10-26-H1-signal-observe.md` | blob `31c15d427aee7a8fb537ef01fe30a5493c6c7be1` | 6677 B | N_DAY_NATIVE_OR_EVIDENCE; source identity != runtime PASS
+- 052 | `horizon-cortex/2026-10-26-H2-horizon-orient.md` | blob `b2aeef3cd731720a40aca36a4c16955624912bae` | 7422 B | N_DAY_NATIVE_OR_EVIDENCE; source identity != runtime PASS
+- 053 | `horizon-cortex/2026-W43-H3-position-decide.md` | blob `791f95e4aef7f67bc416f62ea9a04653cf8e636b` | 5873 B | W43_WEEKLY; source identity != runtime PASS
+- 054 | `horizon-cortex/2026-W43-H4-narrative-act.md` | blob `1bad608894a28b41e1dd7309b64de2bfd3429b2e` | 4280 B | W43_WEEKLY; source identity != runtime PASS
+- 055 | `horizon-cortex/EVIDENCE_POLICY.md` | blob `060eaff65437bda48718a9703477815c574a9846` | 14662 B | POLICY_OR_CONTEXT; source identity != runtime PASS
+- 056 | `horizon-cortex/README.md` | blob `fb6a2d828764571af66caf94259f67f16b1a8b0d` | 3520 B | POLICY_OR_CONTEXT; source identity != runtime PASS
+- 057 | `parallax/audits/2026-W43.md` | blob `1cbe6e383d649ecbaa3640fda13c009b035724ad` | 11488 B | W43_WEEKLY; source identity != runtime PASS
+- 058 | `parallax/CASES.md` | blob `6c4979fb52734fc4d0538a07309dbec53aac0bf4` | 39407 B | POLICY_OR_CONTEXT; source identity != runtime PASS
+- 059 | `parallax/README-history-through-2026-10-21.md` | blob `d2cad35f6dec56c5c4852b9a341ac4baa0a806d0` | 20211 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 060 | `parallax/README.md` | blob `636cdf759d3a07cf1ffc5c60072e89cec406e3c4` | 9226 B | POLICY_OR_CONTEXT; source identity != runtime PASS
+- 061 | `parallax/records/2026-10/2026-10-01.md` | blob `57b7c48b443b0c910351a90edca3a1c691a48861` | 8559 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 062 | `parallax/records/2026-10/2026-10-02.md` | blob `ca648db1ad3fce74c234092700504be4292323d5` | 10196 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 063 | `parallax/records/2026-10/2026-10-03.md` | blob `7646cb0944f36d8e651a7034643c9d4009abcbe1` | 14488 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 064 | `parallax/records/2026-10/2026-10-04.md` | blob `cbd7355065b7e762b6c181de680333b2c1e05990` | 15294 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 065 | `parallax/records/2026-10/2026-10-05.md` | blob `0e8368829ea2ba72223202b55fa4b659c42bb3f1` | 15190 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 066 | `parallax/records/2026-10/2026-10-06.md` | blob `56eb22aa70926d789453433ce3d84b07d749781b` | 7037 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 067 | `parallax/records/2026-10/2026-10-07.md` | blob `3c3250d9d877f72363b2e8b8f799184dc977495d` | 14873 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 068 | `parallax/records/2026-10/2026-10-08.md` | blob `f3f8e80f73f641820b2d6591de03bbe8b75a8ae5` | 16967 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 069 | `parallax/records/2026-10/2026-10-09.md` | blob `c8816a519ded333632f7a2b707e543476082a68a` | 15890 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 070 | `parallax/records/2026-10/2026-10-10.md` | blob `d28220260d6fd5e0cf7bc9d18feb84cfe78b0f02` | 16653 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 071 | `parallax/records/2026-10/2026-10-11.md` | blob `730e12f4cf858f041a72ec521e87e33bca6584d5` | 15816 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 072 | `parallax/records/2026-10/2026-10-12.md` | blob `ca52e3a1829cf4d786d70da512e9e9e93b14e42b` | 19697 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 073 | `parallax/records/2026-10/2026-10-13.md` | blob `7ad0e3060090ba2b1df052fc7c0053baaad0d579` | 20526 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 074 | `parallax/records/2026-10/2026-10-14.md` | blob `62886081eee36e94a6f4807acab314a6a47870bd` | 15182 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 075 | `parallax/records/2026-10/2026-10-15.md` | blob `c197c66e4a063f7830b93c9a3619f73efa25eef1` | 17341 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 076 | `parallax/records/2026-10/2026-10-16.md` | blob `aa642853c559b7cecacf3c1f57bfa92812879ace` | 13634 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 077 | `parallax/records/2026-10/2026-10-17.md` | blob `1c0988f4c5c216f18fc35615b9ba772d4d44c143` | 14660 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 078 | `parallax/records/2026-10/2026-10-18.md` | blob `582d02a591e394b31b7a1f5ee4236f21fe6b29b3` | 13991 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 079 | `parallax/records/2026-10/2026-10-19.md` | blob `eeb26bedf5039c3c3182de122a9d9fab04aed9b1` | 16331 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 080 | `parallax/records/2026-10/2026-10-20.md` | blob `a2f7aad1ef784216b9cbe53efadf7ffe60009383` | 11206 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 081 | `parallax/records/2026-10/2026-10-21.md` | blob `0e2cc01df1638bcf9d0dadea57ec5e0a10b07d33` | 10522 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 082 | `parallax/records/2026-10/2026-10-22.md` | blob `12272b98a59410b980778011c6b05758499f30b6` | 4387 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 083 | `parallax/records/2026-10/2026-10-23.md` | blob `b1aacddacaf5d5638afc52c52e670ab15dce7792` | 11608 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 084 | `parallax/records/2026-10/2026-10-24.md` | blob `fd701713a785ce5a54c3b397a7c79ce01a533f55` | 10909 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 085 | `parallax/records/2026-10/2026-10-25.md` | blob `ff38ccc60c41ec3a5d76d4b2dc4790d7e7453fc3` | 19088 B | HISTORICAL_NATIVE; source identity != runtime PASS
+- 086 | `parallax/records/2026-10/2026-10-26.md` | blob `3c98831f6ba8027d57f0565e646da07e7f0ec77e` | 15561 B | N_DAY_NATIVE_OR_EVIDENCE; source identity != runtime PASS
+
+## Actual changes since previous A2 baseline; correction is append-only
+- Δ01 | `README.md` | modified, +1/-1 | current main version observed, original source/producer timing remains intact
+- Δ02 | `docs/brain/inputs/.harvester_state.json` | modified, +32/-20 | current main version observed, original source/producer timing remains intact
+- Δ03 | `docs/brain/inputs/ARCHIVE_AND_HARVESTER.md` | modified, +3/-3 | current main version observed, original source/producer timing remains intact
+- Δ04 | `docs/brain/inputs/archive/2026/10/complex-agent-systems/bytedance_deer_flow/CHANGELOG.md__d2864fce7987__e9074b712683.md` | renamed, +0/-0 | current main version observed, original source/producer timing remains intact
+- Δ05 | `docs/brain/inputs/archive/2026/10/complex-agent-systems/bytedance_deer_flow/README.md__596b9a263e51__e9074b712683.md` | renamed, +0/-0 | current main version observed, original source/producer timing remains intact
+- Δ06 | `docs/brain/inputs/current/complex-agent-systems/agentuniverse_ai_agentuniverse/docs__design__nlu_store_selection.md__8f1477c4fd2c__f69b130bacaa.md` | added, +71/-0 | current main version observed, original source/producer timing remains intact
+- Δ07 | `docs/brain/inputs/current/complex-agent-systems/bytedance_deer_flow/CHANGELOG.md__44d65fd3f373__ce0fa4c11422.md` | added, +13196/-0 | current main version observed, original source/producer timing remains intact
+- Δ08 | `docs/brain/inputs/current/complex-agent-systems/bytedance_deer_flow/README.md__8ceaeebcf622__ce0fa4c11422.md` | added, +4294/-0 | current main version observed, original source/producer timing remains intact
+- Δ09 | `docs/brain/knowledge/entities/external_document.jsonl` | modified, +3/-2 | current main version observed, original source/producer timing remains intact
+- Δ10 | `docs/brain/knowledge/relations/canonical.jsonl` | modified, +1/-0 | current main version observed, original source/producer timing remains intact
+- Δ11 | `docs/brain/memories/20261025-quantitative-dashboard.md` | modified, +4/-4 | current main version observed, original source/producer timing remains intact
+- Δ12 | `docs/brain/memories/MISSION_ACTIVE.md` | modified, +1/-1 | current main version observed, original source/producer timing remains intact
+- Δ13 | `docs/brain/memories/QUANTITATIVE_LEDGER.md` | modified, +6/-0 | current main version observed, original source/producer timing remains intact
+- Δ14 | `docs/brain/report_hygiene_core.py` | modified, +2/-2 | current main version observed, original source/producer timing remains intact
+- Δ15 | `governance/README.md` | modified, +7/-1 | current main version observed, original source/producer timing remains intact
+- Δ16 | `historical-audits/2026-10/2026-10-26-a1-source-custody.md` | added, +346/-0 | current main version observed, original source/producer timing remains intact
+- Δ17 | `horizon-cortex/2026-10-26-H1-signal-observe.md` | added, +107/-0 | current main version observed, original source/producer timing remains intact
+- Δ18 | `horizon-cortex/2026-10-26-H2-horizon-orient.md` | added, +100/-0 | current main version observed, original source/producer timing remains intact
+- Δ19 | `horizon-cortex/2026-W43-H3-position-decide.md` | added, +77/-0 | current main version observed, original source/producer timing remains intact
+- Δ20 | `horizon-cortex/2026-W43-H4-narrative-act.md` | added, +75/-0 | current main version observed, original source/producer timing remains intact
+- Δ21 | `parallax/README.md` | modified, +18/-6 | current main version observed, original source/producer timing remains intact
+- Δ22 | `parallax/records/2026-10.md` | modified, +15/-4 | current main version observed, original source/producer timing remains intact
+- Δ23 | `parallax/records/2026-10/2026-10-26.md` | added, +163/-0 | current main version observed, original source/producer timing remains intact
+
+## Today's reproducible multi-agent delivery adjustments
+- Prior 2026-10-26 same-task parallel PR branches were possible. Before mutation, re-fetch repository open PR list and match `(repo, owner, logical period, producer, base)`; reuse existing draft rather than producing a second owner.
+- If a duplicate PR is closed without merge, it contributes **zero** additional native Daily/Weekly deliveries. Its prior text remains historical metadata only.
+- A real `main` tree and PR merge result are required before A1 credit; a Draft PR and a PASS claim in its body are not merges or executed tests.
+- Enforce ten-A1 global barrier before creating A2, and record new post-barrier main SHA per repository; that barrier was observed in this run.
+- Comparison baselines must be exact merged A2 commits and tree blobs, not latest PR title; historical corrections should be versioned forward.
+- Separate `SOURCE_PRESENT`, `ORIGINAL_EXECUTION_OBSERVED`, `RUNNER_EXECUTED`, `SCIENTIFIC_VALIDATED`, and `INDEPENDENT_REPRODUCED` as different predicates.
+- Keep 2026-10 monthly OPEN until natural close, independent of weekly closure or relationship report line count.
+- No unrelated code or original research files were edited; evidence relation belongs in this dated A2 owner.
