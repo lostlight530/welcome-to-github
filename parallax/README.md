@@ -14,12 +14,12 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-27
-- 最新每日研究: [Same-size Pages archives, current custody and deployment identity](records/2026-10/2026-10-27.md)
-- 每日专题: 97
+- 最新每日归属日期: 2026-10-28
+- 最新每日研究: [Source commit delta versus Pages payload byte identity](records/2026-10/2026-10-28.md)
+- 每日专题: 98
 - 特殊专题: 17
-- 当前专题研究批次: 114
-- 当前专题独立执行日期窗口: 92
+- 当前专题研究批次: 115
+- 当前专题独立执行日期窗口: 93
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -54,7 +54,19 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-10-27
+## 当前研究边界 — 2026-10-28
+
+本日对两次真实成功的 GitHub Pages 部署 40557674424 与 40559719646 执行跨 source-commit 与 archive-payload identity 研究, Git 比较 bb07d5cb...5eda9683 存在 3 个提交与 2 个新增 Markdown 源路径, 两个 Pages ZIP 实际下载并用 Python 3.13.5 复核, ZIP 分别为 13925 和 13923 bytes, SHA256 不同, 内层 TAR digest 不同, 8 个成员 mtime 不同, 但 3 个普通文件 SHA256 全部相同, 两个新增源码文件未进入这 3 个发布文件, GitHub 单一 publisher, PARTIAL
+
+SOURCE_COMMIT_CHANGED != DEPLOYED_REGULAR_FILE_BYTES_CHANGED
+
+ARCHIVE_SHA256_CHANGED != EXTRACTED_PAYLOAD_SHA256_CHANGED
+
+SUCCESSFUL_DEPLOY_JOB != CURRENT_PUBLIC_HTTP_BYTES_VERIFIED
+
+本日 native Daily 1、research batch 1、independent execution window 1, 2 个 bounded Trials, 16 项本地 ZIP/TAR fixture 断言通过, 无 CASE/NOTES/Special/Audit 增加, derived synchronization 研究 credit 为 0, exact native checker 与公共 Pages HTTP 客户端验证均未执行
+
+## 前序研究边界 — 2026-10-27
 
 本日比较 2026-10-26 UTC 的 Pages runs 40320063198 与 40332296605, 两者 completed/success, 各有一个当前 listed/expired=false 的 github-pages artifact, 同为 13925 bytes, 同日进一步实际下载两份 ZIP 并以 Python 3.13.5 复算 SHA256, 两份 ZIP/TAR digest 不同且均通过 CRC, 但 TAR 中三个普通文件内容 SHA256 全相同, 差别仅见于八个成员的 mtime 元数据, 旧 run 40161825898 从前日已列出转为本日 artifacts=[], 当前 main 冷启动 SHA 仅与较新 run head 相同, 不证明公共 Pages 字节或删除原因, GitHub 单一 publisher, PARTIAL
 
