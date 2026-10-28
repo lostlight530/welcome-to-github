@@ -6430,3 +6430,15 @@ NATIVE_MODIFICATION_NOTE: append existing H6 owner only; Jules H1/H2 and Paralla
 - All original source objects preserved, month OPEN, October final and Jules-native natural-month H6 NOT_DUE
 - No original scheduler/repo runtime, external authoritative source or native complete checker executed by this documentary successor
 - Current disposition: A2_N20_SOURCE_RELATION / A1_57_INHERITED / NEW_3_PRIMARY_OBJECTS / H2_BLOCKED_UNCHANGED / NO_RESEARCH_CREDIT
+
+## Forward relation — 2026-10-28 (Day 28, October remains OPEN)
+
+- This is a dated **derived month-to-date routing and acceptance note**, added to the existing October owner; it is not a second monthly version, an original producer Daily, a native monthly final, or an independent audit execution
+- Source state: merged A1 [#851](https://github.com/lostlight530/welcome-to-github/pull/851) covers October 1–27; merged A2 [#852](https://github.com/lostlight530/welcome-to-github/pull/852) extends the relation through October 28 from the merged A1 main; post-merge [acceptance #854](https://github.com/lostlight530/welcome-to-github/pull/854) retains the result and its evidence boundaries
+- October 28 original/derived boundary: Horizon H1 #849 and H2 #850 merged on October 28 in dependency order; Parallax October 28 Daily belongs to an independent research plane. October 27 Horizon H1/H2 canonical paths are absent on inspected main, with historical scheduler attempt UNKNOWN; no Parallax substitution.
+- **A1:** Git source custody and merge `PASS`; complete in-scope content-level per-artifact decisions `PARTIAL / NOT_FULLY_ATTESTED`
+- **A2:** exact merged A1 ancestry and source identity `PASS`; complete Daily→Weekly→Monthly→Special/Stage semantic relations `PARTIAL / NOT_FULLY_ATTESTED`
+- D7 and D10 original independent audit outcomes remain `UNVERIFIED`; D14 is a preserved historical audit node and not a duplicate review credit; October D30 `NOT_DUE` until October 30
+- October natural-month final is `NOT_DUE` until natural closure; later code/path/PR presence does not upgrade earlier `BLOCKED`, `UNKNOWN` or `NOT_EXECUTED` states
+- Prior month-owner blocks above are retained as point-in-time views; no original task-time author, external source, runtime, research-batch count, independent verification, or long-term doctrine is changed by this note
+- `SOURCE_IDENTITY != CONTENT_DECISION != RUNTIME_VERIFICATION`; unresolved audit gates require separately inspectable primary evidence before status promotion
