@@ -43,10 +43,17 @@ H1 canonical filename is `horizon-cortex/YYYY-MM-DD-H1-signal-observe.md`; H2 is
 - W40 includes September 28–30. W44 (October 26–November 1) is open and not due for final H3/H4 as of October 28.
 - `horizon-cortex/2026-10-H6-horizon-memorize.md` is a **provisional MONTH_OPEN owner**; natural H5/H6 final is not due.
 - Existing A1 and A2 custody/month relation and Oct28 minimal acceptance are retained. A1 per-artifact typed decisions and A2 whole-month semantic relations **PARTIAL**, even if Git paths are enumerated.
-- October D7/D10 = UNVERIFIED; D14 = historical audit record present, not re-executed; D30 = NOT_DUE until Oct30. Oct29–31 Daily = NOT_DUE at this cutoff.
+- D7 (Oct07) / D10 (Oct10) are checkpoint dates, not mandatory filenames. Audit-log evidence NOT_FULLY_ATTESTED here; D14 historical record present, D30 NOT_DUE until Oct30. Oct29–31 Daily = NOT_DUE at this cutoff.
 
 ## Required next operation
 
 Recover exact original 10/27 H1/H2 run receipt and original PR; if unavailable, keep `ORIGINAL_EXECUTION_UNKNOWN / CANONICAL_PATH_ABSENT` and create a separately dated corrective research bridge with original source publication and observation timestamps. Re-review **all** October Daily, W40–W44, Parallax, Monthly, Special inputs for A1 (01–27) typed decisions, then A2 (01–28) relations after merged A1. Do not transfer a later file's evidence backward. Preserve original task-state history.
 
 **This PR records and scopes the deficit only; no missing native task was falsely claimed executed, no source re-run or runtime replay occurred, and no month-end/D-audit gate is closed.**
+
+## 2026-10-28 SOP reconciliation: audit checkpoint is not file identity
+
+- **D7, D10, D14 and D30 define audit checkpoint dates/windows, not mandatory per-checkpoint Markdown filenames or a replacement daily research task.** The audit contract requires append-only, traceable findings within the owning audit log/record.
+- The unmerged PR previously carried a separate Oct28 `retrospective-d7-d10` draft artifact; it was withdrawn from the current PR diff after correction of this interpretation. Historical Git commits on the draft branch remain traceable. Its temporary existence is not credit for Oct07/Oct10 execution.
+- A missing file named for D7 or D10, by itself, is **not** a missing audit. A missing or insufficient dated *audit-log entry/runner evidence* may be reported only after inspecting the owning log/authority and its genuine due contract. This inventory has not established all that evidence; checkpoint outcome is `NOT_FULLY_ATTESTED`, not `NOT_EXECUTED`.
+- Existing October A1/A2 per-object semantic verification remains `PARTIAL`. This reconciliation does not silently change earlier A1/A2 or D14 records and does not assert a full October closure.
