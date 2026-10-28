@@ -14,12 +14,12 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-28
-- 最新每日研究: [Source commit delta versus Pages payload byte identity](records/2026-10/2026-10-28.md)
-- 每日专题: 98
+- 最新每日归属日期: 2026-10-29
+- 最新每日研究: [PR head and merge commit check-set identity](records/2026-10/2026-10-29.md)
+- 每日专题: 99
 - 特殊专题: 17
-- 当前专题研究批次: 115
-- 当前专题独立执行日期窗口: 93
+- 当前专题研究批次: 116
+- 当前专题独立执行日期窗口: 94
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -54,7 +54,19 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-10-28
+## 当前研究边界 — 2026-10-29
+
+本日固定 PR #858 的 head 2898c396... 与 merge 57a5668b... 研究 CI check-set identity, 两个 SHA 均有 4 个 completed/success check runs, 但只有 3 个 Analyze 名称相同, head-only CodeQL 与 merge-only deploy 不能互换, 两个 SHA 各有 5 个 check suites 其中 3 个 app suites 仍 queued, merge-side checks 在 PR merged_at 之后开始, GitHub 单一 publisher, PARTIAL
+
+EQUAL_SUCCESS_CHECK_COUNT != IDENTICAL_CHECK_SET
+
+MERGE_COMMIT_POST_MERGE_CHECK != PRE_MERGE_VALIDATION
+
+CHECK_RUN_COMPLETED != ALL_CHECK_SUITES_COMPLETED
+
+本日 native Daily 1、research batch 1、independent execution window 1, 3 个 bounded read-only Trials, 无 CASE/NOTES/Special/Audit 增加, derived synchronization credit 0, exact native checker 与公共 HTTP 客户端验收 NOT_EXECUTED, producer 通过 Draft PR #859 交付, 后续独立审查与合并状态以 GitHub PR 和 main 实际记录为准
+
+## 前序研究边界 — 2026-10-28
 
 本日对两次真实成功的 GitHub Pages 部署 40557674424 与 40559719646 执行跨 source-commit 与 archive-payload identity 研究, Git 比较 bb07d5cb...5eda9683 存在 3 个提交与 2 个新增 Markdown 源路径, 两个 Pages ZIP 实际下载并用 Python 3.13.5 复核, ZIP 分别为 13925 和 13923 bytes, SHA256 不同, 内层 TAR digest 不同, 8 个成员 mtime 不同, 但 3 个普通文件 SHA256 全部相同, 两个新增源码文件未进入这 3 个发布文件, GitHub 单一 publisher, PARTIAL
 
