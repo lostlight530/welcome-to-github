@@ -59,6 +59,8 @@
 
 ## P-05 上下文干扰
 
+- 2026-10-28 historical reference repair: [2026-09-18 P-05 native Daily](records/2026-09/2026-09-18.md) was already labeled `P-05` in its original 2026-09-18 primary record, but its file reference was absent from this CASES surface, contrary to the current `parallax/tools/check.py` daily-reference contract. This is an explicit later correction relation, not evidence retroactively available in the 2026-09-18 run, not an additional CASE support decision, Trial, batch, window or NOTES promotion. Historical case counters and last-execution snapshot below remain unchanged pending independent CASE support reconciliation
+
 - 输入: 固定问题, 核心约束与大量相关或无关材料
 - 变化: 增加噪声, 误导摘要或删除关键支持记录
 - 检查: 核心约束, 证据计数与结论门槛是否保持
