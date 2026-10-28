@@ -51,7 +51,7 @@ Source Type: FIRST_PARTY_VERSIONED_RELEASE_NOTES
 Evidence Tier: PRIMARY_FOR_MAINTAINER_DECLARED_SDK_CHANGES
 Access Status: RELEASE_BODY_OPENED
 Independent Source: ONE_PUBLISHER_AND_ONE_RELEASE_LINEAGE / ZERO_INDEPENDENT_RUNTIME_REPLAYS
-Claim Supported: the release lists MongoDbSessionService and experimental MongoDbMemoryService, a delete_memory API addition, and default OpenTelemetry GenAI v2 telemetry with an opt-in legacy schema switch
+Claim Supported: the release lists experimental MongoDbSessionService and experimental MongoDbMemoryService, a delete_memory API addition, and default OpenTelemetry GenAI v2 telemetry with an opt-in legacy schema switch
 Claim Not Supported: measured durability under replica failures, semantic equivalence to vector memory, successful migration for every user, Zero/Welcome adoption, or external integration test success
 Relevance: separating session persistence, keyword-based memory recall, and telemetry schema contract from application-level guarantees
 Confidence: HIGH_FOR_VERSIONED_RELEASE_DESCRIPTION / UNKNOWN_FOR_DEPLOYED_EFFECT
@@ -63,7 +63,7 @@ RAW_SIGNAL_LOG
 Signal ID: SIG-20261028-01
 Signal: SESSION_PERSISTENCE_AND_MEMORY_RECALL_ARE_DISTINCT_ADK_SERVICE_CONTRACTS
 Source IDs: SRC-20261028-H01
-What Changed: v2.13.0 advertises MongoDB-backed session storage for runner replicas and an experimental keyword-search MongoDB memory service without an embedding index
+What Changed: v2.13.0 advertises experimental MongoDB-backed session storage for runner replicas and an experimental keyword-search MongoDB memory service without an embedding index
 Why It May Matter: a shared session store's continuity and a long-term memory recall service have different identity, retrieval, consistency and effect-evidence obligations
 Evidence Tier: FIRST_PARTY_VERSIONED_RELEASE_NOTE
 Confidence: HIGH_FOR_MAINTAINER_DESCRIPTION
@@ -89,7 +89,7 @@ EVIDENCE_DELTA
 - NEW_EVIDENCE: a first-party ADK 2.13.0 release documents distinct session, experimental memory and telemetry contract changes not in the inspected Oct26 Horizon H1 subject.
 - CORRECTED_INTERPRETATION: a session store and a keyword memory service are not the same authority or state-continuity mechanism; release metadata does not prove deployment.
 - UNCHANGED_BOUNDARY: SDK release != host adoption; telemetry schema != effect success; repeated features within one release != independent sources.
-- NEW_COUNTEREVIDENCE: MongoDbMemoryService is explicitly experimental; the opt-in legacy telemetry schema shows that the new default is not an unconditional compatibility guarantee.
+- NEW_COUNTEREVIDENCE: both MongoDbSessionService and MongoDbMemoryService are explicitly experimental in the original release notes; the opt-in legacy telemetry schema shows that the new default is not an unconditional compatibility guarantee.
 - UNKNOWN_RETAINED: run-scoped tool effects, end-to-end persistence, host dependencies, independent implementation reproductions and real performance changes.
 - NEXT_RETEST_CONDITION: H2 inspects exact source/tag and tests, reproduces a version-pinned session write/reopen and schema-labeled trace comparison if an execution environment becomes available.
 
