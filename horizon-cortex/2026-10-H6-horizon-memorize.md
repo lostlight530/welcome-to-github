@@ -6442,3 +6442,173 @@ NATIVE_MODIFICATION_NOTE: append existing H6 owner only; Jules H1/H2 and Paralla
 - October natural-month final is `NOT_DUE` until natural closure; later code/path/PR presence does not upgrade earlier `BLOCKED`, `UNKNOWN` or `NOT_EXECUTED` states
 - Prior month-owner blocks above are retained as point-in-time views; no original task-time author, external source, runtime, research-batch count, independent verification, or long-term doctrine is changed by this note
 - `SOURCE_IDENTITY != CONTENT_DECISION != RUNTIME_VERIFICATION`; unresolved audit gates require separately inspectable primary evidence before status promotion
+
+
+## A1_OCT_2026_FULL_NATIVE_ARTIFACT_DECISIONS_2026_10_29
+
+- As-of A1 Oct01–28 / N=Oct29 Shanghai; exact base main 5fe22a5ae97b8ad82cb2acc9a1ca616f64fcf997; external maintenance author is not original Jules/Parallax producer.
+- Direct read: 56 Horizon Daily bodies, 28 Parallax Daily bodies and eight due Horizon H3/H4 Weekly, plus both October month owners.
+- Earlier Jules DEGRADED/BLOCKED, later prospective GPT, Codex recovery and Oct27 retrospective records are distinct execution identities.
+- Path present on current main does not mean the original task-time checkout had it; H1/H2 Oct27 original receipts still UNKNOWN.
+- Natural H6 monthly final NOT_DUE, W44 OPEN; no new memory promotion, host action, NEXUS action, CASE support or research batch credited.
+- Local native checkers, external source reproduction and all host runtime tests NOT_EXECUTED by this content maintenance.
+### Date-wise original content decisions
+### 2026-10-01 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-01-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-01-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-01.md`: original source topic `FRONTIER-COMPLETED-SEMANTICS`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-02 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-02-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-02-H2-horizon-orient.md` original content decision **BLOCKED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-02.md`: original source topic `FRONTIER-WIRE-SHAPE`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: BOUNDARY_UPDATE: preserve H2 BLOCKED even when H1 file exists; counts are per distinct native producer.
+### 2026-10-03 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-03-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-03-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-03.md`: original source topic `FRONTIER-CORRELATION-ATTEMPT`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-04 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-04-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-04-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-04.md`: original source topic `FRONTIER-HANDOFF-INPUT-PLANES`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-05 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-05-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-05-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-05.md`: original source topic `FRONTIER-APPROVAL-VALIDATION`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-06 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-06-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-06-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-06.md`: original source topic `FRONTIER-INPUT-REQUIRED`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-07 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-07-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-07-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-07.md`: original source topic `FRONTIER-CANCELLATION-SETTLEMENT`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-08 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-08-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-08-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-08.md`: original source topic `FRONTIER-PROGRESS-TERMINAL`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-09 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-09-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-09-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-09.md`: original source topic `FRONTIER-STATE-EVENT-RECOVERY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-10 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-10-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-10-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-10.md`: original source topic `FRONTIER-NOTIFICATION-DELIVERY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-11 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-11-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-11-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-11.md`: original source topic `FRONTIER-DISCOVERY-CACHE`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-12 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-12-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-12-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-12.md`: original source topic `FRONTIER-ROOTS-ENFORCEMENT`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-13 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-13-H1-signal-observe.md` original content decision **DEGRADED_RECOVERY**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-13-H2-horizon-orient.md` original content decision **BLOCKED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-13.md`: original source topic `FRONTIER-ARTIFACT-LINEAGE`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: BOUNDARY_UPDATE: preserve H2 BLOCKED even when H1 file exists; counts are per distinct native producer.
+### 2026-10-14 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-14-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-14-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-14.md`: original source topic `FRONTIER-DELEGATED-AUTHORITY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-15 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-15-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-15-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-15.md`: original source topic `FRONTIER-TOOL-HINTS-TRUST`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-16 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-16-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-16-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-16.md`: original source topic `FRONTIER-TRACE-TASK-EVIDENCE`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-17 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-17-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-17-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-17.md`: original source topic `FRONTIER-ATTESTATION-RUNTIME-BOUNDARY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-18 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-18-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-18-H2-horizon-orient.md` original content decision **BLOCKED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-18.md`: original source topic `FRONTIER-RETRY-SETTLEMENT-IDENTITY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: BOUNDARY_UPDATE: preserve H2 BLOCKED even when H1 file exists; counts are per distinct native producer.
+### 2026-10-19 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-19-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-19-H2-horizon-orient.md` original content decision **BLOCKED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-19.md`: original source topic `FRONTIER-STRUCTURED-VERSION-BOUNDARY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: BOUNDARY_UPDATE: preserve H2 BLOCKED even when H1 file exists; counts are per distinct native producer.
+### 2026-10-20 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-20-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-20-H2-horizon-orient.md` original content decision **BLOCKED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-20.md`: original source topic `FRONTIER-SAMPLING-LIFECYCLE`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: BOUNDARY_UPDATE: preserve H2 BLOCKED even when H1 file exists; counts are per distinct native producer.
+### 2026-10-21 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-21-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-21-H2-horizon-orient.md` original content decision **BLOCKED**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-21.md`: original source topic `FRONTIER-CHECK-SURFACE-IDENTITY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: BOUNDARY_UPDATE: preserve H2 BLOCKED even when H1 file exists; counts are per distinct native producer.
+### 2026-10-22 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-22-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-22-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-22.md`: original source topic `FRONTIER-PR-REVIEW-ATTESTATION`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-23 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-23-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-23-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-23.md`: original source topic `FRONTIER-PR-BASE-DRIFT`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-24 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-24-H1-signal-observe.md` original content decision **GPT_NATIVE_PROSPECTIVE**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-24-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-24.md`: original source topic `FRONTIER-BLOB-CONTINUITY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-25 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-25-H1-signal-observe.md` original content decision **GPT_NATIVE_PROSPECTIVE**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-25-H2-horizon-orient.md` original content decision **GPT_NATIVE_PROSPECTIVE**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-25.md`: original source topic `FRONTIER-ARTIFACT-RETENTION`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-26 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-26-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-26-H2-horizon-orient.md` original content decision **GPT_NATIVE_PROSPECTIVE**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-26.md`: original source topic `FRONTIER-CUSTODY-TRANSITION`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### 2026-10-27 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-27-H1-signal-observe.md` original content decision **RETROSPECTIVE_ORIGINAL_UNKNOWN**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-27-H2-horizon-orient.md` original content decision **RETROSPECTIVE_ORIGINAL_UNKNOWN**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-27.md`: original source topic `FRONTIER-DEPLOYMENT-ARCHIVE-IDENTITY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: BOUNDARY_UPDATE: both Horizon files are retrospective custody, ORIGINAL_RUN_UNKNOWN; counts are per distinct native producer.
+### 2026-10-28 — three source-owned Daily decisions
+- H1 `horizon-cortex/2026-10-28-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- H2 `horizon-cortex/2026-10-28-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Parallax `parallax/records/2026-10/2026-10-28.md`: original source topic `FRONTIER-DEPLOY-PAYLOAD-IDENTITY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- Review action: NO_FOLLOW_UP on native state; no extra execution or source authority; counts are per distinct native producer.
+### Weekly due-window typed decisions
+- W40 H3 SUCCESS / H4 BLOCKED: original H3 and H4 current-source reports inspected independently; bounded decision retains this explicit outcome.
+- W40: H3 decision never establishes H4 action; source-time H1/H2 uncertainty and audit/test boundaries preserved.
+- W41 H3 DEGRADED / H4 DEGRADED_NO_ACTION: original H3 and H4 current-source reports inspected independently; bounded decision retains this explicit outcome.
+- W41: H3 decision never establishes H4 action; source-time H1/H2 uncertainty and audit/test boundaries preserved.
+- W42 H3 DEGRADED / H4 BLOCKED: original H3 and H4 current-source reports inspected independently; bounded decision retains this explicit outcome.
+- W42: H3 decision never establishes H4 action; source-time H1/H2 uncertainty and audit/test boundaries preserved.
+- W43 H3 NO_DECISION / H4 SUCCESS_BOUNDED_NO_ACTION: original H3 and H4 current-source reports inspected independently; bounded decision retains this explicit outcome.
+- W43: H3 decision never establishes H4 action; source-time H1/H2 uncertainty and audit/test boundaries preserved.
+### Parallax month index and authority
+- Parallax 2026-10 index holds 29 native daily records through Oct29; A1 cutoff contains exactly 28, and Oct29 remains an A2-only incremental input.
+- Parallax W43 derived audit is not an extra native Daily, research batch, Trial or CASE support.
+- Parallax Oct27 ZIP/TAR archive equal-size comparisons do not prove live client site state; original bounded checksum evidence retained.
+- Parallax Oct28 code-commit versus Pages payload reconciliation preserves the distinction between source SHA, build artifact and deployed bytes.
+- Horizon H1 October 27 retrospective missing original evidence does not create a new first-party external research lineage.
+- H2 cannot consume an unmerged H1 prospectively without preserving original PR-state or as-of source receipt.
+- Source-time publication, original tool observation, PR delivery and current file presence are four different clocks.
+- No source file or historical producer line changed; only a later A1 section appended to month owner.
+- Coverage: 84 directly read Daily plus 8 directly read due Weekly, and month owners; other Specials and external semantic effect audits remain PARTIAL/NOT_FULLY_ATTESTED.
