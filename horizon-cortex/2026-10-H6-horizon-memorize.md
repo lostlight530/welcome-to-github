@@ -6612,3 +6612,172 @@ NATIVE_MODIFICATION_NOTE: append existing H6 owner only; Jules H1/H2 and Paralla
 - Source-time publication, original tool observation, PR delivery and current file presence are four different clocks.
 - No source file or historical producer line changed; only a later A1 section appended to month owner.
 - Coverage: 84 directly read Daily plus 8 directly read due Weekly, and month owners; other Specials and external semantic effect audits remain PARTIAL/NOT_FULLY_ATTESTED.
+
+
+## A2_2026_10_29_HORIZON_PARALLAX_OCT1_TO29_RELATION
+
+- Inherited current main: `202b8102b2e198088df343535c3685c6f7626371`; canonical A1 blob: `e4579f952606624f6c1475e58abb9297fd8e0e55`; ten-repository A1 global prerequisite fulfilled and verified before this A2 branch.
+- Source-time window Oct01–29 Asia/Shanghai; Oct01–28 original decisions inherited from the **merged** A1 blob, not re-executed; Oct29 original production and GitHub delivery inspected separately.
+- Oct29 primary source: `horizon-cortex/2026-10-29-H1-signal-observe.md` `8f259cbbb462d54efa16cc156f2d00bf1e5c49dd`; native author, source/test status, and recording time unchanged.
+- A2 is cross-artifact relation maintenance, not a new native Daily or a second original-run validation; original month owner OPEN, natural month closure NOT_DUE.
+- Earlier Oct28 A1/A2 SHA inventory had source-semantic PARTIAL; this A2 cannot elevate all repository blobs to FULLY_ATTESTED.
+- GitHub current-main blob read is proof of current custody, not proof of all original task-time availability.
+### 2026-10-01..28 exact merged A1 inherited source-time decision chain
+#### 2026-10-01 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-01-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-01-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-01.md`: original source topic `FRONTIER-COMPLETED-SEMANTICS`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-01 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-02 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-02-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-02-H2-horizon-orient.md` original content decision **BLOCKED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-02.md`: original source topic `FRONTIER-WIRE-SHAPE`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-02 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-03 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-03-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-03-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-03.md`: original source topic `FRONTIER-CORRELATION-ATTEMPT`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-03 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-04 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-04-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-04-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-04.md`: original source topic `FRONTIER-HANDOFF-INPUT-PLANES`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-04 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-05 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-05-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-05-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-05.md`: original source topic `FRONTIER-APPROVAL-VALIDATION`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-05 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-06 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-06-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-06-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-06.md`: original source topic `FRONTIER-INPUT-REQUIRED`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-06 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-07 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-07-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-07-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-07.md`: original source topic `FRONTIER-CANCELLATION-SETTLEMENT`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-07 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-08 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-08-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-08-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-08.md`: original source topic `FRONTIER-PROGRESS-TERMINAL`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-08 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-09 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-09-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-09-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-09.md`: original source topic `FRONTIER-STATE-EVENT-RECOVERY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-09 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-10 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-10-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-10-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-10.md`: original source topic `FRONTIER-NOTIFICATION-DELIVERY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-10 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-11 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-11-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-11-H2-horizon-orient.md` original content decision **DEGRADED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-11.md`: original source topic `FRONTIER-DISCOVERY-CACHE`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-11 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-12 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-12-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-12-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-12.md`: original source topic `FRONTIER-ROOTS-ENFORCEMENT`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-12 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-13 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-13-H1-signal-observe.md` original content decision **DEGRADED_RECOVERY**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-13-H2-horizon-orient.md` original content decision **BLOCKED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-13.md`: original source topic `FRONTIER-ARTIFACT-LINEAGE`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-13 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-14 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-14-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-14-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-14.md`: original source topic `FRONTIER-DELEGATED-AUTHORITY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-14 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-15 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-15-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-15-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-15.md`: original source topic `FRONTIER-TOOL-HINTS-TRUST`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-15 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-16 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-16-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-16-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-16.md`: original source topic `FRONTIER-TRACE-TASK-EVIDENCE`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-16 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-17 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-17-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-17-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-17.md`: original source topic `FRONTIER-ATTESTATION-RUNTIME-BOUNDARY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-17 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-18 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-18-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-18-H2-horizon-orient.md` original content decision **BLOCKED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-18.md`: original source topic `FRONTIER-RETRY-SETTLEMENT-IDENTITY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-18 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-19 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-19-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-19-H2-horizon-orient.md` original content decision **BLOCKED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-19.md`: original source topic `FRONTIER-STRUCTURED-VERSION-BOUNDARY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-19 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-20 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-20-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-20-H2-horizon-orient.md` original content decision **BLOCKED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-20.md`: original source topic `FRONTIER-SAMPLING-LIFECYCLE`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-20 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-21 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-21-H1-signal-observe.md` original content decision **DEGRADED**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-21-H2-horizon-orient.md` original content decision **BLOCKED**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-21.md`: original source topic `FRONTIER-CHECK-SURFACE-IDENTITY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-21 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-22 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-22-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-22-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-22.md`: original source topic `FRONTIER-PR-REVIEW-ATTESTATION`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-22 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-23 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-23-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-23-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-23.md`: original source topic `FRONTIER-PR-BASE-DRIFT`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-23 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-24 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-24-H1-signal-observe.md` original content decision **GPT_NATIVE_PROSPECTIVE**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-24-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-24.md`: original source topic `FRONTIER-BLOB-CONTINUITY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-24 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-25 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-25-H1-signal-observe.md` original content decision **GPT_NATIVE_PROSPECTIVE**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-25-H2-horizon-orient.md` original content decision **GPT_NATIVE_PROSPECTIVE**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-25.md`: original source topic `FRONTIER-ARTIFACT-RETENTION`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-25 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-26 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-26-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-26-H2-horizon-orient.md` original content decision **GPT_NATIVE_PROSPECTIVE**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-26.md`: original source topic `FRONTIER-CUSTODY-TRANSITION`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-26 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-27 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-27-H1-signal-observe.md` original content decision **RETROSPECTIVE_ORIGINAL_UNKNOWN**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-27-H2-horizon-orient.md` original content decision **RETROSPECTIVE_ORIGINAL_UNKNOWN**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-27.md`: original source topic `FRONTIER-DEPLOYMENT-ARCHIVE-IDENTITY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-27 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-28 — A1 source-chain relation → Oct29
+- Input: H1 `horizon-cortex/2026-10-28-H1-signal-observe.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; source-time producer and recorded input bounds retained.
+- Evidence: H2 `horizon-cortex/2026-10-28-H2-horizon-orient.md` original content decision **SUCCESS_OR_BOUNDED_SUCCESS**; same-date H1 dependency cannot import later success.
+- Decision: Parallax `parallax/records/2026-10/2026-10-28.md`: original source topic `FRONTIER-DEPLOY-PAYLOAD-IDENTITY`, evidence state `部分`; distinct native investigation, no automatic CASE promotion.
+- A2 successor: 2026-10-28 original actor/outcome is retained; the Oct29 `H1/H2 Parallax 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+### Oct29 same-day native inputs and material non-equivalences
+- N01: Oct29 H1 publisher OpenAI Agents SDK v0.24.0 is one maintainer-release lineage, not a local dependency.
+- N02: Oct29 H2 exact same-day H1 blob and merged PR #860 confirm dependency order; four exact same-publisher implementation patches are not independent replications.
+- N03: Oct29 Parallax native case FRONTIER-MERGE-CHECK-SET-IDENTITY examines check-run set on original PR head vs merge SHA, not CI replay.
+- N04: Oct29 Parallax one GitHub publisher/source family, original status PARTIAL, no extra CASE support.
+- N05: Oct27 H1/H2 backfilled documentation stays ORIGINAL_RUN_UNKNOWN; neither Oct28 nor Oct29 later success changes that.
+- N06: W43 H3 NO_DECISION, H4 NO_ACTION; W44 Oct26-Nov01 OPEN.
+- N07: H6 natural month end NOT_DUE; NO durable Memory/NEXUS/host change.
+- N08: Horizon original checker, SDK tests and external source independent run NOT_EXECUTED.
+- N09: Parallax native check.py, public Pages client byte acceptance and historical CI replay NOT_EXECUTED.
+### Weekly/month/source governance carry forward
+- W40..W43 due-week original native outcomes remain exactly as reviewed in A1; W44 is OPEN and not final.
+- D7/D10/D14 audit checkpoint records and their genuine original runner status are not invented from filename presence.
+- D30 Oct30 not due; natural October close not due; no cross-month or yearly seal.
+- Original producer identity, external publication date, local observation date and later PR merge commit are kept separate.
+- This A2 added only month-owner relation text; no original Daily, Weekly, production code, source register, memory doctrine, Actions or historical evidence mutated.
+- Reviewer actual work: GitHub pinned source read, derived relationship analysis and PR aggregate diff check; runtime test/full repo checkout NOT_EXECUTED.
+- Reviewer conclusion: MONTH_TO_DATE_RELATIONS_UPDATED_WITH_SOURCE_BOUNDED_DECISIONS / EXTERNAL_RUNTIME_AND_FULL_CORPUS_ASSURANCE_PARTIAL.
