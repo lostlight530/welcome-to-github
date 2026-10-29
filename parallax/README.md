@@ -14,12 +14,12 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-29
-- 最新每日研究: [PR head and merge commit check-set identity](records/2026-10/2026-10-29.md)
-- 每日专题: 99
+- 最新每日归属日期: 2026-10-30
+- 最新每日研究: [Derived month-owner versus native research execution identity](records/2026-10/2026-10-30.md)
+- 每日专题: 100
 - 特殊专题: 17
-- 当前专题研究批次: 116
-- 当前专题独立执行日期窗口: 94
+- 当前专题研究批次: 117
+- 当前专题独立执行日期窗口: 95
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
@@ -54,7 +54,19 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-10-29
+## 当前研究边界 — 2026-10-30
+
+本日固定 PR #862 和 #863 的 A1/A2 merge ancestry 与 H6 owner path, 两次 compare 各只有一个 horizon-cortex/H6 文件变化, 分别新增 170 和 169 行, A2 base 等于 A1 merge, 原生 2026-10-29 Parallax Daily blob 在自身 merge 与当前 main 相同, H6 blob 变化, 当前 H6 仍 OPEN / PROVISIONAL_NOT_FINAL / natural-month NOT_DUE / durable-memory NO, GitHub 单一 publisher, PARTIAL
+
+DERIVED_OWNER_UPDATED != ORIGINAL_DAILY_REEXECUTED
+
+MONTH_OWNER_MERGED != NATURAL_MONTH_H6_FINAL
+
+PR_AUTHOR_COVERAGE_CLAIM != INDEPENDENT_84_RECORD_VERIFICATION
+
+本日 native Daily 1、research batch 1、independent execution window 1, 2 个 bounded read-only Trials, 无 CASE/NOTES/Special/Audit 增加, derived synchronization credit 0, exact native checker 与 84 份源文件独立复核 NOT_EXECUTED, producer 通过 Draft PR 交付并停在 READY_FOR_MAINTAINER_REVIEW, 不自动合并
+
+## 前序研究边界 — 2026-10-29
 
 本日固定 PR #858 的 head 2898c396... 与 merge 57a5668b... 研究 CI check-set identity, 两个 SHA 均有 4 个 completed/success check runs, 但只有 3 个 Analyze 名称相同, head-only CodeQL 与 merge-only deploy 不能互换, 两个 SHA 各有 5 个 check suites 其中 3 个 app suites 仍 queued, merge-side checks 在 PR merged_at 之后开始, GitHub 单一 publisher, PARTIAL
 
