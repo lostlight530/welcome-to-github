@@ -14,18 +14,23 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-- 最新每日归属日期: 2026-10-29
-- 最新每日研究: [PR head and merge commit check-set identity](records/2026-10/2026-10-29.md)
-- 每日专题: 99
+当前入口的 2026-10-30 日期与下列计数属于 PR #864 的 proposed head, 尚未合入 main, 不等于已经发布的正式主线状态, 该 PR 原以 Draft 交付, GitHub 后续记录账号于 2026-10-30T01:08:19Z 将其转为 Ready, Ready 不等于审查通过或合并授权
+
+2026-10-30 冷启动 main `209c84c17730df5d721da3da6705f15f1501c445` 的实际计数为 Daily 99、Special 17、research batches 116、independent execution windows 94、Audits 8, latest Daily 2026-10-29, PR head 完成当日补全后为下列值
+
+
+- 最新每日归属日期: 2026-10-30
+- 最新每日研究: [Derived month-owner versus native research execution identity](records/2026-10/2026-10-30.md)
+- 每日专题: 100
 - 特殊专题: 17
-- 当前专题研究批次: 116
-- 当前专题独立执行日期窗口: 94
+- 当前专题研究批次: 117
+- 当前专题独立执行日期窗口: 95
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
-- 周期审计: 8
-- 最新周期审计: [2026-W43 Sunday as-of](audits/2026-W43.md)
-- 当前月度事实源: [2026-10](records/2026-10.md)
+- 周期审计: 9
+- 最新周期审计: [2026-W44 Friday 5/7 as-of](audits/2026-W44.md)
+- 当前月度事实源: [2026-10 AS_OF_2026-10-30, nonfinal](records/2026-10.md)
 - 当前方法: [METHOD.md](METHOD.md)
 - 控制案例: [CASES.md](CASES.md)
 - 长期发现: [NOTES.md](NOTES.md)
@@ -54,7 +59,26 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-10-29
+## 当前研究边界 — 2026-10-30
+
+本日固定 PR #862 和 #863 的 A1/A2 merge ancestry 与 H6 owner path, 两次 compare 各只有一个 horizon-cortex/H6 文件变化, 分别新增 170 和 169 行, A2 base 等于 A1 merge, 原生 2026-10-29 Parallax Daily blob 在自身 merge 与当前 main 相同, H6 blob 变化, 当前 H6 仍 OPEN / PROVISIONAL_NOT_FINAL / natural-month NOT_DUE / durable-memory NO, GitHub 单一 publisher, PARTIAL
+
+DERIVED_OWNER_UPDATED != ORIGINAL_DAILY_REEXECUTED
+
+MONTH_OWNER_MERGED != NATURAL_MONTH_H6_FINAL
+
+PR_AUTHOR_COVERAGE_CLAIM != INDEPENDENT_84_RECORD_VERIFICATION
+
+本日 native Daily 1、research batch 1、independent execution window 1, 原生研究 2 个 bounded read-only Trials, 无 CASE/NOTES/Special 晋升, 原生产阶段 Audit credit 0, 后续同日另建 W44 派生 Audit 1 且研究 credit 0, exact native checker 与 84 份源文件独立复核 NOT_EXECUTED, producer 原先以 Draft PR 交付并停在 READY_FOR_MAINTAINER_REVIEW, 随后账号将 PR 标为 Ready, 当前仍未合并且没有证据将 Ready 等同于独立审查通过或合并授权
+
+## 2026-W44 与 October 派生审查 — 2026-10-30 as-of
+
+- [W44 Friday as-of](audits/2026-W44.md) 已覆盖本周已到达的 10-26 至 10-30 共 5 个日期, 5/5 已到达 Daily 与全周 5/7 不混淆, 5 个原生研究批次、5 个执行窗口、11 个原有 Trials, Audit 新增研究信用为 0
+- [October AS_OF_2026-10-30](records/2026-10.md) 复核本月前 30 个日期 Daily 30/30、研究批次 30、执行窗口 30、原记录已有 77 个 bounded Trials, 本月 Special 0, 30 份研究均保持 PARTIAL, 当前无新 CASE/NOTES finding
+- 10-31 为未到达日期 NOT_DUE, October 未结束, 本节不是 full month final closure, 不把 2026-W44 未来 10-31 / 11-01 视为缺失历史
+- 月度和周级综合仅归纳原 Daily 的已观察事实、反例和执行局限, 不增加本日 Trials、publisher independence、native checker PASS 或任何 H6 原始运行证据
+
+## 前序研究边界 — 2026-10-29
 
 本日固定 PR #858 的 head 2898c396... 与 merge 57a5668b... 研究 CI check-set identity, 两个 SHA 均有 4 个 completed/success check runs, 但只有 3 个 Analyze 名称相同, head-only CodeQL 与 merge-only deploy 不能互换, 两个 SHA 各有 5 个 check suites 其中 3 个 app suites 仍 queued, merge-side checks 在 PR merged_at 之后开始, GitHub 单一 publisher, PARTIAL
 
