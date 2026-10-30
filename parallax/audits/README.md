@@ -18,6 +18,7 @@
 | 2026-W35 | 2026-08-30 | 7 | 2 | 9 | 7 | [自然周审计](2026-W35.md) |
 | 2026-W38 | 2026-09-20 | 7 | 0 | 7 | 7 | [自然周审计](2026-W38.md) |
 | 2026-W43 | 2026-10-25 | 7 | 0 | 7 | 7 | [周日 as-of 审计](2026-W43.md) |
+| 2026-W44 | 2026-10-30 | 5 | 0 | 5 | 5 | [周五 5/7 as-of 审计](2026-W44.md) |
 
 ## Historical state as of 2026-09-20
 
@@ -29,7 +30,7 @@
 - 创建 W38 audit 不恢复“每周必须有 audit”的旧 gate; future audit 仍与 Daily mandatory production 分离
 - Daily research validity 不依赖 audit existence
 
-## Current as-of status — 2026-10-25
+## Previous as-of status — 2026-10-25
 
 - 2026-W43 的七份 native FRONTIER Daily 已有 assigned-date coverage 7/7, 其中 7 个实际执行窗口、7 个 research batches、14 个原 Daily 中记录的 Trials
 - [2026-W43](2026-W43.md) 是因整周核查产生的一份 optional derived audit, 当前仅为周日 as-of 复查, 并非自然周已经封账
@@ -37,6 +38,14 @@
 - 2026-W39 至 W42 没有 formal audit, 保持历史未执行事实, 不追溯回填或将 Audit 变为每日研究的 gate
 - 当前 Audit 文件数为 8, 当前研究 Daily/Research batch/Execution window 总数继续由 README 与每日事实源独立核对
 - Checker 已将 audit record-reference recognition 与 NOTES promotion support 正则分离, 以接受合法 FRONTIER Daily ID 而不扩张长期结论计数
+
+## Current as-of status — 2026-10-30
+
+- 新增 [2026-W44 as-of](2026-W44.md) 是 ISO 周 2026-10-26 至 2026-11-01 的真实 2026-10-30 访问切片, 仅 10-26 至 10-30 五天已到达, 全周覆盖为 5/7, 尚有两个未来日期 NOT_DUE
+- 本次已到达的五份 Daily 对应五个原始研究批次、五个独立执行窗口及原记录已记载的 11 个 Trials, 此 Audit 自身增加 0 batch / 0 Trial / 0 window
+- October 本月截至 10-30 的 30 日覆盖、77 个原始 Trial、研究谱系及证据限制见 [月度 as-of 研究综合](../records/2026-10.md)
+- 审计文件现为 9 份, 其中 W44 不代表 ISO 周自然结束, W43 保留历史周日 as-of 原始身份, W39-W42 的未建 Audit 历史仍不回填
+- 任何 Audit 建立、修订或汇总均不提升 CASE、NOTES、Special 或原生 Daily research credit, 也不构成完整工作树 native checker PASS
 
 ## 使用边界
 
