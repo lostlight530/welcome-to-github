@@ -14,6 +14,11 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
+当前入口的 2026-10-30 日期与下列计数属于 Draft PR #864 的 proposed head, 尚未合入 main, 不能把拟合并记录当成已经发布的正式主线状态
+
+2026-10-30 冷启动 main `209c84c17730df5d721da3da6705f15f1501c445` 的实际计数为 Daily 99、Special 17、research batches 116、independent execution windows 94、Audits 8, latest Daily 2026-10-29, Draft head 完成当日补全后为下列值
+
+
 - 最新每日归属日期: 2026-10-30
 - 最新每日研究: [Derived month-owner versus native research execution identity](records/2026-10/2026-10-30.md)
 - 每日专题: 100
