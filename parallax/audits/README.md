@@ -36,7 +36,7 @@
 - [2026-W43](2026-W43.md) 是因整周核查产生的一份 optional derived audit, 当前仅为周日 as-of 复查, 并非自然周已经封账
 - 本 Audit 增加 0 research batches、0 Trials、0 independent execution windows、0 CASE support 与 0 NOTES finding
 - 2026-W39 至 W42 没有 formal audit, 保持历史未执行事实, 不追溯回填或将 Audit 变为每日研究的 gate
-- 当前 Audit 文件数为 8, 当前研究 Daily/Research batch/Execution window 总数继续由 README 与每日事实源独立核对
+- 在 2026-10-25 的历史 as-of 切片 Audit 文件数为 8, 此处不是 2026-10-30 的最新计数, 当时的研究 Daily/Research batch/Execution window 总数由当时 README 与每日事实源独立核对
 - Checker 已将 audit record-reference recognition 与 NOTES promotion support 正则分离, 以接受合法 FRONTIER Daily ID 而不扩张长期结论计数
 
 ## Current as-of status — 2026-10-30
@@ -44,7 +44,7 @@
 - 新增 [2026-W44 as-of](2026-W44.md) 是 ISO 周 2026-10-26 至 2026-11-01 的真实 2026-10-30 访问切片, 仅 10-26 至 10-30 五天已到达, 全周覆盖为 5/7, 尚有两个未来日期 NOT_DUE
 - 本次已到达的五份 Daily 对应五个原始研究批次、五个独立执行窗口及原记录已记载的 11 个 Trials, 此 Audit 自身增加 0 batch / 0 Trial / 0 window
 - October 本月截至 10-30 的 30 日覆盖、77 个原始 Trial、研究谱系及证据限制见 [月度 as-of 研究综合](../records/2026-10.md)
-- 审计文件现为 9 份, 其中 W44 不代表 ISO 周自然结束, W43 保留历史周日 as-of 原始身份, W39-W42 的未建 Audit 历史仍不回填
+- Draft PR #864 proposed head 的审计文件数是 9 份, 但尚未合入 main, main 在同一冷启动切片仍为 8 份, W44 不代表 ISO 周自然结束, W43 保留历史周日 as-of 原始身份, W39-W42 的未建 Audit 历史仍不回填
 - 任何 Audit 建立、修订或汇总均不提升 CASE、NOTES、Special 或原生 Daily research credit, 也不构成完整工作树 native checker PASS
 
 ## 使用边界
