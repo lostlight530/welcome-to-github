@@ -14,9 +14,9 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-当前入口的 2026-10-30 日期与下列计数属于 PR #864 的 proposed head, 尚未合入 main, 不等于已经发布的正式主线状态, 该 PR 原以 Draft 交付, GitHub 后续记录账号于 2026-10-30T01:08:19Z 将其转为 Ready, Ready 不等于审查通过或合并授权
+当前入口的 2026-10-30 日期与下列计数已随 PR #864 于 2026-10-30T01:15:00Z 合并落入 main, merge commit 为 `d74e2e6d6a4d431a41e1d8b2eee9f177aaaaf59d`, 不再只是 proposed head, 原生产阶段 Draft 与后续 2026-10-30T01:08:19Z 由账号发起的 Ready transition 均作为历史事件保留, Ready 和 merged 不能自动证明存在 GitHub recorded APPROVED review
 
-2026-10-30 冷启动 main `209c84c17730df5d721da3da6705f15f1501c445` 的实际计数为 Daily 99、Special 17、research batches 116、independent execution windows 94、Audits 8, latest Daily 2026-10-29, PR head 完成当日补全后为下列值
+历史基线: 2026-10-30 PR 生产时冷启动 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99、Special 17、research batches 116、independent execution windows 94、Audits 8, latest Daily 2026-10-29, 经 PR #864 合并后的 main 已拥有下列计数, 两个时点不互相替代
 
 
 - 最新每日归属日期: 2026-10-30
@@ -69,7 +69,7 @@ MONTH_OWNER_MERGED != NATURAL_MONTH_H6_FINAL
 
 PR_AUTHOR_COVERAGE_CLAIM != INDEPENDENT_84_RECORD_VERIFICATION
 
-本日 native Daily 1、research batch 1、independent execution window 1, 原生研究 2 个 bounded read-only Trials, 无 CASE/NOTES/Special 晋升, 原生产阶段 Audit credit 0, 后续同日另建 W44 派生 Audit 1 且研究 credit 0, exact native checker 与 84 份源文件独立复核 NOT_EXECUTED, producer 原先以 Draft PR 交付并停在 READY_FOR_MAINTAINER_REVIEW, 随后账号将 PR 标为 Ready, 当前仍未合并且没有证据将 Ready 等同于独立审查通过或合并授权
+本日 native Daily 1、research batch 1、independent execution window 1, 原生研究 2 个 bounded read-only Trials, 无 CASE/NOTES/Special 晋升, 原生产阶段 Audit credit 0, 后续同日另建 W44 派生 Audit 1 且研究 credit 0, exact native checker 与 84 份源文件独立复核 NOT_EXECUTED, producer 原先以 Draft PR 交付并停在 READY_FOR_MAINTAINER_REVIEW, 随后账号将 PR 标为 Ready, PR #864 最终于 2026-10-30T01:15:00Z 合并, 合并本身不增加原生研究信用, 也不自动构成 recorded APPROVED review 证据
 
 ## 2026-W44 与 October 派生审查 — 2026-10-30 as-of
 
