@@ -44,7 +44,7 @@
 - 新增 [2026-W44 as-of](2026-W44.md) 是 ISO 周 2026-10-26 至 2026-11-01 的真实 2026-10-30 访问切片, 仅 10-26 至 10-30 五天已到达, 全周覆盖为 5/7, 尚有两个未来日期 NOT_DUE
 - 本次已到达的五份 Daily 对应五个原始研究批次、五个独立执行窗口及原记录已记载的 11 个 Trials, 此 Audit 自身增加 0 batch / 0 Trial / 0 window
 - October 本月截至 10-30 的 30 日覆盖、77 个原始 Trial、研究谱系及证据限制见 [月度 as-of 研究综合](../records/2026-10.md)
-- PR #864 proposed head 的审计文件数是 9 份, 原生产阶段为 Draft, GitHub 后续记录账号将其标为 Ready, 但尚未合入 main, main 在同一冷启动切片仍为 8 份, W44 不代表 ISO 周自然结束, W43 保留历史周日 as-of 原始身份, W39-W42 的未建 Audit 历史仍不回填
+- PR #864 原生产基线 main 的审计文件数为 8, proposed head 为 9, GitHub 随后记录账号 Ready transition 并于 2026-10-30T01:15:00Z 合并, 当前 main 已包含 9 份 Audit, W44 不代表 ISO 周自然结束, W43 保留历史周日 as-of 原始身份, W39-W42 的未建 Audit 历史仍不回填
 - 任何 Audit 建立、修订或汇总均不提升 CASE、NOTES、Special 或原生 Daily research credit, 也不构成完整工作树 native checker PASS
 
 ## 使用边界
