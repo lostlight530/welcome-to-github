@@ -14,23 +14,23 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-当前入口的 2026-10-30 日期与下列计数已随 PR #864 于 2026-10-30T01:15:00Z 合并落入 main, merge commit 为 `d74e2e6d6a4d431a41e1d8b2eee9f177aaaaf59d`, 不再只是 proposed head, 原生产阶段 Draft 与后续 2026-10-30T01:08:19Z 由账号发起的 Ready transition 均作为历史事件保留, Ready 和 merged 不能自动证明存在 GitHub recorded APPROVED review
+本页当前计数属于包含 2026-10-31 原生 Daily 的 Git ref 快照, 不把拟议提交自动当作 main 已合并状态, 也不把当日日期覆盖当作自然月结束, 真实交付与合并状态始终以 GitHub exact ref 和 PR 为准
 
-历史基线: 2026-10-30 PR 生产时冷启动 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99、Special 17、research batches 116、independent execution windows 94、Audits 8, latest Daily 2026-10-29, 经 PR #864 合并后的 main 已拥有下列计数, 两个时点不互相替代
+历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 本轮冷启动 main `28cfc63d48efea1422e2ec6ab2a973b3df46db9f` 仍为 100 / 17 / 117 / 95 / 9, 下列新增数值属于包含当日 Daily 的新 Git ref
 
 
-- 最新每日归属日期: 2026-10-30
-- 最新每日研究: [Derived month-owner versus native research execution identity](records/2026-10/2026-10-30.md)
-- 每日专题: 100
+- 最新每日归属日期: 2026-10-31
+- 最新每日研究: [Assigned-date coverage versus elapsed-month closure](records/2026-10/2026-10-31.md)
+- 每日专题: 101
 - 特殊专题: 17
-- 当前专题研究批次: 117
-- 当前专题独立执行日期窗口: 95
+- 当前专题研究批次: 118
+- 当前专题独立执行日期窗口: 96
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
 - 周期审计: 9
 - 最新周期审计: [2026-W44 Friday 5/7 as-of](audits/2026-W44.md)
-- 当前月度事实源: [2026-10 AS_OF_2026-10-30, nonfinal](records/2026-10.md)
+- 当前月度事实源: [2026-10 AS_OF_2026-10-31, nonfinal](records/2026-10.md)
 - 当前方法: [METHOD.md](METHOD.md)
 - 控制案例: [CASES.md](CASES.md)
 - 长期发现: [NOTES.md](NOTES.md)
@@ -59,7 +59,21 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-10-30
+## 当前研究边界 — 2026-10-31
+
+本日以真实 `2026-10-31T04:01:19+08:00` 研究切片检查月末逻辑日期、完整自然月时间区间与派生 H6 owner 的状态边界, ECMAScript Intl `Asia/Shanghai` 四个固定 UTC 输入经 `formatToParts` 结构化比较 4/4 通过, 原先直接比较 `en-CA` 人类可读字符串因格式假设错误 0/4, 两种结果都保留
+
+ASSIGNED_DATE_COVERAGE_31_OF_31 != ELAPSED_MONTH_INTERVAL
+
+FORMATTED_DATE_STRING != CANONICAL_DATE_PARTS
+
+H6_DERIVED_OWNER_UPDATED != NATURAL_MONTH_H6_FINAL
+
+2026-10-31 当天一个 native Daily、一个 research batch、一个 independent execution window、两个 bounded Trials, GitHub 一个 publisher, 月度索引在本 Git ref 上为 31/31 assigned dates / 31 batches / 31 windows / 79 原始 bounded Trials, 全仓 Daily 101 / Specials 17 / batches 118 / windows 96 / Audits 9, 无 CASE/NOTES/Special/Audit 新增, 当前仍 PARTIAL
+
+2026-10-31 04:01 的十月尚未自然结束, `2026-11-01T00:00:00+08:00` 才是十月时间区间结束边界, W44 全周仍有 2026-11-01 未到达, 既有 W44 Audit 只代表 10-30 的 5/7 历史切片, 不被当日 6/7 日期覆盖追溯改写, native checker on complete checkout NOT_EXECUTED
+
+## 前序研究边界 — 2026-10-30
 
 本日固定 PR #862 和 #863 的 A1/A2 merge ancestry 与 H6 owner path, 两次 compare 各只有一个 horizon-cortex/H6 文件变化, 分别新增 170 和 169 行, A2 base 等于 A1 merge, 原生 2026-10-29 Parallax Daily blob 在自身 merge 与当前 main 相同, H6 blob 变化, 当前 H6 仍 OPEN / PROVISIONAL_NOT_FINAL / natural-month NOT_DUE / durable-memory NO, GitHub 单一 publisher, PARTIAL
 
