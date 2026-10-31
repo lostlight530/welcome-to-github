@@ -14,9 +14,9 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-本页当前计数属于包含 2026-11-01 原生 Daily 的拟议 Git ref, 不把 Draft PR 自动当作 main 已合并状态, 也不把 elapsed October interval 当作原生 H6 结算完成, 真实交付状态以 GitHub exact PR/head 为准
+本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-01 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行或原生 H6 结算证明
 
-历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 下列新增数值属于包含 November 1 Daily 的候选 Git ref
+历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 下列数值对应包含 2026-11-01 原生 Daily 的文件快照, 不依据文字推定此 ref 的实时合并状态
 
 
 - 最新每日归属日期: 2026-11-01
