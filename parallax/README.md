@@ -14,23 +14,23 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-本页当前计数属于包含 2026-10-31 原生 Daily 的 Git ref 快照, 不把拟议提交自动当作 main 已合并状态, 也不把当日日期覆盖当作自然月结束, 真实交付与合并状态始终以 GitHub exact ref 和 PR 为准
+本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-01 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行或原生 H6 结算证明
 
-历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 本轮冷启动 main `28cfc63d48efea1422e2ec6ab2a973b3df46db9f` 仍为 100 / 17 / 117 / 95 / 9, 下列新增数值属于包含当日 Daily 的新 Git ref
+历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 下列数值对应包含 2026-11-01 原生 Daily 的文件快照, 不依据文字推定此 ref 的实时合并状态
 
 
-- 最新每日归属日期: 2026-10-31
-- 最新每日研究: [Assigned-date coverage versus elapsed-month closure](records/2026-10/2026-10-31.md)
-- 每日专题: 101
+- 最新每日归属日期: 2026-11-01
+- 最新每日研究: [Elapsed-month predicate versus stale settlement metadata](records/2026-11/2026-11-01.md)
+- 每日专题: 102
 - 特殊专题: 17
-- 当前专题研究批次: 118
-- 当前专题独立执行日期窗口: 96
+- 当前专题研究批次: 119
+- 当前专题独立执行日期窗口: 97
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
 - 周期审计: 9
 - 最新周期审计: [2026-W44 Friday 5/7 as-of](audits/2026-W44.md)
-- 当前月度事实源: [2026-10 AS_OF_2026-10-31, nonfinal](records/2026-10.md)
+- 当前月度事实源: [2026-11 AS_OF_2026-11-01, nonfinal](records/2026-11.md)
 - 当前方法: [METHOD.md](METHOD.md)
 - 控制案例: [CASES.md](CASES.md)
 - 长期发现: [NOTES.md](NOTES.md)
@@ -59,7 +59,21 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-10-31
+## 当前研究边界 — 2026-11-01
+
+2026-11-01T04:03:40+08:00 是真实 post-boundary 研究切片, Python 3 datetime/zoneinfo 对上海日期、UTC 双边界、月份 elapsed predicates 与时区偏移执行 8/8 通过, 十月自然时间区间已经结束, 十一月自然时间区间尚未结束
+
+OCTOBER_ELAPSED_AT_OBSERVATION != H6_EXECUTED
+
+H6_BLOB_CHANGED != H6_NATIVE_FINAL_RECEIPT
+
+STORED_NOT_DUE_HEADER != CURRENT_SCHEDULER_DUE_DECISION
+
+本轮固定 H6 旧 blob `08d3821723c37958dd16b6415cebfca66c9556f3` 与新 blob `82da3a070442174809a5f5210a3a33bec082b1d0`, October 31 A1/A2 append headings 从缺失变为存在, 但两份存储头部都为 OPEN / PROVISIONAL_NOT_FINAL / NOT_DUE / NO, 当前文档状态不能替代原生 H6 运行收据, 结论 PARTIAL / H6 settlement UNKNOWN
+
+本 Git ref 增加一个 2026-11-01 native Daily、一个 batch、一个 execution window、两个 bounded Trials, 当前 November assigned-date coverage 为已到达日期 1/1, 全仓 Daily 102 / Specials 17 / batches 119 / windows 97 / Audits 9, 新 CASE/NOTES/Special/Audit 研究信用 0, publisher GitHub 1, exact full-tree Parallax checker NOT_EXECUTED, 原生 H6 runtime NOT_EXECUTED
+
+## 前序研究边界 — 2026-10-31
 
 本日以真实 `2026-10-31T04:01:19+08:00` 研究切片检查月末逻辑日期、完整自然月时间区间与派生 H6 owner 的状态边界, ECMAScript Intl `Asia/Shanghai` 四个固定 UTC 输入经 `formatToParts` 结构化比较 4/4 通过, 原先直接比较 `en-CA` 人类可读字符串因格式假设错误 0/4, 两种结果都保留
 
