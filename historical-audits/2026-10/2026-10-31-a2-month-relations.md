@@ -61,3 +61,26 @@
 - Runner: no full worktree native tests, replay, scientific reproduction, new external site recertification or live host/cloud service exercise conducted by this A2
 - No D7/D10/D14/D30 independent periodic audit credit
 - A2 result: MONTH_TO_DATE_RELATION_RECONCILED / BOUNDED / NOT_FINAL
+
+## Post-merge correction — A1 successor admission is not automatic PASS
+
+- Scope: correction to merged maintenance A2 PR #876; preserve this document's earlier statements as historical author-time claims, do not rewrite them.
+- Confirmed delivery: the repository's 2026-10-31 maintenance A2 PR is merged, and the A2 artifact is readable from `main`; this is Git delivery, not the strict A1 validation contract.
+- Cross-repo source ledger: all ten original A1 PRs are merged and source files readable. Exactly 8/10 original A1 audit bodies reach the newly imposed >=100 substantive-lines threshold.
+- Axiom original #446: 92 total additions, 77 audit-body lines; Foundations original #361: 72 total additions, 57 audit-body lines. Their original PR diffs are immutable and remain under threshold.
+- Axiom successor #447 and Foundations successor #362 each add a separate 209-line dated-source review, with zero deletions. They are NEW evidence artifacts, not line-count repairs to #446/#361.
+- The successor documents contain repeated general guard language as well as date-specific source decisions; their physical 209 lines alone cannot certify >=100 distinct substantive acceptance lines.
+- **Correction:** earlier A2 wording `8 qualifying original + 2 qualifying successor` must be read as `8 original line-gate passes + 2 separately delivered successor admission candidates`, **not** a final human governance acceptance or retroactive compliance of the older PRs.
+- The user's instruction to continue and merge maintenance artifacts is implementation authorization; it is not automatically a recorded waiver of the original per-PR threshold or a scientific validation receipt.
+- Acceptance state: `A1_ORIGINAL_8_OF_10_LINE_PASS / SUCCESSOR_2_OF_2_DELIVERED / HUMAN_ACCEPTANCE_MAPPING_NOT_EVIDENCED_HERE / A2_GITHUB_DELIVERED_10_OF_10`.
+- **A2 line-count distinction:** this project's documented new >=100 substantive-lines requirement was imposed on A1 PRs. No source reviewed in this reconciliation establishes an independent >=100-lines-per-A2-PR rule; do not invent one or claim A2 fails solely because its diff is 79–87 lines.
+- A2 PR #876 GitHub review submissions examined: 0. Merge and user authorization must not be described as a separate independently recorded Human Maintainer PR review.
+- CI visibility at the A2 PR head: 4/4 observed CodeQL-family Check Runs completed SUCCESS at A2 PR head (CodeQL + Python + JavaScript/TypeScript + Actions).
+- CodeQL Check Runs assess their configured static-analysis surfaces, not exact research reproduction, content completeness, native runner execution or human review. `0 returned` is an observation of this API surface, not proof CI can never run.
+- Repo-specific unchanged semantic boundary: MCP servers release/patch evidence remains publisher and source evidence; no Welcome host deployment or vulnerability reproduction shown.
+- October Monthly stays historical `OPEN / MONTH_TO_DATE / NOT_FINAL` at the authoring cut; W44 OPEN/NOT_DUE; original producer timepoints, failures and gap records remain frozen.
+- `D7/D10/D14/D30`, NATIVE, MONTH_FINAL and runtime validation are different record types, not granted by this correction or by a successful Git merge.
+- Correct acceptance closure requires an explicit maintainer decision about successor mapping and substantive review, recorded with the original under-threshold facts preserved. Alternatively record a separately scoped new gate without impersonating the original PR.
+- No monthly owner, old audit, native artifact, workflow, source registry or code modified by this post-merge reconciliation.
+- Evidence basis: GitHub merged PR metadata/diffs, A1 successor files/comments, A2 current-main read-back, GitHub review submissions and A2 head Check Runs observed in this maintenance conversation. No fresh external scientific test executed.
+- Decision: `POSTMERGE_GITHUB_COMPLETE / STRICT_A1_ADMISSION_CONDITIONAL / NO_HISTORY_REWRITE`.
