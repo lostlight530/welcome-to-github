@@ -6939,3 +6939,18 @@ NATIVE_MODIFICATION_NOTE: append existing H6 owner only; Jules H1/H2 and Paralla
 - Verification performed: fresh ten A1 merge SHA census, exact A1 blob, native Oct30 H1/H2, Parallax, W43 H3/H4 and monthly owner
 - NOT_EXECUTED: external release recertification, host dependency inventory, full repo tests, native runner replay and CI
 - A2 disposition: APPEND_RELATION / HISTORICAL_INTEGRITY / MONTH_OPEN / HOST_APPLICABILITY_UNKNOWN
+
+
+## A1_N_MINUS_1_SOURCE_CUSTODY_2026_10_31
+
+- Producer: GPT_NATIVE_PROSPECTIVE_MAINTENANCE_A1_ASSIST / NOT_ORIGINAL_NATIVE_DAILY / NOT_JULES_REPLAY
+- Logical review day: 2026-10-31 Asia/Shanghai; A1 N−1 original cutoff: 2026-10-01..2026-10-30
+- Audited original-source relation: `historical-audits/2026-10/2026-10-31-a1-source-custody.md` on this candidate branch; must be merged as part of same A1 PR
+- Within five-core canonical source scope: 60 H1/H2 originals; 8 W40–43 H3/H4; prior 58 bodies + 2 Oct30 originals
+- Source method: prior in-scope original-body/PR-diff audit inherited on verified unchanged Git identities; Oct30 sources newly inspected, older task-time status not silently upgraded
+- Decisive boundary: External upstream source; host/NEXUS/Parallax effect unknown
+- Global ten-repository A1 prerequisite for A2: NOT_VERIFIED / OTHER_FIVE_REPOSITORIES_NOT_IN_SCOPE_OF_THIS_AUTHORIZATION
+- Five-core current October owner status: MONTH_OPEN / PROVISIONAL_NOT_FINAL; W44 OPEN / NOT_DUE; Oct31 native input reserved for A2 after complete prerequisite gate, not imported into N−1
+- Decision: APPEND_EVIDENCE_RELATION / NO_ORIGINAL_REWRITE / NO_AUTOMATIC_A2 / NO_PERIODIC_AUDIT_CREDIT / NO_VERIFIED_MEMORY_PROMOTION
+- Executable tests, external re-certification, deployment outcome and scientific experiments: NOT_EXECUTED_BY_THIS_A1
+- Evidence Delta: NEW_EVIDENCE = exact core original file/PR OIDs through Oct30; CORRECTED_INTERPRETATION = custody and execution/validation separate; UNCHANGED_BOUNDARY = prior failures remain dated; NEW_COUNTEREVIDENCE = untested or historic blocked inputs prevent blanket PASS; UNKNOWN_RETAINED = ten-repo A1 gate and operational effect; NEXT_RETEST_CONDITION = all-ten merged A1 and refreshed main for N-day A2
