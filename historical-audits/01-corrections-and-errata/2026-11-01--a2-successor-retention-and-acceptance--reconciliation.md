@@ -43,8 +43,8 @@
 - Any separate future restoration of audit artifacts requires a contract-specific retention and minimality decision; do not restore automatically
 
 ## Repository-specific evidence boundary
-- Horizon H1/H2 2026-10-31 的同日 upstream 可见性属于来源关系，不能推出宿主运行或 NEXUS 部署。Parallax 是独立研究平面；2026-09-23/26 reconstruction 不成为 Native。
-- W44 和十月月终状态必须引用各自后续原生结算；10 月 31 日 A2 仍为日期化 month-to-date。
+- Horizon H1/H2 2026-10-31 的同日 upstream 可见性属于来源关系，不能推出宿主运行或 NEXUS 部署.Parallax 是独立研究平面；2026-09-23/26 reconstruction 不成为 Native.
+- W44 和十月月终状态必须引用各自后续原生结算；10 月 31 日 A2 仍为日期化 month-to-date.
 - `CURRENT_PATH_PRESENT != ORIGINAL_NATIVE_EXECUTION`
 - `HISTORICAL_PR_DELIVERY != CURRENT_MAIN_RETENTION`
 - `LATER_SUCCESS != EARLIER_SUCCESS`
