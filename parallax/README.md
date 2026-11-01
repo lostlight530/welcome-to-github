@@ -14,23 +14,23 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-01 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行或原生 H6 结算证明
+本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-02 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行、H6 人工授权替代结算或原生执行证明
 
-历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 下列数值对应包含 2026-11-01 原生 Daily 的文件快照, 不依据文字推定此 ref 的实时合并状态
+历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 2026-11-02 本轮冷启动 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 已含 2026-11-01 原生 Daily 102 / 17 / 119 / 97 / 9, 下列数值对应包含 2026-11-02 原生 Daily 的 Git ref 文件快照, 其是否已合并到 main 以 GitHub 的 PR 和提交关系实时核验, 不以本段历史说明代替交付事实
 
 
-- 最新每日归属日期: 2026-11-01
-- 最新每日研究: [Elapsed-month predicate versus stale settlement metadata](records/2026-11/2026-11-01.md)
-- 每日专题: 102
+- 最新每日归属日期: 2026-11-02
+- 最新每日研究: [H6 append-only closure and header-selection identity](records/2026-11/2026-11-02.md)
+- 每日专题: 103
 - 特殊专题: 17
-- 当前专题研究批次: 119
-- 当前专题独立执行日期窗口: 97
+- 当前专题研究批次: 120
+- 当前专题独立执行日期窗口: 98
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
 - 周期审计: 9
 - 最新周期审计: [2026-W44 Friday 5/7 as-of](audits/2026-W44.md)
-- 当前月度事实源: [2026-11 AS_OF_2026-11-01, nonfinal](records/2026-11.md)
+- 当前月度事实源: [2026-11 AS_OF_2026-11-02, nonfinal](records/2026-11.md)
 - 当前方法: [METHOD.md](METHOD.md)
 - 控制案例: [CASES.md](CASES.md)
 - 长期发现: [NOTES.md](NOTES.md)
@@ -59,7 +59,21 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-11-01
+## 当前研究边界 — 2026-11-02
+
+2026-11-02 在固定 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 上重新核验了 October H5 #881 与 H6 #882 的真实后续交付, H5 于 2026-11-01T09:08:05Z 合并, H6 于 09:10:40Z 合并, H6 base 等于 H5 merge `8646fc41d1cfe6d2668e282748cf65c640ba2ab2`, H6 仅新增 59 行, 没有删除
+
+同一个 H6 blob `bff4b7b9f8c2220dfff8c9a9b71aff452c9191f8` 有两个 exact-line `CORTEX_RUN_HEADER` 块, 顶部历史头为 OPEN / PROVISIONAL_NOT_FINAL, 尾部新增头为 CLOSED / HUMAN_AUTHORIZED_SUBSTITUTE / NO_NEW_DURABLE_PROMOTION, 尾部仍保留写作时的 `PROPOSED_NEW_FINAL_BLOCK_PENDING_MERGE_AT_AUTHORING` 字段, 不可把它误当当前 GitHub PR 状态
+
+FIRST_HEADER_OPEN != LAST_HEADER_CLOSED
+
+MERGED_DOCUMENTARY_SUBSTITUTE != ORIGINAL_H6_EXECUTOR_RECEIPT
+
+STORED_AUTHORING_PENDING != CURRENT_PR_MERGED_STATE
+
+本日两个 bounded Trials 实际执行了 10/10 JavaScript header/merge-lineage assertions, GitHub 单一 publisher, PARTIAL, 原生 H6 执行仍 UNKNOWN, 新 CASE/NOTES/Special/Audit 研究信用 0, 全仓 Daily 103 / Specials 17 / batches 120 / windows 98 / Audits 9, November 到达日期 2/2, exact full-tree Parallax checker NOT_EXECUTED
+
+## 前序研究边界 — 2026-11-01
 
 2026-11-01T04:03:40+08:00 是真实 post-boundary 研究切片, Python 3 datetime/zoneinfo 对上海日期、UTC 双边界、月份 elapsed predicates 与时区偏移执行 8/8 通过, 十月自然时间区间已经结束, 十一月自然时间区间尚未结束
 
