@@ -16,7 +16,7 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-02 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行、H6 人工授权替代结算或原生执行证明
 
-历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 2026-11-02 本轮冷启动 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 已含 2026-11-01 原生 Daily 102 / 17 / 119 / 97 / 9, 下列数值对应新增 2026-11-02 原生 Daily 的 proposed head, 不依据文字推定其实时合并状态
+历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 2026-11-02 本轮冷启动 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 已含 2026-11-01 原生 Daily 102 / 17 / 119 / 97 / 9, 下列数值对应包含 2026-11-02 原生 Daily 的 Git ref 文件快照, 其是否已合并到 main 以 GitHub 的 PR 和提交关系实时核验, 不以本段历史说明代替交付事实
 
 
 - 最新每日归属日期: 2026-11-02
