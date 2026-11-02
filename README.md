@@ -39,6 +39,8 @@ The Zenodo records identify archived software publications. They provide stable 
 
 The current public repository record supports a few durable portfolio-level milestones:
 
+For a dated October 2026 evidence narrative—not a new native monthly owner or acceptance report—see [Ten-Repository October 2026 Retrospective](./TEN_REPOSITORY_OCTOBER_2026_RETROSPECTIVE_2026-11-02.md). It preserves original PR acceptance failures, source periods and current-state versus historical-delivery distinctions.
+
 - **Ten independent software publications** — on 2026-09-16, each repository in the map above received its own Zenodo software publication and DOI rather than being collapsed into one umbrella record.
 - **A ten-repository research architecture** — the portfolio now spans five foundational/experimental repositories, three research-infrastructure repositories, and two outward-facing observatories, while preserving independent repository identity and evidence boundaries.
 - **Long-lived technical knowledge surfaces** — Axiom-0 and Reflective Continuum maintain explicit ADR/Methodology systems; Agent Foundations maintains a structured bilingual claim/source/provenance core; the three research-infrastructure repositories maintain active architecture and research-contract layers; the observatories maintain persistent scope, taxonomy, methodology, source, and workstream definitions alongside time-series research.
