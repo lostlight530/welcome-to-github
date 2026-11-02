@@ -84,3 +84,17 @@ Needs H2 Verification: YES / inspect exact added test assertions and version/rel
 - Only the dated Horizon H1 record is proposed. Horizon policies, old research files, host, NEXUS, Parallax, Actions and archive are unchanged.
 - Full private producer instructions and memory are not published.
 - Horizon structural checker and pinned ADK/MCP runtime replay: NOT_EXECUTED. External code diff inspection is not runtime verification.
+
+## POST_MERGE_CONTRACT_RECONCILIATION — 2026-11-02
+Correction Type: ADDITIVE_METADATA_COMPLETENESS / ORIGINAL_BODY_PRESERVED
+Correction Basis: current main horizon-cortex/check.py active daily provenance fields
+Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE
+Original Execution Status: GPT_NATIVE_PROSPECTIVE_SOURCE_OBSERVATION / NOT_JULES_REPLAY
+Current Path Status: MERGED_MAIN_VISIBLE_PR_887
+Source Identity: google/adk-python@9a5117b73b8b7f8d7e6547d2e109336b8a7b053c
+Source Authority For Claim: MERGED_UPSTREAM_IMPLEMENTATION_AND_TEST_SOURCE / NOT_DEPLOYMENT
+Independent Verification: POST_MERGE_DIRECT_SOURCE_AND_TEST_INSPECTION / RUNTIME_NOT_EXECUTED
+Evidence Upgrade Basis: ORIGINAL_COMMIT_AND_OWNED_TEST_ASSERTIONS_INSPECTED / NO_INDEPENDENT_RUNTIME
+Evidence Limitation: original producer's missing runtime receipt remains missing and this later audit does not retroactively change task-time execution
+Correction Source: https://github.com/google/adk-python/commit/9a5117b73b8b7f8d7e6547d2e109336b8a7b053c
+Counterevidence: upstream McpToolset docstring explicitly says notification handler does not invalidate the tool-list cache
