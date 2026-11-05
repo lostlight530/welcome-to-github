@@ -61,7 +61,7 @@ CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录
 
 ## 当前研究边界 — 2026-11-05
 
-2026-11-05 原生 Daily 比较 open PR 与 Parallax branch-name 两个零结果过滤投影, 以及 README、November index、前日 Daily 三个正向文件读取, 不把搜索结果视为完整历史或 exact main ref, 两个 bounded procedures, GitHub publisher 1, PARTIAL, 全仓 Daily 106 / Specials 17 / batches 123 / windows 101 / Audits 9, November 5/5, exact native checker NOT_EXECUTED, Draft PR 等待维护者审查
+2026-11-05 原生 Daily 比较 open PR 与 Parallax branch-name 两个零结果过滤投影, 以及 README、November index、前日 Daily 三个正向文件读取, 不把搜索结果视为完整历史或 exact main ref, 两个 bounded procedures, GitHub publisher 1, PARTIAL, 全仓 Daily 106 / Specials 17 / batches 123 / windows 101 / Audits 9, November 5/5, exact native checker NOT_EXECUTED, PR #902 已于 2026-11-05T04:49:27Z 合并, 同日后续复核 main SHA 为 `552c1eb6a9d041bf26d7ade6a53c556675001218`, 等于 GitHub 记录的 merge commit, 提交前的 Draft 与最终 merged 是不同观察切片
 
 ## 前序研究边界 — 2026-11-04
 
