@@ -47,6 +47,7 @@
 {"desc":"Python Function","id":"file_docs_brain_harvester_py__func__api","name":"_api","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_harvester_py__func__archive_stale","name":"_archive_stale","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_harvester_py__func__blob_text","name":"_blob_text","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_harvester_py__func__compact_active_snapshots","name":"_compact_active_snapshots","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_harvester_py__func__expected_output","name":"_expected_output","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_harvester_py__func__find_current_snapshot","name":"_find_current_snapshot","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_harvester_py__func__json","name":"_json","type":"code_function"}
@@ -63,6 +64,7 @@
 {"desc":"Python Function","id":"file_docs_brain_harvester_py__func__source","name":"_source","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_harvester_py__func__validated_state","name":"_validated_state","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_harvester_py__func_fetch_github_data","name":"fetch_github_data","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_harvester_py__func_validate_active_snapshots","name":"validate_active_snapshots","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_harvester_py__func_validate_profiles","name":"validate_profiles","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__canonical","name":"_canonical","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_lifecycle_guard_py__func__command_finalize","name":"_command_finalize","type":"code_function"}
@@ -154,6 +156,8 @@
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_response","name":"response","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_api_retries_transient_network_failures_with_backoff","name":"test_api_retries_transient_network_failures_with_backoff","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_archive_collision_never_overwrites_different_content","name":"test_archive_collision_never_overwrites_different_content","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_binary_files_are_not_selected_by_broad_globs","name":"test_binary_files_are_not_selected_by_broad_globs","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_blob_text_rejects_invalid_utf8_and_nul_bytes","name":"test_blob_text_rejects_invalid_utf8_and_nul_bytes","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_corrupt_state_fails_closed","name":"test_corrupt_state_fails_closed","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_evolver_archive_collision_preserves_both_files","name":"test_evolver_archive_collision_preserves_both_files","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_test_evolver_keeps_input_contract_out_of_monthly_archive","name":"test_evolver_keeps_input_contract_out_of_monthly_archive","type":"code_function"}
@@ -189,8 +193,11 @@
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_response","name":"response","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_canonicalization_normalizes_description_alias","name":"test_canonicalization_normalizes_description_alias","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_canonicalization_removes_semantic_duplicates_and_dangling_relations","name":"test_canonicalization_removes_semantic_duplicates_and_dangling_relations","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_compaction_archives_original_before_replacing_current","name":"test_compaction_archives_original_before_replacing_current","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_current_snapshot_projection_is_stable_and_idempotent","name":"test_current_snapshot_projection_is_stable_and_idempotent","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_jsonl_maintenance_recurses_and_deduplicates","name":"test_jsonl_maintenance_recurses_and_deduplicates","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_large_diff_also_uses_bounded_reference","name":"test_large_diff_also_uses_bounded_reference","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_large_snapshot_is_a_bounded_pinned_reference","name":"test_large_snapshot_is_a_bounded_pinned_reference","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_pruning_excluded_sources_rebuilds_only_active_ledger","name":"test_pruning_excluded_sources_rebuilds_only_active_ledger","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_snapshot_is_human_readable_and_traceable","name":"test_snapshot_is_human_readable_and_traceable","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_readability_py__func_test_truncated_tree_is_a_hard_failure","name":"test_truncated_tree_is_a_hard_failure","type":"code_function"}
