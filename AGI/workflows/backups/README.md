@@ -77,6 +77,18 @@ It does not validate historical jobs against the current environment or promote 
 - SHA-256: `90519c058d6e2f2c1fa9701a682736dca429a57094e3593b792bcfb9f6760c18`
 - WorkflowHub correspondence: [NEXUS V1 and V2 (same baseline)](https://workflowhub.eu/workflows/2332?version=1)
 
+### nexus-life-cycle/candidate-2026-11-06-bounded-evidence
+
+- Candidate role: Bound active external evidence before graph projection and preserve replaced full snapshots in the append-only archive
+- Source candidate commit: [`187586e71cd8d50c91c1971ac94c0d9be885c45b`](https://github.com/lostlight530/welcome-to-github/commit/187586e71cd8d50c91c1971ac94c0d9be885c45b)
+- Canonical source: `.github/workflows/nexus-life-cycle.yml`
+- AGI lineage record: [candidate record](../nexus-life-cycle/candidate-2026-11-06-bounded-evidence/README.md)
+- Inert AGI backup: [workflow YAML](./nexus-life-cycle/candidate-2026-11-06-bounded-evidence/nexus-life-cycle.yml)
+- Git blob: `f17fbcd349e5aad3deea9ca170abd1f7d784d5e8`
+- SHA-256: `6d092350a740df6a2352d16ac1648d5f6f6247df26f0c07ae9252d5a40255164`
+- WorkflowHub correspondence: Not registered, existing historical workflow identity remains unchanged
+- Status: Draft candidate outside the reviewed main-lineage revision inventory
+
 ## Interpretation
 
 WorkflowHub version order is registration order, not chronological order of the historical source commits
