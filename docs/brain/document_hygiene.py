@@ -53,6 +53,12 @@ def render_snapshot(provenance: dict, source: str, diff: str, layer: str, *, com
             r"[0-9a-f]{64}", normalized_content_hash
         ):
             raise ValueError("compact source requires a verified normalized content hash")
+        # Bound heading previews as well: a malicious or malformed heading can
+        # otherwise carry megabytes despite omitting the source body.
+        nav = "\n".join(
+            "- " + heading[:160] + ("..." if len(heading) > 160 else "")
+            for heading in navigation
+        ) or "- 未发现 Markdown 标题."
         # The pinned Git blob is the evidence object. Never embed its entire
         # body again in the active graph-facing snapshot.
         full_diff_bytes = len(diff.encode("utf-8"))
