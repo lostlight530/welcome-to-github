@@ -62,6 +62,15 @@ The reviewed path history spans 2026-02-15 through 2026-08-31
    - First baseline formally recorded in the AGI workflow-history surface
    - Role: frozen reference to the mature bounded lifecycle
 
+## Forward candidate after the reviewed historical lineage
+
+- `nexus-life-cycle/candidate-2026-11-06-bounded-evidence`
+  - Source candidate commit: `187586e71cd8d50c91c1971ac94c0d9be885c45b`
+  - Role: text-only source qualification, bounded pinned active snapshots, archive-before-replace migration and an explicit post-harvest evidence gate
+  - Status: `DRAFT_NOT_MAIN_NOT_REGISTERED`
+  - The inert byte-identical backup is under `AGI/workflows/backups`
+  - This candidate is not appended to the historical main-lineage revision inventory until its source commit is accepted into main
+
 ## Lineage
 
 `Brain Evolution 2026-02-15` -> `NEXUS CORTEX 2026-03-09` -> `synchronized lifecycle 2026-03-15` -> `external harvesting 2026-03-31` -> later Git evolution -> `profile-driven harvesting 2026-07-11` -> later Git evolution -> `deterministic guarded lifecycle 2026-08-31` -> `layered human receipt 2026-08-31` -> `AGI original baseline 2026-10-07`
