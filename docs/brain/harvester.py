@@ -553,7 +553,10 @@ class Harvester:
                 if "| 快照模式 | `PINNED_EXTERNAL_REFERENCE` |" in text:
                     continue
                 source = self._snapshot_source(text, label=f"{repo}:{source_path}")
-                if len(source.encode("utf-8")) <= max_inline_bytes:
+                if (
+                    len(source.encode("utf-8")) <= max_inline_bytes
+                    and target.stat().st_size <= 196608
+                ):
                     continue
                 pinned = self._snapshot_file_provenance(
                     target, repo=repo, source_path=source_path
