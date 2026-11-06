@@ -139,10 +139,25 @@ class Harvester:
         source_url = f"https://github.com/{repo}/blob/{provenance['commit_sha']}/{source_path}"
         if source_url not in text:
             raise ValueError(f"snapshot provenance source mismatch: {repo}:{source_path}")
-        source = self._snapshot_source(text, label=f"{repo}:{source_path}")
-        provenance["content_hash"] = hashlib.sha256(
-            self._normalized(source).encode()
-        ).hexdigest()
+        mode = re.search(r"^\\| 快照模式 \\| `([^\\`]+)` \\|$", text, flags=re.MULTILINE)
+        if mode:
+            if mode.group(1) != "PINNED_EXTERNAL_REFERENCE":
+                raise ValueError(f"unsupported snapshot mode: {repo}:{source_path}")
+            recorded = re.search(
+                r"^\\| 规范内容 SHA256 \\| `([0-9a-f]{64})` \\|$",
+                text,
+                flags=re.MULTILINE,
+            )
+            if not recorded:
+                raise ValueError(f"missing compact source content hash: {repo}:{source_path}")
+            # Validate against the separately persisted state. The full source
+            # remains pinned by Git blob identity and is not repeated locally.
+            provenance["content_hash"] = recorded.group(1)
+        else:
+            source = self._snapshot_source(text, label=f"{repo}:{source_path}")
+            provenance["content_hash"] = hashlib.sha256(
+                self._normalized(source).encode()
+            ).hexdigest()
         return provenance
 
     def _find_current_snapshot(self, *, repo, source_path):
@@ -343,6 +358,12 @@ class Harvester:
                 raise ValueError(f"invalid source documents: {key}")
             if not isinstance(profile.get("ignore_patterns", []), list):
                 raise ValueError(f"invalid source ignore patterns: {key}")
+            reference_only = profile.get("reference_only_documents", [])
+            if not isinstance(reference_only, list) or any(
+                not isinstance(path, str) or path not in profile["documents"]
+                for path in reference_only
+            ):
+                raise ValueError(f"invalid reference-only documents: {key}")
             if key in seen:
                 raise ValueError(f"duplicate source: {key}")
             seen.add(key)
@@ -464,6 +485,10 @@ class Harvester:
                 text,
                 diff,
                 profile["layer"],
+                compact_above_bytes=(
+                    0 if path in profile.get("reference_only_documents", []) else None
+                ),
+                normalized_content_hash=digest,
             )
             validate_owned_punctuation(rendered)
             if not self.dry:
