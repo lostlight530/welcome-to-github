@@ -108,7 +108,7 @@ jobs:
         run: python docs/brain/nexus.py harvest
       - name: Validate bounded active source evidence
         id: evidence
-        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from harvester import Harvester; print(Harvester().validate_active_snapshots())"
+        run: python -c "import sys; sys.path.insert(0, 'docs/brain'); from harvester import Harvester; print(Harvester('docs/brain').validate_active_snapshots())"
       - name: Project external evidence
         run: python docs/brain/nexus.py project
       - name: Canonicalize and isolate active graph
