@@ -40,6 +40,23 @@ class HarvesterContracts(unittest.TestCase):
             "https://api.github.com/repos/owner/repo/git/blobs/old-sha"
         )
 
+    def test_binary_files_are_not_selected_by_broad_globs(self):
+        patterns = ["examples/basic/**"]
+        self.assertTrue(Harvester._selected("examples/basic/hello_world.py", patterns, []))
+        self.assertTrue(Harvester._selected("examples/basic/notebook.ipynb", patterns, []))
+        self.assertFalse(Harvester._selected("examples/basic/image.jpg", patterns, []))
+        self.assertFalse(Harvester._selected("examples/basic/paper.pdf", patterns, []))
+
+    def test_blob_text_rejects_invalid_utf8_and_nul_bytes(self):
+        harvester = Harvester.__new__(Harvester)
+        for payload in (bytes([0xff]), b"heading" + bytes([0]) + b"body"):
+            harvester._api = Mock(return_value={
+                "encoding": "base64",
+                "content": base64.b64encode(payload).decode("ascii"),
+            })
+            with self.assertRaisesRegex(ValueError, "non-text source blob"):
+                harvester._blob_text("owner/repo", "blob-sha")
+
     def test_removed_source_is_archived_and_removed_from_state(self):
         with tempfile.TemporaryDirectory() as tmp:
             harvester = Harvester.__new__(Harvester)
