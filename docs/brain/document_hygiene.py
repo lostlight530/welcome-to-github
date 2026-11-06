@@ -57,7 +57,8 @@ def render_snapshot(
     nav = "\n".join(f"- {item}" for item in navigation) or "- 未发现 Markdown 标题."
     source_url = f"https://github.com/{repo}/blob/{commit_sha}/{source_path}"
     source_bytes = len(source.encode("utf-8"))
-    if source_bytes > max_inline_bytes:
+    diff_bytes = len(diff.encode("utf-8"))
+    if source_bytes > max_inline_bytes or diff_bytes > max_inline_bytes:
         if not isinstance(normalized_content_hash, str) or not re.fullmatch(
             r"[0-9a-f]{64}", normalized_content_hash
         ):
@@ -66,7 +67,7 @@ def render_snapshot(
             "- " + item[:160] + ("..." if len(item) > 160 else "")
             for item in navigation
         ) or "- 未发现 Markdown 标题."
-        full_diff_bytes = len(diff.encode("utf-8"))
+        full_diff_bytes = diff_bytes
         preview = diff
         if full_diff_bytes > 16384:
             preview = diff[:8192].rsplit("\n", 1)[0] + "\n... [DIFF_PREVIEW_TRUNCATED]"
