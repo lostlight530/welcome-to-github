@@ -608,6 +608,39 @@ class Harvester:
                 changed.append(target.relative_to(self.inputs).as_posix())
         return changed
 
+    def validate_active_snapshots(self, max_snapshot_bytes=196608):
+        documents = bounded = 0
+        for repo, repo_state in sorted(self.state["repositories"].items()):
+            for source_path, document in sorted(repo_state["documents"].items()):
+                if Path(source_path.lower()).suffix not in TEXT_SOURCE_SUFFIXES:
+                    raise ValueError(f"non-text path in active state: {repo}:{source_path}")
+                output = document.get("output")
+                if not isinstance(output, str) or not output:
+                    raise ValueError(f"missing snapshot output: {repo}:{source_path}")
+                target = self.inputs / output
+                try:
+                    size = target.stat().st_size
+                except FileNotFoundError as exc:
+                    raise ValueError(
+                        f"missing current snapshot: {repo}:{source_path}: {target}"
+                    ) from exc
+                if size > max_snapshot_bytes:
+                    raise ValueError(
+                        f"unbounded current snapshot: {repo}:{source_path}:{size}"
+                    )
+                pinned = self._snapshot_file_provenance(
+                    target, repo=repo, source_path=source_path
+                )
+                if pinned["content_hash"] != document.get("content_hash"):
+                    raise ValueError(
+                        f"snapshot content hash state mismatch: {repo}:{source_path}"
+                    )
+                text = target.read_text(encoding="utf-8")
+                if "| 快照模式 | `PINNED_EXTERNAL_REFERENCE` |" in text:
+                    bounded += 1
+                documents += 1
+        return {"documents": documents, "bounded_references": bounded}
+
     def fetch_github_data(self):
         self.validate_profiles()
         changed, failures = [], []
