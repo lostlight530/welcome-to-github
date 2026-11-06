@@ -37,7 +37,7 @@ def headings(text: str, limit: int = 24) -> list[str]:
     return values
 
 
-def render_snapshot(provenance: dict, source: str, diff: str, layer: str) -> str:
+def render_snapshot(provenance: dict, source: str, diff: str, layer: str, *, compact_above_bytes: int | None = None, normalized_content_hash: str | None = None) -> str:
     repo = provenance["source_repo"]
     source_path = provenance["source_path"]
     commit_sha = provenance.get("commit_sha") or provenance["source_sha"]
@@ -48,6 +48,68 @@ def render_snapshot(provenance: dict, source: str, diff: str, layer: str) -> str
     removed = sum(1 for line in diff.splitlines() if line.startswith("-") and not line.startswith("---"))
     nav = "\n".join(f"- {item}" for item in navigation) or "- 未发现 Markdown 标题."
     source_url = f"https://github.com/{repo}/blob/{commit_sha}/{source_path}"
+    if compact_above_bytes is not None and len(source.encode("utf-8")) > compact_above_bytes:
+        if not isinstance(normalized_content_hash, str) or not re.fullmatch(
+            r"[0-9a-f]{64}", normalized_content_hash
+        ):
+            raise ValueError("compact source requires a verified normalized content hash")
+        # The pinned Git blob is the evidence object. Never embed its entire
+        # body again in the active graph-facing snapshot.
+        full_diff_bytes = len(diff.encode("utf-8"))
+        preview = diff
+        if full_diff_bytes > 16384:
+            preview = diff[:8192].rsplit("\n", 1)[0] + "\n... [DIFF_PREVIEW_TRUNCATED]"
+        owned = f"""# {repo} · {source_path}
+
+> 当前有效引用快照. 原始证据位于固定上游 Git Blob, 不在当前活动输入中重复内联.
+
+## 一眼看懂
+
+| 字段 | 值 |
+| --- | --- |
+| 来源仓库 | [{repo}](https://github.com/{repo}) |
+| 来源文件 | [{source_path}]({source_url}) |
+| 来源版本 | `{commit_sha}` |
+| 来源目录 Tree | `{tree_sha or 'legacy'}` |
+| 来源内容 Blob | `{blob_sha or 'legacy'}` |
+| 摄取时间 | `{provenance['retrieved_at']}` |
+| 归属层 | `{layer}` |
+| 可信度 | `{provenance.get('confidence', 1.0)}` |
+| 记忆实体 | `{provenance['entity_id']}` |
+| 快照模式 | `PINNED_EXTERNAL_REFERENCE` |
+| 规范内容 SHA256 | `{normalized_content_hash}` |
+| 原文字节数 | `{len(source.encode('utf-8'))}` |
+| 原文行数 | `{len(source.splitlines())}` |
+
+## 本次变化
+
+- 新增行数 `{added}`.
+- 删除行数 `{removed}`.
+- 完整 Diff 字节数 `{full_diff_bytes}`.
+- 边界: 这只是来源文件变化, 不是本仓执行验证或独立研究次数.
+
+## 阅读导航
+
+{nav}
+
+## 原文完整性与取回
+
+- [按源提交读取完整上游原文]({source_url}).
+- 原文以来源 Blob SHA 与规范内容 SHA256 识别. 本地活动快照只保留可恢复的固定引用.
+- 早期原文快照由历史 Git 提交及只追加 Archive 保留, 不因引用模式删除.
+- Diff 过长时仅展示有界预览, 不把预览当作完整版本差异.
+
+<details>
+<summary>展开有界版本差异</summary>
+
+```diff
+{preview.rstrip()}
+```
+
+</details>
+"""
+        return owned.rstrip() + "\n"
+
     owned = f"""# {repo} · {source_path}
 
 > 当前有效快照. 中文说明只使用英文句号. 外部原文保持来源原貌.
