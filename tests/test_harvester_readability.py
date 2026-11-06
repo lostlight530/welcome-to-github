@@ -24,6 +24,69 @@ class ReadabilityContracts(unittest.TestCase):
         self.assertIn("<summary>展开完整外部原文</summary>", output)
         validate_owned_punctuation(output)
 
+    def test_large_snapshot_is_bounded_pinned_reference(self):
+        source = "# Long source\\n" + ("a" * 100_000)
+        provenance = {
+            "source_repo": "bytedance/deer-flow",
+            "source_path": "CHANGELOG.md",
+            "source_sha": "a" * 40,
+            "commit_sha": "a" * 40,
+            "tree_sha": "b" * 40,
+            "blob_sha": "c" * 40,
+            "retrieved_at": "2026-11-05T02:00:38Z",
+            "entity_id": "external_doc_bytedance_deer_flow_changelog_md",
+        }
+        digest = "d" * 64
+        output = render_snapshot(
+            provenance,
+            source,
+            "+bounded change",
+            "complex-agent-systems",
+            compact_above_bytes=1024,
+            normalized_content_hash=digest,
+        )
+        self.assertLess(len(output), 6000)
+        self.assertNotIn("a" * 1000, output)
+        self.assertIn("PINNED_EXTERNAL_REFERENCE", output)
+        self.assertIn(digest, output)
+        self.assertIn("/blob/" + "a" * 40 + "/CHANGELOG.md", output)
+        validate_owned_punctuation(output)
+        with tempfile.TemporaryDirectory() as tmp:
+            saved = Path(tmp) / "compact.md"
+            saved.write_text(output, encoding="utf-8")
+            harvester = Harvester.__new__(Harvester)
+            actual = harvester._snapshot_file_provenance(
+                saved, repo="bytedance/deer-flow", source_path="CHANGELOG.md"
+            )
+            self.assertEqual(actual["content_hash"], digest)
+            self.assertEqual(actual["blob_sha"], "c" * 40)
+
+    def test_compact_snapshot_requires_content_hash_and_fails_closed(self):
+        provenance = {
+            "source_repo": "owner/repo",
+            "source_path": "CHANGELOG.md",
+            "source_sha": "a" * 40,
+            "commit_sha": "a" * 40,
+            "tree_sha": "b" * 40,
+            "blob_sha": "c" * 40,
+            "retrieved_at": "2026-11-05T00:00:00Z",
+            "entity_id": "external_doc_owner_repo_changelog_md",
+        }
+        with self.assertRaisesRegex(ValueError, "verified normalized content hash"):
+            render_snapshot(
+                provenance, "long input", "", "agent-runtime",
+                compact_above_bytes=0, normalized_content_hash=None,
+            )
+
+    def test_deerflow_reference_policy_remains_selected(self):
+        path = Path(__file__).parents[1] / "docs" / "brain" / "source_profiles.json"
+        profile = next(
+            item for item in json.loads(path.read_text(encoding="utf-8"))["sources"]
+            if item["repo"] == "bytedance/deer-flow"
+        )
+        self.assertIn("CHANGELOG.md", profile["documents"])
+        self.assertEqual(profile["reference_only_documents"], ["CHANGELOG.md"])
+
     def test_jsonl_maintenance_recurses_and_deduplicates(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "nested" / "items.jsonl"
