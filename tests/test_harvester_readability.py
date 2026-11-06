@@ -78,6 +78,19 @@ class ReadabilityContracts(unittest.TestCase):
                 compact_above_bytes=0, normalized_content_hash=None,
             )
 
+    def test_current_harvester_state_accepts_reference_migration(self):
+        root = Path(__file__).parents[1] / "docs" / "brain"
+        harvester = Harvester(root=root)
+        document = harvester.state["repositories"]["bytedance/deer-flow"]["documents"]["CHANGELOG.md"]
+        output = root / "inputs" / document["output"]
+        self.assertTrue(output.is_file())
+        self.assertLess(output.stat().st_size, 12000)
+        pinned = harvester._snapshot_file_provenance(
+            output, repo="bytedance/deer-flow", source_path="CHANGELOG.md"
+        )
+        self.assertEqual(pinned["content_hash"], document["content_hash"])
+        self.assertEqual(pinned["blob_sha"], document["blob_sha"])
+
     def test_deerflow_reference_policy_remains_selected(self):
         path = Path(__file__).parents[1] / "docs" / "brain" / "source_profiles.json"
         profile = next(
