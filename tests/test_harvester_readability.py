@@ -47,6 +47,22 @@ class ReadabilityContracts(unittest.TestCase):
         self.assertIn(digest, output)
         validate_owned_punctuation(output)
 
+    def test_large_diff_also_uses_bounded_reference(self):
+        provenance = {
+            "source_repo": "owner/repo", "source_path": "README.md",
+            "source_sha": "a" * 40, "commit_sha": "a" * 40,
+            "tree_sha": "b" * 40, "blob_sha": "c" * 40,
+            "retrieved_at": "2026-11-06T00:00:00Z",
+            "entity_id": "external_doc_owner_repo_readme_md",
+        }
+        output = render_snapshot(
+            provenance, "# Short", "+" + ("d" * 100_000), "agent-runtime",
+            max_inline_bytes=1024, normalized_content_hash="e" * 64,
+        )
+        self.assertIn("PINNED_EXTERNAL_REFERENCE", output)
+        self.assertIn("DIFF_PREVIEW_TRUNCATED", output)
+        self.assertLess(len(output), 12000)
+
     def test_compaction_archives_original_before_replacing_current(self):
         with tempfile.TemporaryDirectory() as tmp:
             harvester = Harvester.__new__(Harvester)
