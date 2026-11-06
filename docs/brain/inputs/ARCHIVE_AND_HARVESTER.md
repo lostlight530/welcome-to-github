@@ -25,6 +25,15 @@
 
 外部原文保持来源原貌，不修改其语言、标点和内容.
 
+## 超长来源的引用式活动快照
+
+- 对 `source_profiles.json` 显式列入 `reference_only_documents` 的来源, `current/` 只保留来源仓库/路径、固定 commit/tree/blob、规范内容 SHA256、原文尺寸、标题导航和有界 Diff. 不再次内联超长原文.
+- 该模式通过 `PINNED_EXTERNAL_REFERENCE` 标记并以来源规范 SHA256 对照 `.harvester_state.json`. 读取上游原始证据须使用固定的 commit URL, 不能使用可移动的 `main` 代替.
+- 历史的完整原文快照继续由既有 Archive 和 Git 历史持有, 不批量删除、不重写历史证据. 此规则限制活动上下文重复, 不改变外部源的权威性或内容.
+- 超限 Diff 只能明确标为 `DIFF_PREVIEW_TRUNCATED`, 不得宣称预览代表完整变更. 未运行上游测试不写为已验证.
+- 引用式快照以固定 URL 取代原文折叠块, 但仍保留原有一眼看懂、本次变化、阅读导航和可展开差异. 未显式配置的来源仍使用旧版完整原文格式.
+- 对来源 Blob 未变化的运行仍保持原有幂等跳过规则. 格式纠正不能被计作新来源研究或新执行结果.
+
 ## 失败协议
 
 Profile 不合法、GitHub Tree 截断、Blob 编码异常、来源网络失败、JSONL 非法或报告格式违规时，Action 必须失败.
