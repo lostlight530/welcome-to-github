@@ -16,6 +16,9 @@ from pathlib import Path
 from document_hygiene import atomic_write, render_snapshot, validate_owned_punctuation
 
 
+TEXT_SOURCE_SUFFIXES = frozenset({'.md', '.mdx', '.markdown', '.rst', '.txt', '.py', '.ipynb'})
+
+
 class Harvester:
     def __init__(self, root=None):
         here = Path(__file__).resolve()
@@ -139,10 +142,25 @@ class Harvester:
         source_url = f"https://github.com/{repo}/blob/{provenance['commit_sha']}/{source_path}"
         if source_url not in text:
             raise ValueError(f"snapshot provenance source mismatch: {repo}:{source_path}")
-        source = self._snapshot_source(text, label=f"{repo}:{source_path}")
-        provenance["content_hash"] = hashlib.sha256(
-            self._normalized(source).encode()
-        ).hexdigest()
+        mode = re.search(
+            r"^[|] 快照模式 [|] `([^`]+)` [|]$", text, flags=re.MULTILINE
+        )
+        if mode:
+            if mode.group(1) != "PINNED_EXTERNAL_REFERENCE":
+                raise ValueError(f"unsupported snapshot mode: {repo}:{source_path}")
+            recorded = re.search(
+                r"^[|] 规范内容 SHA256 [|] `([0-9a-f]{64})` [|]$",
+                text,
+                flags=re.MULTILINE,
+            )
+            if not recorded:
+                raise ValueError(f"missing bounded source content hash: {repo}:{source_path}")
+            provenance["content_hash"] = recorded.group(1)
+        else:
+            source = self._snapshot_source(text, label=f"{repo}:{source_path}")
+            provenance["content_hash"] = hashlib.sha256(
+                self._normalized(source).encode()
+            ).hexdigest()
         return provenance
 
     def _find_current_snapshot(self, *, repo, source_path):
@@ -260,7 +278,13 @@ class Harvester:
         blob = self._api(f"https://api.github.com/repos/{repo}/git/blobs/{sha}")
         if not isinstance(blob, dict) or blob.get("encoding") != "base64":
             raise ValueError(f"unsupported blob encoding: {repo}@{sha}")
-        return base64.b64decode(blob["content"]).decode("utf-8", errors="replace")
+        raw = base64.b64decode(blob["content"])
+        if 0 in raw:
+            raise ValueError(f"non-text source blob: {repo}@{sha}")
+        try:
+            return raw.decode("utf-8")
+        except UnicodeDecodeError as exc:
+            raise ValueError(f"non-text source blob: {repo}@{sha}") from exc
 
     @staticmethod
     def _move_to_archive(source, destination):
@@ -292,6 +316,8 @@ class Harvester:
     @staticmethod
     def _selected(path, patterns, ignored):
         value = path.lower()
+        if Path(value).suffix not in TEXT_SOURCE_SUFFIXES:
+            return False
         if any(fnmatch.fnmatch(value, pattern.lower()) for pattern in ignored):
             return False
         return value == "readme.md" or any(fnmatch.fnmatch(value, pattern.lower()) for pattern in patterns)
@@ -464,6 +490,7 @@ class Harvester:
                 text,
                 diff,
                 profile["layer"],
+                normalized_content_hash=digest,
             )
             validate_owned_punctuation(rendered)
             if not self.dry:
@@ -505,6 +532,118 @@ class Harvester:
         if changed or removed:
             repo_state["last_checked_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
         return changed
+    def _compact_active_snapshots(self, max_inline_bytes=65536):
+        if self.dry:
+            return []
+        changed = []
+        for repo, repo_state in sorted(self.state["repositories"].items()):
+            profile = self._profile_for(repo)
+            namespace = repo.lower().replace("/", "_").replace("-", "_")
+            for source_path, document in sorted(repo_state["documents"].items()):
+                output = document.get("output")
+                if not isinstance(output, str) or not output:
+                    raise ValueError(f"missing snapshot output: {repo}:{source_path}")
+                target = self.inputs / output
+                try:
+                    text = target.read_text(encoding="utf-8")
+                except FileNotFoundError as exc:
+                    raise ValueError(
+                        f"missing current snapshot: {repo}:{source_path}: {target}"
+                    ) from exc
+                if "| 快照模式 | `PINNED_EXTERNAL_REFERENCE` |" in text:
+                    continue
+                source = self._snapshot_source(text, label=f"{repo}:{source_path}")
+                if (
+                    len(source.encode("utf-8")) <= max_inline_bytes
+                    and target.stat().st_size <= 196608
+                ):
+                    continue
+                pinned = self._snapshot_file_provenance(
+                    target, repo=repo, source_path=source_path
+                )
+                if pinned["content_hash"] != document.get("content_hash"):
+                    raise ValueError(
+                        f"snapshot content hash state mismatch: {repo}:{source_path}"
+                    )
+                retrieved = re.search(
+                    r"^[|] 摄取时间 [|] `([^`]+)` [|]$", text, flags=re.MULTILINE
+                )
+                if not retrieved:
+                    raise ValueError(f"missing snapshot retrieval time: {repo}:{source_path}")
+                provenance = {
+                    "source_repo": repo,
+                    "source_path": source_path,
+                    "source_sha": pinned["commit_sha"],
+                    "commit_sha": pinned["commit_sha"],
+                    "tree_sha": pinned["tree_sha"],
+                    "blob_sha": pinned["blob_sha"],
+                    "retrieved_at": retrieved.group(1),
+                    "confidence": 1.0,
+                    "primary_owner": profile["primary_owner"],
+                    "entity_id": document["entity_id"],
+                }
+                rendered = render_snapshot(
+                    provenance,
+                    source,
+                    "",
+                    profile["layer"],
+                    max_inline_bytes=0,
+                    normalized_content_hash=pinned["content_hash"],
+                )
+                validate_owned_punctuation(rendered)
+                destination = (
+                    self.inputs
+                    / "archive"
+                    / dt.datetime.now(dt.timezone.utc).strftime("%Y/%m")
+                    / profile["layer"]
+                    / namespace
+                    / target.name
+                )
+                self._move_to_archive(target, destination)
+                atomic_write(target, rendered)
+                verified = self._snapshot_file_provenance(
+                    target, repo=repo, source_path=source_path
+                )
+                if verified["content_hash"] != document["content_hash"]:
+                    raise ValueError(
+                        f"bounded snapshot verification failed: {repo}:{source_path}"
+                    )
+                changed.append(target.relative_to(self.inputs).as_posix())
+        return changed
+
+    def validate_active_snapshots(self, max_snapshot_bytes=196608):
+        documents = bounded = 0
+        for repo, repo_state in sorted(self.state["repositories"].items()):
+            for source_path, document in sorted(repo_state["documents"].items()):
+                if Path(source_path.lower()).suffix not in TEXT_SOURCE_SUFFIXES:
+                    raise ValueError(f"non-text path in active state: {repo}:{source_path}")
+                output = document.get("output")
+                if not isinstance(output, str) or not output:
+                    raise ValueError(f"missing snapshot output: {repo}:{source_path}")
+                target = self.inputs / output
+                try:
+                    size = target.stat().st_size
+                except FileNotFoundError as exc:
+                    raise ValueError(
+                        f"missing current snapshot: {repo}:{source_path}: {target}"
+                    ) from exc
+                if size > max_snapshot_bytes:
+                    raise ValueError(
+                        f"unbounded current snapshot: {repo}:{source_path}:{size}"
+                    )
+                pinned = self._snapshot_file_provenance(
+                    target, repo=repo, source_path=source_path
+                )
+                if pinned["content_hash"] != document.get("content_hash"):
+                    raise ValueError(
+                        f"snapshot content hash state mismatch: {repo}:{source_path}"
+                    )
+                text = target.read_text(encoding="utf-8")
+                if "| 快照模式 | `PINNED_EXTERNAL_REFERENCE` |" in text:
+                    bounded += 1
+                documents += 1
+        return {"documents": documents, "bounded_references": bounded}
+
     def fetch_github_data(self):
         self.validate_profiles()
         changed, failures = [], []
@@ -516,6 +655,7 @@ class Harvester:
         if failures:
             raise RuntimeError("harvest failed: " + " | ".join(failures))
         if not self.dry:
+            changed.extend(self._compact_active_snapshots())
             self._migrate_and_validate_snapshot_state(5)
             atomic_write(self.state_path, json.dumps(self.state, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
         print(json.dumps({"updated": len(changed), "failed": 0}, ensure_ascii=False, sort_keys=True))

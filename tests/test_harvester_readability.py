@@ -24,6 +24,97 @@ class ReadabilityContracts(unittest.TestCase):
         self.assertIn("<summary>展开完整外部原文</summary>", output)
         validate_owned_punctuation(output)
 
+    def test_large_snapshot_is_a_bounded_pinned_reference(self):
+        source = "# Long source\\n" + ("a" * 100_000)
+        provenance = {
+            "source_repo": "owner/repo",
+            "source_path": "CHANGELOG.md",
+            "source_sha": "a" * 40,
+            "commit_sha": "a" * 40,
+            "tree_sha": "b" * 40,
+            "blob_sha": "c" * 40,
+            "retrieved_at": "2026-11-06T00:00:00Z",
+            "entity_id": "external_doc_owner_repo_changelog_md",
+        }
+        digest = "d" * 64
+        output = render_snapshot(
+            provenance, source, "+bounded change", "agent-runtime",
+            max_inline_bytes=1024, normalized_content_hash=digest,
+        )
+        self.assertLess(len(output), 6000)
+        self.assertNotIn("a" * 1000, output)
+        self.assertIn("PINNED_EXTERNAL_REFERENCE", output)
+        self.assertIn(digest, output)
+        validate_owned_punctuation(output)
+
+    def test_large_diff_also_uses_bounded_reference(self):
+        provenance = {
+            "source_repo": "owner/repo", "source_path": "README.md",
+            "source_sha": "a" * 40, "commit_sha": "a" * 40,
+            "tree_sha": "b" * 40, "blob_sha": "c" * 40,
+            "retrieved_at": "2026-11-06T00:00:00Z",
+            "entity_id": "external_doc_owner_repo_readme_md",
+        }
+        output = render_snapshot(
+            provenance, "# Short", "+" + ("d" * 100_000), "agent-runtime",
+            max_inline_bytes=1024, normalized_content_hash="e" * 64,
+        )
+        self.assertIn("PINNED_EXTERNAL_REFERENCE", output)
+        self.assertIn("DIFF_PREVIEW_TRUNCATED", output)
+        self.assertLess(len(output), 12000)
+
+    def test_compaction_archives_original_before_replacing_current(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            harvester = Harvester.__new__(Harvester)
+            harvester.inputs = Path(tmp)
+            harvester.dry = False
+            harvester.profiles = {
+                "sources": [{
+                    "repo": "owner/repo", "layer": "agent-runtime",
+                    "documents": ["CHANGELOG.md"], "primary_owner": "welcome",
+                }]
+            }
+            current = harvester.inputs / "current" / "agent-runtime" / "owner_repo"
+            current.mkdir(parents=True)
+            target = current / ("CHANGELOG.md__" + "c" * 12 + "__" + "a" * 12 + ".md")
+            provenance = {
+                "source_repo": "owner/repo", "source_path": "CHANGELOG.md",
+                "source_sha": "a" * 40, "commit_sha": "a" * 40,
+                "tree_sha": "b" * 40, "blob_sha": "c" * 40,
+                "retrieved_at": "2026-11-06T00:00:00Z",
+                "entity_id": "external_doc_owner_repo_changelog_md",
+            }
+            source = "# Long source\\n" + ("a" * 20_000)
+            original = render_snapshot(provenance, source, "+initial", "agent-runtime")
+            target.write_text(original, encoding="utf-8")
+            digest = __import__("hashlib").sha256(harvester._normalized(source).encode()).hexdigest()
+            harvester.state = {"repositories": {"owner/repo": {"documents": {
+                "CHANGELOG.md": {
+                    "commit_sha": "a" * 40, "tree_sha": "b" * 40,
+                    "blob_sha": "c" * 40, "sha": "c" * 40,
+                    "observed_commit_sha": "a" * 40,
+                    "observed_tree_sha": "b" * 40,
+                    "observed_blob_sha": "c" * 40,
+                    "content_hash": digest,
+                    "entity_id": "external_doc_owner_repo_changelog_md",
+                    "output": target.relative_to(harvester.inputs).as_posix(),
+                }
+            }}}}
+            changed = harvester._compact_active_snapshots(max_inline_bytes=1024)
+            self.assertEqual(changed, [target.relative_to(harvester.inputs).as_posix()])
+            compact = target.read_text(encoding="utf-8")
+            self.assertIn("PINNED_EXTERNAL_REFERENCE", compact)
+            self.assertLess(len(compact), 6000)
+            archived = list((harvester.inputs / "archive").rglob(target.name))
+            self.assertEqual(len(archived), 1)
+            self.assertEqual(archived[0].read_text(encoding="utf-8"), original)
+            self.assertEqual(
+                harvester._snapshot_file_provenance(
+                    target, repo="owner/repo", source_path="CHANGELOG.md"
+                )["content_hash"],
+                digest,
+            )
+
     def test_jsonl_maintenance_recurses_and_deduplicates(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "nested" / "items.jsonl"

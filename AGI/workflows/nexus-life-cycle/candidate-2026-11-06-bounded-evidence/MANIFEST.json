@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "record_kind": "WORKFLOW_GENERATION_CANDIDATE",
+  "record_status": "DRAFT_NOT_MAIN_NOT_REGISTERED",
+  "lineage_role": "BOUNDED_ACTIVE_SOURCE_EVIDENCE",
+  "capture_date": "2026-11-06",
+  "capture_timezone": "Asia/Shanghai",
+  "repository": "lostlight530/welcome-to-github",
+  "source_commit_sha": "187586e71cd8d50c91c1971ac94c0d9be885c45b",
+  "canonical_executable_source": ".github/workflows/nexus-life-cycle.yml",
+  "source_workflow_name": "NEXUS CORTEX Life Cycle",
+  "source_workflow_blob_sha": "f17fbcd349e5aad3deea9ca170abd1f7d784d5e8",
+  "source_content_sha256": "6d092350a740df6a2352d16ac1648d5f6f6247df26f0c07ae9252d5a40255164",
+  "source_byte_count": 12121,
+  "source_line_count": 209,
+  "source_jobs": [
+    "validate",
+    "apply"
+  ],
+  "source_triggers": [
+    "schedule",
+    "push",
+    "pull_request",
+    "workflow_dispatch"
+  ],
+  "architecture_change": [
+    "text-only source candidate boundary",
+    "strict UTF-8 and NUL rejection",
+    "bounded pinned references for oversized current snapshots",
+    "archive-before-replace forward migration",
+    "post-harvest active evidence gate"
+  ],
+  "agi_backup_path": "AGI/workflows/backups/nexus-life-cycle/candidate-2026-11-06-bounded-evidence/nexus-life-cycle.yml",
+  "agi_copy_is_active_github_action": false,
+  "executable_from_agi": false,
+  "workflowhub_registered": false,
+  "workflowhub_id": "2332",
+  "external_update_authorized": false,
+  "migration_window": {
+    "from": "2026-08-31",
+    "through": "2026-11-06",
+    "main_snapshot_documents": 23,
+    "oversized_current_snapshots": 3,
+    "binary_current_snapshots": 0,
+    "status": "NOT_EXECUTED_REQUIRES_MERGED_AUTHORIZED_APPLY"
+  },
+  "predecessor_record": "AGI/workflows/nexus-life-cycle/recovered-2026-08-31-receipt",
+  "recovery_rule": "Resolve source_commit_sha, verify the canonical workflow Git blob and SHA-256, then run repository-specific validation. The AGI copy is inert and must never receive apply credentials."
+}
