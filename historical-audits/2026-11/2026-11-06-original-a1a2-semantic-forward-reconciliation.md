@@ -69,3 +69,22 @@
 - Neither a new forward correction nor its additions can retroactively lift the original strict acceptance. A subsequent successor, if justified and separately accepted, must retain distinct identity and dated source authority.
 - This appendix does not assert native runtime test, live external source requery, CI or full-worktree verification. Original history stays immutable, and Draft remains awaiting maintainer decision.
 - Status: NUMERIC_ORIGINAL_DELIVERY_VERIFIED / STRICT_ORIGINAL_SUBSTANTIVE_NOT_CLOSED / DATED_FORWARD_REPAIR_SUBMITTED.
+
+## 2026-11-06 exact original-diff line-screening ledger
+
+- Source of truth: literal added lines in exact original PR diff, never current main line count or this later correction PR.
+- Structural excluded = headings, empty lines, separators and code-fence markers. Quoted-source pattern = original native Daily line restated with source file #L and repeated short status suffix; flag is **not automatic semantic exclusion**.
+- Conditional ceiling = nonstructural original additions minus source quote flagged rows. If the quoted rows have no new independent inference, any conditional ceiling below 100 means the original cannot satisfy the strict threshold. This remains an evidence conditional rather than a verified fail until each flagged line is assessed.
+- This mechanical audit cannot manufacture independent reviewer execution. Strict PASS requires accepted >=100 distinct new, claim-specific maintenance judgments per original PR.
+
+| Original | Added | Structural | Source quote flags | Other citation/decision flags | Nonstructural maximum | Conditional maximum | Result |
+|---|---:|---:|---:|---:|---:|---:|---|
+| [#894](https://github.com/lostlight530/welcome-to-github/pull/894/files) | 167 | 24 | 0 | 0 | 143 | 143 | NOT_CERTIFIED |
+| [#895](https://github.com/lostlight530/welcome-to-github/pull/895/files) | 181 | 26 | 0 | 0 | 155 | 155 | NOT_CERTIFIED |
+
+### Traceable original line samples
+- #894: original diff changed `historical-audits/2026-11/2026-11-02-a1-source-content-review.md`; flagged source-quote sample none by narrow pattern. Context and new judgment must be individually decided; no repeated issuer status counts as a second source.
+- #895: original diff changed `historical-audits/2026-11/2026-11-02-a2-month-relations.md`; flagged source-quote sample none by narrow pattern. Context and new judgment must be individually decided; no repeated issuer status counts as a second source.
+
+- Numerical original PR 100+ additions gate: PASS. Substantive independence gate: NOT_CERTIFIED. New forward evidence cannot increase original diff or turn task-time unknown/blocked into success.
+- No native research run, code/checker execution, external independent recertification or current month final seal performed by this ledger.
