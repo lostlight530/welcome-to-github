@@ -139,12 +139,12 @@ class Harvester:
         source_url = f"https://github.com/{repo}/blob/{provenance['commit_sha']}/{source_path}"
         if source_url not in text:
             raise ValueError(f"snapshot provenance source mismatch: {repo}:{source_path}")
-        mode = re.search(r"^\\| 快照模式 \\| `([^\\`]+)` \\|$", text, flags=re.MULTILINE)
+        mode = re.search(r"^[|] 快照模式 [|] `([^`]+)` [|]$", text, flags=re.MULTILINE)
         if mode:
             if mode.group(1) != "PINNED_EXTERNAL_REFERENCE":
                 raise ValueError(f"unsupported snapshot mode: {repo}:{source_path}")
             recorded = re.search(
-                r"^\\| 规范内容 SHA256 \\| `([0-9a-f]{64})` \\|$",
+                r"^[|] 规范内容 SHA256 [|] `([0-9a-f]{64})` [|]$",
                 text,
                 flags=re.MULTILINE,
             )
