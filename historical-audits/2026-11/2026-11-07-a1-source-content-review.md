@@ -13,7 +13,7 @@
 
 ## Complete scoped current-main object inventory
 - Scoped native + dated maintenance paths: 37
-- Exact blob match to predecessor matrix: 26; changed predecessor blobs: 1; predecessor-unmapped objects: 7
+- Exact blob match to predecessor matrix: 26; changed predecessor blobs: 1; predecessor-unmapped objects: 10
 - A1 object-level decisions use NO_FOLLOW_UP, APPEND_RELATION, BOUNDARY_UPDATE, UNKNOWN and NOT_DUE; explanations identify inherited review vs present source vs blocked execution
 - Same-blob NO_FOLLOW_UP inherits the predecessor A1 assessment; it is not fresh independent semantic review
 - Current rolling monthly owner after Nov7 is a temporal snapshot, not a Nov6 as-of observation
@@ -105,3 +105,8 @@
 ## Coverage correction ledger — 2026-11-07
 - Additional valid paths captured: 3; original A1 branch content updated before merge, not a successor and not a change to previously merged A1 source
 - This corrects the coverage denominator only; each added row remains non-substantive for strict >=100 newly researched line acceptance
+
+## Recomputed post-correction coverage proof
+- Entries in current A1 matrix: 37; predecessor entries: 27; exact inherited blob: 26; changed inherited blob: 1; newly examined/unmapped main objects: 10
+- This is a mechanically checked Git-blob inventory, not an independent substantive research verdict, nor proof of historical task-time visibility
+- A1 strict semantic acceptance remains NOT_CERTIFIED regardless of the inventory size
