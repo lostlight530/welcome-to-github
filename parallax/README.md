@@ -61,7 +61,7 @@ CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录
 
 ## 当前研究边界 — 2026-11-07
 
-今日原生 Daily 通过一个 bounded read-only evidence procedure 对照空的 open PR 与 Parallax branch-name 过滤结果和两个正向 main 文件读取, 明确 query projection 不等于 repository artifact existence, GitHub publisher 1, PARTIAL, native checker NOT_EXECUTED, 新 CASE/NOTES/Special/Audit credit 0, 本 Git ref Daily 108 / Specials 17 / batches 125 / windows 103 / Audits 9, November 7/7 arrived dates, producer delivery 状态以实时 Draft PR 为准
+今日原生 Daily 通过一个 bounded read-only evidence procedure 对照空的 open PR 与 Parallax branch-name 过滤结果和两个正向 main 文件读取, 明确 query projection 不等于 repository artifact existence, GitHub publisher 1, PARTIAL, native checker NOT_EXECUTED, 新 CASE/NOTES/Special/Audit credit 0, 本 Git ref Daily 108 / Specials 17 / batches 125 / windows 103 / Audits 9, November 7/7 arrived dates, 交付状态以实时 PR metadata、merge receipt 与 main commit 可达性另行核验, producer-time Draft 文字不是永久状态
 
 `FILTERED_ABSENCE != ARTIFACT_ABSENCE`
 
