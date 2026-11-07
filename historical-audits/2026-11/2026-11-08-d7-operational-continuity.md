@@ -51,3 +51,32 @@
 - NEXT_AUDIT_DEPENDENCY: W45 closes after Nov08; D10 at its legitimate calendar trigger; November end is separately required for monthly final
 - D7 verifier work performed: GitHub REST source/PR/status inspection. Native producer commands, protected host effects, remote SDK tests and full Horizons checker: NOT_EXECUTED_BY_THIS_AUDIT
 - OPEN_PRS_AT_BASE: NONE
+
+## Audit Log minimum machine-field ledger — vNext
+
+- REPOSITORY: `lostlight530/welcome-to-github`
+- SYSTEM: Horizon H1/H2 + Parallax
+- AUDIT_TYPE: D7 / OPERATIONAL_CONTINUITY
+- AUDIT_WINDOW: 2026-11-01..2026-11-07 inclusive / Asia/Shanghai
+- CUTOFF: 2026-11-07T23:59:59+08:00 (logical, not a claim of a precisely timestamped scan)
+- BASE_REVISION: as specified at report opening; obtained by exact GitHub main cold read
+- FINAL_OBSERVED_REVISION: PENDING_POSTMERGE_REFRESH at Draft stage; premerge current main documented above
+- TASKS_EXPECTED: contractual dated Native work and independent maintenance periods enumerated in the audit, with no invented Stage/Weekly/Monthly triggers
+- TASKS_OBSERVED: see exact per-date current-main path table and verified merged PR list
+- TASKS_MISSING: no missing canonical paths in audited applicable set; runtime/semantic deficits separately marked PARTIAL or NOT_EXECUTED
+- A1_COVERAGE: 21 scoped native source paths; six independent A1 original PRs merged; no original semantic hard-gate PASS certified
+- A1_DECISIONS: Six original A1 period-bound source inventories with explicit NOT_MET where applicable, including Nov07 #927
+- A2_MONTH_VERSION: 2026-11 / MONTH_OPEN, through 2026-11-07, not a natural-month close
+- A2_EVOLUTION_BLOCKS: Six Nov02–07 original independent A2 month-to-date relations, including Nov07 #928; neither native Horizon H2 nor monthly final
+- REPOSITORY_EVIDENCE: Git tree blob identities, original PR REST additions, merged_at and current-path custody
+- RUNNER_EVIDENCE: only specific externally recorded native/CI runs listed in the audit; NOT_EXECUTED_BY_THIS_D7
+- EXTERNAL_EVIDENCE: inherited primary research citations from dated Native records; NOT independently reconfirmed across every source by this D7
+- TELEMETRY_EVIDENCE: NOT_COLLECTED
+- NEW_FINDINGS: exact dated source/PR continuity and any specific current navigation or provenance correction described above
+- COUNTEREVIDENCE: source presence, PR merge and generic CI do not establish full native runtime success, external-effect proof or strict original content acceptance
+- REPEATED_PATTERNS: Early task/source ambiguities retain point-in-time corrections; no independent recurring runtime incident established
+- UNRESOLVED: original hard-gate semantic audit, independent runtime and any scoped data-plane defect detailed in the report
+- UNKNOWN: External evaluator/Parallax host-wide testing not rerun; strict original semantic count not independently certified
+- CURRENT_RESULT: PARTIAL / DELIVERY_CUSTODY_VERIFIED / ORIGINAL_STRICT_ACCEPTANCE_NOT_MET_OR_UNCERTIFIED
+- GOVERNANCE_CANDIDATE: NONE_PROMOTED; actual owner correction only where explicitly grounded
+- NEXT_AUDIT_DEPENDENCY: D10 separately on its legitimate cutoff, W45 after Nov08, natural November final after Nov30
