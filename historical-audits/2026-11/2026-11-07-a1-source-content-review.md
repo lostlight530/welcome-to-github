@@ -12,10 +12,10 @@
 - No runtime, external publisher re-execution, host effect, independent CI or numeric line-gate certification is asserted
 
 ## Complete scoped current-main object inventory
-- Scoped native + dated maintenance paths: 34
+- Scoped native + dated maintenance paths: 37
 - Exact blob match to predecessor matrix: 26; changed predecessor blobs: 1; predecessor-unmapped objects: 7
-- Object-level status is one of UNCHANGED_REUSE_PREVIOUS_REVIEW, SHA_DRIFT_REVIEW_REQUIRED, NEW_N_MINUS_1_INPUT or UNMAPPED_PRIOR_OBJECT
-- `UNCHANGED_REUSE_PREVIOUS_REVIEW` means the prior decision can be inherited *if* its scope remains valid; it is not a fresh full text review or independent verification
+- A1 object-level decisions use NO_FOLLOW_UP, APPEND_RELATION, BOUNDARY_UPDATE, UNKNOWN and NOT_DUE; explanations identify inherited review vs present source vs blocked execution
+- Same-blob NO_FOLLOW_UP inherits the predecessor A1 assessment; it is not fresh independent semantic review
 - Current rolling monthly owner after Nov7 is a temporal snapshot, not a Nov6 as-of observation
 
 | Exact scoped path | Current Git blob | A1 custody disposition | Previously covered blob |
@@ -55,6 +55,17 @@
 | `parallax/records/2026-11/2026-11-05.md` | `d6acfde25a66d68e0cecdbad96052288f2b5b108` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `d6acfde25a66d68e0cecdbad96052288f2b5b108` |
 | `parallax/records/2026-11/2026-11-06.md` | `8ade5166613d951423d8de45d0007b2ca5303376` | UNKNOWN / UNMAPPED_NEEDS_VERIFICATION | — |
 
+| `AGI/workflows/backups/nexus-life-cycle/candidate-2026-11-06-bounded-evidence/nexus-life-cycle.yml` | `f17fbcd349e5aad3deea9ca170abd1f7d784d5e8` | UNKNOWN / INERT_SPECIAL_CANDIDATE_NO_APPLY | — |
+| `AGI/workflows/nexus-life-cycle/candidate-2026-11-06-bounded-evidence/MANIFEST.json` | `4f617bbac393210bc76641176936305ace1e9f20` | UNKNOWN / INERT_SPECIAL_CANDIDATE_NO_APPLY | — |
+| `AGI/workflows/nexus-life-cycle/candidate-2026-11-06-bounded-evidence/README.md` | `5baa816bcc92cc51c2f0b0a76000ff956eedb141` | UNKNOWN / INERT_SPECIAL_CANDIDATE_NO_APPLY | — |
+
+## Special candidate applicability — NEXUS 2026-11-06
+- Added the three actual Nov6 NEXUS candidate objects to A1 source coverage; their manifest is a `WORKFLOW_GENERATION_CANDIDATE` under an inert `AGI/**` path, not the executable `.github/workflows` authority plane
+- Manifest `DRAFT_NOT_MAIN_NOT_REGISTERED` describes *activation/registration* status, not a denial that the candidate files were later committed to Git main
+- Candidate main-state observations: 23 documents, 3 oversized snapshots, 0 binary current snapshots; this is a manifest claim, not today's independently rerun migration
+- Manifest explicitly says migration `NOT_EXECUTED_REQUIRES_MERGED_AUTHORIZED_APPLY`; do not infer the active NEXUS workflow was deployed, `apply` ran, or WorkflowHub #2332 was updated
+- The archived YAML blob is a byte-custody candidate; path `AGI/workflows/backups/...` is inert and does not create a second scheduler or separate native task
+
 ## New cutoff source-specific decisions and falsifiers
 - **01 / Horizon Nov6 H1:** `horizon-cortex/2026-11-06-H1-signal-observe.md` is a primary-source ADK `pass@k`/`pass^k` observation, not an installed evaluator or benchmark outcome
 - **02 / Horizon Nov6 H2:** `horizon-cortex/2026-11-06-H2-horizon-orient.md` specifies the combination formula using only decided runs; `NOT_EVALUATED` is excluded from n
@@ -90,3 +101,7 @@
 - NO_FOLLOW_UP on an identical predecessor blob **inherits** the preceding 2026-11-06 A1 review rather than claiming an individual re-read; APPEND_RELATION is recorded in this new report only, not in the historical native owning file
 - A BOUNDARY_UPDATE on a rolling owner is a temporal interpretation change in this audit, not permission to rewrite the native monthly owner
 - UNKNOWN retains a true coverage/semantic quality gap; no false full-content review or strict >=100 acceptance is inferred
+
+## Coverage correction ledger — 2026-11-07
+- Additional valid paths captured: 3; original A1 branch content updated before merge, not a successor and not a change to previously merged A1 source
+- This corrects the coverage denominator only; each added row remains non-substantive for strict >=100 newly researched line acceptance
