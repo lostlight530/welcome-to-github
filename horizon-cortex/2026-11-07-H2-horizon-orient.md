@@ -11,7 +11,13 @@ Logical Date: 2026-11-07
 Logical Timezone: Asia/Shanghai
 Agent: GPT-6 / GPT_NATIVE / NOT_JULES_REPLAY
 Producer Identity: HUMAN_REQUESTED_GPT_NATIVE
-Record Provenance: FORWARD_NATIVE_ORIENTATION
+Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE
+Source Identity: google/adk-python@dd7161f7a2b88cd7ae482cc2acd8423675ac027c
+Source Authority For Claim: FIRST_PARTY_COMMIT_PATCH_AND_AUTHORED_TEST_SOURCE
+Independent Verification: CODE_BRANCHES_REOPENED / NO_INDEPENDENT_RUNTIME_REPLAY
+Evidence Upgrade Basis: SOURCE_BRANCH_COUNTEREXAMPLE_VERIFIED / NO_PROMOTION
+Original Execution Status: GPT_NATIVE_BOUNDED_SOURCE_ORIENTATION
+Current Path Status: NEW_DRAFT_PROPOSAL_NOT_MERGED
 Base Main SHA: 87929b704567c3cc595434538e2a25ab716a563a
 Run Identity: welcome-to-github/horizon/H2/2026-11-07/GPT_NATIVE/87929b704567c3cc595434538e2a25ab716a563a/first-party-patch-orientation
 Upstream H1: horizon-cortex/2026-11-07-H1-signal-observe.md
