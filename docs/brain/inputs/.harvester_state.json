@@ -339,19 +339,19 @@
     "ollama/ollama": {
       "documents": {
         "README.md": {
-          "blob_sha": "6ccf0acbeff491cfffdd6fc972109801fd68fe36",
-          "commit_sha": "8718c2bd2363c3f9f422d82bbad322bc2b791d60",
-          "content_hash": "6f23cdf7df4e176ad15c3296585d9ba54a56c1ddf9097db5314f6ac2eb4bdac8",
+          "blob_sha": "2a7dd787dc04fad1536797c7a64f9c3d85fa0782",
+          "commit_sha": "c053d1e98537f208b24165446369bd376a015999",
+          "content_hash": "53d0cb1115bda6e158afe5d071d8dee3234ed3910354404917df302fb551951d",
           "entity_id": "doc_ollama_ollama_readme_md_1e5a52d240f3",
-          "observed_blob_sha": "6ccf0acbeff491cfffdd6fc972109801fd68fe36",
-          "observed_commit_sha": "8718c2bd2363c3f9f422d82bbad322bc2b791d60",
-          "observed_tree_sha": "02e8d88ea444ddf35046504aeab54a9a266ce217",
-          "output": "current/complex-agent-systems/ollama_ollama/README.md__6ccf0acbeff4__8718c2bd2363.md",
-          "sha": "6ccf0acbeff491cfffdd6fc972109801fd68fe36",
-          "tree_sha": "02e8d88ea444ddf35046504aeab54a9a266ce217"
+          "observed_blob_sha": "2a7dd787dc04fad1536797c7a64f9c3d85fa0782",
+          "observed_commit_sha": "c053d1e98537f208b24165446369bd376a015999",
+          "observed_tree_sha": "cefac7dc1135be0c6ab8e6e16f928b150616421f",
+          "output": "current/complex-agent-systems/ollama_ollama/README.md__2a7dd787dc04__c053d1e98537.md",
+          "sha": "2a7dd787dc04fad1536797c7a64f9c3d85fa0782",
+          "tree_sha": "cefac7dc1135be0c6ab8e6e16f928b150616421f"
         }
       },
-      "last_checked_at": "2026-10-14T00:55:00.376917+00:00"
+      "last_checked_at": "2026-11-07T01:40:31.613441+00:00"
     }
   },
   "schema_version": 5
