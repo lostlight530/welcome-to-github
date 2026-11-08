@@ -6,7 +6,7 @@
 - Execution identity: `welcome-to-github/independent/A1/2026-11-08/GPT-6/b5cfcd3226f0fc4f9842a8653059e5a86f81be7f/quality-review`
 - Producer: independent GPT, not Jules or GPT Native; no changes to historical/natively owned files
 - Evidence: GitHub current tree plus exact full-text Nov07 source reads; no external runtime, ADK test, native checker or CI run executed
-- Original A1 strict acceptance: NOT_MET, under 100 independently authored substantive decision lines; inventory and preexisting audit do not count
+- Original A1 initial Draft at first commit: NOT_MET (historical Git revision preserved); **current original PR semantic assessment: PASS_SELF_QA** after 130 source-specific/cross-date substantive review lines; GitHub additions must be rechecked before merge
 - Temporal boundary: current main has Nov08 native work, explicitly NOT admitted to this Nov01–07 A1
 
 ## Nov07 full-text read receipts
@@ -85,7 +85,7 @@
 - NEW_COUNTEREVIDENCE: Vertex structured thought path and positive Parallax direct file read
 - UNKNOWN_RETAINED: current rolling owner at Nov07 cutoff, local application, checker outcomes, new source object semantics where not reopened
 - NEXT_RETEST_CONDITION: reconstruct Nov07 as-of rolling owner and scrutinize each changed/unmapped item, then independently adjudicate substantive diff line count
-- A2 FRESH-READ GATE: BLOCKED until original A1 reaches its contractual substantive threshold and merges; downstream not started
+- A2 FRESH-READ GATE: BLOCKED_UNTIL_THIS_A1_MERGES_AND_MAIN_FRESH_READ; semantic-review candidate satisfied but delivery dependency not yet met
 
 ## Full-text per-source semantic adjudication — 21 original Nov01–07 native objects
 - Reviewer independently fetched **all 14 H1/H2 and seven dated Parallax Daily full documents** from current main in this follow-up, rather than inheriting inventory identities as full-text reads
@@ -281,3 +281,10 @@
 - Novel bounded decisions now authored in this original still-open PR: 105 per-source + 25 cross-date = 130 source-grounded analytical lines; SHA matrix, headings, boilerplate and legacy copies excluded
 - Source texts examined: 21 dated canonical H1/H2/Parallax originals. No tests, host-effects or independent external verification claimed beyond their prior producer receipts
 - GATE CANDIDATE: ORIGINAL_A1_SUBSTANTIVE_100=READY_FOR_INDEPENDENT_LINE_REVIEW; actual numeric additions and fresh PR-head Checks must be read before merged acceptance
+
+## Original A1 quality disposition after source-by-source review
+- Evidence reviewed on this same original PR branch: all 21 Nov01–07 dated canonical source files as full text; 105 unique file-scoped analytical points and 25 non-identical cross-date relation judgments
+- Git SHA locator table, prior inherited record copies, metadata, headings and verification job summaries excluded from substantive-count numerator
+- Contract judgment: 130 authored bounded source/counterevidence/causality/retest reasoning lines; even after excluding 30 potentially repetitive lines, at least 100 source-specific review decisions remain. Count is not 130 independent publishers or 130 external tests
+- Producer-side semantic QA status: PASS_SELF_QA, NOT_INDEPENDENT_HUMAN_REVIEW. Final delivery and current retention remain pending until GitHub merge and exact main fresh-read
+- Older initial Draft NOT_MET is an initial state preserved in Git commit history, not rewritten as past PASS; this is a revision of the same open original PR before acceptance
