@@ -24,12 +24,20 @@ The native `validate` and conditional `apply` jobs remain separate, and only the
 - Binary source paths observed in active state: `0`
 - Migration status at capture: `NOT_EXECUTED_REQUIRES_MERGED_AUTHORIZED_APPLY`
 - Existing archive content is never edited or re-ingested
-- The next authorized native apply must archive replaced current files first, update active state, verify provenance and content hashes, rebuild the active graph and pass the final write boundary
+- The authorized native apply was required to archive replaced current files first, update active state, verify provenance and content hashes, rebuild the active graph and pass the final write boundary
+
+## Post-acceptance outcome
+
+- Implementation PR [#921](https://github.com/lostlight530/welcome-to-github/pull/921) merged at `2026-11-06T16:21:34Z` as `ac7d65a8b2889e44988e5607933331c303add0a7`
+- Production gate fix PR [#922](https://github.com/lostlight530/welcome-to-github/pull/922) merged as `347344e0c60559e66d41c3317bb78edf18112d73`
+- Authorized native apply [run 42252528859](https://github.com/lostlight530/welcome-to-github/actions/runs/42252528859) completed successfully and produced commit `960f2a277bd433be0198b5730f2aa9c9cc76c23e`
+- Migration status after apply: `EXECUTED_AND_VERIFIED`
+- WorkflowHub #2332 was not updated by this repository apply and remains outside the verified acceptance result
 
 ## Verification boundary
 
 The candidate workflow copy is inert under `AGI/**`
 
-Successful pull-request validation proves repository tests and read-only contracts for the candidate commit, not a production migration, external WorkflowHub publication or successful native apply
+Pull-request validation established the read-only candidate contract; the later authorized native apply is recorded separately above as production migration evidence
 
 WorkflowHub #2332 and all frozen historical generations remain unchanged

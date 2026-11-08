@@ -87,7 +87,7 @@ It does not validate historical jobs against the current environment or promote 
 - Git blob: `f17fbcd349e5aad3deea9ca170abd1f7d784d5e8`
 - SHA-256: `6d092350a740df6a2352d16ac1648d5f6f6247df26f0c07ae9252d5a40255164`
 - WorkflowHub correspondence: Not registered, existing historical workflow identity remains unchanged
-- Status: Draft candidate outside the reviewed main-lineage revision inventory
+- Status: Accepted forward generation; authorized apply verified; not registered as a new WorkflowHub version
 
 ## Interpretation
 
