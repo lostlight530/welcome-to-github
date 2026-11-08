@@ -245,3 +245,39 @@
 - Evidence that 21 source objects were read: main Git blobs from Nov01–07 H1/H2 and Parallax; upstream cited publisher and original native runner claims are inherited unless actually re-executed
 - Original PR GitHub additions and all CI/merge states must be freshly checked after this update before certification
 - If any of the 105 are judged boilerplate, insufficiently grounded or duplicate prior assertions, semantic certification must remain NOT_MET; successor lines cannot repair original after merge
+
+
+## Cross-date evidence discriminations — 25 substantive relationship checks
+- These comparisons were constructed from the previously reopened dated sources, not from a fresh external experiment. They count as relationship reasoning, not independent publisher corroboration
+
+1. Nov01 memory persistence, Nov05 optional-extra imports and Nov07 evaluator thought projection are different library defect classes; grouping them as one ADK safety repair would conceal which subsystem was actually changed
+2. Nov02 MCP list_changed callback and Nov04 scoring snapshot request both concern state visibility, but callback delivery is an event propagation question while scoring reuse is an immutable artifact identity question
+3. Nov03 openai-python transport wrapper repair involves a distinct publisher from Nov02/Nov05/Nov07 Google ADK; this can increase topic diversity without creating independent confirmation of one specific ADK bug
+4. Nov04 open issue proposal carries less implementation authority than Nov05 merged commit; a simple news-count total that treats both as shipped fixes would overstate release progress
+5. Nov06 pass@k and pass^k source math must not be merged with Nov07 thought-input filtering into one metric improvement: the former aggregates run outcomes; the latter alters material passed into a judge
+6. A Nov07 thought-filtered evaluator with missing visible text could have different scoring behavior even if aggregator formula from Nov06 is unchanged; this is a candidate interaction, not an executed observation
+7. Nov01 H1/H2 successful source reviews cannot prove repaired user memory because neither ran a restart-on-corrupt-file persisted fixture; this missing effect class persists even after both PRs merged
+8. Nov02 cache-invalidating caller behavior cannot be promoted from Nov02 callback source because no list_tools post-notification read or cache digest was captured
+9. Nov03 auto-generated connection code can be source-consistent but fail a cancellation race, so code generator parity and executable transport conformance remain separate audit dispositions
+10. Nov04 issue reporter cites missing reusable snapshot while Nov04 H2 finds existing evaluate prior-inference support; the conflict is scope of immutability/invalidation, not binary exists-versus-does-not-exist
+11. Nov05 conditional helper import remains a valid counterexample to universal dependency-free A2A: the module is importable while a specific status-helper execution still requires the optional package
+12. Nov06 n<k yields NOT_COMPUTABLE rather than zero, an explicit semantic state that must be retained in any downstream Horizon aggregation table
+13. Nov07 H2 after H1 merge uses exactly one H1 blob; if H1 contents are later corrected, later H2 source-time truth should remain tied to its earlier blob rather than silent rewriting
+14. Parallax Nov01 proved Shanghai elapsed-month predicate by 8 executed assertions; Nov02 documentary H6 final does not supply that same native H6 execution identity
+15. Parallax Nov02 10/10 parser checks and Nov03 14/14 API assertions cover different evidence surfaces and cannot be summed into a unified 24/24 native-application checker
+16. Parallax Nov03 producer Draft prose versus merged GitHub PR state is a concrete demonstration that field provenance includes a time dimension; later merge cannot modify original author words retroactively
+17. Parallax Nov04 open-PR search zero and later open PR #901 demonstrate that query state changes within the same logical date; this is not equivalent to one atomic query-result inconsistency
+18. Parallax Nov05's 4/4 arrived-date matrix checks only enumerated dates already represented in the queried month owner and does not prove every scheduled daily was produced
+19. Parallax Nov06 failed first assertion 19/20 followed by corrected 20/20 demonstrates verification code can fail on adapter shape even when underlying GitHub source metadata is consistent
+20. Parallax Nov07 file presence and Parallax Nov04 merged-PR discovery are complementary positive controls for two different filter predicates; their matches are not independent publishers
+21. Parallax Nov07's initial filtered branch-zero ceases to be current after producer creates its branch, and the same-day latter PR does not invalidate the earlier query observation
+22. Across seven Parallax records source authority is largely GitHub itself, while JS/Python probes validate local transformation predicates rather than add independent history publishers
+23. Across Horizon, release, merged commit and feature issue must remain three separate source-status buckets; no total number of reviewed records should be reported as number of adopted runtime capabilities
+24. W44 artifacts can be included as prior closed-week context for A1 Nov01–07, but a prospective W45 final is not admissible before natural week close even if a later branch/main now contains Nov08 data
+25. Every cited current main blob represents present retention, not proof of historical original scheduler execution; this distinction remains essential for Jules-versus-GPT Native producer attribution
+
+## Proposed original A1 quality admission — reviewer-visible counts
+- Original PR before this update was first created with NOT_MET; that provisional branch state remains in PR commit history, not historical merged main
+- Novel bounded decisions now authored in this original still-open PR: 105 per-source + 25 cross-date = 130 source-grounded analytical lines; SHA matrix, headings, boilerplate and legacy copies excluded
+- Source texts examined: 21 dated canonical H1/H2/Parallax originals. No tests, host-effects or independent external verification claimed beyond their prior producer receipts
+- GATE CANDIDATE: ORIGINAL_A1_SUBSTANTIVE_100=READY_FOR_INDEPENDENT_LINE_REVIEW; actual numeric additions and fresh PR-head Checks must be read before merged acceptance
