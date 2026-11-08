@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "record_kind": "WORKFLOW_GENERATION_CANDIDATE",
-  "record_status": "DRAFT_NOT_MAIN_NOT_REGISTERED",
+  "record_status": "MAIN_ACCEPTED_APPLY_VERIFIED_NOT_REGISTERED",
   "lineage_role": "BOUNDED_ACTIVE_SOURCE_EVIDENCE",
   "capture_date": "2026-11-06",
   "capture_timezone": "Asia/Shanghai",
@@ -36,13 +36,27 @@
   "workflowhub_registered": false,
   "workflowhub_id": "2332",
   "external_update_authorized": false,
+  "main_acceptance": {
+    "implementation_pr": 921,
+    "merged_at": "2026-11-06T16:21:34Z",
+    "merge_commit_sha": "ac7d65a8b2889e44988e5607933331c303add0a7",
+    "production_gate_fix_pr": 922,
+    "production_gate_fix_merge_commit_sha": "347344e0c60559e66d41c3317bb78edf18112d73"
+  },
+  "authorized_apply": {
+    "run_id": 42252528859,
+    "run_url": "https://github.com/lostlight530/welcome-to-github/actions/runs/42252528859",
+    "conclusion": "success",
+    "completed_at": "2026-11-06T16:28:44Z",
+    "result_commit_sha": "960f2a277bd433be0198b5730f2aa9c9cc76c23e"
+  },
   "migration_window": {
     "from": "2026-08-31",
     "through": "2026-11-06",
     "main_snapshot_documents": 23,
     "oversized_current_snapshots": 3,
     "binary_current_snapshots": 0,
-    "status": "NOT_EXECUTED_REQUIRES_MERGED_AUTHORIZED_APPLY"
+    "status": "EXECUTED_AND_VERIFIED"
   },
   "predecessor_record": "AGI/workflows/nexus-life-cycle/recovered-2026-08-31-receipt",
   "recovery_rule": "Resolve source_commit_sha, verify the canonical workflow Git blob and SHA-256, then run repository-specific validation. The AGI copy is inert and must never receive apply credentials."
