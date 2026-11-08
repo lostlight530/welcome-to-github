@@ -86,3 +86,162 @@
 - UNKNOWN_RETAINED: current rolling owner at Nov07 cutoff, local application, checker outcomes, new source object semantics where not reopened
 - NEXT_RETEST_CONDITION: reconstruct Nov07 as-of rolling owner and scrutinize each changed/unmapped item, then independently adjudicate substantive diff line count
 - A2 FRESH-READ GATE: BLOCKED until original A1 reaches its contractual substantive threshold and merges; downstream not started
+
+## Full-text per-source semantic adjudication — 21 original Nov01–07 native objects
+- Reviewer independently fetched **all 14 H1/H2 and seven dated Parallax Daily full documents** from current main in this follow-up, rather than inheriting inventory identities as full-text reads
+- This section contains exactly 105 newly authored, source-scoped analytical lines across 21 separately dated **artifacts**; these are not 105 independent publishers, experiments or observations
+- One primary issuer discussed twice in H1 and H2 remains one issuer family; no native/ADK/Parallax tests are represented as run by this A1 maintenance
+- Semantic count excludes this section title, explanatory headers, source paths, custody table rows, blank lines and prior A1 document text
+
+### H1 11-01 — `horizon-cortex/2026-11-01-H1-signal-observe.md`
+- **1 / source predicate:** Upstream v2.2.0 first-party release states memory record preservation, migration error fail-stop and fetch dependency boundaries as three separately testable behaviors; their co-occurrence in one release is not one measured incident
+- **2 / semantic boundary:** Preserving unknown memory fields requires a read–write–restart fixture with additional fields, not mere confirmation that a serializer accepts an ordinary record
+- **3 / counterevidence:** Fail-stop on migration errors should be tested with non-ENOENT storage failures; a silent empty-graph fallback is a distinct integrity failure
+- **4 / execution provenance:** robots.txt handling for HTTP 5xx needs an explicit request-path predicate; source release language does not establish compliance in autonomous versus user-initiated flows
+- **5 / next verification:** Release notes alone do not fix installed runtime certifi/Node identity or prove host deployment, so classification remains primary release observation without local adoption
+
+### H2 11-01 — `horizon-cortex/2026-11-01-H2-horizon-orient.md`
+- **1 / source predicate:** Specific #5291 migration branch distinguishes missing file from other I/O failure, preventing indiscriminate empty graph creation on unexpected storage error
+- **2 / semantic boundary:** Specific #5292 extra-field propagation makes innocuous create_entities a possible destructive rewrite in older behavior; persistence has to be checked after restart rather than only API return
+- **3 / counterevidence:** Specific #5299 robots 5xx behavior has an autonomous branch and a user-initiated branch; the same HTTP status is insufficient to infer one universal policy
+- **4 / execution provenance:** The H2 release/PR source chain is the same publisher lineage as H1, so H2 provides finer code interpretation rather than independent runtime reproduction
+- **5 / next verification:** A valid future migration test must pin versions and bytes before/after while preserving original corrupt-file evidence; current H2 did not execute that fixture
+
+### H1 11-02 — `horizon-cortex/2026-11-02-H1-signal-observe.md`
+- **1 / source predicate:** ADK commit 9a5117b73b8b7f8d7e6547d2e109336b8a7b053c is a first-party optional MCP list_changed callback surface, not a public proof of automatic full registry synchronization
+- **2 / semantic boundary:** A default None handler preserves existing client call paths, so notifications can be exposed at the API layer without consumer execution
+- **3 / counterevidence:** Notification delivery, callback invocation, cache invalidation and final tool registry reconciliation require four separately observed receipts
+- **4 / execution provenance:** A repository code commit date cannot be treated as the first package release shipping the change without tag mapping
+- **5 / next verification:** Future negative fixture should emit list_changed while one consumer lacks a callback and verify that absence of handling is not falsely labeled synchronized
+
+### H2 11-02 — `horizon-cortex/2026-11-02-H2-horizon-orient.md`
+- **1 / source predicate:** The downstream H2 records H1 as same-date merged and visible, separating research dependency from mere matching logical date
+- **2 / semantic boundary:** ADK source explicitly leaves cache invalidation out of the handler contract, so an invoked callback does not prove a refreshed tool list
+- **3 / counterevidence:** One upstream patch and authored tests do not constitute independent observed client/server notification delivery
+- **4 / execution provenance:** Reconnect after notification is an additional state transition and must be tested under the same pinned client and server revisions
+- **5 / next verification:** A complete retest must preserve emitted notification, receiver callback, subsequent list_tools and final cache identity as distinct observable events
+
+### H1 11-03 — `horizon-cortex/2026-11-03-H1-signal-observe.md`
+- **1 / source predicate:** openai-python 3.42.1 first-party release and commit 38075d8c6d90ba03557e991eb75991e65cfee88b identify a concrete generated WebSocket connection-policy patch
+- **2 / semantic boundary:** Generated source parity is a syntactic/source-control property and cannot by itself establish equivalent transport behavior under handshake failures
+- **3 / counterevidence:** Header casing and override precedence are fault-sensitive inputs, not incidental documentation details
+- **4 / execution provenance:** Package version 3.42.1 is release identity; actual downstream wheel installation and Welcome runtime use remain unobserved
+- **5 / next verification:** A meaningful before/after trial needs identical 3.42.0 versus 3.42.1 handshake, cancellation and retry-budget controls with network event receipts
+
+### H2 11-03 — `horizon-cortex/2026-11-03-H2-horizon-orient.md`
+- **1 / source predicate:** Upstream PR #4221 and its merge commit are one implementing change lineage already reported by Nov03 H1, not a new independent code publisher
+- **2 / semantic boundary:** Generated wrapper consistency can be verified statically while connection cleanup is still wrong; the two claims need separate checks
+- **3 / counterevidence:** Headers and default policy in a reconstructed test fixture should include override-case collisions rather than only successful connection baseline
+- **4 / execution provenance:** Cancellation on an unfinished connect is a different lifecycle edge than handshake rejection or retry exhaustion
+- **5 / next verification:** H2 reports no pinned independent SDK execution, so any claim that this fixed real downstream outages would exceed available evidence
+
+### H1 11-04 — `horizon-cortex/2026-11-04-H1-signal-observe.md`
+- **1 / source predicate:** Nov04 ADK evaluation snapshot observation is a feature request rather than a merged implementation or shipped SDK capability
+- **2 / semantic boundary:** The requested immutable inference snapshot would need typed source/evaluator identity and invalidation when references or rubric change
+- **3 / counterevidence:** Existing ADK result structures and caller-side serialization mean the feature gap cannot be described as zero evaluation persistence
+- **4 / execution provenance:** An issue publication timestamp and a Shanghai logical observation date are separate clocks; neither proves current release inclusion
+- **5 / next verification:** A valid negative example would preserve the same model output while mutating rubric/reference and show how scoring provenance changes
+
+### H2 11-04 — `horizon-cortex/2026-11-04-H2-horizon-orient.md`
+- **1 / source predicate:** H2 read v2.13.0 evaluate/inference/scoring APIs, narrowing the requester assertion with actual code-level existing-function boundaries
+- **2 / semantic boundary:** Prior inference results accepted by evaluate already demonstrate a partial reuse surface but do not define immutable judge-snapshot semantics
+- **3 / counterevidence:** LocalEvalService case-result persistence is not automatically a reproducible evaluator-config-and-prompt lineage
+- **4 / execution provenance:** The issue remains an open proposal and must not be promoted to completed product support based solely on static API availability
+- **5 / next verification:** Retest must hold inference text fixed while changing reference/rubric/judge config, then inspect independent score and trace receipts
+
+### H1 11-05 — `horizon-cortex/2026-11-05-H1-signal-observe.md`
+- **1 / source predicate:** Commit 54a6bbbfc59e247c6552555cffcdf2faf4810699 moves an ADK A2A _compat import from converter utils module scope to conditional helper scope
+- **2 / semantic boundary:** Importing converter utils without a2a-sdk is a narrower predicate than using _is_failed_status without the optional dependency
+- **3 / counterevidence:** The source adds a fresh-process subprocess import regression to avoid false confidence from cached Python modules
+- **4 / execution provenance:** Nov04's evaluator snapshot feature request is not recycled as Nov05 new A2A implementation evidence
+- **5 / next verification:** Upstream author test source exists but no isolated installation or package-run receipt was executed by Nov05 H1
+
+### H2 11-05 — `horizon-cortex/2026-11-05-H2-horizon-orient.md`
+- **1 / source predicate:** Static pre-fix/post-fix blob comparison identifies the precise deferred import, making the dependency boundary auditable by function
+- **2 / semantic boundary:** The helper _is_failed_status still requires _compat intentionally, so claiming the entire A2A adapter works without the extra is false
+- **3 / counterevidence:** An in-process import test may silently pass because modules are already cached; isolate interpreter/process for the intended regression
+- **4 / execution provenance:** Author statement about 2.14.0 release blockage is not independently validated release chronology
+- **5 / next verification:** One verified import fix does not imply a new protocol specification, all adapters fixed, or Welcome NEXUS integration
+
+### H1 11-06 — `horizon-cortex/2026-11-06-H1-signal-observe.md`
+- **1 / source predicate:** The first-party Nov06 ADK change introduces multi-run scoring identities and the distinction between capability and reliability aggregators
+- **2 / semantic boundary:** The dataset of decided runs and its exact size n are part of metric provenance, independent of merely naming pass@k
+- **3 / counterevidence:** A capability aggregate based on at least one success is not the same contract as requiring every one of k runs to succeed
+- **4 / execution provenance:** A source commit cannot attest to third-party judge correctness or downstream host metric adoption
+- **5 / next verification:** Evaluation improvement claims require matched prompts, fixed k, decided-run counts, grader revision and observed samples rather than code-path presence
+
+### H2 11-06 — `horizon-cortex/2026-11-06-H2-horizon-orient.md`
+- **1 / source predicate:** H2 verifies pass@k versus pass^k definitions by reading exact math/config/aggregator branches, not by running benchmark experiments
+- **2 / semantic boundary:** When effective n<k the implementation yields None, so a downstream zero-default would misreport not-computable as measured failure
+- **3 / counterevidence:** Undecided runs are excluded from the denominator, meaning partial-run/abort status changes n and comparison validity
+- **4 / execution provenance:** A configuration validating effective num_runs is necessary but not sufficient for reliable evaluation semantics
+- **5 / next verification:** Source math establishes intended aggregation only; empirical score distribution, calibrated reliability and release-tag availability remain UNKNOWN
+
+### H1 11-07 — `horizon-cortex/2026-11-07-H1-signal-observe.md`
+- **1 / source predicate:** ADK commit dd7161f7a2b88cd7ae482cc2acd8423675ac027c changes thought-vs-visible-text projection for named plain-text evaluator paths
+- **2 / semantic boundary:** An outbound judge input payload is a typed projection of content, not evidence that underlying thought-bearing content ceased to exist
+- **3 / counterevidence:** Structured Vertex multi-turn path deliberately preserves thought flags, contradicting a universal no-thought-exposure statement
+- **4 / execution provenance:** Author test patches are issuer claims of intended behavior, not actually executed benchmark or privacy measurements
+- **5 / next verification:** Reproduction should compare mixed thought/answer fixtures through plain-text and structured evaluators and inspect the actual outgoing payload
+
+### H2 11-07 — `horizon-cortex/2026-11-07-H2-horizon-orient.md`
+- **1 / source predicate:** H2 records exact upstream H1 blob 2ddb1f398da3986fd35ff76a063420ccb12e2d08 after PR #924 reached main, establishing temporal dependency at the file level
+- **2 / semantic boundary:** Reopening the same ADK commit deepens predicate inspection but contributes no new publisher independence
+- **3 / counterevidence:** Source-level _map_invocation_turn preservation of thought-bearing parts is direct counterevidence to platform-wide filtering
+- **4 / execution provenance:** Filtering in a text judge might change score, but metric deltas and Vertex behavior were not executed in this research run
+- **5 / next verification:** Next retest requires two evaluator paths under one harness identity with explicit payload and score receipts
+
+### Parallax 11-01 — `parallax/records/2026-11/2026-11-01.md`
+- **1 / source predicate:** Actual Nov01 Python 3.13.5 zoneinfo probe reports 8/8 timezone/boundary assertions; this is local temporal execution rather than GitHub external source replication
+- **2 / semantic boundary:** The predicate October elapsed becomes true only after Shanghai midnight, leaving Oct31 earlier false predicate historically correct
+- **3 / counterevidence:** October closed-calendar status is different from actual H6 executor completion or durable memory promotion
+- **4 / execution provenance:** Exact-ref GitHub source header comparisons support documentary owner identity, not original H6 runtime settlement
+- **5 / next verification:** One GitHub issuer plus a local date harness is not two independent publishers of the same original claim
+
+### Parallax 11-02 — `parallax/records/2026-11/2026-11-02.md`
+- **1 / source predicate:** Two read-only Trials inspected append-only October H6 source and merge-chain metadata, not an H6 model replay
+- **2 / semantic boundary:** JavaScript header/lineage checks yielded 10/10 assertions but apply only to the retrieved document and Git data
+- **3 / counterevidence:** A document with original OPEN and later substitute FINAL headers needs a temporal selector; choosing the first header silently loses current state
+- **4 / execution provenance:** The human-authorized substitute final is documentary closure, not an original native H6 run or independently verified durable memory effect
+- **5 / next verification:** The full-tree native Parallax checker remained NOT_EXECUTED and cannot inherit these ten JavaScript assertion successes
+
+### Parallax 11-03 — `parallax/records/2026-11/2026-11-03.md`
+- **1 / source predicate:** Four GitHub CodeQL/check-run successes under a particular PR head are distinct from a legacy commit-status endpoint reporting an empty collection
+- **2 / semantic boundary:** Filtered workflow wrapper returning zero cannot negate direct Actions run records for the same exact head
+- **3 / counterevidence:** PR #886's body retained earlier draft prose although GitHub PR metadata showed it merged; producer narrative and latest delivery state differ
+- **4 / execution provenance:** Nov03's 14/14 JavaScript assertions checked API and ancestry fields, not the Parallax native checker or deployed effect
+- **5 / next verification:** Producer head, merge commit and later main are different SHAs; event provenance must bind each receipt to its own revision
+
+### Parallax 11-04 — `parallax/records/2026-11/2026-11-04.md`
+- **1 / source predicate:** Empty open-PR query and non-empty merged-PR query represent compatible different predicates, not contradictory repository history
+- **2 / semantic boundary:** The merged view includes #886 and #896, countering a universal interpretation of zero open results as no PR history
+- **3 / counterevidence:** A later same-day query observed PR #901 open, proving even the same open query is observation-time dependent
+- **4 / execution provenance:** Search pagination/filter constraints do not supply complete project history or independent reviewer authority
+- **5 / next verification:** Two read-only bounded procedures cannot be relabeled as a native CI replay, H6 runtime check or exhaustive audit
+
+### Parallax 11-05 — `parallax/records/2026-11/2026-11-05.md`
+- **1 / source predicate:** Zero filtered search hits coexisted with positive direct README and prior-daily artifact reads, a concrete negative-projection counterexample
+- **2 / semantic boundary:** November index's four dated rows and 4/4 arrived-date coverage establish navigation presence, not executed original tasks at all possible hours
+- **3 / counterevidence:** Direct Nov04 Daily blob d6a4b539b9a4bf4108e4d7fdbfc848a2a8d64525 is a positive historical file receipt
+- **4 / execution provenance:** GitHub publisher identity remains one across filtered search and file fetch APIs; source multiplicity is not validation independence
+- **5 / next verification:** Exact python parallax/tools/check.py on a full working tree was not executed, so structural correctness stays unverified
+
+### Parallax 11-06 — `parallax/records/2026-11/2026-11-06.md`
+- **1 / source predicate:** Nov06 first ephemeral API assertion run failed 1 of 20 due unsupported compare-result field projection; this failure is preserved rather than overwritten
+- **2 / semantic boundary:** The corrected assertion used resolved main ref and separate ancestry evidence to reach 20/20, a distinct later run under corrected premises
+- **3 / counterevidence:** Direct Actions run for PR #903 and a filtered workflow wrapper returning zero are compatible when filters/events differ
+- **4 / execution provenance:** CodeQL/check-run completed states and native Parallax checker are independent validation contracts; success in one does not imply the other
+- **5 / next verification:** PR search ranking, per-page windows and adapter-field shapes must be pinned when asserting absence or exact source chronology
+
+### Parallax 11-07 — `parallax/records/2026-11/2026-11-07.md`
+- **1 / source predicate:** At the original observation cut, open-PR and branch-name searches returned zero under stated filters; no conclusion about all PRs follows
+- **2 / semantic boundary:** Direct main README and native checker file source reads were positive counterexamples to global artifact absence
+- **3 / counterevidence:** Reading Python checker source demonstrates an available contract but does not execute its complete-tree assertions
+- **4 / execution provenance:** Sequential remote reads are non-atomic; their resulting blob and query cuts must not be represented as one instantaneously consistent snapshot
+- **5 / next verification:** Later producer branch creation changes the branch filter's possible result; the initial zero remains a point-in-time rather than forever-current fact
+
+## Semantic-line admission review (append-only within original open A1 PR)
+- Candidate substantive decisions in the added section: 21 × 5 = 105 individually source-specific reasoning lines, with claim/exception/verification identity; each must survive independent review, not just GitHub numeric additions
+- Evidence that 21 source objects were read: main Git blobs from Nov01–07 H1/H2 and Parallax; upstream cited publisher and original native runner claims are inherited unless actually re-executed
+- Original PR GitHub additions and all CI/merge states must be freshly checked after this update before certification
+- If any of the 105 are judged boilerplate, insufficiently grounded or duplicate prior assertions, semantic certification must remain NOT_MET; successor lines cannot repair original after merge
