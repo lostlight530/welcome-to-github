@@ -61,7 +61,7 @@ CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录
 
 ## 当前研究边界 — 2026-11-09
 
-One bounded GitHub REST evidence procedure contrasted zero open PRs and one ordinary main branch with directly merged PR #937, whose merge SHA matched observed main a0c5b428b2da43d11c5248730c6e07bd5c294465. Legacy combined status showed zero contexts and pending state, not proof of absent Checks or Actions. One publisher, PARTIAL, native checker NOT_EXECUTED, no new CASE/NOTES/Special/Audit credit, Daily 110 / Special 17 / batches 127 / windows 105 / Audits 9, November 9/9 arrived dates, Draft producer delivery only, no merge authority
+One bounded GitHub REST evidence procedure contrasted zero open PRs and one ordinary main branch with directly merged PR #937, whose merge SHA matched observed main a0c5b428b2da43d11c5248730c6e07bd5c294465. Legacy combined status showed zero contexts and pending state, not proof of absent Checks or Actions. One publisher, PARTIAL, native checker NOT_EXECUTED, no new CASE/NOTES/Special/Audit credit, Daily 110 / Special 17 / batches 127 / windows 105 / Audits 9, November 9/9 arrived dates, initially delivered in Draft PR #938 with subsequent independent maintainer actions and final merge identity sourced from live GitHub rather than inferred from producer-time text
 
 `OPEN_PR_COLLECTION_EMPTY != MERGED_PR_HISTORY_EMPTY`
 
