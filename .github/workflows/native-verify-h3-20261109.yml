@@ -1,0 +1,24 @@
+name: GPT Native verify H3 20261109
+on:
+  push:
+    branches:
+      - gpt-native/horizon-h3-2026w45
+permissions:
+  contents: read
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Checkout complete prospective branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Record revision and runtime
+        run: |
+          git rev-parse HEAD
+          python3 --version
+      - name: Native repository contract H3
+        run: python3 horizon-cortex/check.py horizon-cortex/2026-W45-H3-position-decide.md
+      - name: No unverified write
+        run: test -z "$(git status --porcelain)"
