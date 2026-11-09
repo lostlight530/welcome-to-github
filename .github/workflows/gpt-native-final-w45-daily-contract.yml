@@ -1,0 +1,23 @@
+name: "GPT Native welcome-to-github W45 Daily final verification"
+on:
+  push:
+    branches:
+      - gpt-native/horizon-h2-20261109-after-h1
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout exact branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Native contract and tests
+        run: python3 horizon-cortex/check.py horizon-cortex/2026-11-09-H2-horizon-orient.md
+      - name: No tracked source mutations
+        run: |
+          git status --short
+          git diff --exit-code
+          test -z "$(git diff --name-only)"
