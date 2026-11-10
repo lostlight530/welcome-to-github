@@ -13,7 +13,7 @@ Execution Time UTC: 2026-11-10 (exact GitHub write timestamp resides in commit p
 Execution Time Asia/Shanghai: 2026-11-10
 Agent: GPT-6 / GPT_NATIVE / NOT_JULES_REPLAY
 Producer Identity: HUMAN_REQUESTED_GPT_NATIVE
-Record Provenance: HUMAN_AUTHORIZED_PROSPECTIVE_NATIVE_PRODUCTION
+Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE
 Base Main SHA: f8aa59d55cb9e34c148e5568756b574ead2085a9
 Run Identity: welcome-to-github/horizon/H1/2026-11-10/GPT_NATIVE/f8aa59d55cb9e34c148e5568756b574ead2085a9/adk-eval-session-identity-01
 Network Status: GITHUB_PRIMARY_COMMIT_AND_PATCH_READ
@@ -22,6 +22,7 @@ Task Status: SUCCESS / SOURCE_OBSERVATION_ONLY
 Source Identity: google/adk-python@f1b1f9d9606c61ca23dd09c4ecd5610167a2b0da
 Source Authority For Claim: ORIGINAL_IMPLEMENTATION_AND_AUTHORED_REGRESSION_PATCH
 Independent Verification: SOURCE_DIFF_READ / PUBLISHER_TESTS_NOT_EXECUTED
+Evidence Upgrade Basis: DISTINCT_NOV10_FIRST_PARTY_PATCH_WITH_AUTHORED_TEST_SOURCE / CODE_ONLY_NOT_RUNTIME
 Host Applicability: UNKNOWN / HOST_NOT_INSPECTED
 Original Execution Status: GPT_NATIVE_NOV10 / NOT_JULES
 Current Path Status: PROPOSED_DRAFT_BRANCH / MERGE_PENDING_AT_AUTHORING
