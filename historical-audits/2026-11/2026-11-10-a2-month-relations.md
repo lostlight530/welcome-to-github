@@ -126,3 +126,38 @@
 - A2 must itself pass actual diff/additions and 100 substantive-line gate; A1 acceptance cannot substitute
 - A2 current month relationship only: source truth/runner/merge/current-retention separate; host deployment and source SDK regression execution NOT_EXECUTED
 - Next trigger: Nov11 native merged state for subsequent A1 cutoff Nov10 and independent new-day A2 after its own A1 merge
+
+## Current-day native source content cross-examination — direct independent A2 reads
+- This supplemental source analysis is a new reviewer inspection of already-merged native artifacts; it does not perform SDK, Ballast or host runtime operations
+### Current-day source fidelity: horizon-cortex/2026-11-10-H1-signal-observe.md
+- Exact current-main original file blob `5dec998a414f7df01817c400ae1464e2fdc40428`, 88 text lines; review is at already-merged Nov10 A1 main, not a later PR candidate
+- Source structure: # H1 Daily Signal Observe — 2026-11-10 / ## CORTEX_RUN_HEADER / ## INPUT_RECORD / ## EXTERNAL_SOURCE_RECORDS
+- Identifying source/commit excerpt: Execution Time UTC: 2026-11-10 (exact GitHub write timestamp resides in commit provenance); source claim isn't an execution receipt
+- Negative or uncertainty excerpt: Source Status: FIRST_PARTY_CODE_DIFF_AND_AUTHORED_TESTS_READ / SDK_RUNTIME_NOT_EXECUTED; unmatched branch remains UNKNOWN
+- Counterexample/limitation: Source Status: FIRST_PARTY_CODE_DIFF_AND_AUTHORED_TESTS_READ / SDK_RUNTIME_NOT_EXECUTED; no independent checker was executed by this A2
+- Identity separation: Observe stage and publisher source are inputs to same-day Orient, not a second downstream effect
+- A2 disposition: READ_CURRENT_MAIN / SOURCE_CLAIM_ONLY_UNLESS_EXECUTION_RECEIPT / NO_NATIVE_WRITE
+### Current-day source fidelity: horizon-cortex/2026-11-10-H2-horizon-orient.md
+- Exact current-main original file blob `34a3acd60ca726512d880cd51ad029d4135bbba4`, 94 text lines; review is at already-merged Nov10 A1 main, not a later PR candidate
+- Source structure: # H2 Daily Horizon Orient — 2026-11-10 / ## CORTEX_RUN_HEADER / ## INPUT_RECORD / ## SOURCE_VERIFICATION_RECORDS
+- Identifying source/commit excerpt: Base Main SHA: 32a57050c074fc9199a160497e38dce2e64cb9d5; source claim isn't an execution receipt
+- Negative or uncertainty excerpt: Source Status: ORIGINAL_COMMIT_SOURCE_REVIEWED / TESTS_NOT_EXECUTED; unmatched branch remains UNKNOWN
+- Counterexample/limitation: Source Status: ORIGINAL_COMMIT_SOURCE_REVIEWED / TESTS_NOT_EXECUTED; no independent checker was executed by this A2
+- Identity separation: Orient stage must bind to the merged Observe blob and preserve same-source dependency
+- A2 disposition: READ_CURRENT_MAIN / SOURCE_CLAIM_ONLY_UNLESS_EXECUTION_RECEIPT / NO_NATIVE_WRITE
+### Current-day source fidelity: parallax/records/2026-11/2026-11-10.md
+- Exact current-main original file blob `64a40369980bc1f49ea08104a458a1f1f9e283f3`, 122 text lines; review is at already-merged Nov10 A1 main, not a later PR candidate
+- Source structure: # 2026-11-10｜Filtered query versus direct artifact identity / ## 记录信息 / ## 研究摘要 / ## 研究问题
+- Identifying source/commit excerpt: - Evidence Identity Tuple: GitHub / repository / query predicate / main file path / blob SHA / access date; source claim isn't an execution receipt
+- Negative or uncertainty excerpt: Four GitHub connector operations actually observed in the original bounded producer procedure. Exact 'python parallax/tools/check.py' NOT_EXECUTED on a complete working tree, and full-tree parser-equivalent validation NOT_EXECUTED. During the separat; unmatched branch remains UNKNOWN
+- Counterexample/limitation: Can empty open-PR and Parallax branch-name search results establish that Parallax files do not exist on main?; no independent checker was executed by this A2
+- Identity separation: GitHub API query receipt, historical PR merge and current main are distinct non-atomic facts
+- A2 disposition: READ_CURRENT_MAIN / SOURCE_CLAIM_ONLY_UNLESS_EXECUTION_RECEIPT / NO_NATIVE_WRITE
+### Current-day source fidelity: horizon-cortex/2026-11-09-H2-horizon-orient.md
+- Exact current-main original file blob `796b699891f5317d6ee7ef891783fc38aa37e63b`, 93 text lines; review is at already-merged Nov10 A1 main, not a later PR candidate
+- Source structure: # H2 Daily Horizon Orient — 2026-11-09 / ## CORTEX_RUN_HEADER / ## INPUT_RECORD / ## SOURCE_VERIFICATION_RECORDS
+- Identifying source/commit excerpt: Source Identity: google/adk-python@67b217d009cbcdd5827f035e001620dbe08e839b; source claim isn't an execution receipt
+- Negative or uncertainty excerpt: Host Applicability: UNKNOWN / NO_LOCAL_HARNESS_EXECUTION; unmatched branch remains UNKNOWN
+- Counterexample/limitation: Host Applicability: UNKNOWN / NO_LOCAL_HARNESS_EXECUTION; no independent checker was executed by this A2
+- Identity separation: Orient stage must bind to the merged Observe blob and preserve same-source dependency
+- A2 disposition: READ_CURRENT_MAIN / SOURCE_CLAIM_ONLY_UNLESS_EXECUTION_RECEIPT / NO_NATIVE_WRITE
