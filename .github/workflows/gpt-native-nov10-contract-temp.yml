@@ -1,0 +1,26 @@
+name: GPT Native Nov10 Candidate Contract Check (temporary)
+on:
+  push:
+    branches:
+      - gpt-native/horizon-h1-20261110
+permissions:
+  contents: read
+jobs:
+  candidate-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout candidate branch without write credentials
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: gpt-native/horizon-h1-20261110
+          persist-credentials: false
+      - name: Record candidate identity
+        run: |
+          git rev-parse HEAD
+          python3 --version
+          test -z "$(git status --porcelain)"
+      - name: Execute repository-owned candidate checks
+        run: |
+          set -euo pipefail
+          python3 horizon-cortex/check.py horizon-cortex/2026-11-10-H1-signal-observe.md
