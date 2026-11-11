@@ -13,7 +13,7 @@ Execution Time UTC: 2026-11-11 / EXACT_TIME_NOT_CAPTURED
 Execution Time Asia/Shanghai: 2026-11-11 / EXACT_TIME_NOT_CAPTURED
 Agent: GPT-6 / GPT_NATIVE / NOT_JULES_REPLAY
 Producer Identity: HUMAN_REQUESTED_GPT_NATIVE
-Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE / NEW_PROSPECTIVE_RESEARCH
+Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE
 Base Main SHA: 97fa31008fe6443d66cc4fc12fbfc3508856efaa
 Run Identity: welcome-to-github/horizon/H1/2026-11-11/GPT_NATIVE/97fa31008fe6443d66cc4fc12fbfc3508856efaa/adk-openapi-required-source-01
 Network Status: GITHUB_ORIGINAL_COMMIT_AND_PATCH_READ
@@ -88,3 +88,10 @@ Host Repository Change: NO
 - Horizon structural checker: NOT_EXECUTED at authoring. Upstream authored tests: NOT_EXECUTED. Live SDK/host integration: NOT_EXECUTED. Claim-specific source patch: READ.
 - This is prospective GPT Native research, not a Jules replay or a recovery/maintenance audit, and it does not disclose private producer control text.
 - Boundary Violation: NO
+
+
+## FORWARD_CORRECTION_2026-11-11 — scoped producer enum alignment
+- Original 2026-11-11 record emitted `Record Provenance` as `HUMAN_AUTHORIZED_SUBSTITUTE / NEW_PROSPECTIVE_RESEARCH`, which is not a single value accepted by the current repository checker. This is an authoring-schema defect, not a change in the original execution result.
+- The current owning header now uses exactly `HUMAN_AUTHORIZED_SUBSTITUTE`; its prospective GPT Native/not-Jules producer identity remains declared in `Agent`, `Producer Identity`, and `Original Execution Status`.
+- Original source identity, task date, prior main SHA, run identity, source interpretation, UNKNOWN/NOT_EXECUTED states and the original PR/merge history are unchanged. This correction adds no independent research or validator execution credit.
+- Correction scope: current source file header plus this dated forward correction only; main visibility of the original source occurred through the earlier merged PR.
