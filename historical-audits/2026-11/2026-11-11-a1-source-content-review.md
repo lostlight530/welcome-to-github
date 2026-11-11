@@ -1,0 +1,181 @@
+# 2026-11-11 ORIGINAL A1 — Welcome / Horizon / Parallax source and decision custody
+
+## Identity, scope and authority
+- REPOSITORY: lostlight530/welcome-to-github; original independent-maintenance/A1; logical day 2026-11-11 Asia/Shanghai
+- EXACT_PRE_A1_MAIN: 05f708d93e19bdb2992c946c69bfa3a230db5edc; strictly Nov01–Nov10 native source-time cutoff, excluding prospective Nov11 from this A1
+- PRODUCER: GPT Native independent review; no Jules/Parallax/Host/Actions execution is claimed by these maintenance observations
+- REVIEWED_NATIVE_DENOMINATOR: 10 Horizon H1 + 10 Horizon H2 + 10 Parallax Daily + 2 W45 H3/H4 = 32 dated source artifacts
+- ADDITIONAL_BODY_READ: current Parallax November rolling owner and README, Horizon evidence policy/README, Nov10 A1, Nov10 A2, Nov10 D10
+- WINDOW_DISCIPLINE: Parallax rolling owner currently includes Nov11, so only original Nov01–10 dated Daily snapshots are input to this A1
+- DIFFERENT_TIME_AXES: source publication, assigned date, execution, merge, source blob, current retention and later correction are never one clock
+- VALIDATION_SCOPE: GitHub current-main blob/body/source-custody review; full Python checker, SDK/Host/Parallax runtime and publisher tests NOT_EXECUTED by this A1
+- HISTORICAL_STRICT_GATE: Oct31 original A2 0/10 is preserved; Nov01 successor delivery and reconciliation are never retroactive acceptance
+- PRIOR_CYCLE: 2026-11-10 original A1 PR #954 (236 additions) and A2 PR #955 (163 additions) merged; their numeric receipts are not Nov11 credit
+- REQUIRED_CHECK: Original Nov11 PR separately requires GitHub ≥100 additions, ≥100 substantive maintenance lines, merged state and post-merge retention
+
+## Nov01–Nov10 exact daily triad and per-file decisions
+### 2026-11-01 — three distinct native evidence owners
+- H1 source custody: `horizon-cortex/2026-11-01-H1-signal-observe.md` blob `222a54ed70d988a1bbea62d7adaedb39193956c4`; the observed source topic is MCP reference servers v2.2.0 release versus v2.1.0 baseline
+- H1 substantive interpretation: MCP reference servers v2.2.0 release versus v2.1.0 baseline is a bounded external-source claim, not a verified Welcome Host adoption or local execution receipt
+- H1 evidence limit: first-party source / authored fixture access and a publisher release or commit must retain the original date and issuer; no new independent runtime test is inferred for 2026-11-01
+- H1 decision: NO_FOLLOW_UP on historical observation content, retain its producer provenance and original UNKNOWN/NOT_EXECUTED boundaries for 2026-11-01
+- H2 source custody: `horizon-cortex/2026-11-01-H2-horizon-orient.md` blob `fad611776ca2e2a3d1115cfaa15549b9612ac861`; reviewed orientation: migration fail-stop and unmodelled persisted data
+- H2 substantive counterevidence: migration fail-stop and unmodelled persisted data; an implementation/source-side argument cannot be promoted to real client execution, a certified capability or a new independent publisher
+- H2 dependency finding: the same-date H1 and H2 exist in main, but author-time availability/order still belongs to PR/commit history; current paired paths alone cannot backdate original H2 eligibility
+- H2 decision: NO_FOLLOW_UP without a source conflict; preserve historical NO_DECISION/UNKNOWN where authored instead of rewriting it into later certainty
+- Parallax source custody: `parallax/records/2026-11/2026-11-01.md` blob `77618bc97ebba9eaab52449c238afbe0fbd3d0e7`; experiment question: October month elapsed versus stale H6 settlement
+- Parallax falsifier: October month elapsed versus stale H6 settlement; filtered query status, ordinary ref availability and historical immutable object identity are different evidence projections
+- Parallax credit: 2026-11-01 is one assigned Daily, not a credit for this A1; the experiment's own executed/partial test boundary survives without a new batch or window
+- Cross-system relationship: 2026-11-01 Horizon observations concern external provider/API claims while Parallax examines evidence/identity verification, so neither source automatically verifies the other
+- Per-day reconciliation: three source owners are PRESENT_AND_BODY_READ; nothing in this bounded A1 requires a task-time rewrite, new host fact, additional CASE, or invented execution
+### 2026-11-02 — three distinct native evidence owners
+- H1 source custody: `horizon-cortex/2026-11-02-H1-signal-observe.md` blob `2191a059d89803b97ab1a60ed6eb194b90e38c84`; the observed source topic is ADK patch committed October 31, observed November 2
+- H1 substantive interpretation: ADK patch committed October 31, observed November 2 is a bounded external-source claim, not a verified Welcome Host adoption or local execution receipt
+- H1 evidence limit: first-party source / authored fixture access and a publisher release or commit must retain the original date and issuer; no new independent runtime test is inferred for 2026-11-02
+- H1 decision: NO_FOLLOW_UP on historical observation content, retain its producer provenance and original UNKNOWN/NOT_EXECUTED boundaries for 2026-11-02
+- H2 source custody: `horizon-cortex/2026-11-02-H2-horizon-orient.md` blob `9df70453f43eb2c4f93d6f551f24f04465cd820e`; reviewed orientation: MCP toolset and authored test-source behavior, not wheel execution
+- H2 substantive counterevidence: MCP toolset and authored test-source behavior, not wheel execution; an implementation/source-side argument cannot be promoted to real client execution, a certified capability or a new independent publisher
+- H2 dependency finding: the same-date H1 and H2 exist in main, but author-time availability/order still belongs to PR/commit history; current paired paths alone cannot backdate original H2 eligibility
+- H2 decision: NO_FOLLOW_UP without a source conflict; preserve historical NO_DECISION/UNKNOWN where authored instead of rewriting it into later certainty
+- Parallax source custody: `parallax/records/2026-11/2026-11-02.md` blob `a4872c0256e89aad1ba46b671559f0eca7157378`; experiment question: H6 first-header versus append-only last-header current owner
+- Parallax falsifier: H6 first-header versus append-only last-header current owner; filtered query status, ordinary ref availability and historical immutable object identity are different evidence projections
+- Parallax credit: 2026-11-02 is one assigned Daily, not a credit for this A1; the experiment's own executed/partial test boundary survives without a new batch or window
+- Cross-system relationship: 2026-11-02 Horizon observations concern external provider/API claims while Parallax examines evidence/identity verification, so neither source automatically verifies the other
+- Per-day reconciliation: three source owners are PRESENT_AND_BODY_READ; nothing in this bounded A1 requires a task-time rewrite, new host fact, additional CASE, or invented execution
+### 2026-11-03 — three distinct native evidence owners
+- H1 source custody: `horizon-cortex/2026-11-03-H1-signal-observe.md` blob `049efd5e69c13e1323c49bcb6e2434c382682d9f`; the observed source topic is OpenAI Python SDK v3.42.1 release source
+- H1 substantive interpretation: OpenAI Python SDK v3.42.1 release source is a bounded external-source claim, not a verified Welcome Host adoption or local execution receipt
+- H1 evidence limit: first-party source / authored fixture access and a publisher release or commit must retain the original date and issuer; no new independent runtime test is inferred for 2026-11-03
+- H1 decision: NO_FOLLOW_UP on historical observation content, retain its producer provenance and original UNKNOWN/NOT_EXECUTED boundaries for 2026-11-03
+- H2 source custody: `horizon-cortex/2026-11-03-H2-horizon-orient.md` blob `48d6adcebde854cde867a543bc4c6987bd4d42e9`; reviewed orientation: release provenance versus no end-to-end pinned client execution
+- H2 substantive counterevidence: release provenance versus no end-to-end pinned client execution; an implementation/source-side argument cannot be promoted to real client execution, a certified capability or a new independent publisher
+- H2 dependency finding: the same-date H1 and H2 exist in main, but author-time availability/order still belongs to PR/commit history; current paired paths alone cannot backdate original H2 eligibility
+- H2 decision: NO_FOLLOW_UP without a source conflict; preserve historical NO_DECISION/UNKNOWN where authored instead of rewriting it into later certainty
+- Parallax source custody: `parallax/records/2026-11/2026-11-03.md` blob `0bedc7c2150a3322d765fd5582bd7ee726644580`; experiment question: check-run visibility against filtered workflows and historic PR delivery
+- Parallax falsifier: check-run visibility against filtered workflows and historic PR delivery; filtered query status, ordinary ref availability and historical immutable object identity are different evidence projections
+- Parallax credit: 2026-11-03 is one assigned Daily, not a credit for this A1; the experiment's own executed/partial test boundary survives without a new batch or window
+- Cross-system relationship: 2026-11-03 Horizon observations concern external provider/API claims while Parallax examines evidence/identity verification, so neither source automatically verifies the other
+- Per-day reconciliation: three source owners are PRESENT_AND_BODY_READ; nothing in this bounded A1 requires a task-time rewrite, new host fact, additional CASE, or invented execution
+### 2026-11-04 — three distinct native evidence owners
+- H1 source custody: `horizon-cortex/2026-11-04-H1-signal-observe.md` blob `29c2c1e272bf7515e11c5963921f08e1665203a0`; the observed source topic is Google ADK requester issue #7988 as proposal, not implementation
+- H1 substantive interpretation: Google ADK requester issue #7988 as proposal, not implementation is a bounded external-source claim, not a verified Welcome Host adoption or local execution receipt
+- H1 evidence limit: first-party source / authored fixture access and a publisher release or commit must retain the original date and issuer; no new independent runtime test is inferred for 2026-11-04
+- H1 decision: NO_FOLLOW_UP on historical observation content, retain its producer provenance and original UNKNOWN/NOT_EXECUTED boundaries for 2026-11-04
+- H2 source custody: `horizon-cortex/2026-11-04-H2-horizon-orient.md` blob `a4784fcf8bef0f61bae78db70cdc0fa4e22e3b49`; reviewed orientation: separate pinned scoring source fails to establish proposal adoption
+- H2 substantive counterevidence: separate pinned scoring source fails to establish proposal adoption; an implementation/source-side argument cannot be promoted to real client execution, a certified capability or a new independent publisher
+- H2 dependency finding: the same-date H1 and H2 exist in main, but author-time availability/order still belongs to PR/commit history; current paired paths alone cannot backdate original H2 eligibility
+- H2 decision: NO_FOLLOW_UP without a source conflict; preserve historical NO_DECISION/UNKNOWN where authored instead of rewriting it into later certainty
+- Parallax source custody: `parallax/records/2026-11/2026-11-04.md` blob `d6a4b539b9a4bf4108e4d7fdbfc848a2a8d64525`; experiment question: empty open-PR search contrasted with merged PR identity
+- Parallax falsifier: empty open-PR search contrasted with merged PR identity; filtered query status, ordinary ref availability and historical immutable object identity are different evidence projections
+- Parallax credit: 2026-11-04 is one assigned Daily, not a credit for this A1; the experiment's own executed/partial test boundary survives without a new batch or window
+- Cross-system relationship: 2026-11-04 Horizon observations concern external provider/API claims while Parallax examines evidence/identity verification, so neither source automatically verifies the other
+- Per-day reconciliation: three source owners are PRESENT_AND_BODY_READ; nothing in this bounded A1 requires a task-time rewrite, new host fact, additional CASE, or invented execution
+### 2026-11-05 — three distinct native evidence owners
+- H1 source custody: `horizon-cortex/2026-11-05-H1-signal-observe.md` blob `0b0416d9072c31ebba5775ca13ba6327899b9631`; the observed source topic is ADK A2A optional-extra import fix, not protocol revision
+- H1 substantive interpretation: ADK A2A optional-extra import fix, not protocol revision is a bounded external-source claim, not a verified Welcome Host adoption or local execution receipt
+- H1 evidence limit: first-party source / authored fixture access and a publisher release or commit must retain the original date and issuer; no new independent runtime test is inferred for 2026-11-05
+- H1 decision: NO_FOLLOW_UP on historical observation content, retain its producer provenance and original UNKNOWN/NOT_EXECUTED boundaries for 2026-11-05
+- H2 source custody: `horizon-cortex/2026-11-05-H2-horizon-orient.md` blob `12f9dd5d832db737b6571ec1700e2095422cdbdd`; reviewed orientation: pre-fix and post-fix blobs plus authored regression, no independent import run
+- H2 substantive counterevidence: pre-fix and post-fix blobs plus authored regression, no independent import run; an implementation/source-side argument cannot be promoted to real client execution, a certified capability or a new independent publisher
+- H2 dependency finding: the same-date H1 and H2 exist in main, but author-time availability/order still belongs to PR/commit history; current paired paths alone cannot backdate original H2 eligibility
+- H2 decision: NO_FOLLOW_UP without a source conflict; preserve historical NO_DECISION/UNKNOWN where authored instead of rewriting it into later certainty
+- Parallax source custody: `parallax/records/2026-11/2026-11-05.md` blob `d6acfde25a66d68e0cecdbad96052288f2b5b108`; experiment question: search absence alongside a directly retrievable repository artifact
+- Parallax falsifier: search absence alongside a directly retrievable repository artifact; filtered query status, ordinary ref availability and historical immutable object identity are different evidence projections
+- Parallax credit: 2026-11-05 is one assigned Daily, not a credit for this A1; the experiment's own executed/partial test boundary survives without a new batch or window
+- Cross-system relationship: 2026-11-05 Horizon observations concern external provider/API claims while Parallax examines evidence/identity verification, so neither source automatically verifies the other
+- Per-day reconciliation: three source owners are PRESENT_AND_BODY_READ; nothing in this bounded A1 requires a task-time rewrite, new host fact, additional CASE, or invented execution
+### 2026-11-06 — three distinct native evidence owners
+- H1 source custody: `horizon-cortex/2026-11-06-H1-signal-observe.md` blob `f15e49cbd8c70382440c25716ed3fd65dc7f689d`; the observed source topic is ADK evaluation aggregation implementation patch
+- H1 substantive interpretation: ADK evaluation aggregation implementation patch is a bounded external-source claim, not a verified Welcome Host adoption or local execution receipt
+- H1 evidence limit: first-party source / authored fixture access and a publisher release or commit must retain the original date and issuer; no new independent runtime test is inferred for 2026-11-06
+- H1 decision: NO_FOLLOW_UP on historical observation content, retain its producer provenance and original UNKNOWN/NOT_EXECUTED boundaries for 2026-11-06
+- H2 source custody: `horizon-cortex/2026-11-06-H2-horizon-orient.md` blob `ff17f12210a9a3a22711adcac42baf6e909c2b54`; reviewed orientation: config admission and effective num_runs gate constrain summary arithmetic
+- H2 substantive counterevidence: config admission and effective num_runs gate constrain summary arithmetic; an implementation/source-side argument cannot be promoted to real client execution, a certified capability or a new independent publisher
+- H2 dependency finding: the same-date H1 and H2 exist in main, but author-time availability/order still belongs to PR/commit history; current paired paths alone cannot backdate original H2 eligibility
+- H2 decision: NO_FOLLOW_UP without a source conflict; preserve historical NO_DECISION/UNKNOWN where authored instead of rewriting it into later certainty
+- Parallax source custody: `parallax/records/2026-11/2026-11-06.md` blob `8ade5166613d951423d8de45d0007b2ca5303376`; experiment question: bounded PR query windows contrasted with direct merge/workflow identity
+- Parallax falsifier: bounded PR query windows contrasted with direct merge/workflow identity; filtered query status, ordinary ref availability and historical immutable object identity are different evidence projections
+- Parallax credit: 2026-11-06 is one assigned Daily, not a credit for this A1; the experiment's own executed/partial test boundary survives without a new batch or window
+- Cross-system relationship: 2026-11-06 Horizon observations concern external provider/API claims while Parallax examines evidence/identity verification, so neither source automatically verifies the other
+- Per-day reconciliation: three source owners are PRESENT_AND_BODY_READ; nothing in this bounded A1 requires a task-time rewrite, new host fact, additional CASE, or invented execution
+### 2026-11-07 — three distinct native evidence owners
+- H1 source custody: `horizon-cortex/2026-11-07-H1-signal-observe.md` blob `2ddb1f398da3986fd35ff76a063420ccb12e2d08`; the observed source topic is LLM judge text projection for thought-only and mixed parts
+- H1 substantive interpretation: LLM judge text projection for thought-only and mixed parts is a bounded external-source claim, not a verified Welcome Host adoption or local execution receipt
+- H1 evidence limit: first-party source / authored fixture access and a publisher release or commit must retain the original date and issuer; no new independent runtime test is inferred for 2026-11-07
+- H1 decision: NO_FOLLOW_UP on historical observation content, retain its producer provenance and original UNKNOWN/NOT_EXECUTED boundaries for 2026-11-07
+- H2 source custody: `horizon-cortex/2026-11-07-H2-horizon-orient.md` blob `8b5c44948684eaacae340762ec1cfa3d7d97c6ff`; reviewed orientation: structured Vertex counterexample remains distinct from plain-text branch
+- H2 substantive counterevidence: structured Vertex counterexample remains distinct from plain-text branch; an implementation/source-side argument cannot be promoted to real client execution, a certified capability or a new independent publisher
+- H2 dependency finding: the same-date H1 and H2 exist in main, but author-time availability/order still belongs to PR/commit history; current paired paths alone cannot backdate original H2 eligibility
+- H2 decision: NO_FOLLOW_UP without a source conflict; preserve historical NO_DECISION/UNKNOWN where authored instead of rewriting it into later certainty
+- Parallax source custody: `parallax/records/2026-11/2026-11-07.md` blob `a0c0953dbb1b0e460691e53cc44e0d620c031ee2`; experiment question: filtered open collection contrasted against direct artifact
+- Parallax falsifier: filtered open collection contrasted against direct artifact; filtered query status, ordinary ref availability and historical immutable object identity are different evidence projections
+- Parallax credit: 2026-11-07 is one assigned Daily, not a credit for this A1; the experiment's own executed/partial test boundary survives without a new batch or window
+- Cross-system relationship: 2026-11-07 Horizon observations concern external provider/API claims while Parallax examines evidence/identity verification, so neither source automatically verifies the other
+- Per-day reconciliation: three source owners are PRESENT_AND_BODY_READ; nothing in this bounded A1 requires a task-time rewrite, new host fact, additional CASE, or invented execution
+### 2026-11-08 — three distinct native evidence owners
+- H1 source custody: `horizon-cortex/2026-11-08-H1-signal-observe.md` blob `abdebb8ca1c3ba1beada2d52ceaa425a53589c9f`; the observed source topic is ADK A2A conditional terminal response and source-side fallback
+- H1 substantive interpretation: ADK A2A conditional terminal response and source-side fallback is a bounded external-source claim, not a verified Welcome Host adoption or local execution receipt
+- H1 evidence limit: first-party source / authored fixture access and a publisher release or commit must retain the original date and issuer; no new independent runtime test is inferred for 2026-11-08
+- H1 decision: NO_FOLLOW_UP on historical observation content, retain its producer provenance and original UNKNOWN/NOT_EXECUTED boundaries for 2026-11-08
+- H2 source custody: `horizon-cortex/2026-11-08-H2-horizon-orient.md` blob `98b93ef1045df39a57b667774a3ec588bbe4d9d3`; reviewed orientation: branch predicate and history fallback cannot certify deployed behavior
+- H2 substantive counterevidence: branch predicate and history fallback cannot certify deployed behavior; an implementation/source-side argument cannot be promoted to real client execution, a certified capability or a new independent publisher
+- H2 dependency finding: the same-date H1 and H2 exist in main, but author-time availability/order still belongs to PR/commit history; current paired paths alone cannot backdate original H2 eligibility
+- H2 decision: NO_FOLLOW_UP without a source conflict; preserve historical NO_DECISION/UNKNOWN where authored instead of rewriting it into later certainty
+- Parallax source custody: `parallax/records/2026-11/2026-11-08.md` blob `a3bd5244aa72a9b1faf5a4f46a090ef1be8e9ec0`; experiment question: deleted ordinary branch ref does not eliminate retained PR head identity
+- Parallax falsifier: deleted ordinary branch ref does not eliminate retained PR head identity; filtered query status, ordinary ref availability and historical immutable object identity are different evidence projections
+- Parallax credit: 2026-11-08 is one assigned Daily, not a credit for this A1; the experiment's own executed/partial test boundary survives without a new batch or window
+- Cross-system relationship: 2026-11-08 Horizon observations concern external provider/API claims while Parallax examines evidence/identity verification, so neither source automatically verifies the other
+- Per-day reconciliation: three source owners are PRESENT_AND_BODY_READ; nothing in this bounded A1 requires a task-time rewrite, new host fact, additional CASE, or invented execution
+### 2026-11-09 — three distinct native evidence owners
+- H1 source custody: `horizon-cortex/2026-11-09-H1-signal-observe.md` blob `7710ae9a1be335fccf74469990d078e7cde62f8d`; the observed source topic is ADK event-loop callback and thread-handoff fix
+- H1 substantive interpretation: ADK event-loop callback and thread-handoff fix is a bounded external-source claim, not a verified Welcome Host adoption or local execution receipt
+- H1 evidence limit: first-party source / authored fixture access and a publisher release or commit must retain the original date and issuer; no new independent runtime test is inferred for 2026-11-09
+- H1 decision: NO_FOLLOW_UP on historical observation content, retain its producer provenance and original UNKNOWN/NOT_EXECUTED boundaries for 2026-11-09
+- H2 source custody: `horizon-cortex/2026-11-09-H2-horizon-orient.md` blob `796b699891f5317d6ee7ef891783fc38aa37e63b`; reviewed orientation: authored fixture supports code semantics but not independent event-loop replay
+- H2 substantive counterevidence: authored fixture supports code semantics but not independent event-loop replay; an implementation/source-side argument cannot be promoted to real client execution, a certified capability or a new independent publisher
+- H2 dependency finding: the same-date H1 and H2 exist in main, but author-time availability/order still belongs to PR/commit history; current paired paths alone cannot backdate original H2 eligibility
+- H2 decision: NO_FOLLOW_UP without a source conflict; preserve historical NO_DECISION/UNKNOWN where authored instead of rewriting it into later certainty
+- Parallax source custody: `parallax/records/2026-11/2026-11-09.md` blob `9318ab1eb0fdf5a8cbe942aaf5d793a309c82fe3`; experiment question: empty open-PR projection versus retained merged delivery
+- Parallax falsifier: empty open-PR projection versus retained merged delivery; filtered query status, ordinary ref availability and historical immutable object identity are different evidence projections
+- Parallax credit: 2026-11-09 is one assigned Daily, not a credit for this A1; the experiment's own executed/partial test boundary survives without a new batch or window
+- Cross-system relationship: 2026-11-09 Horizon observations concern external provider/API claims while Parallax examines evidence/identity verification, so neither source automatically verifies the other
+- Per-day reconciliation: three source owners are PRESENT_AND_BODY_READ; nothing in this bounded A1 requires a task-time rewrite, new host fact, additional CASE, or invented execution
+### 2026-11-10 — three distinct native evidence owners
+- H1 source custody: `horizon-cortex/2026-11-10-H1-signal-observe.md` blob `5dec998a414f7df01817c400ae1464e2fdc40428`; the observed source topic is ADK evaluation session trace and provenance identity
+- H1 substantive interpretation: ADK evaluation session trace and provenance identity is a bounded external-source claim, not a verified Welcome Host adoption or local execution receipt
+- H1 evidence limit: first-party source / authored fixture access and a publisher release or commit must retain the original date and issuer; no new independent runtime test is inferred for 2026-11-10
+- H1 decision: NO_FOLLOW_UP on historical observation content, retain its producer provenance and original UNKNOWN/NOT_EXECUTED boundaries for 2026-11-10
+- H2 source custody: `horizon-cortex/2026-11-10-H2-horizon-orient.md` blob `34a3acd60ca726512d880cd51ad029d4135bbba4`; reviewed orientation: canonical session creation/lookup still lacks SDK runtime test receipts
+- H2 substantive counterevidence: canonical session creation/lookup still lacks SDK runtime test receipts; an implementation/source-side argument cannot be promoted to real client execution, a certified capability or a new independent publisher
+- H2 dependency finding: the same-date H1 and H2 exist in main, but author-time availability/order still belongs to PR/commit history; current paired paths alone cannot backdate original H2 eligibility
+- H2 decision: NO_FOLLOW_UP without a source conflict; preserve historical NO_DECISION/UNKNOWN where authored instead of rewriting it into later certainty
+- Parallax source custody: `parallax/records/2026-11/2026-11-10.md` blob `64a40369980bc1f49ea08104a458a1f1f9e283f3`; experiment question: query-filter absence falsified by positive direct main artifact reads
+- Parallax falsifier: query-filter absence falsified by positive direct main artifact reads; filtered query status, ordinary ref availability and historical immutable object identity are different evidence projections
+- Parallax credit: 2026-11-10 is one assigned Daily, not a credit for this A1; the experiment's own executed/partial test boundary survives without a new batch or window
+- Cross-system relationship: 2026-11-10 Horizon observations concern external provider/API claims while Parallax examines evidence/identity verification, so neither source automatically verifies the other
+- Per-day reconciliation: three source owners are PRESENT_AND_BODY_READ; nothing in this bounded A1 requires a task-time rewrite, new host fact, additional CASE, or invented execution
+
+## Weekly, month, successor and current-retention review
+- 2026-W45 H3 blob 5414cfa0d7910daaa8bc486225569e0ceeecf5e6 reads fourteen H1/H2 source objects but explicitly records NO_DECISION rather than host strategy adoption
+- 2026-W45 H4 blob 0ec8104d8d4463b617cc57d44863ed59cb46daec inherits the exact H3 blob and its NO_DECISION, without a retroactive independent SDK test
+- Closed W45 may synthesize Nov02–08; the Nov09–10 W46 input cannot be inserted into its earlier closed weekly decision
+- W46 remains OPEN as of the applicable cutoff; not-yet-finished W46 weekly final must be reported NOT_DUE rather than MISSING
+- November Horizon H5/H6 final chain cannot be sealed before natural month closure, so November current source interpretation remains OPEN/NOT_DUE
+- Parallax November rolling owner blob be58627f79a2a63c8a8ef3162743152ccef80df1 includes Nov11 current state; it is explicitly NOT an as-of-Nov10 historical snapshot
+- Parallax README blob f52cc0a523f74b0e98b4ae979aac382664bcf70a indexes the new Nov11 native Daily and does not create a second Daily credit in this A1
+- Horizon EVIDENCE_POLICY blob 060eaff65437bda48718a9703477815c574a9846 limits checker scope to structural contracts, not observed external truth
+- Horizon README blob fb6a2d828764571af66caf94259f67f16b1a8b0d isolates Cortex research from Host/NEXUS, forbidding silent product adoption
+- Nov10 source-custody original A1 blob c9bc2ea9188ae82b18174831de1caa66cecaaa8f is historical evidence through Nov09, not reclassified as Nov11 review
+- Nov10 original A2 blob e84160fa72ede8534753a0dd6add2cf3c7f94f40 describes relationship through Nov10; its source-time assertions are retained, not overwritten
+- Nov10 D10 blob ce601b268f0ca5af9d9b2093b02d4306b9c16fd0 is independent cross-window audit, not a replacement for A1 or A2
+- Original PR additions and actual merged result are judged per PR; a later correction cannot donate lines to this original A1
+- Current path retention, branch head retention and original producer operation are distinct; no source file modified merely to mark review
+- Directly read 32 dated native artifacts plus 7 named supporting files; the denominator excludes future Nov11 native records by A1 design
+- Source correction requires a concrete violated field or contradicted claim; absence of such evidence means preserving the owning source, not fabricating a fix
+- Different H1/H2 source slices from the same upstream Google ADK code lineage are not counted as two independent publisher origins
+- Parallax controlled GitHub comparison is not a measurement of unrelated external provider runtime, even when both involve GitHub identifiers
+- Producer self-verification does not create an independent Human Review receipt; this maintainer authorization is separately attributable
+- Files in this original A1 are new maintenance conclusions only; no native task, Parallax trial, Actions workflow, H6 close or external experiment executed
+- Required A2 gate: merge this A1, re-read fresh main and A1 blob, then include only genuinely merged Nov11 H1/H2/Parallax sources in Nov01–11 relation
+- No forced corrections to correct dated source bodies; all per-file decisions are NO_FOLLOW_UP under their stated semantic scope
+- Result before delivery: BOUNDED_COVERAGE_REVIEW; hard acceptance must be decided on actual PR diff, semantic line count, merge receipt and refreshed current main
