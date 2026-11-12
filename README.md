@@ -2,7 +2,9 @@
 
 This repository is the current GitHub entry point. The earlier presentation remains available as an attached yearbook.
 
-[2025–2026 Yearbook / 2025–2026 年度回顾](https://lostlight530.github.io/welcome-to-github/)
+[Current five-core research portal / 当前五核心研究门户](https://lostlight530.github.io/welcome-to-github/)
+
+[2025–2026 Yearbook / 2025–2026 年度回顾](https://lostlight530.github.io/welcome-to-github/yearbook/)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22790907.svg)](https://doi.org/10.5281/zenodo.22790907)
 
@@ -16,7 +18,7 @@ My current public work connects edge-first engineering, agent systems, scientifi
 
 The earlier presentation surface remains available at:
 
-[Open the 2025–2026 Yearbook / 打开 2025–2026 年度回顾](https://lostlight530.github.io/welcome-to-github/)
+[Open the 2025–2026 Yearbook / 打开 2025–2026 年度回顾](https://lostlight530.github.io/welcome-to-github/yearbook/)
 
 The GitHub repository remains the current entry point. The yearbook is an attached presentation surface, while repository workflows and research systems continue to run separately.
 
