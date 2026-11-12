@@ -476,6 +476,7 @@
           </p>
         </div>
         <div class="flex flex-wrap gap-3 shrink-0">
+          <a id="repo-portal-link" href="../" class="px-4 py-2 rounded-full border border-white/10 hover:border-google-blue hover:text-google-blue transition">新版研究主页</a>
           <a href="https://github.com/lostlight530/welcome-to-github" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full border border-white/10 hover:border-google-blue hover:text-google-blue transition">GitHub</a>
           <a href="https://github.com/lostlight530/welcome-to-github/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full border border-white/10 hover:border-google-green hover:text-google-green transition">README</a>
           <a href="https://github.com/lostlight530/welcome-to-github/blob/main/horizon-cortex/README.md" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full border border-white/10 hover:border-google-yellow hover:text-google-yellow transition">Horizon</a>
@@ -493,7 +494,7 @@
 
     <div class="flex justify-center space-x-6">
       <a href="https://github.com/lostlight530" class="text-gray-500 hover:text-white transition-colors">GitHub</a>
-      <a href="./docs/archaeology/legacy_traces/MEMORIAL.md" class="text-gray-500 hover:text-white transition-colors">Memorial</a>
+      <a href="../docs/archaeology/legacy_traces/MEMORIAL.md" class="text-gray-500 hover:text-white transition-colors">Memorial</a>
     </div>
   </footer>
 
@@ -712,6 +713,7 @@
       document.getElementById('repo-bridge-kicker').innerText = t.repositoryBridge.kicker;
       document.getElementById('repo-bridge-title').innerText = t.repositoryBridge.title;
       document.getElementById('repo-bridge-desc').innerText = t.repositoryBridge.description;
+      document.getElementById('repo-portal-link').innerText = currentLang === 'zh' ? '新版研究主页' : 'Current research portal';
 
       // Footer
       document.getElementById('footer-greeting').innerText = t.footer.greeting;
