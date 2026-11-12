@@ -405,8 +405,23 @@
         </p>
       </div>
 
-      <div id="ecosystem-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Filled by JS -->
+      <div class="space-y-12">
+        <div>
+          <div id="ecosystem-architecture-label" class="mb-5 text-xs font-semibold uppercase tracking-[0.24em] text-google-blue">
+            平台架构研究
+          </div>
+          <div id="ecosystem-architecture-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+        <div>
+          <div id="ecosystem-works-label" class="mb-5 text-xs font-semibold uppercase tracking-[0.24em] text-google-green">
+            Agent 实战作品
+          </div>
+          <div id="ecosystem-works-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Filled by JS -->
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -533,10 +548,9 @@
       `).join('');
     }
 
-    function renderEcosystem(items) {
-      const ecosystemGrid = document.getElementById('ecosystem-grid');
-      ecosystemGrid.innerHTML = items.map(item => `
-        <article class="glass p-6 rounded-2xl card-hover flex flex-col">
+    function ecosystemCard(item, linkLabel, accentClass) {
+      return `
+        <article class="glass p-6 rounded-2xl card-hover flex flex-col border-t-2 ${accentClass}">
           <div class="flex items-center justify-between gap-4 mb-4">
             <span class="text-xs uppercase tracking-[0.2em] text-google-blue">${item.name}</span>
             <span class="text-[11px] text-gray-500">${item.tech}</span>
@@ -544,10 +558,22 @@
           <h3 class="text-xl font-bold text-white mb-3">${item.title}</h3>
           <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">${item.desc}</p>
           <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="text-sm text-google-blue hover:text-white transition-colors">
-            View Discussion →
+            ${linkLabel} →
           </a>
         </article>
-      `).join('');
+      `;
+    }
+
+    function renderEcosystem(items) {
+      const architectureItems = items.slice(0, 3);
+      const practiceItems = items.slice(3);
+      const repositoryLabel = currentLang === 'zh' ? '官方仓库' : 'Official Repository';
+      const discussionLabel = currentLang === 'zh' ? '原始讨论' : 'Original Discussion';
+
+      document.getElementById('ecosystem-architecture-grid').innerHTML =
+        architectureItems.map(item => ecosystemCard(item, repositoryLabel, 'border-google-blue/30')).join('');
+      document.getElementById('ecosystem-works-grid').innerHTML =
+        practiceItems.map(item => ecosystemCard(item, discussionLabel, 'border-google-green/30')).join('');
     }
 
     function renderProjects(items) {
@@ -596,7 +622,7 @@
 
     function initReveal() {
       const nodes = [...document.querySelectorAll(
-        'section:not(#home) .section-title, #stats-grid > *, #achievements .glass, #ecosystem-grid > *, #project-grid > *, #philosophy .glass'
+        'section:not(#home) .section-title, #stats-grid > *, #achievements .glass, #ecosystem-architecture-grid > *, #ecosystem-works-grid > *, #project-grid > *, #philosophy .glass'
       )];
       nodes.forEach((node, index) => {
         node.dataset.reveal = '';
@@ -666,6 +692,8 @@
       // Ecosystem
       document.getElementById('ecosystem-title').innerText = t.ecosystem.title;
       document.getElementById('ecosystem-intro').innerText = t.ecosystem.intro;
+      document.getElementById('ecosystem-architecture-label').innerText = t.ecosystem.architectureLabel;
+      document.getElementById('ecosystem-works-label').innerText = t.ecosystem.worksLabel;
       renderEcosystem(t.ecosystem.items);
 
       // Projects
