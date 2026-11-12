@@ -59,37 +59,44 @@ const translations = {
         "这一年不只是在做项目，而是在把学习、工具链与生态参与沉淀成长期可复用的系统能力"
     },
     ecosystem: {
-      title: "生态贡献与架构输出",
+      title: "平台架构与 Agent 实战",
       intro:
-        "相比单点项目，我更在意能力抽象、系统分层与生态可复用性，以下内容更能代表我的真实技术方向",
+        "三项平台架构研究与两项实战作品分别展示，外部平台不表述为本人开发，作品保留原始公开讨论入口",
       items: [
         {
-          name: "Nexent #2179",
-          title: "Skills 作为能力复用层",
-          desc: "澄清 Sub-agent 与 Skills 的正交关系，把 Skills 定义为经验与能力的沉淀层，而不是新的 Agent",
-          tech: "Agent Abstraction / Reusable Skills",
-          link: "https://github.com/ModelEngine-Group/nexent/discussions/2179"
+          name: "Architecture · iFLYTEK",
+          title: "Astron Agent",
+          desc: "研究 AgentFlow、工作流契约、可信委托与生命周期责任等平台架构议题",
+          tech: "AgentFlow / Workflow Contract / Entrustability",
+          link: "https://github.com/iflytek/astron-agent"
         },
         {
-          name: "Nexent #2056",
-          title: "Plugin 机制与语义工作流可视化",
-          desc: "提出 Plugin = MCP 工具 + Prompt 模板 + 默认小型 workflow，并建议为进阶用户提供工作流查看与轻量编辑能力",
-          tech: "MCP / Plugin / Workflow Visualization",
-          link: "https://github.com/ModelEngine-Group/nexent/discussions/2056"
+          name: "Architecture · ModelEngine",
+          title: "Nexent",
+          desc: "研究 MCP、语义编排、Skill 与 Agent 分离、Harness Engineering 等平台架构议题",
+          tech: "MCP / Semantic Orchestration / Harness Engineering",
+          link: "https://github.com/ModelEngine-Group/nexent"
         },
         {
-          name: "Nexent #1982",
-          title: "MCP 一键导入体验优化",
-          desc: "提出预部署 MCP 的一键导入与自动同步设想，建议获得维护者公开正面回应并进入后续计划讨论",
-          tech: "MCP Distribution / DX",
-          link: "https://github.com/ModelEngine-Group/nexent/discussions/1982"
+          name: "Architecture · ByteDance",
+          title: "DeerFlow",
+          desc: "研究 Super-agent Harness、Sub-agents、Memory 与沙箱感知执行等长时运行架构",
+          tech: "Super-agent / Memory / Sandbox-aware Execution",
+          link: "https://github.com/bytedance/deer-flow"
         },
         {
-          name: "Astron-agent #824",
-          title: "多模型 AgentFlow 简历分析系统",
-          desc: "设计多模态输入、多模型协作、状态驱动的 AgentFlow 系统，支持 PDF OCR、多轮补全、评估与岗位推荐闭环",
-          tech: "AgentFlow / OCR / Multi-model",
+          name: "Practice · Astron Agent",
+          title: "ResumeZhiYoutong",
+          desc: "多模型 AgentFlow 简历分析系统，覆盖 PDF OCR、多轮交互、诊断与顾问模式、协作和岗位推荐",
+          tech: "AgentFlow / PDF OCR / Multi-model",
           link: "https://github.com/iflytek/astron-agent/discussions/824"
+        },
+        {
+          name: "Practice · Nexent",
+          title: "RailSmart",
+          desc: "铁路出行信息与决策展示，保留 MCP 多智能体协作、原始 JSON 配置与项目文档的证据边界",
+          tech: "Nexent / MCP / Multi-agent",
+          link: "https://github.com/ModelEngine-Group/nexent/discussions/1816"
         }
       ]
     },
@@ -224,37 +231,44 @@ const translations = {
         "This year was not only about building projects, but about turning learning, tooling, and ecosystem participation into reusable system capability"
     },
     ecosystem: {
-      title: "Ecosystem Contributions",
+      title: "Platform Architecture and Agent Practice",
       intro:
-        "More than standalone projects, this section reflects my core direction — system abstraction, capability packaging, and architecture-level contribution",
+        "Three platform architecture studies and two practical works are shown separately External platforms are not presented as software authored by me, while each work retains its original public discussion",
       items: [
         {
-          name: "Nexent #2179",
-          title: "Skills as a reusable capability layer",
-          desc: "Clarified the orthogonal relationship between sub-agents and Skills, positioning Skills as an abstraction for reusable, stable execution patterns rather than another agent",
-          tech: "Agent Abstraction / Reusable Skills",
-          link: "https://github.com/ModelEngine-Group/nexent/discussions/2179"
+          name: "Architecture · iFLYTEK",
+          title: "Astron Agent",
+          desc: "Study of AgentFlow, workflow contracts, entrustability and lifecycle responsibility across the platform architecture",
+          tech: "AgentFlow / Workflow Contract / Entrustability",
+          link: "https://github.com/iflytek/astron-agent"
         },
         {
-          name: "Nexent #2056",
-          title: "Plugin mechanism and semantic workflow visibility",
-          desc: "Proposed Plugin = MCP tools + prompt templates + a default workflow, plus optional workflow visualization and lightweight editing for advanced users",
-          tech: "MCP / Plugin / Workflow Visualization",
-          link: "https://github.com/ModelEngine-Group/nexent/discussions/2056"
+          name: "Architecture · ModelEngine",
+          title: "Nexent",
+          desc: "Study of MCP, semantic orchestration, Skill and Agent separation, and Harness Engineering",
+          tech: "MCP / Semantic Orchestration / Harness Engineering",
+          link: "https://github.com/ModelEngine-Group/nexent"
         },
         {
-          name: "Nexent #1982",
-          title: "One-click MCP import proposal",
-          desc: "Suggested a one-click import flow for pre-deployed MCP services The idea received a positive maintainer response and was connected to follow-up feature planning",
-          tech: "MCP Distribution / DX",
-          link: "https://github.com/ModelEngine-Group/nexent/discussions/1982"
+          name: "Architecture · ByteDance",
+          title: "DeerFlow",
+          desc: "Study of super-agent harnesses, sub-agents, memory and sandbox-aware long-horizon execution",
+          tech: "Super-agent / Memory / Sandbox-aware Execution",
+          link: "https://github.com/bytedance/deer-flow"
         },
         {
-          name: "Astron-agent #824",
-          title: "Multi-model AgentFlow resume system",
-          desc: "Designed a state-driven AgentFlow system combining OCR, multi-model collaboration, multi-round completion, evaluation, and job recommendation",
-          tech: "AgentFlow / OCR / Multi-model",
+          name: "Practice · Astron Agent",
+          title: "ResumeZhiYoutong",
+          desc: "A multi-model AgentFlow resume system spanning PDF OCR, multi-turn interaction, diagnostic and consulting modes, collaboration and job recommendation",
+          tech: "AgentFlow / PDF OCR / Multi-model",
           link: "https://github.com/iflytek/astron-agent/discussions/824"
+        },
+        {
+          name: "Practice · Nexent",
+          title: "RailSmart",
+          desc: "A railway information and decision demonstration preserving the evidence boundary of MCP multi-agent collaboration, its original JSON configuration and project document",
+          tech: "Nexent / MCP / Multi-agent",
+          link: "https://github.com/ModelEngine-Group/nexent/discussions/1816"
         }
       ]
     },
