@@ -35,7 +35,7 @@ const translations = {
     },
     stats: {
       items: [
-        { value: "15", label: "Google 开发者徽章" },
+        { value: "10+", label: "Google 开发者徽章" },
         { value: "5", label: "国家级 / 省级竞赛成果" },
         { value: "4", label: "公开架构讨论贡献" },
         { value: "20+", label: "长期维护中的工程资产" }
@@ -43,7 +43,9 @@ const translations = {
     },
     achievements: {
       title: "2025-2026 关键成就",
-      googleBadges: "15 枚 Google 开发者徽章",
+      googleBadges: "10+ Google 开发者徽章",
+      googleBadgeNote:
+        "涵盖 Google Maps Platform、Firebase Studio、Google Cloud、Google Cloud × NVIDIA、Code Wiki 与 Android SDK Platform Tools",
       awards: "5 项国家级 / 省级竞赛成果",
       awardList: [
         "第9届华为ICT昇腾AI全国总决赛二等奖+湖北特等奖",
@@ -198,7 +200,7 @@ const translations = {
     },
     stats: {
       items: [
-        { value: "15", label: "Google Developer Badges" },
+        { value: "10+", label: "Google Developer Badges" },
         { value: "5", label: "National / Provincial Awards" },
         { value: "4", label: "Public Architecture Contributions" },
         { value: "20+", label: "Long-term Engineering Assets" }
@@ -206,7 +208,9 @@ const translations = {
     },
     achievements: {
       title: "2025-2026 Highlights",
-      googleBadges: "15 Google Developer Badges",
+      googleBadges: "10+ Google Developer Badges",
+      googleBadgeNote:
+        "Covering Google Maps Platform, Firebase Studio, Google Cloud, Google Cloud × NVIDIA, Code Wiki and Android SDK Platform Tools",
       awards: "5 National / Provincial Achievements",
       awardList: [
         "2nd Prize, 9th Huawei ICT Ascend AI National Finals + Hubei Grand Prize",
