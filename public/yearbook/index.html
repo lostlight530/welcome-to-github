@@ -360,17 +360,20 @@
                   d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
             </div>
-            <h3 id="achieve-badges" class="text-2xl font-bold text-white">15 Google Developer Badges</h3>
+            <h3 id="achieve-badges" class="text-2xl font-bold text-white">10+ Google Developer Badges</h3>
           </div>
 
           <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 bg-google-blue/10 border border-google-blue/30 rounded-full text-xs text-google-blue font-medium">Gemini</span>
-            <span class="px-3 py-1 bg-google-green/10 border border-google-green/30 rounded-full text-xs text-google-green font-medium">Vertex AI</span>
+            <span class="px-3 py-1 bg-google-blue/10 border border-google-blue/30 rounded-full text-xs text-google-blue font-medium">Google Maps Platform</span>
+            <span class="px-3 py-1 bg-google-green/10 border border-google-green/30 rounded-full text-xs text-google-green font-medium">Firebase Studio</span>
             <span class="px-3 py-1 bg-google-yellow/10 border border-google-yellow/30 rounded-full text-xs text-google-yellow font-medium">Google Cloud</span>
-            <span class="px-3 py-1 bg-google-red/10 border border-google-red/30 rounded-full text-xs text-google-red font-medium">Firebase</span>
+            <span class="px-3 py-1 bg-google-red/10 border border-google-red/30 rounded-full text-xs text-google-red font-medium">Google Cloud × NVIDIA</span>
+            <span class="px-3 py-1 bg-google-blue/10 border border-google-blue/30 rounded-full text-xs text-google-blue font-medium">Code Wiki</span>
+            <span class="px-3 py-1 bg-google-green/10 border border-google-green/30 rounded-full text-xs text-google-green font-medium">Android SDK Platform Tools</span>
+            <span class="px-3 py-1 bg-google-yellow/10 border border-google-yellow/30 rounded-full text-xs text-google-yellow font-medium">Flutter Developer Community</span>
           </div>
 
-          <p class="text-gray-500 text-sm">Nov 2025 → 2026 持续增长中的生态参与轨迹</p>
+          <p id="badge-note" class="text-gray-500 text-sm">涵盖 Google Maps Platform、Firebase Studio、Google Cloud、Google Cloud × NVIDIA、Code Wiki 与 Android SDK Platform Tools</p>
         </div>
 
         <div class="glass p-8 rounded-3xl card-hover">
@@ -651,6 +654,7 @@
       // Achievements
       document.getElementById('achieve-title').innerText = t.achievements.title;
       document.getElementById('achieve-badges').innerText = t.achievements.googleBadges;
+      document.getElementById('badge-note').innerText = t.achievements.googleBadgeNote;
       document.getElementById('achieve-awards').innerText = t.achievements.awards;
       document.getElementById('achieve-summary').innerText = t.achievements.summary;
       renderAwards(t.achievements.awardList);
