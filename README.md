@@ -1,6 +1,8 @@
-# lostlight | 2025-2026 Year in Review
+# lostlight530 | GitHub Repository
 
-[Open Research / 开放科研](./OPEN_RESEARCH.md) · [Research Template / 科研模板](./RESEARCH_TEMPLATE.md)
+This repository is the current GitHub entry point. The earlier presentation remains available as an attached yearbook.
+
+[2025–2026 Yearbook / 2025–2026 年度回顾](https://lostlight530.github.io/welcome-to-github/)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22790907.svg)](https://doi.org/10.5281/zenodo.22790907)
 
@@ -10,13 +12,13 @@ Welcome to the digital portal of lostlight, an Edge AI practitioner focusing on 
 
 My current public work connects edge-first engineering, agent systems, scientific evidence, research infrastructure, and long-horizon technical observation. The repositories below are maintained as independent projects: each keeps its own implementation, evidence boundaries, documentation, and publication identity.
 
-## Live Portal
+## 2025–2026 Yearbook
 
-The public presentation layer is available at:
+The earlier presentation surface remains available at:
 
-[lostlight530.github.io/welcome-to-github](https://lostlight530.github.io/welcome-to-github/)
+[Open the 2025–2026 Yearbook / 打开 2025–2026 年度回顾](https://lostlight530.github.io/welcome-to-github/)
 
-The portal is an independent display surface. Repository workflows and research systems run separately.
+The GitHub repository remains the current entry point. The yearbook is an attached presentation surface, while repository workflows and research systems continue to run separately.
 
 ## Public Research and Software Map
 
