@@ -55,3 +55,16 @@ Use the version DOI for this exact checkpoint and the concept DOI for the softwa
 - Follow [OPEN_RESEARCH.md](OPEN_RESEARCH.md) and the repository-native research contracts; use [RESEARCH_TEMPLATE.md](RESEARCH_TEMPLATE.md) for a new bounded research record where a more specific native template does not apply.
 - Reuse repository-owned material under [LICENSE](LICENSE), preserve [authorship attribution](AUTHORS), and submit changes through [CONTRIBUTING.md](CONTRIBUTING.md).
 - Keep later findings and corrections in new dated records so the archived checkpoint remains recoverable.
+
+
+## Latest archived checkpoint — 2026-11-10
+
+The latest archived repository snapshot is `v2026.11-ten-day-evidence-checkpoint`.
+
+- GitHub Release: [v2026.11-ten-day-evidence-checkpoint](https://github.com/lostlight530/welcome-to-github/releases/tag/v2026.11-ten-day-evidence-checkpoint)
+- GitHub release published: `2026-11-10T14:40:19Z`
+- Tagged source commit: [`197a236b684bf6c1afc39df2d55c3c8976c5bfab`](https://github.com/lostlight530/welcome-to-github/commit/197a236b684bf6c1afc39df2d55c3c8976c5bfab)
+- Zenodo exact-version record: [10.5281/zenodo.24112453](https://doi.org/10.5281/zenodo.24112453)
+- Software-family concept DOI: [10.5281/zenodo.22790907](https://doi.org/10.5281/zenodo.22790907)
+
+The Zenodo version record identifies the exact GitHub tag as its source reference. This is an immutable 2026-11-10 snapshot; subsequent changes on `main` are not part of this archive. The concept DOI remains the software-family identifier and is intentionally distinct from the version DOI.
