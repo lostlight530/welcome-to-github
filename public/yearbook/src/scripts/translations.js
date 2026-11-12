@@ -21,7 +21,7 @@ const translations = {
     nav: {
       home: "首页",
       achievements: "年度成就",
-      ecosystem: "生态贡献",
+      ecosystem: "架构与实战",
       projects: "核心项目",
       philosophy: "工程哲学"
     },
@@ -30,14 +30,14 @@ const translations = {
       tagline: "低调 务实 <br><span class='gradient-text'>协议优先，系统为先</span>",
       description:
         "专注端侧 AI、Agent 架构与能力复用层设计，长期打磨可落地、可复用、可观测的工程系统，在 Google 与国内 AI 生态之间持续连接实践与抽象",
-      primaryCta: "查看生态贡献",
+      primaryCta: "查看架构与实战",
       secondaryCta: "浏览核心项目"
     },
     stats: {
       items: [
         { value: "10+", label: "Google 开发者徽章" },
-        { value: "5", label: "国家级 / 省级竞赛成果" },
-        { value: "4", label: "公开架构讨论贡献" },
+        { value: "3", label: "平台架构研究" },
+        { value: "2", label: "Agent 实战作品" },
         { value: "20+", label: "长期维护中的工程资产" }
       ]
     },
@@ -194,7 +194,7 @@ const translations = {
     nav: {
       home: "Home",
       achievements: "Highlights",
-      ecosystem: "Ecosystem",
+      ecosystem: "Architecture & Works",
       projects: "Projects",
       philosophy: "Philosophy"
     },
@@ -204,14 +204,14 @@ const translations = {
         "Quietly building <br><span class='gradient-text'>protocol-first systems</span>",
       description:
         "Focused on Edge AI, agent architecture, and reusable capability layers Bridging hands-on engineering with ecosystem-level abstractions across Google and domestic AI platforms",
-      primaryCta: "View Ecosystem Work",
+      primaryCta: "View Architecture & Works",
       secondaryCta: "Explore Projects"
     },
     stats: {
       items: [
         { value: "10+", label: "Google Developer Badges" },
-        { value: "5", label: "National / Provincial Awards" },
-        { value: "4", label: "Public Architecture Contributions" },
+        { value: "3", label: "Platform Architecture Studies" },
+        { value: "2", label: "Agent Practice Works" },
         { value: "20+", label: "Long-term Engineering Assets" }
       ]
     },
