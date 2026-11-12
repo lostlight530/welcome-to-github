@@ -11,10 +11,20 @@
     @media(max-width:900px){.links a:not(.keep){display:none}.stats{grid-template-columns:repeat(2,1fr)}.section-head,.system{grid-template-columns:1fr}.engineering{grid-template-columns:1fr}.row{grid-template-columns:1fr}.row .arrow{display:none}.principles{grid-template-columns:1fr 1fr}.archive{align-items:flex-start;flex-direction:column}.archive .actions{justify-content:flex-start}}
     @media(max-width:640px){.wrap{width:min(calc(100% - 24px),var(--max))}.hero{min-height:auto;padding:88px 0 70px}.hero h1{font-size:3.3rem}.stats{margin-top:0}.section{padding:72px 0}.section-head{gap:18px}.works{grid-template-columns:1fr}.principles{grid-template-columns:1fr}.footer-in{flex-direction:column}.core,.work,.rail article{padding:23px}.links{gap:10px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+
+    /* Narrow-screen navigation remains keyboard accessible; desktop layout is unchanged. */
+    .nav-in{position:relative}.mobile-nav{display:none}
+    .mobile-nav summary{list-style:none;cursor:pointer;border:1px solid var(--line);border-radius:12px;padding:7px 12px;color:var(--text);font-weight:650}
+    .mobile-nav summary::-webkit-details-marker{display:none}
+    .mobile-nav summary:focus-visible,.mobile-nav-links a:focus-visible,.lang:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+    .mobile-nav-links{position:absolute;top:calc(100% - 2px);right:0;z-index:40;min-width:220px;width:min(80vw,320px);background:#101827;border:1px solid var(--line);border-radius:16px;padding:10px;box-shadow:0 18px 48px rgba(0,0,0,.45)}
+    .mobile-nav-links a{display:block;padding:10px 12px;border-radius:9px;color:var(--text)}
+    .mobile-nav-links a:hover,.mobile-nav-links a:focus-visible{background:#1a2b42}
+    @media(max-width:900px){.mobile-nav{display:block}.links{margin-left:auto}}
   </style>
 </head>
 <body>
-  <nav class="nav"><div class="wrap nav-in"><a class="brand" href="#home">lostlight</a><div class="links"><a href="#system" data-zh="五核心" data-en="Five Core">五核心</a><a href="#architecture" data-zh="架构研究" data-en="Architecture">架构研究</a><a href="#works" data-zh="实战作品" data-en="Works">实战作品</a><a class="keep" href="#archive" data-zh="年度存档" data-en="Yearbook">年度存档</a><button class="lang" id="lang" type="button" aria-label="Switch language">中 / EN</button></div></div></nav>
+  <nav class="nav"><div class="wrap nav-in"><a class="brand" href="#home">lostlight</a><div class="links"><a href="#system" data-zh="五核心" data-en="Five Core">五核心</a><a href="#architecture" data-zh="架构研究" data-en="Architecture">架构研究</a><a href="#works" data-zh="实战作品" data-en="Works">实战作品</a><a class="keep" href="#archive" data-zh="年度存档" data-en="Yearbook">年度存档</a><button class="lang" id="lang" type="button" aria-label="Switch language">中 / EN</button></div><details class="mobile-nav" id="mobile-nav"><summary><span data-zh="菜单" data-en="Menu">菜单</span></summary><div class="mobile-nav-links" aria-label="Page sections"><a href="#system" data-zh="五核心" data-en="Five Core">五核心</a><a href="#architecture" data-zh="架构研究" data-en="Architecture">架构研究</a><a href="#works" data-zh="实战作品" data-en="Works">实战作品</a><a href="#stack" data-zh="技术与社区栈" data-en="Technology & community">技术与社区栈</a><a href="#archive" data-zh="年度存档" data-en="Yearbook">年度存档</a></div></details></div></nav>
 
   <main>
     <section class="hero" id="home"><div class="wrap"><h1><span class="gradient" data-zh="Agent / Agentic Systems 研究软件体系" data-en="Research software for Agent and Agentic Systems">Agent / Agentic Systems 研究软件体系</span></h1><p class="lead" data-zh="五个独立仓库，不同数据模型与工程实现，共同研究证据、契约、状态、反思与可靠性" data-en="Five independent repositories with distinct data models and implementations, united by research on evidence, contracts, state, reflection and reliability">五个独立仓库，不同数据模型与工程实现，共同研究证据、契约、状态、反思与可靠性</p><div class="actions"><a class="btn primary" href="#system" data-zh="查看五核心" data-en="Explore the five core repositories">查看五核心</a><a class="btn" href="https://github.com/lostlight530" target="_blank" rel="noopener noreferrer">GitHub</a></div></div></section>
@@ -36,6 +46,9 @@
   <script>
     const button=document.getElementById("lang");let lang="zh";
     function applyLanguage(){document.documentElement.lang=lang==="zh"?"zh-CN":"en";document.querySelectorAll("[data-zh]").forEach(function(node){node.textContent=node.getAttribute("data-"+lang)});button.textContent=lang==="zh"?"中 / EN":"EN / 中";document.title=lang==="zh"?"lostlight | Agent Systems 研究软件体系":"lostlight | Agent Systems Research Software"}
+    const mobileNav=document.getElementById("mobile-nav");
+    mobileNav.querySelectorAll(".mobile-nav-links a").forEach(function(link){link.addEventListener("click",function(){mobileNav.open=false})});
+    mobileNav.addEventListener("keydown",function(event){if(event.key==="Escape"){mobileNav.open=false;mobileNav.querySelector("summary").focus()}});
     button.addEventListener("click",function(){lang=lang==="zh"?"en":"zh";applyLanguage()});
   </script>
 </body>
