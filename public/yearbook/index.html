@@ -483,7 +483,7 @@
   </footer>
 
   <script type="module">
-    import translations from './src/scripts/translations.js';
+    import translations from './src/scripts/translations.js?v=20261112-badges';
 
     let currentLang = 'zh';
     const btn = document.getElementById('langSwitch');
@@ -654,7 +654,11 @@
       // Achievements
       document.getElementById('achieve-title').innerText = t.achievements.title;
       document.getElementById('achieve-badges').innerText = t.achievements.googleBadges;
-      document.getElementById('badge-note').innerText = t.achievements.googleBadgeNote;
+      document.getElementById('badge-note').innerText =
+        t.achievements.googleBadgeNote ??
+        (currentLang === 'zh'
+          ? '涵盖 Google Maps Platform、Firebase Studio、Google Cloud、Google Cloud × NVIDIA、Code Wiki 与 Android SDK Platform Tools'
+          : 'Covering Google Maps Platform, Firebase Studio, Google Cloud, Google Cloud × NVIDIA, Code Wiki and Android SDK Platform Tools');
       document.getElementById('achieve-awards').innerText = t.achievements.awards;
       document.getElementById('achieve-summary').innerText = t.achievements.summary;
       renderAwards(t.achievements.awardList);
