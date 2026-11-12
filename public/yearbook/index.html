@@ -285,7 +285,7 @@
             中 / EN
           </button>
           <!-- Hamburger -->
-          <button id="menuToggle" class="p-2 text-gray-400 hover:text-white transition-colors" aria-label="Menu">
+          <button id="menuToggle" type="button" class="p-2 text-gray-400 hover:text-white transition-colors" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
             <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -513,6 +513,7 @@
 
     menuToggle.addEventListener('click', () => {
       menuOpen = !menuOpen;
+      menuToggle.setAttribute('aria-expanded', String(menuOpen));
       mobileMenu.classList.toggle('hidden', !menuOpen);
       menuIcon.classList.toggle('hidden', menuOpen);
       closeIcon.classList.toggle('hidden', !menuOpen);
@@ -522,6 +523,7 @@
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         menuOpen = false;
+        menuToggle.setAttribute('aria-expanded', 'false');
         mobileMenu.classList.add('hidden');
         menuIcon.classList.remove('hidden');
         closeIcon.classList.add('hidden');
