@@ -62,6 +62,8 @@ const translations = {
       title: "平台架构与 Agent 实战",
       intro:
         "三项平台架构研究与两项实战作品分别展示，外部平台不表述为本人开发，作品保留原始公开讨论入口",
+      architectureLabel: "平台架构研究",
+      worksLabel: "Agent 实战作品",
       items: [
         {
           name: "Architecture · iFLYTEK",
@@ -234,6 +236,8 @@ const translations = {
       title: "Platform Architecture and Agent Practice",
       intro:
         "Three platform architecture studies and two practical works are shown separately External platforms are not presented as software authored by me, while each work retains its original public discussion",
+      architectureLabel: "Platform Architecture Research",
+      worksLabel: "Agent Practice Works",
       items: [
         {
           name: "Architecture · iFLYTEK",
