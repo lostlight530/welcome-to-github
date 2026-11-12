@@ -20,20 +20,20 @@ The portal is an independent display surface. Repository workflows and research 
 
 ## Public Research and Software Map
 
-| Repository | Public role | Archived software publication |
-|---|---|---|
-| [welcome-to-github](https://github.com/lostlight530/welcome-to-github) | Personal portal, edge-first research entry point, and deterministic knowledge-lifecycle host | [10.5281/zenodo.22790907](https://doi.org/10.5281/zenodo.22790907) |
-| [zero-entropy-lab](https://github.com/lostlight530/zero-entropy-lab) | Reliability-oriented agent research, memory/state experiments, and evidence-preserving engineering | [10.5281/zenodo.22791081](https://doi.org/10.5281/zenodo.22791081) |
-| [Axiom-0](https://github.com/lostlight530/Axiom-0) | Executable reference architecture, formalized contracts, ADRs, methodology, and bounded evaluation | [10.5281/zenodo.22791103](https://doi.org/10.5281/zenodo.22791103) |
-| [reflective-continuum](https://github.com/lostlight530/reflective-continuum) | Reflective graph state, persistence identity, drift analysis, entropy metrics, and runtime evidence | [10.5281/zenodo.22791141](https://doi.org/10.5281/zenodo.22791141) |
-| [agent-foundations](https://github.com/lostlight530/agent-foundations) | Bilingual foundational research, canonical source registry, claim/evidence mapping, and reproducibility discipline | [10.5281/zenodo.22791169](https://doi.org/10.5281/zenodo.22791169) |
-| [auto-doc-engine](https://github.com/lostlight530/auto-doc-engine) | Structured research documents, artifact identity, lineage, diagnostics, and research-object packaging | [10.5281/zenodo.22791404](https://doi.org/10.5281/zenodo.22791404) |
-| [epistemic-pipeline](https://github.com/lostlight530/epistemic-pipeline) | Claim/evidence processing, provenance, transfer boundaries, runtime policy, and evidence envelopes | [10.5281/zenodo.22791463](https://doi.org/10.5281/zenodo.22791463) |
-| [sci-render-kit](https://github.com/lostlight530/sci-render-kit) | Scientific communication, figure evidence, uncertainty metadata, accessibility, and publisher-target checks | [10.5281/zenodo.22791375](https://doi.org/10.5281/zenodo.22791375) |
-| [agentic-frontier-observatory](https://github.com/lostlight530/agentic-frontier-observatory) | Global agentic-systems observatory covering protocols, runtimes, evaluation, safety, governance, and ecosystems | [10.5281/zenodo.22791334](https://doi.org/10.5281/zenodo.22791334) |
-| [china-agentic-observatory](https://github.com/lostlight530/china-agentic-observatory) | China-focused observatory covering policy, standards, infrastructure, industry, evaluation, and lifecycle governance | [10.5281/zenodo.22791309](https://doi.org/10.5281/zenodo.22791309) |
+| Repository | Public role | Software-family concept DOI | Latest archived version |
+|---|---|---|---|
+| [welcome-to-github](https://github.com/lostlight530/welcome-to-github) | Personal portal, edge-first research entry point, and deterministic knowledge-lifecycle host | [10.5281/zenodo.22790907](https://doi.org/10.5281/zenodo.22790907) | [v2026.11-ten-day-evidence-checkpoint](https://github.com/lostlight530/welcome-to-github/releases/tag/v2026.11-ten-day-evidence-checkpoint) · [Version DOI](https://doi.org/10.5281/zenodo.24112453) |
+| [zero-entropy-lab](https://github.com/lostlight530/zero-entropy-lab) | Reliability-oriented agent research, memory/state experiments, and evidence-preserving engineering | [10.5281/zenodo.22791081](https://doi.org/10.5281/zenodo.22791081) | [v2026.11-ten-day-evidence-checkpoint](https://github.com/lostlight530/zero-entropy-lab/releases/tag/v2026.11-ten-day-evidence-checkpoint) · [Version DOI](https://doi.org/10.5281/zenodo.24112455) |
+| [Axiom-0](https://github.com/lostlight530/Axiom-0) | Executable reference architecture, formalized contracts, ADRs, methodology, and bounded evaluation | [10.5281/zenodo.22791103](https://doi.org/10.5281/zenodo.22791103) | [v2026.10-30-evidence-snapshot](https://github.com/lostlight530/Axiom-0/releases/tag/v2026.10-30-evidence-snapshot) · [Version DOI](https://doi.org/10.5281/zenodo.23811393) |
+| [reflective-continuum](https://github.com/lostlight530/reflective-continuum) | Reflective graph state, persistence identity, drift analysis, entropy metrics, and runtime evidence | [10.5281/zenodo.22791141](https://doi.org/10.5281/zenodo.22791141) | [v2026.11-ten-day-evidence-checkpoint](https://github.com/lostlight530/reflective-continuum/releases/tag/v2026.11-ten-day-evidence-checkpoint) · [Version DOI](https://doi.org/10.5281/zenodo.24112458) |
+| [agent-foundations](https://github.com/lostlight530/agent-foundations) | Bilingual foundational research, canonical source registry, claim/evidence mapping, and reproducibility discipline | [10.5281/zenodo.22791169](https://doi.org/10.5281/zenodo.22791169) | [v2026.11-ten-day-evidence-checkpoint](https://github.com/lostlight530/agent-foundations/releases/tag/v2026.11-ten-day-evidence-checkpoint) · [Version DOI](https://doi.org/10.5281/zenodo.24112465) |
+| [auto-doc-engine](https://github.com/lostlight530/auto-doc-engine) | Structured research documents, artifact identity, lineage, diagnostics, and research-object packaging | [10.5281/zenodo.22791404](https://doi.org/10.5281/zenodo.22791404) | [v2026.11-ten-day-evidence-checkpoint](https://github.com/lostlight530/auto-doc-engine/releases/tag/v2026.11-ten-day-evidence-checkpoint) · [Version DOI](https://doi.org/10.5281/zenodo.24112471) |
+| [epistemic-pipeline](https://github.com/lostlight530/epistemic-pipeline) | Claim/evidence processing, provenance, transfer boundaries, runtime policy, and evidence envelopes | [10.5281/zenodo.22791463](https://doi.org/10.5281/zenodo.22791463) | [v2026.11-ten-day-evidence-checkpoint](https://github.com/lostlight530/epistemic-pipeline/releases/tag/v2026.11-ten-day-evidence-checkpoint) · [Version DOI](https://doi.org/10.5281/zenodo.24112474) |
+| [sci-render-kit](https://github.com/lostlight530/sci-render-kit) | Scientific communication, figure evidence, uncertainty metadata, accessibility, and publisher-target checks | [10.5281/zenodo.22791375](https://doi.org/10.5281/zenodo.22791375) | [v2026.11-ten-day-evidence-checkpoint](https://github.com/lostlight530/sci-render-kit/releases/tag/v2026.11-ten-day-evidence-checkpoint) · [Version DOI](https://doi.org/10.5281/zenodo.24112475) |
+| [agentic-frontier-observatory](https://github.com/lostlight530/agentic-frontier-observatory) | Global agentic-systems observatory covering protocols, runtimes, evaluation, safety, governance, and ecosystems | [10.5281/zenodo.22791334](https://doi.org/10.5281/zenodo.22791334) | [v2026.11-ten-day-evidence-checkpoint](https://github.com/lostlight530/agentic-frontier-observatory/releases/tag/v2026.11-ten-day-evidence-checkpoint) · [Version DOI](https://doi.org/10.5281/zenodo.24112468) |
+| [china-agentic-observatory](https://github.com/lostlight530/china-agentic-observatory) | China-focused observatory covering policy, standards, infrastructure, industry, evaluation, and lifecycle governance | [10.5281/zenodo.22791309](https://doi.org/10.5281/zenodo.22791309) | [v2026.11-ten-day-evidence-checkpoint](https://github.com/lostlight530/china-agentic-observatory/releases/tag/v2026.11-ten-day-evidence-checkpoint) · [Version DOI](https://doi.org/10.5281/zenodo.24112469) |
 
-The Zenodo records identify archived software publications. They provide stable citation targets for those archived publications; they do not replace the evolving state of each repository's current `main` branch.
+The concept DOI identifies each software family; the version DOI identifies the exact archived checkpoint. Neither replaces the evolving state of the repository's current `main` branch.
 
 ## 2026 Public Milestones
 
@@ -49,6 +49,7 @@ These are statements about public repository and publication records. They are n
 
 ## Repository-Native Guides
 
+- [Documentation index](./docs/README.md) — current knowledge-lifecycle documentation and preserved-history navigation.
 The repository itself has several public layers with different roles:
 
 - [`horizon-cortex/README.md`](./horizon-cortex/README.md) — durable guide to the Horizon external-signal/evidence research surface and its boundary from NEXUS, Parallax, and maintenance.
