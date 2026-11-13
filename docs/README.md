@@ -1,6 +1,10 @@
 # Documentation Navigation
 
-This directory contains two distinct long-lived documentation surfaces. Use the repository [README](../README.md) as the current public project entry point.
+This directory contains distinct long-lived documentation surfaces, including current research architecture and preserved historical evidence. Use the repository [README](../README.md) as the current public project entry point.
+
+## Architecture and disciplinary lineage
+
+- [Architecture and lineage](architecture/README.md) — current navigation to the original five-repository disciplinary lineage and the dated ten-repository CS architecture commemoration. These are interpretive documents, not runtime certification.
 
 ## Current knowledge and lifecycle documentation
 
