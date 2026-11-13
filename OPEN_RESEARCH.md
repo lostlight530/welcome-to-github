@@ -129,6 +129,12 @@ The repository's public open-science surfaces include, where present:
 
 These files support openness, attribution, reuse, citation, review, and archival identity. They do not establish scientific validity by themselves.
 
+### Open research and display evidence / 开放科研与展示来源
+
+**中文**：公开门户上的阶段数字必须说明来源是 raw Git 数据、聚合观察、Pages 前端投影还是独立归档快照，并附时间窗口、可复核路径、源修订和异常状态；门户访问量、GitHub Actions 运行、研究产出与 Zenodo DOI 是不同事实；软件引用元数据不能替代真正的科研验证；历史错误以明确 correction 或后续时间点记录修正，不倒写原始数据
+
+**English**: Stage counts on public pages require an identified source class (raw Git, aggregated observation, frontend projection or archived snapshot), period, inspectable path, revision and uncertainty status. Portal traffic, GitHub Actions, research output and Zenodo DOI are separate evidence classes; citation metadata does not validate research. Correct past errors explicitly, preserving original timepoint records
+
 ## 7. Scholarly metadata discipline
 
 Before a future scholarly-metadata publication or revision, preserve:

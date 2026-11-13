@@ -86,6 +86,11 @@ State one question that can be contradicted by evidence
 - Support condition:
 - Falsifier:
 
+### Long-term display and publication fields / 长期展示与出版字段
+
+- 中文：注明原始来源路径和修订、采集与展示时间、统计分母、raw／聚合／前端投影／归档快照类型、失败或缺失以及引用的具体 release version DOI；不以 concept DOI 代表最新源码，也不以访问量推断科研采纳
+- English: Record source path/revision, observation and display times, denominator, raw/aggregate/frontend/archive class, failures or gaps and exact release version DOI if used. Do not infer current source state from a concept DOI or scientific adoption from page traffic
+
 ## Evidence or source basis / 证据基础
 
 For each material source or input record identity, authority, time, supported proposition, limitation, and independence where relevant

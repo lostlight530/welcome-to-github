@@ -32,6 +32,12 @@ A change in one surface does not automatically authorize changes in another.
 5. Preserve historical records when a forward correction or current-document update is sufficient.
 6. Keep the change bounded and reviewable; avoid unrelated cleanup in the same pull request.
 
+### Stage and citation review / 阶段与引用审阅
+
+更改公开入口、项目地图或长期指标时，必须先辨认原始十仓、独立控制仓和生科仓，列出对应来源路径、Git SHA、观察日期、派生规则与可复核结果；不能把旧 snapshot 数字改写成 live 指标，也不能让 Yearbook、当前主页、自动维护记录和 DOI 相互背书
+
+For portal, portfolio-map or longitudinal-metric changes, identify the original ten, the independent control repository and the separate life-science repository; cite source path, Git SHA, observation date, derivation and verification result. Do not relabel a frozen snapshot as a live metric or let the Yearbook, current landing page, automation history and DOI validate one another
+
 ## Evidence and documentation
 
 Public prose should describe only what the linked implementation, source, artifact, or retained observation supports.
