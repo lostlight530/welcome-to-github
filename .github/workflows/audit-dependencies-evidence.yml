@@ -35,4 +35,11 @@ jobs:
           const hits=Object.entries(report.vulnerabilities).map(([name,v])=>({name,severity:v.severity,isDirect:v.isDirect,range:v.range,via:v.via?.map(x=>typeof x==='string'?{transitive:x}:{source:x.name,title:x.title,url:x.url,severity:x.severity,range:x.range,cvss:x.cvss}),effects:v.effects,fixAvailable:v.fixAvailable}));
           console.log(JSON.stringify({outcome:'LOCKFILE_AUDIT_RECORDED',target:process.cwd(),npmAuditExit:audit.status,totals:report.metadata.vulnerabilities,dependencies:report.metadata.dependencies,findings:hits},null,2));
           if(audit.status!==0&&audit.status!==1)process.exit(2);
+          const prod=spawnSync('npm',['audit','--omit=dev','--package-lock-only','--json'],{encoding:'utf8',maxBuffer:12*1024*1024,timeout:120000});
+          if(prod.error){console.error('PROD_AUDIT_TOOL_ERROR',String(prod.error));process.exit(2);}
+          let production;
+          try{production=JSON.parse(prod.stdout)}catch{console.error('PROD_AUDIT_INVALID_JSON',prod.stdout.slice(-1800),prod.stderr.slice(-1600));process.exit(2);}
+          if(!production.metadata?.vulnerabilities||!production.vulnerabilities){console.error('PROD_AUDIT_RESULT_INCOMPLETE');process.exit(2);}
+          console.log(JSON.stringify({outcome:'PRODUCTION_ONLY_LOCKFILE_AUDIT',auditExit:prod.status,totals:production.metadata.vulnerabilities,packages:Object.entries(production.vulnerabilities).map(([name,v])=>({name,severity:v.severity,isDirect:v.isDirect,fixAvailable:v.fixAvailable}))},null,2));
+          if(prod.status!==0&&prod.status!==1)process.exit(2);
           AUDIT_NODE
