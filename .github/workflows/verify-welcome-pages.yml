@@ -38,5 +38,9 @@ jobs:
         run: npm ci
       - name: Build with the exact GitHub Pages base path
         run: npm run build -- --base=/welcome-to-github/
+      - name: Prepare public memorial exactly as the deploy workflow
+        run: |
+          mkdir -p dist/docs/archaeology/legacy_traces
+          cp docs/archaeology/legacy_traces/MEMORIAL.md dist/docs/archaeology/legacy_traces/MEMORIAL.md
       - name: Assert both Pages routes and published local targets
         run: node tools/verify-welcome-public-surface.mjs
