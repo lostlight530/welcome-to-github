@@ -1,9 +1,5 @@
 # Code of Conduct
 
-> **Current bilingual reading guide / 当前双语阅读指引（2026-11-13）**  
-> **中文**：规范公开讨论、Issue 与 PR 的社区行为，原始条款仍是具体约束；这是一项根目录说明校准，不代表执行新任务或更改私有生产者 SOP  
-> **English**: Governs public issues, discussions, and pull-request conduct; the original clauses remain the operative rules. This root-document calibration does not execute a new task or publish private producer SOPs
-
 
 ## Scope
 
@@ -19,6 +15,12 @@ Participants should:
 - correct material errors openly and preserve provenance when a historical record must remain auditable
 - respect privacy, security boundaries, attribution, copyright, and third-party licenses
 - avoid spam, harassment, discrimination, threats, impersonation, fabricated evidence, or knowingly misleading validation claims
+
+### 中文研究协作边界 / Research-collaboration evidence boundary
+
+对公开 Issue、PR 和研究讨论，应区分已检索的来源、开发者报告、自动化产物、未执行检查与待验证判断，不以展示数据、Star 或一次 Actions 成功宣传普遍可靠性；历史误差通过可追溯修正处理
+
+For public issues, PRs and research discussions, distinguish retrieved sources, maintainer reports, automation artifacts, unexecuted checks and unresolved judgments. UI numbers, Stars or one Actions success do not certify system-wide reliability. Corrections preserve provenance
 
 ## Research and engineering integrity
 
