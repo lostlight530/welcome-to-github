@@ -54,6 +54,7 @@ These are statements about public repository and publication records. They are n
 ## Repository-Native Guides
 
 - [Documentation index](./docs/README.md) — current knowledge-lifecycle documentation and preserved-history navigation.
+- [Welcome public Pages navigation evidence (2026-11-13)](./docs/public-surface/2026-11-13-welcome-navigation-evidence.md) — P1–P3 route corrections, offline verification and unresolved external checks.
 The repository itself has several public layers with different roles:
 
 - [`horizon-cortex/README.md`](./horizon-cortex/README.md) — durable guide to the Horizon external-signal/evidence research surface and its boundary from NEXUS, Parallax, and maintenance.
