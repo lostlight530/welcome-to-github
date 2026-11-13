@@ -1,5 +1,10 @@
 # Security Policy
 
+> **Current bilingual reading guide / 当前双语阅读指引（2026-11-13）**  
+> **中文**：区分公共仓库的报告程序、权限边界和实际安全验证结果；这是一项根目录说明校准，不代表执行新任务或更改私有生产者 SOP  
+> **English**: Distinguish vulnerability reporting, authorization boundaries, and actually observed security checks. This root-document calibration does not execute a new task or publish private producer SOPs
+
+
 ## Supported State
 
 Security fixes apply to the latest commit on `main`.

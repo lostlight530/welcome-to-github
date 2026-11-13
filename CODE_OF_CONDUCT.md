@@ -1,5 +1,10 @@
 # Code of Conduct
 
+> **Current bilingual reading guide / 当前双语阅读指引（2026-11-13）**  
+> **中文**：规范公开讨论、Issue 与 PR 的社区行为，原始条款仍是具体约束；这是一项根目录说明校准，不代表执行新任务或更改私有生产者 SOP  
+> **English**: Governs public issues, discussions, and pull-request conduct; the original clauses remain the operative rules. This root-document calibration does not execute a new task or publish private producer SOPs
+
+
 ## Scope
 
 This code applies to repository Issues, pull requests, reviews, Discussions, and other public collaboration around this project.

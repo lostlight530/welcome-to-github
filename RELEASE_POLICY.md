@@ -1,5 +1,10 @@
 # Release and Archival Policy
 
+> **Current bilingual reading guide / 当前双语阅读指引（2026-11-13）**  
+> **中文**：Git 当前分支、冻结归档和 DOI 不能混用作现时能力认证；这是一项根目录说明校准，不代表执行新任务或更改私有生产者 SOP  
+> **English**: Current Git state, frozen archives and DOI identifiers cannot substitute for runtime capability validation. This root-document calibration does not execute a new task or publish private producer SOPs
+
+
 This repository treats `main` as the current repository state and release tags as immutable point-in-time snapshots.
 
 ## Policy

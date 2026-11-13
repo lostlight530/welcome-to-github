@@ -1,5 +1,10 @@
 # Contributing
 
+> **Current bilingual reading guide / 当前双语阅读指引（2026-11-13）**  
+> **中文**：分别核对公共入口、记忆与编排实现、Yearbook 展示和研究证据，避免混合权威；这是一项根目录说明校准，不代表执行新任务或更改私有生产者 SOP  
+> **English**: Review portal, memory/orchestration implementation, Yearbook presentation, and research evidence as separate authority surfaces. This root-document calibration does not execute a new task or publish private producer SOPs
+
+
 ## Open research contributions
 
 For research-method contributions, start with [`OPEN_RESEARCH.md`](./OPEN_RESEARCH.md). For new bounded research records, use [`RESEARCH_TEMPLATE.md`](./RESEARCH_TEMPLATE.md). Repository-native implementation, methodology, evidence, and historical contracts remain authoritative for their own surfaces.

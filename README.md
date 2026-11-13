@@ -1,5 +1,10 @@
 # lostlight530 | GitHub Repository
 
+> **Current bilingual reading guide / 当前双语阅读指引（2026-11-13）**  
+> **中文**：当前主页与独立 Yearbook 页面是两种展示入口，旧系统记录属于考古史料；每项能力依当前代码和来源核对；这是一项根目录说明校准，不代表执行新任务或更改私有生产者 SOP  
+> **English**: The current landing page and separate Yearbook are distinct presentation surfaces; legacy history belongs to archaeology and each capability must be checked against current code and sources. This root-document calibration does not execute a new task or publish private producer SOPs
+
+
 This repository is the current GitHub entry point. The earlier presentation remains available as an attached yearbook.
 
 [Current five-core research portal / 当前五核心研究门户](https://lostlight530.github.io/welcome-to-github/)
