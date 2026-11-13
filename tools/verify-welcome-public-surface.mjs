@@ -53,8 +53,19 @@ assert(yearbook.includes('aria-expanded="false"') && yearbook.includes("setAttri
 assert(yearbook.includes("setAttribute('aria-expanded', 'false')"), 'Yearbook menu close state missing');
 assert(yearbook.includes('translations.js?v=20261112-badges'), 'Legacy translation cache version changed unexpectedly');
 assert(yearbook.includes('legacy-css-fallback'), 'Legacy CSS fallback marker missing');
-for (const line of readme.split('\n').filter(line => /Yearbook|年度回顾/.test(line) && line.includes('lostlight530.github.io'))) {
-  assert(line.includes('/welcome-to-github/yearbook/'), 'README yearbook link targets current portal: ' + line);
+for (const line of readme.split('\n').filter(line => /Yearbook|年度回顾/.test(line))) {
+  const markdownLinks = [...line.matchAll(/\]\((https:\/\/[^)\s]+)\)/g)].map(m => new URL(m[1]));
+  assert(
+    markdownLinks.some(url =>
+      url.origin === base.origin &&
+      url.pathname === base.pathname + 'yearbook/' &&
+      url.search === '' &&
+      url.hash === '' &&
+      url.username === '' &&
+      url.password === ''
+    ),
+    'README yearbook link must resolve to the exact same-origin yearbook route: ' + line
+  );
 }
 assert(readme.includes('[Current five-core research portal'), 'Current portal entry absent from README');
 const sourceURLs = [...translations.matchAll(/\blink:\s*["'](https:\/\/[^"']+)["']/g)].map(m => m[1]);
