@@ -103,6 +103,14 @@ node tools/verify-welcome-public-surface.mjs
 
 The pull-request workflow `.github/workflows/verify-welcome-pages.yml` mirrors these steps. The checker validates built-site links, route scope, anchor IDs, translation assets, memorial presence, README label/URL agreement, and dynamic source URL syntax. Its success result is intentionally `SOURCE_AND_DIST_ROUTE_PASS`, **not** `HTTP_PASS`.
 
+## Execution trace and correction history
+
+- **Failed validation, preserved**: [run 43333543371](https://github.com/lostlight530/welcome-to-github/actions/runs/43333543371) — Vite build succeeded, but the newly introduced checker failed because the test workflow omitted the deployment-only memorial copy. This is a checker/environment mismatch, not evidence that the published memorial was absent.
+- **Corrected validation**: [run 43333694304](https://github.com/lostlight530/welcome-to-github/actions/runs/43333694304) — added the same `Prepare public memorial` copy step used in the deployment workflow, then the contract check passed.
+- **Repeat validation with provenance document**: [run 43333876387](https://github.com/lostlight530/welcome-to-github/actions/runs/43333876387) — Vite build, preparation, and route assertions passed. Reported: `localLinks=28`, `localAnchors=24`, `externalLinks=17`, `dynamicExternalSources=5`, `network=NOT_VERIFIED`. Counts are **reference occurrences**, not unique visitors or distinct URLs.
+- **Additional unchanged boundary**: the `npm ci` job log reports three high-severity dependency advisories, but this route/UI audit did not obtain advisory identities or prove production exploitability. It did not apply speculative dependency changes; a separate dependency review can use `npm audit --json` to classify them.
+- **Final-source validation rule**: a success belongs to its **exact head SHA**. A newer commit changing public HTML must be checked against its own workflow run before claiming a final source PASS.
+
 ## Non-scope and review gate
 
 - No original `src/**` lifecycle file, `tests/**` or `docs/brain/**` is changed, so this presentation-only work does not enter the NEXUS lifecycle workflow's path filter
