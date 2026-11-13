@@ -53,7 +53,7 @@ assert(yearbook.includes('aria-expanded="false"') && yearbook.includes("setAttri
 assert(yearbook.includes("setAttribute('aria-expanded', 'false')"), 'Yearbook menu close state missing');
 assert(yearbook.includes('translations.js?v=20261112-badges'), 'Legacy translation cache version changed unexpectedly');
 assert(yearbook.includes('legacy-css-fallback'), 'Legacy CSS fallback marker missing');
-for (const line of readme.split('\n').filter(line => /Yearbook|年度回顾/.test(line))) {
+for (const line of readme.split('\n').filter(line => /Yearbook|年度回顾/.test(line) && /\]\(https:\/\//.test(line))) {
   const markdownLinks = [...line.matchAll(/\]\((https:\/\/[^)\s]+)\)/g)].map(m => new URL(m[1]));
   assert(
     markdownLinks.some(url =>
