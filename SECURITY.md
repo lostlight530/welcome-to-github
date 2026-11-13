@@ -1,10 +1,17 @@
 # Security Policy
 
+
 ## Supported State
 
 Security fixes apply to the latest commit on `main`.
 
 Feature branches, pull requests, generated reports, and historical snapshots are not maintained as independent release lines.
+
+### 中文安全报告与发布边界 / Private reporting and publication boundary
+
+疑似敏感信息或漏洞应使用下方私密渠道，公开 Issue、PR、Pages 或 DOI 附件不得包含密钥、令牌、私人研究材料及未经修复的可利用细节；代码扫描、哈希与公开归档只证明其自身检查范围，不保证完整安全
+
+Use the private reporting route below for suspected security issues; do not place secrets, tokens, private research information or unpatched exploit details into public issues, PRs, Pages or archive files. A scanner, digest or public archive supports only its tested security scope
 
 ## Private Reporting
 

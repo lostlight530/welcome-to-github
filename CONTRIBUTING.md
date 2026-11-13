@@ -1,5 +1,10 @@
 # Contributing
 
+> **Current bilingual reading guide / 当前双语阅读指引（2026-11-13）**  
+> **中文**：分别核对公共入口、记忆与编排实现、Yearbook 展示和研究证据，避免混合权威；这是一项根目录说明校准，不代表执行新任务或更改私有生产者 SOP  
+> **English**: Review portal, memory/orchestration implementation, Yearbook presentation, and research evidence as separate authority surfaces. This root-document calibration does not execute a new task or publish private producer SOPs
+
+
 ## Open research contributions
 
 For research-method contributions, start with [`OPEN_RESEARCH.md`](./OPEN_RESEARCH.md). For new bounded research records, use [`RESEARCH_TEMPLATE.md`](./RESEARCH_TEMPLATE.md). Repository-native implementation, methodology, evidence, and historical contracts remain authoritative for their own surfaces.
@@ -26,6 +31,12 @@ A change in one surface does not automatically authorize changes in another.
 4. For research or evidence changes, identify the exact source, date/version, supported proposition, uncertainty, and local applicability.
 5. Preserve historical records when a forward correction or current-document update is sufficient.
 6. Keep the change bounded and reviewable; avoid unrelated cleanup in the same pull request.
+
+### Stage and citation review / 阶段与引用审阅
+
+更改公开入口、项目地图或长期指标时，必须先辨认原始十仓、独立控制仓和生科仓，列出对应来源路径、Git SHA、观察日期、派生规则与可复核结果；不能把旧 snapshot 数字改写成 live 指标，也不能让 Yearbook、当前主页、自动维护记录和 DOI 相互背书
+
+For portal, portfolio-map or longitudinal-metric changes, identify the original ten, the independent control repository and the separate life-science repository; cite source path, Git SHA, observation date, derivation and verification result. Do not relabel a frozen snapshot as a live metric or let the Yearbook, current landing page, automation history and DOI validate one another
 
 ## Evidence and documentation
 
