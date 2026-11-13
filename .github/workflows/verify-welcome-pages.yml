@@ -1,0 +1,46 @@
+name: Verify Welcome public Pages routes
+
+on:
+  pull_request:
+    paths:
+      - 'README.md'
+      - 'index.html'
+      - 'public/yearbook/**'
+      - 'tools/verify-welcome-public-surface.mjs'
+      - '.github/workflows/verify-welcome-pages.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'README.md'
+      - 'index.html'
+      - 'public/yearbook/**'
+      - 'tools/verify-welcome-public-surface.mjs'
+      - '.github/workflows/verify-welcome-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-pages-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout revision
+        uses: actions/checkout@v5
+      - name: Node 20 for Vite
+        uses: actions/setup-node@v5
+        with:
+          node-version: 20
+          cache: 'npm'
+      - name: Reproducible dependencies
+        run: npm ci
+      - name: Build with the exact GitHub Pages base path
+        run: npm run build -- --base=/welcome-to-github/
+      - name: Prepare public memorial exactly as the deploy workflow
+        run: |
+          mkdir -p dist/docs/archaeology/legacy_traces
+          cp docs/archaeology/legacy_traces/MEMORIAL.md dist/docs/archaeology/legacy_traces/MEMORIAL.md
+      - name: Assert both Pages routes and published local targets
+        run: node tools/verify-welcome-public-surface.mjs

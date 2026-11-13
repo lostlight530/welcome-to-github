@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>lostlight | 2025-2026 年度回顾</title>
   <meta name="description" content="端侧 AI × Agent 架构 × 开源生态，聚焦能力复用、系统协议设计与可观测工程实践" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com" onerror="document.documentElement.classList.add('legacy-css-fallback')"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <script>
-    tailwind.config = {
+    if (window.tailwind) tailwind.config = {
       theme: {
         extend: {
           colors: {
@@ -250,6 +250,34 @@
       .page-progress { display: none; }
     }
 
+
+    /* Last-resort local layout when the external Tailwind Play CDN cannot load.
+       This preserves reading and navigation, not pixel-identical Tailwind visuals. */
+    .legacy-css-fallback *, .legacy-css-fallback *::before, .legacy-css-fallback *::after { box-sizing: border-box; }
+    .legacy-css-fallback nav { position: sticky; top: 0; z-index: 50; }
+    .legacy-css-fallback nav > div { max-width: 80rem; padding: 0 1rem; margin: auto; }
+    .legacy-css-fallback nav > div > div:first-child { display: flex; justify-content: space-between; align-items: center; min-height: 4rem; gap: 1rem; }
+    .legacy-css-fallback nav a, .legacy-css-fallback nav button { color: #e5e7eb; }
+    .legacy-css-fallback nav button { border: 1px solid rgba(96,165,250,.45); padding: .5rem; border-radius: .5rem; background: transparent; cursor: pointer; }
+    .legacy-css-fallback #home { padding: 6rem 1rem 4rem; text-align: center; }
+    .legacy-css-fallback #home h1 { font-size: clamp(2.2rem, 7vw, 5rem); line-height: 1.12; }
+    .legacy-css-fallback section:not(#home) { padding: 3rem 1rem; }
+    .legacy-css-fallback section > div { max-width: 80rem; margin-inline: auto; }
+    .legacy-css-fallback #stats-grid, .legacy-css-fallback #ecosystem-architecture-grid, .legacy-css-fallback #ecosystem-works-grid,
+    .legacy-css-fallback #project-grid, .legacy-css-fallback #philosophy-points { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 1rem; }
+    .legacy-css-fallback #stats-grid > *, .legacy-css-fallback #ecosystem-architecture-grid > *, .legacy-css-fallback #ecosystem-works-grid > *,
+    .legacy-css-fallback #project-grid > *, .legacy-css-fallback #philosophy-points > * { border: 1px solid rgba(255,255,255,.15); border-radius: 1rem; padding: 1rem; }
+    .legacy-css-fallback #mobileMenu.hidden, .legacy-css-fallback #menuIcon.hidden, .legacy-css-fallback #closeIcon.hidden { display: none; }
+    .legacy-css-fallback #mobileMenu a { display: block; padding: .65rem; }
+    .legacy-css-fallback #home a, .legacy-css-fallback #repo-portal-link { display: inline-block; padding: .65rem 1rem; margin: .35rem; border: 1px solid rgba(255,255,255,.2); border-radius: 999px; }
+    @media (min-width: 768px) {
+      .legacy-css-fallback #langSwitchMobile, .legacy-css-fallback #menuToggle, .legacy-css-fallback #mobileMenu { display: none !important; }
+    }
+    @media (max-width: 767px) {
+      .legacy-css-fallback #nav-home, .legacy-css-fallback #nav-achievements, .legacy-css-fallback #nav-ecosystem, .legacy-css-fallback #nav-projects,
+      .legacy-css-fallback #nav-philosophy, .legacy-css-fallback #langSwitch { display: none !important; }
+      .legacy-css-fallback #mobileMenu:not(.hidden) { display: block; }
+    }
   </style>
 </head>
 <body class="antialiased">
@@ -285,7 +313,7 @@
             中 / EN
           </button>
           <!-- Hamburger -->
-          <button id="menuToggle" class="p-2 text-gray-400 hover:text-white transition-colors" aria-label="Menu">
+          <button id="menuToggle" type="button" class="p-2 text-gray-400 hover:text-white transition-colors" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
             <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -476,6 +504,7 @@
           </p>
         </div>
         <div class="flex flex-wrap gap-3 shrink-0">
+          <a id="repo-portal-link" href="../" class="px-4 py-2 rounded-full border border-white/10 hover:border-google-blue hover:text-google-blue transition">新版研究主页</a>
           <a href="https://github.com/lostlight530/welcome-to-github" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full border border-white/10 hover:border-google-blue hover:text-google-blue transition">GitHub</a>
           <a href="https://github.com/lostlight530/welcome-to-github/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full border border-white/10 hover:border-google-green hover:text-google-green transition">README</a>
           <a href="https://github.com/lostlight530/welcome-to-github/blob/main/horizon-cortex/README.md" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full border border-white/10 hover:border-google-yellow hover:text-google-yellow transition">Horizon</a>
@@ -493,7 +522,7 @@
 
     <div class="flex justify-center space-x-6">
       <a href="https://github.com/lostlight530" class="text-gray-500 hover:text-white transition-colors">GitHub</a>
-      <a href="./docs/archaeology/legacy_traces/MEMORIAL.md" class="text-gray-500 hover:text-white transition-colors">Memorial</a>
+      <a href="../docs/archaeology/legacy_traces/MEMORIAL.md" class="text-gray-500 hover:text-white transition-colors">Memorial</a>
     </div>
   </footer>
 
@@ -513,6 +542,7 @@
 
     menuToggle.addEventListener('click', () => {
       menuOpen = !menuOpen;
+      menuToggle.setAttribute('aria-expanded', String(menuOpen));
       mobileMenu.classList.toggle('hidden', !menuOpen);
       menuIcon.classList.toggle('hidden', menuOpen);
       closeIcon.classList.toggle('hidden', !menuOpen);
@@ -522,6 +552,7 @@
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         menuOpen = false;
+        menuToggle.setAttribute('aria-expanded', 'false');
         mobileMenu.classList.add('hidden');
         menuIcon.classList.remove('hidden');
         closeIcon.classList.add('hidden');
@@ -710,6 +741,7 @@
       document.getElementById('repo-bridge-kicker').innerText = t.repositoryBridge.kicker;
       document.getElementById('repo-bridge-title').innerText = t.repositoryBridge.title;
       document.getElementById('repo-bridge-desc').innerText = t.repositoryBridge.description;
+      document.getElementById('repo-portal-link').innerText = currentLang === 'zh' ? '新版研究主页' : 'Current research portal';
 
       // Footer
       document.getElementById('footer-greeting').innerText = t.footer.greeting;

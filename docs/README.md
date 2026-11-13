@@ -6,6 +6,10 @@ This directory contains two distinct long-lived documentation surfaces. Use the 
 
 - [Brain documentation](brain/README.md) — repository-native knowledge lifecycle, ledger/index separation, schema, and operational entry points. Treat current implementation and workflow files as the authority for executable behavior.
 
+## Public Pages presentation evidence
+
+- [Welcome new/old public-page navigation reconciliation (2026-11-13)](public-surface/2026-11-13-welcome-navigation-evidence.md) — dated links, source boundaries, validation method and explicit unverified online behavior.
+
 ## Preserved project history
 
 - [Digital archaeology index](archaeology/ARCHAEOLOGY_INDEX.md) — a living navigation index over preserved project history, phases, milestone records, corrections, and legacy traces.
