@@ -1,5 +1,10 @@
 # Open Research / 开放科研
 
+> **Current bilingual reading guide / 当前双语阅读指引（2026-11-13）**  
+> **中文**：研究判断必须附来源、日期和验证边界，公开门户显示不等于后端执行；这是一项根目录说明校准，不代表执行新任务或更改私有生产者 SOP  
+> **English**: Research conclusions need sources, dates, and validation limits; public portal display is not backend execution. This root-document calibration does not execute a new task or publish private producer SOPs
+
+
 Status: durable open-research production guide
 Scope: repository-level research positioning, research-production method, scholarly-metadata boundaries, and semantic-drift governance
 
@@ -7,7 +12,7 @@ Scope: repository-level research positioning, research-production method, schola
 
 English is the canonical and default language for this open-research contract. Chinese text is provided as an accessibility and interpretation aid. If a wording conflict appears, the English normative text governs; repository evidence and current owning contracts still outrank either translation.
 
-英文是本开放科研契约的默认与规范语言；中文用于辅助理解与可访问性。若中英文表述发生冲突，以英文规范文本为准，但仓库事实与当前 owning contract 的权威仍高于任何翻译。
+英文是本开放科研契约的默认与规范语言；中文用于辅助理解与可访问性；若中英文表述发生冲突，以英文规范文本为准，但仓库事实与当前 owning contract 的权威仍高于任何翻译；
 
 
 ## 1. Authority
@@ -124,6 +129,12 @@ The repository's public open-science surfaces include, where present:
 
 These files support openness, attribution, reuse, citation, review, and archival identity. They do not establish scientific validity by themselves.
 
+### Open research and display evidence / 开放科研与展示来源
+
+**中文**：公开门户上的阶段数字必须说明来源是 raw Git 数据、聚合观察、Pages 前端投影还是独立归档快照，并附时间窗口、可复核路径、源修订和异常状态；门户访问量、GitHub Actions 运行、研究产出与 Zenodo DOI 是不同事实；软件引用元数据不能替代真正的科研验证；历史错误以明确 correction 或后续时间点记录修正，不倒写原始数据
+
+**English**: Stage counts on public pages require an identified source class (raw Git, aggregated observation, frontend projection or archived snapshot), period, inspectable path, revision and uncertainty status. Portal traffic, GitHub Actions, research output and Zenodo DOI are separate evidence classes; citation metadata does not validate research. Correct past errors explicitly, preserving original timepoint records
+
 ## 7. Scholarly metadata discipline
 
 Before a future scholarly-metadata publication or revision, preserve:
@@ -210,8 +221,8 @@ external indexing != repository self-definition
 
 ## 中文摘要
 
-本文件定义的是仓库长期开放科研方法，而不是新的总宪法。共同骨架包括：研究问题、可证伪假设、证据与来源身份、固定对象/版本/环境、实际执行程序、原始观测、反例检查、有界结论、研究增量与复验条件。
+本文件定义的是仓库长期开放科研方法，而不是新的总宪法；共同骨架包括：研究问题、可证伪假设、证据与来源身份、固定对象/版本/环境、实际执行程序、原始观测、反例检查、有界结论、研究增量与复验条件；
 
-仓库仍由自身 implementation、methodology、evidence、history 等原生权威文件定义；OpenAlex、OpenAIRE、Zenodo、DataCite 等外部系统只能派生或传播仓库语义，不能反向定义仓库身份。
+仓库仍由自身 implementation、methodology、evidence、history 等原生权威文件定义；OpenAlex、OpenAIRE、Zenodo、DataCite 等外部系统只能派生或传播仓库语义，不能反向定义仓库身份；
 
-未来 scholarly metadata 应保持 canonical type、one-line positioning、primary domains、non-goals、少量高质量 subjects 与 5–7 个定义性 keywords。若外部分类偏移，先判断是否存在仓库自身歧义；没有歧义则记录为 downstream classifier noise，不为了分类器重写仓库本体。
+未来 scholarly metadata 应保持 canonical type、one-line positioning、primary domains、non-goals、少量高质量 subjects 与 5–7 个定义性 keywords；若外部分类偏移，先判断是否存在仓库自身歧义；没有歧义则记录为 downstream classifier noise，不为了分类器重写仓库本体；

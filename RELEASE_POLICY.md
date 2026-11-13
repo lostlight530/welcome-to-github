@@ -1,5 +1,10 @@
 # Release and Archival Policy
 
+> **Current bilingual reading guide / 当前双语阅读指引（2026-11-13）**  
+> **中文**：Git 当前分支、冻结归档和 DOI 不能混用作现时能力认证；这是一项根目录说明校准，不代表执行新任务或更改私有生产者 SOP  
+> **English**: Current Git state, frozen archives and DOI identifiers cannot substitute for runtime capability validation. This root-document calibration does not execute a new task or publish private producer SOPs
+
+
 This repository treats `main` as the current repository state and release tags as immutable point-in-time snapshots.
 
 ## Policy
@@ -47,6 +52,12 @@ The fourth archived version is [v2026.10-fourteen-day-evidence-checkpoint](https
 - Software-family concept DOI: [10.5281/zenodo.22790907](https://doi.org/10.5281/zenodo.22790907)
 
 Use the version DOI for this exact checkpoint and the concept DOI for the software family. `CITATION.cff` and CodeMeta retain the family identifier and recorded September 16 baseline date. Later changes to `main` belong to subsequent repository state; the checkpoint tag remains unchanged.
+
+### Publication identity versus longitudinal display / 出版身份与长期展示数据
+
+**中文**：本仓公开门户、Yearbook、Horizon／Parallax 的阶段记录以及十仓软件出版物分别有自己的来源和时间窗；阶段展示引用的是来源文件、Git 修订、观察截止时间、原始与派生口径、未执行或失败状态，不因出现新 release 就重新解释历史事实；Git tag 和 Zenodo version DOI 固定所归档的版本字节，concept DOI 仅表示软件家族，当前 `main` 不随之冻结
+
+**English**: The portal, Yearbook, Horizon/Parallax stages and ten-repository software releases have distinct provenance and cutoffs. A stage display cites source path, Git revision, observation time, raw/derived denominator, and unexecuted or failed state; later releases do not rewrite historical observations. Tags and Zenodo version DOIs identify fixed archived objects; concept DOI identifies the family, while `main` continues evolving
 
 ## Open-science reuse and research records
 
