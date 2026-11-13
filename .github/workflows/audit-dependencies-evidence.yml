@@ -1,0 +1,38 @@
+name: Read-only dependency audit evidence 2026-11-13
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/audit-dependencies-evidence.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  locked-dependency-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '24'
+      - name: Audit exact committed package-lock without installation
+        working-directory: .
+        shell: bash
+        run: |
+          node --input-type=module <<'AUDIT_NODE'
+          import { spawnSync } from 'node:child_process';
+          const audit=spawnSync('npm',['audit','--package-lock-only','--json'],{encoding:'utf8',maxBuffer:12*1024*1024,timeout:120000});
+          if(audit.error){console.error('AUDIT_TOOL_ERROR',String(audit.error));process.exit(2);}
+          let report;
+          try{report=JSON.parse(audit.stdout)}catch{console.error('AUDIT_NO_VALID_JSON',audit.stdout.slice(-2000),audit.stderr.slice(-2000));process.exit(2);}
+          if(!report.metadata?.vulnerabilities||!report.vulnerabilities){console.error('AUDIT_RESULT_INCOMPLETE',JSON.stringify(report).slice(0,2500));process.exit(2);}
+          const hits=Object.entries(report.vulnerabilities).map(([name,v])=>({name,severity:v.severity,isDirect:v.isDirect,range:v.range,via:v.via?.map(x=>typeof x==='string'?{transitive:x}:{source:x.name,title:x.title,url:x.url,severity:x.severity,range:x.range,cvss:x.cvss}),effects:v.effects,fixAvailable:v.fixAvailable}));
+          console.log(JSON.stringify({outcome:'LOCKFILE_AUDIT_RECORDED',target:process.cwd(),npmAuditExit:audit.status,totals:report.metadata.vulnerabilities,dependencies:report.metadata.dependencies,findings:hits},null,2));
+          if(audit.status!==0&&audit.status!==1)process.exit(2);
+          AUDIT_NODE
