@@ -75,6 +75,7 @@
 - A2_EVOLUTION_BLOCKS: Nov01–13 source-time decisions inherited and Nov14 separately attached from merged A1→A2; negative predicates remain unchanged; no full 11/14 day-close projection
 - REPOSITORY_EVIDENCE: exact GitHub main `202036bab3a4a790554b083a167861c0dc7b31ff`; D7 original blob `83403f9f1af1e2a05a43e784564676599f379fc3`; D10 original blob `ce601b268f0ca5af9d9b2093b02d4306b9c16fd0`; Nov14 original A2 blob `a8fbf02e1556f6583431653ed810db47b4b8cbd3`; original PR identities #989/#990; current D14 one-file scoped PR #991
 - RUNNER_EVIDENCE: original Draft-head CodeQL/Analyze check-run count 4 (as observed prior to this reconciliation, not native runtime); this updated head requires fresh independent check-run query. No repository-native D14 runner or external effect check executed
+- D14_INDEPENDENT_RUNTIME: `NOT_EXECUTED` — no host session replay, Parallax Python checker, post-fix scheduled NEXUS Apply, or external effect test was run by this review
 - EXTERNAL_EVIDENCE: upstream source claims are inherited from dated Native/A1/A2 sources at their original observation clock; no fresh independent publisher fetch, external TCK, installed SDK or deployment verification executed during this QA
 - TELEMETRY_EVIDENCE: `NOT_COLLECTED`; GitHub merge and PR check-run events are not host production telemetry
 - NEW_FINDINGS: existing Draft missed Audit Log vNext minimum machine fields; same original PR now reconciles expected/observed/unknown and time boundary. Historical D7/D10 not amended
