@@ -11,6 +11,14 @@ Logical Date: 2026-11-14
 Logical Timezone: Asia/Shanghai
 Agent: GPT-6 / GPT_NATIVE / NOT_JULES_REPLAY
 Producer Identity: HUMAN_REQUESTED_GPT_NATIVE
+Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE
+Source Identity: langchain-ai/langgraph@ccfb0a1bf82ac6d56e909ca782779574362bb8c4
+Source Authority For Claim: FIRST_PARTY_IMPLEMENTATION_DIFF / NO_EXECUTION_CLAIM
+Independent Verification: NOT_EXECUTED / SINGLE_UPSTREAM_LINEAGE
+Host Applicability: UNKNOWN / NOT_INSPECTED
+Evidence Upgrade Basis: PRIMARY_CODE_PATCH_ONLY / NO_STRATEGIC_PROMOTION
+Original Execution Status: GPT_NATIVE_BOUNDED_SOURCE_REVIEW_COMPLETED
+Current Path Status: DRAFT_PR_PENDING_REVIEW
 Base Main SHA: 78bffa1ebca74b90ce744cd0a2f16f545a5e2e9d
 Run Identity: welcome-to-github/horizon/H1/2026-11-14/GPT_NATIVE/78bffa1ebca74b90ce744cd0a2f16f545a5e2e9d/langgraph-child-thread-stream-boundary-01
 Execution Time UTC: 2026-11-14 / exact research-start second NOT_CAPTURED
