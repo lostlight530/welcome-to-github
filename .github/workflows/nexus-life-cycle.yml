@@ -42,6 +42,9 @@ jobs:
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
         with:
           python-version: '3.10'
+      - name: Stabilize exact-blob checkout EOL baseline
+        id: checkout_eol
+        run: python docs/brain/checkout_eol_guard.py
       - name: Capture human baseline
         run: python docs/brain/lifecycle_guard.py snapshot --output "$RUNNER_TEMP/lifecycle-before.json"
       - name: Validate runtime contracts
@@ -60,13 +63,13 @@ jobs:
       - name: Publish human lifecycle receipt
         if: always()
         env:
-          VALIDATION_FAILED: ${{ steps.contracts.outcome == 'failure' || steps.ledgers.outcome == 'failure' || steps.readonly.outcome == 'failure' }}
+          VALIDATION_FAILED: ${{ steps.checkout_eol.outcome == 'failure' || steps.contracts.outcome == 'failure' || steps.ledgers.outcome == 'failure' || steps.readonly.outcome == 'failure' }}
           JOB_STATUS: ${{ job.status }}
         run: |
           validation_flag=()
           if [ "$VALIDATION_FAILED" = "true" ]; then validation_flag+=(--validation-failed); fi
           final_sha="$(git rev-parse HEAD 2>/dev/null || printf '%s' "$GITHUB_SHA")"
-          python docs/brain/lifecycle_guard.py receipt --before "$RUNNER_TEMP/lifecycle-before.json" --repository-kind welcome --event-name "$GITHUB_EVENT_NAME" --actor "$GITHUB_ACTOR" --triggering-actor "$GITHUB_TRIGGERING_ACTOR" --base-sha "$GITHUB_SHA" --final-sha "$final_sha" --job-status "$JOB_STATUS" --run-id "$GITHUB_RUN_ID" --run-attempt "$GITHUB_RUN_ATTEMPT" --gate "运行时契约=${{ steps.contracts.outcome }}" --gate "活动账本=${{ steps.ledgers.outcome }}" --gate "只读边界=${{ steps.readonly.outcome }}" --output "$GITHUB_STEP_SUMMARY" "${validation_flag[@]}"
+          python docs/brain/lifecycle_guard.py receipt --before "$RUNNER_TEMP/lifecycle-before.json" --repository-kind welcome --event-name "$GITHUB_EVENT_NAME" --actor "$GITHUB_ACTOR" --triggering-actor "$GITHUB_TRIGGERING_ACTOR" --base-sha "$GITHUB_SHA" --final-sha "$final_sha" --job-status "$JOB_STATUS" --run-id "$GITHUB_RUN_ID" --run-attempt "$GITHUB_RUN_ATTEMPT" --gate "Git 签出基线=${{ steps.checkout_eol.outcome }}" --gate "运行时契约=${{ steps.contracts.outcome }}" --gate "活动账本=${{ steps.ledgers.outcome }}" --gate "只读边界=${{ steps.readonly.outcome }}" --output "$GITHUB_STEP_SUMMARY" "${validation_flag[@]}"
 
   apply:
     name: Scheduled candidate and guarded apply
@@ -92,6 +95,9 @@ jobs:
       - name: Record base world-line
         id: base
         run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Stabilize exact-blob checkout EOL baseline
+        id: checkout_eol
+        run: python docs/brain/checkout_eol_guard.py
       - name: Capture human baseline
         run: python docs/brain/lifecycle_guard.py snapshot --output "$RUNNER_TEMP/lifecycle-before.json"
       - name: Validate runtime contracts
@@ -191,14 +197,14 @@ jobs:
       - name: Publish human lifecycle receipt
         if: always()
         env:
-          VALIDATION_FAILED: ${{ steps.contracts.outcome == 'failure' || steps.ledgers.outcome == 'failure' || steps.graph.outcome == 'failure' || steps.final_verify.outcome == 'failure' || steps.evidence.outcome == 'failure' || steps.boundary.outcome == 'failure' }}
+          VALIDATION_FAILED: ${{ steps.checkout_eol.outcome == 'failure' || steps.contracts.outcome == 'failure' || steps.ledgers.outcome == 'failure' || steps.graph.outcome == 'failure' || steps.final_verify.outcome == 'failure' || steps.evidence.outcome == 'failure' || steps.boundary.outcome == 'failure' }}
           JOB_STATUS: ${{ job.status }}
           BASE_SHA: ${{ steps.base.outputs.sha }}
         run: |
           validation_flag=()
           if [ "$VALIDATION_FAILED" = "true" ]; then validation_flag+=(--validation-failed); fi
           final_sha="$(git rev-parse HEAD 2>/dev/null || printf '%s' "$BASE_SHA")"
-          python docs/brain/lifecycle_guard.py receipt --manifest "$RUNNER_TEMP/lifecycle-manifest.json" --before "$RUNNER_TEMP/lifecycle-before.json" --repository-kind welcome --event-name "$GITHUB_EVENT_NAME" --actor "$GITHUB_ACTOR" --triggering-actor "$GITHUB_TRIGGERING_ACTOR" --base-sha "$BASE_SHA" --final-sha "$final_sha" --job-status "$JOB_STATUS" --run-id "$GITHUB_RUN_ID" --run-attempt "$GITHUB_RUN_ATTEMPT" --gate "运行时契约=${{ steps.contracts.outcome }}" --gate "活动账本=${{ steps.ledgers.outcome }}" --gate "哈希链与图谱=${{ steps.graph.outcome }}" --gate "最终验证=${{ steps.final_verify.outcome }}" --gate "活动来源证据=${{ steps.evidence.outcome }}" --gate "写入边界=${{ steps.boundary.outcome }}" --gate "世界线检查=${{ steps.world_line.outcome }}" --gate "应用步骤=${{ steps.apply_candidate.outcome }}" --output "$GITHUB_STEP_SUMMARY" "${validation_flag[@]}"
+          python docs/brain/lifecycle_guard.py receipt --manifest "$RUNNER_TEMP/lifecycle-manifest.json" --before "$RUNNER_TEMP/lifecycle-before.json" --repository-kind welcome --event-name "$GITHUB_EVENT_NAME" --actor "$GITHUB_ACTOR" --triggering-actor "$GITHUB_TRIGGERING_ACTOR" --base-sha "$BASE_SHA" --final-sha "$final_sha" --job-status "$JOB_STATUS" --run-id "$GITHUB_RUN_ID" --run-attempt "$GITHUB_RUN_ATTEMPT" --gate "Git 签出基线=${{ steps.checkout_eol.outcome }}" --gate "运行时契约=${{ steps.contracts.outcome }}" --gate "活动账本=${{ steps.ledgers.outcome }}" --gate "哈希链与图谱=${{ steps.graph.outcome }}" --gate "最终验证=${{ steps.final_verify.outcome }}" --gate "活动来源证据=${{ steps.evidence.outcome }}" --gate "写入边界=${{ steps.boundary.outcome }}" --gate "世界线检查=${{ steps.world_line.outcome }}" --gate "应用步骤=${{ steps.apply_candidate.outcome }}" --output "$GITHUB_STEP_SUMMARY" "${validation_flag[@]}"
       - name: Preserve lifecycle manifest
         if: always()
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4
