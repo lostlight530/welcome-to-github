@@ -1,3 +1,8 @@
+{"desc":"Python Function","id":"file_docs_brain_checkout_eol_guard_py__func__git","name":"_git","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_checkout_eol_guard_py__func__paths","name":"_paths","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_checkout_eol_guard_py__func__pattern","name":"_pattern","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_checkout_eol_guard_py__func_main","name":"main","type":"code_function"}
+{"desc":"Python Function","id":"file_docs_brain_checkout_eol_guard_py__func_stabilize_checkout","name":"stabilize_checkout","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_cortex_py__func___init__","name":"__init__","type":"code_function"}
 {"desc":"Python Function","id":"file_docs_brain_cortex_py__func__init_db","name":"_init_db","type":"code_function"}
 {"desc":"Append knowledge to the immutable text ledger.","id":"file_docs_brain_cortex_py__func__log_to_jsonl","name":"_log_to_jsonl","type":"code_function"}
@@ -150,6 +155,13 @@
 {"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_partial_keeps_unresolved_work","name":"test_partial_keeps_unresolved_work","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_test_summary_without_log_not_complete","name":"test_summary_without_log_not_complete","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_active_sop_contracts_py__func_valid_maintenance","name":"valid_maintenance","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_checkout_eol_guard_py__func_git","name":"git","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_checkout_eol_guard_py__func_setUp","name":"setUp","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_checkout_eol_guard_py__func_test_actual_post_preflight_change_remains_visible","name":"test_actual_post_preflight_change_remains_visible","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_checkout_eol_guard_py__func_test_exact_blob_exception_is_local_and_idempotent","name":"test_exact_blob_exception_is_local_and_idempotent","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_checkout_eol_guard_py__func_test_real_preflight_change_is_rejected","name":"test_real_preflight_change_is_rejected","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_checkout_eol_guard_py__func_test_staged_preflight_change_is_rejected","name":"test_staged_preflight_change_is_rejected","type":"code_function"}
+{"desc":"Python Function","id":"file_tests_test_checkout_eol_guard_py__func_test_untracked_preflight_change_is_rejected","name":"test_untracked_preflight_change_is_rejected","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func___init__","name":"__init__","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_add_entity","name":"add_entity","type":"code_function"}
 {"desc":"Python Function","id":"file_tests_test_harvester_py__func_connect_entities","name":"connect_entities","type":"code_function"}

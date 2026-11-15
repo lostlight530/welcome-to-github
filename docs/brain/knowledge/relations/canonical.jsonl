@@ -697,6 +697,12 @@
 {"desc":"","dst":"file_docs_brain_brain_config_json_prop_whitelist_Rust-Ownership-Model","relation":"defines","src":"file_docs_brain_brain_config_json"}
 {"desc":"","dst":"file_docs_brain_brain_config_json_prop_whitelist_WebAssembly-Core-Specification","relation":"defines","src":"file_docs_brain_brain_config_json"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"file_docs_brain_brain_config_json_prop_ignore_paths"}
+{"desc":"","dst":"file_docs_brain_checkout_eol_guard_py__class_CheckoutIntegrityError","relation":"defines","src":"file_docs_brain_checkout_eol_guard_py"}
+{"desc":"","dst":"file_docs_brain_checkout_eol_guard_py__func__git","relation":"defines","src":"file_docs_brain_checkout_eol_guard_py"}
+{"desc":"","dst":"file_docs_brain_checkout_eol_guard_py__func__paths","relation":"defines","src":"file_docs_brain_checkout_eol_guard_py"}
+{"desc":"","dst":"file_docs_brain_checkout_eol_guard_py__func__pattern","relation":"defines","src":"file_docs_brain_checkout_eol_guard_py"}
+{"desc":"","dst":"file_docs_brain_checkout_eol_guard_py__func_main","relation":"defines","src":"file_docs_brain_checkout_eol_guard_py"}
+{"desc":"","dst":"file_docs_brain_checkout_eol_guard_py__func_stabilize_checkout","relation":"defines","src":"file_docs_brain_checkout_eol_guard_py"}
 {"desc":"","dst":"file_docs_brain_cortex_py__class_Cortex","relation":"defines","src":"file_docs_brain_cortex_py"}
 {"desc":"","dst":"file_docs_brain_cortex_py__func___init__","relation":"defines","src":"file_docs_brain_cortex_py"}
 {"desc":"","dst":"file_docs_brain_cortex_py__func__init_db","relation":"defines","src":"file_docs_brain_cortex_py"}
@@ -1282,6 +1288,14 @@
 {"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_partial_keeps_unresolved_work","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
 {"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_summary_without_log_not_complete","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
 {"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_valid_maintenance","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_checkout_eol_guard_py__class_CheckoutEolGuardTests","relation":"defines","src":"file_tests_test_checkout_eol_guard_py"}
+{"desc":"","dst":"file_tests_test_checkout_eol_guard_py__func_git","relation":"defines","src":"file_tests_test_checkout_eol_guard_py"}
+{"desc":"","dst":"file_tests_test_checkout_eol_guard_py__func_setUp","relation":"defines","src":"file_tests_test_checkout_eol_guard_py"}
+{"desc":"","dst":"file_tests_test_checkout_eol_guard_py__func_test_actual_post_preflight_change_remains_visible","relation":"defines","src":"file_tests_test_checkout_eol_guard_py"}
+{"desc":"","dst":"file_tests_test_checkout_eol_guard_py__func_test_exact_blob_exception_is_local_and_idempotent","relation":"defines","src":"file_tests_test_checkout_eol_guard_py"}
+{"desc":"","dst":"file_tests_test_checkout_eol_guard_py__func_test_real_preflight_change_is_rejected","relation":"defines","src":"file_tests_test_checkout_eol_guard_py"}
+{"desc":"","dst":"file_tests_test_checkout_eol_guard_py__func_test_staged_preflight_change_is_rejected","relation":"defines","src":"file_tests_test_checkout_eol_guard_py"}
+{"desc":"","dst":"file_tests_test_checkout_eol_guard_py__func_test_untracked_preflight_change_is_rejected","relation":"defines","src":"file_tests_test_checkout_eol_guard_py"}
 {"desc":"","dst":"class_HarvesterContracts","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__class_HarvesterContracts","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__class_RecordingCortex","relation":"defines","src":"file_tests_test_harvester_py"}
