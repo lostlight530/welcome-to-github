@@ -1,0 +1,170 @@
+# ORIGINAL Independent A2 2026-11-17 — welcome-to-github Nov01–17 unified source/effect relation
+
+## Fresh post-A1 merge dependency and monthly identity
+- Task independent-maintenance/A2, not Native A2 or D7/D10/D14/D30, Governance, or retrospective scientific execution
+- MonthStart→N = 2026-11-01..17 Asia/Shanghai, OPEN_MONTH / NOT_NOVEMBER_FINAL
+- Exact new main after original A1 merge: 720bcadb8da2d65a381a831a9b9c2b7f4347478e; A1 canonical `historical-audits/2026-11/2026-11-17-a1-source-content-review.md` exact blob `113cc1e2be5290bb12151c067914737e83701083` freshly reopened, A1 source count and dispositions inspected
+- Previous original month relation `historical-audits/2026-11/2026-11-16-a2-month-relations.md` @ `852ffcb21ccf35c460d8285bcc4a7f8775dcf773` also reopened, maintained as historical source-time record, not rewritten
+- This A2 uses current canonical source paths/blobs and A1's reviewed source boundary, not an abstract statement that an unmerged Draft passed.
+- Date/issuer/runner/revision/review/PR merge/main retention are different proof axes; source reused in multiple facets or stages counts one original publisher.
+- Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- W46 closes 2026-11-15, W47 includes Nov16–17 and is still OPEN; November H5/H6 or A5/A6 FINAL and D30 NOT_DUE.
+- GitHub tree, prior A1/A2 and source SHA reads performed; native checker, external SDK regressions, live effect sink and CI rerun NOT_EXECUTED.
+
+## All current MonthStart→N native and closed-week source relationships
+- SOURCE: `horizon-cortex/2026-11-01-H1-signal-observe.md` @ `222a54ed70d988a1bbea62d7adaedb39193956c4`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-01-H2-horizon-orient.md` @ `fad611776ca2e2a3d1115cfaa15549b9612ac861`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-02-H1-signal-observe.md` @ `2191a059d89803b97ab1a60ed6eb194b90e38c84`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-02-H2-horizon-orient.md` @ `9df70453f43eb2c4f93d6f551f24f04465cd820e`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-03-H1-signal-observe.md` @ `049efd5e69c13e1323c49bcb6e2434c382682d9f`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-03-H2-horizon-orient.md` @ `48d6adcebde954cde867a543bc4c6987bd4d42e9`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-04-H1-signal-observe.md` @ `29c2c1e272bf7515e11c5963921f08e1665203a0`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-04-H2-horizon-orient.md` @ `a4784fcf8bef0f61bae78db70cdc0fa4e22e3b49`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-05-H1-signal-observe.md` @ `0b0416d9072c31ebba5775ca13ba6327899b9631`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-05-H2-horizon-orient.md` @ `12f9dd5d832db737b6571ec1700e2095422cdbdd`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-06-H1-signal-observe.md` @ `f15e49cbd8c70382440c25716ed3fd65dc7f689d`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-06-H2-horizon-orient.md` @ `ff17f12210a9a3a22711adcac42baf6e909c2b54`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-07-H1-signal-observe.md` @ `2ddb1f398da3986fd35ff76a063420ccb12e2d08`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-07-H2-horizon-orient.md` @ `8b5c44948684eaacae340762ec1cfa3d7d97c6ff`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-08-H1-signal-observe.md` @ `abdebb8ca1c3ba1beada2d52ceaa425a53589c9f`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-08-H2-horizon-orient.md` @ `98b93ef1045df39a57b667774a3ec588bbe4d9d3`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-09-H1-signal-observe.md` @ `7710ae9a1be335fccf74469990d078e7cde62f8d`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-09-H2-horizon-orient.md` @ `796b699891f5317d6ee7ef891783fc38aa37e63b`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-10-H1-signal-observe.md` @ `5dec998a414f7df01817c400ae1464e2fdc40428`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-10-H2-horizon-orient.md` @ `34a3acd60ca726512d880cd51ad029d4135bbba4`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-11-H1-signal-observe.md` @ `0d30fd3e395a306aa96daf2b03adebd6390cdcee`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-11-H2-horizon-orient.md` @ `687d32daee12f846d204cc53c8b23531d19068bc`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-12-H1-signal-observe.md` @ `fd635676b30b7b26cd80b696c2876c70297bb1a7`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-12-H2-horizon-orient.md` @ `34fdad8a1da119b7a891c3a8f0a447c9235b9393`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-13-H1-signal-observe.md` @ `146942727b2afe35c137b560fce5a8dcfb6d568f`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-13-H2-horizon-orient.md` @ `91e170ca9d6ab5be94f537b34e6b1af92150f756`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-14-H1-signal-observe.md` @ `855f8bf483da409aea65770d45233be524a0afb6`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-14-H2-horizon-orient.md` @ `acd6f7619ce47d7e88420487f426212dc774323d`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-15-H1-signal-observe.md` @ `e561022cb1afa4faac0fb2d43c0bb4f46c1ca5f7`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-15-H2-horizon-orient.md` @ `13510b9b739ee5f615b21f0776147401b854391a`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-16-H1-signal-observe.md` @ `ff6226722564889018d383dc2e8e03426c30c2bc`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-16-H2-horizon-orient.md` @ `a7017b96b7a214d1bb9e6451188c619c6ec2442a`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-17-H1-signal-observe.md` @ `c8c5044bd09b594d3d88b9aa4f9e81c2ff33d482`; source path/blob preserved in current main; NEW_SINCE_A1_CUTOFF / NOT_RETROACTIVE_SOURCE
+  - Relation: PINNED_EXTERNAL_SOURCE_OR_RISK (local adoption/incident and measured effect not observed); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-11-17-H2-horizon-orient.md` @ `322fa9bd634dd7afb58012557dc3a30f34fd8658`; source path/blob preserved in current main; NEW_SINCE_A1_CUTOFF / NOT_RETROACTIVE_SOURCE
+  - Relation: DERIVED_SAME_DATE_FROM_PRIOR_NATIVE_STAGE (upstream issuer not independent; no host promotion); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-W44-H3-position-decide.md` @ `dc443f774c90cddb4573e626d793854407a1e89c`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: CLOSED_WEEKLY_REVIEW (not independently executed Daily; no retrospective inclusion of Nov16/Nov17); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-W44-H4-narrative-act.md` @ `587bf13858e474eb5213da7954cc6959bd6dd212`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: CLOSED_WEEKLY_REVIEW (not independently executed Daily; no retrospective inclusion of Nov16/Nov17); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-W45-H3-position-decide.md` @ `5414cfa0d7910daaa8bc486225569e0ceeecf5e6`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: CLOSED_WEEKLY_REVIEW (not independently executed Daily; no retrospective inclusion of Nov16/Nov17); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-W45-H4-narrative-act.md` @ `0ec8104d8d4463b617cc57d44863ed59cb46daec`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: CLOSED_WEEKLY_REVIEW (not independently executed Daily; no retrospective inclusion of Nov16/Nov17); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-W46-H3-position-decide.md` @ `286a2a5c38b523515706fb4851ff2299979076f8`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: CLOSED_WEEKLY_REVIEW (not independently executed Daily; no retrospective inclusion of Nov16/Nov17); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `horizon-cortex/2026-W46-H4-narrative-act.md` @ `f9cd033a150c2edfd61f864b4107c541d2005f0f`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: CLOSED_WEEKLY_REVIEW (not independently executed Daily; no retrospective inclusion of Nov16/Nov17); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-01.md` @ `77618bc97ebba9eaab52449c238afbe0fbd3d0e7`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-02.md` @ `a4872c0256e89aad1ba46b671559f0eca7157378`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-03.md` @ `0bedc7c2150a3322d765fd5582bd7ee726644580`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-04.md` @ `d6a4b539b9a4bf4108e4d7fdbfc848a2a8d64525`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-05.md` @ `d6acfde25a66d68e0cecdbad96052288f2b5b108`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-06.md` @ `8ade5166613d951423d8de45d0007b2ca5303376`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-07.md` @ `a0c0953dbb1b0e460691e53cc44e0d620c031ee2`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-08.md` @ `a3bd5244aa72a9b1faf5a4f46a090ef1be8e9ec0`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-09.md` @ `9318ab1eb0fdf5a8cbe942aaf5d793a309c82fe3`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-10.md` @ `64a40369980bc1f49ea08104a458a1f1f9e283f3`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-11.md` @ `758d89cdafea436ab3cd880499c51a2bfc7c9b03`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-12.md` @ `9bf8fdf823486b72e9003715fcf062f257bab130`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-13.md` @ `6fad45e4b3165afb06d6861e36b62a7d19f524ef`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-14.md` @ `1f9beac5c8071fea216206072cc6655d67e9a8ac`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-15.md` @ `291daf56b04a999b8e21b911cde8aca3486a8a0d`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-16.md` @ `9c636de77dedb99a56d53491252ab347998a25e9`; source path/blob preserved in current main; EXACT_MERGED_A1_CUSTODY
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+- SOURCE: `parallax/records/2026-11/2026-11-17.md` @ `1d97042669f6e2394ec4c3fac60b809dd7dc0acd`; source path/blob preserved in current main; NEW_SINCE_A1_CUTOFF / NOT_RETROACTIVE_SOURCE
+  - Relation: SEPARATE_BOUNDED_RESEARCH_AND_EFFECT_PLANE (not a second native orientation or an effect receipt); Horizon H1 external-source observation -> same-day H2 bounded interpretation, separately Parallax hypothesis trial; host NEXUS adopted/effect remains UNKNOWN
+
+## Day-by-day unified monthly relationship
+- 2026-11-01: 3 canonical dated source files on current main; 2026-11-01-H1-signal-observe.md / 2026-11-01-H2-horizon-orient.md / 2026-11-01.md; source identity and executed effect remain separate
+- 2026-11-02: 3 canonical dated source files on current main; 2026-11-02-H1-signal-observe.md / 2026-11-02-H2-horizon-orient.md / 2026-11-02.md; source identity and executed effect remain separate
+- 2026-11-03: 3 canonical dated source files on current main; 2026-11-03-H1-signal-observe.md / 2026-11-03-H2-horizon-orient.md / 2026-11-03.md; source identity and executed effect remain separate
+- 2026-11-04: 3 canonical dated source files on current main; 2026-11-04-H1-signal-observe.md / 2026-11-04-H2-horizon-orient.md / 2026-11-04.md; source identity and executed effect remain separate
+- 2026-11-05: 3 canonical dated source files on current main; 2026-11-05-H1-signal-observe.md / 2026-11-05-H2-horizon-orient.md / 2026-11-05.md; source identity and executed effect remain separate
+- 2026-11-06: 3 canonical dated source files on current main; 2026-11-06-H1-signal-observe.md / 2026-11-06-H2-horizon-orient.md / 2026-11-06.md; source identity and executed effect remain separate
+- 2026-11-07: 3 canonical dated source files on current main; 2026-11-07-H1-signal-observe.md / 2026-11-07-H2-horizon-orient.md / 2026-11-07.md; source identity and executed effect remain separate
+- 2026-11-08: 3 canonical dated source files on current main; 2026-11-08-H1-signal-observe.md / 2026-11-08-H2-horizon-orient.md / 2026-11-08.md; source identity and executed effect remain separate
+- 2026-11-09: 3 canonical dated source files on current main; 2026-11-09-H1-signal-observe.md / 2026-11-09-H2-horizon-orient.md / 2026-11-09.md; source identity and executed effect remain separate
+- 2026-11-10: 3 canonical dated source files on current main; 2026-11-10-H1-signal-observe.md / 2026-11-10-H2-horizon-orient.md / 2026-11-10.md; source identity and executed effect remain separate
+- 2026-11-11: 3 canonical dated source files on current main; 2026-11-11-H1-signal-observe.md / 2026-11-11-H2-horizon-orient.md / 2026-11-11.md; source identity and executed effect remain separate
+- 2026-11-12: 3 canonical dated source files on current main; 2026-11-12-H1-signal-observe.md / 2026-11-12-H2-horizon-orient.md / 2026-11-12.md; source identity and executed effect remain separate
+- 2026-11-13: 3 canonical dated source files on current main; 2026-11-13-H1-signal-observe.md / 2026-11-13-H2-horizon-orient.md / 2026-11-13.md; source identity and executed effect remain separate
+- 2026-11-14: 3 canonical dated source files on current main; 2026-11-14-H1-signal-observe.md / 2026-11-14-H2-horizon-orient.md / 2026-11-14.md; source identity and executed effect remain separate
+- 2026-11-15: 3 canonical dated source files on current main; 2026-11-15-H1-signal-observe.md / 2026-11-15-H2-horizon-orient.md / 2026-11-15.md; source identity and executed effect remain separate
+- 2026-11-16: 3 canonical dated source files on current main; 2026-11-16-H1-signal-observe.md / 2026-11-16-H2-horizon-orient.md / 2026-11-16.md; source identity and executed effect remain separate
+- 2026-11-17: 3 canonical dated source files on current main; 2026-11-17-H1-signal-observe.md / 2026-11-17-H2-horizon-orient.md / 2026-11-17.md; source identity and executed effect remain separate
+
+## Evidence graph state transition and counterevidence
+- Nov01–15: retained source identity and original producer claims, A1 exact blob inherited where matched; no re-run or invented novelty.
+- Nov16: already present on 2026-11-16 A2 prior audit, still source/effect bounded; current-day matching does not add independent issuer.
+- Nov17: newly merged Native H1/H2 or A1/A2, plus separate contemporaneous research, now visible on main; current relation is monthly append, not natural month FINAL.
+- A newly merged H2/A2 does not retroactively upgrade its H1/A1, does not confer source independence, and does not rewrite original Draft status at historical author time.
+- A failed test, uncertain release, tool-side outcome and local production adoption each require distinct actual receipts; source review cannot solve any without them.
+- Dependency state is valid only when exact upstream file SHA and merged PR are read from fresh main; this original A2 source-custody chain meets the documentary dependency only.
+- Prior original A1 numeric additions are a separate final-merged-PR record and cannot be combined with these A2 additions.
+- No same-file historical rewriting, no local incident claim, and no host kernel/protocol modification without observed evidence.
+
+## EVIDENCE_DELTA
+- NEW_EVIDENCE: 3 Nov17 current native/research source paths added to full monthly relation, exact blobs captured
+- CORRECTED_INTERPRETATION: same publication lineage H1→H2/A1→A2 is source interpretation dependency, not independent external verification.
+- UNCHANGED_BOUNDARY: upstream source != host adoption, research reference != verified external effect.
+- NEW_COUNTEREVIDENCE: no installed local SDK/runtime, no authoritative sink receipt and no paired negative control restrict any monthly success promotion.
+- UNKNOWN_RETAINED: external runtime test effect, source release version, current deployment and long-lived memory/doctrine authority.
+- NEXT_RETEST_CONDITION: run exact source-revision paired controls, capture source/attempt/store IDs and actual stdout/stderr/exit plus trusted effect readback.
+
+## Acceptance and governance
+- Exactly one original A2 PR, GitHub numeric additions >=100 checked independently; current source list size 57, not 57 independent scientific discoveries.
+- A2 is month-to-date relation version, not FINAL, and no native source or historical original is overwritten.
+- No Human reviewer APPROVE, native CI pass or external experiment claimed unless exact GitHub or runner receipt is separately observed.
