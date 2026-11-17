@@ -1,0 +1,168 @@
+# ORIGINAL Independent A1 2026-11-17 — welcome-to-github MonthStart→N−1 full source custody
+
+## Identity, time boundary, source authority
+- Task: independent-maintenance/A1; not any Native task named A1, not A2, D7/D10/D14/D30, Governance or a new scientific production run
+- Repository: `lostlight530/welcome-to-github`; precise start main commit `262a9867d895962f5d80c8342bb857fb1632df13`; logical cutoff `2026-11-01..2026-11-16` Asia/Shanghai; N is 2026-11-17
+- Current main Git tree: truncated=false; full tree entries=1536
+- Previous original independent A1: `historical-audits/2026-11/2026-11-16-a1-source-content-review.md` @ `abe81a0096b15991fb0a898fc2d50a5819c22bc7`; read actual prior body from current main; same SHA alone proves retained content, not earlier execution outcome
+- Source-scoped method: derive applicable November Daily and closed Weekly file denominator from current Git tree; match exact current path+Git blob against preceding explicit A1 custody before inheriting; never infer host adoption, independent runtime or full test from file presence
+- Current corpus count: 54 distinct source path(s), with 49 exact inherited path/blob matches and 5 new or week-boundary sources with direct body inspection and bounded state adjudication; ordinary Daily expected baseline 48
+- Relevant invariant: Horizon external source observation and orientation are not host NEXUS adoption; Parallax distinct falsifiable trial must retain independent run and counterexample
+- Scope excludes today's Nov17 Native H1/H2/Aegis/Parallax/Ballast; those belong to independent A2 after exact A1 merge, not to N−1 A1
+- No Native checker, external SDK runtime, real effect sink, repo test suite or Actions process was executed by this independent A1; GitHub tree/previous audit read EXECUTED, scientific or operational inference bounded
+- W45/W46 are completed ISO weeks and W47 is in progress; November natural Monthly FINAL and D30 remain NOT_DUE; D7/D10/D14 have distinct audit identities
+
+## Complete canonical source register and explicit per-file disposition
+- **SOURCE:** `horizon-cortex/2026-11-01-H1-signal-observe.md` @ `222a54ed70d988a1bbea62d7adaedb39193956c4`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-01-H2-horizon-orient.md` @ `fad611776ca2e2a3d1115cfaa15549b9612ac861`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-02-H1-signal-observe.md` @ `2191a059d89803b97ab1a60ed6eb194b90e38c84`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-02-H2-horizon-orient.md` @ `9df70453f43eb2c4f93d6f551f24f04465cd820e`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-03-H1-signal-observe.md` @ `049efd5e69c13e1323c49bcb6e2434c382682d9f`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-03-H2-horizon-orient.md` @ `48d6adcebde954cde867a543bc4c6987bd4d42e9`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-04-H1-signal-observe.md` @ `29c2c1e272bf7515e11c5963921f08e1665203a0`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-04-H2-horizon-orient.md` @ `a4784fcf8bef0f61bae78db70cdc0fa4e22e3b49`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-05-H1-signal-observe.md` @ `0b0416d9072c31ebba5775ca13ba6327899b9631`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-05-H2-horizon-orient.md` @ `12f9dd5d832db737b6571ec1700e2095422cdbdd`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-06-H1-signal-observe.md` @ `f15e49cbd8c70382440c25716ed3fd65dc7f689d`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-06-H2-horizon-orient.md` @ `ff17f12210a9a3a22711adcac42baf6e909c2b54`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-07-H1-signal-observe.md` @ `2ddb1f398da3986fd35ff76a063420ccb12e2d08`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-07-H2-horizon-orient.md` @ `8b5c44948684eaacae340762ec1cfa3d7d97c6ff`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-08-H1-signal-observe.md` @ `abdebb8ca1c3ba1beada2d52ceaa425a53589c9f`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-08-H2-horizon-orient.md` @ `98b93ef1045df39a57b667774a3ec588bbe4d9d3`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-09-H1-signal-observe.md` @ `7710ae9a1be335fccf74469990d078e7cde62f8d`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-09-H2-horizon-orient.md` @ `796b699891f5317d6ee7ef891783fc38aa37e63b`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-10-H1-signal-observe.md` @ `5dec998a414f7df01817c400ae1464e2fdc40428`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-10-H2-horizon-orient.md` @ `34a3acd60ca726512d880cd51ad029d4135bbba4`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-11-H1-signal-observe.md` @ `0d30fd3e395a306aa96daf2b03adebd6390cdcee`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-11-H2-horizon-orient.md` @ `687d32daee12f846d204cc53c8b23531d19068bc`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-12-H1-signal-observe.md` @ `fd635676b30b7b26cd80b696c2876c70297bb1a7`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-12-H2-horizon-orient.md` @ `34fdad8a1da119b7a891c3a8f0a447c9235b9393`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-13-H1-signal-observe.md` @ `146942727b2afe35c137b560fce5a8dcfb6d568f`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-13-H2-horizon-orient.md` @ `91e170ca9d6ab5be94f537b34e6b1af92150f756`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-14-H1-signal-observe.md` @ `855f8bf483da409aea65770d45233be524a0afb6`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-14-H2-horizon-orient.md` @ `acd6f7619ce47d7e88420487f426212dc774323d`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-15-H1-signal-observe.md` @ `e561022cb1afa4faac0fb2d43c0bb4f46c1ca5f7`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; first-stage observation, not a deploy or local incident
+- **SOURCE:** `horizon-cortex/2026-11-15-H2-horizon-orient.md` @ `13510b9b739ee5f615b21f0776147401b854391a`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; interpretive downstream, not a second independent issuer
+- **SOURCE:** `horizon-cortex/2026-11-16-H1-signal-observe.md` @ `ff6226722564889018d383dc2e8e03426c30c2bc`
+  - **Disposition:** DIRECT_SOURCE_READ / upstream ADK default-on EXPERIMENTAL flag, source identity pinned; SDK runtime NOT_EXECUTED; no source-time overwrite or local runtime promotion
+- **SOURCE:** `horizon-cortex/2026-11-16-H2-horizon-orient.md` @ `a7017b96b7a214d1bb9e6451188c619c6ec2442a`
+  - **Disposition:** DIRECT_SOURCE_READ / same Google ADK lineage as H1, source-only qualification; NO_HOST_DECISION and SDK NOT_EXECUTED; no source-time overwrite or local runtime promotion
+- **SOURCE:** `horizon-cortex/2026-W44-H3-position-decide.md` @ `dc443f774c90cddb4573e626d793854407a1e89c`
+  - **Disposition:** DIRECT_SOURCE_READ / W44 includes Oct26–Nov01, DEGRADED and NO_DECISION; Oct27 original provenance UNKNOWN retained; no source-time overwrite or local runtime promotion
+- **SOURCE:** `horizon-cortex/2026-W44-H4-narrative-act.md` @ `587bf13858e474eb5213da7954cc6959bd6dd212`
+  - **Disposition:** DIRECT_SOURCE_READ / W44 H3 NO_DECISION inherited as NO_ACTIONABLE_DECISION, no host action executed; no source-time overwrite or local runtime promotion
+- **SOURCE:** `horizon-cortex/2026-W45-H3-position-decide.md` @ `5414cfa0d7910daaa8bc486225569e0ceeecf5e6`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; closed-week inference preserves Daily source lineage
+- **SOURCE:** `horizon-cortex/2026-W45-H4-narrative-act.md` @ `0ec8104d8d4463b617cc57d44863ed59cb46daec`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; closed-week handoff is not host modification
+- **SOURCE:** `horizon-cortex/2026-W46-H3-position-decide.md` @ `286a2a5c38b523515706fb4851ff2299979076f8`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; closed-week inference preserves Daily source lineage
+- **SOURCE:** `horizon-cortex/2026-W46-H4-narrative-act.md` @ `f9cd033a150c2edfd61f864b4107c541d2005f0f`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; closed-week handoff is not host modification
+- **SOURCE:** `parallax/records/2026-11/2026-11-01.md` @ `77618bc97ebba9eaab52449c238afbe0fbd3d0e7`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-02.md` @ `a4872c0256e89aad1ba46b671559f0eca7157378`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-03.md` @ `0bedc7c2150a3322d765fd5582bd7ee726644580`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-04.md` @ `d6a4b539b9a4bf4108e4d7fdbfc848a2a8d64525`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-05.md` @ `d6acfde25a66d68e0cecdbad96052288f2b5b108`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-06.md` @ `8ade5166613d951423d8de45d0007b2ca5303376`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-07.md` @ `a0c0953dbb1b0e460691e53cc44e0d620c031ee2`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-08.md` @ `a3bd5244aa72a9b1faf5a4f46a090ef1be8e9ec0`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-09.md` @ `9318ab1eb0fdf5a8cbe942aaf5d793a309c82fe3`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-10.md` @ `64a40369980bc1f49ea08104a458a1f1f9e283f3`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-11.md` @ `758d89cdafea436ab3cd880499c51a2bfc7c9b03`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-12.md` @ `9bf8fdf823486b72e9003715fcf062f257bab130`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-13.md` @ `6fad45e4b3165afb06d6861e36b62a7d19f524ef`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-14.md` @ `1f9beac5c8071fea216206072cc6655d67e9a8ac`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-15.md` @ `291daf56b04a999b8e21b911cde8aca3486a8a0d`
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; bounded falsification, not NEXUS runtime
+- **SOURCE:** `parallax/records/2026-11/2026-11-16.md` @ `9c636de77dedb99a56d53491252ab347998a25e9`
+  - **Disposition:** DIRECT_SOURCE_READ / predicate-scoped GitHub PR search versus named-path identity, PARTIAL; full Parallax checker NOT_EXECUTED; no source-time overwrite or local runtime promotion
+
+## Logical-day coverage and observed absence gate
+- 2026-11-01: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-02: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-03: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-04: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-05: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-06: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-07: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-08: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-09: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-10: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-11: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-12: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-13: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-14: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-15: 3 dated native source object(s) in current main, exact blob identities itemized above; historical dispositions inherited only on exact path/blob; independent issuer/run credit unchanged
+- 2026-11-16: 3 dated native source object(s) in current main, exact blob identities itemized above; new cutoff content requires later origin-specific retest; independent issuer/run credit unchanged
+- Days with fewer than three distinct Daily sources in the current tree: NONE; if an expected file is absent, that is a scoped input gap rather than a license to fabricate execution
+- Closed weekly decisions are separate files listed above; a W46 H3/H4 or A3/A4 record aggregates earlier dates and is NOT another Daily source issuer
+- No claim is made that these source paths have been newly reproduced; SHA inheritance checks identity and preservation only
+
+## State interpretation, counterevidence and corrections
+- SOURCE/CURRENT_RETAINED: recorded exact blob SHA for every present in-scope file; historical and current version are not silently collapsed
+- HISTORICAL_RUN/PRODUCER: preserved from each original record and previous full A1 judgment; this A1 did not rerun the source day's native workload
+- EXTERNAL EVIDENCE: upstream publisher, original version/commit, source claim and deployment/test remain separate; merely citing a first-party patch does not prove this host installed it
+- COUNTEREVIDENCE: a correct file digest can coexist with invalid empirical interpretation, a blocked runner, failed effect write, absent source independence or uncertain host applicability
+- PERIOD RELATION: W46 source coverage is a closed-week aggregate, not evidence that Nov16 was part of W46; later merged-file visibility does not retroactively move the event date
+- RETENTION: original files are not modified; any historical source-time inconsistency must receive a forward correction with original claim and exact revision retained
+- DISP: prior exact blob values support INHERITED_NO_FOLLOW_UP; new cutoff or mismatched file requires explicit further source review, never forced semantic PASS
+- DIRECT_REVIEWED_NEW_OR_W44: 5 exact current-main source bodies; this is source content inspection, not test execution
+- No confirmed defect in native owners is repaired here; only a new standalone original A1 source-custody record is proposed
+
+## EVIDENCE_DELTA
+- NEW_EVIDENCE: 2026-11-16 enters A1's eligible source cutoff and the complete current-main path/blob roster now has 54 applicable entries
+- CORRECTED_INTERPRETATION: source continuity and original run success are separate, and recent PR merge does not prove runtime tests passed
+- UNCHANGED_BOUNDARY: Native Production != Independent A1 != Independent A2 != Periodic Audit != Governance
+- NEW_COUNTEREVIDENCE: inherited producer text may be conditional or BLOCKED; first-party patches and weekly aggregation do not establish local measured effect
+- UNKNOWN_RETAINED: claim-specific external source reproduction, current SDK/runtime status, actual host effects and all unexecuted checks
+- NEXT_RETEST_CONDITION: precise revision, source-dependent negative control, authorized runner/remote effect receipt, stdout/stderr/exit, and complete checker result before semantic promotion
+
+## Delivery gate
+- Proposed original A1 only; merge subject to exact-head refresh and human authorization. Numeric GitHub additions must be checked on final original PR independently (>=100) and still cannot certify substantive quality
+- A2 is blocked until this exact original A1 PR is merged and its actual file/blob re-read from the new main
+- Producer provenance and failed/unknown statuses must survive all later correction or successor PRs
