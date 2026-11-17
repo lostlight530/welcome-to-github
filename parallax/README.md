@@ -61,7 +61,7 @@ CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录
 
 ## 当前研究边界 — 2026-11-17
 
-Two filtered collection queries returned zero while named README and checker reads succeeded and the November 17 pre-create Daily path returned 404. GitHub publisher one, PARTIAL, native checker NOT_EXECUTED, Daily 118 / Special 17 / batches 135 / windows 113 / Audits 9, November 17/17 arrived dates, no CASE/NOTES/Special/Audit promotion
+At the 2026-11-17 pre-branch producer cut, two filtered collection queries returned zero while named README and checker reads succeeded and the November 17 pre-create Daily path returned 404. At a later same-day independent review cut, PR #1004 and its Parallax branch were directly visible; the original producer head had four successful CodeQL check runs and one successful dynamic-event Actions run, while legacy statuses and the PR-only workflow projection were empty. Different access cuts and execution interfaces are not interchangeable. GitHub publisher one, PARTIAL, exact native Parallax checker NOT_EXECUTED, Daily 118 / Special 17 / batches 135 / windows 113 / Audits 9, November 17/17 arrived dates, no CASE/NOTES/Special/Audit promotion
 
 `FILTERED_COLLECTION_ZERO != NAMED_ARTIFACT_ABSENCE`
 
