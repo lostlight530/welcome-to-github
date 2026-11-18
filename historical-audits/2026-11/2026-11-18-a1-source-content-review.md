@@ -1,0 +1,291 @@
+# ORIGINAL Independent A1 2026-11-18 — welcome-to-github complete MonthStart→N−1 source and content review
+
+## Identity and authority — current original delivery, not a Native task
+- Repository: `lostlight530/welcome-to-github`; role: `independent-maintenance/A1`; 2026-11-18 Asia/Shanghai logical date
+- A1 source cutoff: `2026-11-01..2026-11-17`, not 2026-11-18; A2 inherits today's source only after this original A1 merges
+- Fresh main at start: `2d0dd7b6466971d81bcb008f13adce36c624fcd0`; complete recursive tree `truncated=false`, committed blobs 1546
+- Previous A1 actual source: `historical-audits/2026-11/2026-11-17-a1-source-content-review.md` @ `113cc1e2be5290bb12151c067914737e83701083`; prior A2: `historical-audits/2026-11/2026-11-17-a2-month-relations.md` @ `11d23d0e7350e1b2ca4167ee6959872605e7501e`
+- Provenance: GPT-6 / GPT_NATIVE / INDEPENDENT_MAINTENANCE_A1 / HUMAN_REQUESTED, not Jules replay; source files retain original authorship
+- Collision preflight: `0` open PR found in this repository at capture; no same-day A1 canonical path at start
+- Applicable native file denominator: `57` / explicit Daily expected 51 plus closed W44/W45/W46 weekly; missing expected Daily `0`
+- Exact path+blob matched previous original A1: `54`; new/drifted and personally reopened now: `3`
+- Method: compare all current canonical paths and blob identities with the previous full A1 reviewer ledger, carry forward a conclusion only for an exact path/blob match; for new or drifted source reopen its actual text and keep its degraded state
+- Source file presence and prior auditor text establish documentary custody only, not upstream experiment, actual Native runner, remote effect, reviewer approval or scientific accuracy
+- W44/W45/W46 weekly records are closed; W47 2026-11-16..22 is OPEN; 2026-11 Monthly FINAL and D30 NOT_DUE; D7/D10/D14 remain independent, not this A1
+- This review did not execute full repo checkers, Parallax/Ballast live runner, SDK/TCK, real network agent host, external effect sink or scientific reproduction; GitHub main/tree/current content reads are actually performed
+
+## Complete canonical native source denominator — exact path/blob and explicit per-file disposition
+- **SOURCE:** `horizon-cortex/2026-11-01-H1-signal-observe.md` @ `222a54ed70d988a1bbea62d7adaedb39193956c4` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-01-H2-horizon-orient.md` @ `fad611776ca2e2a3d1115cfaa15549b9612ac861` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-02-H1-signal-observe.md` @ `2191a059d89803b97ab1a60ed6eb194b90e38c84` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-02-H2-horizon-orient.md` @ `9df70453f43eb2c4f93d6f551f24f04465cd820e` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-03-H1-signal-observe.md` @ `049efd5e69c13e1323c49bcb6e2434c382682d9f` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-03-H2-horizon-orient.md` @ `48d6adcebde954cde867a543bc4c6987bd4d42e9` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-04-H1-signal-observe.md` @ `29c2c1e272bf7515e11c5963921f08e1665203a0` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-04-H2-horizon-orient.md` @ `a4784fcf8bef0f61bae78db70cdc0fa4e22e3b49` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-05-H1-signal-observe.md` @ `0b0416d9072c31ebba5775ca13ba6327899b9631` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-05-H2-horizon-orient.md` @ `12f9dd5d832db737b6571ec1700e2095422cdbdd` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-06-H1-signal-observe.md` @ `f15e49cbd8c70382440c25716ed3fd65dc7f689d` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-06-H2-horizon-orient.md` @ `ff17f12210a9a3a22711adcac42baf6e909c2b54` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-07-H1-signal-observe.md` @ `2ddb1f398da3986fd35ff76a063420ccb12e2d08` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-07-H2-horizon-orient.md` @ `8b5c44948684eaacae340762ec1cfa3d7d97c6ff` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-08-H1-signal-observe.md` @ `abdebb8ca1c3ba1beada2d52ceaa425a53589c9f` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-08-H2-horizon-orient.md` @ `98b93ef1045df39a57b667774a3ec588bbe4d9d3` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-09-H1-signal-observe.md` @ `7710ae9a1be335fccf74469990d078e7cde62f8d` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-09-H2-horizon-orient.md` @ `796b699891f5317d6ee7ef891783fc38aa37e63b` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-10-H1-signal-observe.md` @ `5dec998a414f7df01817c400ae1464e2fdc40428` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-10-H2-horizon-orient.md` @ `34a3acd60ca726512d880cd51ad029d4135bbba4` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-11-H1-signal-observe.md` @ `0d30fd3e395a306aa96daf2b03adebd6390cdcee` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-11-H2-horizon-orient.md` @ `687d32daee12f846d204cc53c8b23531d19068bc` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-12-H1-signal-observe.md` @ `fd635676b30b7b26cd80b696c2876c70297bb1a7` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-12-H2-horizon-orient.md` @ `34fdad8a1da119b7a891c3a8f0a447c9235b9393` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-13-H1-signal-observe.md` @ `146942727b2afe35c137b560fce5a8dcfb6d568f` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-13-H2-horizon-orient.md` @ `91e170ca9d6ab5be94f537b34e6b1af92150f756` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-14-H1-signal-observe.md` @ `855f8bf483da409aea65770d45233be524a0afb6` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-14-H2-horizon-orient.md` @ `acd6f7619ce47d7e88420487f426212dc774323d` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-15-H1-signal-observe.md` @ `e561022cb1afa4faac0fb2d43c0bb4f46c1ca5f7` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-15-H2-horizon-orient.md` @ `13510b9b739ee5f615b21f0776147401b854391a` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-16-H1-signal-observe.md` @ `ff6226722564889018d383dc2e8e03426c30c2bc` — Native observe
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-16-H2-horizon-orient.md` @ `a7017b96b7a214d1bb9e6451188c619c6ec2442a` — Native orient
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-11-17-H1-signal-observe.md` @ `c8c5044bd09b594d3d88b9aa4f9e81c2ff33d482` — Native observe
+  - **Disposition:** NEW_OR_DRIFTED_SOURCE / DIRECT_TEXT_READ / RETAINS_NOT_EXECUTED; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** first-stage upstream observation is not local host adoption or live risk occurrence; direct read 91 lines, first heading `# H1 Daily Signal Observe — 2026-11-17 / A2A streaming artifact closure`
+- **SOURCE:** `horizon-cortex/2026-11-17-H2-horizon-orient.md` @ `322fa9bd634dd7afb58012557dc3a30f34fd8658` — Native orient
+  - **Disposition:** NEW_OR_DRIFTED_SOURCE / DIRECT_TEXT_READ / RETAINS_NOT_EXECUTED; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** dependent interpretation is not an independently issued source or measured defense; direct read 82 lines, first heading `# H2 Daily Horizon Orient — 2026-11-17 / A2A artifact boundary and false-completion controls`
+- **SOURCE:** `horizon-cortex/2026-W44-H3-position-decide.md` @ `dc443f774c90cddb4573e626d793854407a1e89c` — CLOSED weekly native decision/action
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** weekly review is not an extra publisher, daily data source or November month-final decision; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-W44-H4-narrative-act.md` @ `587bf13858e474eb5213da7954cc6959bd6dd212` — CLOSED weekly native decision/action
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** weekly review is not an extra publisher, daily data source or November month-final decision; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-W45-H3-position-decide.md` @ `5414cfa0d7910daaa8bc486225569e0ceeecf5e6` — CLOSED weekly native decision/action
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** weekly review is not an extra publisher, daily data source or November month-final decision; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-W45-H4-narrative-act.md` @ `0ec8104d8d4463b617cc57d44863ed59cb46daec` — CLOSED weekly native decision/action
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** weekly review is not an extra publisher, daily data source or November month-final decision; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-W46-H3-position-decide.md` @ `286a2a5c38b523515706fb4851ff2299979076f8` — CLOSED weekly native decision/action
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** weekly review is not an extra publisher, daily data source or November month-final decision; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `horizon-cortex/2026-W46-H4-narrative-act.md` @ `f9cd033a150c2edfd61f864b4107c541d2005f0f` — CLOSED weekly native decision/action
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** weekly review is not an extra publisher, daily data source or November month-final decision; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-01.md` @ `77618bc97ebba9eaab52449c238afbe0fbd3d0e7` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-02.md` @ `a4872c0256e89aad1ba46b671559f0eca7157378` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-03.md` @ `0bedc7c2150a3322d765fd5582bd7ee726644580` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-04.md` @ `d6a4b539b9a4bf4108e4d7fdbfc848a2a8d64525` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-05.md` @ `d6acfde25a66d68e0cecdbad96052288f2b5b108` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-06.md` @ `8ade5166613d951423d8de45d0007b2ca5303376` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-07.md` @ `a0c0953dbb1b0e460691e53cc44e0d620c031ee2` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-08.md` @ `a3bd5244aa72a9b1faf5a4f46a090ef1be8e9ec0` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-09.md` @ `9318ab1eb0fdf5a8cbe942aaf5d793a309c82fe3` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-10.md` @ `64a40369980bc1f49ea08104a458a1f1f9e283f3` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-11.md` @ `758d89cdafea436ab3cd880499c51a2bfc7c9b03` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-12.md` @ `9bf8fdf823486b72e9003715fcf062f257bab130` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-13.md` @ `6fad45e4b3165afb06d6861e36b62a7d19f524ef` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-14.md` @ `1f9beac5c8071fea216206072cc6655d67e9a8ac` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-15.md` @ `291daf56b04a999b8e21b911cde8aca3486a8a0d` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-16.md` @ `9c636de77dedb99a56d53491252ab347998a25e9` — Native Parallax
+  - **Disposition:** EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; previous full A1 item retained with identical current Git blob
+- **SOURCE:** `parallax/records/2026-11/2026-11-17.md` @ `1d97042669f6e2394ec4c3fac60b809dd7dc0acd` — Native Parallax
+  - **Disposition:** NEW_OR_DRIFTED_SOURCE / DIRECT_TEXT_READ / RETAINS_NOT_EXECUTED; A1 assessed existing source custody without editing original producer
+  - **Evidence judgement:** bounded question, control and observations are not a complete independent TCK or real effect sink; direct read 133 lines, first heading `# 2026-11-17｜Filtered collection cut and named artifact provenance`
+
+## Genuinely new or drifted inputs since the previous full A1
+- NEW_SOURCE: `horizon-cortex/2026-11-17-H1-signal-observe.md` @ `c8c5044bd09b594d3d88b9aa4f9e81c2ff33d482`
+  - Direct read: 91 lines; # H1 Daily Signal Observe — 2026-11-17 / A2A streaming artifact closure
+  - Status custody: Original Execution Status: GPT_NATIVE_SOURCE_REVIEW_EXECUTED / UPSTREAM_TESTS_AND_HOST_RUNTIME_NOT_EXECUTED; NOT_EXECUTED flag in source=true; BLOCKED flag=false; PARTIAL flag=false
+  - Reviewer disposition: bounded source content RETAINED; source test execution and external source truth NOT_INDEPENDENTLY_REPRODUCED
+- NEW_SOURCE: `horizon-cortex/2026-11-17-H2-horizon-orient.md` @ `322fa9bd634dd7afb58012557dc3a30f34fd8658`
+  - Direct read: 82 lines; # H2 Daily Horizon Orient — 2026-11-17 / A2A artifact boundary and false-completion controls
+  - Status custody: Original Execution Status: GPT_NATIVE_BOUNDED_H2_SOURCE_ORIENTATION / NO_SDK_OR_HOST_RUN; NOT_EXECUTED flag in source=true; BLOCKED flag=false; PARTIAL flag=false
+  - Reviewer disposition: bounded source content RETAINED; source test execution and external source truth NOT_INDEPENDENTLY_REPRODUCED
+- NEW_SOURCE: `parallax/records/2026-11/2026-11-17.md` @ `1d97042669f6e2394ec4c3fac60b809dd7dc0acd`
+  - Direct read: 133 lines; # 2026-11-17｜Filtered collection cut and named artifact provenance
+  - Status custody: NONE; NOT_EXECUTED flag in source=true; BLOCKED flag=false; PARTIAL flag=true
+  - Reviewer disposition: bounded source content RETAINED; source test execution and external source truth NOT_INDEPENDENTLY_REPRODUCED
+
+## Explicit missing-input gate — not erased by later source availability
+- MISSING_APPLICABLE_NATIVE_SOURCE: NONE within the expected 17-day three-lane Daily denominator
+
+## Earlier November independent A1/A2 lineage — metadata, not substitute Native production
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-02-a1-source-content-review.md` @ `daccdc69d505f8c66bbb3933b790c66c4a8310ad`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-02-a2-month-relations.md` @ `81808c870d38db1be534b9ac5d62c87df030412c`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-03-a1-source-content-review.md` @ `423e52e99f24dc35d35d7cc25ebaaac748caadd5`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-03-a2-month-relations.md` @ `387682c97db52654da44bae03e4611083ecfe6ed`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-04-a1-source-content-review.md` @ `36bc6e488cda8d86369fb7a57d04dc4e656882b1`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-04-a2-month-relations.md` @ `1d22aeada8044e4bd6fd2d3cf8ea13d2b1526b33`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-05-a1-source-content-review.md` @ `607b5a18c86b0afe51c7ae40c67a830ba987f244`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-05-a2-month-relations.md` @ `58415373eb7f521eb2ca359f337c49c191b7f6b6`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-06-a1-source-content-review.md` @ `341bf412e551ff2cf06c14bc602124542bc760e2`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-06-a2-month-relations.md` @ `c7c5b8126aafceacbaa10e0f2d5d2e9fc5416acd`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-07-a1-source-content-review.md` @ `b46bb213da4a110b73b3117b7e4949563cd93a0d`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-07-a2-month-relations.md` @ `bc37b8dbe036765eecef1ec6bdbec019e8b03da9`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-08-a1-source-content-review.md` @ `f5c138368f726800fa11f4a87ebce0c621057fd6`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-08-a2-month-relations.md` @ `44f4c1cd1d8e84f147d55afa01bbc71a126dbf83`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-09-a1-source-content-review.md` @ `95c5a469cabf858a3ab176e3804fbee573a93a89`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-09-a2-month-relations.md` @ `1c5a16b0161c33d6806974be82aaef25eff39399`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-10-a1-source-content-review.md` @ `c9bc2ea9188ae82b18174831de1caa66cecaaa8f`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-10-a2-month-relations.md` @ `e84160fa72ede8534753a0dd6add2cf3c7f94f40`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-11-a1-source-content-review.md` @ `6be5333c1d80413b9e0e71f4072d13a88f90ddb9`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-11-a2-month-relations.md` @ `8ca291e00f70d66fa623cdc34c292dcf4647c055`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-12-a1-source-content-review.md` @ `b8c03da3313ece10f3da01af39d176d1fe6759a1`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-12-a2-month-relations.md` @ `d754134141ebb306b8e82a7646890686f64ff47f`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-13-a1-source-content-review.md` @ `39a35a3fdbd9e5a1807ea36c928940ed09a8c741`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-13-a2-month-relations.md` @ `30589ad977f7da521b778e084e23f64a0bfe9110`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-14-a1-source-content-review.md` @ `fbaa30f64f7a2083bd5b60d76ca6055a682d3c1c`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-14-a2-month-relations.md` @ `a8fbf02e1556f6583431653ed810db47b4b8cbd3`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-15-a1-source-content-review.md` @ `0a6efde407ad0bd9782c4e96f5713fb294f08f05`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-15-a2-month-relations.md` @ `b0adec07662ac996f889bcf317a0c70386a5a8b9`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-16-a1-source-content-review.md` @ `abe81a0096b15991fb0a898fc2d50a5819c22bc7`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-16-a2-month-relations.md` @ `852ffcb21ccf35c460d8285bcc4a7f8775dcf773`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-17-a1-source-content-review.md` @ `113cc1e2be5290bb12151c067914737e83701083`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+- HISTORICAL_ORIGINAL: `historical-audits/2026-11/2026-11-17-a2-month-relations.md` @ `11d23d0e7350e1b2ca4167ee6959872605e7501e`; exact current-main retained predecessor source identity
+  - Relation: distinct earlier original independent maintenance. No line additions or approvals transferred to today's original; its source-window interpretation remains date-scoped
+
+## Evidence delta, counterevidence and action boundary
+- NEW_EVIDENCE: fresh, non-truncated current main Git tree; complete November 1–17 native path/blob register; direct reread of paths that did not match prior A1 custody
+- CORRECTED_INTERPRETATION: GitHub file existence, author test source and PR merge cannot be used to claim installed host dependency or external effect; the new current-day Native source belongs to subsequent A2
+- UNCHANGED_BOUNDARY: Native ≠ Independent A1 ≠ Independent A2 ≠ Periodic Audit ≠ Governance; Horizon ≠ Parallax and Aegis ≠ Ballast
+- NEW_COUNTEREVIDENCE: when source explicitly records BLOCKED, NOT_EXECUTED or PARTIAL, preserve it without inventing an executable success; weak upstream coverage remains bounded by source issuer
+- UNKNOWN_RETAINED: no exact current installed host SDK versions, no independently reproduced upstream tests or live effect receipts, no independent human review artifact, and no full native checker rerun by this A1
+- NEXT_RETEST_CONDITION: execute repository-native checker on a revision-pinned checkout, capture per-source real producer/runner receipts and inspect original PR final patch, rather than only code/documentary source
+- Only source/audit review record proposed; no modifications to historical Jules records, original Native, scheduler, workflow, protected kernel or public governance rule
+- This report records exact current SHA custody for all applicable sources, but does not pretend source-by-source scientific claims were independently re-proven by browsing each upstream domain
+
+## Independent A1 seven-axis delivery gate (fill with actual GitHub PR receipt after creation)
+- TASK_COMPLETENESS: assessed exact month-to-date applicable native path denominator, closed weekly and historical audit provenance, plus explicit missing inputs
+- NUMERIC_GATE: evaluate GitHub original PR final additions; this file's structure is driven by source identities, not 100 fabricated scientific discoveries
+- SEMANTIC_QUALITY: every custody item has a path, blob, source role, explicit disposition and evidence boundary; unchanged owners left untouched
+- DEPENDENCY: Independent A2 may start ONLY after this A1 original PR is really merged and exact file blob reread from latest main
+- DELIVERY: proposed ONE Draft original A1 PR on an independent branch; merge SHA cannot be asserted before actual merge
+- MAIN_RETENTION: currently PENDING until actual merge and latest main file readback
+- EXECUTION_VALIDATION: GitHub tree, source texts and prior audit read were executed; local checker and independent experiments NOT_EXECUTED
+- Original previous A1 and A2 history remain immutable; no successor/reconciliation additions are allowed to repair an original PR's historic numeric gate
