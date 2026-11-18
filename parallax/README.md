@@ -61,7 +61,7 @@ CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录
 
 ## 当前研究边界 — 2026-11-18
 
-At the November 18 pre-branch cut, three filtered collections returned zero while named README, METHOD, checker and other Parallax documents remained retrievable, and the not-yet-created November 18 Daily path returned a path-specific 404. These non-atomic GitHub observations support PARTIAL query-domain identity, not repository-wide absence. One publisher, native checker NOT_EXECUTED, Daily 119 / Special 17 / batches 136 / windows 114 / Audits 9, November 18/18 arrived dates, no CASE/NOTES/Special/Audit promotion
+At the November 18 pre-branch producer cut, three filtered collections returned zero while named README, METHOD, checker and other Parallax documents remained retrievable, and the not-yet-created Daily path returned a specific 404. At the later November 18 independent review cut, Draft PR #1009 and its Parallax branch were directly visible, while producer-base main drift comprised one docs/brain-only commit. Direct Checks on the original producer head reported four successful CodeQL check runs and direct Actions one successful dynamic-event execution; legacy statuses and PR-only workflow wrapper remained empty, which is not proof of no checks. This is a PARTIAL evidence identity and temporal-state boundary, not repository-wide absence or native checker execution. One GitHub publisher, exact native checker NOT_EXECUTED, Daily 119 / Special 17 / batches 136 / windows 114 / Audits 9, November 18/18 arrived dates, no CASE/NOTES/Special/Audit promotion
 
 `FILTERED_COLLECTION_ZERO != NAMED_ARTIFACT_ABSENCE`
 
