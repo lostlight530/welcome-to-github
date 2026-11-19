@@ -48,3 +48,14 @@ As of 2026-09-19, `05-maintenance-and-reconciliation/2026-09-19--sep-19--mainten
 Current Horizon production authority remains with the active Horizon contracts and policies, including `horizon-cortex/EVIDENCE_POLICY.md`, together with the current Horizon production artifacts. Status labels inside archived maintenance records describe their write-time role and do not turn the archive into current production authority.
 
 The old paths remain recoverable through Git history. The archive directory is historical storage, not a replacement for current task contracts or the current external-maintenance procedure.
+
+## October 28 derived governance records — classification without relocation (2026-11-19)
+
+These two retained records are **derived independent governance material**, not new Native, independent A1/A2, or D7/D10/D14/D30 task executions. Their historical bodies and Git blob identities must remain unchanged.
+
+| Retained path | Semantic archive class | Classification rationale |
+| --- | --- | --- |
+| `2026-10/2026-10-28-sop-minimal-acceptance-audit.md` | `03-stage-and-period-audits/` | Post-merge, as-of SOP acceptance audit; it evaluates existing evidence and does not execute original tasks |
+| `2026-10/2026-10-28-october-native-weekly-gap-recovery-register.md` | `05-maintenance-and-reconciliation/` | Retrospective native-weekly gap and recovery registration; it is not an original weekly producer run |
+
+**Path-preserving correction:** These files remain at their dated locations instead of being renamed or moved, because historical references may depend on the exact paths and blob identities. The class names above are navigation labels, not claims that new files exist under the class directories. Do not mutate A1/A2 source inventories, D-task records, original PRs, or any file outside `historical-audits/` to implement this navigation note.
