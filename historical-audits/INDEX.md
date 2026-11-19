@@ -64,3 +64,12 @@ This classification edit does **not** create Native, independent A1/A2, or D7/D1
 
 - `historical-audits/2026-10/2026-10-28-october-native-weekly-gap-recovery-register.md` (blob `d5d7f20b47168c96bac2b087c42b8754f04d5ea0`) remains in its dated directory. A Horizon Native file refers to its original filename; moving it without touching an out-of-scope source would risk broken navigation. Semantic class: `05-maintenance-and-reconciliation/`.
 - Original independent A1/A2 and periodic D-task records retain their dates, paths, original producers and historical assertions. All former paths remain recoverable through Git history; a historical pinned path is not automatically a current-main path.
+
+## Current navigation for retained duplicate paths
+
+The preferred links below are for navigation. The retained paths point to the same Git blobs and are not separate audits or additional evidence. This section supersedes conflicting path labels in earlier entries of this index without changing their historical provenance.
+
+| Record | Preferred archive path | Retained same-blob path |
+| --- | --- | --- |
+| October 28 SOP minimal acceptance audit | [Preferred](03-stage-and-period-audits/2026-10-28--sop-minimal-acceptance--audit.md) | [Retained](03-stage-and-period-audits/2026-10-28-sop-minimal-acceptance-audit.md) |
+| November 8–9 PR acceptance reconciliation | [Preferred](05-maintenance-and-reconciliation/2026-11-09--nov08-nov09-ten-repo-strict-acceptance--reconciliation.md) | [Retained](04-evidence-and-closure-ledgers/2026-11-09-nov08-nov09-ten-repo-strict-acceptance-reconciliation.md) |
