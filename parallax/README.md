@@ -14,23 +14,23 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-19 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行、H6 人工授权替代结算或原生执行证明
+本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-20 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行、H6 人工授权替代结算或原生执行证明
 
-历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 2026-11-02 本轮冷启动 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 已含 2026-11-01 原生 Daily 102 / 17 / 119 / 97 / 9, 2026-11-03 冷启动 main `35f76aeb8ea0aad6710fcdc0842065a592ca71ba` 已含 2026-11-02 原生 Daily 103 / 17 / 120 / 98 / 9, 下列数值对应包含 2026-11-19 原生 Daily 的 Git ref 文件快照, 其是否已合并到 main 以 GitHub 的 PR 和提交关系实时核验, 不以本段历史说明代替交付事实
+历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 2026-11-02 本轮冷启动 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 已含 2026-11-01 原生 Daily 102 / 17 / 119 / 97 / 9, 2026-11-03 冷启动 main `35f76aeb8ea0aad6710fcdc0842065a592ca71ba` 已含 2026-11-02 原生 Daily 103 / 17 / 120 / 98 / 9, 下列数值对应包含 2026-11-20 原生 Daily 的 Git ref 文件快照, 其是否已合并到 main 以 GitHub 的 PR 和提交关系实时核验, 不以本段历史说明代替交付事实
 
 
-- 最新每日归属日期: 2026-11-19
-- 最新每日研究: [Historical merge receipt versus later main and status planes](records/2026-11/2026-11-19.md)
-- 每日专题: 120
+- 最新每日归属日期: 2026-11-20
+- 最新每日研究: [Same Parallax subtree versus distinct commit-level execution identities](records/2026-11/2026-11-20.md)
+- 每日专题: 121
 - 特殊专题: 17
-- 当前专题研究批次: 137
-- 当前专题独立执行日期窗口: 115
+- 当前专题研究批次: 138
+- 当前专题独立执行日期窗口: 116
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
 - 周期审计: 9
 - 最新周期审计: [2026-W44 Friday 5/7 as-of](audits/2026-W44.md)
-- 当前月度事实源: [2026-11 AS_OF_2026-11-19, nonfinal](records/2026-11.md)
+- 当前月度事实源: [2026-11 AS_OF_2026-11-20, nonfinal](records/2026-11.md)
 - 当前方法: [METHOD.md](METHOD.md)
 - 控制案例: [CASES.md](CASES.md)
 - 长期发现: [NOTES.md](NOTES.md)
@@ -59,7 +59,15 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-11-19
+## 当前研究边界 — 2026-11-20
+
+At the November 20 cold-start cut, the Parallax PR #1014 merged commit `91756cdf54456c5806dede3b10bee4d7fa346253` and later main `c377d0ff4e678c2927092b7304ae4f869c6fe599` had the same tracked `parallax` Git subtree oid `c0b126043a9da12a9b19f0437a0f22d91ce5bf97`. The pinned compare found 16 intervening commits and 25 non-Parallax changed paths, while `historical-audits` subtree oid did change. Historical versus later direct completed-success Checks were 6 versus 4 and Actions runs 3 versus 2, with disjoint run IDs, despite legacy status contexts 0 versus 0. Twenty executed bounded JavaScript assertions passed, without proving a full Parallax checker run, causal CI explanation or downstream application settlement. GitHub publisher one, PARTIAL, native checker NOT_EXECUTED. Proposed content counts: Daily 121 / Special 17 / batches 138 / windows 116 / Audits 9, November 20/20 arrived, no CASE/NOTES/Special/Audit promotion
+
+`PARALLAX_SUBTREE_EQUAL != COMMIT_RUN_IDENTITY_EQUAL`
+
+`CHECKS_ACTIONS_EXECUTED != PARALLAX_CHECKER_EXECUTED`
+
+## 前序研究边界 — 2026-11-19
 
 At the November 19 producer cut, historical Parallax PR #1009 remained merged at d658c5630e3d8ae7aaca67002d0db1ca93d56687 while current main was 5997a0d81525204673fad1d9663194b95b9dab86. The pinned compare returned eight later commits, four changed non-Parallax paths and zero Parallax path changes. On that exact main, direct Checks showed four successful check runs and direct Actions two successful runs, while legacy statuses returned zero contexts. At a separate later same-day review cut, open Draft PR #1014's original producer head 47904e73bae2c1cff19c2c64cf96e546c2bb680a had four completed successful CodeQL check runs and one successful dynamic-event Actions run, while legacy statuses and the PR-only workflow wrapper were empty. This is a PARTIAL ancestry, time-cut and execution-interface identity result, not a native Parallax checker run or downstream settlement. GitHub publisher one, native checker NOT_EXECUTED, Daily 120 / Special 17 / batches 137 / windows 115 / Audits 9, November 19/19 arrived dates, no CASE/NOTES/Special/Audit promotion
 
