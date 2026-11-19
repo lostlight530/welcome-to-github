@@ -49,13 +49,18 @@ Current Horizon production authority remains with the active Horizon contracts a
 
 The old paths remain recoverable through Git history. The archive directory is historical storage, not a replacement for current task contracts or the current external-maintenance procedure.
 
-## October 28 derived governance records — classification without relocation (2026-11-19)
+## 2026-11-19 bounded classification and filename normalization
 
-These two retained records are **derived independent governance material**, not new Native, independent A1/A2, or D7/D10/D14/D30 task executions. Their historical bodies and Git blob identities must remain unchanged.
+This classification edit does **not** create Native, independent A1/A2, or D7/D10/D14/D30 task execution. The original historical record bodies and blob IDs remain unchanged. Only archival paths with no indexed inbound code references found in the repository search were renamed; search coverage is not equivalent to a full external link audit.
 
-| Retained path | Semantic archive class | Classification rationale |
+| Previous path | Current archival path | Unchanged Git blob SHA |
 | --- | --- | --- |
-| `2026-10/2026-10-28-sop-minimal-acceptance-audit.md` | `03-stage-and-period-audits/` | Post-merge, as-of SOP acceptance audit; it evaluates existing evidence and does not execute original tasks |
-| `2026-10/2026-10-28-october-native-weekly-gap-recovery-register.md` | `05-maintenance-and-reconciliation/` | Retrospective native-weekly gap and recovery registration; it is not an original weekly producer run |
+| `historical-audits/2026-10/2026-10-28-sop-minimal-acceptance-audit.md` | `historical-audits/03-stage-and-period-audits/2026-10-28--sop-minimal-acceptance--audit.md` | `daabadb617c9e74e540db310247cd9441cf4919c` |
+| `historical-audits/01-corrections-and-errata/2026-10-28-a1-a2-tree-oid-erratum.md` | `historical-audits/01-corrections-and-errata/2026-10-28--a1-a2-tree-oid--erratum.md` | `5210335d8ea164ea29bd74c0114943f30f125e38` |
+| `historical-audits/01-corrections-and-errata/2026-10-28-horizon-oct27-dependency-gap-followon.md` | `historical-audits/01-corrections-and-errata/2026-10-28--horizon-oct27-dependency-gap--correction.md` | `241a831c78257f87810b09d5030e6b7f8a6e2a4b` |
+| `historical-audits/2026-11/2026-11-09-nov08-nov09-ten-repo-strict-acceptance-reconciliation.md` | `historical-audits/05-maintenance-and-reconciliation/2026-11-09--nov08-nov09-ten-repo-strict-acceptance--reconciliation.md` | `c309a1b71d99a6ca2eda42ab31e35a02af45adaf` |
 
-**Path-preserving correction:** These files remain at their dated locations instead of being renamed or moved, because historical references may depend on the exact paths and blob identities. The class names above are navigation labels, not claims that new files exist under the class directories. Do not mutate A1/A2 source inventories, D-task records, original PRs, or any file outside `historical-audits/` to implement this navigation note.
+### Retained referenced path
+
+- `historical-audits/2026-10/2026-10-28-october-native-weekly-gap-recovery-register.md` (blob `d5d7f20b47168c96bac2b087c42b8754f04d5ea0`) remains in its dated directory. A Horizon Native file refers to its original filename; moving it without touching an out-of-scope source would risk broken navigation. Semantic class: `05-maintenance-and-reconciliation/`.
+- Original independent A1/A2 and periodic D-task records retain their dates, paths, original producers and historical assertions. All former paths remain recoverable through Git history; a historical pinned path is not automatically a current-main path.
