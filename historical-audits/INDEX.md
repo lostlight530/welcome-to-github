@@ -73,3 +73,7 @@ The preferred links below are for navigation. The retained paths point to the sa
 | --- | --- | --- |
 | October 28 SOP minimal acceptance audit | [Preferred](03-stage-and-period-audits/2026-10-28--sop-minimal-acceptance--audit.md) | [Retained](03-stage-and-period-audits/2026-10-28-sop-minimal-acceptance-audit.md) |
 | November 8–9 PR acceptance reconciliation | [Preferred](05-maintenance-and-reconciliation/2026-11-09--nov08-nov09-ten-repo-strict-acceptance--reconciliation.md) | [Retained](04-evidence-and-closure-ledgers/2026-11-09-nov08-nov09-ten-repo-strict-acceptance-reconciliation.md) |
+
+## 2026-11-20 source/provenance document-audit correction
+
+- [Horizon/Parallax A1/A2 source-role review](02-document-audits/2026-11-20--a1-a2-source-and-provenance--document-audit.md) — separate independent review; source-row role fixes are in current canonical A1/A2, original history retained
