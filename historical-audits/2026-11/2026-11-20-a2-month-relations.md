@@ -114,28 +114,28 @@
 | `historical-audits/2026-11/2026-11-02-a2-month-relations.md` | `81808c870d38db1be534b9ac5d62c87df030412c` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-03-a1-source-content-review.md` | `423e52e99f24dc35d35d7cc25ebaaac748caadd5` | ORIGINAL_A1 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-03-a2-month-relations.md` | `387682c97db52654da44bae03e4611083ecfe6ed` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
-| `historical-audits/2026-11/2026-11-04--2026-11-05-original-a1-a2-acceptance-reconciliation.md` | `a5cc1467e136bdba98b7c209b8ea28d383da3041` | ORIGINAL_A1 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
+| `historical-audits/2026-11/2026-11-04--2026-11-05-original-a1-a2-acceptance-reconciliation.md` | `a5cc1467e136bdba98b7c209b8ea28d383da3041` | RECONCILIATION | SEPARATE_RECONCILIATION / ORIGINAL_HISTORY_UNCHANGED |
 | `historical-audits/2026-11/2026-11-04-a1-source-content-review.md` | `36bc6e488cda8d86369fb7a57d04dc4e656882b1` | ORIGINAL_A1 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-04-a2-month-relations.md` | `1d22aeada8044e4bd6fd2d3cf8ea13d2b1526b33` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-05-a1-source-content-review.md` | `607b5a18c86b0afe51c7ae40c67a830ba987f244` | ORIGINAL_A1 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-05-a2-month-relations.md` | `58415373eb7f521eb2ca359f337c49c191b7f6b6` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-06-a1-source-content-review.md` | `341bf412e551ff2cf06c14bc602124542bc760e2` | ORIGINAL_A1 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-06-a2-month-relations.md` | `c7c5b8126aafceacbaa10e0f2d5d2e9fc5416acd` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
-| `historical-audits/2026-11/2026-11-06-original-a1a2-semantic-forward-reconciliation.md` | `9746fed348bd5b2b39fa47c6effd709695009541` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
+| `historical-audits/2026-11/2026-11-06-original-a1a2-semantic-forward-reconciliation.md` | `9746fed348bd5b2b39fa47c6effd709695009541` | RECONCILIATION | SEPARATE_RECONCILIATION / ORIGINAL_HISTORY_UNCHANGED |
 | `historical-audits/2026-11/2026-11-07-a1-source-content-review.md` | `b46bb213da4a110b73b3117b7e4949563cd93a0d` | ORIGINAL_A1 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-07-a2-month-relations.md` | `bc37b8dbe036765eecef1ec6bdbec019e8b03da9` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-08-a1-source-content-review.md` | `f5c138368f726800fa11f4a87ebce0c621057fd6` | ORIGINAL_A1 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
-| `historical-audits/2026-11/2026-11-08-a1a2-postmerge-quality-reconciliation.md` | `afc4b3158c48efdd3f41c67d621fb187782d9926` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
+| `historical-audits/2026-11/2026-11-08-a1a2-postmerge-quality-reconciliation.md` | `afc4b3158c48efdd3f41c67d621fb187782d9926` | RECONCILIATION | SEPARATE_RECONCILIATION / ORIGINAL_HISTORY_UNCHANGED |
 | `historical-audits/2026-11/2026-11-08-a2-month-relations.md` | `44f4c1cd1d8e84f147d55afa01bbc71a126dbf83` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-09-a1-source-content-review.md` | `95c5a469cabf858a3ab176e3804fbee573a93a89` | ORIGINAL_A1 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-09-a2-month-relations.md` | `1c5a16b0161c33d6806974be82aaef25eff39399` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-10-a1-source-content-review.md` | `c9bc2ea9188ae82b18174831de1caa66cecaaa8f` | ORIGINAL_A1 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-10-a2-month-relations.md` | `e84160fa72ede8534753a0dd6add2cf3c7f94f40` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-10-strict-nov08-nov09-horizon-a1a2-source-adjudication.md` | `ecb79c180ee9c0c31ed369b2ab7f153da60e3905` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
-| `historical-audits/2026-11/2026-11-10-successor-2026-11-08-a2-strict-month-relations.md` | `e56b50107c0f4152728acb48a09f2a9a80ea8a42` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
-| `historical-audits/2026-11/2026-11-10-successor-2026-11-09-a1-strict-source-custody.md` | `69ef2d1fcd6b78c5a7795d6a6015bef24c94a340` | ORIGINAL_A1 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
+| `historical-audits/2026-11/2026-11-10-successor-2026-11-08-a2-strict-month-relations.md` | `e56b50107c0f4152728acb48a09f2a9a80ea8a42` | SUCCESSOR | SEPARATE_SUCCESSOR / NO_ORIGINAL_CREDIT |
+| `historical-audits/2026-11/2026-11-10-successor-2026-11-09-a1-strict-source-custody.md` | `69ef2d1fcd6b78c5a7795d6a6015bef24c94a340` | SUCCESSOR | SEPARATE_SUCCESSOR / NO_ORIGINAL_CREDIT |
 | `historical-audits/2026-11/2026-11-11-a1-source-content-review.md` | `6be5333c1d80413b9e0e71f4072d13a88f90ddb9` | ORIGINAL_A1 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
-| `historical-audits/2026-11/2026-11-11-a1a2-effective-pr-acceptance-reconciliation.md` | `0900d7c038efe46887c1441a9312f376df482744` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
+| `historical-audits/2026-11/2026-11-11-a1a2-effective-pr-acceptance-reconciliation.md` | `0900d7c038efe46887c1441a9312f376df482744` | RECONCILIATION | SEPARATE_RECONCILIATION / ORIGINAL_HISTORY_UNCHANGED |
 | `historical-audits/2026-11/2026-11-11-a2-month-relations.md` | `8ca291e00f70d66fa623cdc34c292dcf4647c055` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-12-a1-source-content-review.md` | `b8c03da3313ece10f3da01af39d176d1fe6759a1` | ORIGINAL_A1 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
 | `historical-audits/2026-11/2026-11-12-a2-month-relations.md` | `d754134141ebb306b8e82a7646890686f64ff47f` | ORIGINAL_A2 | HISTORIC_INHERITED / NO_ORIGINAL_NUMERIC_REWRITE |
@@ -193,3 +193,14 @@
 - NEW_COUNTEREVIDENCE: incomplete external execution provenance can leave relationship UNKNOWN despite merged native source.
 - UNKNOWN_RETAINED: checker and external runtime results, independently replicated source truths and host effect.
 - NEXT_RETEST_CONDITION: A2 final head diff review, authorized merge, exact main source retention and next independent day baseline.
+
+
+## 2026-11-20 forward independent-audit correction — A2 historical record kinds
+
+- Original A2 PR #1026 final merge/diff and additions remain their 2026-11-20 historical facts; this edit is a later correction on current main, not a rewrite of that PR's executed state
+- The previous historical table inferred ORIGINAL_A1/ORIGINAL_A2 from filename fragments. This correction retypes 6 entries by their actual record kind while retaining their exact source paths and blob SHAs
+- Corrected source kind is for provenance accounting only; each original, successor and reconciliation requires separate PR evidence to claim its own completion
+- Verified review log: [2026-11-20 source/provenance document audit](../02-document-audits/2026-11-20--a1-a2-source-and-provenance--document-audit.md)
+- Source-custody rows do not prove individual source propositions were revalidated. Horizon H1/H2 source patch evidence is not server execution; Parallax is a distinct producer. No Horizon checker execution is inferred. PR #1024 is H2 Native, not this independent A2.
+- This A2 document's historical upstream review was limited to path/blob and typed relation status. Actual claim-by-claim primary source checks, native checker and host/runtime effects remain NOT_EXECUTED / UNKNOWN unless separately evidenced
+- Original file blob at pre-correction main: `badff847ec992dad07996c096db4b4c0f8d43c32`; this successor edit is a **new** GitHub contribution and must not increase original A1/A2 additions
