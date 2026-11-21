@@ -178,8 +178,7 @@ class ReasoningEngine:
         """Phase VI: Hardcore Quantitative Dashboard Rendering (Zero-Dependency)."""
         import os
         import re
-        from datetime import datetime, timedelta
-        import glob
+        from datetime import datetime
         from string import Template
 
         try:
@@ -244,40 +243,8 @@ class ReasoningEngine:
                 "7-Day Trend: $entity_growth | $relation_growth"
             )
 
-            # --- Missing Daily Dashboard Backfill Mechanism ---
-            existing_dashboards = sorted(glob.glob(os.path.join(memories_dir, "*-quantitative-dashboard.md")))
-            last_date_str = None
-            if existing_dashboards:
-                last_dash_name = os.path.basename(existing_dashboards[-1])
-                match = re.search(r'^(\d{8})-quantitative-dashboard\.md', last_dash_name)
-                if match:
-                    last_date_str = match.group(1)
-
-            if last_date_str:
-                last_date = datetime.strptime(last_date_str, "%Y%m%d")
-                delta_days = (today - last_date).days
-                for i in range(1, delta_days + 1):
-                    backfill_date = last_date + timedelta(days=i)
-                    backfill_str = backfill_date.strftime("%Y%m%d")
-                    backfill_path = os.path.join(memories_dir, f"{backfill_str}-quantitative-dashboard.md")
-                    if not os.path.exists(backfill_path):
-                        dash_tmpl = Template(dash_template_str)
-                        dash_content = dash_tmpl.safe_substitute(
-                            active_entities=active_entities,
-                            active_relations=active_relations,
-                            compression_rate=compression_rate,
-                            pagerank_hubs=pagerank_hubs,
-                            orphan_alert=orphan_alert,
-                            trust_score=trust_slashes,
-                            mission_focus=mission_focus,
-                            mission_bounties=mission_bounties,
-                            entity_growth=entity_growth,
-                            relation_growth=relation_growth
-                        )
-                        with open(backfill_path, 'w', encoding='utf-8') as f:
-                            f.write(dash_content)
-                        print(f"[Reasoning | 推理引擎] Backfilled quantitative dashboard for {backfill_str} / 回填量化仪表盘 {backfill_str}")
-
+            # Historical gaps remain unobserved. Never stamp today's values onto
+            # earlier dates: each dashboard must correspond to a real execution.
             # Always render today's dashboard
             today_dash_path = os.path.join(memories_dir, f"{today_str}-quantitative-dashboard.md")
             if not os.path.exists(today_dash_path) or True: # Force write for today
