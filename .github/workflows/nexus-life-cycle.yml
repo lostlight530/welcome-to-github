@@ -208,7 +208,7 @@ jobs:
           python docs/brain/lifecycle_guard.py receipt --manifest "$RUNNER_TEMP/lifecycle-manifest.json" --before "$RUNNER_TEMP/lifecycle-before.json" --repository-kind welcome --event-name "$GITHUB_EVENT_NAME" --actor "$GITHUB_ACTOR" --triggering-actor "$GITHUB_TRIGGERING_ACTOR" --base-sha "$BASE_SHA" --final-sha "$final_sha" --job-status "$JOB_STATUS" --run-id "$GITHUB_RUN_ID" --run-attempt "$GITHUB_RUN_ATTEMPT" --gate "Git 签出基线=${{ steps.checkout_eol.outcome }}" --gate "运行时契约=${{ steps.contracts.outcome }}" --gate "活动账本=${{ steps.ledgers.outcome }}" --gate "外部来源摄取=${{ steps.harvest.outcome }}" --gate "哈希链与图谱=${{ steps.graph.outcome }}" --gate "最终验证=${{ steps.final_verify.outcome }}" --gate "活动来源证据=${{ steps.evidence.outcome }}" --gate "写入边界=${{ steps.boundary.outcome }}" --gate "世界线检查=${{ steps.world_line.outcome }}" --gate "应用步骤=${{ steps.apply_candidate.outcome }}" --output "$GITHUB_STEP_SUMMARY" "${validation_flag[@]}"
       - name: Preserve lifecycle manifest
         if: always()
-        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
         with:
           name: welcome-lifecycle-manifest-${{ github.run_id }}
           path: ${{ runner.temp }}/lifecycle-manifest.json
