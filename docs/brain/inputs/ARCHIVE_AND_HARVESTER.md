@@ -88,3 +88,10 @@ Profile 不合法、GitHub Tree 截断、Blob 编码异常、来源网络失败�
 - `$RUNNER_TEMP/lifecycle-manifest.json` 是一次 Runner 内的临时 Manifest; `upload-artifact` 上传后的同名产物和 `$GITHUB_STEP_SUMMARY` 是 GitHub 托管运行证据; GitHub Actions Job Logs 不在 Git Tree 内.
 - 日期报告必须来自该日期的实际运行, 不用新一轮指标补写过去缺失日期. 旧报告和历史 PR 维持原始记录, 如有不实内容另行 correction, 不能静默删改.
 - 本清理规则不修改 Horizon, Parallax 的独立研究归属, 也不删除 `AGI/workflows/revisions/` 中的工作流历史快照.
+
+## 本仓可执行物理清理验收 (2026-11-21)
+
+- `python docs/brain/nexus.py clean` 仅在关闭当前 Cortex 数据库连接后清理 `docs/brain/cortex.db` 及其同名 `-journal`, `-wal`, `-shm` sidecar. 清理函数先统一拒绝 symlink 或非普通文件, 避免清理一半后才发现越界目标.
+- `nexus.py rebuild` 重建 SQLite 前使用同一受控索引清理, 但规范的 `inputs/`, `knowledge/`, `memories/`, `horizon-cortex/`, `parallax/` 不属于该删除函数的作用域.
+- `tests/test_brain_cleanup_contract.py` 用临时目录校验严格白名单, 二次调用幂等, symlink fail closed, 以及历史来源和独立研究文件原字节不变.
+- Git Tree 中已跟踪的日期报告、历史外部文档、sealed archive 不通过 `.gitignore` 或 `clean` 物理删除. 当前没有证据支持对这些历史文件实施批量删除.
