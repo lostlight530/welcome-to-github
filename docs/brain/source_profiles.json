@@ -481,6 +481,8 @@
                     },
                     {
                         "repo":  "MoonshotAI/kimi-cli",
+                        "upstream_archived_observed_on":  "2026-11-21",
+                        "successor_repo":  "MoonshotAI/kimi-code",
                         "region":  "domestic",
                         "layer":  "complex-agent-systems",
                         "primary_owner":  "welcome",
@@ -512,6 +514,34 @@
 
                                         ],
                         "trust_level":  "reviewed"
+                    },
+                    {
+                        "repo": "MoonshotAI/kimi-code",
+                        "region": "domestic",
+                        "layer": "complex-agent-systems",
+                        "primary_owner": "welcome",
+                        "status": "core",
+                        "cadence": "weekly",
+                        "documents": [
+                            "README.md",
+                            "README.zh-CN.md",
+                            "docs/en/customization/agents.md",
+                            "docs/en/customization/mcp.md",
+                            "docs/en/customization/skills.md",
+                            "docs/en/guides/migration.md",
+                            "docs/en/reference/kimi-acp.md",
+                            "docs/en/reference/tools.md",
+                            "docs/en/release-notes/changelog.md"
+                        ],
+                        "watch_releases": true,
+                        "watch_commits": "selected",
+                        "ignore_patterns": [
+                            "**/node_modules/**",
+                            "**/vendor/**"
+                        ],
+                        "zero_topics": [],
+                        "trust_level": "reviewed",
+                        "predecessor_repo": "MoonshotAI/kimi-cli"
                     }
                 ]
 }

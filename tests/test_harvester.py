@@ -782,6 +782,24 @@ class HarvesterContracts(unittest.TestCase):
     def test_noise_normalization(self):
         self.assertEqual(Harvester._normalized("![badge](https://shields.io/x)\nArchitecture"), "Architecture")
 
+    def test_upstream_unavailable_does_not_silently_skip_approved_source(self):
+        harvester = Harvester.__new__(Harvester)
+        profile = {"repo": "example/unavailable"}
+        harvester.profiles = {"sources": [profile]}
+        harvester.validate_profiles = Mock(return_value=True)
+        endpoint = "https://api.github.com/repos/example/unavailable"
+        harvester._source = Mock(
+            side_effect=urllib.error.HTTPError(endpoint, 404, "Not Found", None, None)
+        )
+
+        with self.assertRaisesRegex(
+            RuntimeError,
+            r"example/unavailable: HTTP 404 at /repos/example/unavailable",
+        ):
+            harvester.fetch_github_data()
+
+        harvester._source.assert_called_once_with(profile)
+
     def test_api_retries_transient_network_failures_with_backoff(self):
         harvester = Harvester.__new__(Harvester)
         harvester.token = ""

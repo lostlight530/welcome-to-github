@@ -25,6 +25,27 @@ def _brain_root(module_file):
 BRAIN_ROOT = _brain_root(__file__)
 DB_PATH = BRAIN_ROOT / "cortex.db"
 
+def cleanup_brain_sqlite_index(db_path: Path) -> list[str]:
+    """Remove only the closed, rebuildable NEXUS SQLite index and its sidecars.
+
+    Never traverse inputs/, knowledge/, memories/, or independent research trees.
+    Fail before deleting anything when a target is a symlink or non-file.
+    """
+    db_path = Path(db_path)
+    if db_path.name != "cortex.db":
+        raise ValueError("refusing cleanup of a non-NEXUS database")
+    targets = [db_path.with_name(db_path.name + suffix)
+               for suffix in ("", "-journal", "-wal", "-shm")]
+    for target in targets:
+        if target.is_symlink() or (target.exists() and not target.is_file()):
+            raise ValueError(f"unsafe NEXUS cache target: {target}")
+    removed = []
+    for target in targets:
+        if target.is_file():
+            target.unlink()
+            removed.append(target.name)
+    return removed
+
 def main() -> None:
     cortex = None
     factory = None
@@ -99,8 +120,7 @@ def main() -> None:
         elif args.command == 'rebuild':
             cortex.conn.close()
             cortex = None
-            if DB_PATH.exists():
-                os.remove(DB_PATH)
+            cleanup_brain_sqlite_index(DB_PATH)
             cortex = Cortex(DB_PATH)
 
             import glob
@@ -135,10 +155,9 @@ def main() -> None:
         elif args.command == 'clean':
             cortex.conn.close()
             cortex = None
-            # Safe cleanup, protect `.harvester_state.json`
-            if DB_PATH.exists(): os.remove(DB_PATH)
-            if DB_PATH.with_suffix('.db-journal').exists(): os.remove(DB_PATH.with_suffix('.db-journal'))
-            print("Temporary caches cleared. / 临时缓存已清理。")
+            # Closed SQLite index only; source state and evidence are immutable here.
+            removed = cleanup_brain_sqlite_index(DB_PATH)
+            print(f"NEXUS SQLite cache files removed: {removed}. / 已清理可重建 SQLite 临时文件。")
 
         elif args.command == 'add':
             factory = KnowledgeFactory(str(BRAIN_ROOT))

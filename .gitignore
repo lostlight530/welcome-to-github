@@ -58,3 +58,17 @@ __pycache__/
 docs/brain/*.db
 docs/brain/inputs/.harvester_state.json
 docs/brain/inputs/.raw_cache/
+
+# Non-evidence local tooling output (never tracked)
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+.coverage
+.coverage.*
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+*.tmp
