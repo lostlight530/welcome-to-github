@@ -79,3 +79,12 @@ Profile 不合法、GitHub Tree 截断、Blob 编码异常、来源网络失败�
 - Cache cleanup is limited to unreferenced raw-cache files and empty cache directories.
 - The active database is a rebuildable index and is never the sole source of truth.
 - horizon-cortex and parallax remain outside this lifecycle.
+
+## NEXUS GitHub Actions 产物目录与清理边界 (2026-11-21 correction)
+
+- `docs/brain/memories/` 是 lifecycle 真正写回 Git 的 projection / report 目录, 不是 `.github/workflows/` 下的 Runner 缓存. 包含带日期的 Dashboard, `MISSION_ACTIVE.md` 和 append-only `QUANTITATIVE_LEDGER.md`.
+- `docs/brain/knowledge/` 是规范事实账本, `docs/brain/inputs/current/` 与 `archive/` 是来源快照和封存档案. 不能因文件数量较多就把它们认定为日志垃圾.
+- 只有没有被跟踪或引用的临时缓存, 例如 `__pycache__/`, `.pytest_cache/`, `.raw_cache/` 中的孤立文件, `*.tmp`, 可重建的 SQLite 索引, 才属于候选清理范围; 清理必须确认引用和当前作业边界.
+- `$RUNNER_TEMP/lifecycle-manifest.json` 是一次 Runner 内的临时 Manifest; `upload-artifact` 上传后的同名产物和 `$GITHUB_STEP_SUMMARY` 是 GitHub 托管运行证据; GitHub Actions Job Logs 不在 Git Tree 内.
+- 日期报告必须来自该日期的实际运行, 不用新一轮指标补写过去缺失日期. 旧报告和历史 PR 维持原始记录, 如有不实内容另行 correction, 不能静默删改.
+- 本清理规则不修改 Horizon, Parallax 的独立研究归属, 也不删除 `AGI/workflows/revisions/` 中的工作流历史快照.
