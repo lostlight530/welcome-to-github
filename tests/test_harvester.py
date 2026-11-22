@@ -800,6 +800,134 @@ class HarvesterContracts(unittest.TestCase):
 
         harvester._source.assert_called_once_with(profile)
 
+    def test_opted_in_repository_404_retains_verified_cache_and_continues(self):
+        harvester = Harvester.__new__(Harvester)
+        microsoft = {"repo": "microsoft/agent-framework",
+                     "availability_policy": "retain_verified_on_repo_404"}
+        healthy = {"repo": "example/healthy"}
+        harvester.profiles = {"sources": [microsoft, healthy]}
+        harvester.validate_profiles = Mock(return_value=True)
+        harvester.dry = True
+        pinned = {"commit_sha": "a" * 40, "tree_sha": "b" * 40,
+                  "blob_sha": "c" * 40, "sha": "c" * 40,
+                  "content_hash": "d" * 64}
+        harvester.state = {"repositories": {
+            "microsoft/agent-framework": {
+                "documents": {"README.md": pinned.copy()},
+                "last_checked_at": "2026-11-17T04:14:05Z",
+            }
+        }}
+        harvester._snapshot_provenance = Mock(return_value=pinned.copy())
+        endpoint = "https://api.github.com/repos/microsoft/agent-framework"
+        harvester._source = Mock(side_effect=[
+            urllib.error.HTTPError(endpoint, 404, "Not Found", None, None),
+            ["current/healthy.md"],
+        ])
+        with patch("builtins.print") as output:
+            changed = harvester.fetch_github_data()
+        result = json.loads(output.call_args.args[0])
+        self.assertEqual(changed, ["current/healthy.md"])
+        self.assertEqual(result["status"], "DEGRADED_SOURCE_UNAVAILABLE")
+        self.assertEqual(result["degraded"], 1)
+        self.assertEqual(result["degraded_sources"][0]["repo"], microsoft["repo"])
+        self.assertEqual(harvester.state["repositories"][microsoft["repo"]]["last_checked_at"],
+                         "2026-11-17T04:14:05Z")
+        health = harvester.state["repositories"][microsoft["repo"]]["source_health"]
+        self.assertEqual(health["status"], "SOURCE_UNAVAILABLE")
+        self.assertEqual(health["last_verified_at"], "2026-11-17T04:14:05Z")
+        self.assertEqual(harvester._source.call_count, 2)
+        harvester._snapshot_provenance.assert_called_once()
+
+    def test_unavailable_source_without_cache_or_with_other_error_fails_closed(self):
+        endpoint = "https://api.github.com/repos/microsoft/agent-framework"
+        for status, url, with_cache in [
+            (404, endpoint, False),
+            (403, endpoint, True),
+            (404, endpoint + "/git/blobs/" + "a" * 40, True),
+        ]:
+            with self.subTest(status=status, url=url, with_cache=with_cache):
+                harvester = Harvester.__new__(Harvester)
+                harvester.profiles = {"sources": [{
+                    "repo": "microsoft/agent-framework",
+                    "availability_policy": "retain_verified_on_repo_404",
+                }]}
+                harvester.validate_profiles = Mock(return_value=True)
+                harvester.dry = True
+                harvester.state = {"repositories": {
+                    "microsoft/agent-framework": {
+                        "documents": {"README.md": {"sha": "a" * 40}} if with_cache else {},
+                        "last_checked_at": "2026-11-17T04:14:05Z",
+                    },
+                }}
+                harvester._source = Mock(
+                    side_effect=urllib.error.HTTPError(url, status, "Unreachable", None, None)
+                )
+                with self.assertRaisesRegex(RuntimeError, "harvest failed"):
+                    harvester.fetch_github_data()
+                self.assertNotIn(
+                    "source_health", harvester.state["repositories"]["microsoft/agent-framework"]
+                )
+
+    def test_tampered_cached_source_does_not_degrade_404(self):
+        harvester = Harvester.__new__(Harvester)
+        harvester.profiles = {"sources": [{
+            "repo": "microsoft/agent-framework",
+            "availability_policy": "retain_verified_on_repo_404",
+        }]}
+        harvester.validate_profiles = Mock(return_value=True)
+        harvester.dry = True
+        harvester.state = {"repositories": {
+            "microsoft/agent-framework": {
+                "documents": {"README.md": {
+                    "commit_sha": "a" * 40, "tree_sha": "b" * 40,
+                    "blob_sha": "c" * 40, "sha": "c" * 40,
+                    "content_hash": "d" * 64,
+                }},
+                "last_checked_at": "2026-11-17T04:14:05Z",
+            }
+        }}
+        harvester._snapshot_provenance = Mock(return_value={
+            "commit_sha": "a" * 40, "tree_sha": "b" * 40,
+            "blob_sha": "c" * 40, "content_hash": "e" * 64,
+        })
+        harvester._source = Mock(side_effect=urllib.error.HTTPError(
+            "https://api.github.com/repos/microsoft/agent-framework",
+            404, "Not Found", None, None
+        ))
+        with self.assertRaisesRegex(RuntimeError, "harvest failed"):
+            harvester.fetch_github_data()
+
+    def test_recovered_source_clears_only_its_previous_health_flag(self):
+        harvester = Harvester.__new__(Harvester)
+        harvester.profiles = {"sources": [{"repo": "microsoft/agent-framework"}]}
+        harvester.validate_profiles = Mock(return_value=True)
+        harvester.dry = True
+        harvester.state = {"repositories": {
+            "microsoft/agent-framework": {
+                "documents": {},
+                "source_health": {"status": "SOURCE_UNAVAILABLE"},
+            }
+        }}
+        harvester._source = Mock(return_value=[])
+        with patch("builtins.print") as output:
+            harvester.fetch_github_data()
+        self.assertEqual(json.loads(output.call_args.args[0])["status"], "PASS")
+        self.assertNotIn(
+            "source_health", harvester.state["repositories"]["microsoft/agent-framework"]
+        )
+
+    def test_unrecognized_source_availability_policy_rejected(self):
+        harvester = Harvester.__new__(Harvester)
+        harvester.bootstrap = False
+        harvester.profiles = {"owner": "zero", "sources": [{
+            "repo": "microsoft/agent-framework", "primary_owner": "zero",
+            "promotion_approved": True, "layer": "agent-runtime",
+            "documents": [], "ignore_patterns": [],
+            "availability_policy": "ignore_any_failure",
+        }]}
+        with self.assertRaisesRegex(ValueError, "unsupported availability policy"):
+            harvester.validate_profiles()
+
     def test_api_retries_transient_network_failures_with_backoff(self):
         harvester = Harvester.__new__(Harvester)
         harvester.token = ""
