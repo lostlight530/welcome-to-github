@@ -369,6 +369,9 @@ class Harvester:
                 raise ValueError(f"invalid source documents: {key}")
             if not isinstance(profile.get("ignore_patterns", []), list):
                 raise ValueError(f"invalid source ignore patterns: {key}")
+            policy = profile.get("availability_policy", "fail_closed")
+            if policy not in {"fail_closed", "retain_verified_on_repo_404"}:
+                raise ValueError(f"unsupported availability policy: {key}")
             if key in seen:
                 raise ValueError(f"duplicate source: {key}")
             seen.add(key)
@@ -644,23 +647,95 @@ class Harvester:
                 documents += 1
         return {"documents": documents, "bounded_references": bounded}
 
+    def _verified_cached_repository_404(self, profile, exc):
+        """Only an opted-in repository metadata 404 with intact local custody may degrade."""
+        repo = profile["repo"]
+        fetch_repo = profile.get("fetch_repo", repo)
+        url = urllib.parse.urlsplit(exc.url)
+        if (
+            profile.get("availability_policy", "fail_closed") != "retain_verified_on_repo_404"
+            or exc.code != 404
+            or url.scheme != "https"
+            or url.netloc != "api.github.com"
+            or url.path != f"/repos/{fetch_repo}"
+            or url.query
+        ):
+            return False
+        repo_state = self.state["repositories"].get(repo)
+        if not isinstance(repo_state, dict):
+            return False
+        documents = repo_state.get("documents")
+        if not isinstance(documents, dict) or not documents:
+            return False
+        if not isinstance(repo_state.get("last_checked_at"), str) or not repo_state["last_checked_at"]:
+            return False
+        for source_path, document in documents.items():
+            if not isinstance(document, dict):
+                return False
+            provenance = self._snapshot_provenance(
+                document, repo=repo, source_path=source_path
+            )
+            if any(
+                document.get(field) != provenance[field]
+                for field in ("commit_sha", "tree_sha", "blob_sha")
+            ):
+                return False
+            if (
+                document.get("sha") != provenance["blob_sha"]
+                or document.get("content_hash") != provenance["content_hash"]
+            ):
+                return False
+        return True
+
     def fetch_github_data(self):
         self.validate_profiles()
-        changed, failures = [], []
+        changed, failures, degraded = [], [], []
         for profile in self.profiles.get("sources", []):
+            repo = profile["repo"]
             try:
                 changed.extend(self._source(profile))
+                repo_state = self.state["repositories"].get(repo)
+                if repo_state is not None:
+                    repo_state.pop("source_health", None)
             except urllib.error.HTTPError as exc:
-                # Diagnose a failing API path without printing auth headers or tokens.
                 endpoint = urllib.parse.urlsplit(exc.url).path
-                failures.append(f"{profile.get('repo')}: HTTP {exc.code} at {endpoint}")
+                if self._verified_cached_repository_404(profile, exc):
+                    repo_state = self.state["repositories"][repo]
+                    previous = repo_state.get("source_health") or {}
+                    repo_state["source_health"] = {
+                        "status": "SOURCE_UNAVAILABLE",
+                        "reason": "UPSTREAM_REPOSITORY_HTTP_404",
+                        "endpoint": endpoint,
+                        "last_verified_at": repo_state["last_checked_at"],
+                        "first_observed_at": previous.get("first_observed_at")
+                        or dt.datetime.now(dt.timezone.utc).isoformat(),
+                    }
+                    degraded.append({"repo": repo, "status": "SOURCE_UNAVAILABLE",
+                                     "http_status": 404, "endpoint": endpoint})
+                else:
+                    failures.append(f"{repo}: HTTP {exc.code} at {endpoint}")
             except (urllib.error.URLError, KeyError, ValueError) as exc:
-                failures.append(f"{profile.get('repo')}: {exc}")
+                failures.append(f"{repo}: {exc}")
         if failures:
             raise RuntimeError("harvest failed: " + " | ".join(failures))
         if not self.dry:
             changed.extend(self._compact_active_snapshots())
             self._migrate_and_validate_snapshot_state(5)
             atomic_write(self.state_path, json.dumps(self.state, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
-        print(json.dumps({"updated": len(changed), "failed": 0}, ensure_ascii=False, sort_keys=True))
+        status = "DEGRADED_SOURCE_UNAVAILABLE" if degraded else "PASS"
+        if degraded:
+            details = " | ".join(f"{item['repo']}: HTTP 404 at {item['endpoint']}" for item in degraded)
+            print(f"::warning title=External source unavailable::{details}; cached source is unchanged")
+            summary = os.environ.get("GITHUB_STEP_SUMMARY")
+            if summary and not self.dry:
+                with open(summary, "a", encoding="utf-8") as output:
+                    output.write(
+                        "\n### External source custody: DEGRADED (not a full source PASS)\n"
+                        + "".join(f"- {item['repo']}: HTTP 404 at {item['endpoint']}; "
+                                  "previous verified snapshot retained; new content NOT_OBSERVED\n"
+                                  for item in degraded)
+                    )
+        print(json.dumps({"updated": len(changed), "failed": 0,
+                          "degraded": len(degraded), "degraded_sources": degraded,
+                          "status": status}, ensure_ascii=False, sort_keys=True))
         return changed
