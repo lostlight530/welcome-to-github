@@ -9,6 +9,7 @@
 {"desc":"Approved external source repository: jd-opensource/joyagent-jdgenie","id":"external_repo_jd_opensource_joyagent_jdgenie","name":"jd-opensource/joyagent-jdgenie","type":"external_repository"}
 {"desc":"Approved external source repository: ModelEngine-Group/nexent","id":"external_repo_modelengine_group_nexent","name":"ModelEngine-Group/nexent","type":"external_repository"}
 {"desc":"Approved external source repository: MoonshotAI/kimi-cli","id":"external_repo_moonshotai_kimi_cli","name":"MoonshotAI/kimi-cli","type":"external_repository"}
+{"desc":"Approved external source repository: MoonshotAI/kimi-code","id":"external_repo_moonshotai_kimi_code","name":"MoonshotAI/kimi-code","type":"external_repository"}
 {"desc":"Approved external source repository: NousResearch/hermes-agent","id":"external_repo_nousresearch_hermes_agent","name":"NousResearch/hermes-agent","type":"external_repository"}
 {"desc":"Approved external source repository: ogx-ai/ogx","id":"external_repo_ogx_ai_ogx","name":"ogx-ai/ogx","type":"external_repository"}
 {"desc":"Approved external source repository: ollama/ollama","id":"external_repo_ollama_ollama","name":"ollama/ollama","type":"external_repository"}

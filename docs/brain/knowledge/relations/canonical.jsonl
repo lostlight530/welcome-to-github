@@ -17,6 +17,15 @@
 {"desc":"Current approved external evidence","dst":"external_doc_modelengine_group_nexent_readme_md","relation":"has_snapshot","src":"external_repo_modelengine_group_nexent"}
 {"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_cli_changelog_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_cli"}
 {"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_cli_readme_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_cli"}
+{"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_code_docs_en_customization_agents_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_code"}
+{"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_code_docs_en_customization_mcp_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_code"}
+{"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_code_docs_en_customization_skills_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_code"}
+{"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_code_docs_en_guides_migration_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_code"}
+{"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_code_docs_en_reference_kimi_acp_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_code"}
+{"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_code_docs_en_reference_tools_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_code"}
+{"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_code_docs_en_release_notes_changelog_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_code"}
+{"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_code_readme_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_code"}
+{"desc":"Current approved external evidence","dst":"external_doc_moonshotai_kimi_code_readme_zh_cn_md","relation":"has_snapshot","src":"external_repo_moonshotai_kimi_code"}
 {"desc":"Current approved external evidence","dst":"external_doc_nousresearch_hermes_agent_readme_md","relation":"has_snapshot","src":"external_repo_nousresearch_hermes_agent"}
 {"desc":"Current approved external evidence","dst":"external_doc_ogx_ai_ogx_readme_md","relation":"has_snapshot","src":"external_repo_ogx_ai_ogx"}
 {"desc":"Current approved external evidence","dst":"external_doc_ollama_ollama_readme_md","relation":"has_snapshot","src":"external_repo_ollama_ollama"}
@@ -810,6 +819,7 @@
 {"desc":"","dst":"file_docs_brain_nexus_mcp_py__func_handle_request","relation":"defines","src":"file_docs_brain_nexus_mcp_py"}
 {"desc":"","dst":"file_docs_brain_nexus_mcp_py__func_run","relation":"defines","src":"file_docs_brain_nexus_mcp_py"}
 {"desc":"","dst":"file_docs_brain_nexus_py__func__brain_root","relation":"defines","src":"file_docs_brain_nexus_py"}
+{"desc":"","dst":"file_docs_brain_nexus_py__func_cleanup_brain_sqlite_index","relation":"defines","src":"file_docs_brain_nexus_py"}
 {"desc":"","dst":"file_docs_brain_nexus_py__func_main","relation":"defines","src":"file_docs_brain_nexus_py"}
 {"desc":"","dst":"file_docs_brain_observation_contract_py__class_DeclarationValidationError","relation":"defines","src":"file_docs_brain_observation_contract_py"}
 {"desc":"","dst":"file_docs_brain_observation_contract_py__class_ObservationDeclaration","relation":"defines","src":"file_docs_brain_observation_contract_py"}
@@ -1022,9 +1032,32 @@
 {"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_14_region","relation":"defines","src":"file_docs_brain_source_profiles_json"}
 {"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_14_repo","relation":"defines","src":"file_docs_brain_source_profiles_json"}
 {"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_14_status","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_14_successor_repo","relation":"defines","src":"file_docs_brain_source_profiles_json"}
 {"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_14_trust_level","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_14_upstream_archived_observed_on","relation":"defines","src":"file_docs_brain_source_profiles_json"}
 {"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_14_watch_commits","relation":"defines","src":"file_docs_brain_source_profiles_json"}
 {"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_14_watch_releases","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_cadence","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_documents_0","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_documents_1","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_documents_2","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_documents_3","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_documents_4","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_documents_5","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_documents_6","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_documents_7","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_documents_8","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_ignore_patterns_0","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_ignore_patterns_1","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_layer","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_predecessor_repo","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_primary_owner","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_region","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_repo","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_status","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_trust_level","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_watch_commits","relation":"defines","src":"file_docs_brain_source_profiles_json"}
+{"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_15_watch_releases","relation":"defines","src":"file_docs_brain_source_profiles_json"}
 {"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_1_cadence","relation":"defines","src":"file_docs_brain_source_profiles_json"}
 {"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_1_documents","relation":"defines","src":"file_docs_brain_source_profiles_json"}
 {"desc":"","dst":"file_docs_brain_source_profiles_json_prop_sources_1_documents_0","relation":"defines","src":"file_docs_brain_source_profiles_json"}
@@ -1288,6 +1321,10 @@
 {"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_partial_keeps_unresolved_work","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
 {"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_test_summary_without_log_not_complete","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
 {"desc":"","dst":"file_tests_test_active_sop_contracts_py__func_valid_maintenance","relation":"defines","src":"file_tests_test_active_sop_contracts_py"}
+{"desc":"","dst":"file_tests_test_brain_cleanup_contract_py__class_BrainCleanupContracts","relation":"defines","src":"file_tests_test_brain_cleanup_contract_py"}
+{"desc":"","dst":"file_tests_test_brain_cleanup_contract_py__func_test_only_closed_sqlite_index_and_sidecars_are_removed","relation":"defines","src":"file_tests_test_brain_cleanup_contract_py"}
+{"desc":"","dst":"file_tests_test_brain_cleanup_contract_py__func_test_rejects_unrelated_db","relation":"defines","src":"file_tests_test_brain_cleanup_contract_py"}
+{"desc":"","dst":"file_tests_test_brain_cleanup_contract_py__func_test_symlink_preflight_aborts_without_partial_cleanup","relation":"defines","src":"file_tests_test_brain_cleanup_contract_py"}
 {"desc":"","dst":"file_tests_test_checkout_eol_guard_py__class_CheckoutEolGuardTests","relation":"defines","src":"file_tests_test_checkout_eol_guard_py"}
 {"desc":"","dst":"file_tests_test_checkout_eol_guard_py__func_git","relation":"defines","src":"file_tests_test_checkout_eol_guard_py"}
 {"desc":"","dst":"file_tests_test_checkout_eol_guard_py__func_setUp","relation":"defines","src":"file_tests_test_checkout_eol_guard_py"}
@@ -1339,6 +1376,7 @@
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_structural_array_index_is_not_treated_as_a_version","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_unchanged_blob_advances_observed_commit_and_tree","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_unchanged_blob_does_not_mutate_persisted_document_state","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_upstream_unavailable_does_not_silently_skip_approved_source","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"func_test_evolver_keeps_input_contract_out_of_monthly_archive","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"func_test_external_links_are_not_selected","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"func_test_noise_normalization","relation":"defines","src":"file_tests_test_harvester_py"}
@@ -1365,7 +1403,11 @@
 {"desc":"","dst":"file_tests_test_lifecycle_guard_py__func_test_receipt_explains_validation_without_claiming_an_apply","relation":"defines","src":"file_tests_test_lifecycle_guard_py"}
 {"desc":"","dst":"file_tests_test_lifecycle_guard_py__func_test_scheduled_cycle_uses_nominal_slot_not_delayed_start","relation":"defines","src":"file_tests_test_lifecycle_guard_py"}
 {"desc":"","dst":"file_tests_test_lifecycle_guard_py__func_test_world_line_change_is_a_green_no_apply_outcome","relation":"defines","src":"file_tests_test_lifecycle_guard_py"}
+{"desc":"","dst":"file_tests_test_nexus_archive_custody_py__class_NexusArchiveCustodyTests","relation":"defines","src":"file_tests_test_nexus_archive_custody_py"}
+{"desc":"","dst":"file_tests_test_nexus_archive_custody_py__func_test_current_snapshots_match_registered_source_state","relation":"defines","src":"file_tests_test_nexus_archive_custody_py"}
+{"desc":"","dst":"file_tests_test_nexus_archive_custody_py__func_test_sealed_precanonical_archive_matches_original_manifest_bytes","relation":"defines","src":"file_tests_test_nexus_archive_custody_py"}
 {"desc":"","dst":"file_tests_test_report_hygiene_full_output_py__class_ReportHygieneFullOutputTests","relation":"defines","src":"file_tests_test_report_hygiene_full_output_py"}
+{"desc":"","dst":"file_tests_test_report_hygiene_full_output_py__func_test_daily_dashboard_does_not_backfill_unobserved_dates","relation":"defines","src":"file_tests_test_report_hygiene_full_output_py"}
 {"desc":"","dst":"file_tests_test_report_hygiene_full_output_py__func_test_rejects_chinese_full_stop_inside_details","relation":"defines","src":"file_tests_test_report_hygiene_full_output_py"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func__api"}
 {"desc":"Auto-sutured ghost node / 自动缝合的幽灵节点","dst":"concept_nexus_system","relation":"is_capability_of","src":"func__archive_stale"}
