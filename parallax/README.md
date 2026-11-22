@@ -14,23 +14,23 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-21 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行、H6 人工授权替代结算或原生执行证明
+本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-22 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行、H6 人工授权替代结算或原生执行证明
 
-历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 2026-11-02 本轮冷启动 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 已含 2026-11-01 原生 Daily 102 / 17 / 119 / 97 / 9, 2026-11-03 冷启动 main `35f76aeb8ea0aad6710fcdc0842065a592ca71ba` 已含 2026-11-02 原生 Daily 103 / 17 / 120 / 98 / 9, 下列数值对应包含 2026-11-21 原生 Daily 的 Git ref 文件快照, 其是否已合并到 main 以 GitHub 的 PR 和提交关系实时核验, 不以本段历史说明代替交付事实
+历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 2026-11-02 本轮冷启动 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 已含 2026-11-01 原生 Daily 102 / 17 / 119 / 97 / 9, 2026-11-03 冷启动 main `35f76aeb8ea0aad6710fcdc0842065a592ca71ba` 已含 2026-11-02 原生 Daily 103 / 17 / 120 / 98 / 9, 下列数值对应包含 2026-11-22 原生 Daily 的 Git ref 文件快照, 其是否已合并到 main 以 GitHub 的 PR 和提交关系实时核验, 不以本段历史说明代替交付事实
 
 
-- 最新每日归属日期: 2026-11-21
-- 最新每日研究: [Skip-CI directive scope versus direct CodeQL execution identity](records/2026-11/2026-11-21.md)
-- 每日专题: 122
+- 最新每日归属日期: 2026-11-22
+- 最新每日研究: [Buffered session acknowledgement versus durable event settlement](records/2026-11/2026-11-22.md)
+- 每日专题: 123
 - 特殊专题: 17
-- 当前专题研究批次: 139
-- 当前专题独立执行日期窗口: 117
+- 当前专题研究批次: 140
+- 当前专题独立执行日期窗口: 118
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
 - 周期审计: 9
 - 最新周期审计: [2026-W44 Friday 5/7 as-of](audits/2026-W44.md)
-- 当前月度事实源: [2026-11 AS_OF_2026-11-21, nonfinal](records/2026-11.md)
+- 当前月度事实源: [2026-11 AS_OF_2026-11-22, nonfinal](records/2026-11.md)
 - 当前方法: [METHOD.md](METHOD.md)
 - 控制案例: [CASES.md](CASES.md)
 - 长期发现: [NOTES.md](NOTES.md)
@@ -59,7 +59,15 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-11-21
+## 当前研究边界 — 2026-11-22
+
+At the November 22 Asia/Shanghai cold-start, Google LLC's official google/adk-python main was pinned to commit 2b90353cd2f1ee0a8a52262a7843333b6f7d2c8d. Eight source/document/test artifacts support a distinct buffered session acceptance, live-state update, background delegate write and flush/failure contract. BufferedSessionService.append_event can return after applying and queuing an event without a required awaited delegate-store settlement, while flush_session, flush and aclose supply separately specified barriers. Official documentation marks the feature experimental and notes loss of unsent writes on crash. An executed bounded JavaScript source-assertion harness first returned 24/25 due to a line-wrap-sensitive predicate, then corrected to 25/25 on the same pinned sources. This is source-level PARTIAL evidence, not executed ADK Python, pytest, delegate fault injection, crash recovery or downstream durable success. One Google LLC publisher, no CASE/NOTES/Special/Audit promotion. This Git ref holds 123 research Daily / 17 Special / 140 batches / 118 independent execution windows / 9 Audits, November assigned-day coverage 22/22
+
+[BUFFERED_APPEND_ACK != DELEGATE_DURABLE_COMMIT](records/2026-11/2026-11-22.md)
+
+[TEST_SOURCE != EXECUTED_ADK_RUNTIME](records/2026-11/2026-11-22.md)
+
+## 前序研究边界 — 2026-11-21
 
 At the November 21 cold-start main e7de8e59c3bca4a80ec23e3826de50e444d1ea8c, the actual Git commit contains [skip ci], yet direct GitHub Actions showed one completed-success run 44663827547 with stored event dynamic and three matching completed-success CodeQL check/job IDs 136048204351, 136048204325 and 136048204000. GitHub's current skip-workflow contract applies to push and pull_request events, not universally to every trigger. Adjacent parent e683d03e045052f9df802226c8efa3e20f255f1d had six successful Checks and three successful Actions runs across schedule/push/dynamic, but that comparison is not a controlled causal proof of why the head has no listed push run. Seventeen executed JavaScript assertions passed. GitHub publisher one, PARTIAL, exact native Python checker NOT_EXECUTED, no independent settlement, no CASE/NOTES/Special/Audit promotion. This Git ref contains Daily 122 / Special 17 / batches 139 / windows 117 / Audits 9, November 21/21 assigned dates arrived
 
