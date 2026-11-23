@@ -787,6 +787,7 @@
 {"desc":"","dst":"file_docs_brain_harvester_py__func__snapshot_source","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func__source","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func__validated_state","relation":"defines","src":"file_docs_brain_harvester_py"}
+{"desc":"","dst":"file_docs_brain_harvester_py__func__verified_cached_repository_404","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func_fetch_github_data","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func_validate_active_snapshots","relation":"defines","src":"file_docs_brain_harvester_py"}
 {"desc":"","dst":"file_docs_brain_harvester_py__func_validate_profiles","relation":"defines","src":"file_docs_brain_harvester_py"}
@@ -1358,12 +1359,14 @@
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_noise_normalization","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_normalized_noise_does_not_mutate_persisted_provenance","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_normalized_noise_only_advances_observed_provenance","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_opted_in_repository_404_retains_verified_cache_and_continues","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_orphan_suturing_creates_its_target_entity","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_orphan_suturing_propagates_write_failure","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_previous_diff_baseline_comes_from_recorded_git_blob","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_profiles_have_unique_welcome_owner","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_reason_reads_current_harvester_state_schema","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_rebuild_does_not_open_database_before_replacing_it","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_recovered_source_clears_only_its_previous_health_flag","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_removed_source_is_archived_and_removed_from_state","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_schema_five_rejects_noncanonical_current_output_path","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_schema_five_rejects_state_output_provenance_mismatch","relation":"defines","src":"file_tests_test_harvester_py"}
@@ -1374,8 +1377,11 @@
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_source_snapshot_uses_pinned_commit_tree_and_blob","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_state_rejects_non_mapping_repository_records","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_structural_array_index_is_not_treated_as_a_version","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_tampered_cached_source_does_not_degrade_404","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_unavailable_source_without_cache_or_with_other_error_fails_closed","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_unchanged_blob_advances_observed_commit_and_tree","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_unchanged_blob_does_not_mutate_persisted_document_state","relation":"defines","src":"file_tests_test_harvester_py"}
+{"desc":"","dst":"file_tests_test_harvester_py__func_test_unrecognized_source_availability_policy_rejected","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"file_tests_test_harvester_py__func_test_upstream_unavailable_does_not_silently_skip_approved_source","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"func_test_evolver_keeps_input_contract_out_of_monthly_archive","relation":"defines","src":"file_tests_test_harvester_py"}
 {"desc":"","dst":"func_test_external_links_are_not_selected","relation":"defines","src":"file_tests_test_harvester_py"}
