@@ -14,23 +14,23 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-23 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行、H6 人工授权替代结算或原生执行证明
+本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-24 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行、H6 人工授权替代结算或原生执行证明
 
-历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 2026-11-02 本轮冷启动 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 已含 2026-11-01 原生 Daily 102 / 17 / 119 / 97 / 9, 2026-11-03 冷启动 main `35f76aeb8ea0aad6710fcdc0842065a592ca71ba` 已含 2026-11-02 原生 Daily 103 / 17 / 120 / 98 / 9, 下列数值对应包含 2026-11-23 原生 Daily 的 Git ref 文件快照, 其是否已合并到 main 以 GitHub 的 PR 和提交关系实时核验, 不以本段历史说明代替交付事实
+历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 2026-11-02 本轮冷启动 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 已含 2026-11-01 原生 Daily 102 / 17 / 119 / 97 / 9, 2026-11-03 冷启动 main `35f76aeb8ea0aad6710fcdc0842065a592ca71ba` 已含 2026-11-02 原生 Daily 103 / 17 / 120 / 98 / 9, 下列数值对应包含 2026-11-24 原生 Daily 的 Git ref 文件快照, 其是否已合并到 main 以 GitHub 的 PR 和提交关系实时核验, 不以本段历史说明代替交付事实
 
 
-- 最新每日归属日期: 2026-11-23
-- 最新每日研究: [Workflow 成功与跳过的 Job 不是同一执行事实](records/2026-11/2026-11-23.md)
-- 每日专题: 124
+- 最新每日归属日期: 2026-11-24
+- 最新每日研究: [提交前进不等于 Parallax 研究执行次数](records/2026-11/2026-11-24.md)
+- 每日专题: 125
 - 特殊专题: 17
-- 当前专题研究批次: 141
-- 当前专题独立执行日期窗口: 119
+- 当前专题研究批次: 142
+- 当前专题独立执行日期窗口: 120
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
 - 周期审计: 9
 - 最新周期审计: [2026-W44 Friday 5/7 as-of](audits/2026-W44.md)
-- 当前月度事实源: [2026-11 AS_OF_2026-11-23, nonfinal](records/2026-11.md)
+- 当前月度事实源: [2026-11 AS_OF_2026-11-24, nonfinal](records/2026-11.md)
 - 当前方法: [METHOD.md](METHOD.md)
 - 控制案例: [CASES.md](CASES.md)
 - 长期发现: [NOTES.md](NOTES.md)
@@ -59,7 +59,13 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-11-23
+## 当前研究边界 — 2026-11-24
+
+At the 2026-11-24 cold-start, pinned GitHub compare d9f21644...aebb350e returned 22 ahead commits and one new Parallax Daily path, alongside two changed Parallax derived indices and non-Parallax paths. Commit count is not Daily count or runtime receipt. One GitHub publisher, bounded PARTIAL, exact native checker NOT_EXECUTED, no CASE/NOTES/Special/Audit promotion. This ref contains Daily 125 / Special 17 / batches 142 / independent windows 120 / Audits 9, November assigned-date coverage 24/24
+
+[COMMIT_ADVANCE != DAILY_EXECUTION_COUNT](records/2026-11/2026-11-24.md)
+
+## 前序研究边界 — 2026-11-23
 
 本轮在远端 main `d9f21644a8ad3bda81fd1610df007c01558a599b` 直接观察 GitHub Actions run `45029811626` completed/success, 但同 run Job `137230684274` 为 completed/success, Job `137230686195` 为 completed/skipped, 因而 workflow aggregate success 不等于每个 Job 都执行成功, 同 commit 其他 workflow 的成功也不能替代被跳过 Job 的执行回执
 
