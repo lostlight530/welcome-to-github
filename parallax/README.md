@@ -14,23 +14,23 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-22 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行、H6 人工授权替代结算或原生执行证明
+本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-23 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行、H6 人工授权替代结算或原生执行证明
 
-历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 2026-11-02 本轮冷启动 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 已含 2026-11-01 原生 Daily 102 / 17 / 119 / 97 / 9, 2026-11-03 冷启动 main `35f76aeb8ea0aad6710fcdc0842065a592ca71ba` 已含 2026-11-02 原生 Daily 103 / 17 / 120 / 98 / 9, 下列数值对应包含 2026-11-22 原生 Daily 的 Git ref 文件快照, 其是否已合并到 main 以 GitHub 的 PR 和提交关系实时核验, 不以本段历史说明代替交付事实
+历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 2026-11-02 本轮冷启动 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 已含 2026-11-01 原生 Daily 102 / 17 / 119 / 97 / 9, 2026-11-03 冷启动 main `35f76aeb8ea0aad6710fcdc0842065a592ca71ba` 已含 2026-11-02 原生 Daily 103 / 17 / 120 / 98 / 9, 下列数值对应包含 2026-11-23 原生 Daily 的 Git ref 文件快照, 其是否已合并到 main 以 GitHub 的 PR 和提交关系实时核验, 不以本段历史说明代替交付事实
 
 
-- 最新每日归属日期: 2026-11-22
-- 最新每日研究: [Buffered session acknowledgement versus durable event settlement](records/2026-11/2026-11-22.md)
-- 每日专题: 123
+- 最新每日归属日期: 2026-11-23
+- 最新每日研究: [Workflow 成功与跳过的 Job 不是同一执行事实](records/2026-11/2026-11-23.md)
+- 每日专题: 124
 - 特殊专题: 17
-- 当前专题研究批次: 140
-- 当前专题独立执行日期窗口: 118
+- 当前专题研究批次: 141
+- 当前专题独立执行日期窗口: 119
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
 - 周期审计: 9
 - 最新周期审计: [2026-W44 Friday 5/7 as-of](audits/2026-W44.md)
-- 当前月度事实源: [2026-11 AS_OF_2026-11-22, nonfinal](records/2026-11.md)
+- 当前月度事实源: [2026-11 AS_OF_2026-11-23, nonfinal](records/2026-11.md)
 - 当前方法: [METHOD.md](METHOD.md)
 - 控制案例: [CASES.md](CASES.md)
 - 长期发现: [NOTES.md](NOTES.md)
@@ -59,7 +59,17 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-11-22
+## 当前研究边界 — 2026-11-23
+
+本轮在远端 main `d9f21644a8ad3bda81fd1610df007c01558a599b` 直接观察 GitHub Actions run `45029811626` completed/success, 但同 run Job `137230684274` 为 completed/success, Job `137230686195` 为 completed/skipped, 因而 workflow aggregate success 不等于每个 Job 都执行成功, 同 commit 其他 workflow 的成功也不能替代被跳过 Job 的执行回执
+
+本轮是一次只读有界证据程序, 不执行受控 dispatch 或完整 Parallax Python checker, 不推断跳过原因和应用层结算, GitHub 单一 publisher, PARTIAL, 不新增 CASE/NOTES/Special/Audit, 本 Git ref 计数为 124 research Daily / 17 Special / 141 batches / 119 independent execution windows / 9 Audits, November assigned-day coverage 23/23
+
+[WORKFLOW_SUCCESS != ALL_JOBS_EXECUTED](records/2026-11/2026-11-23.md)
+
+[OTHER_RUN_SUCCESS != SKIPPED_JOB_SETTLEMENT](records/2026-11/2026-11-23.md)
+
+## 前序研究边界 — 2026-11-22
 
 At the November 22 Asia/Shanghai cold-start, Google LLC's official google/adk-python main was pinned to commit 2b90353cd2f1ee0a8a52262a7843333b6f7d2c8d. Eight source/document/test artifacts support a distinct buffered session acceptance, live-state update, background delegate write and flush/failure contract. BufferedSessionService.append_event can return after applying and queuing an event without a required awaited delegate-store settlement, while flush_session, flush and aclose supply separately specified barriers. Official documentation marks the feature experimental and notes loss of unsent writes on crash. An executed bounded JavaScript source-assertion harness first returned 24/25 due to a line-wrap-sensitive predicate, then corrected to 25/25 on the same pinned sources. This is source-level PARTIAL evidence, not executed ADK Python, pytest, delegate fault injection, crash recovery or downstream durable success. One Google LLC publisher, no CASE/NOTES/Special/Audit promotion. This Git ref holds 123 research Daily / 17 Special / 140 batches / 118 independent execution windows / 9 Audits, November assigned-day coverage 22/22
 
