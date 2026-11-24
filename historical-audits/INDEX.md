@@ -77,3 +77,13 @@ The preferred links below are for navigation. The retained paths point to the sa
 ## 2026-11-20 source/provenance document-audit correction
 
 - [Horizon/Parallax A1/A2 source-role review](02-document-audits/2026-11-20--a1-a2-source-and-provenance--document-audit.md) — separate independent review; source-row role fixes are in current canonical A1/A2, original history retained
+
+## 2026-11-24 retained archive navigation additions
+
+These existing records were not explicitly linked by path in the preceding index. This is a navigation supplement, not a new audit, a new producer run, or a reclassification. The directory column reports the retained physical location; original record content and provenance govern interpretation. Path-sensitive references and legacy locations remain intact. Existing same-blob aliases are not additional evidence.
+
+| Retained record | Existing directory | Blob at inspected main |
+| --- | --- | --- |
+| [2026-10-01--external-review-source-scope--correction.md](01-corrections-and-errata/2026-10-01--external-review-source-scope--correction.md) | `01-corrections-and-errata/` | `95c877eec41e9b6550af7a57331ae629c1038d4a` |
+| [2026-10-31--horizon-h2-upstream-state--post-merge-erratum.md](01-corrections-and-errata/2026-10-31--horizon-h2-upstream-state--post-merge-erratum.md) | `01-corrections-and-errata/` | `a8bf035589b2a7aa4bc4146f07b81e19e7aa4f6a` |
+| [2026-11-01--a2-successor-retention-and-acceptance--reconciliation.md](01-corrections-and-errata/2026-11-01--a2-successor-retention-and-acceptance--reconciliation.md) | `01-corrections-and-errata/` | `fefd90dc12c7f165019c50a0b159288b018b4b81` |
