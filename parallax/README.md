@@ -61,7 +61,7 @@ CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录
 
 ## 当前研究边界 — 2026-11-24
 
-At the 2026-11-24 cold-start, pinned GitHub compare d9f21644...aebb350e returned 22 ahead commits and one new Parallax Daily path, alongside two changed Parallax derived indices and non-Parallax paths. Commit count is not Daily count or runtime receipt. One GitHub publisher, bounded PARTIAL, exact native checker NOT_EXECUTED, no CASE/NOTES/Special/Audit promotion. This ref contains Daily 125 / Special 17 / batches 142 / independent windows 120 / Audits 9, November assigned-date coverage 24/24
+At the 2026-11-24 cold-start, pinned GitHub compare d9f21644...aebb350e returned 22 ahead commits and one new Parallax Daily path, alongside two changed Parallax derived indices and non-Parallax paths; Commit count is not Daily count or runtime receipt; One GitHub publisher, bounded PARTIAL, exact native checker NOT_EXECUTED, no CASE/NOTES/Special/Audit promotion; This ref contains Daily 125 / Special 17 / batches 142 / independent windows 120 / Audits 9, November assigned-date coverage 24/24
 
 [COMMIT_ADVANCE != DAILY_EXECUTION_COUNT](records/2026-11/2026-11-24.md)
 
