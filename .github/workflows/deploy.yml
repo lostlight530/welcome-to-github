@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -46,10 +47,53 @@ jobs:
           cp docs/archaeology/legacy_traces/MEMORIAL.md dist/docs/archaeology/legacy_traces/MEMORIAL.md
 
       - name: Upload artifact
+        id: upload
         uses: actions/upload-pages-artifact@v4
         with:
           path: 'dist'
+          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Wait for uploaded artifact visibility
+        timeout-minutes: 2
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
+          ARTIFACT_NAME: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          set -euo pipefail
+          [[ "$ARTIFACT_ID" =~ ^[1-9][0-9]*$ ]] || { echo '::error::Missing or invalid uploaded artifact ID'; exit 1; }
+          for delay in 0 2 4 8 16; do
+            sleep "$delay"
+            if ! result=$(timeout 10s gh api --method GET \
+              "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts" \
+              -f name="$ARTIFACT_NAME" -F per_page=100); then
+              echo '::warning::Artifact metadata request failed; retrying within budget'
+              continue
+            fi
+            state=$(jq -er --arg name "$ARTIFACT_NAME" --arg id "$ARTIFACT_ID" '
+              if (.artifacts | type) != "array" or (.total_count | type) != "number" then "invalid"
+              elif .total_count == 0 and (.artifacts | length) == 0 then "pending"
+              elif .total_count == 1 and (.artifacts | length) == 1 and
+                (.artifacts[0] | .name == $name and (.id | tostring) == $id and
+                 .expired == false and (.size_in_bytes | type) == "number" and .size_in_bytes > 0)
+              then "ready" else "invalid" end' <<< "$result")
+            case "$state" in
+              ready)
+                echo "Artifact $ARTIFACT_ID ($ARTIFACT_NAME) is visible in the run-scoped REST API"
+                # REST visibility is not a guarantee of internal Artifact Service visibility.
+                sleep 2
+                exit 0
+                ;;
+              pending) echo 'Artifact not visible yet; retrying within budget' ;;
+              *) echo '::error::Unexpected artifact identity, count, size or expiry'; exit 1 ;;
+            esac
+          done
+          echo '::error::Uploaded artifact was not confirmed visible within the retry budget'
+          exit 1
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
