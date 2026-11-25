@@ -53,7 +53,9 @@ jobs:
           path: 'dist'
           name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
 
-      - name: Wait for uploaded artifact visibility
+      # Verify the upload receipt by ID; do not depend on a run-wide name listing.
+      # The Pages REST API accepts artifact_id directly (no second Twirp lookup).
+      - name: Verify exact uploaded artifact
         timeout-minutes: 2
         shell: bash
         env:
@@ -65,35 +67,136 @@ jobs:
           [[ "$ARTIFACT_ID" =~ ^[1-9][0-9]*$ ]] || { echo '::error::Missing or invalid uploaded artifact ID'; exit 1; }
           for delay in 0 2 4 8 16; do
             sleep "$delay"
-            if ! result=$(timeout 10s gh api --method GET \
-              "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts" \
-              -f name="$ARTIFACT_NAME" -F per_page=100); then
-              echo '::warning::Artifact metadata request failed; retrying within budget'
+            if ! result=$(timeout 10s gh api --method GET "repos/$GITHUB_REPOSITORY/actions/artifacts/$ARTIFACT_ID"); then
+              echo "::warning::Artifact $ARTIFACT_ID metadata request failed; retrying within budget"
               continue
             fi
-            state=$(jq -er --arg name "$ARTIFACT_NAME" --arg id "$ARTIFACT_ID" '
-              if (.artifacts | type) != "array" or (.total_count | type) != "number" then "invalid"
-              elif .total_count == 0 and (.artifacts | length) == 0 then "pending"
-              elif .total_count == 1 and (.artifacts | length) == 1 and
-                (.artifacts[0] | .name == $name and (.id | tostring) == $id and
-                 .expired == false and (.size_in_bytes | type) == "number" and .size_in_bytes > 0)
-              then "ready" else "invalid" end' <<< "$result")
+            if ! state=$(jq -er --arg id "$ARTIFACT_ID" --arg name "$ARTIFACT_NAME" \
+              --arg run "$GITHUB_RUN_ID" --arg sha "$GITHUB_SHA" '
+              if type != "object" then "incomplete"
+              elif .id == null or .name == null then "incomplete"
+              elif (.id | tostring) != $id or .name != $name then "identity_mismatch"
+              elif (.workflow_run | type) != "object" then "incomplete"
+              elif .workflow_run.id == null or .workflow_run.head_sha == null then "incomplete"
+              elif (.workflow_run.id | tostring) != $run or .workflow_run.head_sha != $sha then "identity_mismatch"
+              elif .expired == true then "expired"
+              elif .expired != false or (.size_in_bytes | type) != "number" or .size_in_bytes <= 0 then "incomplete"
+              else "ready" end' <<< "$result"); then
+              echo '::warning::Malformed artifact metadata; retrying within budget'
+              continue
+            fi
+            echo "Artifact check: expected id=$ARTIFACT_ID name=$ARTIFACT_NAME run=$GITHUB_RUN_ID sha=$GITHUB_SHA state=$state"
+            jq -c 'if type == "object" then {id,name,expired,size_in_bytes,workflow_run:(.workflow_run | if type == "object" then {id,head_sha} else null end)} else {shape:type} end' <<< "$result"
             case "$state" in
-              ready)
-                echo "Artifact $ARTIFACT_ID ($ARTIFACT_NAME) is visible in the run-scoped REST API"
-                # REST visibility is not a guarantee of internal Artifact Service visibility.
-                sleep 2
-                exit 0
-                ;;
-              pending) echo 'Artifact not visible yet; retrying within budget' ;;
-              *) echo '::error::Unexpected artifact identity, count, size or expiry'; exit 1 ;;
+              ready) exit 0 ;;
+              incomplete) echo '::warning::Incomplete artifact metadata; retrying within budget' ;;
+              *) echo "::error::Artifact validation rejected: $state"; exit 1 ;;
             esac
           done
-          echo '::error::Uploaded artifact was not confirmed visible within the retry budget'
+          echo '::error::Exact uploaded artifact was not verified within the retry budget'
           exit 1
 
-      - name: Deploy to GitHub Pages
+      # Preserve the official Pages environment, OIDC origin check and build SHA.
+      # Create exactly once. An ambiguous POST result is not safe to replay.
+      # https://docs.github.com/en/rest/pages/pages#create-a-github-pages-deployment
+      - name: Deploy exact artifact to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+        timeout-minutes: 12
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
+        run: |
+          set -euo pipefail
+          [[ "$ARTIFACT_ID" =~ ^[1-9][0-9]*$ ]] || { echo '::error::Invalid artifact ID'; exit 1; }
+          endpoint="repos/$GITHUB_REPOSITORY/pages/deployments"
+          response=$(mktemp)
+          deployment_id=''
+          pending=false
+          cleanup() { rm -f "$response"; }
+          cancel_pending() {
+            if [[ "$pending" == true && -n "$deployment_id" ]]; then
+              echo "Cancel requested for known deployment $deployment_id"
+              if timeout 15s gh api --method POST "$endpoint/$deployment_id/cancel" >/dev/null; then
+                echo "Cancellation accepted for $deployment_id"
+              else
+                echo "::warning::Cancellation not confirmed for $deployment_id"
+              fi
+              pending=false
+            fi
+          }
+          trap cleanup EXIT
+          trap 'cancel_pending; exit 130' INT
+          trap 'cancel_pending; exit 143' TERM
+
+          # Never print the OIDC response or deployment request body.
+          if ! oidc=$(curl --fail --silent --show-error --max-time 15 \
+            -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "$ACTIONS_ID_TOKEN_REQUEST_URL" | jq -er '.value | select(type == "string" and length > 0)'); then
+            echo '::error::Unable to obtain Pages OIDC token; no deployment created'
+            exit 1
+          fi
+          echo "::add-mask::$oidc"
+          export PAGES_OIDC_TOKEN="$oidc"
+          unset oidc
+          echo "Creating Pages deployment: artifact_id=$ARTIFACT_ID build=$GITHUB_SHA run=$GITHUB_RUN_ID attempt=$GITHUB_RUN_ATTEMPT"
+          if ! http_code=$(jq -nc --argjson id "$ARTIFACT_ID" --arg sha "$GITHUB_SHA" \
+            '{artifact_id:$id,pages_build_version:$sha,oidc_token:env.PAGES_OIDC_TOKEN}' | \
+            curl --silent --show-error --max-time 25 --request POST \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H 'Accept: application/vnd.github+json' \
+              -H 'X-GitHub-Api-Version: 2022-11-28' \
+              -H 'Content-Type: application/json' --data-binary @- \
+              --output "$response" --write-out '%{http_code}' "$GITHUB_API_URL/$endpoint"); then
+            unset PAGES_OIDC_TOKEN
+            echo '::error::Deployment create transport outcome unknown; no automatic POST replay'
+            exit 1
+          fi
+          unset PAGES_OIDC_TOKEN
+          if [[ "$http_code" != 200 && "$http_code" != 201 ]]; then
+            echo "::error::Deployment create returned HTTP $http_code; no automatic POST replay"
+            exit 1
+          fi
+          if ! deployment_id=$(jq -er '.id | tostring | select(test("^[A-Za-z0-9_-]+$") and . != "null")' "$response"); then
+            echo '::error::Create response lacked a usable deployment ID; outcome unknown, no POST replay'
+            exit 1
+          fi
+          page_url=$(jq -r '.page_url // empty | select(type == "string" and test("^https://[^[:space:]]+$"))' "$response")
+          pending=true
+          echo "Created deployment $deployment_id for artifact $ARTIFACT_ID"
+          deadline=$((SECONDS + 600))
+          errors=0
+          while (( SECONDS < deadline )); do
+            sleep 5
+            if result=$(timeout 10s gh api --method GET "$endpoint/$deployment_id") && \
+               status=$(jq -er '.status | select(type == "string" and test("^[a-z_]+$"))' <<< "$result"); then
+              errors=0
+              echo "Pages deployment $deployment_id status=$status"
+              case "$status" in
+                succeed)
+                  pending=false
+                  if [[ -n "$page_url" ]]; then
+                    printf 'page_url=%s\n' "$page_url" >> "$GITHUB_OUTPUT"
+                  else
+                    echo '::warning::Pages succeeded but no HTTPS page URL was returned'
+                  fi
+                  echo 'Reported success!'
+                  exit 0
+                  ;;
+                deployment_failed|deployment_perms_error|deployment_content_failed|deployment_cancelled|deployment_lost)
+                  pending=false
+                  echo "::error::Pages deployment terminal failure: $status (id=$deployment_id); no automatic POST replay"
+                  exit 1
+                  ;;
+              esac
+            else
+              errors=$((errors + 1))
+              echo "::warning::Deployment status unavailable ($errors/10): $deployment_id"
+              if (( errors >= 10 )); then
+                break
+              fi
+            fi
+          done
+          echo "::error::Deployment status not confirmed within polling budget: $deployment_id"
+          cancel_pending
+          exit 1
