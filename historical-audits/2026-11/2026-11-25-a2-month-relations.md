@@ -211,6 +211,7 @@
 | `parallax/records/2026-11/2026-11-23.md` | `c4350d60f437da10033c8eecb1ef2a4fe74bff12` | `c4350d60f437da10033c8eecb1ef2a4fe74bff12` | INHERITED / exact prior source custody; NO_FOLLOW_UP / exact prior custody; PARALLAX_NATIVE_DISTINCT_FROM_HORIZON; NEW_TO_PRIOR_A2_RELATION; NEW_DAY_N_SOURCE_NOT_A_NEW_ISSUER |
 | `parallax/records/2026-11/2026-11-24.md` | `d9980be73f84b6e257d4270cc6f6e6d425ab9029` | `d9980be73f84b6e257d4270cc6f6e6d425ab9029` | INHERITED / CHANGED / Parallax separate commit/path identity research; - 精确 `python parallax/tools/check.py` 在完整工作树执行: NOT_EXECUTED; - GitHub workflow dispatch、应用层执行与独立 publisher 复验: NOT_EXECUTED |
 | `parallax/records/2026-11/2026-11-25.md` | `61250d1698675e41797b636352a1eb272f3951da` | NOT_IN_PRIOR_A2 | NEW / Parallax distinct MCP approval policy call-scope research; upstream suite receipt, no live remote effect |
+| `parallax/README.md` | `8ecbdff54582a9a406e77c09c02656469b4a3ded` | NOT_IN_PRIOR_A2 | APPEND_RELATION / #1054 current projection Daily 126, Special 17, batches 143, independent windows 121, audits 9; November 25/25 assigned dates; these are distinct denominators, not independent publishers or additional experiments |
 
 ## Evidence delta and cross-date relation
 - Nov24 Parallax distinguishes commit count from original research-window count; Nov25 retains that distinction. Current index advances 24→25 Daily identities and 21→22 bounded procedures, trials remain 10; not 25 independent external issuers.
@@ -223,5 +224,5 @@
 - UNKNOWN: installed SDK, real provider calls, host authorization and external effect settlement. Full repository checker, full checkout, independent SDK and external runtime NOT_EXECUTED here.
 
 ## Acceptance
-- TASK_COMPLETENESS: 25 logical windows; 175 distinct source relations. Source identity and content judgments retained; claim/runtime verification PARTIAL. Original A1 numeric gate verified; original A2 final merged additions gate >=100 remains pending.
+- TASK_COMPLETENESS: 25 logical windows; 176 distinct source relations. Source identity and content judgments retained; claim/runtime verification PARTIAL. Original A1 numeric gate verified; original A2 final merged additions gate >=100 remains pending.
 - DELIVERY Draft only, separate merge authorization required; MAIN_RETENTION pending. Single canonical audit file, no history rewrite.
