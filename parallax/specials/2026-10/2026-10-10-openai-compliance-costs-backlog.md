@@ -21,9 +21,9 @@
 
 ## 研究摘要
 
-10-10 页面更新显示成本数据发布滞后，产品使用和 API Platform 请求未受影响，其他报告渠道可用；缓解后仍可能有不完整数据，10-13 标记恢复。日期按本次页面显示，搜索摘要的跨时区日期不同，不据此重建精确 UTC。
+10-10 页面更新显示成本数据发布滞后，产品使用和 API Platform 请求未受影响，其他报告渠道可用；缓解后仍可能有不完整数据，10-13 标记恢复.日期按本次页面显示，搜索摘要的跨时区日期不同，不据此重建精确 UTC.
 
-研究边界：成本数据不可见是否可以证明没有费用发生，或恢复说明足以证明全部历史账目已对齐。本专题保存公开事件的 proposition identity，不把恢复词汇传播到未被证据覆盖的对象。
+研究边界：成本数据不可见是否可以证明没有费用发生，或恢复说明足以证明全部历史账目已对齐.本专题保存公开事件的 proposition identity，不把恢复词汇传播到未被证据覆盖的对象.
 
 ## 研究问题
 
@@ -31,12 +31,12 @@
 
 ## 可证伪假设
 
-- 支持条件: 同一 canonical incident 的状态更新仅覆盖明确命名的对象与阶段，其他对象仍需单独证据。
-- 推翻条件: 同一权威来源给出完整 affected-object set 与逐对象、逐阶段终态回执，且可以绑定原请求身份。
+- 支持条件: 同一 canonical incident 的状态更新仅覆盖明确命名的对象与阶段，其他对象仍需单独证据.
+- 推翻条件: 同一权威来源给出完整 affected-object set 与逐对象、逐阶段终态回执，且可以绑定原请求身份.
 
 ## 历史背景
 
-事件归属 2026-10-10，实际研究发生在 2026-11-27。当前读取的报告包含后续更新，不是事件当日保存的页面快照。不得用后续恢复或归因倒写早期认知。
+事件归属 2026-10-10，实际研究发生在 2026-11-27.当前读取的报告包含后续更新，不是事件当日保存的页面快照.不得用后续恢复或归因倒写早期认知.
 
 ## 证据矩阵
 
@@ -47,21 +47,21 @@
 
 ## Identity boundary
 
-必须区分 reporting freshness / economic effect identity / current state。事件级报告主体、受影响范围、个体对象、状态变更时间与读取时间不可合并。页面更新只授权改变其明确支持的命题。
+必须区分 reporting freshness / economic effect identity / current state.事件级报告主体、受影响范围、个体对象、状态变更时间与读取时间不可合并.页面更新只授权改变其明确支持的命题.
 
 ## 控制条件
 
-固定同一报告事件，区分消费发生、成本发布、其他报告渠道、backlog 和最终服务状态。
+固定同一报告事件，区分消费发生、成本发布、其他报告渠道、backlog 和最终服务状态.
 
 ## 实验设计
 
-NO_DIRECT_EXPERIMENT。实际执行为只读公开报告核验及命题边界对照，不运行生产服务、不模拟一个新的 Trial，不计 CASE support。
+NO_DIRECT_EXPERIMENT.实际执行为只读公开报告核验及命题边界对照，不运行生产服务、不模拟一个新的 Trial，不计 CASE support.
 
 ## 原始观测
 
-- E1 可定位到明确 incident，报告主体和范围如上。
-- 使用未受影响而报告不完整，是对 reporting absence implies no consumption 的直接反例。
-- 每个组织、成本条目、迟到数据的对账状态与账单正确性 不在可见证据链内。
+- E1 可定位到明确 incident，报告主体和范围如上.
+- 使用未受影响而报告不完整，是对 reporting absence implies no consumption 的直接反例.
+- 每个组织、成本条目、迟到数据的对账状态与账单正确性 不在可见证据链内.
 
 ## 试验比较
 
@@ -72,36 +72,36 @@ NO_DIRECT_EXPERIMENT。实际执行为只读公开报告核验及命题边界对
 
 ## 历史比较
 
-关联原有 P-04 time replacement 与 [Daily](../../records/2026-10/2026-10-10.md)；本事件是新的对象，不是原 Daily 的独立重放。notification/offset progress 与独立业务证据分离 仅为研究关联，不建立历史因果关系。
+关联原有 P-04 time replacement 与 [Daily](../../records/2026-10/2026-10-10.md)；本事件是新的对象，不是原 Daily 的独立重放.notification/offset progress 与独立业务证据分离 仅为研究关联，不建立历史因果关系.
 
 ## 指标结果
 
-无受影响组织总数、逐账目 backlog 数量或完整性分母；NOT_APPLICABLE。
+无受影响组织总数、逐账目 backlog 数量或完整性分母；NOT_APPLICABLE.
 
 ## 反例检查
 
-使用未受影响而报告不完整，是对 reporting absence implies no consumption 的直接反例。。如果未来取得完整逐对象状态证据，应重新评估相应命题，而非把当前 UNKNOWN 解释为永远失败。
+使用未受影响而报告不完整，是对 reporting absence implies no consumption 的直接反例..如果未来取得完整逐对象状态证据，应重新评估相应命题，而非把当前 UNKNOWN 解释为永远失败.
 
 ## 暂时结论
 
-PARTIAL。事件级事实有一手来源，每个组织、成本条目、迟到数据的对账状态与账单正确性 保持 UNKNOWN。未建立第二独立发布者、独立 evaluator 或真实执行证明。
+PARTIAL.事件级事实有一手来源，每个组织、成本条目、迟到数据的对账状态与账单正确性 保持 UNKNOWN.未建立第二独立发布者、独立 evaluator 或真实执行证明.
 
 ## 与 Daily 的关系
 
-[2026-10-10 Daily](../../records/2026-10/2026-10-10.md) 提供相邻研究问题；该专题不替代 Daily，不增加 CASE 支持或 NOTES。
+[2026-10-10 Daily](../../records/2026-10/2026-10-10.md) 提供相邻研究问题；该专题不替代 Daily，不增加 CASE 支持或 NOTES.
 
 ## AGI-scale relevance boundary
 
-长期 Agent 需要在证据传递中保留 reporting freshness / economic effect identity / current state，防止聚合状态替代对象级结算；仅为研究尺度，不是 AGI capability claim。
+长期 Agent 需要在证据传递中保留 reporting freshness / economic effect identity / current state，防止聚合状态替代对象级结算；仅为研究尺度，不是 AGI capability claim.
 
 ## 历史关系
 
-本文件事件日期为 2026-10-10，实际核验为 2026-11-27，与当日 Daily 共享执行日期窗口。后续 correction 保留本次来源切片。新 Special research batch 1，新增独立窗口 0。
+本文件事件日期为 2026-10-10，实际核验为 2026-11-27，与当日 Daily 共享执行日期窗口.后续 correction 保留本次来源切片.新 Special research batch 1，新增独立窗口 0.
 
 ## 复验条件
 
-组织级 usage 与 billing ledger、报告发布水位、账单对账主体；Status 仅能描述发布服务。 若可取得对象级证据，按原始身份和时间重核。构造已消费未发布、尚未消费、迟到修正三类记录，验证不能将相同空列表作为同一个 economic outcome。
+组织级 usage 与 billing ledger、报告发布水位、账单对账主体；Status 仅能描述发布服务. 若可取得对象级证据，按原始身份和时间重核.构造已消费未发布、尚未消费、迟到修正三类记录，验证不能将相同空列表作为同一个 economic outcome.
 
 ## 验证结果
 
-EXECUTED: 2026-11-27 公开 canonical incident 页面直接读取、事件范围及命题对照。NOT_EXECUTED: 独立服务调用、历史对象重放、完整原生 Python checker。NO_DIRECT_EXPERIMENT / no CASE or NOTES promotion.
+EXECUTED: 2026-11-27 公开 canonical incident 页面直接读取、事件范围及命题对照.NOT_EXECUTED: 独立服务调用、历史对象重放、完整原生 Python checker.NO_DIRECT_EXPERIMENT / no CASE or NOTES promotion.
