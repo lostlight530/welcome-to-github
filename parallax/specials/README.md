@@ -8,9 +8,10 @@ Special 的作用是把真实公共事件映射成可证伪研究问题, 并保�
 
 ## 当前计数
 
-- 特殊专题: 22
-- 当前最新特殊专题事件日期: 2026-11-16
-- October 3 / November 2 retrospective Specials; all verified 2026-11-27 Asia/Shanghai, sharing the November 27 Daily execution window
+- 特殊专题: 30
+- 当前最新特殊专题事件日期: 2026-11-25
+- 2026-07 through 2026-11-27 event-month inventory: July 6, August 9, September 6, October 5, November 4; total 30
+- 13 retrospective Specials added in the current proposal, all actually verified 2026-11-27 Asia/Shanghai and sharing the November 27 Daily execution window
 - 2026-09-01 至 2026-09-20: 4 个新 Special
 - 4 个 September Special 均在 2026-09-20 完成实际核验, 与当日 Daily 共享 execution window
 - September Special 只增加 reality-mapping research batches, 不承担 Daily continuity, 不自动增加 CASE support
@@ -20,6 +21,7 @@ Special 的作用是把真实公共事件映射成可证伪研究问题, 并保�
 | 事件日期 | 记录 ID | CASE | 实际核验日期 | 当前研究关系 | 专题 |
 | --- | --- | --- | --- | --- | --- |
 | 2026-07-21 | PX-S-20260721-P04 | P-04 | 2026-07-31 | security-event attribution 与 later final report relation | [OpenAI 与 Hugging Face 安全事件归因更新](2026-07/2026-07-21-openai-hugging-face-security-incident.md) |
+| 2026-07-23 | PX-S-20260723-P04 | P-04 | 2026-11-27 | retrospective source mapping, zero CASE support | [SecOps 欧洲查询延迟与结果完整性](2026-07/2026-07-23-secops-query-latency.md) |
 | 2026-07-25 | PX-S-20260725-P03 | P-03 | 2026-07-26 | impact scope 与 missing denominator | [OpenAI 错误率事件范围](2026-07/2026-07-25-openai-service-events.md) |
 | 2026-07-27 | PX-S-20260727-P03 | P-03 | 2026-07-29 | maintenance state 与 unverified user write action | [OpenAI 开发者社区受限维护](2026-07/2026-07-27-openai-developer-community-maintenance.md) |
 | 2026-07-30 | PX-S-20260730-P03 | P-03 | 2026-07-31 | multi-incident scope separation | [OpenAI 近期四场服务事件](2026-07/2026-07-30-openai-recent-service-events.md) |
@@ -28,20 +30,26 @@ Special 的作用是把真实公共事件映射成可证伪研究问题, 并保�
 | 2026-08-04 | PX-S-20260804-P05 | P-05 | 2026-08-05 | developer claim 与 independent evaluator evidence | [OpenAI 第三方网络安全评估事件](2026-08/2026-08-04-openai-third-party-cyber-evaluations.md) |
 | 2026-08-05 | PX-S-20260805-P03 | P-03 | 2026-08-06 | separate incidents and component scope | [OpenAI 三项服务事件](2026-08/2026-08-05-openai-service-events.md) |
 | 2026-08-13 | PX-S-20260813-P05 | P-05 | 2026-08-13 | cross-provider evaluation comparability | [OpenAI, Anthropic 与 Google 前沿模型官方评价可比性](2026-08/2026-08-13-frontier-model-evaluation-comparability.md) |
+| 2026-08-20 | PX-S-20260820-P04 | P-04 | 2026-11-27 | retrospective source mapping, zero CASE support | [GCP 西部区域控制面与数据面恢复](2026-08/2026-08-20-gcp-west-control-data-plane.md) |
 | 2026-08-21 | PX-S-20260821-P05 | P-05 | 2026-08-23 | scientific experiment result-branch and evidence-type identity | [Anthropic CHIVE counterfactual explanations](2026-08/2026-08-21-anthropic-chive-counterfactual-explanations.md) |
 | 2026-08-21 | PX-S-20260821-P03 | P-03 | 2026-08-23 | research lifecycle boundary and deployment state | [DeepMind SIMA 与 EVE research lifecycle boundary](2026-08/2026-08-21-deepmind-sima-eve-research-boundary.md) |
 | 2026-08-26 | PX-S-20260826-P04 | P-04 | 2026-08-28 | final report and earlier incident-state relation | [OpenAI Hugging Face final incident report](2026-08/2026-08-26-openai-hugging-face-final-incident-report.md) |
 | 2026-08-28 | PX-S-20260828-P05 | P-05 | 2026-08-28 | social summary vs primary evidence identity | [X/Twitter AI 社交摘要与一手证据身份边界](2026-08/2026-08-28-x-ai-social-summary-source-boundary.md) |
+| 2026-09-01 | PX-S-20260901-P04 | P-04 | 2026-11-27 | retrospective source mapping, zero CASE support | [GCP 区域网络隔离与运行证据](2026-09/2026-09-01-gcp-central-network-isolation.md) |
 | 2026-09-13 | PX-S-20260913-P04 | P-04 | 2026-09-20 | aggregate recovery vs queued-item completion | [Google SecOps normalization/detection backlog](2026-09/2026-09-13-google-secops-processing-backlog.md) |
 | 2026-09-14 | PX-S-20260914-P04 | P-04 | 2026-09-20 | managed-session aggregate recovery vs per-session completion | [OpenAI Agents API managed-session recovery](2026-09/2026-09-14-openai-agents-managed-session-recovery.md) |
 | 2026-09-15 | PX-S-20260915-P04 | P-04 | 2026-09-20 | mitigation vs historical export backfill completion | [Google SecOps export backfill](2026-09/2026-09-15-google-secops-export-backfill.md) |
 | 2026-09-18 | PX-S-20260918-P04 | P-04 | 2026-09-20 | service recovery vs refund/economic remediation completion | [OpenAI Agent API overbilling and refunds](2026-09/2026-09-18-openai-agent-api-overbilling-refunds.md) |
-
+| 2026-09-29 | PX-S-20260929-P04 | P-04 | 2026-11-27 | retrospective source mapping, zero CASE support | [OpenAI 共享网络容量耗尽与任务恢复](2026-09/2026-09-29-openai-shared-network-rollout.md) |
 | 2026-10-08 | PX-S-20261008-P04 | P-04 | 2026-11-27 | retrospective public incident mapping, no CASE support | [GCS 写入故障复发与对象持久化证据](2026-10/2026-10-08-gcs-write-recurrence.md) |
 | 2026-10-10 | PX-S-20261010-P04 | P-04 | 2026-11-27 | retrospective public incident mapping, no CASE support | [Compliance API 成本数据延迟与账目完整性](2026-10/2026-10-10-openai-compliance-costs-backlog.md) |
 | 2026-10-14 | PX-S-20261014-P04 | P-04 | 2026-11-27 | retrospective public incident mapping, no CASE support | [SecOps 入口差异与补送责任](2026-10/2026-10-14-google-secops-ingestion-retry.md) |
+| 2026-10-19 | PX-S-20261019-P04 | P-04 | 2026-11-27 | retrospective source mapping, zero CASE support | [伦敦区域分阶段恢复与存储验证](2026-10/2026-10-19-gcp-london-staged-recovery.md) |
+| 2026-10-30 | PX-S-20261030-P04 | P-04 | 2026-11-27 | retrospective source mapping, zero CASE support | [GitHub 重试风暴与队列排空](2026-10/2026-10-30-github-retry-storm-queue-drain.md) |
 | 2026-11-12 | PX-S-20261112-P04 | P-04 | 2026-11-27 | retrospective public incident mapping, no CASE support | [Workspace Agent 新运行启动故障](2026-11/2026-11-12-openai-workspace-agent-run-start.md) |
 | 2026-11-16 | PX-S-20261116-P04 | P-04 | 2026-11-27 | retrospective public incident mapping, no CASE support | [PR merge timeout 与合并结算身份](2026-11/2026-11-16-github-pr-merge-timeouts.md) |
+| 2026-11-19 | PX-S-20261119-P04 | P-04 | 2026-11-27 | retrospective source mapping, zero CASE support | [GitHub 会话续期缺陷与授权状态漂移](2026-11/2026-11-19-github-session-renewal.md) |
+| 2026-11-25 | PX-S-20261125-P04 | P-04 | 2026-11-27 | retrospective source mapping, zero CASE support | [Git LFS 自动重试与对象完整性](2026-11/2026-11-25-github-lfs-retry-object.md) |
 
 ## Current research role
 
