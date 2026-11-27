@@ -61,3 +61,21 @@ Audit 不得.
 - 作为每日研究是否产出的 gate
 
 如果未来重新启用 formal cycle audit, 使用 `templates/weekly.md`, 明确 `派生审计: YES`, `新增实验数量: 0`, `新增长期结论数量: 0`.
+
+## 2026-11-27 forward weekly coverage reconciliation
+
+This is a present-day derived inventory review, not a backdated formal Audit. Daily coverage is counted only inside the requested October 1–November 27 Shanghai interval; partial intersection and open-week status are explicit. The original optional-audit contract and W43/W44 AS_OF cuts are preserved.
+
+| ISO week | Scoped dates | Retained Daily | Formal Audit at original cut |
+| --- | --- | ---: | --- |
+| 2026-W40 | Oct 1–4 (scope begins midweek) | 4/4 | No formal audit; optional |
+| 2026-W41 | Oct 5–11 | 7/7 | No formal audit; optional |
+| 2026-W42 | Oct 12–18 | 7/7 | No formal audit; optional |
+| 2026-W43 | Oct 19–25 | 7/7 | [Original Sunday AS_OF 7/7](2026-W43.md) |
+| 2026-W44 | Oct 26–Nov 1 | 7/7 | [Original Friday AS_OF 5/7](2026-W44.md), not retroactively sealed |
+| 2026-W45 | Nov 2–8 | 7/7 | No formal audit; optional |
+| 2026-W46 | Nov 9–15 | 7/7 | No formal audit; optional |
+| 2026-W47 | Nov 16–22 | 7/7 | No formal audit; optional |
+| 2026-W48 | Nov 23–27 | 5/5 elapsed, 5/7 calendar | OPEN; Nov 28–29 NOT_DUE |
+
+58/58 distinct scoped Daily paths; no missing assigned date. Both retained formal audit bodies reread for required headings, exact original record-ID references and zero-credit metadata. See [pinned Daily custody](../2026-11-27-quantity-coverage.md), [October](../records/2026-10.md) and [November](../records/2026-11.md). No historical formal audit was fabricated; no additional research batch, Trial, execution window or finding. Native checker and historical execution replay NOT_EXECUTED.
