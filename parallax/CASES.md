@@ -91,3 +91,11 @@ METR GPT-5.6 Sol 评估与 Anthropic 事故第三方复核属于不同对象和�
 - PX-S-20261014-P04: [SecOps 入口差异与补送责任](specials/2026-10/2026-10-14-google-secops-ingestion-retry.md), event-date mapping verified 2026-11-27; no CASE support increment.
 - PX-S-20261112-P04: [Workspace Agent 新运行启动故障](specials/2026-11/2026-11-12-openai-workspace-agent-run-start.md), event-date mapping verified 2026-11-27; no CASE support increment.
 - PX-S-20261116-P04: [PR merge timeout 与合并结算身份](specials/2026-11/2026-11-16-github-pr-merge-timeouts.md), event-date mapping verified 2026-11-27; no CASE support increment.
+- PX-S-20260723-P04: [SecOps 欧洲查询延迟与结果完整性](specials/2026-07/2026-07-23-secops-query-latency.md), actual verification 2026-11-27; event mapping only, no CASE support increment.
+- PX-S-20260820-P04: [GCP 西部区域控制面与数据面恢复](specials/2026-08/2026-08-20-gcp-west-control-data-plane.md), actual verification 2026-11-27; event mapping only, no CASE support increment.
+- PX-S-20260901-P04: [GCP 区域网络隔离与运行证据](specials/2026-09/2026-09-01-gcp-central-network-isolation.md), actual verification 2026-11-27; event mapping only, no CASE support increment.
+- PX-S-20260929-P04: [OpenAI 共享网络容量耗尽与任务恢复](specials/2026-09/2026-09-29-openai-shared-network-rollout.md), actual verification 2026-11-27; event mapping only, no CASE support increment.
+- PX-S-20261019-P04: [伦敦区域分阶段恢复与存储验证](specials/2026-10/2026-10-19-gcp-london-staged-recovery.md), actual verification 2026-11-27; event mapping only, no CASE support increment.
+- PX-S-20261030-P04: [GitHub 重试风暴与队列排空](specials/2026-10/2026-10-30-github-retry-storm-queue-drain.md), actual verification 2026-11-27; event mapping only, no CASE support increment.
+- PX-S-20261119-P04: [GitHub 会话续期缺陷与授权状态漂移](specials/2026-11/2026-11-19-github-session-renewal.md), actual verification 2026-11-27; event mapping only, no CASE support increment.
+- PX-S-20261125-P04: [Git LFS 自动重试与对象完整性](specials/2026-11/2026-11-25-github-lfs-retry-object.md), actual verification 2026-11-27; event mapping only, no CASE support increment.
