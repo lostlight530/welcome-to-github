@@ -22,8 +22,8 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 - 最新每日归属日期: 2026-11-27
 - 最新每日研究: [Git tree 等价与 Merge Commit 签名验证的身份边界](records/2026-11/2026-11-27.md)
 - 每日专题: 128
-- 特殊专题: 17
-- 当前专题研究批次: 145
+- 特殊专题: 30
+- 当前专题研究批次: 158
 - 当前专题独立执行日期窗口: 123
 - 当前观察案例: 0
 - 当前候选案例: 0
@@ -36,9 +36,17 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 - 长期发现: [NOTES.md](NOTES.md)
 - 当前日记录模板: [templates/daily.md](templates/daily.md)
 - 当前周期整理模板: [templates/monthly.md](templates/monthly.md)
-- 特殊专题: [specials/README.md](specials/README.md)
+- 特殊专题入口: [specials/README.md](specials/README.md)
 - 周期审计: [audits/README.md](audits/README.md)
 - 历史 README 原样快照: [2026-10-21 archive](README-history-through-2026-10-21.md)
+
+## 2026-11-27 Special forward reconciliation
+
+The historical Daily producer cut remains 128 Daily / 17 Special / 145 batches / 123 windows / 9 audits. This proposal adds five retrospective public incident research batches (October 3, November 2), all actually verified on 2026-11-27, sharing the existing Daily window. First follow-on proposal cut: 128 Daily / 22 Special / 150 batches / 123 distinct windows / 9 Audits (historical intermediate head). No new Trial, CASE support or NOTES finding. Historical counts in prior dated observations are retained.
+
+## Half-year Special target — 2026-11-27
+
+Current proposed Git ref: 128 credited Daily units / 30 Specials / 158 research batches / 123 distinct actual execution dates / 9 Audits. Event-month Special inventory July 6, August 9, September 6, October 5, November 4. All 13 additions relative to main were actually verified on November 27, sharing the existing Daily window; no new Trial, CASE support or NOTES finding. The remaining dates of 2026 and December are not represented as completed events. See [Special index](specials/README.md).
 
 ## 研究面
 
