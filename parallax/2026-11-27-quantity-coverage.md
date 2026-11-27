@@ -6,9 +6,9 @@
 - Observation date: 2026-11-27 Asia/Shanghai; inspected main `f1f1a061eb990979dee960b8c00e375b0c7ae929`
 - Assigned-date scope: 2026-10-01 through 2026-11-27 inclusive, 58 elapsed logical dates, November 28–30 NOT_DUE
 - Owning [METHOD](METHOD.md) blob `0c139b2926bdb42c5c3954ad0069284077cd43bd`, [checker source](tools/check.py) blob `4511f8a3ff8b1513c38099045fc587e085bfc2e4`, [README](README.md) blob `fd90c24652af45b5762ac9a18087804ffbeae156`
-- Original monthly owners: [October](records/2026-10.md) blob `28fdaf4b1243925215b73fed503c29b1f52756c7`, [November](records/2026-11.md) blob `b9e192701bfc3d421b7169a8866ad2eac1d00067`
+- Pinned pre-correction monthly owners: [October](records/2026-10.md) blob `28fdaf4b1243925215b73fed503c29b1f52756c7`, [November](records/2026-11.md) blob `b9e192701bfc3d421b7169a8866ad2eac1d00067`
 - All 58 exact Daily source bodies read at the pinned revision, with their original IDs, provenance, assigned date, actual date, window and Trial section counts inspected; all 58 retain native primary Daily declarations, matching three date fields and PARTIAL research status
-- This supplement retains the historic owners byte-for-byte; it adds no research batch, Trial, independent execution window, CASE support, Special, cycle Audit or NOTES finding
+- At the initial quantity-only proposal the historic owners were byte-for-byte unchanged; the subsequent authorized canonical reconciliation below updates monthly and audit-index documents only. It adds no research batch, Trial, independent execution window, CASE support, Special, cycle Audit or NOTES finding
 - A preserved source declaration and a retained Git blob do not prove that every historical scheduled invocation ran or that every research claim was independently verified
 
 ## Quantity contract
@@ -110,3 +110,7 @@ Do not convert 36 section headings or 34 monthly counted Trials/procedures into 
 - NOT_EXECUTED: complete working-tree native Python checker, historical external source/SDK replay, independent runtime/evaluator reproduction or historical scheduler event-log recovery; local Git remote acquisition returned DNS resolution failure
 - Actual external research validity stays at the original bounded evidence level; this ledger is not a second production run or a new original audit
 - Quantity coverage of retained native Daily records: 58/58; full historical execution and claim verification: PARTIAL; no new promotions, no historical rewrite
+
+## 2026-11-27 in-place canonical reconciliation (successor to initial quantity-only proposal)
+
+The current proposal extends the initial append-only quantity accounting into the existing canonical monthly and audit-index owners. Independently retrieved all 58 Daily bodies and checked required headings, date fields, provenance field, publisher/source count, record ID presence and Trial-heading counts; 58/58 met these targeted checks, so original Daily files remain untouched. October 79 and November 36 Trial headings independently recomputed. W43 and W44 original audit bodies inspected for headings, original record IDs and zero-credit metadata. The [existing audit index](audits/README.md) now reconciles W40–W48 at this observation cut, preserving historical formal-audit absence and W44 5/7. Both [October](records/2026-10.md) and [November](records/2026-11.md) canonical owners have forward reconciliation; no month FINAL or historical execution is fabricated. The original SHA columns above refer to the pinned main before these maintenance changes. Full native checker, external source validity and historical execution replay NOT_EXECUTED; targeted review is not research promotion.
