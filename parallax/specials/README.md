@@ -8,8 +8,9 @@ Special 的作用是把真实公共事件映射成可证伪研究问题, 并保�
 
 ## 当前计数
 
-- 特殊专题: 17
-- 当前最新特殊专题事件日期: 2026-09-18
+- 特殊专题: 22
+- 当前最新特殊专题事件日期: 2026-11-16
+- October 3 / November 2 retrospective Specials; all verified 2026-11-27 Asia/Shanghai, sharing the November 27 Daily execution window
 - 2026-09-01 至 2026-09-20: 4 个新 Special
 - 4 个 September Special 均在 2026-09-20 完成实际核验, 与当日 Daily 共享 execution window
 - September Special 只增加 reality-mapping research batches, 不承担 Daily continuity, 不自动增加 CASE support
@@ -35,6 +36,12 @@ Special 的作用是把真实公共事件映射成可证伪研究问题, 并保�
 | 2026-09-14 | PX-S-20260914-P04 | P-04 | 2026-09-20 | managed-session aggregate recovery vs per-session completion | [OpenAI Agents API managed-session recovery](2026-09/2026-09-14-openai-agents-managed-session-recovery.md) |
 | 2026-09-15 | PX-S-20260915-P04 | P-04 | 2026-09-20 | mitigation vs historical export backfill completion | [Google SecOps export backfill](2026-09/2026-09-15-google-secops-export-backfill.md) |
 | 2026-09-18 | PX-S-20260918-P04 | P-04 | 2026-09-20 | service recovery vs refund/economic remediation completion | [OpenAI Agent API overbilling and refunds](2026-09/2026-09-18-openai-agent-api-overbilling-refunds.md) |
+
+| 2026-10-08 | PX-S-20261008-P04 | P-04 | 2026-11-27 | retrospective public incident mapping, no CASE support | [GCS 写入故障复发与对象持久化证据](2026-10/2026-10-08-gcs-write-recurrence.md) |
+| 2026-10-10 | PX-S-20261010-P04 | P-04 | 2026-11-27 | retrospective public incident mapping, no CASE support | [Compliance API 成本数据延迟与账目完整性](2026-10/2026-10-10-openai-compliance-costs-backlog.md) |
+| 2026-10-14 | PX-S-20261014-P04 | P-04 | 2026-11-27 | retrospective public incident mapping, no CASE support | [SecOps 入口差异与补送责任](2026-10/2026-10-14-google-secops-ingestion-retry.md) |
+| 2026-11-12 | PX-S-20261112-P04 | P-04 | 2026-11-27 | retrospective public incident mapping, no CASE support | [Workspace Agent 新运行启动故障](2026-11/2026-11-12-openai-workspace-agent-run-start.md) |
+| 2026-11-16 | PX-S-20261116-P04 | P-04 | 2026-11-27 | retrospective public incident mapping, no CASE support | [PR merge timeout 与合并结算身份](2026-11/2026-11-16-github-pr-merge-timeouts.md) |
 
 ## Current research role
 
