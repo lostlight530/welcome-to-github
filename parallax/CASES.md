@@ -83,3 +83,11 @@
 ## 2026-09-02 复验条件校准
 
 METR GPT-5.6 Sol 评估与 Anthropic 事故第三方复核属于不同对象和时间线. 前者材料存在不能关闭后者的待核验条件. 本次只修正该归属与依赖传播,不重算原记录的执行日期或伪造新实验. 参见 [维护日志](2026-09-02-maintenance-log.md).
+
+## 2026-11-27 P-04 retrospective Special navigation (zero support credit)
+
+- PX-S-20261008-P04: [GCS 写入故障复发与对象持久化证据](specials/2026-10/2026-10-08-gcs-write-recurrence.md), event-date mapping verified 2026-11-27; no CASE support increment.
+- PX-S-20261010-P04: [Compliance API 成本数据延迟与账目完整性](specials/2026-10/2026-10-10-openai-compliance-costs-backlog.md), event-date mapping verified 2026-11-27; no CASE support increment.
+- PX-S-20261014-P04: [SecOps 入口差异与补送责任](specials/2026-10/2026-10-14-google-secops-ingestion-retry.md), event-date mapping verified 2026-11-27; no CASE support increment.
+- PX-S-20261112-P04: [Workspace Agent 新运行启动故障](specials/2026-11/2026-11-12-openai-workspace-agent-run-start.md), event-date mapping verified 2026-11-27; no CASE support increment.
+- PX-S-20261116-P04: [PR merge timeout 与合并结算身份](specials/2026-11/2026-11-16-github-pr-merge-timeouts.md), event-date mapping verified 2026-11-27; no CASE support increment.
