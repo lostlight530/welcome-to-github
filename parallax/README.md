@@ -14,23 +14,23 @@ formal contract 不等于 runtime behavior, test source 不等于 test execution
 
 ## 当前入口
 
-本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-27 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行、H6 人工授权替代结算或原生执行证明
+本页计数以所在 Git ref 的 Parallax 文件为事实源, 当前版本包含 2026-11-28 原生 Daily, Git ref 是否已落入 main 由 GitHub 实时提交关系判断, 不把 Draft、Ready、merged 等交付状态代替研究执行、H6 人工授权替代结算或原生执行证明
 
-历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 2026-11-02 本轮冷启动 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 已含 2026-11-01 原生 Daily 102 / 17 / 119 / 97 / 9, 2026-11-03 冷启动 main `35f76aeb8ea0aad6710fcdc0842065a592ca71ba` 已含 2026-11-02 原生 Daily 103 / 17 / 120 / 98 / 9, 下列数值对应包含 2026-11-27 原生 Daily 的 Git ref 文件快照, 其是否已合并到 main 以 GitHub 的 PR 和提交关系实时核验, 不以本段历史说明代替交付事实
+历史基线: 2026-10-30 PR #864 生产时 main `209c84c17730df5d721da3da6705f15f1501c445` 为 Daily 99 / Special 17 / batches 116 / windows 94 / Audits 8, PR #864 合并后为 100 / 17 / 117 / 95 / 9, 2026-10-31 PR #871 已合并, 2026-11-01 本轮冷启动 main `7499b690e182c6f4188fe16fcc1a6bc2f60011b1` 为 101 / 17 / 118 / 96 / 9, 2026-11-02 本轮冷启动 main `d93f2f468326f29e23bfcde0a49f1b5002d1de39` 已含 2026-11-01 原生 Daily 102 / 17 / 119 / 97 / 9, 2026-11-03 冷启动 main `35f76aeb8ea0aad6710fcdc0842065a592ca71ba` 已含 2026-11-02 原生 Daily 103 / 17 / 120 / 98 / 9, 下列数值对应包含 2026-11-28 原生 Daily 的 Git ref 文件快照, 其是否已合并到 main 以 GitHub 的 PR 和提交关系实时核验, 不以本段历史说明代替交付事实
 
 
-- 最新每日归属日期: 2026-11-27
-- 最新每日研究: [Git tree 等价与 Merge Commit 签名验证的身份边界](records/2026-11/2026-11-27.md)
-- 每日专题: 128
+- 最新每日归属日期: 2026-11-28
+- 最新每日研究: [追溯 Special 的事件日期与执行窗口身份边界](records/2026-11/2026-11-28.md)
+- 每日专题: 129
 - 特殊专题: 30
-- 当前专题研究批次: 158
-- 当前专题独立执行日期窗口: 123
+- 当前专题研究批次: 159
+- 当前专题独立执行日期窗口: 124
 - 当前观察案例: 0
 - 当前候选案例: 0
 - 当前长期结论: 5
 - 周期审计: 9
 - 最新周期审计: [2026-W44 Friday 5/7 as-of](audits/2026-W44.md)
-- 当前月度事实源: [2026-11 AS_OF_2026-11-27, nonfinal](records/2026-11.md)
+- 当前月度事实源: [2026-11 AS_OF_2026-11-28, nonfinal](records/2026-11.md)
 - 当前方法: [METHOD.md](METHOD.md)
 - 控制案例: [CASES.md](CASES.md)
 - 长期发现: [NOTES.md](NOTES.md)
@@ -46,7 +46,7 @@ The historical Daily producer cut remains 128 Daily / 17 Special / 145 batches /
 
 ## Half-year Special target — 2026-11-27
 
-Current proposed Git ref: 128 credited Daily units / 30 Specials / 158 research batches / 123 distinct actual execution dates / 9 Audits. Event-month Special inventory July 6, August 9, September 6, October 5, November 4. All 13 additions relative to main were actually verified on November 27, sharing the existing Daily window; no new Trial, CASE support or NOTES finding. The remaining dates of 2026 and December are not represented as completed events. See [Special index](specials/README.md).
+Historical 2026-11-27 Git ref: 128 credited Daily units / 30 Specials / 158 research batches / 123 distinct actual execution dates / 9 Audits. Event-month Special inventory July 6, August 9, September 6, October 5, November 4. All 13 additions relative to main were actually verified on November 27, sharing the existing Daily window; no new Trial, CASE support or NOTES finding. The remaining dates of 2026 and December are not represented as completed events. See [Special index](specials/README.md).
 
 ## 研究面
 
@@ -67,7 +67,13 @@ Daily 是 mandatory primary research, Special 是独立公共事件研究, Audit
 
 CASES 只在当前控制案例满足真实支持门槛时增加, NOTES 仅收录至少三个独立实验、跨至少两个实际执行窗口且完成反例检查的发现
 
-## 当前研究边界 — 2026-11-27
+## 当前研究边界 — 2026-11-28
+
+Fixed comparison d58327faf9811cc1931ebf4922999d65fc120485...08b2f663929e0299cc9b61ca4918f900d01feb60 and 13 added Special blobs show five event months sharing the 2026-11-27 actual verification window already declared by the Daily, nine bounded JavaScript predicates passed, one repository evidence chain, PARTIAL, no independent historical incident replay or native checker execution; current ref contains 129 credited Daily / 30 Specials / 159 batches / 124 declared independent windows / 9 Audits, November 28/28 arrived dates
+
+[EVENT_DATE != ACTUAL_VERIFICATION_DATE](records/2026-11/2026-11-28.md)
+
+## 前序研究边界 — 2026-11-27
 
 At the 2026-11-27 access cut, GitHub PR 1062 producer Head 3ae59592fca7a9f4892e1f0e1e3e93c288d558eb and Merge 78355b542a91f95fd52ca7ababf9fc63d2d5a9cd share root tree 5836896b0b65d695efa139d0576f18fec19ab296, with zero changed files and distinct verification states: unsigned versus valid; merge payload references both parents, not a retroactive producer signature; four successful Head checks span two suites, one successful dynamic Actions run; 16 bounded predicates passed, GitHub publisher one, PARTIAL, native checker NOT_EXECUTED; this ref contains Daily 128 / Special 17 / batches 145 / independent windows 123 / Audits 9, November coverage 27/27
 
